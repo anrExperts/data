@@ -72,7 +72,7 @@ declare
 %updating
 function local:mkdb() {
     db:create(
-    'xprTest',
+    'xpr',
     $db,
     'xpr.xml',
     map{
