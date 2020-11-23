@@ -38,6 +38,7 @@ declare variable $expertises :=
 <expertises xmlns="xpr">
   {
     fn:doc($z1j_JH)//expertise,
+    fn:doc($gip_JH)//expertise,
     fn:doc($z1j_LL)//expertise,
     fn:doc($gip_LL)//expertise
   }
