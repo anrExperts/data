@@ -11,7 +11,7 @@ declare default element namespace "xpr" ;
  : @rmq to be modified for online/local use
  : @sardinecan : /Volumes/data/github/xprdata/
 :)
-declare variable $path := '/resource/xprdata/';
+declare variable $path := '/resource/data/';
 
 (:
  : Z1j resources
