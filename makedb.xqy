@@ -9,12 +9,12 @@ declare default element namespace "xpr" ;
 (:
  : path to xprdata files
  : @rmq to be modified for online/local use
+ : @sardinecan : /Volumes/data/github/xprdata/
 :)
-declare variable $path := '/Volumes/data/github/xprdata/';
+declare variable $path := '/resource/xprdata/';
 
 (:
  : Z1j resources
- : @rmq gip JH needs to be added
 :)
 declare variable $z1j_JH := $path || 'z1j/z1j_JH.xml';
 declare variable $gip_JH := $path || 'z1j/gip_JH.xml';
@@ -33,7 +33,9 @@ declare variable $others := $path || 'prosopography/others.xml';
 :)
 declare variable $sources := $path || 'sources/sources.xml';
 
-
+(:
+ : assembling z1j resources
+:)
 declare variable $expertises := 
 <expertises xmlns="xpr">
   {
@@ -46,7 +48,10 @@ declare variable $expertises :=
 ;
 
 
-
+(:
+ : assembling xpr database
+ : with ordered expertises
+:)
 declare variable $db :=
 <xpr xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink">
   <expertises>
@@ -69,6 +74,9 @@ declare variable $db :=
   }
 </xpr>;
 
+(:
+ : database creation
+:)
 declare
 %updating
 function local:mkdb() {
