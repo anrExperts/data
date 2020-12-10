@@ -2,7 +2,8 @@ xquery version "3.1";
 (:
  : author @emchateau & @sardinecan
  : 2020-12
- : this script create xpr db from various xpr ressources
+ : this script updates the control module for z1j files
+ : just run it !
 :)
 declare default element namespace "xpr" ;
 
@@ -14,6 +15,9 @@ declare default element namespace "xpr" ;
 :)
 declare variable $path := '/Volumes/data/github/xprdata/z1j';
 
+(:
+ : control module for z1j files
+:)
 declare variable $control :=
 <control>
     <maintenanceStatus/>
@@ -32,6 +36,10 @@ declare variable $control :=
     </maintenanceHistory>
 </control>;
 
+(:
+ : this function add or update the control module for each expertise
+ : @return updated xml files
+:)
 declare function local:updateControl() {
 let $collection := fn:collection($path)
 return
@@ -45,10 +53,8 @@ return
             for $control in $d//control[not(descendant::eventDescription)]
             return insert node <eventDescription/> after $control/maintenanceHistory/maintenanceEvent/agent
         )
-        return file:write('/Volumes/data/github/xprdata/draft/' || substring-after(document-uri($doc), 'z1j/'), $d)
+        return file:write('/Volumes/data/github/xprdata/draft/updatedZ1J/' || substring-after(document-uri($doc), 'z1j/'), $d)
     )
-
-
 };
 
 local:updateControl()
