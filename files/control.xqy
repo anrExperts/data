@@ -37,7 +37,7 @@ declare variable $control :=
         <maintenanceEvent>
             <eventType/>
             <eventDateTime standardDateTime=""/>
-            <agentType>human</agentType>
+            <agentType/>
             <agent/>
             <eventDescription/>
         </maintenanceEvent>
@@ -51,7 +51,7 @@ declare variable $event :=
   <maintenanceEvent xmlns="xpr">
     <eventType/>
     <eventDateTime standardDateTime=""/>
-    <agentType>human</agentType>
+    <agentType/>
     <agent/>
     <eventDescription/>
   </maintenanceEvent>;
@@ -93,13 +93,13 @@ return(
         modify (
             for $expertise in $d//expertise
             let $unitid := substring-after($expertise//idno[@type='unitid'], 'Z1J')
-            let $responsability := $resp//*:record[descendant::*:unitid[normalize-space(.) = normalize-space($unitid)]]
+            let $responsability := $resp//*:record[descendant::*:unitid[fn:normalize-space(.) = fn:normalize-space($unitid)]]
             return(
-              for $who in $responsability//*:who[normalize-space(.) != ''][position() > 1]
+              for $who in $responsability//*:who[fn:normalize-space(.) != ''][fn:position() > 1]
               return insert node $event after $expertise//maintenanceEvent[last()]
             )
         )
-        return file:write($path || 'temp/responsability/' || substring-after(document-uri($doc), 'control/'), $d)
+        return file:write($path || 'temp/responsability/' || fn:substring-after(document-uri($doc), 'control/'), $d)
     ), local:fillResp()
 )
 };
@@ -121,19 +121,11 @@ return(
                 for $maintenance at $i in $expertise//maintenanceHistory/maintenanceEvent
                 return (
                     replace value of node $maintenance/eventType with $responsability//*:what[$i],
+                    replace value of node $maintenance/eventDateTime with $responsability//*:when[$i],
                     replace value of node $maintenance/eventDateTime/@standardDateTime with $responsability//*:when[$i],
                     replace value of node $maintenance/agent with $responsability//*:who[$i],
-                    switch(substring-after($maintenance/ancestor::expertise//idno[@type='unitid'], 'Z1J'))
-                        case '999' return (
-                            switch(fn:string($i))
-                            case '2' return replace value of node $maintenance/eventDescription with 'Révision de la fiche'
-                            case '3' return replace value of node $maintenance/eventDescription with 'Rétroconversion Gip'
-                            default return replace value of node $maintenance/eventDescription with 'Création de la fiche'
-                        )
-                        default return (
-                            if($i > 1) then replace value of node $maintenance/eventDescription with 'Rétroconversion Gip'
-                            else replace value of node $maintenance/eventDescription with 'Création de la fiche'
-                        )
+                    replace value of node $maintenance/eventDescription with $responsability//*:desc[$i],
+                    replace value of node $maintenance/agentType with $responsability//*:agentType[$i]
                 )
             )
         )
