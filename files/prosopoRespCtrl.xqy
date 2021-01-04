@@ -58,8 +58,7 @@ return
     return (
         copy $d := $doc
         modify (
-            for $bio in $d//eac-cpf
-            let $pos := 100
+            for $bio at $pos in $d//eac-cpf
             let $maintenance := local:addMaintenance($pos)
             return(
               insert node <maintenanceStatus>new</maintenanceStatus> before $bio/control/sources,
