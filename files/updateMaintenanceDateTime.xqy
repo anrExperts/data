@@ -63,8 +63,8 @@ declare function local:date2dateTime($maintenance) {
     let $dateTime :=
       if($date castable as xs:gYear) then
       switch  ($date/ancestor::maintenanceEvent/agent)
-        case 'PC' return ''
-        case 'JH' return ''
+        case 'JH' return '2017-10-01T12:00:00'
+        case 'PC' return '2018-01-01T12:00:00'
         case 'LL' return '2017-04-01T12:00:00'
         case 'RB' return '2016-10-26T12:00:00'
         default return $date || '-01-01T12:00:00'
