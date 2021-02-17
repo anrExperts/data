@@ -1,7 +1,7 @@
 xquery version "3.1";
 (:
  : author @sardinecan
- : 2021-02
+ : 2021-02-16
  : this script updates the control module for z1j files added 2021-01
  : just run it !
 :)
