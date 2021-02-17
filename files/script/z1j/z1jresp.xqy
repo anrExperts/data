@@ -65,6 +65,18 @@ declare variable $event :=
   </maintenanceEvent>;
 
 (:
+ : control module for z1j files
+:)
+declare variable $scriptEvent :=
+  <maintenanceEvent xmlns="xpr">
+    <eventType>updated</eventType>
+    <eventDateTime standardDateTime="{fn:current-dateTime()}">{fn:current-dateTime()}</eventDateTime>
+    <agentType>machine</agentType>
+    <agent>z1jresp.xqy/BaseX</agent>
+    <eventDescription>Ajout de l'historique de la fiche.</eventDescription>
+  </maintenanceEvent>;
+
+(:
  : this function add or update the control module for each expertise
  : @return updated xml files
 :)
@@ -126,8 +138,23 @@ return(
         )
       )
     )
-    return file:write($path || 'temp/output/' || substring-after(document-uri($doc), 'responsability/'), $d)
+    return file:write($path || 'temp/output/' || substring-after(document-uri($doc), 'responsability/'), $d),
+    local:addScriptEvent()
 )
 };
+
+declare
+function local:addScriptEvent() {
+let $doc := fn:doc($path || 'temp/output/' || fn:substring-after($data, 'z1j/'))
+return(
+    copy $d := $doc
+    modify (
+      for $resp in $d//expertise//maintenanceHistory
+      return insert node $scriptEvent as first into $resp
+    )
+    return file:write($path || 'temp/output/' || substring-after(document-uri($doc), 'output/'), $d)
+)
+};
+
 
 local:updateControl()
