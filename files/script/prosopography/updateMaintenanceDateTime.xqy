@@ -70,7 +70,9 @@ declare function local:date2dateTime($maintenance) {
   return $d
 };
 
-
+(:
+ : event for maintenance history
+:)
 declare variable $event :=
 <maintenanceEvent>
     <eventType>updated</eventType>
