@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Title</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>Publication Information</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Information about the source</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <schemaSpec ident="xprModel" start="xpr" ns="xpr">
+        <elementSpec ident="xpr">
+          <content>
+            <elementRef key="expertises" maxOccurs="1" source="xpr.expertises.odd.xml"/>
+            <elementRef key="bio" maxOccurs="1"/>
+          </content>
+        </elementSpec>
+        <!-- Expertises -->
+        <moduleRef key="expertise" source="xpr.expertises.odd.xml"/>
+        <moduleRef key="expertise.meta" source="xpr.expertises.odd.xml"/>
+        <moduleRef key="expertise.control" source="xpr.expertises.odd.xml"/>
+        <!-- Bio/prosopography -->
+        <elementSpec ident="bio" ns="xpr">
+          <content>
+            <elementRef key="eac-cpf" minOccurs="1" source="xpr.eac.odd.xml"/>
+          </content>
+        </elementSpec>
+        <moduleRef key="EAC" source="xpr.eac.odd.xml"/>
+      </schemaSpec>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0" xmlns:rng="http://relaxng.org/ns/structure/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Title</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>Publication Information</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Information about the source</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <schemaSpec ident="xprExpertisesModel" start="expertises expertise" ns="xpr" module="expertise">
+        <elementSpec ident="expertises" module="expertise">
+          <content>
+            <elementRef key="expertise" minOccurs="1"/>
+          </content>
+        </elementSpec>
+        <elementSpec ident="expertise" module="expertise">
+          <content>
+            <sequence>
+              <elementRef key="meta"/>
+              <elementRef key="control" source="xpr.eac.odd.xml"/>
+              <elementRef key="sourceDesc"/>
+              <elementRef key="description"/>
+            </sequence>
+          </content>
+        </elementSpec>
+        <elementSpec ident="meta" module="expertise.meta"/>
+        <moduleRef source="xpr.eac.odd.xml" key="EAC" include="control maintenanceStatus"/>
+        
+        <elementSpec ident="control" mode="change" source="xpr.eac.odd.xml" ns="xpr" module="EAC">
+          <content>
+            <elementRef key="maintenanceStatus" source="xpr.eac.odd.xml"/>
+            <!--<sequence>
+              
+              <!-\-<elementRef key="publicationStatus" source="xpr.eac.odd.xml"/>
+              <elementRef key="localControl" source="xpr.eac.odd.xml"/>
+              <elementRef key="maintenanceHistory" source="xpr.eac.odd.xml"/>-\->
+            </sequence>-->
+          </content>
+        </elementSpec>
+        <elementSpec ident="maintenanceStatus" mode="change" ns="xpr" source="xpr.eac.odd.xml" module="EAC">
+          <valList type="closed">
+            <valItem ident="created"/>
+            <valItem ident="revised"/>
+            <valItem ident="updated"/>
+            <valItem ident="retroconverted"/>
+          </valList>
+          <!--<content>
+            <rng:choice>
+              <rng:value>created</rng:value>
+              <rng:value>revised</rng:value>
+              <rng:value>updated</rng:value>
+              <rng:value>retroconverted</rng:value>
+            </rng:choice>
+          </content>-->
+        </elementSpec>
+        <!--<elementSpec ident="control" module="expertise.control">
+          <content>
+            <sequence>
+              <elementRef key="maintenanceStatus"/>
+              <elementRef key="publicationStatus"/>
+              <elementRef key="localControl"/>
+              <elementRef key="maintenanceHistory"/>
+            </sequence>
+          </content>
+        </elementSpec>
+        <elementSpec ident="maintenanceStatus" module="expertise.control">
+          <valList type="closed">
+            <valItem ident="created"/>
+            <valItem ident="revised"/>
+            <valItem ident="updated"/>
+            <valItem ident="retroconverted"/>
+          </valList>
+          <!-\-<content>
+            <rng:choice>
+              <rng:value>created</rng:value>
+              <rng:value>revised</rng:value>
+              <rng:value>updated</rng:value>
+              <rng:value>retroconverted</rng:value>
+            </rng:choice>
+          </content>-\->
+        </elementSpec>
+        <elementSpec ident="publicationStatus" module="expertise.control">
+          <content>
+            <textNode/>
+          </content>
+        </elementSpec>
+        <elementSpec ident="localControl" module="expertise.control">
+          <content>
+            <elementRef key="term"/>
+          </content>
+        </elementSpec>
+        <elementSpec ident="term" module="expertise.control">
+          <valList>
+            <valItem ident="in progress"/>
+            <valItem ident="to revise"/>
+            <valItem ident="completed"/>
+          </valList>
+        </elementSpec>
+        <elementSpec ident="maintenanceHistory" module="expertise.control">
+          <content>
+            <elementRef key="maintenanceEvent" minOccurs="1"/>
+          </content>
+        </elementSpec>
+        <elementSpec ident="maintenanceEvent" module="expertise.control">
+          <content>
+            <sequence>
+              <elementRef key="eventType"/>
+              <elementRef key="eventDateTime"/>
+              <elementRef key="agentType"/>
+              <elementRef key="agent"/>
+              <elementRef key="eventDescription"/>
+            </sequence>
+          </content>
+        </elementSpec>
+        <elementSpec ident="eventType" module="expertise.control">
+          <valList type="closed">
+            <valItem ident="created"/>
+            <valItem ident="revised"/>
+            <valItem ident="updated"/>
+            <valItem ident="retroconverted"/>
+          </valList>
+        </elementSpec>
+        <elementSpec ident="eventDateTime" module="expertise.control">
+          <content>
+            <rng:text/>
+          </content>
+          <attList>
+            <attDef ident="standardDateTime">
+              <datatype>
+                <rng:data type="dateTime">
+                  <rng:param name="maxInclusive">2099-12-31T23:59:59</rng:param>
+                </rng:data>
+              </datatype>
+            </attDef>
+          </attList>
+        </elementSpec>
+        <elementSpec ident="agentType" module="expertise.control">
+          <valList type="closed">
+            <valItem ident="human"/>
+            <valItem ident="machine"/>
+          </valList>
+        </elementSpec>
+        <elementSpec ident="agent" module="expertise.control">
+          <content>
+            <textNode/>
+          </content>
+        </elementSpec>
+        <elementSpec ident="eventDescription" module="expertise.control">
+          <content>
+            <textNode/>
+          </content>
+        </elementSpec>-->
+        <elementSpec ident="sourceDesc"/>
+        <elementSpec ident="description"/>
+      </schemaSpec>
+    </body>
+  </text>
+</TEI>

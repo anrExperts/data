@@ -1,0 +1,1651 @@
+<?xml version="1.0" encoding="utf-8"?>
+<grammar xmlns:xlink="http://www.w3.org/1999/xlink"
+         xmlns:tei="http://www.tei-c.org/ns/1.0"
+         xmlns:teix="http://www.tei-c.org/ns/Examples"
+         xmlns="http://relaxng.org/ns/structure/1.0"
+         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
+         ns="urn:isbn:1-931666-33-4"><!--
+Schema generated from ODD source 2021-04-02T10:08:44Z. .
+TEI Edition: Version 3.6.0. Last updated on
+	16th July 2019, revision daa3cc0b9
+TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.6.0/
+  
+--><!--CC-BY-->
+   <sch:ns xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+           prefix="tei"
+           uri="http://www.tei-c.org/ns/1.0"/>
+   <define name="abbreviation">
+      <element name="abbreviation">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Abbreviation) abbreviation or code for identifying a thesauri, controlled vocabularies, or other standard used in formulating and compiling the EAC-CPF description</a:documentation>
+         <text/>
+         <ref name="att.EACGlobal.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="abstract">
+      <element name="abstract">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Abstract) brief summary of the information contained within the <code xmlns="http://www.w3.org/1999/xhtml">&lt;biogHist&gt;</code> as a whole</a:documentation>
+         <zeroOrMore>
+            <choice>
+               <text/>
+               <ref name="span"/>
+            </choice>
+         </zeroOrMore>
+         <ref name="att.EACGlobal.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="address">
+      <element name="address">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Address) A postal or other address.</a:documentation>
+         <oneOrMore>
+            <ref name="addressLine"/>
+         </oneOrMore>
+         <ref name="att.EACGlobal.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="addressLine">
+      <element name="addressLine">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Address Line) One line of a postal or other address</a:documentation>
+         <text/>
+         <ref name="att.EACGlobal.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="agencyCode">
+      <element name="agencyCode">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Agency Code) The code that represents the institution or service responsible for the creation, maintenance and/or dissemination of the EAC-CPF instance</a:documentation>
+         <text/>
+         <ref name="att.EACGlobal.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="agencyName">
+      <element name="agencyName">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Agency Name ) The name of the institution or service responsible for the creation, maintenance, and/or dissemination of the EAC-CPF instance</a:documentation>
+         <text/>
+         <ref name="att.EACGlobal.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="agent">
+      <element name="agent">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Agent) The agent (human or machine) responsible for an event in the maintenance of the EAC instance.</a:documentation>
+         <text/>
+         <ref name="att.EACGlobal.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="agentType">
+      <element name="agentType">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Agent Type) type of agent responsible for a maintenance event of the EAC-CPF instance</a:documentation>
+         <choice>
+            <value>human</value>
+            <value>machine</value>
+         </choice>
+         <ref name="att.EACGlobal.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="alternativeForm">
+      <element name="alternativeForm">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Alternative Form) Qualifies the name contained in <code xmlns="http://www.w3.org/1999/xhtml">&lt;nameEntry&gt;</code> or set of names contained in <code xmlns="http://www.w3.org/1999/xhtml">&lt;nameEntryParallel&gt;</code> as alternative or variant forms</a:documentation>
+         <text/>
+         <ref name="att.EACGlobal.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="alternativeSet">
+      <element name="alternativeSet">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Alternative Set) container element for two or more authority records derived from two or more authority systems, expressed within a single EAC-CPF instance</a:documentation>
+         <oneOrMore>
+            <ref name="setComponent"/>
+         </oneOrMore>
+         <ref name="att.EACGlobal.attributes"/>
+         <ref name="att.based.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="authorizedForm">
+      <element name="authorizedForm">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Authorized Form) Qualifies the name contained in <code xmlns="http://www.w3.org/1999/xhtml">&lt;nameEntry&gt;</code> or the set of names contained in <code xmlns="http://www.w3.org/1999/xhtml">&lt;nameEntryParallel&gt;</code> as authorized access points.</a:documentation>
+         <oneOrMore>
+            <text/>
+         </oneOrMore>
+         <ref name="att.EACGlobal.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="biogHist">
+      <element name="biogHist">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Biographical or Historical Note ) A concise essay and/or chronology that provides biographical or historical information about the EAC-CPF entity.</a:documentation>
+         <optional>
+            <ref name="abstract"/>
+         </optional>
+         <zeroOrMore>
+            <choice>
+               <ref name="chronList"/>
+               <ref name="list"/>
+               <ref name="p"/>
+               <ref name="outline"/>
+               <ref name="citation"/>
+            </choice>
+         </zeroOrMore>
+         <ref name="att.EACGlobal.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="chronItem">
+      <element name="chronItem">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Chronological Item) A container element that keeps a date or a date range paired with an associated event and an optional place within a Chronology List <code xmlns="http://www.w3.org/1999/xhtml">&lt;chronList&gt;</code>.</a:documentation>
+         <choice>
+            <ref name="date"/>
+            <ref name="dateRange"/>
+         </choice>
+         <optional>
+            <ref name="placeEntry"/>
+         </optional>
+         <ref name="event"/>
+         <ref name="att.EACGlobal.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="chronList">
+      <element name="chronList">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Chronology List) A structured chronological list of events, dates, and (optionally) places that may be used within the <code xmlns="http://www.w3.org/1999/xhtml">&lt;biogHist&gt;</code> element.</a:documentation>
+         <oneOrMore>
+            <ref name="chronItem"/>
+         </oneOrMore>
+         <ref name="att.EACGlobal.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="citation">
+      <element name="citation">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Citation) A linking element that cites an external resource.</a:documentation>
+         <zeroOrMore>
+            <choice>
+               <text/>
+               <ref name="span"/>
+            </choice>
+         </zeroOrMore>
+         <ref name="att.EACGlobal.attributes"/>
+         <ref name="att.xlink.attributes"/>
+         <ref name="att.lastDateTimeVerified.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="componentEntry">
+      <element name="componentEntry">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Component Entry) A caption that can be used to provide identification and access to a linked resource.</a:documentation>
+         <text/>
+         <ref name="att.scriptTransliteration.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="control">
+      <element name="control">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Control) The element of the instance that contains control information about its identity, creation, maintenance, status, and the rules and authorities used in the composition of the description.</a:documentation>
+         <ref name="recordId"/>
+         <zeroOrMore>
+            <ref name="otherRecordId"/>
+         </zeroOrMore>
+         <ref name="maintenanceStatus"/>
+         <optional>
+            <ref name="publicationStatus"/>
+         </optional>
+         <ref name="maintenanceAgency"/>
+         <optional>
+            <ref name="languageDeclaration"/>
+         </optional>
+         <zeroOrMore>
+            <ref name="conventionDeclaration"/>
+         </zeroOrMore>
+         <zeroOrMore>
+            <ref name="localTypeDeclaration"/>
+         </zeroOrMore>
+         <zeroOrMore>
+            <ref name="localControl"/>
+         </zeroOrMore>
+         <zeroOrMore>
+            <ref name="maintenanceHistory"/>
+         </zeroOrMore>
+         <optional>
+            <ref name="sources"/>
+         </optional>
+         <ref name="att.EACGlobal.attributes"/>
+         <ref name="att.based.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="conventionDeclaration">
+      <element name="conventionDeclaration">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Convention Declaration) A declaration of the rules or conventions, including authorized controlled vocabularies and thesauri, applied in creating the EAC-CPF instance. </a:documentation>
+         <optional>
+            <ref name="abbreviation"/>
+         </optional>
+         <ref name="citation"/>
+         <optional>
+            <ref name="descriptiveNote"/>
+         </optional>
+         <ref name="att.EACGlobal.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="cpfDescription">
+      <element name="cpfDescription">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Corporate Body, Person, or Family Relation) corporate body, person, or family related to the described entity</a:documentation>
+         <ref name="identity"/>
+         <optional>
+            <ref name="description"/>
+         </optional>
+         <optional>
+            <ref name="relations"/>
+         </optional>
+         <optional>
+            <ref name="alternativeSet"/>
+         </optional>
+         <ref name="att.EACGlobal.attributes"/>
+         <ref name="att.access.attributes"/>
+         <ref name="att.based.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="cpfRelation">
+      <element name="cpfRelation">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Corporate Body, Person, or Family Relation) corporate body, person, or family related to the described entity</a:documentation>
+         <zeroOrMore>
+            <ref name="relationEntry"/>
+         </zeroOrMore>
+         <optional>
+            <choice>
+               <ref name="objectXMLWrap"/>
+               <ref name="objectBinWrap"/>
+            </choice>
+         </optional>
+         <optional>
+            <choice>
+               <ref name="date"/>
+               <ref name="dateRange"/>
+               <ref name="dateSet"/>
+            </choice>
+         </optional>
+         <optional>
+            <ref name="placeEntry"/>
+         </optional>
+         <optional>
+            <ref name="descriptiveNote"/>
+         </optional>
+         <ref name="att.EACGlobal.attributes"/>
+         <ref name="att.access.attributes"/>
+         <ref name="att.xlink.attributes"/>
+         <ref name="att.lastDateTimeVerified.attributes"/>
+         <optional>
+            <attribute name="cpfRelationType">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <text/>
+            </attribute>
+         </optional>
+         <empty/>
+      </element>
+   </define>
+   <define name="date">
+      <element name="date">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Date) A generic element that contains a month, day, or year in any format. Use <code xmlns="http://www.w3.org/1999/xhtml">&lt;date&gt;</code> to identify any dates that merit encoding, except for the creation and other relevant dates of the described materials, which are instead tagged with the <code xmlns="http://www.w3.org/1999/xhtml">&lt;unitdate&gt;</code> element. Examples of dates that might merit encoding are a person's birth date, the date the materials were acquired, or the date of an event in a chronology. These dates may be entered in the form of text or numbers, and may consist of a single date or range of dates.</a:documentation>
+         <zeroOrMore>
+            <choice>
+               <text/>
+            </choice>
+         </zeroOrMore>
+         <ref name="att.EACGlobal.attributes"/>
+         <ref name="att.typed.attributes"/>
+         <ref name="att.normalized.attributes"/>
+         <ref name="att.dateSingle.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="dateRange">
+      <element name="dateRange">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Date range) The date range of an event in the history of, or a relationship with, the person, family, or corporate body being described in the EAC-CPF instance. It contains <code xmlns="http://www.w3.org/1999/xhtml">&lt;fromDate&gt;</code> and <code xmlns="http://www.w3.org/1999/xhtml">&lt;toDate&gt;</code> child elements.</a:documentation>
+         <optional>
+            <ref name="fromDate"/>
+            <ref name="toDate"/>
+         </optional>
+         <ref name="att.EACGlobal.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="dateSet">
+      <element name="dateSet">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Date Set) A grouping element that facilitates complex date expressions by being able to combine single dates and date ranges, multiple single dates, or multiple date ranges. </a:documentation>
+         <choice>
+            <ref name="date"/>
+            <ref name="dateRange"/>
+         </choice>
+         <oneOrMore>
+            <choice>
+               <ref name="date"/>
+               <ref name="dateRange"/>
+            </choice>
+         </oneOrMore>
+         <ref name="att.EACGlobal.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="description">
+      <element name="description">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Description) The elements that constitute together permit descriptive information to be encoded in either structured or unstructured fashions, or in a combined approach. <code xmlns="http://www.w3.org/1999/xhtml">&lt;description&gt;</code> accommodates the encoding of all the data elements that comprise the Description Area of ISAAR (CPF) including historical, biographical, and genealogical information; legal status and mandates; functions, occupations, and activities, and the dates and places that further constrain those elements.</a:documentation>
+         <optional>
+            <ref name="existDates"/>
+         </optional>
+         <zeroOrMore>
+            <choice>
+               <ref name="places"/>
+               <ref name="place"/>
+               <ref name="localDescription"/>
+               <ref name="localDescriptions"/>
+               <ref name="legalStatus"/>
+               <ref name="legalStatuses"/>
+               <ref name="function"/>
+               <ref name="functions"/>
+               <ref name="languageUsed"/>
+               <ref name="languagesUsed"/>
+               <ref name="occupation"/>
+               <ref name="occupations"/>
+               <ref name="mandate"/>
+               <ref name="mandates"/>
+               <ref name="structureOrGenealogy"/>
+               <ref name="generalContext"/>
+            </choice>
+         </zeroOrMore>
+         <zeroOrMore>
+            <ref name="biogHist"/>
+         </zeroOrMore>
+         <ref name="att.EACGlobal.attributes"/>
+         <ref name="att.based.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="descriptiveNote">
+      <element name="descriptiveNote">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Descriptive Note) A generic element that provides additional information and specifications, in textual form, concerning the descriptive element in which it is contained. </a:documentation>
+         <oneOrMore>
+            <ref name="p"/>
+         </oneOrMore>
+         <ref name="att.EACGlobal.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="eac-cpf">
+      <element name="eac-cpf">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Encoded Archival Context - Corporate Bodies, Persons, and
+                            Families) contains contains the entire EAC-CPF description of the person, corporate body, or family.</a:documentation>
+         <group>
+            <ref name="control"/>
+            <choice>
+               <ref name="cpfDescription"/>
+               <ref name="multipleIdentities"/>
+            </choice>
+         </group>
+         <ref name="att.EACGlobal.attributes"/>
+         <ref name="att.based.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="entityId">
+      <element name="entityId">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Entity Identifier) formal identifier used to designate the entity being described.</a:documentation>
+         <text/>
+         <ref name="att.EACGlobal.attributes"/>
+         <ref name="att.coded.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="entityType">
+      <element name="entityType">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Entity Type) The type of CPF entity being described. Values available are: person, corporateBody, or family.</a:documentation>
+         <choice>
+            <value>person</value>
+            <value>corporateBody</value>
+            <value>family</value>
+         </choice>
+         <ref name="att.EACGlobal.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="event">
+      <element name="event">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Event) That part of a Chronology List Item <code xmlns="http://www.w3.org/1999/xhtml">&lt;chronitem&gt;</code> which describes or names something that happened. The <code xmlns="http://www.w3.org/1999/xhtml">&lt;event&gt;</code> is paired with a <code xmlns="http://www.w3.org/1999/xhtml">&lt;date&gt;</code> (a single date or date range) and can be grouped with other events in <code xmlns="http://www.w3.org/1999/xhtml">&lt;eventgrp&gt;</code>, if multiple events need to be associated with the same <code xmlns="http://www.w3.org/1999/xhtml">&lt;date&gt;</code>.</a:documentation>
+         <text/>
+         <ref name="att.EACGlobal.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="eventDateTime">
+      <element name="eventDateTime">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Maintenance Event Date and Time) The date and time of a maintenance event for the EAC-CPF instance.</a:documentation>
+         <text/>
+         <ref name="att.EACGlobal.attributes"/>
+         <optional>
+            <attribute name="standardDateTime">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <choice>
+                  <data type="date">
+                     <param name="maxInclusive">2099-12-31</param>
+                  </data>
+                  <data type="gYear">
+                     <param name="maxInclusive">2099</param>
+                  </data>
+                  <data type="gYearMonth">
+                     <param name="maxInclusive">2099-12</param>
+                  </data>
+                  <data type="dateTime">
+                     <param name="maxInclusive">2099-12-31T23:59:59</param>
+                  </data>
+               </choice>
+            </attribute>
+         </optional>
+         <empty/>
+      </element>
+   </define>
+   <define name="eventDescription">
+      <element name="eventDescription">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Maintenance Event Description) The description of a maintenance event in the life of the EAC-CPF instance.</a:documentation>
+         <text/>
+         <ref name="att.EACGlobal.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="eventType">
+      <element name="eventType">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Maintenance Event Type) The type of maintenance event for the EAC-CPF instance.</a:documentation>
+         <choice>
+            <value>cancelled</value>
+            <value>created</value>
+            <value>deleted</value>
+            <value>derived</value>
+            <value>revised</value>
+            <value>updated</value>
+         </choice>
+         <ref name="att.EACGlobal.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="existDates">
+      <element name="existDates">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Dates of Existence) The dates of existence of the entity being described, such as dates of establishment and dissolution for corporate bodies and dates of birth and death or floruit for persons. </a:documentation>
+         <choice>
+            <ref name="date"/>
+            <ref name="dateRange"/>
+            <ref name="dateSet"/>
+         </choice>
+         <optional>
+            <ref name="descriptiveNote"/>
+         </optional>
+         <ref name="att.EACGlobal.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="fromDate">
+      <element name="fromDate">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(From Date) The beginning date in a date range.</a:documentation>
+         <text/>
+         <ref name="att.EACGlobal.attributes"/>
+         <ref name="att.dateSingle.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="function">
+      <element name="function">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Function) Terms for the spheres of activities and processes that generated the described materials. Such terms often provide useful access points to the materials, especially for corporate, government, or institutional records. Examples include: collecting taxes and entertaining.</a:documentation>
+         <optional>
+            <ref name="term"/>
+         </optional>
+         <zeroOrMore>
+            <ref name="placeEntry"/>
+         </zeroOrMore>
+         <optional>
+            <choice>
+               <ref name="date"/>
+               <ref name="dateRange"/>
+               <ref name="dateSet"/>
+            </choice>
+         </optional>
+         <optional>
+            <ref name="citation"/>
+         </optional>
+         <optional>
+            <ref name="descriptiveNote"/>
+         </optional>
+         <ref name="att.EACGlobal.attributes"/>
+         <ref name="att.access.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="functionRelation">
+      <element name="functionRelation">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Function Relation) An element designed to encode a relationship between a function and the CPF entity described in the EAC-CPF instance.</a:documentation>
+         <zeroOrMore>
+            <ref name="relationEntry"/>
+         </zeroOrMore>
+         <optional>
+            <choice>
+               <ref name="objectXMLWrap"/>
+               <ref name="objectBinWrap"/>
+            </choice>
+         </optional>
+         <optional>
+            <choice>
+               <ref name="date"/>
+               <ref name="dateRange"/>
+               <ref name="dateSet"/>
+            </choice>
+         </optional>
+         <optional>
+            <ref name="placeEntry"/>
+         </optional>
+         <optional>
+            <ref name="descriptiveNote"/>
+         </optional>
+         <ref name="att.EACGlobal.attributes"/>
+         <ref name="att.xlink.attributes"/>
+         <ref name="att.lastDateTimeVerified.attributes"/>
+         <optional>
+            <attribute name="functionRelationType">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <text/>
+            </attribute>
+         </optional>
+         <empty/>
+      </element>
+   </define>
+   <define name="functions">
+      <element name="functions">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Functions) A grouping element used to bundle together individual <code xmlns="http://www.w3.org/1999/xhtml">&lt;function&gt;</code> elements.</a:documentation>
+         <choice>
+            <group>
+               <oneOrMore>
+                  <ref name="function"/>
+               </oneOrMore>
+               <optional>
+                  <ref name="descriptiveNote"/>
+               </optional>
+            </group>
+            <zeroOrMore>
+               <ref name="model.discursiveSet"/>
+            </zeroOrMore>
+         </choice>
+         <ref name="att.EACGlobal.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="generalContext">
+      <element name="generalContext">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(General Context) An element that encodes information about the general social and cultural context of the CPF entity being described. </a:documentation>
+         <zeroOrMore>
+            <ref name="model.discursiveSet"/>
+         </zeroOrMore>
+         <ref name="att.EACGlobal.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="identity">
+      <element name="identity">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Identity) A wrapper element for the name or names related to the identity being described within the <code xmlns="http://www.w3.org/1999/xhtml">&lt;cpfDescription&gt;</code> element in the EAC-CPF instance. In case of multiple identities, a separate <code xmlns="http://www.w3.org/1999/xhtml">&lt;identity&gt;</code> element is contained in each of the <code xmlns="http://www.w3.org/1999/xhtml">&lt;cpfDescription&gt;</code> elements of instance.</a:documentation>
+         <zeroOrMore>
+            <ref name="entityId"/>
+         </zeroOrMore>
+         <ref name="entityType"/>
+         <oneOrMore>
+            <choice>
+               <ref name="nameEntryParallel"/>
+               <ref name="nameEntry"/>
+            </choice>
+         </oneOrMore>
+         <optional>
+            <ref name="descriptiveNote"/>
+         </optional>
+         <ref name="att.EACGlobal.attributes"/>
+         <ref name="att.based.attributes"/>
+         <optional>
+            <attribute name="identityType">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <text/>
+            </attribute>
+         </optional>
+         <empty/>
+      </element>
+   </define>
+   <define name="item">
+      <element name="item">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Item) A formatting element that encodes the individual entries in a <code xmlns="http://www.w3.org/1999/xhtml">&lt;list&gt;</code>.</a:documentation>
+         <zeroOrMore>
+            <choice>
+               <text/>
+               <ref name="span"/>
+            </choice>
+         </zeroOrMore>
+         <ref name="att.EACGlobal.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="language">
+      <element name="language">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Language) The specification of a particular language used in the EAC-CPF instance or in the creative work of the CPF entity being described. </a:documentation>
+         <text/>
+         <ref name="att.EACGlobal.attributes"/>
+         <optional>
+            <attribute name="languageCode">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The three-lettter code for the language in which an <code xmlns="http://www.w3.org/1999/xhtml">&lt;abstract&gt;</code> is written, for the <code xmlns="http://www.w3.org/1999/xhtml">&lt;language&gt;</code> of the finding aid and the <code xmlns="http://www.w3.org/1999/xhtml">&lt;language&gt;</code> of the materials.</a:documentation>
+               <data type="string">
+                  <param name="pattern">[a-z]{3}</param>
+               </data>
+            </attribute>
+         </optional>
+         <empty/>
+      </element>
+   </define>
+   <define name="languageDeclaration">
+      <element name="languageDeclaration">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Language Declaration) The declaration of the predominant language and script used in the EAC-CPF instance. </a:documentation>
+         <ref name="language"/>
+         <ref name="script"/>
+         <optional>
+            <ref name="descriptiveNote"/>
+         </optional>
+         <ref name="att.EACGlobal.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="languagesUsed">
+      <element name="languagesUsed">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Languages used) A grouping element used to bundle together individual <code xmlns="http://www.w3.org/1999/xhtml">&lt;languageUsed&gt;</code> elements.</a:documentation>
+         <oneOrMore>
+            <ref name="languageUsed"/>
+         </oneOrMore>
+         <optional>
+            <ref name="descriptiveNote"/>
+         </optional>
+         <ref name="att.EACGlobal.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="languageUsed">
+      <element name="languageUsed">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Language used) The language and script used by the CPF entity being described.</a:documentation>
+         <ref name="language"/>
+         <ref name="script"/>
+         <optional>
+            <ref name="descriptiveNote"/>
+         </optional>
+         <ref name="att.EACGlobal.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="legalStatus">
+      <element name="legalStatus">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Legal Status) An element used to encode information about the legal status of a corporate body.</a:documentation>
+         <optional>
+            <ref name="term"/>
+         </optional>
+         <zeroOrMore>
+            <ref name="placeEntry"/>
+         </zeroOrMore>
+         <optional>
+            <choice>
+               <ref name="date"/>
+               <ref name="dateRange"/>
+               <ref name="dateSet"/>
+            </choice>
+         </optional>
+         <optional>
+            <ref name="citation"/>
+         </optional>
+         <optional>
+            <ref name="descriptiveNote"/>
+         </optional>
+         <ref name="att.EACGlobal.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="legalStatuses">
+      <element name="legalStatuses">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Legal Statues) A grouping element used to bundle together individual <code xmlns="http://www.w3.org/1999/xhtml">&lt;legalStatus&gt;</code> elements.</a:documentation>
+         <oneOrMore>
+            <ref name="legalStatus"/>
+         </oneOrMore>
+         <optional>
+            <ref name="descriptiveNote"/>
+         </optional>
+         <zeroOrMore>
+            <ref name="p"/>
+            <ref name="list"/>
+            <ref name="citation"/>
+            <ref name="outline"/>
+         </zeroOrMore>
+         <ref name="att.EACGlobal.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="level">
+      <element name="level">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Level) A required element within <code xmlns="http://www.w3.org/1999/xhtml">&lt;outline&gt;</code> that delineates the outline format.</a:documentation>
+         <ref name="item"/>
+         <zeroOrMore>
+            <ref name="level"/>
+         </zeroOrMore>
+         <ref name="att.EACGlobal.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="list">
+      <element name="list">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(List) A wrapper element to encode a simple list consisting of one or more <code xmlns="http://www.w3.org/1999/xhtml">&lt;item&gt;</code> elements.</a:documentation>
+         <oneOrMore>
+            <ref name="item"/>
+         </oneOrMore>
+         <ref name="att.EACGlobal.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="localControl">
+      <element name="localControl">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Local Control) Any additional control entry necessary to accommodate local practice.</a:documentation>
+         <optional>
+            <ref name="term"/>
+            <choice>
+               <ref name="date"/>
+               <ref name="dateRange"/>
+            </choice>
+         </optional>
+         <ref name="att.EACGlobal.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="localDescription">
+      <element name="localDescription">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Local Description) Used to extend the descriptive categories to others available in a local system. Its meaning will depend on the context in which it occurs.</a:documentation>
+         <optional>
+            <ref name="term"/>
+         </optional>
+         <zeroOrMore>
+            <ref name="placeEntry"/>
+         </zeroOrMore>
+         <optional>
+            <choice>
+               <ref name="date"/>
+               <ref name="dateRange"/>
+               <ref name="dateSet"/>
+            </choice>
+         </optional>
+         <optional>
+            <ref name="citation"/>
+         </optional>
+         <optional>
+            <ref name="descriptiveNote"/>
+         </optional>
+         <ref name="att.EACGlobal.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="localDescriptions">
+      <element name="localDescriptions">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Local Descriptions) A grouping element used to bundle together individual <code xmlns="http://www.w3.org/1999/xhtml">&lt;localDescription&gt;</code> elements.</a:documentation>
+         <choice>
+            <group>
+               <oneOrMore>
+                  <ref name="localDescription"/>
+               </oneOrMore>
+               <optional>
+                  <ref name="descriptiveNote"/>
+               </optional>
+            </group>
+            <zeroOrMore>
+               <ref name="model.discursiveSet"/>
+            </zeroOrMore>
+         </choice>
+         <ref name="att.EACGlobal.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="localTypeDeclaration">
+      <element name="localTypeDeclaration">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Local Type Declaration) <code xmlns="http://www.w3.org/1999/xhtml">&lt;localTypeDeclaration&gt;</code> is used to declare any local conventions used in localType in the EAC-CPF instance.</a:documentation>
+         <ref name="citation"/>
+         <optional>
+            <ref name="abbreviation"/>
+            <ref name="descriptiveNote"/>
+         </optional>
+         <ref name="att.EACGlobal.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="maintenanceAgency">
+      <element name="maintenanceAgency">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Maintenance Agency) The institution or service responsible for the creation, maintenance, and/or dissemination of the EAC-CPF instance.</a:documentation>
+         <optional>
+            <ref name="agencyCode"/>
+         </optional>
+         <zeroOrMore>
+            <ref name="otherAgencyCode"/>
+         </zeroOrMore>
+         <ref name="agencyName"/>
+         <optional>
+            <ref name="descriptiveNote"/>
+         </optional>
+         <ref name="att.EACGlobal.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="maintenanceEvent">
+      <element name="maintenanceEvent">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Maintenance Event) A maintenance event in the life of the EAC-CPF instance.</a:documentation>
+         <ref name="eventType"/>
+         <ref name="eventDateTime"/>
+         <ref name="agentType"/>
+         <ref name="agent"/>
+         <optional>
+            <ref name="eventDescription"/>
+         </optional>
+         <ref name="att.EACGlobal.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="maintenanceHistory">
+      <element name="maintenanceHistory">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Maintenance History) The history of the creation and maintenance of the EAC-CPF instance.</a:documentation>
+         <oneOrMore>
+            <ref name="maintenanceEvent"/>
+         </oneOrMore>
+         <ref name="att.EACGlobal.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="maintenanceStatus">
+      <element name="maintenanceStatus">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Maintenance Status) The current drafting status of the EAC-CPF instance.</a:documentation>
+         <choice>
+            <value>revised</value>
+            <value>deleted</value>
+            <value>new</value>
+            <value>deletedSplit</value>
+            <value>deletedReplaced</value>
+            <value>cancelled</value>
+            <value>derived</value>
+         </choice>
+         <ref name="att.EACGlobal.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="mandate">
+      <element name="mandate">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Mandate) The source of authority or mandate for the corporate body in terms of its powers, functions, responsibilities or sphere of activities, such as a law, directive, or charter.</a:documentation>
+         <optional>
+            <ref name="term"/>
+         </optional>
+         <zeroOrMore>
+            <ref name="placeEntry"/>
+         </zeroOrMore>
+         <optional>
+            <choice>
+               <ref name="date"/>
+               <ref name="dateRange"/>
+               <ref name="dateSet"/>
+            </choice>
+         </optional>
+         <optional>
+            <ref name="citation"/>
+         </optional>
+         <optional>
+            <ref name="descriptiveNote"/>
+         </optional>
+         <ref name="att.EACGlobal.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="mandates">
+      <element name="mandates">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Mandates) A grouping element used to bundle together individual <code xmlns="http://www.w3.org/1999/xhtml">&lt;mandate&gt;</code> elements.</a:documentation>
+         <oneOrMore>
+            <ref name="mandate"/>
+         </oneOrMore>
+         <optional>
+            <ref name="descriptiveNote"/>
+         </optional>
+         <zeroOrMore>
+            <ref name="p"/>
+            <ref name="list"/>
+            <ref name="citation"/>
+            <ref name="outline"/>
+         </zeroOrMore>
+         <ref name="att.EACGlobal.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="multipleIdentities">
+      <element name="multipleIdentities">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Multiple Identities) A wrapper element used to group together more than one <code xmlns="http://www.w3.org/1999/xhtml">&lt;cpfDescription&gt;</code> within a single EAC-CPF instance.</a:documentation>
+         <ref name="cpfDescription"/>
+         <oneOrMore>
+            <ref name="cpfDescription"/>
+         </oneOrMore>
+         <ref name="att.EACGlobal.attributes"/>
+         <ref name="att.based.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="nameEntry">
+      <element name="nameEntry">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Name Entry) An element containing a name entry for a corporate body, person, or family. <code xmlns="http://www.w3.org/1999/xhtml">&lt;nameEntry&gt;</code> is made up of one or more <code xmlns="http://www.w3.org/1999/xhtml">&lt;part&gt;</code> elements so that the CPF entity can be identified with certainty and distinguished from others bearing the same or similar names.</a:documentation>
+         <oneOrMore>
+            <ref name="part"/>
+         </oneOrMore>
+         <optional>
+            <ref name="useDates"/>
+            <ref name="preferredForm"/>
+         </optional>
+         <zeroOrMore>
+            <ref name="model.nameEntryAuthorizedorAlternative"/>
+         </zeroOrMore>
+         <ref name="att.EACGlobal.attributes"/>
+         <ref name="att.scriptTransliteration.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="nameEntryParallel">
+      <element name="nameEntryParallel">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Name Entry Parallel) A wrapper element for two or more <code xmlns="http://www.w3.org/1999/xhtml">&lt;nameEntry&gt;</code> elements that represent parallel forms of the name.</a:documentation>
+         <ref name="nameEntry"/>
+         <oneOrMore>
+            <ref name="nameEntry"/>
+         </oneOrMore>
+         <zeroOrMore>
+            <ref name="useDates"/>
+         </zeroOrMore>
+         <zeroOrMore>
+            <ref name="model.nameEntryAuthorizedorAlternative"/>
+         </zeroOrMore>
+         <ref name="att.EACGlobal.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="objectBinWrap">
+      <element name="objectBinWrap">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Object Bin Wrap) This element provides a place for a base64-encoded binary representation of a resource.</a:documentation>
+         <data type="base64Binary"/>
+         <ref name="att.EACGlobal.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="objectXMLWrap">
+      <element name="objectXMLWrap">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Object XML Wrap) A place for incorporating XML elements from any XML namespace.</a:documentation>
+         <empty/>
+         <ref name="att.EACGlobal.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="occupation">
+      <element name="occupation">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Occupation) An element that provides information about the occupation of the CPF entity being described.</a:documentation>
+         <optional>
+            <ref name="term"/>
+         </optional>
+         <zeroOrMore>
+            <ref name="placeEntry"/>
+         </zeroOrMore>
+         <optional>
+            <choice>
+               <ref name="date"/>
+               <ref name="dateRange"/>
+               <ref name="dateSet"/>
+            </choice>
+         </optional>
+         <optional>
+            <ref name="citation"/>
+         </optional>
+         <optional>
+            <ref name="descriptiveNote"/>
+         </optional>
+         <ref name="att.EACGlobal.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="occupations">
+      <element name="occupations">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Occupations) A grouping element used to bundle together individual <code xmlns="http://www.w3.org/1999/xhtml">&lt;occupation&gt;</code> elements.</a:documentation>
+         <oneOrMore>
+            <ref name="occupation"/>
+         </oneOrMore>
+         <optional>
+            <ref name="descriptiveNote"/>
+         </optional>
+         <zeroOrMore>
+            <ref name="p"/>
+            <ref name="list"/>
+            <ref name="citation"/>
+            <ref name="outline"/>
+         </zeroOrMore>
+         <ref name="att.EACGlobal.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="otherAgencyCode">
+      <element name="otherAgencyCode">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Other Agency Code) Alternate code representing the institution or service responsible for the creation, maintenance, and/or dissemination of the EAC-CPF instance.</a:documentation>
+         <text/>
+         <ref name="att.EACGlobal.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="otherRecordId">
+      <element name="otherRecordId">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Other Record Id) Alternative record identifiers that may be associated with the EAC-CPF instance.</a:documentation>
+         <text/>
+         <ref name="att.EACGlobal.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="outline">
+      <element name="outline">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Outline) An element used within other elements of <code xmlns="http://www.w3.org/1999/xhtml">&lt;description&gt;</code> to encode information in an outline format.</a:documentation>
+         <oneOrMore>
+            <ref name="level"/>
+         </oneOrMore>
+         <ref name="att.EACGlobal.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="p">
+      <element name="p">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Paragraph) A generic element used within other elements of <code xmlns="http://www.w3.org/1999/xhtml">&lt;description&gt;</code> that marks one or more sentences that form a logical prose passage.</a:documentation>
+         <zeroOrMore>
+            <choice>
+               <text/>
+               <ref name="span"/>
+            </choice>
+         </zeroOrMore>
+         <ref name="att.EACGlobal.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="part">
+      <element name="part">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Part) <code xmlns="http://www.w3.org/1999/xhtml">&lt;part&gt;</code> is used to distinguish components of the name of the CPF entity’s name within <code xmlns="http://www.w3.org/1999/xhtml">&lt;nameEntry&gt;</code>.</a:documentation>
+         <text/>
+         <ref name="att.EACGlobal.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="place">
+      <element name="place">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Place) An element that provides information about a place or jurisdiction where the CPF entity was based, lived, or with which it had some other significant connection.</a:documentation>
+         <optional>
+            <ref name="placeRole"/>
+         </optional>
+         <zeroOrMore>
+            <ref name="placeEntry"/>
+         </zeroOrMore>
+         <optional>
+            <ref name="address"/>
+         </optional>
+         <optional>
+            <choice>
+               <ref name="date"/>
+               <ref name="dateRange"/>
+               <ref name="dateSet"/>
+            </choice>
+         </optional>
+         <optional>
+            <ref name="citation"/>
+         </optional>
+         <optional>
+            <ref name="descriptiveNote"/>
+         </optional>
+         <ref name="att.EACGlobal.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="placeEntry">
+      <element name="placeEntry">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Place Entry) An element used to encode information about the place or jurisdiction where the CPF entity described in the EAC-CPF instance was based, lived, or with which it had some other significant connection.</a:documentation>
+         <text/>
+         <ref name="att.EACGlobal.attributes"/>
+         <ref name="att.vocabularySource.attributes"/>
+         <ref name="att.scriptTransliteration.attributes"/>
+         <ref name="att.geographicalCoordinates.attributes"/>
+         <ref name="att.coded.attributes"/>
+         <optional>
+            <attribute name="accuracy">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <text/>
+            </attribute>
+         </optional>
+         <empty/>
+      </element>
+   </define>
+   <define name="placeRole">
+      <element name="placeRole">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Place Role) An element to identify the contextual role a place or jurisdiction encoded in <code xmlns="http://www.w3.org/1999/xhtml">&lt;place&gt;</code> elements has in relation to the CPF entity.</a:documentation>
+         <text/>
+         <ref name="att.EACGlobal.attributes"/>
+         <ref name="att.lastDateTimeVerified.attributes"/>
+         <ref name="att.vocabularySource.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="places">
+      <element name="places">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Places) A grouping element used to bundle together individual <code xmlns="http://www.w3.org/1999/xhtml">&lt;place&gt;</code> elements.</a:documentation>
+         <empty/>
+         <ref name="att.EACGlobal.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="preferredForm">
+      <element name="preferredForm">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Preferred Form of Name) An element used to indicate which of the parallel names recorded within <code xmlns="http://www.w3.org/1999/xhtml">&lt;nameEntryParallel&gt;</code>, is the preferred one for display purposes in a given context.</a:documentation>
+         <data type="NMTOKEN"/>
+         <ref name="att.EACGlobal.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="publicationStatus">
+      <element name="publicationStatus">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Publication Status) The current publication status of the EAC-CPF instance.</a:documentation>
+         <choice>
+            <value>inProcess</value>
+            <value>approved</value>
+         </choice>
+         <ref name="att.EACGlobal.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="recordId">
+      <element name="recordId">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Record Identifier) The unique identifier for a particular instance.</a:documentation>
+         <data type="NMTOKEN"/>
+         <ref name="att.EACGlobal.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="relationEntry">
+      <element name="relationEntry">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Relation Entry) A descriptive element for relations that identifies the relationship in a textual form.</a:documentation>
+         <text/>
+         <ref name="att.EACGlobal.attributes"/>
+         <ref name="att.scriptTransliteration.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="relations">
+      <element name="relations">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Relations) A wrapper element for grouping one or more specific relations, each of them expressed by <code xmlns="http://www.w3.org/1999/xhtml">&lt;cpfRelation&gt;</code>, <code xmlns="http://www.w3.org/1999/xhtml">&lt;resourceRelation&gt;</code>, or <code xmlns="http://www.w3.org/1999/xhtml">&lt;functionRelation&gt;</code>.</a:documentation>
+         <zeroOrMore>
+            <ref name="cpfRelation"/>
+            <ref name="resourceRelation"/>
+            <ref name="functionRelation"/>
+         </zeroOrMore>
+         <ref name="att.EACGlobal.attributes"/>
+         <ref name="att.based.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="resourceRelation">
+      <element name="resourceRelation">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Resource Relation) An element for encoding a relation between a resource and the CPF entity.</a:documentation>
+         <zeroOrMore>
+            <ref name="relationEntry"/>
+         </zeroOrMore>
+         <zeroOrMore>
+            <choice>
+               <ref name="objectXMLWrap"/>
+               <ref name="objectBinWrap"/>
+            </choice>
+         </zeroOrMore>
+         <optional>
+            <choice>
+               <ref name="date"/>
+               <ref name="dateRange"/>
+               <ref name="dateSet"/>
+            </choice>
+         </optional>
+         <optional>
+            <ref name="placeEntry"/>
+            <ref name="descriptiveNote"/>
+         </optional>
+         <ref name="att.EACGlobal.attributes"/>
+         <ref name="att.lastDateTimeVerified.attributes"/>
+         <ref name="att.xlink.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="script">
+      <element name="script">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Script) The specification of a particular script used in the EAC-CPF instance or in the creative work of the CPF entity being described. </a:documentation>
+         <text/>
+         <ref name="att.EACGlobal.attributes"/>
+         <optional>
+            <attribute name="scriptCode">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <data type="string">
+                  <param name="pattern">[A-Z][a-z]{3}</param>
+               </data>
+            </attribute>
+         </optional>
+         <empty/>
+      </element>
+   </define>
+   <define name="setComponent">
+      <element name="setComponent">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Set Component) A wrapper element within <code xmlns="http://www.w3.org/1999/xhtml">&lt;alternativeSet&gt;</code> that contains the EAC-CPF encoding for one entire authority record, thereby permitting the bundling of authority records from multiple authority systems within a single <code xmlns="http://www.w3.org/1999/xhtml">&lt;cpfDescription&gt;</code>.</a:documentation>
+         <zeroOrMore>
+            <ref name="componentEntry"/>
+         </zeroOrMore>
+         <optional>
+            <choice>
+               <ref name="objectXMLWrap"/>
+               <ref name="objectBinWrap"/>
+            </choice>
+         </optional>
+         <optional>
+            <ref name="descriptiveNote"/>
+         </optional>
+         <ref name="att.EACGlobal.attributes"/>
+         <ref name="att.lastDateTimeVerified.attributes"/>
+         <ref name="att.xlink.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="source">
+      <element name="source">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Source) A source used for the establishement of the description of the CPF entity in the EAC-CPF instance.</a:documentation>
+         <optional>
+            <ref name="sourceEntry"/>
+         </optional>
+         <optional>
+            <choice>
+               <ref name="objectBinWrap"/>
+               <ref name="objectXMLWrap"/>
+            </choice>
+         </optional>
+         <optional>
+            <ref name="descriptiveNote"/>
+         </optional>
+         <ref name="att.EACGlobal.attributes"/>
+         <ref name="att.lastDateTimeVerified.attributes"/>
+         <ref name="att.xlink.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="sourceEntry">
+      <element name="sourceEntry">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Source Entry) A textual identification, such as a title, for a particular source of evidence used to establish the description of the CPF entity in the EAC-CPF instance. </a:documentation>
+         <text/>
+         <ref name="att.EACGlobal.attributes"/>
+         <ref name="att.scriptTransliteration.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="sources">
+      <element name="sources">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Sources) A source used for the establishement of the description of the CPF entity in the EAC-CPF instance.</a:documentation>
+         <oneOrMore>
+            <ref name="source"/>
+         </oneOrMore>
+         <ref name="att.EACGlobal.attributes"/>
+         <ref name="att.based.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="span">
+      <element name="span">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Span) Specifies the beginning and the end of a span of text.</a:documentation>
+         <text/>
+         <ref name="att.EACGlobal.attributes"/>
+         <optional>
+            <attribute name="style">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+            </attribute>
+         </optional>
+         <empty/>
+      </element>
+   </define>
+   <define name="structureOrGenealogy">
+      <element name="structureOrGenealogy">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Structure or Genealogy) A description of the internal administrative structure(s) of a corporate body or the genealogy of a family. </a:documentation>
+         <zeroOrMore>
+            <ref name="model.discursiveSet"/>
+         </zeroOrMore>
+         <ref name="att.EACGlobal.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="term">
+      <element name="term">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Term) A generic element used to encode a descriptive term in accordance with local descriptive rules. </a:documentation>
+         <text/>
+         <ref name="att.EACGlobal.attributes"/>
+         <ref name="att.lastDateTimeVerified.attributes"/>
+         <ref name="att.scriptTransliteration.attributes"/>
+         <ref name="att.vocabularySource.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="toDate">
+      <element name="toDate">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(From Date) The ending date in a date range.</a:documentation>
+         <text/>
+         <ref name="att.EACGlobal.attributes"/>
+         <ref name="att.dateSingle.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="useDates">
+      <element name="useDates">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Dates of Use) The dates when the name or names were used for or by the CPF entity being described.</a:documentation>
+         <choice>
+            <ref name="date"/>
+            <ref name="dateRange"/>
+            <ref name="dateSet"/>
+         </choice>
+         <ref name="att.EACGlobal.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="att.EACGlobal.attributes">
+      <ref name="att.EACGlobal.attribute.xmlid"/>
+      <ref name="att.EACGlobal.attribute.xmllang"/>
+      <ref name="att.EACGlobal.attribute.localType"/>
+   </define>
+   <define name="att.EACGlobal.attribute.xmlid">
+      <optional>
+         <attribute name="xml:id">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(XML identifier) A unique identifier available on most elements that can be used to name specific elements in the EAC-CPF instance.An identifier used to name the element so that it can be referred to, or referenced from, somewhere else. Each xml:id within a document must have a unique value. The xml:id attribute regularizes the naming of the element and thus facilitates building links between it and other resources. For example, the xml:id may be used to uniquely identify two or more  within . Uniquely identifying or distinguishing two or more  may be essential or useful in maintenance environments when relating resources, functions, or corporate bodies, persons, or families to one among two or more identities represented in one EAC-CPF instance.</a:documentation>
+            <data type="ID"/>
+         </attribute>
+      </optional>
+   </define>
+   <define name="att.EACGlobal.attribute.xmllang">
+      <optional>
+         <attribute name="xml:lang">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(XML Language) Two-letter language code from the IANA registry as dictated by the W3C specification.The xml:lang may occur on any element intended to contain natural language content whenever information about the language of the content of this element and its children are needed. xml:lang should be used when the language of the element differs from the Language Code declared in the languageCode attribute on the element  within the  element. The values in the list are taken from the IANA Registry (http://www.iana.org/assignments/language-subtag-registry). The use of the IANA Registry code for languages in this context is outlined in the W3C specification. The syntax is specified at: http://www.w3.org/International/articles/language-tags/.</a:documentation>
+            <text/>
+         </attribute>
+      </optional>
+   </define>
+   <define name="att.EACGlobal.attribute.localType">
+      <optional>
+         <attribute name="localType">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+            <text/>
+         </attribute>
+      </optional>
+   </define>
+   <define name="att.based.attributes">
+      <ref name="att.based.attribute.base"/>
+   </define>
+   <define name="att.based.attribute.base">
+      <optional>
+         <attribute name="xml:base" ns="http://www.w3.org/XML/1998/namespace">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+         </attribute>
+      </optional>
+   </define>
+   <define name="att.typed.attributes">
+      <ref name="att.typed.attribute.type"/>
+   </define>
+   <define name="att.typed.attribute.type">
+      <optional>
+         <attribute name="type">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">characterizes the element in some sense, using any convenient classification scheme or typology.</a:documentation>
+         </attribute>
+      </optional>
+   </define>
+   <define name="att.coded.attributes">
+      <ref name="att.coded.attribute.countryCode"/>
+   </define>
+   <define name="att.coded.attribute.countryCode">
+      <optional>
+         <attribute name="countryCode">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A unique code for the country in which the materials being described are held.</a:documentation>
+            <choice>
+               <data type="string">
+                  <param name="pattern">[A-Z]{2}</param>
+               </data>
+               <data type="string">
+                  <param name="pattern">[A-Z]{4}</param>
+               </data>
+            </choice>
+         </attribute>
+      </optional>
+   </define>
+   <define name="att.normalized.attributes">
+      <ref name="att.normalized.attribute.normal"/>
+   </define>
+   <define name="att.normalized.attribute.normal">
+      <optional>
+         <attribute name="normal">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A consistent form, usually from a controlled vocabulary list to facilitate retrieval</a:documentation>
+            <text/>
+         </attribute>
+      </optional>
+   </define>
+   <define name="att.scriptTransliteration.attributes">
+      <ref name="att.scriptTransliteration.attribute.scriptCode"/>
+      <ref name="att.scriptTransliteration.attribute.transliteration"/>
+   </define>
+   <define name="att.scriptTransliteration.attribute.scriptCode">
+      <optional>
+         <attribute name="scriptCode">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+            <data type="string">
+               <param name="pattern">[A-Z][a-z]{3}</param>
+            </data>
+         </attribute>
+      </optional>
+   </define>
+   <define name="att.scriptTransliteration.attribute.transliteration">
+      <optional>
+         <attribute name="transliteration">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+            <data type="NMTOKEN"/>
+         </attribute>
+      </optional>
+   </define>
+   <define name="att.access.attributes">
+      <ref name="att.access.attribute.source"/>
+      <ref name="att.access.attribute.rules"/>
+      <ref name="att.access.attribute.authfilenumber"/>
+      <ref name="att.access.attribute.normal"/>
+   </define>
+   <define name="att.access.attribute.source">
+      <optional>
+         <attribute name="source">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+            <data type="NMTOKEN"/>
+         </attribute>
+      </optional>
+   </define>
+   <define name="att.access.attribute.rules">
+      <optional>
+         <attribute name="rules">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+            <data type="NMTOKEN"/>
+         </attribute>
+      </optional>
+   </define>
+   <define name="att.access.attribute.authfilenumber">
+      <optional>
+         <attribute name="authfilenumber">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+            <text/>
+         </attribute>
+      </optional>
+   </define>
+   <define name="att.access.attribute.normal">
+      <optional>
+         <attribute name="normal">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A consistent form, usually from a controlled vocabulary list to facilitate retrieval</a:documentation>
+            <text/>
+         </attribute>
+      </optional>
+   </define>
+   <define name="att.lastDateTimeVerified.attributes">
+      <ref name="att.lastDateTimeVerified.attribute.lastDateTimeVerified"/>
+   </define>
+   <define name="att.lastDateTimeVerified.attribute.lastDateTimeVerified">
+      <optional>
+         <attribute name="lastDateTimeVerified">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+         </attribute>
+      </optional>
+   </define>
+   <define name="att.dateSingle.attributes">
+      <ref name="att.dateSingle.attribute.standardDate"/>
+      <ref name="att.dateSingle.attribute.notBefore"/>
+      <ref name="att.dateSingle.attribute.notAfter"/>
+   </define>
+   <define name="att.dateSingle.attribute.standardDate">
+      <optional>
+         <attribute name="standardDate">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+         </attribute>
+      </optional>
+   </define>
+   <define name="att.dateSingle.attribute.notBefore">
+      <optional>
+         <attribute name="notBefore">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+         </attribute>
+      </optional>
+   </define>
+   <define name="att.dateSingle.attribute.notAfter">
+      <optional>
+         <attribute name="notAfter">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+         </attribute>
+      </optional>
+   </define>
+   <define name="att.vocabularySource.attributes">
+      <ref name="att.vocabularySource.attribute.vocabularySource"/>
+   </define>
+   <define name="att.vocabularySource.attribute.vocabularySource">
+      <optional>
+         <attribute name="vocabularySource">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+         </attribute>
+      </optional>
+   </define>
+   <define name="att.geographicalCoordinates.attributes">
+      <ref name="att.geographicalCoordinates.attribute.longitude"/>
+      <ref name="att.geographicalCoordinates.attribute.latitude"/>
+      <ref name="att.geographicalCoordinates.attribute.altitude"/>
+   </define>
+   <define name="att.geographicalCoordinates.attribute.longitude">
+      <optional>
+         <attribute name="longitude">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+         </attribute>
+      </optional>
+   </define>
+   <define name="att.geographicalCoordinates.attribute.latitude">
+      <optional>
+         <attribute name="latitude">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+         </attribute>
+      </optional>
+   </define>
+   <define name="att.geographicalCoordinates.attribute.altitude">
+      <optional>
+         <attribute name="altitude">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+         </attribute>
+      </optional>
+   </define>
+   <define name="att.xlink.attributes">
+      <ref name="att.xlink.attribute.href"/>
+      <ref name="att.xlink.attribute.type"/>
+      <ref name="att.xlink.attribute.title"/>
+      <ref name="att.xlink.attribute.actuate"/>
+      <ref name="att.xlink.attribute.arcrole"/>
+      <ref name="att.xlink.attribute.role"/>
+      <ref name="att.xlink.attribute.show"/>
+   </define>
+   <define name="att.xlink.attribute.href">
+      <optional>
+         <attribute name="href" ns="http://www.w3.org/1999/xlink">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Supplies the data to find a remote resource.</a:documentation>
+            <text/>
+         </attribute>
+      </optional>
+   </define>
+   <define name="att.xlink.attribute.type">
+      <optional>
+         <attribute name="type" ns="http://www.w3.org/1999/xlink">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">This attribute is required if any of the other xlink attributes are used on the parent element. It takes the fixed value of 'simple' since EAC-CPF's implementation of xlink only supports outbound links to one resource. If multiple outbound links are required, each link should be represented in a new parent element.</a:documentation>
+            <text/>
+         </attribute>
+      </optional>
+   </define>
+   <define name="att.xlink.attribute.title">
+      <optional>
+         <attribute name="title" ns="http://www.w3.org/1999/xlink">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">This optional attribute may be used to provide a caption or title that an external system or application may use when presenting a link to the user.</a:documentation>
+            <text/>
+         </attribute>
+      </optional>
+   </define>
+   <define name="att.xlink.attribute.actuate">
+      <optional>
+         <attribute name="actuate" ns="http://www.w3.org/1999/xlink">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">This optional attribute may be used in conjunction with xlink: show to instruct an external application as to the circumstances under which the linked resource should be resolved. For example, an application can be instructed to load the resource when the parent xml document is loaded or only when the page is requested by a user or application.</a:documentation>
+            <text/>
+         </attribute>
+      </optional>
+   </define>
+   <define name="att.xlink.attribute.arcrole">
+      <optional>
+         <attribute name="arcrole" ns="http://www.w3.org/1999/xlink">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">This optional attribute may be used on <code xmlns="http://www.w3.org/1999/xhtml">&lt;cpfRelation&gt;</code>, <code xmlns="http://www.w3.org/1999/xhtml">&lt;functionRelation&gt;</code>, and <code xmlns="http://www.w3.org/1999/xhtml">&lt;resourceRelation&gt;</code> to provide a precise description of the relationship between the CPF entity described in the EAC-CPF instance and the description to which it is linked. When used on <code xmlns="http://www.w3.org/1999/xhtml">&lt;citation&gt;</code>, <code xmlns="http://www.w3.org/1999/xhtml">&lt;setComponent&gt;</code>, and <code xmlns="http://www.w3.org/1999/xhtml">&lt;source&gt;</code>, it provides an explicit and perhaps more precise description of the relationship that is implied by the context of use. The value must be a valid URI.</a:documentation>
+            <text/>
+         </attribute>
+      </optional>
+   </define>
+   <define name="att.xlink.attribute.role">
+      <optional>
+         <attribute name="role" ns="http://www.w3.org/1999/xlink">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">This optional attribute is used to provide a reference to the nature of the linked remote resource. It specifically provides a means to specify the nature of a linked resource in <code xmlns="http://www.w3.org/1999/xhtml">&lt;resourceRelation&gt;</code>, as described in ISAAR (CPF) 6.2. The value provided must be a valid URI.</a:documentation>
+            <text/>
+         </attribute>
+      </optional>
+   </define>
+   <define name="att.xlink.attribute.show">
+      <optional>
+         <attribute name="show" ns="http://www.w3.org/1999/xlink">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">This optional attribute may be used in conjunction with xlink:actuate to instruct an external application as to the manner in which the linked resource should be shown to the user when it is resolved. For example, the application can be instructed to replace the current xml document when loading the resource or to load it in a new window or tab.</a:documentation>
+            <text/>
+         </attribute>
+      </optional>
+   </define>
+   <define name="model.discursiveSet">
+      <choice>
+         <ref name="citation"/>
+         <ref name="list"/>
+         <ref name="outline"/>
+         <ref name="p"/>
+      </choice>
+   </define>
+   <define name="model.nameEntryAuthorizedorAlternative">
+      <choice>
+         <ref name="alternativeForm"/>
+         <ref name="authorizedForm"/>
+      </choice>
+   </define>
+   <start>
+      <choice>
+         <ref name="eac-cpf"/>
+      </choice>
+   </start>
+</grammar>
