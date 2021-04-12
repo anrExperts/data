@@ -1,10 +1,10 @@
 xquery version "3.1";
-(:
- : author @sardinecan
+
+(: author @sardinecan
  : 2021-04-01
  : add/update @ref value with '#'
- : just run it !
-:)
+ : just run it !:)
+
 declare default element namespace "xpr" ;
 
 
@@ -14,11 +14,12 @@ declare default element namespace "xpr" ;
  : @sardinecan : /Volumes/data/github/xprdata/
  : @huma-num : /sites/expertdb/resource/data/
 :)
+
 declare variable $path := '/Volumes/data/github/xprdata/';
 
-(:
- : event for maintenance history
-:)
+
+(: : event for maintenance history:)
+
 declare variable $event :=
   <maintenanceEvent xmlns="eac">
     <eventType>updated</eventType>
@@ -28,9 +29,9 @@ declare variable $event :=
     <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
   </maintenanceEvent>;
 
-(:
- : this function updates the z1j files
- :)
+
+(: : this function updates the z1j files:)
+
 declare
 function local:update() {
 let $collection := fn:collection($path || 'z1j/')
@@ -40,15 +41,16 @@ return
     return (
         copy $d := $doc
         modify (
-          for $ref in $d//*[@ref !='' and not(fn:matches(@ref, '#'))][fn:local-name() = 'expert' or fn:local-name() = 'fee' or fn:local-name() = 'opinion']/@ref
-            let $maintenance := $expertise//maintenanceHistory
-            let $event := local:maintenanceEvent($maintenance)
-            let $refValue := $ref => fn:normalize-space()
-            let $updatedRefValue := fn:concat('#', $refValue)
-          return (
-            replace node $expertise//maintenanceHistory with $event,
-            replace value of node $ref with $updatedRefValue
-          )
+            for $expertise in $d//expertise[descendant::*[@ref !='' and not(fn:matches(@ref, '#'))][fn:local-name() = 'expert' or fn:local-name() = 'fee' or fn:local-name() = 'opinion']]
+                let $maintenance := $expertise//maintenanceHistory
+                let $event := local:maintenanceEvent($maintenance)
+                return(
+                    replace node $expertise//maintenanceHistory with $event,
+                    for $ref in $expertise//*[@ref !='' and not(fn:matches(@ref, '#'))][fn:local-name() = 'expert' or fn:local-name() = 'fee' or fn:local-name() = 'opinion']/@ref
+                        let $refValue := $ref => fn:normalize-space()
+                        let $updatedRefValue := fn:concat('#', $refValue)
+                        return replace value of node $ref with $updatedRefValue
+                )
         )
         return(
             file:create-dir($path || 'temp'),
@@ -59,8 +61,8 @@ return
 };
 
 (: this function adds maintenance events
- : @return modified maintenance history for expertise
- :)
+ : @return modified maintenance history for expertise:)
+
 declare
 
 function local:maintenanceEvent($maintenance) {
