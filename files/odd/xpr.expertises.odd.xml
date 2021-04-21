@@ -14,6 +14,11 @@
     </fileDesc>
   </teiHeader>
   <text>
+    <front>
+      <div>
+        
+      </div>
+    </front>
     <body>
       <schemaSpec ident="xprExpertisesModel" start="expertises expertise" ns="xpr" module="expertise">
         <elementSpec ident="expertises" module="expertise">
@@ -25,43 +30,32 @@
           <content>
             <sequence>
               <elementRef key="meta"/>
-              <elementRef key="control" source="xpr.eac.odd.xml"/>
+              <elementRef key="control"/>
               <elementRef key="sourceDesc"/>
               <elementRef key="description"/>
             </sequence>
           </content>
         </elementSpec>
-        <elementSpec ident="meta" module="expertise.meta"/>
-        <moduleRef source="xpr.eac.odd.xml" key="EAC" include="control maintenanceStatus"/>
-        
-        <elementSpec ident="control" mode="change" source="xpr.eac.odd.xml" ns="xpr" module="EAC">
+        <elementSpec ident="meta"/>
+        <moduleSpec ident="expertise.control"/>
+        <elementSpec ident="control" module="expertise.control">
           <content>
-            <elementRef key="maintenanceStatus" source="xpr.eac.odd.xml"/>
-            <!--<sequence>
-              
-              <!-\-<elementRef key="publicationStatus" source="xpr.eac.odd.xml"/>
-              <elementRef key="localControl" source="xpr.eac.odd.xml"/>
-              <elementRef key="maintenanceHistory" source="xpr.eac.odd.xml"/>-\->
-            </sequence>-->
+            <sequence>
+              <elementRef key="publicationStatus"/>
+              <elementRef key="localControl"/>
+              <elementRef key="maintenanceHistory"/>
+            </sequence>
           </content>
         </elementSpec>
-        <elementSpec ident="maintenanceStatus" mode="change" ns="xpr" source="xpr.eac.odd.xml" module="EAC">
+        <elementSpec ident="maintenanceStatus">
           <valList type="closed">
             <valItem ident="created"/>
             <valItem ident="revised"/>
             <valItem ident="updated"/>
             <valItem ident="retroconverted"/>
           </valList>
-          <!--<content>
-            <rng:choice>
-              <rng:value>created</rng:value>
-              <rng:value>revised</rng:value>
-              <rng:value>updated</rng:value>
-              <rng:value>retroconverted</rng:value>
-            </rng:choice>
-          </content>-->
         </elementSpec>
-        <!--<elementSpec ident="control" module="expertise.control">
+        <elementSpec ident="control" module="expertise.control">
           <content>
             <sequence>
               <elementRef key="maintenanceStatus"/>
@@ -78,14 +72,6 @@
             <valItem ident="updated"/>
             <valItem ident="retroconverted"/>
           </valList>
-          <!-\-<content>
-            <rng:choice>
-              <rng:value>created</rng:value>
-              <rng:value>revised</rng:value>
-              <rng:value>updated</rng:value>
-              <rng:value>retroconverted</rng:value>
-            </rng:choice>
-          </content>-\->
         </elementSpec>
         <elementSpec ident="publicationStatus" module="expertise.control">
           <content>
@@ -157,9 +143,30 @@
           <content>
             <textNode/>
           </content>
-        </elementSpec>-->
-        <elementSpec ident="sourceDesc"/>
-        <elementSpec ident="description"/>
+        </elementSpec>
+        <moduleSpec ident="expertise.sourceDesc"/>
+        <elementSpec ident="sourceDesc" module="expertise.sourceDesc">
+          <content>
+            <elementRef key=""/>
+            <macroRef key=""/>
+          </content>
+        </elementSpec>
+        <elementSpec ident="description"></elementSpec>
+        <macroSpec ident="expertise.idno.unitid">
+          <content>
+            <elementRef key="idno"/>
+          </content>
+        </macroSpec>
+        <elementSpec ident="idno">
+          <attList>
+            <attDef ident="type">
+              <valList>
+                <valItem ident="unitid"/>
+                <valItem ident="item"/>
+              </valList>
+            </attDef>
+          </attList>
+        </elementSpec>
       </schemaSpec>
     </body>
   </text>
