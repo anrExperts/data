@@ -20,7 +20,7 @@ declare variable $path := '/Volumes/data/github/xprdata/';
  : event for maintenance history
 :)
 declare variable $event :=
-  <maintenanceEvent xmlns="eac">
+  <maintenanceEvent xmlns="xpr">
     <eventType>updated</eventType>
     <eventDateTime standardDateTime="{fn:current-dateTime()}">{fn:current-dateTime()}</eventDateTime>
     <agentType>machine</agentType>
