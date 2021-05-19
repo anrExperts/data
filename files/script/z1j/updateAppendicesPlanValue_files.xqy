@@ -41,12 +41,12 @@ return
     return (
         copy $d := $doc
         modify (
-            for $expertise in $d//expertise[descendant::appendice[@type='plan']]
+            for $expertise in $d//expertise[descendant::appendice/type/@type='plan']
                 let $maintenance := $expertise//maintenanceHistory
                 let $event := local:maintenanceEvent($maintenance)
                 return(
                     replace node $expertise//maintenanceHistory with $event,
-                    for $type in $expertise//appendice[@type='plan']
+                    for $type in $expertise//appendice/type[@type='plan']
                         let $value := 'Plan, coupe, élévation'
                         return replace value of node $type with $value
                 )
