@@ -20,6 +20,7 @@ declare variable $z1j_JH := $path || 'z1j/z1j_JH.xml';
 declare variable $gip_JH := $path || 'z1j/gip_JH.xml';
 declare variable $z1j_LL := $path || 'z1j/z1j_LL.xml';
 declare variable $gip_LL := $path || 'z1j/gip_LL.xml';
+declare variable $z1j_YP := $path || 'z1j/z1j_YP.xml';
 
 (:
  : prosopo resources
@@ -43,6 +44,7 @@ declare variable $expertises :=
     fn:doc($gip_JH)//expertise,
     fn:doc($z1j_LL)//expertise,
     fn:doc($gip_LL)//expertise
+    fn:doc($z1j_YP)//expertise
   }
 </expertises>
 ;
