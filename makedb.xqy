@@ -43,7 +43,7 @@ declare variable $expertises :=
     fn:doc($z1j_JH)//expertise,
     fn:doc($gip_JH)//expertise,
     fn:doc($z1j_LL)//expertise,
-    fn:doc($gip_LL)//expertise
+    fn:doc($gip_LL)//expertise,
     fn:doc($z1j_YP)//expertise
   }
 </expertises>
