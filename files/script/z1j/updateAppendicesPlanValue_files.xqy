@@ -11,11 +11,11 @@ declare default element namespace "xpr" ;
 (:
  : path to xprdata files
  : @rmq to be modified for online/local use
- : @sardinecan : /Volumes/data/github/xprdata/
+ : @sardinecan : /Volumes/data/github/experts/xprdata/
  : @huma-num : /sites/expertdb/resource/data/
 :)
 
-declare variable $path := '/Volumes/data/github/xprdata/';
+declare variable $path := '/Volumes/data/github/experts/xprdata/';
 
 
 (: : event for maintenance history:)

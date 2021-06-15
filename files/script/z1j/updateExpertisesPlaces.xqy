@@ -13,7 +13,7 @@ declare default element namespace "xpr" ;
  : @sardinecan : /Volumes/data/github/xprdata/
  : @huma-num : /sites/expertdb/resource/data/
 :)
-declare variable $path := '/Volumes/data/github/xprdata/';
+declare variable $path := '/Volumes/data/github/experts/xprdata/';
 
 
 

@@ -14,7 +14,7 @@ declare default element namespace "xpr" ;
  : @sardinecan : /Volumes/data/github/xprdata/
  : @huma-num : /sites/expertdb/resource/data/
 :)
-declare variable $path := '/Volumes/data/github/xprdata/';
+declare variable $path := '/Volumes/data/github/experts/xprdata/';
 
 (:
  : event for maintenance history
@@ -57,9 +57,13 @@ return
     return (
         copy $d := $doc
         modify (
-          for $expertise in $d/expertise[descendant::keywords[@group='estates'][term[not(@value)]]]
+          for $expertise in $d//expertise[descendant::keywords[@group='estates'][term[not(@value)]]]
           let $param := $expertise
-          return local:process($param)
+          return(
+            insert node $scriptEvent as first into $expertise/control/maintenanceHistory,
+            for $term in $expertise//keywords[@group='estates']/term[not(@value)]
+            return replace node $term with $terms//term[fn:normalize-space(.) = fn:normalize-space($term)]
+          )
         )
         return(
             file:create-dir($path || 'temp'),
