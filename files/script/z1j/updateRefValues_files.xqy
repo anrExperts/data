@@ -15,7 +15,7 @@ declare default element namespace "xpr" ;
  : @huma-num : /sites/expertdb/resource/data/
 :)
 
-declare variable $path := '/Volumes/data/github/xprdata/';
+declare variable $path := '/Volumes/data/github/experts/xprdata/';
 
 
 (: : event for maintenance history:)
