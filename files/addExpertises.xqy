@@ -46,8 +46,9 @@ function local:addZ1j() {
   copy $d := $db
   modify (
     for $expertise in $expertises//expertise
-    order by $expertise/@xml:id
-    return insert node $expertise as last into $d//expertises
+    return
+      if($expertise[@xml:id != $d//expertises/expertise/@xml:id]) then insert node $expertise as last into $d//expertises
+      else ()
   )
   return local:updateDb($d)
  )
