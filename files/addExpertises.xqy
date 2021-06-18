@@ -22,6 +22,7 @@ declare variable $gip_JH := $path || 'z1j/gip_JH.xml';
 declare variable $z1j_LL := $path || 'z1j/z1j_LL.xml';
 declare variable $gip_LL := $path || 'z1j/gip_LL.xml';
 declare variable $z1j_YP := $path || 'z1j/z1j_YP.xml';
+declare variable $toBeAdded := $path || 'z1j/z1j_LL_added_20210616.xml';
 
 (:
  : assembling z1j resources
@@ -29,11 +30,7 @@ declare variable $z1j_YP := $path || 'z1j/z1j_YP.xml';
 declare variable $expertises :=
 <expertises xmlns="xpr">
   {
-    fn:doc($z1j_JH)//expertise,
-    fn:doc($gip_JH)//expertise,
-    fn:doc($z1j_LL)//expertise,
-    fn:doc($gip_LL)//expertise,
-    fn:doc($z1j_YP)//expertise
+    fn:doc($toBeAdded)//expertise
   }
 </expertises>
 ;
@@ -47,8 +44,7 @@ function local:addZ1j() {
   modify (
     for $expertise in $expertises//expertise
     return
-      if($expertise[@xml:id != $d//expertises/expertise/@xml:id]) then insert node $expertise as last into $d//expertises
-      else ()
+      insert node $expertise as last into $d//expertises
   )
   return local:updateDb($d)
  )
