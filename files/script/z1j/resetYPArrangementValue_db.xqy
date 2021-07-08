@@ -29,7 +29,7 @@ function local:update() {
   return (
     copy $d := $db
     modify (
-      for $expertise in $d/expertise[descendant::maintenanceEvent[agent='yplouzennec'][eventType='created']][descendant::arrangement[fn:normalize-space(.) = 'Résolution par les parties']]
+      for $expertise in $d/expertise[descendant::maintenanceEvent[agent='yplouzennec'][eventType='created']][descendant::arrangement[fn:normalize-space(.) = 'Résolution par les parties']]
       let $param := $expertise
       return local:process($param)
     )
