@@ -22,6 +22,7 @@ declare variable $gip_JH := $path || 'z1j/gip_JH.xml';
 declare variable $z1j_LL := $path || 'z1j/z1j_LL.xml';
 declare variable $gip_LL := $path || 'z1j/gip_LL.xml';
 declare variable $z1j_YP := $path || 'z1j/z1j_YP.xml';
+declare variable $expertsDb := $path || 'db/xpr.xml';
 
 (:
  : prosopo resources
@@ -85,7 +86,7 @@ declare
 function local:mkdb() {
     db:create(
     'xpr',
-    $db,
+    $expertsDb,
     'xpr.xml',
     map{
       'ftindex': true(),
