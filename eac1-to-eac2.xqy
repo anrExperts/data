@@ -59,6 +59,8 @@ declare function clean($input) {
   return (
     copy $d := $instance
     modify(
+      delete node $d/*/@id,
+      insert node attribute xml:id {fn:normalize-space($d//*:recordId)} into $d/*,
       delete nodes $d//*:participant[fn:normalize-space(@href)=''],
       delete nodes $d//*:involve[fn:normalize-space(@href)=''],
       delete nodes $d//*:source[fn:normalize-space(@href)=''],
@@ -88,6 +90,12 @@ declare function clean($input) {
       ),
       delete nodes $d//*:comment,
       delete nodes $d//*:cpfDescription//comment(),
+      for $nameEntry at $i in $d//*:nameEntry[fn:not(@preferredForm)]
+      return(
+        if($i = 1) then insert node attribute preferredForm {'true'} into $nameEntry
+        else insert node attribute preferredForm {'false'} into $nameEntry
+      ),
+      for $part in $d//*:part[fn:not(@localType)] return insert node attribute localType {'full'} into $part,
       for $date in $d//*[fn:local-name() = 'date' or fn:local-name() = 'fromDate' or fn:local-name()='toDate']
       return insert node attribute certainty {} into $date
     )
@@ -96,17 +104,19 @@ declare function clean($input) {
 };
 
 declare function sources($input) {
-  for $instance in $input[descendant::*:cpfDescription//*:source[fn:normalize-space(@href)!='']]
-  return (
-    copy $d := $instance
-    modify(
-      insert node
-      <sources xmlns="https://archivists.org/ns/eac/v2">{
-        for $source in fn:distinct-values($d//*:cpfDescription//*:source[fn:normalize-space(@href)!='']/@href)
-        return <source id="{'source' || fn:generate-id(<node>{$source}</node>)}"><reference id="{'reference' || fn:generate-id(<node>{$source}</node>)}" href="{$source}">{db:open('xpr')/*:xpr/*:sources/*:source[@xml:id=fn:substring-after($source, '#')] => fn:normalize-space()}</reference></source>
-      }</sources> after $d//*:control/*:maintenanceHistory
-    )
-    return $d
+  for $instance in $input
+  return(
+    if($instance[descendant::*:cpfDescription//*:source[fn:normalize-space(@href)!='']]) then(
+      copy $d := $instance
+      modify(
+        insert node
+        <sources xmlns="https://archivists.org/ns/eac/v2">{
+          for $source in fn:distinct-values($d//*:cpfDescription//*:source[fn:normalize-space(@href)!='']/@href)
+          return <source id="{'source' || fn:generate-id(<node>{$source}</node>)}"><reference id="{'reference' || fn:generate-id(<node>{$source}</node>)}" href="{$source}">{db:open('xpr')/*:xpr/*:sources/*:source[@xml:id=fn:substring-after($source, '#')] => fn:normalize-space()}</reference></source>
+        }</sources> after $d//*:control/*:maintenanceHistory
+      )
+      return $d
+    ) else $instance
   )
 };
 
@@ -139,8 +149,9 @@ declare function events($input) {
 };
 
 declare function relations($input) {
-  for $instance in $input[descendant::*:participant[fn:normalize-space(@href)!=''] or descendant::*:involve[fn:normalize-space(@href)!='']]
+  for $instance in $input
   return (
+    if($instance[descendant::*:participant[fn:normalize-space(@href)!=''] or descendant::*:involve[fn:normalize-space(@href)!='']]) then (
     copy $d := $instance
     modify(
       insert node
@@ -151,13 +162,12 @@ declare function relations($input) {
         let $entity := db:open('xpr')//*:eac-cpf[@xml:id=fn:substring-after($relation, '#')]
         let $entityName := $entity//*:nameEntry[*:authorizedForm]/*:part => fn:normalize-space()
         let $entityType := $entity//*:entityType => fn:normalize-space()
-        return <relation target="{fn:string-join($eventReference, ' ')}" sourceReference="{fn:string-join($sourceReference, ' ')}"><targetEntity target="{$relation}" targetType="{$entityType}"><part localType="">{$entityName}</part></targetEntity></relation>
+        return <relation target="{fn:string-join($eventReference, ' ')}" sourceReference="{fn:string-join($sourceReference, ' ')}"><targetEntity target="{$relation}" targetType="{$entityType}"><part localType="full">{$entityName}</part></targetEntity></relation>
       }</relations> as last into $d//*:cpfDescription,
       delete nodes $d//*[fn:local-name() = 'participant' or fn:local-name() = 'involve']
     )
-
     return $d
-  )
+  )  else $instance)
 };
 
 declare function entityType($input) {
