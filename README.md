@@ -1,10 +1,10 @@
 # data
 Données réunies dans le cadre de l’[ANR Experts](https://experts.huma-num.fr) et utilitaires pour l’importation et la refactorisation des données.
 
-Les données conssitent principalement en deux corpus : 
+Les données consistent principalement en deux corpus : 
 
-- D’une part, l’inventaire et le dépouillement systématique de dix années de procès-verbaux conservés dans la sous-série Z1J des Archives nationales de 1690 à 1790. 
-- D’autre part la constitution d’une base de données prosopographique des 234 experts parisiens pour toute la période étudiée.
+- D’une part, l’inventaire et le **dépouillement systématique de dix années de procès-verbaux conservés dans la sous-série Z1J** des Archives nationales de 1690 à 1790. 
+- D’autre part la constitution d’une **base de données prosopographique des 234 experts parisiens** pour toute la période étudiée.
 
 Les données sont structurées en XML. Le dépouillement systématique des affaires utilise une grille de dépouillement personnalisée compatible avec le standard archivistique [XML-EAD](https://www.loc.gov/ead/EAD3taglib/), tandis que la prosopographie utilise largement [EAC-CPF](https://eac.staatsbibliothek-berlin.de/) (norme ISAAR-CPF) en s’inspirant des propositions de [RiC-CM](https://www.ica.org/fr/records-in-contexts-modele-conceptuel).
 
