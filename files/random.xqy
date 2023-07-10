@@ -44,7 +44,7 @@ return(
     "Expertises avec 2 experts : " || fn:count($corpus[*:nbExperts="2"]) || " | " || fn:round(fn:count($corpus[*:nbExperts="2"]) * 100 div fn:count($corpus))  || "%",
     "2 Architectes : " || fn:count($corpus[descendant::*:nbExperts="2"][*:columns = "architecte"]) || " | " || fn:round(fn:count($corpus[descendant::*:nbExperts="2"][*:columns = "architecte"]) * 100 div fn:count($corpus))  || "%",
     "2 Entrepreneurs : " || fn:count($corpus[descendant::*:nbExperts="2"][*:columns = "entrepreneur"]) || " | " || fn:round(fn:count($corpus[descendant::*:nbExperts="2"][*:columns = "entrepreneur"]) * 100 div fn:count($corpus))  || "%",
-    "Architecte-Entrepreneur : " || fn:count($corpus[descendant::*:nbExperts="2"][*:columns = "architecte entrepreneur"]) || " | " || fn:round(fn:count($corpus[descendant::*:nbExperts="2"][*:columns = "architecte entrepreneur"]) * 100 div fn:count($corpus))  || "%",
+    "Architecte-Entrepreneur : " || fn:count($corpus[descendant::*:nbExperts="2"][*:columns = "architecte entrepreneur"]) || " | " || fn:round(fn:count($corpus[descendant::*:nbExperts="2"][*:columns = "architecte entrepreneur"]) * 100 div fn:count($corpus))  || "%"
     (:for $date in fn:sort(getDates()) return $date || " : " || fn:count($corpus[*:date[fn:normalize-space(.)=fn:string($date)]]):)
 )
 };
