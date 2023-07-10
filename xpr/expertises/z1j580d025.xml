@@ -1,0 +1,177 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j580d025">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-10-01T12:00:00">2020-10-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2016-10-26T12:00:00">2016-10-26T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>RB</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1726</unitdate>
+    <idno type="unitid">Z1J580</idno>
+        <idno type="item">025</idno>
+        <facsimile from="0375" to="0395"/>
+        <physDesc>
+          <extent sketch="false">20</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1726-03-07" type="paris"/>
+        </sessions>
+        <places>
+          <place type="paris">
+            <address>
+              <street>Rue de Richelieu [Voie actuelle. Autre(s) nom(s) : rue Royale, rue de la Loi]</street>
+              <buildingNumber/>
+            </address>
+            <complement/>
+            <parish/>
+            <owner>Ségur</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="acceptation">Recevoir et évaluer le travail réalisé</category>
+          <designation rubric="true">Estimation d'ouvrages de serrurerie</designation>
+        </categories>
+        <procedure>
+          <framework type="b2a">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Lieutenant civil</orgName>
+              <date when="1726-02-06"/>
+            </sentence>
+          </sentences>
+          <case>conflit autour du règlement de travaux de serrurerie</case>
+          <objects>
+            <object type="other">ouvrages de serrurerie</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0264" context="primary" appointment="appointed">
+              <title>architecte juré du roi expert bourgeois de Paris</title>
+            </expert>
+            <expert ref="#xpr0160" context="primary" appointment="appointed">
+              <title>architecte juré du roi expert bourgeois de Paris</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0023">
+              <persName>
+                <surname>Meley</surname>
+                <forename>François</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Rousseau</surname>
+                  <forename>Claude</forename>
+                </persName>
+                <occupation>maître serrurier à Paris</occupation>
+              </person>
+              <status>builder</status>
+              <expert ref="#xpr0160"/>
+            </party>
+            <party role="opponent" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Ségur</surname>
+                  <forename>Henri François comte de</forename>
+                </persName>
+                <occupation>brigadier des armées du roi, commanditaire des travaux à Rousseau, Claude</occupation>
+              </person>
+              <status>limited-partner</status>
+              <expert ref="#xpr0264"/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0264">Vuyet estime les travaux réalisés à 4398 livres 11 sols 6 deniers.</opinion>
+          <opinion ref="#xpr0160">Le Chauve les estime à 2646 livres 6 deniers.</opinion>
+          <arrangement/>
+          <agreement type="disagreement">Désaccord</agreement>
+          <estimate l="" s="" d=""/>
+          <fees detail="true">
+            <fee type="papers" l="11" s="8" d=""/>
+            <fee type="expert" ref="#xpr0264" l="36" s="" d=""/>
+            <fee type="expert" ref="#xpr0160" l="36" s="" d=""/>
+            <fee type="clerk" l="36" s="" d=""/>
+            <fee type="rolls" l="23" s="10" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="133" s="3" d=""/>
+          </fees>
+          <expenses mentioned=""/>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis>Motivations
+                Le comte de Ségur n'a pas payé les 4909 livres 5 sols de travaux réalisés dans sa maison par le serrurier Claude Rousseau par une première sentence de septembre 1725. Une seconde sentence du même mois avait revu à la baisse la somme à régler par le comte, sentence contestée par le serrurier qui demande une expertise contradictoire des travaux.</analysis>
+        <noteworthy/>
+      </description>
+    </expertise>

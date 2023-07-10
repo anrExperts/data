@@ -1,0 +1,214 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j481d021">
+      <meta/>
+      <control>
+        <maintenanceStatus/>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term/>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:45:33.927+02:00">2021-04-21T20:45:33.927+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateKeywordsModule_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour du module keywords.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:44:31.814+02:00">2021-04-21T20:44:31.814+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateExpertisesArrangement_files.xqy/BaseX</agent>
+            <eventDescription>Ajout du champs Accommodement dans l'éventualité d’une résolution par les parties.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:43:53.154+02:00">2021-04-21T20:43:53.154+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateExpertisesPlacesEstimates_files.xqy/BaseX</agent>
+            <eventDescription>Ajout des champs pour l'estimation des lieux.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2020-03-01T12:00:00">2020-03-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1706</unitdate>
+    <idno type="unitid">Z1J481</idno>
+        <idno type="item">21</idno>
+        <facsimile from="0267" to="0271"/>
+        <physDesc>
+          <extent sketch="false">2</extent>
+          <appendices>
+            <appendice>
+              <type type="other">Compte imprimé</type>
+              <extent>1</extent>
+              <desc/>
+              <note/>
+            </appendice>
+          </appendices>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1706-05-05" type="province"/>
+        </sessions>
+        <places>
+          <place xml:id="id59547d1" type="province">
+            <address/>
+            <complement/>
+            <city>Pantin</city>
+            <district/>
+            <owner>maison saisie réellement sur défunt Jacques Cousin et Catherine Thibault
+                        sa veuve</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="estimation">Estimer la valeur des biens</category>
+          <designation rubric="false">[Estimation de deux maisons]</designation>
+        </categories>
+        <procedure>
+          <framework type="b3">Saisie mixte (un expert est nommé par les parties, l'autre est nommé d'office)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>lieutenant civil</orgName>
+              <date when="1705-06-30"/>
+            </sentence>
+          </sentences>
+          <case>Estimation de maisons en vue de rembourser le plus ancien des créanciers du
+                    défunt</case>
+          <objects>
+            <object type="house">Maison(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0086" context="primary" appointment="appointed">
+              <title>architecte du roi et de son académie royale d'architecture expert
+                            bourgeois de Paris doyen des soixante experts</title>
+            </expert>
+            <expert ref="#xpr0113" context="primary" appointment="court-appointed">
+              <title>architecte juré du roi expert bourgeois de Paris</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0008">
+              <persName>
+                <surname>Villain</surname>
+                <forename>Pierre</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Besnier</surname>
+                  <forename>Mathurin</forename>
+                </persName>
+                <occupation>avocat au parlement, créancier de la succession du défunt
+                                Cousin et de sa veuve, opposant à la saisie</occupation>
+              </person>
+              <status>creditor</status>
+              <expert ref="#xpr0086"/>
+            </party>
+            <party role="opponent" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Molé</surname>
+                  <forename>Jean Baptiste Mathieu</forename>
+                </persName>
+                <occupation>chevalier seigneur de Champlastreux, poursuivant les criées
+                                vente et adjudication</occupation>
+              </person>
+              <status>creditor</status>
+              <expert ref="#xpr0113"/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0086">« Et suivant l’avis de moy Delespine je n’estime pas que l’on
+                    doivent s’arester à la déclaration faicte incerteinement par la femme du berger
+                    quy a seullement declaré qu’elle croyet que le tout estoit loué comme il est dit
+                    cy dessus mais que l’on doit faire l’estimation suivant l’exposition du terrain
+                    et la qualité des bastimens n’y ayant que les deux travées de l’édifice ocuppé
+                    par le bergé dont les bois des planchers ne sont que de sappin quy soit en bon
+                    estat, les deux travées ensuitte estant fot vieilles et caducques … pourquoy
+                    j’estime ladite maison en l’estat qu’elle est eu esgard aux reparations et
+                    reconstructions qu’il convient faire à ladite maison, la somme de deux mil cinq
+                    cens livres cy… 2500 l. Eu esgard comme dit est à la qualité des bastimens cours
+                    du temps et à la charge seullement du scens, sauf à vous monsieur d’en ordonner
+                    sur le tout selon vostre justice et prudence ordinaire. »</opinion>
+          <opinion ref="#xpr0113">« Eu esgard à la qualité des bastimens aux réparations qu’il
+                    y convient faire et au cours du temps présent, eu esgard aussy à ce que ladite
+                    maison est louée par portions la somme de 325 l. en total à ce quy m’a esté dit
+                    par la fame du berger quy tient les trois bergeries et un corps de logis proche
+                    le puis à l’exception du grenier au dessus quy est loué par mons. le curé dudit
+                    lieu la somme de 10 l. celle de 150 l. pour ce qui est occupé par le berger, la
+                    somme de 30 l. pour le petit logis entre celuy dernier déclaré et la porte
+                    chartier occupé par un savetier et le grenier par le greffier dudit lieu, le
+                    petit corps de logis ensuitte avec le grenier au dessus la somme de 45 l. et le
+                    jardin loué la somme de trente livres au concierge de la seigneurie dudit lieu,
+                    … ensemble la somme de 325 l. de loyer par chacun an ladite estimation par moy
+                    faicte à la charge du cens et droits seigneuriaux seullement cy… 4500 l. tel est
+                    monsieur l’avis de moy Frosne, sauf à vous d’en juger et ordonner sur le tout
+                    suivant vostre justice et prudence ordinaire. »</opinion>
+          <agreement type="disagreement">Désaccord</agreement>
+          <arrangement/>
+          <estimate l="" s="" d=""/>
+          <estimates>
+            <place ref="#id59547d1">
+              <appraisal l="" s="" d="">
+                <desc/>
+              </appraisal>
+            </place>
+          </estimates>
+          <fees detail="false">
+            <total l="" s="" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="" s="" d=""/>
+            <expense type="expert" l="7" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group=""/>
+        <analysis/>
+        <noteworthy/>
+      </description>
+    </expertise>

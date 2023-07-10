@@ -1,0 +1,194 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j432d038" status="">
+  <meta/>
+  <control>
+    <maintenanceStatus>revised</maintenanceStatus>
+    <publicationStatus/>
+    <localControl localType="detailLevel">
+      <term>completed</term>
+    </localControl>
+    <maintenanceHistory>
+      <maintenanceEvent>
+                <eventType>revised</eventType>
+                <eventDateTime standardDateTime="2022-02-24T19:34:33Z">2022-02-24T19:34:33Z</eventDateTime>
+                <agentType>human</agentType>
+                <agent>rcarvais</agent>
+                <eventDescription>nom du greffier</eventDescription>
+            </maintenanceEvent>
+          <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateObjectsValues_db.xqy/BaseX</agent>
+        <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateOpinionRef_files.xqy/BaseX</agent>
+        <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateRefValues_files.xqy/BaseX</agent>
+        <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-02-17T12:17:28.693+01:00">2021-02-17T12:17:28.693+01:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>z1jresp.xqy/BaseX</agent>
+        <eventDescription>Ajout de l'historique de la fiche.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>revised</eventType>
+        <eventDateTime standardDateTime="2020-12-10T12:00:00">2020-12-10T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>JH</agent>
+        <eventDescription>Saisie de la fiche dans l’app xpr.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>created</eventType>
+        <eventDateTime standardDateTime="2019-03-01T12:00:00">2019-03-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>JH</agent>
+        <eventDescription>Création de la fiche (formulaire Xforms/Libre office).</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+  </control>
+  <sourceDesc>
+    <unitdate>1696</unitdate>
+    <idno type="unitid">Z1J432</idno>
+    <idno type="item">038</idno>
+    <facsimile from="0289" to="0305"/>
+    <physDesc>
+      <extent sketch="false">8</extent>
+      <appendices>
+        <appendice>
+          <type type="other">Billet au greffier</type>
+          <extent>1</extent>
+          <desc/>
+          <note/>
+        </appendice>
+      </appendices>
+    </physDesc>
+  </sourceDesc>
+  <description>
+    <sessions>
+      <date when="1696-02-22" type="suburbs"/>
+      <date when="1696-02-27" type="suburbs"/>
+      <date when="1696-02-28" type="suburbs"/>
+    </sessions>
+    <places>
+      <place type="suburbs">
+        <address/>
+        <complement>La Courtille    </complement>
+        <city>Paris</city>
+        <district/>
+        <owner>maison saisie sur Regnant</owner>
+      </place>
+    </places>
+    <categories>
+      <category type="assessment">Décrire et évaluer les travaux à venir</category>
+      <designation rubric="true">Visite et estimation de réparations faites et à faire</designation>
+    </categories>
+    <procedure>
+      <framework type="b2a">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+      <origination type="institution">Une institution</origination>
+      <sentences>
+        <sentence>
+          <orgName>Cour de Parlement</orgName>
+          <date when="1695-12-20"/>
+        </sentence>
+      </sentences>
+      <case>Réparations dans le cadre d'un bail judiciaire</case>
+      <objects>
+        <object type="house">Maison(s)</object>
+      </objects>
+    </procedure>
+    <participants>
+      <experts>
+        <expert ref="#xpr0153" context="primary" appointment="appointed">
+          <title>architecte expert juré du roi à Paris</title>
+        </expert>
+      </experts>
+      <clerks>
+        <clerk ref="#clrk0011">
+          <persName>
+            <surname>Moulin</surname>
+            <forename>Jacques</forename>
+          </persName>
+        </clerk>
+      </clerks>
+      <parties>
+        <party role="petitioner" presence="false" intervention="false">
+          <person>
+            <persName>
+              <surname>Tenon</surname>
+              <forename>Jean</forename>
+            </persName>
+            <occupation>poursuivant les criées des biens</occupation>
+          </person>
+          <status>creditor</status>
+          <expert ref="#xpr0153"/>
+        </party>
+        <party role="opponent" presence="false" intervention="false">
+          <person>
+            <persName>
+              <surname>Regnant</surname>
+              <forename/>
+            </persName>
+            <occupation>partie saisie</occupation>
+          </person>
+          <status>mortgagor</status>
+          <expert ref="#xpr0153"/>
+        </party>
+      </parties>
+      <craftmen>
+        <craftman>
+          <persName>
+            <surname/>
+            <forename/>
+          </persName>
+          <occupation/>
+        </craftman>
+      </craftmen>
+    </participants>
+    <conclusions>
+      <agreement type="conclusion">Conclusion</agreement>
+      <opinion ref="#xpr0153">« Et pour ceux qui restent à faire … la somme de 4 500 l.
+Somme totalle à quoy montent et reviennent lesdites sommes … 960 l. »    </opinion>
+      <arrangement/>
+      <estimate l="" s="" d=""/>
+      <fees detail="true">
+        <fee type="expert" ref="#xpr0153" l="18" s="" d=""/>
+        <fee type="clerk" l="" s="" d=""/>
+        <fee type="rolls" l="" s="" d=""/>
+        <fee type="papers" l="" s="" d=""/>
+        <fee type="plans" l="" s="" d=""/>
+        <fee type="prosecutors" l="" s="" d=""/>
+        <fee type="help" l="" s="" d=""/>
+        <total l="" s="" d=""/>
+      </fees>
+      <expenses mentioned="false"/>
+    </conclusions>
+    <keywords group="estates"/>
+    <keywords group="procedure"/>
+    <keywords group="contract"/>
+    <keywords group="encumbrance"/>
+    <keywords group="law"/>
+    <keywords group="measurement"/>
+    <keywords group="repairs"/>
+    <keywords group="guarantees"/>
+    <keywords group="responsability"/>
+    <keywords group="ownership"/>
+    <keywords group="value"/>
+    <keywords group="neighbourhood"/>
+    <keywords group="disorder"/>
+    <keywords group="transformation"/>
+    <analysis/>
+    <noteworthy/>
+  </description>
+</expertise>

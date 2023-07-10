@@ -1,0 +1,163 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j482d021">
+      <meta/>
+      <control>
+        <maintenanceStatus/>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term/>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:45:33.927+02:00">2021-04-21T20:45:33.927+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateKeywordsModule_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour du module keywords.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:44:31.814+02:00">2021-04-21T20:44:31.814+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateExpertisesArrangement_files.xqy/BaseX</agent>
+            <eventDescription>Ajout du champs Accommodement dans l'éventualité d’une résolution par les parties.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2020-02-01T12:00:00">2020-02-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1706</unitdate>
+    <idno type="unitid">Z1J482</idno>
+        <idno type="item">21</idno>
+        <facsimile from="0191" to="0196"/>
+        <physDesc>
+          <extent sketch="false">4</extent>
+          <appendices>
+            <appendice>
+              <type type="other">Compte imprimé</type>
+              <extent>1</extent>
+              <desc/>
+              <note/>
+            </appendice>
+          </appendices>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1706-07-05" type="paris"/>
+        </sessions>
+        <places>
+          <place type="paris">
+            <address>
+              <street>rue de Seine</street>
+              <buildingNumber/>
+            </address>
+            <complement>à l'angle de la rue du Bac</complement>
+            <parish/>
+            <owner>Bodu</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="settlement">Départager</category>
+          <designation rubric="true">Visite de four et tuyau de cheminée</designation>
+        </categories>
+        <procedure>
+          <framework type="b1">Requête auprès d’une institution pour qu’elle demande une expertise</framework>
+          <origination type="parties">Les parties</origination>
+          <sentences>
+            <sentence>
+              <orgName>lieutenant civil</orgName>
+              <date when=""/>
+            </sentence>
+          </sentences>
+          <case>Cheminée et tuyau mal entretenus par le boulanger qui en a l'usage ; le
+                    propriétaire souhaite qu'il rétablisse les dommages causés</case>
+          <objects>
+            <object type="other">four et tuyau de cheminée</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0153" context="primary" appointment="court-appointed">
+              <title>juré expert du roi entrepreneur de bâtiments à Paris</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0014">
+              <persName>
+                <surname>Baudoin</surname>
+                <forename>Pierre</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="true" intervention="false">
+              <person>
+                <persName>
+                  <surname>Bodu</surname>
+                  <forename>François</forename>
+                </persName>
+                <occupation>marchand de vin</occupation>
+              </person>
+              <status>owner</status>
+              <expert ref="#xpr0153"/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0153">« J’estime et mon advis est qu’il est necessaire d’abatre et suprimer ledit
+                    pan de bois en sorte qu’il n’y ayat aulcun bois autour ny dedans desdits tuyeaux
+                    et que à la place dudit pan de bois il sera fait un mur de maçonnerie, que
+                    lesdits tuyeaux de cheminée seront aussy abbattus et demolys pour estre
+                    reconstruits suivant les ordonnances de police »</opinion>
+          <agreement type="conclusion">Conclusion</agreement>
+          <arrangement/>
+          <estimate l="" s="" d=""/>
+          <fees detail="false">
+            <total l="" s="" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="" s="" d=""/>
+            <expense type="expert" l="3" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group=""/>
+        <analysis/>
+        <noteworthy/>
+      </description>
+    </expertise>

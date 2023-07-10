@@ -1,0 +1,228 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1001d039">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2017-10-01T12:00:00">2017-10-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1001</idno>
+        <idno type="item">039</idno>
+        <facsimile from="0425" to="0441"/>
+        <physDesc>
+          <extent sketch="false">6</extent>
+          <appendices>
+            <appendice>
+              <type type="other">Mémoire</type>
+              <extent>2</extent>
+              <desc/>
+              <note>Mémoire des ouvrages de peintures du petit bâtiment</note>
+            </appendice>
+            <appendice>
+              <type type="other">Mémoire</type>
+              <extent>4</extent>
+              <desc/>
+              <note>Mémoire des ouvrages de peintures du grand bâtiment</note>
+            </appendice>
+            <appendice>
+              <type type="other">Billet</type>
+              <extent>1</extent>
+              <desc/>
+              <note>Il m'est redue(?) une croisée à remettre sur la mémoire de 2 livres 5 sols
+Plus le pourtour d'un fourneaux couleur de bois à huil pour ce 15 sols
+convenu avec le sieur Ansion son toiseur
+Plus pour gratages des vieille croisée des petits batiment en demande pour ce 12 livres
+Une livre duille pure pour de trampé la couleur 10 sols
+pour la brosse et post 10 sols
+Total 6 livres 10 sols</note>
+            </appendice>
+          </appendices>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-04-16" type="suburbs"/>
+          <date when="1776-04-25" type="paris"/>
+        </sessions>
+        <places>
+          <place type="suburbs">
+            <address/>
+            <complement>Grande rue de Vaugirard, enseigne le Grand Vainqueur</complement>
+            <city/>
+            <district/>
+            <owner/>
+          </place>
+          <place type="suburbs">
+            <address/>
+            <complement>Grande rue de Vaugirard, attenante à la précédente maison</complement>
+            <city/>
+            <district/>
+            <owner/>
+          </place>
+          <place type="office">
+            <address/>
+          </place>
+        </places>
+        <categories>
+          <category type="acceptation">Recevoir et évaluer le travail réalisé</category>
+          <designation rubric="true">Visitte et estimation d'ouvrages de peinture d'impressions faites en deux maisons, Grande rue de Vaugirard, appartenantes au sieur Ancelet, marchand de vin par le sieur Perrault, peintre ; M. Simon, expert.</designation>
+        </categories>
+        <procedure>
+          <framework type="b2a">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Châtelet, lieutenant civil (sentences)</orgName>
+              <date when="1776-03-12"/>
+              <date when="1776-02-27"/>
+            </sentence>
+          </sentences>
+          <case>fin des travaux</case>
+          <objects>
+            <object type="other">peinture d'impression</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0247" context="primary" appointment="appointed">
+              <title>architecte expert entrepreneur de bâtiments à Paris</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0047">
+              <persName>
+                <surname>Mangin</surname>
+                <forename>Philbert</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Perrault</surname>
+                  <forename/>
+                </persName>
+                <occupation>maître peintre à Paris</occupation>
+              </person>
+              <status>builder</status>
+              <expert ref="#xpr0247"/>
+              <prosecutor>
+                <persName>
+                  <surname>Gavarry</surname>
+                  <forename>François</forename>
+                </persName>
+              </prosecutor>
+            </party>
+            <party role="opponent" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Ancelet</surname>
+                  <forename/>
+                </persName>
+                <occupation>marchand de vin, rporpiétaire</occupation>
+              </person>
+              <status>limited-partner</status>
+              <expert ref="#xpr0247"/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0247">Ouvrages de peintures d’impression faits à la grande maison 252 l. 13 s. 10 d.
+Ouvrages de peintures d’impression faits à la petite maison 128 l. 15 s.
+faits en 1774 par ledit Perrault
+Total 381 l. 8 s. 10 d.
+Les deux mémoires ont été annexés "pour par les partyes y avoir recours lors quelles le jugeront à propos
+Telles sont les visittes et estimations de s ouvrages de peinture d'impression dont il s'agit, vous référant monsieur d'ordonner</opinion>
+          <arrangement/>
+          <agreement type="conclusion">Conclusion</agreement>
+          <estimate l="" s="" d=""/>
+          <fees detail="true">
+            <fee type="papers" l="4" s="" d=""/>
+            <fee type="expert" ref="#xpr0247" l="21" s="" d=""/>
+            <fee type="clerk" l="21" s="" d=""/>
+            <fee type="rolls" l="11" s="" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="57" s="" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="17" s="5" d=""/>
+            <expense type="expert" l="7" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis/>
+        <noteworthy/>
+      </description>
+    </expertise>

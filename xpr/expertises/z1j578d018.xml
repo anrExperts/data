@@ -1,0 +1,190 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j578d018">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-10-01T12:00:00">2020-10-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2016-10-26T12:00:00">2016-10-26T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>RB</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1726</unitdate>
+    <idno type="unitid">Z1J578</idno>
+        <idno type="item">018</idno>
+        <facsimile from="0186" to="0194"/>
+        <physDesc>
+          <extent sketch="false">9</extent>
+          <appendices>
+            <appendice>
+              <type type="other">Extrait des registres</type>
+              <extent>2</extent>
+              <desc>Minute des requêtes déposées au bailliage d'Enghien les 9 et 14 janvier 1726 par Voisin, Antoine.</desc>
+              <note/>
+            </appendice>
+          </appendices>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1726-01-18" type="province"/>
+        </sessions>
+        <places>
+          <place type="province">
+            <address/>
+            <complement/>
+            <city>Le Plessis-Bouchard</city>
+            <district/>
+            <owner/>
+          </place>
+        </places>
+        <categories>
+          <category type="assessment">Décrire et évaluer les travaux à venir</category>
+          <designation rubric="true">Visite de colombier</designation>
+        </categories>
+        <procedure>
+          <framework type="b2a">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Bailli d'Enghien</orgName>
+              <date when="1726-01-09"/>
+              <date when="1726-01-14"/>
+              <date when="1726-01-16"/>
+            </sentence>
+          </sentences>
+          <case>Réparations à faire à une église en raison d 'un colombier qui lui a été adossé par un propriétaire voisin</case>
+          <objects>
+            <object type="other">église / colombier</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0073" context="primary" appointment="appointed">
+              <title>architecte juré du roi expert bourgeois de Paris</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0020">
+              <persName>
+                <surname>Quirot</surname>
+                <forename>Etienne François</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Voisin</surname>
+                  <forename>Antoine</forename>
+                </persName>
+                <occupation>marguillier de l'église du Plessis-Bouchard</occupation>
+              </person>
+              <status>owner</status>
+              <expert ref="#xpr0073"/>
+            </party>
+            <party role="opponent" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Lechevalier</surname>
+                  <forename>Pierre</forename>
+                </persName>
+                <occupation/>
+              </person>
+              <status>owner</status>
+              <expert ref="#xpr0073"/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname>Chantin</surname>
+                <forename>Charles</forename>
+              </persName>
+              <occupation>maître maçon appelé par Voisin, Antoine</occupation>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0073">« Après avoir de nouveau vu et examiné les lieux en question et fait reflexion et attention sur leur estat, fait calcul et estimation de ce qui est à restablir tant sur la voutte de ladite église où est l'endroit qui avoit esté choisi pour mettre des pigeons, notamment les fractions qui sont à la voûte de la chapelle de la Vierge, que ladit estable à vache pour la remettre en estat où elle estoit pour servir d'école et remette tous lesdits lieux en estat où ils estoient cy devant, nous estimons qu'il en coûtera la somme de 150 livres. Savoir pour les démolitions du lambris, cloisons et restablissement de la voutte de l'endroit qui avoit esté clos pour mettre des pigeons, la somme de 50 livres. Et pour le restablissement de l'ancienne écolle qui sert d'estable à vaches, la somme de 100 livres. »</opinion>
+          <arrangement/>
+          <agreement type="conclusion">Conclusion</agreement>
+          <estimate l="" s="" d=""/>
+          <fees detail="true">
+            <fee type="papers" l="1" s="2" d=""/>
+            <fee type="expert" ref="#xpr0073" l="30" s="" d=""/>
+            <fee type="clerk" l="30" s="" d=""/>
+            <fee type="rolls" l="2" s="" d=""/>
+            <fee type="prosecutors" l="10" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="73" s="2" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="20" s="8" d=""/>
+            <expense type="expert" l="" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis>Motivations
+                Les sentences rendues par le bailli d'Enghien répondent à la demande d'Antoine Voisin, marguillier de l'église du Plessis-Bouchard, de faire examiner par un expert le colombier du village afin de savoir s'il n'a pas été en partie construit sur les voûtes de l'église paroissiale. L'expert doit également examiner s'il a été fait un changement à la jonction du presbytère et d'un bâtiment voisin.</analysis>
+        <noteworthy/>
+      </description>
+    </expertise>

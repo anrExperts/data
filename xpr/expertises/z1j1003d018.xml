@@ -1,0 +1,224 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1003d018">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-07-01T12:00:00">2020-07-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2017-10-01T12:00:00">2017-10-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1003</idno>
+        <idno type="item">018</idno>
+        <facsimile from="0298" to="0310"/>
+        <physDesc>
+          <extent sketch="false">9</extent>
+          <appendices>
+            <appendice>
+              <type type="petition">Requête</type>
+              <extent>2</extent>
+              <desc/>
+              <note/>
+            </appendice>
+          </appendices>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-05-22" type="paris"/>
+          <date when="1776-05-22" type="paris"/>
+          <date when="1776-05-23" type="paris"/>
+          <date when="1776-05-24" type="paris"/>
+          <date when="1776-05-25" type="paris"/>
+          <date when="1776-05-25" type="paris"/>
+          <date when="1776-05-29" type=""/>
+        </sessions>
+        <places>
+          <place xml:id="id302d308" type="paris">
+            <address>
+              <street>rue Saint-Pierre</street>
+              <buildingNumber/>
+            </address>
+            <complement/>
+            <parish>Saint-Eustache</parish>
+            <owner>appartenant en partie aux mineurs Legendre</owner>
+          </place>
+          <place xml:id="id302d327" type="paris">
+            <address>
+              <street>rue Saint-Pierre</street>
+              <buildingNumber/>
+            </address>
+            <complement/>
+            <parish/>
+            <owner>appartenant en partie aux mineurs Legendre</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="settlement">Départager</category>
+          <category type="estimation">Estimer la valeur des biens</category>
+          <designation rubric="true">Estimation de deux maisons se joignantes, rue St Pierre, paroisse St Eustache, appartenante en partie aux mineurs Legendre ; M. Taboureur, expert.</designation>
+        </categories>
+        <procedure>
+          <framework type="b2b">L’institution est saisie dans le cadre d’une procédure (l’institution nomme un ou deux experts)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Châtelet, lieutenant civil (sentence)</orgName>
+              <date when="1776-05-06"/>
+            </sentence>
+            <sentence>
+              <orgName>Baillage de Conches</orgName>
+              <date when="1776-05-06"/>
+            </sentence>
+          </sentences>
+          <case>Pierre Legendre souhaite que ses enfants soient propriétaires de deux 48e au total de deux maisons ; il considère qu’il est plus intéressant pour eux de vendre les deux portions conjointement avec les autres copropriétaires, ou séparément, plutôt que de poursuive la licitation.</case>
+          <objects>
+            <object type="house">Maison(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0250" context="primary" appointment="">
+              <title>architecte expert bourgeois des bâtiments à Paris</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0062">
+              <persName>
+                <surname>Picquenon</surname>
+                <forename>Denis Joseph François</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="" intervention="">
+              <person>
+                <persName>
+                  <surname>Legendre</surname>
+                  <forename>Pierre Alexandre Antoine</forename>
+                </persName>
+                <occupation>seigneur de la prévôté de Monceaux, patron honoraire de la paroisse de Monceaux, conseiller du roi, lieutenant général civil et particulier et de police au baillage de Conches, subdélégué de l’intendant Delemon pour le déparement de Conches, maire de la ville de Conches, au nom et comme tuteur ad hoc deLegendre, Marie AlexandreetLegendre, Charles Antoine, ses enfants mineurs (enfants dede Fougy, Catherine, son épouse)</occupation>
+              </person>
+              <status>heir</status>
+              <expert ref="#xpr0250"/>
+              <prosecutor>
+                <persName>
+                  <surname>Devarenne</surname>
+                  <forename/>
+                </persName>
+              </prosecutor>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0250">« Récapitulation de nos estimations
+La grande maison… "fait attention à son état, consistance et distribution, à la nature de sa construction, aux ornements interieurs qui la décorent, aux réparations qui sont à y faire, au revenu qu'elle est susceptible de produire, à l'étendue de son emplacement, à sa (s?), à la manière dont il est employé par la (b?), nous avons mis des prix particuliers tant au fond du terrain qu'à la superficie des bâtiments eu égard tant à ce que dessus qu'au quartier où ladite maison est scituée. 44 000 l.
+La petite maison… "fait attention à son état consistance et distribution, à la nature de sa construction, aux réparations qui sont à y faire à l'étendue de son emplacement, au revenu que ladite maison est susceptible de produire et au quartier où elle est scituée, nous avons mis des prix particuliers tant au fond du terrain qu'à la superficie des bâtiments eu égard à ce que dessus 8 500 l.
+Total des estimations desdittes deux maisons la somme de 52500 livres
+Audit prix, les deux quarante huitiemes au total appartenant auxdits mineurs dans lesdites deux maisons montent ensemble à la somme de deux mille cent quatre vingt sept livres 10 s., cy… 2187 l. 10 s. »</opinion>
+          <arrangement/>
+          <agreement type="conclusion">Conclusion</agreement>
+          <estimate l="52500" s="" d=""/>
+          <estimates>
+            <place ref="#id302d308">
+              <appraisal l="44000" s="" d="">
+                <desc>une grande maison</desc>
+              </appraisal>
+            </place>
+            <place ref="#id302d327">
+              <appraisal l="8500" s="" d="">
+                <desc>une petite maison</desc>
+              </appraisal>
+            </place>
+          </estimates>
+          <fees detail="true">
+            <fee type="papers" l="8" s="18" d=""/>
+            <fee type="expert" ref="#xpr0250" l="42" s="" d=""/>
+            <fee type="clerk" l="42" s="" d=""/>
+            <fee type="rolls" l="40" s="" d=""/>
+            <fee type="prosecutors" l="35" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="167" s="18" d=""/>
+          </fees>
+          <expenses mentioned=""/>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis/>
+        <noteworthy/>
+      </description>
+    </expertise>

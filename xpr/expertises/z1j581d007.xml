@@ -1,0 +1,238 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j581d007">
+  <meta/>
+  <control>
+    <maintenanceStatus>revised</maintenanceStatus>
+    <publicationStatus/>
+    <localControl localType="detailLevel">
+      <term>completed</term>
+    </localControl>
+    <maintenanceHistory>
+      <maintenanceEvent>
+                <eventType>revised</eventType>
+                <eventDateTime standardDateTime="2022-03-25T16:20:08Z">2022-03-25T16:20:08Z</eventDateTime>
+                <agentType>human</agentType>
+                <agent>llosserand</agent>
+                <eventDescription>rvpcd</eventDescription>
+            </maintenanceEvent>
+          <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateObjectsValues_db.xqy/BaseX</agent>
+        <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateRefValues_files.xqy/BaseX</agent>
+        <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+        <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>revised</eventType>
+        <eventDateTime standardDateTime="2020-11-01T12:00:00">2020-11-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>JH</agent>
+        <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>retroconverted</eventType>
+        <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>ead2xpr.xsl/Saxon9</agent>
+        <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>created</eventType>
+        <eventDateTime standardDateTime="2017-04-01T12:00:00">2017-04-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>llosserand</agent>
+        <eventDescription>Création de la fiche.</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+  </control>
+  <sourceDesc>
+    <unitdate>1726</unitdate>
+    <idno type="unitid">Z1J581</idno>
+    <idno type="item">007</idno>
+    <facsimile from="0052" to="0071"/>
+    <physDesc>
+      <extent sketch="false">18</extent>
+      <appendices>
+        <appendice>
+          <type type="drawing">Dessin</type>
+          <extent>1</extent>
+          <desc>un dessin de l'élévation du mur.</desc>
+          <note/>
+        </appendice>
+      </appendices>
+    </physDesc>
+  </sourceDesc>
+  <description>
+    <sessions>
+      <date when="1726-06-05" type="paris"/>
+      <date when="1726-08-06" type="paris"/>
+      <date when="1726-08-09" type="paris"/>
+      <date when="1726-08-20" type="paris"/>
+      <date when="1726-08-23" type="paris"/>
+    </sessions>
+    <places>
+      <place type="paris">
+        <address>
+          <street>Rue neuve Saint-Martin [Actuellement partie de la rue Notre-Dame-de-Nazareth]</street>
+          <buildingNumber/>
+        </address>
+        <complement/>
+        <parish/>
+        <owner>Goullon / Godeau</owner>
+      </place>
+    </places>
+    <categories>
+      <category type="settlement">Départager</category>
+      <designation rubric="true">toisé et estimation d'un mur mitoyen et de latrines communes.</designation>
+    </categories>
+    <procedure>
+      <framework type="b2">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+      <origination type="institution">Une institution</origination>
+      <sentences>
+        <sentence>
+          <orgName>lieutenant civil</orgName>
+          <date when="1726-05-11"/>
+        </sentence>
+      </sentences>
+      <case>le mur mitoyen s'est détérioré notamment à cause de l'entrepôt de salpêtre sans contre-mur et doit être reconstruit.</case>
+      <objects>
+        <object type="wall">Mur(s)</object>
+      </objects>
+    </procedure>
+    <participants>
+      <experts>
+        <expert ref="#xpr0145" context="primary" appointment="appointed">
+          <title>architecte expert bourgeois de Paris</title>
+        </expert>
+        <expert ref="#xpr0264" context="primary" appointment="appointed">
+          <title/>
+        </expert>
+      </experts>
+      <clerks>
+        <clerk ref="#clrk0023">
+          <persName>
+            <surname>Meley</surname>
+            <forename>François</forename>
+          </persName>
+        </clerk>
+      </clerks>
+      <parties>
+        <party role="petitioner" presence="false" intervention="false">
+          <person>
+            <persName>
+              <surname>Goullons</surname>
+              <forename>Julles de</forename>
+            </persName>
+            <occupation>sculpteur ordinaire du roy</occupation>
+          </person>
+          <status>owner</status>
+          <expert ref="#xpr0145"/>
+        </party>
+        <party role="opponent" presence="false" intervention="true">
+          <person>
+            <persName>
+              <surname>Godeau</surname>
+              <forename>Louis</forename>
+            </persName>
+            <occupation>tuteur de Godeau, Denis enfants mineurs, Godeau, Jean</occupation>
+          </person>
+          <person>
+            <persName>
+              <surname>Marchand</surname>
+              <forename>Jean</forename>
+            </persName>
+            <occupation/>
+          </person>
+          <person>
+            <persName>
+              <surname>Godeau</surname>
+              <forename>Anne</forename>
+            </persName>
+            <occupation>sa femme</occupation>
+          </person>
+          <person>
+            <persName>
+              <surname>Godeau</surname>
+              <forename>Marie Madeleine</forename>
+            </persName>
+            <occupation>veuve du sieur Le Roy</occupation>
+          </person>
+          <person>
+            <persName>
+              <surname>Godeau Gaude de la Connétablie</surname>
+              <forename>Jean</forename>
+            </persName>
+            <occupation/>
+          </person>
+          <status>owner</status>
+          <expert ref="#xpr0264"/>
+        </party>
+      </parties>
+      <craftmen>
+        <craftman>
+          <persName>
+            <surname/>
+            <forename/>
+          </persName>
+          <occupation/>
+        </craftman>
+      </craftmen>
+    </participants>
+    <conclusions>
+      <opinion ref="#xpr0145"/>
+      <opinion ref="#xpr0264">[f. 14r°] : « Sur touttes les susd. observations et considérations faites, j'estime et mon avis est que lesd. srs Godeau ne sont tenus touttes compensations faites que de la moityé dud. mur fait par led. sr Desgoullons [...] » (suit l'explication très précise du dessin). [f. 17v°] : « Touttes les sud. estimations faites par moy Vuiet suivant mon avis, tant pour la contribution du mur mitoyen, que raccordemens et estayemens faites par led. sr Desgoullons montent et reviennent, déduction faire des charges deues par led. [f. 18r°] sr Desgoullons à la somme de quatre vingt onze livres, sauf à vous Mr d'en ordonner et décider suivant vostre juste et prudence ordinaire. J'avay au surplus l'honneur de vous représenter Mr que led. sr de Villeneuve, contre l'usage ordinaire et son devoir, s'est retiré de concert aveq led. sr Desgoullons, sa partye tant pour s'éviter de recevoir la réponce dud. sr Godeau au dire dud. sr Desgoullons que pour s'éviter de vous dire, Mr, qu'il differoit conjointement aveq moy Vuiet de donner son avis sur les divers réquisitoires et contestations desd. partyes, croyant par ce moyen faire tomber les demandes et réquisitions faites par led. sr Godeau au nom qu'il procède que parroissent luy estre de conséquence. C'est sur quoy j'ay différé, Mr, à donner mon avis jusques à ce qu'il en ait esté ordonné par vous, ainsy que sur le tout suivant vostre justice et prudence ordinaire [...] ».</opinion>
+      <arrangement/>
+      <agreement type="disagreement">Désaccord</agreement>
+      <estimate l="" s="" d=""/>
+      <fees detail="true">
+        <fee type="papers" l="13" s="2" d="6"/>
+        <fee type="expert" ref="#xpr0145" l="30" s="" d=""/>
+        <fee type="expert" ref="#xpr0264" l="30" s="" d=""/>
+        <fee type="clerk" l="30" s="" d=""/>
+        <fee type="rolls" l="26" s="5" d=""/>
+        <fee type="prosecutors" l="" s="" d=""/>
+        <fee type="help" l="" s="" d=""/>
+        <fee type="plans" l="" s="" d=""/>
+        <total l="" s="" d=""/>
+      </fees>
+      <expenses mentioned="true">
+        <expense type="clerk" l="31" s="" d=""/>
+        <expense type="expert" l="" s="" d=""/>
+      </expenses>
+    </conclusions>
+    <keywords group="estates"/>
+    <keywords group="procedure"/>
+    <keywords group="contract"/>
+    <keywords group="encumbrance"/>
+    <keywords group="law"/>
+    <keywords group="measurement"/>
+    <keywords group="repairs"/>
+    <keywords group="guarantees"/>
+    <keywords group="responsability"/>
+    <keywords group="ownership"/>
+    <keywords group="value"/>
+    <keywords group="neighbourhood"/>
+    <keywords group="disorder"/>
+    <keywords group="transformation"/>
+    <analysis>Motivations : « prendre les mesures du mur mitoyen séparant les maisons desd. partyes pour parvenir à en faire le toisé et connoistre la qualité et la valleur, faire distinction de ce qui est deu aud. sieur Desgoullons par led. sieur Godeau pour raison dud. mur, raccordements et estayemens faicts à ce sujet de la reconstruction dud. mur, même les changes [sic] qui peuvent estre dues de par et d'autres »
+                f. 4v°-5r° : « Ledit sieur Girard, nous a de nouveau dit qu'il ne vouloit rien nous déclarer de ses sentimens consernant la déclaration dud. mur et de sa qualité, quantité et estimation du prix de sa valleur et mener des changes qui peuvent estre deues pour raison de la plus grande eslévation. Veu tout ce dessus de la part du procédé dud. sr Girard, moy, de Villeneuve, pour éviter à plus grands frais et prolixité de vacations, ay creu devoir procéder à la déclaration dud. mur et donner avis ainsy qu'il ensuit »
+                [f. 11] : Vuiet explique « Primo », qu'il est tombé malade il n'a pas pu être présent pour la visite du 5 juin et de Villeuneuve a commencé son procès-verbal sans Vuitet ce qui est « […] contre l'usage ordinaire, ne devant au plus faire qu'un acte de comparution s'il vouloit estre payé d'une demie vacation sans aucune lecture ny description que de sa simple assignation. Il ne c'est pas seullement contenté de faire celle de vos sentences, Mr, et de l'original des assignations comme il est d'usage, il a fait la description en entier d'une requeste à vous présentée Mr, le 9e may dernier par led. sr Desgoullons, ensuite de laquelle est intervenu votre sentence contradictoirement rendue le 11e dud. mois de may dernier.
+                Secondo : que de telles descriptions de pièces est un fait de procédures qui ne regardent nullement le ministère d'un expert, d'autant plus que de pareilles descriptions portent les partyes à dépences, faisant une augmentation de grosse [f. 11v°] et de temps.
+                Tertio : que pour avoir reconnu lors de nostre transport du mercredy six du présent mois touttes les descriptions de pièces faites par led. sr de Villeneuve seul, j'ay requis et prié de vouloir bien rectiffier et annuler celle de la susd. requeste du 9e may dernier, estant une description innutille quy ne regarde nullemens nostre ministère et contre nostre devoir, à quoy il a voulu satisfaire. C'est la raison pour laquelle n'ay parjuré à propos de signer conjointement avec eux lad. vacation.
+                Quarto : que le vendredy neuf dud mois, ayant conféré aveq led. sr de Villeneuve sur le fait des contributions et charges du mur en question fait par led. sr Desgoullons, n'ayant peu convenir ensemble j'ay creu, pour accelérer à la présente visite et rendre les avis de l'une et l'autre plus clairs et nets, et éviter la confusion des différentes avis, qu'il estoit plus à propos que nous les donnations séparémens et de suite, et même pour plus de netté et d'intelligence j'ay fait un profil dud. mur mitoyen en ce qui en a esté refait par led. sr Desgoullons où est marqué l'adossement desd. deux maisons, suivant les mesures que j'en ay prises et cottées sur led. profil, sur lesquelles j'ay dressé mon avis, ainsy qu'il ensuit, et ay led. profil annexé à la présente minute pour donner plus de connoissance au tiers expert du fait dont il s'agist qui luy sera communiqué par led. Mr Meley, greffier, lorsqu'il procèdera à la visite dud. mur […]. »</analysis>
+    <noteworthy/>
+  </description>
+</expertise>

@@ -1,0 +1,181 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j900d033">
+  <meta/>
+  <control>
+    <maintenanceStatus>revised</maintenanceStatus>
+    <publicationStatus/>
+    <localControl localType="detailLevel">
+      <term>completed</term>
+    </localControl>
+    <maintenanceHistory>
+      <maintenanceEvent>
+                <eventType>revised</eventType>
+                <eventDateTime standardDateTime="2022-08-13T11:03:44Z">2022-08-13T11:03:44Z</eventDateTime>
+                <agentType>human</agentType>
+                <agent>llosserand</agent>
+                <eventDescription>rvpcd</eventDescription>
+            </maintenanceEvent>
+          <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateOpinionRef_files.xqy/BaseX</agent>
+        <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateRefValues_files.xqy/BaseX</agent>
+        <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-04-21T20:45:33.927+02:00">2021-04-21T20:45:33.927+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateKeywordsModule_files.xqy/BaseX</agent>
+        <eventDescription>Mise à jour du module keywords.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-04-21T20:44:31.814+02:00">2021-04-21T20:44:31.814+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateExpertisesArrangement_files.xqy/BaseX</agent>
+        <eventDescription>Ajout du champs Accommodement dans l'éventualité d’une résolution par les parties.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+        <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>created</eventType>
+        <eventDateTime standardDateTime="2019-09-01T12:00:00">2019-09-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>llosserand</agent>
+        <eventDescription>Création de la fiche.</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+  </control>
+  <sourceDesc>
+    <unitdate>1766</unitdate>
+    <idno type="unitid">Z1J900</idno>
+    <idno type="item">33</idno>
+    <facsimile from="0390" to="0391"/>
+    <physDesc>
+      <extent sketch="false">2</extent>
+    </physDesc>
+  </sourceDesc>
+  <description>
+    <sessions>
+      <date when="1766-03-25" type="paris"/>
+    </sessions>
+    <places>
+      <place type="paris">
+        <address>
+          <street>enclos de l'Arsenal</street>
+          <buildingNumber/>
+        </address>
+        <complement>cour de l'orme</complement>
+        <parish/>
+        <owner/>
+      </place>
+    </places>
+    <categories>
+      <category type="acceptation">Recevoir et évaluer le travail réalisé</category>
+      <designation rubric="true">Visitte d'ouvrages de maçonnerie enclos de l'Arsenal, cour de L'orme, à la requeste du sieur Come [Edme?] Bureau dit Bourguignon, compagnon maçon contre le sieur Descourt ; MM. Richard remplacé par Pruneau de Montlouis suite à son départ et Perrard, experts ; Lecoeur, greffier.</designation>
+    </categories>
+    <procedure>
+      <framework type="b2">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+      <origination type="institution">Une institution</origination>
+      <sentences>
+        <sentence>
+          <orgName>baillage de l'artillerie de France</orgName>
+          <date when="1766-01-13"/>
+        </sentence>
+      </sentences>
+      <case>fin des travaux ?</case>
+      <objects>
+        <object type="other">maçonnerie</object>
+      </objects>
+    </procedure>
+    <participants>
+      <experts>
+        <expert ref="#xpr0229" context="primary" appointment="appointed">
+          <title>architecte expert</title>
+        </expert>
+        <expert ref="#xpr0210" context="primary" appointment="appointed">
+          <title>architecte expert</title>
+        </expert>
+      </experts>
+      <clerks>
+        <clerk ref="#clrk0061">
+          <persName>
+            <surname>Lecoeur</surname>
+            <forename>Jean Clair</forename>
+          </persName>
+        </clerk>
+      </clerks>
+      <parties>
+        <party role="petitioner" presence="" intervention="">
+          <person>
+            <persName>
+              <surname>Bureau dit Bourguignon</surname>
+              <forename>Edme</forename>
+            </persName>
+            <occupation>compagnon maçon</occupation>
+          </person>
+          <status>builder</status>
+          <expert ref="#xpr0210"/>
+        </party>
+        <party role="opponent" presence="" intervention="">
+          <person>
+            <persName>
+              <surname>Descourt</surname>
+              <forename/>
+            </persName>
+            <occupation>officier chez le roi</occupation>
+          </person>
+          <status>limited-partner</status>
+          <expert ref="#xpr0229"/>
+        </party>
+      </parties>
+      <craftmen>
+        <craftman>
+          <persName>
+            <surname/>
+            <forename/>
+          </persName>
+          <occupation/>
+        </craftman>
+      </craftmen>
+    </participants>
+    <conclusions>
+      <agreement type="unfinished">Affaire inachevée</agreement>
+      <opinion ref="">pv inchevé et non signé</opinion>
+      <arrangement/>
+      <estimate/>
+      <fees detail="false">
+        <total l="" d="" s=""/>
+      </fees>
+      <expenses mentioned="false"/>
+    </conclusions>
+    <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+    <analysis>f. 1v° "par laquelle sentence vous avé monsieur dit qu'attendu le dépost fait par le sieur Richard architecte expert nommé par votre sentence du treize janvier pour faire la visitte prisée et estimation des ouvrages faits par ledit Bureau dit Bourguiginon ladite visitte seroit faite par un autre expert dont ledit Bureau conviendroit avec nous Prunveau de Montlouis nommé par votre sentence sinon nommé d'office..." le requérant nomme finalement Perrard</analysis>
+    <noteworthy>à l'origine, le requérant, Bureau, a nommé Richard comme expert.</noteworthy>
+  </description>
+</expertise>

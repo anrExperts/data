@@ -1,0 +1,69 @@
+<eac xmlns="https://archivists.org/ns/eac/v2" xml:id="clrk0008">
+  <control maintenanceStatus="">
+    <recordId>clrk0008</recordId>
+    <maintenanceAgency>
+      <agencyName>ANR Experts</agencyName>
+    </maintenanceAgency>
+    <maintenanceHistory>
+      <maintenanceEvent maintenanceEventType="created">
+        <agent agentType="machine">clerk_csv2eac.xqy/BaseX</agent>
+        <eventDateTime standardDateTime="2022-12-31T14:06:48.817+01:00"/>
+        <eventDescription>Création des fiches EAC-CPF à partir du tableau</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+    <sources>
+      <source id="sourceid86497167">
+        <reference href="">Almanach royal 1696</reference>
+      </source>
+      <source id="sourceid86497169">
+        <reference href="">Almanach royal 1706</reference>
+      </source>
+      <source id="sourceid86497171">
+        <reference href="">Almanach royal 1716</reference>
+      </source>
+      <source id="sourceid86497173">
+        <reference href="">Almanach royal 1717</reference>
+      </source>
+    </sources>
+  </control>
+  <cpfDescription>
+    <identity>
+      <entityType value="person"/>
+      <nameEntry status="authorized" preferredForm="true" sourceReference="">
+        <part localType="full">Villain, Pierre</part>
+      </nameEntry>
+      <nameEntry status="alternative" preferredForm="false" sourceReference="">
+        <part localType="surname">Villain</part>
+        <part localType="forename">Pierre</part>
+      </nameEntry>
+      <otherEntityTypes>
+        <otherEntityType>
+          <term>clerk</term>
+        </otherEntityType>
+      </otherEntityTypes>
+      <identityId>clrk0008</identityId>
+    </identity>
+    <description>
+      <functions>
+        <function sourceReference="#sourceid86497167 #sourceid86497169 #sourceid86497171 #sourceid86497173">
+          <term>Greffier</term>
+          <dateRange>
+            <fromDate sourceReference="" certainty="certain" standardDate="1696"/>
+            <toDate sourceReference="" certainty="certain" standardDate="1717"/>
+          </dateRange>
+        </function>
+      </functions>
+      <places>
+        <place sourceReference="#sourceid86497171 #sourceid86497173">
+          <placeRole>Adresse</placeRole>
+          <placeName>rue des petits-Champs Saint Julien</placeName>
+          <dateRange>
+            <fromDate sourceReference="" certainty="certain" standardDate="1716"/>
+            <toDate sourceReference="" certainty="certain" standardDate="1717"/>
+          </dateRange>
+        </place>
+      </places>
+    </description>
+  </cpfDescription>
+  <!---->
+</eac>

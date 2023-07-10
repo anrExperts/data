@@ -1,0 +1,211 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j660d030" status="">
+  <meta/>
+  <control>
+    <maintenanceStatus>revised</maintenanceStatus>
+    <publicationStatus/>
+    <localControl localType="detailLevel">
+      <term>completed</term>
+    </localControl>
+    <maintenanceHistory>
+      <maintenanceEvent>
+                <eventType>revised</eventType>
+                <eventDateTime standardDateTime="2022-03-19T14:38:41Z">2022-03-19T14:38:41Z</eventDateTime>
+                <agentType>human</agentType>
+                <agent>llosserand</agent>
+                <eventDescription>rvpcd</eventDescription>
+            </maintenanceEvent>
+          <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateObjectsValues_db.xqy/BaseX</agent>
+        <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-06-16T16:56:32.893+02:00">2021-06-16T16:56:32.893+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateOpinionRef_files.xqy/BaseX</agent>
+        <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-06-16T16:29:02.548+02:00">2021-06-16T16:29:02.548+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateRefValues_files.xqy/BaseX</agent>
+        <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>created</eventType>
+        <eventDateTime standardDateTime="2021-02-11T22:14:40Z">2021-02-11T22:14:40Z</eventDateTime>
+        <agentType>human</agentType>
+        <agent>llosserand</agent>
+        <eventDescription>Création de la fiche.</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+  </control>
+  <sourceDesc>
+    <unitdate>1736</unitdate>
+    <idno type="unitid">Z1J660</idno>
+    <idno type="item">030</idno>
+    <facsimile from="0366" to="0377"/>
+    <physDesc>
+      <extent sketch="false">11</extent>
+      <appendices>
+        <appendice>
+          <type type="other">Reconnaissance</type>
+          <extent>1</extent>
+          <desc/>
+          <note>reconnaissance e Chabot (partie) a reçu les rapports par le greffier
+9 février 1736</note>
+        </appendice>
+      </appendices>
+    </physDesc>
+  </sourceDesc>
+  <description>
+    <sessions>
+      <date when="1736-01-28" type="paris"/>
+      <date when="1736-02-06" type="paris"/>
+      <date when="1736-03-24" type="paris"/>
+      <date when="1736-04-18" type="paris"/>
+    </sessions>
+    <places>
+      <place type="paris">
+        <address>
+          <street>rue des Gravilliers</street>
+          <buildingNumber/>
+        </address>
+        <complement>vis à vis la rue des Vertus</complement>
+        <parish/>
+        <owner/>
+      </place>
+    </places>
+    <categories>
+      
+      <category type="assessment">Décrire et évaluer les travaux à venir</category>
+      <designation rubric="true">Visitte de maison, scize rue des Gravilliers au Marais appartenante aux sieur Chabot et consors, laditte visitte faite à la requeste du sieur Caron, me menuisier ; MM. Le Sueur et Debias-Aubry, experts ; M. Chevallier, greffier.</designation>
+    </categories>
+    <procedure>
+      <framework type="b2">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+      <origination type="institution">Une institution</origination>
+      <sentences>
+        <sentence>
+          <orgName>LC</orgName>
+          <date when="1736-01-07"/>
+          <date when="1736-01-21"/>
+        </sentence>
+      </sentences>
+      <case>mur mitoyen en reconstruction gênant les habitants locataires (escalier mitoyen à reconstruire)</case>
+      <objects>
+        <object type="wall">Mur(s)</object>
+      </objects>
+    </procedure>
+    <participants>
+      <experts>
+        <expert ref="#xpr0171" context="primary" appointment="appointed">
+          <title>architecte expert bourgeois</title>
+        </expert>
+        <expert ref="#xpr0073" context="primary" appointment="appointed">
+          <title>architecte expert bourgeois</title>
+        </expert>
+      </experts>
+      <clerks>
+        <clerk ref="#clrk0043">
+          <persName>
+            <surname>Chevallier Louis</surname>
+            <forename>Louis</forename>
+          </persName>
+        </clerk>
+      </clerks>
+      <parties>
+        <party role="petitioner" presence="true" intervention="true">
+          <person>
+            <persName>
+              <surname>Casan</surname>
+              <forename>Arnault</forename>
+            </persName>
+            <occupation>maître menuisier à Paris</occupation>
+          </person>
+          <status>main-tenant</status>
+          <expert ref="#xpr0171"/>
+          <prosecutor>
+            <persName>
+              <surname>Ruby</surname>
+              <forename/>
+            </persName>
+          </prosecutor>
+        </party>
+        <party role="opponent" presence="true" intervention="true">
+          <person>
+            <persName>
+              <surname>Chabot</surname>
+              <forename>Estienne</forename>
+            </persName>
+            <occupation/>
+          </person>
+          <person>
+            <persName>
+              <surname>et consorts</surname>
+              <forename/>
+            </persName>
+            <occupation/>
+          </person>
+          <status>joint-owner</status>
+          <expert ref="#xpr0073"/>
+        </party>
+      </parties>
+      <craftmen>
+        <craftman>
+          <persName>
+            <surname/>
+            <forename/>
+          </persName>
+          <occupation/>
+        </craftman>
+      </craftmen>
+    </participants>
+    <conclusions>
+      <agreement type="agreement">Accord</agreement>
+      <opinion ref="#xpr0073 #xpr0171">Nous avons reconnus que les réparations et raccordements nécessaires aux chambres et grenier dudit corps de logis de devant ne sont point encore entièrement achevée, la pluspart des poutres et fenêtres n’étant point en estat de clore et fermer que la charpente du nouvel escalier est posée mais que la maçonnerie des marches n’est point achevée, le mur de face sur la rue étant encore et non raccordé la couverture du  comble dudit corps de logis n’est point rétablie et par conséquent ledit corps  de logis de devant n’est point encore clos couvert et habitable à la réserve de la petite pièce sans cheminée au premier étage sur la cour, laquelle petite pièce comme nous l’avons cy devant observé a toujours été habité attendu qu’elle n’est point adossée contre le mur mitoyen en question et qu’elle a son escalier du côté de la cour et aussy à la réserve de la cave qui comme nous l’avons raporté en notre dernière vacation se et trouvé établie ledit jour vingt quatre mars derniers. De plus, nous observons par raport au tems que les réparations ez ont commencé et sur le tems qu’elles dureront qu’il parroit par les déclarations et desdits sieurs Derichemon, Michelin et Chollot voisin que vers la fin d’aoust dernier, les loccataires dudit corps de logis de devant ont commencé de sortir de leur chambre à cause que les ouvriers ont commencez dans ledit mois à démolir. Et par raport au tems que dureront lesdites réparations nous observons que sy les propriétaires de la présente maison eussent été d’accord avec le propriétaire voisin que la démolition et reconstruction du mur mitoyen et de l’escalier mitoyen sur la rue et leurs accessoirs eussent été commencé et continués de part et d’autre sans interruption avec nombre d’ouvriers suffisant, ces réparations auroient pu estre faictes en l’espasse de deux mois au plus mais comme ledit voisin a fait démolir entièrement sa maison pour la reconstruire entièrement à neuf qu’il est survenu des contestations et différentes visittes et raport d’allignemens tant au sujet du mur mitoyen entre la présente maison et celle du même voisin et de l’escalier commun entreux, qu’entre le même voisin et ses autres voisins et de la mésintelligence entre les entrepreneurs ces contestations ont donné lieu à la discontinuation de la construction dudit mur et de l’escalier commun et mitoyen et leurs accessoires qui ont fait que cet ouvrage de deux mois au plus a duré depuis la fin d’aoust mil sept cent trente cinq jusqu’à présent et nous ne pourons précisément dire quand le peu qui reste à faire desdites réparations en sera finy attendu que cela dépend de la diligence et intelligence des propriétaires.
+Tel est notre avis sauf à vous monsieur d’en juger et ordonner sur le tout suivant votre justice ordinaire."</opinion>
+      <arrangement/>
+      <estimate l="" s="" d=""/>
+      <fees detail="false">
+        <total l="" s="" d=""/>
+      </fees>
+      <expenses mentioned="false"/>
+    </conclusions>
+    <keywords group="estates"/>
+    <keywords group="procedure"/>
+    <keywords group="contract">
+      <term value="c1">Bail</term>
+    </keywords>
+    <keywords group="encumbrance"/>
+    <keywords group="law"/>
+    <keywords group="measurement"/>
+    <keywords group="repairs"/>
+    <keywords group="guarantees"/>
+    <keywords group="responsability"/>
+    <keywords group="ownership"/>
+    <keywords group="value"/>
+    <keywords group="neighbourhood">
+      <term value="l1">Voisin</term>
+    </keywords>
+    <keywords group="disorder"/>
+    <keywords group="transformation">
+      <term value="n7">Démolition</term>
+      <term value="n14">Consolidation /Etaiements</term>
+    </keywords>
+    <analysis/>
+    <noteworthy>Cazant et consort avaient précédemment nommé l'expert Aumont en premier lieu
+Antériorité : rapport d'alignement du mur mitoyen par Pierre Quirot l'ainé et Jean Aumont  du 28 septembre dernier (1635)
+
+Plainte devant le commissaire, contestations verbales écoutées par les experts : "Diot, propriétaire voisin, avoit fait démolir sadite maison et que l'on voulut démolir l'escallier mitoyen qui donnoit dans la maison du déclarant par où passoient lors les locataires dudit déclarant lesquels locataires ne seroient pas en état de monter dans leurs chambres lorsque ledit escallier seroit démoly [?] ayant déjà commencé à le démolir que lesdits locataires du comparant, scavoir le nommé Petit occupant lors le second et le Brun occupant le premier, étoient sur le point de s'en aller et avoient même commencé à enlever leurs meubles ce qu'il avoit intérest d'empêcher"
+f. 2v° "les maçons travaillent actuellement à la reconstruction du mur mitoyen entre lesdites deux maisons... jusqu'à fin février prochain", les experts ne peuvent intervenir mais donnent des indications sommaires sous réserve de faire de plus amples observations, intéressante description
+plaintes des locataires qui invoquent le bail, dommages et intérêts
+Contestations par prises de paroles nombreuses entre les parties
+
+Témoignages des voisins à partir du folio 8v°
+Description des travaux en cours</noteworthy>
+  </description>
+</expertise>

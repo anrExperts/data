@@ -1,0 +1,219 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1000d033">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-09-01T12:00:00">2020-09-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2018-01-01T12:00:00">2018-01-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>PC</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1000</idno>
+        <idno type="item">033</idno>
+        <facsimile from="0324" to="0339"/>
+        <physDesc>
+          <extent sketch="false">12</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-03-04" type="paris"/>
+          <date when="1776-04-06" type="paris"/>
+        </sessions>
+        <places>
+          <place type="paris">
+            <address>
+              <street>Rue des Tournelles</street>
+              <buildingNumber/>
+            </address>
+            <complement>à droite en entrant par la place de la Bastille</complement>
+            <parish/>
+            <owner>Succession Dessandrin</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="acceptation">Recevoir et évaluer le travail réalisé</category>
+          <designation rubric="true">Visitte et réception d’ouvrages de maçonnerie, charpente et autres en une maison</designation>
+        </categories>
+        <procedure>
+          <framework type="a">Commun accord des parties</framework>
+          <origination type="parties">Les parties</origination>
+          <sentences>
+            <sentence>
+              <orgName/>
+              <date when=""/>
+            </sentence>
+          </sentences>
+          <case>Evaluation de travaux faits et à faire pour mettre une maison en état d'être louée.</case>
+          <objects>
+            <object type="house">Maison(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0261" context="primary" appointment="appointed">
+              <title>architecte juré expert des bâtiments à Paris</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0061">
+              <persName>
+                <surname>Lecoeur</surname>
+                <forename>Jean Clair</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Dessandrin</surname>
+                  <forename>Guy Jean</forename>
+                </persName>
+                <occupation>, négociant en la ville de Saint-Malo, seul héritier de Dessandrin Jacques Joseph, avocat au Parlement, ancien avocat en conseil du Roy et secrétaire du Roi, acte passé devant Langlois, notaire à Paris, le 9 mai 1760. Ladite Succession est grevée de différentes créances.</occupation>
+              </person>
+              <status>heir</status>
+              <expert ref="#xpr0261"/>
+              <prosecutor>
+                <persName>
+                  <surname>Pantonnier</surname>
+                  <forename/>
+                </persName>
+              </prosecutor>
+            </party>
+            <party role="" presence="" intervention="">
+              <person>
+                <persName>
+                  <surname/>
+                  <forename/>
+                </persName>
+                <occupation/>
+              </person>
+              <status/>
+              <expert ref=""/>
+              <representative>
+                <persName>
+                  <surname>Monroy</surname>
+                  <forename>Jean-Baptiste</forename>
+                </persName>
+                <occupation>, bourgeois de Paris.</occupation>
+              </representative>
+            </party>
+            <party role="opponent" presence="" intervention="">
+              <person>
+                <persName>
+                  <surname/>
+                  <forename/>
+                </persName>
+                <occupation/>
+              </person>
+              <status/>
+              <expert ref=""/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname>Sieur Boiron</surname>
+                <forename/>
+              </persName>
+              <occupation>maître maçon et entrepreneur .</occupation>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0261">« Relativement audit mémoire des ouvrages présenté à nous, revenant ensemble en demande à la somme totale de sept mille cinq cent trente trois livres, trois sols, onze deniers, 7 533 l. 3 s. 11 d. […]
+Suite à notre visitte et controlle, revenant ensemble tous les ouvrages de maçonnerie, charpente, couverture, menuiserie, serrurerie, marbrerie, vitrerie, carrelage, pavé de grain, et peinture d’impression, contenus du précédent mémoire, par nous estimés à la somme totale en général de six mille quatre cent treize livres quatre sols, trois deniers, 6 413 l. 4 s. 3 d. » 
+"Quant aux honoraires de nous Villetard pour la conduite seulement desdits ouvrages, nous les avons fixé à la somme de 160 l."</opinion>
+          <arrangement/>
+          <agreement type="conclusion">Conclusion</agreement>
+          <estimate l="7073" s="4" d="3"/>
+          <fees detail="true">
+            <fee type="papers" l="13" s="12" d=""/>
+            <fee type="expert" ref="#xpr0261" l="156" s="" d=""/>
+            <fee type="clerk" l="156" s="" d=""/>
+            <fee type="rolls" l="63" s="" d=""/>
+            <fee type="prosecutors" l="5" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="other" l="12" s="" d="">Annexe des mémoires</fee>
+            <fee type="other" l="160" s="" d="">Honoraires de l'expert</fee>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="565" s="12" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="132" s="15" d=""/>
+            <expense type="expert" l="52" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value">
+          <term value="k5">Honoraires</term>
+        </keywords>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis>Honoraires de l'expert pour conduite d'ouvrages, fixés par l'expert lui-même (160 l.)</analysis>
+        <noteworthy/>
+      </description>
+    </expertise>

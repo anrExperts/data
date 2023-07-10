@@ -1,0 +1,223 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1000d046">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2023-05-12T16:21:14.938+02:00">2023-05-12T16:21:14.938+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateThirdPartyAgreement_db.xqy/BaseX</agent>
+        <eventDescription>Modification des valeurs admises pour le champ "dispositif de l'expertise" dans le cadre de tiers expertises.</eventDescription>
+      </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-09-01T12:00:00">2020-09-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2018-01-01T12:00:00">2018-01-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>PC</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1000</idno>
+        <idno type="item">046</idno>
+        <facsimile from="0509" to="0520"/>
+        <physDesc>
+          <extent sketch="false">4</extent>
+          <appendices>
+            <appendice>
+              <type type="proxyPA">Pouvoir/procuration (acte sous seing privé)</type>
+              <extent>1</extent>
+              <desc/>
+              <note/>
+            </appendice>
+            <appendice>
+              <type type="drawing">Dessin</type>
+              <extent>1</extent>
+              <desc>Plan du mur mitoyen. Plume et encre noire.</desc>
+              <note/>
+            </appendice>
+            <appendice>
+              <type type="rough">Brouillon</type>
+              <extent>1</extent>
+              <desc>Brouillon pour le coût de l’expertise.</desc>
+              <note/>
+            </appendice>
+          </appendices>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-03-18" type="paris"/>
+          <date when="1776-03-18" type="paris"/>
+          <date when="1776-03-28" type="paris"/>
+          <date when="1776-03-28" type="paris"/>
+        </sessions>
+        <places>
+          <place type="paris">
+            <address>
+              <street>Rue des deux Portes Saint-Sauveur</street>
+              <buildingNumber/>
+            </address>
+            <complement>attenant la porte de l'ancien grand cerf</complement>
+            <parish/>
+            <owner>Le Nain / hôpital Sainte-Catherine</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="settlement">Départager</category>
+          <designation rubric="true">Visite et allignement de mur mitoyen</designation>
+        </categories>
+        <procedure>
+          <framework type="a">Commun accord des parties</framework>
+          <origination type="parties">Les parties</origination>
+          <sentences>
+            <sentence>
+              <orgName>Chambre des requêtes, sentence du 4 novembre 1775</orgName>
+              <date when="1775-11-04"/>
+            </sentence>
+          </sentences>
+          <case>Constat d'état d'un mur mitoyen : il s'agit de décider s'il peut ou non subsister et le cas échéant de déterminer les parties à refaire à neuf.</case>
+          <objects>
+            <object type="wall">Mur(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0209" context="primary" appointment="appointed">
+              <title>juré expert bourgeois des bâtiments en titre d'office</title>
+            </expert>
+            <expert ref="#xpr0210" context="primary" appointment="appointed">
+              <title>juré expert des bâtiments en titre d'office</title>
+            </expert>
+            <expert ref="#xpr0106" context="third-party" appointment="unknown">
+              <title>architecte de la Police et juré expert des bâtiments en titre d'office</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0050">
+              <persName>
+                <surname>Mallerot</surname>
+                <forename>Joseph Louis</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="true" intervention="false">
+              <person>
+                <persName>
+                  <surname>Rossignol</surname>
+                  <forename>Antoine François</forename>
+                </persName>
+                <occupation>prestre, ancien du Chapitre du Saint-Sépulcre, maître et administrateur de l’hôpital Sainte-Catherine</occupation>
+              </person>
+              <status>owner</status>
+              <expert ref="#xpr0209"/>
+            </party>
+            <party role="opponent" presence="true" intervention="false">
+              <person>
+                <persName>
+                  <surname>Le Nain</surname>
+                  <forename>Thomas</forename>
+                </persName>
+                <occupation>maître tailleur d'habits</occupation>
+              </person>
+              <status>owner</status>
+              <expert ref="#xpr0210"/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0209"/>
+          <opinion ref="#xpr0210"/>
+          <opinion ref="#xpr0106">« Nous, Guillaume Egresset, sommes avec lesdits Sieurs Payen et Perrard, et le greffier Mollerot, transportés dans lesdites maisons dont il est question. Nous tiers expert sur ladite présence des premiers experts, du Sieur abbé Rossignol, en l’absence du Sieur Le Nain, avons pris communication de ce que lesdits Sieurs premiers experts ont cy devant rapporté et établi concernant ledit mur mitoyen dont il est question. Ensuite visité et examiné lesdites maisons, ledit mur, en tout ce qu’il se compose, en dépend, est adossé joint. Et entendu lesdits Sieurs Premiers experts en leurs observations et réflexions verbales. Ce fait ayant conféré tous trois ensemble, et fait attention à l’était actuel dudit mur mitoyen, nous estimons 1e : que la jambe étrière la pierre à la teste dudit mur mitoyen sur la rue sera démolie tout en élévation, qu’en la fondation et reconstruite depuis le bon et solide fond et de sept pieds de longueur jusqu’au plancher supérieur du rez de chaussée de la maison du Sieur Le Nain.2e que tout le surplus du mur sera pareillement démoli depuis son sommet jusque sur sur l’ancienne fondation, si elle peut subsister sinon cette fondation sera démolie.3e Qu’à raison de la reconstruction de ladite jambe étrière du mur mitoyen, il sera observé les fondations et emplacements que de solides constructions exigent.4e Qu’il sera fait au sujet de ces dites réfections selon les précautions que la sûreté nécessitera5e Que la démolition, reconstruction deladite jambe étrière et ladite frondaison d’alignement d’icelle, seront au dépend du seul hôpital de Sainte-Catherine6e Que ce qu’il en coûtera pour démolir et reconstruire et pour ledit alignement sera payé savoir les trois quarts par ledit Hôpital, l’autre quart par ledit Sieur Le Nain.7e Que chaque propriétaire fera de son costé lesdits rétablissements et raccordements qui seront nécessaires.8e Que celui des propriétaires dont la voutte des caves prend sa naissance dans ledit mur mitoyen fera à ses frais un contre mur suffisant pour recevoir les retombées de ladite voutte9e Que si l’un ou l’autre des propriétaires pour raison de la fosse d’aysance de sa maison a besoin de plus basses fondations que celles nécessaires pour la bonne réfection dudit mur mitoyen, il fera cette plus basse fondation à ses dépends.10e Que la jambe boutisse en pierre en dépend de la jambe étrière sera conservée.11e Enfin que le coust du ponctuel dit allignement à donner du mur mitoyen sera payé par ledit Sieur propriétaire chacun pour sa moitié.C’est l’avis de nous tiers expert »</opinion>
+          <arrangement/>
+          <agreement type="conclusion">Conclusion</agreement>
+          <estimate l="" s="" d=""/>
+          <fees detail="true">
+            <fee type="papers" l="12" s="" d=""/>
+            <fee type="expert" ref="#xpr0209" l="24" s="" d=""/>
+            <fee type="expert" ref="#xpr0210" l="24" s="" d=""/>
+            <fee type="expert" ref="#xpr0106" l="6" s="" d=""/>
+            <fee type="clerk" l="24" s="" d=""/>
+            <fee type="rolls" l="30" s="" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="other" l="6" s="" d="">Annexes</fee>
+            <fee type="plans" l="42" s="" d=""/>
+            <total l="138" s="" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="expert" l="18" s="" d=""/>
+            <expense type="clerk" l="21" s="15" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis>Choix du tiers expert : "En vertu du pouvoir à nous donné respectivement … de choisir pour nous départager, tel de nos confrères que nous jugerons à propos, nous avons couppé six bandes de papier de mesme forme, et sur chacune d'icelles, écrit le nom d'un de nos confrères
+Ces bandes de papier roullées et mises dans le chapeau du nommé Jean Vignon, jeune garçon passant dans la rue et par nous appellé, ayant esté par lui remuées à diverses fois, et l'une d'icelles tirée et ouverte, il s'est trouvé écrit dessus le nom du sieur Egresset"</analysis>
+        <noteworthy/>
+      </description>
+    </expertise>

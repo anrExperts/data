@@ -1,0 +1,190 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1006d018">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-09-01T12:00:00">2020-09-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2017-04-01T12:00:00">2017-04-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1006</idno>
+        <idno type="item">018</idno>
+        <facsimile from="0110" to="0116"/>
+        <physDesc>
+          <extent sketch="false">2</extent>
+          <appendices>
+            <appendice>
+              <type type="petition">Requête</type>
+              <extent>2</extent>
+              <desc>requête de Germain, Pierre au lieutenant civil</desc>
+              <note/>
+            </appendice>
+          </appendices>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-08-08" type="paris"/>
+        </sessions>
+        <places>
+          <place type="paris">
+            <address>
+              <street>Rue Saint-Honoré</street>
+              <buildingNumber/>
+            </address>
+            <complement>vis à vis l’Oratoire</complement>
+            <parish/>
+            <owner>Germain</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="assessment">Décrire et évaluer les travaux à venir</category>
+          <designation rubric="true">Visite de réparations à faire en une maison</designation>
+        </categories>
+        <procedure>
+          <framework type="b1">Requête auprès d’une institution pour qu’elle demande une expertise</framework>
+          <origination type="parties">Les parties</origination>
+          <sentences>
+            <sentence>
+              <orgName>lieutenant civil (ordonnance du 22 juillet 1776)</orgName>
+              <date when="1776-07-22"/>
+            </sentence>
+          </sentences>
+          <case>Germain a acheté la maison par adjudication (arrêt du Parlement du 26 juin 1776), dès qu’il en a pris possession, les locataires en ont exigé des réparations qu'il s'agit d'estimer</case>
+          <objects>
+            <object type="house">Maison(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0250" context="primary" appointment="appointed">
+              <title>architecte expert</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0057">
+              <persName>
+                <surname>Liébault de la Neuville</surname>
+                <forename>Christophe Edouard</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="true" intervention="false">
+              <person>
+                <persName>
+                  <surname>Germain</surname>
+                  <forename>Pierre</forename>
+                </persName>
+                <occupation>ancien contrôleur des rentes de l'hôtel de ville de Paris</occupation>
+              </person>
+              <status>contractor</status>
+              <expert ref="#xpr0250"/>
+            </party>
+            <party role="opponent" presence="" intervention="">
+              <person>
+                <persName>
+                  <surname/>
+                  <forename/>
+                </persName>
+                <occupation/>
+              </person>
+              <status/>
+              <expert ref=""/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <arrangement/>
+          <agreement type="noConclusion">Sans conclusion</agreement>
+          <estimate l="" s="" d=""/>
+          <fees detail="true">
+            <fee type="papers" l="3" s="" d=""/>
+            <fee type="expert" ref="#xpr0250" l="6" s="" d=""/>
+            <fee type="clerk" l="6" s="" d=""/>
+            <fee type="rolls" l="9" s="" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="24" s="" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="6" s="15" d=""/>
+            <expense type="expert" l="2" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder">
+          <term value="m3">Infiltration / fuite (dégâts des eaux ou autres)</term>
+        </keywords>
+        <keywords group="transformation"/>
+        <analysis>Cause [énonciation des réparations exigées par les locataires] [f. 1v°] « Pourquoy il a été conseillé d’avoir recours à votre autorité afin qu’il vous plut, monsieur, luy permettre de faire procéder par tel expert qu’il vous plairoit commettre à la visitte de lad. maison pour constater les réparations &amp; rétablissements urgens et nécessaires qui sont à y faire pour la conservation d’icelle &amp; prévenir les demandes des locataires et le mettre en état, lequel expert par le procès verbal qu’il dressera constat et à la nécessité desd. réparations &amp; ce qu’ils pourront coûter pour led. procès verbal servir et valoir ce que de raison &amp; lors duquel il se réserve de faire aud. expert tels dires, réquisition &amp; observations qu’il avisera pour par led. expert y avoit tel égard que de raison.</analysis>
+        <noteworthy/>
+      </description>
+    </expertise>

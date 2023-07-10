@@ -1,0 +1,184 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j580d004">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-10-01T12:00:00">2020-10-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2016-10-26T12:00:00">2016-10-26T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>RB</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1726</unitdate>
+    <idno type="unitid">Z1J580</idno>
+        <idno type="item">004</idno>
+        <facsimile from="0148" to="0194"/>
+        <physDesc>
+          <extent sketch="false">44</extent>
+          <appendices>
+            <appendice>
+              <type type="proxyPA">Pouvoir/procuration (acte sous seing privé)</type>
+              <extent>1</extent>
+              <desc/>
+              <note/>
+            </appendice>
+          </appendices>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1726-04-26" type="paris"/>
+          <date when="1726-05-04" type="paris"/>
+        </sessions>
+        <places>
+          <place type="paris">
+            <address>
+              <street>Rue des Vieux-Augustins [Atcuellement rue d'Argout et rue Hérold]</street>
+              <buildingNumber/>
+            </address>
+            <complement/>
+            <parish/>
+            <owner>Bouson</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="acceptation">Recevoir et évaluer le travail réalisé</category>
+          <designation rubric="true">Visite et toisé, vérification d'ouvrages</designation>
+        </categories>
+        <procedure>
+          <framework type="a">Commun accord des parties</framework>
+          <origination type="parties">Les parties</origination>
+          <sentences>
+            <sentence>
+              <orgName/>
+              <date when=""/>
+            </sentence>
+          </sentences>
+          <case>réception de travaux</case>
+          <objects>
+            <object type="house">Maison(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0232" context="primary" appointment="appointed">
+              <title>architecte juré du roi expert bourgeois de Paris</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0020">
+              <persName>
+                <surname>Quirot</surname>
+                <forename>Etienne François</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Bouson</surname>
+                  <forename>Etienne</forename>
+                </persName>
+                <occupation>chevalier de Latran, comte palatin, propriétaire de la maison</occupation>
+              </person>
+              <status>owner</status>
+              <expert ref="#xpr0232"/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname>Joubert</surname>
+                <forename>Louis</forename>
+              </persName>
+              <occupation>architecte et entrepreneur en bâtiment, chargé des travaux dans la maison de Bouson, Etienne</occupation>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0232">Les ouvrages sont estimés au total à 16025 livres 4 sols 3 deniers.</opinion>
+          <arrangement/>
+          <agreement type="conclusion">Conclusion</agreement>
+          <estimate l="16025" s="4" d="3"/>
+          <fees detail="true">
+            <fee type="papers" l="12" s="" d=""/>
+            <fee type="expert" ref="#xpr0232" l="42" s="" d=""/>
+            <fee type="clerk" l="42" s="" d=""/>
+            <fee type="rolls" l="35" s="" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="131" s="" d=""/>
+          </fees>
+          <expenses mentioned=""/>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis>Motivations
+                Louis Joubert a réalisé plusieurs campagnes de travaux de réparations dans la maison appartenant à Etienne Bouson, entre 1722 et 1725. Ce dernier a demandé un expert pour conduire la réception d'ouvrage et dresser son rapport.</analysis>
+        <noteworthy/>
+      </description>
+    </expertise>

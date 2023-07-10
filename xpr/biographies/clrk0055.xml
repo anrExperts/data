@@ -1,0 +1,116 @@
+<eac xmlns="https://archivists.org/ns/eac/v2" xml:id="clrk0055">
+  <control maintenanceStatus="">
+    <recordId>clrk0055</recordId>
+    <maintenanceAgency>
+      <agencyName>ANR Experts</agencyName>
+    </maintenanceAgency>
+    <maintenanceHistory>
+      <maintenanceEvent maintenanceEventType="created">
+        <agent agentType="machine">clerk_csv2eac.xqy/BaseX</agent>
+        <eventDateTime standardDateTime="2022-12-31T14:06:48.817+01:00"/>
+        <eventDescription>Création des fiches EAC-CPF à partir du tableau</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+    <sources>
+      <source id="sourceid86494829">
+        <reference href="">Almanach royal 1756</reference>
+      </source>
+      <source id="sourceid86494831">
+        <reference href="">Almanach royal 1757</reference>
+      </source>
+      <source id="sourceid86494833">
+        <reference href="">Almanach royal 1766</reference>
+      </source>
+      <source id="sourceid86494835">
+        <reference href="">Almanach royal 1767</reference>
+      </source>
+      <source id="sourceid86494837">
+        <reference href="">Almanach royal 1776</reference>
+      </source>
+      <source id="sourceid86494839">
+        <reference href="">Almanach royal 1777</reference>
+      </source>
+      <source id="sourceid86494841">
+        <reference href="">Almanach royal 1786</reference>
+      </source>
+      <source id="sourceid86494843">
+        <reference href="">Almanach royal 1787</reference>
+      </source>
+    </sources>
+  </control>
+  <cpfDescription>
+    <identity>
+      <entityType value="person"/>
+      <nameEntry status="authorized" preferredForm="true" sourceReference="">
+        <part localType="full">Bouillerot, Joseph</part>
+      </nameEntry>
+      <nameEntry status="alternative" preferredForm="false" sourceReference="">
+        <part localType="surname">Bouillerot</part>
+        <part localType="forename">Joseph</part>
+      </nameEntry>
+      <otherEntityTypes>
+        <otherEntityType>
+          <term>clerk</term>
+        </otherEntityType>
+      </otherEntityTypes>
+      <identityId>clrk0055</identityId>
+    </identity>
+    <description>
+      <functions>
+        <function sourceReference="#sourceid86494829 #sourceid86494831 #sourceid86494833 #sourceid86494835 #sourceid86494837 #sourceid86494839 #sourceid86494841 #sourceid86494843">
+          <term>Greffier</term>
+          <dateRange>
+            <fromDate sourceReference="" certainty="certain" standardDate="1756"/>
+            <toDate sourceReference="" certainty="certain" standardDate="1787"/>
+          </dateRange>
+        </function>
+        <function sourceReference="#sourceid86494837 #sourceid86494839">
+          <term>adjoint</term>
+          <dateRange>
+            <fromDate sourceReference="" certainty="certain" standardDate="1776"/>
+            <toDate sourceReference="" certainty="certain" standardDate="1777"/>
+          </dateRange>
+        </function>
+        <function sourceReference="#sourceid86494841">
+          <term>syndic</term>
+          <date sourceReference="" certainty="certain" standardDate="1786"/>
+        </function>
+        <function sourceReference="">
+          <term/>
+          <date sourceReference="" certainty="certain" standardDate=""/>
+        </function>
+        <function sourceReference="#sourceid86494843">
+          <term>doyen</term>
+          <date sourceReference="" certainty="certain" standardDate="1787"/>
+        </function>
+      </functions>
+      <places>
+        <place sourceReference="#sourceid86494829 #sourceid86494831">
+          <placeRole>Adresse</placeRole>
+          <placeName>rue de la Calendre</placeName>
+          <dateRange>
+            <fromDate sourceReference="" certainty="certain" standardDate="1756"/>
+            <toDate sourceReference="" certainty="certain" standardDate="1757"/>
+          </dateRange>
+        </place>
+        <place sourceReference="#sourceid86494833 #sourceid86494835 #sourceid86494837 #sourceid86494839">
+          <placeRole>Adresse</placeRole>
+          <placeName>pont Notre-Dame, près la Pompe</placeName>
+          <dateRange>
+            <fromDate sourceReference="" certainty="certain" standardDate="1766"/>
+            <toDate sourceReference="" certainty="certain" standardDate="1777"/>
+          </dateRange>
+        </place>
+        <place sourceReference="#sourceid86494841 #sourceid86494843">
+          <placeRole>Adresse</placeRole>
+          <placeName>rue Sainte Croix de la Bretonnerie</placeName>
+          <dateRange>
+            <fromDate sourceReference="" certainty="certain" standardDate="1786"/>
+            <toDate sourceReference="" certainty="certain" standardDate="1787"/>
+          </dateRange>
+        </place>
+      </places>
+    </description>
+  </cpfDescription>
+  <!---->
+</eac>

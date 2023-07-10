@@ -1,0 +1,198 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j584d048">
+  <meta/>
+  <control>
+    <maintenanceStatus>revised</maintenanceStatus>
+    <publicationStatus/>
+    <localControl localType="detailLevel">
+      <term>completed</term>
+    </localControl>
+    <maintenanceHistory>
+      <maintenanceEvent>
+                <eventType>revised</eventType>
+                <eventDateTime standardDateTime="2022-04-01T14:40:38Z">2022-04-01T14:40:38Z</eventDateTime>
+                <agentType>human</agentType>
+                <agent>llosserand</agent>
+                <eventDescription>rvpcd</eventDescription>
+            </maintenanceEvent>
+          <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateOpinionRef_files.xqy/BaseX</agent>
+        <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateRefValues_files.xqy/BaseX</agent>
+        <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+        <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>revised</eventType>
+        <eventDateTime standardDateTime="2020-11-01T12:00:00">2020-11-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>JH</agent>
+        <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>retroconverted</eventType>
+        <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>ead2xpr.xsl/Saxon9</agent>
+        <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>created</eventType>
+        <eventDateTime standardDateTime="2017-04-01T12:00:00">2017-04-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>llosserand</agent>
+        <eventDescription>Création de la fiche.</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+  </control>
+  <sourceDesc>
+    <unitdate>1726</unitdate>
+    <idno type="unitid">Z1J584</idno>
+    <idno type="item">048</idno>
+    <facsimile from="0568" to="0579"/>
+    <physDesc>
+      <extent sketch="false">6</extent>
+      <appendices>
+        <appendice>
+          <type type="other">Promesse</type>
+          <extent>1</extent>
+          <desc>(document barré) promesse de Duval, Mathurin de payer 100 livres sur les frais du procès verbal de Doucet, 5 décembre 1726</desc>
+          <note/>
+        </appendice>
+        <appendice>
+          <type type="other">Attestation</type>
+          <extent>1</extent>
+          <desc>attestation de Duval, Mathurin, qui a reçu 42 livres 12 sols 6 deniers restant de la somme de cent livres déposée entre les mains de Callou, greffier et de Doucet, Jacques : autres attestations de remise des plans, 14 juin 1728.</desc>
+          <note/>
+        </appendice>
+      </appendices>
+    </physDesc>
+  </sourceDesc>
+  <description>
+    <sessions>
+      <date when="1726-12-05" type="province"/>
+    </sessions>
+    <places>
+      <place type="province">
+        <address/>
+        <complement>une maison sise au village de Sèvres sur le grand chemin de Versailles appelée la maison de La Treille</complement>
+        <city>Sèvres [Hauts-de-Seine]</city>
+        <district/>
+        <owner>Duval</owner>
+      </place>
+    </places>
+    <categories>
+      <category type="acceptation">Recevoir et évaluer le travail réalisé</category>
+      <designation rubric="true">Visitte et estimation d'ouvrages de maçonnerie et autres à faire, pour le sieur Duval, contre le sieur Martel ; M. Doucet, expert</designation>
+    </categories>
+    <procedure>
+      <framework type="b2">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+      <origination type="institution">Une institution</origination>
+      <sentences>
+        <sentence>
+          <orgName>juridiction royale des bâtiments, ponts et chaussées de France (sentence contradictoire du 29 novembre 1726)</orgName>
+          <date when="1726-11-29"/>
+        </sentence>
+      </sentences>
+      <case>déterminer le coût des travaux réalisés et de ceux restant à faire à une maison à Sèvres</case>
+      <objects>
+        <object type="other">ouvrages de maçonnerie</object>
+      </objects>
+    </procedure>
+    <participants>
+      <experts>
+        <expert ref="#xpr0097" context="primary" appointment="appointed">
+          <title>juré expert entrepreneur de bâtiments à Paris</title>
+        </expert>
+      </experts>
+      <clerks>
+        <clerk ref="#clrk0033">
+          <persName>
+            <surname>Callou</surname>
+            <forename>Antoine-Charles</forename>
+          </persName>
+        </clerk>
+      </clerks>
+      <parties>
+        <party role="petitioner" presence="true" intervention="false">
+          <person>
+            <persName>
+              <surname>Duval</surname>
+              <forename>Mathurin</forename>
+            </persName>
+            <occupation>maître chandelier</occupation>
+          </person>
+          <status>owner</status>
+          <expert ref="#xpr0097"/>
+        </party>
+        <party role="opponent" presence="true" intervention="false">
+          <person>
+            <persName>
+              <surname>Martel</surname>
+              <forename>François</forename>
+            </persName>
+            <occupation>maître maçon</occupation>
+          </person>
+          <status>builder</status>
+          <expert ref="#xpr0097"/>
+        </party>
+      </parties>
+      <craftmen>
+        <craftman>
+          <persName>
+            <surname>Martel</surname>
+            <forename>Françoi</forename>
+          </persName>
+          <occupation>s, maître maçon</occupation>
+        </craftman>
+      </craftmen>
+    </participants>
+    <conclusions>
+      <opinion ref="#xpr0097">L'expert décrit les travaux réalisés et ceux qui restent à faire (sans donner de prix).</opinion>
+      <arrangement/>
+      <agreement type="conclusion">Conclusion</agreement>
+      <estimate l="" s="" d=""/>
+      <fees detail="true">
+        <fee type="papers" l="3" s="12" d="6"/>
+        <fee type="expert" ref="#xpr0097" l="24" s="" d=""/>
+        <fee type="clerk" l="24" s="" d=""/>
+        <fee type="rolls" l="5" s="15" d=""/>
+        <fee type="prosecutors" l="" s="" d=""/>
+        <fee type="help" l="" s="" d=""/>
+        <fee type="plans" l="" s="" d=""/>
+        <total l="57" s="7" d="6"/>
+      </fees>
+      <expenses mentioned="false"/>
+    </conclusions>
+    <keywords group="estates"/>
+    <keywords group="procedure"/>
+    <keywords group="contract"/>
+    <keywords group="encumbrance"/>
+    <keywords group="law"/>
+    <keywords group="measurement"/>
+    <keywords group="repairs"/>
+    <keywords group="guarantees"/>
+    <keywords group="responsability"/>
+    <keywords group="ownership"/>
+    <keywords group="value"/>
+    <keywords group="neighbourhood"/>
+    <keywords group="disorder"/>
+    <keywords group="transformation"/>
+    <analysis>Objet de l’expertise
+                « à l'effet de constater et estimer pour combien led. Martel peut avoir fait d'ouvrages ausd. bâtiments et pour combien il en reste à faire pour parachever lesd. bâtiments que nous priserons et estimons les ouvrages fait par augmentation et eu égard au marché et aux anciens matériaux dont led. Martel s'est servy et ce, en votre présence Monsieur après que les parties présentes à l'audience l'ait requis à l'effet de quoy vous vous transporteriez avec votre greffier sur les lieux ce jourd'huy sans qu'il soit besoin d'assignation ny sommation aux parties après qu'elles l'ont aussi consenty, pour votre procès verbal, et notre rapport fait et rapporté estre par vous, monsieur, ordonné ce que de raison, avez donné acte au sr Duval présent à l'audiance de sa déclaration qu'il a mis ès mains dud. Martel le plan signé de luy Duval mentionné dans le marché, lequel plan ledit Martel a emprunté dud. Duval pour s'y conformer, avez donné pareillement acte au sr Martel aussi présent à l'audience et de sa déclaration qu'il a rendu aud. Duval led. plan et acte aud. Duval de ce qu'il a nié que led. plan luy ay esté remis par led. Martel, avez aussi donné [f. 2r°] acte audit Martel de ce qu'il a déclaré avoir mis ès mains du charpentier coppie dud. plan pour le rez de chaussée seulement,ordonné que led. sr Duval retirerait les mil livres par luy déposez ès mains de Dumas sur laquelle somme serait pris la somme qu'il conviendroit pour la cause et frais tant de notre rapport que de votre procès verbal de descente tous dépens, dommages et intérests réservez ».</analysis>
+    <noteworthy/>
+  </description>
+</expertise>

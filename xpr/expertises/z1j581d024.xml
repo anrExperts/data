@@ -1,0 +1,225 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j581d024">
+  <meta/>
+  <control>
+    <maintenanceStatus>revised</maintenanceStatus>
+    <publicationStatus/>
+    <localControl localType="detailLevel">
+      <term>completed</term>
+    </localControl>
+    <maintenanceHistory>
+      <maintenanceEvent>
+                <eventType>revised</eventType>
+                <eventDateTime standardDateTime="2022-03-29T16:32:18Z">2022-03-29T16:32:18Z</eventDateTime>
+                <agentType>human</agentType>
+                <agent>llosserand</agent>
+                <eventDescription>rvpcd</eventDescription>
+            </maintenanceEvent>
+          <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateObjectsValues_db.xqy/BaseX</agent>
+        <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateOpinionRef_files.xqy/BaseX</agent>
+        <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateRefValues_files.xqy/BaseX</agent>
+        <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+        <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>revised</eventType>
+        <eventDateTime standardDateTime="2020-11-01T12:00:00">2020-11-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>JH</agent>
+        <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>retroconverted</eventType>
+        <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>ead2xpr.xsl/Saxon9</agent>
+        <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>created</eventType>
+        <eventDateTime standardDateTime="2017-04-01T12:00:00">2017-04-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>llosserand</agent>
+        <eventDescription>Création de la fiche.</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+  </control>
+  <sourceDesc>
+    <unitdate>1726</unitdate>
+    <idno type="unitid">Z1J581</idno>
+    <idno type="item">024</idno>
+    <facsimile from="0357" to="0361"/>
+    <physDesc>
+      <extent sketch="false">2</extent>
+      <appendices>
+        <appendice>
+          <type type="proxyPA">Pouvoir/procuration (acte sous seing privé)</type>
+          <extent>2</extent>
+          <desc>pouvoir donné le 6 juin 1726 par les héritiers à Delespine, Nicolas pour visiter le mur mitoyen.</desc>
+          <note/>
+        </appendice>
+      </appendices>
+    </physDesc>
+  </sourceDesc>
+  <description>
+    <sessions>
+      <date when="1726-06-19" type="paris"/>
+    </sessions>
+    <places>
+      <place type="paris">
+        <address>
+          <street>Rue du Mail [Voie actuelle]</street>
+          <buildingNumber/>
+        </address>
+        <complement>un mur entre deux maisons appartenant aux héritiers Lefébure (ou Lefèvre).</complement>
+        <parish/>
+        <owner>héritiers Lefèvre</owner>
+      </place>
+    </places>
+    <categories>
+      <category type="settlement">Départager</category>
+      <designation rubric="false">Prisée et estimation à l'amiable de travaux de séparations de  maison suite au partage fait d'entre la dame Lefébure et ses enfants faits en 1710 ; experts Nicolas de Lespine et Cochois</designation>
+    </categories>
+    <procedure>
+      <framework type="a">Commun accord des parties</framework>
+      <origination type="parties">Les parties</origination>
+      <sentences>
+        <sentence>
+          <orgName/>
+          <date when=""/>
+        </sentence>
+      </sentences>
+      <case>une première visite a été réalisée en 1710 à la suite d'un partage de succession. Un des héritiers ayant vendu sa part entre temps ( Lefévre, Jean-Louis), une nouvelle visite doit être réalisée.</case>
+      <objects>
+        <object type="wall">Mur(s)</object>
+      </objects>
+    </procedure>
+    <participants>
+      <experts>
+        <expert ref="#xpr0086" context="primary" appointment="appointed">
+          <title>architecte, de l'académie royale d'architecture, doyen des jurez experts pour les bastimens à Paris</title>
+        </expert>
+      </experts>
+      <clerks>
+        <clerk ref="#xpr0056">
+          <persName>
+            <surname>Cochois</surname>
+            <forename>Jacques Richard</forename>
+          </persName>
+        </clerk>
+      </clerks>
+      <parties>
+        <party role="petitioner" presence="false" intervention="false">
+          <person>
+            <persName>
+              <surname>du Fresnoy</surname>
+              <forename>Catherine</forename>
+            </persName>
+            <occupation>veuve du sieur Lefèvre, Toussaint, vivant écuyer du mail,</occupation>
+          </person>
+          <person>
+            <persName>
+              <surname>Lefèvre</surname>
+              <forename>Nicolas</forename>
+            </persName>
+            <occupation>écuyer valet de chambre du roy</occupation>
+          </person>
+          <person>
+            <persName>
+              <surname>Le Cesne</surname>
+              <forename>Guillaume</forename>
+            </persName>
+            <occupation>sieur de la Chapelle</occupation>
+          </person>
+          <person>
+            <persName>
+              <surname>Lefèvre</surname>
+              <forename>Barbe</forename>
+            </persName>
+            <occupation>son épouse qu'il autorise</occupation>
+          </person>
+          <person>
+            <persName>
+              <surname>Lefèvre</surname>
+              <forename>Louise Joseph</forename>
+            </persName>
+            <occupation>fille majeure</occupation>
+          </person>
+          <person>
+            <persName>
+              <surname>Le Noir</surname>
+              <forename>Gabriel</forename>
+            </persName>
+            <occupation>avocat et conseiler du roy estant aux droits de Lefèvre, Jean-Louis, écuyer, propriétaires, chacun pour un quart d'une maison scize susd. rue du Mail joignant celle cy dessus et encore led. sieur Lefèvre, Jean Louis, suivant le pouvoir à nous donné dont la teneur ensuit. »</occupation>
+          </person>
+          <status>owner</status>
+          <expert ref="#xpr0086"/>
+        </party>
+      </parties>
+      <craftmen>
+        <craftman>
+          <persName>
+            <surname/>
+            <forename/>
+          </persName>
+          <occupation/>
+        </craftman>
+      </craftmen>
+    </participants>
+    <conclusions>
+      <opinion ref="#xpr0086">« somme totalle à laquelle pouront monter les ouvrages par nous déclarés à faire pour raison desd. servitudes, deux cent soixante deux livres, cy : 262 livres »</opinion>
+      <arrangement/>
+      <agreement type="conclusion">Conclusion</agreement>
+      <estimate l="262" s="" d=""/>
+      <fees detail="true">
+        <fee type="papers" l="2" s="4" d=""/>
+        <fee type="expert" ref="#xpr0086" l="6" s="" d=""/>
+        <fee type="clerk" l="6" s="" d=""/>
+        <fee type="rolls" l="6" s="" d=""/>
+        <fee type="prosecutors" l="" s="" d=""/>
+        <fee type="help" l="" s="" d=""/>
+        <fee type="plans" l="" s="" d=""/>
+        <total l="20" s="4" d=""/>
+      </fees>
+      <expenses mentioned="false"/>
+    </conclusions>
+    <keywords group="estates"/>
+    <keywords group="procedure"/>
+    <keywords group="contract"/>
+    <keywords group="encumbrance"/>
+    <keywords group="law"/>
+    <keywords group="measurement"/>
+    <keywords group="repairs"/>
+    <keywords group="guarantees"/>
+    <keywords group="responsability"/>
+    <keywords group="ownership"/>
+    <keywords group="value"/>
+    <keywords group="neighbourhood"/>
+    <keywords group="disorder"/>
+    <keywords group="transformation"/>
+    <analysis>Pièce annexe
+                « Qu'il sera incessament proceddé par le sr Nicolas Delespine, architecte du roy à la prisée et estimation à l'amiable de ce à quoy pourrons monter ce qu'il a observer devoir estre fait pour la séparation desdites maisons par son raport du vingt un novembre 1710 en conséquence duquel le partage a esté fait entre lad. dame Lefébure et ses enfans pardevant le commissaire Daminois le vingt deux janvier 1711, depuis lequel led. sieur Jean Louis Lefébure a vendu son quart aud. sieur Lenoir, comme aussy de ce que chacun desd. deux maisons devra suporter du montant de lad. estimation [v°] et observera led. sr Delepine servitudes qui devront rester aux termes de son raport susdatté pour estre ce qui sera réglé par led. sr Delespine exécuté quand les parties ou l'une d'elles le requererons, et jusques à ce que lesd. deux maisons resterons en l'état quelles sont demeurées depuis led. raport et partage ; consent, led. sr Jean Louis Lefébure que ce à quoy le donnera monter ses par[t] des ouvrages pour les servitudes et séparations desd. deux maisons suivant et conformément le rapport dud. sr Delespine et l'estimation qu'il en fera reste entre les mains dud. sr Le Noir sur le prix de ces voutes dud. quart de maison ; et au moins de ce que dessus ladite dame veuve Lefébure consent de donner et acorder mainlevée pure et simple de l'opposition qu'elle a formée à ce sujet au décret vollontaire qui se poursuivent au Chastelet dud. quart de maison sur led. sr Lenoir acquéreur d'icelluy, et qu'elle soit rajée de tous registres et le decret dellivré sans qu'il soit fait mention, le tout sans dépens prétendre de part et d'autre, et sera le présent escrit remis ès mains dud. sr Delespine pour lui servir de preuve de la part de touttes les parties. Fait le sixieme juin mil sept cent vingt six. Dufreynoy Lefébure / Lefébure / [illisible] / G. le Cesme de la Chapelle / Jean Louis Lefébure / Barbe Le Fébure de la Chapelle / Louise Le Fébure ».</analysis>
+    <noteworthy/>
+  </description>
+</expertise>

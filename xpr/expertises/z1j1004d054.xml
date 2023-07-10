@@ -1,0 +1,245 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1004d054">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+                <eventType>revised</eventType>
+                <eventDateTime standardDateTime="2023-01-06T13:35:12Z">2023-01-06T13:35:12Z</eventDateTime>
+                <agentType>human</agentType>
+                <agent>jmorvan</agent>
+                <eventDescription>correction format id vues</eventDescription>
+            </maintenanceEvent>
+      <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-07-01T12:00:00">2020-07-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2017-10-01T12:00:00">2017-10-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1004</idno>
+        <idno type="item">054</idno>
+        <facsimile from="0597" to="0608"/>
+        <physDesc>
+          <extent sketch="false">10</extent>
+          <appendices>
+            <appendice>
+              <type type="proxyNA">Pouvoir/procuration (acte notarié)</type>
+              <extent>2</extent>
+              <desc/>
+              <note>pouvoir donné à l'expert Mouchet par la veuve Lemonnier et mère de sa fille mineure</note>
+            </appendice>
+          </appendices>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-06-22" type="paris"/>
+          <date when="1776-06-25" type="paris"/>
+          <date when="1776-06-25" type="paris"/>
+          <date when="1776-06-26" type="paris"/>
+          <date when="1776-06-26" type="paris"/>
+        </sessions>
+        <places>
+          <place xml:id="id208d300" type="paris">
+            <address>
+              <street>Rue des Bernardins</street>
+              <buildingNumber/>
+            </address>
+            <complement/>
+            <parish/>
+            <owner/>
+          </place>
+          <place xml:id="id208d317" type="paris">
+            <address>
+              <street>rue Traversine</street>
+              <buildingNumber/>
+            </address>
+            <complement/>
+            <parish/>
+            <owner/>
+          </place>
+          <place xml:id="id208d334" type="paris">
+            <address>
+              <street>rue Saint-Victor</street>
+              <buildingNumber/>
+            </address>
+            <complement/>
+            <parish/>
+            <owner/>
+          </place>
+        </places>
+        <categories>
+          <category type="estimation">Estimer la valeur des biens</category>
+          <designation rubric="true">Visitte et estimation des immeubles de la succession et communauté de biens du Sr Lemonnier et sa Veuve ; M. Mouchet, expert.</designation>
+        </categories>
+        <procedure>
+          <framework type="b2a">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Châtelet, lieutenant particulier (sentence)</orgName>
+              <date when="1776-05-29"/>
+            </sentence>
+          </sentences>
+          <case>Succession Marin Lemonnier (héritier mineur)</case>
+          <objects>
+            <object type="house">Maison(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0200" context="primary" appointment="appointed">
+              <title>architecte expert bourgeois de Paris</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0069">
+              <persName>
+                <surname>Beudot</surname>
+                <forename>Simon</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Lemonnier</surname>
+                  <forename>Marie Jeanne</forename>
+                </persName>
+                <occupation>fille mineure de défunt Lemonnier, Marin (maître couvreur) et de Madeline, Henriette son épouse actuellement sa veuve</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Dupont</surname>
+                  <forename/>
+                </persName>
+                <occupation>tuteur ad hoc de Marie Jeanne Lemonnier</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Madeline</surname>
+                  <forename>Henriette</forename>
+                </persName>
+                <occupation>veuve de Marin Le monnier, maître couvreur</occupation>
+              </person>
+              <status>heir</status>
+              <expert ref="#xpr0200"/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0200">« Recapitulation De touttes nos operations il resulte que nous avons estimé ladite maison rue des Bernardins dans son état à estre abattue plustot que retablie valoir la somme de trois mille trois cent livres cy… 3 300 l. Celle rue Saint Victor aussy dans son état actuel et avec touttes les charges et servitudes dont elle est tenue valoir la somme de quatorze mille livres cy… 14 000 l. Et enfin celle de la rue Traversine faisant l’encoignure desdites deux rue Traversine et du Musier, aussy dans son état actuel et avec touttes les charges et servitudes dont elle est tenue et cy devant établies valoir la somme de onze mille livres cy… 11 000 l. Partant que lesdits trois maisons ensemble valent en état la somme de … 28 300 l. »</opinion>
+          <arrangement/>
+          <agreement type="conclusion">Conclusion</agreement>
+          <estimate l="28300" s="" d=""/>
+          <estimates>
+            <place ref="#id208d300">
+              <appraisal l="3300" s="" d="">
+                <desc>une maison</desc>
+              </appraisal>
+            </place>
+            <place ref="#id208d317">
+              <appraisal l="11000" s="" d="">
+                <desc>une maison</desc>
+              </appraisal>
+            </place>
+            <place ref="#id208d334">
+              <appraisal l="14000" s="" d="">
+                <desc>une maison</desc>
+              </appraisal>
+            </place>
+          </estimates>
+          <fees detail="true">
+            <fee type="papers" l="14" s="3" d=""/>
+            <fee type="expert" ref="#xpr0200" l="30" s="" d=""/>
+            <fee type="clerk" l="30" s="" d=""/>
+            <fee type="rolls" l="66" s="" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="140" s="3" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="expert" l="10" s="" d=""/>
+            <expense type="clerk" l="39" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis/>
+        <noteworthy>contrat de vente du 27 janvier 1763 passé devant Miller notaire</noteworthy>
+      </description>
+    </expertise>

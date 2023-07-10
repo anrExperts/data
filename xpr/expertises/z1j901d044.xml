@@ -1,0 +1,258 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j901d044">
+      <meta/>
+      <control>
+        <maintenanceStatus/>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term/>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:45:33.927+02:00">2021-04-21T20:45:33.927+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateKeywordsModule_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour du module keywords.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:45:02.355+02:00">2021-04-21T20:45:02.355+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateExpertsFees_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour du coûts de l'expertise pour les experts.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:44:31.814+02:00">2021-04-21T20:44:31.814+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateExpertisesArrangement_files.xqy/BaseX</agent>
+            <eventDescription>Ajout du champs Accommodement dans l'éventualité d’une résolution par les parties.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:43:53.154+02:00">2021-04-21T20:43:53.154+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateExpertisesPlacesEstimates_files.xqy/BaseX</agent>
+            <eventDescription>Ajout des champs pour l'estimation des lieux.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2019-12-01T12:00:00">2019-12-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1766</unitdate>
+    <idno type="unitid">Z1J901</idno>
+        <idno type="item">44</idno>
+        <facsimile from="0723" to="0736"/>
+        <physDesc>
+          <extent sketch="false">13</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1766-05-12" type="province"/>
+          <date when="1766-05-28" type="province"/>
+          <date when="1766-06-03" type="province"/>
+        </sessions>
+        <places>
+          <place xml:id="id60663d1" type="province">
+            <address/>
+            <complement>à l'angle de la grande rue et de la rue Hemery</complement>
+            <city>Fontenay-sous-Bois</city>
+            <district/>
+            <owner>succession Hillebrand</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="assessment">Décrire et évaluer les travaux à venir</category>
+          <category type="estimation">Estimer la valeur des biens</category>
+          <designation rubric="true">Estimation d'une maison</designation>
+        </categories>
+        <procedure>
+          <framework type="b2b">L’institution est saisie dans le cadre d’une procédure (l’institution nomme un ou deux experts)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>lieutenant civil</orgName>
+              <date when="1766-04-23"/>
+            </sentence>
+          </sentences>
+          <case>succession Hillebrand ; vente par licitation</case>
+          <objects>
+            <object type="house">Maison(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0106" context="primary" appointment="court-appointed">
+              <title>architecte expert des bâtiments à Paris</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0062">
+              <persName>
+                <surname>Picquenon</surname>
+                <forename>Denis Joseph François</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="" intervention="">
+              <person>
+                <persName>
+                  <surname>Carré</surname>
+                  <forename>Jeanne</forename>
+                </persName>
+                <occupation>veuve de Melchior André Hillebrand, de son vivant tailleur
+                                privilégié du roi</occupation>
+              </person>
+              <status>heir</status>
+              <expert ref="#xpr0106"/>
+              <prosecutor>
+                <persName>
+                  <surname>Fauchu de Rennefort</surname>
+                  <forename>Benoist</forename>
+                </persName>
+              </prosecutor>
+            </party>
+            <party role="opponent" presence="" intervention="">
+              <person>
+                <persName>
+                  <surname>Hillebrand</surname>
+                  <forename>Augustin</forename>
+                </persName>
+                <occupation>héritier pour 1/4</occupation>
+              </person>
+              <status>heir</status>
+              <expert ref="#xpr0106"/>
+              <prosecutor>
+                <persName>
+                  <surname>Guerin</surname>
+                  <forename/>
+                </persName>
+              </prosecutor>
+            </party>
+            <party role="opponent" presence="" intervention="">
+              <person>
+                <persName>
+                  <surname>Hillebrand</surname>
+                  <forename>François André</forename>
+                </persName>
+                <occupation>héritier pour 1/4</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Hillebrand</surname>
+                  <forename>Marie Marguerite</forename>
+                </persName>
+                <occupation>héritier pour 1/4</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Hillebrand</surname>
+                  <forename>Antoine</forename>
+                </persName>
+                <occupation>héritier pour 1/4</occupation>
+              </person>
+              <status>heir</status>
+              <expert ref="#xpr0106"/>
+              <prosecutor>
+                <persName>
+                  <surname>Desforges</surname>
+                  <forename/>
+                </persName>
+              </prosecutor>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0106">« Ensuitte pour parvenir à l’estimation de cette maison nous avons pris les
+                    mesures de son emplacement fait un plan figuré d’iceluy sur lequel nous avons
+                    distingué ce qui est occupé en cours et jardins d’avec ce qui est occupé en
+                    batiments, nous avons mis des prix particuliers à chaque objet, fait attention à
+                    son état consistance et distribution, à la nature de la construction des
+                    differens batiments et édifices qui la composent, aux reparations les plus
+                    urgentes et necessaires à y faire par nous cy dessus constatées et estimées, et
+                    à sa situation à la proximité de Paris et du bois de Vincennes avec chaussée
+                    pavée pour y arriver Touttes considerations faittes nous prisons et estimons
+                    ladite maison à la charge du cens, des droits seigneuraixu et au cours du temps
+                    present la somme de 5200 l. Tel est, Monsieur, notre avis sur la valeur de
+                    ladite maison et dependances, sur celle des reparations les plus urgentes et
+                    necessaires qui sont à y faire, sur l’impossibilité de la partager en autant de
+                    portions qu’il y a de propriétaires, nous référant sur le tout à votre justice
+                    et prudence ordinaire. »</opinion>
+          <agreement type="conclusion">Conclusion</agreement>
+          <arrangement/>
+          <estimate l="5200" s="" d=""/>
+          <estimates>
+            <place ref="#id60663d1">
+              <appraisal l="" s="" d="">
+                <desc/>
+              </appraisal>
+            </place>
+          </estimates>
+          <fees detail="true">
+            <fee ref="#xpr0106" type="expert" l="72" s="" d=""/>
+            <fee type="clerk" l="72" s="" d=""/>
+            <fee type="rolls" l="34" s="" d=""/>
+            <fee type="papers" l="9" s="17" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <fee type="prosecutors" l="120" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <total l="367" s="17" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="47" s="10" d=""/>
+            <expense type="expert" l="18" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords type="law">
+          <term>réparations urgentes et nécessaires</term>
+        </keywords>
+        <keywords group=""/>
+        <analysis/>
+        <noteworthy/>
+      </description>
+    </expertise>

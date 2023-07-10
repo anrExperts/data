@@ -1,0 +1,197 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1005d058">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-07-01T12:00:00">2020-07-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2017-10-01T12:00:00">2017-10-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1005</idno>
+        <idno type="item">058</idno>
+        <facsimile from="0572" to="0575"/>
+        <physDesc>
+          <extent sketch="false">2</extent>
+          <appendices>
+            <appendice>
+              <type type="proxyPA">Pouvoir/procuration (acte sous seing privé)</type>
+              <extent>1</extent>
+              <desc/>
+              <note>pouvoir de Lemercier à Blanchon</note>
+            </appendice>
+          </appendices>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-07-29" type="paris"/>
+          <date when="1776-07-30" type="paris"/>
+          <date when="1776-07-30" type="paris"/>
+        </sessions>
+        <places>
+          <place type="paris">
+            <address>
+              <street>Rue Bourg l’abbé</street>
+              <buildingNumber/>
+            </address>
+            <complement/>
+            <parish/>
+            <owner>Lemercier</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="acceptation">Recevoir et évaluer le travail réalisé</category>
+          <designation rubric="true">Estimation d'honoraires dus au sieur Bonamy, architecte par le sieur Le Mercier, négociant à Paris; MM. Dumont et Blanchard, experts</designation>
+        </categories>
+        <procedure>
+          <framework type="a">Commun accord des parties</framework>
+          <origination type="parties">Les parties</origination>
+          <sentences>
+            <sentence>
+              <orgName/>
+              <date when=""/>
+            </sentence>
+          </sentences>
+          <case>Estimation des honoraires dus à l’architecte pour ses plans et opérations</case>
+          <objects>
+            <object type="other">honoraires d'architecte</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0104" context="primary" appointment="appointed">
+              <title/>
+            </expert>
+            <expert ref="#xpr0024" context="primary" appointment="appointed">
+              <title>architecte expert</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0058">
+              <persName>
+                <surname>Foucart</surname>
+                <forename>Paul Joseph</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="true" intervention="true">
+              <person>
+                <persName>
+                  <surname>Lemercier</surname>
+                  <forename>Jacques</forename>
+                </persName>
+                <occupation>négociant à Paris</occupation>
+              </person>
+              <status>limited-partner</status>
+              <expert ref="#xpr0024"/>
+            </party>
+            <party role="petitioner" presence="true" intervention="true">
+              <person>
+                <persName>
+                  <surname>Bonamy</surname>
+                  <forename>Sylvain</forename>
+                </persName>
+                <occupation>architecte</occupation>
+              </person>
+              <status>builder</status>
+              <expert ref="#xpr0104"/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="">« Nous avons conferé sur les differens plans coupes elevations de l’aile par nous raportés en notre precedente vacation ayant égard à la composition, à la redaction de ceux mis au net au trait seulement, de ceux lavés et enfin de ceux qui sont seulement au crayon Nous avons aussi examiné le devis fait pour les differens entrepreneurs, et les details en consequence, et enfin les differents objets des vacations énoncées en sept articles dudit memoire 
+Pour raison desquelles differentes operations plans et dessins nous estimons unanimement qu’il est dû audit sieur Bonamy par ledit sieur Lemercier la somme de six cent quatre vingt seize livres pour honoraires et vacations sur laquelle deduisant la somme de vingt quatre livres par luy reçue dudit sieur Lemercier ainsy qu’il le declare il luy reste du la somme de six cent soixante douze livres cy… 672 l. 
+Tel est notre avis unanime sur la valeur des honoraires dus audit sieur Bonamy par ledit sieur Lemercier suivant et aux termes du pouvoir à nous donné Fait par nous architecte expert susdit lesdits jours mois et an »</opinion>
+          <arrangement/>
+          <agreement type="agreement">Accord</agreement>
+          <estimate l="" s="" d=""/>
+          <fees detail="true">
+            <fee type="papers" l="5" s="10" d=""/>
+            <fee type="expert" ref="#xpr0104" l="18" s="" d=""/>
+            <fee type="expert" ref="#xpr0024" l="18" s="" d=""/>
+            <fee type="clerk" l="18" s="" d=""/>
+            <fee type="rolls" l="7" s="10" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="67" s="" d=""/>
+          </fees>
+          <expenses mentioned=""/>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation">
+          <term value="n9">Reconstruction</term>
+          <term value="n10">Rétablissement</term>
+        </keywords>
+        <analysis/>
+        <noteworthy>maison dans laquelle « il se fait differens rétablissemens et reconstructions »</noteworthy>
+      </description>
+    </expertise>

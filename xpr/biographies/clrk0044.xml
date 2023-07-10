@@ -1,0 +1,90 @@
+<eac xmlns="https://archivists.org/ns/eac/v2" xml:id="clrk0044">
+  <control maintenanceStatus="">
+    <recordId>clrk0044</recordId>
+    <maintenanceAgency>
+      <agencyName>ANR Experts</agencyName>
+    </maintenanceAgency>
+    <maintenanceHistory>
+      <maintenanceEvent maintenanceEventType="created">
+        <agent agentType="machine">clerk_csv2eac.xqy/BaseX</agent>
+        <eventDateTime standardDateTime="2022-12-31T14:06:48.817+01:00"/>
+        <eventDescription>Création des fiches EAC-CPF à partir du tableau</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+    <sources>
+      <source id="sourceid86495326">
+        <reference href="">Almanach royal 1736</reference>
+      </source>
+      <source id="sourceid86495328">
+        <reference href="">Almanach royal 1737</reference>
+      </source>
+      <source id="sourceid86495330">
+        <reference href="">Almanach royal 1746</reference>
+      </source>
+      <source id="sourceid86495332">
+        <reference href="">Almanach royal 1747</reference>
+      </source>
+      <source id="sourceid86495334">
+        <reference href="">Almanach royal 1756</reference>
+      </source>
+      <source id="sourceid86495336">
+        <reference href="">Almanach royal 1757</reference>
+      </source>
+    </sources>
+  </control>
+  <cpfDescription>
+    <identity>
+      <entityType value="person"/>
+      <nameEntry status="authorized" preferredForm="true" sourceReference="">
+        <part localType="full">Desmoulins, Jean</part>
+      </nameEntry>
+      <nameEntry status="alternative" preferredForm="false" sourceReference="">
+        <part localType="surname">Desmoulins</part>
+        <part localType="forename">Jean</part>
+      </nameEntry>
+      <otherEntityTypes>
+        <otherEntityType>
+          <term>clerk</term>
+        </otherEntityType>
+      </otherEntityTypes>
+      <identityId>clrk0044</identityId>
+    </identity>
+    <description>
+      <functions>
+        <function sourceReference="#sourceid86495326 #sourceid86495328 #sourceid86495330 #sourceid86495332 #sourceid86495334 #sourceid86495336">
+          <term>Greffier</term>
+          <dateRange>
+            <fromDate sourceReference="" certainty="certain" standardDate="1736"/>
+            <toDate sourceReference="" certainty="certain" standardDate="1757"/>
+          </dateRange>
+        </function>
+        <function sourceReference="#sourceid86495334 #sourceid86495336">
+          <term>syndic</term>
+          <dateRange>
+            <fromDate sourceReference="" certainty="certain" standardDate="1756"/>
+            <toDate sourceReference="" certainty="certain" standardDate="1757"/>
+          </dateRange>
+        </function>
+      </functions>
+      <places>
+        <place sourceReference="#sourceid86495326 #sourceid86495328">
+          <placeRole>Adresse</placeRole>
+          <placeName>rue Montorgueil, près la rue Tictonne</placeName>
+          <dateRange>
+            <fromDate sourceReference="" certainty="certain" standardDate="1736"/>
+            <toDate sourceReference="" certainty="certain" standardDate="1737"/>
+          </dateRange>
+        </place>
+        <place sourceReference="#sourceid86495330 #sourceid86495332 #sourceid86495334 #sourceid86495336">
+          <placeRole>Adresse</placeRole>
+          <placeName>rue Comtesse d'Artois</placeName>
+          <dateRange>
+            <fromDate sourceReference="" certainty="certain" standardDate="1746"/>
+            <toDate sourceReference="" certainty="certain" standardDate="1757"/>
+          </dateRange>
+        </place>
+      </places>
+    </description>
+  </cpfDescription>
+  <!---->
+</eac>

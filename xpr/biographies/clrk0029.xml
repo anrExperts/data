@@ -1,0 +1,109 @@
+<eac xmlns="https://archivists.org/ns/eac/v2" xml:id="clrk0029">
+  <control maintenanceStatus="">
+    <recordId>clrk0029</recordId>
+    <maintenanceAgency>
+      <agencyName>ANR Experts</agencyName>
+    </maintenanceAgency>
+    <maintenanceHistory>
+      <maintenanceEvent maintenanceEventType="created">
+        <agent agentType="machine">clerk_csv2eac.xqy/BaseX</agent>
+        <eventDateTime standardDateTime="2022-12-31T14:06:48.817+01:00"/>
+        <eventDescription>Création des fiches EAC-CPF à partir du tableau</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+    <sources>
+      <source id="sourceid86496844">
+        <reference href="">Almanach royal 1726</reference>
+      </source>
+      <source id="sourceid86496846">
+        <reference href="">Almanach royal 1727</reference>
+      </source>
+      <source id="sourceid86496848">
+        <reference href="">Almanach royal 1736</reference>
+      </source>
+      <source id="sourceid86496850">
+        <reference href="">Almanach royal 1737</reference>
+      </source>
+      <source id="sourceid86496852">
+        <reference href="">Almanach royal 1746</reference>
+      </source>
+      <source id="sourceid86496854">
+        <reference href="">Almanach royal 1747</reference>
+      </source>
+      <source id="sourceid86496856">
+        <reference href="">Almanach royal 1756</reference>
+      </source>
+      <source id="sourceid86496858">
+        <reference href="">Almanach royal 1757</reference>
+      </source>
+      <source id="sourceid86496860">
+        <reference href="">Almanach royal 1766</reference>
+      </source>
+    </sources>
+  </control>
+  <cpfDescription>
+    <identity>
+      <entityType value="person"/>
+      <nameEntry status="authorized" preferredForm="true" sourceReference="">
+        <part localType="full">Quirot, Jacques</part>
+      </nameEntry>
+      <nameEntry status="alternative" preferredForm="false" sourceReference="">
+        <part localType="surname">Quirot</part>
+        <part localType="forename">Jacques</part>
+      </nameEntry>
+      <nameEntry status="alternative" preferredForm="false" sourceReference="#sourceid86496848">
+        <part localType="surname">QUIROT le Jeune</part>
+      </nameEntry>
+      <otherEntityTypes>
+        <otherEntityType>
+          <term>clerk</term>
+        </otherEntityType>
+      </otherEntityTypes>
+      <identityId>clrk0029</identityId>
+    </identity>
+    <description>
+      <functions>
+        <function sourceReference="#sourceid86496844 #sourceid86496846 #sourceid86496848 #sourceid86496850 #sourceid86496852 #sourceid86496854 #sourceid86496856 #sourceid86496858 #sourceid86496860">
+          <term>Greffier</term>
+          <dateRange>
+            <fromDate sourceReference="" certainty="certain" standardDate="1726"/>
+            <toDate sourceReference="" certainty="certain" standardDate="1766"/>
+          </dateRange>
+        </function>
+        <function sourceReference="#sourceid86496852 #sourceid86496856 #sourceid86496860">
+          <term>doyen</term>
+          <dateRange>
+            <fromDate sourceReference="" certainty="certain" standardDate="1746"/>
+            <toDate sourceReference="" certainty="certain" standardDate="1766"/>
+          </dateRange>
+        </function>
+        <function sourceReference="#sourceid86496854 #sourceid86496858">
+          <term>doyen </term>
+          <dateRange>
+            <fromDate sourceReference="" certainty="certain" standardDate="1747"/>
+            <toDate sourceReference="" certainty="certain" standardDate="1757"/>
+          </dateRange>
+        </function>
+      </functions>
+      <places>
+        <place sourceReference="#sourceid86496844 #sourceid86496846">
+          <placeRole>Adresse</placeRole>
+          <placeName>rue de la Verrerie, près le Cimetière S. Jean</placeName>
+          <dateRange>
+            <fromDate sourceReference="" certainty="certain" standardDate="1726"/>
+            <toDate sourceReference="" certainty="certain" standardDate="1727"/>
+          </dateRange>
+        </place>
+        <place sourceReference="#sourceid86496848 #sourceid86496850 #sourceid86496852 #sourceid86496854 #sourceid86496856 #sourceid86496858 #sourceid86496860">
+          <placeRole>Adresse</placeRole>
+          <placeName>rue de la Verrerie</placeName>
+          <dateRange>
+            <fromDate sourceReference="" certainty="certain" standardDate="1736"/>
+            <toDate sourceReference="" certainty="certain" standardDate="1766"/>
+          </dateRange>
+        </place>
+      </places>
+    </description>
+  </cpfDescription>
+  <!--sort de la liste en 1767, Mayer devient Doyen, un nouveau Quirot entre dans la liste, Estienne Jacques-->
+</eac>

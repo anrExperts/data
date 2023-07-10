@@ -1,0 +1,195 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j664d064" status="">
+  <meta/>
+  <control>
+    <maintenanceStatus>revised</maintenanceStatus>
+    <publicationStatus/>
+    <localControl localType="detailLevel">
+      <term>completed</term>
+    </localControl>
+    <maintenanceHistory>
+      <maintenanceEvent>
+                <eventType>revised</eventType>
+                <eventDateTime standardDateTime="2022-05-25T08:56:19Z">2022-05-25T08:56:19Z</eventDateTime>
+                <agentType>human</agentType>
+                <agent>llosserand</agent>
+                <eventDescription>rvpcd</eventDescription>
+            </maintenanceEvent>
+          <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateObjectsValues_db.xqy/BaseX</agent>
+        <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-06-16T16:56:32.893+02:00">2021-06-16T16:56:32.893+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateOpinionRef_files.xqy/BaseX</agent>
+        <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-06-16T16:29:02.548+02:00">2021-06-16T16:29:02.548+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateRefValues_files.xqy/BaseX</agent>
+        <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>created</eventType>
+        <eventDateTime standardDateTime="2021-05-01T19:41:19Z">2021-05-01T19:41:19Z</eventDateTime>
+        <agentType>human</agentType>
+        <agent>llosserand</agent>
+        <eventDescription>Création de la fiche.</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+  </control>
+  <sourceDesc>
+    <unitdate>1736</unitdate>
+    <idno type="unitid">Z1J664</idno>
+    <idno type="item">064</idno>
+    <facsimile from="0700" to="0703"/>
+    <physDesc>
+      <extent sketch="false">4</extent>
+    </physDesc>
+  </sourceDesc>
+  <description>
+    <sessions>
+      <date when="1736-08-27" type="paris"/>
+    </sessions>
+    <places>
+      <place type="paris">
+        <address>
+          <street>rue de Charonne de Croix-Faubin</street>
+          <buildingNumber/>
+        </address>
+        <complement/>
+        <parish/>
+        <owner/>
+      </place>
+      <place type="paris">
+        <address>
+          <street>rue des Marais</street>
+          <buildingNumber/>
+        </address>
+        <complement>faubourg Saint-Germain</complement>
+        <parish/>
+        <owner/>
+      </place>
+    </places>
+    <categories>
+      <category type="acceptation">Recevoir et évaluer le travail réalisé</category>
+      <designation rubric="true">Visitte de fosse d'aisances, rue de Charonne et Desmarais pour le sieur Sourdeval ; MM. Desboeufs et Loir, experts ; M. Callon, greffier.</designation>
+    </categories>
+    <procedure>
+      <framework type="b2">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+      <origination type="institution">Une institution</origination>
+      <sentences>
+        <sentence>
+          <orgName>LC</orgName>
+          <date when="1736-08-01"/>
+        </sentence>
+      </sentences>
+      <case>maison saisie, réparations faites, remboursement des frais engagés par le fermier</case>
+      <objects>
+        <object type="house">Maison(s)</object>
+      </objects>
+    </procedure>
+    <participants>
+      <experts>
+        <expert ref="#xpr0089" context="primary" appointment="appointed">
+          <title>architecte juré expert à Paris</title>
+        </expert>
+        <expert ref="#xpr0183" context="primary" appointment="appointed">
+          <title>expert à Paris</title>
+        </expert>
+      </experts>
+      <clerks>
+        <clerk ref="#clrk0033">
+          <persName>
+            <surname>Callou</surname>
+            <forename>Antoine Charles</forename>
+          </persName>
+        </clerk>
+      </clerks>
+      <parties>
+        <party role="petitioner" presence="true" intervention="false">
+          <person>
+            <persName>
+              <surname>Sourdeval</surname>
+              <forename>Pierre</forename>
+            </persName>
+            <occupation>bourgeois de Paris</occupation>
+          </person>
+          <status>contractor</status>
+          <expert ref="#xpr0089"/>
+          <prosecutor>
+            <persName>
+              <surname>Vaillant</surname>
+              <forename/>
+            </persName>
+          </prosecutor>
+        </party>
+        <party role="opponent" presence="false" intervention="false">
+          <person>
+            <persName>
+              <surname>Pescheret veuve Le Best</surname>
+              <forename/>
+            </persName>
+            <occupation>veuve Mathieu Le Best docteur en médecine, tutrice, partie saisie</occupation>
+          </person>
+          <status>mortgagor</status>
+          <expert ref="#xpr0089"/>
+        </party>
+        <party role="opponent" presence="false" intervention="false">
+          <person>
+            <persName>
+              <surname>De Marne Jugemiens</surname>
+              <forename>Germain</forename>
+            </persName>
+            <occupation>géographe du roi</occupation>
+          </person>
+          <status>creditor</status>
+          <expert ref="#xpr0183"/>
+        </party>
+      </parties>
+      <craftmen>
+        <craftman>
+          <persName>
+            <surname/>
+            <forename/>
+          </persName>
+          <occupation/>
+        </craftman>
+      </craftmen>
+    </participants>
+    <conclusions>
+      <agreement type="agreement">Accord</agreement>
+      <opinion ref="#xpr0089 #xpr0183">Somme totalle à laquelle montent et reviennent les ouvrages fait dans lesdites trois fosses et à l’ocasion d’icelles tant en maçonnerie que étayement vuidange 594 livre 7 sols 5 deniers</opinion>
+      <arrangement/>
+      <estimate l="" s="" d=""/>
+      <fees detail="">
+        <total l="" s="" d=""/>
+      </fees>
+      <expenses mentioned="false"/>
+    </conclusions>
+    <keywords group="estates"/>
+    <keywords group="procedure"/>
+    <keywords group="contract"/>
+    <keywords group="encumbrance"/>
+    <keywords group="law"/>
+    <keywords group="measurement"/>
+    <keywords group="repairs"/>
+    <keywords group="guarantees"/>
+    <keywords group="responsability"/>
+    <keywords group="ownership"/>
+    <keywords group="value"/>
+    <keywords group="neighbourhood"/>
+    <keywords group="disorder"/>
+    <keywords group="transformation"/>
+    <analysis/>
+    <noteworthy>pv des réparations faites  par Loir l'aîné et Cudeville juré expert le 11 octobre 1734
+L'expert Loir et nommé par de Marne tnadis que Desboeufs est nommé par tous les autres parties.
+Pas de renvoi au juge.</noteworthy>
+  </description>
+</expertise>

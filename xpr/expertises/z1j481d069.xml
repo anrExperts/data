@@ -1,0 +1,205 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j481d069">
+      <meta/>
+      <control>
+        <maintenanceStatus/>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term/>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:45:33.927+02:00">2021-04-21T20:45:33.927+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateKeywordsModule_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour du module keywords.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:44:31.814+02:00">2021-04-21T20:44:31.814+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateExpertisesArrangement_files.xqy/BaseX</agent>
+            <eventDescription>Ajout du champs Accommodement dans l'éventualité d’une résolution par les parties.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:43:53.154+02:00">2021-04-21T20:43:53.154+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateExpertisesPlacesEstimates_files.xqy/BaseX</agent>
+            <eventDescription>Ajout des champs pour l'estimation des lieux.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2020-03-01T12:00:00">2020-03-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1706</unitdate>
+    <idno type="unitid">Z1J481</idno>
+        <idno type="item">69</idno>
+        <facsimile from="0634" to="0642"/>
+        <physDesc>
+          <extent sketch="false">6</extent>
+          <appendices>
+            <appendice>
+              <type type="other">Compte imprimé</type>
+              <extent>1</extent>
+              <desc/>
+              <note/>
+            </appendice>
+          </appendices>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1706-06-19" type="suburbs"/>
+        </sessions>
+        <places>
+          <place xml:id="id59643d1" type="suburbs">
+            <address/>
+            <complement>la Chapelle Saint-Lazare</complement>
+            <city>Paris</city>
+            <district/>
+            <owner>époux Bouilly</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="estimation">Estimer la valeur des biens</category>
+          <designation rubric="true">Estimation de terrein de maison</designation>
+        </categories>
+        <procedure>
+          <framework type="b2b">L’institution est saisie dans le cadre d’une procédure (l’institution nomme un ou deux experts)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>lieutenant civil</orgName>
+              <date when="1706-05-05"/>
+            </sentence>
+          </sentences>
+          <case>Anticipation d'une partie de terrain par les acquéreurs sur la cour
+                    commune</case>
+          <objects>
+            <object type="house">Maison(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0027" context="third-party" appointment="court-appointed">
+              <title>architecte du roi expert bourgeois de Paris</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0014">
+              <persName>
+                <surname>Baudoin</surname>
+                <forename>Pierre</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="true" intervention="false">
+              <person>
+                <persName>
+                  <surname>Bouilly</surname>
+                  <forename>Nicolas</forename>
+                </persName>
+                <occupation>cordonnier</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Chabot</surname>
+                  <forename>Ambroise</forename>
+                </persName>
+                <occupation>épouse Bouilly</occupation>
+              </person>
+              <status>owner</status>
+              <expert ref="#xpr0027"/>
+            </party>
+            <party role="opponent" presence="" intervention="">
+              <person>
+                <persName>
+                  <surname>Pigalle</surname>
+                  <forename>Crestienne et Margueritte</forename>
+                </persName>
+                <occupation>filles majeures</occupation>
+              </person>
+              <status>owner</status>
+              <expert ref="#xpr0027"/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0027">"Sur lesquelles contrariétés d'avis nous tiers expert après avoir examiné
+                    les lieux en question que nous avons trouvé conformes à la déclaration du
+                    precedant procès verbail nous estimons que le fourny qui doibt estre commun
+                    entre les partyes suivant la clause du contrat d'acquisition de Boully et dont
+                    ledit Piagalle a l'interest jouissance presentement après en avoir demolly le
+                    four et la cheminée pour les réduire et former de petite cheminée, doit estre
+                    reduit et refait comme il est dit cy devant pour que la jouissance en soit
+                    commune entre les parties et que pour cet effect ledit four sera retably de
+                    mesme que la cheminée"</opinion>
+          <agreement type="conclusion">Conclusion</agreement>
+          <arrangement/>
+          <estimate l="" s="" d=""/>
+          <estimates>
+            <place ref="#id59643d1">
+              <appraisal l="" s="" d="">
+                <desc/>
+              </appraisal>
+            </place>
+          </estimates>
+          <fees detail="false">
+            <total l="" s="" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="" s="" d=""/>
+            <expense type="expert" l="7" s="10" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group=""/>
+        <analysis/>
+        <noteworthy/>
+      </description>
+      <comment>Premiers experts : Lajoue, Miché</comment>
+    </expertise>

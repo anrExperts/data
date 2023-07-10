@@ -1,0 +1,203 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1000d017">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-09-01T12:00:00">2020-09-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2018-01-01T12:00:00">2018-01-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>PC</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1000</idno>
+        <idno type="item">017</idno>
+        <facsimile from="0141" to="0145"/>
+        <physDesc>
+          <extent sketch="false">4</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-03-06" type="province"/>
+          <date when="1776-03-08" type="paris"/>
+        </sessions>
+        <places>
+          <place type="province">
+            <address/>
+            <complement/>
+            <city>Arcueil</city>
+            <district/>
+            <owner/>
+          </place>
+          <place type="office">
+            <address/>
+          </place>
+        </places>
+        <categories>
+          <category type="settlement">Départager</category>
+          <designation rubric="true">Visite d’objets contentieux</designation>
+        </categories>
+        <procedure>
+          <framework type="b2b">L’institution est saisie dans le cadre d’une procédure (l’institution nomme un ou deux experts)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>LC</orgName>
+              <date when="1776-01-16"/>
+            </sentence>
+          </sentences>
+          <case>Contentieux autour d’une servitude, une toiture d’une maison appartenant au Sieur Day en saillie provoquant un écoulement des eaux sur la propriété du Sieur Gaudier, requérant, qui en exige la suppression.</case>
+          <objects>
+            <object type="house">Maison(s)</object>
+            <object type="other">toiture</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0005" context="third-party" appointment="court-appointed">
+              <title>architecte expert</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0064">
+              <persName>
+                <surname>Gobert</surname>
+                <forename>Jean Charles Simon</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Gaudier</surname>
+                  <forename>Pierre Etienne</forename>
+                </persName>
+                <occupation>avocat au parlement</occupation>
+              </person>
+              <status>owner</status>
+              <expert ref="#xpr0005"/>
+              <prosecutor>
+                <persName>
+                  <surname>Regley</surname>
+                  <forename>Jacques François</forename>
+                </persName>
+              </prosecutor>
+            </party>
+            <party role="opponent" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Day</surname>
+                  <forename>Jean</forename>
+                </persName>
+                <occupation>conseiller du roi en l'élection de Paris</occupation>
+              </person>
+              <status>owner</status>
+              <expert ref="#xpr0005"/>
+              <prosecutor>
+                <persName>
+                  <surname>Verger</surname>
+                  <forename>Pierre</forename>
+                </persName>
+              </prosecutor>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0005">« En conséquence de ces vacations sur le lieu, par lesquelles nous avons reconnu l’exactitude de l’objet du contentieux fait par les Sieurs Devillier et Dosmond premiers experts, [...], il est vrai que le Sieur Day n’a pas le droit de renvoyer sur la propriété de son voisin une seule goutte des eaux pluviales qui tombent sur la sienne, ainsi il doit rectifier la couverture de ces deux murs en y donnant une forme triangulaire qui rejette les eaux de pluie sur sa propriété ce qui nous paroit du moins le plus simple attendu la disposition des gouttières et chenaux de plomb qui suivent ce mur. »</opinion>
+          <arrangement/>
+          <agreement type="conclusion">Conclusion</agreement>
+          <estimate l="" s="" d=""/>
+          <fees detail="true">
+            <fee type="papers" l="15" s="" d=""/>
+            <fee type="expert" ref="#xpr0005" l="30" s="" d=""/>
+            <fee type="clerk" l="30" s="" d=""/>
+            <fee type="rolls" l="18" s="" d=""/>
+            <fee type="prosecutors" l="40" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="433" s="" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="20" s="" d=""/>
+            <expense type="expert" l="22" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis/>
+        <noteworthy/>
+      </description>
+    </expertise>

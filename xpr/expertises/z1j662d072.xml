@@ -1,0 +1,195 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j662d072" status="">
+  <meta/>
+  <control>
+    <maintenanceStatus>revised</maintenanceStatus>
+    <publicationStatus/>
+    <localControl localType="detailLevel">
+      <term>completed</term>
+    </localControl>
+    <maintenanceHistory>
+      <maintenanceEvent>
+                <eventType>revised</eventType>
+                <eventDateTime standardDateTime="2022-04-29T08:47:18Z">2022-04-29T08:47:18Z</eventDateTime>
+                <agentType>human</agentType>
+                <agent>llosserand</agent>
+                <eventDescription>rvpcd</eventDescription>
+            </maintenanceEvent>
+          <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateObjectsValues_db.xqy/BaseX</agent>
+        <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-06-16T16:56:32.893+02:00">2021-06-16T16:56:32.893+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateOpinionRef_files.xqy/BaseX</agent>
+        <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-06-16T16:29:02.548+02:00">2021-06-16T16:29:02.548+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateRefValues_files.xqy/BaseX</agent>
+        <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>created</eventType>
+        <eventDateTime standardDateTime="2021-03-05T20:27:26Z">2021-03-05T20:27:26Z</eventDateTime>
+        <agentType>human</agentType>
+        <agent>llosserand</agent>
+        <eventDescription>Création de la fiche.</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+  </control>
+  <sourceDesc>
+    <unitdate>1736</unitdate>
+    <idno type="unitid">Z1J662</idno>
+    <idno type="item">072</idno>
+    <facsimile from="0705" to="0714"/>
+    <physDesc>
+      <extent sketch="false">8</extent>
+      <appendices>
+        <appendice>
+          <type type="petition">Requête</type>
+          <extent>1</extent>
+          <desc/>
+          <note>requête au Lc suvi de l'ordonnance</note>
+        </appendice>
+      </appendices>
+    </physDesc>
+  </sourceDesc>
+  <description>
+    <sessions>
+      <date when="1736-05-29" type="paris"/>
+      <date when="1736-05-29" type="paris"/>
+      <date when="1736-05-30" type="paris"/>
+    </sessions>
+    <places>
+      <place xml:id="id527d98" type="paris">
+        <address>
+          <street>rue Saint-Martin</street>
+          <buildingNumber/>
+        </address>
+        <complement>enseigne de la Barbe blanche</complement>
+        <parish/>
+        <owner/>
+      </place>
+    </places>
+    <categories>
+      <category type="estimation">Estimer la valeur des biens</category>
+      <designation rubric="true">Visitte et estimation de maison, rue St Martin, pour demoiselle Nicolle Baudouin, Veuve Richer, me épicier ; M. Desboeuf, expert ; M. Callon, greffier.</designation>
+    </categories>
+    <procedure>
+      <framework type="b2">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+      <origination type="institution">Une institution</origination>
+      <sentences>
+        <sentence>
+          <orgName>LC (ordonnance)</orgName>
+          <date when="1736-05-12 "/>
+        </sentence>
+      </sentences>
+      <case>partage de succession (communauté), dont enfants mineurs</case>
+      <objects>
+        <object type="house">Maison(s)</object>
+      </objects>
+    </procedure>
+    <participants>
+      <experts>
+        <expert ref="#xpr0089" context="primary" appointment="court-appointed">
+          <title>architecte expert bourgeois de Paris</title>
+        </expert>
+      </experts>
+      <clerks>
+        <clerk ref="#clrk0033">
+          <persName>
+            <surname>Callou</surname>
+            <forename>Charles Antoine</forename>
+          </persName>
+        </clerk>
+      </clerks>
+      <parties>
+        <party role="petitioner" presence="false" intervention="false">
+          <person>
+            <persName>
+              <surname>Baudoin veuve Richer</surname>
+              <forename>Nicole</forename>
+            </persName>
+            <occupation>veuve Jérôme Richer, marchand épicier</occupation>
+          </person>
+          <status>heir</status>
+          <expert ref="#xpr0089"/>
+        </party>
+        <party role="petitioner" presence="true" intervention="false">
+          <person>
+            <persName>
+              <surname>Mocquel</surname>
+              <forename>Albert François</forename>
+            </persName>
+            <occupation/>
+          </person>
+          <status>heir</status>
+          <expert ref="#xpr0089"/>
+        </party>
+        <party role="petitioner" presence="false" intervention="false">
+          <person>
+            <persName>
+              <surname>Héry</surname>
+              <forename>Louis</forename>
+            </persName>
+            <occupation>marchand scirier bourgeoi de la ville d'Orléans, tuteur ad hoc de Nicole Antoinette Richer son épouse...</occupation>
+          </person>
+          <status>heir</status>
+          <expert ref="#xpr0089"/>
+        </party>
+      </parties>
+      <craftmen>
+        <craftman>
+          <persName>
+            <surname/>
+            <forename/>
+          </persName>
+          <occupation/>
+        </craftman>
+      </craftmen>
+    </participants>
+    <conclusions>
+      <agreement type="conclusion">Conclusion</agreement>
+      <opinion ref="#xpr0089">Après laquelle lecture considérations faitte du quartier où est icelui ladite maison de l’état actuel de s différens bâtiments qui la composent aux réparations qui sont à y faire et au cours du tems présent nous la prisons et estimons la somme de cinquante six mil livres à la charge du cens et droits seigneuriaux, cy 56000 livres</opinion>
+      <arrangement/>
+      <estimate l="56000 " s="" d=""/>
+      <estimates>
+        <place ref="#id527d98">
+          <appraisal l="56000 " s="" d="">
+            <desc>une maison</desc>
+          </appraisal>
+        </place>
+      </estimates>
+      <fees detail="false">
+        <total l="" s="" d=""/>
+      </fees>
+      <expenses mentioned="false"/>
+    </conclusions>
+    <keywords group="estates"/>
+    <keywords group="procedure"/>
+    <keywords group="contract"/>
+    <keywords group="encumbrance"/>
+    <keywords group="law"/>
+    <keywords group="measurement"/>
+    <keywords group="repairs"/>
+    <keywords group="guarantees"/>
+    <keywords group="responsability"/>
+    <keywords group="ownership"/>
+    <keywords group="value"/>
+    <keywords group="neighbourhood"/>
+    <keywords group="disorder"/>
+    <keywords group="transformation"/>
+    <analysis/>
+    <noteworthy>donation par contrat de mariage du 12 octobre 1713 devant Durand notaire
+Jérôme, ?, Marguerite Richer frère et soeur germain, enfants du premier lit de feu Jérôme Riché et Jeann Bazin sa première  femme.
+
+Les parties demandent dans la requête que ce soit le LC qui nomme un seul expert pour tous. Nommé par ordonnance</noteworthy>
+  </description>
+</expertise>

@@ -1,0 +1,276 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1006d055">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-09-01T12:00:00">2020-09-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2017-04-01T12:00:00">2017-04-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1006</idno>
+        <idno type="item">055</idno>
+        <facsimile from="0699" to="0723"/>
+        <physDesc>
+          <extent sketch="false">24</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-08-21" type="paris"/>
+          <date when="1776-09-02" type="paris"/>
+          <date when="1776-09-03" type="paris"/>
+          <date when="1776-09-04" type="paris"/>
+          <date when="1776-09-06" type="paris"/>
+          <date when="1776-09-07" type="paris"/>
+          <date when="1776-09-09" type="paris"/>
+          <date when="1776-09-10" type="province"/>
+          <date when="1776-09-11" type="province"/>
+        </sessions>
+        <places>
+          <place xml:id="id940d305" type="paris">
+            <address>
+              <street>Rue Galande : rue Trainée ; Thiais</street>
+              <buildingNumber/>
+            </address>
+            <complement>une maison située à Paris rue Galande, près la place Maubert à droite en y entrant par la rue Saint-Jacques, occupée par le sieur Fauchereau</complement>
+            <parish/>
+            <owner>Succession Brelut de la Grange</owner>
+          </place>
+          <place xml:id="id940d324" type="paris">
+            <address>
+              <street>rue Trainée</street>
+              <buildingNumber/>
+            </address>
+            <complement/>
+            <parish/>
+            <owner>Succession Brelut de la Grange</owner>
+          </place>
+          <place xml:id="id940d342" type="province">
+            <address/>
+            <complement>une autre maison et clos à Thiais, jardin et dépendances, rue du Cul-de-Sac</complement>
+            <city>Thiais</city>
+            <district/>
+            <owner>Succession Brelut de la Grange</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="estimation">Estimer la valeur des biens</category>
+          <designation rubric="true">Visite et estimation de maison</designation>
+        </categories>
+        <procedure>
+          <framework type="b2a">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>lieutenant civil (sentence du 14 août 1776)</orgName>
+              <date when="1776-08-14"/>
+            </sentence>
+          </sentences>
+          <case>partage de succession entre héritiers de Brelut de Lagrange, Charles</case>
+          <objects>
+            <object type="house">Maison(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0024" context="primary" appointment="court-appointed">
+              <title>architecte expert bourgeois</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0061">
+              <persName>
+                <surname>Lecoeur</surname>
+                <forename>Jean Clair</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Brelut de Lagrange</surname>
+                  <forename>César</forename>
+                </persName>
+                <occupation>bourgeois de Paris, héritier pour ¼ conjointement avec ses cinq frères et sœurs de feu Brelut de Lagrange, Charles, son ayeul paternel, écuyer du roi, doyen [?] substitut de monsieur le procureur du roi au Châtelet, a par représentation de feu Brelut de Lagrange, César son père conseiller du roi notaire au Châtelet en cette qualité propriétaire d’1/6 dans un quart...</occupation>
+              </person>
+              <status>heir</status>
+              <expert ref="#xpr0024"/>
+              <prosecutor>
+                <persName>
+                  <surname>Therillon</surname>
+                  <forename/>
+                </persName>
+              </prosecutor>
+            </party>
+            <party role="opponent" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Brelut de Lagrange</surname>
+                  <forename>Jean</forename>
+                </persName>
+                <occupation>majeure</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Mercier Daubeville</surname>
+                  <forename>Charles François</forename>
+                </persName>
+                <occupation>avocat au Parlement conseiller du roi président de l’élection de Pithiviers et de Brelut de Lagrange, Louise Elisabeth, son épouse</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Brelut de Lagrange</surname>
+                  <forename>Louise Elisabeth</forename>
+                </persName>
+                <occupation>son épouse</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Lemoine</surname>
+                  <forename>Louis Gabriel</forename>
+                </persName>
+                <occupation>directeur des aides et régisseur pour le roi</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Brelut de Lagrange</surname>
+                  <forename>Marie</forename>
+                </persName>
+                <occupation>son épouse</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Rocheu</surname>
+                  <forename>Elisabeth Antoinette</forename>
+                </persName>
+                <occupation>veuve de Brelut de Lagrange, Cézar, commissaire du roi notaire au Châtelet de Paris, comme tutrice de Brelut de Lagrange, Louis, son fils mineur</occupation>
+              </person>
+              <status>heir</status>
+              <expert ref="#xpr0024"/>
+              <prosecutor>
+                <persName>
+                  <surname>Creton</surname>
+                  <forename/>
+                </persName>
+              </prosecutor>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0024">L’ensemble des immeubles provenant de la succession de défunt Brelut de Lagrange, Charles monte à la somme de 72000 livres et ne se peut partager entre les héritiers.</opinion>
+          <arrangement/>
+          <agreement type="conclusion">Conclusion</agreement>
+          <estimate l="72000" s="" d=""/>
+          <estimates>
+            <place ref="#id940d305">
+              <appraisal l="38500" s="" d="">
+                <desc>maison</desc>
+              </appraisal>
+            </place>
+            <place ref="#id940d324">
+              <appraisal l="18000" s="" d="">
+                <desc>maison</desc>
+              </appraisal>
+            </place>
+            <place ref="#id940d342">
+              <appraisal l="8000" s="" d="">
+                <desc>maison de Thiais</desc>
+              </appraisal>
+            </place>
+          </estimates>
+          <fees detail="true">
+            <fee type="papers" l="25" s="12" d=""/>
+            <fee type="expert" ref="#xpr0024" l="90" s="" d=""/>
+            <fee type="clerk" l="90" s="" d=""/>
+            <fee type="rolls" l="76" s="" d=""/>
+            <fee type="prosecutors" l="90" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="371" s="12" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="76" s="4" d=""/>
+            <expense type="expert" l="26" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis/>
+        <noteworthy/>
+      </description>
+    </expertise>

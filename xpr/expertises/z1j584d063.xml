@@ -1,0 +1,195 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j584d063">
+  <meta/>
+  <control>
+    <maintenanceStatus>revised</maintenanceStatus>
+    <publicationStatus/>
+    <localControl localType="detailLevel">
+      <term>completed</term>
+    </localControl>
+    <maintenanceHistory>
+      <maintenanceEvent>
+                <eventType>revised</eventType>
+                <eventDateTime standardDateTime="2022-04-01T15:00:48Z">2022-04-01T15:00:48Z</eventDateTime>
+                <agentType>human</agentType>
+                <agent>llosserand</agent>
+                <eventDescription>rvpcd</eventDescription>
+            </maintenanceEvent>
+          <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateObjectsValues_db.xqy/BaseX</agent>
+        <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateRefValues_files.xqy/BaseX</agent>
+        <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+        <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>revised</eventType>
+        <eventDateTime standardDateTime="2020-11-01T12:00:00">2020-11-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>JH</agent>
+        <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>retroconverted</eventType>
+        <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>ead2xpr.xsl/Saxon9</agent>
+        <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>created</eventType>
+        <eventDateTime standardDateTime="2017-04-01T12:00:00">2017-04-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>llosserand</agent>
+        <eventDescription>Création de la fiche.</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+  </control>
+  <sourceDesc>
+    <unitdate>1726</unitdate>
+    <idno type="unitid">Z1J584</idno>
+    <idno type="item">063</idno>
+    <facsimile from="0841" to="0851"/>
+    <physDesc>
+      <extent sketch="false">10</extent>
+    </physDesc>
+  </sourceDesc>
+  <description>
+    <sessions>
+      <date when="1726-12-18" type="paris"/>
+      <date when="1727-05-26" type="paris"/>
+      <date when="1727-11-19" type="paris"/>
+    </sessions>
+    <places>
+      <place xml:id="id520d254" type="paris">
+        <address>
+          <street>Rue des Rosiers, faubourg Saint-Germain [Voie ancienne : voir rue des Eglantiers. Actuelle rue des Roses. Actuelle rue Amyot. Actuelle partie de la rue de Torcy. Actuelle partie de la rue Saint-Guillaume]</street>
+          <buildingNumber/>
+        </address>
+        <complement/>
+        <parish/>
+        <owner>succession Hébert</owner>
+      </place>
+    </places>
+    <categories>
+      <category type="estimation">Estimer la valeur des biens</category>
+      <designation rubric="true">Visitte d'une maison, rue des rosiers fauxbourg St Germain, entre les héritiers Gérin et les héritiers Pagnés ; MM. Quirot, Demezerets et Fourier, experts</designation>
+    </categories>
+    <procedure>
+      <framework type="b2">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+      <origination type="institution">Une institution</origination>
+      <sentences>
+        <sentence>
+          <orgName>lieutenant civil</orgName>
+          <date when="1726-11-16"/>
+        </sentence>
+      </sentences>
+      <case>estimation de maison dans le cadre d'une succession (les augmentations réalisées doivent être portées au compte de la communauté afin de rembourser les parties de leurs frais)</case>
+      <objects>
+        <object type="house">Maison(s)</object>
+      </objects>
+    </procedure>
+    <participants>
+      <experts>
+        <expert ref="#xpr0232" context="primary" appointment="appointed">
+          <title>expert des bâtiments à Paris</title>
+        </expert>
+        <expert ref="#xpr0111" context="primary" appointment="appointed">
+          <title>expert des bâtiments à Paris</title>
+        </expert>
+        <expert ref="#xpr0078" context="primary" appointment="court-appointed">
+          <title>architecte (nommé par sentence du 6 septembre 1727)</title>
+        </expert>
+      </experts>
+      <clerks>
+        <clerk ref="#clrk0029">
+          <persName>
+            <surname>Quirot</surname>
+            <forename>Jacques</forename>
+          </persName>
+        </clerk>
+      </clerks>
+      <parties>
+        <party role="petitioner" presence="true" intervention="true">
+          <person>
+            <persName>
+              <surname>Robert</surname>
+              <forename>Marie Anne</forename>
+            </persName>
+            <occupation>maître charron, et autres héritiers de Pagnès, Pierre</occupation>
+          </person>
+          <status>heir</status>
+          <expert ref=""/>
+        </party>
+        <party role="opponent" presence="true" intervention="true">
+          <person>
+            <persName>
+              <surname>Gérin</surname>
+              <forename>Jean-Baptiste Claude</forename>
+            </persName>
+            <occupation>maître charron, légataire universel pour un tiers de défunte Hébert, Madeleine, veuve de Pagnés, Pierre, auparavant veuve de Gérin, Claude, maître charon et héritier pour moitié de Gérin, Marie Madeleine, au jour de son décès veuve de Sourdeval, Nicolas, laquelle étoit aussi légataire universelle pour un tiers de lad. défunte etc.</occupation>
+          </person>
+          <status>heir</status>
+          <expert ref=""/>
+        </party>
+      </parties>
+      <craftmen>
+        <craftman>
+          <persName>
+            <surname/>
+            <forename/>
+          </persName>
+          <occupation/>
+        </craftman>
+      </craftmen>
+    </participants>
+    <conclusions>
+      <opinion ref="#xpr0232">Pour Quirot, les ouvrages faits valent 2830 livres (Quirot se fonde sur les mémoires d'ouvrages).</opinion>
+      <opinion ref="#xpr0111"/>
+      <opinion ref="#xpr0078">« toutte considération faitte mon avis est comme je l'ay marqué cy dessus qu'il ne doit estre tenu compte à la succession dud. feu sieur Pagnéz par les héritiers de lad. dame Hébert pour toute augmentation faitte en lad. maison rue des roziers que de la somme de huit cent soixante treize livres dix sols huit deniers ».</opinion>
+      <arrangement/>
+      <agreement type="disagreement">Désaccord</agreement>
+      <estimate l="" s="" d=""/>
+      <estimates>
+        <place ref="#id520d254">
+          <appraisal l="" s="" d="">
+            <desc/>
+          </appraisal>
+        </place>
+      </estimates>
+      <fees detail="">
+        <total l="" s="" d=""/>
+      </fees>
+      <expenses mentioned="false"/>
+    </conclusions>
+    <keywords group="estates"/>
+    <keywords group="procedure"/>
+    <keywords group="contract"/>
+    <keywords group="encumbrance"/>
+    <keywords group="law"/>
+    <keywords group="measurement"/>
+    <keywords group="repairs"/>
+    <keywords group="guarantees"/>
+    <keywords group="responsability"/>
+    <keywords group="ownership"/>
+    <keywords group="value"/>
+    <keywords group="neighbourhood"/>
+    <keywords group="disorder"/>
+    <keywords group="transformation"/>
+    <analysis>Demeseretz « toutte considération faitte mon avis est comme je l'ay marqué cy dessus qu'il ne doit estre tenu compte à la succession dud. feu sieur Pagnéz par les héritiers de lad. dame Hébert pour toute augmentation faitte en lad. maison rue des roziers que de la somme de huit cent soixante treize livres dix sols huit deniers ».</analysis>
+    <noteworthy/>
+  </description>
+</expertise>

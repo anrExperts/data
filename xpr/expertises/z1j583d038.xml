@@ -1,0 +1,188 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j583d038">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-11-01T12:00:00">2020-11-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2016-10-26T12:00:00">2016-10-26T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>RB</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1726</unitdate>
+    <idno type="unitid">Z1J583</idno>
+        <idno type="item">038</idno>
+        <facsimile from="0435" to="0440"/>
+        <physDesc>
+          <extent sketch="false">6</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1726-10-03" type="suburbs"/>
+        </sessions>
+        <places>
+          <place type="suburbs">
+            <address/>
+            <complement/>
+            <city>Fontenay-aux-Roses [Hauts-de-Seine]</city>
+            <district/>
+            <owner>Payen</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="assessment">Décrire et évaluer les travaux à venir</category>
+          <designation rubric="true">Visite et état de réparations</designation>
+        </categories>
+        <procedure>
+          <framework type="b3">Saisie mixte (un expert est nommé par les parties, l'autre est nommé d'office)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Lieutenant civil du Châtelet</orgName>
+              <date when="1726-07-18"/>
+            </sentence>
+          </sentences>
+          <case>estimation de réparations à faire dans une maison locative</case>
+          <objects>
+            <object type="house">Maison(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0183" context="primary" appointment="court-appointed">
+              <title>juré expert à Paris</title>
+            </expert>
+            <expert ref="#xpr0236" context="primary" appointment="appointed">
+              <title>juré expert à Paris</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0033">
+              <persName>
+                <surname>Callou</surname>
+                <forename>Antoine Charles</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Fisanne</surname>
+                  <forename>Jean</forename>
+                </persName>
+                <occupation>locataire de la maison</occupation>
+              </person>
+              <status>tenant</status>
+              <expert ref="#xpr0236"/>
+            </party>
+            <party role="opponent" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Payen</surname>
+                  <forename>Charles Joseph</forename>
+                </persName>
+                <occupation>propriétaire de la maison</occupation>
+              </person>
+              <status>owner</status>
+              <expert ref="#xpr0183"/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="">« C'est l'estat desd. reparations [voir l'acte] que nous certifions estre tres urgentes et necessres a faire a lad. maison pour empescher plus grand deperissement ».</opinion>
+          <arrangement/>
+          <agreement type="agreement">Accord</agreement>
+          <estimate l="" s="" d=""/>
+          <fees detail="true">
+            <fee type="papers" l="" s="" d=""/>
+            <fee type="expert" ref="#xpr0183" l="9" s="" d=""/>
+            <fee type="expert" ref="#xpr0236" l="9" s="" d=""/>
+            <fee type="clerk" l="4" s="5" d=""/>
+            <fee type="rolls" l="3" s="5" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="" s="" d=""/>
+          </fees>
+          <expenses mentioned=""/>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis>Motivations
+                « Nous avons fait lecture de deux sentences rendüe la premiere en datte du dix huit juillet aud. an 1726, ente Jean Fisanne marchand demt a fontenay aux Roses locataire dune maison scize aud. lieu apartente au sr Charles Joseph Payen bourgeois de Paris demandeur aux fins de la requeste verballe du six juin dernier a ce quil fut authorisé a faire faire les reparations qui sont a faire en lad. maison de quoy il seroit remboursé sur les loyers, dune part, et davec Valerie Barberin ve d'Antoine Gabriel Payen eser sieur de [Rouves?] et comme mere et tutrice et curatrice de damoiselles Jeanne Therese, Marie Anne Rose et Elisabeth Payen filles mineures dud. deffunt son mary et d'elle et encore comme tutrice de Jacques François Giron mineur de deffunt me Pierre Augustin Giron nore à Bordeaux et de deffunte delle Jeanne Payen sa femme heritier de laditte deffunte sa mere, et Gabriel Joseph Payen eser lieutent au Regiment de Rouergue en Sauterie, Me Besbois avocat au parlement de Brodeaux et delle Françoise Payen sa femme, d'autre part, et Barthelemy Lafosse me maçon a Fontenay aux Roses, Me Louis Gautier prestre, Jacques Guillet et sa femme et Claude Fisanne ve de Claude Martine demt aud. Fontenay d'autre, et la dame Vallery Barberin et consors demandeurs en execution de votre sence du trente avril der et deffendeurs a la reqte verballe signiffié de la part du Sr Gautres ledit huit may aussi dernier, d'une part et lesd. susnommez d'autre, […] vous avez Monsieur lexpedient de la dame Barberin signé receu, et dit qu'à nous faire droit sur la demande dud. Fisanne afin de reparations, les lieux seroient veus et visittez par experts dont les parties conviendroient, sinon qui seroient nommez d'office ». Deuxième sentence du 27 aout 1726, nommant les experts des parties.</analysis>
+        <noteworthy/>
+      </description>
+    </expertise>

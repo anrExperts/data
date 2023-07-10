@@ -1,0 +1,177 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j664d010" status="">
+  <meta/>
+  <control>
+    <maintenanceStatus>revised</maintenanceStatus>
+    <publicationStatus/>
+    <localControl localType="detailLevel">
+      <term>completed</term>
+    </localControl>
+    <maintenanceHistory>
+      <maintenanceEvent>
+                <eventType>revised</eventType>
+                <eventDateTime standardDateTime="2022-05-02T13:43:03Z">2022-05-02T13:43:03Z</eventDateTime>
+                <agentType>human</agentType>
+                <agent>llosserand</agent>
+                <eventDescription>rvpcd</eventDescription>
+            </maintenanceEvent>
+          <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateObjectsValues_db.xqy/BaseX</agent>
+        <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-06-16T16:56:32.893+02:00">2021-06-16T16:56:32.893+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateOpinionRef_files.xqy/BaseX</agent>
+        <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-06-16T16:29:02.548+02:00">2021-06-16T16:29:02.548+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateRefValues_files.xqy/BaseX</agent>
+        <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>created</eventType>
+        <eventDateTime standardDateTime="2021-04-19T09:16:31Z">2021-04-19T09:16:31Z</eventDateTime>
+        <agentType>human</agentType>
+        <agent>llosserand</agent>
+        <eventDescription>Création de la fiche.</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+  </control>
+  <sourceDesc>
+    <unitdate>1736</unitdate>
+    <idno type="unitid">Z1J664</idno>
+    <idno type="item">010</idno>
+    <facsimile from="0100" to="0113"/>
+    <physDesc>
+      <extent sketch="false">14</extent>
+    </physDesc>
+  </sourceDesc>
+  <description>
+    <sessions>
+      <date when="1736-07-24" type="paris"/>
+      <date when="1736-07-24" type="paris"/>
+      <date when="1736-07-26" type="paris"/>
+      <date when="1736-07-26" type="paris"/>
+      <date when="1736-07-31" type="paris"/>
+    </sessions>
+    <places>
+      <place type="paris">
+        <address>
+          <street>rue du faubourg Saint-Honoré</street>
+          <buildingNumber/>
+        </address>
+        <complement/>
+        <parish/>
+        <owner/>
+      </place>
+    </places>
+    <categories>
+      <category type="settlement">Départager</category>
+      <designation rubric="true">Visitte et estat de maison, Grande rue du Fossé St Honoré, entre le sieur Roger, me boulanger, propriétaire et la veuve Réverand, maîtresse boulangère, principale locataire ; M. Cochois, tiers expert, Le Sueur et Debias-Aubry, 1ers experts ; M. Berville, greffier.</designation>
+    </categories>
+    <procedure>
+      <framework type="b2">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+      <origination type="institution">Une institution</origination>
+      <sentences>
+        <sentence>
+          <orgName>LC</orgName>
+          <date when="1736-05-27"/>
+          <date when="1736-06-15"/>
+          <date when="1736-06-25"/>
+          <date when="1736-09-14">(sic!)</date>
+          <date when="1736-07-07"/>
+        </sentence>
+      </sentences>
+      <case>contrariété d'avis des 1ers experts / réparations locatives, risques encourrus par la principale locataire.</case>
+      <objects>
+        <object type="house">Maison(s)</object>
+      </objects>
+    </procedure>
+    <participants>
+      <experts>
+        <expert ref="#xpr0056" context="third-party" appointment="court-appointed">
+          <title>architecte expert bourgeois</title>
+        </expert>
+        <expert ref="#xpr0171" context="primary" appointment="appointed" recalled="true">
+          <title/>
+        </expert>
+      </experts>
+      <clerks>
+        <clerk ref="#clrk0042">
+          <persName>
+            <surname>Berville</surname>
+            <forename>Jean Guillaume</forename>
+          </persName>
+        </clerk>
+      </clerks>
+      <parties>
+        <party role="petitioner" presence="true" intervention="false">
+          <person>
+            <persName>
+              <surname>Poutrelle</surname>
+              <forename>Barbe</forename>
+            </persName>
+            <occupation>maitresse boulangère, veuve d'Honoré Révérand, maître boulanger</occupation>
+          </person>
+          <status>main-tenant</status>
+          <expert ref="#xpr0056"/>
+        </party>
+        <party role="petitioner" presence="true" intervention="false">
+          <person>
+            <persName>
+              <surname>Roger</surname>
+              <forename>Claude</forename>
+            </persName>
+            <occupation>maître boulanger</occupation>
+          </person>
+          <status>owner</status>
+          <expert ref="#xpr0056"/>
+        </party>
+      </parties>
+      <craftmen>
+        <craftman>
+          <persName>
+            <surname/>
+            <forename/>
+          </persName>
+          <occupation/>
+        </craftman>
+      </craftmen>
+    </participants>
+    <conclusions>
+      <agreement type="conclusion">Conclusion</agreement>
+      <opinion ref="#xpr0056">"Sur lesquelles déclarations cy dessus desdits sieurs premiers experts nous expert tiers observons à la cour qu’en les comparans l’une à l’autre, il est aisé de juger que suivant la première les lieux qui composoient le location de laite veuve Révérand estoient en estat d’estre occupez et de subsister nombre d’années d’autant mieux que nous avons remarqué que ce qui en subsiste des murs cloisons, planchers et la cave sous la boutique se comportent bien ny ayant reconnu pour touttes réparations à faire qu’une trape sur la dessente de la cour estant à l’entrée de la boutique à la place de celle usées, le haut d’une souche de cheminée à deux tuyaux et le rétablissement d’une partye du pan de bois près le puys sur la cour.
+Mais que lesdits lieux suivant la déclaration unanime faite par les susdits experts et l’estat actuel que nous tiers experts les avons trouvez son entièrement différents au premier par les démolitions et les innovations faites par ledit sieur Roger depuis le commencement de la visitte desdits premiers experts. La couverture ayant esté détruite en toutte son estendue et superficie ainsy que la charpente des combles, le haut du mur de face sur la rue démoly ainsy que de la cloison du mur de reffend et de la souche de cheminée, ledit planchers percés en nombre d’endroits et pénétrez par les eaux pluvialles de sorte que dans l’estat où sont lesdits lieux ils sont inhabitables non seulement par les innovations et les démolitions cy dessus qui y ont esté faites par ledit sieur Roger mais que l’on ne peut y estre en sureté, observant aussy que laditte veuve ny ce qui luy appartient n’ont plus de communauté par ledit passage dans le cour au puys ny aux aisances, l’alée par laquelle on y aloi testant détruite et ce qui estoit au dessus et au dessous démoly et la place ainsy que la plus grande partye de la cour remplie de matéreaux jusqu’à la hauteur de six à sept pieds au dessus du premier plancher, ce qui a au surplus suprimé l’écoullement des aux pluvialles qui séjournent et croupissent dans icelle. Dans l’estat actuel des lieux cy dessus nous expert tiers observons à la Cour qu’ils sont hors d’estat d’estre réparez parce que pour les remettre dans l’estat où ils estoient il y auroit des réparations et reconstructions trop considérables à faire qui ne le pouroient estre sans obliger laditte veuve Révérand de sortir desdits lieux, attendu quelle seroit exposée et ses enfans et garçons à estre blessez à chaque instant, même à estre volée et qu’elle n’y pourroit faire son pain ny le distribuer en ce que les personnes qui viendroient chez elle courreroeint le même risque d’estre blessez."</opinion>
+      <arrangement/>
+      <estimate l="" s="" d=""/>
+      <fees detail="">
+        <total l="" s="" d=""/>
+      </fees>
+      <expenses mentioned="false"/>
+    </conclusions>
+    <keywords group="estates"/>
+    <keywords group="procedure"/>
+    <keywords group="contract"/>
+    <keywords group="encumbrance"/>
+    <keywords group="law"/>
+    <keywords group="measurement"/>
+    <keywords group="repairs"/>
+    <keywords group="guarantees"/>
+    <keywords group="responsability"/>
+    <keywords group="ownership"/>
+    <keywords group="value"/>
+    <keywords group="neighbourhood"/>
+    <keywords group="disorder"/>
+    <keywords group="transformation"/>
+    <analysis/>
+    <noteworthy>contrariété d'avis des 1ers experts, pv du 4 juillet 1735
+Le Sueur premier expert nommé par la veuve Reverand (requérante) et Debias Aubry 1er expert nommé par le sieur Roger. Seul Le Sueur est présent à ce pv.</noteworthy>
+  </description>
+</expertise>

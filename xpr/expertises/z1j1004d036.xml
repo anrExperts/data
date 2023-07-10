@@ -1,0 +1,198 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1004d036">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-07-01T12:00:00">2020-07-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2017-10-01T12:00:00">2017-10-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1004</idno>
+        <idno type="item">036</idno>
+        <facsimile from="0406" to="0411"/>
+        <physDesc>
+          <extent sketch="false">3</extent>
+          <appendices>
+            <appendice>
+              <type type="petition">Requête</type>
+              <extent>1</extent>
+              <desc/>
+              <note/>
+            </appendice>
+          </appendices>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-06-12" type="paris"/>
+          <date when="1776-09-09" type="paris"/>
+        </sessions>
+        <places>
+          <place type="paris">
+            <address>
+              <street>Rue Thiroux</street>
+              <buildingNumber/>
+            </address>
+            <complement/>
+            <parish/>
+            <owner>Maureau</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="acceptation">Recevoir et évaluer le travail réalisé</category>
+          <designation rubric="true">Estimation d'ouvrages de jardinage en une maison, rue Thiroux, appartenant au Sr. Maureau, négociant ; M. Taboureur, expert.</designation>
+        </categories>
+        <procedure>
+          <framework type="b2b">L’institution est saisie dans le cadre d’une procédure (l’institution nomme un ou deux experts)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Châtelet, lieutenant civil (ordonnance)</orgName>
+              <date when="1776-04-19"/>
+            </sentence>
+          </sentences>
+          <case>Réception d’ouvrages (arrêt du 18 août 1766)</case>
+          <objects>
+            <object type="other">jardin</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0250" context="primary" appointment="court-appointed">
+              <title>architecte expert bourgeois des bâtiments à Paris</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0062">
+              <persName>
+                <surname>Picquenon</surname>
+                <forename>Denis Joseph François</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="true" intervention="true">
+              <person>
+                <persName>
+                  <surname>Lapipe</surname>
+                  <forename>Jean Baptiste</forename>
+                </persName>
+                <occupation>maître jardinier à Paris, entrepreneur des jardins du duc d’Orléans au Palais royal</occupation>
+              </person>
+              <status>builder</status>
+              <expert ref="#xpr0250"/>
+            </party>
+            <party role="opponent" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Maureau</surname>
+                  <forename>Balthazard</forename>
+                </persName>
+                <occupation>négociant à Paris, propriétaire de la maison dont il est question</occupation>
+              </person>
+              <status>limited-partner</status>
+              <expert ref="#xpr0250"/>
+              <representative>
+                <persName>
+                  <surname>Jacquin</surname>
+                  <forename>Leandre</forename>
+                </persName>
+                <occupation>architecte à Paris, demeurant dans la maison dont il est question, représentant de Maureau</occupation>
+              </representative>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname>Jacquin</surname>
+                <forename>Leandre</forename>
+              </persName>
+              <occupation>architecte à Paris, demeurant dans la maison dont il est question, représentant de Maureau</occupation>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0250">« Par le relevé que nous avons fait de nos estimations particulières de chacun desdits objets, elles se sont trouvé monter et revenir ensemble, à la somme totalle de cinq cent trente livres à laquelle nous les estimons reconnoissant qu’ils augmentent la valeur de la maison, qu’ils sont bien faits suivant l’art et en état de reception cy… 530 l. »</opinion>
+          <arrangement/>
+          <agreement type="conclusion">Conclusion</agreement>
+          <estimate l="" s="" d=""/>
+          <fees detail="true">
+            <fee type="papers" l="6" s="18" d=""/>
+            <fee type="expert" ref="#xpr0250" l="9" s="" d=""/>
+            <fee type="clerk" l="9" s="" d=""/>
+            <fee type="rolls" l="10" s="" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="34" s="18" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="9" s="5" d=""/>
+            <expense type="expert" l="" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis>Ouvrages de dressement de terrains, plantation et arrangement d’un jardin pour être la dépendance d’une maison rue Thiroux (nouvellement construite par Maureau), d’après le constat de Taboureur (pv reçu par Picquenon le 30 août 1774)
+                PV lié : réception générale des travaux, par Taboureur et Picquenon, 12 janvier 1776</analysis>
+        <noteworthy/>
+      </description>
+    </expertise>

@@ -1,0 +1,240 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j903-2d008">
+      <meta/>
+      <control>
+        <maintenanceStatus/>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term/>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:45:33.927+02:00">2021-04-21T20:45:33.927+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateKeywordsModule_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour du module keywords.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:44:31.814+02:00">2021-04-21T20:44:31.814+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateExpertisesArrangement_files.xqy/BaseX</agent>
+            <eventDescription>Ajout du champs Accommodement dans l'éventualité d’une résolution par les parties.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:43:53.154+02:00">2021-04-21T20:43:53.154+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateExpertisesPlacesEstimates_files.xqy/BaseX</agent>
+            <eventDescription>Ajout des champs pour l'estimation des lieux.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2020-01-01T12:00:00">2020-01-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1766</unitdate>
+    <idno type="unitid">Z1J903-2</idno>
+        <idno type="item">8</idno>
+        <facsimile from="0059" to="0065"/>
+        <physDesc>
+          <extent sketch="false">6</extent>
+          <appendices>
+            <appendice>
+              <type type="other">Quittance</type>
+              <extent>1</extent>
+              <desc/>
+              <note/>
+            </appendice>
+          </appendices>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1766-08-08" type="province"/>
+        </sessions>
+        <places>
+          <place xml:id="id60933d1" type="province">
+            <address/>
+            <complement>rue Saint-Antoine</complement>
+            <city>Suresnes</city>
+            <district/>
+            <owner>Succession Charles Gillet Delachaussée</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="estimation">Estimer la valeur des biens</category>
+          <designation rubric="true">Estimation de maisons et héritages</designation>
+        </categories>
+        <procedure>
+          <framework type="b2a">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>lieutenant civil</orgName>
+              <date when="1766-03-11"/>
+              <date when="1766-03-26"/>
+              <date when="1766-07-16"/>
+            </sentence>
+          </sentences>
+          <case>Succession Charles Gillet Delachaussée</case>
+          <objects>
+            <object type="territory">Domaine, terres, fief</object>
+            <object type="house">Maison(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0089" context="primary" appointment="appointed">
+              <title>architecte expert</title>
+            </expert>
+            <expert ref="#xpr0210" context="primary" appointment="appointed">
+              <title>architecte expert</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0057">
+              <persName>
+                <surname>Liébault de la Neuville</surname>
+                <forename>Christophe Edouard</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="true" intervention="">
+              <person>
+                <persName>
+                  <surname>Vincent</surname>
+                  <forename>Alexandre François</forename>
+                </persName>
+                <occupation>maître maçon à Paris</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Gillet Delachaussée</surname>
+                  <forename>Anne Félicité</forename>
+                </persName>
+                <occupation>épouse Vincent</occupation>
+              </person>
+              <status>heir</status>
+              <expert ref="#xpr0210"/>
+              <prosecutor>
+                <persName>
+                  <surname>Cautin</surname>
+                  <forename>Jean Claude</forename>
+                </persName>
+              </prosecutor>
+            </party>
+            <party role="opponent" presence="true" intervention="">
+              <person>
+                <persName>
+                  <surname>Gosselin</surname>
+                  <forename>Louis</forename>
+                </persName>
+                <occupation>maître paulmier à Paris</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Gillet Delachaussée</surname>
+                  <forename>Clémence Madeleine</forename>
+                </persName>
+                <occupation>épouse Gosselin</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Gillet Delachaussée</surname>
+                  <forename>Jean Baptiste René</forename>
+                </persName>
+                <occupation>peintre</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Gillet Delachaussée</surname>
+                  <forename>Charles Jean Pierre</forename>
+                </persName>
+                <occupation>metteur en œuvres</occupation>
+              </person>
+              <status>heir</status>
+              <expert ref="#xpr0089"/>
+              <prosecutor>
+                <persName>
+                  <surname>Camuset</surname>
+                  <forename/>
+                </persName>
+              </prosecutor>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="">"Après avoir examiné ladite maison, nous n'y avons trouvé d'autres
+                    réparations urgentes que de faire un léger rétablissement à la couverture dudit
+                    corps de logis du costé du jardin dudit sieur Coste joignant le mur mitoyen à
+                    gauche, ce que nous estimons la somme de 4 livres De l'examen et visitte que
+                    nous avons fait de cette maison, de son état actuel tout considéré et vu le peu
+                    d'étendue de son emplacement, nous l'estimons comme elle se poursuit et comporte
+                    de fond en comble, circonstances et dépendances valeur en partage la somme de
+                    [blanc] à la charge de deux livres dix sols par année pour l'imposition des
+                    cazernes par proportion de vingt six livres que la totalité desdites maisons
+                    dependant de ladite succession paye"</opinion>
+          <agreement type="agreement">Accord</agreement>
+          <arrangement/>
+          <estimate l="" s="" d=""/>
+          <estimates>
+            <place ref="#id60933d1">
+              <appraisal l="" s="" d="">
+                <desc/>
+              </appraisal>
+            </place>
+          </estimates>
+          <fees detail="false">
+            <total l="" s="" d=""/>
+          </fees>
+          <expenses mentioned="false"/>
+        </conclusions>
+        <keywords group=""/>
+        <analysis/>
+        <noteworthy/>
+      </description>
+    </expertise>

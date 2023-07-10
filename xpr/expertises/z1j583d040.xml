@@ -1,0 +1,193 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j583d040">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-11-01T12:00:00">2020-11-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2016-10-26T12:00:00">2016-10-26T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>RB</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1726</unitdate>
+    <idno type="unitid">Z1J583</idno>
+        <idno type="item">040</idno>
+        <facsimile from="0446" to="0452"/>
+        <physDesc>
+          <extent sketch="false">6</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1726-10-04" type="paris"/>
+          <date when="1726-10-12" type="paris"/>
+          <date when="1726-10-17" type="paris"/>
+          <date when="1726-12-30" type="paris"/>
+          <date when="1727-02-08" type="paris"/>
+        </sessions>
+        <places>
+          <place type="paris">
+            <address>
+              <street>Grande-rue du Faubourg-Saint-Laurent [Actuellement partie de la rue du Faubourg-Saint-Martin]</street>
+              <buildingNumber/>
+            </address>
+            <complement>près la croix des marais</complement>
+            <parish/>
+            <owner/>
+          </place>
+        </places>
+        <categories>
+          <category type="assessment">Décrire et évaluer les travaux à venir</category>
+          <designation rubric="true">Visite, toisé et estimation d'ouvrages de maçonnerie, charpenterie, etc.</designation>
+        </categories>
+        <procedure>
+          <framework type="a">Commun accord des parties</framework>
+          <origination type="parties">Les parties</origination>
+          <sentences>
+            <sentence>
+              <orgName/>
+              <date when=""/>
+            </sentence>
+          </sentences>
+          <case>estimation de réparations dans le cadre du partage d'un héritage</case>
+          <objects>
+            <object type="house">Maison(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0147" context="primary" appointment="appointed">
+              <title>architecte expert juré du roi et entrepreneur de bâtiments à Paris</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#xpr0066">
+              <persName>
+                <surname>Danjan</surname>
+                <forename>Pierre Paul</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="true" intervention="false">
+              <person>
+                <persName>
+                  <surname>Aubrelicque</surname>
+                  <forename>Louis Antoine</forename>
+                </persName>
+                <occupation>tuteur de ses enfants mineurs</occupation>
+              </person>
+              <status>joint-owner</status>
+              <expert ref="#xpr0147"/>
+            </party>
+            <party role="opponent" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Formel</surname>
+                  <forename>Jean Simon</forename>
+                </persName>
+                <occupation/>
+              </person>
+              <status>joint-owner</status>
+              <expert ref="#xpr0147"/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname>Letellier</surname>
+                <forename>maître maçon</forename>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0147">« Ayant fait addition de sept chapitres d'ouvrages de maçonnerie, chapenterie, couverture, vitrerie, serrurerie et gros fers, menuiserie et carreau de terre cuitte, contenus et mentionnez au present proces verbal et rapport, nous avons trouvé qu'il montent et valent ensemble suivant l'estimation par nous faite desd. ouvrages, en total à la somme de cing mil cinq cent quarante deux livres unze sols unze deniers ».</opinion>
+          <arrangement/>
+          <agreement type="conclusion">Conclusion</agreement>
+          <estimate l="5542" s="11" d="11"/>
+          <fees detail="true">
+            <fee type="papers" l="" s="" d=""/>
+            <fee type="expert" ref="#xpr0147" l="9" s="" d=""/>
+            <fee type="clerk" l="9" s="" d=""/>
+            <fee type="rolls" l="" s="" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="" s="" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="84" s="5" d=""/>
+            <expense type="expert" l="" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis>Motivations
+                « Nous avons fait lecture d'un acte fait sous les signatures privées des partyes y nommées le vingt sept avril mil sept cent vingt cinq controllé a paris le 5e may suivant […] par lequel acte sieur Louis Antoine Aubrelicque escuyer conseiller secretaire du Roy maison et Couronne de France et de ses finances, en qualité de curateur a l'emancipation de ses enfans mineurs, scavoir de Louise Antoinette Aubrelicque, Marie Claire, Louis Philippe et Charles Aubrelicque ses enfans, et Marie Aubrelicque fille majeure, d'une part. Jean Simon Formel demt ordinairemt a follembray et de present lors a Paris, et Charles Bonté Md epicier a Paris demt grande rue du fauxbourg saint Antoine a cause de Marie Jeanne Formel sa femme, se faisant et portant fois pour jacques Formel demt à Vitry Le françois, Estienne Duju a case de Barbe Formet son epouze demt a Venouze pres Auxerre, Marie Anne Charlotte Formel femme séparée quant aux biens de François Châneux de la gardinière demt a Vissé pres la ville Davranche, d'autre part,, scavoir lesd. sieurs et delles Aubrelicque enfans, propriettaires des quatre cinquieme d'une maison scize a paris rue au Maire parse St Nicolas des Champs en qualité d'heritiers du sang de feu Simon Formel leur ayeul maternel et de la moitié en une maison rüe du fauxbourg Saint Laurent pres la Croix des marrais […] en qualité de legataires universels de dame Marie Tondu leur ayeulle maternelle et ve dud. feu S. Formet. Et lesd. Srs Jean, Simon Formel, Bonté et consorts propriettaires par indivis en qualité de legataires dud. feu sr Formel leur oncle d'un cinquieme en lad. maison rüe au Maire et de la moitié de la presente maison fauxbourg Saint Lauren, ensemble des meubles, acquets et conquets dud. deffunt Sr Formel. Et Louis Letellier me maçon, Pierre Caqué me charpentier, Jacques Touroude me couvreur de maisons, Pierre Gravelle me paveur, Jean Recullard me serrurier, Antoine Dangeville me menuisier, René Foyer me plombier, Louis Pierre Griffon me vitrier, Joouy La Pierre me sculpteur, René Gambier me vuidangeur, et Jullien Heurtant me carreleur, tous demeurant à Paris d'autre part, donnent conjointemt lesd. partyes par iceluy acte pouvoir a nous Joubert architecte juré expert susd. de faire la visitte toisée prisée et estimation de tous les ouvrages en general faits et a faire dans les susd. deux maisons pour lesd. sœurs propriettaires par lesd. ouvriers et entrepreneurs desd. ouvrages chacun de leur profession avec promesse respective d'acquiesser a tout ce qui seroit fait et arresté à ce sujet par nous expert »</analysis>
+        <noteworthy/>
+      </description>
+    </expertise>

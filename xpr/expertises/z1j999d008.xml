@@ -1,0 +1,232 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j999d008">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2017-10-01T12:00:00">2017-10-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2016-07-29T12:00:00">2016-07-29T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>LRT</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J999</idno>
+        <idno type="item">008</idno>
+        <facsimile from="0053" to="0055"/>
+        <physDesc>
+          <extent sketch="false">3</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-01-11" type="province"/>
+        </sessions>
+        <places>
+          <place xml:id="id243d280" type="province">
+            <address/>
+            <complement>Versailles, rue au Pain</complement>
+            <city/>
+            <district/>
+            <owner/>
+          </place>
+        </places>
+        <categories>
+          <category type="settlement">Départager</category>
+          <category type="estimation">Estimer la valeur des biens</category>
+          <designation rubric="true">Estimation d'une maison à Versailles rue au Pain au marché neuf de la succession du sieur Le Capelain</designation>
+        </categories>
+        <procedure>
+          <framework type="b3">Saisie mixte (un expert est nommé par les parties, l'autre est nommé d'office)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Châtelet, parc civil (lieutenant civil par sentence contradictoire du 5 janvier 1776)</orgName>
+              <date when="1776-01-05"/>
+            </sentence>
+          </sentences>
+          <case>Succession Le Capelain : l’expert est chargé de dire si la maison peut ou non se diviser commodément entre les propriétaires (le cas échéant, faire le partage et dans le cas contraire, priser et estimer la maison)</case>
+          <objects>
+            <object type="house">Maison(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0070" context="primary" appointment="appointed">
+              <title>architecte juré expert bourgeois en titre d'office</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0067">
+              <persName>
+                <surname>Goüel</surname>
+                <forename>Gilles Louis</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="" intervention="">
+              <person>
+                <persName>
+                  <surname>de Langey</surname>
+                  <forename>Marc René François Constantin</forename>
+                </persName>
+                <occupation>gouverneur de Levroux en Berry</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Le Capelain</surname>
+                  <forename>Marie Agnès Justine</forename>
+                </persName>
+                <occupation>son épouse, héritière pour un tiers de défunt Le Capelain, Jacques Nicolas son père, par là propriétaire pour un tiers de la maison dont il est question</occupation>
+              </person>
+              <status>owner</status>
+              <expert ref="#xpr0070"/>
+              <prosecutor>
+                <persName>
+                  <surname>Bussenoux</surname>
+                  <forename>André Philippe</forename>
+                </persName>
+              </prosecutor>
+            </party>
+            <party role="opponent" presence="" intervention="">
+              <person>
+                <persName>
+                  <surname>Le Capelain</surname>
+                  <forename>Antoine Joseph</forename>
+                </persName>
+                <occupation>avocat en parlement</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Capelle</surname>
+                  <forename>Maximilien Jean</forename>
+                </persName>
+                <occupation>maître tapissier à Paris, au nom et comme tuteur ad hoc deLe Capelain, Mathieu François, fils mineur de défuntLe Capelain, Jacques Nicolas, tous deux héritiers chacun pour un tiers de leur père et propriétaires chacun pour un tiers de la maison</occupation>
+              </person>
+              <status>heir</status>
+              <expert ref="#xpr0070"/>
+              <prosecutor>
+                <persName>
+                  <surname>Guyot</surname>
+                  <forename/>
+                </persName>
+              </prosecutor>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0070">« Pour satisfaire, Monsieur, au premier chef de votre sentence sus extraitte, nous vous observons qu’il n’y a aucune possibilité de partager ladite maison en autant de portions, qu’il y a de proprietaires d’icelle, de telle maniere que ce puisse être cy… observation Et pour satisfaire au second chef qui est d’estimer cette maison, pour y parvenir nous l’avons de nouveau vu et examiné de fond en comble Et considération faitte sur son peu d’étendue en général, sur sa forme et distribution sur la nature et faiblesse de sa construction peu solide, sur ce qu’elle peut produire annuellement de loyer, eu égard aux réparations qui y sont à faire, au quartier où elle est scituée et au cours du temps présent Nous estimons cette maison dans son état actuel sus déclaré, ainsi qu’elle se poursuit et comporte de fond en comble, s’étend de toute part, circonstance et dépendances sans réserve, à la charge des soixante livres de redevance par chaque année à laquelle elle est assujettie envers le domaine de sa majesté, d’après la déclaration du sieur Lelievre qui les paye annuellement comme en étant chargé par son bail, et encore à la charge des cens et droits seigneuriaux, (ne nous ayant été remis aucuns titres qui nous annoncent d’autres charges) valloir la somme de quatre mille livres, cy… 4 000 l.  Tel est, Monsieur, la visitte par nous faitte de la maison dont est question, l’impossibilité de la partager en aucune maniere entre tous les proprietaires et la valleur d’icelle, vous référant d’ordonner, cy… référé »</opinion>
+          <arrangement/>
+          <agreement type="conclusion">Conclusion</agreement>
+          <estimate l="" s="" d=""/>
+          <estimates>
+            <place ref="#id243d280">
+              <appraisal l="4000" s="" d="">
+                <desc>maison</desc>
+              </appraisal>
+            </place>
+          </estimates>
+          <fees detail="true">
+            <fee type="papers" l="7" s="" d=""/>
+            <fee type="expert" ref="#xpr0070" l="30" s="" d=""/>
+            <fee type="clerk" l="30" s="" d=""/>
+            <fee type="rolls" l="8" s="" d=""/>
+            <fee type="prosecutors" l="40" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="115" s="" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="18" s="15" d=""/>
+            <expense type="expert" l="6" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs">
+          <term value="g1">Réparations</term>
+        </keywords>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value">
+          <term value="k1">Loyer</term>
+        </keywords>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis/>
+        <noteworthy>"faiblesse de sa construction peu solide"
+Le pv mentionne une erreur dans la sommation, qui situe la maison rue de Tours, et non rue au Pain.</noteworthy>
+      </description>
+    </expertise>

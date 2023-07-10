@@ -1,0 +1,203 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j580d059">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2023-05-12T16:21:14.938+02:00">2023-05-12T16:21:14.938+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateThirdPartyAgreement_db.xqy/BaseX</agent>
+        <eventDescription>Modification des valeurs admises pour le champ "dispositif de l'expertise" dans le cadre de tiers expertises.</eventDescription>
+      </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-10-01T12:00:00">2020-10-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2016-10-26T12:00:00">2016-10-26T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>RB</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1726</unitdate>
+    <idno type="unitid">Z1J580</idno>
+        <idno type="item">059</idno>
+        <facsimile from="0793" to="0805"/>
+        <physDesc>
+          <extent sketch="false">14</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1726-05-28" type="paris"/>
+          <date when="1726-06-13" type="paris"/>
+          <date when="1726-08-13" type="paris"/>
+          <date when="1726-08-13" type="paris"/>
+          <date when="1726-08-14" type="paris"/>
+        </sessions>
+        <places>
+          <place type="paris">
+            <address>
+              <street>Rue des Prouvaires [Voie actuelle]</street>
+              <buildingNumber/>
+            </address>
+            <complement/>
+            <parish/>
+            <owner>succession Prevost</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="settlement">Départager</category>
+          <designation rubric="true">Visite et état de réparations usufruitières</designation>
+        </categories>
+        <procedure>
+          <framework type="b2a">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Requêtes du Palais</orgName>
+              <date when="1726-04-16"/>
+            </sentence>
+          </sentences>
+          <case>Réparations usufruitières non réalisées / charge dans la succession</case>
+          <objects>
+            <object type="house">Maison(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0086" context="primary" appointment="appointed">
+              <title>architecte du roi et de son académie royale d'architecture</title>
+            </expert>
+            <expert ref="#xpr0232" context="third-party" appointment="court-appointed">
+              <title/>
+            </expert>
+            <expert ref="#xpr0246" context="primary" appointment="appointed">
+              <title>architecte juré expert entrepreneur</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#xpr0056">
+              <persName>
+                <surname>Cochois</surname>
+                <forename>Jacques Richard</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="true" intervention="false">
+              <person>
+                <persName>
+                  <surname>Hérardin</surname>
+                  <forename>Georges</forename>
+                </persName>
+                <occupation>représentant des héritiers de Prévost, Marie Antoinette, sa défunte épouse.</occupation>
+              </person>
+              <status>heir</status>
+              <expert ref=""/>
+            </party>
+            <party role="opponent" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname/>
+                  <forename/>
+                </persName>
+                <occupation>héritiers de Chasteauneuf</occupation>
+              </person>
+              <status>heir</status>
+              <expert ref=""/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0086"/>
+          <opinion ref="#xpr0232">Détail des réparations, sans chiffrage</opinion>
+          <opinion ref="#xpr0246"/>
+          <arrangement/>
+          <agreement type="conclusion">Conclusion</agreement>
+          <estimate l="" s="" d=""/>
+          <fees detail="true">
+            <fee type="papers" l="5" s="5" d=""/>
+            <fee type="expert" ref="#xpr0086" l="30" s="" d=""/>
+            <fee type="expert" ref="#xpr0246" l="30" s="" d=""/>
+            <fee type="expert" ref="#xpr0232" l="18" s="" d=""/>
+            <fee type="clerk" l="30" s="" d=""/>
+            <fee type="rolls" l="10" s="15" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="124" s="" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="30" s="7" d="6"/>
+            <expense type="expert" l="" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis>Motivations
+                La sentence contradictoire du 16 mai 1726 ordonne la nomination d'experts pour visiter la maison faisant partie de l'héritage de Marie Antoinette Prévost, et estimer les réparations qu'il convient d'y faire auxquelles la propriétaire était tenue.« Dans lequel procès verbal mention sera faitte de l'emplacement et démolition qui a esté faite par ladite dame du Baleng ».</analysis>
+        <noteworthy/>
+      </description>
+    </expertise>

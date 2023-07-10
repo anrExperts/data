@@ -1,0 +1,210 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1004d022">
+  <meta/>
+  <control>
+    <maintenanceStatus>revised</maintenanceStatus>
+    <publicationStatus/>
+    <localControl localType="detailLevel">
+      <term>completed</term>
+    </localControl>
+    <maintenanceHistory>
+      <maintenanceEvent xmlns="eac">
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-06-15T15:34:54.934+02:00">2021-06-15T15:34:54.934+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateKeywordsAttr_files.xqy/BaseX</agent>
+        <eventDescription>Ajout des @value pour les mots clés (estates).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+                <eventType>revised</eventType>
+                <eventDateTime standardDateTime="2021-10-15T13:03:31Z">2021-10-15T13:03:31Z</eventDateTime>
+                <agentType>human</agentType>
+                <agent>llosserand</agent>
+                <eventDescription>B3</eventDescription>
+            </maintenanceEvent>
+          <maintenanceEvent>
+                <eventType>revised</eventType>
+                <eventDateTime standardDateTime="2021-09-16T08:51:10Z">2021-09-16T08:51:10Z</eventDateTime>
+                <agentType>human</agentType>
+                <agent>jmorvan</agent>
+                <eventDescription>correction expert Lefort (vu avec RC)</eventDescription>
+            </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateOpinionRef_files.xqy/BaseX</agent>
+        <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateRefValues_files.xqy/BaseX</agent>
+        <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+        <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>revised</eventType>
+        <eventDateTime standardDateTime="2020-07-01T12:00:00">2020-07-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>llosserand</agent>
+        <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>retroconverted</eventType>
+        <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>ead2xpr.xsl/Saxon9</agent>
+        <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>created</eventType>
+        <eventDateTime standardDateTime="2017-10-01T12:00:00">2017-10-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>JH</agent>
+        <eventDescription>Création de la fiche.</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+  </control>
+  <sourceDesc>
+    <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1004</idno>
+    <idno type="item">022</idno>
+    <facsimile from="0245" to="0247"/>
+    <physDesc>
+      <extent sketch="false">2</extent>
+    </physDesc>
+  </sourceDesc>
+  <description>
+    <sessions>
+      <date when="1776-06-08" type="paris"/>
+    </sessions>
+    <places>
+      <place type="paris">
+        <address>
+          <street>Rue du faubourg Saint-Honoré</street>
+          <buildingNumber/>
+        </address>
+        <complement/>
+        <parish/>
+        <owner>marquise d'Argenson</owner>
+      </place>
+    </places>
+    <categories>
+      <category type="settlement">Départager</category>
+      <designation rubric="true">Visite d'arbres et de buits en un jardin appartenant à Mad la marquise Dargenson, Grande rue du Fb Saint Honoré à la requête du Sr le Beau, jardinier entrepreneur ; M. Lefort, expert.</designation>
+    </categories>
+    <procedure>
+      <framework type="b2">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+      <origination type="institution">Une institution</origination>
+      <sentences>
+        <sentence>
+          <orgName>Châtelet, lieutenant civil (sentence)</orgName>
+          <date when="1776-05-25"/>
+        </sentence>
+      </sentences>
+      <case>Désaccord entre la marquise d’Argenson et le jardinier Le Beau sur l’entretien du jardin : l’expert doit constater l’état des arbres et buis du jardin : vérifier s’il en manque, et le cas échéant, déterminer si ce manque est lié au froid de l’hiver précédent ou au défaut d’entretien du jardin</case>
+      <objects>
+        <object type="other">jardin (plantation)</object>
+      </objects>
+    </procedure>
+    <participants>
+      <experts>
+        <expert ref="#xpr0273" context="primary" appointment="appointed">
+          <title>François Lefort architecte expert jardinier fleuriste</title>
+        </expert>
+      </experts>
+      <clerks>
+        <clerk ref="#clrk0064">
+          <persName>
+            <surname>Gobert</surname>
+            <forename>Jean Charles Simon</forename>
+          </persName>
+        </clerk>
+      </clerks>
+      <parties>
+        <party role="petitioner" presence="" intervention="">
+          <person>
+            <persName>
+              <surname>Le Beau</surname>
+              <forename>Jean Baptiste</forename>
+            </persName>
+            <occupation>jardinier entrepreneur</occupation>
+          </person>
+          <status>builder</status>
+          <expert ref="#xpr0273"/>
+        </party>
+        <party role="opponent" presence="" intervention="">
+          <person>
+            <persName>
+              <surname>marquise d’Argenson</surname>
+              <forename/>
+            </persName>
+            <occupation/>
+          </person>
+          <status>owner</status>
+          <expert ref="#xpr0273"/>
+          <prosecutor>
+            <persName>
+              <surname>De Bois</surname>
+              <forename>Joseph Hiacinthe</forename>
+            </persName>
+          </prosecutor>
+        </party>
+      </parties>
+      <craftmen>
+        <craftman>
+          <persName>
+            <surname>Le Beau</surname>
+            <forename/>
+          </persName>
+          <occupation>jardinier entrepreneur</occupation>
+        </craftman>
+      </craftmen>
+    </participants>
+    <conclusions>
+      <opinion ref="#xpr0273">« Nous avons ensuite constaté le manque des arbres et buis dont est question, et quelle peut être la cause de ce manque 1er Dans les vingt quatre arbres sur la tête du glacis nous avons remarqué deux de morts, et dix qui sont en voie … et n’ont point poussé faute de soins ; et pour mieux nous en assurer nous avons fait differentes entailles sur les tiges qui nous ont parues très vertes… 2 Nous avons remarqué que dans la corbeille au dessous du ceintre … quarante un pieds de pourtour ou environ dans laquelle sont quarante quatre pointes … il y en a un de mort faute de soin 3 Nous avons remarqué que dans les plate bandes et ronds de chaque côté de la piece en gazon au nombre de ronds les treilles qui bordent ainsy que le grand rond dans lequel sont les quarante quatre pommiers cy dessus dits, nous avons disons nous remarqué que lesdits buits sont vifs dans ce qui existe pour le present ; mais nous avons reconnu que dans ces buis il … beaucoup de breches et pour nous assurer de la cause de ce manque nous avons de nouveau examiné avec plus d’attention ces memes buits nous avons reconnu que la plus grande partie a été regarnie cet hiver, que ce même regarni est en assez mauvais état à cause de la secheresse ; à l’égard du surplus de ce manque des buits nous avons fait plusieurs recherches dans la terre, nous n’y avons trouvé aucunes racines, ny aucune qu’il y ait été rien planté, en consequence nous avons pris … les mesures de ce manque des buits et les avons additionnés elles montent à la quantité de deux toises ou environ 
+Tel est monsieur l’état des arbres et buits dont est question ; tel est ainsi l’état de ce qui se trouve actuellement de manquant, et enfin telle est la cause de manque d’après la visite que nous venons d’en faire sur quoy nous vous referons d’ordonner suivant votre justice et prudence ordinaire 
+Fait par nous architecte expert jardinier susdit lesdits jour mois et an que dessus après avoir vaqué jusqu’à sept heures sonnées. »</opinion>
+      <arrangement/>
+      <agreement type="conclusion">Conclusion</agreement>
+      <estimate l="" s="" d=""/>
+      <fees detail="true">
+        <fee type="papers" l="6" s="" d=""/>
+        <fee type="expert" ref="#xpr0273" l="6" s="" d=""/>
+        <fee type="clerk" l="6" s="" d=""/>
+        <fee type="rolls" l="5" s="10" d=""/>
+        <fee type="prosecutors" l="6" s="" d=""/>
+        <fee type="help" l="" s="" d=""/>
+        <fee type="other" l="6" s="" d="">1 expert 1 vacation</fee>
+        <fee type="plans" l="" s="" d=""/>
+        <total l="36" s="10" d=""/>
+      </fees>
+      <expenses mentioned="false"/>
+    </conclusions>
+    <keywords group="estates">
+      <term value="a5">Fruits</term>
+    </keywords>
+    <keywords group="procedure"/>
+    <keywords group="contract"/>
+    <keywords group="encumbrance"/>
+    <keywords group="law"/>
+    <keywords group="measurement"/>
+    <keywords group="repairs"/>
+    <keywords group="guarantees"/>
+    <keywords group="responsability"/>
+    <keywords group="ownership"/>
+    <keywords group="value"/>
+    <keywords group="neighbourhood"/>
+    <keywords group="disorder"/>
+    <keywords group="transformation"/>
+    <analysis/>
+    <noteworthy>nomination de l'expert : François Lesort, (jardinier) est nommé par le requérant (jardinier aussi), et cet expert est nommé pour la partie opposante. L’expert est sommé de se présenter à la chambre civile du Châtelet pour y faire son affirmation et prêter serment, puis de se transporter dans le jardin dont il est question.</noteworthy>
+  </description>
+</expertise>

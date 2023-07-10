@@ -1,0 +1,196 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j832-2d015">
+      <meta/>
+      <control>
+        <maintenanceStatus/>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term/>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:39:45.99+02:00">2021-05-19T11:39:45.99+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateAgreementType_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur "Dispositif de l’expertise" lorsqu'il n'y a qu’un seul expert ('agreement' devient 'conclusion').</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:45:33.927+02:00">2021-04-21T20:45:33.927+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateKeywordsModule_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour du module keywords.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:45:02.355+02:00">2021-04-21T20:45:02.355+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateExpertsFees_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour du coûts de l'expertise pour les experts.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:44:31.814+02:00">2021-04-21T20:44:31.814+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateExpertisesArrangement_files.xqy/BaseX</agent>
+            <eventDescription>Ajout du champs Accommodement dans l'éventualité d’une résolution par les parties.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2019-07-01T12:00:00">2019-07-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1756</unitdate>
+    <idno type="unitid">Z1J832-2</idno>
+        <idno type="item">15</idno>
+        <facsimile from="0191" to="0197"/>
+        <physDesc>
+          <extent sketch="false">6</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1756-08-13" type="paris"/>
+          <date when="1756-08-13" type="paris"/>
+        </sessions>
+        <places>
+          <place type="paris">
+            <address>
+              <street>rue du Dauphin</street>
+              <buildingNumber/>
+            </address>
+            <complement/>
+            <parish/>
+            <owner>maison occupée par la demoiselle de Rubigny</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="acceptation">Recevoir et évaluer le travail réalisé</category>
+          <designation rubric="true">Estimation d'ouvrages de peinture</designation>
+        </categories>
+        <procedure>
+          <framework type="b2b">L’institution est saisie dans le cadre d’une procédure (l’institution nomme un ou deux experts)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>lieutenant civil</orgName>
+              <date when="1756-07-21"/>
+            </sentence>
+          </sentences>
+          <case>fin de travaux</case>
+          <objects>
+            <object type="house">Maison(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0010" context="third-party" appointment="court-appointed">
+              <title>architecte expert</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0057">
+              <persName>
+                <surname>Liébault de la Neuville</surname>
+                <forename>Christophe Edouard</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="true" intervention="">
+              <person>
+                <persName>
+                  <surname>Briseval de Rubigny</surname>
+                  <forename>Suzanne</forename>
+                </persName>
+                <occupation>mineure émancipée d'âge, sous l'autorité de Marie Poulain,
+                                veuve de Briseval de Rubigny, sa mère</occupation>
+              </person>
+              <status>limited-partner</status>
+              <expert ref="#xpr0010"/>
+            </party>
+            <party role="opponent" presence="true" intervention="">
+              <person>
+                <persName>
+                  <surname>Delaplanche</surname>
+                  <forename/>
+                </persName>
+                <occupation>maître peintre</occupation>
+              </person>
+              <status>builder</status>
+              <expert ref="#xpr0010"/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <agreement type="conclusion">Conclusion</agreement>
+          <opinion ref="#xpr0010">"Revenant lesdits ouvrages de peinture suivant ledit sieur Desboeufs à 596
+                    l. 4 d. Suivant ledit sieur Loir à 844 l. 2 s. Et suivant nous tiers expert à la
+                    somme de 626 l. 12 s. 5 d. C'est Monsieur la valeur desdits ouvrages de peinture
+                    suivant nous tiers expert sur quoy nous vous refferrons d'ordonner."</opinion>
+          <arrangement/>
+          <estimate/>
+          <fees detail="true">
+            <fee ref="#xpr0010" type="expert" l="18" s="" d=""/>
+            <fee type="clerk" l="12" s="" d=""/>
+            <fee type="rolls" l="17" s="" d=""/>
+            <fee type="papers" l="3" s="10" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <total l="50" d="" s="10"/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="13" s="5" d=""/>
+            <expense type="expert" l="6" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group=""/>
+        <analysis>1ers experts : Loir (on ne sait pas lequel) et Desboeufs, pv du 18 mars 1756
+                et jours suivants, reçu par Liébault de la Neuville. Seul Desboeufs se présente lors
+                de cette expertise arbitrale (il commente et intervient).</analysis>
+        <noteworthy/>
+      </description>
+    </expertise>

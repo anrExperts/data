@@ -1,0 +1,119 @@
+<eac xmlns="https://archivists.org/ns/eac/v2" xml:id="clrk0037">
+  <control maintenanceStatus="">
+    <recordId>clrk0037</recordId>
+    <maintenanceAgency>
+      <agencyName>ANR Experts</agencyName>
+    </maintenanceAgency>
+    <maintenanceHistory>
+      <maintenanceEvent maintenanceEventType="created">
+        <agent agentType="machine">clerk_csv2eac.xqy/BaseX</agent>
+        <eventDateTime standardDateTime="2022-12-31T14:06:48.817+01:00"/>
+        <eventDescription>Création des fiches EAC-CPF à partir du tableau</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+    <sources>
+      <source id="sourceid86496522">
+        <reference href="">Almanach royal 1726</reference>
+      </source>
+      <source id="sourceid86496524">
+        <reference href="">Almanach royal 1727</reference>
+      </source>
+      <source id="sourceid86496526">
+        <reference href="">Almanach royal 1736</reference>
+      </source>
+      <source id="sourceid86496528">
+        <reference href="">Almanach royal 1737</reference>
+      </source>
+      <source id="sourceid86496530">
+        <reference href="">Almanach royal 1746</reference>
+      </source>
+      <source id="sourceid86496532">
+        <reference href="">Almanach royal 1747</reference>
+      </source>
+      <source id="sourceid86496534">
+        <reference href="">Almanach royal 1756</reference>
+      </source>
+      <source id="sourceid86496536">
+        <reference href="">Almanach royal 1757</reference>
+      </source>
+      <source id="sourceid86496538">
+        <reference href="">Almanach royal 1766</reference>
+      </source>
+      <source id="sourceid86496540">
+        <reference href="">Almanach royal 1767</reference>
+      </source>
+    </sources>
+  </control>
+  <cpfDescription>
+    <identity>
+      <entityType value="person"/>
+      <nameEntry status="authorized" preferredForm="true" sourceReference="">
+        <part localType="full">Mayer, Christophe Hugues</part>
+      </nameEntry>
+      <nameEntry status="alternative" preferredForm="false" sourceReference="">
+        <part localType="surname">Mayer</part>
+        <part localType="forename">Christophe Hugues</part>
+      </nameEntry>
+      <nameEntry status="alternative" preferredForm="false" sourceReference="">
+        <part localType="surname">MEYER</part>
+        <part localType="forname">Christophe Hugues</part>
+      </nameEntry>
+      <otherEntityTypes>
+        <otherEntityType>
+          <term>clerk</term>
+        </otherEntityType>
+      </otherEntityTypes>
+      <identityId>clrk0037</identityId>
+    </identity>
+    <description>
+      <functions>
+        <function sourceReference="#sourceid86496522 #sourceid86496524 #sourceid86496526 #sourceid86496528 #sourceid86496530 #sourceid86496532 #sourceid86496534 #sourceid86496536 #sourceid86496538 #sourceid86496540">
+          <term>Greffier</term>
+          <dateRange>
+            <fromDate sourceReference="" certainty="certain" standardDate="1726"/>
+            <toDate sourceReference="" certainty="certain" standardDate="1767"/>
+          </dateRange>
+        </function>
+        <function sourceReference="#sourceid86496540">
+          <term>doyen</term>
+          <date sourceReference="" certainty="certain" standardDate="1767"/>
+        </function>
+      </functions>
+      <places>
+        <place sourceReference="#sourceid86496522 #sourceid86496524 #sourceid86496526 #sourceid86496528">
+          <placeRole>Adresse</placeRole>
+          <placeName>rue de la Verrerie</placeName>
+          <dateRange>
+            <fromDate sourceReference="" certainty="certain" standardDate="1726"/>
+            <toDate sourceReference="" certainty="certain" standardDate="1737"/>
+          </dateRange>
+        </place>
+        <place sourceReference="#sourceid86496530 #sourceid86496532">
+          <placeRole>Adresse</placeRole>
+          <placeName>rue Jean-pain-mollet</placeName>
+          <dateRange>
+            <fromDate sourceReference="" certainty="certain" standardDate="1746"/>
+            <toDate sourceReference="" certainty="certain" standardDate="1747"/>
+          </dateRange>
+        </place>
+        <place sourceReference="#sourceid86496534 #sourceid86496536">
+          <placeRole>Adresse</placeRole>
+          <placeName>rue ne S. Merry, vis-à-vis la rue du Renard</placeName>
+          <dateRange>
+            <fromDate sourceReference="" certainty="certain" standardDate="1756"/>
+            <toDate sourceReference="" certainty="certain" standardDate="1757"/>
+          </dateRange>
+        </place>
+        <place sourceReference="#sourceid86496538 #sourceid86496540">
+          <placeRole>Adresse</placeRole>
+          <placeName>quai des Miramionnes, vis-à-vis le Pont</placeName>
+          <dateRange>
+            <fromDate sourceReference="" certainty="certain" standardDate="1766"/>
+            <toDate sourceReference="" certainty="certain" standardDate="1767"/>
+          </dateRange>
+        </place>
+      </places>
+    </description>
+  </cpfDescription>
+  <!--pas de date/source pour Meyer-->
+</eac>

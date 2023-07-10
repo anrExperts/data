@@ -1,0 +1,217 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1005d029">
+  <meta/>
+  <control>
+    <maintenanceStatus>revised</maintenanceStatus>
+    <publicationStatus/>
+    <localControl localType="detailLevel">
+      <term>completed</term>
+    </localControl>
+    <maintenanceHistory>
+      <maintenanceEvent>
+                <eventType>revised</eventType>
+                <eventDateTime standardDateTime="2021-10-15T13:49:44Z">2021-10-15T13:49:44Z</eventDateTime>
+                <agentType>human</agentType>
+                <agent>llosserand</agent>
+                <eventDescription>exb3</eventDescription>
+            </maintenanceEvent>
+          <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateObjectsValues_db.xqy/BaseX</agent>
+        <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateOpinionRef_files.xqy/BaseX</agent>
+        <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateRefValues_files.xqy/BaseX</agent>
+        <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+        <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>revised</eventType>
+        <eventDateTime standardDateTime="2020-07-01T12:00:00">2020-07-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>llosserand</agent>
+        <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>retroconverted</eventType>
+        <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>ead2xpr.xsl/Saxon9</agent>
+        <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>created</eventType>
+        <eventDateTime standardDateTime="2017-10-01T12:00:00">2017-10-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>JH</agent>
+        <eventDescription>Création de la fiche.</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+  </control>
+  <sourceDesc>
+    <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1005</idno>
+    <idno type="item">029</idno>
+    <facsimile from="0266" to="0269"/>
+    <physDesc>
+      <extent sketch="false">2</extent>
+      <appendices>
+        <appendice>
+          <type type="petition">Requête</type>
+          <extent>1</extent>
+          <desc/>
+          <note>requête de Gallion</note>
+        </appendice>
+      </appendices>
+    </physDesc>
+  </sourceDesc>
+  <description>
+    <sessions>
+      <date when="1776-07-13" type="suburbs"/>
+    </sessions>
+    <places>
+      <place type="suburbs">
+        <address/>
+        <complement>grande Rue de Vaugirard, maison à porte charetière dns la grande rue à droite en venant de Paris vis à vis la maison du sSeigneur patron</complement>
+        <city/>
+        <district/>
+        <owner/>
+      </place>
+    </places>
+    <categories>
+      <category type="settlement">Départager</category>
+      <designation rubric="true">Visitte de lieux contentieux à Vaugirard d'entre le sieur Gallien et le sieur Colombier ; MM. Perrard et Taboureur, experts.</designation>
+    </categories>
+    <procedure>
+      <framework type="b1">Requête auprès d’une institution pour qu’elle demande une expertise</framework>
+      <origination type="parties">Les parties</origination>
+      <sentences>
+        <sentence>
+          <orgName>Châtellenie d’Issy et Vaugirard, lieutenant civil (ordonnance)</orgName>
+          <date when="1776-06-28"/>
+        </sentence>
+        <sentence>
+          <orgName>Châtelet, lieutenant civil (sentence)</orgName>
+          <date when="1776-07-08"/>
+        </sentence>
+      </sentences>
+      <case>Colombier a fait construire un bâtiment contre et sur le mur mitoyen, sans autorisation et sans accord. Son voisin Gallion l’a fait sommer de le détruire le 19 juin 1776 (pour péril imminent).</case>
+      <objects>
+        <object type="wall">Mur(s)</object>
+      </objects>
+    </procedure>
+    <participants>
+      <experts>
+        <expert ref="#xpr0210" context="primary" appointment="appointed">
+          <title>architecte expert</title>
+        </expert>
+        <expert ref="#xpr0250" context="primary" appointment="court-appointed">
+          <title>architecte expert</title>
+        </expert>
+      </experts>
+      <clerks>
+        <clerk ref="#clrk0058">
+          <persName>
+            <surname>Foucart</surname>
+            <forename>Paul Joseph</forename>
+          </persName>
+        </clerk>
+      </clerks>
+      <parties>
+        <party role="petitioner" presence="" intervention="">
+          <person>
+            <persName>
+              <surname>Gallion</surname>
+              <forename>Edme Jean</forename>
+            </persName>
+            <occupation>maître doreur, bourgeois de Paris, propriétaire de la maison dont il est question</occupation>
+          </person>
+          <status>owner</status>
+          <expert ref="#xpr0250"/>
+          <prosecutor>
+            <persName>
+              <surname>Gavary</surname>
+              <forename/>
+            </persName>
+          </prosecutor>
+        </party>
+        <party role="opponent" presence="true" intervention="">
+          <person>
+            <persName>
+              <surname>Colombier</surname>
+              <forename/>
+            </persName>
+            <occupation>cabarettier, marchand de vin</occupation>
+          </person>
+          <status>owner</status>
+          <expert ref="#xpr0210"/>
+        </party>
+      </parties>
+      <craftmen>
+        <craftman>
+          <persName>
+            <surname/>
+            <forename/>
+          </persName>
+          <occupation/>
+        </craftman>
+      </craftmen>
+    </participants>
+    <conclusions>
+      <opinion ref="">« Sur quoi et pour satisfaire audit requisitoire et d’après l’état par nous cy dessus raporté et en consequence de ce que le mur qui a été repris par sous œuvre sous la fondation ancienne du mur de cloture bati en terre, n’a été pareillement construit qu’en terre dans la hauteur de trois pieds au dessous de la fondation dudit mur de cloture, et n’a été repris qu’en dix huit pouces d’épaisseur, en sorte qu’il en manque de trois pouces que ces reprises ne fassent l’épaisseur du mur au dessus pour quoi nous estimons et notre avis est qu’il convient faire à neuf aux frais seuls du sieur Colombier la partie de mur tant en fondation qu’en elevation depuis l’encoignure formant hache dans le jardin du sieur Galien jusqu’à la chaine en partie de mur faitte … de vingt un pouces d’épaisseur depuis le sol de la fondation du coté du sieur Colombier, jusqu’à trois pouces près des terres du jardin du sieur Galien et de dix huit pouces d’épaisseur au dessus juqu’au dessus de l’extrados des voutes de caves dudit sieur Colombier et le surplus de la hauteur, de quinze pouces d’épaisseur ; jusqu’à la hauteur de l’heberge de la grange dudit sieur Colombier, lequel mur sera construit en bon moilon et plastre crepi en platre des deux cotés au dessus des caves, le bas du mur la hauteur de trois pieds du dessus des terres du jardin du sieur Galien sera construit en moilon apparent posé en platre et les joints remplis à fleur de moilon le tout aux frais du sieur Colombier, la partie en retour depuis l’encoignure t compris l’épaisseur du mur du sieur Dupuis en sept pieds neuf pouces de long formant enclave dans le jardin du sieur Galien sera pareillement faitte à neuf dans toute sa hauteur depuis le sol de la fondation des caves du sieur Colombier, jsuqu’à la hauteur de l’heberge de la grange dudit sieur Colombier et des memes epaisseurs que dessus, en observant de plus de faire un contremur d’un pied d’épaisseur au dedans et pour recevoir la naissance de la voute de caves dudit sieur Colombier, en sorte que cette partie de mur aura trente trois pouces d’épaisseur dans cette partie compris ledit contremur, et sera construit ainsy qu’il est dit cy dessus, le tout aux frais dudit sieur Colombier 
+Tel est Monsieur notre avis unanime sur l’état des lieux dont est question et ce qu’il convient faire auxdites constructions le tout aux termes de votre ordonnance et suivant le requisitoire du sieur Galien vous referant de juger et ordonner Fait par nous architectes experts susdits lesdits jours aux termes de l’ordonnance à quoy avons vacqué tant du matin que de relevée. »</opinion>
+      <arrangement/>
+      <agreement type="agreement">Accord</agreement>
+      <estimate l="" s="" d=""/>
+      <fees detail="true">
+        <fee type="papers" l="6" s="" d=""/>
+        <fee type="expert" ref="#xpr0210" l="18" s="" d=""/>
+        <fee type="expert" ref="#xpr0250" l="18" s="" d=""/>
+        <fee type="clerk" l="18" s="" d=""/>
+        <fee type="rolls" l="12" s="" d=""/>
+        <fee type="prosecutors" l="" s="" d=""/>
+        <fee type="help" l="" s="" d=""/>
+        <fee type="plans" l="" s="" d=""/>
+        <total l="72" s="" d=""/>
+      </fees>
+      <expenses mentioned="false"/>
+    </conclusions>
+    <keywords group="estates"/>
+    <keywords group="procedure"/>
+    <keywords group="contract"/>
+    <keywords group="encumbrance"/>
+    <keywords group="law"/>
+    <keywords group="measurement"/>
+    <keywords group="repairs"/>
+    <keywords group="guarantees"/>
+    <keywords group="responsability"/>
+    <keywords group="ownership"/>
+    <keywords group="value"/>
+    <keywords group="neighbourhood">
+      <term value="l1">Voisin</term>
+    </keywords>
+    <keywords group="disorder"/>
+    <keywords group="transformation">
+      <term value="n15">Reprise-en-sous-œuvre</term>
+    </keywords>
+    <analysis/>
+    <noteworthy/>
+  </description>
+</expertise>

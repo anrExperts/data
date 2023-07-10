@@ -1,0 +1,225 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j432d068" status="">
+      <meta/>
+      <control>
+        <maintenanceStatus>new</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-02-17T12:17:28.693+01:00">2021-02-17T12:17:28.693+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>z1jresp.xqy/BaseX</agent>
+            <eventDescription>Ajout de l'historique de la fiche.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-12-10T12:00:00">2020-12-10T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Saisie de la fiche dans l’app xpr.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2019-03-01T12:00:00">2019-03-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Création de la fiche (formulaire Xforms/Libre office).</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1696</unitdate>
+    <idno type="unitid">Z1J432</idno>
+        <idno type="item">068</idno>
+        <facsimile from="0557" to="0568"/>
+        <physDesc>
+          <extent sketch="false">8</extent>
+          <appendices>
+            <appendice>
+              <type type="other">Ordonnance</type>
+              <extent>1</extent>
+              <desc>10/03/1696</desc>
+              <note/>
+            </appendice>
+            <appendice>
+              <type type="other">Ordonnance</type>
+              <extent>1</extent>
+              <desc/>
+              <note/>
+            </appendice>
+          </appendices>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1696-03-12" type="paris"/>
+          <date when="1696-03-13" type="paris"/>
+          <date when="1696-03-20" type="paris"/>
+        </sessions>
+        <places>
+          <place xml:id="id819d106" type="paris">
+            <address>
+              <street>rue des Jeûneurs</street>
+              <buildingNumber/>
+            </address>
+            <complement/>
+            <parish/>
+            <owner>Succession Blondeau</owner>
+          </place>
+          <place xml:id="id819d124" type="province">
+            <address/>
+            <complement/>
+            <city>Roissy en Brie</city>
+            <district/>
+            <owner>Succession Blondeau</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="estimation">Estimer la valeur des biens</category>
+          <designation rubric="true">Estimation de maisons</designation>
+        </categories>
+        <procedure>
+          <framework type="b2a">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>LC</orgName>
+              <date when="1696-03-08"/>
+            </sentence>
+          </sentences>
+          <case>Succession Blondeau</case>
+          <objects>
+            <object type="house">Maison(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0008" context="primary" appointment="appointed">
+              <title>expert juré en titre d’office et entrepreneur de bâtiments à Paris</title>
+            </expert>
+            <expert ref="#xpr0132" context="primary" appointment="court-appointed">
+              <title>expert juré en titre d’office et entrepreneur de bâtiments à Paris</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0001">
+              <persName>
+                <surname>Febvrier</surname>
+                <forename>Paul</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Naquet</surname>
+                  <forename>François</forename>
+                </persName>
+                <occupation>écuyer conseiller du roi, lieutenant général au baillage d’Epinay, et Marguerite Blondeau son épouse, fille héritière pour moitié de François Blondeau son père (vivant commissaire général du guet)</occupation>
+              </person>
+              <status>heir</status>
+              <expert ref=""/>
+            </party>
+            <party role="opponent" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Creille de Vidret</surname>
+                  <forename/>
+                </persName>
+                <occupation>veuve de défunt François Blondeau, de son vivant écuyer conseille du roi commissaire de la Marine, tutrice de Thérèse Blondeau, fille unique héritière du défunt François Blondeau, héritière par représentation de son père du défunt François Blondeau</occupation>
+              </person>
+              <status>heir</status>
+              <expert ref=""/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <agreement type="agreement">Accord</agreement>
+          <opinion ref="">« Ladite maison ainsy que le tout se comporte et poursuit tenant d’un costé au sieur Leullye, d’autre à la petite maison cy après déclarée et au droit de l’escurie et jardin, aussy par le bout à son aboutissant aussy audit sieur de Leully et par l’autre bout sur le devant à ladite rue des Jeûneurs, après avoir esté par nous ainsi veu et visité de fond en comble comme de sa construction et superficie tant des bastiments que fonds dependant de ladite maison nous l’avons prisée et estimée eu égard au cours du temps present à la charge du cens seulement la somme de douze mil cinq cens livres… 12 500 l. »
+« Nous avons veu visité et examiné la construction de ladite [petite] maison et pris les mesures necessaires pour connoistre sa superficie pour en faire l’estimation à l’effet du partage en question, laquelle maison nous prisons et estimons eu esgard à sa construction scituation et au cours du temps present, la somme de quinze cens livres, à la charge du cens seulement, cy… 1 500 l. » 
+[Roissy] « Laquelle maison principalle, ferme, jardins, verger, treille, et prez par nous cy dessus declarez dependant de ladite succession dudit deffunct sieur Blondeau, après avoir esté par nous veus et visitez et nous estre informé de la valleur des terres et heritages suivant leurs differents climats et scituation, nous avons le tout prisé et estimé la somme de quatorze mil livres eu esgard au cours du temps present et à la charge du cens seulement, cy… 14 000 l. »   </opinion>
+          <arrangement/>
+          <estimate l="28000" s="" d=""/>
+          <estimates>
+            <place ref="#id819d106">
+              <appraisal l="12500" s="" d="">
+                <desc>maison</desc>
+              </appraisal>
+              <appraisal l="1500" s="" d="">
+                <desc>maison</desc>
+              </appraisal>
+            </place>
+            <place ref="#id819d124">
+              <appraisal l="14000" s="" d="">
+                <desc>maison</desc>
+              </appraisal>
+            </place>
+          </estimates>
+          <fees detail="true">
+            <fee type="expert" ref="#xpr0008" l="12" s="" d=""/>
+            <fee type="expert" ref="#xpr0132" l="12" s="" d=""/>
+            <fee type="clerk" l="" s="" d=""/>
+            <fee type="rolls" l="" s="" d=""/>
+            <fee type="papers" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <total l="" s="" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="37" s="15" d=""/>
+            <expense type="expert" l="30" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis/>
+        <noteworthy/>
+      </description>
+    </expertise>

@@ -1,0 +1,227 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1010d007">
+  <meta/>
+  <control>
+    <maintenanceStatus>revised</maintenanceStatus>
+    <publicationStatus/>
+    <localControl localType="detailLevel">
+      <term>completed</term>
+    </localControl>
+    <maintenanceHistory>
+      <maintenanceEvent>
+                <eventType>revised</eventType>
+                <eventDateTime standardDateTime="2022-08-28T13:51:37Z">2022-08-28T13:51:37Z</eventDateTime>
+                <agentType>human</agentType>
+                <agent>llosserand</agent>
+                <eventDescription>rvpcd</eventDescription>
+            </maintenanceEvent>
+          <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateObjectsValues_db.xqy/BaseX</agent>
+        <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateOpinionRef_files.xqy/BaseX</agent>
+        <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateRefValues_files.xqy/BaseX</agent>
+        <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+        <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>revised</eventType>
+        <eventDateTime standardDateTime="2020-09-01T12:00:00">2020-09-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>JH</agent>
+        <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>retroconverted</eventType>
+        <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>ead2xpr.xsl/Saxon9</agent>
+        <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>created</eventType>
+        <eventDateTime standardDateTime="2017-04-01T12:00:00">2017-04-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>llosserand</agent>
+        <eventDescription>Création de la fiche.</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+  </control>
+  <sourceDesc>
+    <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1010</idno>
+    <idno type="item">007</idno>
+    <facsimile from="0055" to="0062"/>
+    <physDesc>
+      <extent sketch="false">6</extent>
+      <appendices>
+        <appendice>
+          <type type="other">Compte d'expertise</type>
+          <extent>1</extent>
+          <desc>papier livre récapitulant 22 rôles (4 livres 8 sols), 11 feuilles (1 livre 18 sols 6 deniers) et le contrôle (14 sols) pour un total de 7 livres 10 sols 6 deniers</desc>
+          <note/>
+        </appendice>
+      </appendices>
+    </physDesc>
+  </sourceDesc>
+  <description>
+    <sessions>
+      <date when="1776-12-04" type="paris"/>
+      <date when="1776-12-07" type="paris"/>
+    </sessions>
+    <places>
+      <place xml:id="id254d316" type="paris">
+        <address>
+          <street>La Courtille</street>
+          <buildingNumber/>
+        </address>
+        <complement>La Courtille, près la rue Saint-Maur</complement>
+        <parish/>
+        <owner>Lefèvre</owner>
+      </place>
+    </places>
+    <categories>
+      <category type="estimation">Estimer la valeur des biens</category>
+      <designation rubric="true">Estimation de légumes</designation>
+    </categories>
+    <procedure>
+      <framework type="b2">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+      <origination type="institution">Une institution</origination>
+      <sentences>
+        <sentence>
+          <orgName>lieutenant civil</orgName>
+          <date when="1776-11-05"/>
+        </sentence>
+      </sentences>
+      <case>Exécution de la sentence du 28 août 1776 : l’opposant (locataire) doit quitter les lieux dans huit jours sinon expulsé en la manière ordinaire. Pendant ce délai, les légumes, puits construit par les locataires et les vignes plantées par eux et autres denrée de jardinage étant sur le marais doivent être visités (bail entre Lefevre et Denis le 27 mars 1775)</case>
+      <objects>
+        <object type="plot">Terrain(s)</object>
+      </objects>
+    </procedure>
+    <participants>
+      <experts>
+        <expert ref="#xpr0268" context="primary" appointment="appointed">
+          <title>maître jardinier à Paris</title>
+        </expert>
+        <expert ref="#xpr0269" context="primary" appointment="appointed">
+          <title>maître jardinier à Paris</title>
+        </expert>
+      </experts>
+      <clerks>
+        <clerk ref="#clrk0059">
+          <persName>
+            <surname>Forestier</surname>
+            <forename>Cézaire François</forename>
+          </persName>
+        </clerk>
+      </clerks>
+      <parties>
+        <party role="petitioner" presence="true" intervention="true">
+          <person>
+            <persName>
+              <surname>Lefevre</surname>
+              <forename/>
+            </persName>
+            <occupation>maître jardinier</occupation>
+          </person>
+          <status>owner</status>
+          <expert ref="#xpr0268"/>
+          <prosecutor>
+            <persName>
+              <surname>Duval</surname>
+              <forename>Louis Denis</forename>
+            </persName>
+          </prosecutor>
+        </party>
+        <party role="opponent" presence="true" intervention="true">
+          <person>
+            <persName>
+              <surname>Dunys</surname>
+              <forename>François</forename>
+            </persName>
+            <occupation>maître jardinier et Paysan, Marie, sa femme</occupation>
+          </person>
+          <status>tenant</status>
+          <expert ref="#xpr0269"/>
+          <prosecutor>
+            <persName>
+              <surname>Gandon</surname>
+              <forename>Charles Christophe Marie</forename>
+            </persName>
+          </prosecutor>
+        </party>
+      </parties>
+      <craftmen>
+        <craftman>
+          <persName>
+            <surname/>
+            <forename/>
+          </persName>
+          <occupation/>
+        </craftman>
+      </craftmen>
+    </participants>
+    <conclusions>
+      <opinion ref="">Les denrées, marchandises de jardinage et puits sont estimés au total à 1310 livres 5 sols.</opinion>
+      <arrangement/>
+      <agreement type="agreement">Accord</agreement>
+      <estimate l="130" s="5" d=""/>
+      <estimates>
+        <place ref="#id254d316">
+          <appraisal l="" s="" d="">
+            <desc/>
+          </appraisal>
+        </place>
+      </estimates>
+      <fees detail="true">
+        <fee type="papers" l="" s="" d=""/>
+        <fee type="expert" ref="#xpr0268" l="30" s="" d=""/>
+        <fee type="expert" ref="#xpr0269" l="30" s="" d=""/>
+        <fee type="clerk" l="24" s="" d=""/>
+        <fee type="rolls" l="42" s="" d=""/>
+        <fee type="prosecutors" l="" s="" d=""/>
+        <fee type="help" l="" s="" d=""/>
+        <fee type="plans" l="" s="" d=""/>
+        <total l="126" s="" d=""/>
+      </fees>
+      <expenses mentioned="true">
+        <expense type="expert" l="12" s="" d=""/>
+        <expense type="clerk" l="16" s="" d=""/>
+      </expenses>
+    </conclusions>
+    <keywords group="estates"/>
+    <keywords group="procedure"/>
+    <keywords group="contract"/>
+    <keywords group="encumbrance"/>
+    <keywords group="law"/>
+    <keywords group="measurement"/>
+    <keywords group="repairs"/>
+    <keywords group="guarantees"/>
+    <keywords group="responsability"/>
+    <keywords group="ownership"/>
+    <keywords group="value"/>
+    <keywords group="neighbourhood"/>
+    <keywords group="disorder"/>
+    <keywords group="transformation"/>
+    <analysis/>
+    <noteworthy/>
+  </description>
+</expertise>

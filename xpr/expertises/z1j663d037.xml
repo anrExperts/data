@@ -1,0 +1,191 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j663d037" status="">
+  <meta/>
+  <control>
+    <maintenanceStatus>revised</maintenanceStatus>
+    <publicationStatus/>
+    <localControl localType="detailLevel">
+      <term>completed</term>
+    </localControl>
+    <maintenanceHistory>
+      <maintenanceEvent>
+                <eventType>revised</eventType>
+                <eventDateTime standardDateTime="2022-04-29T13:27:23Z">2022-04-29T13:27:23Z</eventDateTime>
+                <agentType>human</agentType>
+                <agent>llosserand</agent>
+                <eventDescription>rvpcd</eventDescription>
+            </maintenanceEvent>
+          <maintenanceEvent>
+                <eventType>revised</eventType>
+                <eventDateTime standardDateTime="2021-10-15T18:47:32Z">2021-10-15T18:47:32Z</eventDateTime>
+                <agentType>human</agentType>
+                <agent>llosserand</agent>
+                <eventDescription>exb3</eventDescription>
+            </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateObjectsValues_db.xqy/BaseX</agent>
+        <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-06-16T16:56:32.893+02:00">2021-06-16T16:56:32.893+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateOpinionRef_files.xqy/BaseX</agent>
+        <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-06-16T16:29:02.548+02:00">2021-06-16T16:29:02.548+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateRefValues_files.xqy/BaseX</agent>
+        <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>created</eventType>
+        <eventDateTime standardDateTime="2021-04-01T21:02:22Z">2021-04-01T21:02:22Z</eventDateTime>
+        <agentType>human</agentType>
+        <agent>llosserand</agent>
+        <eventDescription>Création de la fiche.</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+  </control>
+  <sourceDesc>
+    <unitdate>1736</unitdate>
+    <idno type="unitid">Z1J663</idno>
+    <idno type="item">037</idno>
+    <facsimile from="0336" to="0340"/>
+    <physDesc>
+      <extent sketch="false">6</extent>
+    </physDesc>
+  </sourceDesc>
+  <description>
+    <sessions>
+      <date when="1736-06-30" type="paris"/>
+      <date when="1736-06-30" type="paris"/>
+    </sessions>
+    <places>
+      <place xml:id="id144d78" type="paris">
+        <address>
+          <street>rue vieille du Temple</street>
+          <buildingNumber/>
+        </address>
+        <complement/>
+        <parish/>
+        <owner>saisie sur la succession vacante de Magneau</owner>
+      </place>
+    </places>
+    <categories>
+      <category type="estimation">Estimer la valeur des biens</category>
+      <designation rubric="true">Visitte et estimation d'une maison, scise vieille rue du Temple, saisie réellement surla succession vacante du sieur André Lagneau, à la requeste de la veuve Lagneau, Marie-François Duthuilé ; MM. Desboeufs et Jacques Antoine Payen, experts ; M. Pothenot, greffier.</designation>
+    </categories>
+    <procedure>
+      <framework type="b2">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+      <origination type="institution">Une institution</origination>
+      <sentences>
+        <sentence>
+          <orgName>Parlement</orgName>
+          <date when="1732-02-07"/>
+          <date when="1735-08-08"/>
+          <date when="1736-06-15"/>
+        </sentence>
+      </sentences>
+      <case>succession, vente pour remboursement des nombreuses créances</case>
+      <objects>
+        <object type="house">Maison(s)</object>
+      </objects>
+    </procedure>
+    <participants>
+      <experts>
+        <expert ref="#xpr0089" context="primary" appointment="appointed">
+          <title>architecte expert bourgeois</title>
+        </expert>
+        <expert ref="#xpr0209" context="primary" appointment="court-appointed">
+          <title>architecte expert bourgeois</title>
+        </expert>
+      </experts>
+      <clerks>
+        <clerk ref="#xpr0227">
+          <persName>
+            <surname>Pothenot</surname>
+            <forename>Gabriel</forename>
+          </persName>
+        </clerk>
+      </clerks>
+      <parties>
+        <party role="petitioner" presence="false" intervention="false">
+          <person>
+            <persName>
+              <surname>du Thuilé</surname>
+              <forename>Marie Françoise</forename>
+            </persName>
+            <occupation>veuve d'andré Lagneau, créancière de la succession vacante dudit Lagneau</occupation>
+          </person>
+          <status>creditor</status>
+          <expert ref="#xpr0089"/>
+          <prosecutor>
+            <persName>
+              <surname>Lamare</surname>
+              <forename/>
+            </persName>
+          </prosecutor>
+        </party>
+        <party role="opponent" presence="false" intervention="false">
+          <person>
+            <persName>
+              <surname>Bucois dit Flamand</surname>
+              <forename>Charles</forename>
+            </persName>
+            <occupation>créancier à la succession dudit défunt Lagneau saisissant réellement la maison</occupation>
+          </person>
+          <status>creditor</status>
+          <expert ref="#xpr0209"/>
+        </party>
+      </parties>
+      <craftmen>
+        <craftman>
+          <persName>
+            <surname/>
+            <forename/>
+          </persName>
+          <occupation/>
+        </craftman>
+      </craftmen>
+    </participants>
+    <conclusions>
+      <agreement type="agreement">Accord</agreement>
+      <opinion ref="#xpr0089 #xpr0209">"Nous avons ensuitte pris les mesures et dimensions nécessaires pour connoitre la superficie de l’étendue du terrein de ladite maison, fais no remarques et observations sur la nature, qualités et constructions des bâtiments et aux réparations qui sont à y faire et après les calculs faits sur les mesure par nous prises nous estimons que ladite maison de fond en comble bâtiment et cour et eu égard au lieu où elle est scituée, à son revenu actuel, à l’état où sont à présent lesdits bâtiments, au cours du temps présent et à la charge des cens, rente et droits seigneuriaux la somme de sept mille livres cy 7000 livres
+Telle est notre estimation de ladite maison vous référant nosseigneurs d’en ordonner suivant vos lumières supérieures."</opinion>
+      <arrangement/>
+      <estimate l="7000" s="" d=""/>
+      <estimates>
+        <place ref="#id144d78">
+          <appraisal l="7000" s="" d="">
+            <desc>une maison</desc>
+          </appraisal>
+        </place>
+      </estimates>
+      <fees detail="">
+        <total l="" s="" d=""/>
+      </fees>
+      <expenses mentioned="false"/>
+    </conclusions>
+    <keywords group="estates"/>
+    <keywords group="procedure"/>
+    <keywords group="contract"/>
+    <keywords group="encumbrance"/>
+    <keywords group="law"/>
+    <keywords group="measurement"/>
+    <keywords group="repairs"/>
+    <keywords group="guarantees"/>
+    <keywords group="responsability"/>
+    <keywords group="ownership"/>
+    <keywords group="value"/>
+    <keywords group="neighbourhood"/>
+    <keywords group="disorder"/>
+    <keywords group="transformation"/>
+    <analysis/>
+    <noteworthy/>
+  </description>
+</expertise>

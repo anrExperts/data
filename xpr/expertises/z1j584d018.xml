@@ -1,0 +1,208 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j584d018">
+  <meta/>
+  <control>
+    <maintenanceStatus>revised</maintenanceStatus>
+    <publicationStatus/>
+    <localControl localType="detailLevel">
+      <term>to revise</term>
+    </localControl>
+    <maintenanceHistory>
+      <maintenanceEvent>
+                <eventType>revised</eventType>
+                <eventDateTime standardDateTime="2022-03-31T20:08:00Z">2022-03-31T20:08:00Z</eventDateTime>
+                <agentType>human</agentType>
+                <agent>llosserand</agent>
+                <eventDescription>rvpcd manq conclu</eventDescription>
+            </maintenanceEvent>
+          <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateObjectsValues_db.xqy/BaseX</agent>
+        <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateRefValues_files.xqy/BaseX</agent>
+        <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+        <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>revised</eventType>
+        <eventDateTime standardDateTime="2020-11-01T12:00:00">2020-11-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>JH</agent>
+        <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>retroconverted</eventType>
+        <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>ead2xpr.xsl/Saxon9</agent>
+        <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>created</eventType>
+        <eventDateTime standardDateTime="2017-04-01T12:00:00">2017-04-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>llosserand</agent>
+        <eventDescription>Création de la fiche.</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+  </control>
+  <sourceDesc>
+    <unitdate>1726</unitdate>
+    <idno type="unitid">Z1J584</idno>
+    <idno type="item">018</idno>
+    <facsimile from="0156" to="0161"/>
+    <physDesc>
+      <extent sketch="false">6</extent>
+    </physDesc>
+  </sourceDesc>
+  <description>
+    <sessions>
+      <date when="1726-11-07" type="paris"/>
+      <date when="1726-11-13" type="paris"/>
+      <date when="1726-11-25" type="paris"/>
+    </sessions>
+    <places>
+      <place type="paris">
+        <address>
+          <street>Rue du Sépulcre</street>
+          <buildingNumber/>
+        </address>
+        <complement>une maison, rue du Sépulcre, appelée petit hôtel d'Angleterre</complement>
+        <parish/>
+        <owner>Trudon / Le Vout</owner>
+      </place>
+    </places>
+    <categories>
+      <category type="settlement">Départager</category>
+      <designation rubric="true">Visitte d'une maison, rue du Sépulchre, à la requête du sieur Trudon et sa femme contre le sieur Damet Le Goue d'Anouze, présence de M. le lieutenant civil ; M. Fourier, expert tiers, M. Quirot, expert.</designation>
+    </categories>
+    <procedure>
+      <framework type="b2">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+      <origination type="institution">Une institution</origination>
+      <sentences>
+        <sentence>
+          <orgName>lieutenant civil</orgName>
+          <date when="1726-08-30"/>
+        </sentence>
+      </sentences>
+      <case>expertise arbitrale (contrariété entre les experts Quirot et Loir à propos de la construction d'une maison qui supprime le jour à son voisin)</case>
+      <objects>
+        <object type="house">Maison(s)</object>
+      </objects>
+    </procedure>
+    <participants>
+      <experts>
+        <expert ref="#xpr0111" context="third-party" appointment="court-appointed">
+          <title>architecte expert juré du roi</title>
+        </expert>
+      </experts>
+      <clerks>
+        <clerk ref="#clrk0029">
+          <persName>
+            <surname>Quirot</surname>
+            <forename>Jacques</forename>
+          </persName>
+        </clerk>
+      </clerks>
+      <parties>
+        <party role="petitioner" presence="true" intervention="false">
+          <person>
+            <persName>
+              <surname>Trudon</surname>
+              <forename>Pierre</forename>
+            </persName>
+            <occupation>maître tapissier</occupation>
+          </person>
+          <person>
+            <persName>
+              <surname>Caresme</surname>
+              <forename>Anne</forename>
+            </persName>
+            <occupation>sa femme</occupation>
+          </person>
+          <status>owner</status>
+          <expert ref="#xpr0111"/>
+          <prosecutor>
+            <persName>
+              <surname>Quelier</surname>
+              <forename/>
+            </persName>
+          </prosecutor>
+        </party>
+        <party role="opponent" presence="false" intervention="false">
+          <person>
+            <persName>
+              <surname>Le Vout</surname>
+              <forename/>
+            </persName>
+            <occupation/>
+          </person>
+          <status>owner</status>
+          <expert ref="#xpr0111"/>
+          <prosecutor>
+            <persName>
+              <surname>Aubin Delaforest</surname>
+              <forename>Robert François</forename>
+            </persName>
+          </prosecutor>
+        </party>
+      </parties>
+      <craftmen>
+        <craftman>
+          <persName>
+            <surname/>
+            <forename/>
+          </persName>
+          <occupation/>
+        </craftman>
+      </craftmen>
+    </participants>
+    <conclusions>
+      <arrangement/>
+      <agreement type="conclusion">Conclusion</agreement>
+      <estimate l="" s="" d=""/>
+      <fees detail="true">
+        <fee type="papers" l="2" s="8" d=""/>
+        <fee type="expert" ref="#xpr0111" l="18" s="" d=""/>
+        <fee type="clerk" l="18" s="" d=""/>
+        <fee type="rolls" l="6" s="5" d=""/>
+        <fee type="prosecutors" l="" s="" d=""/>
+        <fee type="help" l="" s="" d=""/>
+        <fee type="plans" l="" s="" d=""/>
+        <total l="50" s="13" d=""/>
+      </fees>
+      <expenses mentioned="true">
+        <expense type="clerk" l="18" s="2" d="6"/>
+        <expense type="expert" l="" s="" d=""/>
+      </expenses>
+    </conclusions>
+    <keywords group="estates"/>
+    <keywords group="procedure"/>
+    <keywords group="contract"/>
+    <keywords group="encumbrance"/>
+    <keywords group="law"/>
+    <keywords group="measurement"/>
+    <keywords group="repairs"/>
+    <keywords group="guarantees"/>
+    <keywords group="responsability"/>
+    <keywords group="ownership"/>
+    <keywords group="value"/>
+    <keywords group="neighbourhood"/>
+    <keywords group="disorder"/>
+    <keywords group="transformation"/>
+    <analysis/>
+    <noteworthy/>
+  </description>
+</expertise>

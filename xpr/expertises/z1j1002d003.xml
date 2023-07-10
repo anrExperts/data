@@ -1,0 +1,217 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1002d003">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2017-10-01T12:00:00">2017-10-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1002</idno>
+        <idno type="item">003</idno>
+        <facsimile from="0020" to="0023"/>
+        <physDesc>
+          <extent sketch="false">4</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-05-02" type="paris"/>
+          <date when="1776-05-08" type="paris"/>
+        </sessions>
+        <places>
+          <place type="paris">
+            <address>
+              <street>rue de Richelieu</street>
+              <buildingNumber/>
+            </address>
+            <complement>au coin du boulevard</complement>
+            <parish/>
+            <owner>de la Garenne</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="acceptation">Recevoir et évaluer le travail réalisé</category>
+          <designation rubric="true">Visitte, vérification et prisée d'ouvrages de bronze en une maison, rue de Richelieu au coin du boulevard, appartenante à M. Delagarenne ; M. Taboureur, expert.</designation>
+        </categories>
+        <procedure>
+          <framework type="b2b">L’institution est saisie dans le cadre d’une procédure (l’institution nomme un ou deux experts)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Châtelet, lieutenant civil (sentence)</orgName>
+              <date when="1776-04-26"/>
+            </sentence>
+          </sentences>
+          <case>Gouthiere demande l’estimation et prisée des ouvrages de bronze réalisés pour Charles Claude Alexandre Taillepied de la Garenne. Celui-ci s’oppose à l’expertise, en arguant qu’il n’a reçu aucune copie de la sentence ni de la sommation prétendue.L’expertise n’est pas réalisée, de la Garenne s’opposant à l’entrée de l’expert dans son hôtel.</case>
+          <objects>
+            <object type="other">ouvrage de bronze</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0250" context="primary" appointment="unknown">
+              <title>architecte expert des bâtiments à Paris</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0069">
+              <persName>
+                <surname>Beudot</surname>
+                <forename>Simon</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="true" intervention="true">
+              <person>
+                <persName>
+                  <surname>Gouthiere</surname>
+                  <forename>[Pierre]</forename>
+                </persName>
+                <occupation/>
+              </person>
+              <person>
+                <persName>
+                  <surname>Julia</surname>
+                  <forename/>
+                </persName>
+                <occupation/>
+              </person>
+              <status>builder</status>
+              <expert ref="#xpr0250"/>
+              <prosecutor>
+                <persName>
+                  <surname>Mulot d'Angers</surname>
+                  <forename>Claude</forename>
+                </persName>
+              </prosecutor>
+            </party>
+            <party role="opponent" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Taillepied de la Garenne</surname>
+                  <forename>Charles Claude Alexandre</forename>
+                </persName>
+                <occupation>chevalier secrétaire des commandements de Monsieur frère du roi</occupation>
+              </person>
+              <status>limited-partner</status>
+              <expert ref="#xpr0250"/>
+              <prosecutor>
+                <persName>
+                  <surname>Barré</surname>
+                  <forename>Jean Baptiste</forename>
+                </persName>
+              </prosecutor>
+              <representative>
+                <persName>
+                  <surname>Lhuillier</surname>
+                  <forename>Antoine</forename>
+                </persName>
+                <occupation>homme d'affaire de Taillepied de la Garenne</occupation>
+              </representative>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <arrangement/>
+          <agreement type="noConclusion">Sans conclusion</agreement>
+          <estimate l="" s="" d=""/>
+          <fees detail="true">
+            <fee type="papers" l="2" s="1" d=""/>
+            <fee type="expert" ref="#xpr0250" l="6" s="" d=""/>
+            <fee type="clerk" l="6" s="" d=""/>
+            <fee type="rolls" l="4" s="" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="18" s="1" d=""/>
+          </fees>
+          <expenses mentioned=""/>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis>f. 1v° "Et par ledit sieur Gouthière a été répliqué qu'il n'a point d'affaire à demesler avec ledit sieur de la Garenne, que ce dernier n'est que propriétaire de la maison où les ouvrages dudit sieur Goutière sont actuellement placé, que le refut du sieur de al Garenne de les laisser voir, visitter et priser est plutost une fin de non payer, soit qu'il le fasse par intelligence avec le sieur Julia, soit par tout autre motif que le dit sieur de ala Garenne étoit sy peu absent que depuis notre entrée en ladite maison il est sorti avec la dame son épouse sans doute pour éviter notre présence et se soustraire à l'exécution de ladite sentence., en conséquence ledit sieur Goutière persiste à demander l'exécution de la sentence..."
+
+conclusion de la première vacation :
+"Nous expert attendu l'impossibilité dans laquelle sont actuellement lesdits sieur Gouthière et Julia de nous mettre en état d'exécuter cotre sentence, vu aussy l'opposition formée par lesdit sieur Lhuillier et Burré en leur dire cy dessus nous avons renvoyé les parties à se pourvoir ainsy qu'elles aviseront et nous vous référons sur le tout. 
+Nous avons ensuitte déclaré aux parties que nous nous retirons après avoir signé avec ledit me Beudot greffier."</analysis>
+        <noteworthy>Gouthiere demande l’estimation et prisée des ouvrages de bronze réalisés pour Charles Claude Alexandre Taillepied de la Garenne. Celui-ci s’oppose à l’expertise, en arguant qu’il n’a reçu aucune copie de la sentence ni de la sommation prétendue.
+L’expertise n’est pas réalisée, de la Garenne s’opposant à l’entrée de l’expert dans son hôtel.
+
+1ère vacation :
+1 vacation 1 expert 6 l.
+greffier idem 6 l.
+8 r. 4 l.
+papier et controlle 2 l. 1 s.
+18 l. 1 s.
+
+Suite et fin de 'laffaire
+Gouthière remet le pv de référé du 4 mai 1776 à l'expert et au greffier contenant l'ordonnance du LC... appelée ordonnance de référé... (f; 2v°)
+Le procureur de l'opposant argue de nullité pour défaut de sommation
+Gouthière et Julia s'aopposent et produisent les mémoires des ouvrages faits en bronze, modèles, cizelure et monture montant  à 34579 livres 10 sols et un autre de sculptures décorations models et accessoires à ladite sculpure montant à 35265 livres 5 sols
+"lesdits deux mémoires certiffiés véritables par ledit sieur Julia et ont tous lesdits comparants signé sous touttes les réserves de droit par eux cy devant faittes et qu'ils réitèrent. 
+(signatures)
+Examiné et non payé</noteworthy>
+      </description>
+    </expertise>

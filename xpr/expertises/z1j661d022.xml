@@ -1,0 +1,184 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j661d022" status="">
+  <meta/>
+  <control>
+    <maintenanceStatus>revised</maintenanceStatus>
+    <publicationStatus/>
+    <localControl localType="detailLevel">
+      <term>completed</term>
+    </localControl>
+    <maintenanceHistory>
+      <maintenanceEvent>
+                <eventType>revised</eventType>
+                <eventDateTime standardDateTime="2022-04-23T17:00:18Z">2022-04-23T17:00:18Z</eventDateTime>
+                <agentType>human</agentType>
+                <agent>llosserand</agent>
+                <eventDescription>rvpcd</eventDescription>
+            </maintenanceEvent>
+          <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateObjectsValues_db.xqy/BaseX</agent>
+        <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-06-16T16:56:32.893+02:00">2021-06-16T16:56:32.893+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateOpinionRef_files.xqy/BaseX</agent>
+        <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-06-16T16:29:02.548+02:00">2021-06-16T16:29:02.548+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateRefValues_files.xqy/BaseX</agent>
+        <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>created</eventType>
+        <eventDateTime standardDateTime="2021-03-13T18:57:59Z">2021-03-13T18:57:59Z</eventDateTime>
+        <agentType>human</agentType>
+        <agent>llosserand</agent>
+        <eventDescription>Création de la fiche.</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+  </control>
+  <sourceDesc>
+    <unitdate>1736</unitdate>
+    <idno type="unitid">Z1J661</idno>
+    <idno type="item">022</idno>
+    <facsimile from="0432" to="0436"/>
+    <physDesc>
+      <extent sketch="false">2</extent>
+      <appendices>
+        <appendice>
+          <type type="proxyPA">Pouvoir/procuration (acte sous seing privé)</type>
+          <extent>1</extent>
+          <desc/>
+          <note>pouvoir conjoint.
+"au sujet du mur mitoyen [...] que moy de la Rue m'oblige de refaire à neuf à mes dépens de fond en comble à cause du bâtiment que je fais faire."</note>
+        </appendice>
+      </appendices>
+    </physDesc>
+  </sourceDesc>
+  <description>
+    <sessions>
+      <date when="1736-03-12" type="paris"/>
+      <date when="1736-03-14" type="paris"/>
+    </sessions>
+    <places>
+      <place type="paris">
+        <address>
+          <street>Grande rue du faubourg Saint-Jacques</street>
+          <buildingNumber/>
+        </address>
+        <complement>à l'enseigne le chariot d'or, près les capucins</complement>
+        <parish/>
+        <owner/>
+      </place>
+    </places>
+    <categories>
+      <category type="settlement">Départager</category>
+      <designation rubric="true">Allignement de mur, Grande rue du Fg St Jacques pour les seiurs Delarue et Rousseau ; M. Joubert, expert ; M. Callon, greffier.</designation>
+    </categories>
+    <procedure>
+      <framework type="a">Commun accord des parties</framework>
+      <origination type="parties">Les parties</origination>
+      <sentences>
+        <sentence>
+          <orgName/>
+          <date when=""/>
+        </sentence>
+      </sentences>
+      <case>mur mitoyen en mauvais état, projet d'y adosser un hangar</case>
+      <objects>
+        <object type="wall">Mur(s)</object>
+      </objects>
+    </procedure>
+    <participants>
+      <experts>
+        <expert ref="#xpr0147" context="primary" appointment="appointed">
+          <title>juré expert à Paris</title>
+        </expert>
+      </experts>
+      <clerks>
+        <clerk ref="#clrk0033">
+          <persName>
+            <surname>Callou</surname>
+            <forename>Antoine Charles</forename>
+          </persName>
+        </clerk>
+      </clerks>
+      <parties>
+        <party role="petitioner" presence="true" intervention="false">
+          <person>
+            <persName>
+              <surname>De la Rue</surname>
+              <forename>Charles</forename>
+            </persName>
+            <occupation>prêtre</occupation>
+          </person>
+          <status>owner</status>
+          <expert ref="#xpr0147"/>
+        </party>
+        <party role="petitioner" presence="false" intervention="false">
+          <person>
+            <persName>
+              <surname>de Mouchy</surname>
+              <forename>Louis</forename>
+            </persName>
+            <occupation>tuteur onéraire de François Rousseau, écuyer fils mineur de M Rousseau de Guéonne</occupation>
+          </person>
+          <status>owner</status>
+          <expert ref="#xpr0147"/>
+        </party>
+      </parties>
+      <craftmen>
+        <craftman>
+          <persName>
+            <surname>Cambaul</surname>
+            <forename/>
+          </persName>
+          <occupation>entrpreneur de Dela Rue</occupation>
+        </craftman>
+      </craftmen>
+    </participants>
+    <conclusions>
+      <agreement type="conclusion">Conclusion</agreement>
+      <opinion ref="#xpr0147">En raison du projet de hangars, le mur (de nulle valeur) doit être reconstruit en toute sa longueur.
+"Le tout aux frais et dépens seuls présentement dudit sieur de la Rue aussy que les partyes en sont convenues par (leur paroles ?) et que toutes fois ledit mur seroit toujours commun et mitoyen en la hauteur de cloture au moyen de laquelle reconstruction de mur de fond en comble faitte aux dépens dudit sieur de la Rue il ne payera aucunes charges pour ce qui sera élevé au dessus de deux pieds de cloture mais s’il arrivoit par la suitte que du costé de la maison du sieur Rousseau luy ou ses ayant causes fissent porter et adosser le hangard ou d’autres batiment contre et sur le mur en question et à reconstruire notre avis est que ledit sieur Rousseau ou ses ayant causes seront tenus de rembourser audit sieur de la Rue ou à ceux qui le représenteront la moitié dudit mur tan en fondation qu’en estimation dans les partyes que l’on occupera suivant le thoisé et estimation qui en sera faitte par expert auquel cas ledit sieur de la Rue ou ses représentants seront tenus de payer les charges  de ce qui sera plus élevé au dessus des parties du mur remboursées et ce de six thoises l( ?) suivant la coutume"</opinion>
+      <arrangement/>
+      <estimate l="" s="" d=""/>
+      <fees detail="true">
+        <fee type="expert" ref="#xpr0147" l="12" s="" d=""/>
+        <fee type="clerk" l="12" s="" d=""/>
+        <fee type="rolls" l="2" s="10" d=""/>
+        <fee type="papers" l="" s="" d=""/>
+        <fee type="plans" l="" s="" d=""/>
+        <fee type="prosecutors" l="" s="" d=""/>
+        <fee type="help" l="" s="" d=""/>
+        <total l="" s="" d=""/>
+      </fees>
+      <expenses mentioned="false"/>
+    </conclusions>
+    <keywords group="estates"/>
+    <keywords group="procedure"/>
+    <keywords group="contract"/>
+    <keywords group="encumbrance"/>
+    <keywords group="law">
+      <term value="e1">Coutume (articles le cas échéant)</term>
+    </keywords>
+    <keywords group="measurement"/>
+    <keywords group="repairs"/>
+    <keywords group="guarantees"/>
+    <keywords group="responsability"/>
+    <keywords group="ownership"/>
+    <keywords group="value"/>
+    <keywords group="neighbourhood"/>
+    <keywords group="disorder"/>
+    <keywords group="transformation"/>
+    <analysis/>
+    <noteworthy/>
+  </description>
+</expertise>

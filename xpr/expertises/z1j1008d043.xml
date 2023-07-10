@@ -1,0 +1,215 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1008d043">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-09-01T12:00:00">2020-09-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2018-01-01T12:00:00">2018-01-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>PC</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1008</idno>
+        <idno type="item">043</idno>
+        <facsimile from="0459" to="0470"/>
+        <physDesc>
+          <extent sketch="false">12</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-10-21" type="paris"/>
+          <date when="1776-10-21" type="paris"/>
+          <date when="1776-10-22" type="paris"/>
+          <date when="1776-10-26" type="paris"/>
+          <date when="1776-10-29" type="paris"/>
+        </sessions>
+        <places>
+          <place xml:id="id382d275" type="paris">
+            <address>
+              <street>rue au Maire</street>
+              <buildingNumber/>
+            </address>
+            <complement/>
+            <parish/>
+            <owner>Communauté Vatinelle</owner>
+          </place>
+          <place xml:id="id382d293" type="paris">
+            <address>
+              <street>rue de Lamoignon</street>
+              <buildingNumber/>
+            </address>
+            <complement/>
+            <parish/>
+            <owner>Communauté Vatinelle</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="estimation">Estimer la valeur des biens</category>
+          <designation rubric="true">Visite et estimation de deux maisons</designation>
+        </categories>
+        <procedure>
+          <framework type="b2b">L’institution est saisie dans le cadre d’une procédure (l’institution nomme un ou deux experts)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Lieutenant civil</orgName>
+              <date when="1776-10-02"/>
+            </sentence>
+          </sentences>
+          <case>Succession ép. Vatinelle</case>
+          <objects>
+            <object type="house">Maison(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0250" context="primary" appointment="court-appointed">
+              <title>architecte juré expert des bâtiments à Paris</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0069">
+              <persName>
+                <surname>Beudot</surname>
+                <forename>Simon</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Vatinelle</surname>
+                  <forename>Antoine Alexandre</forename>
+                </persName>
+                <occupation>maître fondeur en argent</occupation>
+              </person>
+              <status>owner</status>
+              <expert ref="#xpr0250"/>
+            </party>
+            <party role="opponent" presence="" intervention="">
+              <person>
+                <persName>
+                  <surname/>
+                  <forename/>
+                </persName>
+                <occupation/>
+              </person>
+              <status/>
+              <expert ref=""/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname>Sans objet.</surname>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0250">Rue au Maire : "Nous avons fait attention au genre de construction desdits batiments qui nous ont paru estre de nouvelle construction, au genre de distribution des appartements, à la commodité ou incommodité de leur habitation, et généralement après avoir bien tout vu considéré et examiné nous avons estimé et estimons ladite maison dans son état actuel ainsy qu'elle se poursuit, comporte et étend de touttes parts, eu égard à sa scituation, à son genre de nouvelle construction, et avec les charges seigneurialles et autres de ville et de police, et encore eu égard au cours du temps présent, pour la valeur des maisons de Paris, valoir la somme de 42000 l."
+Rue de Lamoignon : "Nous avons fait attention au genre de construction de ladite maison, aux réparations qu'il seroit necessaire d'y faire pour en éviter de plus considerables, fait appréciation d'icelles, fait aussy attention au genre de distribution de ses appartements au produit que l'on en peut retirer, aux charges dont elle est tenue pour raison des réparations qui peuvent estre faittes et à faire par la suite aux aisances communes, et aux égouts et portes de fer et autres aux cens et rentes seigneurialles dont elle peut pareillement estre tenue envers le domaine de sa majesté, fait une appreciation à part et séparée de la superficie dudit terrain et de la batisse, et généralement après avoir vu et examiné de nouveau ladite maison de fond en comble et tout bien considéré et examiné, nous avons estimé et estimons ladite maison ainsy qu'elle se poursuit et étend et comporte de touttes parts et avec les charges dont elle est et peut estre tenue valoir la somme de 30 000 l."
+Partant que les deux maisons, d’après notre estimation faite d’icelles et à leur juste valeur forment un actif dans la succession de ladite feue dame Vatinelle et dans la communauté de biens qui a existé entre elle et ledit Sr son mary de la somme totalle de soixante douze mille livres, cy 72 000 l. »</opinion>
+          <arrangement/>
+          <agreement type="conclusion">Conclusion</agreement>
+          <estimate l="72000" s="" d=""/>
+          <estimates>
+            <place ref="#id382d275">
+              <appraisal l="42000" s="" d="">
+                <desc>maison</desc>
+              </appraisal>
+            </place>
+            <place ref="#id382d293">
+              <appraisal l="30000" s="" d="">
+                <desc>maison</desc>
+              </appraisal>
+            </place>
+          </estimates>
+          <fees detail="true">
+            <fee type="papers" l="13" s="16" d=""/>
+            <fee type="expert" ref="#xpr0250" l="48" s="" d=""/>
+            <fee type="clerk" l="48" s="" d=""/>
+            <fee type="rolls" l="76" s="" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="185" s="16" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="expert" l="16" s="" d=""/>
+            <expense type="clerk" l="55" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis/>
+        <noteworthy/>
+      </description>
+    </expertise>

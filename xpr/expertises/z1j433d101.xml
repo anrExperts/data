@@ -1,0 +1,181 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j433d101">
+      <meta/>
+      <control>
+        <maintenanceStatus/>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term/>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:39:45.99+02:00">2021-05-19T11:39:45.99+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateAgreementType_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur "Dispositif de l’expertise" lorsqu'il n'y a qu’un seul expert ('agreement' devient 'conclusion').</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:45:33.927+02:00">2021-04-21T20:45:33.927+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateKeywordsModule_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour du module keywords.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:44:31.814+02:00">2021-04-21T20:44:31.814+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateExpertisesArrangement_files.xqy/BaseX</agent>
+            <eventDescription>Ajout du champs Accommodement dans l'éventualité d’une résolution par les parties.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2019-03-01T12:00:00">2019-03-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1696</unitdate>
+    <idno type="unitid">Z1J433</idno>
+        <idno type="item">101</idno>
+        <facsimile from="0662" to="0674"/>
+        <physDesc>
+          <extent sketch="false">10</extent>
+          <appendices>
+            <appendice>
+              <type type="other">Assignation à comparution aux trois experts</type>
+              <extent/>
+              <desc/>
+              <note>du 7 juin 1696</note>
+            </appendice>
+          </appendices>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1696-06-06" type="paris"/>
+          <date when="1696-06-08" type="paris"/>
+        </sessions>
+        <places>
+          <place type="paris">
+            <address>
+              <street>porte Montmartre</street>
+              <buildingNumber/>
+            </address>
+            <complement>grande maison</complement>
+            <parish/>
+            <owner>Lhuillier</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="acceptation">Recevoir et évaluer le travail réalisé</category>
+          <designation rubric="true">!Visite et estimation de ferrures à la porte Montmartre entre Mr Lhuillier et Noyers, M. mazière [tiers] expert</designation>
+        </categories>
+        <procedure>
+          <framework type="b2b">L’institution est saisie dans le cadre d’une procédure (l’institution nomme un ou deux experts)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>requêtes du Palais</orgName>
+              <date when="1696-05-25"/>
+            </sentence>
+          </sentences>
+          <case>suite à un désacord des précédents experts (Pageois et Doussot, sentence 10 février et 12 mars 1696)</case>
+          <objects>
+            <object type="other">ouvrages de fournitures de marchandises par Noyer (ferrure)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0194" context="third-party" appointment="court-appointed">
+              <title>architecte entrepreneur ordinaire des bâtimens du roi expert juré en titre d'office bourgeois de Paris</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0009">
+              <persName>
+                <surname>Baillif</surname>
+                <forename>Jean fils</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="true" intervention="">
+              <person>
+                <persName>
+                  <surname>Noyer / Noier / Noiret</surname>
+                  <forename>Pierre</forename>
+                </persName>
+                <occupation>marchand bourgeois de Paris</occupation>
+              </person>
+              <status>builder</status>
+              <expert ref=""/>
+            </party>
+            <party role="opponent" presence="true" intervention="true">
+              <person>
+                <persName>
+                  <surname>Lhuillier</surname>
+                  <forename>Jean</forename>
+                </persName>
+                <occupation>seigneur d'Abeville</occupation>
+              </person>
+              <status>limited-partner</status>
+              <expert ref=""/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <agreement type="conclusion">Conclusion</agreement>
+          <opinion ref="#xpr0194">somme totale des ouvrages de ferrure fournies par ledit Noier audit Lhuillier 469 livres 4 sols "sans comprendre neuf articles qui sont collez (1er, 2e, 3e, 8e, 11e, 28e, 40e, 45e et 47e et dernier dont je fais aucune mention de l'estimation d'iceux attendu que le sieur Lhuillier a soutenu ne (?) avoir pour estre livré et (f. 10r°) dont le sieur Doussot n'en a fait aucune estimation dans lesdits neuf articles et le sieur Noier ayant soutenu les avoir fourny et livrez tant audit Lhuillier qu'autres personnes envoyez de sa part, montant lesdits neuf articles estimez par ledit sr Pageois à ladite somme de cent quatre livres et pr ledit sieur Doussot seullement à treize livres dix sols sur lesquelles contrariétez d'avis desdits sieurs experts et negation dudit sr Lhuillier qui e soutenu et persisté que lesdits articles ne luy ont esté fournis et soutenu au contraire par ledit sieur Noier, c'est pourquoy je n'en fait aucune prisée ny estimation refferrant à la Cour d'en ordonner suivant sa prudence ordinaire.
+Et tout ce que dessus nosseigneur je certiffie véritable et avoir esté fait et arresté sur lesdits lieux..."</opinion>
+          <arrangement/>
+          <estimate/>
+          <fees detail="false">
+            <total l="" d="" s=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="" s="" d=""/>
+            <expense type="expert" l="6" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group=""/>
+        <analysis>f. 1v° les parties estiment que la présence des premiers experts n'est pas nécessaire (texte en marge) "ils n'avoient respondu qu'il n'en estoit nullement nécessaire se s'agissant que de l'estimation desdits ouvrage". Ils sont tout de même assignés lors de la 2e vacation, mais ne sont pas présents. Noier/ Noyer est absent lors de la 2e vacation
+- f. 2v° "Et le sieur Lhuillier nous a dit qu'il s'est trouvé fortuitement chez luy et qu'il a esté fort surpris d'y veoir arriver Mr Mazière et son greffier et qu'il y propose? que c'est son ??? puisque suivant les assignations verballes et en exécution des sentence des requetes du Pallais le sieur Mazière tiers expert nommé est venu mercredy dernier accompagné de son greffier, nous et le sieur Lhuillier présent à qui les ouvrages de fourniture(?)r ont esté indiquez après que les sentences luy ont esté mises entre les mains par ledit Noier et les parties de mémoire duit Noier luy ont esté aussy mise entre les mains par ledit sieur Lhuillier, lequel sieur Mazière en auroit fait escrire son procès verbal en sorte que lesdits ouvrages furent veus et visitez dez mercredy dernier que ledit Noier et Lhuillier furent (?) et présent que ce ne peut estre que par complaisance pour ledit Noier que ledit sieur Mazière s'est transporté à sa réquisition en seay pourquoy et en vertu de quoy , qu'au surplus il n'empesche point que ledit Mazière ne prenne de nouveau esclaircissement tels qu'il advisera bon estre, qu'il luy donnera un vallet de chambre pour luy ouvrir toutes les portes sans voulloir y estre présent protestant ne nullité de tout qui sera fait en la susdite visite et a signé. Lhuillier"</analysis>
+        <noteworthy>rapport de Pageois et Doussot est du 3 avril 1696 reçu par Lebrun greffier
+rôles de fournitures 647 livres
+- qui proco sur la tenue de la suite de la visite cf transcription f. 2v°</noteworthy>
+      </description>
+    </expertise>

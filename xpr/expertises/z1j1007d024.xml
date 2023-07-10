@@ -1,0 +1,206 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1007d024">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-08-01T12:00:00">2020-08-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2017-10-01T12:00:00">2017-10-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1007</idno>
+        <idno type="item">024</idno>
+        <facsimile from="0437" to="0446"/>
+        <physDesc>
+          <extent sketch="false">6</extent>
+          <appendices>
+            <appendice>
+              <type type="other">note</type>
+              <extent>1</extent>
+              <desc/>
+              <note>carte (dame de carreau) au verso de laquelle est une note au procureur Barré</note>
+            </appendice>
+          </appendices>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-09-10" type="paris"/>
+          <date when="1776-09-10" type="paris"/>
+        </sessions>
+        <places>
+          <place type="paris">
+            <address>
+              <street>Rue au Maire</street>
+              <buildingNumber/>
+            </address>
+            <complement/>
+            <parish/>
+            <owner>saisie réellement surLafond, Jean Raymond, marchand bijoutier, adjugée àLeguay, Françoise</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="assessment">Décrire et évaluer les travaux à venir</category>
+          <designation rubric="true">Visitte de réparations faits et à faire en une maison, rue Aumaire, à la requeste de la demoiselle Leguay ; M. Lefoulln, expert.</designation>
+        </categories>
+        <procedure>
+          <framework type="b2b">L’institution est saisie dans le cadre d’une procédure (l’institution nomme un ou deux experts)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Châtelet, lieutenant civil (sentence)</orgName>
+              <date when="1776-08-07"/>
+            </sentence>
+          </sentences>
+          <case>adjudication de maison avec réparations à faire / demande en licitation de la même maison</case>
+          <objects>
+            <object type="house">Maison(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0163" context="primary" appointment="court-appointed">
+              <title>architecte expert</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0057">
+              <persName>
+                <surname>Liebault de la Neuville</surname>
+                <forename>Christophe Edouard</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="true" intervention="false">
+              <person>
+                <persName>
+                  <surname>Leguay</surname>
+                  <forename>Françoise Etiennette</forename>
+                </persName>
+                <occupation>fille majeure, adjudicataire par sentence des criées du Châtelet de la maison dont il est question</occupation>
+              </person>
+              <status>owner</status>
+              <expert ref="#xpr0163"/>
+              <prosecutor>
+                <persName>
+                  <surname>Mallet</surname>
+                  <forename>Louis</forename>
+                </persName>
+              </prosecutor>
+            </party>
+            <party role="opponent" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Boubilla</surname>
+                  <forename>Pierre</forename>
+                </persName>
+                <occupation>chirurgien privilégié du roi</occupation>
+              </person>
+              <status>owner</status>
+              <expert ref="#xpr0163"/>
+              <prosecutor>
+                <persName>
+                  <surname>Barré</surname>
+                  <forename>Jean Baptiste</forename>
+                </persName>
+              </prosecutor>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0163">« Ce sont les réparations les plus urgentes et necessaires qui sont encore à faire à ladite maison et qui montent ensemble suivant nos estimations cy dessus à la somme totale de … 240 l. 10 s. 2 d. Fait par nous architecte expert susdit les jour mois et an que dessus vous refferrant Monsieur d’ordonner sur le tout »</opinion>
+          <arrangement/>
+          <agreement type="conclusion">Conclusion</agreement>
+          <estimate l="" s="" d=""/>
+          <fees detail="true">
+            <fee type="papers" l="9" s="" d=""/>
+            <fee type="expert" ref="#xpr0163" l="12" s="" d=""/>
+            <fee type="clerk" l="12" s="" d=""/>
+            <fee type="rolls" l="25" s="" d=""/>
+            <fee type="prosecutors" l="20" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="78" s="" d=""/>
+          </fees>
+          <expenses mentioned=""/>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis/>
+        <noteworthy>nomination de l'epert : les parties s'en rapportent au juge</noteworthy>
+      </description>
+    </expertise>

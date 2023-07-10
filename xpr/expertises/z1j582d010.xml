@@ -1,0 +1,193 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j582d010">
+  <meta/>
+  <control>
+    <maintenanceStatus>revised</maintenanceStatus>
+    <publicationStatus/>
+    <localControl localType="detailLevel">
+      <term>completed</term>
+    </localControl>
+    <maintenanceHistory>
+      <maintenanceEvent>
+                <eventType>revised</eventType>
+                <eventDateTime standardDateTime="2022-03-30T15:35:20Z">2022-03-30T15:35:20Z</eventDateTime>
+                <agentType>human</agentType>
+                <agent>llosserand</agent>
+                <eventDescription>rvpcd</eventDescription>
+            </maintenanceEvent>
+          <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateObjectsValues_db.xqy/BaseX</agent>
+        <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateOpinionRef_files.xqy/BaseX</agent>
+        <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateRefValues_files.xqy/BaseX</agent>
+        <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+        <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>revised</eventType>
+        <eventDateTime standardDateTime="2020-11-01T12:00:00">2020-11-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>JH</agent>
+        <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>retroconverted</eventType>
+        <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>ead2xpr.xsl/Saxon9</agent>
+        <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>created</eventType>
+        <eventDateTime standardDateTime="2017-04-01T12:00:00">2017-04-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>llosserand</agent>
+        <eventDescription>Création de la fiche.</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+  </control>
+  <sourceDesc>
+    <unitdate>1726</unitdate>
+    <idno type="unitid">Z1J582</idno>
+    <idno type="item">010</idno>
+    <facsimile from="0095" to="0097"/>
+    <physDesc>
+      <extent sketch="false">2</extent>
+    </physDesc>
+  </sourceDesc>
+  <description>
+    <sessions>
+      <date when="1726-07-15" type="suburbs"/>
+    </sessions>
+    <places>
+      <place xml:id="id530d212" type="suburbs">
+        <address/>
+        <complement>une maison à Passy, rue menant à l'église, faisant partie de la succession de défuntGedouin, Antoineet appartenant à Gedouin, Denise Estinette, sa fille</complement>
+        <city>Paris</city>
+        <district/>
+        <owner>succession Gedouin</owner>
+      </place>
+    </places>
+    <categories>
+      <category type="estimation">Estimer la valeur des biens</category>
+      <designation rubric="true">Visitte et estimation d'une maison scize à Passy, à la requeste de la veuve Gédoin ; Mr Loir, expert.</designation>
+    </categories>
+    <procedure>
+      <framework type="b2">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+      <origination type="institution">Une institution</origination>
+      <sentences>
+        <sentence>
+          <orgName>Châtelet</orgName>
+          <date when="1726-07-03"/>
+        </sentence>
+      </sentences>
+      <case>l'expertise est demandée pour permettre la vente de la maison à huit mil livres destinée à payer les dettes de la succession.</case>
+      <objects>
+        <object type="house">Maison(s)</object>
+      </objects>
+    </procedure>
+    <participants>
+      <experts>
+        <expert ref="#xpr0183" context="primary" appointment="appointed">
+          <title>juré expert à Paris</title>
+        </expert>
+      </experts>
+      <clerks>
+        <clerk ref="#clrk0035">
+          <persName>
+            <surname>Tancart</surname>
+            <forename>Toussaint</forename>
+          </persName>
+        </clerk>
+      </clerks>
+      <parties>
+        <party role="petitioner" presence="false" intervention="false">
+          <person>
+            <persName>
+              <surname>Gedouin</surname>
+              <forename>Denise Estinette</forename>
+            </persName>
+            <occupation>émancipée d'âge, fille de défunt Gedouin, Antoine, vivant bourgeois de Paris et de damoiselle Doye, Jacqueline Ambroise, à présent sa veuve, ses père et mère.</occupation>
+          </person>
+          <status>heir</status>
+          <expert ref="#xpr0183"/>
+          <representative>
+            <persName>
+              <surname>Doye</surname>
+              <forename>Jacqueline Ambroise</forename>
+            </persName>
+            <occupation/>
+          </representative>
+        </party>
+      </parties>
+      <craftmen>
+        <craftman>
+          <persName>
+            <surname/>
+            <forename/>
+          </persName>
+          <occupation/>
+        </craftman>
+      </craftmen>
+    </participants>
+    <conclusions>
+      <opinion ref="#xpr0183">"Après avoir ainsy veu et visitté ladite maison, consideration faitte de sa scituation à l'estat present des bastiments qui la composent, nous estimons et notre advis est qu'elle ne vault au plus que la somme de huit mil livres portée audit advis de parens eu esgard à la petitesse de ladite maison court et jardin et au cours du tems present cy… 8000 l."</opinion>
+      <arrangement/>
+      <agreement type="conclusion">Conclusion</agreement>
+      <estimate l="8000" s="" d=""/>
+      <estimates>
+        <place ref="#id530d212">
+          <appraisal l="8000" s="" d="">
+            <desc>maison</desc>
+          </appraisal>
+        </place>
+      </estimates>
+      <fees detail="true">
+        <fee type="papers" l="" s="" d=""/>
+        <fee type="expert" ref="#xpr0183" l="9" s="" d=""/>
+        <fee type="clerk" l="" s="" d=""/>
+        <fee type="rolls" l="" s="" d=""/>
+        <fee type="prosecutors" l="" s="" d=""/>
+        <fee type="help" l="" s="" d=""/>
+        <fee type="plans" l="" s="" d=""/>
+        <total l="" s="" d=""/>
+      </fees>
+      <expenses mentioned="false"/>
+    </conclusions>
+    <keywords group="estates"/>
+    <keywords group="procedure"/>
+    <keywords group="contract"/>
+    <keywords group="encumbrance"/>
+    <keywords group="law"/>
+    <keywords group="measurement"/>
+    <keywords group="repairs"/>
+    <keywords group="guarantees"/>
+    <keywords group="responsability"/>
+    <keywords group="ownership"/>
+    <keywords group="value"/>
+    <keywords group="neighbourhood"/>
+    <keywords group="disorder"/>
+    <keywords group="transformation"/>
+    <analysis/>
+    <noteworthy/>
+  </description>
+</expertise>

@@ -1,0 +1,218 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1009d040">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-08-01T12:00:00">2020-08-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2017-10-01T12:00:00">2017-10-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1009</idno>
+        <idno type="item">040</idno>
+        <facsimile from="0341" to="0344"/>
+        <physDesc>
+          <extent sketch="false">4</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-11-20" type="suburbs"/>
+        </sessions>
+        <places>
+          <place xml:id="id273d279" type="suburbs">
+            <address/>
+            <complement>chaussée du Maine, barrière Saint-Jacques</complement>
+            <city/>
+            <district/>
+            <owner/>
+          </place>
+        </places>
+        <categories>
+          <category type="assessment">Décrire et évaluer les travaux à venir</category>
+          <category type="estimation">Estimer la valeur des biens</category>
+          <designation rubric="true">Estimation d'une maison et pièces de terres chaussée du Maine ou vieille routte d'Orléans, au dessus de la Barrière St Jacques et de l'Observatoire, pour Le Roux et sa femme et le mineur Chabat ; M. Payen, expert.</designation>
+        </categories>
+        <procedure>
+          <framework type="b2a">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Châtelet, lieutenant civil (sentence)</orgName>
+              <date when="1776-09-03"/>
+            </sentence>
+          </sentences>
+          <case>Succession Chabot</case>
+          <objects>
+            <object type="plot">Terrain(s)</object>
+            <object type="house">Maison(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0209" context="primary" appointment="appointed">
+              <title>architecte juré expert bourgeois des bâtiments en titre d'office</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0050">
+              <persName>
+                <surname>Mallerot</surname>
+                <forename>Joseph Louis</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Le Roux</surname>
+                  <forename>Vincent</forename>
+                </persName>
+                <occupation>vigneron à Rueil(?)près de Maintenon et De Londes, Geneviève son épouse, veuve en premières noces de Chabot, Jean, nourrisseur de bestiaux, et en secondes de Gelin, Etienne</occupation>
+              </person>
+              <status>heir</status>
+              <expert ref="#xpr0209"/>
+              <prosecutor>
+                <persName>
+                  <surname>De la Bonne</surname>
+                  <forename/>
+                </persName>
+              </prosecutor>
+            </party>
+            <party role="opponent" presence="true" intervention="false">
+              <person>
+                <persName>
+                  <surname>Grognet</surname>
+                  <forename>Charles</forename>
+                </persName>
+                <occupation>vigneron à Vaugirard, au nom et comme tuteur ad hoc de Chabot, Jean Pierre, fils mineur du défunt Chabot, Jean et de Richard, Marie Madelaine sa femme, ses père et mère</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Chabot</surname>
+                  <forename>Jean Pierre</forename>
+                </persName>
+                <occupation>fils mineur du défunt Chabot, Jean et de Richard, Marie Madelaine sa femme, ses père et mère</occupation>
+              </person>
+              <status>heir</status>
+              <expert ref="#xpr0209"/>
+              <prosecutor>
+                <persName>
+                  <surname>Delaplace</surname>
+                  <forename/>
+                </persName>
+              </prosecutor>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0209">« Ledit heritage ne peut se partager entre les coproprietaires d’icelui, attendu leur nombre et les portions differentes qu’ils y ont ; d’ailleurs leur interest respectif necessite que la totalité appartienne à un seul et mesme cy… avis pour non partage 
+Attendu l’impossibilité dudit partage, nous estimons cet heritage comme il se comporte, s’estime de fond en comble et de toutes parts circonstances et dependances sans reserves, dans son état actuel, consideration faitte sur sa situation, et sur le cours du tems present A la charge seulement desdits cens, droits et devoirs seigneuriaux envers la seigneurie dans la mouvance de laquelle il est scitué De la taxe représentative du logement des gens de guerre, dont ladite maison est tenue suivant ledit contrat du dix sept fevrier mil sept cent un Et des dix livres de rente fonciere non rachetables consignées en autre contrat du quatorze juin mil sept cent trente deux Valloir la somme de … 750 l. 
+Quant au chef de ladite sentence, qui ordonne que nous rapporterons les plus urgentes et les plus indispensables reparations à faire … Nous observons que les susdits bastimens et edifices abbandonnés, non habités, et non habitables comme il est facile de s’en convaincre, d’après la declaration que nous venons d’en faire … Dans ces circonstances, nous supercedons à satisfaire audit chef… 
+Nous observons aussy, attendu que les susdits batiments et edifices avoisinent differentes routtes ou chemins, qu’ils sont en pleine campagne, isolés et écartés d’autres habitations, qu’il est … de pouvroir à la seureté publique et de prevenir les evenemens qui pourroient arriver par le fait de gens sans … et malfaiteurs qui le detérioreraient … par la facilité qu’il y a de s’y introduire et de s’i cacher rien ne s’opposant Qu’il y a necessité d’achever de demolir incessamment ce qui l’est en partie… 
+C’est Monsieur, l’état actuel des biens susdesignés dont il s’agit ; notre avis sur l’impossibilité de les partager entre les coproprietaires, la valleur de ces biens les motifs qui nous ont fait supercéder maintenant à constater et estimer les reparations urgentes à faire et observations à ce sujet, et sur ce qu’il convient faire pour la seureté publique, vous référant d’ordonner sur le tout cy… référé Fait par nous architecte expert, les jour mois et an »</opinion>
+          <arrangement/>
+          <agreement type="conclusion">Conclusion</agreement>
+          <estimate l="" s="" d=""/>
+          <estimates>
+            <place ref="#id273d279">
+              <appraisal l="750" s="" d="">
+                <desc>une maison et pièces de terre</desc>
+              </appraisal>
+            </place>
+          </estimates>
+          <fees detail="true">
+            <fee type="papers" l="6" s="" d=""/>
+            <fee type="expert" ref="#xpr0209" l="7" s="10" d=""/>
+            <fee type="clerk" l="7" s="10" d=""/>
+            <fee type="rolls" l="12" s="" d=""/>
+            <fee type="prosecutors" l="15" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="48" s="" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="7" s="10" d=""/>
+            <expense type="expert" l="" s="50" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis/>
+        <noteworthy/>
+      </description>
+    </expertise>

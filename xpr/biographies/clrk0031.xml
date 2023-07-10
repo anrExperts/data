@@ -1,0 +1,110 @@
+<eac xmlns="https://archivists.org/ns/eac/v2" xml:id="clrk0031">
+  <control maintenanceStatus="">
+    <recordId>clrk0031</recordId>
+    <maintenanceAgency>
+      <agencyName>ANR Experts</agencyName>
+    </maintenanceAgency>
+    <maintenanceHistory>
+      <maintenanceEvent maintenanceEventType="created">
+        <agent agentType="machine">clerk_csv2eac.xqy/BaseX</agent>
+        <eventDateTime standardDateTime="2022-12-31T14:06:48.817+01:00"/>
+        <eventDescription>Création des fiches EAC-CPF à partir du tableau</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+    <sources>
+      <source id="sourceid86495457">
+        <reference href="">Almanach royal 1726</reference>
+      </source>
+      <source id="sourceid86495459">
+        <reference href="">Almanach royal 1727</reference>
+      </source>
+      <source id="sourceid86495461">
+        <reference href="">Almanach royal 1736</reference>
+      </source>
+      <source id="sourceid86495463">
+        <reference href="">Almanach royal 1737</reference>
+      </source>
+      <source id="sourceid86495465">
+        <reference href="">Almanach royal 1746</reference>
+      </source>
+      <source id="sourceid86495467">
+        <reference href="">Almanach royal 1747</reference>
+      </source>
+      <source id="sourceid86495469">
+        <reference href="">Almanach royal 1756</reference>
+      </source>
+      <source id="sourceid86495471">
+        <reference href="">Almanach royal 1757</reference>
+      </source>
+    </sources>
+  </control>
+  <cpfDescription>
+    <identity>
+      <entityType value="person"/>
+      <nameEntry status="authorized" preferredForm="true" sourceReference="">
+        <part localType="full">Dupre de la bos, Jean François</part>
+      </nameEntry>
+      <nameEntry status="alternative" preferredForm="false" sourceReference="">
+        <part localType="surname">Dupre de la bos</part>
+        <part localType="forename">Jean François</part>
+      </nameEntry>
+      <nameEntry status="alternative" preferredForm="false" sourceReference="#sourceid86495461">
+        <part localType="surname">DE LA COS DUPRE</part>
+        <part localType="forname">Jean François</part>
+      </nameEntry>
+      <nameEntry status="alternative" preferredForm="false" sourceReference="#sourceid86495463">
+        <part localType="surname">DE LA BOS DUPRE</part>
+        <part localType="forname">Jean François</part>
+      </nameEntry>
+      <otherEntityTypes>
+        <otherEntityType>
+          <term>clerk</term>
+        </otherEntityType>
+      </otherEntityTypes>
+      <identityId>clrk0031</identityId>
+    </identity>
+    <description>
+      <functions>
+        <function sourceReference="#sourceid86495457 #sourceid86495459 #sourceid86495461 #sourceid86495463 #sourceid86495465 #sourceid86495467 #sourceid86495469 #sourceid86495471">
+          <term>Greffier</term>
+          <dateRange>
+            <fromDate sourceReference="" certainty="certain" standardDate="1726"/>
+            <toDate sourceReference="" certainty="certain" standardDate="1757"/>
+          </dateRange>
+        </function>
+      </functions>
+      <places>
+        <place sourceReference="#sourceid86495457 #sourceid86495459">
+          <placeRole>Adresse</placeRole>
+          <placeName>rue Pastourelle</placeName>
+          <dateRange>
+            <fromDate sourceReference="" certainty="certain" standardDate="1726"/>
+            <toDate sourceReference="" certainty="certain" standardDate="1727"/>
+          </dateRange>
+        </place>
+        <place sourceReference="#sourceid86495461">
+          <placeRole>Adresse</placeRole>
+          <placeName>rue Montmartre</placeName>
+          <date sourceReference="" certainty="certain" standardDate="1736"/>
+        </place>
+        <place sourceReference="#sourceid86495463 #sourceid86495465 #sourceid86495467">
+          <placeRole>Adresse</placeRole>
+          <placeName>rue Montmartre, près le cul-de-sac S. Pier.</placeName>
+          <dateRange>
+            <fromDate sourceReference="" certainty="certain" standardDate="1737"/>
+            <toDate sourceReference="" certainty="certain" standardDate="1747"/>
+          </dateRange>
+        </place>
+        <place sourceReference="#sourceid86495469 #sourceid86495471">
+          <placeRole>Adresse</placeRole>
+          <placeName>rue Montmartre, près S. Joseph</placeName>
+          <dateRange>
+            <fromDate sourceReference="" certainty="certain" standardDate="1756"/>
+            <toDate sourceReference="" certainty="certain" standardDate="1757"/>
+          </dateRange>
+        </place>
+      </places>
+    </description>
+  </cpfDescription>
+  <!---->
+</eac>

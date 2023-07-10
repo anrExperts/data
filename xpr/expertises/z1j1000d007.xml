@@ -1,0 +1,275 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1000d007">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-09-01T12:00:00">2020-09-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2018-01-01T12:00:00">2018-01-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>PC</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1000</idno>
+        <idno type="item">007</idno>
+        <facsimile from="0034" to="0044"/>
+        <physDesc>
+          <extent sketch="false">10</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-03-02" type="paris"/>
+          <date when="1776-03-02" type="paris"/>
+          <date when="1776-03-05" type="paris"/>
+          <date when="1776-03-05" type="paris"/>
+          <date when="1776-03-07" type="paris"/>
+          <date when="1776-03-09" type="paris"/>
+          <date when="1776-03-11" type="paris"/>
+          <date when="1776-03-14" type="paris"/>
+          <date when="1776-03-14" type="paris"/>
+          <date when="1776-03-18" type="paris"/>
+          <date when="1776-04-04" type="paris"/>
+        </sessions>
+        <places>
+          <place type="paris">
+            <address>
+              <street>Rue Saint-Germain-l’Auxerrois</street>
+              <buildingNumber/>
+            </address>
+            <complement>une maison appelée la Rose blanche</complement>
+            <parish/>
+            <owner>Pottier</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="acceptation">Recevoir et évaluer le travail réalisé</category>
+          <designation rubric="true">Réception d’ouvrages de toutes natures faits en une maison</designation>
+        </categories>
+        <procedure>
+          <framework type="b2a">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>LC</orgName>
+              <date when="1774-01-20"/>
+            </sentence>
+          </sentences>
+          <case>Suivi des réparations d’une maison visitée par Pierre Taboureur, procès verbal du 3 mars 1774. Réception des travaux</case>
+          <objects>
+            <object type="house">Maison(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0250" context="primary" appointment="appointed">
+              <title>architecte expert bourgeois de Paris</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0070">
+              <persName>
+                <surname>Lepage</surname>
+                <forename>Charles Pierre</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="true" intervention="true">
+              <person>
+                <persName>
+                  <surname>Deturenger</surname>
+                  <forename>Louis</forename>
+                </persName>
+                <occupation>marchand épicier à Paris</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Millaut</surname>
+                  <forename>Simone</forename>
+                </persName>
+                <occupation>épouse de Deturenger</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Pottier</surname>
+                  <forename/>
+                </persName>
+                <occupation>mineur propriétaire de la maison</occupation>
+              </person>
+              <status>limited-partner</status>
+              <expert ref="#xpr0250"/>
+            </party>
+            <party role="opponent" presence="true" intervention="false">
+              <person>
+                <persName>
+                  <surname>Delecluse</surname>
+                  <forename/>
+                </persName>
+                <occupation>maître maçon</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>veuve Dufossez</surname>
+                  <forename/>
+                </persName>
+                <occupation>maîtresse couvreuse</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Nizard</surname>
+                  <forename/>
+                </persName>
+                <occupation>maître charpentier</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Gaudet</surname>
+                  <forename/>
+                </persName>
+                <occupation>maître serrurier</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Guyart</surname>
+                  <forename/>
+                </persName>
+                <occupation>maître menuisier</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Secqueray</surname>
+                  <forename/>
+                </persName>
+                <occupation>maître plombier</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Godard</surname>
+                  <forename/>
+                </persName>
+                <occupation>maître carreleur</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Robert</surname>
+                  <forename/>
+                </persName>
+                <occupation>maître paveur</occupation>
+              </person>
+              <status>builder</status>
+              <expert ref="#xpr0250"/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation>Sont aussi comparus</occupation>
+            </craftman>
+            <craftman>
+              <persName>
+                <surname>Sieur Delecluse</surname>
+                <forename/>
+              </persName>
+              <occupation>maître maçon, Veuve du Sieur Du Fossé, maître couvreur, les Sieurs Mizard, maîtres charpentiers, Sieur Gaudet, maître serrurier, Sieur Guyart, maître menuiser, Sieur Jeancqueray maître plombier, Sieur Godard maître carreleur, la veuve du Sieur Robert maître paveur.</occupation>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0250">« Récapitulation générale de toutes nos estimations :
+Maçonnerie faite par le Sieur L’Ecluse maître maçon pour douze cents onze livres dix huit sols 9 deniers, 1211 l. 18 s. 9 d.
+Charpente faite par le Sieur Mizard maître Charpentier, la somme de vingt cinq livres, seize sols, huit deniers : 25 l. 16 s. 8 d.Couverture pour la veuve du Sieur du Fossé, la somme de quatre cents quatre vingts livres, neuf sols, huit deniers : 480 l. 9 s. 8 d.
+Menuiseries fournies par le Sieur Guyart la somme de cent quatre vingt huit livres trois sols 1 denier : 188 l. 3 s. 1 d.
+Serrurerie pour le Sieur Gaudet la somme de cent dix livres trois sols : 110 l. 3 s. 0 d.Plomberie pour le Sieur Jeancqueray la somme de quatre vingts quatorze livres un sol six deniers : 94 l. 1 s. 6 d.
+Carrelage par le Sieur Godard la somme de quatre vingt un livre sept sols deux deniers : 81 l. 7 s. 2 d.Pavé pour la veuve Robert la somme de quatre cents quarante neuf livres dix neufs sols trois deniers : 449 l. 19 s. 3 d.
+Total des ouvrages contenus en la présente réception la somme de deux mille sept cents soixante livres dix sept sols trois deniers : 2660 l. 17 s. 3 d.
+Tel est Monsieur la visitte par nous faitte desdits ouvrages et notre avis sur la valleur d’iceux suivant et aux termes de votre ordonnance. »</opinion>
+          <arrangement/>
+          <agreement type="conclusion">Conclusion</agreement>
+          <estimate l="" s="" d=""/>
+          <fees detail="true">
+            <fee type="papers" l="29" s="14" d="6"/>
+            <fee type="expert" ref="#xpr0250" l="72" s="" d=""/>
+            <fee type="clerk" l="72" s="" d=""/>
+            <fee type="rolls" l="80" s="" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="253" s="14" d="6"/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="253" s="14" d="6"/>
+            <expense type="expert" l="74" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis/>
+        <noteworthy/>
+      </description>
+    </expertise>

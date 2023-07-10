@@ -1,0 +1,200 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j579d063">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-10-01T12:00:00">2020-10-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2016-10-26T12:00:00">2016-10-26T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>RB</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1726</unitdate>
+    <idno type="unitid">Z1J579</idno>
+        <idno type="item">063</idno>
+        <facsimile from="0821" to="0825"/>
+        <physDesc>
+          <extent sketch="false">4</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1726-04-16" type="paris"/>
+        </sessions>
+        <places>
+          <place xml:id="id81d253" type="paris">
+            <address>
+              <street>Rue du Cimetière [Cette dénomination correspond à 4 voies : Actuellement rue Saint-Spire. Actuelle rue Théodore-Hamont. Actuelle partie de la rue de Torcy. Actuelle rue du Général-Archinard]</street>
+              <buildingNumber/>
+            </address>
+            <complement/>
+            <parish/>
+            <owner>Lemaire / Duval</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="estimation">Estimer la valeur des biens</category>
+          <designation rubric="true">Visite et estimation d'une maison</designation>
+        </categories>
+        <procedure>
+          <framework type="b2a">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Lieutenant civil</orgName>
+              <date when="1726-04-05"/>
+            </sentence>
+          </sentences>
+          <case>Vente d'une maison en copropriété</case>
+          <objects>
+            <object type="house">Maison(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0183" context="primary" appointment="appointed">
+              <title>juré expert à Paris</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0033">
+              <persName>
+                <surname>Callou</surname>
+                <forename>Antoine Charles</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Duval</surname>
+                  <forename>René</forename>
+                </persName>
+                <occupation>maître corroyeur à Paris propriétaire d'un quart de la maison</occupation>
+              </person>
+              <status>joint-owner</status>
+              <expert ref="#xpr0183"/>
+            </party>
+            <party role="opponent" presence="true" intervention="false">
+              <person>
+                <persName>
+                  <surname>Lemaire</surname>
+                  <forename>René</forename>
+                </persName>
+                <occupation>bourgeois de Paris et Fallous, Léonarde, son épouse, propriétaire de la moitié de la maison</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Drouin</surname>
+                  <forename>Denis</forename>
+                </persName>
+                <occupation>maître corroyeur à Paris, et Duval, Catherine, sa femme, propriétaire pour un quart de la maison.</occupation>
+              </person>
+              <status>joint-owner</status>
+              <expert ref="#xpr0183"/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0183">« Ladite maison comme elle est se présente et telle qu'elle est cy dessus déclarée […] ne se peut aisément partager, nous avons pour parvenir à une juste estimation pris les mesures de l'emplacement total d'icelle et distinctement de ce qui est en bâtiments d'avec ce qui est cour et du tout fait les calculs après quoy considération faitte du quartier où est est scituée et l'estat présent des bâtimens qui la composent qui sont très anciens, auxquels il y a nombre de grosses réparations à faire notamment en son mur mitoyen à droitte, manteau et thuyau de cheminée de la boutique adossez contre, aux planchers, combles et couverture, mauvais estat de la fosse d'aysance qui est pleine, à ce qu'il n'y a point de cour, et que le puits commun est gasté et abandonné depuis très longtemps, nous la prisons et estimons la somme de deux mil cinq cent livres eu égard au cours du temps présent et à la charge du cens. »</opinion>
+          <arrangement/>
+          <agreement type="conclusion">Conclusion</agreement>
+          <estimate l="2500" s="" d=""/>
+          <estimates>
+            <place ref="#id81d253">
+              <appraisal l="2500" s="" d="">
+                <desc>maison</desc>
+              </appraisal>
+            </place>
+          </estimates>
+          <fees detail="true">
+            <fee type="papers" l="2" s="" d=""/>
+            <fee type="expert" ref="#xpr0183" l="6" s="" d=""/>
+            <fee type="clerk" l="6" s="" d=""/>
+            <fee type="rolls" l="2" s="10" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="16" s="10" d=""/>
+          </fees>
+          <expenses mentioned=""/>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis>Motivations
+                René Duval s'oppose à la vente par licitation de la maison dont il est propriétaire pour un quart de la superficie, par les deux autres propriétaires et leurs conjoints. L'expert doit déterminer si la maison est divisible entre les trois propriétaires.</analysis>
+        <noteworthy/>
+      </description>
+    </expertise>

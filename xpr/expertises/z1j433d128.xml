@@ -1,0 +1,192 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j433d128">
+      <meta/>
+      <control>
+        <maintenanceStatus/>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term/>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:39:45.99+02:00">2021-05-19T11:39:45.99+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateAgreementType_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur "Dispositif de l’expertise" lorsqu'il n'y a qu’un seul expert ('agreement' devient 'conclusion').</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:45:33.927+02:00">2021-04-21T20:45:33.927+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateKeywordsModule_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour du module keywords.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:44:31.814+02:00">2021-04-21T20:44:31.814+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateExpertisesArrangement_files.xqy/BaseX</agent>
+            <eventDescription>Ajout du champs Accommodement dans l'éventualité d’une résolution par les parties.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:43:53.154+02:00">2021-04-21T20:43:53.154+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateExpertisesPlacesEstimates_files.xqy/BaseX</agent>
+            <eventDescription>Ajout des champs pour l'estimation des lieux.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2019-03-01T12:00:00">2019-03-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1696</unitdate>
+    <idno type="unitid">Z1J433</idno>
+        <idno type="item">128</idno>
+        <facsimile from="0923" to="0924"/>
+        <physDesc>
+          <extent sketch="false">2</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1696-06-27" type="paris"/>
+        </sessions>
+        <places>
+          <place xml:id="id61355d1" type="paris">
+            <address>
+              <street>rue de Cléry</street>
+              <buildingNumber/>
+            </address>
+            <complement>à la Villeneuve</complement>
+            <parish/>
+            <owner>Meret (Miret) ?</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="estimation">Estimer la valeur des biens</category>
+          <category type="settlement">Départager</category>
+          <designation rubric="false">Estimation d'une maison, scize à la Ville neuve, petite rue de Cléry, pour Louise Anne Meret, femme de Jean Fournier, auparavant veuve de Simon Maslier, créancier de ladte sucession</designation>
+        </categories>
+        <procedure>
+          <framework type="b2b">L’institution est saisie dans le cadre d’une procédure (l’institution nomme un ou deux experts)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>lieutenant particulier du Châtelet de PAris - siège présidial</orgName>
+              <date when="1696-06-01"/>
+            </sentence>
+          </sentences>
+          <case>créances sur la succession à déduire du prix de la maison</case>
+          <objects>
+            <object type="house">Maison(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0100" context="" appointment="appointed">
+              <title>expert juré en titre d'office</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0008">
+              <persName>
+                <surname>Villain</surname>
+                <forename>Pierre</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="false" intervention="">
+              <person>
+                <persName>
+                  <surname>Meret</surname>
+                  <forename>Louise Anne</forename>
+                </persName>
+                <occupation>femme autorisée par justice au refus de Jean Fournier bourgeois de Paris et auparavant veuve de Simon Maflier (Maslier) marchand mercier créancier de ladite succession</occupation>
+              </person>
+              <status>creditor</status>
+              <expert ref=""/>
+            </party>
+            <party role="opponent" presence="false" intervention="">
+              <person>
+                <persName>
+                  <surname>Michelin</surname>
+                  <forename>Antoine</forename>
+                </persName>
+                <occupation>marchand mercier tuteur de Louise Noëlle Maslier, fille dudit défunt Simon Maflier, marchand mercier</occupation>
+              </person>
+              <status>owner</status>
+              <expert ref=""/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <agreement type="conclusion">Conclusion</agreement>
+          <opinion ref="#xpr0100">maison que nous prisons et estimons valloir 3000 livres d'argent comptant une fois payée eu esgard à la superficie de la place et des bastimens quy sont dessus au lieu où elle est scitué et au cours du temps présent à la charge du cens seulelement quy est pour un toes en la moitié la somme de cinq cent livres cy 500 livres. Fait par nous expert susdits..."</opinion>
+          <arrangement/>
+          <estimate>500 livres</estimate>
+          <estimates>
+            <place ref="#id61355d1">
+              <appraisal l="" s="" d="">
+                <desc/>
+              </appraisal>
+            </place>
+          </estimates>
+          <fees detail="false">
+            <total l="" d="" s=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="" s="" d=""/>
+            <expense type="expert" l="3" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group=""/>
+        <analysis/>
+        <noteworthy>contrat de mariage de la veuve Miert avec défun Maslier devant Dionis et Levesque notaires le 28 septembre 1690, et quittance au pied du 1er décembre ensuivant; renonciation par ladite veuve Miret à la succession dudit défunt Maslier par acte passé devant Levesque et son compagnon notaire le 29 mars 1694, l'estnt au bas de l'inventaire fait après le décès dudit défunt..., avé condamnée ledit Michelin audit nom  à payer à ladite Meret les sommes de 118 livres  d'une part et 300 livres d'autres [lacune] par ledit Miret audit défunt par son contrat de mariage et ce au moyen de la renonciation par elle faict à la communautté dudit deffunt, comme aussy à luy payer 100 livre pour son préciput et 500 livres pour son douaire avec les intérêt à l'esgard dudit douaire du jour  du décès dudit deffunt et à l'esgard des autres sommes (v°) des jour de la demande et aux depsnes et pur faciliter le payements des sommes cy dessus avé ordonné que ledite Miret demerera propriesteresse du tiers en la moitié d'une maison scize à la villeneufve petite rue de Cléry pour la prisée quy en sera faicte par moy Dubois nommée par les partyes et de dix livres de rente eau principal de 200 livres à prendre sur une ferme scize à Varge et ce jusque à la concurance des sommes cy dessus ..."
+
+Je ne suis pas certaine des qualités des parties</noteworthy>
+      </description>
+    </expertise>

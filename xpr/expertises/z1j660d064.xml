@@ -1,0 +1,209 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j660d064" status="">
+  <meta/>
+  <control>
+    <maintenanceStatus>revised</maintenanceStatus>
+    <publicationStatus/>
+    <localControl localType="detailLevel">
+      <term>completed</term>
+    </localControl>
+    <maintenanceHistory>
+      <maintenanceEvent>
+                <eventType>revised</eventType>
+                <eventDateTime standardDateTime="2022-03-19T16:17:53Z">2022-03-19T16:17:53Z</eventDateTime>
+                <agentType>human</agentType>
+                <agent>llosserand</agent>
+                <eventDescription>rvpcd</eventDescription>
+            </maintenanceEvent>
+          <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateObjectsValues_db.xqy/BaseX</agent>
+        <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-06-16T16:56:32.893+02:00">2021-06-16T16:56:32.893+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateOpinionRef_files.xqy/BaseX</agent>
+        <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-06-16T16:29:02.548+02:00">2021-06-16T16:29:02.548+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateRefValues_files.xqy/BaseX</agent>
+        <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>created</eventType>
+        <eventDateTime standardDateTime="2021-02-22T22:12:46Z">2021-02-22T22:12:46Z</eventDateTime>
+        <agentType>human</agentType>
+        <agent>llosserand</agent>
+        <eventDescription>Création de la fiche.</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+  </control>
+  <sourceDesc>
+    <unitdate>1736</unitdate>
+    <idno type="unitid">Z1J660</idno>
+    <idno type="item">064</idno>
+    <facsimile from="0751" to="0756"/>
+    <physDesc>
+      <extent sketch="false">6</extent>
+    </physDesc>
+  </sourceDesc>
+  <description>
+    <sessions>
+      <date when="1736-02-18" type="paris"/>
+      <date when="1736-02-18" type="paris"/>
+      <date when="1736-02-21" type="suburbs"/>
+    </sessions>
+    <places>
+      <place xml:id="id373d81" type="paris">
+        <address>
+          <street>rue neuve Saint-Laurent</street>
+          <buildingNumber/>
+        </address>
+        <complement>vers le boulevard de la porte Saint-Denis</complement>
+        <parish/>
+        <owner/>
+      </place>
+      <place xml:id="id373d99" type="suburbs">
+        <address/>
+        <complement>rue Normande</complement>
+        <city>Vanves</city>
+        <district/>
+        <owner/>
+      </place>
+    </places>
+    <categories>
+      <category type="estimation">Estimer la valeur des biens</category>
+      <designation rubric="true">Visitte de deux maisons, cul de sac de St Laurent près la porte St Denis et d'une autre à Vanvres, à la requeste du sieur de St Aubin ; M. Cochois, expert ; M. Pothenot, greffier.</designation>
+    </categories>
+    <procedure>
+      <framework type="b2">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+      <origination type="institution">Une institution</origination>
+      <sentences>
+        <sentence>
+          <orgName>LC</orgName>
+          <date when="1735-04-30"/>
+          <date when="1736-02-04"/>
+        </sentence>
+      </sentences>
+      <case>partage, projet de vente sur licitation</case>
+      <objects>
+        <object type="house">Maison(s)</object>
+      </objects>
+    </procedure>
+    <participants>
+      <experts>
+        <expert ref="#xpr0056" context="primary" appointment="court-appointed">
+          <title>architecte expert bourgeois</title>
+        </expert>
+      </experts>
+      <clerks>
+        <clerk ref="#xpr0227">
+          <persName>
+            <surname>Pothenot</surname>
+            <forename>Gabriel</forename>
+          </persName>
+        </clerk>
+      </clerks>
+      <parties>
+        <party role="petitioner" presence="true" intervention="false">
+          <person>
+            <persName>
+              <surname>de Saint-Aubin</surname>
+              <forename>Gabriel Germain</forename>
+            </persName>
+            <occupation>maîte brodeur, héritie en partie de son père Germain de Saint-Aubin, vivant concierge de lhhôtel de Lesdiguière</occupation>
+          </person>
+          <status>heir</status>
+          <expert ref="#xpr0056"/>
+          <prosecutor>
+            <persName>
+              <surname>Gival</surname>
+              <forename>Georges François</forename>
+            </persName>
+          </prosecutor>
+        </party>
+        <party role="opponent" presence="true" intervention="false">
+          <person>
+            <persName>
+              <surname>Dallemagne</surname>
+              <forename>Germain Benjamin</forename>
+            </persName>
+            <occupation/>
+          </person>
+          <person>
+            <persName>
+              <surname>et consorts Dallemagne, tous hérities de Germain de Saint-Aubin</surname>
+              <forename/>
+            </persName>
+            <occupation/>
+          </person>
+          <status>heir</status>
+          <expert ref="#xpr0056"/>
+          <prosecutor>
+            <persName>
+              <surname>Satin</surname>
+              <forename/>
+            </persName>
+          </prosecutor>
+        </party>
+      </parties>
+      <craftmen>
+        <craftman>
+          <persName>
+            <surname/>
+            <forename/>
+          </persName>
+          <occupation/>
+        </craftman>
+      </craftmen>
+    </participants>
+    <conclusions>
+      <agreement type="conclusion">Conclusion</agreement>
+      <opinion ref="#xpr0056">rue Saint Laurent : De laquelle maison ayant aussi fait déclaration de tout ce qui la compose, pris les mesures de son emplacement séparément de ce qui  a été bâti d’avec ce qui est en cour et jardin pour connoitre de sa superficie totalle, fait considération sur sa scituation, estat, usage, aux réparations qui sont à y faire, sur ce qu’elle est chargé du logement des gens de guerre, nous la prisons et estimons valloir la somme de deux mille cinq cens livres aussy eu égard au cours du tems présent et à la charge du cens seullement 2500 livres.
+
+Vanves 
+Laquelle maison après avoir aussy vu et visité fait considération sur la consistance, sur l’estat des édifices de bâtiments qui la compose, sur les réparations qui y sont à faite, notamment à la couverture de thuiles du 1er et principal bâtiment, sur son usage, sur ce qu’elle est chargé du logement des gens de guerre, nous la prisons et estimons valloir la somme de huit cens livres, faisant pour les trois quarts dépendants de ladite succession celle de six cens livres, eu égard aussy au cours du tems présent et à la charge du cens seullement, cy 600 livres.
+Lesquelles maisons nous vous observons ne pouvoir être partagées. Telles sont monsieur la visitte et estimation par nous faitte desdites maisons sauf à vous d’en ordonner selon vôtre justice ordinaire.</opinion>
+      <arrangement/>
+      <estimate l="" s="" d=""/>
+      <estimates>
+        <place ref="#id373d81">
+          <appraisal l="2500" s="" d="">
+            <desc>une maison</desc>
+          </appraisal>
+        </place>
+        <place ref="#id373d99">
+          <appraisal l="" s="" d="">
+            <desc>une maison</desc>
+          </appraisal>
+        </place>
+      </estimates>
+      <fees detail="false">
+        <total l="" s="" d=""/>
+      </fees>
+      <expenses mentioned="false"/>
+    </conclusions>
+    <keywords group="estates"/>
+    <keywords group="procedure"/>
+    <keywords group="contract"/>
+    <keywords group="encumbrance"/>
+    <keywords group="law"/>
+    <keywords group="measurement"/>
+    <keywords group="repairs"/>
+    <keywords group="guarantees"/>
+    <keywords group="responsability"/>
+    <keywords group="ownership"/>
+    <keywords group="value"/>
+    <keywords group="neighbourhood"/>
+    <keywords group="disorder"/>
+    <keywords group="transformation"/>
+    <analysis/>
+    <noteworthy/>
+  </description>
+</expertise>

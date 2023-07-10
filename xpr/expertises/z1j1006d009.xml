@@ -1,0 +1,205 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1006d009">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-09-01T12:00:00">2020-09-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2017-04-01T12:00:00">2017-04-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1006</idno>
+        <idno type="item">009</idno>
+        <facsimile from="0057" to="0059"/>
+        <physDesc>
+          <extent sketch="false">2</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-08-06" type="paris"/>
+          <date when="1776-08-20" type="paris"/>
+        </sessions>
+        <places>
+          <place type="paris">
+            <address>
+              <street>Rue de la Grande Friperie, aux Halles</street>
+              <buildingNumber/>
+            </address>
+            <complement>la voûte de la cave d’une maison rue de la Grande Friperie, aux Halles à l’enseigne le Roy Henry Quatre, appartenant à Tronc, Gabriel, et dont la cave, la boutique et la chambre au troisième étage sont louées au sieur Pattin.</complement>
+            <parish/>
+            <owner>Tronc</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="settlement">Départager</category>
+          <designation rubric="">Visite de dégradations en une maison</designation>
+        </categories>
+        <procedure>
+          <framework type="b2a">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>lieutenant civil (sentences des 28 juin et 6 juillet 1776)</orgName>
+              <date when="1776-07-06"/>
+            </sentence>
+          </sentences>
+          <case>Dégradations à la voûte de la cave d'une maison en location. Il s'agit de déterminer si les dégradations sont le fait du locataire ou de la grande vétusté de la voûte.</case>
+          <objects>
+            <object type="other">Voûte de cave</object>
+            <object type="house">Maison(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0089" context="primary" appointment="appointed">
+              <title>architecte expert</title>
+            </expert>
+            <expert ref="#xpr0122" context="primary" appointment="appointed">
+              <title>architecte expert</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0057">
+              <persName>
+                <surname>Liébault de La Neuville</surname>
+                <forename>Christophe Edouard</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="true" intervention="false">
+              <person>
+                <persName>
+                  <surname>Tronc</surname>
+                  <forename>Gabriel</forename>
+                </persName>
+                <occupation>bourgeois de Paris</occupation>
+              </person>
+              <status>owner</status>
+              <expert ref="#xpr0089"/>
+              <prosecutor>
+                <persName>
+                  <surname>Troveau</surname>
+                  <forename/>
+                </persName>
+              </prosecutor>
+            </party>
+            <party role="opponent" presence="true" intervention="false">
+              <person>
+                <persName>
+                  <surname>Pattin</surname>
+                  <forename/>
+                </persName>
+                <occupation>marchand boisselier</occupation>
+              </person>
+              <status>tenant</status>
+              <expert ref="#xpr0122"/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="">"Nous observons d'après l'examen sérieux que nous avons fait tant de la voûte de ladite cave dans laquelle s'est formé le trou dont est question par la disposition du soupirail, que la degradation qui fait l'objet de la contestation n'est point arrivée par le fait du sieur Pattin locataire, mais par la mauvaise disposition de la voûte de ladite cave au droit dudit soupirail"</opinion>
+          <arrangement/>
+          <agreement type="agreement">Accord</agreement>
+          <estimate l="" s="" d=""/>
+          <fees detail="true">
+            <fee type="papers" l="1" s="16" d=""/>
+            <fee type="expert" ref="#xpr0089" l="12" s="" d=""/>
+            <fee type="expert" ref="#xpr0122" l="12" s="" d=""/>
+            <fee type="clerk" l="12" s="" d=""/>
+            <fee type="rolls" l="9" s="" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="46" s="16" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="11" s="5" d=""/>
+            <expense type="expert" l="4" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder">
+          <term value="m7">Vétusté / usure</term>
+        </keywords>
+        <keywords group="transformation"/>
+        <analysis>Conclusion
+                « Nous architectes experts susd. en conséquence de la remise cy dessus nous sommes avec led. Mr Liébault de Laneuville, greffier transporté en ladite maison et y étans en l’absence des parties.
+                Nous observons d’après l’examen sérieux que nous avons fait tant de la voûte de lad. cave dans laquelle s’est formé le trou dont est question par la disposition du soupirail que la dégradation qui fait l’objet de la contestation n’est point arrivée par le fait du sr Pattin, locataire mais par la mauvaise disposition de la voûte de lad. cave au droit dud. soupirail.
+                C’est, monsieur, sur ce que dessus notre avis sur quoy nous vous refferons d’ordonner. »</analysis>
+        <noteworthy/>
+      </description>
+    </expertise>

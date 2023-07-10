@@ -1,0 +1,189 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j663d022" status="">
+  <meta/>
+  <control>
+    <maintenanceStatus>revised</maintenanceStatus>
+    <publicationStatus/>
+    <localControl localType="detailLevel">
+      <term>completed</term>
+    </localControl>
+    <maintenanceHistory>
+      <maintenanceEvent>
+                <eventType>revised</eventType>
+                <eventDateTime standardDateTime="2022-04-29T12:34:20Z">2022-04-29T12:34:20Z</eventDateTime>
+                <agentType>human</agentType>
+                <agent>llosserand</agent>
+                <eventDescription>rvpcd</eventDescription>
+            </maintenanceEvent>
+          <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateObjectsValues_db.xqy/BaseX</agent>
+        <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-06-16T16:56:32.893+02:00">2021-06-16T16:56:32.893+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateOpinionRef_files.xqy/BaseX</agent>
+        <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-06-16T16:29:02.548+02:00">2021-06-16T16:29:02.548+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateRefValues_files.xqy/BaseX</agent>
+        <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>created</eventType>
+        <eventDateTime standardDateTime="2021-03-27T16:52:01Z">2021-03-27T16:52:01Z</eventDateTime>
+        <agentType>human</agentType>
+        <agent>llosserand</agent>
+        <eventDescription>Création de la fiche.</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+  </control>
+  <sourceDesc>
+    <unitdate>1736</unitdate>
+    <idno type="unitid">Z1J663</idno>
+    <idno type="item">022</idno>
+    <facsimile from="0177" to="0199"/>
+    <physDesc>
+      <extent sketch="false">22</extent>
+      <appendices>
+        <appendice>
+          <type type="other">calculs</type>
+          <extent>1</extent>
+          <desc/>
+          <note>calculs du prix de la visite (expert)</note>
+        </appendice>
+      </appendices>
+    </physDesc>
+  </sourceDesc>
+  <description>
+    <sessions>
+      <date when="1736-06-20" type="province"/>
+      <date when="1736-06-21" type="province"/>
+      <date when="1736-06-22" type="province"/>
+      <date when="1736-06-23" type="province"/>
+    </sessions>
+    <places>
+      <place type="province">
+        <address/>
+        <complement>église et prieuré de Mauregard</complement>
+        <city>Mauregard</city>
+        <district/>
+        <owner/>
+      </place>
+    </places>
+    <categories>
+      <category type="assessment">Décrire et évaluer les travaux à venir</category>
+      <designation rubric="true">Visitte et estimations de réparations et reconstructions à faire au prieuré de Mauregard et dépendances, entre Mr l'abbé Daubenne et Mre Félix de Galeau de Gadaque, clerc du diocèse d'Avignon ; M. Barbier de Blignière, expert ; M. Baudouin, greffier.</designation>
+    </categories>
+    <procedure>
+      <framework type="b2">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+      <origination type="institution">Une institution</origination>
+      <sentences>
+        <sentence>
+          <orgName>Grand conseil</orgName>
+          <date when="1736-05-14"/>
+        </sentence>
+      </sentences>
+      <case>prieuré en commende, ancien abbé décédé - succession, réparations à y faire</case>
+      <objects>
+        <object type="buildings">Ensemble de bâtiments (biens immeubles)</object>
+      </objects>
+    </procedure>
+    <participants>
+      <experts>
+        <expert ref="#xpr0013" context="" appointment="">
+          <title>architecte juré du roi expert bourgeois de Paris</title>
+        </expert>
+      </experts>
+      <clerks>
+        <clerk ref="#clrk0034">
+          <persName>
+            <surname>Baudouin</surname>
+            <forename>Antoine</forename>
+          </persName>
+        </clerk>
+      </clerks>
+      <parties>
+        <party role="petitioner" presence="" intervention="">
+          <person>
+            <persName>
+              <surname>de Galeau de Gadagne</surname>
+              <forename>Félix</forename>
+            </persName>
+            <occupation>clerc du diocèse d'Avignon, abbé commendataire gros décimateur du prieuré</occupation>
+          </person>
+          <status>owner</status>
+          <expert ref="#xpr0013"/>
+          <prosecutor>
+            <persName>
+              <surname>Beunet</surname>
+              <forename/>
+            </persName>
+          </prosecutor>
+        </party>
+        <party role="opponent" presence="" intervention="">
+          <person>
+            <persName>
+              <surname>Lefèvre Deaubonne</surname>
+              <forename>Pierre Gervais</forename>
+            </persName>
+            <occupation>chanoine de l'église de Paris légataire universel de feu Pierre FOuquet prêtre de l'Oratoire vivant prieur commandataire dudit prieuré de Mauregard</occupation>
+          </person>
+          <status>heir</status>
+          <expert ref="#xpr0013"/>
+          <prosecutor>
+            <persName>
+              <surname>Maréchal</surname>
+              <forename/>
+            </persName>
+          </prosecutor>
+        </party>
+      </parties>
+      <craftmen>
+        <craftman>
+          <persName>
+            <surname/>
+            <forename/>
+          </persName>
+          <occupation/>
+        </craftman>
+      </craftmen>
+    </participants>
+    <conclusions>
+      <agreement type="conclusion">Conclusion</agreement>
+      <opinion ref="#xpr0013">"Montant et revenant toutes les susdites réparations et reconstruction à faire audit prieuré de Mauregard et dépendances mentionné en notre présent raport de deux mil deux cent vingt deux livres deux sols six deniers pour la perfection et pris des susdits ouvrages les entrepreneurs fourniront de tous les mathéreaux nécessaire pour chacque nature d’ouvrages, peines d’ouvriers, équipage, échafaudages et générallement quelconques et rendront place nette et envoyeront les gravois aux champs pour rendre les lieux prest à habiter et sy lors des recouvrement de linteaux il s’en trouve qu’il soit pourie et ne puissent servir ce que nous n’avons pu quant à présent connoistre, il en sera fourny par l’entrepreneur et il luy seront estimé séparément lors de la réception des susdits ouvrages ainsy que les autres ouvrages qui pouroit survenir pendant le cours d’icelles que nous n’avons put quant à présent connoistre, cy 2222 livres 2 sols 6 deniers.
+Et pour par nous connoistre l’état du puis dudit prieuré lequel a vingt cinq toises de profondeur, nous l’avons fait visité par Mathurin Romin, maçon demeurant audit Mauregard, lequel nous a raporté qu’il se comportoit bien et qu’il y avoit huit pieds de hauteur d’eau et qu’à l’esgard de ce qui nous avoir parue deffectueux au font dudit puis étoit des roches qui excédoit le parement auquel Romin nous luy avons taxée une livre quatre sols pour sa peine qui luy a esté payé par le greffier soussigné.
+Et pour satisfaire à votre arrest nosseigneurs que nous ordonne de faire mention dans notre raport du tems et de la cause desdites réparations et reconstruction ensemble leur nécessité ou inutilité et l’esgard de la cause et du temps elle procèdent du grand lapes (sic) de temps que ledit prieuré est bâtie du mauvais entretient dudit prieuré et du peu de réparations qui y ont estée faites depuis un très longtemps ou ont esté mal construite et dirigées ; et à l’esgard de la nécessité ou inutillité notre avis est que pour l’habitation dudit prieuré il est nécessaire de faire toutes celles par nous mentionné en notre présent procès verbal sauf à vous nosseigneurs d’en juger et ordonner suivant votre justice et prudence ordinaire."
+Fait par nous expert susdits sur les lieux …</opinion>
+      <arrangement/>
+      <estimate l="" s="" d=""/>
+      <fees detail="">
+        <total l="" s="" d=""/>
+      </fees>
+      <expenses mentioned="false"/>
+    </conclusions>
+    <keywords group="estates"/>
+    <keywords group="procedure"/>
+    <keywords group="contract"/>
+    <keywords group="encumbrance"/>
+    <keywords group="law"/>
+    <keywords group="measurement"/>
+    <keywords group="repairs"/>
+    <keywords group="guarantees"/>
+    <keywords group="responsability"/>
+    <keywords group="ownership"/>
+    <keywords group="value"/>
+    <keywords group="neighbourhood"/>
+    <keywords group="disorder"/>
+    <keywords group="transformation"/>
+    <analysis/>
+    <noteworthy># bien de main-morte
+prieuré en commende</noteworthy>
+  </description>
+</expertise>

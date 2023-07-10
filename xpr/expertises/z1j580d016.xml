@@ -1,0 +1,250 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j580d016">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-10-01T12:00:00">2020-10-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2016-10-26T12:00:00">2016-10-26T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>RB</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1726</unitdate>
+    <idno type="unitid">Z1J580</idno>
+        <idno type="item">016</idno>
+        <facsimile from="0276" to="0296"/>
+        <physDesc>
+          <extent sketch="false">20</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1726-05-02" type="paris"/>
+          <date when="1726-05-02" type="paris"/>
+          <date when="1726-05-23" type="province"/>
+        </sessions>
+        <places>
+          <place xml:id="id433d278" type="paris">
+            <address>
+              <street>rue de la Reine</street>
+              <buildingNumber/>
+            </address>
+            <complement/>
+            <parish/>
+            <owner>succession Pierre de Saint-Denis</owner>
+          </place>
+          <place xml:id="id433d296" type="province">
+            <address/>
+            <complement/>
+            <city>Nanterre</city>
+            <district/>
+            <owner>succession Pierre de Saint-Denis</owner>
+          </place>
+          <place xml:id="id433d312" type="province">
+            <address/>
+            <complement/>
+            <city>Gonnesse</city>
+            <district/>
+            <owner>succession Pierre de Saint-Denis</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="estimation">Estimer la valeur des biens</category>
+          <designation rubric="true">Estimation de plusieurs maisons</designation>
+        </categories>
+        <procedure>
+          <framework type="b2a">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Lieutenant civil</orgName>
+              <date when="1726-04-27"/>
+            </sentence>
+          </sentences>
+          <case>partage de succession</case>
+          <objects>
+            <object type="house">Maison(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0145" context="primary" appointment="appointed">
+              <title>architecte juré du roi expert bourgeois de Paris</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0033">
+              <persName>
+                <surname>Callou</surname>
+                <forename>Antoine Charles</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Saint-Denis</surname>
+                  <forename>Louis Denis Charles</forename>
+                </persName>
+                <occupation>maître boulanger, héritier des maisons</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Saint-Denis</surname>
+                  <forename>Pierre</forename>
+                </persName>
+                <occupation>maître boulanger, héritier des maisons</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Saint-Denis</surname>
+                  <forename>Marie Madeleine de</forename>
+                </persName>
+                <occupation>héritières des maisons</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Tavernier</surname>
+                  <forename>Joachim</forename>
+                </persName>
+                <occupation>maître perruquier, époux de la précédente.</occupation>
+              </person>
+              <status>heir</status>
+              <expert ref="#xpr0145"/>
+            </party>
+            <party role="opponent" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Fourcy</surname>
+                  <forename>Jacques de</forename>
+                </persName>
+                <occupation>bourgeois de Paris, propriétaire d'un sixième des loyers des maisons</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Dubreuil</surname>
+                  <forename/>
+                </persName>
+                <occupation>sieur, propriétaire d'un sixième des loyers des maisons</occupation>
+              </person>
+              <status>heir</status>
+              <expert ref="#xpr0145"/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0145">"Montant et revenant ensemble toutes lesdites maisons par nous estimé à la somme totale de 24 200 l."</opinion>
+          <arrangement/>
+          <agreement type="conclusion">Conclusion</agreement>
+          <estimate l="24200" s="" d=""/>
+          <estimates>
+            <place ref="#id433d278">
+              <appraisal l="" s="" d="">
+                <desc/>
+              </appraisal>
+            </place>
+            <place ref="#id433d296">
+              <appraisal l="" s="" d="">
+                <desc/>
+              </appraisal>
+            </place>
+            <place ref="#id433d312">
+              <appraisal l="" s="" d="">
+                <desc/>
+              </appraisal>
+            </place>
+          </estimates>
+          <fees detail="true">
+            <fee type="papers" l="1" s="2" d=""/>
+            <fee type="expert" ref="#xpr0145" l="90" s="" d=""/>
+            <fee type="clerk" l="90" s="" d=""/>
+            <fee type="rolls" l="36" s="15" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="217" s="17" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="67" s="5" d=""/>
+            <expense type="expert" l="" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis>Motivations
+                A la suite d'un conflit né d'un héritage, un expert doit priser les trois maisons.</analysis>
+        <noteworthy/>
+      </description>
+    </expertise>

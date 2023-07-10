@@ -1,0 +1,89 @@
+<eac xmlns="https://archivists.org/ns/eac/v2" xml:id="clrk0058">
+  <control maintenanceStatus="">
+    <recordId>clrk0058</recordId>
+    <maintenanceAgency>
+      <agencyName>ANR Experts</agencyName>
+    </maintenanceAgency>
+    <maintenanceHistory>
+      <maintenanceEvent maintenanceEventType="created">
+        <agent agentType="machine">clerk_csv2eac.xqy/BaseX</agent>
+        <eventDateTime standardDateTime="2022-12-31T14:06:48.817+01:00"/>
+        <eventDescription>Création des fiches EAC-CPF à partir du tableau</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+    <sources>
+      <source id="sourceid86495605">
+        <reference href="">Almanach royal 1756</reference>
+      </source>
+      <source id="sourceid86495607">
+        <reference href="">Almanach royal 1757</reference>
+      </source>
+      <source id="sourceid86495609">
+        <reference href="">Almanach royal 1766</reference>
+      </source>
+      <source id="sourceid86495611">
+        <reference href="">Almanach royal 1767</reference>
+      </source>
+      <source id="sourceid86495613">
+        <reference href="">Almanach royal 1776</reference>
+      </source>
+      <source id="sourceid86495615">
+        <reference href="">Almanach royal 1777</reference>
+      </source>
+      <source id="sourceid86495617">
+        <reference href="">Almanach royal 1786</reference>
+      </source>
+      <source id="sourceid86495619">
+        <reference href="">Almanach royal 1787</reference>
+      </source>
+    </sources>
+  </control>
+  <cpfDescription>
+    <identity>
+      <entityType value="person"/>
+      <nameEntry status="authorized" preferredForm="true" sourceReference="">
+        <part localType="full">Foucart, Paul Joseph</part>
+      </nameEntry>
+      <nameEntry status="alternative" preferredForm="false" sourceReference="">
+        <part localType="surname">Foucart</part>
+        <part localType="forename">Paul Joseph</part>
+      </nameEntry>
+      <otherEntityTypes>
+        <otherEntityType>
+          <term>clerk</term>
+        </otherEntityType>
+      </otherEntityTypes>
+      <identityId>clrk0058</identityId>
+    </identity>
+    <description>
+      <functions>
+        <function sourceReference="#sourceid86495605 #sourceid86495607 #sourceid86495609 #sourceid86495611 #sourceid86495613 #sourceid86495615 #sourceid86495617 #sourceid86495619">
+          <term>Greffier</term>
+          <dateRange>
+            <fromDate sourceReference="" certainty="certain" standardDate="1756"/>
+            <toDate sourceReference="" certainty="certain" standardDate="1787"/>
+          </dateRange>
+        </function>
+      </functions>
+      <places>
+        <place sourceReference="#sourceid86495605 #sourceid86495607 #sourceid86495613 #sourceid86495615">
+          <placeRole>Adresse</placeRole>
+          <placeName>rue Mauconseil, vis-à-vis la rue Françoise</placeName>
+          <dateRange>
+            <fromDate sourceReference="" certainty="certain" standardDate="1756"/>
+            <toDate sourceReference="" certainty="certain" standardDate="1777"/>
+          </dateRange>
+        </place>
+        <place sourceReference="#sourceid86495609 #sourceid86495611 #sourceid86495617 #sourceid86495619">
+          <placeRole>Adresse</placeRole>
+          <placeName>rue Monconseil, vis-à-vis la rue Françoise</placeName>
+          <dateRange>
+            <fromDate sourceReference="" certainty="certain" standardDate="1766"/>
+            <toDate sourceReference="" certainty="certain" standardDate="1787"/>
+          </dateRange>
+        </place>
+      </places>
+    </description>
+  </cpfDescription>
+  <!---->
+</eac>

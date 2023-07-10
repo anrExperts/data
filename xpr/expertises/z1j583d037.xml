@@ -1,0 +1,194 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j583d037">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-11-01T12:00:00">2020-11-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2016-10-26T12:00:00">2016-10-26T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>RB</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1726</unitdate>
+    <idno type="unitid">Z1J583</idno>
+        <idno type="item">037</idno>
+        <facsimile from="0430" to="0434"/>
+        <physDesc>
+          <extent sketch="false">4</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1726-10-03" type="suburbs"/>
+        </sessions>
+        <places>
+          <place type="suburbs">
+            <address/>
+            <complement>Faubourg de la Conférence</complement>
+            <city>Paris</city>
+            <district/>
+            <owner>Constantin / Vassé / Gilbert</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="settlement">Départager</category>
+          <designation rubric="true">Visite de mur mitoyen</designation>
+        </categories>
+        <procedure>
+          <framework type="b2a">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Chambre des requêtes</orgName>
+              <date when="1726-08-29"/>
+            </sentence>
+          </sentences>
+          <case>nouvelle expertise d'un mur mitoyen dans lequel ont été percées des ouvertures</case>
+          <objects>
+            <object type="wall">Mur(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0221" context="primary" appointment="appointed">
+              <title>architecte juré du roi expert bourgeois de Paris</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#xpr0066">
+              <persName>
+                <surname>Danjan</surname>
+                <forename>Pierre Paul</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="true" intervention="false">
+              <person>
+                <persName>
+                  <surname>Vasse</surname>
+                  <forename>Jean-Baptiste</forename>
+                </persName>
+                <occupation/>
+              </person>
+              <person>
+                <persName>
+                  <surname>Gilbert</surname>
+                  <forename>François</forename>
+                </persName>
+                <occupation/>
+              </person>
+              <status>owner</status>
+              <expert ref="#xpr0221"/>
+            </party>
+            <party role="opponent" presence="true" intervention="false">
+              <person>
+                <persName>
+                  <surname>Constantin</surname>
+                  <forename>Jean</forename>
+                </persName>
+                <occupation>propriétaire de l'autre maison mitoyenne</occupation>
+              </person>
+              <status>owner</status>
+              <expert ref="#xpr0221"/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0221">« Tel est notre advis [voir l'acte pour chacun des trois points] sur l'estat present desd. lieux, murs et jambes de pierre en question, et sur ce qui regarde les contraventions et malfaçons mentionnées en la Reqte desd. sieurs Vasse et Gilbert. Sauf ausd. srs Vasse et Gilbert de se pourvoir pardevant vous nosseigneurs sur le surplus des fins en conclusions de leur requeste ».</opinion>
+          <arrangement/>
+          <agreement type="conclusion">Conclusion</agreement>
+          <estimate l="" s="" d=""/>
+          <fees detail="true">
+            <fee type="papers" l="" s="" d=""/>
+            <fee type="expert" ref="#xpr0221" l="10" s="" d=""/>
+            <fee type="clerk" l="" s="" d=""/>
+            <fee type="rolls" l="" s="" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="" s="" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="7" s="15" d=""/>
+            <expense type="expert" l="" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis>Motivations
+                « Nous avons fait lecture d'une sentence rendüe de vous nosseigneurs ausd. Requestes du Pallais  le vingt neuf aoust dernier, entre led. Sr Vasse cy devant propriettaire d'une maison scize a Chaillot contigües a celle appartenante aud. Jean Constantin et led. sr François Gilbert md demt aud. Chaillot a present propriettaire de lad. maison, demandeurs, pour a present en reqte du vingt sept dud. mois d'aoust dr affin entrautres choses d'estre ordonné que nous Piretoüy ancien juré expert déjà nommé par la Cour par la sentence contradictoirement rendüe entre les partyes le vingt neuf juillet der et par celle du per 7bre 1724, ou tel autre expert qu'il plairoit a la cour de nommer, nous transporterions de nouveau sur les lieux, a l'effet d'examiner et donner nostre advis, 1o sy depuis le premier rapport du 26 dud. mous de 7bre 1724 il est survenu quelque nouveau dommage tant au mur mitoyen des maisons dont est question qu'a l'encoigre de la face de la maison dud. sr Vasse et dud. Sr Gilbert, et ce fait ce qui peut avoir causé les dommages et aux frais de qui et de quele maniere il doit estre retably. 2O sy les jambes de pierre de taille que led. Constantin a fait elevées dans les ouvertures par luy faits dans ce mur mitoyen sont construites suivant les regles de l'art, la disposition de la coutume et l'avis de mond. Piretoüy raporté par notre pre rapport. Et 3o sy les jambes de pierre ont esté posées suivant lallignemt des anciens vestiges dud. mur mitoyen, en enfin sy leur construction telle quelle est ne cause aucun obstacle pour lexecution dud. avis. Et en cas du contraire ce qu'il convient faire pour y remedier, et aux frais de qui les contraventions et malfaçons qui se trouveront avoir esté commises par led. Constantin seront reparées. Desquelles choses nous Piretoüy ferions un procez verbal et par iceluy donnerions nostre avis pour led. proces verbal fait et led. avis donné et rapporté prendre par lesd. srs Vasse et Gilbert, telles autres fins et conclusions quils jugeroient apropos autres que celles prises par lad. reqte et estre par la cour ordonné ce qu'il appartiendroit ».</analysis>
+        <noteworthy/>
+      </description>
+    </expertise>

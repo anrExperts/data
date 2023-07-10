@@ -1,0 +1,223 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1006d040">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-09-01T12:00:00">2020-09-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2017-04-01T12:00:00">2017-04-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1006</idno>
+        <idno type="item">040</idno>
+        <facsimile from="0417" to="0439"/>
+        <physDesc>
+          <extent sketch="false">7</extent>
+          <appendices>
+            <appendice>
+              <type type="other">Expédition</type>
+              <extent>16</extent>
+              <desc>1 cahier qui est l’expédition du toisé en forme de procès-verbal fait par le sieur Poiret et sur laquelle les experts ont fait leurs opérations, fait selon la coutume de Paris, du 5 mars 1774.</desc>
+              <note/>
+            </appendice>
+          </appendices>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-08-16" type="province"/>
+          <date when="1776-10-21" type="province"/>
+          <date when="1776-10-22" type="province"/>
+          <date when="1776-10-22" type="province"/>
+        </sessions>
+        <places>
+          <place type="province">
+            <address/>
+            <complement/>
+            <city>Marly-la-Ville</city>
+            <district/>
+            <owner>Leguillier, André Joseph</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="acceptation">Recevoir et évaluer le travail réalisé</category>
+          <designation rubric="true">Visite et estimation d’ouvrages de maçonnerie et couverture faits pour la construction d’une maison</designation>
+        </categories>
+        <procedure>
+          <framework type="b2a">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>bailliage de Marly-la-Ville (jugement du 2 mars 1776)</orgName>
+              <date when="1776-03-02"/>
+            </sentence>
+          </sentences>
+          <case>Réception d'ouvrages</case>
+          <objects>
+            <object type="house">Maison(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0070" context="primary" appointment="appointed">
+              <title>architecte juré expert bourgeois en titre d'office</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0067">
+              <persName>
+                <surname>Goüel</surname>
+                <forename>Gilles Louis</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="true" intervention="false">
+              <person>
+                <persName>
+                  <surname>Leguillier</surname>
+                  <forename>André Joseph</forename>
+                </persName>
+                <occupation>maître menuisier</occupation>
+              </person>
+              <status>owner</status>
+              <expert ref="#xpr0070"/>
+              <prosecutor>
+                <persName>
+                  <surname>Le Flamant</surname>
+                  <forename/>
+                </persName>
+              </prosecutor>
+            </party>
+            <party role="opponent" presence="true" intervention="false">
+              <person>
+                <persName>
+                  <surname>Ganneron</surname>
+                  <forename>Nicolas</forename>
+                </persName>
+                <occupation>entrepreneur de bâtiments à Marly-la-Ville</occupation>
+              </person>
+              <status>builder</status>
+              <expert ref="#xpr0070"/>
+              <prosecutor>
+                <persName>
+                  <surname>Corboran</surname>
+                  <forename/>
+                </persName>
+              </prosecutor>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0070">l’ensemble des ouvrages de maçonnerie et couverture valent 3674 livres 16 sols 5 deniers</opinion>
+          <arrangement/>
+          <agreement type="conclusion">Conclusion</agreement>
+          <estimate l="3674" s="16" d="5"/>
+          <fees detail="true">
+            <fee type="papers" l="9" s="" d=""/>
+            <fee type="expert" ref="" l="102" s="" d=""/>
+            <fee type="clerk" l="102" s="" d=""/>
+            <fee type="rolls" l="20" s="" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="other" l="48" s="" d="">Arbitre</fee>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="281" s="" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="60" s="5" d=""/>
+            <expense type="expert" l="21" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis>Expertise intéressante à plusieurs titres
+                Seul De Besse est expert en titre d’office, Brossard et Poiret ont des statuts particuliers (voir plus bas)
+                Il n’a pas été fait de sommation à Ganneron et à Poiret, « le tout pour éviter à frais, se réservant de nous faire pendant le cours de nos opérations et si le cas le requiert telles observations qu’il croira nécessaire ».
+                Les mémoires d’ouvrages sont remis à l’expert Brossard par le greffier du bailliage de Marly-la-Ville, ils sont faits selon la méthode des Ponts et Chaussées.
+                Il a été choisi d’utiliser le procès verbal et vérification des ouvrages faits par Poiret (toiseur) car il l’a fait selon les usages de Paris, tandis que les mémoires d’ouvrages ont été fait selon l’usage des Ponts et Chaussées « [f. 6v°] lequel usage n’est point du tout conforme à la méthode que nous devons suivre ; l’usage que nous aurions pu faire desd. mémoires n’auroient pu causer que des erreurs parce que ce toisé suivant la méthode des Ponts et chaussées, on avoit confondu ensemble la plupart des ouvrages et sous un prix uniforme au lieu qu’il étoit susceptible de distinction que nous avons établie chacun suivant la quantité de la réduction aux us et coutume de Paris qui n’avoit point été observée et que nous ne pouvions nous dispenser d’admettre. » Par souci d’économie il n’a été rapporté que la récapitulation générale de tous les ouvrages et leur valeur, et on annexé l’expédition du toisé en forme de procès-verbal fait par le sieur Poiret et sur laquelle les experts ont fait leurs opérations... »
+                Choix de l’entrepreneur Brossard (qualifié plus d’arbitre et qui fait serment) et du toiseur Poiret (premier expert) pour donner leurs avis à l’expertise
+                f. 1r° « Est comparu le sieur Jean-Baptiste Brossard, entrepreneur […] lequel nous a dit que sur l’avis qui lui a été donné par le sr Le Flamant, procureur des sr et dm Leguiller, que nous devions nous trouver ce jourd’huy en la maison en laquelle nous sommes pour procéder aux opérations ordonnées par le jugement du deux mars dernier, il comparoissoit à l’effet de nous déclarer qu’il étoit prêt et offroit de procéder conjointement avec nous expert susdit aux opérations ordonnées par le susd. jugement nous remettant entre les mains l’expédition du procès verbal de la prestation de ferment par lui faitte le trois du présent mois de bien et fidèlement procéder auxd. opérations et a signé. Brossard. »
+                f. 1v°] « Est enfin comparu sieur Charles Poiret, toiseur et vérificateur de bâtimens demeurant à Louvres-en-Parisis étant de présent aud. lieu de Marly-la-Ville. Lequel nous adit que sur l’avis qui lui a été donné par le sr Ganneron que nous devions nous trouver ce jourd’huy en la maison en laquelle nous sommes pour procéder aux opérations ordonnées par la sentence du deux mars dernier, il comparoissoit à l’effet d’être présent auxd. opérations et d’indiquer et soutenir les opérations du toisé et estimation par lui faittes le cinq mars mil sept cent soixante quatorze en exécution d’une sentence du bailliage dud. lieu de Marly-la-Ville du vingt six février précédent, et a signé. Poiret. »
+                Paiement des experts
+                « Ces lectures ainsi faittes avant de procéder aux opérations ordonnées par le jugement sus-extrait nous [Brossard] avons déclaré au sieur Leguillier ici présent que l’usage étoit de consigner entre les mains de Me Gouel, greffier des bâtimens soussigné le coust de nos honoraires ainsi que les siens, qu’en conséquence il eut à s’y conformer autrement que nous ne commencerions point les opérations ordonnées par le susd. jugement et sur la déclaration qui nous a été faitte par led. sr Leguillier, qu’il étoit dans l’impossibilité d’y satisfaire nous lui avons déclaré que nous nous retirions et nous nous n’indiquerons de jour que lors que led. sr Leguillier aura satisfait à la demande que nous venons de lui faire et jusqu’à ce nous nous sommes retirés après que le sr Poiret et les srs Ganneronet Leguillier ont eu signé avec nous. »
+                Conclusion
+                « Tel est, monsieur, la visitte, vérification et toisé par nous faits des ouvrages dont est question et notre avis unanime sur la valeur d’iceux ouvrages, vous référant d’en ordonner, cy... référé.
+                Fait par nous architecte et arbitre susdits et soussignés les jour, mois et an susdits après avoir vacqué à tout ce que dessus et dit depuis lad. heure de deux de relevé jusqu’à celle de près de six du soir, en conséquence nous avons remis à demain mercredy vingt trois du présent mois d’octobre du matin pour nous rendre scavoir nous de Besse avec led. Me Gouel en la ville de Paris lieu de notre résidence et nous Brossard en celle de Senlis, aussi lieu de notre résidence et jusqu’à ce nous nous sommes retirés. »
+                [f. 7r°] quittance de Bonnard (48 livres) ; quittance de Liébault de la Neuville pour la bourse commune (60 livres) ; quittance de Gabriel, expert résident pour l’acquit de de Besse (21 livres)</analysis>
+        <noteworthy/>
+      </description>
+    </expertise>

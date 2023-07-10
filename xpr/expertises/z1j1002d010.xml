@@ -1,0 +1,221 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1002d010">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2017-10-01T12:00:00">2017-10-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1002</idno>
+        <idno type="item">010</idno>
+        <facsimile from="0090" to="0096"/>
+        <physDesc>
+          <extent sketch="false">4</extent>
+          <appendices>
+            <appendice>
+              <type type="proxyPA">Pouvoir/procuration (acte sous seing privé)</type>
+              <extent>2</extent>
+              <desc/>
+              <note>pouvoirs des deux propriétaires à Delepine (3 mai 1776)
+« Le mur mitoyen dont est question separant les maisons desdits sieurs Papillon et François est à découvert du costé dudit sieur Papillon par la démolition qu’il a fait faire de son batiment dont il ne subsiste que les caves et plusieurs pieces de bois au droit des anciens planchers que l’on a laissées subsister et d’autres que l’on a mis exprès pour etresillonner ledit mur mitoyen. »</note>
+            </appendice>
+          </appendices>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-05-03" type="paris"/>
+        </sessions>
+        <places>
+          <place type="paris">
+            <address>
+              <street>rue Saint-Gervais</street>
+              <buildingNumber/>
+            </address>
+            <complement/>
+            <parish/>
+            <owner/>
+          </place>
+        </places>
+        <categories>
+          <category type="assessment">Décrire et évaluer les travaux à venir</category>
+          <designation rubric="true">Visitte de mur mitoyen séparant les maison des sieurs Papillon et François, scize rue St Gervais au Marais ; M. Delespine, expert.</designation>
+        </categories>
+        <procedure>
+          <framework type="a">Commun accord des parties</framework>
+          <origination type="parties">Les parties</origination>
+          <sentences>
+            <sentence>
+              <orgName/>
+              <date when=""/>
+            </sentence>
+          </sentences>
+          <case>le sieur Papillon a fait démolir son bâtiment qui était adossée au mur mitoyen</case>
+          <objects>
+            <object type="wall">Mur(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0085" context="primary" appointment="appointed">
+              <title>architecte expert bourgeois de Paris</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0047">
+              <persName>
+                <surname>Mangin</surname>
+                <forename>Philbert</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="" intervention="">
+              <person>
+                <persName>
+                  <surname>François</surname>
+                  <forename/>
+                </persName>
+                <occupation/>
+              </person>
+              <status>owner</status>
+              <expert ref=""/>
+            </party>
+            <party role="petitioner" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Papillon</surname>
+                  <forename>M…</forename>
+                </persName>
+                <occupation>marchand épicier</occupation>
+              </person>
+              <status>owner</status>
+              <expert ref="#xpr0085"/>
+            </party>
+            <party role="opponent" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname/>
+                  <forename/>
+                </persName>
+                <occupation/>
+              </person>
+              <status>owner</status>
+              <expert ref="#xpr0085"/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0085">« Notre avis est que ce mur peut subsister et qu’il est en état de soutenir la surélevation de vingt pieds ou environ que ledit sieur Papillon entend faire, qu’à cet effet il sera nécessaire seulement de reconstruire
+1° la partie dudit mur mitoyen qui est actuellement en plasteau, au niveau dudit entablement de la maison du sieur François, laquelle sera demolie en toute sa longueur jusqu’à son somme, pour ladite partie estre reconstruite comme il vient d’estre dit en bon moilons d’une maçonnerie en plastre
+2° la fondation de ce mur au droit des caves de la maison dudit sieur Papillon jusque sur le bon et solide fond sera reconstruite à neuf…
+le tout aux frais dudit sieur Papillon attendu que ledit mur est et seroit en état de subsister encorre très longtemps pour led. Sieur François sans la demolition faite par ledit sieur Papillon et la reconstruction qu’il entend faire de sadite maison et la surelevation qu’il se proporse de faire d’icelle au surplus de son ancienne eberge. »</opinion>
+          <arrangement/>
+          <agreement type="conclusion">Conclusion</agreement>
+          <estimate l="" s="" d=""/>
+          <fees detail="true">
+            <fee type="papers" l="5" s="" d=""/>
+            <fee type="expert" ref="#xpr0085" l="6" s="" d=""/>
+            <fee type="clerk" l="6" s="" d=""/>
+            <fee type="rolls" l="16" s="" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="33" s="" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="6" s="10" d=""/>
+            <expense type="expert" l="2" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis/>
+        <noteworthy>"régler les contributions et toutes les difficultés qui pourroient naître au sujet de la démolition et reconstruction dudit mur"
+
+1 vacation pour M. Delespine expert 6 l.
+idem pour le greffier 6 l.
+16 rolles 8 l.
+2e expedition 8 l.
+papier de l’expedition, celuy de
+la minutte et controlle de ladite minutte
+et des pouvoirs 5 l.
+33 l.
+Moitié 16 l. 10 s.</noteworthy>
+      </description>
+    </expertise>

@@ -1,0 +1,215 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1001d069">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2017-10-01T12:00:00">2017-10-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1001</idno>
+        <idno type="item">069</idno>
+        <facsimile from="0761" to="0766"/>
+        <physDesc>
+          <extent sketch="false">4</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-04-27" type="paris"/>
+          <date when="1776-06-17" type="paris"/>
+        </sessions>
+        <places>
+          <place type="paris">
+            <address>
+              <street>cloître Saint-Germain l’Auxerrois</street>
+              <buildingNumber/>
+            </address>
+            <complement/>
+            <parish/>
+            <owner>occupée par l'abbé Hilaire Jeanson chapelain de al chapelle St Denis</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="acceptation">Recevoir et évaluer le travail réalisé</category>
+          <designation rubric="true">Réception d'ouvrages en une maison, Cloître St Germain l'Auxerrois, appartenante au chapitre Notre Dame en partyes ; Tabouteur, expert.</designation>
+        </categories>
+        <procedure>
+          <framework type="b2b">L’institution est saisie dans le cadre d’une procédure (l’institution nomme un ou deux experts)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Châtelet, lieutenant civil (ordonnance)</orgName>
+              <date when="1775-12-22"/>
+            </sentence>
+          </sentences>
+          <case>fin des travaux réception des ouvrages faits, bien de main-morte</case>
+          <objects>
+            <object type="house">Maison(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0250" context="primary" appointment="court-appointed">
+              <title>architecte expert bourgeois des bâtiments à Paris</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0062">
+              <persName>
+                <surname>Picquenon</surname>
+                <forename>Denis Joseph François</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="true" intervention="false">
+              <person>
+                <persName>
+                  <surname>De Berty</surname>
+                  <forename>Marie Simon</forename>
+                </persName>
+                <occupation>écuyer conseiller secrétaire du roi receveur général des domaines et bois de la généralité de Caen</occupation>
+              </person>
+              <status>owner</status>
+              <expert ref="#xpr0250"/>
+            </party>
+            <party role="opponent" presence="true" intervention="false">
+              <person>
+                <persName>
+                  <surname>Jeanson</surname>
+                  <forename>Hilaire</forename>
+                </persName>
+                <occupation>chapelain titulaire du second titre de la chapelle St Denis</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>!delon</surname>
+                  <forename>abbé</forename>
+                </persName>
+                <occupation>chanone chambrier de l'Eglise de Paris</occupation>
+              </person>
+              <status>tenant</status>
+              <expert ref="#xpr0250"/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname>Giroux</surname>
+                <forename/>
+              </persName>
+              <occupation>maître maçon</occupation>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0250">Les réparations qui restaient à faire lors de la précédente visite de Taboureur en janvier ont été faites, suivant les règles de l’art. 
+Maçonnerie : (Giroux) : 279 livres 10 sols
+Charpente (Gauthier) : 21livres 2 sols
+Carrelage : 89 livres 10 sols 1 denier
+Serrurerie : 110 livres 17 sols 
+Mensuierie (Deseine) : 152 livres 11 sols 4 deniers
+Vitrerie  (Feuland) : 28 livres 2 sols
+Peinture (Darme) : 17 livres 5 sols
+Pavé Boulanger) : 13 livres 12 sols
+Total des ouvrages de touttes natures fait en ladite maison et constatés par notre procès verbal dudit jour 10 janvier 1776 la somme de 712 livres 9 sols
+à laquelle nous les estimons, reconnoissant qu'il ne reste plus de réparations à faire à ladite maison et qu'elle est en état de réception."</opinion>
+          <arrangement/>
+          <agreement type="conclusion">Conclusion</agreement>
+          <estimate l="" s="" d=""/>
+          <fees detail="true">
+            <fee type="papers" l="5" s="16" d=""/>
+            <fee type="expert" ref="#xpr0250" l="12" s="" d=""/>
+            <fee type="clerk" l="12" s="" d=""/>
+            <fee type="rolls" l="12" s="" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="41" s="16" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="12" s="" d=""/>
+            <expense type="expert" l="" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis/>
+        <noteworthy>Antériorité : pv de visite par Taboureur le 10 janvier 1766 (sentence du LC du 22 décembre 1775) : ouvrages qui restaient alors à faire à ladite maison
+ouvrages faits par
+Maçonnerie : sr Giroux, maître maçon
+Charpenterie : sr Gautier, me charpentier
+Carrelage : sr Jacob l'aîné
+Ferrurerie : sr Lion serrurier
+Menuiserie : sr Desoine, me menuiserie
+Vitrerie : sr Feulau, me vitrier
+Peinture : sr Darme, me peintre
+Pavé: st Boullanger, me paveur</noteworthy>
+      </description>
+    </expertise>

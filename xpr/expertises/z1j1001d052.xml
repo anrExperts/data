@@ -1,0 +1,200 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1001d052">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2017-10-01T12:00:00">2017-10-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1001</idno>
+        <idno type="item">052</idno>
+        <facsimile from="0586" to="0589"/>
+        <physDesc>
+          <extent sketch="false">4</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-04-19" type="paris"/>
+          <date when="1776-06-03" type="paris"/>
+          <date when="1776-08-05" type="paris"/>
+          <date when="1776-09-19" type="paris"/>
+        </sessions>
+        <places>
+          <place type="paris">
+            <address>
+              <street>rue Saint-Paul</street>
+              <buildingNumber/>
+            </address>
+            <complement>Eglise Saint-Paul et la maison curiale</complement>
+            <parish/>
+            <owner/>
+          </place>
+        </places>
+        <categories>
+          <category type="acceptation">Recevoir et évaluer le travail réalisé</category>
+          <designation rubric="true">Estimations d'ouvrages de maçonnerie faits en l'Eglise St Paul, à la requeste des marguilliers  ; MM. Desboeufs et Dumont, experts.</designation>
+        </categories>
+        <procedure>
+          <framework type="b2a">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Châtelet, lieutenant civil et présidial du Chatelet</orgName>
+              <date when="1775-11-18"/>
+              <date when="1776-03-05"/>
+            </sentence>
+          </sentences>
+          <case>fin des travaux de maçonnerie réalisés par Prieur dans l’église Saint-Paul</case>
+          <objects>
+            <object type="other">maçonnerie, église</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0089" context="primary" appointment="appointed">
+              <title>architecte expert</title>
+            </expert>
+            <expert ref="#xpr0104" context="primary" appointment="appointed">
+              <title>architecte expert</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0057">
+              <persName>
+                <surname>Liebault de la Neuville</surname>
+                <forename>Christophe Edouard</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="opponent" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>marguilliers de la paroisse Saint-Paul</surname>
+                  <forename/>
+                </persName>
+                <occupation/>
+              </person>
+              <status>limited-partner</status>
+              <expert ref="#xpr0104"/>
+            </party>
+            <party role="petitioner" presence="true" intervention="false">
+              <person>
+                <persName>
+                  <surname>Prieur</surname>
+                  <forename>François ALexandre</forename>
+                </persName>
+                <occupation>maîre maçon entrepreneur de bâtiment à Paris</occupation>
+              </person>
+              <status>builder</status>
+              <expert ref="#xpr0089"/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="">- Dalles de pierre dure de 6, 7  et 8 pouces d'épaisseur qui ont été déposées, retaillées et reposées, quantité de 6 toises 9 pieds 9 pouces, à raison de 28 livres la toise pou main d'oeuvre et fourniture de plâtre : 175 livres 11 sols 7 deniers
+- Dalles de pierre dure neuve de 6 et 7 pouces d'épaisseur fournis par l'entrepreneur 12 toises 9 pieds 9 pouces, à raison de 50 livres la toise : 623 livres 10 sols 9 deniers
+- Marches de 8 pouces d'épaisseur pareillement fournis par l'entrepreneur, 1 toise et demie 11 pieds 9 pouces, à raison de 56 livres la toise : 102 livres 5 sols 5 deniers
+- Dalle de 12 pouces d'épaisseur, une de 1 toise 9 pieds, à raison de 78 livres la toise : 58 livres 10 sols
+- Taille de pierre de liais 1 toise 2 pieds 3 pouces, à raison de 22 livres la toise : 23 livres 7 sols 6 deniers
+- Taille de pierre dure ordinaire 2 toises et demy, à raison de 18 livres la toise : 45 livres
+- Mur de moellons de 15 pouces d'épaisseur ravallé 2 pieds et demy de superficie : 2 livres
+- Massif de moellons maçonnés en plâtre 1 toise et demi 8 pieds , à raison de 81 livres la toise : 139 livres 5 sols 6 deniers
+- Massif de vieux moelons 1/2 toise 6 pieds 6 pouces, à raison de 36 livres la toise : 24 livres 10 sols
+- Démolition cubes 4 toises 2 pouces, à raison de 22 livres la toise : 90 livres 8 sols 10 deniers
+- Brique de 4 pouces d'épaisseur 1/2 toise, à raison de 24 livres la toise : 12 livres
+- Légers ouvrages en plâtre 22 toises et demi 2 pouces que nous estimons à raison de 9 livres la toise : 202 livres 11 sols 3 deniers
+- articles non susceptibles de toisé par nous estimés à prix d'argent : 137 livres 11 sols 8 deniers
+Revaant ensemble lesdits ouvrages de maçonnerie à : 1636 l. 12 s. 6 d.
+Ce fait noous avons annexé à ces présentes le mémoir qui contient lesdits ouvrages paraphé au bas... pour y avoir recours si besoin. Fait par nous... vous refferrant monsieur d'en ordonner</opinion>
+          <arrangement/>
+          <agreement type="agreement">Accord</agreement>
+          <estimate l="" s="" d=""/>
+          <fees detail="true">
+            <fee type="papers" l="6" s="" d=""/>
+            <fee type="expert" ref="#xpr0089" l="24" s="" d=""/>
+            <fee type="expert" ref="#xpr0104" l="24" s="" d=""/>
+            <fee type="clerk" l="24" s="" d=""/>
+            <fee type="rolls" l="18" s="" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="96" s="" d=""/>
+          </fees>
+          <expenses mentioned=""/>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis/>
+        <noteworthy>nomination de l'expert : lors de la première sentence, la fabrique avait nommé Egresset comme expert, c'est finalement Dumont qui officie</noteworthy>
+      </description>
+    </expertise>

@@ -1,0 +1,210 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1001d056">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent xmlns="eac">
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-06-15T15:34:54.934+02:00">2021-06-15T15:34:54.934+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateKeywordsAttr_files.xqy/BaseX</agent>
+            <eventDescription>Ajout des @value pour les mots clés (estates).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2017-10-01T12:00:00">2017-10-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1001</idno>
+        <idno type="item">056</idno>
+        <facsimile from="0634" to="0637"/>
+        <physDesc>
+          <extent sketch="false">4</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-04-20" type="province"/>
+        </sessions>
+        <places>
+          <place type="suburbs">
+            <address/>
+            <complement>bourg distant de 6 lieux de Montlhéry, grande rue à gauche en venant de Paris, occupée par le nommé Champagne maçon</complement>
+            <city>Montlhéry</city>
+            <district/>
+            <owner/>
+          </place>
+        </places>
+        <categories>
+          <category type="assessment">Décrire et évaluer les travaux à venir</category>
+          <designation rubric="true">Visitte et état des maison et des réparations à y faire, à Montlhéry, à la requeste des demoiselle Pialoux ; M. Bourgeois, expert.</designation>
+        </categories>
+        <procedure>
+          <framework type="b2a">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Châtelet, lieutenant civil (sentence)</orgName>
+              <date when="1775-11-24"/>
+            </sentence>
+          </sentences>
+          <case>Partage des réparations à faire entre usufruitier et nus-propriétaires</case>
+          <objects>
+            <object type="house">Maison(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0038" context="primary" appointment="appointed">
+              <title>architecte expert entrepreneur de bâtiments à Paris</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0055">
+              <persName>
+                <surname>Bouillerot</surname>
+                <forename>Joseph</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Pialoux</surname>
+                  <forename>Marie</forename>
+                </persName>
+                <occupation>ayant la nue propriété de la maison, filels majeures héritières conjointement de Catherine Le Maréchal épouse d'andré Pialoux chirurgien à Linas, curateur à al succession vacante de défunte Jeanne Le Maréchal... propritaires par indivis quant à la nue propriété</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Pialoux</surname>
+                  <forename>Jeanne Louise</forename>
+                </persName>
+                <occupation>ayant la nue propriété de la maison</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Pialoux</surname>
+                  <forename>Catherine</forename>
+                </persName>
+                <occupation>ayant la nue propriété de la maison</occupation>
+              </person>
+              <status>joint-owner</status>
+              <expert ref="#xpr0038"/>
+            </party>
+            <party role="opponent" presence="true" intervention="false">
+              <person>
+                <persName>
+                  <surname>Usquin</surname>
+                  <forename>Claude</forename>
+                </persName>
+                <occupation>marchand de vin à Paris, propriétaire usufruitier de la maison</occupation>
+              </person>
+              <status>owner</status>
+              <expert ref="#xpr0038"/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0038">Telles sont monsieur les réparations à faire à ladite maison et son état et à vous référant d'en ordonner, fait par nous architecte expert susdit....</opinion>
+          <arrangement/>
+          <agreement type="conclusion">Conclusion</agreement>
+          <estimate l="" s="" d=""/>
+          <fees detail="true">
+            <fee type="papers" l="6" s="" d=""/>
+            <fee type="expert" ref="#xpr0038" l="36" s="" d=""/>
+            <fee type="clerk" l="36" s="" d=""/>
+            <fee type="rolls" l="16" s="" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="94" s="" d=""/>
+          </fees>
+          <expenses mentioned=""/>
+        </conclusions>
+        <keywords group="estates">
+          <term value="a4">Biens vacants</term>
+          <term value="a7">Usufruit</term>
+        </keywords>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder">
+          <term value="m3">Infiltration / fuite (dégâts des eaux ou autres)</term>
+          <term value="m6">Dégradation</term>
+        </keywords>
+        <keywords group="transformation"/>
+        <analysis>Les demoiselles Pialoux sont filles majeures, héritières conjointement de Catherine Le Maréchal épouse André Pialoux, chirurgien, de Lucie Le Maréchal, fille majeure seule héritière de Joseph Le Maréchal, chevalier, son père</analysis>
+        <noteworthy/>
+      </description>
+    </expertise>

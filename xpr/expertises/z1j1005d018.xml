@@ -1,0 +1,257 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1005d018">
+  <meta/>
+  <control>
+    <maintenanceStatus>revised</maintenanceStatus>
+    <publicationStatus/>
+    <localControl localType="detailLevel">
+      <term>completed</term>
+    </localControl>
+    <maintenanceHistory>
+      <maintenanceEvent>
+                <eventType>revised</eventType>
+                <eventDateTime standardDateTime="2021-10-15T13:28:00Z">2021-10-15T13:28:00Z</eventDateTime>
+                <agentType>human</agentType>
+                <agent>llosserand</agent>
+                <eventDescription>exb3</eventDescription>
+            </maintenanceEvent>
+          <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateObjectsValues_db.xqy/BaseX</agent>
+        <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateOpinionRef_files.xqy/BaseX</agent>
+        <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateRefValues_files.xqy/BaseX</agent>
+        <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+        <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>revised</eventType>
+        <eventDateTime standardDateTime="2020-07-01T12:00:00">2020-07-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>llosserand</agent>
+        <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>retroconverted</eventType>
+        <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>ead2xpr.xsl/Saxon9</agent>
+        <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>created</eventType>
+        <eventDateTime standardDateTime="2017-10-01T12:00:00">2017-10-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>JH</agent>
+        <eventDescription>Création de la fiche.</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+  </control>
+  <sourceDesc>
+    <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1005</idno>
+    <idno type="item">018</idno>
+    <facsimile from="0171" to="0181"/>
+    <physDesc>
+      <extent sketch="false">10</extent>
+    </physDesc>
+  </sourceDesc>
+  <description>
+    <sessions>
+      <date when="1776-07-09" type="suburbs"/>
+      <date when="1776-07-09" type="province"/>
+      <date when="1776-07-10" type="province"/>
+    </sessions>
+    <places>
+      <place xml:id="id20d299" type="province">
+        <address/>
+        <complement>maisons, ferme, jardin, clos et bois taillis</complement>
+        <city>Cheptainville et environs</city>
+        <district/>
+        <owner/>
+      </place>
+      <place xml:id="id20d315" type="province">
+        <address/>
+        <complement>91 arpents 26 perches 3/4</complement>
+        <city>Cheptainville et environs</city>
+        <district/>
+        <owner/>
+      </place>
+    </places>
+    <categories>
+      <category type="estimation">Estimer la valeur des biens</category>
+      <designation rubric="true">Estimation de maisons, fermes et terres en dépendants, scizes à Cheptainville et ez environ dépendants des succession des sieur et dame Barat ; M. Delespine, expert.</designation>
+    </categories>
+    <procedure>
+      <framework type="b2">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+      <origination type="institution">Une institution</origination>
+      <sentences>
+        <sentence>
+          <orgName>Châtelet, lieutenant civil (sentence)</orgName>
+          <date when="1776-06-21"/>
+        </sentence>
+      </sentences>
+      <case>Succession Barat ; liquidation, partage et licitation des biens</case>
+      <objects>
+        <object type="plot">Terrain(s)</object>
+        <object type="buildings">Ensemble de bâtiments (biens immeubles)</object>
+      </objects>
+    </procedure>
+    <participants>
+      <experts>
+        <expert ref="#xpr0085" context="primary" appointment="appointed">
+          <title>architecte juré expert bourgeois en titre d’office</title>
+        </expert>
+      </experts>
+      <clerks>
+        <clerk ref="#clrk0067">
+          <persName>
+            <surname>Goüel</surname>
+            <forename>Gilles Louis</forename>
+          </persName>
+        </clerk>
+      </clerks>
+      <parties>
+        <party role="petitioner" presence="true" intervention="false">
+          <person>
+            <persName>
+              <surname>Bolle d’Entrecourt</surname>
+              <forename>Jean Léonard</forename>
+            </persName>
+            <occupation/>
+          </person>
+          <person>
+            <persName>
+              <surname>Barat</surname>
+              <forename>Marie Dominique</forename>
+            </persName>
+            <occupation>son épouse, héritière pour 1/3 de défuntBarat, Charles, avocat au parlement, son père, et héritière pour moitié de défunteBarat, Claude Louise Henriette, décédée fille majeure, sa sœur, qui était elle-même héritière pour 1/3 de leur père : en ces qualités, propriétaire pour moitié de la maison et des biens en dépendant</occupation>
+          </person>
+          <status>heir</status>
+          <expert ref="#xpr0085"/>
+          <prosecutor>
+            <persName>
+              <surname>Berthereau</surname>
+              <forename/>
+            </persName>
+          </prosecutor>
+        </party>
+        <party role="opponent" presence="" intervention="">
+          <person>
+            <persName>
+              <surname>Hérivaux</surname>
+              <forename>Louis Pierre</forename>
+            </persName>
+            <occupation>avocat au parlement, professeur d’éloquence en l’université de Paris, au nom et comme tuteur de Hérivaux, Claude Julie et Hérivaux, Louis, enfants mineurs de lui et de défunteBarat, Henriette, son épouse, eux héritiers par représentation de leur mère chacun pour 1/6 du défunt Barat, Charles, leur aïeul maternel, et chacun pour ¼ deBarat, Claude Louise Henriette, leur tante, laquelle était héritière pour le dernier 1/3 du défunt Barat, Charles son père : en ces qualités, propriétaires chacun pour ¼ de la maison et dépendances</occupation>
+          </person>
+          <person>
+            <persName>
+              <surname>Hérivaux</surname>
+              <forename>Claude Julie</forename>
+            </persName>
+            <occupation/>
+          </person>
+          <person>
+            <persName>
+              <surname>Hérivaux</surname>
+              <forename>Louis</forename>
+            </persName>
+            <occupation/>
+          </person>
+          <status>heir</status>
+          <expert ref="#xpr0085"/>
+          <representative>
+            <persName>
+              <surname>Frérot</surname>
+              <forename/>
+            </persName>
+            <occupation/>
+          </representative>
+        </party>
+      </parties>
+      <craftmen>
+        <craftman>
+          <persName>
+            <surname/>
+            <forename/>
+          </persName>
+          <occupation/>
+        </craftman>
+      </craftmen>
+    </participants>
+    <conclusions>
+      <opinion ref="#xpr0085">« Et toute consideration faitte sur l’étendue desdites ferme, maisons, cours, jardin, clos et bois taillés, sur la forme, distribution et la mauvaise construction des batimens, sur ce que le tout peut produire annuellement de loyer eu égard au lieu où cesdites maisons, ferme et dépendances sont situées, aux réparations à faire aux bâtimens et murs de cloture, lesquelles réparations sont assez conséquentes et eu égard au cours du temps présent, Nous estimons les susdites ferme, maisons, cours, jardin, clos et bois taillis au derriere dudit clos dans leur état actuel sus déclaré, ainsi que le tout se poursuit et comporte et s’étend de toute part, circonstances et dépendances sans reserve, à la charge seulement des cens et droits seigneuriaux (ne nous ayant été remis aucuns titres qui nous annoncent d’autres charges) valloir la somme de neuf mille livres, cy… 9 000 l. … 
+Toutes lesquelles sudites pieces de terre au nombre de soixante quatre … reviennent ensemble d’après l’estimation que nous venons d’en faire relativement à leur différente nature, à la somme de dix huit mille huit cent cinquante une livres, cy… 18 851 l. 
+Récapitulation de la valleur des immeubles compris au présent proces verbal, scavoir 
+Les maisons, ferme, jardin, clos et bois taillis au derriere dudit clos… 9 000 l. 
+Et les quatre vingt onze arpents vingt six perches trois quarts… 18 851 l. 
+Ces deux sommes composent ensemble celle de… 27 851 l. 
+Nous observons que d’après la déclaration qui nous a été faite par ledit sieur Marchand de la quantité de toutes les pieces de terre scituées sur le terroir de Chetainville et la seigneurie de la Boucherie, il se trouve une moindre quantité que celle portée en la déclaration du trente novembre mil sept cent soixante dix et dont extrait est en tête de notre présent procès verbal, laquelle quantité en moins est de trois arpents vingt quatre perches, le clos et le bois taillis au derriere faisant partie de l’estimation par nous faitte desdittes maisons ferme et jardin nous ignorons d’où cela peut provenir ce que nous rapportons seulement à titre d’observation, cy… observation 
+Tel est, Monsieur, la visitte par nous faitte des maisons, ferme, jardin, clos, bois taillés et pieces de terre dont est question, la valleur de ces immeubles et notre avis sur l’impossibilité de partager lesdites maisons, ferme, jardin clos et bois taillés au derriere et la possibilité de partager lesdites pieces de terres vous référant d’ordonner sur le tout, cy… référé. Fait par nous architecte expert soussigné les jour mois et an susdits »</opinion>
+      <arrangement/>
+      <agreement type="conclusion">Conclusion</agreement>
+      <estimate l="27851" s="" d=""/>
+      <estimates>
+        <place ref="#id20d299">
+          <appraisal l="9000" s="" d="">
+            <desc>maisons, ferme, jardin, clos et bois taillis</desc>
+          </appraisal>
+        </place>
+        <place ref="#id20d315">
+          <appraisal l="18851" s="" d="">
+            <desc>terres de 91 arpents 26 perches 3/4</desc>
+          </appraisal>
+        </place>
+      </estimates>
+      <fees detail="true">
+        <fee type="papers" l="18" s="" d=""/>
+        <fee type="expert" ref="#xpr0085" l="96" s="" d=""/>
+        <fee type="clerk" l="96" s="" d=""/>
+        <fee type="rolls" l="36" s="" d=""/>
+        <fee type="prosecutors" l="" s="" d=""/>
+        <fee type="help" l="" s="" d=""/>
+        <fee type="plans" l="" s="" d=""/>
+        <total l="246" s="" d=""/>
+      </fees>
+      <expenses mentioned="true">
+        <expense type="expert" l="24" s="" d=""/>
+        <expense type="clerk" l="61" s="" d=""/>
+      </expenses>
+    </conclusions>
+    <keywords group="estates"/>
+    <keywords group="procedure"/>
+    <keywords group="contract"/>
+    <keywords group="encumbrance"/>
+    <keywords group="law"/>
+    <keywords group="measurement"/>
+    <keywords group="repairs"/>
+    <keywords group="guarantees"/>
+    <keywords group="responsability"/>
+    <keywords group="ownership"/>
+    <keywords group="value"/>
+    <keywords group="neighbourhood"/>
+    <keywords group="disorder"/>
+    <keywords group="transformation"/>
+    <analysis/>
+    <noteworthy>impossibilité de partager les maisons mais possibilité de partager les terres
+*nomination de l'expert "... vous avez donné lettres audit sieur Hérivaux de ce qu'il nommoit pour expert Delespine, architecte nommé d'office pour ses enfans mineurs par votre sentence du 26 avril dernier, et auxdit sieur et dame d'Entrecourt de ce qu'ils nous nommoient aussi"</noteworthy>
+  </description>
+</expertise>

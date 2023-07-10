@@ -1,0 +1,204 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j526d061">
+  <meta/>
+  <control>
+    <maintenanceStatus>revised</maintenanceStatus>
+    <publicationStatus/>
+    <localControl localType="detailLevel">
+      <term>completed</term>
+    </localControl>
+    <maintenanceHistory>
+      <maintenanceEvent>
+                <eventType>revised</eventType>
+                <eventDateTime standardDateTime="2022-08-30T13:08:58Z">2022-08-30T13:08:58Z</eventDateTime>
+                <agentType>human</agentType>
+                <agent>llosserand</agent>
+                <eventDescription>rvpcd</eventDescription>
+            </maintenanceEvent>
+          <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateObjectsValues_db.xqy/BaseX</agent>
+        <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateOpinionRef_files.xqy/BaseX</agent>
+        <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-05-19T11:39:45.99+02:00">2021-05-19T11:39:45.99+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateAgreementType_files.xqy/BaseX</agent>
+        <eventDescription>Mise à jour de la valeur "Dispositif de l’expertise" lorsqu'il n'y a qu’un seul expert ('agreement' devient 'conclusion').</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateRefValues_files.xqy/BaseX</agent>
+        <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-04-21T20:45:33.927+02:00">2021-04-21T20:45:33.927+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateKeywordsModule_files.xqy/BaseX</agent>
+        <eventDescription>Mise à jour du module keywords.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-04-21T20:44:31.814+02:00">2021-04-21T20:44:31.814+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateExpertisesArrangement_files.xqy/BaseX</agent>
+        <eventDescription>Ajout du champs Accommodement dans l'éventualité d’une résolution par les parties.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+        <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>created</eventType>
+        <eventDateTime standardDateTime="2020-04-01T12:00:00">2020-04-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>llosserand</agent>
+        <eventDescription>Création de la fiche.</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+  </control>
+  <sourceDesc>
+    <unitdate>1716</unitdate>
+    <idno type="unitid">Z1J526</idno>
+    <idno type="item">61</idno>
+    <facsimile from="0730" to="0735"/>
+    <physDesc>
+      <extent sketch="false">6</extent>
+      <appendices>
+        <appendice>
+          <type type="other">reçu de paiement</type>
+          <extent>1</extent>
+          <desc>formulaire imprimé</desc>
+          <note>6 livres
+28 aout 1716</note>
+        </appendice>
+      </appendices>
+    </physDesc>
+  </sourceDesc>
+  <description>
+    <sessions>
+      <date when="1716-06-25" type="suburbs"/>
+      <date when="1716-07-16" type="suburbs"/>
+    </sessions>
+    <places>
+      <place type="suburbs">
+        <address/>
+        <complement>maison curialle</complement>
+        <city>Charonne</city>
+        <district/>
+        <owner/>
+      </place>
+    </places>
+    <categories>
+          <category type="assessment">Décrire et évaluer les travaux à venir</category>
+      
+      
+      <designation rubric="false">Visite des réparations à la maison curiale de Charonne, pour M Grégoire, curé. DEmeseretz expert</designation>
+    </categories>
+    <procedure>
+      <framework type="b2">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+      <origination type="institution">Une institution</origination>
+      <sentences>
+        <sentence>
+          <orgName>LC</orgName>
+          <date when="1716-065-16"/>
+        </sentence>
+      </sentences>
+      <case>passation de curé</case>
+      <objects>
+        <object type="house">Maison(s)</object>
+      </objects>
+    </procedure>
+    <participants>
+      <experts>
+        <expert ref="#xpr0077" context="primary" appointment="court-appointed">
+          <title>architecte du roi expert bourgeois de Paris</title>
+        </expert>
+      </experts>
+      <clerks>
+        <clerk ref="#clrk0008">
+          <persName>
+            <surname>Villain</surname>
+            <forename/>
+          </persName>
+        </clerk>
+      </clerks>
+      <parties>
+        <party role="petitioner" presence="true" intervention="true">
+          <person>
+            <persName>
+              <surname>Gregoire</surname>
+              <forename>Michel</forename>
+            </persName>
+            <occupation>prêtre docteur de Sorbonne curé de Charonne</occupation>
+          </person>
+          <status>owner</status>
+          <expert ref="#xpr0077"/>
+        </party>
+        <party role="opponent" presence="true" intervention="false">
+          <person>
+            <persName>
+              <surname>Mors</surname>
+              <forename>Blanche</forename>
+            </persName>
+            <occupation>veuve de Gilbert Hugon seigneur de Fourchault héritière de Jean Guenot prêtre curé de ladite église de Charonne</occupation>
+          </person>
+          <status>heir</status>
+          <expert ref="#xpr0077"/>
+        </party>
+      </parties>
+      <craftmen>
+        <craftman>
+          <persName>
+            <surname/>
+            <forename/>
+          </persName>
+          <occupation/>
+        </craftman>
+      </craftmen>
+    </participants>
+    <conclusions>
+      <agreement type="conclusion">Conclusion</agreement>
+      <opinion ref="#xpr0077">C'est l'état et déclaration des réparations dont la succession dudit deffunt sieur curé est tenue distinctement de celles qui sont à la charge des habitans à l'exception des articles par nous (?) en réserve pour estre iceux par vos monsieur jugé ce qu'il vous plaira selon vostre prudance et justice ordinaire.</opinion>
+      <arrangement/>
+      <estimate/>
+      <fees detail="false">
+        <total l="" d="" s=""/>
+      </fees>
+      <expenses mentioned="false"/>
+    </conclusions>
+    <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+    <analysis/>
+    <noteworthy>- nomination de l'expert : le curé requérant s'en remet au LC tandis que l'opposant n'en nomme pas : expert nommé d'office.
+- La 1èe vacation est reportée en raison de l'absence des opposants
+- "pour et par iceluy expert distinguer les réparations à quy sont à la charge desdits habitants tant les réparations locatives et usufruitières que celles quy sont devenus grosses réparations faute d'avoir fait les réparations locatives et viagères ensemble voir et visiter les réparations dont ils peuvent estre tenus..."</noteworthy>
+  </description>
+</expertise>

@@ -1,0 +1,205 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j899d047">
+  <meta/>
+  <control>
+    <maintenanceStatus>revised</maintenanceStatus>
+    <publicationStatus/>
+    <localControl localType="detailLevel">
+      <term>completed</term>
+    </localControl>
+    <maintenanceHistory>
+      <maintenanceEvent>
+                <eventType>revised</eventType>
+                <eventDateTime standardDateTime="2022-08-11T13:56:01Z">2022-08-11T13:56:01Z</eventDateTime>
+                <agentType>human</agentType>
+                <agent>llosserand</agent>
+                <eventDescription>rvpcd</eventDescription>
+            </maintenanceEvent>
+          <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateOpinionRef_files.xqy/BaseX</agent>
+        <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateRefValues_files.xqy/BaseX</agent>
+        <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-04-21T20:45:33.927+02:00">2021-04-21T20:45:33.927+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateKeywordsModule_files.xqy/BaseX</agent>
+        <eventDescription>Mise à jour du module keywords.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-04-21T20:45:02.355+02:00">2021-04-21T20:45:02.355+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateExpertsFees_files.xqy/BaseX</agent>
+        <eventDescription>Mise à jour du coûts de l'expertise pour les experts.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-04-21T20:44:31.814+02:00">2021-04-21T20:44:31.814+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateExpertisesArrangement_files.xqy/BaseX</agent>
+        <eventDescription>Ajout du champs Accommodement dans l'éventualité d’une résolution par les parties.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+        <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>created</eventType>
+        <eventDateTime standardDateTime="2019-10-01T12:00:00">2019-10-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>llosserand</agent>
+        <eventDescription>Création de la fiche.</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+  </control>
+  <sourceDesc>
+    <unitdate>1766</unitdate>
+    <idno type="unitid">Z1J899</idno>
+    <idno type="item">47</idno>
+    <facsimile from="0751" to="0757"/>
+    <physDesc>
+      <extent sketch="false">7</extent>
+    </physDesc>
+  </sourceDesc>
+  <description>
+    <sessions>
+      <date when="1766-02-20" type="paris"/>
+      <date when="1767-02-03" type="paris"/>
+      <date when="1767-02-03" type="paris"/>
+    </sessions>
+    <places>
+      <place type="office">
+        <address/>
+      </place>
+    </places>
+    <categories>
+      <category type="acceptation">Recevoir et évaluer le travail réalisé</category>
+      <designation rubric="true">Estimaton d'honoraires dus au sieur Ducamp, me maçon entrepreneur (?)  ; MM. Desboeufs et de Besse, experts ; Liébault de la Neuville, greffier</designation>
+    </categories>
+    <procedure>
+      <framework type="b2">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+      <origination type="institution">Une institution</origination>
+      <sentences>
+        <sentence>
+          <orgName>LC</orgName>
+          <date when="1766-01-08"/>
+          <date when="1765-09-03"/>
+        </sentence>
+      </sentences>
+      <case>fin des travaux ?</case>
+      <objects>
+        <object type="other">honoraire d'architecte</object>
+      </objects>
+    </procedure>
+    <participants>
+      <experts>
+        <expert ref="#xpr0089" context="primary" appointment="appointed">
+          <title>architecte expert</title>
+        </expert>
+        <expert ref="#xpr0070" context="primary" appointment="appointed">
+          <title>architecte expert</title>
+        </expert>
+      </experts>
+      <clerks>
+        <clerk ref="#clrk0057">
+          <persName>
+            <surname>Liébault de Laneuville</surname>
+            <forename>Christophe Edouard</forename>
+          </persName>
+        </clerk>
+      </clerks>
+      <parties>
+        <party role="petitioner" presence="true" intervention="false">
+          <person>
+            <persName>
+              <surname>Ducamp</surname>
+              <forename>Jean Alexandre</forename>
+            </persName>
+            <occupation>maître maçon entrepreneur de bâtiments</occupation>
+          </person>
+          <status>builder</status>
+          <expert ref="#xpr0070"/>
+        </party>
+        <party role="opponent" presence="false" intervention="false">
+          <person>
+            <persName>
+              <surname>Marquis de Poyamme</surname>
+              <forename/>
+            </persName>
+            <occupation>lieutenant général des armes du roi</occupation>
+          </person>
+          <status>limited-partner</status>
+          <expert ref="#xpr0089"/>
+          <prosecutor>
+            <persName>
+              <surname>Le Roux</surname>
+              <forename>André Jean</forename>
+            </persName>
+          </prosecutor>
+        </party>
+      </parties>
+      <craftmen>
+        <craftman>
+          <persName>
+            <surname/>
+            <forename/>
+          </persName>
+          <occupation/>
+        </craftman>
+      </craftmen>
+    </participants>
+    <conclusions>
+      <agreement type="agreement">Accord</agreement>
+      <opinion ref="#xpr0070 #xpr0089">"Revenant ensemble les honoraires dus par mondit seigneur marquis de Poyanne audit sieur Ducamp pour les plans, desseins, coupes, profils, élévations de l'employ du terrein du petit hôtel de Bacquencourt et du pavillon posé pour joindre à un château en province, les copies qu'il ont été fournies du tout, le devis estimatif des ouvrages à faire audit petit hôtel de Bacquencourt et l'état et vériffication des lieux dudit petit hôtel de Bacquencourt à la somme totale de 618 livre.
+C'est Monsieur la valeur des plans, devis projets coupes profils élévations et état des lieux dont il s'agit sur quoy nous vous refferons d'ordonner."</opinion>
+      <arrangement/>
+      <estimate/>
+      <fees detail="true">
+        <fee ref="#xpr0089" type="expert" l="36" s="" d=""/>
+        <fee ref="#xpr0070" type="expert" d="" l="" s=""/>
+        <fee type="clerk" l="18" s="" d=""/>
+        <fee type="rolls" l="19" s="" d=""/>
+        <fee type="papers" l="5" s="" d=""/>
+        <fee type="plans" l="" s="" d=""/>
+        <fee type="prosecutors" l="" s="" d=""/>
+        <fee type="help" l="" s="" d=""/>
+        <total l="78" d="" s=""/>
+      </fees>
+      <expenses mentioned="true">
+        <expense type="clerk" l="18" s="5" d=""/>
+        <expense type="expert" l="6" s="" d=""/>
+      </expenses>
+    </conclusions>
+    <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value">
+          <term value="k5">Honoraires</term>
+        </keywords>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+    <analysis/>
+    <noteworthy>sentence "à ce qu'il fut donné lettres de ses offres de payer audit sieur Ducamp suivant l'estimation qui en seroit faite le plan par luy fait pour l'employ qu'il seroit possible de faire d'un petit terrain joignant l'hôtel de Bacquecourt plus le plan d'un pavillon pour un château de campagne et enfin le travail pour lé vériffication et réception de l'état des lieux du petit hôtel de Bacqueucourts occupé par le sieur d'Igoville et pour constatter les réparations locatives à y faire et à l'égars du surplus de la demande dudit sieur Ducamp à ce qu'il fut ordonné que ledit sieur marquis de Poyanne en seroit déchargé aux offres d'affirmer qu'il n'avoit point donné d'ordres et deffendeur d'une part. Ledit sieur Ducamp deffendeur et demandeur d'autre part.</noteworthy>
+  </description>
+</expertise>

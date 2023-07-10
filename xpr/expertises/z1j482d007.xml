@@ -1,0 +1,229 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j482d007">
+      <meta/>
+      <control>
+        <maintenanceStatus/>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term/>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:45:33.927+02:00">2021-04-21T20:45:33.927+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateKeywordsModule_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour du module keywords.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:45:02.355+02:00">2021-04-21T20:45:02.355+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateExpertsFees_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour du coûts de l'expertise pour les experts.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:44:31.814+02:00">2021-04-21T20:44:31.814+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateExpertisesArrangement_files.xqy/BaseX</agent>
+            <eventDescription>Ajout du champs Accommodement dans l'éventualité d’une résolution par les parties.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:43:53.154+02:00">2021-04-21T20:43:53.154+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateExpertisesPlacesEstimates_files.xqy/BaseX</agent>
+            <eventDescription>Ajout des champs pour l'estimation des lieux.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2020-02-01T12:00:00">2020-02-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1706</unitdate>
+    <idno type="unitid">Z1J482</idno>
+        <idno type="item">7</idno>
+        <facsimile from="0087" to="0091"/>
+        <physDesc>
+          <extent sketch="false">4</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1706-06-25" type="province"/>
+        </sessions>
+        <places>
+          <place xml:id="id59673d1" type="province">
+            <address/>
+            <complement>maison appelée l'Epée royale</complement>
+            <city>Gonnesse</city>
+            <district/>
+            <owner>succession Duplessis / succession Broyer</owner>
+          </place>
+          <place xml:id="id59673d11" type="province">
+            <address/>
+            <complement>rue Saint-Nicolas, ruelle de l’église</complement>
+            <city>Gonnesse</city>
+            <district/>
+            <owner>succession Duplessis / succession Broyer</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="estimation">Estimer la valeur des biens</category>
+          <designation rubric="true">Estimation de maisons</designation>
+        </categories>
+        <procedure>
+          <framework type="b2b">L’institution est saisie dans le cadre d’une procédure (l’institution nomme un ou deux experts)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>lieutenant civil</orgName>
+              <date when="1706-04-23"/>
+            </sentence>
+          </sentences>
+          <case>Estimation de maisons en vue d'un transfert de propriété pour remboursement de
+                    créances dans le cadre d'une succession vacante</case>
+          <objects>
+            <object type="house">Maison(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0153" context="primary" appointment="court-appointed">
+              <title>expert juré du roi entrepreneur de bâtiments à Paris</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0014">
+              <persName>
+                <surname>Baudouin</surname>
+                <forename/>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="false" intervention="">
+              <person>
+                <persName>
+                  <surname>Barthelemy</surname>
+                  <forename>Geneviève</forename>
+                </persName>
+                <occupation>veuve de Paul Duplessis</occupation>
+              </person>
+              <status>heir</status>
+              <expert ref="#xpr0153"/>
+            </party>
+            <party role="opponent" presence="false" intervention="">
+              <person>
+                <persName>
+                  <surname>de Pommereuil</surname>
+                  <forename>Laurent Simon</forename>
+                </persName>
+                <occupation>curateur à la succession vacante d'Elisabeth Broyer,
+                                première femme du défunt Paul Duplessis, elle-même débitrice envers
+                                Geneviève Barthélémy</occupation>
+              </person>
+              <status>mortgagor</status>
+              <expert ref="#xpr0153"/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0153">1/ « J’ay ensuitte veu et examiné ladite maison en toutte son étendue et
+                    trouvé qu’il y a beaucoup de grosses réparations à y faire tant aux gros murs de
+                    face des pignons et de reffend qui sont bouclez fractionnez et corrompus … les
+                    deux voutes decave menassant ruyne par leur mauvais estat et dont partie seroit
+                    tombée s’il n’y avoit esté posé des estayes, les marches et coquille de
+                    l’escallier estant aussy fractionné et corrompus et beaucoup d’autres
+                    réparations à faire dont on ne peut se dispenser en consideration de quoy et de
+                    l’endroit que ladite maison est scituez et par raport au cours du temps present,
+                    j’ay prisé et estimé ladite maison la somme de 1400 l. eu égard à ce que dessus
+                    et à la charge du cens seulement cy… 1400 l. » 2/ rue Saint-Nicolas, ruelle de
+                    l’église « J’ay observé qu’il y a un nombre de grosses reparations à faire en
+                    differends endroits de ladite maison et nottamment aux gros murs de reffends et
+                    de separations et de ceux de face tant de la rue que de la cour… en
+                    consideration de quoy et par raport au cours du temps présent et endroit où
+                    ladite maison est scituée ce qui ne peut estre louée qu’à de mediocre
+                    locataires, ce qui ne peut produire qu’un très petit loyer j’ay prisé et estimé
+                    ladtite maison la somme de six cent livres eu égard à ce que dessus et à la
+                    charge du cens seulement cy… 600 l. »</opinion>
+          <agreement type="conclusion">Conclusion</agreement>
+          <arrangement/>
+          <estimate l="2000" s="" d=""/>
+          <estimates>
+            <place ref="#id59673d1">
+              <appraisal l="" s="" d="">
+                <desc/>
+              </appraisal>
+            </place>
+            <place ref="#id59673d11">
+              <appraisal l="" s="" d="">
+                <desc/>
+              </appraisal>
+            </place>
+          </estimates>
+          <fees detail="true">
+            <fee ref="#xpr0153" type="expert" l="12" s="" d=""/>
+            <fee type="clerk" l="" s="" d=""/>
+            <fee type="rolls" l="" s="" d=""/>
+            <fee type="papers" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <total l="" s="" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="15" s="" d=""/>
+            <expense type="expert" l="" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords type="technical">
+          <term>murs bouclés</term>
+        </keywords>
+        <keywords group=""/>
+        <analysis/>
+        <noteworthy/>
+      </description>
+    </expertise>

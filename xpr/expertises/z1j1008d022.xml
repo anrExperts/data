@@ -1,0 +1,193 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1008d022">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-09-01T12:00:00">2020-09-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2018-01-01T12:00:00">2018-01-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>PC</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1008</idno>
+        <idno type="item">022</idno>
+        <facsimile from="0231" to="0233"/>
+        <physDesc>
+          <extent sketch="false">2</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-10-11" type="paris"/>
+          <date when="1776-10-12" type="paris"/>
+        </sessions>
+        <places>
+          <place type="paris">
+            <address>
+              <street>Boulevard de la Butte du Montparnasse près Paris.</street>
+              <buildingNumber/>
+            </address>
+            <complement/>
+            <parish/>
+            <owner>Dude</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="acceptation">Recevoir et évaluer le travail réalisé</category>
+          <designation rubric="true">Visite et estimation d’ouvrages de serrurerie</designation>
+        </categories>
+        <procedure>
+          <framework type="b2b">L’institution est saisie dans le cadre d’une procédure (l’institution nomme un ou deux experts)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Chambre des requêtes, sentence du 20 septembre 1776.</orgName>
+              <date when="1776-09-20"/>
+            </sentence>
+          </sentences>
+          <case>Estimer les ouvrages de serrurerie réalisés pour le compte du Sieur Dude, par feu le Sieur Gateau, à la demande de son épouse au nom de leur communauté de biens, la Dame Maleau.</case>
+          <objects>
+            <object type="other">ouvrages de serrurerie</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0070" context="primary" appointment="appointed">
+              <title>architecte expert</title>
+            </expert>
+            <expert ref="#xpr0101" context="primary" appointment="court-appointed">
+              <title>architecte expert</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0064">
+              <persName>
+                <surname>Gobert</surname>
+                <forename>Jean Charles Simon</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="true" intervention="false">
+              <person>
+                <persName>
+                  <surname>Maleau</surname>
+                  <forename>Marie Nicole</forename>
+                </persName>
+                <occupation>veuve du Sieur Gateau Edme Philippe Auguste</occupation>
+              </person>
+              <status>heir</status>
+              <expert ref="#xpr0070"/>
+              <prosecutor>
+                <persName>
+                  <surname>Naudon</surname>
+                  <forename>Jean Claude Joseph</forename>
+                </persName>
+              </prosecutor>
+            </party>
+            <party role="opponent" presence="true" intervention="false">
+              <person>
+                <persName>
+                  <surname>Dude</surname>
+                  <forename/>
+                </persName>
+                <occupation/>
+              </person>
+              <status>limited-partner</status>
+              <expert ref="#xpr0101"/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="">« Revenant ensemble lesdits ouvrages de serrurerie selon nos estimations à la somme de deux cent cinquante trois livres et dix sols, cy 253 l. 10 s. »</opinion>
+          <arrangement/>
+          <agreement type="agreement">Accord</agreement>
+          <estimate l="253" s="10" d=""/>
+          <fees detail="true">
+            <fee type="papers" l="6" s="" d=""/>
+            <fee type="expert" ref="#xpr0101" l="15" s="" d=""/>
+            <fee type="expert" ref="#xpr0101" l="15" s="" d=""/>
+            <fee type="clerk" l="15" s="" d=""/>
+            <fee type="rolls" l="12" s="" d=""/>
+            <fee type="prosecutors" l="5" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="other" l="1" s="4" d="">Annexe</fee>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="69" s="4" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="expert" l="10" s="" d=""/>
+            <expense type="clerk" l="13" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis/>
+        <noteworthy/>
+      </description>
+    </expertise>

@@ -1,0 +1,202 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j583d009">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-11-01T12:00:00">2020-11-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2016-10-26T12:00:00">2016-10-26T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>RB</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1726</unitdate>
+    <idno type="unitid">Z1J583</idno>
+        <idno type="item">009</idno>
+        <facsimile from="0086" to="0091"/>
+        <physDesc>
+          <extent sketch="false">4</extent>
+          <appendices>
+            <appendice>
+              <type type="other">Assignation</type>
+              <extent>1</extent>
+              <desc>convocation délivrée à Mouchard le 2 septembre 1726</desc>
+              <note/>
+            </appendice>
+          </appendices>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1726-09-05" type="province"/>
+        </sessions>
+        <places>
+          <place type="province">
+            <address/>
+            <complement/>
+            <city>Villiers-la-Garenne [Hauts-de-Seine]</city>
+            <district/>
+            <owner/>
+          </place>
+        </places>
+        <categories>
+          <category type="acceptation">Recevoir et évaluer le travail réalisé</category>
+          <designation rubric="true">Estimation d'ouvrages de maçonnerie</designation>
+        </categories>
+        <procedure>
+          <framework type="b2a">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Lieutenant civil du Châtelet</orgName>
+              <date when="1726-09-02"/>
+            </sentence>
+          </sentences>
+          <case>règlement de travaux de maçonnerie</case>
+          <objects>
+            <object type="wall">Mur(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0232" context="primary" appointment="appointed">
+              <title>architecte juré du roi expert bourgeois de Paris</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0029">
+              <persName>
+                <surname>Quirot</surname>
+                <forename>Jacques</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="true" intervention="false">
+              <person>
+                <persName>
+                  <surname>Barré</surname>
+                  <forename>Sylvain</forename>
+                </persName>
+                <occupation>maçon demeurant au château de Madrid</occupation>
+              </person>
+              <status>builder</status>
+              <expert ref="#xpr0232"/>
+            </party>
+            <party role="opponent" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Mouchard</surname>
+                  <forename/>
+                </persName>
+                <occupation>sieur, commanditaire des travaux</occupation>
+              </person>
+              <status>limited-partner</status>
+              <expert ref="#xpr0232"/>
+              <representative>
+                <persName>
+                  <surname>Juppin</surname>
+                  <forename/>
+                </persName>
+                <occupation/>
+              </representative>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname>Barré</surname>
+                <forename>Sylvain</forename>
+              </persName>
+              <occupation>maçon</occupation>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0232">« Revenant tous les ouvrages de maçonnerie cy dessus suivant les estimations par nous faittes eu esgard à leur quallité et au temps qu'ils ont esté faits à la somme totalle de huit cent trente sept livres cinq sols dix deniers ».</opinion>
+          <arrangement/>
+          <agreement type="conclusion">Conclusion</agreement>
+          <estimate l="837" s="5" d="10"/>
+          <fees detail="true">
+            <fee type="papers" l="2" s="10" d=""/>
+            <fee type="expert" ref="#xpr0232" l="15" s="" d=""/>
+            <fee type="clerk" l="15" s="" d=""/>
+            <fee type="rolls" l="2" s="10" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="35" s="" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="11" s="2" d="6"/>
+            <expense type="expert" l="" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis>Motivations
+                « Nous nous sommes rendus dans une maison appartenant au sr Mouchard […]. Nous avons fait lecture d'une sentence par vous rendue Monsieur en la chambre civille du Chastelet de Paris le sept aoust de la presente année mil sept cent vingt six entre led. sieur Barré masson demandeur aux fins de l'exploit du dix huit juillet dernier controllé et presenté d'une part. Et led. Sr Mouchar escuyer deffendeur, par laquelle sentence partyes ouyes lecture faitte du memoire des ouvrages du demandeur faits pour led. sieur deffendeur en sa maison scize aud. village de Villiers la Garenne au mois de may mil sept cent vingt cinq, vous avez Monsieur condamné led. sieur Mouchar à payer aud. Sr Barré les ouvrages par luy faits suivant l'estimation qui en sera faitte par experts dont les partyes conviendront, et leur avez donné lettres de ce qu'ils ont nommez, sçavoir led. sr Mouchar moy Quirot, expert et led. sieur Barré le sieur Dubois expert, et en consequence vous avez Monsieur orodnné qu'il seroit par led. sieur Dubois et nous Quirot experts susd. proccedé à lad. estimation ce qui seroit executté sans prejudice d'appel. Lad. sentence signée et scelléepar Doyard le neuf aoust mil sept cent vingt si.Plus nous avons fait lecture d'un acte signiffié à la requeste dud. Sr Barré le deux du present mois et an par Brunet audiancier, à M. Beauchin procureur au Châtelet et dud. Sr Mouchard en son domicille, par lequel acte il est declaré que led. Sr Barré se rapporte à nous Quirot expert nommé par led. sieur Mouchard pour faire la prisée et estimation des ouvrages par luy faits pour led. Sr Mouchard à Villiers La Garenne ».</analysis>
+        <noteworthy/>
+      </description>
+    </expertise>

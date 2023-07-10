@@ -1,0 +1,199 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1006d054">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-09-01T12:00:00">2020-09-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2017-04-01T12:00:00">2017-04-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1006</idno>
+        <idno type="item">054</idno>
+        <facsimile from="0692" to="0698"/>
+        <physDesc>
+          <extent sketch="false">3</extent>
+          <appendices>
+            <appendice>
+              <type type="petition">Requête</type>
+              <extent>1</extent>
+              <desc>Requête de Musquinet, Françoise Louise, veuve de de Vitry, Jean, partie requérante au lieutenant civil ou au prévôt de Paris pour autoriser la visite et nommer un expert. Accepté par Angran le 12 août 1776 (ordonnance)</desc>
+              <note/>
+            </appendice>
+          </appendices>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-08-21" type="paris"/>
+          <date when="1776-08-22" type="paris"/>
+        </sessions>
+        <places>
+          <place xml:id="id894d315" type="paris">
+            <address>
+              <street>Rue des prêtres Saint-Germain l’Auxerrois</street>
+              <buildingNumber/>
+            </address>
+            <complement/>
+            <parish/>
+            <owner>Succession Vitry</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="estimation">Estimer la valeur des biens</category>
+          <designation rubric="true">Visite et estimation d’une maison</designation>
+        </categories>
+        <procedure>
+          <framework type="b1">Requête auprès d’une institution pour qu’elle demande une expertise</framework>
+          <origination type="parties">Les parties</origination>
+          <sentences>
+            <sentence>
+              <orgName>bailliage de Pontoise (sentence du 6 août 1776) ?</orgName>
+              <date when="1776-08-06"/>
+            </sentence>
+          </sentences>
+          <case>Vente des biens de la succession de de Vitry, Jean par la tutrice des ses héritiers autorisée par le bailli de Pontoise (aliénation des biens des mineurs)</case>
+          <objects>
+            <object type="house">Maison(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0101" context="primary" appointment="court-appointed">
+              <title>architecte juré expert</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0071">
+              <persName>
+                <surname>Reboul</surname>
+                <forename>Claude Anne</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Musquinet</surname>
+                  <forename>Françoise Louise</forename>
+                </persName>
+                <occupation>veuve de de Vitry, Jean, contrôleur des actes et receveur des domaines du roi en la ville de Pontoise, tutrice ad hoc des enfants mineurs</occupation>
+              </person>
+              <status>heir</status>
+              <expert ref="#xpr0101"/>
+              <prosecutor>
+                <persName>
+                  <surname>Charles</surname>
+                  <forename>François Louis</forename>
+                </persName>
+              </prosecutor>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0101">"D'après lesquelles opérations, attention faite sur la nature et qualité de construction des corps de logis qui composent ladite maison, les réparations qui sont à y faire, la distribution des logemens pratiqués dans lesdits corps de logis, le quartier où ladite maison est située, les loyers qu'on en peut retirer, le passage d'allée d'icelle et les vues droites dont elle jouit actuellement par nous ci dessus constatées par mesures et dmentions ; par toutes ces considerations et autres, eu égard au cours du tems présent, et à la charge des cens et droits seigneuriaux dont elle peut être tenue envers les seigneurs dans la censive desquels elle est située, nous prisons et estimons ladite maison de fonds en comble, circonstances et dépendances, ainsi qu'elle se poursuit et comporte, telle qu'elle est par nous ci dessus décrite la somme de 11600 l."</opinion>
+          <arrangement/>
+          <agreement type="conclusion">Conclusion</agreement>
+          <estimate l="11600" s="" d=""/>
+          <estimates>
+            <place ref="#id894d315">
+              <appraisal l="11600" s="" d="">
+                <desc>maison</desc>
+              </appraisal>
+            </place>
+          </estimates>
+          <fees detail="true">
+            <fee type="papers" l="4" s="" d=""/>
+            <fee type="expert" ref="#xpr0101" l="18" s="" d=""/>
+            <fee type="clerk" l="18" s="" d=""/>
+            <fee type="rolls" l="24" s="" d=""/>
+            <fee type="prosecutors" l="6" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="70" s="" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="19" s="10" d=""/>
+            <expense type="expert" l="6" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis/>
+        <noteworthy/>
+      </description>
+    </expertise>

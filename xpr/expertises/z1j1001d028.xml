@@ -1,0 +1,218 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1001d028">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-06-15T15:18:49.962+02:00">2021-06-15T15:18:49.962+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateExpertisesPlaces.xqy/BaseX</agent>
+            <eventDescription>Ajout des nœuds xml manquant dans les adresses.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2017-10-01T12:00:00">2017-10-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1001</idno>
+        <idno type="item">028</idno>
+        <facsimile from="0271" to="0277"/>
+        <physDesc>
+          <extent sketch="false">4</extent>
+          <appendices>
+            <appendice>
+              <type type="other">calcul de frais</type>
+              <extent>1</extent>
+              <desc/>
+              <note/>
+            </appendice>
+          </appendices>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-04-12" type="suburbs"/>
+        </sessions>
+        <places>
+          <place type="suburbs">
+            <address/>
+            <complement>14 rue du Faubourg du Temple</complement>
+            <city/>
+            <district/>
+            <owner/>
+          </place>
+        </places>
+        <categories>
+          <category type="assessment">Décrire et évaluer les travaux à venir</category>
+          <designation rubric="true">Visitte de mur mitoyen [à faire rétablir] à la requeste du sieur de Fremont ; MM. Desboeufs et Dauphin, experts.</designation>
+        </categories>
+        <procedure>
+          <framework type="b2a">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Châtelet (lieutenant civil)</orgName>
+              <date when="1775-10-20"/>
+              <date when="1775-11-15"/>
+              <date when="1775-11-20"/>
+              <date when="1776-01-20"/>
+            </sentence>
+          </sentences>
+          <case>Pierre de Frémont se plaint d’écarts dans la maçonnerie du mur mitoyen, qu’il attribue aux surélévations réalisées par Jean Poupart.</case>
+          <objects>
+            <object type="wall">Mur(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0089" context="" appointment="">
+              <title>architecte expert</title>
+            </expert>
+            <expert ref="#xpr0067" context="" appointment="">
+              <title>architecte expert</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0057">
+              <persName>
+                <surname>Liebaut de la Neuville</surname>
+                <forename>Christophe Edouard</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="" intervention="">
+              <person>
+                <persName>
+                  <surname>de Frémont</surname>
+                  <forename>Pierre André Jean</forename>
+                </persName>
+                <occupation>fabricant d’étoffes à Paris</occupation>
+              </person>
+              <status>owner</status>
+              <expert ref="#xpr0067"/>
+            </party>
+            <party role="opponent" presence="" intervention="">
+              <person>
+                <persName>
+                  <surname>Poupart</surname>
+                  <forename>Jean Guillaume</forename>
+                </persName>
+                <occupation>maître charpentier à Paris</occupation>
+              </person>
+              <status>builder</status>
+              <expert ref="#xpr0089"/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="">« D’après les visittes que nous avons faittes des remarques et observations particuliers notre avis est qu’il n’y a ny écart ny bouclement à la partie de mur repris par dessous œuvre en la longueur et hauteur cy devant declarés mais qu’en faisant cette reprise la maçonnerie neuve a fait un très petit tassement ce qui est inévitable dans de pareilles constructions quelques précautions qu’on puisse prendre, c’est ce tassement qui a donné lieu aux deux fractions que nous avons reconnues aux premier et second etages »
+« Nous estimons qu’il faut relier les fractions de premier et du second etages en moelons de plâtre (18 l.) »
+« Quant au plancher du passage de porte cochere de la maison du sr de Frémont notre avis est qu’il faut achever les six sollives à partir du poitrail jusqu’à l’enchevetrure de la cheminée […] ouvrages qu’il auroit fallu faire dans le temps de la reprise […], c’est pourquoy nous estimons que la refection de cette partie de plancher doit être aux frais dud. Sr de Frémont. »</opinion>
+          <arrangement/>
+          <agreement type="agreement">Accord</agreement>
+          <estimate l="" s="" d=""/>
+          <fees detail="true">
+            <fee type="papers" l="3" s="" d=""/>
+            <fee type="expert" ref="#xpr0089" l="27" s="" d=""/>
+            <fee type="expert" ref="#xpr0067" l="27" s="" d=""/>
+            <fee type="clerk" l="27" s="" d=""/>
+            <fee type="rolls" l="18" s="" d=""/>
+            <fee type="prosecutors" l="12" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="114" s="" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="22" s="10" d=""/>
+            <expense type="expert" l="15" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder">
+          <term value="m10">Déformation</term>
+          <term value="m11">Effondrement / Ecroulement / chute</term>
+        </keywords>
+        <keywords group="transformation">
+          <term value="n4">Surélévation</term>
+          <term value="n9">Reconstruction</term>
+        </keywords>
+        <analysis/>
+        <noteworthy>Objets de la visite : 1° Visite du mur mitoyen 2° « si les écarts et bouclements dont se plaint led. Sieur Frémont proviennent de constructions en exhaussement du sieur Poupart, comme aussy des reparations qui ont été faites tant à la porte cochere qu’aux solives du plancher qui est au dessus de lad. porte »
+
+Taboureur avai été nommé dans un 1er temps comme expert d'office  pour Poupart (f. 1v°)</noteworthy>
+      </description>
+    </expertise>

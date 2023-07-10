@@ -1,0 +1,101 @@
+<eac xmlns="https://archivists.org/ns/eac/v2" xml:id="clrk0061">
+  <control maintenanceStatus="">
+    <recordId>clrk0061</recordId>
+    <maintenanceAgency>
+      <agencyName>ANR Experts</agencyName>
+    </maintenanceAgency>
+    <maintenanceHistory>
+      <maintenanceEvent maintenanceEventType="created">
+        <agent agentType="machine">clerk_csv2eac.xqy/BaseX</agent>
+        <eventDateTime standardDateTime="2022-12-31T14:06:48.817+01:00"/>
+        <eventDescription>Création des fiches EAC-CPF à partir du tableau</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+    <sources>
+      <source id="sourceid86496141">
+        <reference href="">Almanach royal 1756</reference>
+      </source>
+      <source id="sourceid86496143">
+        <reference href="">Almanach royal 1757</reference>
+      </source>
+      <source id="sourceid86496145">
+        <reference href="">Almanach royal 1766</reference>
+      </source>
+      <source id="sourceid86496147">
+        <reference href="">Almanach royal 1767</reference>
+      </source>
+      <source id="sourceid86496149">
+        <reference href="">Almanach royal 1776</reference>
+      </source>
+      <source id="sourceid86496151">
+        <reference href="">Almanach royal 1777</reference>
+      </source>
+      <source id="sourceid86496153">
+        <reference href="">Almanach royal 1786</reference>
+      </source>
+      <source id="sourceid86496155">
+        <reference href="">Almanach royal 1787</reference>
+      </source>
+    </sources>
+  </control>
+  <cpfDescription>
+    <identity>
+      <entityType value="person"/>
+      <nameEntry status="authorized" preferredForm="true" sourceReference="">
+        <part localType="full">Le cœur, Jean Clair</part>
+      </nameEntry>
+      <nameEntry status="alternative" preferredForm="false" sourceReference="">
+        <part localType="surname">Le cœur</part>
+        <part localType="forename">Jean Clair</part>
+      </nameEntry>
+      <otherEntityTypes>
+        <otherEntityType>
+          <term>clerk</term>
+        </otherEntityType>
+      </otherEntityTypes>
+      <identityId>clrk0061</identityId>
+    </identity>
+    <description>
+      <functions>
+        <function sourceReference="#sourceid86496141 #sourceid86496143 #sourceid86496145 #sourceid86496147 #sourceid86496149 #sourceid86496151 #sourceid86496153 #sourceid86496155">
+          <term>Greffier</term>
+          <dateRange>
+            <fromDate sourceReference="" certainty="certain" standardDate="1756"/>
+            <toDate sourceReference="" certainty="certain" standardDate="1787"/>
+          </dateRange>
+        </function>
+        <function sourceReference="#sourceid86496155">
+          <term>adjoint à syndic</term>
+          <date sourceReference="" certainty="certain" standardDate="1787"/>
+        </function>
+      </functions>
+      <places>
+        <place sourceReference="#sourceid86496141 #sourceid86496143">
+          <placeRole>Adresse</placeRole>
+          <placeName>rue de Bretagne, au Marais</placeName>
+          <dateRange>
+            <fromDate sourceReference="" certainty="certain" standardDate="1756"/>
+            <toDate sourceReference="" certainty="certain" standardDate="1757"/>
+          </dateRange>
+        </place>
+        <place sourceReference="#sourceid86496145 #sourceid86496147">
+          <placeRole>Adresse</placeRole>
+          <placeName>rue Michel Comte, près la rue du Temple</placeName>
+          <dateRange>
+            <fromDate sourceReference="" certainty="certain" standardDate="1766"/>
+            <toDate sourceReference="" certainty="certain" standardDate="1767"/>
+          </dateRange>
+        </place>
+        <place sourceReference="#sourceid86496149 #sourceid86496151 #sourceid86496153 #sourceid86496155">
+          <placeRole>Adresse</placeRole>
+          <placeName>rue Michel-le-Comte</placeName>
+          <dateRange>
+            <fromDate sourceReference="" certainty="certain" standardDate="1776"/>
+            <toDate sourceReference="" certainty="certain" standardDate="1787"/>
+          </dateRange>
+        </place>
+      </places>
+    </description>
+  </cpfDescription>
+  <!---->
+</eac>

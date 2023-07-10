@@ -1,0 +1,232 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j999d069">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2017-10-01T12:00:00">2017-10-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2016-07-29T12:00:00">2016-07-29T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>LRT</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J999</idno>
+        <idno type="item">069</idno>
+        <facsimile from="0662" to="0668"/>
+        <physDesc>
+          <extent sketch="false">6</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-02-23" type="paris"/>
+          <date when="1776-05-11" type="paris"/>
+        </sessions>
+        <places>
+          <place type="paris">
+            <address>
+              <street>rue des Saussaies</street>
+              <buildingNumber/>
+            </address>
+            <complement/>
+            <parish/>
+            <owner>Cheveny de la Chapelle, architecte</owner>
+          </place>
+          <place type="paris">
+            <address>
+              <street>rue de la Ville-l’Evêque</street>
+              <buildingNumber/>
+            </address>
+            <complement/>
+            <parish/>
+            <owner>Cheveny de la Chapelle, architecte</owner>
+          </place>
+          <place type="office">
+            <address/>
+          </place>
+        </places>
+        <categories>
+          <category type="acceptation">Recevoir et évaluer le travail réalisé</category>
+          <designation rubric="true">Visite d'ouvrages de pavé faits en une maison sur des faussayes faubourg st honoré appartenant au sieur Cheveux de la Chapelle, architecte.</designation>
+        </categories>
+        <procedure>
+          <framework type="b2b">L’institution est saisie dans le cadre d’une procédure (l’institution nomme un ou deux experts)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Châtelet, chambre civile, lieutenant civil (sentence du 13 septembre 1775)</orgName>
+              <date when="1775-09-13"/>
+            </sentence>
+          </sentences>
+          <case>Réception d’ouvrages de pavé ; désaccord entre le paveur et le commanditaire.</case>
+          <objects>
+            <object type="other">pavé</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0250" context="primary" appointment="court-appointed">
+              <title>architecte expert bourgeois des bâtiments à Paris</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0062">
+              <persName>
+                <surname>Picquenon</surname>
+                <forename>Denis Joseph François</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="true" intervention="">
+              <person>
+                <persName>
+                  <surname>Cheveny de la Chapelle</surname>
+                  <forename/>
+                </persName>
+                <occupation>bourgeois de Paris</occupation>
+              </person>
+              <status>limited-partner</status>
+              <expert ref="#xpr0250"/>
+              <representative>
+                <persName>
+                  <surname>Ribert</surname>
+                  <forename/>
+                </persName>
+                <occupation>avocat</occupation>
+              </representative>
+              <prosecutor>
+                <persName>
+                  <surname>Colin</surname>
+                  <forename/>
+                </persName>
+              </prosecutor>
+            </party>
+            <party role="opponent" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Girault</surname>
+                  <forename/>
+                </persName>
+                <occupation>compagnon paveur</occupation>
+              </person>
+              <status>builder</status>
+              <expert ref="#xpr0250"/>
+              <prosecutor>
+                <persName>
+                  <surname>Dupressoir le jeune</surname>
+                  <forename/>
+                </persName>
+              </prosecutor>
+              <representative>
+                <persName>
+                  <surname>Porcher</surname>
+                  <forename/>
+                </persName>
+                <occupation>avocat</occupation>
+              </representative>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname>Girault</surname>
+                <forename/>
+              </persName>
+              <occupation>maître paveur</occupation>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0250">« Sur le premier chef il est ordonné de constater si lesdits ouvrages sont bien et deuemnt faits et s’il est necessaire de les reparer. 
+Sur ce premier chef nous observons que lors de notre transport dans les maisons dudit sieur de la Chapelle rue de la Ville Leveque et des Saussaies nous avons remarqué que dans la maison rue des Saussaies la cour a été pavée anciennement et depuis on a fait le pavé sous le passage de porte cochère ce qui fait partie des ouvrages en question, nous avons aussy remarqué que la pente et les ruisseaux du pavé sont disposés de maniere que lesdites eaux sont conduites sur le mur de cloture en aile à droite de la cour, et qu’elles ne sortent point à la rue comme le sieur de la Chapelle pretend qu’il l’a ordonné, que pour tirer lesdites eaux et les conduire de la cour à la rue il seroit necessaire de relever le revers au long des batimens en toute son étendue ainsy que le ruisseau en la longueur du passage de porte cochere pour detruite la contrepente qui existe actuellement et établir une nouvelle pente par laquelle les eaux puissent s’écouler à la rue, ce qui peut faire environ sept toises et demi, neuf pieds de pavé à remanier sous ledit passage, à l’égard de celui du revers de la cour comme il ne fait pas partie des ouvrages en question, nous n’avons point raporté ce que la superficie qui seroit à relever pouroit contenir. Nous avons aussy remarqué que la cuisine a été pavée de maniere qu’une partie des eaux ont une contrepente qui les conduit du côté de la cheminée au lieu de les conduire à la gargouille par laquelle elles doivent sortir à la rue, ce qui est une malfaçon, il est necessaire de relever la partie de pavé du côté de la cheminée de laditte cuisine d’environ trois toises et demy de superficie et d’observer une nouvelle pente qui conduise ces eaux à la gargouille. 
+Dans la maison rue de la Ville Leveque nous avons remarqué qu’au fond de la cour qui a été entierement pavée à neuf ainsy que le passage de porte cochere, il existe des parties enfoncées, que au droit de l’entrée de ladite cour, la pente du pavé est rompue de maniere que les eaux se rependent sur le dosseret de pierres à gauche et sur le mur de cloture qui est ensuitte, au lieu de s’écouler à la rue. Ces deversements de pente sont une malfaçon dans le pavé et pour y remedier il est necessaire de remanier les parties dont la pente est derangée afin de donner aux eaux l’écoulement qu’elles doivent avoir, laquelle superficie de pavé à remanier est d’environ six toises. A l’égard du ruisseau que ledit sieur de la Chapelle pretend avoir été oublié d’être fait sous la conduite d’Eauvenant de la Trosse, nous ne pouvons decider si cette descente a été érigée depuis que le pavé a été mis en place, ou si cette chutte d’eau a été placée depuis au surplus le pavé qu’il faudroit remanier pour établir ce ruisseau ne formeroit qu’une demy toise de superficie. 
+Par le second chef de notre mission il est ordonné de constater quels sont les articles du memoire dudit sieur Girault qui doivent estre censés compris dans le prix de trente sols convenu entre les parties pour chaque toise desdits ouvrages. […] 
+Le total des sommes dues par le sieur La Chapelle au sieur Girault et qui ne doivent point faire partie du prix du toisé convenu entre les parties monte à la somme de quarante huit livres six sols deux deniers, cy… 48 l. 6 s. 2 d. 
+Tel est, Monsieur, la visitte par nous faitte des ouvrages dont est question, notre avis sur les malfaçons et ouvrages à y faire ainsy que sur les articles qui ne font point partie du prix convenu pour la toise de pavé, vous referant sur le tout »</opinion>
+          <arrangement/>
+          <agreement type="conclusion">Conclusion</agreement>
+          <estimate l="" s="" d=""/>
+          <fees detail="true">
+            <fee type="papers" l="5" s="14" d=""/>
+            <fee type="expert" ref="#xpr0250" l="12" s="" d=""/>
+            <fee type="clerk" l="12" s="" d=""/>
+            <fee type="rolls" l="8" s="10" d=""/>
+            <fee type="prosecutors" l="20" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="58" s="4" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="11" s="2" d="6"/>
+            <expense type="expert" l="4" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis>Le paveur soutient que « les ouvrages de retranchement du pavé faits dans la maison rue de la Ville Leveque et de ceux de pavé faits dans la maison rue des Saussaies ne sont pas compris dans le montant de ceux faits à la toise »</analysis>
+        <noteworthy/>
+      </description>
+    </expertise>

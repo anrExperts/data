@@ -1,0 +1,223 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1006d039">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-09-01T12:00:00">2020-09-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2017-04-01T12:00:00">2017-04-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1006</idno>
+        <idno type="item">039</idno>
+        <facsimile from="0408" to="0416"/>
+        <physDesc>
+          <extent sketch="false">5</extent>
+          <appendices>
+            <appendice>
+              <type type="rough">Brouillon</type>
+              <extent>1</extent>
+              <desc>1/ note du 16 août 1776 « visite des lieux contentieux à Arcueil à la requête de Charles le Roy » pour le paiement des experts et greffier (16 livres 10 sols)</desc>
+              <note/>
+            </appendice>
+            <appendice>
+              <type type="drawing">Dessin</type>
+              <extent>1</extent>
+              <desc>2/ élévation des étages de la maison avec la cheminée, fait par Poulain et Perrard le 16 août 1776.</desc>
+              <note/>
+            </appendice>
+          </appendices>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-08-16" type="province"/>
+          <date when="1776-08-16" type="province"/>
+        </sessions>
+        <places>
+          <place type="province">
+            <address/>
+            <complement>grande rue au village d’Arcueil, attenant l’hôtel du greffe</complement>
+            <city>Arcueil</city>
+            <district/>
+            <owner>Gendron / Le Roy</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="settlement">Départager</category>
+          <designation rubric="true">Visite de lieux contentieux</designation>
+        </categories>
+        <procedure>
+          <framework type="b2a">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>lieutenant au bailliage d’Arcueil (sentence du 20 juillet 1776)</orgName>
+              <date when="1776-07-20"/>
+            </sentence>
+          </sentences>
+          <case>à la suite d’une délimitation entre voisins et du creusement d’un fossé il a été découvert que la cave de Gendron dépasse la cloison mitoyenne.</case>
+          <objects>
+            <object type="wall">Mur(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0210" context="primary" appointment="appointed">
+              <title>architecte juré expert des bâtiments à Paris</title>
+            </expert>
+            <expert ref="#xpr0228" context="primary" appointment="appointed">
+              <title>architecte juré expert des bâtiments à Paris</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0072">
+              <persName>
+                <surname>Laurent</surname>
+                <forename>Jean-Baptiste François</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="true" intervention="false">
+              <person>
+                <persName>
+                  <surname>Le Roy</surname>
+                  <forename>Charles</forename>
+                </persName>
+                <occupation>maçon entrepreneur de bâtiments à Arcueil</occupation>
+              </person>
+              <status>owner</status>
+              <expert ref=""/>
+              <prosecutor>
+                <persName>
+                  <surname>Desgranges</surname>
+                  <forename>François</forename>
+                </persName>
+              </prosecutor>
+            </party>
+            <party role="opponent" presence="true" intervention="false">
+              <person>
+                <persName>
+                  <surname>Gendron</surname>
+                  <forename>Jean-Baptiste</forename>
+                </persName>
+                <occupation>maréchal ferrant à Arcueil</occupation>
+              </person>
+              <status>owner</status>
+              <expert ref="#xpr0228"/>
+              <prosecutor>
+                <persName>
+                  <surname>Girard</surname>
+                  <forename/>
+                </persName>
+              </prosecutor>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="">La cloison mitoyenne au rez-de-chaussée doit être reconstruite (les experts précisent les modalités).
+La cave peut rester en l’état sans que la cloison du dessus ne pose problème (l’avis des experts ne peut porter sur la délimitation entre les voisins).</opinion>
+          <arrangement/>
+          <agreement type="agreement">Accord</agreement>
+          <estimate l="" s="" d=""/>
+          <fees detail="true">
+            <fee type="papers" l="6" s="1" d="6"/>
+            <fee type="expert" ref="#xpr0228" l="36" s="" d=""/>
+            <fee type="expert" ref="#xpr0228" l="36" s="" d=""/>
+            <fee type="clerk" l="36" s="" d=""/>
+            <fee type="rolls" l="18" s="" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="other" l="2" s="8" d="">Annexe</fee>
+            <fee type="plans" l="12" s="" d=""/>
+            <total l="146" s="9" d="6"/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="24" s="" d=""/>
+            <expense type="expert" l="18" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis>Affaire très intéressante expertise à tiroir, voir les détails dans le document original. Il y a un certain nombre de requêtes mais aussi d’arrangements entre les parties.
+                Les experts des deux parties sont nommés par le lieutenant civil à la demande des parties semble-t-il.
+                Le maison a été vendue à Gendron par Le Roy par acte devant notaire du Guillaume à Paris le 11 décembre 1774 (insinué à Vitry le 18 janvier 1775) une maison à Arcueil grande rue des arcades près des aqueducs, jardin ensuite et autre jardin bâtiments, cour et lieux en dépendants.
+                « [f. 2r°]... ledit Gendron, assisté comme dessus nous a requis en procédant à nos opérations de constater la tranchée faitte par le sieur le Roy propriétaire voisin du sieur Gendron sur la route des arcades en dernier, de fixer l’endroit où doit être construitte la cloison ou mur de clôture, si nous experts jugeons à propos qu’il y ait un mur pour plus de solidité et que ledit Gentron soit clos avec plus de sureté d’en donner les alignemens successives pour lad. construction comme aussy de constater le porte à faux de l’élévation du bâtiment dudit Gendron, et que la cheminée donnant dans la salle par bas voisine de la boutique dudit Gendron n’estant point construicte suivant les règles de l’art, il nous requiert de donner notre avis sur la manière dont lad. cheminée doit être rétablie pour éviter les accidens du feu auquel ledit Gendron se trouve exposé par raport à sa construction actuelle, et ont signé sous toutes autres réserves. Gendron / Girard
+                Contre lequel dire a été répliqué par ledit sieur Charles Le Roy assisté comme dessus 1° qu’à l’égard de lad. tranchée, elle a été faite au vu et su dud. Gendron et de son consentement puisque luy même a fait travailler pour [f. 2v°] moitié à lad. démolition de la cloison qui existoit dans cet endroit, que lad. tranchée n’a été faite que pour prendre les fondations du mur que les parties étoient convenues de faire à communs frais entre elles et la contestation ne s’est élevée que lors de la découverte de la voûte de la cave dudit Gendron qui s’étend environ d’un demy pied sous le rez de chaussée du sr Le Roy en sorte qu’il a voulu profiter de cette découverte pour prétendre que son rez de chaussée devoit avoir la même extension que sa cave, il s’est donc oposé à la continuation de cette tranchée et comme le sr Le Roy de son propre mouvement a vu l’impossibilité de faire construire un mur il a demandé le rétablissement de la cloison dans son premier état et qu’au désir de la sentence en vertu de laquelle nous agissons, il n’est question que de donner notre avis et de décider si lad. cloison doit être refaite dans son premier état ; comme il y a lieu de la croire, attendu qu’une voûte de cave est toujours suffisante pour porter une cloison quelconque. »</analysis>
+        <noteworthy/>
+      </description>
+    </expertise>

@@ -1,0 +1,286 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1000d023">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+                <eventType>revised</eventType>
+                <eventDateTime standardDateTime="2023-01-10T13:47:20Z">2023-01-10T13:47:20Z</eventDateTime>
+                <agentType>human</agentType>
+                <agent>jmorvan</agent>
+                <eventDescription>corr extent</eventDescription>
+            </maintenanceEvent>
+      <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-09-01T12:00:00">2020-09-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2018-01-01T12:00:00">2018-01-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>PC</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1000</idno>
+        <idno type="item">023</idno>
+        <facsimile from="0179" to="0200"/>
+        <physDesc>
+          <extent sketch="false">19</extent>
+          <appendices>
+            <appendice>
+              <type type="other">Compte manuscrit</type>
+              <extent>1</extent>
+              <desc>Compte d'expertise</desc>
+              <note/>
+            </appendice>
+          </appendices>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-03-11" type="paris"/>
+          <date when="1776-03-11" type="paris"/>
+          <date when="1776-03-12" type="paris"/>
+          <date when="1776-03-13" type="paris"/>
+          <date when="1776-03-13" type="paris"/>
+          <date when="1776-03-14" type="paris"/>
+          <date when="1776-03-14" type="paris"/>
+          <date when="1776-03-15" type="province"/>
+          <date when="1776-05-02" type="province"/>
+          <date when="1776-05-03" type="province"/>
+        </sessions>
+        <places>
+          <place xml:id="id47d315" type="paris">
+            <address>
+              <street>Rue Notre-Dame-des-Champs</street>
+              <buildingNumber/>
+            </address>
+            <complement/>
+            <parish/>
+            <owner>Succession Ogier</owner>
+          </place>
+          <place xml:id="id47d333" type="province">
+            <address/>
+            <complement>rue Basse</complement>
+            <city>Ivry</city>
+            <district/>
+            <owner>Succession Ogier</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="estimation">Estimer la valeur des biens</category>
+          <designation rubric="true">Estimation d'une maison</designation>
+        </categories>
+        <procedure>
+          <framework type="b2a">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Lieutenant civil</orgName>
+              <date when="1776-02-15"/>
+            </sentence>
+          </sentences>
+          <case>Succession Ogier</case>
+          <objects>
+            <object type="house">Maison(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0250" context="primary" appointment="appointed">
+              <title>architecte expert bourgeois de Paris</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0057">
+              <persName>
+                <surname>Liebault de la Neuville</surname>
+                <forename>Christophe Edouard</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="" intervention="">
+              <person>
+                <persName>
+                  <surname>Ogier</surname>
+                  <forename>Gérard Rosalie</forename>
+                </persName>
+                <occupation/>
+              </person>
+              <person>
+                <persName>
+                  <surname>De Mourré</surname>
+                  <forename>Albert François</forename>
+                </persName>
+                <occupation>comte de Pons Gerbault</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Mourré</surname>
+                  <forename>François Albert</forename>
+                </persName>
+                <occupation/>
+              </person>
+              <person>
+                <persName>
+                  <surname>De Mourré</surname>
+                  <forename>César</forename>
+                </persName>
+                <occupation/>
+              </person>
+              <person>
+                <persName>
+                  <surname>Ogier</surname>
+                  <forename>Marguerite Hermine</forename>
+                </persName>
+                <occupation/>
+              </person>
+              <person>
+                <persName>
+                  <surname>Ogier</surname>
+                  <forename>Jean Louis</forename>
+                </persName>
+                <occupation/>
+              </person>
+              <person>
+                <persName>
+                  <surname>Pons Gibault</surname>
+                  <forename/>
+                </persName>
+                <occupation/>
+              </person>
+              <person>
+                <persName>
+                  <surname>Ogier</surname>
+                  <forename>Pierre François</forename>
+                </persName>
+                <occupation/>
+              </person>
+              <status>heir</status>
+              <expert ref="#xpr0250"/>
+              <prosecutor>
+                <persName>
+                  <surname>De Lanenville</surname>
+                  <forename>Thibault</forename>
+                </persName>
+              </prosecutor>
+            </party>
+            <party role="opponent" presence="" intervention="">
+              <person>
+                <persName>
+                  <surname/>
+                  <forename/>
+                </persName>
+                <occupation/>
+              </person>
+              <status/>
+              <expert ref=""/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0250">« Maison de la rue de Notre-Dame-des-Champs : Estimons cette maison comme elle se poursuit et se compose, et ses dépendances, valoir à la charge des droits seigneuriaux à savoir une rente annuelle à payer à l’Abbaye de Saint-Germain-des-Prés dans la censive est située, la somme de quatre vingt dix mille livres, 90 000 l. »« Maison d’Ivry, rue Basse : Nous architectes experts, nous estimons la maison et jardin, avec potager, plantations, grands arbres du jardin à l’anglaise, ayant fait attention à la superficie de chaque objet séparément dont nous avons pris les mesures, nous avons ensuite fait les bordereaux d’estimation, compte tenu du fief, cens, droits seigneuriaux et servitude, et de l’état de l’ensemble au cours du temps présents, la somme de cinquante mille livres, 50 000 l. »</opinion>
+          <arrangement/>
+          <agreement type="conclusion">Conclusion</agreement>
+          <estimate l="140000" s="" d=""/>
+          <estimates>
+            <place ref="#id47d315">
+              <appraisal l="90000" s="" d="">
+                <desc>Maison rue Notre-Dame-des-Champs</desc>
+              </appraisal>
+            </place>
+            <place ref="#id47d333">
+              <appraisal l="50000" s="" d="">
+                <desc>Maison rue Basse à Ivry</desc>
+              </appraisal>
+            </place>
+          </estimates>
+          <fees detail="true">
+            <fee type="papers" l="24" s="" d=""/>
+            <fee type="expert" ref="#xpr0250" l="132" s="" d=""/>
+            <fee type="clerk" l="132" s="" d=""/>
+            <fee type="rolls" l="95" s="" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="383" s="" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="104" s="" d=""/>
+            <expense type="expert" l="32" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis/>
+        <noteworthy/>
+      </description>
+    </expertise>

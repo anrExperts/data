@@ -1,0 +1,221 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1007d012">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-08-01T12:00:00">2020-08-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2017-10-01T12:00:00">2017-10-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1007</idno>
+        <idno type="item">012</idno>
+        <facsimile from="0127" to="0138"/>
+        <physDesc>
+          <extent sketch="false">12</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-09-06" type="paris"/>
+          <date when="1776-09-07" type="paris"/>
+          <date when="1776-09-07" type="paris"/>
+          <date when="1776-09-13" type="paris"/>
+          <date when="1776-09-13" type="paris"/>
+          <date when="1776-09-19" type="paris"/>
+          <date when="1776-09-26" type="paris"/>
+          <date when="1776-10-01" type="paris"/>
+        </sessions>
+        <places>
+          <place xml:id="id20d271" type="paris">
+            <address>
+              <street>Rue Saint-Martin</street>
+              <buildingNumber/>
+            </address>
+            <complement/>
+            <parish/>
+            <owner/>
+          </place>
+          <place xml:id="id20d288" type="paris">
+            <address>
+              <street>rue des Vieilles-Haudriettes</street>
+              <buildingNumber/>
+            </address>
+            <complement/>
+            <parish/>
+            <owner/>
+          </place>
+        </places>
+        <categories>
+          <category type="estimation">Estimer la valeur des biens</category>
+          <designation rubric="true">Visitte et estimation de deux maisons scises, l'une rue St Martin et l'autre rue des vieilles audriettes, dépendantes de la communauté de biens d'entre le sieur Villet ancien agent de change et la feue dame son épouse ; M. Taboureur, expert.</designation>
+        </categories>
+        <procedure>
+          <framework type="b2b">L’institution est saisie dans le cadre d’une procédure (l’institution nomme un ou deux experts)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Châtelet, lieutenant civil (sentence)</orgName>
+              <date when="1776-08-28"/>
+            </sentence>
+          </sentences>
+          <case>Succession : liquidation de la communauté</case>
+          <objects>
+            <object type="house">Maison(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0250" context="primary" appointment="court-appointed">
+              <title>architecte juré expert</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0071">
+              <persName>
+                <surname>Reboul</surname>
+                <forename>Claude Anne</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="true" intervention="false">
+              <person>
+                <persName>
+                  <surname>Villet</surname>
+                  <forename>Hubert Joseph</forename>
+                </persName>
+                <occupation>sieur de Villette, ancien agent de change, bourgeois de Paris</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Villet</surname>
+                  <forename>Alexandre François Joseph</forename>
+                </persName>
+                <occupation>mineur, fils du précédent et de la défunteClaverie, Marie Magdeleine sa mère, représenté par Benoist, Nicolas, tuteur ad hoc</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Benoist</surname>
+                  <forename>Nicolas</forename>
+                </persName>
+                <occupation>tuteur ad hoc</occupation>
+              </person>
+              <status>heir</status>
+              <expert ref="#xpr0250"/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0250">1ère maison« Au moyen desquelles operations, attention faite sur la situation de ladite maison, la nature et qualité de construction des corps de logis qui la composent, et leur distribution interieure, les ornemens en glaces, lambris, parquets, chambranles et autres, l’agrément du jardin, l’usage auquel ladite maison est convenable et ce qu’elle peut produire annuellement de loyer ; par toutes ces considérations et autres nous estimons ladite maison ainsi qu’elle se poursuit et comporte et telle qu’elle est ci dessus détaillée valoir en partage eu égard au cours du tems présent la somme de cent mille livres à la charge du cens seulement cy… 100 000 l. »
+2e maison« D’après lesquelles opérations, attention faite sur la nature et qualité de construction des édifices qui composent ladite maison, les réparations dont ils peuvent être susceptibles, leur distribution intérieure, le quartier où ladite maison est située, et les loyers qu’on en peut retirer, par toutes ces considerations et autres nous estimons ladite maison ainsi qu’elle se poursuit et comporte telle qu’elle est par nous ci dessus décrite valoir en partage eu égard au cours du tems présent la somme de … 24 000 l. à la charge du cens seulement 
+Après toutes lesquelles operations sur ce qui nous a été verbalement déclaré de la part dudit sieur Villet qu’il n’y avoit aucun autre immeuble dépendant de la communauté de biens d’entre lui et la feue dame son épouse que les deux maisons par nous ci dessus décrites et estimées, nous avons clos et arrêté notre procès verbal ainsi que nous en avons été requis. Fait par nous architecte expert susdit lesdits jours mois et an aux termes de ladite sentence »</opinion>
+          <arrangement/>
+          <agreement type="conclusion">Conclusion</agreement>
+          <estimate l="" s="" d=""/>
+          <estimates>
+            <place ref="#id20d271">
+              <appraisal l="100000" s="" d="">
+                <desc>une maison</desc>
+              </appraisal>
+            </place>
+            <place ref="#id20d288">
+              <appraisal l="24000" s="" d="">
+                <desc>une maison</desc>
+              </appraisal>
+            </place>
+          </estimates>
+          <fees detail="true">
+            <fee type="papers" l="8" s="" d=""/>
+            <fee type="expert" ref="#xpr0250" l="48" s="" d=""/>
+            <fee type="clerk" l="48" s="" d=""/>
+            <fee type="rolls" l="45" s="" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="149" s="" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="47" s="5" d=""/>
+            <expense type="expert" l="16" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis/>
+        <noteworthy/>
+      </description>
+    </expertise>

@@ -1,0 +1,196 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1009d037">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-08-01T12:00:00">2020-08-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2017-10-01T12:00:00">2017-10-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1009</idno>
+        <idno type="item">037</idno>
+        <facsimile from="0320" to="0324"/>
+        <physDesc>
+          <extent sketch="false">2</extent>
+          <appendices>
+            <appendice>
+              <type type="proxyPA">Pouvoir/procuration (acte sous seing privé)</type>
+              <extent>1</extent>
+              <desc/>
+              <note>pouvoir à Dumont</note>
+            </appendice>
+          </appendices>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-11-19" type="paris"/>
+          <date when="1776-11-19" type="paris"/>
+          <date when="1776-11-20" type="paris"/>
+        </sessions>
+        <places>
+          <place type="paris">
+            <address>
+              <street>Rue Culture Sainte-Catherine</street>
+              <buildingNumber/>
+            </address>
+            <complement/>
+            <parish/>
+            <owner/>
+          </place>
+        </places>
+        <categories>
+          <category type="settlement">Départager</category>
+          <designation rubric="true">Visitte de mur mitoien séparant deux maisons, rue Couture Ste Catherine, entre les sieurs Frécot et Prestat ; M. Dumont, tiers expert</designation>
+        </categories>
+        <procedure>
+          <framework type="a">Commun accord des parties</framework>
+          <origination type="parties">Les parties</origination>
+          <sentences>
+            <sentence>
+              <orgName/>
+              <date when=""/>
+            </sentence>
+          </sentences>
+          <case>Avis divergents entre les premiers experts sur l’état du mur mitoyen</case>
+          <objects>
+            <object type="wall">Mur(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0104" context="third-party" appointment="appointed">
+              <title>architecte expert</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0058">
+              <persName>
+                <surname>Foucart</surname>
+                <forename>Paul Joseph</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="" intervention="">
+              <person>
+                <persName>
+                  <surname>Prestat </surname>
+                  <forename/>
+                </persName>
+                <occupation/>
+              </person>
+              <status>owner</status>
+              <expert ref="#xpr0104"/>
+            </party>
+            <party role="opponent" presence="" intervention="">
+              <person>
+                <persName>
+                  <surname>Prevot</surname>
+                  <forename/>
+                </persName>
+                <occupation/>
+              </person>
+              <status>owner</status>
+              <expert ref="#xpr0104"/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0104">« De toutes nos quelles visittes et operations il resulte et notre avis est, attention faitte sur l’état dudit mur mitoyen sur le porte à faux de quatre pouces sur ses effets contraires de fruit et de surplomb sur le genre et nature de sa construction et son état actuel par nous cy dessus raportés Que ledit mur ne peut subsister pour la maison meme dudit sieur Prestat, et que n’étant plus accotté par la maison du sieur Prevot il est en danger que par consequent ledit sieur Prestat ne peut se dispenser de le reconstruire Ainsy nous estimons que ledit mur mitoien doit être demoli depuis son sommet jusqu’à la reprise qui a été faitte il y a un an aux frais communs desdits sieurs proprietaires chacun par moitié auxquels les moilons provenant de la demolition en état d’etre remployés apartiendront aussi par moitié et ce pour la hauteur qui leur étoit cy devant mitoienne seulement, la surelevation au dessus demolir aux frais seuls dudit sieur Prestat auquel elle appartenoit, et à qui par consequent les materiaux en provenant apartiendront 
+Pour etre ledit mur reconstruit à plomb… Au sujet desquelles demolitions et reconstructions à faire chacun des deux proprietaires sera tenu à ses frais seuls de tous les étayemens chevalemens etresillonnemens et racordemens et accessoirs de toute nature de son coté Tel est notre avis sur l’état dudit mur la reconstruction qu’il convient d’en faire et les contributions dont chacun des proprietaires doit en etre tenu Fait par nous architecte expert aux termes du pouvoir à nous donné »</opinion>
+          <arrangement/>
+          <agreement type="conclusion">Conclusion</agreement>
+          <estimate l="" s="" d=""/>
+          <fees detail="true">
+            <fee type="papers" l="6" s="" d=""/>
+            <fee type="expert" ref="#xpr0104" l="18" s="" d=""/>
+            <fee type="clerk" l="18" s="" d=""/>
+            <fee type="rolls" l="18" s="" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="60" s="" d=""/>
+          </fees>
+          <expenses mentioned=""/>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis/>
+        <noteworthy>experts initiaux : Parvy de la Renardière et Regnard de Barentin, présents lors de cette visite</noteworthy>
+      </description>
+    </expertise>

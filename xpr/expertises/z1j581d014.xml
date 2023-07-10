@@ -1,0 +1,231 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j581d014">
+  <meta/>
+  <control>
+    <maintenanceStatus>revised</maintenanceStatus>
+    <publicationStatus/>
+    <localControl localType="detailLevel">
+      <term>completed</term>
+    </localControl>
+    <maintenanceHistory>
+      <maintenanceEvent>
+                <eventType>revised</eventType>
+                <eventDateTime standardDateTime="2022-03-29T14:03:09Z">2022-03-29T14:03:09Z</eventDateTime>
+                <agentType>human</agentType>
+                <agent>llosserand</agent>
+                <eventDescription>rvpcd</eventDescription>
+            </maintenanceEvent>
+          <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateObjectsValues_db.xqy/BaseX</agent>
+        <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateOpinionRef_files.xqy/BaseX</agent>
+        <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateRefValues_files.xqy/BaseX</agent>
+        <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+        <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>revised</eventType>
+        <eventDateTime standardDateTime="2020-11-01T12:00:00">2020-11-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>JH</agent>
+        <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>retroconverted</eventType>
+        <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>ead2xpr.xsl/Saxon9</agent>
+        <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>created</eventType>
+        <eventDateTime standardDateTime="2017-04-01T12:00:00">2017-04-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>llosserand</agent>
+        <eventDescription>Création de la fiche.</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+  </control>
+  <sourceDesc>
+    <unitdate>1726</unitdate>
+    <idno type="unitid">Z1J581</idno>
+    <idno type="item">014</idno>
+    <facsimile from="0118" to="0124"/>
+    <physDesc>
+      <extent sketch="false">4</extent>
+      <appendices>
+        <appendice>
+          <type type="proxyPA">Pouvoir/procuration (acte sous seing privé)</type>
+          <extent>2</extent>
+          <desc>pouvoir donné par de Turmenyes, Pierre à Le Brun, Jacques Charles, architecte du roy et juré expert pour les bâtiments de voir et visiter le mur mitoyen.</desc>
+          <note/>
+        </appendice>
+      </appendices>
+    </physDesc>
+  </sourceDesc>
+  <description>
+    <sessions>
+      <date when="1726-06-08" type="paris"/>
+    </sessions>
+    <places>
+      <place type="paris">
+        <address>
+          <street>Rue Mariveau [ou rue Miravas. Actuellement partie de la rue Pavée]</street>
+          <buildingNumber/>
+        </address>
+        <complement/>
+        <parish/>
+        <owner>de Turmenyes</owner>
+      </place>
+    </places>
+    <categories>
+      <category type="settlement">Départager</category>
+      <designation rubric="true">Visitte et allignement de murs mitoyens, rue Marineau, entre Mrs les directeurs de l'Hôpital Général, Mr Deturmenis, consorts et Mr Pasquier ; M. Le Brun, expert</designation>
+    </categories>
+    <procedure>
+      <framework type="a">Commun accord des parties</framework>
+      <origination type="parties">Les parties</origination>
+      <sentences>
+        <sentence>
+          <orgName/>
+          <date when=""/>
+        </sentence>
+      </sentences>
+      <case>les murs mitoyens devant être reconstruits, il convient de déterminer qui doit en payer la reconstruction</case>
+      <objects>
+        <object type="wall">Mur(s)</object>
+      </objects>
+    </procedure>
+    <participants>
+      <experts>
+        <expert ref="#xpr0158" context="primary" appointment="appointed">
+          <title>architecte juré expert bourgeois de Paris</title>
+        </expert>
+      </experts>
+      <clerks>
+        <clerk ref="#xpr0056">
+          <persName>
+            <surname>Cochois</surname>
+            <forename>Jacques Richard</forename>
+          </persName>
+        </clerk>
+      </clerks>
+      <parties>
+        <party role="petitioner" presence="false" intervention="false">
+          <person>
+            <persName>
+              <surname>de Turmenyes</surname>
+              <forename>Pierre</forename>
+            </persName>
+            <occupation>écuyer le de la chambre aux deniers, se faisant fort de Mr de Turmenyes de Montigny, Edme François et de madame la Comtesse de Laval, son frère et sa sœur, propriétaires. Ravinet, Jacob Louis, maître maçon</occupation>
+          </person>
+          <person>
+            <persName>
+              <surname>Lerot</surname>
+              <forename/>
+            </persName>
+            <occupation/>
+          </person>
+          <person>
+            <persName>
+              <surname>Leleu</surname>
+              <forename/>
+            </persName>
+            <occupation/>
+          </person>
+          <person>
+            <persName>
+              <surname>Robethon</surname>
+              <forename/>
+            </persName>
+            <occupation/>
+          </person>
+          <person>
+            <persName>
+              <surname>Cresthinnot</surname>
+              <forename/>
+            </persName>
+            <occupation>directeurs et administrateurs de l'hôpital général tel qu'il est uny à celuy du Saint-Esprit, en cette qualité propriétaire d'une maison. En présence de monsieur Delespine, architecte du roy, directeur administrateur dud. Hôpital général et de du Sable, Pierre, maître maçon à Paris et dudit hôpital général</occupation>
+          </person>
+          <person>
+            <persName>
+              <surname>Pasquier</surname>
+              <forename/>
+            </persName>
+            <occupation/>
+          </person>
+          <person>
+            <persName>
+              <surname>Dijon</surname>
+              <forename>Jean</forename>
+            </persName>
+            <occupation>maître maçon</occupation>
+          </person>
+          <status>owner</status>
+          <expert ref="#xpr0158"/>
+        </party>
+      </parties>
+      <craftmen>
+        <craftman>
+          <persName>
+            <surname/>
+            <forename/>
+          </persName>
+          <occupation/>
+        </craftman>
+      </craftmen>
+    </participants>
+    <conclusions>
+      <opinion ref="#xpr0158">Les trois parties du mur visitées sont corrompues et étayées, celle entre l'hôpital du Saint-Esprit et de Turmenys et celle entre Pasquier et l'hôpital doivent être reconstruites à frais communs, tandis que celle entre de Turnemys et Pasquier doit être reconstruite aux seuls frais de de Turnemys et consorts, « moyennant quoi ils ne seront point tenus d'anciennes charges »</opinion>
+      <arrangement/>
+      <agreement type="conclusion">Conclusion</agreement>
+      <estimate l="" s="" d=""/>
+      <fees detail="true">
+        <fee type="papers" l="4" s="16" d=""/>
+        <fee type="expert" ref="#xpr0158" l="12" s="" d=""/>
+        <fee type="clerk" l="12" s="" d=""/>
+        <fee type="rolls" l="18" s="3" d=""/>
+        <fee type="prosecutors" l="" s="" d=""/>
+        <fee type="help" l="" s="" d=""/>
+        <fee type="plans" l="" s="" d=""/>
+        <total l="40" s="16" d=""/>
+      </fees>
+      <expenses mentioned="false"/>
+    </conclusions>
+    <keywords group="estates"/>
+    <keywords group="procedure"/>
+    <keywords group="contract"/>
+    <keywords group="encumbrance"/>
+    <keywords group="law"/>
+    <keywords group="measurement"/>
+    <keywords group="repairs"/>
+    <keywords group="guarantees"/>
+    <keywords group="responsability"/>
+    <keywords group="ownership"/>
+    <keywords group="value"/>
+    <keywords group="neighbourhood"/>
+    <keywords group="disorder"/>
+    <keywords group="transformation"/>
+    <analysis>sur le pouvoir donné par les trois parties, le nom de l'expert Delespine a été barré au profit de celui de Le Brun (pour les deux premiers pouvoirs. Il a été rajouté « approuvé le nom de Le Brun, 31 mai mil sept cent vingt six » f. 1r° : annotation dans la marge : « 4 minuttes qui n'ont point estées trouvées sur les registres ».</analysis>
+    <noteworthy/>
+  </description>
+</expertise>

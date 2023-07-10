@@ -1,0 +1,215 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1003d013">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-07-01T12:00:00">2020-07-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2017-10-01T12:00:00">2017-10-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1003</idno>
+        <idno type="item">013</idno>
+        <facsimile from="0230" to="0266"/>
+        <physDesc>
+          <extent sketch="false">32</extent>
+          <appendices>
+            <appendice>
+              <type type="proxyPA">Pouvoir/procuration (acte sous seing privé)</type>
+              <extent>1</extent>
+              <desc/>
+              <note>17 mai 1776</note>
+            </appendice>
+            <appendice>
+              <type type="petition">Requête</type>
+              <extent>1</extent>
+              <desc/>
+              <note/>
+            </appendice>
+          </appendices>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-05-20" type="province"/>
+          <date when="1776-05-21" type="province"/>
+          <date when="1776-05-22" type="province"/>
+          <date when="1776-05-23" type="province"/>
+          <date when="1776-05-24" type="province"/>
+          <date when="1776-05-25" type="province"/>
+          <date when="1776-05-30" type="paris"/>
+          <date when="1776-05-31" type="paris"/>
+          <date when="1776-06-01" type="paris"/>
+          <date when="1776-06-08" type="paris"/>
+        </sessions>
+        <places>
+          <place xml:id="id139d321" type="province">
+            <address/>
+            <complement/>
+            <city>Valence-en-Brie</city>
+            <district/>
+            <owner/>
+          </place>
+          <place xml:id="id139d336" type="province">
+            <address/>
+            <complement/>
+            <city>Champigny</city>
+            <district/>
+            <owner/>
+          </place>
+          <place xml:id="id139d351" type="office">
+            <address/>
+          </place>
+        </places>
+        <categories>
+          <category type="estimation">Estimer la valeur des biens</category>
+          <designation rubric="true">Estimation des terres et seigneurie de Valance et Champigny, près Montreou, à la requeste de Monseigneur Moron, ancien trésorier de France ; M. Château, expert.</designation>
+        </categories>
+        <procedure>
+          <framework type="b2b">L’institution est saisie dans le cadre d’une procédure (l’institution nomme un ou deux experts)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Châtelet, lieutenant civil (sentence)</orgName>
+              <date when="1776-05-11"/>
+            </sentence>
+          </sentences>
+          <case>Succession (décès de l'épouse, Catherine Marguerite Devient). Estimation en vue du partage des biens de Catherine Margueritte de Ville.</case>
+          <objects>
+            <object type="territory">Domaine, terres, fief</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0050" context="primary" appointment="court-appointed">
+              <title>architecte expert</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0059">
+              <persName>
+                <surname>Forestier</surname>
+                <forename>François Césaire</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="true" intervention="true">
+              <person>
+                <persName>
+                  <surname>Moron</surname>
+                  <forename>Matthieu</forename>
+                </persName>
+                <occupation>ancien trésorier de France de la généralité de Paris, seigneur patron censier de la terre de Valence en Brie et de Champigny</occupation>
+              </person>
+              <status>owner</status>
+              <expert ref="#xpr0050"/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0050">Seigneurie de Champigny
+Nous avons fait des détails et relevés sur bordereaux particuliers de chaque nature et objets composant ladite seigneurie en tous genres, sur lesquels nous avons portés des prix relatifs à chacun d’iceux et différents calculs et examin faits des batiments qui composant le château et basse cour dudit château, la ferme y joignant sans que eux composent la ferme de la Marre, à la qualité et construction d’iceux, attention faite du lieu où le tout est scitué, à ce que le tout peut produire de revenu annuellement et au cours du temps présent. Nous estimons ladite terre, fief et seigneurie de Champigny et fermes y jointes ensemble la somme de soixante quinze mille livres scavoir pour les parties en fief celle de trente mille livres et pour celles en roture celle de quarante cinq mille livres faisant les deux sommes celle de soixante quinze mille livres à la charge de 39 livres dix sols de charge annuelle et des droits seigneuriaux qui consistent au droit de quiert et requiert pour les biens en fief et du sixième pour les terres en roture suivant la coutume de Meaux, ( ?) de Montreaux auxquels lesdits biens sont assujettis,
+
+Seigneurie de Valence en Brie
+Nous avons fait des détails et relevé sur bordeaux particuliers de chaque nature et objets qui composent ladite seigneurie en tous genres, sur lesquels nous avons portés des prix relatifs à chacun d’iceux et différents calculs et examin faits des batiments qui composent la ( ??) de la Seigneurie de Vallance et les fermes du bords et autres objets en dépendants, le tout suivant les déclarations qui nous en avons faits, attention faite du lieu où lesdits biens sont scitués, à ce qu’ils peuvent produire de revenu annuel, (de ?) fait des charges, au cours du temps présent et à proximité en partie pour exploitation et exportation des bois étant près de la rivière, nous estimons ladite terre et seigneurie de Valance, tout en fiefs, bois, ( ?) prés, vignes et ( ?), cens et rentes, le tout sus raporté ainsy que le tout sa poursuit et comporte de fond en comble, le montant et dépendant de toute perte et sous réserve, à la charge pour ledit seigneur de Valance des 228 livres 3 sols 3 deniers de charge ainsy qu’il est désigné cy dessus, la somme de cent quatre vingt mille livres dont cent trente cinq mille livres pour les objets en fief et celle de quarante cinq mille livres pour les objets en roture faisant ledittes deux sommes celle susdites de 180000 livres, ( ?) à la charge des droits seigneuriaux qui consistent pour les objets en fief au drois de quiert et requiert et pour les objets en roture aux sixième, coutume de Meaux, ( ?) de Montereau dans lesquels lesdits biens sont scitués, cy 180000 livres</opinion>
+          <arrangement/>
+          <agreement type="conclusion">Conclusion</agreement>
+          <estimate l="" s="" d=""/>
+          <estimates>
+            <place ref="#id139d321">
+              <appraisal l="75000" s="" d="">
+                <desc>Seigneurie de Champigny</desc>
+              </appraisal>
+            </place>
+            <place ref="#id139d336">
+              <appraisal l="180000" s="" d="">
+                <desc>Seigneurie de Valence en Brie</desc>
+              </appraisal>
+            </place>
+            <place ref="#id139d351"/>
+          </estimates>
+          <fees detail="true">
+            <fee type="papers" l="96" s="" d=""/>
+            <fee type="expert" ref="#xpr0050" l="432" s="" d=""/>
+            <fee type="clerk" l="432" s="" d=""/>
+            <fee type="rolls" l="300" s="" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="1260" s="" d=""/>
+          </fees>
+          <expenses mentioned=""/>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis/>
+        <noteworthy>Matthieu Moron a acquis des terres de Valence en Brie et de Champigny pendant sa communauté de biens avec son épouse Catherine Margueritte De Ville. Celle-ci est décédée le 12 octobre 1775, laissant quatre enfants dont trois encore mineurs.</noteworthy>
+      </description>
+    </expertise>

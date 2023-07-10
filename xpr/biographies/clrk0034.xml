@@ -1,0 +1,89 @@
+<eac xmlns="https://archivists.org/ns/eac/v2" xml:id="clrk0034">
+  <control maintenanceStatus="">
+    <recordId>clrk0034</recordId>
+    <maintenanceAgency>
+      <agencyName>ANR Experts</agencyName>
+    </maintenanceAgency>
+    <maintenanceHistory>
+      <maintenanceEvent maintenanceEventType="created">
+        <agent agentType="machine">clerk_csv2eac.xqy/BaseX</agent>
+        <eventDateTime standardDateTime="2022-12-31T14:06:48.817+01:00"/>
+        <eventDescription>Création des fiches EAC-CPF à partir du tableau</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+    <sources>
+      <source id="sourceid86494614">
+        <reference href="">Almanach royal 1726</reference>
+      </source>
+      <source id="sourceid86494616">
+        <reference href="">Almanach royal 1727</reference>
+      </source>
+      <source id="sourceid86494618">
+        <reference href="">Almanach royal 1736</reference>
+      </source>
+      <source id="sourceid86494620">
+        <reference href="">Almanach royal 1737</reference>
+      </source>
+      <source id="sourceid86494622">
+        <reference href="">Almanach royal 1746</reference>
+      </source>
+    </sources>
+  </control>
+  <cpfDescription>
+    <identity>
+      <entityType value="person"/>
+      <nameEntry status="authorized" preferredForm="true" sourceReference="">
+        <part localType="full">Baudouin, Antoine</part>
+      </nameEntry>
+      <nameEntry status="alternative" preferredForm="false" sourceReference="">
+        <part localType="surname">Baudouin</part>
+        <part localType="forename">Antoine</part>
+      </nameEntry>
+      <otherEntityTypes>
+        <otherEntityType>
+          <term>clerk</term>
+        </otherEntityType>
+      </otherEntityTypes>
+      <identityId>clrk0034</identityId>
+    </identity>
+    <description>
+      <functions>
+        <function sourceReference="#sourceid86494614 #sourceid86494616 #sourceid86494618 #sourceid86494620 #sourceid86494622">
+          <term>Greffier</term>
+          <dateRange>
+            <fromDate sourceReference="" certainty="certain" standardDate="1726"/>
+            <toDate sourceReference="" certainty="certain" standardDate="1746"/>
+          </dateRange>
+        </function>
+        <function sourceReference="#sourceid86494622">
+          <term>syndic</term>
+          <date sourceReference="" certainty="certain" standardDate="1746"/>
+        </function>
+      </functions>
+      <places>
+        <place sourceReference="#sourceid86494614 #sourceid86494616">
+          <placeRole>Adresse</placeRole>
+          <placeName>Quay de Gesvres</placeName>
+          <dateRange>
+            <fromDate sourceReference="" certainty="certain" standardDate="1726"/>
+            <toDate sourceReference="" certainty="certain" standardDate="1727"/>
+          </dateRange>
+        </place>
+        <place sourceReference="#sourceid86494618 #sourceid86494620">
+          <placeRole>Adresse</placeRole>
+          <placeName>rue Contrescarpe</placeName>
+          <dateRange>
+            <fromDate sourceReference="" certainty="certain" standardDate="1736"/>
+            <toDate sourceReference="" certainty="certain" standardDate="1737"/>
+          </dateRange>
+        </place>
+        <place sourceReference="#sourceid86494622">
+          <placeRole>Adresse</placeRole>
+          <placeName>rue de la Mortellerie, près les Audr.</placeName>
+          <date sourceReference="" certainty="certain" standardDate="1746"/>
+        </place>
+      </places>
+    </description>
+  </cpfDescription>
+  <!---->
+</eac>

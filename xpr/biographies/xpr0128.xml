@@ -1,0 +1,221 @@
+<eac xmlns="https://archivists.org/ns/eac/v2" xml:id="xpr0128">
+   <control maintenanceStatus="updated" publicationStatus="inProcess">
+      <recordId>xpr0128</recordId>
+      <maintenanceAgency>
+         <agencyName>projet Experts</agencyName>
+      </maintenanceAgency>
+      <maintenanceHistory>
+         <maintenanceEvent maintenanceEventType="revised">
+        <agent agentType="human">vnegre</agent>
+        <eventDateTime standardDateTime="2023-06-19T16:47:42Z"/>
+        <eventDescription/>
+      </maintenanceEvent>
+      <maintenanceEvent maintenanceEventType="updated" languageOfElement="eng">
+            <agent agentType="machine">EAC-CPF 1.x to EAC 2.0 Migration Style Sheet (eac1-to-eac2.xsl)</agent>
+            <eventDateTime standardDateTime="2022-09-19T16:52:56.508449+02:00"/>
+            <eventDescription>EAC-CPF 1.x (urn:isbn:1-931666-33-4) instance migrated to EAC 2.0 (https://archivists.org/ns/eac/v2)</eventDescription>
+         </maintenanceEvent>
+         <maintenanceEvent maintenanceEventType="updated">
+            <agent agentType="machine">cleanNamePart_files.xqy/BaseX</agent>
+            <eventDateTime standardDateTime="2021-02-18T15:39:02.354+01:00">2021-02-18T15:39:02.354+01:00</eventDateTime>
+            <eventDescription>Suppression des composantes du nom vides.</eventDescription>
+         </maintenanceEvent>
+         <maintenanceEvent maintenanceEventType="updated">
+            <agent agentType="machine">updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDateTime standardDateTime="2021-02-17T11:59:50.182+01:00">2021-02-17T11:59:50.182+01:00</eventDateTime>
+            <eventDescription>Conversion des dates de révision des fiches prosopographiques au format xsd:dateTime.</eventDescription>
+         </maintenanceEvent>
+         <maintenanceEvent maintenanceEventType="updated">
+            <agent agentType="machine">xml2eac.xsl/Saxon9</agent>
+            <eventDateTime standardDateTime="2019-11-07T12:00:00+01:00">2019-11-07T12:00:00+01:00</eventDateTime>
+            <eventDescription>Notice rétroconvertie en EAC-CPF à partir de données Google Drive.</eventDescription>
+         </maintenanceEvent>
+         <maintenanceEvent maintenanceEventType="created">
+            <agent agentType="human">JH</agent>
+            <eventDateTime standardDateTime="2018-05-29T12:00:00+01:00">2018-05-29T12:00:00+01:00</eventDateTime>
+            <eventDescription>Fiches créée sur Google Drive.</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+    <sources>
+      <source id="source_3qa0t9im26hmpp">
+        <reference href="">MC/ET/L/371 (Cont. de mariage)</reference>
+        <citedRange unit="page"/>
+      </source>
+    </sources>
+      
+      
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType value="person"/>
+         <nameEntry sourceReference="" preferredForm="true" status="authorized">
+            <part localType="full">Goupy I, Martin</part>
+            
+         </nameEntry>
+         <nameEntry sourceReference="" preferredForm="false" status="alternative">
+            <part localType="surname">Goupy I</part>
+            <part localType="forename">Martin</part>
+            
+            
+         </nameEntry>
+          <otherEntityTypes>
+            <otherEntityType>
+              <term>expert</term>
+            </otherEntityType>
+          </otherEntityTypes>
+         <identityId>xpr0128</identityId>
+      </identity>
+      <description>
+         <functions>
+            <function sourceReference="">
+               <term>Expert bourgeois</term>
+               <dateRange>
+                  <fromDate sourceReference="" certainty="" standardDate="1730"/>
+                  <toDate sourceReference="" certainty="" standardDate="1765"/>
+               </dateRange>
+               
+            </function>
+         </functions>
+      <places>
+        <place sourceReference="#source_3qa0t9im26hmpp">
+          <date certainty="certain" standardDate="1745-04-05" sourceReference=""/>
+          <address>
+            <addressLine>Rue de la Grande Truanderie</addressLine>
+            <addressLine>Paroisse Saint-Eustache</addressLine>
+          </address>
+        </place>
+      </places>
+         <localDescriptions>
+            <localDescription localType="sex">
+               <term/>
+            </localDescription>
+         </localDescriptions>
+         
+         
+         <existDates>
+            <dateRange>
+               <fromDate sourceReference="" certainty="" standardDate="1692"/>
+               <toDate sourceReference="" certainty="" standardDate="1765"/>
+            </dateRange>
+         </existDates>
+         <biogHist>
+            <chronList>
+               <chronItem id="eventid96246d179" localType="birth">
+                  <date sourceReference="" certainty="" standardDate="1692"/>
+                  <event>Naissance</event>
+                  
+                  
+                  
+                  
+               </chronItem>
+               
+               <chronItem id="eventid96246d197" localType="officePurchase">
+            <date certainty="" sourceReference=""/>
+                  
+                  <event>Acquisition d'un office</event>
+                  
+                  
+                  
+                  
+                  
+               </chronItem>
+               <chronItem id="eventid96246d204" localType="provision">
+            <date certainty="" sourceReference=""/>
+                  
+                  <event>Lettre de provision</event>
+                  
+                  
+                  
+                  
+               </chronItem>
+               
+               <chronItem id="eventid96246d218" localType="death">
+                  <date sourceReference="" certainty="" standardDate="1765"/>
+                  <event>Décès</event>
+                  
+                  
+                  
+                  
+               </chronItem>
+          <chronItem id="chronItem_112h095ftq6nvke" sourceReference="#source_3qa0t9im26hmpp" localType="marriage">
+            <date certainty="certain" standardDate="1745-04-05" sourceReference=""/>
+            <event>Mariage avec Marie Madeleine Petiot</event>
+            <place>
+              <placeName/>
+            </place>
+          </chronItem>
+            </chronList>
+         </biogHist>
+      </description>
+      <relations>
+      <relation target="#chronItem_112h095ftq6nvke" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Petiot, Marie Madeleine </part>
+          <part localType="status"/>
+          <part localType="occupationType"/>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_1v9m0xc66gcagz6" valueURI="" vocabularySource="" vocabularySourceURI="" sourceReference="#source_3qa0t9im26hmpp">rico:hasOrHadSpouse</relationType>
+        <targetRole target="#relationType_1v9m0xc66gcagz6">épouse</targetRole>
+      </relation>
+      <relation target="#chronItem_112h095ftq6nvke" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Goupy, André</part>
+          <part localType="status">Bourgeois de Paris </part>
+          <part localType="occupationType">Autres;Bourgeois de Paris</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_2bb60sktb1x44n3" valueURI="" vocabularySource="" vocabularySourceURI="" sourceReference="#source_3qa0t9im26hmpp">rico:isChildOf</relationType>
+        <targetRole target="#relationType_2bb60sktb1x44n3">père</targetRole>
+      </relation>
+      <relation target="#chronItem_112h095ftq6nvke" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Lepas Dubuisson, Marie Marguerite </part>
+          <part localType="status"/>
+          <part localType="occupationType"/>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_32t70g68bwkiomfm" valueURI="" vocabularySource="" vocabularySourceURI="" sourceReference="#source_3qa0t9im26hmpp">rico:isChildOf</relationType>
+        <targetRole target="#relationType_32t70g68bwkiomfm">mère</targetRole>
+      </relation>
+      <relation target="#chronItem_112h095ftq6nvke" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Petiot, Louis</part>
+          <part localType="status">Bourgeois de Paris </part>
+          <part localType="occupationType">Autres;Bourgeois de Paris</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_3rm20oke32wr9vj" valueURI="" vocabularySource="" vocabularySourceURI="" sourceReference="#source_3qa0t9im26hmpp">rico:hasFamilyAssociationWith</relationType>
+        <targetRole target="#relationType_3rm20oke32wr9vj">beau-père</targetRole>
+      </relation>
+      <relation target="#chronItem_112h095ftq6nvke" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Varin, Madeleine</part>
+          <part localType="status"/>
+          <part localType="occupationType"/>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_4mbn0eotckoc0sl5" valueURI="" vocabularySource="" vocabularySourceURI="" sourceReference="#source_3qa0t9im26hmpp">rico:hasFamilyAssociationWith</relationType>
+        <targetRole target="#relationType_4mbn0eotckoc0sl5">belle-mère</targetRole>
+      </relation>
+         
+      </relations>
+   </cpfDescription>
+   
+   
+</eac>

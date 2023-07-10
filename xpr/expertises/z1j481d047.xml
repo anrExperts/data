@@ -1,0 +1,214 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j481d047">
+      <meta/>
+      <control>
+        <maintenanceStatus/>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term/>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:45:33.927+02:00">2021-04-21T20:45:33.927+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateKeywordsModule_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour du module keywords.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:44:31.814+02:00">2021-04-21T20:44:31.814+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateExpertisesArrangement_files.xqy/BaseX</agent>
+            <eventDescription>Ajout du champs Accommodement dans l'éventualité d’une résolution par les parties.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:43:53.154+02:00">2021-04-21T20:43:53.154+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateExpertisesPlacesEstimates_files.xqy/BaseX</agent>
+            <eventDescription>Ajout des champs pour l'estimation des lieux.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2020-03-01T12:00:00">2020-03-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1706</unitdate>
+    <idno type="unitid">Z1J481</idno>
+        <idno type="item">47</idno>
+        <facsimile from="0484" to="0487"/>
+        <physDesc>
+          <extent sketch="false">3</extent>
+          <appendices>
+            <appendice>
+              <type type="other">Compte imprimé</type>
+              <extent>1</extent>
+              <desc/>
+              <note/>
+            </appendice>
+          </appendices>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1706-05-22" type="paris"/>
+        </sessions>
+        <places>
+          <place xml:id="id59589d1" type="paris">
+            <address>
+              <street>rue Royale</street>
+              <buildingNumber/>
+            </address>
+            <complement/>
+            <parish/>
+            <owner>Succession Thiberge</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="estimation">Estimer la valeur des biens</category>
+          <designation rubric="false">[Visite et estimation de maisons]</designation>
+        </categories>
+        <procedure>
+          <framework type="b2a">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>lieutenant civi</orgName>
+              <date when="1706-05-12"/>
+            </sentence>
+          </sentences>
+          <case>Succession Pierre Thiberge</case>
+          <objects>
+            <object type="house">Maison(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0194" context="primary" appointment="appointed">
+              <title>architecte expert juré bourgeois de Paris entrepreneur ordinaire des
+                            bâtiments du roi</title>
+            </expert>
+            <expert ref="#xpr0170" context="primary" appointment="appointed">
+              <title>expert juré entrepreneur de bâtiments à Paris</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0009">
+              <persName>
+                <surname>Baillis</surname>
+                <forename>Jean</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Thiberge</surname>
+                  <forename>Charlotte</forename>
+                </persName>
+                <occupation>nièce et héritière pour 1/5 de Pierre Thiberge</occupation>
+              </person>
+              <status>heir</status>
+              <expert ref=""/>
+            </party>
+            <party role="opponent" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Thiberge</surname>
+                  <forename>Jean</forename>
+                </persName>
+                <occupation/>
+              </person>
+              <person>
+                <persName>
+                  <surname>Thiberge</surname>
+                  <forename>Françoise</forename>
+                </persName>
+                <occupation/>
+              </person>
+              <status>heir</status>
+              <expert ref=""/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="">1/ « Ladite maison ainsy qu’elle se poursuit et comporte et estend de
+                    toutes parts tenant d’un costé sur ladite rue des Petits Champs à la maison
+                    dudit sieur de Nanteuil et d’autre à la maison cy après déclarée … laquelle
+                    maison nous avons estimée la somme de trente deux mil cinq cens livres eu égard
+                    à l’endroit qui est … et la petite maison qui donnera en propriété à ladite
+                    maison suivant la déclaration que nous en avons faite eu égard aussy aux
+                    reparations qualité construction des bastimens et estimation emplacement cours
+                    du temps present … 32 500 l. » 2/ « Ainsy que ladite maison se poursuit et
+                    comporte et etend de toutes parts et de fond en comble … laquelle maison nous
+                    avons estimée la somme de quinze mil cinq cens livres eu égard aux veues qui …
+                    la cuisine et passage pour aller au puis mitoyen lesquelles veues resteront en
+                    l’etat qu’elle sont declarées eu égard aussy à la construction scituation
+                    emplacement produit du loyer et aux réparations cours du temps présent et aux
+                    aultres frais de boue et lanternes cy… 15 500 l. »</opinion>
+          <agreement type="agreement">Accord</agreement>
+          <arrangement/>
+          <estimate l="48000" s="" d=""/>
+          <estimates>
+            <place ref="#id59589d1">
+              <appraisal l="" s="" d="">
+                <desc/>
+              </appraisal>
+            </place>
+          </estimates>
+          <fees detail="false">
+            <total l="" s="" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="" s="" d=""/>
+            <expense type="expert" l="6" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group=""/>
+        <analysis/>
+        <noteworthy/>
+      </description>
+    </expertise>

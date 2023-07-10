@@ -1,0 +1,236 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1000d030">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-09-01T12:00:00">2020-09-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2018-01-01T12:00:00">2018-01-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>PC</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1000</idno>
+        <idno type="item">030</idno>
+        <facsimile from="0301" to="0305"/>
+        <physDesc>
+          <extent sketch="false">5</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-03-12" type="suburbs"/>
+          <date when="1776-03-13" type="suburbs"/>
+        </sessions>
+        <places>
+          <place xml:id="id185d258" type="suburbs">
+            <address/>
+            <complement>Passy</complement>
+            <city>Paris</city>
+            <district/>
+            <owner>Succession Godefroid</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="estimation">Estimer la valeur des biens</category>
+          <designation rubric="true">Visite et estimation d’une maison</designation>
+        </categories>
+        <procedure>
+          <framework type="b2a">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Chambre des requêtes, sentence du 28 février 1776.</orgName>
+              <date when="1776-02-28"/>
+            </sentence>
+          </sentences>
+          <case>Expertise d’une maison de la succession Godefroid en vue d'une vente par licitation.</case>
+          <objects>
+            <object type="house">Maison(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0250" context="primary" appointment="appointed">
+              <title>architecte juré expert des bâtiments à Paris</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0069">
+              <persName>
+                <surname>Boudot</surname>
+                <forename>Simon</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="true" intervention="false">
+              <person>
+                <persName>
+                  <surname>Thierry</surname>
+                  <forename>Louis Vincent</forename>
+                </persName>
+                <occupation>employé dans les affaires du Roy, maître des droits et actions de la demoiselle Godefrois Marguerite Josephe son épouse, héritière de la Demoiselle Godefrois sa mère. Représentant de toutes les autres parties absentes, Adelaide Lejay fille mineure de Marie Jacques Lejay et Adelaide Françoise Godefrois décédée sa femme, seule héritière de sa mère, Ferdinand Joseph Godefrois, premier peintre de son altesse et sa majesté le Prince de Carignan, son père, Marie Josephe Godefrois sa sœur qui était héritière pour 1/7, Noël Louis Godefrois, son fère qui était héritier pour 1/7 de son père et encore ladite fille mineure Marie Jacob héritière de sa mère pour 1/5</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Godefroid</surname>
+                  <forename>Marguerite Josephe</forename>
+                </persName>
+                <occupation/>
+              </person>
+              <person>
+                <persName>
+                  <surname>Lejay</surname>
+                  <forename>Adelaide</forename>
+                </persName>
+                <occupation/>
+              </person>
+              <person>
+                <persName>
+                  <surname>Godefroid</surname>
+                  <forename>Ferdinand Joseph</forename>
+                </persName>
+                <occupation/>
+              </person>
+              <person>
+                <persName>
+                  <surname>Godefroid</surname>
+                  <forename>Marie Josephe</forename>
+                </persName>
+                <occupation/>
+              </person>
+              <person>
+                <persName>
+                  <surname>Godefroid</surname>
+                  <forename>Noël Louis</forename>
+                </persName>
+                <occupation/>
+              </person>
+              <person>
+                <persName>
+                  <surname>Jacob</surname>
+                  <forename>Marie</forename>
+                </persName>
+                <occupation/>
+              </person>
+              <status>heir</status>
+              <expert ref="#xpr0250"/>
+            </party>
+            <party role="opponent" presence="" intervention="">
+              <person>
+                <persName>
+                  <surname/>
+                  <forename/>
+                </persName>
+                <occupation/>
+              </person>
+              <status/>
+              <expert ref=""/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0250">« Pour parvenir à la juste valeur de ladite maison et l’estimer en notre âme et conscience, nous l’avons examinée de fond en combles, fait attention aux réparations qu’il seroit à propos d’y faire faire tant au corps de bâtiment qu’au mur de clôture, vu sa situation, sa distribution avantageuse ou désavantageuse, aux charges seigneuriales. Enfin tout bien considéré et examiné, nous avons estimé la maison et jardin, cours ainsi qu’ils se poursuivent et se composent, en égard au cours du temps présent relativement aux maisons de campagnes situées audit lieu de Passy, la somme de huit mille livres, 8 000 l. »</opinion>
+          <arrangement/>
+          <agreement type="conclusion">Conclusion</agreement>
+          <estimate l="8000" s="" d=""/>
+          <estimates>
+            <place ref="#id185d258">
+              <appraisal l="8000" s="" d="">
+                <desc>maison</desc>
+              </appraisal>
+            </place>
+          </estimates>
+          <fees detail="true">
+            <fee type="papers" l="4" s="14" d=""/>
+            <fee type="expert" ref="#xpr0250" l="5" s="" d=""/>
+            <fee type="clerk" l="15" s="" d=""/>
+            <fee type="rolls" l="26" s="" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="50" s="14" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="16" s="10" d=""/>
+            <expense type="expert" l="" s="100" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis/>
+        <noteworthy/>
+      </description>
+    </expertise>

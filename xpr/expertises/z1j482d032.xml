@@ -1,0 +1,199 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j482d032">
+      <meta/>
+      <control>
+        <maintenanceStatus/>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term/>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:45:33.927+02:00">2021-04-21T20:45:33.927+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateKeywordsModule_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour du module keywords.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:45:02.355+02:00">2021-04-21T20:45:02.355+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateExpertsFees_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour du coûts de l'expertise pour les experts.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:44:31.814+02:00">2021-04-21T20:44:31.814+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateExpertisesArrangement_files.xqy/BaseX</agent>
+            <eventDescription>Ajout du champs Accommodement dans l'éventualité d’une résolution par les parties.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2020-02-01T12:00:00">2020-02-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1706</unitdate>
+    <idno type="unitid">Z1J482</idno>
+        <idno type="item">32</idno>
+        <facsimile from="0273" to="0279"/>
+        <physDesc>
+          <extent sketch="false">6</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1706-07-14" type="paris"/>
+        </sessions>
+        <places>
+          <place type="paris">
+            <address>
+              <street>rue au Fer</street>
+              <buildingNumber/>
+            </address>
+            <complement/>
+            <parish/>
+            <owner/>
+          </place>
+        </places>
+        <categories>
+          <category type="assessment">Décrire et évaluer les travaux à venir</category>
+          <designation rubric="true">Visite de réparations de maison</designation>
+        </categories>
+        <procedure>
+          <framework type="b2a">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>lieutenant civi</orgName>
+              <date when="1706-07-10"/>
+            </sentence>
+          </sentences>
+          <case>Estimation du coût des réparations à faire pour partage des frais</case>
+          <objects>
+            <object type="house">Maison(s)</object>
+            <object type="wall">Mur(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0153" context="primary" appointment="court-appointed">
+              <title>expert juré du roi entrepreneur de bâtiments</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0014">
+              <persName>
+                <surname>Baudoin</surname>
+                <forename>Pierre</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="" intervention="">
+              <person>
+                <persName>
+                  <surname>Durban</surname>
+                  <forename>Jacques</forename>
+                </persName>
+                <occupation>prêtre bachelier en théologie</occupation>
+              </person>
+              <status>owner</status>
+              <expert ref="#xpr0153"/>
+            </party>
+            <party role="opponent" presence="" intervention="">
+              <person>
+                <persName>
+                  <surname>Duclos</surname>
+                  <forename>Estienne</forename>
+                </persName>
+                <occupation/>
+              </person>
+              <person>
+                <persName>
+                  <surname>Desprez</surname>
+                  <forename>Louis</forename>
+                </persName>
+                <occupation>et autres</occupation>
+              </person>
+              <status>owner</status>
+              <expert ref="#xpr0153"/>
+              <prosecutor>
+                <persName>
+                  <surname/>
+                  <forename/>
+                </persName>
+              </prosecutor>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0153">« Toutes lesquelles reparations sont très utilles et necessaires à faire en
+                    ladite maison et dont on ne peut se dispenser la maison estant très vieille et
+                    caduque, et qu’il n’est pas à propos de faire quant à présent d’autres
+                    réparations que celles cy dessus mentionnées »</opinion>
+          <agreement type="conclusion">Conclusion</agreement>
+          <arrangement/>
+          <estimate l="" s="" d=""/>
+          <fees detail="true">
+            <fee ref="#xpr0153" type="expert" l="6" s="" d=""/>
+            <fee type="clerk" l="6" s="" d=""/>
+            <fee type="rolls" l="4" s="5" d=""/>
+            <fee type="papers" l="3" s="8" d="9"/>
+            <fee type="plans" l="" s="" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <total l="19" s="13" d="9"/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="expert" l="3" s="" d=""/>
+            <expense type="clerk" l="10" s="5" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group=""/>
+        <analysis/>
+        <noteworthy/>
+      </description>
+    </expertise>

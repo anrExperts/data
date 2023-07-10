@@ -1,0 +1,105 @@
+<eac xmlns="https://archivists.org/ns/eac/v2" xml:id="clrk0057">
+  <control maintenanceStatus="">
+    <recordId>clrk0057</recordId>
+    <maintenanceAgency>
+      <agencyName>ANR Experts</agencyName>
+    </maintenanceAgency>
+    <maintenanceHistory>
+      <maintenanceEvent maintenanceEventType="created">
+        <agent agentType="machine">clerk_csv2eac.xqy/BaseX</agent>
+        <eventDateTime standardDateTime="2022-12-31T14:06:48.817+01:00"/>
+        <eventDescription>Création des fiches EAC-CPF à partir du tableau</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+    <sources>
+      <source id="sourceid86496344">
+        <reference href="">Almanach royal 1756</reference>
+      </source>
+      <source id="sourceid86496346">
+        <reference href="">Almanach royal 1757</reference>
+      </source>
+      <source id="sourceid86496348">
+        <reference href="">Almanach royal 1766</reference>
+      </source>
+      <source id="sourceid86496350">
+        <reference href="">Almanach royal 1767</reference>
+      </source>
+      <source id="sourceid86496352">
+        <reference href="">Almanach royal 1776</reference>
+      </source>
+      <source id="sourceid86496354">
+        <reference href="">Almanach royal 1777</reference>
+      </source>
+      <source id="sourceid86496356">
+        <reference href="">Almanach royal 1786</reference>
+      </source>
+      <source id="sourceid86496358">
+        <reference href="">Almanach royal 1787</reference>
+      </source>
+    </sources>
+  </control>
+  <cpfDescription>
+    <identity>
+      <entityType value="person"/>
+      <nameEntry status="authorized" preferredForm="true" sourceReference="">
+        <part localType="full">Liebault de la neuville, Chrsistophe Edouard</part>
+      </nameEntry>
+      <nameEntry status="alternative" preferredForm="false" sourceReference="">
+        <part localType="surname">Liebault de la neuville</part>
+        <part localType="forename">Chrsistophe Edouard</part>
+      </nameEntry>
+      <otherEntityTypes>
+        <otherEntityType>
+          <term>clerk</term>
+        </otherEntityType>
+      </otherEntityTypes>
+      <identityId>clrk0057</identityId>
+    </identity>
+    <description>
+      <functions>
+        <function sourceReference="#sourceid86496344 #sourceid86496346 #sourceid86496348 #sourceid86496350 #sourceid86496352 #sourceid86496354 #sourceid86496356 #sourceid86496358">
+          <term>Greffier</term>
+          <dateRange>
+            <fromDate sourceReference="" certainty="certain" standardDate="1756"/>
+            <toDate sourceReference="" certainty="certain" standardDate="1787"/>
+          </dateRange>
+        </function>
+      </functions>
+      <places>
+        <place sourceReference="#sourceid86496344 #sourceid86496346">
+          <placeRole>Adresse</placeRole>
+          <placeName>rue &amp; cul-de-sac des Billettes</placeName>
+          <dateRange>
+            <fromDate sourceReference="" certainty="certain" standardDate="1756"/>
+            <toDate sourceReference="" certainty="certain" standardDate="1757"/>
+          </dateRange>
+        </place>
+        <place sourceReference="#sourceid86496348 #sourceid86496350">
+          <placeRole>Adresse</placeRole>
+          <placeName>rue &amp; cul-de-sac des Billetes</placeName>
+          <dateRange>
+            <fromDate sourceReference="" certainty="certain" standardDate="1766"/>
+            <toDate sourceReference="" certainty="certain" standardDate="1767"/>
+          </dateRange>
+        </place>
+        <place sourceReference="#sourceid86496352 #sourceid86496354">
+          <placeRole>Adresse</placeRole>
+          <placeName>rue des Ecouffes, attenant le Jeu de Paume</placeName>
+          <dateRange>
+            <fromDate sourceReference="" certainty="certain" standardDate="1776"/>
+            <toDate sourceReference="" certainty="certain" standardDate="1777"/>
+          </dateRange>
+        </place>
+        <place sourceReference="#sourceid86496356 #sourceid86496358">
+          <placeRole>Adresse</placeRole>
+          <placeName>rue des Billettes</placeName>
+          <dateRange>
+            <fromDate sourceReference="" certainty="certain" standardDate="1786"/>
+            <toDate sourceReference="" certainty="certain" standardDate="1787"/>
+          </dateRange>
+        </place>
+      </places>
+    </description>
+  </cpfDescription>
+  <!---->
+</eac>

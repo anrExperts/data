@@ -1,0 +1,81 @@
+<eac xmlns="https://archivists.org/ns/eac/v2" xml:id="clrk0040">
+  <control maintenanceStatus="">
+    <recordId>clrk0040</recordId>
+    <maintenanceAgency>
+      <agencyName>ANR Experts</agencyName>
+    </maintenanceAgency>
+    <maintenanceHistory>
+      <maintenanceEvent maintenanceEventType="created">
+        <agent agentType="machine">clerk_csv2eac.xqy/BaseX</agent>
+        <eventDateTime standardDateTime="2022-12-31T14:06:48.817+01:00"/>
+        <eventDescription>Création des fiches EAC-CPF à partir du tableau</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+    <sources>
+      <source id="sourceid86497208">
+        <reference href="">Almanach royal 1736</reference>
+      </source>
+      <source id="sourceid86497210">
+        <reference href="">Almanach royal 1737</reference>
+      </source>
+      <source id="sourceid86497212">
+        <reference href="">Almanach royal 1746</reference>
+      </source>
+      <source id="sourceid86497214">
+        <reference href="">Almanach royal 1747</reference>
+      </source>
+    </sources>
+  </control>
+  <cpfDescription>
+    <identity>
+      <entityType value="person"/>
+      <nameEntry status="authorized" preferredForm="true" sourceReference="">
+        <part localType="full">Vincent, François</part>
+      </nameEntry>
+      <nameEntry status="alternative" preferredForm="false" sourceReference="">
+        <part localType="surname">Vincent</part>
+        <part localType="forename">François</part>
+      </nameEntry>
+      <otherEntityTypes>
+        <otherEntityType>
+          <term>clerk</term>
+        </otherEntityType>
+      </otherEntityTypes>
+      <identityId>clrk0040</identityId>
+    </identity>
+    <description>
+      <functions>
+        <function sourceReference="#sourceid86497208 #sourceid86497210 #sourceid86497212 #sourceid86497214">
+          <term>Greffier</term>
+          <dateRange>
+            <fromDate sourceReference="" certainty="certain" standardDate="1736"/>
+            <toDate sourceReference="" certainty="certain" standardDate="1747"/>
+          </dateRange>
+        </function>
+        <function sourceReference="#sourceid86497208 #sourceid86497210">
+          <term>syndic</term>
+          <dateRange>
+            <fromDate sourceReference="" certainty="certain" standardDate="1736"/>
+            <toDate sourceReference="" certainty="certain" standardDate="1737"/>
+          </dateRange>
+        </function>
+      </functions>
+      <places>
+        <place sourceReference="#sourceid86497208 #sourceid86497210 #sourceid86497212">
+          <placeRole>Adresse</placeRole>
+          <placeName>vieille rue du Temple, près le cul-de-sac</placeName>
+          <dateRange>
+            <fromDate sourceReference="" certainty="certain" standardDate="1736"/>
+            <toDate sourceReference="" certainty="certain" standardDate="1746"/>
+          </dateRange>
+        </place>
+        <place sourceReference="#sourceid86497214">
+          <placeRole>Adresse</placeRole>
+          <placeName>rue Culture Ste Cath.</placeName>
+          <date sourceReference="" certainty="certain" standardDate="1747"/>
+        </place>
+      </places>
+    </description>
+  </cpfDescription>
+  <!---->
+</eac>

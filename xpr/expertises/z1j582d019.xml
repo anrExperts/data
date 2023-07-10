@@ -1,0 +1,242 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j582d019">
+  <meta/>
+  <control>
+    <maintenanceStatus>revised</maintenanceStatus>
+    <publicationStatus/>
+    <localControl localType="detailLevel">
+      <term>completed</term>
+    </localControl>
+    <maintenanceHistory>
+      <maintenanceEvent>
+                <eventType>revised</eventType>
+                <eventDateTime standardDateTime="2022-03-31T09:53:57Z">2022-03-31T09:53:57Z</eventDateTime>
+                <agentType>human</agentType>
+                <agent>llosserand</agent>
+                <eventDescription>rvpcd</eventDescription>
+            </maintenanceEvent>
+          <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateObjectsValues_db.xqy/BaseX</agent>
+        <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateOpinionRef_files.xqy/BaseX</agent>
+        <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateRefValues_files.xqy/BaseX</agent>
+        <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+        <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>revised</eventType>
+        <eventDateTime standardDateTime="2020-11-01T12:00:00">2020-11-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>JH</agent>
+        <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>retroconverted</eventType>
+        <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>ead2xpr.xsl/Saxon9</agent>
+        <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>created</eventType>
+        <eventDateTime standardDateTime="2017-04-01T12:00:00">2017-04-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>llosserand</agent>
+        <eventDescription>Création de la fiche.</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+  </control>
+  <sourceDesc>
+    <unitdate>1726</unitdate>
+    <idno type="unitid">Z1J582</idno>
+    <idno type="item">019</idno>
+    <facsimile from="0250" to="0257"/>
+    <physDesc>
+      <extent sketch="false">8</extent>
+    </physDesc>
+  </sourceDesc>
+  <description>
+    <sessions>
+      <date when="1726-07-19" type="paris"/>
+      <date when="1726-07-20" type="paris"/>
+      <date when="1726-07-23" type="suburbs"/>
+    </sessions>
+    <places>
+      <place xml:id="id70d261" type="paris">
+        <address>
+          <street>rue des Petits Champs</street>
+          <buildingNumber/>
+        </address>
+        <complement/>
+        <parish/>
+        <owner>succession Massard</owner>
+      </place>
+      <place xml:id="id70d279" type="suburbs">
+        <address/>
+        <complement>une maison à Neuilly faisant face sur la rivière et retour sur la rue du Bac avec un jardin et des terrains</complement>
+        <city>Neuilly</city>
+        <district/>
+        <owner>succession Massard</owner>
+      </place>
+      <place xml:id="id70d296" type="suburbs">
+        <address/>
+        <complement>une autre petite maison faisant face sur la ruelle du Bac</complement>
+        <city>Neuilly</city>
+        <district/>
+        <owner>succession Massard</owner>
+      </place>
+    </places>
+    <categories>
+      <category type="estimation">Estimer la valeur des biens</category>
+      <designation rubric="true">Visitte et estimation de maisons et jardins à Neully et à Paris pour les mineurs Binot et de Mangin ; M. Loir, expert</designation>
+    </categories>
+    <procedure>
+      <framework type="b2">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+      <origination type="institution">Une institution</origination>
+      <sentences>
+        <sentence>
+          <orgName>lieutenant civil</orgName>
+          <date when="1726-07-06"/>
+        </sentence>
+      </sentences>
+      <case>succession double de Massard, Catherine et de Binot, Charles, les héritiers sont les enfants du premier mariage (entre Binot Charles et Massard, Catherine) et du second mariage (entre Massard, Catherine et Brouyn Demangin, Pierre).</case>
+      <objects>
+        <object type="house">Maison(s)</object>
+      </objects>
+    </procedure>
+    <participants>
+      <experts>
+        <expert ref="#xpr0183" context="primary" appointment="court-appointed">
+          <title>juré expert à Paris</title>
+        </expert>
+      </experts>
+      <clerks>
+        <clerk ref="#clrk0035">
+          <persName>
+            <surname>Tancart</surname>
+            <forename>Toussaint</forename>
+          </persName>
+        </clerk>
+      </clerks>
+      <parties>
+        <party role="petitioner" presence="false" intervention="false">
+          <person>
+            <persName>
+              <surname>Binot</surname>
+              <forename>Elisabeth Geneviève</forename>
+            </persName>
+            <occupation>épouse de de la Porte, Louis, bourgeois de Paris</occupation>
+          </person>
+          <person>
+            <persName>
+              <surname>Binot</surname>
+              <forename>Charles</forename>
+            </persName>
+            <occupation/>
+          </person>
+          <person>
+            <persName>
+              <surname>Binot</surname>
+              <forename>Marie</forename>
+            </persName>
+            <occupation>enfans mineurs de défunt Binot, Charles, officier de la bouche du roy et de Massard, Catherine, sa femme décédés, épouse de Brouyn Demangin, Pierre : héritiers chacun pour un tiers dudit défunt sieur leur père légataire universel de défunte Deschamps, Catherine, veuve de Massard, Pierre, greffier en chef du grenier à sel de Paissy, leur aïeule maternelle. Et encore lesd. mineurs héritiers chacun pour un huitième de lad. demoiselle Massard, Catherine, décédée, épouse dud. sr Brouyn Demangin.</occupation>
+          </person>
+          <status>heir</status>
+          <expert ref="#xpr0183"/>
+          <representative>
+            <persName>
+              <surname>Ravochin</surname>
+              <forename>Antoine</forename>
+            </persName>
+            <occupation/>
+          </representative>
+          <representative>
+            <persName>
+              <surname>Sommier</surname>
+              <forename>François</forename>
+            </persName>
+            <occupation/>
+          </representative>
+        </party>
+      </parties>
+      <craftmen>
+        <craftman>
+          <persName>
+            <surname/>
+            <forename/>
+          </persName>
+          <occupation/>
+        </craftman>
+      </craftmen>
+    </participants>
+    <conclusions>
+      <opinion ref="#xpr0183">Estimation de la maison à Paris
+                « […] nous sommes transportés en laditte maison […] à l'effet de prendre les mesures de l'emplacement total de lad. maison et distinctement de ce qui est occupé en bastiments d'avec ce qui est en court, ce, pour parvenir à une juste estimation, où estant en l'absence des parties nous avons pris touttes lesdittes mesures, faits les calculs nécessaires et [f. 5r°] d'abondant vu et visitté tous les bastiments qui composent lad. maison, fait considération du quartier où elle sont scituez, à leur états présent qui sont anciens et nous les prisons et estimons, eu esgard au cours du tems présent et à la charge du cens, seullement la somme de cinquante six mil livres, cy 56000 liv 0es.
+                Estimation des biens à Neuilly
+                « [f. 8r°] Laquelle maison, courts, jardins, petites maison particulière tenue par une blanchisseuse, partie de vigne et 10 perches de cerizay, nous prisons et estimons valloir ensemble, eu esgard à ce que les bastimens de la grande maison sont très anciens, au cours du temps présent et du cens, la somme de sept mil cinq cent livres, cy 7500 livres. »</opinion>
+      <arrangement/>
+      <agreement type="conclusion">Conclusion</agreement>
+      <estimate l="63500" s="" d=""/>
+      <estimates>
+        <place ref="#id70d261">
+          <appraisal l="56000" s="" d="">
+            <desc>maison</desc>
+          </appraisal>
+        </place>
+        <place ref="#id70d279">
+          <appraisal l="7500" s="" d="">
+            <desc>deux maisons à Neuilly</desc>
+          </appraisal>
+        </place>
+        <place ref="#id70d296"/>
+      </estimates>
+      <fees detail="true">
+        <fee type="papers" l="" s="" d=""/>
+        <fee type="expert" ref="#xpr0183" l="21" s="" d=""/>
+        <fee type="clerk" l="" s="" d=""/>
+        <fee type="rolls" l="" s="" d=""/>
+        <fee type="prosecutors" l="" s="" d=""/>
+        <fee type="help" l="" s="" d=""/>
+        <fee type="plans" l="" s="" d=""/>
+        <total l="" s="" d=""/>
+      </fees>
+      <expenses mentioned="false"/>
+    </conclusions>
+    <keywords group="estates"/>
+    <keywords group="procedure"/>
+    <keywords group="contract"/>
+    <keywords group="encumbrance"/>
+    <keywords group="law"/>
+    <keywords group="measurement"/>
+    <keywords group="repairs"/>
+    <keywords group="guarantees"/>
+    <keywords group="responsability"/>
+    <keywords group="ownership"/>
+    <keywords group="value"/>
+    <keywords group="neighbourhood"/>
+    <keywords group="disorder"/>
+    <keywords group="transformation"/>
+    <analysis>Enonciation des parties et exposition du cas présent
+                « [f. 1r°] une sentence rendue au Châtelet de Paris le six desd. mois et an rendue par Mr le lieutenant civil qui homologue l'advis des parens et amis des delle Elisabeth Geneviève Binot, espouse de Louis de la Porte, bourgeois de Paris, de Charles et Marie Antoinette Charlotte Binot, enfans mineurs de deffunt Charles Binot, officier de la bouche du roy et de Catherine Massard, sa femme, décédés, épouse de Pierre Brouyn Demangin,, lad. de la part et sesd. frères et sœurs seuls héritiers chacun pour un tiers dudit deffunt sr leur père, légataire universel de deffunte Catherine Deschamps, veuve de Pierre Massard, greffier en chef du grenier à sel de Paissy, leur ayeulle maternelle ; et encore lesd. mineurs héritiers chacun pour un huitiesme de lad. demoiselle Catherine Massard, décédée, épouse dud. sr Brouyn Demangin, par laquelle sentence il est entre autres choses ordonné que led. Sr Pierre Brouyn Demangin demeurera tuteur de ses cinq enfans mineurs à l'effet de conserver et deffendre leurs droits et [intérest?] contre lesd. trois mineurs Binot esd. qualité qu'ils produit ; plus que led. sr Drouyn Demangin [f. 1v°] sera et demeurera tuteur à Catherine Drouyn Demangin sa fille, à l'effet du partage des biens de lad. Drouyn Demangin sa mère ; ledit Louis de la Porte tuteur à lad. Geneviève Binot sa femme et ausd. Charles et Marie Antoinette Charlotte Binot esd. qualités à l'effet de compter avec led. Drouyn Demangin de leur tutelle et administration accepte la remise des biens dud. Binot leur père, liquider et fier les sommes deue par led. deffunt Binot à la succession de lad. Drouyn Demangin, les comprendre et parler dans les biens de sa succession, compenser le produit desd. biens et celuy des biens du légataire universel [ illisible] dans et autre chose esnoncé aud. [ illisible]. Plus que led. de la Laporte demerrera tuteur de saditte femme desd. deux autres mineurs Binot et des cinq mineurs Demangin à l'effet de diriger et soutenir tant leurs droicts contre ledit Drouyn Demangin et encore led. sr de la Porte tuteur de sad. femme à l'effet d'accepter le dellaissement que leur sera fait de partie des effets dud. legs universel, que led. Antoine Ravochin demeurera tuteur desd. Charles et Marie Antoinette Charlotte Binot à l'effet de faire à lad. femme de la Porte les dellassements nécessaires des biens qui composent led. legs universel, comme aussy que le Sr François Sonnier demeurera tuteur de lad. Marie Mantoinette [f. 2r°] Charlotte Binot et Catherine Brouyn Demangin, led. Jean Henry Demangin dud. Louis Drouyn Demangin, [ illisible] de Jacques Pierre Drouyn et led. Louis Demangin de Louis Pierre Drouyn Demangin à l'effet du partage des biens de lad. Demangin leur mère et feront les biens immeubles desd. succession et [communautés?] préalablement prises et estimées, scavoir les maisons scizes à Paris et à Neuilly par nous, Loir nommé d'office et suivant l'advis desd. parens et amis homologués par lad. sentence signé et scellé, et lesd. charges de tuteurs acceptées par acte en marge d'icelle le onze desd. mois et an »</analysis>
+    <noteworthy/>
+  </description>
+</expertise>

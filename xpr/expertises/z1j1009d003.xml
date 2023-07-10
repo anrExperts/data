@@ -1,0 +1,205 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1009d003">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-08-01T12:00:00">2020-08-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2017-10-01T12:00:00">2017-10-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1009</idno>
+        <idno type="item">003</idno>
+        <facsimile from="0022" to="0030"/>
+        <physDesc>
+          <extent sketch="false">6</extent>
+          <appendices>
+            <appendice>
+              <type type="petition">Requête</type>
+              <extent>1</extent>
+              <desc/>
+              <note/>
+            </appendice>
+          </appendices>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-11-05" type="paris"/>
+          <date when="1776-11-08" type="paris"/>
+          <date when="1776-11-09" type="paris"/>
+          <date when="1776-11-09" type="paris"/>
+        </sessions>
+        <places>
+          <place xml:id="id43d296" type="paris">
+            <address>
+              <street>Rue des Quatre fils</street>
+              <buildingNumber/>
+            </address>
+            <complement/>
+            <parish/>
+            <owner>succession de l’abbé Dazy</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="estimation">Estimer la valeur des biens</category>
+          <designation rubric="true">Estimation d'une maison, rue des quatre fils au marais, dépendante de la succession de M. L'abbé d'Azy ; M. Taboureur, expert</designation>
+        </categories>
+        <procedure>
+          <framework type="b2b">L’institution est saisie dans le cadre d’une procédure (l’institution nomme un ou deux experts)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Châtelet, lieutenant civil (ordonnance)</orgName>
+              <date when="1776-10-23"/>
+            </sentence>
+          </sentences>
+          <case>Succession Dazy, liquidation et partage : vente d’une maison</case>
+          <objects>
+            <object type="house">Maison(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0250" context="" appointment="">
+              <title>architecte expert bourgeois des bâtiments à Paris</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0062">
+              <persName>
+                <surname>Picquenon</surname>
+                <forename>Denis Joseph François</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="" intervention="">
+              <person>
+                <persName>
+                  <surname>d’Archambaud</surname>
+                  <forename>Michelle Gabrielle Raphaelle</forename>
+                </persName>
+                <occupation>épouse de De Mortagne, tutrice à l’interdiction de son mari, autorisée à procéder aux liquidation et partage de la succession de Dazy, François Louis, prêtre docteur de Sorbonne, sous doyen de l’église de Bayeux, dont Dazy, Claude Nicolas, seigneur de Mortagne, époux de celle-ci, est en partie héritier</occupation>
+              </person>
+              <status>heir</status>
+              <expert ref="#xpr0250"/>
+              <representative>
+                <persName>
+                  <surname>Godefroy</surname>
+                  <forename>Jean Antoine</forename>
+                </persName>
+                <occupation>avocat au parlement</occupation>
+              </representative>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0250">« Nous avons ensuitte de nouveau visitté ladite maison en touttes les partyes qui la composent de fond en comble, fait attention à son état consistance et distribution, à la nature de sa construction, aux reparations qui sont à y faire à l’étendue de son emplacement, à sa figure à la manière dont il est employé par les batiments, au droit qu’elle a aux eaux de la ville suivant les concessions cy dessus citées, au revenu qu’elle est susceptible de produire et au quartier où elle est située, nous avons mis des prix particuliers tant au fond du terrain qu’à la superficie des batiments eu égard à ce que dessus Touttes considerations faittes nous prisons et estimons ladite maison à la charge du cens et des droits seigneuriaux et au cours du tems present la somme de … 62 000 l. 
+Pour satisfaire au requisitoire de Me Godefroy audit nom en la premiere vacation du present rapport, nous vous observons Monsieur, que par la visitte que nous avons faitte d’icelle nous avons reconnu qu’il est impossible de la partager commodement ny autrement en autant de portions qu’il y a de proprietaires cy… observation 
+Telle est Monsieur la visitte par nous faitte de ladite maison tel est notre avis sur la valeur d’icelle suivant et aux termes de votre ordonnance ; nous referons à votre justice et prudence ordinaires 
+Fait par nous architecte expert susdit lesdits jour mois et an après avoir vaqué à ce que dessus par double vacation pour mettre à fin le present rapport. »</opinion>
+          <arrangement/>
+          <agreement type="conclusion">Conclusion</agreement>
+          <estimate l="" s="" d=""/>
+          <estimates>
+            <place ref="#id43d296">
+              <appraisal l="62000" s="" d="">
+                <desc>une maison</desc>
+              </appraisal>
+            </place>
+          </estimates>
+          <fees detail="true">
+            <fee type="papers" l="4" s="12" d=""/>
+            <fee type="expert" ref="#xpr0250" l="30" s="" d=""/>
+            <fee type="clerk" l="30" s="" d=""/>
+            <fee type="rolls" l="20" s="" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="84" s="12" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="27" s="10" d=""/>
+            <expense type="expert" l="" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis>Procédure particulière ? Ordonnance plutôt que sentence, pourtant habituelle dans le cas d’une estimation dans le cadre d’une succession</analysis>
+        <noteworthy/>
+      </description>
+    </expertise>

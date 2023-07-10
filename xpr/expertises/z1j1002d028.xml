@@ -1,0 +1,210 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1002d028">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2017-10-01T12:00:00">2017-10-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1002</idno>
+        <idno type="item">028</idno>
+        <facsimile from="0462" to="0476"/>
+        <physDesc>
+          <extent sketch="false">4</extent>
+          <appendices>
+            <appendice>
+              <type type="other">Mémoire d'ouvrages</type>
+              <extent>9</extent>
+              <desc/>
+              <note>Mémoire des ouvrages de charpente mécanique
+il y a aussi de la maçonnerie e t de la couvertue
+distinction des augmentations</note>
+            </appendice>
+          </appendices>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-05-13" type="suburbs"/>
+          <date when="1776-05-13" type="suburbs"/>
+          <date when="1776-05-18" type="suburbs"/>
+          <date when="1776-08-28" type="suburbs"/>
+          <date when="1776-08-30" type="suburbs"/>
+        </sessions>
+        <places>
+          <place type="suburbs">
+            <address/>
+            <complement>un moulin à cage de bois appelé de la citadelle scis au canton des trois Cornets</complement>
+            <city>petit Montrouge</city>
+            <district/>
+            <owner/>
+          </place>
+        </places>
+        <categories>
+          <category type="acceptation">Recevoir et évaluer le travail réalisé</category>
+          <designation rubric="true">Estimation et réception des réparations faites au Moulin à vent de la Citadelle, près le Petit Mont rouge, saisie réellement, sur le sieur Hauson et sa femme., pour le sieur Michaux, charpentier ; M. Payen, expert.</designation>
+        </categories>
+        <procedure>
+          <framework type="b2b">L’institution est saisie dans le cadre d’une procédure (l’institution nomme un ou deux experts)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName/>
+              <date when=""/>
+            </sentence>
+          </sentences>
+          <case>fin des travaux demandé par un rapport des experts du 17 juin dernier</case>
+          <objects>
+            <object type="other">ouvrage de charpenterie</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0209" context="primary" appointment="court-appointed">
+              <title>architecte juré expert bourgeois des bâtiments en titre d'office</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0050">
+              <persName>
+                <surname>Mallerot</surname>
+                <forename>Joseph Louis</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="true" intervention="false">
+              <person>
+                <persName>
+                  <surname>Michaux</surname>
+                  <forename>Gabriel</forename>
+                </persName>
+                <occupation>maître charpentier à Paris</occupation>
+              </person>
+              <status>builder</status>
+              <expert ref="#xpr0209"/>
+            </party>
+            <party role="opponent" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Richard</surname>
+                  <forename/>
+                </persName>
+                <occupation>fermier judiciaire du moulin saisi réellement sur les époux Haudon</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Pecquest</surname>
+                  <forename>Marie Rose</forename>
+                </persName>
+                <occupation>veuve deLoutre, Charles Marie, marchand fripier à Paris, et consors, poursuivant la vente en adjudication du moulin</occupation>
+              </person>
+              <status>limited-partner</status>
+              <expert ref="#xpr0209"/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname>Michaux</surname>
+                <forename>Gabriel</forename>
+              </persName>
+              <occupation>maître charpentier</occupation>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0209">1° « Ouvrages faits en exécution de notre dit procès verbal du dix sept juin mil sept cent soixante quinze… 1 088 l. »
+2° « Ouvrages faits par augmentation non portés au procès verbal… 596 l. 5 s. 8 d. »
+« Lesquels ouvrages nous ont paru avoir esté necessaires et indispensables à faire ; pour quoi nous declarons estimés
+Ayant reconnu hors de notre visitte que les ouvrages faits en execution de notre procès verbal du dix sept juin… et ceux de suplément ou d’augmentation à ce qui y est constaté sont autant bien faits qu’il est possible de les faire »
+« Récapitulation
+… 1 684 l. 5 s. 8 d. »</opinion>
+          <arrangement/>
+          <agreement type="conclusion">Conclusion</agreement>
+          <estimate l="" s="" d=""/>
+          <fees detail="true">
+            <fee type="papers" l="6" s="" d=""/>
+            <fee type="expert" ref="#xpr0209" l="34" s="10" d=""/>
+            <fee type="clerk" l="34" s="10" d=""/>
+            <fee type="rolls" l="15" s="" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="other" l="6" s="" d="">entr...</fee>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="96" s="" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="23" s="" d=""/>
+            <expense type="expert" l="11" s="10" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation">
+          <term value="n3">Augmentation</term>
+        </keywords>
+        <analysis/>
+        <noteworthy>Estimation et réception de réparations
+1/ réception des ouvrages de charpente et mécanique faits en exécution du rapport de Payen du 17 juin 1776
+2/ vérification et estimation des nouveaux ouvrages faits en supplément</noteworthy>
+      </description>
+    </expertise>

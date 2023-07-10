@@ -1,0 +1,150 @@
+<eac xmlns="https://archivists.org/ns/eac/v2" xml:id="xpr0103">
+   <control maintenanceStatus="updated" publicationStatus="inProcess">
+      <recordId>xpr0103</recordId>
+      <maintenanceAgency>
+         <agencyName>projet Experts</agencyName>
+      </maintenanceAgency>
+      <maintenanceHistory>
+         <maintenanceEvent maintenanceEventType="revised">
+        <agent agentType="human">vnegre</agent>
+        <eventDateTime standardDateTime="2023-04-22T14:46:35Z"/>
+        <eventDescription/>
+      </maintenanceEvent>
+      <maintenanceEvent maintenanceEventType="updated" languageOfElement="eng">
+            <agent agentType="machine">EAC-CPF 1.x to EAC 2.0 Migration Style Sheet (eac1-to-eac2.xsl)</agent>
+            <eventDateTime standardDateTime="2022-09-19T16:52:56.280981+02:00"/>
+            <eventDescription>EAC-CPF 1.x (urn:isbn:1-931666-33-4) instance migrated to EAC 2.0 (https://archivists.org/ns/eac/v2)</eventDescription>
+         </maintenanceEvent>
+         <maintenanceEvent maintenanceEventType="updated">
+            <agent agentType="machine">cleanNamePart_files.xqy/BaseX</agent>
+            <eventDateTime standardDateTime="2021-02-18T15:39:02.354+01:00">2021-02-18T15:39:02.354+01:00</eventDateTime>
+            <eventDescription>Suppression des composantes du nom vides.</eventDescription>
+         </maintenanceEvent>
+         <maintenanceEvent maintenanceEventType="updated">
+            <agent agentType="machine">updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDateTime standardDateTime="2021-02-17T11:59:50.182+01:00">2021-02-17T11:59:50.182+01:00</eventDateTime>
+            <eventDescription>Conversion des dates de révision des fiches prosopographiques au format xsd:dateTime.</eventDescription>
+         </maintenanceEvent>
+         <maintenanceEvent maintenanceEventType="updated">
+            <agent agentType="machine">xml2eac.xsl/Saxon9</agent>
+            <eventDateTime standardDateTime="2019-11-07T12:00:00+01:00">2019-11-07T12:00:00+01:00</eventDateTime>
+            <eventDescription>Notice rétroconvertie en EAC-CPF à partir de données Google Drive.</eventDescription>
+         </maintenanceEvent>
+         <maintenanceEvent maintenanceEventType="created">
+            <agent agentType="human">JH</agent>
+            <eventDateTime standardDateTime="2018-05-29T12:00:00+01:00">2018-05-29T12:00:00+01:00</eventDateTime>
+            <eventDescription>Fiches créée sur Google Drive.</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+    <sources>
+      <source id="source_9ys0c3crge6ookt">
+        <reference href="">MC/ET/CXXII/680 (IAD)</reference>
+      </source>
+    </sources>
+      
+      
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType value="person"/>
+         <nameEntry sourceReference="" preferredForm="true" status="authorized">
+            <part localType="full">Dulin, Nicolas</part>
+            
+         </nameEntry>
+         <nameEntry sourceReference="" preferredForm="false" status="alternative">
+            <part localType="surname">Dulin</part>
+            <part localType="forename">Nicolas</part>
+            
+            
+         </nameEntry>
+          <otherEntityTypes>
+            <otherEntityType>
+              <term>expert</term>
+            </otherEntityType>
+          </otherEntityTypes>
+         <identityId>xpr0103</identityId>
+      </identity>
+      <description>
+         <functions>
+            <function sourceReference="">
+               <term>Expert entrepreneur</term>
+               <dateRange>
+                  <fromDate sourceReference="" certainty="" standardDate="1712"/>
+                  <toDate sourceReference="" certainty=""/>
+               </dateRange>
+               
+            </function>
+         </functions>
+         <localDescriptions>
+            <localDescription localType="sex">
+               <term/>
+            </localDescription>
+         </localDescriptions>
+         <occupations>
+            <occupation sourceReference="">
+               <term>Membre de l'Académie</term>
+               <dateRange>
+                  <fromDate sourceReference="" certainty="" standardDate="1718"/>
+                  <toDate sourceReference="" certainty="" standardDate="1734"/>
+               </dateRange>
+               <descriptiveNote>
+                  <p>oui : 1718-1734</p>
+               </descriptiveNote>
+            </occupation>
+         </occupations>
+         
+         <existDates>
+            <dateRange>
+               <fromDate sourceReference="" certainty=""/>
+               <toDate sourceReference="#source_9ys0c3crge6ookt" certainty="certain" standardDate="1751-04-10"/>
+            </dateRange>
+         </existDates>
+         <biogHist>
+            <chronList>
+               <chronItem id="eventid96196d205" localType="marriage">
+            <date certainty="" sourceReference=""/>
+                  
+                  <event>Mariage</event>
+                  
+                  
+                  
+                  
+               </chronItem>
+               <chronItem id="eventid96196d212" localType="officePurchase">
+            <date certainty="" sourceReference=""/>
+                  
+                  <event>Acquisition d'un office</event>
+                  
+                  
+                  
+                  
+                  
+               </chronItem>
+               <chronItem id="eventid96196d219" localType="provision">
+            <date certainty="" sourceReference=""/>
+                  
+                  <event>Lettre de provision</event>
+                  
+                  
+                  
+                  
+               </chronItem>
+          <chronItem id="chronItem_vs20snysvbh37wi" sourceReference="#source_9ys0c3crge6ookt" localType="death">
+            <date certainty="certain" standardDate="1751-04-10" sourceReference=""/>
+            <event>Décès de Nicolas Dulin</event>
+            <place>
+              <placeName>Rue Saint-Anne</placeName>
+            </place>
+          </chronItem>
+               
+               
+            </chronList>
+         </biogHist>
+      </description>
+      <relations>
+         
+      </relations>
+   </cpfDescription>
+   
+   
+</eac>

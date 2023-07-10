@@ -1,0 +1,193 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j433d104">
+      <meta/>
+      <control>
+        <maintenanceStatus/>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term/>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:45:33.927+02:00">2021-04-21T20:45:33.927+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateKeywordsModule_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour du module keywords.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:44:31.814+02:00">2021-04-21T20:44:31.814+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateExpertisesArrangement_files.xqy/BaseX</agent>
+            <eventDescription>Ajout du champs Accommodement dans l'éventualité d’une résolution par les parties.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2019-03-01T12:00:00">2019-03-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1696</unitdate>
+    <idno type="unitid">Z1J433</idno>
+        <idno type="item">104</idno>
+        <facsimile from="0688" to="0692"/>
+        <physDesc>
+          <extent sketch="false">4</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1696-06-08" type="paris"/>
+        </sessions>
+        <places>
+          <place type="paris">
+            <address>
+              <street>rue de la Roquette</street>
+              <buildingNumber/>
+            </address>
+            <complement>maison et marais au faubourg Saint-Antoine</complement>
+            <parish/>
+            <owner>saisie sur François René Jacquelin sergent à verge au Châtelet</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="assessment">Décrire et évaluer les travaux à venir</category>
+          <designation rubric="false">Etat des lieux et des réparations à faire</designation>
+        </categories>
+        <procedure>
+          <framework type="b2a">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>requêtes du Palais</orgName>
+              <date when="1696-05-19"/>
+            </sentence>
+          </sentences>
+          <case>succession, mauvais état de la maison</case>
+          <objects>
+            <object type="plot">Terrain(s)</object>
+            <object type="house">Maison(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0192" context="primary" appointment="appointed">
+              <title>juré expert créé par le roi au faict des expériences, visittes des arts et bâtiments de France</title>
+            </expert>
+            <expert ref="#xpr0063" context="primary" appointment="appointed">
+              <title>juré expert créé par le roi au faict des expériences, visittes des arts et bâtiments de France</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0006">
+              <persName>
+                <surname>Hamet</surname>
+                <forename>Michel</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="false" intervention="">
+              <person>
+                <persName>
+                  <surname>Berrard</surname>
+                  <forename>Marin</forename>
+                </persName>
+                <occupation>bourgeois de Paris</occupation>
+              </person>
+              <status>contractor</status>
+              <expert ref="#xpr0192"/>
+            </party>
+            <party role="opponent" presence="false" intervention="">
+              <person>
+                <persName>
+                  <surname>Plassier</surname>
+                  <forename>Catherine</forename>
+                </persName>
+                <occupation>veuve de Charles Jacquelin ayant repris au lieu et place de Françoise Joubert, veuve Estienne Plassin sa mère et cy devant sa tutrice poursuivante criées</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Leclerc</surname>
+                  <forename/>
+                </persName>
+                <occupation>procureur, plus ancien crantier opposants</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Jacquelin</surname>
+                  <forename>François René</forename>
+                </persName>
+                <occupation/>
+              </person>
+              <person>
+                <persName>
+                  <surname>Arnauld</surname>
+                  <forename/>
+                </persName>
+                <occupation/>
+              </person>
+              <status>creditor</status>
+              <expert ref="#xpr0063"/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <agreement type="agreement">Accord</agreement>
+          <opinion ref="">Et après avoir par nous le tout veu et visité, avons trouvé que les réparations par noous cy dessus rapporté sont très nécessaires et urgentes à faite en ladite maison aux lieux et endroits par nous déclarée sans quoy lesdits lieux (?) et ne peuvent estre habitez surement et commodément, sauf de tout ce qu dessus à la Cour d'en ordonner. Ce fait nous certifions...é</opinion>
+          <arrangement/>
+          <estimate/>
+          <fees detail="false">
+            <total l="" d="" s=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="" s="" d=""/>
+            <expense type="expert" l="6" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group=""/>
+        <analysis/>
+        <noteworthy/>
+      </description>
+    </expertise>

@@ -1,0 +1,185 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j583d043">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-11-01T12:00:00">2020-11-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2016-10-26T12:00:00">2016-10-26T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>RB</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1726</unitdate>
+    <idno type="unitid">Z1J583</idno>
+        <idno type="item">043</idno>
+        <facsimile from="0465" to="0477"/>
+        <physDesc>
+          <extent sketch="false">14</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1726-10-07" type="province"/>
+          <date when="1726-10-08" type="province"/>
+        </sessions>
+        <places>
+          <place type="province">
+            <address/>
+            <complement>château de Puicarré</complement>
+            <city>Puicarré</city>
+            <district/>
+            <owner>mineurs Chenart</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="assessment">Décrire et évaluer les travaux à venir</category>
+          <designation rubric="true">Visite de réparations à faire</designation>
+        </categories>
+        <procedure>
+          <framework type="b2a">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Lieutenant civil du Châtelet</orgName>
+              <date when="1726-09-28"/>
+            </sentence>
+          </sentences>
+          <case>entretien d'un château et de ses dépendances en mauvais état, pour le compte de mineurs</case>
+          <objects>
+            <object type="other">château</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0183" context="primary" appointment="appointed">
+              <title>juré expert à Paris</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0035">
+              <persName>
+                <surname>Tancart</surname>
+                <forename>Toussaint</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Chenart</surname>
+                  <forename>Anne Geneviève</forename>
+                </persName>
+                <occupation/>
+              </person>
+              <person>
+                <persName>
+                  <surname>Chenart</surname>
+                  <forename>Adelaïde Françoise</forename>
+                </persName>
+                <occupation/>
+              </person>
+              <person>
+                <persName>
+                  <surname>Chenart</surname>
+                  <forename>Antoine Charlotte</forename>
+                </persName>
+                <occupation>filles mineures héritières de leur père Chenart, Jean</occupation>
+              </person>
+              <status>heir</status>
+              <expert ref="#xpr0183"/>
+            </party>
+            <party role="opponent" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Falars</surname>
+                  <forename>Marie Jeanne de</forename>
+                </persName>
+                <occupation>veuve de Chernart, Jean, mère et tutrice des précédentes</occupation>
+              </person>
+              <status>heir</status>
+              <expert ref="#xpr0183"/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0183">« Touttes lesquelles ouvrages faittes depuis le deces dud. feu president Chenart et celles qui sont a faire audit château, ferme et deppendances qui montent et reviennent ensemble a la somme de neuf mil six cent trente six livres deux sols huit deniers. »</opinion>
+          <arrangement/>
+          <agreement type="conclusion">Conclusion</agreement>
+          <estimate l="9636" s="2" d="8"/>
+          <fees detail="false">
+            <total l="" s="" d=""/>
+          </fees>
+          <expenses mentioned=""/>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis>Motivations
+                « Par laquelle [sentence] il est ordonné entre autres choses que lad. dame veuve Chenart mere et tutrice desd. demlles mineures seroit […] authorizé en sa susd. qualité de tutrice a l'effet de vendre le plus avantageusement que faire ce pourrait l'office et charge de coner du Roy president et commissaire general de la cour des monnoyes […] dont elle employera une partye [du revenu de la vente] pour faire faire et payer tous les ouvrages qui seroient urgents et necessaires au château de puis Carré, ferme et dependances de lad. seigneurie de puis Carré, et pour parachever ceux encommencé, comme aussy qu'elle serait elle demeurerait autorizé a faire faire chacun desd. ouvrages enoncés en la susd. sentence susdattée et a en payer le prix apres toutes fois que la prisée et estimation des ouvrages urgentes et necessaires tant fait qu'à faire auroit esté faite par nous Loir nommé a cet effet d'office pour en estre par nous dressé notre proces verbal, lad. sentence scellée le trente 7bre mil sept cent vingt six ».</analysis>
+        <noteworthy/>
+      </description>
+    </expertise>

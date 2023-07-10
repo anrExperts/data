@@ -1,0 +1,211 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1000d025">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-09-01T12:00:00">2020-09-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2018-01-01T12:00:00">2018-01-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>PC</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1000</idno>
+        <idno type="item">025</idno>
+        <facsimile from="0210" to="0250"/>
+        <physDesc>
+          <extent sketch="false">50</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-03-11" type="paris"/>
+          <date when="1776-04-19" type="paris"/>
+        </sessions>
+        <places>
+          <place xml:id="id93d264" type="paris">
+            <address>
+              <street>Rue de Seine</street>
+              <buildingNumber/>
+            </address>
+            <complement>hôtel de la Rochefoucaud</complement>
+            <parish/>
+            <owner>Louise Elisabeth de la Rochefoucaud (usufruit) / Louis Alexandre duc de la Rochefoucaud</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="estimation">Estimer la valeur des biens</category>
+          <designation rubric="true">Estimation de l’hôtel de la Rochefoucaud et de deux maisons rue des Marais et rue des Petits Augustins</designation>
+        </categories>
+        <procedure>
+          <framework type="b2b">L’institution est saisie dans le cadre d’une procédure (l’institution nomme un ou deux experts)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Lieutenant civil</orgName>
+              <date when="1775-12-30"/>
+            </sentence>
+          </sentences>
+          <case>Estimation de l’hôtel de la Rochefoucaud, d’une maison située rue des Marais, et d'une troisième rue des Petits Augustins donnant accès à l'hôtel, en vue d’une vente prochaine</case>
+          <objects>
+            <object type="house">Maison(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0209" context="primary" appointment="court-appointed">
+              <title>architecte, juré expert bourgeois des bâtiments en titre d'office</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0050">
+              <persName>
+                <surname>Mallerot</surname>
+                <forename>Joseph Louis</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="true" intervention="false">
+              <person>
+                <persName>
+                  <surname>Charpentier</surname>
+                  <forename>Louis Nicolas</forename>
+                </persName>
+                <occupation>Intendant des maisons et affaires de la Duchesse d’Auville, Tuteur aux substitutions du Duché de la Rochefoucaud, terres et dépendances, réunies et non réunies faite par Messire François de la Rochefoucaud, Pair de France, grand maitre de la garde robe du Roi, du Duché de la Rochefoucaud, terres et dépendances, faite par Messire Alexandre Duc de la Rochefoucaud, Pair de France, grand maitre de la garde robe du Roi, du présent Hôtel de la Rochefoucaud et les deux maisons en dépendant, substitution seulement graduelle et non perpétuelle, faite par Dame Louise Elisabeth de la Rochefoucaud, veuve de Messire Jean-Baptiste Louis Frédéric de la Rochefoucaud Duc D’Auville, au profit de Messire Louis Alexandre Duc de la Rochefoucaud, Prince de Marsillan, son fils.</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>de la Rochefoucaud</surname>
+                  <forename>Louis Alexandre</forename>
+                </persName>
+                <occupation>fils de Louis Elisabeth</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>de la Rochefoucaud</surname>
+                  <forename>Louise Elisabeth</forename>
+                </persName>
+                <occupation>veuve de Jean-Baptiste Louis Frédéric de la Rochefoucaud Duc D’Auville</occupation>
+              </person>
+              <status>owner</status>
+              <expert ref="#xpr0209"/>
+            </party>
+            <party role="opponent" presence="" intervention="">
+              <person>
+                <persName>
+                  <surname/>
+                  <forename/>
+                </persName>
+                <occupation/>
+              </person>
+              <status/>
+              <expert ref=""/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0209">« Après visite, étant donné que la superficie totale de cet hôtel équivaut à environ deux mille sept cent vingt huit toises, dont les bâtiments occupent occupent, cinq cent quatre vingt deux toises et sept pieds, et la cour, basse cour, passage, terrasses, jardins, deux mille quarante cinq toises et onze pieds, ce qui toutes considérations faites sur l’étendue et la forme de l’emplacement total, qui fait face sur les rues de Seine, des petites Augustines et du Marais avec issues sur icelles, sur la qualité des constructions des principaux bâtiments, les autres édifices, sur la distribution dudit bâtiment principal, sur les différents objets qui le décorent, tels que menuiseries, sculptures, dorures, marbres, sur la quantité de plomb employé dans lesdits conduites et réservoirs des eaux, faîtages, frontons, lucarnes, chenaux, sur les réparations de différentes espèces à faire sur l’état présent, sur ce que l’hôtel peut produire de revenu annuel et les maison de quartier.
+Nous estimons cet hôtel de fond en comble, ainsi qu’il se compose et se poursuit, circonstances et dépendances, à la charge uniquement du droit de cens relevant de l’Abbaye de Saint Germain des Prés en la mouvance de laquelle il est situé, valloir la somme de cinq cent cinquante deux mille sept cent dix livres, 552 710 l. »</opinion>
+          <arrangement/>
+          <agreement type="conclusion">Conclusion</agreement>
+          <estimate l="" s="" d=""/>
+          <estimates>
+            <place ref="#id93d264">
+              <appraisal l="" s="" d="">
+                <desc/>
+              </appraisal>
+            </place>
+          </estimates>
+          <fees detail="true">
+            <fee type="papers" l="48" s="" d=""/>
+            <fee type="expert" ref="#xpr0209" l="270" s="" d=""/>
+            <fee type="clerk" l="270" s="" d=""/>
+            <fee type="rolls" l="270" s="" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="858" s="" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="expert" l="90" s="" d=""/>
+            <expense type="clerk" l="240" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis/>
+        <noteworthy/>
+      </description>
+    </expertise>

@@ -1,0 +1,209 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j582d063">
+  <meta/>
+  <control>
+    <maintenanceStatus>revised</maintenanceStatus>
+    <publicationStatus/>
+    <localControl localType="detailLevel">
+      <term>completed</term>
+    </localControl>
+    <maintenanceHistory>
+      <maintenanceEvent>
+                <eventType>revised</eventType>
+                <eventDateTime standardDateTime="2022-03-31T19:07:34Z">2022-03-31T19:07:34Z</eventDateTime>
+                <agentType>human</agentType>
+                <agent>llosserand</agent>
+                <eventDescription>rvpcd</eventDescription>
+            </maintenanceEvent>
+          <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateOpinionRef_files.xqy/BaseX</agent>
+        <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateRefValues_files.xqy/BaseX</agent>
+        <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+        <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>revised</eventType>
+        <eventDateTime standardDateTime="2020-11-01T12:00:00">2020-11-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>JH</agent>
+        <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>retroconverted</eventType>
+        <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>ead2xpr.xsl/Saxon9</agent>
+        <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>created</eventType>
+        <eventDateTime standardDateTime="2017-04-01T12:00:00">2017-04-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>llosserand</agent>
+        <eventDescription>Création de la fiche.</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+  </control>
+  <sourceDesc>
+    <unitdate>1726</unitdate>
+    <idno type="unitid">Z1J582</idno>
+    <idno type="item">063</idno>
+    <facsimile from="0629" to="0663"/>
+    <physDesc>
+      <extent sketch="false">31</extent>
+      <appendices>
+        <appendice>
+          <type type="other">Reçu</type>
+          <extent>1</extent>
+          <desc>reçu pour les vacations d'expertise du 21 août 1726 (39 livres 5 sols)</desc>
+          <note/>
+        </appendice>
+        <appendice>
+          <type type="other">Prix</type>
+          <extent>1</extent>
+          <desc>liste des prix de l'expertise (cf. coût de l'expertise) et croquis au verso.</desc>
+          <note/>
+        </appendice>
+      </appendices>
+    </physDesc>
+  </sourceDesc>
+  <description>
+    <sessions>
+      <date when="1726-08-21" type="paris"/>
+      <date when="1726-08-30" type="paris"/>
+      <date when="1726-09-30" type="paris"/>
+      <date when="1726-11-19" type="paris"/>
+      <date when="1726-12-13" type="paris"/>
+      <date when="1727-03-19" type="paris"/>
+    </sessions>
+    <places>
+      <place type="paris">
+        <address>
+          <street>Rue des Gravilliers [Voie actuelle. Autre(s) nom(s) : rue Gravelier]</street>
+          <buildingNumber/>
+        </address>
+        <complement/>
+        <parish/>
+        <owner>Lefevre de Richemont</owner>
+      </place>
+    </places>
+    <categories>
+      <category type="acceptation">Recevoir et évaluer le travail réalisé</category>
+      <designation rubric="true">Visitte et estimation d'ouvrages de maçonnerie, rue des Gravilliers, à la requeste du sieur Segond ; M. Aubry, expert.</designation>
+    </categories>
+    <procedure>
+      <framework type="b2">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+      <origination type="institution">Une institution</origination>
+      <sentences>
+        <sentence>
+          <orgName>lieutenant civil</orgName>
+          <date when="1725-12-04"/>
+          <date when="1726-08-06"/>
+        </sentence>
+      </sentences>
+      <case>de Richemont, le propriétaire, n'a pas payé au maître maçon les ouvrages que ce dernier a réalisés dans la maison</case>
+      <objects>
+        <object type="other">ouvrages de maçonnerie</object>
+      </objects>
+    </procedure>
+    <participants>
+      <experts>
+        <expert ref="#xpr0073" context="primary" appointment="appointed">
+          <title>architecte du roi expert bourgeois de Paris</title>
+        </expert>
+      </experts>
+      <clerks>
+        <clerk ref="#clrk0034">
+          <persName>
+            <surname>Baudouin</surname>
+            <forename>Antoine</forename>
+          </persName>
+        </clerk>
+      </clerks>
+      <parties>
+        <party role="petitioner" presence="true" intervention="true">
+          <person>
+            <persName>
+              <surname>Segond</surname>
+              <forename>Jacques</forename>
+            </persName>
+            <occupation>maître maçon</occupation>
+          </person>
+          <status>builder</status>
+          <expert ref="#xpr0073"/>
+        </party>
+        <party role="opponent" presence="true" intervention="true">
+          <person>
+            <persName>
+              <surname>Lefevre de Richemont</surname>
+              <forename>Jean Rollan</forename>
+            </persName>
+            <occupation>receveur des consignations du Châtelet d'Orléans</occupation>
+          </person>
+          <status>owner</status>
+          <expert ref="#xpr0073"/>
+        </party>
+      </parties>
+      <craftmen>
+        <craftman>
+          <persName>
+            <surname>Segond</surname>
+            <forename>Jacques</forename>
+          </persName>
+          <occupation>maître maçon</occupation>
+        </craftman>
+      </craftmen>
+    </participants>
+    <conclusions>
+      <opinion ref="#xpr0073">somme totale des ouvrages de maçonnerie : 3721 livres 18 sols 4 deniers</opinion>
+      <arrangement/>
+      <agreement type="conclusion">Conclusion</agreement>
+      <estimate l="3721" s="18" d="4"/>
+      <fees detail="true">
+        <fee type="papers" l="" s="" d=""/>
+        <fee type="expert" ref="#xpr0073" l="36" s="" d=""/>
+        <fee type="clerk" l="" s="" d=""/>
+        <fee type="rolls" l="" s="" d=""/>
+        <fee type="prosecutors" l="" s="" d=""/>
+        <fee type="help" l="" s="" d=""/>
+        <fee type="plans" l="" s="" d=""/>
+        <total l="" s="" d=""/>
+      </fees>
+      <expenses mentioned="true">
+        <expense type="clerk" l="39" s="5" d=""/>
+        <expense type="expert" l="" s="" d=""/>
+      </expenses>
+    </conclusions>
+    <keywords group="estates"/>
+    <keywords group="procedure"/>
+    <keywords group="contract"/>
+    <keywords group="encumbrance"/>
+    <keywords group="law"/>
+    <keywords group="measurement"/>
+    <keywords group="repairs"/>
+    <keywords group="guarantees"/>
+    <keywords group="responsability"/>
+    <keywords group="ownership"/>
+    <keywords group="value"/>
+    <keywords group="neighbourhood"/>
+    <keywords group="disorder"/>
+    <keywords group="transformation"/>
+    <analysis>Pièce n°1
+                « Du 21e aoust 1726 Baudouin greffier, visitte et estimation d'ouvrage de maçonnerie rue des Gravilliers à la requeste du sieur Segond, Mr Aubry expert, il revient pour 6 vacations et 74 rolles cy : 39 livres 5 sols. Veu le 9e avril 1727, registré ».</analysis>
+    <noteworthy/>
+  </description>
+</expertise>

@@ -1,0 +1,205 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j582d061">
+  <meta/>
+  <control>
+    <maintenanceStatus>revised</maintenanceStatus>
+    <publicationStatus/>
+    <localControl localType="detailLevel">
+      <term>completed</term>
+    </localControl>
+    <maintenanceHistory>
+      <maintenanceEvent>
+                <eventType>revised</eventType>
+                <eventDateTime standardDateTime="2022-03-31T19:03:41Z">2022-03-31T19:03:41Z</eventDateTime>
+                <agentType>human</agentType>
+                <agent>llosserand</agent>
+                <eventDescription>rvpcd</eventDescription>
+            </maintenanceEvent>
+          <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateObjectsValues_db.xqy/BaseX</agent>
+        <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateRefValues_files.xqy/BaseX</agent>
+        <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+        <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>revised</eventType>
+        <eventDateTime standardDateTime="2020-11-01T12:00:00">2020-11-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>JH</agent>
+        <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>retroconverted</eventType>
+        <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>ead2xpr.xsl/Saxon9</agent>
+        <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>created</eventType>
+        <eventDateTime standardDateTime="2017-04-01T12:00:00">2017-04-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>llosserand</agent>
+        <eventDescription>Création de la fiche.</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+  </control>
+  <sourceDesc>
+    <unitdate>1726</unitdate>
+    <idno type="unitid">Z1J582</idno>
+    <idno type="item">061</idno>
+    <facsimile from="0618" to="0622"/>
+    <physDesc>
+      <extent sketch="false">4</extent>
+    </physDesc>
+  </sourceDesc>
+  <description>
+    <sessions>
+      <date when="1726-08-20" type="paris"/>
+    </sessions>
+    <places>
+      <place type="paris">
+        <address>
+          <street>Rue du Sépulcre</street>
+          <buildingNumber/>
+        </address>
+        <complement>une maison sise à Paris, rue du Sépulcre, faubourg Saint-Germain, appelé le petit hôtel d'Angleterre, appartenant au sieur Danoure et louée au sieur Trudon</complement>
+        <parish/>
+        <owner>Danoure</owner>
+      </place>
+    </places>
+    <categories>
+      <category type="settlement">Départager</category>
+      <designation rubric="true">Visitte d'une maison, scize à Paris, rue du Sépulchre, faubourg St Germain, à la requeste du sieur Trudon et sa femme : M. Quirot, expert.</designation>
+    </categories>
+    <procedure>
+      <framework type="b2">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+      <origination type="institution">Une institution</origination>
+      <sentences>
+        <sentence>
+          <orgName>lieutenant civil</orgName>
+          <date when="1726-08-03"/>
+        </sentence>
+      </sentences>
+      <case>l'élévation de la maison du voisin Crozat va diminuer le jour dans la maison qu'occupent les Trudon, ce que réfute le sieur Danoure, leur propriétaire, qui refuse de baisser le loyer.</case>
+      <objects>
+        <object type="house">Maison(s)</object>
+      </objects>
+    </procedure>
+    <participants>
+      <experts>
+        <expert ref="#xpr0232" context="primary" appointment="appointed">
+          <title>architecte juré du roi expert bourgeois de Paris</title>
+        </expert>
+        <expert ref="#xpr0183" context="primary" appointment="appointed">
+          <title>juré expert à Paris</title>
+        </expert>
+      </experts>
+      <clerks>
+        <clerk ref="#clrk0029">
+          <persName>
+            <surname>Quirot</surname>
+            <forename>Jacques</forename>
+          </persName>
+        </clerk>
+      </clerks>
+      <parties>
+        <party role="petitioner" presence="true" intervention="false">
+          <person>
+            <persName>
+              <surname>Trudon</surname>
+              <forename>Pierre</forename>
+            </persName>
+            <occupation>marchand tapissier</occupation>
+          </person>
+          <person>
+            <persName>
+              <surname>Caresme</surname>
+              <forename>Anne</forename>
+            </persName>
+            <occupation>sa femme</occupation>
+          </person>
+          <status>tenant</status>
+          <expert ref="#xpr0183"/>
+        </party>
+        <party role="opponent" presence="true" intervention="false">
+          <person>
+            <persName>
+              <surname>Lebout</surname>
+              <forename>Denis</forename>
+            </persName>
+            <occupation/>
+          </person>
+          <status>owner</status>
+          <expert ref="#xpr0232"/>
+        </party>
+      </parties>
+      <craftmen>
+        <craftman>
+          <persName>
+            <surname/>
+            <forename/>
+          </persName>
+          <occupation/>
+        </craftman>
+      </craftmen>
+    </participants>
+    <conclusions>
+      <opinion ref="#xpr0232">Et moy Quirot, après avoir examiné l'estat et scituation de lad. maison du sr Danoure, j'observerai que la cour de lad. maison n'est à présent que de onze pieds et demy de longueur sur neuf pieds et demy de largeur que le mur de closture du bout aveq l'eslévation du pignon de la maison voisine qui est au dessus contiennent ensemble vingt cinq pieds de haut ou neviron et la mur de closture en retour dix huit pieds par un bout et vingt quatre pieds de haut par l'autre bout de manière que le jour de lad. cour se trouve compris dans ce volume de préclosture de cour et que de la manière que l'on dispose la maison de monsieur Crozat et la cour triangulaire qui se trouve ensuitte de la cour de la présente maison, il se trouvera une estendue d'air considérablement plus grande et plus spacieuse que ce que contient à présent la cour de la maison dud. sr Danouvre.
+                En premier lieu, l'air de cette cour qui à présent n'a que onze pieds et demy de longueur (qui néanmoins est une mesure raisonnable) se trouvera avoir au moins vingt pieds de longueur au droit de l'escallier de la présente maison et vingt quatre pieds de longueur à l'autre costé en ce compris l'espaisseur du mur de closture mitoyen, en démolissant le pignon qui est sur led. mur de closture, lequel ne se trouvera plus que de onze pieds de haut au lieu de vingt cinq pieds. En second lieu, en démolissant le demi pointe du pignon [f. 4v°] qui est sur le mur de closture en retour pour ne luy donner que 11 pieds de haut comme l'autre mur il se trouvera une augmentation d'air, tant par lad. cour triangulaire de monsieur Crozat que par la cour de la maison voisine apartenant à Mr Bihorau qui y est joignant lesquelles trois cours sont contigües et s'éclairent l'une l'autre.
+                En troisiesme lieu, lad. cour triangulaire de la maison de Mr Crozat, s'alongeant considérablement par derrière les maisons voisines s'élargira à proportion et produira une grande estendue d'aire jointe à la cour de la présente maison et aux cours des maisons voisines.
+                Et en quatriesme lieu, c'est que par le moyen de cette estendue de la cour triangulaire de la maison de Mr Crozat et des murs de closture qui seront réduits à un pied comme ils estoient auparavant, les rayons du solleil s'estendront dans la cour de la présente maison avecq autant et plus de facillité et d'abondance qu'ils ne font actuellement depuis neuf heures du matin jusqu'à plus de deux heures après midy, les combles des bastimens dud. Crozat ne pouvant les empescher tant par leur peu de hauteur que par leur pente et par l'évazion de lad. cour triangulaire.
+                Par touttes lesquelles raisons, moy Quirot, estime que bien loin que la maison dud. sr Crozat cause du dommage à la maison dud. sr Delanouvre [sic], j'estime et mon avis est qu'au contraire elle sera mieux éclairée et aura beaucoup plus d'air qu'elle n'a à présent. Sauf à vous etc. ».</opinion>
+      <opinion ref="#xpr0183">« [f. 3v°] Scavoir, moy, Loir, après avoir de nouveau considéré l'estat et scituation de lad. maison et que l'eslévation qui est au dessus du mur de closture du pignon de la maison voisine n'est que de quatorze pieds au droit de la pointe qui, joint avecq onze pieds de hauteur pour led. mur de closture ne produisant que vingt cinq pieds de hauteur, que l'eslévation qui est au dessus du mur de closture en retour se trouve encore plus basse, joint à l'estendue de veue que lad. maison auroit dans la cour de l'académie de Lompré et que les bastimens que l'on construit seront eslevez de cinquante un pieds et demy de haut depuis le pavé jusqu'au dessus du faiste et que la cour triangulaire qui sera laissée entre lesd. bastimens que l'on construit et la présente maison ne sera pas d'un grande volume, mon avis est que l'eslévation des bastimens de la maison dud. Crozat porteront un notable préjudice à la maison dud. sr Delanauvre [sic] et qu'elle sera moins éclairée qu'elle n'est aujourd'huy [f. 4r°] ce qui la diminuera au moins de moittié de sa valleur. Tel est l'avis de moy Loir sauf à vous, monsieur, d'en juger sur le tout suivant vostre prudence ordinaire.</opinion>
+      <arrangement/>
+      <agreement type="disagreement">Désaccord</agreement>
+      <estimate l="" s="" d=""/>
+      <fees detail="true">
+        <fee type="papers" l="" s="" d=""/>
+        <fee type="expert" ref="#xpr0232" l="6" s="" d=""/>
+        <fee type="expert" ref="#xpr0183" l="6" s="" d=""/>
+        <fee type="clerk" l="6" s="" d=""/>
+        <fee type="rolls" l="3" s="10" d=""/>
+        <fee type="prosecutors" l="" s="" d=""/>
+        <fee type="help" l="" s="" d=""/>
+        <fee type="plans" l="" s="" d=""/>
+        <total l="" s="" d=""/>
+      </fees>
+      <expenses mentioned="true">
+        <expense type="clerk" l="6" s="15" d=""/>
+        <expense type="expert" l="" s="" d=""/>
+      </expenses>
+    </conclusions>
+    <keywords group="estates"/>
+    <keywords group="procedure"/>
+    <keywords group="contract"/>
+    <keywords group="encumbrance"/>
+    <keywords group="law"/>
+    <keywords group="measurement"/>
+    <keywords group="repairs"/>
+    <keywords group="guarantees"/>
+    <keywords group="responsability"/>
+    <keywords group="ownership"/>
+    <keywords group="value"/>
+    <keywords group="neighbourhood"/>
+    <keywords group="disorder"/>
+    <keywords group="transformation"/>
+    <analysis>Les experts visitent la maison louée mais aussi celle en cours de construction (appartenant à Crozat, qui n'est pas sollicité) et en examinent les plans.
+                Cause : « Par laquelle sentence partyes ouyes, après que lesd. sieur et damoiselle Trudon ont soutenus et mis en fait par écrit que le bastiment, lorsqu'il sera fait, ostera presque tout le jour dans les lieux dépendans de la maison en question qui sont vis à vis les bastimens soutenu au contraire par led. sieur Lebout Danoure qu'il y a dans lesd. lieux un jour suffisant et raisonnable, avant faire droit, vous avez, monsieur, dit que lesd. lieux seront veus et visittez aux fins des partyes... »</analysis>
+    <noteworthy/>
+  </description>
+</expertise>

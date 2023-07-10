@@ -1,0 +1,226 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1001d018">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2017-10-01T12:00:00">2017-10-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1001</idno>
+        <idno type="item">018</idno>
+        <facsimile from="1673" to="1689"/>
+        <physDesc>
+          <extent sketch="false">6</extent>
+          <appendices>
+            <appendice>
+              <type type="other">Note</type>
+              <extent>1</extent>
+              <desc/>
+              <note/>
+            </appendice>
+            <appendice>
+              <type type="other">Compte</type>
+              <extent>1</extent>
+              <desc/>
+              <note/>
+            </appendice>
+            <appendice>
+              <type type="other">Mémoire des ouvrages de menuiserie</type>
+              <extent>4</extent>
+              <desc>Mémoire avec croquis</desc>
+              <note/>
+            </appendice>
+          </appendices>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-04-04" type="paris"/>
+          <date when="1776-04-25" type="paris"/>
+        </sessions>
+        <places>
+          <place type="paris">
+            <address>
+              <street>grande rue du faubourg Saint-Martin</street>
+              <buildingNumber/>
+            </address>
+            <complement>près de l'égoût</complement>
+            <parish/>
+            <owner>maison occupée par Prevost, marchand de papier</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="acceptation">Recevoir et évaluer le travail réalisé</category>
+          <designation rubric="true">Visite et estimation d’ouvrages de menuiserie</designation>
+        </categories>
+        <procedure>
+          <framework type="b2a">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>LC</orgName>
+              <date when="1776-03-23"/>
+            </sentence>
+          </sentences>
+          <case>Cretton a réalisé des ouvrages de menuiserie dans la maison occupée par Picard, pour lesquels il demande 713 livres. Les experts doivent 1° estimer ce qui lui est dû en fournitures ; 2° dire s’il lui est dû quelque chose pour les toisés qu’il a réalisés ; 3° Prevost affirme qu’il n’avait demandé qu’un bas d’armoire de trois pieds et demi pour y mettre deux pieds de table dont on il avait montré la hauteur au menuisier, mais que Cretton a réalisé une armoire de 8 pieds de haut et 6 pieds de large, qu’il a fait apporter dans la maison en l’absence de Prevost. De même, la table de cuisine réalisée par Cretton ne correspond pas à la commande de Prevost. Les experts doivent décider si les deux objets ont été réalisés selon les règles de l’art et les estimer le cas échéant.</case>
+          <objects>
+            <object type="other">ouvrages de menuiserie</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0085" context="primary" appointment="appointed">
+              <title>architecte expert bourgeois de Paris</title>
+            </expert>
+            <expert ref="#xpr0250" context="primary" appointment="appointed">
+              <title>architecte expert bourgeois de Paris</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0047">
+              <persName>
+                <surname>Mangin</surname>
+                <forename>Philbert</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="true" intervention="true">
+              <person>
+                <persName>
+                  <surname>Cretton</surname>
+                  <forename/>
+                </persName>
+                <occupation/>
+              </person>
+              <status>builder</status>
+              <expert ref="#xpr0250"/>
+              <prosecutor>
+                <persName>
+                  <surname>Gallois</surname>
+                  <forename/>
+                </persName>
+              </prosecutor>
+            </party>
+            <party role="opponent" presence="true" intervention="true">
+              <person>
+                <persName>
+                  <surname>Prevost</surname>
+                  <forename/>
+                </persName>
+                <occupation>marchand de papier</occupation>
+              </person>
+              <status>limited-partner</status>
+              <expert ref="#xpr0085"/>
+              <prosecutor>
+                <persName>
+                  <surname>De Cornault</surname>
+                  <forename/>
+                </persName>
+              </prosecutor>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname>Cresson</surname>
+                <forename/>
+              </persName>
+              <occupation>menuisier</occupation>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="">1° Estimation des ouvrages et fournitures observés au mémoire signifié
+7 l. 16 s.
+2° Concernant les toisés faits par Cretton, « Notre avis est que ledit sieur Cretton ayant rellement fait le toisé des differents objets enoncés auxdits articles 11, 16 et 28, il luy est dub recompense pour avoir employé à ces operations un temps qu’il auroit pu employer utillement à des ouvrages de son état, sçavoir une journée le 28 octobre 1775, deux tiers de jour le 8 novembre de la même année et le vingt décembre suivant, deux autres tiers de jours, laquelle recompense due audit sieur Cretton pour raison desdits toisés eu égard au temps qu’il y a employé nous estimons la somme de 12 l. 10 s. »
+3° Concernant la devanture d’armoire et la table de cuisine, « nous avons trouvée ladit armoire déposée et la table de cuisine en place. Nous n’avons remarqué à l’une et à l’autre aucune malfaçon qui puisse en empescher l’estimation et en effet nous avons estimé ladite armoire non compris la depose d’icelle la somme de quarente deux livres dix huit sols, laquelle depose est comprise dans les estimations par nous faites des journées employées par led. Sieur Cretton et ses ouvriers pour le compte dudit sieur Prevost ».
+« Nous estimons la table de cuisine la somme de vingt quatre livres »
+Sont donc dus à Cretton
+1° pour les ouvrages, fournitures, toisés figurant au mémoire 89 l. 18 s.
+2° pour les autres ouvrages et fournitures 446 l. 1 s. 10 d.
+Total 535 l. 19 s. 10 d.</opinion>
+          <arrangement/>
+          <agreement type="agreement">Accord</agreement>
+          <estimate l="" s="" d=""/>
+          <fees detail="true">
+            <fee type="papers" l="4" s="10" d=""/>
+            <fee type="expert" ref="#xpr0085" l="12" s="" d=""/>
+            <fee type="expert" ref="#xpr0250" l="12" s="" d=""/>
+            <fee type="clerk" l="12" s="" d=""/>
+            <fee type="rolls" l="14" s="" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="54" s="10" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="12" s="10" d=""/>
+            <expense type="expert" l="8" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis/>
+        <noteworthy/>
+      </description>
+    </expertise>

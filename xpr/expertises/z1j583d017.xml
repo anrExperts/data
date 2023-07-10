@@ -1,0 +1,206 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j583d017">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-11-01T12:00:00">2020-11-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2016-10-26T12:00:00">2016-10-26T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>RB</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1726</unitdate>
+    <idno type="unitid">Z1J583</idno>
+        <idno type="item">017</idno>
+        <facsimile from="0232" to="0278"/>
+        <physDesc>
+          <extent sketch="false">36</extent>
+          <appendices>
+            <appendice>
+              <type type="proxyPA">Pouvoir/procuration (acte sous seing privé)</type>
+              <extent>2</extent>
+              <desc>pouvoir donné le 13 septembre 1726 à Hermet, Pierre par Jubert, Alphonse pour le représenter lors de la visite de l'expert</desc>
+              <note/>
+            </appendice>
+            <appendice>
+              <type type="proxyNA">Pouvoir/procuration (acte notarié)</type>
+              <extent>1</extent>
+              <desc>Désignation du procureur général de ses affaires par Chaumelin, Jacques, en date du 9 septembre 1726</desc>
+              <note/>
+            </appendice>
+            <appendice>
+              <type type="other">Billet</type>
+              <extent>1</extent>
+              <desc>accusé de réception par Méseretz, le 16 septembre 1726, du mémoire des travaux réalisés dans le prieuré</desc>
+              <note/>
+            </appendice>
+            <appendice>
+              <type type="other">Etat des réparations nécessaires</type>
+              <extent>4</extent>
+              <desc>Etat des réparations à faire dans le prieuré, daté du 13 octobre 1724</desc>
+              <note/>
+            </appendice>
+            <appendice>
+              <type type="other">Accord</type>
+              <extent>2</extent>
+              <desc>Accord de Chaumelin, Jacques, du 17 septembre 1726, pour la nomination de Méseretz expert.</desc>
+              <note/>
+            </appendice>
+          </appendices>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1726-09-12" type="province"/>
+          <date when="1726-09-21" type="province"/>
+        </sessions>
+        <places>
+          <place type="province">
+            <address/>
+            <complement>prieuré de la Sainte-Trinité</complement>
+            <city>Beaumont-le-Roger [Eure]</city>
+            <district/>
+            <owner/>
+          </place>
+        </places>
+        <categories>
+          <category type="assessment">Décrire et évaluer les travaux à venir</category>
+          <designation rubric="true">Visite et réception de réparations</designation>
+        </categories>
+        <procedure>
+          <framework type="b2a">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Chambre des requêtes du Parlement, par arrêt du 26 août 1726</orgName>
+              <date when="1726-08-26"/>
+            </sentence>
+          </sentences>
+          <case>débat sur la prise en charge de travaux de réparations dans un prieuré</case>
+          <objects>
+            <object type="other">prieuré</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0078" context="primary" appointment="appointed">
+              <title>architecte juré du roi bourgeois de Paris</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0023">
+              <persName>
+                <surname>Meley</surname>
+                <forename>François</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Jubert</surname>
+                  <forename>Alphonse</forename>
+                </persName>
+                <occupation>chevalier marquis de Bouville</occupation>
+              </person>
+              <status>heir</status>
+              <expert ref="#xpr0078"/>
+            </party>
+            <party role="opponent" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Chaumelin</surname>
+                  <forename>Jacques</forename>
+                </persName>
+                <occupation>prieur de la Sainte-Trinité</occupation>
+              </person>
+              <status/>
+              <expert ref="#xpr0078"/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0078">« Ces l'estat de toutes les reparations faites aud. prieurés [voir l'acte pour le détail] au prieuré de la Sainte Trinité de beaumont Le Roger et dependances portées par le raport dud. sr Fourier […] observant touttes fois Nosseigneurs qu'il y en a partye qui ne sont d'aucune consequence, et ne préjudicient point à la solidité des lieux ny à leur sureté et n'empesche l'occupation d'iceux ».</opinion>
+          <arrangement/>
+          <agreement type="conclusion">Conclusion</agreement>
+          <estimate l="" s="" d=""/>
+          <fees detail="false">
+            <total l="" s="" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="179" s="" d=""/>
+            <expense type="expert" l="" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis>Motivations
+                « Nous avons fait lecture de l'arrest par vous Nosseigneurs rendu led. jour vingt six aoust mil sept cent vingt six entre Mre Alphonse Jubert chevallier marquis de Bouville, brigadier des armées du Roy, héritier sous benefice d'inventaire de deffunt mre Jean Baptiste Jubert, vivant prestre prieur commandataire du prieuré de la Ste Trinité de Beaumont le Roger, demandeur en requeste du treize dud. mois d'aoust à ce quil plust à la cour ordonner que les reparations que led. sr marquis de Bouville a fait faire au benefice dud. prieuré de Beaumont le Roger suivant le procez verbal de visite du vingt unième septembre et jours suivant mil sept cent vingt quatre, sence du Chastelet du sixieme fevrier 1725, et arrest de la cour du sept septembre suivant dont estoit question, seroient veus et visitez et procez verbal dressé desd. reparations par experts dont lesd. partyes conviendront par devant tels de messres qu'il plairoit à la cour commettre sy mieux il ne plaisoit à la cour nommez un seul expert d'office. Lesquels experts seroient tenus de declarer sy lesd. reparations sont recemblez (sic) pour leur procez verbal et raport fait et raport estre par la cour ordonné ce qu'il en retiendra, d'une part. Et messire Jacques Chaumelin prieur dud. prieuré de la Sainte Trinité de Beaumont le Roger deffendeur d'autre, apres que lesdites partes sont demeurées dacord de l'apointement signé d'eux et paraphé par Mr de Gilbert pour Mr le procureur du Roy, vous avez Nosseigneurs ordonné que l'apointement seroit receu et suivant ycelluy donne a été aud. sr marquis de Bouville de sa declaration qu'il a fait faire touttes les reparations dont il estoit teny et dechargé suivant la visite, sentence et arrest dont est question, et en conséquence ordonné que lesd. reparations seront veues et visittez et procez verbal dressé par nous de Meseretz seul expert nommé par les partyes, et que nous seront tenus de declarer par nostre procez verbal sy lesd. reparations sont recevables »</analysis>
+        <noteworthy/>
+      </description>
+    </expertise>

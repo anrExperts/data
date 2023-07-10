@@ -1,0 +1,233 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1010d033">
+  <meta/>
+  <control>
+    <maintenanceStatus>revised</maintenanceStatus>
+    <publicationStatus/>
+    <localControl localType="detailLevel">
+      <term>completed</term>
+    </localControl>
+    <maintenanceHistory>
+      <maintenanceEvent>
+                <eventType>revised</eventType>
+                <eventDateTime standardDateTime="2022-08-28T14:23:41Z">2022-08-28T14:23:41Z</eventDateTime>
+                <agentType>human</agentType>
+                <agent>llosserand</agent>
+                <eventDescription>rvpcd</eventDescription>
+            </maintenanceEvent>
+          <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateObjectsValues_db.xqy/BaseX</agent>
+        <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateOpinionRef_files.xqy/BaseX</agent>
+        <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateRefValues_files.xqy/BaseX</agent>
+        <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+        <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>revised</eventType>
+        <eventDateTime standardDateTime="2020-09-01T12:00:00">2020-09-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>JH</agent>
+        <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>retroconverted</eventType>
+        <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>ead2xpr.xsl/Saxon9</agent>
+        <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>created</eventType>
+        <eventDateTime standardDateTime="2017-04-01T12:00:00">2017-04-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>llosserand</agent>
+        <eventDescription>Création de la fiche.</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+  </control>
+  <sourceDesc>
+    <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1010</idno>
+    <idno type="item">033</idno>
+    <facsimile from="0262" to="0266"/>
+    <physDesc>
+      <extent sketch="false">4</extent>
+    </physDesc>
+  </sourceDesc>
+  <description>
+    <sessions>
+      <date when="1776-11-18" type="province"/>
+    </sessions>
+    <places>
+      <place xml:id="id70d249" type="province">
+        <address/>
+        <complement>sur le bord de l’ancien chemin vis-à-vis le Calvaire</complement>
+        <city>Neuilly</city>
+        <district/>
+        <owner>Succession Labiche</owner>
+      </place>
+    </places>
+    <categories>
+      <category type="estimation">Estimer la valeur des biens</category>
+      <designation rubric="true">Estimation d’une maison et pièces de terres en dépendant</designation>
+    </categories>
+    <procedure>
+      <framework type="b2">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+      <origination type="institution">Une institution</origination>
+      <sentences>
+        <sentence>
+          <orgName>lieutenant civil</orgName>
+          <date when="1776-12-07"/>
+        </sentence>
+      </sentences>
+      <case>Partage et liquidation des biens de la succession du défunt Labiche Jean Yves</case>
+      <objects>
+        <object type="plot">Terrain(s)</object>
+        <object type="house">Maison(s)</object>
+      </objects>
+    </procedure>
+    <participants>
+      <experts>
+        <expert ref="#xpr0102" context="primary" appointment="court-appointed">
+          <title>architecte expert bourgeois des bâtiments à Paris</title>
+        </expert>
+      </experts>
+      <clerks>
+        <clerk ref="#clrk0062">
+          <persName>
+            <surname>Picquenon</surname>
+            <forename>Denis Joseph François</forename>
+          </persName>
+        </clerk>
+      </clerks>
+      <parties>
+        <party role="petitioner" presence="false" intervention="false">
+          <person>
+            <persName>
+              <surname>Vaucanson</surname>
+              <forename/>
+            </persName>
+            <occupation>blanchisseur de linge à Neuilly</occupation>
+          </person>
+          <person>
+            <persName>
+              <surname>Gervais</surname>
+              <forename>Marie Françoise sa femme veuve de Labiche</forename>
+            </persName>
+            <occupation>sa femme veuve de Labiche, Jean Yves à cause de la communauté de biens entre elle et le défunt</occupation>
+          </person>
+          <person>
+            <persName>
+              <surname>Boutard</surname>
+              <forename/>
+            </persName>
+            <occupation>curateur ad hoc aux causes du sieur Vaucanson</occupation>
+          </person>
+          <person>
+            <persName>
+              <surname>Labiche</surname>
+              <forename>Jean Gabriel</forename>
+            </persName>
+            <occupation>jardinier au nom et comme tuteur ad hoc aux effets de lad. sentence des enfants mineurs de défunte Labiche, Jean Yves et de Gervais, Marie Françoise</occupation>
+          </person>
+          <status>heir</status>
+          <expert ref="#xpr0102"/>
+          <prosecutor>
+            <persName>
+              <surname>Lamarre</surname>
+              <forename>Adrien</forename>
+            </persName>
+          </prosecutor>
+        </party>
+        <party role="opponent" presence="" intervention="">
+          <person>
+            <persName>
+              <surname/>
+              <forename/>
+            </persName>
+            <occupation/>
+          </person>
+          <status/>
+          <expert ref=""/>
+        </party>
+      </parties>
+      <craftmen>
+        <craftman>
+          <persName>
+            <surname/>
+            <forename/>
+          </persName>
+          <occupation/>
+        </craftman>
+      </craftmen>
+    </participants>
+    <conclusions>
+      <opinion ref="#xpr0102">"Touttes considerations faittes nous prisons et estimons ladite maison avec le jardin et le terrain à la suitte en dépendant, à la charge du cens seulement s'agissant de partage qui ne donne point lieu aux droits seigneuriaux et au cours du tems présent la somme de 16000 l."
+"Total des terres en dix pièces, la quantité de onze arpents soixante quinze perches
+Laquelle quantité nous estimons eu égard à la nature et qualité desdites pièces de terre dont la plus grande partye est du sable et de peu de valeur, eu égard aussy à leur situation, nous estimons à la charge du cens seulement et valeur en partage comme cy dessus la somme de 5450 l."</opinion>
+      <arrangement/>
+      <agreement type="conclusion">Conclusion</agreement>
+      <estimate l="21450" s="" d=""/>
+      <estimates>
+        <place ref="#id70d249">
+          <appraisal l="16000" s="" d="">
+            <desc>maison</desc>
+          </appraisal>
+          <appraisal l="5450" s="" d="">
+            <desc>terres</desc>
+          </appraisal>
+        </place>
+      </estimates>
+      <fees detail="true">
+        <fee type="papers" l="7" s="12" d=""/>
+        <fee type="expert" ref="#xpr0102" l="24" s="" d=""/>
+        <fee type="clerk" l="24" s="" d=""/>
+        <fee type="rolls" l="16" s="" d=""/>
+        <fee type="prosecutors" l="" s="" d=""/>
+        <fee type="help" l="" s="" d=""/>
+        <fee type="plans" l="" s="" d=""/>
+        <total l="71" s="12" d=""/>
+      </fees>
+      <expenses mentioned="true">
+        <expense type="expert" l="6" s="" d=""/>
+        <expense type="clerk" l="17" s="" d=""/>
+      </expenses>
+    </conclusions>
+    <keywords group="estates"/>
+    <keywords group="procedure"/>
+    <keywords group="contract"/>
+    <keywords group="encumbrance"/>
+    <keywords group="law"/>
+    <keywords group="measurement"/>
+    <keywords group="repairs"/>
+    <keywords group="guarantees"/>
+    <keywords group="responsability"/>
+    <keywords group="ownership"/>
+    <keywords group="value"/>
+    <keywords group="neighbourhood"/>
+    <keywords group="disorder"/>
+    <keywords group="transformation"/>
+    <analysis/>
+    <noteworthy/>
+  </description>
+</expertise>

@@ -1,0 +1,279 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1009d049">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+                <eventType>revised</eventType>
+                <eventDateTime standardDateTime="2023-01-06T13:40:24Z">2023-01-06T13:40:24Z</eventDateTime>
+                <agentType>human</agentType>
+                <agent>jmorvan</agent>
+                <eventDescription>corr. format id vues</eventDescription>
+            </maintenanceEvent>
+      <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-08-01T12:00:00">2020-08-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2017-10-01T12:00:00">2017-10-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1009</idno>
+        <idno type="item">049</idno>
+        <facsimile from="0537" to="0547"/>
+        <physDesc>
+          <extent sketch="false">10</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-11-26" type="province"/>
+          <date when="1776-11-27" type="province"/>
+        </sessions>
+        <places>
+          <place xml:id="id135d299" type="province">
+            <address/>
+            <complement>rue des Bons Enfants, attenant l’ancien Gouvernement</complement>
+            <city>Versailles, rue des Bons Enfants</city>
+            <district/>
+            <owner>succession Dupuy</owner>
+          </place>
+          <place xml:id="id135d316" type="province">
+            <address/>
+            <complement>rue des Bons Enfants</complement>
+            <city>Versailles</city>
+            <district/>
+            <owner/>
+          </place>
+        </places>
+        <categories>
+          <category type="estimation">Estimer la valeur des biens</category>
+          <designation rubric="true">Estimation de deux maisons à Versailles rue des bons enfants, de la succession de la Veuve Dupuy pour Joussserau et sa femme et leurs co-héritiers ; M. Payen, expert.</designation>
+        </categories>
+        <procedure>
+          <framework type="b2b">L’institution est saisie dans le cadre d’une procédure (l’institution nomme un ou deux experts)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Châtelet, lieutenant civil (sentence)</orgName>
+              <date when="1776-08-20"/>
+            </sentence>
+          </sentences>
+          <case>Succession veuve Dupuy, projet de vente sur licitation</case>
+          <objects>
+            <object type="house">Maison(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0209" context="primary" appointment="court-appointed">
+              <title>architecte juré expert bourgeois des bâtiments en titre d'office</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0050">
+              <persName>
+                <surname>Mallerot</surname>
+                <forename>Joseph Louis</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Jousserau</surname>
+                  <forename>Pierre Antoine</forename>
+                </persName>
+                <occupation>maître limonadier distillateur à Paris</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Dupuy</surname>
+                  <forename>Marie Elizabeth</forename>
+                </persName>
+                <occupation>son épouse, ayant renoncé à la succession de Clanteau, Marie, mère de l’épouse, veuve en premières noces de Sibille, André horloger, et en secondes de Gasse, Louis César, officier de Monsieur le Comte de Toulouse, en troisièmes noces de Dupuy, Pierre, bourgeois de Paris, et dont la demoiselle Jousseron était présomptée héritière pour 1/7e, et est légataire particulière et universelle</occupation>
+              </person>
+              <status>heir</status>
+              <expert ref="#xpr0209"/>
+              <prosecutor>
+                <persName>
+                  <surname>De la Bonne</surname>
+                  <forename>Jean Baptiste Jacques</forename>
+                </persName>
+              </prosecutor>
+            </party>
+            <party role="opponent" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Gasse</surname>
+                  <forename>Pierre</forename>
+                </persName>
+                <occupation>officier invalide</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>De Punchel </surname>
+                  <forename/>
+                </persName>
+                <occupation/>
+              </person>
+              <person>
+                <persName>
+                  <surname>Pilloy </surname>
+                  <forename/>
+                </persName>
+                <occupation/>
+              </person>
+              <person>
+                <persName>
+                  <surname>Barpet </surname>
+                  <forename/>
+                </persName>
+                <occupation/>
+              </person>
+              <person>
+                <persName>
+                  <surname>Marolle</surname>
+                  <forename/>
+                </persName>
+                <occupation/>
+              </person>
+              <person>
+                <persName>
+                  <surname>et consorts</surname>
+                  <forename/>
+                </persName>
+                <occupation/>
+              </person>
+              <status>heir</status>
+              <expert ref="#xpr0209"/>
+              <prosecutor>
+                <persName>
+                  <surname>Gelhay</surname>
+                  <forename/>
+                </persName>
+              </prosecutor>
+              <prosecutor>
+                <persName>
+                  <surname>et autres</surname>
+                  <forename/>
+                </persName>
+              </prosecutor>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0209">1° Maison rue des Bons Enfants, attenant l’ancien Gouvernement « Toute attention faitte à la scituation de l’emplacement, à sa forme, et à son étendue qui est d’environ vingt une toises un quart de superficie Comme aussi à la nature de construction des bastimens, aux reparations de divers genres à y faire ; à la distribution des differents étages dudit corps de logis, à ce que le tout peut produire de revenu annuel eu égard au quartier et au cours du temps Nous estimons ladite maison comme elle se comporte de fond en comble, qu’elle s’étend de toutes parts ; circonstances et dependances, dans son état present ; et sans aucune reserve A la charge seulement dudit cens, droits et devoirs seigneuriaux envers le domaine du roi, dans la mouvance duquel elle est située, aux termes du contrat susdit extrait … Valloir la somme de … 8 400 l. » 
+
+2° Maison rue des Bons Enfants « Cette maison n’est pas partageable entre les copropriétaires d’icelle, de quelque maniere que ce soit ; et quelque chose que l’on fasse pour y parvenir ; attendu leurs differentes qualités et portions, il est mesme de necessité indispensable ; que l’universalité appartienne à un seul, pour éviter toutes contestations tel est notre avis cy… avis pour non partage Vu l’impossibilité de partager ladite maison, et à l’effet d’arriver à la connoissance de sa valeur, nous avons pris lesdites mesures tant de son emplacement que des constructions qui sont dessus ; procédé aux calculs necessaires pour avoir les superficies distinctes ; aux détails d’estimation de chaque partie eu égard à ce qu’elle est ; fait les relevés additions et autres operations d’après quoi, Considérant la forme dudit emplacement ; sa scituation et son étendue qui est d’environ vingt quatre toises trois quarts de superficie La qualité de construction dudit corps de logis ; la distribution de ses étages ; lesdites reparations qui sont à y faire, ce que cette maison peut produire annuellement de revenu ; relativement au quartier et au cours du tems Nous estimons ladite maison dans son état actuel, quel qu’elle se comporte ; qu’elle s’étend de toutes parts, et de fond en comble, circonstances et dependances, sans retirer quelconque A la charge uniquement des cens, droits et devoirs seigneuriaux, envers le domaine du roi dans la mouvance duquel elle est suivant le susdit contrat du quatre decembre mil sept cent dix neuf Valloir la somme de neuf mille cinq cent livres cy… 9 500 l. 
+C’est, Monsieur, l’état de chacune des deux maisons en question, notre avis sur l’impossibilité de les partager et la valleur de l’une et de l’autre, vous referant d’ordonner sur le tout cy… référé Fait par nous architecte expert lesdits jours, mois et an, sur les cinq heures du soir, que nous sommes retournés à Paris »</opinion>
+          <arrangement/>
+          <agreement type="conclusion">Conclusion</agreement>
+          <estimate l="" s="" d=""/>
+          <estimates>
+            <place ref="#id135d299">
+              <appraisal l="8400" s="" d="">
+                <desc>une maison</desc>
+              </appraisal>
+            </place>
+            <place ref="#id135d316">
+              <appraisal l="9500" s="" d="">
+                <desc>une maison</desc>
+              </appraisal>
+            </place>
+          </estimates>
+          <fees detail="true">
+            <fee type="papers" l="12" s="" d=""/>
+            <fee type="expert" ref="#xpr0209" l="48" s="" d=""/>
+            <fee type="clerk" l="48" s="" d=""/>
+            <fee type="rolls" l="30" s="" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="other" l="144" s="" d="">P [sic]</fee>
+            <fee type="plans" l="18" s="" d=""/>
+            <total l="300" s="" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="33" s="10" d=""/>
+            <expense type="expert" l="" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure">
+          <term value="b6">Titre (de propriété)</term>
+        </keywords>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis/>
+        <noteworthy/>
+      </description>
+    </expertise>

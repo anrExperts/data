@@ -1,0 +1,208 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1006d008">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-09-01T12:00:00">2020-09-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2017-04-01T12:00:00">2017-04-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1006</idno>
+        <idno type="item">008</idno>
+        <facsimile from="0052" to="0056"/>
+        <physDesc>
+          <extent sketch="false">4</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-08-06" type="paris"/>
+          <date when="1776-08-06" type="paris"/>
+        </sessions>
+        <places>
+          <place xml:id="id208d278" type="paris">
+            <address>
+              <street>Rue du Gindre, faubourg Saint-Germain</street>
+              <buildingNumber/>
+            </address>
+            <complement>à l’encoignure de la rue Carpentier</complement>
+            <parish/>
+            <owner>dépendant de la communauté qui a subsisté entre défunt Pierrard, Nicolas et Hudde, Marie</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="estimation">Estimer la valeur des biens</category>
+          <designation rubric="true">estimation d’une maison</designation>
+        </categories>
+        <procedure>
+          <framework type="b2b">L’institution est saisie dans le cadre d’une procédure (l’institution nomme un ou deux experts)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>lieutenant civil (sentence du 29 juillet 1776)</orgName>
+              <date when="1776-07-29"/>
+            </sentence>
+          </sentences>
+          <case>succession, vente par licitation de la maison</case>
+          <objects>
+            <object type="house">Maison(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0101" context="primary" appointment="court-appointed">
+              <title>architecte expert des bâtiments à Paris</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0062">
+              <persName>
+                <surname>Picquenon</surname>
+                <forename>Denis Joseph François</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>mineurs Pierrard</surname>
+                  <forename/>
+                </persName>
+                <occupation>François-Claude, Marie-Marguerite-Rozalie et Charles-Nicolas, enfants mineurs de défunt Pierrard, Nicolas, maître tailleur d’habits à Paris et de Hudde, Marie, sa veuve</occupation>
+              </person>
+              <status>heir</status>
+              <expert ref="#xpr0101"/>
+              <representative>
+                <persName>
+                  <surname>Hude</surname>
+                  <forename>Louis</forename>
+                </persName>
+                <occupation>tuteur ad hoc</occupation>
+              </representative>
+            </party>
+            <party role="opponent" presence="" intervention="">
+              <person>
+                <persName>
+                  <surname/>
+                  <forename/>
+                </persName>
+                <occupation/>
+              </person>
+              <status/>
+              <expert ref=""/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0101">"Nous avons ensuitte de nouveau visitté ladite maison en touttes les partyes qui la composent de fond en comble, fait attention à son état consistance et distribution, à la nature de sa construction, aux réparations qui sont à y faire, à l'étendue de son emplacement, au revenu qu'elle est susceptible de produire, au quartier où elle est située et à ce qu'elle est chargée d'une taxe annuelle pour tenir lieu du logement des gens de guerre : nous avons mis des prix particuliers tant au fond du terrain qu'à la superficie des bâtiments eu égard à ce que dessus
+Touttes considerations faittes nous prisons et estimons ladite maison à la charge du cens et des droits seigneuriaux du logement des gens de guerre et au cours du tems présent la somme de 24 000 l."</opinion>
+          <arrangement/>
+          <agreement type="conclusion">Conclusion</agreement>
+          <estimate l="24000" s="" d=""/>
+          <estimates>
+            <place ref="#id208d278">
+              <appraisal l="24000" s="" d="">
+                <desc>maison</desc>
+              </appraisal>
+            </place>
+          </estimates>
+          <fees detail="true">
+            <fee type="papers" l="4" s="18" d=""/>
+            <fee type="expert" ref="#xpr0101" l="18" s="" d=""/>
+            <fee type="clerk" l="18" s="" d=""/>
+            <fee type="rolls" l="15" s="" d=""/>
+            <fee type="prosecutors" l="15" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="70" s="18" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="17" s="5" d=""/>
+            <expense type="expert" l="6" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis>cause
+                « Que led. sr Louis Hude, seroit et demeureroit tueur ad hoc desd. trois mineurs Pierrard, à l’effet de deffendre à la demande en licitation contre luy formée en sa qualité de subrogé tuteur desd. mineurs à la requête de lad. dame veuve Pierrard leur mère de la maison rue du Gindre dont il s’agit dans led. avis, de consentir que cette vente [f. 1v°] soit faitte au plus offrant et dernier enchérisseur, visitte prisée et estimation préalablement faitte par nous Duboisterf, juré expert que vous avez, monsieur, nommé d’office, et que sur le prix en provenant les créanciers du sr Biet, vendeur originaire de lad. maison, dénommés en l’acte du 5 juin 1771 soient payés par privilège et que le surplus soit distribué aux créanciers de lad. succession Pierrard par ordre d’hypothèque.
+                Vous avez pareillement dit, monsieur, que lad. dame veuve Pierrard, en sa qualité de tutrice desd. mineurs ses enfans seroit auhtorisée à faire touttes délégation et autres actes que besoin seroit pour parvenir à la distribution amiable du prix de lad. maison, à compter avec tous les prétendans des droits de lad. succession, à débattre, clore et arrêter lesd. comptes, à passer tous actes, les signer ainsy que tous jugements qui seroient nécessaires pour l’entière exécution des sentences des 24 may et 19 juillet derniers, le tout suivant l’avis desd. parens et amis que vous avez, monsieur, homologué. »
+                Conclusion
+                « Telle est, monsieur, la visitte par nous faitte de lad. maison, tel est nôtre avis sur la valeur d’icelle suivant et aux termes de vôtre sentence nous référand à vôtre justice et prudence ordinaires. Fait par nous architecte expert susd. lesd. jour, mois et an après avoir vacqué à ce que dessus jusqu’à huit heures du soir par double vacation pour mettre à afin le présent rapport. »</analysis>
+        <noteworthy/>
+      </description>
+    </expertise>

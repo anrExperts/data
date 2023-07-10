@@ -1,0 +1,177 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j665d065" status="">
+      <meta/>
+      <control>
+        <maintenanceStatus>new</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-06-16T16:56:32.893+02:00">2021-06-16T16:56:32.893+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-06-16T16:29:02.548+02:00">2021-06-16T16:29:02.548+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2021-06-03T09:48:44Z">2021-06-03T09:48:44Z</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1736</unitdate>
+    <idno type="unitid">Z1J665</idno>
+        <idno type="item">065</idno>
+        <facsimile from="0750" to="0755"/>
+        <physDesc>
+          <extent sketch="false">6</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1736-10-25" type="paris"/>
+          <date when="1736-10-30" type="paris"/>
+        </sessions>
+        <places>
+          <place type="paris">
+            <address>
+              <street>rue du Faubourg Saint-Jacques</street>
+              <buildingNumber/>
+            </address>
+            <complement/>
+            <parish/>
+            <owner/>
+          </place>
+        </places>
+        <categories>
+          <category type="assessment">Décrire et évaluer les travaux à venir</category>
+          <designation rubric="false">Visite et estimation des réparations à faire en une maison en cette ville, Grande rue du Fg St Jacques, vis-à-vis le couvent des Feuillantines, à la requeste du sieur Jean Lantesse, fermier judiciaire ; M. Jacques Gérard de Montbrouard, expert ; M. Chevallier, greffier.</designation>
+        </categories>
+        <procedure>
+          <framework type="b2a">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>LC</orgName>
+              <date when="1736-10-05"/>
+            </sentence>
+          </sentences>
+          <case>fermage judiciaire, réparations à faires</case>
+          <objects>
+            <object type="house">Maison(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0118" context="primary" appointment="appointed">
+              <title>architecte expert bourgeois de Paris</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0043">
+              <persName>
+                <surname>Chevallier</surname>
+                <forename>Louis</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Lantesse</surname>
+                  <forename>Jean</forename>
+                </persName>
+                <occupation>bourgeois de Paris</occupation>
+              </person>
+              <status>contractor</status>
+              <expert ref="#xpr0118"/>
+            </party>
+            <party role="opponent" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Bernard</surname>
+                  <forename>Jean</forename>
+                </persName>
+                <occupation>créé curateur à la succession vacante de défunt Edme Bouchera marchand à Paris</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Roger</surname>
+                  <forename>Charles</forename>
+                </persName>
+                <occupation>curateur à la succession vacante de Marie Corniquet femme dudit Bouchera</occupation>
+              </person>
+              <status>mortgagor</status>
+              <expert ref="#xpr0118"/>
+            </party>
+            <party role="opponent" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Dumier</surname>
+                  <forename>Pierre</forename>
+                </persName>
+                <occupation>maître serrurier ayant droit par transport de Charles Tournaut de St Germain mâitre maçon, poursuivant les criées etc.</occupation>
+              </person>
+              <status>creditor</status>
+              <expert ref="#xpr0118"/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <agreement type="conclusion">Conclusion</agreement>
+          <opinion ref="#xpr0118">Estimation chiffrée, mais sans total
+« Telles sont les réparations à faire dans ladite maison ensemble notre estimation vous référant sur le tout d’en juger, monsieur, suivant votre prudence et justice ordinaire »</opinion>
+          <arrangement/>
+          <estimate l="" s="" d=""/>
+          <fees detail="">
+            <total l="" s="" d=""/>
+          </fees>
+          <expenses mentioned="false"/>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis/>
+        <noteworthy/>
+      </description>
+    </expertise>

@@ -1,0 +1,48 @@
+<eac xmlns="https://archivists.org/ns/eac/v2" xml:id="clrk0006">
+  <control maintenanceStatus="">
+    <recordId>clrk0006</recordId>
+    <maintenanceAgency>
+      <agencyName>ANR Experts</agencyName>
+    </maintenanceAgency>
+    <maintenanceHistory>
+      <maintenanceEvent maintenanceEventType="created">
+        <agent agentType="machine">clerk_csv2eac.xqy/BaseX</agent>
+        <eventDateTime standardDateTime="2022-12-31T14:06:48.817+01:00"/>
+        <eventDescription>Création des fiches EAC-CPF à partir du tableau</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+    <sources>
+      <source id="sourceid86495862">
+        <reference href="">Almanach royal 1696</reference>
+      </source>
+    </sources>
+  </control>
+  <cpfDescription>
+    <identity>
+      <entityType value="person"/>
+      <nameEntry status="authorized" preferredForm="true" sourceReference="">
+        <part localType="full">Hamet, Michel</part>
+      </nameEntry>
+      <nameEntry status="alternative" preferredForm="false" sourceReference="">
+        <part localType="surname">Hamet</part>
+        <part localType="forename">Michel</part>
+      </nameEntry>
+      <otherEntityTypes>
+        <otherEntityType>
+          <term>clerk</term>
+        </otherEntityType>
+      </otherEntityTypes>
+      <identityId>clrk0006</identityId>
+    </identity>
+    <description>
+      <functions>
+        <function sourceReference="#sourceid86495862">
+          <term>Greffier</term>
+          <date sourceReference="" certainty="certain" standardDate="1696"/>
+        </function>
+      </functions>
+      <places/>
+    </description>
+  </cpfDescription>
+  <!--id 12-->
+</eac>

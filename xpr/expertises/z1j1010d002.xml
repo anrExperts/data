@@ -1,0 +1,213 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1010d002">
+  <meta/>
+  <control>
+    <maintenanceStatus>revised</maintenanceStatus>
+    <publicationStatus/>
+    <localControl localType="detailLevel">
+      <term>completed</term>
+    </localControl>
+    <maintenanceHistory>
+      <maintenanceEvent>
+                <eventType>revised</eventType>
+                <eventDateTime standardDateTime="2022-08-28T13:45:59Z">2022-08-28T13:45:59Z</eventDateTime>
+                <agentType>human</agentType>
+                <agent>llosserand</agent>
+                <eventDescription>rvpcd</eventDescription>
+            </maintenanceEvent>
+          <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateObjectsValues_db.xqy/BaseX</agent>
+        <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateOpinionRef_files.xqy/BaseX</agent>
+        <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateRefValues_files.xqy/BaseX</agent>
+        <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+        <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>revised</eventType>
+        <eventDateTime standardDateTime="2020-09-01T12:00:00">2020-09-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>JH</agent>
+        <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>retroconverted</eventType>
+        <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>ead2xpr.xsl/Saxon9</agent>
+        <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>created</eventType>
+        <eventDateTime standardDateTime="2017-04-01T12:00:00">2017-04-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>llosserand</agent>
+        <eventDescription>Création de la fiche.</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+  </control>
+  <sourceDesc>
+    <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1010</idno>
+    <idno type="item">002</idno>
+    <facsimile from="0012" to="0027"/>
+    <physDesc>
+      <extent sketch="false">14</extent>
+      <appendices>
+        <appendice>
+          <type type="other">Note</type>
+          <extent>1</extent>
+          <desc>Quittance d'expert</desc>
+          <note/>
+        </appendice>
+        <appendice>
+          <type type="petition">Requête</type>
+          <extent>1</extent>
+          <desc>2/ requête de Bureau, Pierre Nicolas au lieutenant civil pour faire procéder à la visite des ouvrages faits à sa maison, suivit de l’autorisation donné par Augran le 4 janvier 1776.</desc>
+          <note/>
+        </appendice>
+      </appendices>
+    </physDesc>
+  </sourceDesc>
+  <description>
+    <sessions>
+      <date when="1776-12-02" type="paris"/>
+      <date when="1778-04-11" type="paris"/>
+    </sessions>
+    <places>
+      <place type="paris">
+        <address>
+          <street>Rue de Bondy</street>
+          <buildingNumber/>
+        </address>
+        <complement>à l’encoignure de la nouvelle rue Saint-Nicolas</complement>
+        <parish/>
+        <owner>Bureau, Pierre Nicolas, maître maçon</owner>
+      </place>
+    </places>
+    <categories>
+      <category type="registration">Enregistrer</category>
+      <designation rubric="true">Réception d’ouvrages de toutes natures pour la construction d’une maison</designation>
+    </categories>
+    <procedure>
+      <framework type="b1">Requête auprès d’une institution pour qu’elle demande une expertise</framework>
+      <origination type="parties">Les parties</origination>
+      <sentences>
+        <sentence>
+          <orgName>lieutenant civil</orgName>
+          <date when="1776-06-04"/>
+        </sentence>
+      </sentences>
+      <case>Arrêt de règlement du 18 août 1766</case>
+      <objects>
+        <object type="house">Maison(s)</object>
+      </objects>
+    </procedure>
+    <participants>
+      <experts>
+        <expert ref="#xpr0250" context="primary" appointment="court-appointed">
+          <title>architecte expert bourgeois des bâtiments à Paris</title>
+        </expert>
+      </experts>
+      <clerks>
+        <clerk ref="#clrk0062">
+          <persName>
+            <surname>Picquenon</surname>
+            <forename>Denis Joseph François</forename>
+          </persName>
+        </clerk>
+      </clerks>
+      <parties>
+        <party role="petitioner" presence="true" intervention="false">
+          <person>
+            <persName>
+              <surname>Bureau</surname>
+              <forename>Pierre Nicolas</forename>
+            </persName>
+            <occupation>maître maçon entrepreneur de bâtiment à Paris</occupation>
+          </person>
+          <status>owner</status>
+          <expert ref="#xpr0250"/>
+        </party>
+      </parties>
+      <craftmen>
+        <craftman>
+          <persName>
+            <surname>Lataste</surname>
+            <forename/>
+          </persName>
+          <occupation>maître charpentier</occupation>
+        </craftman>
+        <craftman>
+          <persName>
+            <surname>Tailhand</surname>
+            <forename/>
+          </persName>
+          <occupation>maître serrurier</occupation>
+        </craftman>
+        <craftman>
+          <persName>
+            <surname>Vachez</surname>
+            <forename/>
+          </persName>
+          <occupation>maître plombier</occupation>
+        </craftman>
+            <craftman>
+                    <persName>
+                        <surname>Delafond</surname>
+                        <forename/>
+                    </persName>
+                    <occupation>maître maçon</occupation>
+                </craftman>
+      </craftmen>
+    </participants>
+    <conclusions>
+      <opinion ref="#xpr0250">L'ensemble des ouvrages est estimé à la somme de 74120 livres 9 sols 8 deniers ; l’expertise est suspendue en l’attente des mémoires des autres ouvrages. « Nous suspendons à l’estimation des autres ouvrages faits pour la construction de lad. maison d’encoignure jusqu’à ce que les mémoires d’iceux nous ayent été remis, auquel tems, sur la réquisition qui nous en sera faitte, nous y procèderons par suitte d’exécution de l’ordonnance qui nous a commis et par continuation du présente procès verbal. Fait et arrêté par nous architectes experts susd. [etc.] »</opinion>
+      <arrangement/>
+      <agreement type="unfinished">Affaire inachevée</agreement>
+      <estimate l="74120" s="9" d="8"/>
+      <fees detail="false">
+        <total l="" s="" d=""/>
+      </fees>
+      <expenses mentioned="true">
+        <expense type="clerk" l="99" s="" d=""/>
+        <expense type="expert" l="" s="" d=""/>
+      </expenses>
+    </conclusions>
+    <keywords group="estates"/>
+    <keywords group="procedure"/>
+    <keywords group="contract"/>
+    <keywords group="encumbrance"/>
+    <keywords group="law"/>
+    <keywords group="measurement"/>
+    <keywords group="repairs"/>
+    <keywords group="guarantees"/>
+    <keywords group="responsability"/>
+    <keywords group="ownership"/>
+    <keywords group="value"/>
+    <keywords group="neighbourhood"/>
+    <keywords group="disorder"/>
+    <keywords group="transformation"/>
+    <analysis>En ce qui concerne les ouvrages qui ne sont plus visible une fois le bâtiment très avancé (maçonnerie, charpenterie, serrurerie et plomberie) il a constaté par lui-même ou par son préposé la conformité des ouvrages avec les attachements, sauf les calculs qui restent à faire par les experts (f. 1v°)</analysis>
+    <noteworthy/>
+  </description>
+</expertise>

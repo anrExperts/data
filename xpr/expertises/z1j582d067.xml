@@ -1,0 +1,235 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j582d067">
+  <meta/>
+  <control>
+    <maintenanceStatus>revised</maintenanceStatus>
+    <publicationStatus/>
+    <localControl localType="detailLevel">
+      <term>completed</term>
+    </localControl>
+    <maintenanceHistory>
+      <maintenanceEvent>
+                <eventType>revised</eventType>
+                <eventDateTime standardDateTime="2022-03-31T19:18:50Z">2022-03-31T19:18:50Z</eventDateTime>
+                <agentType>human</agentType>
+                <agent>llosserand</agent>
+                <eventDescription>rvpcd</eventDescription>
+            </maintenanceEvent>
+          <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateObjectsValues_db.xqy/BaseX</agent>
+        <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateOpinionRef_files.xqy/BaseX</agent>
+        <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateRefValues_files.xqy/BaseX</agent>
+        <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+        <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>revised</eventType>
+        <eventDateTime standardDateTime="2020-11-01T12:00:00">2020-11-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>JH</agent>
+        <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>retroconverted</eventType>
+        <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>ead2xpr.xsl/Saxon9</agent>
+        <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>created</eventType>
+        <eventDateTime standardDateTime="2017-04-01T12:00:00">2017-04-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>llosserand</agent>
+        <eventDescription>Création de la fiche.</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+  </control>
+  <sourceDesc>
+    <unitdate>1726</unitdate>
+    <idno type="unitid">Z1J582</idno>
+    <idno type="item">067</idno>
+    <facsimile from="0690" to="0694"/>
+    <physDesc>
+      <extent sketch="false">4</extent>
+    </physDesc>
+  </sourceDesc>
+  <description>
+    <sessions>
+      <date when="1726-08-26" type="province"/>
+    </sessions>
+    <places>
+      <place xml:id="id185d272" type="province">
+        <address/>
+        <complement>une maison sise à Crosne, près Villeneuve-Saint-Georges, rue des Vaches, dépendant de la succession de défunt Dubois, Michel</complement>
+        <city>Crosne</city>
+        <district/>
+        <owner>Succession Dubois</owner>
+      </place>
+    </places>
+    <categories>
+      <category type="estimation">Estimer la valeur des biens</category>
+      <designation rubric="true">Estimation de maison et terres, scizes à Crosne près Villeneuve St Georges, pour les mineurs Dubois ; M. Loir, expert</designation>
+    </categories>
+    <procedure>
+      <framework type="b2">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+      <origination type="institution">Une institution</origination>
+      <sentences>
+        <sentence>
+          <orgName>lieutenant civil</orgName>
+          <date when="1726-08-09"/>
+        </sentence>
+      </sentences>
+      <case>partage de succession : Charpentier, Charles et damoiselle Dubois, Anne Madeleine doivent rendre les comptes d'exécution testamentaire afin de procéder au partage</case>
+      <objects>
+        <object type="plot">Terrain(s)</object>
+        <object type="house">Maison(s)</object>
+      </objects>
+    </procedure>
+    <participants>
+      <experts>
+        <expert ref="#xpr0183" context="primary" appointment="appointed">
+          <title>juré expert à Paris</title>
+        </expert>
+      </experts>
+      <clerks>
+        <clerk ref="#clrk0033">
+          <persName>
+            <surname>Callou</surname>
+            <forename>Antoine Charles</forename>
+          </persName>
+        </clerk>
+      </clerks>
+      <parties>
+        <party role="petitioner" presence="false" intervention="false">
+          <person>
+            <persName>
+              <surname>Arnoult</surname>
+              <forename>Guillaume</forename>
+            </persName>
+            <occupation>marchand brasseur</occupation>
+          </person>
+          <person>
+            <persName>
+              <surname>Sausset</surname>
+              <forename>Catherine</forename>
+            </persName>
+            <occupation>son épouse, avant veuve de Dubois, Michel, conjointement tuteurs de Dubois, Marie Geneviève, fille mineure de Sausset, Catherine, et dudit Dubois, Michel Claude, dont elle est héritière pour un cinquième</occupation>
+          </person>
+          <person>
+            <persName>
+              <surname>Le Garosse</surname>
+              <forename>Anne</forename>
+            </persName>
+            <occupation>femme de Dubois, Michel, ses ayeuls, défenderesse, et Lefevre, Nicolas, huissier priseur au nom et comme tuteur nommé à l'effet de rendre compte à la décharge de la succession de la delle de la Garosse, Anne des biens de la communauté d'entre elle et son défunt mari et de la tutelle de ceux de ces enfants mineurs.</occupation>
+          </person>
+          <status>heir</status>
+          <expert ref="#xpr0183"/>
+        </party>
+        <party role="opponent" presence="false" intervention="false">
+          <person>
+            <persName>
+              <surname>Charpentier</surname>
+              <forename>Charles</forename>
+            </persName>
+            <occupation>procureur au Parlement</occupation>
+          </person>
+          <person>
+            <persName>
+              <surname>Dubois</surname>
+              <forename>Anne Jeanne</forename>
+            </persName>
+            <occupation>son épouse</occupation>
+          </person>
+          <person>
+            <persName>
+              <surname>de la Rose</surname>
+              <forename/>
+            </persName>
+            <occupation>conseiller du roy trésorier des deniers de police, damoiselle Dubois, son épouse</occupation>
+          </person>
+          <person>
+            <persName>
+              <surname>Dubois</surname>
+              <forename>Marie Madeleine</forename>
+            </persName>
+            <occupation>fille majeure et le sr Dubois, François, marchand à Orléans, héritiers chacun pour un cinquième desd. deffunts sieur et damoiselle Dubois leur père et mère.</occupation>
+          </person>
+          <status>heir</status>
+          <expert ref="#xpr0183"/>
+        </party>
+      </parties>
+      <craftmen>
+        <craftman>
+          <persName>
+            <surname/>
+            <forename/>
+          </persName>
+          <occupation/>
+        </craftman>
+      </craftmen>
+    </participants>
+    <conclusions>
+      <opinion ref="#xpr0183">"Après laquelle lecture, consideration faitte de l'estat present des batiments qui composent ladite maison cour et jardin et terres tant en vignes que prez et … nous prisons et estimons la somme de cinq mil cinq cens livres eu égard au cours du tems present et à la charge du cens seulement"</opinion>
+      <arrangement/>
+      <agreement type="conclusion">Conclusion</agreement>
+      <estimate l="5500" s="" d=""/>
+      <estimates>
+        <place ref="#id185d272">
+          <appraisal l="5500" s="" d="">
+            <desc>maison</desc>
+          </appraisal>
+        </place>
+      </estimates>
+      <fees detail="true">
+        <fee type="papers" l="" s="" d=""/>
+        <fee type="expert" ref="#xpr0183" l="20" s="" d=""/>
+        <fee type="clerk" l="" s="" d=""/>
+        <fee type="rolls" l="" s="" d=""/>
+        <fee type="prosecutors" l="" s="" d=""/>
+        <fee type="help" l="" s="" d=""/>
+        <fee type="plans" l="" s="" d=""/>
+        <total l="" s="" d=""/>
+      </fees>
+      <expenses mentioned="false"/>
+    </conclusions>
+    <keywords group="estates"/>
+    <keywords group="procedure"/>
+    <keywords group="contract"/>
+    <keywords group="encumbrance"/>
+    <keywords group="law"/>
+    <keywords group="measurement"/>
+    <keywords group="repairs"/>
+    <keywords group="guarantees"/>
+    <keywords group="responsability"/>
+    <keywords group="ownership"/>
+    <keywords group="value"/>
+    <keywords group="neighbourhood"/>
+    <keywords group="disorder"/>
+    <keywords group="transformation"/>
+    <analysis>L'expert est nommé par toutes les parties après qu'elles s'en sont rapportées au lieutenant civil, « les parties remboursées de leurs frais »
+                énonciation des parties
+                « [f. 1r°] lecture d'une sentence rendue entre Guillaume Arnoult marchand brasseur à Paris et Catherine Sausset son épouse, avant veuve de Michel Dubois et conjointement tuteurs de Marie Geneviève Dubois, fille de ladite Catherine Sausset et dudit Michel Claude Dubois, laditte mineure par représentation de son père, héritière pour un cinquième de Michel Dubois avec Anne Le Garesse, sa femme, ses ayeuls, deffenderesse à la demandecontre elle formée par requeste verballe du vingt trois janvier dernier d'une part, et Nicolas Lefevre, huissier priseur au nom et comme tuteur nomé par sentence d'avis de parens du quatre septembre mil sept cent vingt un, à l'effet de rendre compte à la décharge de la succession de la delle Anne de la Garosse des biens de la communauté d'entre elle et son deffunt mary et de la tutelle de ceux de ces enfans qui estoient mineurs et de procéder au partage des biens de lad. [f. 1v°] communauté aux fins de lad. requeste verballe et encore ledit Lefevre, demandeur, en exécution de votre sentence du vingt quatre janvier 1722 et aux fins de la mesme requeste verballe d'une part et Me Charpentier, Charles, procureur au parlement, damoiselle Anne Jeanne Dubois son épouse, Me [ laissé vide] de la Rose, conseiller du roy trésorier des deniers de police, damoiselle Dubois son épouse, damoiselle Marie Madeleine Dubois, fille majeure et le sr François Dubois, marchand à Orléans ; lesd. damoiselle Charpentier, de la Rose et Dubois et le sr François Dubois héritiers chacun pour un cinquième desd. deffunt sieur et damoiselle Dubois leur père et mère, deffendeurs à lad. requeste et encore lesd. sr et delle Arnault demandeurs aux fins de la requeste verballe du trente juillet dernier, contre les autres parties deffendeurs, par laquelle parties ouyes sans que les qualitez puissent nuire ny préjudicier vous avez dit que votre sentence seroit exécuttée... ».</analysis>
+    <noteworthy/>
+  </description>
+</expertise>

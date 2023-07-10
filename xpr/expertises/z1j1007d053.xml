@@ -1,0 +1,201 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1007d053">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-08-01T12:00:00">2020-08-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2017-10-01T12:00:00">2017-10-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1007</idno>
+        <idno type="item">053</idno>
+        <facsimile from="0841" to="0846"/>
+        <physDesc>
+          <extent sketch="false">5</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-09-02" type="suburbs"/>
+          <date when="1776-09-09" type="suburbs"/>
+          <date when="1776-09-16" type="suburbs"/>
+        </sessions>
+        <places>
+          <place type="suburbs">
+            <address/>
+            <complement>Rue de Bondy donnant par derrière sur la rue Neuve Saint-Nicolas, appartenant àChemin, Estienne ; terrain joignant appartenant àChaulin, Jacques</complement>
+            <city/>
+            <district/>
+            <owner/>
+          </place>
+        </places>
+        <categories>
+          <category type="settlement">Départager</category>
+          <designation rubric="true">Allignement, rue de Bondy, entre le sieur Chemin, Me Maçon et Chantin jardinier ; MM. Ducret et Jacob, expert.</designation>
+        </categories>
+        <procedure>
+          <framework type="b2a">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Châtelet, lieutenant civil (sentence)</orgName>
+              <date when="1776-08-09"/>
+            </sentence>
+          </sentences>
+          <case>alignement d’un mur de séparation à construire entre les deux terrains</case>
+          <objects>
+            <object type="wall">Mur(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0102" context="primary" appointment="appointed">
+              <title>architecte expert bourgeois à Paris</title>
+            </expert>
+            <expert ref="#xpr0143" context="primary" appointment="appointed">
+              <title>architecte expert entrepreneur à Paris</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0059">
+              <persName>
+                <surname>Forestier</surname>
+                <forename>Césaire François</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="true" intervention="true">
+              <person>
+                <persName>
+                  <surname>Chemin</surname>
+                  <forename>Estienne</forename>
+                </persName>
+                <occupation>maître maçon entrepreneur de bâtiments à Paris, propriétaire d’une maison rue de Bondy dont il est question ici</occupation>
+              </person>
+              <status>owner</status>
+              <expert ref="#xpr0143"/>
+              <prosecutor>
+                <persName>
+                  <surname>Arnould</surname>
+                  <forename>Jules Marie</forename>
+                </persName>
+              </prosecutor>
+            </party>
+            <party role="opponent" presence="true" intervention="true">
+              <person>
+                <persName>
+                  <surname>Chaulin</surname>
+                  <forename>Jacques</forename>
+                </persName>
+                <occupation>jardinier maraîcher, propriétaire d’une petite portion de terrain rue Neuve Saint-Nicolas tenant au terrain de Chemin</occupation>
+              </person>
+              <status>owner</status>
+              <expert ref="#xpr0102"/>
+              <prosecutor>
+                <persName>
+                  <surname>De Varenne</surname>
+                  <forename/>
+                </persName>
+              </prosecutor>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="">« Lequel mur sera construit tant en fondation qu’en elevation en moelons durs de carrière et maçonné de mortier de chaux et sable… à frais communs et chacun pour moitié en la hauteur de cloture suivant la coutume Fait et arrêté par nous architectes experts susdits les jours mois et an que dessus à quoy avons vaqué jusqu’à huit heures par double vacation pour finir lesdites operations cy dessus »</opinion>
+          <arrangement/>
+          <agreement type="agreement">Accord</agreement>
+          <estimate l="" s="" d=""/>
+          <fees detail="true">
+            <fee type="papers" l="12" s="" d=""/>
+            <fee type="expert" ref="#xpr0102" l="30" s="" d=""/>
+            <fee type="expert" ref="#xpr0143" l="30" s="" d=""/>
+            <fee type="clerk" l="30" s="" d=""/>
+            <fee type="rolls" l="36" s="" d=""/>
+            <fee type="prosecutors" l="48" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="186" s="" d=""/>
+          </fees>
+          <expenses mentioned=""/>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis/>
+        <noteworthy/>
+      </description>
+    </expertise>

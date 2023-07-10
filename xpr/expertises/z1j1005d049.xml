@@ -1,0 +1,235 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1005d049">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-07-01T12:00:00">2020-07-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2017-10-01T12:00:00">2017-10-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1005</idno>
+        <idno type="item">049</idno>
+        <facsimile from="0498" to="0506"/>
+        <physDesc>
+          <extent sketch="false">8</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-07-22" type="province"/>
+          <date when="1777-01-20" type="province"/>
+        </sessions>
+        <places>
+          <place xml:id="id273d273" type="province">
+            <address/>
+            <complement>Maison carrée cour de la petite fontaine</complement>
+            <city>Vitry-sur-Seine</city>
+            <district/>
+            <owner>succession Hyelard</owner>
+          </place>
+          <place xml:id="id273d290" type="province">
+            <address/>
+            <complement>rue Audigeois</complement>
+            <city>Vitry-sur-Seine</city>
+            <district/>
+            <owner>succession Hyelard</owner>
+          </place>
+          <place xml:id="id273d307" type="province">
+            <address/>
+            <complement>terres et vignes</complement>
+            <city>Vitry-sur-Seine</city>
+            <district/>
+            <owner/>
+          </place>
+        </places>
+        <categories>
+          <category type="estimation">Estimer la valeur des biens</category>
+          <designation rubric="true">Visitte et estimations de maisons et biens, à Vitry sur Seine, de la succession Huylard ; MM. Taboureur et Angot, experts</designation>
+        </categories>
+        <procedure>
+          <framework type="b2a">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Châtelet, lieutenant civil (sentence)</orgName>
+              <date when="1776-06-04"/>
+            </sentence>
+          </sentences>
+          <case>Succession Hyelard, liquidation et partage des biens, licitation</case>
+          <objects>
+            <object type="house">Maison(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0250" context="primary" appointment="appointed">
+              <title>architecte expert</title>
+            </expert>
+            <expert ref="#xpr0003" context="primary" appointment="appointed">
+              <title>architecte expert</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0058">
+              <persName>
+                <surname>Foucart</surname>
+                <forename>Paul Joseph</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="true" intervention="false">
+              <person>
+                <persName>
+                  <surname>Portault</surname>
+                  <forename>Pierre</forename>
+                </persName>
+                <occupation>marchand amidonnier à Paris</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Hyelard</surname>
+                  <forename>Marie Charlotte</forename>
+                </persName>
+                <occupation>son épouse, elle héritière pour moitié à charge de substitution de Hyelard, François, son père</occupation>
+              </person>
+              <status>heir</status>
+              <expert ref="#xpr0003"/>
+              <prosecutor>
+                <persName>
+                  <surname>Noel Le jeune</surname>
+                  <forename/>
+                </persName>
+              </prosecutor>
+            </party>
+            <party role="opponent" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Michelle</surname>
+                  <forename>Marie Anne</forename>
+                </persName>
+                <occupation>veuve deHyelard, François, au nom et comme mère et tutrice de Hyelard, Marie et Hyelard, Claude François son fils, héritier à charge de substitution pour moitié de son père</occupation>
+              </person>
+              <status>heir</status>
+              <expert ref="#xpr0250"/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="">1° « Laquelle maison attention faitte sur la situation la superficie du terrein les clotures la consistance et l’étendue des batiments l’entretien et autres reparations dont ils sont susceptibles, ce que le tout peut produire annuelement nous estimons eu égard au cours du tems la somme de … 4 800 l. » 
+2° «  Au moyen desquelles operations attention faitte sur sa situation la superficie de l’emplacement son irregularité et … les differens batimens qui la composent faits après coup, leur ancienne et legere construction l’usage auquel ils peuvent convenir et ce qu’ils peuvent produire, les égousts de combles que ladite maison est assujettie de ce … par toutes ces considerations nous estimons ladite maison circonstances et dependances eu égard au cours du tems la somme de … 2 600 l. 
+3° Terres et vignes : 86 articles, pour un total de 5 253 l. 10 s. 
+Lesquels maisons et heritages cy dessus nous observons n’estre en aucune façon partageables entre les coproprietaires attendu que les objets sont déjà trop morcelés et perdroient leur valeur et occasionneraient des difficultés par leur subdivision. Tel est Monsieur notre avis sur lesdits biens et sur leur valeur aux termes de votre sentence vous referant du juger et ordonner Fait par nous architectes experts susdits lesdits jours mois et ans et sommes retournés à Paris. »</opinion>
+          <arrangement/>
+          <agreement type="agreement">Accord</agreement>
+          <estimate l="" s="" d=""/>
+          <estimates>
+            <place ref="#id273d273">
+              <appraisal l="4800" s="" d="">
+                <desc>une maison</desc>
+              </appraisal>
+            </place>
+            <place ref="#id273d290">
+              <appraisal l="2600" s="" d="">
+                <desc>une maison</desc>
+              </appraisal>
+            </place>
+            <place ref="#id273d307">
+              <appraisal l="5253" s="10" d="">
+                <desc>terres et vignes</desc>
+              </appraisal>
+            </place>
+          </estimates>
+          <fees detail="true">
+            <fee type="papers" l="12" s="" d=""/>
+            <fee type="expert" ref="#xpr0250" l="60" s="" d=""/>
+            <fee type="expert" ref="#xpr0003" l="60" s="" d=""/>
+            <fee type="clerk" l="60" s="" d=""/>
+            <fee type="rolls" l="40" s="" d=""/>
+            <fee type="prosecutors" l="40" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="272" s="" d=""/>
+          </fees>
+          <expenses mentioned=""/>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis/>
+        <noteworthy/>
+      </description>
+    </expertise>

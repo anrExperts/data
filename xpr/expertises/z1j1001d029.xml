@@ -1,0 +1,227 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1001d029">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-06-15T15:18:49.962+02:00">2021-06-15T15:18:49.962+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateExpertisesPlaces.xqy/BaseX</agent>
+            <eventDescription>Ajout des nœuds xml manquant dans les adresses.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2017-10-01T12:00:00">2017-10-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1001</idno>
+        <idno type="item">029</idno>
+        <facsimile from="0278" to="0284"/>
+        <physDesc>
+          <extent sketch="false">5</extent>
+          <appendices>
+            <appendice>
+              <type type="proxyPA">Pouvoir/procuration (acte sous seing privé)</type>
+              <extent>1</extent>
+              <desc>Pouvoir des trois requérants à Desboeufs, 16 mars 1776</desc>
+              <note/>
+            </appendice>
+          </appendices>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-04-13" type="suburbs"/>
+          <date when="1776-04-15" type="paris"/>
+          <date when="1776-09-17" type="suburbs"/>
+        </sessions>
+        <places>
+          <place type="suburbs">
+            <address/>
+            <complement>rue Saint-André, près Mont-Louis, paroisse de Charonne</complement>
+            <city/>
+            <district/>
+            <owner/>
+          </place>
+          <place type="indeterminate">
+            <address/>
+            <complement>étude du notaire</complement>
+            <owner/>
+          </place>
+        </places>
+        <categories>
+          <category type="assessment">Décrire et évaluer les travaux à venir</category>
+          <designation rubric="true">Visitte de lieux contentieux, rue St André près Mont Louis, à la requeste du sieur Colas ; M. Desboeufs, expert</designation>
+        </categories>
+        <procedure>
+          <framework type="a">Commun accord des parties</framework>
+          <origination type="parties">Les parties</origination>
+          <sentences>
+            <sentence>
+              <orgName/>
+              <date when=""/>
+            </sentence>
+          </sentences>
+          <case>« Prévenir les contestations qui pourroient survenir entre [les trois requérants] », en constatant leurs droits respectifs d’après leurs titres.</case>
+          <objects>
+            <object type="other">ruelle (mitoyen)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0089" context="primary" appointment="appointed">
+              <title>archiecte expert</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0057">
+              <persName>
+                <surname>Liébault de Laneuville</surname>
+                <forename>Christophe Edouard</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Anjoran de Tracy</surname>
+                  <forename>Claude Etienne</forename>
+                </persName>
+                <occupation>conseiller au parlement, propriétaire d’une maison et jardin rue Saint-André</occupation>
+              </person>
+              <status>owner</status>
+              <expert ref="#xpr0089"/>
+            </party>
+            <party role="petitioner" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Collas</surname>
+                  <forename>Jean Baptiste Jacques</forename>
+                </persName>
+                <occupation>propriétaire d’une maison et jardin au même endroit</occupation>
+              </person>
+              <status>owner</status>
+              <expert ref="#xpr0089"/>
+            </party>
+            <party role="petitioner" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>De Pidensat</surname>
+                  <forename>Louis Marie</forename>
+                </persName>
+                <occupation>propriétaire d’une maison et jardin contigüs</occupation>
+              </person>
+              <status>owner</status>
+              <expert ref="#xpr0089"/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0089">« Notre avis est que la longueur de la voye commune entre les parties fixée à quarante six toises doit commencer à la porte chartiere de lad. Voye sur la rue Saint-André prise dans œuvre du mur sur la rue et non de l’angle du mur du jadin de M. Anjoran […] l’excedent de ladite voye devant appartenir aud. Sr Colas. 
+A l'égard du tour d'échelle stipulé dans le bail à rente il n'est pas marqué sur le plan original mais en prenant la lettre dudit bail à rente il y est dit en parlant de la cloture du terrein sauf en faveur de mondit sieur Anjoureau du tour d’échelle suivant la coutume que sera pris sur la portion de terrein restant à mondit sieur Aujoureau, cette clause quoy qu’obscure laisse entretenir qu’il l’on a parlé de ce tour de l’échelle que dans le cas où monsieur Aujoureau viendroit à se clore il seroit constaté que le terrein du tour d’échelle qu’il laisseroit aux dépens de son terrein luy appartiendroit à toujours.
+Pourquoy note avis est que si Monsieur Aujoureau désire laisser un tour d’échelle lors qu’il se clora il doit le prendre à ses dépens d’autant qu’il n’est point figuré sur le plan annexé à la minutte du bail à rente. »</opinion>
+          <arrangement/>
+          <agreement type="conclusion">Conclusion</agreement>
+          <estimate l="" s="" d=""/>
+          <fees detail="true">
+            <fee type="papers" l="5" s="4" d=""/>
+            <fee type="expert" ref="#xpr0089" l="28" s="" d=""/>
+            <fee type="clerk" l="28" s="" d=""/>
+            <fee type="rolls" l="23" s="" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="12" s="" d=""/>
+            <total l="97" s="4" d=""/>
+          </fees>
+          <expenses mentioned=""/>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure">
+          <term value="b6">Titre (de propriété)</term>
+        </keywords>
+        <keywords group="contract"/>
+        <keywords group="encumbrance">
+          <term value="d2">Droit de passage</term>
+          <term value="d10">Mur de clôture</term>
+        </keywords>
+        <keywords group="law"/>
+        <keywords group="measurement">
+          <term value="f1">Arpentage</term>
+        </keywords>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value">
+          <term value="k7">Superficie</term>
+        </keywords>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis>servitude "du tour d'échelle" stipulé dans le bail</analysis>
+        <noteworthy>acte de vente passé devant Desaint-Paul notaire le 27 janvier 1774
+un autre notaire idem le (?) mars 1774
+
+mention d'une carrière de pierre "sur lequel terrain réservé, il seroit libre audit propriétaire et dans (?) de fouiller et ouvrir une carrière sur l'espace d'un an ...." (f. 1v°)
+
+Arpentage fait par le sieur Rocher arpenteur (f. 2v°)
+
+2e vacation a lieu au bureau de l'étude du notaire Delchaise, rue du Monen pour avoir la minute du bail à rente du 27 janvier 1774 avec le plan, l'expert fait plusieurs remarques à sa lecture</noteworthy>
+      </description>
+    </expertise>

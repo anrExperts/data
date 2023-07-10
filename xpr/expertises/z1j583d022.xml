@@ -1,0 +1,194 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j583d022">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-11-01T12:00:00">2020-11-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2016-10-26T12:00:00">2016-10-26T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>RB</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1726</unitdate>
+    <idno type="unitid">Z1J583</idno>
+        <idno type="item">022</idno>
+        <facsimile from="0321" to="0327"/>
+        <physDesc>
+          <extent sketch="false">6</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1726-09-17" type="province"/>
+        </sessions>
+        <places>
+          <place xml:id="id47d218" type="province">
+            <address/>
+            <complement>avenue de Saint-Cloud</complement>
+            <city>Versailles</city>
+            <district/>
+            <owner>Succession Sion</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="estimation">Estimer la valeur des biens</category>
+          <designation rubric="true">Visite de maison</designation>
+        </categories>
+        <procedure>
+          <framework type="b2a">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Chambre des requêtes</orgName>
+              <date when="1726-08-27"/>
+            </sentence>
+          </sentences>
+          <case>partage de la moitié d'une maison entre deux héritiers</case>
+          <objects>
+            <object type="house">Maison(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0018" context="primary" appointment="appointed">
+              <title>architecte juré du roi expert bourgeois de Paris</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0029">
+              <persName>
+                <surname>Quirot</surname>
+                <forename>Jacques</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Sion</surname>
+                  <forename>Charles</forename>
+                </persName>
+                <occupation/>
+              </person>
+              <status>heir</status>
+              <expert ref="#xpr0018"/>
+            </party>
+            <party role="opponent" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Sion</surname>
+                  <forename>Elisabeth</forename>
+                </persName>
+                <occupation>sa sœur mineure, représentée par son tuteur Fayolle, Simon</occupation>
+              </person>
+              <status>heir</status>
+              <expert ref="#xpr0018"/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0018">« Et apres avoir veu lad. maison et considéré la disposition de son emplacement et des bastimens qui la composent nous avons trouvé que laditte moitié de maison ne se peut partager de fasson que led. sieur Charles Sion en puisse jouir de six unziesme et lad. Dlle Elisabeth Sion mineure de l'autre unziesme ce qui ne se peut aucunement faire. Et pour satisfaire au surplus de l'execution de lad. sentence apres avoir veu et examiné avecq attention la susd. maison et les bastimens qui la composent, nous estimons que led. sieur Charles Sion achepté lad. moitié de maison au dessus de sa jsute valleur, et que laditte moitié de maison vaut tout au plus lad. somme de quinze mil livres ».</opinion>
+          <arrangement/>
+          <agreement type="conclusion">Conclusion</agreement>
+          <estimate l="15000" s="" d=""/>
+          <estimates>
+            <place ref="#id47d218">
+              <appraisal l="15000" s="" d="">
+                <desc>maison</desc>
+              </appraisal>
+            </place>
+          </estimates>
+          <fees detail="true">
+            <fee type="papers" l="" s="" d=""/>
+            <fee type="expert" ref="#xpr0018" l="25" s="" d=""/>
+            <fee type="clerk" l="" s="" d=""/>
+            <fee type="rolls" l="" s="" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="" s="" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="16" s="6" d="8"/>
+            <expense type="expert" l="" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis>Motivations : « Nous avons fait lecture d'une sentence rendue aux requestes du Pallais le vingt sept aoust mil sept cent vingt six entre lesd. Sr Charles Sion bourgeois de Paris heritiers pour un quart de deffunt Michel Sion Me rotisseur a Paris et Marie Anne Le Gras sa femme, ses peres et meres, et encorre heritier beneficiaire pour un unziesme de deffunte dlle Marie Sion sa tante, veuve en premieresnopces de Charles Mitouflet et en secondes de Mathieu Trottier exemplt des cent Suisses de Monseigr le duc d'Orléans demandeur en requeste et exploit du premier aoust 1726, d'une part. Contre le S. Simon Fayolle marchand bourgeois de Paris au nom et comme tuteur de Dlle Elisabeth Sion aussy heritiere pour un autre unziesme de lad. damoiselle Marie Anne Sion sa tante deffendeur et defaillant à fautte de deffendre d'autre part.
+                Par laquelle sentence, la cour a declaré led. deffaut bien et deument obtenu et adjugeant le profit d'iceluy a ordonné que par experts dont les partyes conviendroient pardevant Vous Mr ou qui seroient par Vous Monsieur pris et nommez d'office, la moitié de maison scituée à Versailles et dont est question, provenante et faisante partie des effets de la succession de de lad. deffunte Marie Sion veuve Trottier. Sera veüe et visittée à l'effet par lesd. experts de rendre compte dans leur procès verbal si cette moitié de maison est partageable et peut estre jouie et possédée entre led. sieur Charles Sion et lad. Dlle Elisabeth Sion sa sœur dont led. sieur Fayolle defaillant est tuteur, de façon que led. sieur Charles Sion en puisse jouir de dix unziesme et lad. Dlle Sion sa sœur d'un unziesme seullement sans incommodité de part ny d'autre ; et dans le cas ou elle ne pouroit estre divisée ny partagée si le prix de quinze mil livres auquel le demadeur a porté lad. moitié de maison et pour lequel elle luy est resté comme plus offrant par l'acte d'abandon a tiltre de licitation».</analysis>
+        <noteworthy/>
+      </description>
+    </expertise>

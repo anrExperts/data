@@ -1,0 +1,239 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1001d033">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2017-10-01T12:00:00">2017-10-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1001</idno>
+        <idno type="item">033</idno>
+        <facsimile from="0317" to="0329"/>
+        <physDesc>
+          <extent sketch="false">8</extent>
+          <appendices>
+            <appendice>
+              <type type="petition">Requête</type>
+              <extent>1</extent>
+              <desc/>
+              <note/>
+            </appendice>
+            <appendice>
+              <type type="other">sommation</type>
+              <extent>1</extent>
+              <desc/>
+              <note/>
+            </appendice>
+          </appendices>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-04-15" type="paris"/>
+          <date when="1776-04-20" type="paris"/>
+          <date when="1776-06-03" type="paris"/>
+          <date when="1776-06-11" type="paris"/>
+          <date when="1776-12-01" type="paris"/>
+          <date when="1776-12-01" type="paris"/>
+          <date when="1777-05-03" type="paris"/>
+        </sessions>
+        <places>
+          <place type="paris">
+            <address>
+              <street>rue Notre-Dame de Bonne-nouvelle</street>
+              <buildingNumber/>
+            </address>
+            <complement/>
+            <parish/>
+            <owner>saisie réellement sur Martinot et son épouse</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="assessment">Décrire et évaluer les travaux à venir</category>
+          <designation rubric="true">Visitte de puits et fosses d'aisance en une maison, rue Notre Dame de Bonnes nouvelles, saisie réellement sur le sieur Martinet et son épouse et estimations des réparations ; M. Taboureur, expert</designation>
+        </categories>
+        <procedure>
+          <framework type="b2b">L’institution est saisie dans le cadre d’une procédure (l’institution nomme un ou deux experts)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Châtelet (lieutenant civil)</orgName>
+              <date when="1776-04-06"/>
+            </sentence>
+          </sentences>
+          <case>La fosse d’aisance de la maison saisie a gâté les eaux du puits commun et mitoyen avec la maison appartenant à la veuve Froment. Celle-ci souhaite que soient vidés, curés et réparés le puits et la fosse d’aisance mais ces travaux n’étant pas compris au rapport de Poullain du 14 février 1776, ils doivent être d’abord constatés.</case>
+          <objects>
+            <object type="wall">Mur(s)</object>
+            <object type="cesspool">Fosse(s) d'aisance</object>
+            <object type="well">Puits</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0250" context="primary" appointment="court-appointed">
+              <title>architecte expert</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0064">
+              <persName>
+                <surname>Gobert</surname>
+                <forename>Jean Charles Simon</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="true" intervention="false">
+              <person>
+                <persName>
+                  <surname>Ducoup</surname>
+                  <forename>Paul</forename>
+                </persName>
+                <occupation>bourgeois de Paris, fermier judiciaire</occupation>
+              </person>
+              <status>contractor</status>
+              <expert ref="#xpr0250"/>
+            </party>
+            <party role="opponent" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Garlier</surname>
+                  <forename>Marie Claire</forename>
+                </persName>
+                <occupation>veuve de Bénigne Fromont, bourgeois de Paris, propriétaire d'une maison rue de la Lune, laquelle tien à la maison du requérant</occupation>
+              </person>
+              <status>neighbour</status>
+              <expert ref="#xpr0250"/>
+              <prosecutor>
+                <persName>
+                  <surname>Roard</surname>
+                  <forename/>
+                </persName>
+              </prosecutor>
+            </party>
+            <party role="opponent" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Dumary</surname>
+                  <forename/>
+                </persName>
+                <occupation>fille majeure poursuivant les saisies r&amp;elles criées vente et adjudication par décret et autorité de justice</occupation>
+              </person>
+              <status>creditor</status>
+              <expert ref="#xpr0250"/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0250">« Notre avis est qu’il est absolument necessaire de demolir et reconstruire à neuf ladite fosse d’aisance avec les materiaux convenables à cette espece de besogne, de donner aux murs les épaisseurs necessaires, lors de la demolition enlever les terres putrides et infestées.
+« Notre avis est aussi que le puits commun et mitoyen dont est question seroit aussi vuidé et mis à sec pour enlever toutte l’eau qui est parcellement infectée et que la superficie du sable du fonds du puits, dans le cas où il se trouveroit quelques degradations dans le fonds, ce que l’on ne peut prevoir dans le moment present attendu que l’on ne peut descendre dans ledit puit à cause de l’infection de l’eau qui est si considerable que la lumiere ne peut…, il y sera fait les reparations urgentes et necessaires. »
+"Revenant les ouvrages faits tan pour la reconstruction de la fosse d'aisance que pour le curage du puits dont est question à la somme de à 1507 l. 9 s.
+Maçonnerie 1107 livres 17 sols 4deniers
+Charpente : 89 livres 4 sols 8 deniers
+Pavé 66 livres 4 sols 6 deniers
+Vuidange 184 livres 2 sols 6 deniers
+Et curage du puits : 60 livres
+Nous observons que comme la transcription des mémoires dedans notre premier rapport auroit été trop long et dispendieux nous n'avons rapporté que la somme desdits ouvrages pour éviter à frais.
+Et pour en constater le détail de l'ouvrage nous avons annexé à ces présentes les mémoires paraphés sur chaque recto et signés..."</opinion>
+          <arrangement/>
+          <agreement type="conclusion">Conclusion</agreement>
+          <estimate l="" s="" d=""/>
+          <fees detail="true">
+            <fee type="papers" l="12" s="" d=""/>
+            <fee type="expert" ref="#xpr0250" l="48" s="" d=""/>
+            <fee type="clerk" l="48" s="" d=""/>
+            <fee type="rolls" l="48" s="" d=""/>
+            <fee type="prosecutors" l="6" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="other" l="3" s="" d="">requête</fee>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="165" s="" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="48" s="" d=""/>
+            <expense type="expert" l="16" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value">
+          <term value="k11">Saisie (endettement)</term>
+        </keywords>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis/>
+        <noteworthy>suggestion de nomination d'expert : (f. 1r°) qu'il soit procédé "soit par Poulain soit par tel autre expert qu'il vous plairoit commettre à la visite</noteworthy>
+      </description>
+    </expertise>

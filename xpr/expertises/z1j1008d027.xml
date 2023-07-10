@@ -1,0 +1,246 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1008d027">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+                <eventType>revised</eventType>
+                <eventDateTime standardDateTime="2023-01-10T10:22:46Z">2023-01-10T10:22:46Z</eventDateTime>
+                <agentType>human</agentType>
+                <agent>jmorvan</agent>
+                <eventDescription>corr extent</eventDescription>
+            </maintenanceEvent>
+      <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-09-01T12:00:00">2020-09-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2018-01-01T12:00:00">2018-01-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>PC</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1008</idno>
+        <idno type="item">027</idno>
+        <facsimile from="0273" to="0289"/>
+        <physDesc>
+          <extent sketch="false">16</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-10-12" type="paris"/>
+          <date when="1776-11-20" type="paris"/>
+          <date when="1776-11-28" type="paris"/>
+          <date when="1776-12-23" type="paris"/>
+          <date when="1777-01-02" type="paris"/>
+        </sessions>
+        <places>
+          <place type="paris">
+            <address>
+              <street>Rue du Temple</street>
+              <buildingNumber/>
+            </address>
+            <complement>à l'angle de la rue du Temple et de celle de Vendôme</complement>
+            <parish/>
+            <owner>Roussin</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="settlement">Départager</category>
+          <designation rubric="true">Visite de fosse d’aisance</designation>
+        </categories>
+        <procedure>
+          <framework type="b2a">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Chambre des requêtes</orgName>
+              <date when="1776-08-27"/>
+            </sentence>
+          </sentences>
+          <case>Contrôle des opérations sur une fosse d’aisance dont la réalisation a connu de nombreuses malfaçons à l’origine d’infiltrations dénoncées par les locataires. Les experts Pruneau de Montlouis et Villetard, nommé par chacune des parties, sont en désaccord quant aux opérations à effectuer.</case>
+          <objects>
+            <object type="cesspool">Fosse(s) d'aisance</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0229" context="primary" appointment="appointed">
+              <title>architecte juré expert des bâtiments</title>
+            </expert>
+            <expert ref="#xpr0261" context="primary" appointment="appointed">
+              <title>architecte juré expert des bâtiments</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0061">
+              <persName>
+                <surname>Lecoeur</surname>
+                <forename>Jean Clair</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="true" intervention="false">
+              <person>
+                <persName>
+                  <surname>Roussin</surname>
+                  <forename/>
+                </persName>
+                <occupation>bourgeois de Paris</occupation>
+              </person>
+              <status>owner</status>
+              <expert ref=""/>
+              <prosecutor>
+                <persName>
+                  <surname>Letourneau</surname>
+                  <forename/>
+                </persName>
+              </prosecutor>
+            </party>
+            <party role="opponent" presence="true" intervention="false">
+              <person>
+                <persName>
+                  <surname>Sieur Duhamel</surname>
+                  <forename/>
+                </persName>
+                <occupation>maître maçon</occupation>
+              </person>
+              <status>builder</status>
+              <expert ref="#xpr0261"/>
+              <representative>
+                <persName>
+                  <surname>Fardeau</surname>
+                  <forename/>
+                </persName>
+                <occupation/>
+              </representative>
+            </party>
+            <party role="opponent" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Armand</surname>
+                  <forename/>
+                </persName>
+                <occupation>marchand de vin</occupation>
+              </person>
+              <status>tenant</status>
+              <expert ref="#xpr0261"/>
+              <prosecutor>
+                <persName>
+                  <surname>Moignon</surname>
+                  <forename/>
+                </persName>
+              </prosecutor>
+            </party>
+            <party role="" presence="" intervention="">
+              <person>
+                <persName>
+                  <surname>Desclos</surname>
+                  <forename/>
+                </persName>
+                <occupation/>
+              </person>
+              <status/>
+              <expert ref="#xpr0261"/>
+              <prosecutor>
+                <persName>
+                  <surname>Sieur Chachignon</surname>
+                  <forename/>
+                </persName>
+              </prosecutor>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname>Sieur Duhamel</surname>
+                <forename/>
+              </persName>
+              <occupation>maître maçon et entrepreneur en bâtiment.</occupation>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0229">"Nous avons dit sur cela cy devant tout ce qui est nécessaire, nous n’y ajouterons rien ici. Nous ne répondrons pas non plus à tous vos longs raisonnements et vos redites, afin de hâter la conclusion de ces présentes qui n’ont que trop duré malheureusement pour les parties, et avons signé et rayé dix sept mots comme cy au présent avis."</opinion>
+          <opinion ref="#xpr0261">"Nous Villetard, comme nous avons rendu tout le compte que cet objet exige, nous ne daignerons pas répondre à M. de Montlouis et avons signé »</opinion>
+          <arrangement/>
+          <agreement type="disagreement">Désaccord</agreement>
+          <estimate l="" s="" d=""/>
+          <fees detail="true">
+            <fee type="papers" l="12" s="12" d=""/>
+            <fee type="expert" ref="#xpr0229" l="36" s="" d=""/>
+            <fee type="expert" ref="#xpr0261" l="36" s="" d=""/>
+            <fee type="clerk" l="36" s="" d=""/>
+            <fee type="rolls" l="66" s="" d=""/>
+            <fee type="prosecutors" l="10" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="196" s="12" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="43" s="10" d=""/>
+            <expense type="expert" l="12" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder">
+          <term value="m3">Infiltration / fuite (dégâts des eaux ou autres)</term>
+        </keywords>
+        <keywords group="transformation"/>
+        <analysis/>
+        <noteworthy/>
+      </description>
+    </expertise>

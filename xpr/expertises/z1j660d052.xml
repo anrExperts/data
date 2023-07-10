@@ -1,0 +1,178 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j660d052" status="">
+  <meta/>
+  <control>
+    <maintenanceStatus>revised</maintenanceStatus>
+    <publicationStatus/>
+    <localControl localType="detailLevel">
+      <term>completed</term>
+    </localControl>
+    <maintenanceHistory>
+      <maintenanceEvent>
+                <eventType>revised</eventType>
+                <eventDateTime standardDateTime="2022-03-19T15:48:23Z">2022-03-19T15:48:23Z</eventDateTime>
+                <agentType>human</agentType>
+                <agent>llosserand</agent>
+                <eventDescription>rvpcd</eventDescription>
+            </maintenanceEvent>
+          <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateObjectsValues_db.xqy/BaseX</agent>
+        <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-06-16T16:56:32.893+02:00">2021-06-16T16:56:32.893+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateOpinionRef_files.xqy/BaseX</agent>
+        <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-06-16T16:29:02.548+02:00">2021-06-16T16:29:02.548+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateRefValues_files.xqy/BaseX</agent>
+        <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>created</eventType>
+        <eventDateTime standardDateTime="2021-02-20T20:10:55Z">2021-02-20T20:10:55Z</eventDateTime>
+        <agentType>human</agentType>
+        <agent>llosserand</agent>
+        <eventDescription>Création de la fiche.</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+  </control>
+  <sourceDesc>
+    <unitdate>1736</unitdate>
+    <idno type="unitid">Z1J660</idno>
+    <idno type="item">052</idno>
+    <facsimile from="0635" to="0640"/>
+    <physDesc>
+      <extent sketch="false">6</extent>
+    </physDesc>
+  </sourceDesc>
+  <description>
+    <sessions>
+      <date when="1736-02-11" type="paris"/>
+      <date when="1736-02-13" type="paris"/>
+      <date when="1736-02-13" type="paris"/>
+    </sessions>
+    <places>
+      <place type="paris">
+        <address>
+          <street>rue Sainte-Marguerite</street>
+          <buildingNumber/>
+        </address>
+        <complement/>
+        <parish>Sainte-Marguerite</parish>
+        <owner/>
+      </place>
+    </places>
+    <categories>
+      <category type="assessment">Décrire et évaluer les travaux à venir</category>
+      <designation rubric="false">Visitte de réparations nécessaires à faire en une maison, à la requeste de Mathurin Allais, me vitrier, principal locataire de la maison rue et paroisse Ste Marguerite, FG St Antoine ;  M. Nicolas Isidore Chastelain, expert ; M. Chevallier, greffier.</designation>
+    </categories>
+    <procedure>
+      <framework type="b2">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+      <origination type="institution">Une institution</origination>
+      <sentences>
+        <sentence>
+          <orgName>Présidial du Châtelet, Lieutenant particulier</orgName>
+          <date when="1736-02-04"/>
+          <date when="1735-12-10"/>
+        </sentence>
+      </sentences>
+      <case>réparations locatives à rembourser sur les loyers au locataire</case>
+      <objects>
+        <object type="house">Maison(s)</object>
+      </objects>
+    </procedure>
+    <participants>
+      <experts>
+        <expert ref="#xpr0051" context="primary" appointment="court-appointed">
+          <title>architecte juré du roi expert des bâtiments à Paris</title>
+        </expert>
+      </experts>
+      <clerks>
+        <clerk ref="#clrk0043">
+          <persName>
+            <surname>Chevallier</surname>
+            <forename>Louis</forename>
+          </persName>
+        </clerk>
+      </clerks>
+      <parties>
+        <party role="petitioner" presence="true" intervention="false">
+          <person>
+            <persName>
+              <surname>Allais</surname>
+              <forename>Mathurin</forename>
+            </persName>
+            <occupation>maître vitrier</occupation>
+          </person>
+          <status>main-tenant</status>
+          <expert ref="#xpr0051"/>
+        </party>
+        <party role="opponent" presence="true" intervention="false">
+          <person>
+            <persName>
+              <surname>Ranfin</surname>
+              <forename>Louis Etienne</forename>
+            </persName>
+            <occupation/>
+          </person>
+          <status>owner</status>
+          <expert ref="#xpr0051"/>
+        </party>
+      </parties>
+      <craftmen>
+        <craftman>
+          <persName>
+            <surname/>
+            <forename/>
+          </persName>
+          <occupation/>
+        </craftman>
+      </craftmen>
+    </participants>
+    <conclusions>
+      <agreement type="conclusion">Conclusion</agreement>
+      <opinion ref="#xpr0051">"A l’égard du cour et allée de passage dont le pavé est en très mauvais état nous n’estimons point qu’il y ait aucune réparation à y faire attendu que la vétusté de ladite maison et son usage n’en empecheroit point la location et ne l’augmenteroit point quand on le rétabliroit à neuf ce qui deviendroit fort onéreux au propriétaire et pour satisfaire au réquisitoire verbal des parties qui nous ont déclaré en notre première vacation qu’il désiroient que nous nous informasssions en leur présence du tems que les étayes ont été mises pour en constater la vérité par le présent procès verbal, nous avons interrogé plusieurs locataires qui nous ont séparément assuré que lesdits étayes avoient été mis et posés en la premier septembre 1735 ce que nous raportons icy sans tirer à conséquence pour servir et valoir audites parties ce que qu’ils aviseront bon être.
+Tel est l’avis de nous expert susdit sauf à vous monsieur de juger sur le tout suivant votre prudence et justice ordinaire."</opinion>
+      <arrangement/>
+      <estimate l="" s="" d=""/>
+      <fees detail="false">
+        <total l="" s="" d=""/>
+      </fees>
+      <expenses mentioned="false"/>
+    </conclusions>
+    <keywords group="estates"/>
+    <keywords group="procedure"/>
+    <keywords group="contract">
+      <term value="c1">Bail</term>
+    </keywords>
+    <keywords group="encumbrance"/>
+    <keywords group="law"/>
+    <keywords group="measurement"/>
+    <keywords group="repairs"/>
+    <keywords group="guarantees"/>
+    <keywords group="responsability"/>
+    <keywords group="ownership"/>
+    <keywords group="value">
+      <term value="k1">Loyer</term>
+    </keywords>
+    <keywords group="neighbourhood">
+      <term value="l1">Voisin</term>
+    </keywords>
+    <keywords group="disorder"/>
+    <keywords group="transformation">
+      <term value="n1">Amélioration (travaux qui sans être utiles à sa conservation lui sont utiles et lui procure une plus-value) ǂ</term>
+      <term value="n7">Démolition</term>
+      <term value="n14">Consolidation /Etaiements</term>
+    </keywords>
+    <analysis/>
+    <noteworthy/>
+  </description>
+</expertise>

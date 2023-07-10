@@ -1,0 +1,209 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j583d036">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-11-01T12:00:00">2020-11-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2016-10-26T12:00:00">2016-10-26T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>RB</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1726</unitdate>
+    <idno type="unitid">Z1J583</idno>
+        <idno type="item">036</idno>
+        <facsimile from="0414" to="0429"/>
+        <physDesc>
+          <extent sketch="false">14</extent>
+          <appendices>
+            <appendice>
+              <type type="petition">Requête</type>
+              <extent>2</extent>
+              <desc>requête de Rebour, Denis au lieutenant civil et acte de nomination d'expert du 2 octobre 1726</desc>
+              <note/>
+            </appendice>
+          </appendices>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1726-10-03" type="paris"/>
+          <date when="1726-10-03" type="paris"/>
+        </sessions>
+        <places>
+          <place type="paris">
+            <address>
+              <street>Rue Saint-Germain-l'Auxerrois [Voie actuelle. Autre(s) nom(s) : rue Saint-Germain-à-Couroiers, rue Saint-Germain, grande rue Saint-Germain]</street>
+              <buildingNumber/>
+            </address>
+            <complement/>
+            <parish/>
+            <owner>Vente Richomme / Rebours</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="acceptation">Recevoir et évaluer le travail réalisé</category>
+          <designation rubric="true">Réception d'ouvrages de construction</designation>
+        </categories>
+        <procedure>
+          <framework type="b1">Requête auprès d’une institution pour qu’elle demande une expertise</framework>
+          <origination type="parties">Les parties</origination>
+          <sentences>
+            <sentence>
+              <orgName>lieutenant civil</orgName>
+              <date when="1726-10-02"/>
+            </sentence>
+          </sentences>
+          <case>réception de travaux</case>
+          <objects>
+            <object type="house">Maison(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0179" context="primary" appointment="court-appointed">
+              <title>architecte expert des bâtiments à Paris</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0023">
+              <persName>
+                <surname>Meley</surname>
+                <forename>François</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Rebours</surname>
+                  <forename>Denis</forename>
+                </persName>
+                <occupation>bourgeois de Paris, acquéreur de la maison et commanditaire des travaux</occupation>
+              </person>
+              <status>owner</status>
+              <expert ref="#xpr0179"/>
+            </party>
+            <party role="opponent" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Richomme</surname>
+                  <forename>Henry Charles</forename>
+                </persName>
+                <occupation>vendeur de la maison</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Dupuis</surname>
+                  <forename>Antoinette Marguerite</forename>
+                </persName>
+                <occupation>épouse du précédent, vendeuse de la maison</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Dupuis</surname>
+                  <forename>Jean Baptiste Nicolas</forename>
+                </persName>
+                <occupation>frère de la précédente, vendeur de la maison</occupation>
+              </person>
+              <status>owner</status>
+              <expert ref="#xpr0179"/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0179">« Avons ensuite procedé au relevé et aditions des articles des ouvrages faits par augmentation en lad. maison contenus en nostre poresent rapot au moyen desquelles avons trouvé qu'ils montent et reviennent ensemble a la somme de quatre mil cinq cens quatre vingt dix sept livres dix sept sols. Sur laquelle somme il convient déduire celle deux cent quarante deux livres pour lesd. interventions, partant reste la somme de quatre mil trois cens cinquante cinq livres dix sept sols pour lesd. ouvrages faits d'augmentation ».</opinion>
+          <arrangement/>
+          <agreement type="conclusion">Conclusion</agreement>
+          <estimate l="4355" s="17" d=""/>
+          <fees detail="true">
+            <fee type="papers" l="" s="" d=""/>
+            <fee type="expert" ref="#xpr0179" l="12" s="" d=""/>
+            <fee type="clerk" l="12" s="" d=""/>
+            <fee type="rolls" l="" s="" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="" s="" d=""/>
+          </fees>
+          <expenses mentioned=""/>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis>Motivations
+                « Nous avons fait lecture d'une requeste presentée a Monsieur le Lieutenant civil par led. Denis Rebour acquereur de lad. maison ont est question du sieur Henry Charles Richomme et d'Antoinette Marguerite Dupuis son épouse qui en estoient proprietaires avec Jean Baptiste Nicolas Dupuis leur frere et beaufrère absent, par contrat passé pardevant Hachette et Raymond nores au Chastelet le vingt cinq septembre mil sept cent vingt deux, à ce qu'il vous plus qu'atendu que les ouvrages qui estoient a faire en lad. maison suivant nostre proces du vingt un aoust 1723, en vertu de l'ordonnance de mond. Sieur lieutenant civil estant au bas d'une reqte a luy presentée par led. Rebour le six juillet 1723 et en execution de la sence du cinquieme septembre mil sept cens vingt quatre portant enterinement de nostre dit procez verbal sont entierement faits, lad. requeste tendante a ce qu'il plut à Mr le Lieutenant permetre aud. Rebourg de faire proceder a la reception, visite, prisée et estimation desd. ouvrages faits, meme de ceux d'augmentation qui estoient necessaires a faire et de ceux qui n'ont point esté faits portez en nostre procez verbal, par tel expert qu'il plairoit à Monsieur le Lieutenant civil nommer pour estre led. Rebour remboursé du tout ».</analysis>
+        <noteworthy/>
+      </description>
+    </expertise>

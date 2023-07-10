@@ -1,0 +1,236 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1008d002">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+                <eventType>revised</eventType>
+                <eventDateTime standardDateTime="2023-01-10T10:17:19Z">2023-01-10T10:17:19Z</eventDateTime>
+                <agentType>human</agentType>
+                <agent>jmorvan</agent>
+                <eventDescription>corr extent</eventDescription>
+            </maintenanceEvent>
+      <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-09-01T12:00:00">2020-09-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2018-01-01T12:00:00">2018-01-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>PC</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1008</idno>
+        <idno type="item">002</idno>
+        <facsimile from="0049" to="0055"/>
+        <physDesc>
+          <extent sketch="false">6</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-10-02" type="paris"/>
+          <date when="1776-10-02" type="paris"/>
+          <date when="1776-10-05" type="paris"/>
+          <date when="1776-11-22" type="paris"/>
+        </sessions>
+        <places>
+          <place xml:id="id320d423" type="suburbs">
+            <address/>
+            <complement>Vaugirard, près de l'église</complement>
+            <city>Paris</city>
+            <district/>
+            <owner/>
+          </place>
+          <place xml:id="id320d439" type="paris">
+            <address>
+              <street>rue Mondétour</street>
+              <buildingNumber/>
+            </address>
+            <complement/>
+            <parish/>
+            <owner/>
+          </place>
+        </places>
+        <categories>
+          <category type="estimation">Estimer la valeur des biens</category>
+          <designation rubric="true">Estimation d'une maison</designation>
+        </categories>
+        <procedure>
+          <framework type="b2a">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Chambre des requêtes</orgName>
+              <date when="1776-07-26"/>
+            </sentence>
+          </sentences>
+          <case>Succession / Vente par licitation</case>
+          <objects>
+            <object type="house">Maison(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0209" context="primary" appointment="appointed">
+              <title>architecte expert bourgeois des bâtiments en titre d'office</title>
+            </expert>
+            <expert ref="#xpr0250" context="primary" appointment="appointed">
+              <title>architecte expert bourgeois des bâtiments en titre d'office</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0050">
+              <persName>
+                <surname>Mallerot</surname>
+                <forename>Joseph Louis</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Charvey</surname>
+                  <forename>Nicolas</forename>
+                </persName>
+                <occupation>huissier à cheval au Châtelet</occupation>
+              </person>
+              <status>heir</status>
+              <expert ref="#xpr0250"/>
+              <representative>
+                <persName>
+                  <surname>Charier</surname>
+                  <forename/>
+                </persName>
+                <occupation/>
+              </representative>
+            </party>
+            <party role="opponent" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Charvey</surname>
+                  <forename>Antoine</forename>
+                </persName>
+                <occupation>bourgeois de Paris</occupation>
+              </person>
+              <status>heir</status>
+              <expert ref="#xpr0209"/>
+              <representative>
+                <persName>
+                  <surname>Taxil de Blaireau</surname>
+                  <forename/>
+                </persName>
+                <occupation/>
+              </representative>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="">« Nous estimons cette maison comme elle se comporte de toutes parts et de fond en combles, circonstances et dépendances et dans l’état actuel où elle se trouve, à la charge seulement de droits seigneuriaux de ladite Seigneurie dans la mouvance de laquelle elle est située, valoir la somme de quatre mille cinq cent livres, 4 500 l. C’est Monsieur l’étatprésent de ladite maison, notre avis sur l’impossibilité de la partager commodément en sa valeur. »
+Maison de Paris : « Nous estimons ladite maison, ainsi qu’elle se compose de fond en combles, circonstances et dépendances, dans son état actuel et sans aucune réserve, à la charge seulement de cens, droits et devoirs seigneuriaux envers la Seigneurie en la mouvance de laquelle elle est située, valloir la somme de sept mille six cent cinquante livres, soit 7 650 l. C’est Monsieur l’étatprésent de ladite maison, notre avis sur l’impossibilité de la partager commodément en sa valeur. »</opinion>
+          <arrangement/>
+          <agreement type="agreement">Accord</agreement>
+          <estimate l="12150" s="" d=""/>
+          <estimates>
+            <place ref="#id320d423">
+              <appraisal l="4500" s="" d="">
+                <desc>maison</desc>
+              </appraisal>
+            </place>
+            <place ref="#id320d439">
+              <appraisal l="7650" s="" d="">
+                <desc/>
+              </appraisal>
+            </place>
+          </estimates>
+          <fees detail="true">
+            <fee type="papers" l="9" s="" d=""/>
+            <fee type="expert" ref="#xpr0209" l="15" s="" d=""/>
+            <fee type="expert" ref="#xpr0250" l="27" s="" d=""/>
+            <fee type="clerk" l="27" s="" d=""/>
+            <fee type="rolls" l="21" s="" d=""/>
+            <fee type="prosecutors" l="54" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="153" s="" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="expert" l="14" s="" d=""/>
+            <expense type="clerk" l="24" s="5" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis/>
+        <noteworthy/>
+      </description>
+    </expertise>

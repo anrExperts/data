@@ -1,0 +1,169 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j484d029" status="">
+      <meta/>
+      <control>
+        <maintenanceStatus>new</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-02-17T12:17:28.693+01:00">2021-02-17T12:17:28.693+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>z1jresp.xqy/BaseX</agent>
+            <eventDescription>Ajout de l'historique de la fiche.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2020-12-20T12:00:00">2020-12-20T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1706</unitdate>
+    <idno type="unitid">Z1J484</idno>
+        <idno type="item">029</idno>
+        <facsimile from="0225" to="0229"/>
+        <physDesc>
+          <extent sketch="false">4</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1706-11-20" type="paris"/>
+        </sessions>
+        <places>
+          <place xml:id="id107d70" type="paris">
+            <address>
+              <street>rue Philippeaux</street>
+              <buildingNumber/>
+            </address>
+            <complement/>
+            <parish/>
+            <owner>succession Dosias</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="estimation">Estimer la valeur des biens</category>
+          <designation rubric="true">Estimation de maison</designation>
+        </categories>
+        <procedure>
+          <framework type="b2b">L’institution est saisie dans le cadre d’une procédure (l’institution nomme un ou deux experts)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>LC</orgName>
+              <date when="1706-11-13"/>
+            </sentence>
+          </sentences>
+          <case>Vente pour le compte de mineurs</case>
+          <objects>
+            <object type="house">Maison(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0153" context="primary" appointment="court-appointed">
+              <title>expert juré du roi entrepreneur des bâtiments à Paris</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0014">
+              <persName>
+                <surname>Baudoin</surname>
+                <forename>Pierre</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Coppellier</surname>
+                  <forename>Pierre</forename>
+                </persName>
+                <occupation>et son épouse, tuteurs des enfants mineurs de défunt Gabriel Dosias</occupation>
+              </person>
+              <status/>
+              <expert ref="#xpr0153"/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <agreement type="conclusion">Conclusion</agreement>
+          <opinion ref="#xpr0153">"Ayant ensuite veu et examiné ladite maison, je l'ay trouvée d'ancienne construction y ayant plusieurs grosses réparations à y faire en considération de quoy et de l'endroit où elle est scituée et par raport au cours du temps présent j'ay prisé et estimé ladite maison cour jardin et lieux la somme de cinq mil livres pour le prix du bail des fonds et tréfonds"</opinion>
+          <arrangement/>
+          <estimate l="5000" s="" d=""/>
+          <estimates>
+            <place ref="#id107d70">
+              <appraisal l="5000" s="" d="">
+                <desc>mais</desc>
+              </appraisal>
+            </place>
+          </estimates>
+          <fees detail="true">
+            <fee type="expert" ref="#xpr0153" l="6" s="" d=""/>
+            <fee type="clerk" l="6" s="" d=""/>
+            <fee type="rolls" l="2" s="5" d=""/>
+            <fee type="papers" l="2" s="2" d="6"/>
+            <fee type="plans" l="" s="" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <total l="16" s="17" d="6"/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="8" s="5" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis/>
+        <noteworthy/>
+      </description>
+    </expertise>

@@ -1,0 +1,207 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j582d057">
+  <meta/>
+  <control>
+    <maintenanceStatus>revised</maintenanceStatus>
+    <publicationStatus/>
+    <localControl localType="detailLevel">
+      <term>completed</term>
+    </localControl>
+    <maintenanceHistory>
+      <maintenanceEvent>
+                <eventType>revised</eventType>
+                <eventDateTime standardDateTime="2022-03-31T18:59:13Z">2022-03-31T18:59:13Z</eventDateTime>
+                <agentType>human</agentType>
+                <agent>llosserand</agent>
+                <eventDescription>rvpcd</eventDescription>
+            </maintenanceEvent>
+          <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateObjectsValues_db.xqy/BaseX</agent>
+        <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateOpinionRef_files.xqy/BaseX</agent>
+        <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateRefValues_files.xqy/BaseX</agent>
+        <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+        <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>revised</eventType>
+        <eventDateTime standardDateTime="2020-11-01T12:00:00">2020-11-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>JH</agent>
+        <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>retroconverted</eventType>
+        <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>ead2xpr.xsl/Saxon9</agent>
+        <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>created</eventType>
+        <eventDateTime standardDateTime="2017-04-01T12:00:00">2017-04-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>llosserand</agent>
+        <eventDescription>Création de la fiche.</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+  </control>
+  <sourceDesc>
+    <unitdate>1726</unitdate>
+    <idno type="unitid">Z1J582</idno>
+    <idno type="item">057</idno>
+    <facsimile from="0582" to="0594"/>
+    <physDesc>
+      <extent sketch="false">12</extent>
+    </physDesc>
+  </sourceDesc>
+  <description>
+    <sessions>
+      <date when="1726-08-19" type="suburbs"/>
+      <date when="1726-08-19" type="suburbs"/>
+      <date when="1726-08-21" type="suburbs"/>
+    </sessions>
+    <places>
+      <place xml:id="id323d222" type="suburbs">
+        <address/>
+        <complement>trois maisons se joignant l'une l'autre sises au faubourg Saint-Antoine près la barrière</complement>
+        <city>Paris</city>
+        <district/>
+        <owner>succession Babin</owner>
+      </place>
+    </places>
+    <categories>
+      <category type="estimation">Estimer la valeur des biens</category>
+      <designation rubric="true">Visitte et estimation de trois maisons et des réparations, fauxbourg St Antoine pour led. Barbin et mineurs ; M. Loir, expert.</designation>
+    </categories>
+    <procedure>
+      <framework type="b2">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+      <origination type="institution">Une institution</origination>
+      <sentences>
+        <sentence>
+          <orgName>lieutenant civil</orgName>
+          <date when="1726-08-06"/>
+        </sentence>
+      </sentences>
+      <case>partage de biens d'une succession (une première visite par l'expert Quirot)</case>
+      <objects>
+        <object type="house">Maison(s)</object>
+      </objects>
+    </procedure>
+    <participants>
+      <experts>
+        <expert ref="#xpr0183" context="primary" appointment="appointed">
+          <title>juré expert à Paris</title>
+        </expert>
+      </experts>
+      <clerks>
+        <clerk ref="#clrk0033">
+          <persName>
+            <surname>Callou</surname>
+            <forename>Antoine Charles</forename>
+          </persName>
+        </clerk>
+      </clerks>
+      <parties>
+        <party role="petitioner" presence="false" intervention="false">
+          <person>
+            <persName>
+              <surname>Voille</surname>
+              <forename>Catherine</forename>
+            </persName>
+            <occupation>veuve de défunt Babin, Mathieu, bourgeois de Paris</occupation>
+          </person>
+          <status>heir</status>
+          <expert ref="#xpr0183"/>
+        </party>
+        <party role="opponent" presence="false" intervention="false">
+          <person>
+            <persName>
+              <surname>Regnault</surname>
+              <forename>Mathieu</forename>
+            </persName>
+            <occupation>comme tuteur des enfants mineurs de lui et défunte Babin, Marie Anne</occupation>
+          </person>
+          <status>heir</status>
+          <expert ref="#xpr0183"/>
+        </party>
+      </parties>
+      <craftmen>
+        <craftman>
+          <persName>
+            <surname/>
+            <forename/>
+          </persName>
+          <occupation/>
+        </craftman>
+      </craftmen>
+    </participants>
+    <conclusions>
+      <opinion ref="#xpr0183">la valeur et les réparations de chaque maison sont d'abord estimées (1 : 930 livres de réparations et d'une valeur de 1200 livres ; 2 : 480 livres de réparations et d'un valeur de 4750 livres ; 3 : 380 livres de réparations et d'une valeur de 5000 livres). Puis l'expert détermine que les biens ne peuvent être divisés qu'en deux, moyennant des réajustements par soultes ou rente et quelques aménagements notamment pour les parties communes (une serre, la fosse d'aisance (entretien compris) etc.)
+ « [f. 11v°] … notre avis est qu'elles ne peuvent se partage qu'en deux portions, scavoir la principalle [f. 12r°] maison qui est celle du milieu : cour, corps de logis entre lad. cour, le jardin et led. jardin en icelle pour une part en portion ne peuvent se partager en deux, et les deux petites maisons à droitte à et gauche de lad. grande maison pour l'autre partie en faisant néanmoins une soulte ou rente de lad. grande maison et auxd. deux petittes maisons à proportion de l'excédant du prix et estimation d'icelle, et notre avis est aussi que lesd. deux petites maisons peuvent se partager en deux moitiées en faisant aussi pareille soulte ou rente à proportion de l'excédant du prix et estimations d'une d'icelle envers l'autre, le tout suivant les estimations cy dessus par nous faittes, auquel ca, de partage les eaux de partie des combles de derrière et escallier continueront de tomber et s'écouler comme ils faut sur l'emplacement de cour et comble de lad. grande maison, de mesme que les eaux de l'égoust de moitié du comble [ illisible] entre cour et jardin et de la petite serre en icelle continueront de tomber et s'écouler sur l'emplacement de cours de la petite maison à gauche de la principalle maison et la porte qui est dans le mur de cloture séparant lad. petite cour d'avec la cour de lad. grande maison sera bouchée à plein mur aux frais de lad. grande maison, au moyen de quoy la porte deument ferré et sa ferrure luy apartiendront et la fosse d'aysance de lad. grande maison demeurera commune avec la petite maison à droitte [ illisible] vers le trosne et la vuidange des matières de lad. fosse par la suitte se fera à frais communs desd. deux maisons, scavoir le tiers pour celle qui en souffrira la vuidange par son costé et les deux tiers pour l'autre. C'est sur tout ce que dessus l'avis de nousd. expert sauf à vous monsieur, d'ordonner suivant votre prudence accoustumée. ».</opinion>
+      <arrangement/>
+      <agreement type="conclusion">Conclusion</agreement>
+      <estimate l="" s="" d=""/>
+      <estimates>
+        <place ref="#id323d222">
+          <appraisal l="1200" s="" d="">
+            <desc>maison</desc>
+          </appraisal>
+          <appraisal l="4750" s="" d="">
+            <desc>maison</desc>
+          </appraisal>
+          <appraisal l="5000" s="" d="">
+            <desc>maison</desc>
+          </appraisal>
+        </place>
+      </estimates>
+      <fees detail="true">
+        <fee type="papers" l="8" s="15" d=""/>
+        <fee type="expert" ref="#xpr0183" l="22" s="10" d=""/>
+        <fee type="clerk" l="22" s="10" d=""/>
+        <fee type="rolls" l="14" s="" d=""/>
+        <fee type="prosecutors" l="" s="" d=""/>
+        <fee type="help" l="" s="" d=""/>
+        <fee type="plans" l="" s="" d=""/>
+        <total l="67" s="15" d=""/>
+      </fees>
+      <expenses mentioned="false"/>
+    </conclusions>
+    <keywords group="estates"/>
+    <keywords group="procedure"/>
+    <keywords group="contract"/>
+    <keywords group="encumbrance"/>
+    <keywords group="law"/>
+    <keywords group="measurement"/>
+    <keywords group="repairs"/>
+    <keywords group="guarantees"/>
+    <keywords group="responsability"/>
+    <keywords group="ownership"/>
+    <keywords group="value"/>
+    <keywords group="neighbourhood"/>
+    <keywords group="disorder"/>
+    <keywords group="transformation"/>
+    <analysis>f. 2r° Jean-Baptiste Loir a été nommé en remplacement de Quirot qui est en campagne alors qu'il avait été nommé par la précédente sentence du 26 juin)
+                Conclusion : « [f. 11v°] … notre avis est qu'elles ne peuvent se partage qu'en deux portions, scavoir la principalle [f. 12r°] maison qui est celle du milieu : cour, corps de logis entre lad. cour, le jardin et led. jardin en icelle pour une part en portion ne peuvent se partager en deux, et les deux petites maisons à droitte à et gauche de lad. grande maison pour l'autre partie en faisant néanmoins une soulte ou rente de lad. grande maison et auxd. deux petittes maisons à proportion de l'excédant du prix et estimation d'icelle, et notre avis est aussi que lesd. deux petites maisons peuvent se partager en deux moitiées en faisant aussi pareille soulte ou rente à proportion de l'excédant du prix et estimations d'une d'icelle envers l'autre, le tout suivant les estimations cy dessus par nous faittes, auquel ca, de partage les eaux de partie des combles de derrière et escallier continueront de tomber et s'écouler comme ils faut sur l'emplacement de cour et comble de lad. grande maison, de mesme que les eaux de l'égoust de moitié du comble [ illisible] entre cour et jardin et de la petite serre en icelle continueront de tomber et s'écouler sur l'emplacement de cours de la petite maison à gauche de la principalle maison et la porte qui est dans le mur de cloture séparant lad. petite cour d'avec la cour de lad. grande maison sera bouchée à plein mur aux frais de lad. grande maison, au moyen de quoy la porte deument ferré et sa ferrure luy apartiendront et la fosse d'aysance de lad. grande maison demeurera commune avec la petite maison à droitte [ illisible] vers le trosne et la vuidange des matières de lad. fosse par la suitte se fera à frais communs desd. deux maisons, scavoir le tiers pour celle qui en souffrira la vuidange par son costé et les deux tiers pour l'autre. C'est sur tout ce que dessus l'avis de nousd. expert sauf à vous monsieur, d'ordonner suivant votre prudence accoustumée. ».</analysis>
+    <noteworthy/>
+  </description>
+</expertise>

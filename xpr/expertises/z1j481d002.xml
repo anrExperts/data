@@ -1,0 +1,189 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j481d002">
+      <meta/>
+      <control>
+        <maintenanceStatus/>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term/>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:45:33.927+02:00">2021-04-21T20:45:33.927+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateKeywordsModule_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour du module keywords.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:44:31.814+02:00">2021-04-21T20:44:31.814+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateExpertisesArrangement_files.xqy/BaseX</agent>
+            <eventDescription>Ajout du champs Accommodement dans l'éventualité d’une résolution par les parties.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2020-03-01T12:00:00">2020-03-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1706</unitdate>
+    <idno type="unitid">Z1J481</idno>
+        <idno type="item">2</idno>
+        <facsimile from="0004" to="0012"/>
+        <physDesc>
+          <extent sketch="false">6</extent>
+          <appendices>
+            <appendice>
+              <type type="other">Compte imprimé</type>
+              <extent>1</extent>
+              <desc/>
+              <note/>
+            </appendice>
+          </appendices>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1706-04-16" type="paris"/>
+          <date when="1706-04-19" type="paris"/>
+          <date when="1706-04-20" type="paris"/>
+        </sessions>
+        <places>
+          <place type="paris">
+            <address>
+              <street>rue Neuve Saint-Martin</street>
+              <buildingNumber/>
+            </address>
+            <complement/>
+            <parish/>
+            <owner>Crespy / Nesle</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="settlement">Départager</category>
+          <designation rubric="false">[Visite de mur mitoyen]</designation>
+        </categories>
+        <procedure>
+          <framework type="b2a">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Châtelet / lieutenant particulier</orgName>
+              <date when="1705-08-28"/>
+            </sentence>
+          </sentences>
+          <case>Un propriétaire a fait construire un mur mitoyen dont le propriétaire voisin
+                    s'est servi ; le premier souhaite que le second lui rembourse la moitié des
+                    frais de construction</case>
+          <objects>
+            <object type="wall">Mur(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0077" context="primary" appointment="appointed">
+              <title>architecte du roi expert bourgeois de Paris</title>
+            </expert>
+            <expert ref="#xpr0113" context="primary" appointment="appointed">
+              <title>architecte du roi expert bourgeois de Paris</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0008">
+              <persName>
+                <surname>Villain</surname>
+                <forename>Pierre</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="true" intervention="">
+              <person>
+                <persName>
+                  <surname>Crespy</surname>
+                  <forename/>
+                </persName>
+                <occupation>écuyer, contrôleur des guerres</occupation>
+              </person>
+              <status>owner</status>
+              <expert ref="#xpr0077"/>
+            </party>
+            <party role="opponent" presence="true" intervention="">
+              <person>
+                <persName>
+                  <surname>Nesle</surname>
+                  <forename/>
+                </persName>
+                <occupation>maître menuisier, ordinaire des bâtiments du
+                                roi</occupation>
+              </person>
+              <status>owner</status>
+              <expert ref="#xpr0113"/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0077">« Et moy de Meseretz ay trouvé que les murs dont les
+                    remboursemens et charges sont dubs audit sieur Crepy par ledit sieur Nelle au
+                    sujet de ses novueaux adossemens et eslevation comme dit est montent ensemble
+                    scavoir les rembourcemens pour moitié et le sixiesme seullement pour les charges
+                    suivant la coutume à quarante sept toises onze pieds reduit sur quoy est à
+                    déduire quatre toises et demy quinze pieds aussy pour les charges et un
+                    rembourcement dub audit sieur Nelle par ledit sieur Crepy … quy font avec
+                    quarante neuf livres trois sols neuf deniers pour les trois articles par moy
+                    tirés en argent la somme total de cinq cens quatre cingt trois livres dix sols 5
+                    deniers cy… 583 l. 10 s. 5 d. »</opinion>
+          <opinion ref="#xpr0113">« Somme total de l’estimation desdits remboursemens à faire
+                    par ledit Nelle audit sieur Crepy suivant l’avis de moy Frosne trois cent vingt
+                    trois livres huict sols quatre deniers »</opinion>
+          <agreement type="disagreement">Désaccord</agreement>
+          <arrangement/>
+          <estimate l="" s="" d=""/>
+          <fees detail="false">
+            <total l="" s="" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="" s="" d=""/>
+            <expense type="expert" l="18" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group=""/>
+        <analysis/>
+        <noteworthy/>
+      </description>
+    </expertise>

@@ -1,0 +1,202 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j581d029">
+  <meta/>
+  <control>
+    <maintenanceStatus>revised</maintenanceStatus>
+    <publicationStatus/>
+    <localControl localType="detailLevel">
+      <term>completed</term>
+    </localControl>
+    <maintenanceHistory>
+      <maintenanceEvent>
+                <eventType>revised</eventType>
+                <eventDateTime standardDateTime="2022-03-30T08:44:15Z">2022-03-30T08:44:15Z</eventDateTime>
+                <agentType>human</agentType>
+                <agent>llosserand</agent>
+                <eventDescription>rvpcd</eventDescription>
+            </maintenanceEvent>
+          <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateObjectsValues_db.xqy/BaseX</agent>
+        <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateOpinionRef_files.xqy/BaseX</agent>
+        <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateRefValues_files.xqy/BaseX</agent>
+        <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+        <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>revised</eventType>
+        <eventDateTime standardDateTime="2020-11-01T12:00:00">2020-11-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>JH</agent>
+        <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>retroconverted</eventType>
+        <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>ead2xpr.xsl/Saxon9</agent>
+        <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>created</eventType>
+        <eventDateTime standardDateTime="2017-04-01T12:00:00">2017-04-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>llosserand</agent>
+        <eventDescription>Création de la fiche.</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+  </control>
+  <sourceDesc>
+    <unitdate>1726</unitdate>
+    <idno type="unitid">Z1J581</idno>
+    <idno type="item">029</idno>
+    <facsimile from="0419" to="0423"/>
+    <physDesc>
+      <extent sketch="false">4</extent>
+    </physDesc>
+  </sourceDesc>
+  <description>
+    <sessions>
+      <date when="1726-06-25" type="paris"/>
+      <date when="1726-06-26" type="paris"/>
+    </sessions>
+    <places>
+      <place xml:id="id51d236" type="paris">
+        <address>
+          <street>Rue de Lappe [Voie actuelle.Autre(s) nom(s) : rue Louis-Philippe, rue Gaillard], faubourg Saint-Antoine</street>
+          <buildingNumber/>
+        </address>
+        <complement/>
+        <parish/>
+        <owner>Lefranc et consorts</owner>
+      </place>
+    </places>
+    <categories>
+      <category type="estimation">Estimer la valeur des biens</category>
+      <designation rubric="false">Visitte, prisée et estimation d'une maison fauxbourg st antoine, rue de la happe, entre Lefranc et Joseph Briet serrurier ; M. Fournier, expert.</designation>
+    </categories>
+    <procedure>
+      <framework type="b2">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+      <origination type="institution">Une institution</origination>
+      <sentences>
+        <sentence>
+          <orgName>lieutenant civil</orgName>
+          <date when="1726-05-08"/>
+        </sentence>
+      </sentences>
+      <case>la maison doit être vendue sur licitation et doit être préalablement estimée dans la mesure où elle est divisée entre plusieurs propriétaires dont un héritier mineur</case>
+      <objects>
+        <object type="house">Maison(s)</object>
+      </objects>
+    </procedure>
+    <participants>
+      <experts>
+        <expert ref="#xpr0111" context="primary" appointment="appointed">
+          <title>expert juré du roi</title>
+        </expert>
+      </experts>
+      <clerks>
+        <clerk ref="#clrk0035">
+          <persName>
+            <surname>Tancart</surname>
+            <forename>Toussaint</forename>
+          </persName>
+        </clerk>
+      </clerks>
+      <parties>
+        <party role="petitioner" presence="false" intervention="false">
+          <person>
+            <persName>
+              <surname>Lefranc</surname>
+              <forename>Jean-Baptiste</forename>
+            </persName>
+            <occupation>marchand de vin à Paris</occupation>
+          </person>
+          <status>owner</status>
+          <expert ref="#xpr0111"/>
+        </party>
+        <party role="opponent" presence="false" intervention="false">
+          <person>
+            <persName>
+              <surname>Plesserie</surname>
+              <forename>Jean Louis</forename>
+            </persName>
+            <occupation>mineur</occupation>
+          </person>
+          <status>owner</status>
+          <expert ref="#xpr0111"/>
+          <representative>
+            <persName>
+              <surname>Briet</surname>
+              <forename>Joseph</forename>
+            </persName>
+            <occupation>serrurier</occupation>
+          </representative>
+        </party>
+      </parties>
+      <craftmen>
+        <craftman>
+          <persName>
+            <surname/>
+            <forename/>
+          </persName>
+          <occupation/>
+        </craftman>
+      </craftmen>
+    </participants>
+    <conclusions>
+      <opinion ref="#xpr0111">[f. 3r°] « Lesquels édifices et lieux ainsy qu'ils se poursuivent et comportent suivant [f. 3v°] la déclaration que nous en avons fait devant, d'un costé à droite aux dames religieuses angloises, d'autre costé à gauche au sieur De Guiche d'un bout par derrière au sr Nepveu et par le devant sur laditte rue de Lape.
+                Nous avons ensuite pris les mesures de remplacement total pour en connoitre la supericie et séparément de ce que n'occupent les bâtimens et après en avoir fait [illisible] et suputations, nous avons prisé et estimé la dite maison et lieux en dépendans en l'état qu'ils sont la somme de quarante trois mil livres, considération faite de sa scituation et emplacement et état présent de ses bâtimens eu égard au quartier où elle est scituée, au cours du temps, mesme à ce qu'elle peut être sujette au logement de gens de guerre de la charge du cens seulement, cy 43 000 livres. Tel est l'avis de nous expert susdit sauf de vous monsieur d'en juger et ordonner [etc.] ».</opinion>
+      <arrangement/>
+      <agreement type="conclusion">Conclusion</agreement>
+      <estimate l="43000" s="" d=""/>
+      <estimates>
+        <place ref="#id51d236">
+          <appraisal l="43000" s="" d="">
+            <desc>maison</desc>
+          </appraisal>
+        </place>
+      </estimates>
+      <fees detail="false">
+        <total l="" s="" d=""/>
+      </fees>
+      <expenses mentioned="false"/>
+    </conclusions>
+    <keywords group="estates"/>
+    <keywords group="procedure"/>
+    <keywords group="contract"/>
+    <keywords group="encumbrance"/>
+    <keywords group="law"/>
+    <keywords group="measurement"/>
+    <keywords group="repairs"/>
+    <keywords group="guarantees"/>
+    <keywords group="responsability"/>
+    <keywords group="ownership"/>
+    <keywords group="value"/>
+    <keywords group="neighbourhood"/>
+    <keywords group="disorder"/>
+    <keywords group="transformation"/>
+    <analysis>NB
+                les deux dernières pages du cahier sont écrites d'un début d'expertise du 12 juin 1726, par Jean-Baptiste Loir expert, à la requête de Louis Bretaigne Allain de Rohan Chabot prince de Léon.</analysis>
+    <noteworthy/>
+  </description>
+</expertise>

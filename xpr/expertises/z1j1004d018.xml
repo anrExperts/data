@@ -1,0 +1,232 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1004d018">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-07-01T12:00:00">2020-07-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2017-10-01T12:00:00">2017-10-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1004</idno>
+        <idno type="item">018</idno>
+        <facsimile from="0213" to="0217"/>
+        <physDesc>
+          <extent sketch="false">4</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-06-07" type="province"/>
+          <date when="1776-06-08" type="province"/>
+        </sessions>
+        <places>
+          <place xml:id="id105d314" type="province">
+            <address/>
+            <complement>place du Chantier, vis-à-vis le jeu de paume, au coin de la rue du Jeu de paume</complement>
+            <city>Saint-Germain-en-Laye</city>
+            <district/>
+            <owner/>
+          </place>
+        </places>
+        <categories>
+          <category type="estimation">Estimer la valeur des biens</category>
+          <designation rubric="true">Estimation d'une maison, place du Château et vis à vis le Jeu de Paulme, à Saint Germain en Laÿe, pour les Sr Simon et Demoiselle Bazin ; M. Lardant, expert.</designation>
+        </categories>
+        <procedure>
+          <framework type="b2b">L’institution est saisie dans le cadre d’une procédure (l’institution nomme un ou deux experts)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Châtelet, lieutenant civil (sentence)</orgName>
+              <date when="1776-05-14"/>
+            </sentence>
+          </sentences>
+          <case>Vente et adjudication par licitation</case>
+          <objects>
+            <object type="house">Maison(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0155" context="primary" appointment="court-appointed">
+              <title>architecte, juré expert des bastimens en titre d’office</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0050">
+              <persName>
+                <surname>Mallerot</surname>
+                <forename>Joseph Louis</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Bazin</surname>
+                  <forename>Simon Charles</forename>
+                </persName>
+                <occupation>maître tailleur d’habits à Paris, héritier pour un quart de Bazin, Nicolas, son père, bourgeois de Paris, et son légataire universel pour pareille portion d’1/4 et en cette qualité propriétaire pour ¼ de la maison dont il est question</occupation>
+              </person>
+              <status>heir</status>
+              <expert ref="#xpr0155"/>
+              <prosecutor>
+                <persName>
+                  <surname>Desmarquetz</surname>
+                  <forename>François</forename>
+                </persName>
+              </prosecutor>
+            </party>
+            <party role="opponent" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Bazin</surname>
+                  <forename>Margueritte </forename>
+                </persName>
+                <occupation>filles majeures, propriétaires aussi chacune pour ¼ au total de la maison dont il est question</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Bazin</surname>
+                  <forename>Anne</forename>
+                </persName>
+                <occupation>filles majeures, propriétaires aussi chacune pour ¼ au total de la maison dont il est question</occupation>
+              </person>
+              <status>heir</status>
+              <expert ref="#xpr0155"/>
+              <prosecutor>
+                <persName>
+                  <surname>François</surname>
+                  <forename/>
+                </persName>
+              </prosecutor>
+            </party>
+            <party role="opponent" presence="" intervention="">
+              <person>
+                <persName>
+                  <surname>Bazin</surname>
+                  <forename>Nicolas</forename>
+                </persName>
+                <occupation>demeurant au Canada, aussi propriétaire pour ¼ de la maison, à charge de substitution suivant le testament de son père Bazin, Nicolas</occupation>
+              </person>
+              <status>heir</status>
+              <expert ref="#xpr0155"/>
+              <prosecutor>
+                <persName>
+                  <surname>Armey</surname>
+                  <forename/>
+                </persName>
+              </prosecutor>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0155">« Considérant la forme la scituation du terrain ; son étendue qui est de trente trois toises douze pieds de superficie ou environ, la qualité de construction dudit bastiment ; leur distribution, ce qu’ils peuvent produire de … ; ayant égard aux reparations différentes qui sont à faire ; au … ; et au cours du temps Nous estimons laditte maison, ainsi qu’elle se comporte de fond en comble ; qu’elle s’étend de toutes parts, circonstances et dépendances ; dans son état actuel et sans réserves aucunes A la charge uniquement des cens, droits et devoirs seigneuriaux Valloir la somme de … 8 500 l. 
+C’est, Monsieur, l’état présent de la maison dont il s’agit ; notre avis sur le non possibilité de la partager commodement ny d’aucune autre façon ; en autant de parts e tportions qu’il y a de coproprietaires d’icelle ; et sa valleur : vous referant d’ordonner sur le tout, cy… référé 
+Fait par nous architecte expert lesdits jour, mois et an. »</opinion>
+          <arrangement/>
+          <agreement type="conclusion">Conclusion</agreement>
+          <estimate l="8500" s="" d=""/>
+          <estimates>
+            <place ref="#id105d314">
+              <appraisal l="8500" s="" d="">
+                <desc>une maison</desc>
+              </appraisal>
+            </place>
+          </estimates>
+          <fees detail="true">
+            <fee type="papers" l="6" s="" d=""/>
+            <fee type="expert" ref="#xpr0155" l="24" s="" d=""/>
+            <fee type="clerk" l="24" s="" d=""/>
+            <fee type="rolls" l="12" s="" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="15" s="" d=""/>
+            <total l="81" s="" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="16" s="" d=""/>
+            <expense type="expert" l="" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis/>
+        <noteworthy/>
+      </description>
+    </expertise>

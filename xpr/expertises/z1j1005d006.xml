@@ -1,0 +1,198 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1005d006">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-07-01T12:00:00">2020-07-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2017-10-01T12:00:00">2017-10-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1005</idno>
+        <idno type="item">006</idno>
+        <facsimile from="0058" to="0063"/>
+        <physDesc>
+          <extent sketch="false">6</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-06-03" type="paris"/>
+          <date when="1776-06-03" type="paris"/>
+          <date when="1776-06-04" type="paris"/>
+        </sessions>
+        <places>
+          <place xml:id="id20d253" type="paris">
+            <address>
+              <street>Rue de Beauregard</street>
+              <buildingNumber/>
+            </address>
+            <complement/>
+            <parish>Notre-Dame-de-Bonne-Nouvelle</parish>
+            <owner>communauté des époux Crocquefer</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="estimation">Estimer la valeur des biens</category>
+          <designation rubric="true">Visitte et estimation d'une maison, rue de Beauregard, quartier de Bonnes nouvelles, dépendants de la communauté de biens entre les sieur et dame Crocquefer ; M. Ducret, expert.</designation>
+        </categories>
+        <procedure>
+          <framework type="b2b">L’institution est saisie dans le cadre d’une procédure (l’institution nomme un ou deux experts)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Châtelet, lieutenant civil (sentence)</orgName>
+              <date when="1776-05-30"/>
+            </sentence>
+          </sentences>
+          <case>Succession : liquidation et partage des biens de la communauté des époux Crocquefer</case>
+          <objects>
+            <object type="house">Maison(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0102" context="primary" appointment="court-appointed">
+              <title>architecte juré expert bourgeois des bâtiments</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0070">
+              <persName>
+                <surname>Le Sage</surname>
+                <forename>Charles Pierre</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Crocquefer</surname>
+                  <forename>Pierre</forename>
+                </persName>
+                <occupation>enfants mineurs de Crocquefer, Jean, officier mesureur de graviers à Paris, et de défunte Couteaux, Marie Angélique sa femme, de son vivant marchande lingère à Paris</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Crocquefer</surname>
+                  <forename>Frédéric Roch</forename>
+                </persName>
+                <occupation>enfants mineurs de Crocquefer, Jean, officier mesureur de graviers à Paris, et de défunte Couteaux, Marie Angélique sa femme, de son vivant marchande lingère à Paris</occupation>
+              </person>
+              <status>heir</status>
+              <expert ref="#xpr0102"/>
+              <representative>
+                <persName>
+                  <surname>Crocquefer</surname>
+                  <forename>Jean</forename>
+                </persName>
+                <occupation>tuteur, officier mesureur de grains à PAris, ses enfants mineurs</occupation>
+              </representative>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0102">« Nous avons de nouveau visité ladite maison et dependances en touttes les parties qui la composent de fond en comble, fait attention à son état consistant et distribution, à la nature de sa construction, à ce que le corps de logis sur la rue de Beauregard a été surelevé depuis l’acquisition d’icelle de deux étaes, des reparations du mur de face d’un côét ainsy que celles faittes au mur mitoyen, à celles dont elle est susceptible, au quartier où elle est située à ce qu’elle fait face sur deux rues, et après avoir mis les prix particuliers tant au fond dudit terrain qu’à la superficie desdits batiments eu égard tant à tout ce que dessus qu’occupe ladite maison et sujette à un cour de vingt six sols de cens par an et à la somme de quarante cinq livres à quoy elle est imposée pour le logement de gens de guerre Touttes ces considerations ainsy faittes nous prisons et estimons ladite maison à la charge des cens droits et devoirs seigneuriaux… et au cours du temps present valoir la somme de dix huit mille deux cent trente livres cy… 18 230 l. Telle est, Monsieur, la visitte par nous faitte de ladite maison de notre avis sur sa valleur suivant et aux termes de votre sentence. Fait par nous architecte expert susdit lesdits jour mois et an que dessus. »</opinion>
+          <arrangement/>
+          <agreement type="conclusion">Conclusion</agreement>
+          <estimate l="" s="" d=""/>
+          <estimates>
+            <place ref="#id20d253">
+              <appraisal l="18230" s="" d="">
+                <desc>une maison</desc>
+              </appraisal>
+            </place>
+          </estimates>
+          <fees detail="true">
+            <fee type="papers" l="10" s="14" d=""/>
+            <fee type="expert" ref="#xpr0102" l="18" s="" d=""/>
+            <fee type="clerk" l="18" s="" d=""/>
+            <fee type="rolls" l="42" s="" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="sommation" s="3" d=""/>
+            <fee type="other" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="91" s="14" d=""/>
+          </fees>
+          <expenses mentioned=""/>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis/>
+        <noteworthy/>
+      </description>
+    </expertise>

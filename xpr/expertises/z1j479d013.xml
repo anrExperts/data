@@ -1,0 +1,207 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j479d013">
+      <meta/>
+      <control>
+        <maintenanceStatus/>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term/>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:45:33.927+02:00">2021-04-21T20:45:33.927+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateKeywordsModule_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour du module keywords.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:44:31.814+02:00">2021-04-21T20:44:31.814+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateExpertisesArrangement_files.xqy/BaseX</agent>
+            <eventDescription>Ajout du champs Accommodement dans l'éventualité d’une résolution par les parties.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2020-02-01T12:00:00">2020-02-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1706</unitdate>
+    <idno type="unitid">Z1J479</idno>
+        <idno type="item">13</idno>
+        <facsimile from="0130" to="0133"/>
+        <physDesc>
+          <extent sketch="false">2</extent>
+          <appendices>
+            <appendice>
+              <type type="other">Compte imprimé</type>
+              <extent>1</extent>
+              <desc/>
+              <note/>
+            </appendice>
+          </appendices>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1706-01-13" type="paris"/>
+        </sessions>
+        <places>
+          <place type="paris">
+            <address>
+              <street/>
+              <buildingNumber/>
+            </address>
+            <complement/>
+            <parish/>
+            <owner/>
+          </place>
+        </places>
+        <categories>
+          <category type="settlement">Départager</category>
+          <designation rubric="false">[Visite de mur mitoyen]</designation>
+        </categories>
+        <procedure>
+          <framework type="b2a">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>lieutenant civil</orgName>
+              <date when="1706-01-09"/>
+            </sentence>
+          </sentences>
+          <case>Mur mitoyen en mauvais état ; l'expertise doit déterminer si le dépérissement
+                    est dû à l'une des parties et s'il peut subsister jusqu'en mai</case>
+          <objects>
+            <object type="wall">Mur(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0197" context="primary" appointment="appointed">
+              <title>expert juré du roi</title>
+            </expert>
+            <expert ref="#xpr0181" context="primary" appointment="appointed">
+              <title>expert juré du roi</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0008">
+              <persName>
+                <surname>Villain</surname>
+                <forename>Pierre</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="true" intervention="">
+              <person>
+                <persName>
+                  <surname>Carré</surname>
+                  <forename>Nicolas</forename>
+                </persName>
+                <occupation/>
+              </person>
+              <status>owner</status>
+              <expert ref="#xpr0197"/>
+              <prosecutor>
+                <persName>
+                  <surname/>
+                  <forename/>
+                </persName>
+              </prosecutor>
+            </party>
+            <party role="opponent" presence="true" intervention="">
+              <person>
+                <persName>
+                  <surname>des Preaux</surname>
+                  <forename>Louis</forename>
+                </persName>
+                <occupation/>
+              </person>
+              <status>owner</status>
+              <expert ref="#xpr0181"/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0197">"Et moy Miché après avoir de nouveau fait lecture de la
+                    déclaration par nous fait unanimement ledit sieur Lievain et moy j'ay remarqué
+                    que le contre mur par nous raporté et trouvé du costé du fermoir dudit sieur des
+                    Preaux a esté fait depuis quelque temps pour rehausser et regarnir le parement
+                    dudit mur quy a esté en partye … par les humiditez proceddant des grains
+                    moulliés et trempés pour les faire germer et les faire ensuitte servir à l'usage
+                    de la brasserie ce quy a esté fait par nous… Mon avis est que ledit mur mitoyen
+                    doit estre abbatu et demoly incessament par les raisons cy dessus par nous
+                    rapportez n'estant pas en estat de pouvoir subsister et que la raison dudit
+                    sieur Lievain quy rapporte que ledit mur peut subsister jusqu'au mois de may
+                    n'est pas valable non plus que le temps present quy est celuy de la confection
+                    des levures il n'y a pas de justice de pretendre qu'un voisin quy a faict
+                    demolir son édiffice depuis le commencement du mois de decembre dans le dessein
+                    de le faire reconstruire ne doit point estre aresté par le comerce de son
+                    voisin"</opinion>
+          <opinion ref="#xpr0181">"Moy Lievain mon avis est que ledit mur peut subsister en
+                    l'estat qu'il au moins jusque au mois de may et qu'il n'est pas possible quant à
+                    présent de mettre la maison dudit sieur des Preaux à jour par la quantité des
+                    provisions de grains qu'il a dans son fermoir et dans son grenier et que ledit
+                    sieur des Preaux aussy bien que ses autres confreres sont dans la force de leur
+                    travaille dans les mois de janvier février et mars … d'autant plus que la saison
+                    ne permet pas de commencer par ledit sieur Carré au bastiment dès le mois de
+                    janvier où est le temps le plus fort des gelez et dont la construction ne seroit
+                    pas bonne et il paroist qu'il va commancer dans cette saison à bastir pour faire
+                    faire à son voisin par la reconstruction dudit mur mitoyen et j'ay remarqué que
+                    ledit sieur Carré ne fait que de finir la démolition de son petit édiffice de
+                    bastiment et qu'il y a meme des gravois quy ne sont pas mesme achevez d'etre
+                    enlevé et que ledit mur comme dit est peut subsister au moins jusque au mois de
+                    may tel est mon avis."</opinion>
+          <agreement type="disagreement">Désaccord</agreement>
+          <arrangement/>
+          <estimate l="" s="" d=""/>
+          <fees detail="false">
+            <total l="" s="" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="" s="" d=""/>
+            <expense type="expert" l="6" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group=""/>
+        <analysis/>
+        <noteworthy/>
+      </description>
+    </expertise>

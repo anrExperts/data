@@ -1,0 +1,205 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1006d030">
+  <meta/>
+  <control>
+    <maintenanceStatus>revised</maintenanceStatus>
+    <publicationStatus/>
+    <localControl localType="detailLevel">
+      <term>completed</term>
+    </localControl>
+    <maintenanceHistory>
+      <maintenanceEvent>
+                <eventType>revised</eventType>
+                <eventDateTime standardDateTime="2021-09-16T08:57:14Z">2021-09-16T08:57:14Z</eventDateTime>
+                <agentType>human</agentType>
+                <agent>jmorvan</agent>
+                <eventDescription>correction expert Jacob (vu avec RC)</eventDescription>
+            </maintenanceEvent>
+          <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateOpinionRef_files.xqy/BaseX</agent>
+        <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateRefValues_files.xqy/BaseX</agent>
+        <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+        <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>revised</eventType>
+        <eventDateTime standardDateTime="2020-09-01T12:00:00">2020-09-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>JH</agent>
+        <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>retroconverted</eventType>
+        <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>ead2xpr.xsl/Saxon9</agent>
+        <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>created</eventType>
+        <eventDateTime standardDateTime="2017-04-01T12:00:00">2017-04-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>llosserand</agent>
+        <eventDescription>Création de la fiche.</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+  </control>
+  <sourceDesc>
+    <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1006</idno>
+    <idno type="item">030</idno>
+    <facsimile from="0327" to="0334"/>
+    <physDesc>
+      <extent sketch="false">2</extent>
+      <appendices>
+        <appendice>
+          <type type="other">Mémoire</type>
+          <extent>3</extent>
+          <desc>mémoire des marchandises fournies à monsieur de Lalive d’Epinay pour son bâtiment rue Verte, faubourg Saint Honoré par Henriot, marchand, quai de la mégisserie aux Trois mares à Paris, entre le 1er juillet 1775 jusqu’au 6 février 1776, montant à la somme de 2131 livres 7 sols et révisée à la somme de 2002 livres 14 sols 3 deniers.</desc>
+          <note/>
+        </appendice>
+      </appendices>
+    </physDesc>
+  </sourceDesc>
+  <description>
+    <sessions>
+      <date when="1776-08-13" type="paris"/>
+      <date when="1776-10-25" type="paris"/>
+    </sessions>
+    <places>
+      <place type="office">
+        <address/>
+      </place>
+    </places>
+    <categories>
+      <category type="acceptation">Recevoir et évaluer le travail réalisé</category>
+      <designation rubric="true">Estimation de fourniture de ferrures, clous et autres</designation>
+    </categories>
+    <procedure>
+      <framework type="b2a">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+      <origination type="institution">Une institution</origination>
+      <sentences>
+        <sentence>
+          <orgName>lieutenant civil (sentence du 11 juin au principal et en exécution de sa sentence du 27 avril 1776)</orgName>
+          <date when="1776-04-27"/>
+        </sentence>
+      </sentences>
+      <case>les ouvrages ont été fournis et doivent être estimés, mais les raisons ne sont pas exprimées.</case>
+      <objects>
+        <object type="other">fournitures de fer</object>
+      </objects>
+    </procedure>
+    <participants>
+      <experts>
+        <expert ref="#xpr0104" context="primary" appointment="appointed">
+          <title>architecte expert</title>
+        </expert>
+        <expert ref="#xpr0143" context="primary" appointment="appointed">
+          <title>architecte expert</title>
+        </expert>
+      </experts>
+      <clerks>
+        <clerk ref="#clrk0058">
+          <persName>
+            <surname>Foucart</surname>
+            <forename>Paul Joseph</forename>
+          </persName>
+        </clerk>
+      </clerks>
+      <parties>
+        <party role="petitioner" presence="false" intervention="false">
+          <person>
+            <persName>
+              <surname>Henriot</surname>
+              <forename/>
+            </persName>
+            <occupation>marchand mercier à Paris, fournisseur</occupation>
+          </person>
+          <status>builder</status>
+          <expert ref="#xpr0143"/>
+        </party>
+        <party role="opponent" presence="false" intervention="false">
+          <person>
+            <persName>
+              <surname>de Lalive d’Epinay</surname>
+              <forename/>
+            </persName>
+            <occupation/>
+          </person>
+          <status>limited-partner</status>
+          <expert ref="#xpr0104"/>
+        </party>
+      </parties>
+      <craftmen>
+        <craftman>
+          <persName>
+            <surname/>
+            <forename/>
+          </persName>
+          <occupation/>
+        </craftman>
+      </craftmen>
+    </participants>
+    <conclusions>
+      <opinion ref="">« Après avoir achevé lesd. estimations particulier nous en avons fait séparément un relevé général suivant lequel nous avons reconnu la totalité desd. fournitures à la somme de deux mille deux livres quatorze sols trois deniers à laquelle nous les estimons ensemble et suivant la valeur courante d’icelles cy 2002 livres 14 sols 3 deniers
+                Desquelles fournitures nous n’avons point fait icy le détail pour éviter à frais attendu la quantité des objets et néantmoins pour en prendre connoissance si le cas y échoit, nous avons avec led. greffier signé et paraphé led. mémoire et l’avons annexé à ces présentes pour y avoir recours si besoin est.
+                Tel est monsieur notre avis sur la valeur desd. fournitures aux termes de votre sentence vous référant de juger et d’ordonner. Fait par nous architectes etc. »</opinion>
+      <arrangement/>
+      <agreement type="agreement">Accord</agreement>
+      <estimate l="2002" s="14" d="3"/>
+      <fees detail="true">
+        
+        
+        
+        
+        
+        
+        
+        
+        <fee type="expert" ref="#xpr0104" l="12" s="" d=""/>
+            <fee type="expert" ref="#xpr0143" l="12" s="" d=""/>
+            <fee type="clerk" l="12" s="" d=""/>
+            <fee type="rolls" l="5" s="" d=""/>
+            <fee type="papers" l="6" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <total l="47" s="" d=""/>
+      </fees>
+      <expenses mentioned="true">
+        <expense type="clerk" l="10" s="5" d=""/>
+        <expense type="expert" l="8" s="" d=""/>
+      </expenses>
+    </conclusions>
+    <keywords group="estates"/>
+    <keywords group="procedure"/>
+    <keywords group="contract"/>
+    <keywords group="encumbrance"/>
+    <keywords group="law"/>
+    <keywords group="measurement"/>
+    <keywords group="repairs"/>
+    <keywords group="guarantees"/>
+    <keywords group="responsability"/>
+    <keywords group="ownership"/>
+    <keywords group="value"/>
+    <keywords group="neighbourhood"/>
+    <keywords group="disorder"/>
+    <keywords group="transformation"/>
+    <analysis>L’estimation est réalisée dans les bureaux rue de la Verrerie (face à l’hôtel de Pomponne), en l’absence des parties, à partie des mémoires (deux rôles au quart sur grand papier et montant à la somme de 2131 livres 7 sols). Fournitures de clous, vis, pattes, pointes, broches, poutres, gonds, serrures et autres ferrures de différentes natures, tuyaux de poële ou tête et autres fournitures.</analysis>
+    <noteworthy/>
+  </description>
+</expertise>

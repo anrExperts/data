@@ -1,0 +1,187 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1005d016">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-07-01T12:00:00">2020-07-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2017-10-01T12:00:00">2017-10-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1005</idno>
+        <idno type="item">016</idno>
+        <facsimile from="0156" to="0158"/>
+        <physDesc>
+          <extent sketch="false">3</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-07-08" type="paris"/>
+          <date when="1776-07-11" type="paris"/>
+          <date when="1776-08-08" type="paris"/>
+        </sessions>
+        <places>
+          <place type="paris">
+            <address>
+              <street>Quai d’Anjou</street>
+              <buildingNumber/>
+            </address>
+            <complement>île St Louis, la 3e porte cochère en venant du pont Marie, dans un appartement au premier étage au fond de la cour</complement>
+            <parish/>
+            <owner>Gallois</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="acceptation">Recevoir et évaluer le travail réalisé</category>
+          <designation rubric="true">Visitte et estimation d'ouvrages de sculpture faits par le sieur Devaux pour le sieur Gallois ; MM. Dumont et De Besse, experts.</designation>
+        </categories>
+        <procedure>
+          <framework type="b2a">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Châtelet, lieutenant civil (sentence)</orgName>
+              <date when="1776-05-22"/>
+            </sentence>
+          </sentences>
+          <case>fin des travaux</case>
+          <objects>
+            <object type="other">sculpture</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0104" context="primary" appointment="appointed">
+              <title>architecte expert</title>
+            </expert>
+            <expert ref="#xpr0070" context="primary" appointment="appointed">
+              <title>architecte expert</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0058">
+              <persName>
+                <surname>Foucart</surname>
+                <forename>Paul Joseph</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="true" intervention="true">
+              <person>
+                <persName>
+                  <surname>Devaux</surname>
+                  <forename/>
+                </persName>
+                <occupation>sculpteur à Paris</occupation>
+              </person>
+              <status>builder</status>
+              <expert ref="#xpr0104"/>
+            </party>
+            <party role="opponent" presence="true" intervention="true">
+              <person>
+                <persName>
+                  <surname>Gallois</surname>
+                  <forename/>
+                </persName>
+                <occupation>architecte à Paris</occupation>
+              </person>
+              <status>limited-partner</status>
+              <expert ref="#xpr0070"/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="">« Total des ouvrages faits par le sieur Devaux pour ledit sieur Gallois… 429 l. 11 s. 3 d. 
+Dans laquelle estimation cy dessus nous observons avoir compris les six derniers articles de sculpture attendu que lors de notre premiere vacation le tour de glace dont est question nous ayant ainsi que la lettre et le plan figuré été représentés par le sieur Devaux, nous avons reconnu que les dimensions étoient exactement conformes à celles portées par ledit plan et que ce tour de glace pouvoit s’apliquer sur les lambris en face de la cheminée pourquoy et aux termes de la sentence nous avons compris lesdits articles dans nos estimations cy… observation 
+Le memoire desquels ouvrages nous avons avec ledit greffier signé paraphé et annexé à ces presentes pour y avoir recours si besoin est 
+Tel est Monsieur notre avis sur la valeur desdits ouvrages aux termes de votre sentence Vous referant de juger et ordonner Fait par nous architectes experts susdits lesdits jours mois et an »</opinion>
+          <arrangement/>
+          <agreement type="agreement">Accord</agreement>
+          <estimate l="" s="" d=""/>
+          <fees detail="true">
+            <fee type="papers" l="9" s="" d=""/>
+            <fee type="expert" ref="#xpr0104" l="18" s="" d=""/>
+            <fee type="expert" ref="#xpr0070" l="18" s="" d=""/>
+            <fee type="clerk" l="18" s="" d=""/>
+            <fee type="rolls" l="9" s="" d=""/>
+            <fee type="prosecutors" l="10" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="82" s="" d=""/>
+          </fees>
+          <expenses mentioned=""/>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis/>
+        <noteworthy/>
+      </description>
+    </expertise>

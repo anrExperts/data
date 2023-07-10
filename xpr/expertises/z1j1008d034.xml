@@ -1,0 +1,318 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1008d034">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-09-01T12:00:00">2020-09-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2018-01-01T12:00:00">2018-01-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>PC</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1008</idno>
+        <idno type="item">034</idno>
+        <facsimile from="0327" to="0345"/>
+        <physDesc>
+          <extent sketch="false">16</extent>
+          <appendices>
+            <appendice>
+              <type type="other">Demande</type>
+              <extent>1</extent>
+              <desc>Demande de copie de procès-verbal pour honoraire de Lallifard.</desc>
+              <note/>
+            </appendice>
+            <appendice>
+              <type type="other">Adresses</type>
+              <extent>1</extent>
+              <desc>Adresses des procureurs</desc>
+              <note/>
+            </appendice>
+          </appendices>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-10-14" type="suburbs"/>
+          <date when="1776-11-06" type="suburbs"/>
+          <date when="1776-11-06" type="paris"/>
+          <date when="1776-11-07" type="paris"/>
+        </sessions>
+        <places>
+          <place xml:id="id543d470" type="suburbs">
+            <address/>
+            <complement/>
+            <city>Vanves, Terre de Javel</city>
+            <district/>
+            <owner>succession vacante de Berger de Ravy</owner>
+          </place>
+          <place xml:id="id543d486" type="paris">
+            <address>
+              <street/>
+              <buildingNumber/>
+            </address>
+            <complement/>
+            <parish/>
+            <owner>succession vacante de Berger de Ravy</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="estimation">Estimer la valeur des biens</category>
+          <designation rubric="true">Visite et estimation d’une maison et terres</designation>
+        </categories>
+        <procedure>
+          <framework type="b2a">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Chambre des requêtes</orgName>
+              <date when="1776-09-14"/>
+            </sentence>
+          </sentences>
+          <case>Estimation des biens de la succession vacante de Berger de Ravy Prospère adjugée au vicomte et la vicomtesse de Gaz (sentence du Châtelet du 19 février 1771), réclamée par les ayants droits.</case>
+          <objects>
+            <object type="buildings">Ensemble de bâtiments (biens immeubles)</object>
+            <object type="plot">Terrain(s)</object>
+            <object type="house">Maison(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0200" context="primary" appointment="appointed">
+              <title>architecte expert entrepreneur de bâtiments à Paris</title>
+            </expert>
+            <expert ref="#xpr0261" context="primary" appointment="appointed">
+              <title>architecte expert entrepreneur de bâtiments à Paris</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0047">
+              <persName>
+                <surname>Mangin</surname>
+                <forename>Philibert</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="" intervention="">
+              <person>
+                <persName>
+                  <surname>Vicomte de Gaz et son épouse</surname>
+                  <forename/>
+                </persName>
+                <occupation/>
+              </person>
+              <status/>
+              <expert ref="#xpr0200"/>
+              <prosecutor>
+                <persName>
+                  <surname>M. Lallifard</surname>
+                  <forename/>
+                </persName>
+              </prosecutor>
+            </party>
+            <party role="opponent" presence="" intervention="">
+              <person>
+                <persName>
+                  <surname>M. Duval</surname>
+                  <forename/>
+                </persName>
+                <occupation/>
+              </person>
+              <status/>
+              <expert ref=""/>
+              <prosecutor>
+                <persName>
+                  <surname>M. Jolly</surname>
+                  <forename/>
+                </persName>
+              </prosecutor>
+            </party>
+            <party role="" presence="" intervention="">
+              <person>
+                <persName>
+                  <surname>Sieur Dupin de Francueil</surname>
+                  <forename/>
+                </persName>
+                <occupation/>
+              </person>
+              <status/>
+              <expert ref=""/>
+              <prosecutor>
+                <persName>
+                  <surname>M. Colomb</surname>
+                  <forename/>
+                </persName>
+              </prosecutor>
+            </party>
+            <party role="" presence="" intervention="">
+              <person>
+                <persName>
+                  <surname>Sieur Pigalle</surname>
+                  <forename>sculpteur ordinaire du Roy</forename>
+                </persName>
+                <occupation/>
+              </person>
+              <status/>
+              <expert ref=""/>
+              <prosecutor>
+                <persName>
+                  <surname>M. Jobelin</surname>
+                  <forename/>
+                </persName>
+              </prosecutor>
+            </party>
+            <party role="" presence="" intervention="">
+              <person>
+                <persName>
+                  <surname>De la Bourdonnais</surname>
+                  <forename>Marquis de Déliré</forename>
+                </persName>
+                <occupation/>
+              </person>
+              <status/>
+              <expert ref=""/>
+              <prosecutor>
+                <persName>
+                  <surname>M. Quentin</surname>
+                  <forename/>
+                </persName>
+              </prosecutor>
+            </party>
+            <party role="" presence="" intervention="">
+              <person>
+                <persName>
+                  <surname>Sieur Aubé Louis</surname>
+                  <forename>Fleury Marie Anne</forename>
+                </persName>
+                <occupation/>
+              </person>
+              <status/>
+              <expert ref=""/>
+              <prosecutor>
+                <persName>
+                  <surname>M. Auron</surname>
+                  <forename/>
+                </persName>
+              </prosecutor>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="">Maison de Javel : « Nous experts, ayant comparé ensemble sur l’estimation que nous avons à faire de la maison et dudit moulin de Javel, tant de par leur emplacement, nous estimons l’ensemble en égard à l’état de la construction d’icelui, dont les solives des planchers sont presque toutes à refaire, et les travées aussi […], autre pièce de nulle valeur, toutes considérations faites valloir à l’époque de février 1771, la somme de six mille livres, cy 6 000 l. »
+Pièces de terre : « Quant à la pièce de terre en languette en dessous de ladite maison, le long de la rivière, nous avons marqué qu’elle diminue d’année en année par les eaux et que le terrain le plus bas est submergé. Quant au surplus, cette pièce de terre dans l’état où nous l’avons trouvé ayant quelques plans d’ozier dans quelques petites parties, c’est pourquoi toutes considérations faites, nous l’estimons la somme de cy 1 500 l. »
+Pièce de terre et moulin : « A l’égard de la pièce de terre appellée l’Isle de Bussy, nous l’estimons en égard à la qualité du terrain qui est susceptible d’augmenter à droite du moulin à eau, et aussi en égard au surplus à la charge de cens et droits seigneuriaux, la somme de 3 500 l. »
+Les échoppes « Ce fait nous experts avons examiné la construction desdites échoppes, leur emplacement, nous les estimons la somme de treize mille cinq cents livres, cy 13 500 l., à l’époque de la sentence de 1771 »</opinion>
+          <arrangement/>
+          <agreement type="agreement">Accord</agreement>
+          <estimate l="24500" s="" d=""/>
+          <estimates>
+            <place ref="#id543d470">
+              <appraisal l="6000" s="" d="">
+                <desc>maison de Javel</desc>
+              </appraisal>
+              <appraisal l="1500" s="" d="">
+                <desc>pièces de terre</desc>
+              </appraisal>
+              <appraisal l="3500" s="" d="">
+                <desc>pièce de terre et moulin</desc>
+              </appraisal>
+              <appraisal l="13500" s="" d="">
+                <desc>échoppes</desc>
+              </appraisal>
+            </place>
+            <place ref="#id543d486"/>
+          </estimates>
+          <fees detail="true">
+            <fee type="papers" l="16" s="10" d=""/>
+            <fee type="expert" ref="#xpr0261" l="49" s="10" d=""/>
+            <fee type="expert" ref="#xpr0261" l="49" s="10" d=""/>
+            <fee type="clerk" l="49" s="10" d=""/>
+            <fee type="rolls" l="47" s="" d=""/>
+            <fee type="prosecutors" l="508" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="212+508" s="" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="45" s="15" d=""/>
+            <expense type="expert" l="33" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis/>
+        <noteworthy/>
+      </description>
+    </expertise>

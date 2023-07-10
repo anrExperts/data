@@ -1,0 +1,218 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1007d018">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-08-01T12:00:00">2020-08-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2017-10-01T12:00:00">2017-10-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1007</idno>
+        <idno type="item">018</idno>
+        <facsimile from="0215" to="0291"/>
+        <physDesc>
+          <extent sketch="false">76</extent>
+          <appendices>
+            <appendice>
+              <type type="other">billet</type>
+              <extent>1</extent>
+              <desc/>
+              <note/>
+            </appendice>
+          </appendices>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-09-09" type="province"/>
+          <date when="1776-10-21" type="province"/>
+        </sessions>
+        <places>
+          <place xml:id="id214d286" type="province">
+            <address/>
+            <complement/>
+            <city>terres et seigneuries de Villemoyenne et Combernon</city>
+            <district/>
+            <owner/>
+          </place>
+        </places>
+        <categories>
+          <category type="estimation">Estimer la valeur des biens</category>
+          <designation rubric="true">Visitte et estimation des terres et seigneuries à Moul, St Père, Gland les Grèves, Villeneuve et autres ; M. Taboureur, expert.</designation>
+        </categories>
+        <procedure>
+          <framework type="b2b">L’institution est saisie dans le cadre d’une procédure (l’institution nomme un ou deux experts)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Châtelet, lieutenant civil (sentence)</orgName>
+              <date when="1776-07-10"/>
+            </sentence>
+          </sentences>
+          <case>Succession, partage</case>
+          <objects>
+            <object type="house">Maison(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0250" context="primary" appointment="court-appointed">
+              <title>architecte expert</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0058">
+              <persName>
+                <surname>Foucart</surname>
+                <forename>Paul Joseph</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="" intervention="">
+              <person>
+                <persName>
+                  <surname>Marquet</surname>
+                  <forename>Louis</forename>
+                </persName>
+                <occupation>écuyer seigneur de Mont Saint-Père</occupation>
+              </person>
+              <status>heir</status>
+              <expert ref="#xpr0250"/>
+            </party>
+            <party role="opponent" presence="" intervention="">
+              <person>
+                <persName>
+                  <surname>Marquet</surname>
+                  <forename>Maurice Alexandre</forename>
+                </persName>
+                <occupation>écuyer conseiller du roi, héritier pour ¼ de dameDuvernay, décédée femme deMarquet, Louis, avec lequel elle était en communauté de biens</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Duvernay</surname>
+                  <forename/>
+                </persName>
+                <occupation>chevalier conseiller du roi aussi héritier pour ¼</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Delaguillaumie</surname>
+                  <forename>Nicolas</forename>
+                </persName>
+                <occupation>chevalier seigneur d’Aubervilliers, comme tuteur de Marquet, Jacqueline Henriette, son épouse mineure émancipée, aussi héritière pour ¼</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>De Calonne</surname>
+                  <forename>Charles Alexandre</forename>
+                </persName>
+                <occupation>chevalier conseiller du roi, comme tuteur de De Calonne, Charles Louis Henry, son fils mineur et de Marquet, Joséphine Anne, seul héritier de cette dernière, sa mère, qui était aussi héritière pour 1/4</occupation>
+              </person>
+              <status>heir</status>
+              <expert ref="#xpr0250"/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0250">conclusion commencée au verso du feuillet 70, interrompue 
+« Au moyen des operations et des details … par nous cy dessus faits attention faitte à la nature et qualité desdits biens sur ladite terre et seigneurie de Villemoyenne justice haute moyenne et basse sur l’étendue d’icelle possédée par indivis avec »
+derniers mots : "Revenantes les dépendances de la ferme de la louarde compris les rotures qui étoieent dans le domaine de Villemoyenne et Préaux
+Savoir
+en terre labourable"
+pas de compte ni de signatures</opinion>
+          <arrangement/>
+          <agreement type="unfinished">Affaire inachevée</agreement>
+          <estimate l="" s="" d=""/>
+          <estimates>
+            <place ref="#id214d286">
+              <appraisal l="" s="" d="">
+                <desc/>
+              </appraisal>
+            </place>
+          </estimates>
+          <fees detail="false">
+            <total l="" s="" d=""/>
+          </fees>
+          <expenses mentioned=""/>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis/>
+        <noteworthy/>
+      </description>
+    </expertise>

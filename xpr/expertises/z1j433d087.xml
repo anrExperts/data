@@ -1,0 +1,206 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j433d087">
+      <meta/>
+      <control>
+        <maintenanceStatus/>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term/>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:45:33.927+02:00">2021-04-21T20:45:33.927+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateKeywordsModule_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour du module keywords.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:44:31.814+02:00">2021-04-21T20:44:31.814+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateExpertisesArrangement_files.xqy/BaseX</agent>
+            <eventDescription>Ajout du champs Accommodement dans l'éventualité d’une résolution par les parties.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:43:53.154+02:00">2021-04-21T20:43:53.154+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateExpertisesPlacesEstimates_files.xqy/BaseX</agent>
+            <eventDescription>Ajout des champs pour l'estimation des lieux.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2019-03-01T12:00:00">2019-03-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1696</unitdate>
+    <idno type="unitid">Z1J433</idno>
+        <idno type="item">087</idno>
+        <facsimile from="0574" to="0579"/>
+        <physDesc>
+          <extent sketch="false">5</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1696-05-28" type="suburbs"/>
+        </sessions>
+        <places>
+          <place xml:id="id61295d1" type="suburbs">
+            <address/>
+            <complement>Petite rue neuve</complement>
+            <city>Aulnay-lès-Bondy</city>
+            <district/>
+            <owner>Cresme</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="settlement">Départager</category>
+          <category type="estimation">Estimer la valeur des biens</category>
+          <designation rubric="">estimation de loyer à Aulnay</designation>
+        </categories>
+        <procedure>
+          <framework type="b2a">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>lieutenant civil Châtelet de Paris</orgName>
+              <date when="1696-05"/>
+            </sentence>
+          </sentences>
+          <case>estimation de loyer suite à un des travaux...</case>
+          <objects>
+            <object type="house">Maison(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0077" context="primary" appointment="appointed">
+              <title>expert juré du roi ès oeuvres de maçonnerie</title>
+            </expert>
+            <expert ref="#xpr0153" context="primary" appointment="appointed">
+              <title>[non renseigné]</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0008">
+              <persName>
+                <surname>Villain</surname>
+                <forename>Pierre</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="opponent" presence="true" intervention="">
+              <person>
+                <persName>
+                  <surname>Cresme</surname>
+                  <forename>Charles</forename>
+                </persName>
+                <occupation>marchand boucher</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Le Roy</surname>
+                  <forename>Jeanne</forename>
+                </persName>
+                <occupation>sa femme</occupation>
+              </person>
+              <status>owner</status>
+              <expert ref="#xpr0077"/>
+            </party>
+            <party role="petitioner" presence="false" intervention="">
+              <person>
+                <persName>
+                  <surname>de la Rue</surname>
+                  <forename>Marie</forename>
+                </persName>
+                <occupation>veuve de Martin Navare</occupation>
+              </person>
+              <status>owner</status>
+              <expert ref=""/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <agreement type="disagreement">Désaccord</agreement>
+          <opinion ref="">Description des maisons
+Estimation du loyer séparée:
+de la Joue: 100 livres par an
+""ayant le tout murement considéré [j'ai] estimé le loyer total de ladite maison et lieux à raison de cent livres par chacun an eu esgard à l'estat auquel estoit lesdits lieux suivant le déclaration qui nous en a esté faicte et considération faicte du prix prdonaire du loyer des maisons dudit lieu à la charge de faire diminution des droicts seigneuriaux sur ladite somme de cent livres sy aucuns sont due ce quy est l'advis de moy de la Jour et a signée. La Joue</opinion>
+          <opinion ref="">Avis de Demeseretz
+(f. 5r°) Et moy Demeseretz après la déclaration faicte par ledit Du crocq et LeRiche anciens dudit lieu d'Aunay et avoir entendu quelques autres habitans dudit lieu, pris tous les autres esclaircissement que nous avons creu nécessaire au faict dont il s'agit et fait de nouveau lecture des pièces et tiltre cy dessus esnoncez par le moyen desquelles nous avons cogneu le différence de qualité et quantité des bastimens mentionnez audict contract de vente du 16e septembre 1664 d'avec ceux mentionnez lors dudidt contract du 16e septembre 1664, ladite maison en consistoit qu'en un seul corps de logis etc. [...] mon avis est qu'ils vallent bien la somme de deux cens livres [200] de loyer quy est ce que j'estime que ladite veuve Navarre en doit payer par chacun en pour tout le temps en question sur quoy (?) sera toute fois faict déduction de 20 livres aussy par chacun an le fort au faible à quoy j'estime les réparations d'entretient ordinaire qui peuvent voir esté faictes dans lesdit lieux eu esgard que les autres grosses réparations sont payés et remboursées séparément comme il paroist par ladite sentence de d'exécution de laquelle (v°) il s'agist, référant touttes fois à vous Monsieur d'en ordonner sur le tout selon vostre prudence et jusitce ordinaire. Faict et arresté...</opinion>
+          <arrangement/>
+          <estimate/>
+          <estimates>
+            <place ref="#id61295d1">
+              <appraisal l="" s="" d="">
+                <desc/>
+              </appraisal>
+            </place>
+          </estimates>
+          <fees detail="false">
+            <total l="" d="" s=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="" s="" d=""/>
+            <expense type="expert" l="12" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords type="technical">
+          <term>chaume et roseau</term>
+        </keywords>
+        <keywords group=""/>
+        <analysis>- f. 1r° sentence du chatelet 9 juillet 1695 à la requête de Cresm "Par laquelle sentence il a esté entre autres choses ordonné que sur les sommes adjugées à lad. [veuve] Navarre sur lesdit Cresme et sa femme, déduction sera faire de al somme à laquelle se trouvera monter l'estimation des loyers desdites moityé de maison et lieux à eux adjugez et dont est question."
+- contrat de vente 4 octobre 1663 entre Jean de Cresme l'aisné maréchal d'Aulnay et Jean Le Roy laboureur et boulanger à Aulnay... la maison "est presque inhabitable" vendue 255 livres payées comptant.
+- contrat de location 16 septembre 1664 à charge à Jean Le Roy de faire les réparations et construire mur de clôture
+- contrat de vente en forme de transaction 29mai 1673 : Jean Le Roy vend à Augustin de la Rue une maison... suivant le prix qui en sera estimé après la prisée et estimation qui en sera faite à l'amiable ente les parties dans la 15zaine par les experts convenus par icelle transaction "au moyen de laquelle en considération de ladite vente, ladite De la Rue audit nom auroit continué et accorde audit Le Roy la jouissance à titre de loyer de tous lesdits lieux vendus jusqu'au temps porté par la mesme transaction dont il payeroit seulement par chacun an la somme de [f. 2r] soixante et seize (76) livres dont ils estoient convenus ensemble
+- copie d'un dire signifié de la veuve de la Rue à maitre Jisseaume procureur desd. Cresme et sa femme, 6 décembre 1695... la maison est estimée à 4500 livres, laquelle estimation a même été confirmée par sentence du Châtelet 18 novembre  et que par autre sentence du Châtelet 30 avril 1678 les biens ont été adjugés au défunt Martin Nvarre son mary et à Augustin de la Rue pour en jouir au terme du susdit contrat du 29 mai 1676 et de ladit sentence...etc."
+
+appel à témoins (voisins) : f. 3v° Ce faict nous estant informé quy sont les plus enciens du lieu pour nous donner connoissance, tant de l'estat auquel estoit ladite maison lors que ledit deffunt Le Roy en a faict l'acquisition, que de l'estat auquel il estoient lors de la vente quy en a esté faict audit deffunt, l'on nous auoit nommé Jean Du Croq sieur de long et Louis Le Riche boulanger et laboureur, lesquelles nous aurons faict apeler et faict venir et nous estant informé d'eux, ils nous ont dit que la maison en question lors de l'aquisition que ledit deffunt Le Roy en a faict ne consistoit qu'au principal corps de logis... et quan suitte ledit Le Roy auroit faict des aquisitions de masures voisines et auroit faict les autres bastimans quy composent à présent les dépendances de ladite maison... Mais on bien mémoire que depuis l'aquisition faict par ledit deffunt Navarre il s y ont veu travailler des ouvriers en différans temp et a ledit Ducroq signé, et à l'esgard dudit Le Riche a déclaré ne scavoir escrire ny signé ; de ce interpellé suivant l'ordonnance, lesquelles on déclaré ne vouloir recevoir de vacation en faveur de l'un et l'autre des partyes. J Ducros"</analysis>
+        <noteworthy>- la manière dont le pv a été écrit : lignes vidées rayées, partie entière barrée (il s'agit d'un premier avis du 2e expert Demeseretz), mots répétés à plusieurs reprises... Je crois que cela vaudrait la peine de retranscrire l'avis n°1 de Demeseretz.
+- il est fait appel à témoins (locataires et voisins) pour connaître la nature et la chronologie des travaux réalisés.</noteworthy>
+      </description>
+    </expertise>

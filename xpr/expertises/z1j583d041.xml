@@ -1,0 +1,200 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j583d041">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-11-01T12:00:00">2020-11-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2016-10-26T12:00:00">2016-10-26T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>RB</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1726</unitdate>
+    <idno type="unitid">Z1J583</idno>
+        <idno type="item">041</idno>
+        <facsimile from="0453" to="0456"/>
+        <physDesc>
+          <extent sketch="false">4</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1726-10-04" type="paris"/>
+        </sessions>
+        <places>
+          <place xml:id="id24d221" type="paris">
+            <address>
+              <street>Rue du Figuier [Cette dénomination correspond à 2 voies : Voie actuelle. Actuelle rue Saint-Fiacre]</street>
+              <buildingNumber/>
+            </address>
+            <complement/>
+            <parish/>
+            <owner>Crestien / Julbine</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="estimation">Estimer la valeur des biens</category>
+          <designation rubric="false">[Visite et estimation d'une maison]</designation>
+        </categories>
+        <procedure>
+          <framework type="b2a">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Lieutenant civil du Châtelet</orgName>
+              <date when="1726-09-07"/>
+            </sentence>
+          </sentences>
+          <case>vente par licitation</case>
+          <objects>
+            <object type="house">Maison(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0111" context="primary" appointment="appointed">
+              <title>juré expert à Paris</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0035">
+              <persName>
+                <surname>Tancart</surname>
+                <forename>Toussaint</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Crestien</surname>
+                  <forename/>
+                </persName>
+                <occupation>veuve</occupation>
+              </person>
+              <status>owner</status>
+              <expert ref="#xpr0111"/>
+              <representative>
+                <persName>
+                  <surname>Legrand</surname>
+                  <forename/>
+                </persName>
+                <occupation/>
+              </representative>
+            </party>
+            <party role="opponent" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Julbine</surname>
+                  <forename>Jean</forename>
+                </persName>
+                <occupation/>
+              </person>
+              <status>owner</status>
+              <expert ref="#xpr0111"/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0111">« Apres laquelle visitte et declaration de lad. maison nous avons pris les mesures de son etendue et emplacement et fait distinction des batimens sur la rue de ce qui est derrière diceluy entre les deux enclaves des maisons voisines. Et apres avoir fait les calculs et suputations necessaires pour parvenir a une juste estimation, toute consideration par nous faitte nous avons prisé et estimé laditte maison valoir la somme de trois mil six cent livres eu egard a son emplacement a l'etat present de ses batimens au quartier ou elle es scituée et au cours du temps présent eu egard aussy que laditte maisonest chargée de quinze livres de rente foncière envers la fabrique de St Paul et aussy à la charge du cens ».</opinion>
+          <arrangement/>
+          <agreement type="conclusion">Conclusion</agreement>
+          <estimate l="3600" s="" d=""/>
+          <estimates>
+            <place ref="#id24d221">
+              <appraisal l="3600" s="" d="">
+                <desc>maison</desc>
+              </appraisal>
+            </place>
+          </estimates>
+          <fees detail="true">
+            <fee type="papers" l="" s="" d=""/>
+            <fee type="expert" ref="#xpr0111" l="6" s="" d=""/>
+            <fee type="clerk" l="" s="" d=""/>
+            <fee type="rolls" l="" s="" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="" s="" d=""/>
+          </fees>
+          <expenses mentioned=""/>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis>Motivations
+                « Nous avons fait lecture d'une sentence du Châtelet signée et scellée en datte du sept 7bre 1726 rendue entre laditte veuve Crestien proprietaire pour un sixiesme au total et de moitié des cinq autres sixiesme de lad. maison demanderesse, suivant l'exploit du 30 aoust der en licitation de lad. maison contre Jean Julbine bourgeois de Paris curateur [1 mot] Julien à la succession vaccante de defft Jean Beaucorps qui était proprietaire de l'autre moitié desd. cinq ssixiesme de lad. maison, par laquelle sentence parties ouyes vous avez monsieur ordonné qu'il seroit procedé a la visitte, prisée et estimation de lad. maison par nous Fournier […] et raporté raporté si lad. maison peut se partager pour jouir par chacune des parties à elles appartenante et qu'en cas quelle ne puisse se partager quelle serait vendu et adjugé par licitation au parc civil ».</analysis>
+        <noteworthy/>
+      </description>
+    </expertise>

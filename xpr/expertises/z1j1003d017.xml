@@ -1,0 +1,208 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1003d017">
+  <meta/>
+  <control>
+    <maintenanceStatus>revised</maintenanceStatus>
+    <publicationStatus/>
+    <localControl localType="detailLevel">
+      <term>completed</term>
+    </localControl>
+    <maintenanceHistory>
+      <maintenanceEvent>
+                <eventType>revised</eventType>
+                <eventDateTime standardDateTime="2021-10-15T12:57:44Z">2021-10-15T12:57:44Z</eventDateTime>
+                <agentType>human</agentType>
+                <agent>llosserand</agent>
+                <eventDescription>procédure</eventDescription>
+            </maintenanceEvent>
+          <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateObjectsValues_db.xqy/BaseX</agent>
+        <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateOpinionRef_files.xqy/BaseX</agent>
+        <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateRefValues_files.xqy/BaseX</agent>
+        <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+        <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>revised</eventType>
+        <eventDateTime standardDateTime="2020-07-01T12:00:00">2020-07-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>llosserand</agent>
+        <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>retroconverted</eventType>
+        <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>ead2xpr.xsl/Saxon9</agent>
+        <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>created</eventType>
+        <eventDateTime standardDateTime="2017-10-01T12:00:00">2017-10-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>JH</agent>
+        <eventDescription>Création de la fiche.</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+  </control>
+  <sourceDesc>
+    <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1003</idno>
+    <idno type="item">017</idno>
+    <facsimile from="0294" to="0297"/>
+    <physDesc>
+      <extent sketch="false">4</extent>
+    </physDesc>
+  </sourceDesc>
+  <description>
+    <sessions>
+      <date when="1776-05-22" type="suburbs"/>
+      <date when="1776-06-12" type="suburbs"/>
+      <date when="1776-05-31" type="suburbs"/>
+    </sessions>
+    <places>
+      <place xml:id="id279d298" type="province">
+        <address/>
+        <complement>Cul-de-sac Saint-Michel, faubourg St Martin</complement>
+        <city/>
+        <district/>
+        <owner>succession Thiery, occupée par la veuve Thiery et autres locataires</owner>
+      </place>
+    </places>
+    <categories>
+      <category type="estimation">Estimer la valeur des biens</category>
+      <designation rubric="true">Visitte et estimations d'une maison et dépendances, cul de sac St Michel, près la barrière St Martin, de la succession Thiery ; M. Egresset, expert.</designation>
+    </categories>
+    <procedure>
+      <framework type="b2">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+      <origination type="institution">Une institution</origination>
+      <sentences>
+        <sentence>
+          <orgName>Châtelet, lieutenant civil (sentence)</orgName>
+          <date when="1776-05-07"/>
+        </sentence>
+      </sentences>
+      <case>Criée, vente et adjudication par licitation de la maison et dépendances.</case>
+      <objects>
+        <object type="house">Maison(s)</object>
+      </objects>
+    </procedure>
+    <participants>
+      <experts>
+        <expert ref="#xpr0106" context="primary" appointment="appointed">
+          <title>architecte expert du roi et ordinaire de l a Police</title>
+        </expert>
+      </experts>
+      <clerks>
+        <clerk ref="#clrk0058">
+          <persName>
+            <surname>Foucart</surname>
+            <forename>Paul Joseph</forename>
+          </persName>
+        </clerk>
+      </clerks>
+      <parties>
+        <party role="petitioner" presence="false" intervention="false">
+          <person>
+            <persName>
+              <surname>Thiery</surname>
+              <forename>Pierre</forename>
+            </persName>
+            <occupation>nourrisseur de bestiaux (héritier pour moitié de défuntThiery, Pierre, nourrisseur de bestiaux etDouillard, Denise, sa femme, ses père et mère), poursuivant les criées, vente et adjudication par licitation de la maison et dpéendances</occupation>
+          </person>
+          <status>heir</status>
+          <expert ref="#xpr0106"/>
+          <prosecutor>
+            <persName>
+              <surname>Prêtre</surname>
+              <forename>Pierre</forename>
+            </persName>
+          </prosecutor>
+        </party>
+        <party role="opponent" presence="false" intervention="false">
+          <person>
+            <persName>
+              <surname>Le Comte</surname>
+              <forename>Louis</forename>
+            </persName>
+            <occupation>marchand platrier à Pantin, comme tuteur de Le Comte, Pierre Louis, Le Comte, Françoise Denise,Lecomte, Marie Madeleine, ses trois enfants mineurs (enfants de défunte Thiery, Marie Catherinesa première épouse, et héritiers conjointement pour moitié de Thiery, Pierre et Douillard, Denise)marchand platrier à Pantin, comme tuteur de Le Comte, Pierre Louis, Le Comte, Françoise Denise,Lecomte, Marie Madeleine, ses trois enfants mineurs (enfants de défunte Thiery, Marie Catherinesa première épouse, et héritiers conjointement pour moitié de Thiery, Pierre et Douillard, Denise)</occupation>
+          </person>
+          <status>heir</status>
+          <expert ref="#xpr0106"/>
+        </party>
+      </parties>
+      <craftmen>
+        <craftman>
+          <persName>
+            <surname/>
+            <forename/>
+          </persName>
+          <occupation/>
+        </craftman>
+      </craftmen>
+    </participants>
+    <conclusions>
+      <opinion ref="#xpr0106">« Au moyen de toutes lesquelles operations attention faitte sur la scituation de ladite maison dans un cul de sac et eloigné du centre de la ville, sa superficie et l’emplacement en batimens cour et jardins, état actuel dudit batiment ancien, leur construction legere, les grosses reparations et celles d’entretien qui sont à y faire, l’état des clotures faittes à la legere et les reparations sur ce que le jardin se trouve sur le coté et pour ainsi dire de l’autre de ladite maison sur la plantation du jardin sur l’usage auquel ladite maison est convenable et ce qu’elle peut produire annuellement de loyers par toutes ces considerations et autres nous estimons ladite maison cour et jardin circonstance et dependance avec la communauté d’usage de la petite cour et puit à gauche ainsy que le tout se poursuit et comportememe les quatre pieds de superficie de jardin qui doivent etre rendus à ladite maison sur le terrein de la demoiselle Gaudet suivant l’acte du vingt trois septembre mil sept cens soixante trois… valoir la somme de cinq mille six cent livres, eu égard au court du tems present à la charge par ladite maison de continuer et contribuer à l’avenir pour une somme de quatre livres douze sols huit deniers par chacun an au payement des arrerages de la rente de quarente livres douze sols huit deniers de la nature qu’elle est due à messieurs de Saint-Lazare »</opinion>
+      <arrangement/>
+      <agreement type="conclusion">Conclusion</agreement>
+      <estimate l="5600" s="" d=""/>
+      <estimates>
+        <place ref="#id279d298">
+          <appraisal l="5600" s="" d="">
+            <desc>une maison</desc>
+          </appraisal>
+        </place>
+      </estimates>
+      <fees detail="true">
+        <fee type="papers" l="4" s="" d=""/>
+        <fee type="expert" ref="#xpr0106" l="30" s="" d=""/>
+        <fee type="clerk" l="30" s="" d=""/>
+        <fee type="rolls" l="17" s="" d=""/>
+        <fee type="prosecutors" l="20" s="" d=""/>
+        <fee type="help" l="" s="" d=""/>
+        <fee type="plans" l="" s="" d=""/>
+        <total l="101" s="" d=""/>
+      </fees>
+      <expenses mentioned="false"/>
+    </conclusions>
+    <keywords group="estates"/>
+    <keywords group="procedure">
+      <term value="b6">Titre (de propriété)</term>
+    </keywords>
+    <keywords group="contract"/>
+    <keywords group="encumbrance"/>
+    <keywords group="law"/>
+    <keywords group="measurement"/>
+    <keywords group="repairs"/>
+    <keywords group="guarantees"/>
+    <keywords group="responsability"/>
+    <keywords group="ownership"/>
+    <keywords group="value"/>
+    <keywords group="neighbourhood"/>
+    <keywords group="disorder"/>
+    <keywords group="transformation"/>
+    <analysis/>
+    <noteworthy>L’expert est chargé de dire si la maison peut se diviser commodément, ou d’en estimer la valeur dans le cas contraire.
+Nomination de l'expert : Egressetnommé par Thierry, puis nommé d'office pour toutes les parties par le LC</noteworthy>
+  </description>
+</expertise>

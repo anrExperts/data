@@ -1,0 +1,255 @@
+<eac xmlns="https://archivists.org/ns/eac/v2" xml:id="xpr0224">
+   <control maintenanceStatus="updated" publicationStatus="inProcess">
+      <recordId>xpr0224</recordId>
+      <maintenanceAgency>
+         <agencyName>projet Experts</agencyName>
+      </maintenanceAgency>
+      <maintenanceHistory>
+         <maintenanceEvent maintenanceEventType="revised">
+        <agent agentType="human">vnegre</agent>
+        <eventDateTime standardDateTime="2023-04-20T10:31:06Z"/>
+        <eventDescription/>
+      </maintenanceEvent>
+      <maintenanceEvent maintenanceEventType="updated" languageOfElement="eng">
+            <agent agentType="machine">EAC-CPF 1.x to EAC 2.0 Migration Style Sheet (eac1-to-eac2.xsl)</agent>
+            <eventDateTime standardDateTime="2022-09-19T16:52:57.370947+02:00"/>
+            <eventDescription>EAC-CPF 1.x (urn:isbn:1-931666-33-4) instance migrated to EAC 2.0 (https://archivists.org/ns/eac/v2)</eventDescription>
+         </maintenanceEvent>
+         <maintenanceEvent maintenanceEventType="updated">
+            <agent agentType="machine">updateRefValues_files.xqy/BaseX</agent>
+            <eventDateTime standardDateTime="2021-04-27T16:18:39.882+02:00">2021-04-27T16:18:39.882+02:00</eventDateTime>
+            <eventDescription>Mise à jour de la valeur des champs @xlink:ref (ajout d'un '#' pour les participants et les relations).</eventDescription>
+         </maintenanceEvent>
+         <maintenanceEvent maintenanceEventType="updated">
+            <agent agentType="machine">cleanNamePart_files.xqy/BaseX</agent>
+            <eventDateTime standardDateTime="2021-02-18T15:39:02.354+01:00">2021-02-18T15:39:02.354+01:00</eventDateTime>
+            <eventDescription>Suppression des composantes du nom vides.</eventDescription>
+         </maintenanceEvent>
+         <maintenanceEvent maintenanceEventType="updated">
+            <agent agentType="machine">updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDateTime standardDateTime="2021-02-17T11:59:50.182+01:00">2021-02-17T11:59:50.182+01:00</eventDateTime>
+            <eventDescription>Conversion des dates de révision des fiches prosopographiques au format xsd:dateTime.</eventDescription>
+         </maintenanceEvent>
+         <maintenanceEvent maintenanceEventType="updated">
+            <agent agentType="machine">xml2eac.xsl/Saxon9</agent>
+            <eventDateTime standardDateTime="2019-11-07T12:00:00+01:00">2019-11-07T12:00:00+01:00</eventDateTime>
+            <eventDescription>Notice rétroconvertie en EAC-CPF à partir de données Google Drive.</eventDescription>
+         </maintenanceEvent>
+         <maintenanceEvent maintenanceEventType="created">
+            <agent agentType="human">JH</agent>
+            <eventDateTime standardDateTime="2018-05-29T12:00:00+01:00">2018-05-29T12:00:00+01:00</eventDateTime>
+            <eventDescription>Fiches créée sur Google Drive.</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+    <sources>
+      <source id="source_aep04gphflc5g7r">
+        <reference href="">MC/ET/IV/230 (Cont. de mariage)</reference>
+      </source>
+    </sources>
+      
+      
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType value="person"/>
+         <nameEntry sourceReference="" preferredForm="true" status="authorized">
+            <part localType="full">Poisson, Jean Michel</part>
+            
+         </nameEntry>
+         <nameEntry sourceReference="" preferredForm="false" status="alternative">
+            <part localType="surname">Poisson</part>
+            <part localType="forename">Jean Michel</part>
+            
+            
+         </nameEntry>
+          <otherEntityTypes>
+            <otherEntityType>
+              <term>expert</term>
+            </otherEntityType>
+          </otherEntityTypes>
+         <identityId>xpr0224</identityId>
+      </identity>
+      <description>
+         <functions>
+            <function sourceReference="">
+               <term>Expert entrepreneur</term>
+               
+               
+            </function>
+         </functions>
+      <places>
+        <place sourceReference="#source_aep04gphflc5g7r">
+          <date certainty="certain" standardDate="1681-11-30" sourceReference=""/>
+          <address>
+            <addressLine>Rue Jean Bausire</addressLine>
+            <addressLine>Paroisse Saint-Paul</addressLine>
+          </address>
+        </place>
+      </places>
+         <localDescriptions>
+            <localDescription localType="sex">
+               <term/>
+            </localDescription>
+         </localDescriptions>
+      <occupations>
+        <occupation localType="" sourceReference="#source_aep04gphflc5g7r">
+          <term>Maître maçon à Paris</term>
+          <date certainty="certain" standardDate="1681-11-30" sourceReference=""/>
+          <!--optionnal (all below)-->
+          <!--&lt;date/&gt; | &lt;dateRange/&gt; | &lt;dateSet/&gt;-->
+        </occupation>
+      </occupations>
+         
+         
+         <existDates>
+            <dateRange>
+               <fromDate sourceReference="" certainty="" standardDate="1654-06"/>
+               <toDate sourceReference="" certainty="" standardDate="1694-01-18"/>
+            </dateRange>
+         </existDates>
+         <biogHist>
+            <chronList>
+               <chronItem id="eventid96438d183" localType="birth">
+                  <date sourceReference="" certainty="" standardDate="1654-06"/>
+                  <event>Naissance</event>
+                  
+                  
+                  
+                  <place>
+                     <placeName>Saint-Gervais</placeName>
+                  </place>
+               </chronItem>
+               <chronItem id="eventid96438d200" localType="master">
+                  <date sourceReference="" certainty="" standardDate="1678-12-22"/>
+                  <event>Maîtrise maç.</event>
+                  
+                  
+                  
+                  
+               </chronItem>
+               <chronItem id="eventid96438d211" localType="officePurchase">
+            <date certainty="" sourceReference=""/>
+                  
+                  <event>Acquisition d'un office</event>
+                  
+                  
+                  
+                  
+                  
+               </chronItem>
+               <chronItem id="eventid96438d221" localType="provision">
+                  <date sourceReference="" certainty="" standardDate="1690-07-22"/>
+                  <event>Lettre de provision</event>
+                  
+                  
+                  
+                  
+               </chronItem>
+               
+               <chronItem id="eventid96438d239" localType="death">
+                  <date sourceReference="" certainty="" standardDate="1694-01-18"/>
+                  <event>Décès</event>
+                  
+                  
+                  
+                  
+               </chronItem>
+          <chronItem id="chronItem_t470mgokejrc65" sourceReference="#source_aep04gphflc5g7r" localType="marriage">
+            <date certainty="certain" standardDate="1681-11-30" sourceReference=""/>
+            <event>Mariage avec Marie Françoise Luquet</event>
+            <place>
+              <placeName/>
+            </place>
+          </chronItem>
+            </chronList>
+         </biogHist>
+      </description>
+      <relations>
+      <relation target="" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Luquet, Marie Françoise</part>
+          <part localType="status"/>
+          <part localType="occupationType"/>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_1jin0000001050p1tjdfpzi" valueURI="" vocabularySource="" vocabularySourceURI="" sourceReference="#source_aep04gphflc5g7r">rico:hasOrHadSpouse</relationType>
+        <targetRole target="#relationType_1jin0000001050p1tjdfpzi">épouse</targetRole>
+      </relation>
+      <relation target="#chronItem_t470mgokejrc65" sourceReference="">
+        <descriptiveNote>
+          <p>Le père du futur expert, Michel Poisson, est décédé au moment du mariage.</p>
+        </descriptiveNote>
+        <targetEntity targetType="family">
+          <part localType="full">Poisson, Michel</part>
+          <part localType="status">Maître charpentier </part>
+          <part localType="occupationType">Bâtiment;Entrepreneur ou maître de métier</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_209j0xdshyi8xycf" valueURI="" vocabularySource="" vocabularySourceURI="" sourceReference="#source_aep04gphflc5g7r">rico:isChildOf</relationType>
+        <targetRole target="#relationType_209j0xdshyi8xycf">père</targetRole>
+      </relation>
+      <relation target="#chronItem_t470mgokejrc65" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Hanot, Catherine</part>
+          <part localType="status"/>
+          <part localType="occupationType"/>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_3a6y0etzopjdmbhq" valueURI="" vocabularySource="" vocabularySourceURI="" sourceReference="#source_aep04gphflc5g7r">rico:isChildOf</relationType>
+        <targetRole target="#relationType_3a6y0etzopjdmbhq">mère</targetRole>
+      </relation>
+      <relation target="#chronItem_t470mgokejrc65" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Luquet, Linéard</part>
+          <part localType="status">Maître menuisier </part>
+          <part localType="occupationType">Bâtiment;Entrepreneur ou maître de métier</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_3ufs0095wqwlkeu2e" valueURI="" vocabularySource="" vocabularySourceURI="" sourceReference="#source_aep04gphflc5g7r">rico:hasFamilyAssociationWith</relationType>
+        <targetRole target="#relationType_3ufs0095wqwlkeu2e">beau-père</targetRole>
+      </relation>
+      <relation target="#chronItem_t470mgokejrc65" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Begat, Jeanne</part>
+          <part localType="status"/>
+          <part localType="occupationType"/>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_5a7s0mckj6wgzhv" valueURI="" vocabularySource="" vocabularySourceURI="" sourceReference="#source_aep04gphflc5g7r">rico:hasFamilyAssociationWith</relationType>
+        <targetRole target="#relationType_5a7s0mckj6wgzhv">belle-mère</targetRole>
+      </relation>
+         
+      <relation target="#eventid96438d211" sourceReference="">
+            <targetEntity target="#xprOffice0046" targetType="corporateBody">
+              <part localType="full">Office 46</part>
+            <part localType="status"/>
+          <part localType="occupationType"/>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+          <relationType id="relationType_id128298d2618406" valueURI="" vocabularySource="" vocabularySourceURI="" sourceReference=""/>
+            <targetRole target="#relationType_id128298d2618406"/>
+          </relation>
+    </relations>
+   
+      </cpfDescription>
+   
+   
+</eac>

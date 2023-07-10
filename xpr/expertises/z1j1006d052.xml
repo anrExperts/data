@@ -1,0 +1,205 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1006d052">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-09-01T12:00:00">2020-09-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2017-04-01T12:00:00">2017-04-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1006</idno>
+        <idno type="item">052</idno>
+        <facsimile from="0679" to="0683"/>
+        <physDesc>
+          <extent sketch="false">4</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-08-20" type="paris"/>
+          <date when="1776-08-27" type="paris"/>
+          <date when="1776-09-05" type="paris"/>
+          <date when="1776-09-11" type="paris"/>
+        </sessions>
+        <places>
+          <place type="paris">
+            <address>
+              <street>Rue de Richelieu</street>
+              <buildingNumber/>
+            </address>
+            <complement/>
+            <parish/>
+            <owner>Parmentier</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="acceptation">Recevoir et évaluer le travail réalisé</category>
+          <designation rubric="true">Estimation d’ouvrages de serrurerie</designation>
+        </categories>
+        <procedure>
+          <framework type="b2a">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>lieutenant civil (sentence contradictoire du 7 août 1776)</orgName>
+              <date when="1776-08-07"/>
+            </sentence>
+          </sentences>
+          <case>Réception d'ouvrages</case>
+          <objects>
+            <object type="other">ouvrages de serrurerie</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0102" context="primary" appointment="appointed">
+              <title>architecte expert bourgeois des bâtiments</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0062">
+              <persName>
+                <surname>Picquenon</surname>
+                <forename>Denis Joseph François</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="true" intervention="true">
+              <person>
+                <persName>
+                  <surname>Martin</surname>
+                  <forename>Pierre Bazile</forename>
+                </persName>
+                <occupation>maître serrurier</occupation>
+              </person>
+              <status>builder</status>
+              <expert ref="#xpr0102"/>
+              <prosecutor>
+                <persName>
+                  <surname>Boulanger</surname>
+                  <forename/>
+                </persName>
+              </prosecutor>
+              <representative>
+                <persName>
+                  <surname>Thorel</surname>
+                  <forename/>
+                </persName>
+                <occupation>avocat</occupation>
+              </representative>
+            </party>
+            <party role="opponent" presence="true" intervention="true">
+              <person>
+                <persName>
+                  <surname>Parmentier</surname>
+                  <forename/>
+                </persName>
+                <occupation>marchand épicier à Paris</occupation>
+              </person>
+              <status>limited-partner</status>
+              <expert ref="#xpr0102"/>
+              <prosecutor>
+                <persName>
+                  <surname>de Varenne</surname>
+                  <forename/>
+                </persName>
+              </prosecutor>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0102">Les ouvrages sont estimés à 3884 livres 7 sols 9 deniers.
+« Nous observons que pour éviter la transcription des articles desd. deux mémoires qui eut été dispendieuse nous nous sommes contenté de rapporter seulement le total de nos estimations des ouvrages contenus aux deux mémoires mais que pour ne point priver les partyes de la faculté de comparer le conformité de tout ce que nous avons rapporté desd. ouvrages avec le contenu aux mémoires, nous les avons ainsy que le greffier paraphé au bas du recto de chaque pagé signé et arrêté en fin d’iceux et les avons annexé à ces présentes pour y avoir recours dans tous les tems par qui il appartiendra, cy … observation.
+                Telle est, monsieur, la visitte par nous faitte desd. ouvrages et notre avis sur la valeur d’iceux suivant et aux termes de vôtre sentence nous référons sur [f. 4r°] le tout à votre justice et prudence ordinaire. »</opinion>
+          <arrangement/>
+          <agreement type="conclusion">Conclusion</agreement>
+          <estimate l="3884" s="7" d="9"/>
+          <fees detail="true">
+            <fee type="papers" l="4" s="10" d=""/>
+            <fee type="expert" ref="#xpr0102" l="30" s="" d=""/>
+            <fee type="clerk" l="30" s="" d=""/>
+            <fee type="rolls" l="10" s="" d=""/>
+            <fee type="prosecutors" l="10" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="84" s="10" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="25" s="" d=""/>
+            <expense type="expert" l="10" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis/>
+        <noteworthy/>
+      </description>
+    </expertise>

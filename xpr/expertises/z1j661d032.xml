@@ -1,0 +1,182 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j661d032" status="">
+  <meta/>
+  <control>
+    <maintenanceStatus>revised</maintenanceStatus>
+    <publicationStatus/>
+    <localControl localType="detailLevel">
+      <term>completed</term>
+    </localControl>
+    <maintenanceHistory>
+      <maintenanceEvent>
+                <eventType>revised</eventType>
+                <eventDateTime standardDateTime="2022-04-23T17:27:05Z">2022-04-23T17:27:05Z</eventDateTime>
+                <agentType>human</agentType>
+                <agent>llosserand</agent>
+                <eventDescription>rvpcd</eventDescription>
+            </maintenanceEvent>
+          <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateObjectsValues_db.xqy/BaseX</agent>
+        <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-06-16T16:56:32.893+02:00">2021-06-16T16:56:32.893+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateOpinionRef_files.xqy/BaseX</agent>
+        <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-06-16T16:29:02.548+02:00">2021-06-16T16:29:02.548+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateRefValues_files.xqy/BaseX</agent>
+        <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>created</eventType>
+        <eventDateTime standardDateTime="2021-03-18T19:57:21Z">2021-03-18T19:57:21Z</eventDateTime>
+        <agentType>human</agentType>
+        <agent>llosserand</agent>
+        <eventDescription>Création de la fiche.</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+  </control>
+  <sourceDesc>
+    <unitdate>1736</unitdate>
+    <idno type="unitid">Z1J661</idno>
+    <idno type="item">032</idno>
+    <facsimile from="0580" to="0583"/>
+    <physDesc>
+      <extent sketch="false">4</extent>
+    </physDesc>
+  </sourceDesc>
+  <description>
+    <sessions>
+      <date when="1736-03-21" type="paris"/>
+    </sessions>
+    <places>
+      <place type="paris">
+        <address>
+          <street>rue de la veille boucherie</street>
+          <buildingNumber/>
+        </address>
+        <complement/>
+        <parish/>
+        <owner/>
+      </place>
+    </places>
+    <categories>
+      <category type="acceptation">Recevoir et évaluer le travail réalisé</category>
+      <designation rubric="true">Visitte et estimation de réparations de couverture et serrurerie faites en une maison, et par la suite les recevoir, rue de la Vieille Bouclerie, pour le sieur Leclerc, bourgeois de Paris, fermier judiciaire  de la ditte maison saisie réellement sur le dit Toussaint Hallyot, me tailleur  ; M. Desboeufs, expert ; M. Berville, greffier.</designation>
+    </categories>
+    <procedure>
+      <framework type="b2">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+      <origination type="institution">Une institution</origination>
+      <sentences>
+        <sentence>
+          <orgName>LC</orgName>
+          <date when="1736-03-07"/>
+        </sentence>
+      </sentences>
+      <case>réception des réparations faite dans une maison saisie (fermage judiciaire)</case>
+      <objects>
+        <object type="house">Maison(s)</object>
+      </objects>
+    </procedure>
+    <participants>
+      <experts>
+        <expert ref="#xpr0089" context="primary" appointment="appointed">
+          <title>architecte expert bourgeois</title>
+        </expert>
+      </experts>
+      <clerks>
+        <clerk ref="#clrk0042">
+          <persName>
+            <surname>Berville</surname>
+            <forename>Jean Guillaume</forename>
+          </persName>
+        </clerk>
+      </clerks>
+      <parties>
+        <party role="petitioner" presence="false" intervention="false">
+          <person>
+            <persName>
+              <surname>Leclerc</surname>
+              <forename>Jean Paul</forename>
+            </persName>
+            <occupation>bourgeois de Paris</occupation>
+          </person>
+          <status>contractor</status>
+          <expert ref="#xpr0089"/>
+          <prosecutor>
+            <persName>
+              <surname>Vaillant</surname>
+              <forename>Louis Alexandre</forename>
+            </persName>
+          </prosecutor>
+        </party>
+        <party role="opponent" presence="false" intervention="false">
+          <person>
+            <persName>
+              <surname>Hallyot</surname>
+              <forename>Toussaint</forename>
+            </persName>
+            <occupation>maître tailleur à Paris</occupation>
+          </person>
+          <status>mortgagor</status>
+          <expert ref="#xpr0089"/>
+        </party>
+        <party role="opponent" presence="false" intervention="false">
+          <person>
+            <persName>
+              <surname>Hardy</surname>
+              <forename>Adrien</forename>
+            </persName>
+            <occupation>maître cordonnier, poursuivant les saisies réelles</occupation>
+          </person>
+          <status>creditor</status>
+          <expert ref="#xpr0089"/>
+        </party>
+      </parties>
+      <craftmen>
+        <craftman>
+          <persName>
+            <surname/>
+            <forename/>
+          </persName>
+          <occupation/>
+        </craftman>
+      </craftmen>
+    </participants>
+    <conclusions>
+      <agreement type="conclusion">Conclusion</agreement>
+      <opinion ref="#xpr0089">"Tous lesquels ouvrages tant de couvertures que de serrurerie nous avons trouvé revenir ensemble à la somme de cent treize livres huit sols et avoir esté bien et duement faits comme il appartient pourquoi nous en avons fait et dressé le présent procès verbal de réception visitte, toisé, prisée et estimation pour satisfaire à vostre sentence monsieur sauf à vous d’en ordonner suivant votre justice et prudence ordinaire, cy 113 livres 8 sols
+Fait par nous etc."</opinion>
+      <arrangement/>
+      <estimate l="" s="" d=""/>
+      <fees detail="false">
+        <total l="" s="" d=""/>
+      </fees>
+      <expenses mentioned="false"/>
+    </conclusions>
+    <keywords group="estates"/>
+    <keywords group="procedure"/>
+    <keywords group="contract"/>
+    <keywords group="encumbrance"/>
+    <keywords group="law"/>
+    <keywords group="measurement"/>
+    <keywords group="repairs"/>
+    <keywords group="guarantees"/>
+    <keywords group="responsability"/>
+    <keywords group="ownership"/>
+    <keywords group="value"/>
+    <keywords group="neighbourhood"/>
+    <keywords group="disorder"/>
+    <keywords group="transformation"/>
+    <analysis/>
+    <noteworthy/>
+  </description>
+</expertise>

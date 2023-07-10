@@ -1,0 +1,200 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j578d047">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-10-01T12:00:00">2020-10-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2016-10-26T12:00:00">2016-10-26T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>RB</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1726</unitdate>
+    <idno type="unitid">Z1J578</idno>
+        <idno type="item">047</idno>
+        <facsimile from="0497" to="0508"/>
+        <physDesc>
+          <extent sketch="false">12</extent>
+          <appendices>
+            <appendice>
+              <type type="other">Assignation</type>
+              <extent>1</extent>
+              <desc>Sommation à comparaître du 5 février 1726</desc>
+              <note/>
+            </appendice>
+            <appendice>
+              <type type="other">Délibération</type>
+              <extent>1</extent>
+              <desc>Délibération du lieutenant civil du Châtelet du 15 décembre 1725.</desc>
+              <note/>
+            </appendice>
+          </appendices>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1726-02-06" type="paris"/>
+          <date when="1726-02-20" type="paris"/>
+          <date when="1726-02-20" type="paris"/>
+          <date when="1726-02-21" type="paris"/>
+        </sessions>
+        <places>
+          <place type="paris">
+            <address>
+              <street>Rue du Gros-Chenet [Actuellement partie de la rue du Sentier]</street>
+              <buildingNumber/>
+            </address>
+            <complement/>
+            <parish/>
+            <owner>Larcher</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="acceptation">Recevoir et évaluer le travail réalisé</category>
+          <designation rubric="true">Toisé et estimation d'ouvrages de maçonnerie et de pavé</designation>
+        </categories>
+        <procedure>
+          <framework type="b2a">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Lieutenant civil du Châtelet, par sommation 31 janvier 1726</orgName>
+              <date when="1726-01-31"/>
+            </sentence>
+          </sentences>
+          <case>Réception d'ouvrages, paiement à la veuve de l'entrepreneur</case>
+          <objects>
+            <object type="other">ouvrages de maçonnerie</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0232" context="primary" appointment="appointed">
+              <title>architecte juré expert bourgeois de Paris</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0023">
+              <persName>
+                <surname>Meley</surname>
+                <forename>François</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Esnée</surname>
+                  <forename>Jeanne</forename>
+                </persName>
+                <occupation>veuve de François Hazelle, maître paveur à Paris</occupation>
+              </person>
+              <status>heir</status>
+              <expert ref="#xpr0232"/>
+            </party>
+            <party role="opponent" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>L'Archer</surname>
+                  <forename>Antoine</forename>
+                </persName>
+                <occupation>propriétaire d'une maison rue du Grand-Chêne</occupation>
+              </person>
+              <status>limited-partner</status>
+              <expert ref="#xpr0232"/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname>Esnée</surname>
+                <forename>Jeanne</forename>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0232">« Revenant tous les ouvrages de pavé faits pour ledit sieur abbé L'Archer par ledit deffunt sieur Hazel à 384 livres 8 sols 7 deniers. [...]
+                Somme totalle des murs et jambes que ladite veuve Hazel doit rembourser audit sieur abbé L'Archer, déduction faite des charges 460 livres 8 sols 4 deniers ».</opinion>
+          <arrangement/>
+          <agreement type="conclusion">Conclusion</agreement>
+          <estimate l="" s="" d=""/>
+          <fees detail="true">
+            <fee type="papers" l="5" s="" d=""/>
+            <fee type="expert" ref="#xpr0232" l="24" s="" d=""/>
+            <fee type="clerk" l="24" s="" d=""/>
+            <fee type="rolls" l="8" s="10" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="61" s="10" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="24" s="5" d=""/>
+            <expense type="expert" l="" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis>Motivations
+                Prisée et estimation des ouvrages de pavé fournis par Jeanne Esnée et son défunt mari pour Antoine L'Archer, depuis 1717. L'expert doit également établir la part à payer par Jeanne Esnée pour des ouvrages de maçonnerie faits à un mur mitoyen entre les domiciles des deux parties.</analysis>
+        <noteworthy/>
+      </description>
+    </expertise>

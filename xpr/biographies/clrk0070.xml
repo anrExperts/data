@@ -1,0 +1,77 @@
+<eac xmlns="https://archivists.org/ns/eac/v2" xml:id="clrk0070">
+  <control maintenanceStatus="">
+    <recordId>clrk0070</recordId>
+    <maintenanceAgency>
+      <agencyName>ANR Experts</agencyName>
+    </maintenanceAgency>
+    <maintenanceHistory>
+      <maintenanceEvent maintenanceEventType="created">
+        <agent agentType="machine">clerk_csv2eac.xqy/BaseX</agent>
+        <eventDateTime standardDateTime="2022-12-31T14:06:48.817+01:00"/>
+        <eventDescription>Création des fiches EAC-CPF à partir du tableau</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+    <sources>
+      <source id="sourceid86496282">
+        <reference href="">Almanach royal 1776</reference>
+      </source>
+      <source id="sourceid86496284">
+        <reference href="">Almanach royal 1777</reference>
+      </source>
+      <source id="sourceid86496286">
+        <reference href="">Almanach royal 1786</reference>
+      </source>
+      <source id="sourceid86496288">
+        <reference href="">Almanach royal 1787</reference>
+      </source>
+    </sources>
+  </control>
+  <cpfDescription>
+    <identity>
+      <entityType value="person"/>
+      <nameEntry status="authorized" preferredForm="true" sourceReference="">
+        <part localType="full">Le page, Charles Pierre</part>
+      </nameEntry>
+      <nameEntry status="alternative" preferredForm="false" sourceReference="">
+        <part localType="surname">Le page</part>
+        <part localType="forename">Charles Pierre</part>
+      </nameEntry>
+      <otherEntityTypes>
+        <otherEntityType>
+          <term>clerk</term>
+        </otherEntityType>
+      </otherEntityTypes>
+      <identityId>clrk0070</identityId>
+    </identity>
+    <description>
+      <functions>
+        <function sourceReference="#sourceid86496282 #sourceid86496284 #sourceid86496286 #sourceid86496288">
+          <term>Greffier</term>
+          <dateRange>
+            <fromDate sourceReference="" certainty="certain" standardDate="1776"/>
+            <toDate sourceReference="" certainty="certain" standardDate="1787"/>
+          </dateRange>
+        </function>
+      </functions>
+      <places>
+        <place sourceReference="#sourceid86496282 #sourceid86496284">
+          <placeRole>Adresse</placeRole>
+          <placeName>rue de la Barillerie, près le Palais</placeName>
+          <dateRange>
+            <fromDate sourceReference="" certainty="certain" standardDate="1776"/>
+            <toDate sourceReference="" certainty="certain" standardDate="1777"/>
+          </dateRange>
+        </place>
+        <place sourceReference="#sourceid86496286 #sourceid86496288">
+          <placeRole>Adresse</placeRole>
+          <placeName>rue des Marmouzets, en la Cité</placeName>
+          <dateRange>
+            <fromDate sourceReference="" certainty="certain" standardDate="1786"/>
+            <toDate sourceReference="" certainty="certain" standardDate="1787"/>
+          </dateRange>
+        </place>
+      </places>
+    </description>
+  </cpfDescription>
+  <!---->
+</eac>

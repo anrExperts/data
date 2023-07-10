@@ -1,0 +1,200 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j582d066">
+  <meta/>
+  <control>
+    <maintenanceStatus>revised</maintenanceStatus>
+    <publicationStatus/>
+    <localControl localType="detailLevel">
+      <term>completed</term>
+    </localControl>
+    <maintenanceHistory>
+      <maintenanceEvent>
+                <eventType>revised</eventType>
+                <eventDateTime standardDateTime="2022-03-31T19:14:25Z">2022-03-31T19:14:25Z</eventDateTime>
+                <agentType>human</agentType>
+                <agent>llosserand</agent>
+                <eventDescription>rvpcd</eventDescription>
+            </maintenanceEvent>
+          <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateObjectsValues_db.xqy/BaseX</agent>
+        <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateOpinionRef_files.xqy/BaseX</agent>
+        <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateRefValues_files.xqy/BaseX</agent>
+        <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+        <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>revised</eventType>
+        <eventDateTime standardDateTime="2020-11-01T12:00:00">2020-11-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>JH</agent>
+        <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>retroconverted</eventType>
+        <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>ead2xpr.xsl/Saxon9</agent>
+        <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>created</eventType>
+        <eventDateTime standardDateTime="2017-04-01T12:00:00">2017-04-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>llosserand</agent>
+        <eventDescription>Création de la fiche.</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+  </control>
+  <sourceDesc>
+    <unitdate>1726</unitdate>
+    <idno type="unitid">Z1J582</idno>
+    <idno type="item">066</idno>
+    <facsimile from="0686" to="0689"/>
+    <physDesc>
+      <extent sketch="false">4</extent>
+    </physDesc>
+  </sourceDesc>
+  <description>
+    <sessions>
+      <date when="1726-08-23" type="paris"/>
+    </sessions>
+    <places>
+      <place type="paris">
+        <address>
+          <street>Rue Saint-Martin [Cette dénomination correspond à 2 voies : Voie actuelle. Également dénommée rue Planche-Mibray, rue des Arcis et rue Saint-Martin. Actuelle rue de Savoie]</street>
+          <buildingNumber/>
+        </address>
+        <complement>une maison sise à Paris rue Saint-Martin vis-à-vis la grille Saint-Martin, dont est propriétaire Mauger, Jeanne Madeleine, et dont sont principaux locataires Foyer, René et Damel, Margueritte</complement>
+        <parish/>
+        <owner>Mauger</owner>
+      </place>
+    </places>
+    <categories>
+      <category type="assessment">Décrire et évaluer les travaux à venir</category>
+      <designation rubric="true">Visitte et estat des réparations à faire en une maison, rue St Martin, pour la Dlle Proust ; M. Loir, expert.</designation>
+    </categories>
+    <procedure>
+      <framework type="b2">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+      <origination type="institution">Une institution</origination>
+      <sentences>
+        <sentence>
+          <orgName>lieutenant civil</orgName>
+          <date when="1726-08-03"/>
+        </sentence>
+      </sentences>
+      <case>divergence entre la propriétaire et les locataires au sujet de réparations faites et à faire dans la maison en question</case>
+      <objects>
+        <object type="house">Maison(s)</object>
+      </objects>
+    </procedure>
+    <participants>
+      <experts>
+        <expert ref="#xpr0183" context="primary" appointment="appointed">
+          <title>juré expert à Paris</title>
+        </expert>
+      </experts>
+      <clerks>
+        <clerk ref="#clrk0033">
+          <persName>
+            <surname>Callou</surname>
+            <forename>Antoine Charles</forename>
+          </persName>
+        </clerk>
+      </clerks>
+      <parties>
+        <party role="petitioner" presence="true" intervention="true">
+          <person>
+            <persName>
+              <surname>Foyer</surname>
+              <forename>René</forename>
+            </persName>
+            <occupation>maître plombier à Paris</occupation>
+          </person>
+          <person>
+            <persName>
+              <surname>Damel</surname>
+              <forename>Margueritte</forename>
+            </persName>
+            <occupation>sa femme</occupation>
+          </person>
+          <status>tenant</status>
+          <expert ref="#xpr0183"/>
+        </party>
+        <party role="opponent" presence="true" intervention="true">
+          <person>
+            <persName>
+              <surname>Proust</surname>
+              <forename>Jacques François</forename>
+            </persName>
+            <occupation>bourgeois de Paris</occupation>
+          </person>
+          <person>
+            <persName>
+              <surname>Mauger</surname>
+              <forename>Jeanne Madeleine</forename>
+            </persName>
+            <occupation>sa femme séparée de lui quant aux biens</occupation>
+          </person>
+          <status>owner</status>
+          <expert ref="#xpr0183"/>
+        </party>
+      </parties>
+      <craftmen>
+        <craftman>
+          <persName>
+            <surname/>
+            <forename/>
+          </persName>
+          <occupation/>
+        </craftman>
+      </craftmen>
+    </participants>
+    <conclusions>
+      <opinion ref="#xpr0183">l'état des réparations, réalisées ou non, est précisé à partir de chacun des articles du mémoire (certaines ont été réalisées, d'autres non).</opinion>
+      <arrangement/>
+      <agreement type="conclusion">Conclusion</agreement>
+      <estimate l="" s="" d=""/>
+      <fees detail="false">
+        <total l="" s="" d=""/>
+      </fees>
+      <expenses mentioned="false"/>
+    </conclusions>
+    <keywords group="estates"/>
+    <keywords group="procedure"/>
+    <keywords group="contract"/>
+    <keywords group="encumbrance"/>
+    <keywords group="law"/>
+    <keywords group="measurement"/>
+    <keywords group="repairs"/>
+    <keywords group="guarantees"/>
+    <keywords group="responsability"/>
+    <keywords group="ownership"/>
+    <keywords group="value"/>
+    <keywords group="neighbourhood"/>
+    <keywords group="disorder"/>
+    <keywords group="transformation"/>
+    <analysis>« [f. 1r°] partyes ouyes vous avez monsieur apris que lesd. sr et delle Proust ont soutenus et mis en fait que toutes les réparations dont ils sont tenus sont faittes, soutenu au contraire par led. sr Foyer, ordonné avant faire droit que les lieux seroient [f. 1v°] veux et visittez par experts, lesquels rapporteraient si les grosses réparations dont lesd. sr et delle Proust sont tenus ont esté faittes, laquelle visitte seroit faitte par nous Loir expert qu'avez nommé par lesd. sr et delle Proust après qu'elle s'en sont rapportées à vous, dans [illisible] led. sr Foyer seroit tenu de nommer un expert de sa part sinon lad. visitte seroit faitte par nous Loir seul qu'avez nommé par toutes les parties dépens réservez. […] après lesquelles lectures ainsy faittes en présence desd. sr Foyer et sa femme et de la delle Proust, lad. delle Proust nous a mis ès mains la coppie d'une signification à elle fait le dix huit may dernier à la requête du sr Foyer par exploit de Claude Royer huissier à verge, en teste de laquelle est un estat des réparations que led. sr Foyer prétendoit estre à faire en lad. maison, de laquelle a satisfait à celles nécessaires mentionnez en l'estat en teste de lad. somation et que si il y en a eu quelques unes qu'elle n'aye pas fait faire, elle ne les a pas cru nécessaire et a signé Jean Magdelaine Maugé, femme de Proust.
+                Et par led. sr Foyer a esté dit qu'à la vérité, il a esté fait la plus grande partie des réparations mentionnez en son estat mais que le tout n'a pas esté fait pour quoy il s'en rapporte à votre prudence pour connaistre si elles sont nécessaires ou non et au surplus nous a remises [f. 2r°] un mémoire non signé contenu six articles de réparations qu'il prétend encore estre nécessaires à faire, le premier desquels concernant la vouste [?] de la cour, il n'a pu comprendre dans son estat pour n'avoir point lors la clef de lad. cour, attendu qu'il la loue à un marchand de vin et a signé. Foyer. ».</analysis>
+    <noteworthy/>
+  </description>
+</expertise>

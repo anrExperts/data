@@ -1,0 +1,209 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j580d012">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-10-01T12:00:00">2020-10-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2016-10-26T12:00:00">2016-10-26T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>RB</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1726</unitdate>
+    <idno type="unitid">Z1J580</idno>
+        <idno type="item">012</idno>
+        <facsimile from="0243" to="0256"/>
+        <physDesc>
+          <extent sketch="false">14</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1726-04-30" type="paris"/>
+          <date when="1726-05-22" type="paris"/>
+          <date when="1726-05-29" type="paris"/>
+          <date when="1726-05-31" type="paris"/>
+          <date when="1726-06-01" type="paris"/>
+          <date when="1726-06-28" type="paris"/>
+        </sessions>
+        <places>
+          <place type="paris">
+            <address>
+              <street>Rue de Braque [Voie actuelle. Autre(s) nom(s) : rue des Boucheries-du-Temple, rue des Bouchers, rue des Boucheries-de-Braque, rue de la Chapelle-de-Braque]</street>
+              <buildingNumber/>
+            </address>
+            <complement/>
+            <parish/>
+            <owner>construction commencée pour Le Lievre de Bretagne</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="acceptation">Recevoir et évaluer le travail réalisé</category>
+          <designation rubric="true">Visite de matériaux et taille de pierre</designation>
+        </categories>
+        <procedure>
+          <framework type="b2a">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Requêtes du Palais</orgName>
+              <date when="1726-03-08"/>
+            </sentence>
+          </sentences>
+          <case>Exécution d'une sentence du lieutenant civil</case>
+          <objects>
+            <object type="other">Taille de pierre</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0232" context="primary" appointment="appointed">
+              <title>architecte expert des bâtiments</title>
+            </expert>
+            <expert ref="#xpr0111" context="primary" appointment="appointed">
+              <title>architecte expert des bâtiments</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0029">
+              <persName>
+                <surname>Quirot</surname>
+                <forename>Jacques</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="true" intervention="false">
+              <person>
+                <persName>
+                  <surname>Compagnon</surname>
+                  <forename>Pierre</forename>
+                </persName>
+                <occupation>maître maçon à Paris</occupation>
+              </person>
+              <status>builder</status>
+              <expert ref="#xpr0111"/>
+            </party>
+            <party role="opponent" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Lelièvre</surname>
+                  <forename>Armand Joseph</forename>
+                </persName>
+                <occupation>chevalier marquis de La Grange</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Bretagne</surname>
+                  <forename>Armand François de</forename>
+                </persName>
+                <occupation/>
+              </person>
+              <person>
+                <persName>
+                  <surname>Bretagne</surname>
+                  <forename>messire</forename>
+                </persName>
+                <occupation/>
+              </person>
+              <person>
+                <persName>
+                  <surname>Courtenay</surname>
+                  <forename>Roger prince de</forename>
+                </persName>
+                <occupation>tous propriétaires du terrain sur lequel sont entreposés les matériaux de Compagnon, Pierre</occupation>
+              </person>
+              <status>owner</status>
+              <expert ref=""/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="">Les matériaux sont estimés 1967 livres 17 sols</opinion>
+          <arrangement/>
+          <agreement type="agreement">Accord</agreement>
+          <estimate l="1967" s="17" d=""/>
+          <fees detail="true">
+            <fee type="papers" l="6" s="" d=""/>
+            <fee type="expert" ref="#xpr0232" l="36" s="" d=""/>
+            <fee type="expert" ref="#xpr0111" l="36" s="" d=""/>
+            <fee type="clerk" l="36" s="" d=""/>
+            <fee type="rolls" l="13" s="15" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="127" s="15" d=""/>
+          </fees>
+          <expenses mentioned=""/>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis>Motivations
+                La partie opposante avait passé marché avec Pierre Compagnon pour la construction d'une maison sur un terrain leur appartenant rue de Braque. Le devis initial a été contesté, les travaux suspendus. Un second marché, conclu pour l'achèvement des travaux, stipule que les matériaux laissés sur le chantier par Compagnon seront vus et estimés par des experts avant la reprise des travaux.</analysis>
+        <noteworthy/>
+      </description>
+    </expertise>

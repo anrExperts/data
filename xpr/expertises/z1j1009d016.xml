@@ -1,0 +1,262 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1009d016">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-08-01T12:00:00">2020-08-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2017-10-01T12:00:00">2017-10-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1009</idno>
+        <idno type="item">016</idno>
+        <facsimile from="0132" to="0140"/>
+        <physDesc>
+          <extent sketch="false">6</extent>
+          <appendices>
+            <appendice>
+              <type type="other">sommations</type>
+              <extent>1</extent>
+              <desc/>
+              <note/>
+            </appendice>
+          </appendices>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-11-09" type="paris"/>
+          <date when="1777-10-17" type="paris"/>
+          <date when="1777-10-24" type="paris"/>
+          <date when="1778-02-09" type="paris"/>
+          <date when="1778-02-11" type="paris"/>
+        </sessions>
+        <places>
+          <place type="paris">
+            <address>
+              <street>Rue de Bussy</street>
+              <buildingNumber/>
+            </address>
+            <complement/>
+            <parish/>
+            <owner/>
+          </place>
+        </places>
+        <categories>
+          <category type="settlement">Départager</category>
+          <designation rubric="true">Transport rue de Bussy à l'effet d'objets contentieux entre le sieur Dubois et les seigneurs Landelle ; MM. Taboureur et Blève, experts.</designation>
+        </categories>
+        <procedure>
+          <framework type="c">Cas problématique</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Châtelet, lieutenant civil, sommation uniquement / réquisition verballe des parties</orgName>
+              <date when=""/>
+            </sentence>
+          </sentences>
+          <case>infiltrations de matières / recherche des causes</case>
+          <objects>
+            <object type="cesspool">Fosse(s) d'aisance</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0250" context="" appointment="">
+              <title/>
+            </expert>
+            <expert ref="#xpr0026" context="" appointment="">
+              <title/>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0064">
+              <persName>
+                <surname>Gobert</surname>
+                <forename>Jean Charles Simon</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="" intervention="">
+              <person>
+                <persName>
+                  <surname>Dubois</surname>
+                  <forename>Jean Baptiste</forename>
+                </persName>
+                <occupation>marchand mercier à Paris, propriétaire de la maison dont il est question</occupation>
+              </person>
+              <status>owner</status>
+              <expert ref=""/>
+              <prosecutor>
+                <persName>
+                  <surname>La Pisse</surname>
+                  <forename>Jean</forename>
+                </persName>
+              </prosecutor>
+            </party>
+            <party role="opponent" presence="true" intervention="true">
+              <person>
+                <persName>
+                  <surname>Landelle</surname>
+                  <forename>Pierre Nicolas Eustache</forename>
+                </persName>
+                <occupation>conseiller du roi commissaire enquêteur et examinateur au Chatelet de Paris</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Landelle</surname>
+                  <forename>Charles Nicolas</forename>
+                </persName>
+                <occupation>employé aux postes</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Landelle</surname>
+                  <forename>Nicolas Antoine</forename>
+                </persName>
+                <occupation>marchand papetier</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Deschamps</surname>
+                  <forename>Simon Pierre</forename>
+                </persName>
+                <occupation>bourgeois de Paris</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Landelle</surname>
+                  <forename>Marie Angelique</forename>
+                </persName>
+                <occupation>son épouse</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>De Vanvre</surname>
+                  <forename>Louis</forename>
+                </persName>
+                <occupation>inspecteur des polices</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Landelle</surname>
+                  <forename>Marie Angélique</forename>
+                </persName>
+                <occupation>son épouse</occupation>
+              </person>
+              <status>joint-owner</status>
+              <expert ref=""/>
+              <prosecutor>
+                <persName>
+                  <surname>Popot</surname>
+                  <forename/>
+                </persName>
+              </prosecutor>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname>Blondelle</surname>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="">« D’après ce que dessus notre avis est qu’il nous a été impossible de reconnaître de la fosse dudit sieur Dubois … était en bon état et s’il n’y avoit aucun ecoulement de cette fosse dans le puits parce qu’en la vacation du vingt deux août mil sept cent soixante seize nous avons declaré que dans le cas où la fouille qu’il convenoit faire dans le terre plein au bout de la fosse du sieur Dubois jusqu’à la rencontre du mur mitoyen avec la maison voisine à gauche occupée par la dame Val… ne seroit pas suffisante pour connoitre le principe des filtrations ; il seroit necessaire de l’étendre au dessus de la fosse du sieur Dubois et par consequent d’en faire la vuidange, et de mettre en cause le proprietaire voisin… Sur le second chef qui est de constater si ce puits est … et si c’est de la fosse de la maison dudit sieur Landelle … Nous experts observons que lors de notre present transport sur les lieux nous avons constaté que Nous avons constaté que l’eau de ce puits ( ?) odeur de chargé d’autant le ( ?) de matières malgré celle qui étoit alors dans ladite fosse, depuis cette époque et dans une autre saison, de l’année leur est redevenu infectée et l’est encorre actuellement.
+Nous an’avons point fait d’opération qui nous aient fait connoitre si la fosse des sieur Landelle et consorts a contribué à infecter ce puits, sont aéloignemeent et l’étendue du terre-plein qui est entre cette fosse et ce puits doit faire penser le contraire, il paroit que dans les saisons où le niveau des eaux et plus élevé que celuy ordinaire de la nappe d’eau, les eaux s’introduiroient dans les égouts, puisars et fosses d’aisances et que la matière que s’y trouve étant delavé par ces eaux se confondent et s  a répandent avec la nappe d’eau, ce qui peut ( ?) le puits ( ?) que la nappe d’eau reste au dessus du si des amatièrees qui se trouvent dans les fosses et les puits cessant d’être infectés quand le niveau de la nappe d’eau descend au dessous de ces matières.
+Sur le troisième chef suivant lequel il est dit que nous constaterons d’où provient ou peut provenir l’infection alleguée par le sieur Landelle et consorts
+Nous experts observons qu’il ne se remarque dans ce puits des filtrations que du coté de la dosse de la maisons dudit sieur Bullet que ces filtrations de ( ?) au mur dudit puits… etc.</opinion>
+          <arrangement/>
+          <agreement type="agreement">Accord</agreement>
+          <estimate l="" s="" d=""/>
+          <fees detail="true">
+            <fee type="papers" l="10" s="14" d=""/>
+            <fee type="expert" ref="#xpr0250" l="30" s="" d=""/>
+            <fee type="expert" ref="#xpr0026" l="30" s="" d=""/>
+            <fee type="clerk" l="30" s="" d=""/>
+            <fee type="rolls" l="31" s="" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="18" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="149" s="14" d=""/>
+          </fees>
+          <expenses mentioned=""/>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder">
+          <term value="m2">Infection (nuisances olfactives)</term>
+          <term value="m3">Infiltration / fuite (dégâts des eaux ou autres)</term>
+          <term value="m13">Fissuration</term>
+        </keywords>
+        <keywords group="transformation"/>
+        <analysis/>
+        <noteworthy>il n'y a ni ordannce ni requête, mais seulement les sommations.</noteworthy>
+      </description>
+    </expertise>

@@ -1,0 +1,206 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1005d025">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-07-01T12:00:00">2020-07-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2017-10-01T12:00:00">2017-10-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1005</idno>
+        <idno type="item">025</idno>
+        <facsimile from="0232" to="0239"/>
+        <physDesc>
+          <extent sketch="false">4</extent>
+          <appendices>
+            <appendice>
+              <type type="proxyPA">Pouvoir/procuration (acte sous seing privé)</type>
+              <extent>1</extent>
+              <desc/>
+              <note>pouvoir de Duboisserf à Taboureur</note>
+            </appendice>
+            <appendice>
+              <type type="proxyPA">Pouvoir/procuration (acte sous seing privé)</type>
+              <extent>1</extent>
+              <desc/>
+              <note>pourvoir de De Bas à Taboureur</note>
+            </appendice>
+          </appendices>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-07-12" type="paris"/>
+        </sessions>
+        <places>
+          <place type="paris">
+            <address>
+              <street>Rue Traversière Saint-Honoré</street>
+              <buildingNumber/>
+            </address>
+            <complement/>
+            <parish/>
+            <owner/>
+          </place>
+        </places>
+        <categories>
+          <category type="settlement">Départager</category>
+          <designation rubric="true">Visitte de mur mitoyen entre M. le Comte De Bar et le sieur Dupoix, séparant leurs maison, rue Traversière St Honoré ; M. Taboureur, expert</designation>
+        </categories>
+        <procedure>
+          <framework type="a">Commun accord des parties</framework>
+          <origination type="parties">Les parties</origination>
+          <sentences>
+            <sentence>
+              <orgName/>
+              <date when=""/>
+            </sentence>
+          </sentences>
+          <case>Juger la construction du mur mitoyen séparant les corps de logis du fond des cours des maisons de Dupoix et du Comte de Bar, décider à quelle hauteur il sera démoli et reconstruit, selon quelle épaisseur, et selon quelles contributions respectives des deux propriétaires</case>
+          <objects>
+            <object type="wall">Mur(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0250" context="primary" appointment="appointed">
+              <title>architecte juré expert bourgeois en titre d’office</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0067">
+              <persName>
+                <surname>Goüel</surname>
+                <forename>Gilles Louis</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="" intervention="">
+              <person>
+                <persName>
+                  <surname>Du Boisserf</surname>
+                  <forename/>
+                </persName>
+                <occupation>entrepreneur de bâtiments à Paris, en son nom et comme procureur de Dupoix, officier du roi, propriétaire d’une maison rue Traversière joignant celle du Comte de Bar</occupation>
+              </person>
+              <status>owner</status>
+              <expert ref="#xpr0250"/>
+            </party>
+            <party role="opponent" presence="" intervention="">
+              <person>
+                <persName>
+                  <surname>Comte de Bar</surname>
+                  <forename/>
+                </persName>
+                <occupation/>
+              </person>
+              <status>owner</status>
+              <expert ref="#xpr0250"/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname>Duboisterf</surname>
+                <forename/>
+              </persName>
+              <occupation>entrepreneur de bâtiments à Paris</occupation>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0250">« De toutes les considerations cy dessus rapportées et eu égard aux parties de mur boulversées, bouclées et dont le sommet est pouri et dégradé, eu égard aussi à la construction en platras des dossiers de cheminée, au mauvais état et à la faible épaisseur de celui qui est particulier à la maison du sieur comte de Bar notre avis est que ledit mur ne peut subsister en l’état qu’il est quand même il n’y seroit fait aucun changement ni élévation de la part du sieur Dupoix et qu’il est nécessaire d’en refaire le sommet de la manière qui va être indiquée La première portion de ce mur en la longueur de l’aisle du sieur Comte de Bar au fond de sa maison est bon et suffisant pour lui 
+A l’égard de la partie qui s’éleve de sept pieds de haut au dessus du faytage du comble de ladite aisle, elle appartient seule au sieur Dupoix, le sieur Comte de Bar n’y ayant contre cette partie d’adossement qu’une simple costiere de cheminée dans le fond ; cette partie est aussi suffisante pour porter l’élévation que ledit sieur Dupoix doit ajouter à la hauteur ancienne et qui doit être de six pieds six pouces au dessus de l’ancien héberge à cet endroit, il sera seulement tenu de décreter d’environ un pied le sommet de l’ancienne partie de mur ce qui avec les six pieds six pouces cy dessus feront une hauteur de sept pieds six pouces à construire à neuf aux frais seul du sieur Dupoix, cette partie de mur n’étant aucunement nécessaire au sieur comte de Bar, au contraire ledit sieur Dupoix sera encore tenu de payer audit sieur comte de Bar les charges de l’augementation de hauteur de six pieds six pouces qu’il suréleve en ladite longueur de seize pieds et de faire sur le comble dudit sieur comte de Bar le rétablissement des parties qui se trouveront endomagées et redoublantes de la surélévation de ladite partie de mur A l’égard des six pieds restans et des vingt quatre pieds ensuite au droit du corps de logis du fond de la cour du sieur Dupoix il est nécessaire de démolir et reconstruire à neuf cette partie de mur… 
+Nous présumons que cette surélévation peut s’exécuter, le faytage du nouveau comble dudit sieur Dupoix ne devant être que de six pieds et demi plus haut que celui de son ancien comble en raison de la reconstruction de la seconde partie de mur chacune des parties fera de son côté et au droit de soit les étayements et racordemens nécessaires et tel qu’il le jugera à propos, observant que si les parties en conviennent entr’elles, cette reconstruction de mur et la surélévation de six pieds et demi faisant au total quatorze pieds six pouces de hauteur peut être construitte en platras et platre, pour charger d’autant moins le mur au dessous 
+Notre avis est aussi que ledit sieur Dupoix doit être tenu de retirer entierement sur lui la saillie de ses tuyaux de cheminée qui se trouveroient être encastrés de quelque choses dans ledit mur mitoyen, et quant aux parties qui se trouveroient au dessous de la hauteur cy dessus fixée à reconstruire il sera tenu de retablir la place où ses cheminée se trouveroient encastrées, d’en refaire le parement en moilon dans toute l’étendue dudit encastrement et à ses frais seuls. 
+Telle est la visitte par nous faitte dudit mur et notre avis aux termes des pouvoirs qui nous ont été donnés par les parties. Fait et arresté par nous architecte expert soussigné les jour mois et an susdits. »</opinion>
+          <arrangement/>
+          <agreement type="conclusion">Conclusion</agreement>
+          <estimate l="" s="" d=""/>
+          <fees detail="true">
+            <fee type="papers" l="5" s="" d=""/>
+            <fee type="expert" ref="#xpr0250" l="6" s="" d=""/>
+            <fee type="clerk" l="6" s="" d=""/>
+            <fee type="rolls" l="10" s="" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="27" s="" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="expert" l="4" s="" d=""/>
+            <expense type="clerk" l="7" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis/>
+        <noteworthy>réquisition verbale de Du Boisserf, entrepreneur de l’un des propriétaires</noteworthy>
+      </description>
+    </expertise>

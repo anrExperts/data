@@ -1,0 +1,200 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j999d046">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2017-10-01T12:00:00">2017-10-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2016-07-29T12:00:00">2016-07-29T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>LRT</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J999</idno>
+        <idno type="item">046</idno>
+        <facsimile from="0445" to="0451"/>
+        <physDesc>
+          <extent sketch="false">5</extent>
+          <appendices>
+            <appendice>
+              <type type="petition">Requête</type>
+              <extent>1</extent>
+              <desc/>
+              <note/>
+            </appendice>
+          </appendices>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-02-08" type="province"/>
+          <date when="1776-02-15" type="paris"/>
+          <date when="1776-03-02" type="paris"/>
+        </sessions>
+        <places>
+          <place type="province">
+            <address/>
+            <complement>moulin en la plaine et paroisse de Saclay</complement>
+            <city>Saclay</city>
+            <district/>
+            <owner>succession Archange</owner>
+          </place>
+          <place type="office">
+            <address/>
+          </place>
+        </places>
+        <categories>
+          <category type="assessment">Décrire et évaluer les travaux à venir</category>
+          <designation rubric="true">Visite de réparations à faire en un moulin à Saclay, à la requête de ladite veuve  Archange</designation>
+        </categories>
+        <procedure>
+          <framework type="b2b">L’institution est saisie dans le cadre d’une procédure (l’institution nomme un ou deux experts)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Châtelet, lieutenant civil (ordonnance)</orgName>
+              <date when="1776-01-26"/>
+            </sentence>
+          </sentences>
+          <case>Succession Archange / réparations à faire au moulin dépendant de la succession</case>
+          <objects>
+            <object type="other">moulin</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0026" context="primary" appointment="court-appointed">
+              <title>architecte expert à Paris</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0059">
+              <persName>
+                <surname>Forestier</surname>
+                <forename>Cézaire François</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>veuve Archange</surname>
+                  <forename>Jean Louis</forename>
+                </persName>
+                <occupation>la veuve et les héritiers et représentants de Archange, Jean Louis, de son vivant arpenteur royal demeurant à Orsay</occupation>
+              </person>
+              <status>owner</status>
+              <expert ref="#xpr0026"/>
+              <prosecutor>
+                <persName>
+                  <surname>Cottreau</surname>
+                  <forename>Jean Baptiste le jeune</forename>
+                </persName>
+              </prosecutor>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0026">[description des réparations à faire] 
+"Teles sont les reparations les plus necessaires à faire aux batiments. Vous referant M. d’ordonner sur le tout suivant votre justice et prudence ordinaires 
+Fait par nous architecte expert lesdits jour mois et an que dessus. »</opinion>
+          <arrangement/>
+          <agreement type="conclusion">Conclusion</agreement>
+          <estimate l="" s="" d=""/>
+          <fees detail="true">
+            <fee type="papers" l="18" s="" d=""/>
+            <fee type="expert" ref="#xpr0026" l="48" s="" d=""/>
+            <fee type="clerk" l="48" s="" d=""/>
+            <fee type="rolls" l="22" s="" d=""/>
+            <fee type="prosecutors" l="24" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="other" l="12" s="" d="">plans ?</fee>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="172" s="" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="39" s="" d=""/>
+            <expense type="expert" l="10" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder">
+          <term value="m8">Dépérissement</term>
+        </keywords>
+        <keywords group="transformation"/>
+        <analysis/>
+        <noteworthy>Lecture des actes, dont un contrat passé devant maître Valin et son confrère, notaires à Paris le 4 mars 1773. Visite pour faire constater les réparations qui sont à faire, étant urgents et nécessaires (f. 1v°  "occasionnées par la gellée et qui pouroient devenir au dégel plus considérable")
+Afin d’éviter un long séjour sur les lieux ou des nouveaux transports […] nous avons pris les notes des réparations de tous genres et nous procéderons à la rédaction du présent rapport en notre bureau public des experts rue de la Verrerie. Description du moulin, liste des réparations à faire.</noteworthy>
+      </description>
+    </expertise>

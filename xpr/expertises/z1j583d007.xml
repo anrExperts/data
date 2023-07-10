@@ -1,0 +1,181 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j583d007">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-11-01T12:00:00">2020-11-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2016-10-26T12:00:00">2016-10-26T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>RB</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1726</unitdate>
+    <idno type="unitid">Z1J583</idno>
+        <idno type="item">007</idno>
+        <facsimile from="0071" to="0081"/>
+        <physDesc>
+          <extent sketch="false">10</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1726-09-04" type="paris"/>
+          <date when="1726-09-06" type="paris"/>
+        </sessions>
+        <places>
+          <place type="paris">
+            <address>
+              <street>Rue Gît-le-Coeur</street>
+              <buildingNumber/>
+            </address>
+            <complement/>
+            <parish/>
+            <owner>Remy</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="acceptation">Recevoir et évaluer le travail réalisé</category>
+          <designation rubric="true">Visite d'ouvrages de sculpture</designation>
+        </categories>
+        <procedure>
+          <framework type="b2a">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Lieutenant civil du Châtelet</orgName>
+              <date when="1726-09-02"/>
+            </sentence>
+          </sentences>
+          <case>contentieux autour du prix de travaux de sculpture</case>
+          <objects>
+            <object type="other">ouvrages de sculpture</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0232" context="primary" appointment="appointed">
+              <title>architecte juré du roi expert bourgeois de Paris</title>
+            </expert>
+            <expert ref="#xpr0100" context="primary" appointment="appointed">
+              <title>juré du roi expert entrepreneur de bâtiments à Paris</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0029">
+              <persName>
+                <surname>Quirot</surname>
+                <forename>Jacques</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="true" intervention="false">
+              <person>
+                <persName>
+                  <surname>Bernard</surname>
+                  <forename>Charles</forename>
+                </persName>
+                <occupation>maître sculpteur à Paris, auteur des travaux</occupation>
+              </person>
+              <status>builder</status>
+              <expert ref="#xpr0232"/>
+            </party>
+            <party role="opponent" presence="true" intervention="false">
+              <person>
+                <persName>
+                  <surname>Remy</surname>
+                  <forename>Alexandre Jean</forename>
+                </persName>
+                <occupation>commanditaire des travaux</occupation>
+              </person>
+              <status>limited-partner</status>
+              <expert ref="#xpr0100"/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname>Bernard</surname>
+                <forename>Charles</forename>
+              </persName>
+              <occupation>maître sculpteur à Paris</occupation>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0232">Quirot estime les travaux de sculpture à 760 livres 11 sols 3 deniers.</opinion>
+          <opinion ref="#xpr0100">Dubois estime les travaux de sculpture à 465 livres,</opinion>
+          <arrangement/>
+          <agreement type="disagreement">Désaccord</agreement>
+          <estimate l="" s="" d=""/>
+          <fees detail="true">
+            <fee type="papers" l="4" s="" d=""/>
+            <fee type="expert" ref="#xpr0232" l="12" s="" d=""/>
+            <fee type="expert" ref="#xpr0100" l="12" s="" d=""/>
+            <fee type="clerk" l="12" s="" d=""/>
+            <fee type="rolls" l="7" s="10" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="47" s="10" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="13" s="15" d=""/>
+            <expense type="expert" l="" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis>Motivations
+                « Nous avons fait lecture d'une sentence par vous Monsieur contradictoirement rendue en la chambre civille du Châtelet de Paris, le vingt un aoust de la presente année mil sept cent vingt six, entre led. sieur Bernard, demandeur en condamnation contre le cy apres nommé de la somme de huit cent soixante et dix livres dix sols pour ouvrages de sculpture faits en une maison rüe Gist le Coeur d'œe part, cotnre Mr Alexandre Jean Remy coner du Roy notaire au chlet deffendr d'autre part ; Par laquelle sentence partyes ouyes vous avez Monsieur condamné led Sr Remy a payer les ouvrages demandez par led. sr Bernard suivant l'estimation qui en sera faitte par experts dont les partyes conviendront sinon nommez d'office et avez donné lettres aux parties de ce quelles ont nommé pour leurs experts, sçavoir led. Sr Bernard moy Quirot, et led. sieur Remy moy Dubois ». Le mémoire des travaux de sculpture remis par Bernard s'élève à 870 livres 10 sols.</analysis>
+        <noteworthy/>
+      </description>
+    </expertise>

@@ -1,0 +1,198 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j583d019">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-11-01T12:00:00">2020-11-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2016-10-26T12:00:00">2016-10-26T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>RB</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1726</unitdate>
+    <idno type="unitid">Z1J583</idno>
+        <idno type="item">019</idno>
+        <facsimile from="0290" to="0301"/>
+        <physDesc>
+          <extent sketch="false">8</extent>
+          <appendices>
+            <appendice>
+              <type type="other">Lettre</type>
+              <extent>1</extent>
+              <desc>Relance de Folleville, Jean, datée du 28 avril 1728, pour obtenir le procès-verbal de l'expert</desc>
+              <note/>
+            </appendice>
+            <appendice>
+              <type type="other">Déclaration</type>
+              <extent>1</extent>
+              <desc>Déclaration de Danjan, Pierre Paul, le 18 mai 1728, annonçant la remise de son procès-verbal.</desc>
+              <note/>
+            </appendice>
+          </appendices>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1726-09-12" type="suburbs"/>
+        </sessions>
+        <places>
+          <place type="suburbs">
+            <address/>
+            <complement>Grande-Rue</complement>
+            <city>Bagnolet</city>
+            <district>par le nouveau cul de sac</district>
+            <owner>maison saisie sur Chouin</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="assessment">Décrire et évaluer les travaux à venir</category>
+          <designation rubric="true">Visite et estimation de réparations</designation>
+        </categories>
+        <procedure>
+          <framework type="b2a">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Chambre des requêtes</orgName>
+              <date when="1726-09-07"/>
+            </sentence>
+          </sentences>
+          <case>réparations dans le cadre d'un bail judiciaire</case>
+          <objects>
+            <object type="house">Maison(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0097" context="" appointment="">
+              <title>architecte</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#xpr0066">
+              <persName>
+                <surname>Danjan</surname>
+                <forename>Pierre Paul</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Folleville</surname>
+                  <forename>Jean de</forename>
+                </persName>
+                <occupation>fermier judiciaire de la maison</occupation>
+              </person>
+              <status>contractor</status>
+              <expert ref="#xpr0097"/>
+            </party>
+            <party role="opponent" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Mesnil</surname>
+                  <forename>Etienne</forename>
+                </persName>
+                <occupation>poursuivant la vente à la criée de la maison</occupation>
+              </person>
+              <status>creditor</status>
+              <expert ref="#xpr0097"/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0097">« Toutes lesquelles reparations cy dessus par nous rapportées sont tres necessres a faire ausd. Lieux por les entretenir et evitter plus grande ruine et deperissements d'iceux […] nous avons prisé et estimé toutes lesd. réparations en question à 1830 livres ».</opinion>
+          <arrangement/>
+          <agreement type="conclusion">Conclusion</agreement>
+          <estimate l="1830" s="" d=""/>
+          <fees detail="true">
+            <fee type="papers" l="" s="" d=""/>
+            <fee type="expert" ref="#xpr0097" l="30" s="" d=""/>
+            <fee type="clerk" l="" s="" d=""/>
+            <fee type="rolls" l="" s="" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="" s="" d=""/>
+          </fees>
+          <expenses mentioned=""/>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis>Motivations
+                « Nous avons fait lecture d'une sentence rendue de vous Nosseigneurs ausd. Reqtes du pallais à Paris le douze aoust dernier entre led. Jean de Folleville adjudicataire du bail d'une maison scize a Bagnollet demandeur aux fins de la reqte du 9e du même mois d'aoust à ce qu'il plust à la cour ordonner que par experts convenus ou nommez d'office, il fut partyes presntes ou duement appellées dressé proces verbal de l'estat, prisée et estimation des reparations necessres a lad. maison, pour sur icelles led. proces verbal rapporté et communiqué estre fait droit, declaré la sentence commune ave les cy apres nommez au depens, d'une part. Contre Messre Estienne Mesnil prestre docteur de Sorbonne poursuivant le criées de lad. maison de Bagnollet, Pierre Chouin, bourgeois de Paris partie saisie, et Mr Bernard Lejeune procureur plus ancien des opposans, deffendrs et desbittants d'autre part. Par laquelle sentence la cour partyes comparantes ouyes en la chambre a ordonné que par experts dont les partyes coviendroient par devant Me Pierre Nicolas Robert de St Vincent conersinon par luy pris et nommez d'office, proces verbal seroit dressé de l'estat de la maison dont est question qui contiendroit un estat prisée et estimation des reparations qui sont a faire a lad. maison pour le proces verbal fait et rapporté estre par la cour fait droit sur les reparations, donné deffaut contre les desffaillants et pour le proffit declaré la sence commune avec eux laquelle seroit executée nonobstant oppositions ou appellations quelqconques ».</analysis>
+        <noteworthy/>
+      </description>
+    </expertise>

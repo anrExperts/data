@@ -1,0 +1,209 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1006d066">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-09-01T12:00:00">2020-09-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2017-04-01T12:00:00">2017-04-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1006</idno>
+        <idno type="item">066</idno>
+        <facsimile from="0864" to="0869"/>
+        <physDesc>
+          <extent sketch="false">6</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-08-28" type="suburbs"/>
+          <date when="1776-12-04" type="suburbs"/>
+        </sessions>
+        <places>
+          <place type="suburbs">
+            <address/>
+            <complement>une maison située rue Saint-Lazare au Porcherons, n°13</complement>
+            <city>Paris</city>
+            <district/>
+            <owner>Beauvoisin</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="acceptation">Recevoir et évaluer le travail réalisé</category>
+          <designation rubric="true">Visite et estimation d’ouvrage de serrurerie</designation>
+        </categories>
+        <procedure>
+          <framework type="b2a">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>bailli de l’abbaye de Montmartre (sentence contradictoire du 30 juin 1774)</orgName>
+              <date when="1774-06-30"/>
+            </sentence>
+          </sentences>
+          <case>travaux de serrurerie réalisés par Dauger, dans la maison de Beauvoisin depuis le 22 janvier jusqu’au 4 juin 1772, montant à la somme de 806 livres (mémoire)</case>
+          <objects>
+            <object type="other">ouvrages de serrurerie</object>
+            <object type="house">Maison(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0082" context="primary" appointment="appointed">
+              <title>architecte juré expert des bâtiments à Paris</title>
+            </expert>
+            <expert ref="#xpr0102" context="primary" appointment="appointed">
+              <title/>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0061">
+              <persName>
+                <surname>Lecoeur</surname>
+                <forename>Jean Clair</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="true" intervention="true">
+              <person>
+                <persName>
+                  <surname>Dauger</surname>
+                  <forename/>
+                </persName>
+                <occupation>maître serrurier</occupation>
+              </person>
+              <status>builder</status>
+              <expert ref="#xpr0102"/>
+              <prosecutor>
+                <persName>
+                  <surname>Acart</surname>
+                  <forename/>
+                </persName>
+              </prosecutor>
+            </party>
+            <party role="opponent" presence="true" intervention="true">
+              <person>
+                <persName>
+                  <surname>Beauvoisin</surname>
+                  <forename/>
+                </persName>
+                <occupation>demoiselle</occupation>
+              </person>
+              <status>limited-partner</status>
+              <expert ref="#xpr0082"/>
+              <prosecutor>
+                <persName>
+                  <surname>Brunet</surname>
+                  <forename>Pierre Georges</forename>
+                </persName>
+              </prosecutor>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="">L’affaire traîne depuis trois ans en raison de la « disparition » du mémoire des ouvrages que conserverait l’expert de l’opposante, Prunier de Montlouis ; l’expert de l’opposante prétend ne pas avoir souvenir dudit mémoire, le requérant a dû pour cette raison faire une nouvelle expédition dudit mémoire signifié ; la visite est réalisée à partir de la copie du mémoire, mais le procureur de l’opposante, Brunet, proteste et les experts, en raison de cette opposition, sont obligés de renvoyer l’affaire devant le bailli de Montmartre.</opinion>
+          <arrangement/>
+          <agreement type="unfinished">Affaire inachevée</agreement>
+          <estimate l="" s="" d=""/>
+          <fees detail="true">
+            <fee type="papers" l="8" s="12" d=""/>
+            <fee type="expert" ref="#xpr0082" l="15" s="" d=""/>
+            <fee type="expert" ref="#xpr0102" l="15" s="" d=""/>
+            <fee type="clerk" l="15" s="" d=""/>
+            <fee type="rolls" l="32" s="" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="85" s="12" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="18" s="" d=""/>
+            <expense type="expert" l="10" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis/>
+        <noteworthy/>
+      </description>
+      <comment>Document très intéressant en raison du problème de pièce (mémoire signifié manquant).
+                Première vacation en présence des parties « mais que d’après différentes [f. 2r°] contestations verballes faites par lad. delle Beauvoisin et les différentes observations faites par led. sr Pruneau de Montlouis après avoir passé un tems considérable en conférences secrètes tant avec lad. delle Beauvoisin qu’avec son procureur, led. sr Pruneau de Montlouis refusé qu’il fut rien écrit ni rédigé sur le procès verbal commencé le vingt un février précédant, et refusé même de signer la clôture de la vacation dud. jour vingt un février, ce qui rend ce procès verbal absolument [informe?] ; que depuis cette époque du quatre mars 1775, led. Daugé a fait sollicité à différentes reprises le sr Pruneau de Montlouis pour terminer les opérations encommencées, ce qu’il a toujours refusé jusqu’au vingt décembre de lad. année 1775 qu’il donné aud. sr Daugé une notte par laquelle il déclare se départir de l’affaire et n’a pas remis les mémoires qui sont restés en sa possession depuis le vingt un février 1775, laquelle remise il [avoit?] dû faire foi aud. Dauger fait aux procureurs des parties ou aud. M. Lecoeur pour être représenté lors de la continuation des opérations, qu’au moyen du départ dud. sr de Montlouis duement controllé le vingt neuf dud. mois de décembre 1775 le sr Dauger à [suivre?] l’audiance contre lad. delle Beauvoisin par requête verbale du vingt six mars dernier, sur laquelle est intervenue la sentence du vingt sept dud. mois de mars contradictoirement rendue entre les parties laquelle a nommé d’office nous Devouges au lieu et place dud. sr de Montlouis dans le cas où lad. delle Beauvoisin refuseroit d’en nommer au dans le huitaine, que faute par lad. delle Beauvoisin d’avoir satisfait à lad. sentence à sommation à elle faite le vingt avril dernier et en vertu de la sommation cy dessus ditte faite tant à nous experts qu’au procureur de lad. delle Beauvoisin et d’après le certitude que le sr Dauger à qui le mémoire de ses ouvrages est resté en la possession dud. sr de Montlouis, ce qui nous met dans l’impossibilité de procéder aux visites, prisée et estimation dont il s’agit, led. sr Dungernon requiert de continuer la vacation au jour et heure qui seront par nous choisis pendant lequel tems il se retirera devers led. sr Pruneau de Montlouis pour se faire remettre led. mémoire, se [?] en cas de refus de lad. [f. 2v°] [?] de se pourvoir contre lad. sr de Montlouis par les voyes de droit et et ainsi qu’il appartiendra, même de répetter contre led. sr de Montlouis toutes partes dépens dommages et intérêts pour raison du tort que led. sr de Montlouis lui fait éprouver résultant des empêchemens, retard et difficultés qu’il imagine depuis le mois de juin 1774 ce qui fait que depuis ce tems led. sr Dauger est privé du payement du montant de ses ouvrages par le seul fait dud. sr de Montlouis ; et à l’instant nous a, led. sr Dauger assisté comme dessus, remis la grosse de la sentence du trente juin 1774 les originaux des sommations cy énoncés, ensemble les requestes et ordonnances du [?] cy dessus énoncés ainsi que lad. sentence du vingt sept mars dernier qui établis notre [?] requeste des [parties?], ordonnance et originaux de sommation faites en conséquence se réservent de dire et requis par la suite et dans le cour de nos opérations ce qu’il croiera bon être et a signé avec led. Me Acart et présent. Dix ou onze mot sont rayés comme nuls. Daugé. Acart. ». A la vacation suivant le procureur de l’opposante, Brunet, « a lieu d’être surpris qu’avant de procéder aux opérations qui devoient être faites en la présente vacation, led. sr Dauger n’ait point eu attention lors que le sr Pruneau de Montlouis lui a donné son prétendu désistement pour procéder aux estimations dont est question, de se faire remettre les pièces et mémoires qu’il dit lui avoir été confiés lors de la dernière vacation et que cette négligence de sa part ne tend qu’à multiplier les frais avec d’autant plus de raison qu’il reconnoit lui même la nécessité de constater lad. estimation et l’impossibilité de les faire juste [f. 3r°] sans avoir lesd. mémoires, puisqu’il se réserve lui-même de se pourvoir contre led. sr de Montlouis de se faire mettre lesd. pièces ; et cette négligence de sa part met lad. delle Beauvoisin dans le cas de protester et qu’en effet ledit Me Brunet proteste pour elle contre les prétendues opérations faites dans la vacation de ce jour et de se pouvoir conclure pour lui en faire suporter tous les frais, de [?] en outre led. Me Brunet que c’est sans aucune approbation desd. opérations qu’il [conjure?] ce jourd’huy et a signé le présent dure où deux mots sont rayés comme nuls. Brunet
+                Et par led. sr Dauger assisté comme dessus, a été répondu au dire cy dessus que Me Brunet trop zélé deffenseur de la delle Beauvoisin et pour lui faciliter des moyens d’éluder le payement d’une créance légitime veut faire des efforts pour imputer des torts au sr Dauger sur le défaut de représentation du mémoire des ouvrages dont il s’agit, mais l’illusion n’est pas difficile à connaître, l’intelligence qui règne entre le sr Demontlouis et la delle Beauvoisin a été établie par l’existence des pièces, et pour raison de laquelle intelligence il a cy devant fait des réserves, que c’est mal à propos que led. Me Brunet veut insinuer que le sr Danger cherche à multiplier les frais, puisqu’au contraire il a tout l’intérêt possible de terminer cette affaire déjà trop prolongé par le sr Pruneau de Montlouis et si le sr de Montlouis n’a pas remis aud. sr Dauger ni aud. Me Lecoeur la minute du mémoire dont il s’agit, ne n’a été que de désir réfléchi de retarder cette affaire et d’après les conventions faites entre lui et la delle Beauvoisin, mais il a dit remettre à la delle Beauvoisin ou à M. Brunet son procureur la copie signiffiée dud. mémoire et pour prouver par led. sr Dauger combien il désire que cette affaire soit terminée, il soumet et [?] à l’instant led. Me Brunet de nous représenter lad. copie signiffiée dud. mémoire qu’il a dû retirer des mains dud. sr de Montlouis, déclarant qu’il consent que nous procédions à l’instant auxd. visite, prisée et estimation [f. 3v°] sur lad. copie et qu’il donne ce consentement avec d’autant plus de plaisir qu’il lui épargnera l’obligation d’un contestation [pouvant?] être très longue avec le sr Pruneau de Montlouis, pour se faire rendre la minute dud. mémoire, et en cas de refus de la part dud. Me Brunet de [représenter?] la copie dud. mémoire, il ne poura raporter qu’à lui la cause réelle des frais sans être [?] de la présente vacation, persévérant au surplus dans son précédant dire et [?] cy devant faites et a signé avec led. M. Acart le présent dire où un mot est rayé nul. Daugé » suit la réponse de Brunet etc. »
+                « [f. 5v°] Et par led. Me Brunet aud nom a été répliqué qu’il est d’usage que lors que deux experts travaillent à un raport, les parties remettent entre les mains desd. srs experts, où de leur greffier, les titres et pièces nécessaires au raport qu’ils doivent faire, et par ce greffier étant officier publie et par conséquent dépositaire des titres et pièces qui lui sont remises elles ne doivent point sortir de ses[?] et les experts en travaillant sur lesd. pièces font leur raport en sa présence et ne recevoient lesd. pièces que de lui, pour quoi persiste dans sa précédente observation et a signé... Brunet
+                Après quoi nous experts susd. toutes considérations prises et attendu l’opposition dud. Me Brunet à ce que nous procédions à la visitte des ouvrages dont il s’agit sur le mémoire à nous représenté, nous avons, monsieur renvoyé les parties par devant vous pour être fait et statué, vous référant de juger et ordonner et nous nous sommes retirés. Devouges. Ducret. Lecoeur</comment>
+    </expertise>

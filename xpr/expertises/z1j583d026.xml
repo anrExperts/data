@@ -1,0 +1,258 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j583d026">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-11-01T12:00:00">2020-11-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2016-10-26T12:00:00">2016-10-26T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>RB</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1726</unitdate>
+    <idno type="unitid">Z1J583</idno>
+        <idno type="item">026</idno>
+        <facsimile from="0345" to="0351"/>
+        <physDesc>
+          <extent sketch="false">6</extent>
+          <appendices>
+            <appendice>
+              <type type="other">Assignation</type>
+              <extent>1</extent>
+              <desc>sommation à comparaître délivrée le 17 septembre 1726 à Loir, Jean-Baptiste</desc>
+              <note/>
+            </appendice>
+          </appendices>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1726-09-19" type="province"/>
+        </sessions>
+        <places>
+          <place xml:id="id139d290" type="province">
+            <address/>
+            <complement>rue de l'étang</complement>
+            <city>Versailles</city>
+            <district/>
+            <owner>Dupré / Girardin</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="estimation">Estimer la valeur des biens</category>
+          <designation rubric="true">Visite et estimation d'une maison</designation>
+        </categories>
+        <procedure>
+          <framework type="b2a">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Lieutenant civil du Châtelet</orgName>
+              <date when="1726-01-15"/>
+            </sentence>
+          </sentences>
+          <case>partage d'une maison entre plusieurs héritiers (vente par licitation)</case>
+          <objects>
+            <object type="house">Maison(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0183" context="primary" appointment="appointed">
+              <title>architecte juré expert des bâtiments à Paris</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0035">
+              <persName>
+                <surname>Tancart</surname>
+                <forename>Toussaint</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="true" intervention="false">
+              <person>
+                <persName>
+                  <surname>Dupré de Plaisance</surname>
+                  <forename>Jean-François</forename>
+                </persName>
+                <occupation/>
+              </person>
+              <person>
+                <persName>
+                  <surname>Erville</surname>
+                  <forename>Louis Catherine d</forename>
+                </persName>
+                <occupation>propriétaires pour moitié de la maison</occupation>
+              </person>
+              <status>owner</status>
+              <expert ref="#xpr0183"/>
+            </party>
+            <party role="opponent" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Le Tellier</surname>
+                  <forename>Jeanne</forename>
+                </persName>
+                <occupation>épouse de Girardin, Felix</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Girardin</surname>
+                  <forename>Felix</forename>
+                </persName>
+                <occupation>fils des précédents</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Girardin</surname>
+                  <forename>Michel</forename>
+                </persName>
+                <occupation>tuteur de Girardin, Marie-Thérèse, Girardin, Geneviève Anne, filles mineures de Vignon, Claude et de Girardin, Marie-Thérèse</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Milliard</surname>
+                  <forename>Robert</forename>
+                </persName>
+                <occupation/>
+              </person>
+              <person>
+                <persName>
+                  <surname>Girardin</surname>
+                  <forename>Marie Jeanne</forename>
+                </persName>
+                <occupation>épouse du précédent</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Gabriel</surname>
+                  <forename>Denis</forename>
+                </persName>
+                <occupation/>
+              </person>
+              <person>
+                <persName>
+                  <surname>Girardin</surname>
+                  <forename>Elisabeth</forename>
+                </persName>
+                <occupation/>
+              </person>
+              <person>
+                <persName>
+                  <surname>Girardin</surname>
+                  <forename>Marie Jeanne.</forename>
+                </persName>
+                <occupation>Tous propriétaires de l'autre moitié de la maison</occupation>
+              </person>
+              <status>owner</status>
+              <expert ref="#xpr0183"/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0183">« Et pour parvenir a une juste estimation nous avons pris les mesures de l'emplacement totale de lad. maison et distinctement de ce qui est en bastimens d'avecq ce qui est cours et jardin dont nous avons fait les calculs et suputations et fait consideration du quartier ou est scitué lad. maison ou l'estat present des bastimens qui la composent qui sont de faible construction et ausquels il y a une tres grande quantité de reparations a faire nottament aux tuyeaux souches de cheminée, couvertures d'ardoise, planchers, portions de murs mesme en fondation pourquoy le tout consideré nous prisons et estimons lad. maison la somme de 16000 livres».</opinion>
+          <arrangement/>
+          <agreement type="conclusion">Conclusion</agreement>
+          <estimate l="16000" s="" d=""/>
+          <estimates>
+            <place ref="#id139d290">
+              <appraisal l="16000" s="" d="">
+                <desc>maison</desc>
+              </appraisal>
+            </place>
+          </estimates>
+          <fees detail="true">
+            <fee type="papers" l="" s="" d=""/>
+            <fee type="expert" ref="#xpr0183" l="24" s="" d=""/>
+            <fee type="clerk" l="" s="" d=""/>
+            <fee type="rolls" l="" s="" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="" s="" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="16" s="9" d="2"/>
+            <expense type="expert" l="" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis>Motivations
+                « Nous avons fait lecture d'une sentence par vous Mr rendue au Parcq Civil du Chlet de Paris le quinze janvier mil sept cent vingt six entre lesd. sieur et dame Dupré de Plaisance proprietaire pour moitié au total de lad. maison scize à Versailles rue de l'Estang poursuivant la vente par licitation d'icelle maison, demandeurs en exécution de vos sentences des quinze janvier et treize may mil sept cent vingt quatre et trente juin mil sept cent vingt cinq qui ordonnent la licitation de lad. maison et aux fins de la requeste verballe du cinq janvier 1726 tendante à ce qu'attendu qu'il ne se trouve point d'encherisseurs qui veullent porter le prix de lad. maison a trente mil livres a quoy elle a esté prisée par le rapport d'experts fait entre les partyes en mil sept cent vingt quatre eu egard au temps lors present et que lad. maison ne vaut pas a present lad. somme de trente mil libres, qu'elle sera vendue au dessous de lad. prisée au plus offrant et dernier encherisseur en la maniere ordinaire sur l'enchere qui est au greffe avecq depens d'une part. Contre Jeanne Le Tellier veuve de Felix Girardin charpentier des bastimens du Roy en son nom et comme commune en biens avecq led. deffunt son mary, Felix Girardin fils Me charpentier a Paris, Michel Girardin marchand epicier a Paris, tant en son nom que comme tuteur ad hoc de Marie Therese, Genevieve Anne, et Michel Vignon enfans mineurs de Claude Vignon et de Marie Thereze Girardin sa femme, heritiers par representation de leur mere de Felix Girardin leur ayeul, sieur Robert Millard et Marie Jeanne Girardin sa femme, Denis Gabriel maistre plombier et Elisabeth Girardin sa femme, Marie Jeanne Girardin femme separée de biens du sieur Denis Tiercelin, et led. sieur Tiercelin assigné pour la vallidité de la procedure, tous deffendeurs et deffaillans et proprietaires par indivis de l'autre moitié de lad. maison. Par laquelle sentence […] il sera proceddé et passé oultre a la vente par licitation de la maison en question au dessous de la prisée faite par Fresne et Quirot le 28 aoust 1724 […] et ce sur la nouvelle prisée qui en sera faitte par expers dont les parties conviendroient ».</analysis>
+        <noteworthy/>
+      </description>
+    </expertise>

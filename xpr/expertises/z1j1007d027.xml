@@ -1,0 +1,223 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1007d027">
+  <meta/>
+  <control>
+    <maintenanceStatus>revised</maintenanceStatus>
+    <publicationStatus/>
+    <localControl localType="detailLevel">
+      <term>completed</term>
+    </localControl>
+    <maintenanceHistory>
+      <maintenanceEvent>
+                <eventType>revised</eventType>
+                <eventDateTime standardDateTime="2021-10-15T14:12:31Z">2021-10-15T14:12:31Z</eventDateTime>
+                <agentType>human</agentType>
+                <agent>llosserand</agent>
+                <eventDescription>exb3</eventDescription>
+            </maintenanceEvent>
+          <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateObjectsValues_db.xqy/BaseX</agent>
+        <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateOpinionRef_files.xqy/BaseX</agent>
+        <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateRefValues_files.xqy/BaseX</agent>
+        <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+        <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>revised</eventType>
+        <eventDateTime standardDateTime="2020-08-01T12:00:00">2020-08-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>llosserand</agent>
+        <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>retroconverted</eventType>
+        <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>ead2xpr.xsl/Saxon9</agent>
+        <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>created</eventType>
+        <eventDateTime standardDateTime="2017-10-01T12:00:00">2017-10-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>JH</agent>
+        <eventDescription>Création de la fiche.</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+  </control>
+  <sourceDesc>
+    <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1007</idno>
+    <idno type="item">027</idno>
+    <facsimile from="0463" to="0470"/>
+    <physDesc>
+      <extent sketch="false">7</extent>
+    </physDesc>
+  </sourceDesc>
+  <description>
+    <sessions>
+      <date when="1776-09-11" type="suburbs"/>
+      <date when="1776-09-23" type="suburbs"/>
+      <date when="1776-09-30" type="suburbs"/>
+      <date when="1776-09-30" type="suburbs"/>
+      <date when="1776-10-05" type="suburbs"/>
+      <date when="1776-10-05" type="suburbs"/>
+      <date when="1776-02-04" type="suburbs"/>
+      <date when="1776-02-04" type="suburbs"/>
+      <date when="1776-02-05" type="suburbs"/>
+    </sessions>
+    <places>
+      <place type="suburbs">
+        <address/>
+        <complement>rue Blanche, au dessus de la Barrière</complement>
+        <city/>
+        <district/>
+        <owner>Brunet</owner>
+      </place>
+    </places>
+    <categories>
+      <category type="acceptation">Recevoir et évaluer le travail réalisé</category>
+      <designation rubric="true">Visitte et estimation d'ouvrages de différente nature faites et à faire, en une maison rue Blancheau, dessus de la Barrière, appartenante à la dame Brunet ; MM. Delespine et Ducret, experts.</designation>
+    </categories>
+    <procedure>
+      <framework type="b2">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+      <origination type="institution">Une institution</origination>
+      <sentences>
+        <sentence>
+          <orgName>Châtelet, lieutenant civil (sentences)</orgName>
+          <date when="1776-06-25"/>
+          <date when="1776-05-23"/>
+        </sentence>
+      </sentences>
+      <case>prisée et réception d’ouvrages ; constat des réparations à faire pour rendre la maison habitable</case>
+      <objects>
+        <object type="house">Maison(s)</object>
+      </objects>
+    </procedure>
+    <participants>
+      <experts>
+        <expert ref="#xpr0085" context="primary" appointment="court-appointed">
+          <title>architecte expert</title>
+        </expert>
+        <expert ref="#xpr0102" context="primary" appointment="appointed">
+          <title>architecte expert</title>
+        </expert>
+      </experts>
+      <clerks>
+        <clerk ref="#clrk0064">
+          <persName>
+            <surname>Gobert</surname>
+            <forename>Jean Charles Simon</forename>
+          </persName>
+        </clerk>
+      </clerks>
+      <parties>
+        <party role="petitioner" presence="false" intervention="false">
+          <person>
+            <persName>
+              <surname>Gérard</surname>
+              <forename>Jean Claude</forename>
+            </persName>
+            <occupation>avocat en parlement</occupation>
+          </person>
+          <status>builder</status>
+          <expert ref="#xpr0102"/>
+          <prosecutor>
+            <persName>
+              <surname>Regley</surname>
+              <forename>Jacques François</forename>
+            </persName>
+          </prosecutor>
+        </party>
+        <party role="opponent" presence="false" intervention="false">
+          <person>
+            <persName>
+              <surname>Brunet</surname>
+              <forename/>
+            </persName>
+            <occupation>maître en chirurgie</occupation>
+          </person>
+          <status>limited-partner</status>
+          <expert ref="#xpr0085"/>
+        </party>
+      </parties>
+      <craftmen>
+        <craftman>
+          <persName>
+            <surname>Pouillot</surname>
+            <forename>Jean Dominique</forename>
+          </persName>
+          <occupation>entrepreneur de bâtiments (ouvrages de maçonnerie faits en août 1775)</occupation>
+        </craftman>
+      </craftmen>
+    </participants>
+    <conclusions>
+      <opinion ref="#xpr0085 #xpr0102">« Nous avons ensuitte fait la recapitulation des memoires cy dessus concernant les ouvrages faits en la maison lesquels montent et reviennent ensemble à la somme de quatre mille sept cent quarante quatre livres quatre sols cinq deniers scavoir 
+Maçonnerie 2 979 l. 6 s. 7 d. 
+Charpente 526 l. 6 s. 2 d. 
+Couverture 448 l. 17 s. 9 d. 
+Menuiserie 171 l. 15 s. 10 d. 
+Serrurerie 233 l. 15 s. 6 d. 
+Carrelage 129 l. 7 s. 1 d. 
+Vitrerie 75 l. 15 s. 
+Peinture 31 l. 9 s. 
+Et pavé  157 l. 11 s. 6 d. 
+4 744 l. 4 s. 5 d. 
+Tels sont Monsieur les ovurages faits en la maison dont est question suivant l’énoncé des memoires de l’ordre de Marie Jeanne Lecerf épouse fondée de la procuration dudit sieur Brunet son marie, telle est aussi la valeur desdits ouvrages que nous avons trouvé faits conformement à l’art de batir, pourquoy nous les recevons cy… Reception 
+A l’égard des reparations à faire pour rendre ladite maison en état d’etre habitée, nous en avons de nouveau fait l’examen, d’après lequel nous avons reconnu que ladite maison est en état d’habitation au moien des reparations qui y ont été faites cy dessus raportées, et qu’elle est occupée pour le present par un marchand de vin traitteur cy… Observation 
+Nous observons que comme la transcription des memoires dont [manque la fin] »</opinion>
+      <arrangement/>
+      <agreement type="agreement">Accord</agreement>
+      <estimate l="" s="" d=""/>
+      <fees detail="true">
+        <fee type="papers" l="9" s="" d=""/>
+        <fee type="expert" ref="#xpr0085" l="75" s="" d=""/>
+        <fee type="expert" ref="#xpr0102" l="75" s="" d=""/>
+        <fee type="clerk" l="75" s="" d=""/>
+        <fee type="rolls" l="36" s="" d=""/>
+        <fee type="prosecutors" l="6" s="" d=""/>
+        <fee type="help" l="" s="" d=""/>
+        <fee type="other" l="6" s="" d="">annexe</fee>
+        <fee type="plans" l="" s="" d=""/>
+        <total l="282" s="" d=""/>
+      </fees>
+      <expenses mentioned="false"/>
+    </conclusions>
+    <keywords group="estates"/>
+    <keywords group="procedure"/>
+    <keywords group="contract"/>
+    <keywords group="encumbrance"/>
+    <keywords group="law"/>
+    <keywords group="measurement"/>
+    <keywords group="repairs"/>
+    <keywords group="guarantees"/>
+    <keywords group="responsability"/>
+    <keywords group="ownership"/>
+    <keywords group="value"/>
+    <keywords group="neighbourhood"/>
+    <keywords group="disorder"/>
+    <keywords group="transformation"/>
+    <analysis/>
+    <noteworthy>qualité d'une des parties à éclaircir : Ouvrages de réparation faits sur l’ordre de l’épouse de Brunet, Lecerf, Marie Jeanne, fondée de procuration On suppose que Me Gérard est l’avocat de l’entrepreneur et des artisans, mais ce n’est pas clairement écrit.</noteworthy>
+  </description>
+</expertise>

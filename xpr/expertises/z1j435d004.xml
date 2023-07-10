@@ -1,0 +1,196 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j435d004">
+      <meta/>
+      <control>
+        <maintenanceStatus/>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term/>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:39:45.99+02:00">2021-05-19T11:39:45.99+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateAgreementType_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur "Dispositif de l’expertise" lorsqu'il n'y a qu’un seul expert ('agreement' devient 'conclusion').</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:45:33.927+02:00">2021-04-21T20:45:33.927+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateKeywordsModule_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour du module keywords.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:45:02.355+02:00">2021-04-21T20:45:02.355+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateExpertsFees_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour du coûts de l'expertise pour les experts.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:44:31.814+02:00">2021-04-21T20:44:31.814+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateExpertisesArrangement_files.xqy/BaseX</agent>
+            <eventDescription>Ajout du champs Accommodement dans l'éventualité d’une résolution par les parties.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2019-05-01T12:00:00">2019-05-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1696</unitdate>
+    <idno type="unitid">Z1J435</idno>
+        <idno type="item">004</idno>
+        <facsimile from="0021" to="0025"/>
+        <physDesc>
+          <extent sketch="true">4</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1696-10-17" type="suburbs"/>
+        </sessions>
+        <places>
+          <place type="suburbs">
+            <address/>
+            <complement/>
+            <city>Clamart</city>
+            <district/>
+            <owner/>
+          </place>
+        </places>
+        <categories>
+          <category type="assessment">Décrire et évaluer les travaux à venir</category>
+          <designation rubric="true">Visite d'estat d'une maison à Clamart et de réparations nécessaires à faire, entre Mrs les margilliers de l'œuvre et fabrique de Ste Croix de la Cité et Nicolas Claude et Richard d'Ivry,</designation>
+        </categories>
+        <procedure>
+          <framework type="b2b">L’institution est saisie dans le cadre d’une procédure (l’institution nomme un ou deux experts)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>lieutenant civil Châtelet</orgName>
+              <date when="1696-10-28"/>
+              <date when="1696-08-09"/>
+            </sentence>
+          </sentences>
+          <case>à la suite de l'achat de la maison par la fabrique, i l y a des réparations à y faire</case>
+          <objects>
+            <object type="house">Maison(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0218" context="primary" appointment="court-appointed">
+              <title>expert juré et entrepreneur des bâtiments du roi</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#xpr0158">
+              <persName>
+                <surname>Le Brun</surname>
+                <forename>Jacques Charles</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="false" intervention="">
+              <person>
+                <persName>
+                  <surname>Fabrique de Sainte-Croix-en-la-Cité</surname>
+                  <forename/>
+                </persName>
+                <occupation>marguilliers</occupation>
+              </person>
+              <status>owner</status>
+              <expert ref="#xpr0218"/>
+            </party>
+            <party role="opponent" presence="true" intervention="">
+              <person>
+                <persName>
+                  <surname>Richard d'Ivry</surname>
+                  <forename>Nicolas Claude</forename>
+                </persName>
+                <occupation/>
+              </person>
+              <person>
+                <persName>
+                  <surname>Pépin</surname>
+                  <forename>Pierre</forename>
+                </persName>
+                <occupation>assigner pour affirmer</occupation>
+              </person>
+              <status>owner</status>
+              <expert ref=""/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <agreement type="conclusion">Conclusion</agreement>
+          <opinion ref="#xpr0218">Tous lesquels ouvrages cy dessus estimons en nostre présent raport montent à la somme de neuf cent soixante neuf livres et cinq sols scavoir celles provenant de vieillesse et caducité montent à la some de cinq cent quatre vingt sept livres et celles à quoy montent la réparation d'entretriens et dégradation reviennnet à la somme de trois cent quatre vingt deux livres cinq sols. Ce fut ainsy fait et arresté...."</opinion>
+          <arrangement/>
+          <estimate>969 livres cinq sols</estimate>
+          <fees detail="true">
+            <fee ref="#xpr0218" type="expert" l="15" s="" d=""/>
+            <fee type="clerk" l="15" s="" d=""/>
+            <fee type="rolls" l="" s="" d=""/>
+            <fee type="papers" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="other" l="3" s="7" d="6">MG</fee>
+            <total l="" d="" s=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="5" s="" d=""/>
+            <expense type="expert" l="" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group=""/>
+        <analysis/>
+        <noteworthy>les assignations avaient fixé la date du 16 (la veille) pour faire la visite mais il y a eu une grande pluye tout le jour et cela n'a pas discontinué de tomber abondamment (cf. f. 1v°)</noteworthy>
+      </description>
+    </expertise>

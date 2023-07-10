@@ -1,0 +1,185 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j579d003">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-10-01T12:00:00">2020-10-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2016-10-26T12:00:00">2016-10-26T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>RB</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1726</unitdate>
+    <idno type="unitid">Z1J579</idno>
+        <idno type="item">003</idno>
+        <facsimile from="0055" to="0059"/>
+        <physDesc>
+          <extent sketch="false">4</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1726-03-02" type="suburbs"/>
+        </sessions>
+        <places>
+          <place type="suburbs">
+            <address/>
+            <complement>rue de l'Oursine</complement>
+            <city>Paris</city>
+            <district/>
+            <owner>Mortain</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="assessment">Décrire et évaluer les travaux à venir</category>
+          <designation rubric="true">Visite et état de réparations</designation>
+        </categories>
+        <procedure>
+          <framework type="b2a">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Lieutenant civil</orgName>
+              <date when="1725-10-06"/>
+            </sentence>
+          </sentences>
+          <case>réparations locatives urgentes et nécessaires à faire réaliser à la charge du propriétaire de la maison</case>
+          <objects>
+            <object type="house">Maison(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0183" context="primary" appointment="appointed">
+              <title>juré expert à Paris</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0033">
+              <persName>
+                <surname>Callou</surname>
+                <forename>Antoine Charles</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Michelin</surname>
+                  <forename>Nicolas</forename>
+                </persName>
+                <occupation>maître tanneur, et sa femme, locataires de ladite maison</occupation>
+              </person>
+              <status>tenant</status>
+              <expert ref="#xpr0183"/>
+            </party>
+            <party role="opponent" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Mortain</surname>
+                  <forename>Jean-Baptiste de</forename>
+                </persName>
+                <occupation>premier commis de M. de Baudry, conseiller d'Etat, propriétaire de ladite maison</occupation>
+              </person>
+              <status>owner</status>
+              <expert ref="#xpr0183"/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0183">« Nous avons trouvé qu'il est nécessaire de faire une recherche à la couverture de thuille du bâtiment du fond de la cour, vers ladite remise et de l'apenty a droitte de ladite cour retournant à ladite rue, refaire la maçonnerie du haut du thuyau de cheminée dudit corps de logis de fond de ladite cour en ce qu'elle [1 mot] au-dessus du comble, rétablir le chaperon du mur à gauche de ladite cour retournant à ladite rue où il est endommagé et où il y a quelques brèches, et refaire à neuf la portion de mur ensuitte aussi de clôture en trente neuf pieds de longueur ou environ où ledit mur est prest à tomber du costé du petit jardin de ladite maison, et ce pour la portion dans ladite maison peut estre tenue estant les murs mitoyens. C'est l'état des reconstructions et réparations urgentes et nécessaires à faire en ladite maison pour la rendre logeable et habitable et hors de danger ».</opinion>
+          <arrangement/>
+          <agreement type="conclusion">Conclusion</agreement>
+          <estimate l="" s="" d=""/>
+          <fees detail="true">
+            <fee type="papers" l="3" s="" d=""/>
+            <fee type="expert" ref="#xpr0183" l="7" s="10" d=""/>
+            <fee type="clerk" l="7" s="10" d=""/>
+            <fee type="rolls" l="5" s="10" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="other" l="1" s="5" d="">voiture</fee>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="24" s="15" d=""/>
+          </fees>
+          <expenses mentioned=""/>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis>Motivations
+                « avons fait lecture d'une sentence de vous rendue Monsieur le vingt sept février dernier entre lesdits sieurs Michelin et sa femme principaux locataires de ladite maison demandeur à principal [1 mot] les requêtes et exploits des vingt huit et trente un août dernier en exécution de vos sentences des six octobre et huit novembre dernier suivant les moyens du premier décembre dernier et dix sept janvier aussi dernier de [Calore?] demandeur, aux fins de la requête verballe du vingt et un dudit mois de février au deffendeur, à l'opposition de demander par les deffences du vingt huit novembre dernier, d'une part, et le sieur Jean-Baptiste de Mortain premier commis de M. de Baudry conseiller d'État, propriétaire de ladite maison, deffenseur opposant auxdites sentences et en le [1 mot] demandeur suivant les deffences dudit jour vingt huit novembre dernier […] vous avez permis Monsieur […] audit Michelin de faire faire les réparations urgentes et nécessaires et à l'effet de les constater de faire transporter nous Loir juré expert nommé d'office en la maison en question ».</analysis>
+        <noteworthy/>
+      </description>
+    </expertise>

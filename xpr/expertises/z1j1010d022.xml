@@ -1,0 +1,176 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1010d022">
+  <meta/>
+  <control>
+    <maintenanceStatus>revised</maintenanceStatus>
+    <publicationStatus/>
+    <localControl localType="detailLevel">
+      <term>completed</term>
+    </localControl>
+    <maintenanceHistory>
+      <maintenanceEvent>
+                <eventType>revised</eventType>
+                <eventDateTime standardDateTime="2022-08-28T14:10:13Z">2022-08-28T14:10:13Z</eventDateTime>
+                <agentType>human</agentType>
+                <agent>llosserand</agent>
+                <eventDescription>rvpcd</eventDescription>
+            </maintenanceEvent>
+          <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateObjectsValues_db.xqy/BaseX</agent>
+        <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateRefValues_files.xqy/BaseX</agent>
+        <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+        <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>revised</eventType>
+        <eventDateTime standardDateTime="2020-09-01T12:00:00">2020-09-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>JH</agent>
+        <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>retroconverted</eventType>
+        <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>ead2xpr.xsl/Saxon9</agent>
+        <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>created</eventType>
+        <eventDateTime standardDateTime="2017-04-01T12:00:00">2017-04-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>llosserand</agent>
+        <eventDescription>Création de la fiche.</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+  </control>
+  <sourceDesc>
+    <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1010</idno>
+    <idno type="item">022</idno>
+    <facsimile from="0172" to="0175"/>
+    <physDesc>
+      <extent sketch="false">2</extent>
+      <appendices>
+        <appendice>
+          <type type="petition">Requête</type>
+          <extent>1</extent>
+          <desc>requête de Larmoyer, Charles au lieutenant civil, suivie de l’ordonnance autorisant la visite le 6 décembre 1776.</desc>
+          <note/>
+        </appendice>
+      </appendices>
+    </physDesc>
+  </sourceDesc>
+  <description>
+    <sessions>
+      <date when="1776-12-13" type="paris"/>
+    </sessions>
+    <places>
+      <place type="paris">
+        <address>
+          <street>Rue des Martyrs aux Porcherons</street>
+          <buildingNumber/>
+        </address>
+        <complement>au milieu ou environ à gauche en montant ladite rue</complement>
+        <parish/>
+        <owner>Larmoyer</owner>
+      </place>
+    </places>
+    <categories>
+      <category type="registration">Enregistrer</category>
+      <designation rubric="true">Visite de démolitions et reconstruction à faire</designation>
+    </categories>
+    <procedure>
+      <framework type="b1">Requête auprès d’une institution pour qu’elle demande une expertise</framework>
+      <origination type="parties">Les parties</origination>
+      <sentences>
+        <sentence>
+          <orgName>lieutenant civil (ordonnance du 6 novembre 1776)</orgName>
+          <date when="1776-11-06"/>
+        </sentence>
+      </sentences>
+      <case>la maison acquise par le requérant est en péril est doit être par lui démolie à la demande du procureur du roi au bureau des finances et voirie de la généralité de Paris dans les 24h pour faire cesser ledit péril par sentence du 16 décembre 1776 ; et le requérant demande l’autorisation de faire la reconstruction pour jouir du terrain qu’il a acquis, ce pour quoi on lui a conseillé d’avoir recours à l’autorité du lieutenant civil (ou prévôt de Paris)</case>
+      <objects>
+        <object type="house">Maison(s)</object>
+      </objects>
+    </procedure>
+    <participants>
+      <experts>
+        <expert ref="#xpr0250" context="primary" appointment="appointed">
+          <title>architecte expert</title>
+        </expert>
+      </experts>
+      <clerks>
+        <clerk ref="#clrk0058">
+          <persName>
+            <surname>Foucart</surname>
+            <forename>Paul Joseph</forename>
+          </persName>
+        </clerk>
+      </clerks>
+      <parties>
+        <party role="petitioner" presence="true" intervention="false">
+          <person>
+            <persName>
+              <surname>Larmoyer</surname>
+              <forename>Charles</forename>
+            </persName>
+            <occupation>maître cordonnier</occupation>
+          </person>
+          <status>owner</status>
+          <expert ref="#xpr0250"/>
+        </party>
+      </parties>
+      <craftmen>
+        <craftman>
+          <persName>
+            <surname>Goujon</surname>
+            <forename/>
+          </persName>
+          <occupation>entrepreneur de Larmoyer, Charles</occupation>
+        </craftman>
+      </craftmen>
+    </participants>
+    <conclusions>
+      <arrangement/>
+      <agreement type="unfinished">Affaire inachevée</agreement>
+      <estimate l="" s="" d=""/>
+      <fees detail="false">
+        <total l="" s="" d=""/>
+      </fees>
+      <expenses mentioned="false"/>
+    </conclusions>
+    <keywords group="estates"/>
+    <keywords group="procedure"/>
+    <keywords group="contract"/>
+    <keywords group="encumbrance"/>
+    <keywords group="law"/>
+    <keywords group="measurement"/>
+    <keywords group="repairs"/>
+    <keywords group="guarantees"/>
+    <keywords group="responsability"/>
+    <keywords group="ownership"/>
+    <keywords group="value"/>
+    <keywords group="neighbourhood"/>
+    <keywords group="disorder">
+      <term value="m4">Péril imminent</term>
+    </keywords>
+    <keywords group="transformation"/>
+    <analysis>requête « […] Ce considéré, monsieur, il vous plaise, vu le procès verbal et sentence du bureau des finances susdattés et ennoncés, permettre au supliant de faire faire la. Reconstruction et d’avancer à cet effet touttes sommes nécessaires dont en cas de retrait et en tout événement il sera remboursé en frais de loyaux conseil et vous ferez justice. Jocart »</analysis>
+    <noteworthy/>
+  </description>
+</expertise>

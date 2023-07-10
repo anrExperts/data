@@ -1,0 +1,63 @@
+<eac xmlns="https://archivists.org/ns/eac/v2" xml:id="clrk0074">
+  <control maintenanceStatus="">
+    <recordId>clrk0074</recordId>
+    <maintenanceAgency>
+      <agencyName>ANR Experts</agencyName>
+    </maintenanceAgency>
+    <maintenanceHistory>
+      <maintenanceEvent maintenanceEventType="created">
+        <agent agentType="machine">clerk_csv2eac.xqy/BaseX</agent>
+        <eventDateTime standardDateTime="2022-12-31T14:06:48.817+01:00"/>
+        <eventDescription>Création des fiches EAC-CPF à partir du tableau</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+    <sources>
+      <source id="sourceid86496318">
+        <reference href="">Almanach royal 1786</reference>
+      </source>
+      <source id="sourceid86496320">
+        <reference href="">Almanach royal 1787</reference>
+      </source>
+    </sources>
+  </control>
+  <cpfDescription>
+    <identity>
+      <entityType value="person"/>
+      <nameEntry status="authorized" preferredForm="true" sourceReference="">
+        <part localType="full">Lemercier, Nicolas François</part>
+      </nameEntry>
+      <nameEntry status="alternative" preferredForm="false" sourceReference="">
+        <part localType="surname">Lemercier</part>
+        <part localType="forename">Nicolas François</part>
+      </nameEntry>
+      <otherEntityTypes>
+        <otherEntityType>
+          <term>clerk</term>
+        </otherEntityType>
+      </otherEntityTypes>
+      <identityId>clrk0074</identityId>
+    </identity>
+    <description>
+      <functions>
+        <function sourceReference="#sourceid86496318 #sourceid86496320">
+          <term>Greffier</term>
+          <dateRange>
+            <fromDate sourceReference="" certainty="certain" standardDate="1786"/>
+            <toDate sourceReference="" certainty="certain" standardDate="1787"/>
+          </dateRange>
+        </function>
+      </functions>
+      <places>
+        <place sourceReference="#sourceid86496318 #sourceid86496320">
+          <placeRole>Adresse</placeRole>
+          <placeName>rue des Petits-Champs Saint Martin</placeName>
+          <dateRange>
+            <fromDate sourceReference="" certainty="certain" standardDate="1786"/>
+            <toDate sourceReference="" certainty="certain" standardDate="1787"/>
+          </dateRange>
+        </place>
+      </places>
+    </description>
+  </cpfDescription>
+  <!---->
+</eac>

@@ -1,0 +1,229 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j482d047">
+      <meta/>
+      <control>
+        <maintenanceStatus/>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term/>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:45:33.927+02:00">2021-04-21T20:45:33.927+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateKeywordsModule_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour du module keywords.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:44:31.814+02:00">2021-04-21T20:44:31.814+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateExpertisesArrangement_files.xqy/BaseX</agent>
+            <eventDescription>Ajout du champs Accommodement dans l'éventualité d’une résolution par les parties.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:43:53.154+02:00">2021-04-21T20:43:53.154+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateExpertisesPlacesEstimates_files.xqy/BaseX</agent>
+            <eventDescription>Ajout des champs pour l'estimation des lieux.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2020-02-01T12:00:00">2020-02-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1706</unitdate>
+    <idno type="unitid">Z1J482</idno>
+        <idno type="item">47</idno>
+        <facsimile from="0516" to="0524"/>
+        <physDesc>
+          <extent sketch="false">7</extent>
+          <appendices>
+            <appendice>
+              <type type="other">Compte imprimé</type>
+              <extent>1</extent>
+              <desc/>
+              <note/>
+            </appendice>
+          </appendices>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1706-07-27" type="province"/>
+          <date when="1706-07-30" type="paris"/>
+        </sessions>
+        <places>
+          <place xml:id="id59745d1" type="paris">
+            <address>
+              <street>rue Saint-Niçaise</street>
+              <buildingNumber/>
+            </address>
+            <complement/>
+            <parish/>
+            <owner>Fermiers des voitures à la suite de la cour</owner>
+          </place>
+          <place xml:id="id59745d11" type="province">
+            <address/>
+            <complement/>
+            <city>Fontainebleau</city>
+            <district/>
+            <owner>Fermiers des voitures à la suite de la cour</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="estimation">Estimer la valeur des biens</category>
+          <designation rubric="true">Estimation de maison</designation>
+        </categories>
+        <procedure>
+          <framework type="b2a">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>lieutenant civil</orgName>
+              <date when="1706-07-20"/>
+            </sentence>
+          </sentences>
+          <case>Estimation de maisons dans le cadre du transfert de bail entre les anciens et
+                    les nouveaux fermiers des voitures à la suite de la cour</case>
+          <objects>
+            <object type="house">Maison(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0153" context="third-party" appointment="court-appointed">
+              <title>expert juré du roi entrepreneur de bâtiments à Paris</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0014">
+              <persName>
+                <surname>Baudoin</surname>
+                <forename>Pierre</forename>
+              </persName>
+            </clerk>
+            <clerk ref="#xpr0158">
+              <persName>
+                <surname>Le Brun</surname>
+                <forename>Jacques Charles</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="" intervention="">
+              <person>
+                <persName>
+                  <surname>Anciens fermiers des voitures à la suite de la
+                                    cour</surname>
+                  <forename/>
+                </persName>
+                <occupation/>
+              </person>
+              <status>tenant</status>
+              <expert ref="#xpr0153"/>
+            </party>
+            <party role="opponent" presence="" intervention="">
+              <person>
+                <persName>
+                  <surname>Nouveaux fermiers des voitures à la suite de la
+                                    cour</surname>
+                  <forename/>
+                </persName>
+                <occupation/>
+              </person>
+              <status>tenant</status>
+              <expert ref="#xpr0153"/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0153">Fontainebleau « J’ay examiné que lesdits cinq cens cinquante toises de
+                    superficie d’emplacement sont dans le centre dudit lieu de Fontainebleau et
+                    proches de la paroisse que celle … est disposé avantageusement pour les voitures
+                    lesquels suivant la cour par touttes ces raisons et encore par celles du temps
+                    présent ou de celles du … dont il s’agit, j’ay prisé et estimé comme tiers
+                    expert ladite maison, cours et édiffices d’escurie en icelle suivant que le tout
+                    est au long mentionné dans la déclaration qui en a esté faite dans le raport
+                    desdits Levé et Laisné cy devant dite dont le détail est au long circonstancié
+                    et qui ne serviront icy que de … inutille la somme de quinze mil livres eu
+                    esgard à ce que dessus et à la charge des droits seigneuriaux dont ladite maison
+                    peut estre chargée envers les seigneurs d’icelle cy… 15000 l. » rue
+                    Saint-Niçaise « Par toutes ces considerations celle du cours du temps présent,
+                    et encore par la consideration du fait dont il s’agit en regard que le fond de
+                    la place est chargé d’un écu d’or de cens et de six cent livres de rente
+                    foncière par chacune année, j’ay prisé et estimé comme tiers expert ladite
+                    maison édifice et bastimens en deppendant court pavée et autres la somme de
+                    24000 l. »</opinion>
+          <agreement type="conclusion">Conclusion</agreement>
+          <arrangement/>
+          <estimate l="39000" s="" d=""/>
+          <estimates>
+            <place ref="#id59745d1">
+              <appraisal l="" s="" d="">
+                <desc/>
+              </appraisal>
+            </place>
+            <place ref="#id59745d11">
+              <appraisal l="" s="" d="">
+                <desc/>
+              </appraisal>
+            </place>
+          </estimates>
+          <fees detail="false">
+            <total l="" s="" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="" s="" d=""/>
+            <expense type="expert" l="78" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group=""/>
+        <analysis/>
+        <noteworthy/>
+      </description>
+      <comment>Voir l'expertise commencée le même mois (Levé / Laisney)</comment>
+    </expertise>

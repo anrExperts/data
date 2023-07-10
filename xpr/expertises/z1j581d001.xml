@@ -1,0 +1,206 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j581d001">
+  <meta/>
+  <control>
+    <maintenanceStatus>revised</maintenanceStatus>
+    <publicationStatus/>
+    <localControl localType="detailLevel">
+      <term>completed</term>
+    </localControl>
+    <maintenanceHistory>
+      <maintenanceEvent>
+                <eventType>revised</eventType>
+                <eventDateTime standardDateTime="2022-03-25T14:26:11Z">2022-03-25T14:26:11Z</eventDateTime>
+                <agentType>human</agentType>
+                <agent>llosserand</agent>
+                <eventDescription>rvpcd</eventDescription>
+            </maintenanceEvent>
+          <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateObjectsValues_db.xqy/BaseX</agent>
+        <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateRefValues_files.xqy/BaseX</agent>
+        <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+        <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>revised</eventType>
+        <eventDateTime standardDateTime="2020-11-01T12:00:00">2020-11-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>JH</agent>
+        <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>retroconverted</eventType>
+        <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>ead2xpr.xsl/Saxon9</agent>
+        <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>created</eventType>
+        <eventDateTime standardDateTime="2017-04-01T12:00:00">2017-04-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>llosserand</agent>
+        <eventDescription>Création de la fiche.</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+  </control>
+  <sourceDesc>
+    <unitdate>1726</unitdate>
+    <idno type="unitid">Z1J581</idno>
+    <idno type="item">001</idno>
+    <facsimile from="0001" to="0005"/>
+    <physDesc>
+      <extent sketch="false">4</extent>
+    </physDesc>
+  </sourceDesc>
+  <description>
+    <sessions>
+      <date when="1726-06-01" type="paris"/>
+    </sessions>
+    <places>
+      <place type="paris">
+        <address>
+          <street>Un moulin à eau sous le Pont-Neuf près la Samaritaine</street>
+          <buildingNumber/>
+        </address>
+        <complement/>
+        <parish/>
+        <owner>Leferrron</owner>
+      </place>
+    </places>
+    <categories>
+      <category type="acceptation">Recevoir et évaluer le travail réalisé</category>
+      <designation rubric="true">Estimation d'ouvrages de couverture</designation>
+    </categories>
+    <procedure>
+      <framework type="b2">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+      <origination type="institution">Une institution</origination>
+      <sentences>
+        <sentence>
+          <orgName>Lieutenant civil</orgName>
+          <date when="1725-09-28"/>
+        </sentence>
+      </sentences>
+      <case>non paiement de travaux de couverture</case>
+      <objects>
+        <object type="house">Maison(s)</object>
+      </objects>
+    </procedure>
+    <participants>
+      <experts>
+        <expert ref="#xpr0100" context="primary" appointment="court-appointed">
+          <title>architecte juré du roi expert</title>
+        </expert>
+        <expert ref="#xpr0147" context="primary" appointment="court-appointed">
+          <title>architecte juré du roi expert</title>
+        </expert>
+      </experts>
+      <clerks>
+        <clerk ref="#clrk0034">
+          <persName>
+            <surname>Daudouin</surname>
+            <forename>Antoine</forename>
+          </persName>
+        </clerk>
+      </clerks>
+      <parties>
+        <party role="petitioner" presence="false" intervention="false">
+          <person>
+            <persName>
+              <surname>Lefranc</surname>
+              <forename>Thibault</forename>
+            </persName>
+            <occupation>maître couvreur par exploit de Janot, Amant, huissier (par assignation du 31 mai 1726)</occupation>
+          </person>
+          <status>builder</status>
+          <expert ref="#xpr0100"/>
+        </party>
+        <party role="opponent" presence="false" intervention="false">
+          <person>
+            <persName>
+              <surname>Leferron</surname>
+              <forename>Jean Georges</forename>
+            </persName>
+            <occupation>écuyer, propriétaire pour moitié du moulin (défaillant)</occupation>
+          </person>
+          <person>
+            <persName>
+              <surname>Odot</surname>
+              <forename/>
+            </persName>
+            <occupation>propriétaire pour l'autre moitié</occupation>
+          </person>
+          <status>owner</status>
+          <expert ref="#xpr0147"/>
+        </party>
+      </parties>
+      <craftmen>
+        <craftman>
+          <persName>
+            <surname>Liépard</surname>
+            <forename/>
+          </persName>
+          <occupation>maître charpentier</occupation>
+        </craftman>
+      </craftmen>
+    </participants>
+    <conclusions>
+      <opinion ref="#xpr0100">"Somme totale à quoy mont lesdits ouvrages par moy Joubert cy dessus estimez à la somme de 464 l. 1 s. 8 d."</opinion>
+      <opinion ref="#xpr0147">"Et moy Dubois suivant les prix des ouvrages chacune suivant leur qualité et valeur par moy cy dessus estimé le totale monte à la somme de 668 l. 8 s. 9 d."</opinion>
+      <arrangement/>
+      <agreement type="disagreement">Désaccord</agreement>
+      <estimate l="" s="" d=""/>
+      <fees detail="true">
+        <fee type="papers" l="" s="" d=""/>
+        <fee type="expert" ref="#xpr0100" l="12" s="" d=""/>
+        <fee type="expert" ref="#xpr0147" l="12" s="" d=""/>
+        <fee type="clerk" l="" s="" d=""/>
+        <fee type="rolls" l="" s="" d=""/>
+        <fee type="prosecutors" l="" s="" d=""/>
+        <fee type="help" l="" s="" d=""/>
+        <fee type="plans" l="" s="" d=""/>
+        <total l="" s="" d=""/>
+      </fees>
+      <expenses mentioned="true">
+        <expense type="clerk" l="12" s="15" d=""/>
+        <expense type="expert" l="" s="" d=""/>
+      </expenses>
+    </conclusions>
+    <keywords group="estates"/>
+    <keywords group="procedure"/>
+    <keywords group="contract"/>
+    <keywords group="encumbrance"/>
+    <keywords group="law"/>
+    <keywords group="measurement"/>
+    <keywords group="repairs"/>
+    <keywords group="guarantees"/>
+    <keywords group="responsability"/>
+    <keywords group="ownership"/>
+    <keywords group="value"/>
+    <keywords group="neighbourhood"/>
+    <keywords group="disorder"/>
+    <keywords group="transformation"/>
+    <analysis>une sentence du lieutenant civil rendue en la chambre civile du Châtelet le 28 septembre 1725 entre Lefranc, Thibault, maître couvreur, obligeant Liépard, maître charpentier, à payer les ouvrages de couvertures de bardeau que Lefranc, Thibault a faits au moulin. « Revenant, tous lesdits ouvrages de couverture de bardô ensemble à la quantité de quarente six toises et demis, six pieds trois quart ; scavoir trente deux toises et demie six pieds trois quart d'ouvrages de bardô neuf. Que moy, Joubert estime valoir la somme de onze livres la toises, eu égard au tems que l'ouvrages a esté faite, que la plus grande partie de la voliche est vieille et que dans la quantité des toises de bardô neuf il s'y rencontre plusieurs vieux bardeaux meslé avec le neuf et que la pluspart n'est attaché sur la voliche qu'avec un cloux ce qui fait tourner et vaciller ledit bardô et luy hoste la stabilité qu'il devroit avoir. Vaut audit prix la somme de trois cent cinquante neuf livres onze sols huit deniers, cy 359 livres 11 sols 8 deniers,Et moy Dubois, j'estime ladite quantité de trente deux toises et demis, six pieds trois quart valoir la somme de 490 livres 6 sols 3 deniers, qui est, à raison de quinze livres le toises superficiele, eu égard que lesdits ouvrages ont esté faite en l'année mil sept cent vingt quatre, tems auquel il n'estoit pas possible de trouver du bardô fait chez les tonneliers et brasseur ou l'on l'avoit à très bon compte par raison pour laquelle l'ouvrier a esté dans l'obligation d'acheter des futailles qui estoit fort chère en ce tems là, attendu la vendange, lesquelles futaille il a fait sier et tailler le bardô chez luy, ce qui a causé le grand prix que le bardô luy a couté, joint au déchet et [à] l'esguard des prétendues deffectuosité marqué cy dessus je n'en ay remarqué aucune et s'il y en a quelqu'une que je n'ay pas observé elle peuvent estre arrivé depuis le temps que les serrurages ont esté [f. 4r°] fait qui est environ deux ans jusqu'au jour d'aujourd'huy, soit par changement de place qui a pû heurter les errestes des piedsdroits ou de la voute où il est présentement placé ou par quelqu'autre cas en prenant tel à mon advis sur ce chef, cy 490 livres 63 deniers
+Et, de manié, 14 toises que moy Joubert estime à raison de deux livres quinze sols la toises, eu égard audit prix, la somme de trente huit livres dix sols, cy 38 livres 10 sols
+Plus moy Joubert, j'observe que dans le tems que lesd. ouvrages de couverture ont esté fait qui est sur la fin de l'année 1724 que le milié de bardô neuf de la qualité de celuy qui a esté employé ausdits ouvrages a couté dans ledit tems chez les brasseurs et toneliers où on achette d'ordinaire ces sortes de marchandises, la somme de vingt cinq livres et que c'est sur ce fondement que l'ai estimé le toisé superficiel de bardô neuf. Plus j'ai remarqué qu'un des arrestier de la couverture dud. moulin dans le bout du derrière du bateaux est éclatée en deux et que le bardô audit endroit est en partie détruit et décloué, ainsy qu'en plusieurs endroits où il y a desja des bardô décloué et coullé, ce qui fait des jours à lad. couverture par où les eaux pluviales peuvent tomber dans l'intérieure de la cage dudit moulin.
+Et moy Dubois, j'auroit bien d'autres observations à vous faire monsieur pour instruire votre religion contraire à celle cy dessus mais il parroistroit dans notre raport beaucoup d'affectation de notre part, remettant au tier qui sera par vous Monsieur commez, à vous faire un raport fidèl de l'état auquel est à présent lad. couverture et de celle où elle pourroit estre lorsqu'elle ont esté fait et finy et que pas une des parties ne s'en est plaint dans le cour de toute la procédure qui dure depuis deux années, dont elle n'auroit pas manqué de se pleindre [de]puis que la cause a esté porté devant vous ; à l'esgard du bardô, il est fort ésé de juger s'il étoit rare ou non en ce tems-là puisque vendange venoit pour ainsy dire d'estre faite au mois d'octobre et novembre de l'année 1724 où les futailles étoit très rares.
+A l'esgard de l'ouvrages de bardô manié à bout je l'estime valoir la somme de six livres la toise, eu égard qu'il a esté retaillée de tout costé, vallent les quatorze toises la somme de quatre vingt quatre livres cy 84 livresSomme totale à quy monte lesdits ouvrages par moy Joubert cy dessus estimes à la somme de quatre cent soixante quatre livres un sols huit deniers, le tout eu égard à la qualité desd. ouvrages et au tems qu'il ont esté fait, sauf à vous, Monsieur, d'en juger sur le tout selon votre justice et prudence ordinaire, cy 646 livres 1 sol 8 deniers
+Et moy Dubois, suivant les prix des ouvrages chacune suivant leur qualité et valeur par moy cy dessus estimé, le totale monte à la somme de six cent soixante huit livres, huit sols neuf deniers, cy 668 livres 8 sols 9 deniers
+Tel est mon avis, sauf à vous, Monsieur, d'en juger et ordonner suivant votre prudence et justice ordinaire. ».</analysis>
+    <noteworthy/>
+  </description>
+</expertise>

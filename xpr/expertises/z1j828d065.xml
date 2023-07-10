@@ -1,0 +1,206 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j828d065">
+      <meta/>
+      <control>
+        <maintenanceStatus/>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term/>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:45:33.927+02:00">2021-04-21T20:45:33.927+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateKeywordsModule_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour du module keywords.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:45:02.355+02:00">2021-04-21T20:45:02.355+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateExpertsFees_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour du coûts de l'expertise pour les experts.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:44:31.814+02:00">2021-04-21T20:44:31.814+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateExpertisesArrangement_files.xqy/BaseX</agent>
+            <eventDescription>Ajout du champs Accommodement dans l'éventualité d’une résolution par les parties.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2019-05-01T12:00:00">2019-05-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1756</unitdate>
+    <idno type="unitid">Z1J828</idno>
+        <idno type="item">065</idno>
+        <facsimile from="0669" to="0678"/>
+        <physDesc>
+          <extent sketch="false">8</extent>
+          <appendices>
+            <appendice>
+              <type type="other">compte</type>
+              <extent>1</extent>
+              <desc/>
+              <note/>
+            </appendice>
+          </appendices>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1756-03-18" type="paris"/>
+          <date when="1756-04-14" type="paris"/>
+          <date when="1756-04-14" type="paris"/>
+        </sessions>
+        <places>
+          <place type="paris">
+            <address>
+              <street>rue Saint-Honoré</street>
+              <buildingNumber/>
+            </address>
+            <complement>vis-à-vis l'hôtel de Noailles</complement>
+            <parish/>
+            <owner>maison occupée par François Marie Montault, trésorier de la duchesse
+                        d'Orléans</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="acceptation">Recevoir et évaluer le travail réalisé</category>
+          <designation rubric="true">Visite et estimation d'ouvrages de
+                    menuiserie</designation>
+        </categories>
+        <procedure>
+          <framework type="b2a">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>lieutenant civil</orgName>
+              <date when="1756-02-07"/>
+            </sentence>
+          </sentences>
+          <case>fin de travaux / désaccord sur le prix à payer</case>
+          <objects>
+            <object type="other">ouvrages de menuiserie</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0174" context="primary" appointment="appointed">
+              <title>architecte expert bourgeois</title>
+            </expert>
+            <expert ref="#xpr0089" context="primary" appointment="appointed">
+              <title>architecte expert</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0059">
+              <persName>
+                <surname>Forestier</surname>
+                <forename>Cézaire François</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="true" intervention="true">
+              <person>
+                <persName>
+                  <surname>Danneau</surname>
+                  <forename>Pierre</forename>
+                </persName>
+                <occupation>maître ébéniste à Paris</occupation>
+              </person>
+              <status>builder</status>
+              <expert ref="#xpr0174"/>
+            </party>
+            <party role="opponent" presence="true" intervention="true">
+              <person>
+                <persName>
+                  <surname>Montault</surname>
+                  <forename>François Marie</forename>
+                </persName>
+                <occupation>trésorier de la duchesse d'Orléans</occupation>
+              </person>
+              <status>limited-partner</status>
+              <expert ref="#xpr0089"/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <agreement type="disagreement">Désaccord</agreement>
+          <opinion ref="">"Revenant les ouvrages cy dessus énoncés suivant lesdites estimations de
+                    moy Desboeufs sans avoir égard aux journées demandées par ledit mémoire, mais
+                    bien eu égard à l'ouvrage qui a été fait, à la somme de 164 l. 6 s. 9 d. Et
+                    suivant les estimations de moy Le Tordeur, ayant égard au nombre desdites
+                    journées demandées par ledit mémoire, à la somme de 236 l. 16 s."</opinion>
+          <arrangement/>
+          <estimate/>
+          <fees detail="true">
+            <fee type="papers" l="4" s="12" d=""/>
+            <fee type="rolls" l="16" s="" d=""/>
+            <fee type="clerk" l="18" s="" d=""/>
+            <fee ref="#xpr0174" type="expert" l="2x18" s="" d=""/>
+            <fee ref="#xpr0089" type="expert" d="" l="" s=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <total l="74" d="" s="12"/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="17" s="10" d=""/>
+            <expense type="expert" l="10" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group=""/>
+        <analysis>"Et à l'instant ledit sieur Demonteaut nous ad it que ledit Danneau a d'abord
+                fait tous les efforts imaginables pour faire faire l'estimation dont il s'agit par
+                des ébénistes, que même ledit sieur Demonteaut ayant nommé le sieur Cochois, ledit
+                sieur Danneau l'a récusé à l'audiance, que ledit sieur Dumontaut pour faire cesser
+                ses chicanes a nommé ledit sieur Desboeufs, que ledit sieur Danneau a été voir pour
+                prendre son jour, que les propos qu'il a tenu audit sieur Desboeufs, l'ont sans
+                doutte déterminé à refuser de faire ladite estimation, ce qui resulte de la
+                sommation que ledit sieur Danneau a fait faire audit sieur Demontaut, le douze mars
+                present mois, de nommer un autre expert au lieu dudit sieur Desboeufs, attendu qu'il
+                luy avoit déclaré qu'il ne procederait pas à ladite estimation, qu'en c'est etat
+                ledit sieur Danneau n'a pas dû assigner à aujourd'hui ledit sieur
+                Desboeufs…"</analysis>
+        <noteworthy/>
+      </description>
+    </expertise>

@@ -1,0 +1,230 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1004d047">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-06-15T15:18:49.962+02:00">2021-06-15T15:18:49.962+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateExpertisesPlaces.xqy/BaseX</agent>
+            <eventDescription>Ajout des nœuds xml manquant dans les adresses.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-07-01T12:00:00">2020-07-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2017-10-01T12:00:00">2017-10-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1004</idno>
+        <idno type="item">047</idno>
+        <facsimile from="0518" to="0554"/>
+        <physDesc>
+          <extent sketch="false">37</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-06-17" type="paris"/>
+          <date when="1776-08-03" type="paris"/>
+        </sessions>
+        <places>
+          <place xml:id="id24d285" type="suburbs">
+            <address/>
+            <complement>Rue de la Ville-l’Evêque, faubourg Saint-Honoré, attenant celle numéritée 8</complement>
+            <city/>
+            <district/>
+            <owner/>
+          </place>
+          <place xml:id="id24d296" type="office">
+            <address/>
+          </place>
+          <place xml:id="id24d302" type="province">
+            <address/>
+            <complement>seigneurie</complement>
+            <city>La Grange sur Louis</city>
+            <district/>
+            <owner/>
+          </place>
+        </places>
+        <categories>
+          <category type="estimation">Estimer la valeur des biens</category>
+          <designation rubric="true">Estimation d'une maison, située à Paris, rüe de la Ville l'Evesque, fauxbourg Saint Honoré et de la terre de la Seigneurie de la Grange feü Louis, près Corbeil sur Seine, de la succession de feü Monsieur Alexandre, Conseiller du Roi en sa cour des Aydes, à Paris ; M. Payen, expert.</designation>
+        </categories>
+        <procedure>
+          <framework type="b2b">L’institution est saisie dans le cadre d’une procédure (l’institution nomme un ou deux experts)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Châtelet, lieutenant civil (sentence)</orgName>
+              <date when="1776-05-07"/>
+            </sentence>
+          </sentences>
+          <case>Vente d’une maison et de terre et seigneurie dans le cadre de la succession de feu Etienne Alexandre (héritiers mineurs)</case>
+          <objects>
+            <object type="territory">Domaine, terres, fief</object>
+            <object type="house">Maison(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0209" context="primary" appointment="court-appointed">
+              <title>architecte juré expert bourgeois des bâtiments en titre d'office</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0050">
+              <persName>
+                <surname>Mallerot</surname>
+                <forename>Joseph Louis</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Heron de la Thuillerie</surname>
+                  <forename>Jean Baptiste Claude</forename>
+                </persName>
+                <occupation>conseiller du roi, l’un des receveurs générau des consignations du conseil du roi, comme tuteur ad hoc deAlexandre, André Sauveur, chevalier, seigneur de la Grange-sur-Louis, émancipé d’âge, fils de défunt Alexandre, André Claude Nicolas, chevalier, seigneur de la Grange-sur-Louis, conseiller du roi en sa cour des aides, et de Du Vergier, Charlotte son épouse (depuis sa veuve), remariée en secondes noces à Dubois, Jean Baptiste, les deux enfants Alexandre seuls héritiers de défunt Alexandre, André Claude Nicolas</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>De Lancray</surname>
+                  <forename>Pierre</forename>
+                </persName>
+                <occupation>seigneur de Cindré, conseiller secrétaire du roi et de ses finances, receveur général des finances de Flandres, Hainault et Artois, tuteur ad hoc de De Lancray, Alexandre Louis, son fils, fils aussi de Alexandre, Angélique Catherine son épouse, tous deux émancipés par leur mariage, les deux enfants Alexandre seuls héritiers de défunt Alexandre, André Claude Nicolas</occupation>
+              </person>
+              <status>heir</status>
+              <expert ref="#xpr0209"/>
+              <prosecutor>
+                <persName>
+                  <surname>Poupart</surname>
+                  <forename>Jean Marie</forename>
+                </persName>
+              </prosecutor>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0209">« Nous estimons laditte maison, ainsi qu’elle se comporte ; s’étend de toutes parts ; circonstances et dépendances de fond en comble ; dans son état actuel, cy dessus rapporté ; et sans aucune réserve A la charge uniquement dudit cens, droits et devoirs seigneuriaux dont elle est tenue envers l’archevéché de Paris, dans la m… duquel elle est située Valloir la somme de … 16 000 l. En ce compris, pour lesd. Glaces, decors, scultpures de marbre et autres embellissements celle de … 28 500 l » 
+« Toutes attentions faittes à la scituation de laditte terre à la qualité de construction du château et dudit bastiment et dependances à leur distribution ; à la décoration dudit appartement, et l’agrement dudit jardin et du parc ; à l’état, âge et essence des bois… A la nature de construction desdits bastimens de la ferme, et à leur destination A la qualité du fond des terres labourables… Nous estimons laditte terre comme elle se comporte ; s’étend de toutes parts ; circonstances et dependances susdéclarées ; en l’état où le tout est, et sans reserves quelconques A la charge uniquement 1° des cens, droits et devoirs seigneuriaux et féodaux, envers les divers seigneurs en la mouvance desquelles elle est… 2° des quarante deux livres de rente deues à la seigneurie de Mortange 3° et des dix huit livres aussi de rente deues à celle de Petit Bourg, comme dessus est dit Valloir la somme de … 155 000 l. 
+Savoir Pour ce qui est en fief … 91 305 l. 
+Et pour ce qui est en censive ou roture ; compris lesdits deux cent soixanteune livres dix sols de rente foncière, et quinze livres de rente constituée… 63 695 : Préciput en faveur de mondit sieur Alexandre comme fils aîné. » 
+« Mais comme ladite terre est un … de la communauté de biens qui a esté, entre feu mondit sieur Alexandre père et laditte dame du Vergier, lors son épouse, de present celle dudit sieur Dubois Que par consequent, il n’y a que la moitié de cette terre qui appartient à la succession de feu mondit sieur Alexandre père, et qui en dépend ; et sur laquelle mondit sieur Alexandre, son fils, peut prendre son préciput Nous estimons cette moitié, valloir la somme de … 10 000 l. 
+C’est, Monsieur, l’état de ladite maison rue de la ville Levesque ; celui de ladite terre de la Grange sur …, dont est question et la valleur desdits biens ; vous réferans d’en ordonner cy… référé »</opinion>
+          <arrangement/>
+          <agreement type="conclusion">Conclusion</agreement>
+          <estimate l="" s="" d=""/>
+          <estimates>
+            <place ref="#id24d285">
+              <appraisal l="16000" s="" d="">
+                <desc>une maison et glaces</desc>
+              </appraisal>
+            </place>
+            <place ref="#id24d296">
+              <appraisal l="155000" s="" d="">
+                <desc>château et dépendances</desc>
+              </appraisal>
+            </place>
+            <place ref="#id24d302">
+              <appraisal l="" s="" d="">
+                <desc/>
+              </appraisal>
+            </place>
+          </estimates>
+          <fees detail="true">
+            <fee type="papers" l="39" s="" d=""/>
+            <fee type="expert" ref="#xpr0209" l="210" s="" d=""/>
+            <fee type="clerk" l="210" s="" d=""/>
+            <fee type="rolls" l="138" s="" d=""/>
+            <fee type="prosecutors" l="168" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="other" l="108" s="" d="">secondes expéditions</fee>
+            <fee type="plans" l="36" s="" d=""/>
+            <total l="921" s="" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="expert" l="168" s="" d=""/>
+            <expense type="clerk" l="174" s="10" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis/>
+        <noteworthy>Toutes les vacations n'ont pas été notées sur cette fiche : 24 vacations de Paris et 2 jours de campagne</noteworthy>
+      </description>
+    </expertise>

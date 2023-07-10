@@ -1,0 +1,209 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j582d045">
+  <meta/>
+  <control>
+    <maintenanceStatus>revised</maintenanceStatus>
+    <publicationStatus/>
+    <localControl localType="detailLevel">
+      <term>completed</term>
+    </localControl>
+    <maintenanceHistory>
+      <maintenanceEvent>
+                <eventType>revised</eventType>
+                <eventDateTime standardDateTime="2022-03-31T15:55:58Z">2022-03-31T15:55:58Z</eventDateTime>
+                <agentType>human</agentType>
+                <agent>llosserand</agent>
+                <eventDescription>rvpcd</eventDescription>
+            </maintenanceEvent>
+          <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateObjectsValues_db.xqy/BaseX</agent>
+        <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateOpinionRef_files.xqy/BaseX</agent>
+        <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateRefValues_files.xqy/BaseX</agent>
+        <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+        <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>revised</eventType>
+        <eventDateTime standardDateTime="2020-11-01T12:00:00">2020-11-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>JH</agent>
+        <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>retroconverted</eventType>
+        <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>ead2xpr.xsl/Saxon9</agent>
+        <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>created</eventType>
+        <eventDateTime standardDateTime="2017-04-01T12:00:00">2017-04-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>llosserand</agent>
+        <eventDescription>Création de la fiche.</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+  </control>
+  <sourceDesc>
+    <unitdate>1726</unitdate>
+    <idno type="unitid">Z1J582</idno>
+    <idno type="item">045</idno>
+    <facsimile from="0454" to="0462"/>
+    <physDesc>
+      <extent sketch="false">6</extent>
+      <appendices>
+        <appendice>
+          <type type="other">Quittance</type>
+          <extent>1</extent>
+          <desc>quittance de payement par Baudouin à Le Pas Dubuisson pour ses vacations, du 14 septembre 1726.</desc>
+          <note/>
+        </appendice>
+      </appendices>
+    </physDesc>
+  </sourceDesc>
+  <description>
+    <sessions>
+      <date when="1726-08-08" type="paris"/>
+      <date when="1726-09-11" type="paris"/>
+    </sessions>
+    <places>
+      <place type="paris">
+        <address>
+          <street>Rue de Poitou [Voie actuelle. Autre(s) nom(s) : rue de l'Oseille et rue de Poitou]</street>
+          <buildingNumber/>
+        </address>
+        <complement>un mur entre deux maisons appartenant aux parties situées rue de Poitou au Marais.</complement>
+        <parish/>
+        <owner>Herault / Blanpain</owner>
+      </place>
+    </places>
+    <categories>
+      <category type="settlement">Départager</category>
+      <designation rubric="true">Viste d'un mur mitoyen en deux maisoins, scizes rue du Poitou, à la requeste du sieur Blancpain, contre la demoiselle Hérault; Mrs Dubuisson et Loir, experts</designation>
+    </categories>
+    <procedure>
+      <framework type="b2">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+      <origination type="institution">Une institution</origination>
+      <sentences>
+        <sentence>
+          <orgName>lieutenant civil</orgName>
+          <date when="1726-07-20"/>
+          <date when="1726-08-28"/>
+        </sentence>
+      </sentences>
+      <case>la partie opposante ne veut pas faire mettre des ouvriers pour reconstruire le mur mitoyen qui est fractionné d'un côté et de nulle valeur</case>
+      <objects>
+        <object type="wall">Mur(s)</object>
+      </objects>
+    </procedure>
+    <participants>
+      <experts>
+        <expert ref="#xpr0177" context="primary" appointment="appointed">
+          <title>architecte juré du roi expert bourgeois de Paris</title>
+        </expert>
+        <expert ref="#xpr0183" context="primary" appointment="appointed">
+          <title>juré du roi expert de bâtiment à Paris</title>
+        </expert>
+      </experts>
+      <clerks>
+        <clerk ref="#clrk0034">
+          <persName>
+            <surname>Baudouin</surname>
+            <forename>Antoine</forename>
+          </persName>
+        </clerk>
+      </clerks>
+      <parties>
+        <party role="petitioner" presence="false" intervention="false">
+          <person>
+            <persName>
+              <surname>Blanpain</surname>
+              <forename>Claude Nicolas</forename>
+            </persName>
+            <occupation>conseiller secrétaire du roi</occupation>
+          </person>
+          <status>owner</status>
+          <expert ref="#xpr0177"/>
+        </party>
+        <party role="opponent" presence="false" intervention="false">
+          <person>
+            <persName>
+              <surname>Hérault</surname>
+              <forename/>
+            </persName>
+            <occupation/>
+          </person>
+          <status>owner</status>
+          <expert ref="#xpr0183"/>
+        </party>
+      </parties>
+      <craftmen>
+        <craftman>
+          <persName>
+            <surname>Ravinet</surname>
+            <forename/>
+          </persName>
+          <occupation>maître maçon entrepreneur de Blanpain, Claude Nicolas</occupation>
+        </craftman>
+      </craftmen>
+    </participants>
+    <conclusions>
+      <opinion ref="#xpr0177 #xpr0183">le mur doit être reconstruit en moellon à frais communs selon l'alignement donné (le moyen de le faire est décrit très précisément). L'entrepreneur Ravinet est payé 5 livres pour ses travaux.
+« [f. 6v°] Et comme il a falu nous faire aider au sujet des tranchées, percement nécessaires pour les opérations tant fait au premier rapport qu'au présent ce qui a esté fourny par monsieur Ravinet entrepreneur dud. sieur Blanpain, nous estimons qu'il appartient audit sieur Ravinet la somme de cinq livres qui doivent estre payé par moitié desd. sieurs propriétaires, cy 5 livres. Tel est l'avis de nous experts etc. ».</opinion>
+      <arrangement/>
+      <agreement type="agreement">Accord</agreement>
+      <estimate l="" s="" d=""/>
+      <fees detail="true">
+        <fee type="papers" l="" s="" d=""/>
+        <fee type="expert" ref="#xpr0177" l="12" s="" d=""/>
+        <fee type="expert" ref="#xpr0183" l="12" s="" d=""/>
+        <fee type="clerk" l="" s="" d=""/>
+        <fee type="rolls" l="" s="" d=""/>
+        <fee type="prosecutors" l="" s="" d=""/>
+        <fee type="help" l="" s="" d=""/>
+        <fee type="plans" l="" s="" d=""/>
+        <total l="" s="" d=""/>
+      </fees>
+      <expenses mentioned="false"/>
+    </conclusions>
+    <keywords group="estates"/>
+    <keywords group="procedure"/>
+    <keywords group="contract"/>
+    <keywords group="encumbrance"/>
+    <keywords group="law"/>
+    <keywords group="measurement"/>
+    <keywords group="repairs"/>
+    <keywords group="guarantees"/>
+    <keywords group="responsability"/>
+    <keywords group="ownership"/>
+    <keywords group="value"/>
+    <keywords group="neighbourhood"/>
+    <keywords group="disorder"/>
+    <keywords group="transformation"/>
+    <analysis>« [f. 1r°] Cette minutte est décharge deux fois au commencement [?] à la fin / 2 affaires / Examiné les deux affaires »
+                f. 2r°-v° : la première visite est ajournée car il est besoin de percer des trous dans les planchers des parties louées, le maître maçon entrepreneur de la partie requérante, Ravinet est chargé de faire ce travail, achevé pour la vacation suivante. L'alignement est donné lors de la deuxième affaire (après une deuxième sentence)
+                « [f. 4v°] Après lesquelles lectures ainsy par nous faite en présence présence et absence que dessus, nous avons fait tendre une ligne le long dudit mur par le costé de la maison de lad. delle Hérault par lequel il nous a parue qu'il étoit plus facile de donner ledit allignement d'après laquelle lignes nous aurions abaissé plusieurs applomb au moyen desquelles nous avons reconnu différents porte à faux du coté de la maison de lad. delle Hérant qui nous ont empêché de donner ledit allignement, n'estant point sure de sa véritable position, c'est pourquoy et pour nous en assurer nous avons chargée le sieur Ravinet de faire faire une tranchée le long dudit mur en tel sorte que nous puissions reconnoistre lesd. porte à faux, même de percer la vente [f. 5r°] au droit dudit mur par le costé de la maison de lad. delle Hérant, nous avons aussy fait percer de nouveau plusieurs troux à la queux de plusieurs autres pierres et par ces opérations que nous avons fait en faveur desd. trous nous avons reconnue que led. mur n'a que dix pouces trois quarte d'épaisseur en son plus fort et au dessus de leur patement, ainsy que nous l'avons raporté dans notre premier procès verbal ce que nous avons fait pour connoistre si ledit mur n'avoit pas plus d'épaisseur au droit dudit empatement et de combien il devoit estre renforcé tant du costé de lad. maison que de celle du sr Blanpain. » etc. pour l'alignement.</analysis>
+    <noteworthy/>
+  </description>
+</expertise>

@@ -1,0 +1,237 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1005d022">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-07-01T12:00:00">2020-07-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2017-10-01T12:00:00">2017-10-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1005</idno>
+        <idno type="item">022</idno>
+        <facsimile from="0204" to="0217"/>
+        <physDesc>
+          <extent sketch="false">8</extent>
+          <appendices>
+            <appendice>
+              <type type="other">reconnaissance</type>
+              <extent>2</extent>
+              <desc/>
+              <note>reconnaissance, acceptation sur les prix</note>
+            </appendice>
+            <appendice>
+              <type type="other">quittance</type>
+              <extent>1</extent>
+              <desc/>
+              <note>quittance pour la démolition de la maison</note>
+            </appendice>
+          </appendices>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-07-10" type="suburbs"/>
+          <date when="1776-08-01" type="suburbs"/>
+          <date when="1776-09-25" type="suburbs"/>
+          <date when="1776-09-30" type="paris"/>
+          <date when="1776-09-05" type="paris"/>
+          <date when="1776-09-17" type="paris"/>
+          <date when="1776-09-18" type="paris"/>
+          <date when="1776-09-29" type="paris"/>
+        </sessions>
+        <places>
+          <place type="suburbs">
+            <address/>
+            <complement>Rue Royale, près la barrière blanche, quartier des procherons à droite en y entrant par la rue Blanche</complement>
+            <city/>
+            <district/>
+            <owner>de Villemblin</owner>
+          </place>
+          <place type="office">
+            <address/>
+          </place>
+        </places>
+        <categories>
+          <category type="acceptation">Recevoir et évaluer le travail réalisé</category>
+          <designation rubric="true">Visitte et estimation d'ouvrages de maçonnerie en une maison, rue Royale, près la Barrière Blanche, à la requeste du sieur Prelot, maçon ; MM. Thévenin et Regnard, experts.</designation>
+        </categories>
+        <procedure>
+          <framework type="b2a">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Châtelet, lieutenant civil (sentence)</orgName>
+              <date when="1776-04-26"/>
+            </sentence>
+          </sentences>
+          <case>L’entrepreneur réclame le paiement de 20 000 livres pour la construction d’une maison</case>
+          <objects>
+            <object type="other">maçonnerie</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0254" context="" appointment="">
+              <title>architecte juré expert des bâtiments à Paris</title>
+            </expert>
+            <expert ref="#xpr0235" context="" appointment="">
+              <title>architecte juré expert des bâtiments à Paris</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0061">
+              <persName>
+                <surname>Lecoeur</surname>
+                <forename>Jean Clair</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="true" intervention="">
+              <person>
+                <persName>
+                  <surname>Prelot</surname>
+                  <forename>Claude</forename>
+                </persName>
+                <occupation>maçon entrepreneur de bâtiments</occupation>
+              </person>
+              <status>builder</status>
+              <expert ref="#xpr0235"/>
+              <prosecutor>
+                <persName>
+                  <surname>Regnard</surname>
+                  <forename/>
+                </persName>
+              </prosecutor>
+              <representative>
+                <persName>
+                  <surname>Colomban</surname>
+                  <forename/>
+                </persName>
+                <occupation>avocat</occupation>
+              </representative>
+            </party>
+            <party role="opponent" presence="true" intervention="">
+              <person>
+                <persName>
+                  <surname>de Villemblin</surname>
+                  <forename/>
+                </persName>
+                <occupation>propriétair de ladite maison</occupation>
+              </person>
+              <status>limited-partner</status>
+              <expert ref="#xpr0254"/>
+              <prosecutor>
+                <persName>
+                  <surname>Guerin</surname>
+                  <forename/>
+                </persName>
+              </prosecutor>
+              <representative>
+                <persName>
+                  <surname>Picart</surname>
+                  <forename/>
+                </persName>
+                <occupation>avocat</occupation>
+              </representative>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname>Fossard</surname>
+                <forename/>
+              </persName>
+              <occupation>toiseur</occupation>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="">« Montants et revenants ensemble tous les ouvrages de maçonnerie faits pour mondit sieur de Villamblin par ledit sieur Prelot suivant l’estimation par nous faitte conformement au devis et marché fait entre les parties, et aux termes de votre sentence Monsieur, à la somme totale de huit mille trois cent vingt trois livres dix sept sols deux deniers, sur laquelle il convient encore deduire celle de cinq cent quatre vingt huit livres pour quatorze toises cubes de moilon de Nanterre et de Passy que M. de Villamblin a fourni et que l’entrepreneur a reconnu par le devis et marché, à raison de quarante deux livres la toise prix aussi convenu par ledit devis et marché, au moyen de quoi le total général se trouve reduit à la somme de sept mille sept cent trente cinq livres deix sept sols deux deniers, cy… 7 735 l. 17 s. 2 d. 
+Nous avons ensuite signé et paraphé avec ledit greffier le memoire desdits ouvrages et annexé à la presente minute pour y avoir recours en cas de besoin 
+C’est Monsieur l’avis unanime de nous experts sur la valeur desdits ouvrages conformement au devis et marché fait entre les parties, vous referant de juger et ordonner, Fait par nous architectes experts susdits les jours mois et an que dessus »</opinion>
+          <arrangement/>
+          <agreement type="agreement">Accord</agreement>
+          <estimate l="" s="" d=""/>
+          <fees detail="true">
+            <fee type="papers" l="6" s="6" d=""/>
+            <fee type="expert" ref="#xpr0254" l="58" s="10" d=""/>
+            <fee type="expert" ref="#xpr0235" l="58" s="10" d=""/>
+            <fee type="clerk" l="58" s="10" d=""/>
+            <fee type="rolls" l="34" s="" d=""/>
+            <fee type="prosecutors" l="5" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="220" s="16" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="50" s="10" d=""/>
+            <expense type="expert" l="39" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract">
+          <term value="c2">Devis et marché</term>
+        </keywords>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis/>
+        <noteworthy>f. 2r° "notre avis est que pour éviter à frais et multiplicité des vacations il est absolument nécessaire qu'il soit fait un toisé desdits ouvrages, pourquoi nous avons à l'instant chargé le sieur Fossard toiseur de bâtiments icy présent de faire ledit toisé, après lequel nous précèderons à la vériffication et estimation desdits ouvrages"</noteworthy>
+      </description>
+    </expertise>

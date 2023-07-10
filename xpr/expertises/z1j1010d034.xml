@@ -1,0 +1,242 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1010d034">
+  <meta/>
+  <control>
+    <maintenanceStatus>revised</maintenanceStatus>
+    <publicationStatus/>
+    <localControl localType="detailLevel">
+      <term>completed</term>
+    </localControl>
+    <maintenanceHistory>
+      <maintenanceEvent>
+                <eventType>revised</eventType>
+                <eventDateTime standardDateTime="2022-08-28T14:24:49Z">2022-08-28T14:24:49Z</eventDateTime>
+                <agentType>human</agentType>
+                <agent>llosserand</agent>
+                <eventDescription>rvpcd</eventDescription>
+            </maintenanceEvent>
+          <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateObjectsValues_db.xqy/BaseX</agent>
+        <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateOpinionRef_files.xqy/BaseX</agent>
+        <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateRefValues_files.xqy/BaseX</agent>
+        <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+        <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>revised</eventType>
+        <eventDateTime standardDateTime="2020-09-01T12:00:00">2020-09-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>JH</agent>
+        <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>retroconverted</eventType>
+        <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>ead2xpr.xsl/Saxon9</agent>
+        <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>created</eventType>
+        <eventDateTime standardDateTime="2017-04-01T12:00:00">2017-04-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>llosserand</agent>
+        <eventDescription>Création de la fiche.</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+  </control>
+  <sourceDesc>
+    <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1010</idno>
+    <idno type="item">034</idno>
+    <facsimile from="0267" to="0275"/>
+    <physDesc>
+      <extent sketch="false">8</extent>
+    </physDesc>
+  </sourceDesc>
+  <description>
+    <sessions>
+      <date when="1776-12-19" type="paris"/>
+      <date when="1776-12-19" type="paris"/>
+      <date when="1776-12-20" type="paris"/>
+      <date when="1776-12-23" type="paris"/>
+      <date when="1776-12-24" type="paris"/>
+    </sessions>
+    <places>
+      <place xml:id="id231d287" type="paris">
+        <address>
+          <street>rue de Grenelle</street>
+          <buildingNumber/>
+        </address>
+        <complement>en face de la rue de la Chaise à l’enseigne de La petite chaise</complement>
+        <parish/>
+        <owner>occupée par le sieur Duval, marchand de vin</owner>
+      </place>
+      <place xml:id="id231d306" type="paris">
+        <address>
+          <street>rue Traversine</street>
+          <buildingNumber/>
+        </address>
+        <complement/>
+        <parish/>
+        <owner>appartenant pour moitié à Gilles, Françoise, veuve de Ferrière, Benoist et pour l’autre moitié à Desbordes, Judith</owner>
+      </place>
+    </places>
+    <categories>
+      <category type="estimation">Estimer la valeur des biens</category>
+      <designation rubric="true">Estimation de deux maisons</designation>
+    </categories>
+    <procedure>
+      <framework type="b2">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+      <origination type="institution">Une institution</origination>
+      <sentences>
+        <sentence>
+          <orgName>lieutenant civil</orgName>
+          <date when="1776-12-04"/>
+        </sentence>
+      </sentences>
+      <case>Partage / vente par licitation</case>
+      <objects>
+        <object type="house">Maison(s)</object>
+      </objects>
+    </procedure>
+    <participants>
+      <experts>
+        <expert ref="#xpr0089" context="primary" appointment="appointed">
+          <title>architecte expert</title>
+        </expert>
+      </experts>
+      <clerks>
+        <clerk ref="#clrk0057">
+          <persName>
+            <surname>Liébault de La Neuville</surname>
+            <forename>Christophe Edouard</forename>
+          </persName>
+        </clerk>
+      </clerks>
+      <parties>
+        <party role="petitioner" presence="false" intervention="false">
+          <person>
+            <persName>
+              <surname>Gilles</surname>
+              <forename>Françoise</forename>
+            </persName>
+            <occupation>veuve de Ferrière, Benoist, propriétaire pour moitié des deux maisons</occupation>
+          </person>
+          <status>joint-owner</status>
+          <expert ref="#xpr0089"/>
+          <prosecutor>
+            <persName>
+              <surname>Traveau</surname>
+              <forename>Edme</forename>
+            </persName>
+          </prosecutor>
+        </party>
+        <party role="opponent" presence="false" intervention="false">
+          <person>
+            <persName>
+              <surname>Duval</surname>
+              <forename>Simon Denis Louis</forename>
+            </persName>
+            <occupation>au nom et comme curateur créé par justice à la succession vacante de Desbordes, Judith, décédée veuve de Gilles, Louis, laquelle à son décès était aussi propriétaire pour moitié lesdites deux maisons</occupation>
+          </person>
+          <person>
+            <persName>
+              <surname>Desbordes</surname>
+              <forename>Judith</forename>
+            </persName>
+            <occupation>épouse séparée quant aux biens de Buirette de Rochefort, Philippes Simon, écuyer, appelée à recueillir en partie la substitution dont la veuve Ferrière sa mère a été grevée par la dame Desbordes ayeule de Rochefort</occupation>
+          </person>
+          <person>
+            <persName>
+              <surname>Troussard</surname>
+              <forename>Noël Blaise</forename>
+            </persName>
+            <occupation>au nom et comme tuteur des autres appelés à ladite substitution</occupation>
+          </person>
+          <status>heir</status>
+          <expert ref="#xpr0089"/>
+        </party>
+      </parties>
+      <craftmen>
+        <craftman>
+          <persName>
+            <surname/>
+            <forename/>
+          </persName>
+          <occupation/>
+        </craftman>
+      </craftmen>
+    </participants>
+    <conclusions>
+      <opinion ref="#xpr0089">"Par toutes ces considérations et du cours du temps présent, nous estimons ladite maison comme elle se poursuit et comporte circonstances et dépendances valoir, à la charge 1° des cens et droits seigneuriaux, 2° des quarante livres de rente dont ladite maison est chargée par chacun an pour tenir de logement des gens de guerre, ainsy qu'il nous a été déclaré… la somme de 21000 l."
+ « Tout considéré nous estimons ladite maison comme elle se poursuit &amp; comporte et non compris les apartemens appartenans aux locataires valoir à la charge 1° des causes et droits seigneuriaux, 2° des trente six livres dont en est chargée par année pour le logement des gens de guerre, la somme de trente mille livres.
+                Nous observons, M., qu’il n’y a pas de possibilité de partager lesd. maisons commodément &amp; utilement entre les copropriétaires icelles cy Observation. »</opinion>
+      <arrangement/>
+      <agreement type="conclusion">Conclusion</agreement>
+      <estimate l="51000" s="" d=""/>
+      <estimates>
+        <place ref="#id231d287">
+          <appraisal l="21000" s="" d="">
+            <desc>maison</desc>
+          </appraisal>
+        </place>
+        <place ref="#id231d306">
+          <appraisal l="30000" s="" d="">
+            <desc>maison</desc>
+          </appraisal>
+        </place>
+      </estimates>
+      <fees detail="true">
+        <fee type="papers" l="19" s="" d=""/>
+        <fee type="expert" ref="#xpr0089" l="36" s="" d=""/>
+        <fee type="clerk" l="36" s="" d=""/>
+        <fee type="rolls" l="40" s="" d=""/>
+        <fee type="prosecutors" l="36" s="" d=""/>
+        <fee type="help" l="" s="" d=""/>
+        <fee type="plans" l="" s="" d=""/>
+        <total l="159" s="" d=""/>
+      </fees>
+      <expenses mentioned="true">
+        <expense type="expert" l="11" s="" d=""/>
+        <expense type="clerk" l="37" s="" d=""/>
+      </expenses>
+    </conclusions>
+    <keywords group="estates"/>
+    <keywords group="procedure"/>
+    <keywords group="contract"/>
+    <keywords group="encumbrance"/>
+    <keywords group="law"/>
+    <keywords group="measurement"/>
+    <keywords group="repairs"/>
+    <keywords group="guarantees"/>
+    <keywords group="responsability"/>
+    <keywords group="ownership"/>
+    <keywords group="value"/>
+    <keywords group="neighbourhood"/>
+    <keywords group="disorder"/>
+    <keywords group="transformation"/>
+    <analysis/>
+    <noteworthy/>
+  </description>
+</expertise>

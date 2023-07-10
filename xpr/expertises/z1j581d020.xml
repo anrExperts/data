@@ -1,0 +1,340 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j581d020">
+  <meta/>
+  <control>
+    <maintenanceStatus>revised</maintenanceStatus>
+    <publicationStatus/>
+    <localControl localType="detailLevel">
+      <term>completed</term>
+    </localControl>
+    <maintenanceHistory>
+      <maintenanceEvent>
+                <eventType>revised</eventType>
+                <eventDateTime standardDateTime="2022-03-29T16:17:14Z">2022-03-29T16:17:14Z</eventDateTime>
+                <agentType>human</agentType>
+                <agent>llosserand</agent>
+                <eventDescription>rvpcd</eventDescription>
+            </maintenanceEvent>
+          <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateOpinionRef_files.xqy/BaseX</agent>
+        <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateRefValues_files.xqy/BaseX</agent>
+        <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+        <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>revised</eventType>
+        <eventDateTime standardDateTime="2020-11-01T12:00:00">2020-11-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>JH</agent>
+        <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>retroconverted</eventType>
+        <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>ead2xpr.xsl/Saxon9</agent>
+        <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>created</eventType>
+        <eventDateTime standardDateTime="2017-04-01T12:00:00">2017-04-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>llosserand</agent>
+        <eventDescription>Création de la fiche.</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+  </control>
+  <sourceDesc>
+    <unitdate>1726</unitdate>
+    <idno type="unitid">Z1J581</idno>
+    <idno type="item">020</idno>
+    <facsimile from="0318" to="0332"/>
+    <physDesc>
+      <extent sketch="false">15</extent>
+    </physDesc>
+  </sourceDesc>
+  <description>
+    <sessions>
+      <date when="1726-06-15" type="paris"/>
+    </sessions>
+    <places>
+      <place type="paris">
+        <address>
+          <street>Palais (île de la Cité)</street>
+          <buildingNumber/>
+        </address>
+        <complement/>
+        <parish/>
+        <owner>Voisin et consors</owner>
+      </place>
+    </places>
+    <categories>
+      <category type="assessment">Décrire et évaluer les travaux à venir</category>
+      <designation rubric="true">Visitte ordonnée d'ouvrages, entre Madame Voisin, Vve du Président de Lamoignon et aud. à la salle menue du Palais, au sujet des bâtiments ; M. Aubry, expert</designation>
+    </categories>
+    <procedure>
+      <framework type="b2">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+      <origination type="institution">Une institution</origination>
+      <sentences>
+        <sentence>
+          <orgName>baillage du Palais (sentence)</orgName>
+          <date when="1726-05-28"/>
+        </sentence>
+      </sentences>
+      <case>les latrines, communes aussi bien aux propriétaires qu'aux locataires, sont en si mauvais état qu'on ne peut plus s'en servir et qu'il est nécessaire de les réparer.</case>
+      <objects>
+        <object type="other">latrines</object>
+      </objects>
+    </procedure>
+    <participants>
+      <experts>
+        <expert ref="#xpr0073" context="primary" appointment="appointed">
+          <title>architecte juré du roi expert bourgeois de Paris</title>
+        </expert>
+      </experts>
+      <clerks>
+        <clerk ref="#clrk0020">
+          <persName>
+            <surname>Quirot</surname>
+            <forename>Etienne François</forename>
+          </persName>
+        </clerk>
+      </clerks>
+      <parties>
+        <party role="petitioner" presence="false" intervention="false">
+          <person>
+            <persName>
+              <surname>Voisin</surname>
+              <forename>Marie Jeanne</forename>
+            </persName>
+            <occupation>veuve de de Lamoignon, Crétien, conseiller du roy en ses conseils, président au mortier au Parlement,</occupation>
+          </person>
+          <person>
+            <persName>
+              <surname>de Meaupoult</surname>
+              <forename>René</forename>
+            </persName>
+            <occupation>conseiller du roy en ses conseils, président au mortier au Parlement</occupation>
+          </person>
+          <person>
+            <persName>
+              <surname>Le Pelletier Desfort</surname>
+              <forename>Michel Robert</forename>
+            </persName>
+            <occupation>conseiller d'état et au Conseil royal</occupation>
+          </person>
+          <person>
+            <persName>
+              <surname>de la Brosse</surname>
+              <forename>Anne Cézard François</forename>
+            </persName>
+            <occupation>conseiller au Parlement, président en sa chambre des comptes</occupation>
+          </person>
+          <person>
+            <persName>
+              <surname>Collin De Cessard</surname>
+              <forename>Cézard Emmanuel</forename>
+            </persName>
+            <occupation>lieutenant général des armées du roy</occupation>
+          </person>
+          <person>
+            <persName>
+              <surname>Lescallopier</surname>
+              <forename>Marie Françoise</forename>
+            </persName>
+            <occupation>veuve de de Saint-Huy, René François, marquis de la Motte Fouquet</occupation>
+          </person>
+          <person>
+            <persName>
+              <surname>Maignon</surname>
+              <forename>François</forename>
+            </persName>
+            <occupation>avocat au Parlement</occupation>
+          </person>
+          <person>
+            <persName>
+              <surname>Courallat</surname>
+              <forename>Simon</forename>
+            </persName>
+            <occupation>avocat au Parlement</occupation>
+          </person>
+          <person>
+            <persName>
+              <surname>Domilier</surname>
+              <forename>Harmand Anselme</forename>
+            </persName>
+            <occupation>greffier de la chambre des comptes</occupation>
+          </person>
+          <person>
+            <persName>
+              <surname>Sinson</surname>
+              <forename>Pierre</forename>
+            </persName>
+            <occupation>bourgeois de Paris</occupation>
+          </person>
+          <person>
+            <persName>
+              <surname>de la Fresnay</surname>
+              <forename>Jean Charles</forename>
+            </persName>
+            <occupation/>
+          </person>
+          <person>
+            <persName>
+              <surname>Ruel</surname>
+              <forename>François</forename>
+            </persName>
+            <occupation/>
+          </person>
+          <person>
+            <persName>
+              <surname>de Veau</surname>
+              <forename>Anne</forename>
+            </persName>
+            <occupation>veuve du sieur Girard</occupation>
+          </person>
+          <person>
+            <persName>
+              <surname>Jollin</surname>
+              <forename>Magdeleine</forename>
+            </persName>
+            <occupation>fille marchande au Palais</occupation>
+          </person>
+          <person>
+            <persName>
+              <surname>Mallue</surname>
+              <forename>Geneviève</forename>
+            </persName>
+            <occupation>femme séparées de Bienveneue, Noël, marchand d'estofe de soy</occupation>
+          </person>
+          <person>
+            <persName>
+              <surname>Pasques</surname>
+              <forename>Anne Françoise</forename>
+            </persName>
+            <occupation>veuve de Comordeau, Joseph</occupation>
+          </person>
+          <person>
+            <persName>
+              <surname>Soubirau</surname>
+              <forename>Arneau</forename>
+            </persName>
+            <occupation>maître graveur au Palais,</occupation>
+          </person>
+          <person>
+            <persName>
+              <surname>La Rochelle</surname>
+              <forename>Elisabeth</forename>
+            </persName>
+            <occupation>veuve de Jolie, Pierre, maistre écrivain,</occupation>
+          </person>
+          <person>
+            <persName>
+              <surname>de la Valle</surname>
+              <forename>Catherine</forename>
+            </persName>
+            <occupation>fille majeure,</occupation>
+          </person>
+          <person>
+            <persName>
+              <surname>Herbault</surname>
+              <forename>Gabriel</forename>
+            </persName>
+            <occupation>marchand au palais,</occupation>
+          </person>
+          <person>
+            <persName>
+              <surname>Jonquet</surname>
+              <forename>Aulivié</forename>
+            </persName>
+            <occupation>marchand au palais,</occupation>
+          </person>
+          <person>
+            <persName>
+              <surname>Guibert</surname>
+              <forename/>
+            </persName>
+            <occupation>conseiller au présidial de Mellun,</occupation>
+          </person>
+          <person>
+            <persName>
+              <surname>Mosacq</surname>
+              <forename>Michel</forename>
+            </persName>
+            <occupation>officier du roy,</occupation>
+          </person>
+          <person>
+            <persName>
+              <surname>Lechat</surname>
+              <forename>Louis Pierre</forename>
+            </persName>
+            <occupation>conseiller au Châtelet de Paris,</occupation>
+          </person>
+          <person>
+            <persName>
+              <surname>Thiault</surname>
+              <forename/>
+            </persName>
+            <occupation>prêtre vicaire à Putault, tous seuls propriétaires des boutiques de la salle neuve et sallon au Palais</occupation>
+          </person>
+          <status>owner</status>
+          <expert ref="#xpr0073"/>
+        </party>
+      </parties>
+      <craftmen>
+        <craftman>
+          <persName>
+            <surname/>
+            <forename/>
+          </persName>
+          <occupation/>
+        </craftman>
+      </craftmen>
+    </participants>
+    <conclusions>
+      <opinion ref="#xpr0073">« Tous lesquels ouvrages cy dessus mentionnez et contenu [f. 14r°] au présent procès verbal montent et reviennent ensemble à la somme totalle de quatorze cent cinquante deux livres six sols huit deniers, cy 1452 livres 6 sols 8 deniers.
+Lesquelsd. ouvrages seront faits et parfaits selon l'art de chacun d'iceux au dire d'experts ou gens à ce connoissans et l'entrepreneur fournira tous les matéreaux nécessaire pour l'entier perfection d'iceux, ainsy qu'il est esnoncé au présent raport en forme de devis et rendre place nette en envoyant les gravois aux champs. Fait et arresté par nous expert..."</opinion>
+      <arrangement/>
+      <agreement type="conclusion">Conclusion</agreement>
+      <estimate l="1452" s="6" d="8"/>
+      <fees detail="false">
+        <total l="" s="" d=""/>
+      </fees>
+      <expenses mentioned="true">
+        <expense type="clerk" l="18" s="12" d="6"/>
+        <expense type="expert" l="" s="" d=""/>
+      </expenses>
+    </conclusions>
+    <keywords group="estates"/>
+    <keywords group="procedure"/>
+    <keywords group="contract"/>
+    <keywords group="encumbrance"/>
+    <keywords group="law"/>
+    <keywords group="measurement"/>
+    <keywords group="repairs"/>
+    <keywords group="guarantees"/>
+    <keywords group="responsability"/>
+    <keywords group="ownership"/>
+    <keywords group="value"/>
+    <keywords group="neighbourhood"/>
+    <keywords group="disorder"/>
+    <keywords group="transformation"/>
+    <analysis>f. 2r° « Dans lad. salle il y a des latrines commune pour la commodité tant des propriétaires qui occupent lesd. boutiques que des locataires des autres boutiques, qu'elle sont dégradées et en sy mauvais estat qu'elle dépérissent entièrement, n'estant pas possible de s'en servir pour ses beusoin et d'autant qu'il est nécessaire de les faire réparée [f. 2v°] incessament tous les susd. propriétaires y ayant donné leur consentement, par laquelle sentence ouye le procureur du roy en ses conclusions et y faisant droit, vous avez, monsieur, nommé d'office la personne de nous, Aubry, expert susd. pour dresser procès verbal de l'estat desd. latrines, mesme un devis estimatif des réparations et rédiffications qui sont nécessaires à faire ausd. latrines et dont est question pour estre ensuitte, led. devis publié et afiché et autres choses plus au long mentionné en lad. sentence. »</analysis>
+    <noteworthy>devis estimatif
+pas de renvoi au juge, sentence (bailliage), nomination d'office</noteworthy>
+  </description>
+</expertise>

@@ -1,0 +1,209 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1000d058">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-09-01T12:00:00">2020-09-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2018-01-01T12:00:00">2018-01-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>PC</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1000</idno>
+        <idno type="item">058</idno>
+        <facsimile from="0662" to="0681"/>
+        <physDesc>
+          <extent sketch="false">20</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-03-26" type="province"/>
+          <date when="1776-03-27" type="province"/>
+          <date when="1776-04-02" type="province"/>
+        </sessions>
+        <places>
+          <place xml:id="id487d318" type="province">
+            <address/>
+            <complement/>
+            <city>Mouchy, Arpajon</city>
+            <district/>
+            <owner/>
+          </place>
+        </places>
+        <categories>
+          <category type="estimation">Estimer la valeur des biens</category>
+          <designation rubric="true">Estimation d’héritages</designation>
+        </categories>
+        <procedure>
+          <framework type="b2a">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Parlement</orgName>
+              <date when="1775-02-09"/>
+            </sentence>
+          </sentences>
+          <case>Estimation de terres en vue d'un échange</case>
+          <objects>
+            <object type="territory">Domaine, terres, fief</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0210" context="primary" appointment="appointed">
+              <title>architecte expert</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0057">
+              <persName>
+                <surname>Liébault de la Neuville</surname>
+                <forename>Christophe Edouard</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="" intervention="">
+              <person>
+                <persName>
+                  <surname>Comte de Noailles</surname>
+                  <forename>Louis Philippe</forename>
+                </persName>
+                <occupation>maréchal duc de Mouchy</occupation>
+              </person>
+              <status>owner</status>
+              <expert ref="#xpr0210"/>
+            </party>
+            <party role="petitioner" presence="" intervention="">
+              <person>
+                <persName>
+                  <surname>curé de Saint … d'Arpajon</surname>
+                  <forename/>
+                </persName>
+                <occupation/>
+              </person>
+              <status>owner</status>
+              <expert ref="#xpr0210"/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0210">« Récapitulation :Echange entre le maréchal de Mouchy et la Fabrique de Bouvilliers :Héritage donné par la fabrique 625 l.Héritage donné par le Maréchal 1 250 l.
+Echange entre le maréchal de Mouchy et la fabrique de Heilles
+Héritage donné par la fabrique 600 l.
+Héritage donné par le maréchal 850 l.
+Echange entre le maréchal de Mouchy et le Chapitre de Mouchy
+Héritage donné par le Chapitre 11 580 l.
+Héritage donné par le Maréchal 20 250 l.
+Echange entre le maréchal de Mouchy et le Chapitre Saint-Louis du Louvre
+Heritage donné par le Chapitre 16 000 l.
+Héritage donné par le Maréchal 27 000 l.
+Echange entre le maréchal de Mouchy et le Curé de Saint-Clément d’Arpajon
+Héritage donné par le Sieur Curé 937 l.
+Héritage donné par le Maréchal 1 400 l.
+Echange entre le maréchal de Mouchy et le curé de Saint-Armand d’Arpajon
+Héritage donnés par le Sieur Curé 3 200 l.
+Héritage donné par le Maréchal 4 200 l.
+Echange entre le maréchal de Mouchy et l’Abbaye de la Joye
+Héritage donné par ladite Abbaye 5 000 l.
+Héritage donné par le Maréchal 7 800 l.
+Echange entre le maréchal de Mouchy et les religieuses de Saint-Eutrope
+Héritage donné par lesdites religieuses 3 000 l.
+Héritage donné par le Maréchal 4 975 l. »</opinion>
+          <arrangement/>
+          <agreement type="conclusion">Conclusion</agreement>
+          <estimate l="" s="" d=""/>
+          <estimates>
+            <place ref="#id487d318">
+              <appraisal l="" s="" d="">
+                <desc/>
+              </appraisal>
+            </place>
+          </estimates>
+          <fees detail="true">
+            <fee type="papers" l="18" s="" d=""/>
+            <fee type="expert" ref="#xpr0210" l="168" s="" d=""/>
+            <fee type="clerk" l="168" s="" d=""/>
+            <fee type="rolls" l="85" s="" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="439" s="" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="expert" l="42" s="" d=""/>
+            <expense type="clerk" l="112" s="5" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis/>
+        <noteworthy/>
+      </description>
+    </expertise>

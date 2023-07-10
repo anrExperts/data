@@ -1,0 +1,216 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j581d026">
+  <meta/>
+  <control>
+    <maintenanceStatus>revised</maintenanceStatus>
+    <publicationStatus/>
+    <localControl localType="detailLevel">
+      <term>completed</term>
+    </localControl>
+    <maintenanceHistory>
+      <maintenanceEvent>
+                <eventType>revised</eventType>
+                <eventDateTime standardDateTime="2022-03-29T16:35:30Z">2022-03-29T16:35:30Z</eventDateTime>
+                <agentType>human</agentType>
+                <agent>llosserand</agent>
+                <eventDescription>rvpcd</eventDescription>
+            </maintenanceEvent>
+          <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateObjectsValues_db.xqy/BaseX</agent>
+        <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateOpinionRef_files.xqy/BaseX</agent>
+        <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateRefValues_files.xqy/BaseX</agent>
+        <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+        <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>revised</eventType>
+        <eventDateTime standardDateTime="2020-11-01T12:00:00">2020-11-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>JH</agent>
+        <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>retroconverted</eventType>
+        <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>ead2xpr.xsl/Saxon9</agent>
+        <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>created</eventType>
+        <eventDateTime standardDateTime="2017-04-01T12:00:00">2017-04-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>llosserand</agent>
+        <eventDescription>Création de la fiche.</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+  </control>
+  <sourceDesc>
+    <unitdate>1726</unitdate>
+    <idno type="unitid">Z1J581</idno>
+    <idno type="item">026</idno>
+    <facsimile from="0368" to="0379"/>
+    <physDesc>
+      <extent sketch="false">10</extent>
+    </physDesc>
+  </sourceDesc>
+  <description>
+    <sessions>
+      <date when="1726-06-21" type="paris"/>
+      <date when="1726-08-08" type="paris"/>
+    </sessions>
+    <places>
+      <place xml:id="id28d278" type="paris">
+        <address>
+          <street>Grande-Rue du faubourg Saint-Antoine</street>
+          <buildingNumber/>
+        </address>
+        <complement>deux maisons situées grande rue du faubourg Saint-Antoine près l'abbaye vis-à-vis la petite halle (ayant vue sur le jardin de l'abbaye)</complement>
+        <parish/>
+        <owner>Jolinet</owner>
+      </place>
+    </places>
+    <categories>
+      <category type="estimation">Estimer la valeur des biens</category>
+      <designation rubric="true">Visitte et estimation de deux maisons, Grande rue du fauxbourg St Antoine, pour le sieur Auger contre le sieur Lemarié : MM. Loir et Belhomme, experts.</designation>
+    </categories>
+    <procedure>
+      <framework type="b2">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+      <origination type="institution">Une institution</origination>
+      <sentences>
+        <sentence>
+          <orgName>lieutenant civil</orgName>
+          <date when="1725-11-28"/>
+        </sentence>
+      </sentences>
+      <case>la visite et estimation des deux maisons est réalisée pour savoir s'il est commode de les partager, dans la perspective d'une vente par licitation, les maisons étant d'inégales valeurs ; les loyers échus depuis la sentence de 1720 doivent être estimés (pour remboursement). L'avis est également demandé pour le surhaussement d'un mur mitoyen avec le jardin de l'abbaye</case>
+      <objects>
+        <object type="house">Maison(s)</object>
+      </objects>
+    </procedure>
+    <participants>
+      <experts>
+        <expert ref="#xpr0183" context="primary" appointment="appointed">
+          <title>juré expert</title>
+        </expert>
+        <expert ref="#xpr0015" context="primary" appointment="appointed">
+          <title>juré expert</title>
+        </expert>
+      </experts>
+      <clerks>
+        <clerk ref="#clrk0033">
+          <persName>
+            <surname>Callou</surname>
+            <forename>Charles Antoine</forename>
+          </persName>
+        </clerk>
+      </clerks>
+      <parties>
+        <party role="petitioner" presence="false" intervention="false">
+          <person>
+            <persName>
+              <surname>Anger</surname>
+              <forename>Robert</forename>
+            </persName>
+            <occupation>tondeur de drap</occupation>
+          </person>
+          <status>tenant</status>
+          <expert ref="#xpr0015"/>
+        </party>
+        <party role="opponent" presence="false" intervention="false">
+          <person>
+            <persName>
+              <surname>Lemarié</surname>
+              <forename>Jean François Paul</forename>
+            </persName>
+            <occupation>ancien payeur des rentes de l'hostel de ville,</occupation>
+          </person>
+          <person>
+            <persName>
+              <surname>Martin</surname>
+              <forename>Jeanne</forename>
+            </persName>
+            <occupation>fille mineure de défunt Martin, Mathieu Michel et de Dumongeau, Jeanne sa femme,</occupation>
+          </person>
+          <status>heir</status>
+          <expert ref="#xpr0183"/>
+          <representative>
+            <persName>
+              <surname>Poirée</surname>
+              <forename>Jacques</forename>
+            </persName>
+            <occupation>marchand épicier à Paris</occupation>
+          </representative>
+        </party>
+      </parties>
+      <craftmen>
+        <craftman>
+          <persName>
+            <surname/>
+            <forename/>
+          </persName>
+          <occupation/>
+        </craftman>
+      </craftmen>
+    </participants>
+    <conclusions>
+      <opinion ref="">« Après quoy nous avons procédé au partage desd. deux maisons eu égard come dessus aux parts et portions qui appartiennent à chacun desd. parties dans lesd. 19000 liv les prix de laquel se seroient et trouvez que veu que la part du retrayant qui est suivant la liquidation de 10085 liv 0es 16 sols 3 deniers est plus considérable que celle de l'acquéreur, le premier lot doit estre composé de la grande [f. 10v°] ou tout autre batiment nouveau la mesme distance qui est entre le mur de refend marqué D sur le plan, lequel sépare la seconde boutique de la grande maison dans la troisieme, et le mur séparant lesd. deux maisons.
+                Mais pourra lad. grande maison nonobstant lad. veu conserver et hausser aussy que bon luy semblera son mur mitoyen avec l'abbaye.
+                Et pour répondre au chef de la sentence qu'ordonne l'estimation des loyers desd. deux maisons depuis le cinq mars 1720 nous les estimons depuis led. jours cinq mars 1720 jusqu'à présent à raison de 930 livres par an, eu égard à ce qu'elles ont jouy des veues qu'elles ont sur lad. abbaye St Antoine.
+                Après quoy nous avons amené minutte dud. plan à ces présentes pour en estre délivré dans expédition après l'avis paraphé ne varietur, vous referant sur l'une ce que dessus, monsieur, de juger et ordonner suivant votre prudence acoustumée ».</opinion>
+      <arrangement/>
+      <agreement type="agreement">Accord</agreement>
+      <estimate l="19000" s="" d=""/>
+      <estimates>
+        <place ref="#id28d278">
+          <appraisal l="19000" s="" d="">
+            <desc>deux maisons</desc>
+          </appraisal>
+        </place>
+      </estimates>
+      <fees detail="false">
+        <total l="" s="" d=""/>
+      </fees>
+      <expenses mentioned="false"/>
+    </conclusions>
+    <keywords group="estates"/>
+    <keywords group="procedure"/>
+    <keywords group="contract"/>
+    <keywords group="encumbrance"/>
+    <keywords group="law"/>
+    <keywords group="measurement"/>
+    <keywords group="repairs"/>
+    <keywords group="guarantees"/>
+    <keywords group="responsability"/>
+    <keywords group="ownership"/>
+    <keywords group="value"/>
+    <keywords group="neighbourhood"/>
+    <keywords group="disorder"/>
+    <keywords group="transformation"/>
+    <analysis>f. 4r° « Et enfin d'une autre sentence de vous rendue, monsieur, le vingt deux may dernier entre lesd. sr Anger deffendeur à la requeste et exploit du mesme jour trente mars denier, ledit exploit présenté au greffe et [illisible] demandeur suivant les moyens du trois avril ensuivant tendant à ce que le deffendeur cy après nommé sus déclaré non recevable dans sa nouvelle demande en deschéance de retrait et à ce que les sentences et arrest confirmatifs des vingt huit novembre mil sept cent vingt cinq et quinze mars dernier fussent exécutez et que faute par led. deffendeur de convenir d'expert par la visitte par luy [illisible] desd. maisons ordonné par votre sentence susdatté qu'il seroient fait par nous, Belhome juré expert nommé par led. Anger, et par tel autre expert qu'il vous plairoit nommer d'office et à présent [f. 4v°] en tant que besoin seroit à l'exécution de votre sentence par [illisible] de vingt trois dud. mois de mars denier suivant sa requeste verballe du quatre avril ensuivant, d'une part, et le sr Lemarié demandeur en exécution de votre dittes sentence du vingt trois mars dernier et en déchéance de retrait suivant lesd. requestes et exploit dud. jour trente mars et deffendeur, d'autre, par laquelle partie ouyes, lecture faitte des pièces des partyes sans que les qualitez puissent nuire ny préjudicier vous avez, monsieur, receu led. Anger opposant à l'exécution de votre sentence et sans s'arrester à la demande en déschéance de retrait en laquelle avez déclaré non recevable lesd. sr Lemarié, ordonné qu'il seroit passé outre à la vente et adjudication par forme de licitation de la maison en question, icelle préalablement veu et visitté, avez donner lettres aud. Anger de ce qu'il nommoit nous Belhomme pour son expert, dans trois jours led. sr Lemarié seroit tenu d'en nommer un de sa part sinon par nous Loir juté expert qu'avez par luy nommé d'office [etc.]
+                [f. 6r°] Et comme par la sentence du vingt deux may dernier il est seulement dit qu'il sera passé outre à la vente et adjudication par forme de licitation de la maison en question, icelle préalablement veue et visittée et qu'elles en confirme par leur autre sentence et [f. 6v°] par le [illisible] dudit arrest et décrédite par nous expert susdits de préjudices aux intérests de l'une ou l'autre desd. parties, sur quoy nous nous referons, monsieur, d'en ordonner et jusques à ce, nous nous sommes relevé.
+                [f. 8r°] [29 juillet 1726] : « nous avons pris les mesures de l'emplacement total desd. maisons et levé le plan d'icelle pour parvenir à connetre parfaittement si elles peuvent se partager commodément au moins suivant et aux termes desd. sentences et arrest confirmatif et ensuitte mis led. plan au net pour estre annexé à ces présentes et en estre décliné de coppies aux parties, à quoy nous avons vacqué tant du matin que de relevé jusqu'au soir et avons remis au jeudy huit aoust prochain de relevé de faire les calculs des mesures par nous prisés et rapportées sur led. plan et donne notre avis sur le tout et nous sommes retirez. »
+                f. 8v° [8 août 1726] « Après lesquels calculs, nous avons d'habondant veu et examiné lesd. deux maisons pour connetre si elles peuvent commodément se partage entre lesd. parties et eu égard aux sommes qui leur reviennent pour leur part et portion dans celle de 19 000 livres, prix du contract de vente fait aud. sr Lemarié et sur le pied duquel prix le retrayant doit avoir support dans lesd. deux maisons pour 10 085 livres 163 deniers,montant de la liquidation des Jolinet dans lad. somme de 19 000 livres. Et trouvez après [illisible] et sérieuses réflections quelle peuvent commodément se partager et que le partage en question n'a rien d'extraordinaire en ce que si le retrayant a une part plus forte, il [f. 9r°] se trouve aussi que l'une desd. deux maisons est plus considérable que l'autre, et que led. partage se fait eu égard comme dit est aux parts et portions qui reviennent à chacune desd. parties, et pour y parvenir, nous avons fait le relevé des calculs de l'emplacement total et distinct de chacune desd. deux maisons et des batiments sur iceluy et trouve que l'emplacement totale de la grande maison contient trente thoises et demy, quatre pied en superficie et les batimens sur iceluy en plus valleur, vingt quatre thoises dix pieds, et que l'emplacement total de la patite maison joignante contient vingt six thoises et demy dix pieds un quart de superficie et les batimens [illisible] iceluy en plus valeur vingt quatre thoises huit pied un quart. Au moyen de quoy nous avons reconnus que la grande maison a trois thoises et demy onze pied trois quart d'emplacement plus que la petite.</analysis>
+    <noteworthy/>
+  </description>
+</expertise>

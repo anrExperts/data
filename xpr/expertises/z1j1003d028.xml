@@ -1,0 +1,243 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1003d028">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-07-01T12:00:00">2020-07-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2017-10-01T12:00:00">2017-10-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1003</idno>
+        <idno type="item">028</idno>
+        <facsimile from="0457" to="0462"/>
+        <physDesc>
+          <extent sketch="false">5</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-05-25" type="paris"/>
+          <date when="1776-05-30" type="paris"/>
+          <date when="1776-06-01" type="paris"/>
+        </sessions>
+        <places>
+          <place xml:id="id139d369" type="paris">
+            <address>
+              <street>rue des Grandes et Petites Friperies aux Halles</street>
+              <buildingNumber/>
+            </address>
+            <complement/>
+            <parish/>
+            <owner/>
+          </place>
+        </places>
+        <categories>
+          <category type="estimation">Estimer la valeur des biens</category>
+          <designation rubric="true">Estimation d'une maison, rue des grandes et petites friperies aux halles, à la requeste de dlle Bergèrre Veuve Pissot, frippier ; M. Taboureur, expert.</designation>
+        </categories>
+        <procedure>
+          <framework type="b2b">L’institution est saisie dans le cadre d’une procédure (l’institution nomme un ou deux experts)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Châtelet, lieutenant civil (sentence)</orgName>
+              <date when="1776-05-17"/>
+            </sentence>
+          </sentences>
+          <case>Succession, partage et vente par licitation. L’expert est chargé de visiter, priser et estimer la maison et de dire si elle peut commodément se partager en autant de portions qu’il y a de propriétaires.</case>
+          <objects>
+            <object type="house">Maison(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0250" context="primary" appointment="court-appointed">
+              <title>architecte expert bourgeois des bâtiments à Paris</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0062">
+              <persName>
+                <surname>Picquenon</surname>
+                <forename>Denis Joseph François</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Bigeon</surname>
+                  <forename>Antoinette</forename>
+                </persName>
+                <occupation>veuve de Pissot, Pierre, marchand fripier à Paris, héritière pour 1/4 de la veuve Merlin</occupation>
+              </person>
+              <status>heir</status>
+              <expert ref="#xpr0250"/>
+              <prosecutor>
+                <persName>
+                  <surname>Phelippon</surname>
+                  <forename/>
+                </persName>
+              </prosecutor>
+            </party>
+            <party role="opponent" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Bigeon</surname>
+                  <forename>Nicolas Henry</forename>
+                </persName>
+                <occupation>marchand frippier, héritier pour 1/4 de la veuve Merlin</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Bigeon</surname>
+                  <forename>Charles Nicolas</forename>
+                </persName>
+                <occupation>marchand frippier, héritier pour 1/4 de la veuve Merlin</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Bigeon</surname>
+                  <forename>Bernard</forename>
+                </persName>
+                <occupation>marchand frippier, héritier pour 1/4 de la veuve Merlin</occupation>
+              </person>
+              <status>heir</status>
+              <expert ref="#xpr0250"/>
+              <prosecutor>
+                <persName>
+                  <surname>Lemassire</surname>
+                  <forename/>
+                </persName>
+              </prosecutor>
+            </party>
+            <party role="opponent" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Marie</surname>
+                  <forename>Michel</forename>
+                </persName>
+                <occupation>bourgeois de Paris au nom et comme curateur à la substitution portée audit testament pour cette raison, tuteur des enfants nés et à naitre desdits sieurs Bigeon...</occupation>
+              </person>
+              <status>heir</status>
+              <expert ref="#xpr0250"/>
+              <prosecutor>
+                <persName>
+                  <surname>Bazin</surname>
+                  <forename/>
+                </persName>
+              </prosecutor>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0250">« Touttes considerations faittes nous prisons et estimons ladite maison à la charge du cens et des droits seigneuriaux et au cours du tems present la somme de dix huit mille livres, cy… 18 000 l. »
+« Quant au chef de votre sentence monsieur, suivant lequel nous devons donner notre avis si ladite maison peut ou non commodement se partager en autant de portions qu’il y a de proprietaires, notre avis est que le partage en est impossible ».</opinion>
+          <arrangement/>
+          <agreement type="conclusion">Conclusion</agreement>
+          <estimate l="" s="" d=""/>
+          <estimates>
+            <place ref="#id139d369">
+              <appraisal l="18000" s="" d="">
+                <desc>une maison</desc>
+              </appraisal>
+            </place>
+          </estimates>
+          <fees detail="true">
+            <fee type="papers" l="6" s="18" d=""/>
+            <fee type="expert" ref="#xpr0250" l="18" s="" d=""/>
+            <fee type="clerk" l="18" s="" d=""/>
+            <fee type="rolls" l="13" s="" d=""/>
+            <fee type="prosecutors" l="15" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="70" s="18" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="16" s="15" d=""/>
+            <expense type="expert" l="" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis/>
+        <noteworthy>Succession veuve Merlin
+                La sentence contradictoire du 17 mai est rendue après conclusions du ministère public, entre Me Phelippon, procureur de Bigeon, Antoinette, veuve Sissou, au nomme et comme héritière libre pour un quart de Santon, Elizabeth, sa tante, veuve de Merlin, Louis Alexandre, marchand fripier à Paris, demanderesse au principal afin de liquidation, compte, partage et vente par licitation des biens de la succession de la veuve Merlin, Me Lemassire et Me Bazin.
+                Testament de la veuve Merlin reçu par Me Magnier le 18 février 1773.</noteworthy>
+      </description>
+    </expertise>

@@ -1,0 +1,198 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j583d046">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-11-01T12:00:00">2020-11-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2016-10-26T12:00:00">2016-10-26T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>RB</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1726</unitdate>
+    <idno type="unitid">Z1J583</idno>
+        <idno type="item">046</idno>
+        <facsimile from="0517" to="0567"/>
+        <physDesc>
+          <extent sketch="false">52</extent>
+          <appendices>
+            <appendice>
+              <type type="other">Assignation</type>
+              <extent>1</extent>
+              <desc>Sommation à comparaître délivrée le 4 octobre 1726 à Fourier, Edmé</desc>
+              <note/>
+            </appendice>
+            <appendice>
+              <type type="other">Compromis</type>
+              <extent>2</extent>
+              <desc>Compromis non daté passé entre Romilly de La Chesnelaye, Marie Charlotte et L'Hôpital, Elie Guillaume de</desc>
+              <note/>
+            </appendice>
+            <appendice>
+              <type type="other">Assignation</type>
+              <extent>1</extent>
+              <desc>Duplicata de la sommation à comparaître délivrée le 4 octobre 1726 à Fourier, Edmé</desc>
+              <note/>
+            </appendice>
+          </appendices>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1726-10-08" type="province"/>
+          <date when="1726-10-26" type="province"/>
+        </sessions>
+        <places>
+          <place xml:id="id415d276" type="province">
+            <address/>
+            <complement/>
+            <city>Terre et seigneurie d'Houcque</city>
+            <district/>
+            <owner>succession L'Hôpital</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="estimation">Estimer la valeur des biens</category>
+          <designation rubric="true">Visite, prisée et estimation d'un domaine seigneurial</designation>
+        </categories>
+        <procedure>
+          <framework type="a">Commun accord des parties</framework>
+          <origination type="parties">Les parties</origination>
+          <sentences>
+            <sentence>
+              <orgName>Lieutenant civil du Châtelet</orgName>
+              <date when="1726-10-04"/>
+            </sentence>
+          </sentences>
+          <case>contestation des termes d'un compte de communauté de biens et de tutelle</case>
+          <objects>
+            <object type="territory">Domaine, terres, fief</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0111" context="primary" appointment="appointed">
+              <title>l'un des soixante architectes jurés du roi experts bourgeois de Paris</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0035">
+              <persName>
+                <surname>Tancart</surname>
+                <forename>Toussaint</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Romilly de La Chesnelaye</surname>
+                  <forename>Marie Charlotte</forename>
+                </persName>
+                <occupation>veuve de L'Hôpital, Guillaume François de, marquis de L'Hôpital, etc.</occupation>
+              </person>
+              <status>heir</status>
+              <expert ref="#xpr0111"/>
+            </party>
+            <party role="opponent" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>L'hôpital</surname>
+                  <forename>Elie Guillaume de</forename>
+                </persName>
+                <occupation>marquis de Mesmes, héritier pour partie de L'Hôpital, Guillaume François de, marquis de L'Hôpital, son père, fils de la précédente.</occupation>
+              </person>
+              <status>heir</status>
+              <expert ref="#xpr0111"/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0111">« Apres lesquels visittes tant dud. chasteau, jardin, parc, clos, fermes, métaireies, halles, fours banneaux, bois, prés, vignes et dependance de laditte terre et seigneurie de Houcque, lecture faitte des baix , aveu, etc. […], nous avons procédé aux calculs et supurations necessaire et faitte toute l'attention requise sur la nature de qualité des batimens et domaines qui composent lad. terre et seigneurie d'Houcque et toute ses dependances […] nous avons prisé et estimé lad. terre et seigneurie doits, honneur, prérogatives, profits et mouvances feodalles suivant la coustume de Marchenoine (sic), jardin, pareterre etc. ensemble la somme de cent quarante neuf mille cinq cent soixante et une livre, eu egard au temps present, à la qualité des batimens, ferme et autres domaines, aux reparations qui sont a y faire et aux entretiens actuels desd. batimens, deduction faite des charges qui sont sur lad. terre ».</opinion>
+          <arrangement/>
+          <agreement type="conclusion">Conclusion</agreement>
+          <estimate l="149561" s="" d=""/>
+          <estimates>
+            <place ref="#id415d276">
+              <appraisal l="149561" s="" d="">
+                <desc>domaine</desc>
+              </appraisal>
+            </place>
+          </estimates>
+          <fees detail="false">
+            <total l="" s="" d=""/>
+          </fees>
+          <expenses mentioned=""/>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis>Motivations
+                « Plus nous avons fait lecture d'une copie collationnée dudit compromis signé Baudouin et Bourier notaires en datte du dix sept septembre mil sept cent cvingt six sur l'expédition en papier dud. compromis passé devant Baudouin et de Bouguainville notaires à Paris led. jour trois juin mil sept cent vingt six entre lad. De marquise de Lhospital es noms et qualités cy dessus declarées et led. seigneur marquis de St Mesme heritier pour un quart dud. deffunt seignr marquis de Lhospital son pere et pou un tiers de lad. De Jeanne Antoinette de Lhospital sa sœur outre les portions [1 mot] dans les biens nobles desdites successions, par lequel lesd. Sgrs et Dames sur l'instance pendante entreux au chlet de paris au sujet des debat et contestations qui auroient esté formés sur et à l'occasion du compte de communauté et de tutelle rendu par lad. De marquis de Lhospital aud. Seigneur son fils présenté par devant M. Mazier commissaire au Châtelet de Paris le 17e decembre 1718 auroient pour prevenir les frais considérables que de pareilles contestations pourroient causer, convenus de se raporter sur le tout, circonstances et dependances, à la decision et avis de Me Barbier et Deniau avocats en parlement auxquels ils auroient donné pouvoir de regler et juger par une ou plusieurs sentences arbitralles dans le temps et espace de huit mois tous les debats qui auroient esté formés sur led. compte de communauté et de tutelle et autres demandes formées ou à former au sujet dud. compte et partage a faire entre lesd. seigr et De de Lhospital pour parvenir auxquelles fixations et partages, il seroit incessamment fait la prisée et estimation des biens immeubles desd. communautés par nous Fourier expert dont les parties seroient convenues et nous auroient donnés tous pouvoirs necessaires a ce sujet et aux autres clauses et conditions enoncées aud. compromis duquel nous avons annexé a la minutte de notre present proces verbal ».</analysis>
+        <noteworthy/>
+      </description>
+    </expertise>

@@ -1,0 +1,223 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j435d030">
+      <meta/>
+      <control>
+        <maintenanceStatus/>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term/>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:39:45.99+02:00">2021-05-19T11:39:45.99+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateAgreementType_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur "Dispositif de l’expertise" lorsqu'il n'y a qu’un seul expert ('agreement' devient 'conclusion').</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:45:33.927+02:00">2021-04-21T20:45:33.927+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateKeywordsModule_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour du module keywords.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:45:02.355+02:00">2021-04-21T20:45:02.355+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateExpertsFees_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour du coûts de l'expertise pour les experts.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:44:31.814+02:00">2021-04-21T20:44:31.814+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateExpertisesArrangement_files.xqy/BaseX</agent>
+            <eventDescription>Ajout du champs Accommodement dans l'éventualité d’une résolution par les parties.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2019-05-01T12:00:00">2019-05-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1696</unitdate>
+    <idno type="unitid">Z1J435</idno>
+        <idno type="item">030</idno>
+        <facsimile from="0237" to="0246"/>
+        <physDesc>
+          <extent sketch="false">9</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1696-11-13" type="paris"/>
+          <date when="1696-11-13" type="paris"/>
+          <date when="1696-11-15" type="paris"/>
+        </sessions>
+        <places>
+          <place type="paris">
+            <address>
+              <street>rue du Bout du monde</street>
+              <buildingNumber/>
+            </address>
+            <complement/>
+            <parish/>
+            <owner>saisie réellement sur les sieurs Badart frère</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="assessment">Décrire et évaluer les travaux à venir</category>
+          <designation rubric="false">Rapport des réparations à une maison saisie réellement rue du bout du monde à la requête du fermier judicaire</designation>
+        </categories>
+        <procedure>
+          <framework type="b2b">L’institution est saisie dans le cadre d’une procédure (l’institution nomme un ou deux experts)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>LC Chatelet</orgName>
+              <date when="1696-10-26"/>
+            </sentence>
+          </sentences>
+          <case>maison saisie nécessitant réparations</case>
+          <objects>
+            <object type="house">Maison(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0170" context="" appointment="court-appointed">
+              <title>expert juré du roi et entrepreneur des bâtiments de sa Majesté</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0008">
+              <persName>
+                <surname>Villain</surname>
+                <forename>Pierre</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="true" intervention="">
+              <person>
+                <persName>
+                  <surname>Bernier</surname>
+                  <forename>François</forename>
+                </persName>
+                <occupation>bourgeois de Paris, fermier judiciaire des biens de Bodart frères</occupation>
+              </person>
+              <status>contractor</status>
+              <expert ref=""/>
+              <representative>
+                <persName>
+                  <surname>Ferry</surname>
+                  <forename/>
+                </persName>
+                <occupation>caution de Bernier</occupation>
+              </representative>
+            </party>
+            <party role="opponent" presence="true" intervention="">
+              <person>
+                <persName>
+                  <surname>de Chaleux</surname>
+                  <forename>dame</forename>
+                </persName>
+                <occupation>poursuivant la vent par décret de ladite maison</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Farcadel</surname>
+                  <forename/>
+                </persName>
+                <occupation>commissaire établi à icelle</occupation>
+              </person>
+              <status>creditor</status>
+              <expert ref="#xpr0170"/>
+            </party>
+            <party role="" presence="" intervention="">
+              <person>
+                <persName>
+                  <surname>hôpital des Quinze-vingts</surname>
+                  <forename/>
+                </persName>
+                <occupation/>
+              </person>
+              <status>creditor</status>
+              <expert ref=""/>
+              <representative>
+                <persName>
+                  <surname>Tardy</surname>
+                  <forename/>
+                </persName>
+                <occupation>ancien procureur des opposants</occupation>
+              </representative>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <agreement type="conclusion">Conclusion</agreement>
+          <opinion ref="#xpr0170">Toutte lesquelles réparations j'estime qu'il est nécessaire de les faie pour rendre ladite maison logable et abitable et pour en empescher plus grand dépérissement, lesquels pouront la somme de neuf cent livres
+Sauf toutte fois à vous monsieur d'en ordonner selon vostre prudence et justice ordinaire. Fait par nous expert...</opinion>
+          <arrangement/>
+          <estimate>900 livres</estimate>
+          <fees detail="true">
+            <fee ref="#xpr0170" type="expert" l="12" s="" d=""/>
+            <fee type="clerk" l="12" s="" d=""/>
+            <fee type="rolls" l="6" s="" d=""/>
+            <fee type="papers" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <total l="" d="" s=""/>
+          </fees>
+          <expenses mentioned="false"/>
+        </conclusions>
+        <keywords group=""/>
+        <analysis>prix du pv :
+dernier folio "nous avons taxé ausdit Le roy et Villain chacun douze livres pour leurs sallaires et six livres pour vingt quatre rolles de grosse en grand papier chaque page remplie de vingt deux lignes et quinze syllabes à la ligne non compris le papier timbré (?) 18 octobre 1698. Le Camus"</analysis>
+        <noteworthy>le demandeur Bernier a "fait bailler coppie à chacun desdits deffendeurs" afin qu'on y mette des ouvriers pour faire faire les ouvrages de réparations et qu'il soit remboursé de son bail suivant les quittances "qu'il intirera des ouvriers que feronts iceux ouvrages qu'il affirmera véritable, que le sieur Farcadel sera tenu de prendre pour deniers comptants quy luy seronts allouez dans son compte et rembourcé de ses frais suivant sa requeste verballe du 19 du présent mois"
+- prix de l'expertise pv, cf ci dessus</noteworthy>
+      </description>
+    </expertise>

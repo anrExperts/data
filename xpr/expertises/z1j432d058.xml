@@ -1,0 +1,252 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j432d058" status="">
+  <meta/>
+  <control>
+    <maintenanceStatus>revised</maintenanceStatus>
+    <publicationStatus/>
+    <localControl localType="detailLevel">
+      <term>completed</term>
+    </localControl>
+    <maintenanceHistory>
+      <maintenanceEvent>
+                <eventType>revised</eventType>
+                <eventDateTime standardDateTime="2022-03-01T09:36:24Z">2022-03-01T09:36:24Z</eventDateTime>
+                <agentType>human</agentType>
+                <agent>jmorvan</agent>
+                <eventDescription>correction cote</eventDescription>
+            </maintenanceEvent>
+          <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateObjectsValues_db.xqy/BaseX</agent>
+        <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateOpinionRef_files.xqy/BaseX</agent>
+        <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateRefValues_files.xqy/BaseX</agent>
+        <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-02-17T12:17:28.693+01:00">2021-02-17T12:17:28.693+01:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>z1jresp.xqy/BaseX</agent>
+        <eventDescription>Ajout de l'historique de la fiche.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>created</eventType>
+        <eventDateTime standardDateTime="2020-12-01T12:00:00">2020-12-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>JH</agent>
+        <eventDescription>Création de la fiche.</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+  </control>
+  <sourceDesc>
+    <unitdate>1696</unitdate>
+    <idno type="unitid">Z1J432</idno>
+    <idno type="item">058</idno>
+    <facsimile from="0435" to="0443"/>
+    <physDesc>
+      <extent sketch="false">6</extent>
+      <appendices>
+        <appendice>
+          <type type="other">Ordonnance</type>
+          <extent>1</extent>
+          <desc>Ordonnance du 6 mars 1696</desc>
+          <note/>
+        </appendice>
+      </appendices>
+    </physDesc>
+  </sourceDesc>
+  <description>
+    <sessions>
+      <date when="1696-03-07" type="paris"/>
+      <date when="1696-03-08" type="paris"/>
+      <date when="1696-03-09" type="paris"/>
+    </sessions>
+    <places>
+      <place xml:id="id610d93" type="paris">
+        <address>
+          <street>rue de la Tissanderie</street>
+          <buildingNumber/>
+        </address>
+        <complement>près Saint-Jean-en-Grève</complement>
+        <parish/>
+        <owner>Succession Jean Robin</owner>
+      </place>
+      <place xml:id="id610d112" type="paris">
+        <address>
+          <street>rue Neuve-Saint-Eustache</street>
+          <buildingNumber/>
+        </address>
+        <complement/>
+        <parish/>
+        <owner>Succession Jean Robin</owner>
+      </place>
+    </places>
+    <categories>
+      <category type="estimation">Estimer la valeur des biens</category>
+      <designation rubric="true">Prisée et estimation de plusieurs maisons à Paris</designation>
+    </categories>
+    <procedure>
+      <framework type="b2a">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+      <origination type="institution">Une institution</origination>
+      <sentences>
+        <sentence>
+          <orgName>LC</orgName>
+          <date when="1696-02-21"/>
+        </sentence>
+      </sentences>
+      <case>Succession Jean Robin</case>
+      <objects>
+        <object type="house">Maison(s)</object>
+      </objects>
+    </procedure>
+    <participants>
+      <experts>
+        <expert ref="#xpr0170" context="primary" appointment="appointed">
+          <title>expert juré en titre d’office et entrepreneur des bâtiments à Paris</title>
+        </expert>
+      </experts>
+      <clerks>
+        <clerk ref="#clrk0001">
+          <persName>
+            <surname>Febvrier</surname>
+            <forename>Paul</forename>
+          </persName>
+        </clerk>
+      </clerks>
+      <parties>
+        <party role="petitioner" presence="true" intervention="false">
+          <person>
+            <persName>
+              <surname>Chomoye</surname>
+              <forename>Marie</forename>
+            </persName>
+            <occupation>veuve de Jean Robin, conseiller et secrétaire du roi</occupation>
+          </person>
+          <status>heir</status>
+          <expert ref="#xpr0170"/>
+          <prosecutor>
+            <persName>
+              <surname>Pillon</surname>
+              <forename>François</forename>
+            </persName>
+          </prosecutor>
+        </party>
+        <party role="opponent" presence="true" intervention="false">
+          <person>
+            <persName>
+              <surname>Robin</surname>
+              <forename>Louis</forename>
+            </persName>
+            <occupation>conseiller au Parlement</occupation>
+          </person>
+          <person>
+            <persName>
+              <surname>Robin</surname>
+              <forename>Charles Michel</forename>
+            </persName>
+            <occupation>lieutenant aux gardes</occupation>
+          </person>
+          <person>
+            <persName>
+              <surname>Robin</surname>
+              <forename>Nicolas François</forename>
+            </persName>
+            <occupation>écuyer lieutenant des gardes</occupation>
+          </person>
+          <person>
+            <persName>
+              <surname>Robin</surname>
+              <forename>Pierre</forename>
+            </persName>
+            <occupation>écuyer sous lieutenant, chacun héritier pour 1/4 de défunt Jean Robin</occupation>
+          </person>
+          <status>heir</status>
+          <expert ref="#xpr0170"/>
+        </party>
+      </parties>
+      <craftmen>
+        <craftman>
+          <persName>
+            <surname/>
+            <forename/>
+          </persName>
+          <occupation/>
+        </craftman>
+      </craftmen>
+    </participants>
+    <conclusions>
+      <agreement type="conclusion">Conclusion</agreement>
+      <opinion ref="#xpr0170">1° « Ladite maison ainsy qu’elle ce poursuit et comporte estant de touttes pars et de fond en comble à l’exception de la partye des caves de la maison cy après declarée, qui sont au dessous de partye dudit corps de logis, tenant d’un costé à la maison du sieur Bellier bourgeois de Paris, d’autre et par derrière aux maisons cy declarés et pardevant sur ladite rue de la Tissanderie, laquelle je prise et estime valloir la somme de sept mil livres, eu esgard à la servitude de la fosse d’aisance quy est aussy commune à ladite maison du devant cy après déclarée, à sa situation, superficie, qualité du bastiment, produit du loyer, et cours du temps present à la charge du sens seulement dont elle peut estre chargée »
+2° « Ladite maison de derrière ainsy qu’elle se poursuit et comporte estant de touttes parts et de fond en comble à la reserve de la partye de l’escalier en saillis sur la cour de la maison cy après déclarée, tenant d’un costé à [blanc], d’autre à la cour de la maison cy après déclarée, aboutissant par derrière à la maison de Monsieur Bergé médecin et par devant audit corps de logis de devant premier déclaré que je prise et estime valloir la somme de six mil livres, eu esgard à sa situation superficie qualité des bastimens produit du loyer, et cours du temps present à la charge du cens seulement dont elle peut estre chargé » 
+3° « Ladite maison ainsy qu’elle ce poursuit et comporte estant de touttes pars et de fond en comble à la reserve de l’alée de passage du corps de logis de derrière et cave au dessous et de la descente de cave et cabinet qui sont au dessous dudit corps de logis et des dependences dudit corps de logis de droite cy après declaré tenant d’un costé audit corps de logis de devant premier declaré d’autre à la maison de M. Lepage, aboutissant par derrière au corps de logis cy après declaré et pardevant sur ladite rue de la Tissanderie, que je prise et estime valoir la somme de six mil livres eu esgard à sa situation, superficie, qualité du bastiment produit du loyer et cours du temps present, à la charge du sens seulement, dont elle peut estre chargée »
+4° « Ladite maison ainsy qu’elle ce poursuit et comporte estant de touttes pars et de fond en comble avec les caves comme ils sont cy dessus declaré, tenant d’un costé à Mesdemoiselle Levaché, d’autre à ladite maison occupée par ledit sieur Noigne, partye duquel costé tient à la maison du sieur Bergé, médecin, et par derrière à [blanc], et pardevant audit corps de logis de devant occupé par ledit sieur Lepage, que je prise et estime valloir la somme de huict mil cinq cent livres, eu esgard à sa situation, superficie de la place, la qualité de ses bastimens, produit des loyers, et au cours du temps present, à la charge du sens seulement dont elle peut estre chargée »
+5° (rue Neuve-Saint-Eustache) « Ladite maison ainsy qu’elle ce poursuit et comporte estant de touttes parts et de fond en comble, tenant d’un costé à la maison neuve de ladite dame Verbet, au sieur Menage, aux heritiers Davy, au Sieur Gonin, au Sieur Ouvray, et au sieur Cocily, d’autre costé à la maison de Mr Chevalier, aboutissant par derrière sur ladite rue Clery et pardevant sur ladite rue neuve Saint Eustache, la totalité de laquelle maison je prise et estime valloir la somme de cinquante mil livres, eu esgard à l’estandue de sa superficie, la qualité de ses bastimens et ce qu’el peut produire de loyer, et au cours du temps present à la charge du sens seulement dont elle peut estre chargée » </opinion>
+      <arrangement/>
+      <estimate l="77500" s="" d=""/>
+      <estimates>
+        <place ref="#id610d93">
+          <appraisal l="7000" s="" d="">
+            <desc>maison</desc>
+          </appraisal>
+          <appraisal l="6000" s="" d="">
+            <desc>maison</desc>
+          </appraisal>
+          <appraisal l="6000" s="" d="">
+            <desc>maison</desc>
+          </appraisal>
+          <appraisal l="8500" s="" d="">
+            <desc>maison</desc>
+          </appraisal>
+        </place>
+        <place ref="#id610d112">
+          <appraisal l="50000" s="" d="">
+            <desc>maison</desc>
+          </appraisal>
+        </place>
+      </estimates>
+      <fees detail="true">
+        <fee type="expert" ref="#xpr0170" l="15" s="" d=""/>
+        <fee type="clerk" l="" s="" d=""/>
+        <fee type="rolls" l="" s="" d=""/>
+        <fee type="papers" l="" s="" d=""/>
+        <fee type="plans" l="" s="" d=""/>
+        <fee type="prosecutors" l="" s="" d=""/>
+        <fee type="help" l="" s="" d=""/>
+        <total l="" s="" d=""/>
+      </fees>
+      <expenses mentioned="true">
+        <expense type="clerk" l="35" s="2" d="6"/>
+        <expense type="expert" l="15" s="" d=""/>
+      </expenses>
+    </conclusions>
+    <keywords group="estates"/>
+    <keywords group="procedure"/>
+    <keywords group="contract"/>
+    <keywords group="encumbrance"/>
+    <keywords group="law"/>
+    <keywords group="measurement"/>
+    <keywords group="repairs"/>
+    <keywords group="guarantees"/>
+    <keywords group="responsability"/>
+    <keywords group="ownership"/>
+    <keywords group="value"/>
+    <keywords group="neighbourhood"/>
+    <keywords group="disorder"/>
+    <keywords group="transformation"/>
+    <analysis/>
+    <noteworthy/>
+  </description>
+</expertise>

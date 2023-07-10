@@ -1,0 +1,203 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j580d048">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2023-05-12T16:21:14.938+02:00">2023-05-12T16:21:14.938+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateThirdPartyAgreement_db.xqy/BaseX</agent>
+        <eventDescription>Modification des valeurs admises pour le champ "dispositif de l'expertise" dans le cadre de tiers expertises.</eventDescription>
+      </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-10-01T12:00:00">2020-10-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2016-10-26T12:00:00">2016-10-26T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>RB</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1726</unitdate>
+    <idno type="unitid">Z1J580</idno>
+        <idno type="item">048</idno>
+        <facsimile from="0686" to="0696"/>
+        <physDesc>
+          <extent sketch="false">10</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1726-05-21" type="province"/>
+          <date when="1726-05-21" type="province"/>
+        </sessions>
+        <places>
+          <place type="province">
+            <address/>
+            <complement/>
+            <city>Saint-Cloud</city>
+            <district/>
+            <owner>Fontpertuis</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="acceptation">Recevoir et évaluer le travail réalisé</category>
+          <designation rubric="true">Visite d'ouvrages de menuiserie</designation>
+        </categories>
+        <procedure>
+          <framework type="b2a">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Lieutenant civil</orgName>
+              <date when="1726-05-06"/>
+            </sentence>
+          </sentences>
+          <case>Réception d'ouvrages</case>
+          <objects>
+            <object type="house">Maison(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0183" context="third-party" appointment="court-appointed">
+              <title>architecte expert des bâtiments à Paris</title>
+            </expert>
+            <expert ref="#xpr0232" context="primary" appointment="appointed">
+              <title/>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0020">
+              <persName>
+                <surname>Quirot</surname>
+                <forename>Etienne François</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Dommangin</surname>
+                  <forename>Elie</forename>
+                </persName>
+                <occupation>menuisier associé</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Girault</surname>
+                  <forename>Jean</forename>
+                </persName>
+                <occupation>menuisier associé</occupation>
+              </person>
+              <status>builder</status>
+              <expert ref="#xpr0183"/>
+            </party>
+            <party role="opponent" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Angrand de Fontpertuis</surname>
+                  <forename>Louis</forename>
+                </persName>
+                <occupation>propriétaire de la maison, commanditaire des travaux</occupation>
+              </person>
+              <status>limited-partner</status>
+              <expert ref="#xpr0183"/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="">« Nous avons ensuite fait les calculs et rellevez de touttes les estimations desdits ouvrages de menuiserie, tant celles conjointement faittes par lesdits sieurs premiers experts que celles faittes par nous tiers expert susdit, sur les estimations différentes desdits sieurs premiers experts et trouvé qu'ils montent et reviennent ensemble à la somme totalle de 5659 livres 15 sols 9 deniers ».</opinion>
+          <arrangement/>
+          <agreement type="conclusion">Conclusion</agreement>
+          <estimate l="5659" s="15" d="9"/>
+          <fees detail="true">
+            <fee type="papers" l="6" s="18" d=""/>
+            <fee type="expert" ref="#xpr0183" l="36" s="" d=""/>
+            <fee type="expert" ref="#xpr0232" l="18" s="" d=""/>
+            <fee type="clerk" l="36" s="" d=""/>
+            <fee type="rolls" l="13" s="5" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="110" s="3" d=""/>
+          </fees>
+          <expenses mentioned=""/>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis>Motivations
+                « Visite, prisée et estimation des ouvrages de menuiserie faits par les sieurs Girault et Dommangin pour ledit sieur de Fontpertuis en sa maison de Saint-Cloud et en faire nostre rapport ». Conflit entre les deux menuisiers et le commanditaire sur le prix de ces travaux qui a donné lieu à une première expertise contradictoire conduite par Delespine (pour Fontpertuis) et Pierre Quirot (pour les menuisiers) entre le 18 décembre 1725 et le 4 mars 1726, dont les résultats ne sont pas énoncés dans l'acte. La sentence rendue au parc civil nomme un tiers expert pour résoudre le conflit.</analysis>
+        <noteworthy/>
+      </description>
+    </expertise>

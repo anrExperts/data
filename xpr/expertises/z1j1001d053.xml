@@ -1,0 +1,239 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1001d053">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2017-10-01T12:00:00">2017-10-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1001</idno>
+        <idno type="item">053</idno>
+        <facsimile from="0590" to="0596"/>
+        <physDesc>
+          <extent sketch="false">6</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-04-19" type="suburbs"/>
+          <date when="1776-04-20" type="suburbs"/>
+        </sessions>
+        <places>
+          <place xml:id="id70d150" type="suburbs">
+            <address/>
+            <complement>grande rue du Faubourg du Roule à l'enseigne de l'image Notre-Dame</complement>
+            <city/>
+            <district/>
+            <owner/>
+          </place>
+        </places>
+        <categories>
+          <category type="estimation">Estimer la valeur des biens</category>
+          <designation rubric="true">Visitte et estimation d'une maison, Grande rue du Fauxbourg du Roulle, à la requeste du sieur Josset ; M. Delespine, expert.</designation>
+        </categories>
+        <procedure>
+          <framework type="b2b">L’institution est saisie dans le cadre d’une procédure (l’institution nomme un ou deux experts)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Prévôté du Roulle (sur Chantereine, pont de Neuilly, Villiers la Garenne (etc) haut et bas) (sentence)</orgName>
+              <date when="1776-04-01"/>
+            </sentence>
+            <sentence>
+              <orgName>Châtelet de Paris, lieutenant civil (ordonnanc)</orgName>
+              <date when="1776-04-13"/>
+            </sentence>
+          </sentences>
+          <case>partage, projet de vente par licitation</case>
+          <objects>
+            <object type="house">Maison(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0085" context="primary" appointment="court-appointed">
+              <title>architecte expert bourgeois de Paris</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0047">
+              <persName>
+                <surname>Mangin</surname>
+                <forename>Philbert</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party intervention="false" presence="true" role="petitioner">
+              <person>
+                <persName>
+                  <surname>Josset</surname>
+                  <forename>Claude Dominique</forename>
+                </persName>
+                <occupation>fermier et marchand boulanger, héritier pour 1/4 de feu Claude Josset son père et en cette qualité propriétaie pour 1/4 et par indivis de ladite maison</occupation>
+              </person>
+              <status>heir</status>
+              <expert ref="#xpr0085"/>
+              <prosecutor>
+                <persName>
+                  <surname>La Marre</surname>
+                  <forename/>
+                </persName>
+              </prosecutor>
+            </party>
+            <party intervention="false" presence="false" role="opponent">
+              <person>
+                <persName>
+                  <surname>Drapier</surname>
+                  <forename>Guillaume</forename>
+                </persName>
+                <occupation>marchand de vin,</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Pharoux</surname>
+                  <forename>Henry</forename>
+                </persName>
+                <occupation>marchand de vin traiteur</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Josset</surname>
+                  <forename>Geneviève ELisabeth</forename>
+                </persName>
+                <occupation>sa femme, héritière pour un pareil quart de feu Claude Josset leur père</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Josset</surname>
+                  <forename>Marie ELisabeth</forename>
+                </persName>
+                <occupation>sa femme, héritière pour un pareil quart de feu Claude Josset leur père</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Josset</surname>
+                  <forename>René Estienne</forename>
+                </persName>
+                <occupation>garçon majeur, héritier pour un pareil quart de feu Claude Josset leur père</occupation>
+              </person>
+              <status>heir</status>
+              <expert ref="#xpr0085"/>
+              <prosecutor>
+                <persName>
+                  <surname>Henequin</surname>
+                  <forename>Antoine Xavier</forename>
+                </persName>
+              </prosecutor>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0085">« L’emplacement contient en superficie totalle la quantité de cent quatorze toises vingt sept pieds ou environ. Attention faite à laquelle étendue consideré la nature qualité des constructions des corps de logis et ediffices qui composent ladite maison, la distribution et l’usage des logements et lieux qui y sont pratiqués, les réparations qui sont à y faire, celles d’entretien auxquelles lesdits batimens sont sujets, et consideration faite sur le tout, nous pensons et estimons lad. Maison ainsy qu’elle se poursuit et comporte de fond en comble circonstances et dependances telles qu’elle est cy dessus énoncée la somme de huit mil sept cent livres. 
+Telles sont les visites et estimations par nous faites de ladite maison notre avis sur l'impossibilité de la partager entre les propriétaires d'icelle, auxquels il sera plus avantageux de la vendre en l'état qu'elle est que de la partager, qu'en bien même ce partage seroit possible, ce qui n'est pas, sur quoy et sur tout ce que dessus nous vous référons monsieur d'ordonner.
+« Nous vous observons Monsieur que cette maison ne peut facillement ny commodement se partager en quatre lots justes et égaux, qu’on ne pourroit en former deux lots sans soulte et sans établir sur chacun d’eux des servitudes qui en affoibliroit la valleur »</opinion>
+          <arrangement/>
+          <agreement type="conclusion">Conclusion</agreement>
+          <estimate l="8700" s="" d=""/>
+          <estimates>
+            <place ref="#id70d150">
+              <appraisal l="8700" s="" d="">
+                <desc>une maison</desc>
+              </appraisal>
+            </place>
+          </estimates>
+          <fees detail="true">
+            <fee type="papers" l="5" s="" d=""/>
+            <fee type="expert" ref="#xpr0085" l="15" s="" d=""/>
+            <fee type="clerk" l="15" s="" d=""/>
+            <fee type="rolls" l="14" s="10" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="49" s="10" d=""/>
+          </fees>
+          <expenses mentioned=""/>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis/>
+        <noteworthy>Claude Josset est héritier pour ¼ de son père Claude Joset et en cette qualité propriétaire pour ¼ et par indivis de la maison.
+                Marie Elizabeth Josset ép. Drapier et Geneviève Elizabeth Josset ép. Pharon héritières aussi chacune pour ¼ de Claude Josset et proprietaires aussi chacune pour ¼ de la maison
+                René Estienne Josset garçon majeur, héritier pour le dernier quart.</noteworthy>
+      </description>
+    </expertise>

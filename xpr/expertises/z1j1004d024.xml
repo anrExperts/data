@@ -1,0 +1,199 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1004d024">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-07-01T12:00:00">2020-07-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2017-10-01T12:00:00">2017-10-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1004</idno>
+        <idno type="item">024</idno>
+        <facsimile from="0256" to="0258"/>
+        <physDesc>
+          <extent sketch="false">2</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-06-08" type="paris"/>
+        </sessions>
+        <places>
+          <place type="paris">
+            <address>
+              <street>Rue Saint-Louis-au-Marais</street>
+              <buildingNumber/>
+            </address>
+            <complement/>
+            <parish/>
+            <owner/>
+          </place>
+        </places>
+        <categories>
+          <category type="settlement">Départager</category>
+          <designation rubric="true">Visitte de tiers expert et de partage d'avis sur des ouvrages de serrurerie faits en une maison, rue St Louis au Marais, à la requête du Sr Capiedmourtin, Me Serrurier ; entre Mrs Mouchelet et Villers, experts, M. De Besse tiers expert.</designation>
+        </categories>
+        <procedure>
+          <framework type="b2b">L’institution est saisie dans le cadre d’une procédure (l’institution nomme un ou deux experts)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Châtelet, lieutenant civil, sentence du 15 mai 1776</orgName>
+              <date when="1776-05-15"/>
+            </sentence>
+          </sentences>
+          <case>Arbitrage de l’expertise de De Villers et Mouchet ordonnée par la sentence du 3 mai 1776 concernant la prisée de certains des ouvrages de serrurerie réalisés par Capdemartin pour de Meilhan (articles 30, 32 et 33 du premier mémoire de serrurerie)</case>
+          <objects>
+            <object type="other">serrurerie</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0070" context="third-party" appointment="court-appointed">
+              <title>architecte juré expert bourgeois des bâtiments</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0070">
+              <persName>
+                <surname>Le Sage</surname>
+                <forename>Charles Pierre</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="true" intervention="false">
+              <person>
+                <persName>
+                  <surname>Capdemartin</surname>
+                  <forename>Raymond</forename>
+                </persName>
+                <occupation>maître serrurier à Paris</occupation>
+              </person>
+              <status>builder</status>
+              <expert ref="#xpr0070"/>
+              <prosecutor>
+                <persName>
+                  <surname>Chapatte</surname>
+                  <forename/>
+                </persName>
+              </prosecutor>
+              <representative>
+                <persName>
+                  <surname>Ader</surname>
+                  <forename/>
+                </persName>
+                <occupation>avocat</occupation>
+              </representative>
+            </party>
+            <party role="opponent" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>de Meilhan</surname>
+                  <forename/>
+                </persName>
+                <occupation>maître des requêtes de l’hôtel du roi</occupation>
+              </person>
+              <status>limited-partner</status>
+              <expert ref="#xpr0070"/>
+              <prosecutor>
+                <persName>
+                  <surname>de Corneille</surname>
+                  <forename/>
+                </persName>
+              </prosecutor>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0070">« Et après avoir considéré que tous les objets de disparité des sieurs premiers experts ne frappent que sur les articles trente trente deux et trente trois du premier memoire d’ouvrages faits et fournis par ledit sieur Capdemartin, lesquels consistent en trois grilles de fer par luy demandé à raison de cent quatre vingt livres piece Nous tiers expert après avoir pesé l’avis des sieurs premiers experts sur ces articles et la distinction … dans l’avis dudit sieur De Villers Nous avons procédé aux details et appreciations des differents objets qui les composent eut égard à leur poids et au travail et les avons estimés comme ledit sieur Mouchet à raison de cent quinze livres la piece la somme de … 345 l. 
+Telle est Monsieur la visitte par nous faitte tel est notre avis sur les differents objets de la mission que vous nous avez defferé par votre sentence vous referant sur le tout à votre justice et prudence ordinaire 
+Fait et arrêté ce jourd’huy deux juillet audit an mil sept cent soixante seize par nous tiers expert et avons signé avec le greffier »</opinion>
+          <arrangement/>
+          <agreement type="conclusion">Conclusion</agreement>
+          <estimate l="" s="" d=""/>
+          <fees detail="true">
+            <fee type="papers" l="4" s="14" d=""/>
+            <fee type="expert" ref="#xpr0070" l="6" s="" d=""/>
+            <fee type="clerk" l="6" s="" d=""/>
+            <fee type="rolls" l="10" s="" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="26" s="14" d=""/>
+          </fees>
+          <expenses mentioned=""/>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis>Rapport d’expertise du 27 mars 1776 (Mangin greffier) : Mouchet a estimé les travaux 115 l. pièce ; De Villers 160 l. pièce La conclusion indique la date du 2 juillet 1776 pour une visite en une seule vacation commencée le 8 juin 1776.</analysis>
+        <noteworthy/>
+      </description>
+    </expertise>

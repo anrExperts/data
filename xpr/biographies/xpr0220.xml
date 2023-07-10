@@ -1,0 +1,252 @@
+<eac xmlns="https://archivists.org/ns/eac/v2" xml:id="xpr0220">
+   <control maintenanceStatus="updated" publicationStatus="inProcess">
+      <recordId>xpr0220</recordId>
+      <maintenanceAgency>
+         <agencyName>projet Experts</agencyName>
+      </maintenanceAgency>
+      <maintenanceHistory>
+         <maintenanceEvent maintenanceEventType="revised">
+        <agent agentType="human">vnegre</agent>
+        <eventDateTime standardDateTime="2023-06-01T16:05:24Z"/>
+        <eventDescription/>
+      </maintenanceEvent>
+      <maintenanceEvent maintenanceEventType="revised">
+        <agent agentType="human">jmorvan</agent>
+        <eventDateTime standardDateTime="2023-05-15T19:09:51Z"/>
+        <eventDescription>ajout date changement de colonne</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent maintenanceEventType="revised">
+        <agent agentType="human">vnegre</agent>
+        <eventDateTime standardDateTime="2023-04-23T16:49:31Z"/>
+        <eventDescription/>
+      </maintenanceEvent>
+      <maintenanceEvent maintenanceEventType="revised">
+        <agent agentType="human">vnegre</agent>
+        <eventDateTime standardDateTime="2023-04-23T16:31:10Z"/>
+        <eventDescription/>
+      </maintenanceEvent>
+      <maintenanceEvent maintenanceEventType="updated" languageOfElement="eng">
+            <agent agentType="machine">EAC-CPF 1.x to EAC 2.0 Migration Style Sheet (eac1-to-eac2.xsl)</agent>
+            <eventDateTime standardDateTime="2022-09-19T16:52:57.337336+02:00"/>
+            <eventDescription>EAC-CPF 1.x (urn:isbn:1-931666-33-4) instance migrated to EAC 2.0 (https://archivists.org/ns/eac/v2)</eventDescription>
+         </maintenanceEvent>
+         <maintenanceEvent maintenanceEventType="updated">
+            <agent agentType="machine">updateRefValues_files.xqy/BaseX</agent>
+            <eventDateTime standardDateTime="2021-04-27T16:18:39.882+02:00">2021-04-27T16:18:39.882+02:00</eventDateTime>
+            <eventDescription>Mise à jour de la valeur des champs @xlink:ref (ajout d'un '#' pour les participants et les relations).</eventDescription>
+         </maintenanceEvent>
+         <maintenanceEvent maintenanceEventType="updated">
+            <agent agentType="machine">cleanNamePart_files.xqy/BaseX</agent>
+            <eventDateTime standardDateTime="2021-02-18T15:39:02.354+01:00">2021-02-18T15:39:02.354+01:00</eventDateTime>
+            <eventDescription>Suppression des composantes du nom vides.</eventDescription>
+         </maintenanceEvent>
+         <maintenanceEvent maintenanceEventType="updated">
+            <agent agentType="machine">updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDateTime standardDateTime="2021-02-17T11:59:50.182+01:00">2021-02-17T11:59:50.182+01:00</eventDateTime>
+            <eventDescription>Conversion des dates de révision des fiches prosopographiques au format xsd:dateTime.</eventDescription>
+         </maintenanceEvent>
+         <maintenanceEvent maintenanceEventType="updated">
+            <agent agentType="machine">xml2eac.xsl/Saxon9</agent>
+            <eventDateTime standardDateTime="2019-11-07T12:00:00+01:00">2019-11-07T12:00:00+01:00</eventDateTime>
+            <eventDescription>Notice rétroconvertie en EAC-CPF à partir de données Google Drive.</eventDescription>
+         </maintenanceEvent>
+         <maintenanceEvent maintenanceEventType="created">
+            <agent agentType="human">JH</agent>
+            <eventDateTime standardDateTime="2018-05-29T12:00:00+01:00">2018-05-29T12:00:00+01:00</eventDateTime>
+            <eventDescription>Fiches créée sur Google Drive.</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+    <sources>
+      <source id="source_6rt0154fr0khk4a">
+        <reference href="">Z/1m/36/A (IAD/Scellés)</reference>
+      </source>
+      <source id="source_p7x0yerxsii2h5">
+        <reference href="">Almanach royal (1701)</reference>
+      </source>
+      <source id="source_qvf04fa3sm0nhyt">
+        <reference href="">Almanach royal (1702)</reference>
+      </source>
+      <source id="source_st508blnd96e9ck">
+        <reference href="">Almanach royal (1704)</reference>
+      </source>
+      <source id="source_c6d027sdq7o2om8">
+        <reference href="">MC/ET/LXXV/176 (Cont. (3) mariage)</reference>
+      </source>
+    </sources>
+      
+      
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType value="person"/>
+         <nameEntry sourceReference="" preferredForm="true" status="authorized">
+            <part localType="full">Pipault, Simon</part>
+            
+         </nameEntry>
+         <nameEntry sourceReference="" preferredForm="false" status="alternative">
+            <part localType="surname">Pipault</part>
+            <part localType="forename">Simon</part>
+            
+            
+         </nameEntry>
+          <otherEntityTypes>
+            <otherEntityType>
+              <term>expert</term>
+            </otherEntityType>
+          </otherEntityTypes>
+         <identityId>xpr0220</identityId>
+      </identity>
+      <description>
+         <functions>
+            <function sourceReference="#source_p7x0yerxsii2h5">
+               <term>Expert entrepreneur</term>
+               <dateRange>
+                  <fromDate sourceReference="" certainty="certain" standardDate="1690"/>
+                  <toDate sourceReference="" certainty="certain" standardDate="1701"/>
+               </dateRange>
+               
+            </function>
+            <function sourceReference="#source_qvf04fa3sm0nhyt #source_st508blnd96e9ck">
+               <term>Expert bourgeois</term>
+               <dateRange>
+                  <fromDate sourceReference="" certainty="certain" standardDate="1702"/>
+                  <toDate sourceReference="" certainty="certain" standardDate="1704"/>
+               </dateRange>
+               
+            </function>
+         </functions>
+      <places>
+        <place sourceReference="#source_c6d027sdq7o2om8">
+          <date certainty="certain" standardDate="1675-07-04" sourceReference=""/>
+          <address>
+            <addressLine>Rue du Roi de Sicile</addressLine>
+            <addressLine>Paroisse Saint-Paul</addressLine>
+          </address>
+        </place>
+      </places>
+         <localDescriptions>
+            <localDescription localType="sex">
+               <term/>
+            </localDescription>
+         </localDescriptions>
+         <occupations>
+            <occupation sourceReference="">
+               <term>Entrepreneur des bâtiments du roi</term>
+               
+            </occupation>
+        <occupation localType="" sourceReference="#source_c6d027sdq7o2om8">
+          <term>Architecte des bâtiments du Roy</term>
+          <date certainty="certain" standardDate="1675-07-04" sourceReference=""/>
+          <!--optionnal (all below)-->
+          <!--&lt;date/&gt; | &lt;dateRange/&gt; | &lt;dateSet/&gt;-->
+        </occupation>
+         </occupations>
+         
+         <existDates>
+            <dateRange>
+               <fromDate sourceReference="" certainty=""/>
+               <toDate sourceReference="" certainty="" standardDate="1704"/>
+            </dateRange>
+         </existDates>
+         <biogHist>
+            <chronList>
+               <chronItem id="eventid96430d220" localType="officePurchase">
+            <date certainty="" sourceReference=""/>
+                  
+                  <event>Acquisition d'un office</event>
+                  
+                  
+                  
+                  
+                  
+               </chronItem>
+               <chronItem id="eventid96430d230" localType="provision">
+                  <date sourceReference="" certainty="" standardDate="1690-07-22"/>
+                  <event>Lettre de provision</event>
+            <place>
+              <placeName/>
+            </place>
+                  
+                  
+                  
+                  
+               </chronItem>
+               
+               <chronItem id="eventid96430d248" localType="death">
+                  <date sourceReference="" certainty="" standardDate="1704"/>
+                  <event>Décès</event>
+                  
+                  
+                  
+                  
+               </chronItem>
+          <chronItem id="chronItem_upt07mdc3mgpbm6" sourceReference="#source_c6d027sdq7o2om8" localType="marriage">
+            <date certainty="certain" standardDate="1675-07-04" sourceReference=""/>
+            <event>Mariage (3) avec Anne Goujon</event>
+            <place>
+              <placeName/>
+            </place>
+          </chronItem>
+            </chronList>
+         </biogHist>
+      </description>
+      <relations>
+      <relation target="#chronItem_upt07mdc3mgpbm6" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Goujon, Anne</part>
+          <part localType="status"/>
+          <part localType="occupationType"/>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_21wj0nzw4sc8idxe" valueURI="" vocabularySource="" vocabularySourceURI="" sourceReference="#source_c6d027sdq7o2om8">rico:hasOrHadSpouse</relationType>
+        <targetRole target="#relationType_21wj0nzw4sc8idxe">épouse</targetRole>
+      </relation>
+      <relation target="#chronItem_upt07mdc3mgpbm6" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Goujon, Louis</part>
+          <part localType="status">Architecte des bâtiments de sa majesté </part>
+          <part localType="occupationType">Bâtiment;Architecte du roi</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_2kiy066cpwec14hq" valueURI="" vocabularySource="" vocabularySourceURI="" sourceReference="#source_c6d027sdq7o2om8">rico:hasFamilyAssociationWith</relationType>
+        <targetRole target="#relationType_2kiy066cpwec14hq">beau-père</targetRole>
+      </relation>
+      <relation target="#chronItem_upt07mdc3mgpbm6" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Le Jeune, Michelle</part>
+          <part localType="status"/>
+          <part localType="occupationType"/>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_3kfw0jnfrzx6j4ei" valueURI="" vocabularySource="" vocabularySourceURI="" sourceReference="#source_c6d027sdq7o2om8">rico:hasFamilyAssociationWith</relationType>
+        <targetRole target="#relationType_3kfw0jnfrzx6j4ei">belle-mère</targetRole>
+      </relation>
+         
+      <relation target="#eventid96430d220" sourceReference="">
+            <targetEntity target="#xprOffice0043" targetType="corporateBody">
+              <part localType="full">Office 43</part>
+            <part localType="status"/>
+          <part localType="occupationType"/>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+          <relationType id="relationType_id128298d2617190" valueURI="" vocabularySource="" vocabularySourceURI="" sourceReference=""/>
+            <targetRole target="#relationType_id128298d2617190"/>
+          </relation>
+    </relations>
+   
+      </cpfDescription>
+   
+   
+</eac>

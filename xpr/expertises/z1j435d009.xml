@@ -1,0 +1,179 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j435d009">
+      <meta/>
+      <control>
+        <maintenanceStatus/>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term/>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:45:33.927+02:00">2021-04-21T20:45:33.927+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateKeywordsModule_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour du module keywords.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:44:31.814+02:00">2021-04-21T20:44:31.814+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateExpertisesArrangement_files.xqy/BaseX</agent>
+            <eventDescription>Ajout du champs Accommodement dans l'éventualité d’une résolution par les parties.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2019-05-01T12:00:00">2019-05-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1696</unitdate>
+    <idno type="unitid">Z1J435</idno>
+        <idno type="item">009</idno>
+        <facsimile from="0036" to="0041"/>
+        <physDesc>
+          <extent sketch="false">6</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1696-10-19" type="paris"/>
+          <date when="1696-10-25" type="paris"/>
+        </sessions>
+        <places>
+          <place type="paris">
+            <address>
+              <street>grande rue du faubourg Saint-Jacques</street>
+              <buildingNumber/>
+            </address>
+            <complement/>
+            <parish/>
+            <owner>Imbert Huet dit Mariage</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="assessment">Décrire et évaluer les travaux à venir</category>
+          <designation rubric="true">Visite de grosses et menues réparations à faire en une maison, scize Grande rue du faubourg St Jacques, entre les sieurs Caizé et sa femme locataires et Imbert Huet dit Mariage, propiétaires ; Philippes et Du Val, experts.</designation>
+        </categories>
+        <procedure>
+          <framework type="b2b">L’institution est saisie dans le cadre d’une procédure (l’institution nomme un ou deux experts)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>LC Chatelet</orgName>
+              <date when="1696-09-15"/>
+              <date when="1696-10-05"/>
+              <date when="1696-09-07"/>
+            </sentence>
+          </sentences>
+          <case>l'état de la maison nécessite des réparations</case>
+          <objects>
+            <object type="house">Maison(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0218" context="primary" appointment="court-appointed">
+              <title>entrepreneur des bâtiments du roi et juré expert à Paris</title>
+            </expert>
+            <expert ref="#xpr0105" context="primary" appointment="appointed">
+              <title>expert juré et entrepreneur de bâtiments à Paris</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0001">
+              <persName>
+                <surname>Fébvrier</surname>
+                <forename>Paul</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="true" intervention="">
+              <person>
+                <persName>
+                  <surname>Carré</surname>
+                  <forename>Louis</forename>
+                </persName>
+                <occupation/>
+              </person>
+              <status>tenant</status>
+              <expert ref="#xpr0105"/>
+            </party>
+            <party role="opponent" presence="true" intervention="">
+              <person>
+                <persName>
+                  <surname>Huet</surname>
+                  <forename>Imbert</forename>
+                </persName>
+                <occupation>dit mariage</occupation>
+              </person>
+              <status>owner</status>
+              <expert ref="#xpr0218"/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <agreement type="disagreement">Désaccord</agreement>
+          <opinion ref="">Philippest : réparations estimées à 99livres 3 sols
+Touttes lesquelles réparations cy dessus tant grosse réparations que enus réparations contenus en nostre présent raport sont à faire en ladite maison, lesquelles peuvent valloir ensemble la totalitté d'icelles, la somme de 99 livres 3 sols ainsy qu'il sont appréciez en fin de chacun article suivant l'advis de nous Philipper et valleur desquelles réparations je l'ay mise pour instruire la relligion de la cour seulement.
+Tes est l'estat auquel est ladite maison et lieux occupez par lesdits sieur et dame Caré sauf à vous monsieur d'en ordonner sur le tout suivant vostre prudence ordinaire"</opinion>
+          <opinion ref="">Et moy Duval j'estime qu'il n'est point de nostre compétence d'apprécier le prix desdites réparations n'en estant fait aucune mention dans les trois sentences qui nous ont esté mis ès mains, que d'ailleurs estant réparations dont on ne peut pertinemen i mettre le prix, attendu qu'en faisant lesdits réparations il en naistra de nouvelles qui ne sont pas connus à nos ieux et qui ne se peuvent connoistre qu'en travaillant, n'estant pas un bastiment neuf, mais plusieurs restablissements qui néantmoins font beaucoup souffrire le (f. 6r°) ledit Caré et sa femme locataires, et qu'en outre que les prix que ledit Philippe a fait tirer en fin de chacun article ne sont pas juste et monteront à plus haute somme que celles par luy marquées. Tel est ladvis de moy du Val sauf à vous monsieur d'en juger suivant vosttre pudence ordinaire</opinion>
+          <arrangement/>
+          <estimate/>
+          <fees detail="false">
+            <total l="" d="" s=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="" s="" d=""/>
+            <expense type="expert" l="12" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group=""/>
+        <analysis/>
+        <noteworthy>- f. 1r° n'ayant peu nous transporter ledit jour 15 du présent mois en la maison pour l'absence de l'un de  nous [experts], 
+- f. 1v° Huet avait voulu nommer le maçon Simon Feret comme expert mais il lui a été demandé de choisr un expert en titre d'office
+- conclusions très intéressantes</noteworthy>
+      </description>
+    </expertise>

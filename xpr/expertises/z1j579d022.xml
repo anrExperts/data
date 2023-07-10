@@ -1,0 +1,277 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j579d022">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-10-01T12:00:00">2020-10-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2016-10-26T12:00:00">2016-10-26T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>RB</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1726</unitdate>
+    <idno type="unitid">Z1J579</idno>
+        <idno type="item">022</idno>
+        <facsimile from="0348" to="0356"/>
+        <physDesc>
+          <extent sketch="false">8</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1726-03-20" type="paris"/>
+          <date when="1726-03-24" type="paris"/>
+        </sessions>
+        <places>
+          <place xml:id="id47d295" type="paris">
+            <address>
+              <street>Rue de la Montagne Sainte-Geneviève [Voie actuelle. Autre(s) nom(s) : rue Sainte-Geneviève, rue Sainte-Geneviève-la-Grant, rue Sainte-Geneviève-du-Mont, rue du Mont, rue des Boucheries, rue de la Montagen]; rue du Bon-Puits [Cette dénomination correspond à 2 voies : actuelle rue de Torcy. Voie supprimée. Également dénommée rue de la Fortune], place Maubert</street>
+              <buildingNumber/>
+            </address>
+            <complement/>
+            <parish/>
+            <owner>succession Demay</owner>
+          </place>
+          <place xml:id="id47d313" type="paris">
+            <address>
+              <street>rue du Ban</street>
+              <buildingNumber/>
+            </address>
+            <complement/>
+            <parish/>
+            <owner>succession Demay</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="estimation">Estimer la valeur des biens</category>
+          <designation rubric="true">Visite et estimation de maisons</designation>
+        </categories>
+        <procedure>
+          <framework type="b2a">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>lieutenant civil</orgName>
+              <date when="1726-02-12"/>
+            </sentence>
+          </sentences>
+          <case>Contestation de legs dans le cadre d'une séparation de biens et du règlement de la succession et de la communauté de mariage entre Simone Plume et le défunt Jean Demay, par leurs enfants.</case>
+          <objects>
+            <object type="house">Maison(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0183" context="primary" appointment="appointed">
+              <title>juré expert à Paris</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0033">
+              <persName>
+                <surname>Collot</surname>
+                <forename>Antoine Charles</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="true" intervention="false">
+              <person>
+                <persName>
+                  <surname>Plume</surname>
+                  <forename>Simone</forename>
+                </persName>
+                <occupation>veuve de Jean Demay, de son vivant maître boucher à Paris</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Demay</surname>
+                  <forename>Jean</forename>
+                </persName>
+                <occupation>maître boucher à Paris, fils et héritier de Jean Demay</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Dosseville</surname>
+                  <forename>Antoine</forename>
+                </persName>
+                <occupation>huissier commissaire au Châtelet</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Demay</surname>
+                  <forename>Françoise</forename>
+                </persName>
+                <occupation>fille et héritière de Jean Demay</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Capitaine</surname>
+                  <forename>Pierre</forename>
+                </persName>
+                <occupation>maître boucher,</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Demay</surname>
+                  <forename>Sébastienne</forename>
+                </persName>
+                <occupation>fille et héritière de Jean Demay</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Bercher</surname>
+                  <forename>Jean Baptiste Claude</forename>
+                </persName>
+                <occupation>marchand à Paris,</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Demay</surname>
+                  <forename>Anne</forename>
+                </persName>
+                <occupation>fille et héritière de Jean Demay.</occupation>
+              </person>
+              <status>heir</status>
+              <expert ref="#xpr0183"/>
+            </party>
+            <party role="opponent" presence="true" intervention="false">
+              <person>
+                <persName>
+                  <surname>Demay</surname>
+                  <forename>Jacques</forename>
+                </persName>
+                <occupation>marchand boucher, fils et héritier de Jean Demay</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Bouffart</surname>
+                  <forename>Jean</forename>
+                </persName>
+                <occupation>procureur au barreau de Paris,</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Demay</surname>
+                  <forename>Madeleine</forename>
+                </persName>
+                <occupation>fille et héritière de Jean Demay.</occupation>
+              </person>
+              <status>heir</status>
+              <expert ref="#xpr0183"/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0183">La maison de la Montagne-Sainte-Geneviève, « considération faitte du quartier où est scituée ladite maison, de l'estat présent des bastiments qui la composent qui sont anciens », est estimée à 29 000  livres. La maison de la rue du Ban, « considération faitte de l'estat présent des batiments qui la composent qui sont fort anciens et à ce qu'il n'y a point de cour », est estimée à 5200 livres. Les étals, « considération faitte du quartier où [ils] sont scitués, nous prisons et estimons celuy auquel est attaché le privilège de marchand boucher privilégié, la somme de 6720 livres […]. Et nous prisons et estimons les deux autres étaux ensuitte la somme de 20506 livres ».</opinion>
+          <arrangement/>
+          <agreement type="conclusion">Conclusion</agreement>
+          <estimate l="61426" s="" d=""/>
+          <estimates>
+            <place ref="#id47d295">
+              <appraisal l="29000" s="" d="">
+                <desc>maison</desc>
+              </appraisal>
+            </place>
+            <place ref="#id47d313">
+              <appraisal l="5200" s="" d="">
+                <desc>maison</desc>
+              </appraisal>
+              <appraisal l="6720" s="" d="">
+                <desc>premier étal</desc>
+              </appraisal>
+              <appraisal l="20506" s="" d="">
+                <desc>deux autres étals</desc>
+              </appraisal>
+            </place>
+          </estimates>
+          <fees detail="true">
+            <fee type="papers" l="" s="" d=""/>
+            <fee type="expert" ref="#xpr0183" l="12" s="" d=""/>
+            <fee type="clerk" l="" s="" d=""/>
+            <fee type="rolls" l="" s="" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="" s="" d=""/>
+          </fees>
+          <expenses mentioned=""/>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis>Motivations
+                contestation du legs de deux maisons et de trois étals de boucherie à quatre enfants de Jean Demay (Jean, Françoise, Sébastienne, Anne) par deux autres enfants du défunt (Jacques et Madeleine). La visite doit en estimer le prix.</analysis>
+        <noteworthy/>
+      </description>
+    </expertise>

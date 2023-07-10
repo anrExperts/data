@@ -1,0 +1,178 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j579d038">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-10-01T12:00:00">2020-10-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2016-10-26T12:00:00">2016-10-26T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>RB</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1726</unitdate>
+    <idno type="unitid">Z1J579</idno>
+        <idno type="item">038</idno>
+        <facsimile from="0482" to="0488"/>
+        <physDesc>
+          <extent sketch="false">6</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1726-03-30" type="suburbs"/>
+          <date when="1726-04-11" type="suburbs"/>
+        </sessions>
+        <places>
+          <place type="suburbs">
+            <address/>
+            <complement>Grande-Rue du faubourg Saint-Honoré [Actuellement partie de la rue du Faubourg-Saint-Honoré]</complement>
+            <city>Paris</city>
+            <district/>
+            <owner>Crozat de Ramond</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="settlement">Départager</category>
+          <designation rubric="false">[Visite et estimation de réparations]</designation>
+        </categories>
+        <procedure>
+          <framework type="b1">Requête auprès d’une institution pour qu’elle demande une expertise</framework>
+          <origination type="parties">Les parties</origination>
+          <sentences>
+            <sentence>
+              <orgName>Lieutenant civil du Châtelet, par sommation du 27 mars 1726</orgName>
+              <date when="1726-03-27"/>
+            </sentence>
+          </sentences>
+          <case>conflit sur la répartition des charges de l'entretien d'un puits entre propriétaire et locataire</case>
+          <objects>
+            <object type="well">Puits</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0111" context="primary" appointment="court-appointed">
+              <title>architecte</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0033">
+              <persName>
+                <surname>Callon</surname>
+                <forename>Antoine Charles</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="true" intervention="false">
+              <person>
+                <persName>
+                  <surname>Crozat de Ramond</surname>
+                  <forename>Henri</forename>
+                </persName>
+                <occupation>marquis de Thorigné. Propriétaire de la maison et brasserie</occupation>
+              </person>
+              <status>owner</status>
+              <expert ref="#xpr0111"/>
+            </party>
+            <party role="opponent" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Poissant</surname>
+                  <forename>Claude</forename>
+                </persName>
+                <occupation>marchand brasseur, locataire de la maison et brasserie.</occupation>
+              </person>
+              <status>tenant</status>
+              <expert ref="#xpr0111"/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0111">« Après avoir vu et visitté ledit puits notre avis est que l'affaissement des murs circulaires du puits en question n'est causé que par le peu de solidité du terrain, que la pompe n'y a de part qu'au tant qu'elle aspire plus d'eau et continuellement qu'elle la prend du fond dudit puits. Surtout ladite pompe estant comme [assechée?] à présent posée sur le sable comme nous l'a déclaré ledit sieur Poissant, à la différence que l'eau estant tirée du puits avec des sceaux ne la prendait qu'à la superficie, c'est à dire à 8 pieds du fond, les eaux estant à présent à cette hauteur. Mais comme il est porté par le bail fait entre les parties que le sieur de Ramond seroit tenu de faire mettre une chaisne de fer et des thuyaux bien garnis et propres à faire venir l'eau dans les cuves à la dépence de laquelle ledit sieur de Ramond ne contribuerait que jusqu'à la somme de trois cent livres et que le surplus serait payé par ledit sieur Poissant locatire, notre avos est aussi que conséquament lesdites réparations à faire en maçonnerie tant au mur circulaire dudit puits, dont la margelle sera rendue à plomb et de niveau que celes à faire au mur mitoyen jusqu'aux et en fondation doivent estre faittes aux frais et dépens seuls dudit sieur de Ramond, ainsy que les racordements tant du pavé au pourtour du mur circulaire dudit puits qu'autres, et qu'il sera tenu d'assurer lesdits mirs de façon qu'il ne se fasse plus de tassement et affaissement, ladite dégradation estant très ancienne et aurait du estre réparée et mis au bon estat avant la location de ladite maison audit Poissant. Et que la pompe qui présentement est posée sur le sable au fond dudit puits sera relevée jusqu'à deux pieds au dessus dudit sable pour empêcher qu'elle n'aspire avec l'eau comme elle a fait jusqu'à présent les sables mouvants dudit terrain. Ce qui sera faits aux frais et dépens dudit sieur Poissant »</opinion>
+          <arrangement/>
+          <agreement type="conclusion">Conclusion</agreement>
+          <estimate l="" s="" d=""/>
+          <fees detail="true">
+            <fee type="papers" l="6" s="10" d=""/>
+            <fee type="expert" ref="#xpr0111" l="15" s="" d=""/>
+            <fee type="clerk" l="15" s="" d=""/>
+            <fee type="rolls" l="6" s="10" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="43" s="" d=""/>
+          </fees>
+          <expenses mentioned=""/>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis>Motivations
+                Le puits et la pompe de la brasserie louée par Claude Poissant au marquis de Thorigné présentent des désordres qui rendent leur usage impossible. Afin de distinguer la répartition des charges des travaux à exécuter entre propriétaire et locataire, répartition que conteste ce dernier pour qui l'intégralité des frais doit être supportée par le bailleur, le marquis de Thorigné demande une expertise.</analysis>
+        <noteworthy/>
+      </description>
+    </expertise>

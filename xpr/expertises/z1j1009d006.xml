@@ -1,0 +1,211 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1009d006">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2023-05-12T16:21:14.938+02:00">2023-05-12T16:21:14.938+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateThirdPartyAgreement_db.xqy/BaseX</agent>
+        <eventDescription>Modification des valeurs admises pour le champ "dispositif de l'expertise" dans le cadre de tiers expertises.</eventDescription>
+      </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-08-01T12:00:00">2020-08-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2017-10-01T12:00:00">2017-10-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1009</idno>
+        <idno type="item">006</idno>
+        <facsimile from="0052" to="0058"/>
+        <physDesc>
+          <extent sketch="false">6</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-11-06" type="province"/>
+        </sessions>
+        <places>
+          <place type="paris">
+            <address>
+              <street>Choisy-le-Roi</street>
+              <buildingNumber/>
+            </address>
+            <complement/>
+            <parish/>
+            <owner/>
+          </place>
+        </places>
+        <categories>
+          <category type="settlement">Départager</category>
+          <designation rubric="true">Visitte de mur à Choisy le Roy, à la requeste du sieur Genty ; M. Danjan, tiers expert entre MM. Pérard et de Besse, premiers experts.</designation>
+        </categories>
+        <procedure>
+          <framework type=""/>
+          <origination type=""/>
+          <sentences>
+            <sentence>
+              <orgName>Requêtes du palais (sentence)</orgName>
+              <date when="1776-10-16"/>
+            </sentence>
+          </sentences>
+          <case>Chute et déversement de mur mitoyen, dont on cherche à déterminer les causes ; premier rapport de Perrard et De Besse le 13 août, en désaccord</case>
+          <objects>
+            <object type="wall">Mur(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0065" context="third-party" appointment="court-appointed">
+              <title>architecte expert à Paris</title>
+            </expert>
+            <expert ref="#xpr0210" context="primary" appointment="unknown">
+              <title/>
+            </expert>
+            <expert ref="#xpr0070" context="primary" appointment="unknown">
+              <title/>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0059">
+              <persName>
+                <surname>Forestier</surname>
+                <forename>Césaire François</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Genty</surname>
+                  <forename/>
+                </persName>
+                <occupation>bourgeois demeurant à Choisy-le-Roi</occupation>
+              </person>
+              <status>owner</status>
+              <expert ref="#xpr0065"/>
+              <prosecutor>
+                <persName>
+                  <surname>De Gaulle</surname>
+                  <forename/>
+                </persName>
+              </prosecutor>
+            </party>
+            <party role="opponent" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Denonve</surname>
+                  <forename/>
+                </persName>
+                <occupation>propriétaire de la maison voisine</occupation>
+              </person>
+              <status>owner</status>
+              <expert ref="#xpr0065"/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="">« Nous croyons devoir observer sur la chutte de ce mur, que dans l’état où il était relativement à son deffaut de fondation assez profonde, au peu de solidité du terrain sur lequel il est assis, au dessolement fait du coté du sieur Denonve et aux racines d’ormes qui passoient au travers, ce mur étoit très susceptible des ebranlements les plus legers, et que dans cet état les tranchées faites par le sieur Genty de son coté en 4 p. de profondeur ayant évanté le terrain peu solide sous ce mur, les terres ont coulé dans la tranchée et ce mur s’est naturellement deversé vers le jardin du sieur Genty sur lequel il est tombé, un mur de cloture qui auroit eu une fondation suffisamment prodone et assise sur terrain solide n’aurait pas éprouvé le même sort, de pareilles tranchées où l’on observe de laisser des parties plaines d’espace en espace n’auroient peu produire de semblables deversements et chutte et c’est ce qui se remarque dans tous les jardins où l’on fait des fouilles et tranchées pour ces effets et y pouvoir planter Tel est notre avis nosseigneurs vous referant de juger et ordonner sur le tout Fait par nous architecte expert susdit les jours mois et an que dessus »</opinion>
+          <arrangement/>
+          <agreement type="conclusion">Conclusion</agreement>
+          <estimate l="" s="" d=""/>
+          <fees detail="true">
+            <fee type="papers" l="18" s="" d=""/>
+            <fee type="expert" ref="#xpr0065" l="48" s="" d=""/>
+            <fee type="expert" ref="#xpr0210" l="0" s="" d=""/>
+            <fee type="expert" ref="#xpr0070" l="0" s="" d=""/>
+            <fee type="clerk" l="48" s="" d=""/>
+            <fee type="rolls" l="36" s="" d=""/>
+            <fee type="prosecutors" l="36" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="186" s="" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="expert" l="10" s="" d=""/>
+            <expense type="clerk" l="37" s="10" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder">
+          <term value="m11">Effondrement / Ecroulement / chute</term>
+        </keywords>
+        <keywords group="transformation"/>
+        <analysis>Exposé des arguments des deux premiers experts (« la chute du mur provient de quatre causes : 1° etc.)</analysis>
+        <noteworthy/>
+      </description>
+    </expertise>

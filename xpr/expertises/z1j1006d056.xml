@@ -1,0 +1,191 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1006d056">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-09-01T12:00:00">2020-09-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2017-04-01T12:00:00">2017-04-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1006</idno>
+        <idno type="item">056</idno>
+        <facsimile from="0724" to="0726"/>
+        <physDesc>
+          <extent sketch="false">2</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-08-22" type="paris"/>
+        </sessions>
+        <places>
+          <place type="paris">
+            <address>
+              <street>Rue de Bussy</street>
+              <buildingNumber/>
+            </address>
+            <complement>une fosse d’aisance et un puits mitoyen entre une maison rue de Bussy dont sont tous propriétaires les requérants consorts Landelle et la maison voisine appartenant à Dubois</complement>
+            <parish/>
+            <owner>Landelle / Dubois</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="settlement">Départager</category>
+          <designation rubric="true">Visite d’objets contentieux</designation>
+        </categories>
+        <procedure>
+          <framework type="b2a">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>lieutenant civil (sentence du 4 août 1776)</orgName>
+              <date when="1776-08-04"/>
+            </sentence>
+          </sentences>
+          <case>Puits infesté : les requérants accusent la fosse d’aisance du sieur Dubois, défendeur, de corrompre et infecter leur puits mitoyen</case>
+          <objects>
+            <object type="well">Puits</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0250" context="primary" appointment="appointed">
+              <title>architecte expert</title>
+            </expert>
+            <expert ref="#xpr0026" context="primary" appointment="appointed">
+              <title>architecte expert</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0064">
+              <persName>
+                <surname>Gobert</surname>
+                <forename>Jean Charles Simon</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="true" intervention="false">
+              <person>
+                <persName>
+                  <surname>Landelle</surname>
+                  <forename>Charles Nicolai</forename>
+                </persName>
+                <occupation>employé aux fêtes</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Landelle</surname>
+                  <forename>Nicolas Antoine</forename>
+                </persName>
+                <occupation/>
+              </person>
+              <person>
+                <persName>
+                  <surname>Landelle</surname>
+                  <forename>Pierre Nicolas Eustache</forename>
+                </persName>
+                <occupation>Pierre Nicolas Eustache, conseiller du roi commissaire enquêteur examinateur au Châtelet de Paris</occupation>
+              </person>
+              <status>owner</status>
+              <expert ref="#xpr0250"/>
+            </party>
+            <party role="opponent" presence="true" intervention="false">
+              <person>
+                <persName>
+                  <surname>Dubois</surname>
+                  <forename>Jean-Baptiste</forename>
+                </persName>
+                <occupation>marchand mercier, propriétaire d’une maison rue de Bussy</occupation>
+              </person>
+              <status>owner</status>
+              <expert ref="#xpr0026"/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <arrangement/>
+          <agreement type="noConclusion">Sans conclusion</agreement>
+          <estimate l="" s="" d=""/>
+          <fees detail="true">
+            <fee type="papers" l="4" s="4" d=""/>
+            <fee type="expert" ref="#xpr0250" l="6" s="" d=""/>
+            <fee type="expert" ref="#xpr0026" l="6" s="" d=""/>
+            <fee type="clerk" l="6" s="" d=""/>
+            <fee type="rolls" l="10" s="" d=""/>
+            <fee type="prosecutors" l="5" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="37" s="4" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="7" s="" d=""/>
+            <expense type="expert" l="4" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis>« Avant de pouvoir répondre à chacun des chefs de notre mission et de déclarer d’où peut provenir la [filtration] des matières, il est indispensable de faire les opérations nécessaires pour en suivre la direction jusqu’à leur principe et pour ce faire, il faut pour cela faire aux fosses communes des parties une fouille d’entre la mur du puits du côté du sieur Dubois et celuy de la fosse et de continuer cette fouille s’il y a lieu entre le mur de lad. fosse et la fondation du mur mitoien du fond de la maison jusqu’à la rencontre du mur mitoien qui sépare lad. maison voisine de la sienne et à gauche sauf en [définitif ?] à faire ordoner par qui cette dépense sera suportée. Et dans le cas où cette fouille ne seroit pas suffisante pour connoitre le principe de cette filtration et sera nécessaire de l’étendre au dessous de la fosse dud. sieur Dubois par conséquent d’en faire la vuidange [?], nous observons aussi qu’alors on doit mettre en cause le propriétaire de la maison voisine à gauche de celle dud. sieur Dubois à l’effet de prendre connoissance de cette vuidange et ne [peuvent?] pour la suitte prétendre en tirer aucune [induction?] contraire à la recherche de lad. filtration ; et jusqu’à ce que les opérations indiquées depuis les observations cy dessus suspendons de donner notre avis sur le tout. »</analysis>
+        <noteworthy/>
+      </description>
+    </expertise>

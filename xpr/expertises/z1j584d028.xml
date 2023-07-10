@@ -1,0 +1,207 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j584d028">
+  <meta/>
+  <control>
+    <maintenanceStatus>revised</maintenanceStatus>
+    <publicationStatus/>
+    <localControl localType="detailLevel">
+      <term>completed</term>
+    </localControl>
+    <maintenanceHistory>
+      <maintenanceEvent>
+                <eventType>revised</eventType>
+                <eventDateTime standardDateTime="2022-04-01T13:20:28Z">2022-04-01T13:20:28Z</eventDateTime>
+                <agentType>human</agentType>
+                <agent>llosserand</agent>
+                <eventDescription>rvpcd</eventDescription>
+            </maintenanceEvent>
+          <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateObjectsValues_db.xqy/BaseX</agent>
+        <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-06-15T15:18:49.962+02:00">2021-06-15T15:18:49.962+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateExpertisesPlaces.xqy/BaseX</agent>
+        <eventDescription>Ajout des nœuds xml manquant dans les adresses.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateRefValues_files.xqy/BaseX</agent>
+        <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+        <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>revised</eventType>
+        <eventDateTime standardDateTime="2020-11-01T12:00:00">2020-11-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>JH</agent>
+        <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>retroconverted</eventType>
+        <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>ead2xpr.xsl/Saxon9</agent>
+        <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>created</eventType>
+        <eventDateTime standardDateTime="2017-04-01T12:00:00">2017-04-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>llosserand</agent>
+        <eventDescription>Création de la fiche.</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+  </control>
+  <sourceDesc>
+    <unitdate>1726</unitdate>
+    <idno type="unitid">Z1J584</idno>
+    <idno type="item">028</idno>
+    <facsimile from="0255" to="0265"/>
+    <physDesc>
+      <extent sketch="false">8</extent>
+      <appendices>
+        <appendice>
+          <type type=""/>
+          <extent/>
+          <desc>lettre cachetée destinée à l'expert Lebrun, rue de la Verrerie à Paris et écrite par Tainturier le 28 décembre 1726 : Tainturier indique que le Chambre lui a ordonné d'envoyer la grosse du rapport pour diminuer le reçu de 50 livres (cf. copie d'extrait).</desc>
+          <note/>
+        </appendice>
+      </appendices>
+    </physDesc>
+  </sourceDesc>
+  <description>
+    <sessions>
+      <date when="1726-11-18" type="province"/>
+      <date when="1726-11-19" type="province"/>
+      <date when="1726-11-20" type="province"/>
+      <date when="1726-11-21" type="province"/>
+      <date when="1726-11-22" type="province"/>
+      <date when="1726-11-23" type="province"/>
+    </sessions>
+    <places>
+      <place type="province">
+        <address/>
+        <complement>Pontoise, vis-à-vis l'église Notre-Dame [Val d'Oise]</complement>
+        <city/>
+        <district/>
+        <owner>Nicolay</owner>
+      </place>
+    </places>
+    <categories>
+      <category type="settlement">Départager</category>
+      <designation rubric="true">Visittte, bornage et séparations des terres et héritages, appartenant au sieur Nicolay et le sieur Ruité, près Pontoise ; M. Le Brun, expert, en présence de M. de Coustard, conseiller</designation>
+    </categories>
+    <procedure>
+      <framework type="b2">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+      <origination type="institution">Une institution</origination>
+      <sentences>
+        <sentence>
+          <orgName>requêtes du Palais</orgName>
+          <date when="1726-10-20"/>
+        </sentence>
+      </sentences>
+      <case>contestations par les parties quant aux délimitation des terrains</case>
+      <objects>
+        <object type="plot">Terrain(s)</object>
+      </objects>
+    </procedure>
+    <participants>
+      <experts>
+        <expert ref="#xpr0158" context="primary" appointment="appointed">
+          <title>architecte juré expert</title>
+        </expert>
+      </experts>
+      <clerks>
+        <clerk ref="#clrk0033">
+          <persName>
+            <surname>Callou</surname>
+            <forename>Antoine-Charles</forename>
+          </persName>
+        </clerk>
+      </clerks>
+      <parties>
+        <party role="petitioner" presence="false" intervention="false">
+          <person>
+            <persName>
+              <surname>Nicolay</surname>
+              <forename>Antoine Nicolas</forename>
+            </persName>
+            <occupation>chevalier marquis de Goussainville seigneur de la terre et seigneurie de Juy et des fiefs de Chelle, de la Tour du Gut de la Broüe etc., conseiller du roi en tous ses conseils et en sa cour de Parlement et premier président en survivance en sa chambre des comptes à Paris.</occupation>
+          </person>
+          <status>owner</status>
+          <expert ref="#xpr0158"/>
+        </party>
+        <party role="opponent" presence="false" intervention="false">
+          <person>
+            <persName>
+              <surname>Rivié</surname>
+              <forename>Thomas</forename>
+            </persName>
+            <occupation>écuyer conseiller secrétaire du roi maison et couronne de France et de ses finances, seigneur de Gricourt et de Gerancourt</occupation>
+          </person>
+          <status>owner</status>
+          <expert ref="#xpr0158"/>
+        </party>
+      </parties>
+      <craftmen>
+        <craftman>
+          <persName>
+            <surname/>
+            <forename/>
+          </persName>
+          <occupation/>
+        </craftman>
+      </craftmen>
+    </participants>
+    <conclusions>
+      <opinion ref="#xpr0158">difficile à lire. 
+Partage fait par l'expert avec le commissaire Coutard, qui clôt de procès verbal</opinion>
+          <arrangement/>
+      <agreement type="conclusion">Conclusion</agreement>
+      <estimate l="" s="" d=""/>
+      <fees detail="true">
+        <fee type="papers" l="4" s="5" d=""/>
+        <fee type="expert" ref="#xpr0158" l="140" s="" d=""/>
+        <fee type="clerk" l="140" s="" d=""/>
+        <fee type="rolls" l="9" s="10" d=""/>
+        <fee type="prosecutors" l="" s="" d=""/>
+        <fee type="help" l="" s="" d=""/>
+        <fee type="plans" l="" s="" d=""/>
+        <total l="293" s="15" d=""/>
+      </fees>
+      <expenses mentioned="false"/>
+    </conclusions>
+    <keywords group="estates"/>
+    <keywords group="procedure"/>
+    <keywords group="contract"/>
+    <keywords group="encumbrance"/>
+    <keywords group="law"/>
+    <keywords group="measurement"/>
+    <keywords group="repairs"/>
+    <keywords group="guarantees"/>
+    <keywords group="responsability"/>
+    <keywords group="ownership"/>
+    <keywords group="value"/>
+    <keywords group="neighbourhood"/>
+    <keywords group="disorder"/>
+    <keywords group="transformation"/>
+    <analysis>La dernière vacation précise que l'expert et le greffier n'ont pas pu trouver de moyen de locomotion pour revenir à Paris (le carrosse de Rouen était plein). N'ayant trouvé de chevaux que pour le lendemain, ils sont restés à l'auberge du grand cerf pour une nuit supplémentaire.
+                Lettre : « Suivant les ordres de la chambre, monsieur, monsieur Coustard m'a ordonné de vous envoyer la grosse du raport pour diminuer au bas le receu des 50 livres en question et les retirer de vous.
+                Vous aurez agréable de faire cette diminution dans les receu et de remettre à mon clerc présent porteur les 50 livres affin que je sois en estat d'assurer la chambre lundy matin suivant les ordres que j'ay receu que cela est consommé.
+                J'ay l'honneur d'estre parfaittement, monsieur, votre humble et très obéissant serviteur. Tainturier. Le 28 décembre 1726. le receu ne doit plus estre que de 363 livres 15 sols. »</analysis>
+    <noteworthy/>
+  </description>
+</expertise>

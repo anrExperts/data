@@ -1,0 +1,176 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j484d048" status="">
+      <meta/>
+      <control>
+        <maintenanceStatus>new</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-02-17T12:17:28.693+01:00">2021-02-17T12:17:28.693+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>z1jresp.xqy/BaseX</agent>
+            <eventDescription>Ajout de l'historique de la fiche.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2020-12-20T12:00:00">2020-12-20T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1706</unitdate>
+    <idno type="unitid">Z1J484</idno>
+        <idno type="item">048</idno>
+        <facsimile from="0403" to="0411"/>
+        <physDesc>
+          <extent sketch="false">6</extent>
+          <appendices>
+            <appendice>
+              <type type="other">Compte</type>
+              <extent>1</extent>
+              <desc/>
+              <note/>
+            </appendice>
+          </appendices>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1706-12-16" type="paris"/>
+          <date when="1706-12-17" type="paris"/>
+        </sessions>
+        <places>
+          <place type="paris">
+            <address>
+              <street>rue neuve Saint-Gilles</street>
+              <buildingNumber/>
+            </address>
+            <complement>derrière les maisons de la place royale</complement>
+            <parish/>
+            <owner>maison saisie sur De Burace</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="assessment">Décrire et évaluer les travaux à venir</category>
+          <designation rubric="true">Visite de réparations à faire en une maison</designation>
+        </categories>
+        <procedure>
+          <framework type="b3">Saisie mixte (un expert est nommé par les parties, l'autre est nommé d'office)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>requêtes du palais</orgName>
+              <date when="1706-07-27"/>
+            </sentence>
+          </sentences>
+          <case>Réparations à faire dans le cadre d'un bail judiciaire</case>
+          <objects/>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0221" context="primary" appointment="appointed">
+              <title>architecte juré du roi expert bourgeois de Paris</title>
+            </expert>
+            <expert ref="#xpr0012" context="primary" appointment="court-appointed">
+              <title>juré du roi expert et entrepreneur des bâtiments de sa majesté</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#xpr0158">
+              <persName>
+                <surname>Le Brun</surname>
+                <forename>Jacques Charles</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="true" intervention="false">
+              <person>
+                <persName>
+                  <surname>Binot</surname>
+                  <forename>Nicolas</forename>
+                </persName>
+                <occupation>conseiller secrétaire du roi</occupation>
+              </person>
+              <status>contractor</status>
+              <expert ref="#xpr0221"/>
+            </party>
+            <party role="opponent" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Delamare</surname>
+                  <forename>Claude</forename>
+                </persName>
+                <occupation>créancier plus ancien</occupation>
+              </person>
+              <status>creditor</status>
+              <expert ref="#xpr0012"/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <agreement type="agreement">Accord</agreement>
+          <opinion ref="">"Tel est l'estat Monsieur auquel nous avons trouvé ladite maison à laquelle les réparations cy dessus mentionnés sont necessaires à faire tant pour la pouvoir habiter commodement."</opinion>
+          <arrangement/>
+          <estimate l="" s="" d=""/>
+          <fees detail="true">
+            <fee type="expert" ref="#xpr0012" l="12" s="" d=""/>
+            <fee type="expert" ref="#xpr0012" l="12" s="" d=""/>
+            <fee type="clerk" l="12" s="" d=""/>
+            <fee type="rolls" l="8" s="5" d=""/>
+            <fee type="papers" l="6" s="5" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="other" l="" s="15" d="">Clerc</fee>
+            <total l="51" s="5" d=""/>
+          </fees>
+          <expenses mentioned="false"/>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis/>
+        <noteworthy/>
+      </description>
+    </expertise>

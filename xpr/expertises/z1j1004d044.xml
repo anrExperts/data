@@ -1,0 +1,321 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1004d044">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-07-01T12:00:00">2020-07-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2017-10-01T12:00:00">2017-10-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1004</idno>
+        <idno type="item">044</idno>
+        <facsimile from="0489" to="0499"/>
+        <physDesc>
+          <extent sketch="false">10</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-06-17" type="suburbs"/>
+          <date when="1776-06-17" type="suburbs"/>
+          <date when="1776-06-25" type="suburbs"/>
+          <date when="1776-07-06" type="suburbs"/>
+          <date when="1776-08-08" type="suburbs"/>
+          <date when="1776-08-23" type="suburbs"/>
+          <date when="1776-09-10" type="suburbs"/>
+        </sessions>
+        <places>
+          <place type="suburbs">
+            <address/>
+            <complement>près le nouveau chemin conduisant de la place Louis XV au pont de Neuilly et dan les provinces de Normandie et Bretagne [champs-Elysées]</complement>
+            <city>Chaillot</city>
+            <district/>
+            <owner/>
+          </place>
+        </places>
+        <categories>
+          <category type="acceptation">Recevoir et évaluer le travail réalisé</category>
+          <designation rubric="true">Réception d'ouvrage en une maison, à Chaillot, près la grille appartenant à  la Delle Vve Mouton ; M. Porquet, expert</designation>
+        </categories>
+        <procedure>
+          <framework type="b2b">L’institution est saisie dans le cadre d’une procédure (l’institution nomme un ou deux experts)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Prévôté royale de Chaillot (sentence)</orgName>
+              <date when="1776-06-08"/>
+            </sentence>
+          </sentences>
+          <case>fin des travaux / emprunt pour payer les ouvriers</case>
+          <objects>
+            <object type="house">Maison(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0226" context="primary" appointment="court-appointed">
+              <title>architecte expert bourgeois des bâtiments à Paris</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0062">
+              <persName>
+                <surname>Picquenon</surname>
+                <forename>Denis Joseph François</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Turude</surname>
+                  <forename>Margueritte</forename>
+                </persName>
+                <occupation>veuve de Mouton, Claude Philippe, de son vivant marchand apothicaire à Paris</occupation>
+              </person>
+              <status>limited-partner</status>
+              <expert ref="#xpr0226"/>
+              <prosecutor>
+                <persName>
+                  <surname>Develette</surname>
+                  <forename>Pierre Laurent</forename>
+                </persName>
+              </prosecutor>
+            </party>
+            <party role="opponent" presence="true" intervention="true">
+              <person>
+                <persName>
+                  <surname>Colinet</surname>
+                  <forename/>
+                </persName>
+                <occupation>maître charpentier</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Soissons</surname>
+                  <forename/>
+                </persName>
+                <occupation>maître maçon</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Floho</surname>
+                  <forename/>
+                </persName>
+                <occupation>maître couvreur</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Periac</surname>
+                  <forename/>
+                </persName>
+                <occupation>maître carreleur</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Jamet / Sausset ?</surname>
+                  <forename/>
+                </persName>
+                <occupation>maître serrurier</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Auselin</surname>
+                  <forename/>
+                </persName>
+                <occupation>maître menuisier</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Auger père </surname>
+                  <forename/>
+                </persName>
+                <occupation>peintre en bâtiments à Paris</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Montaigne</surname>
+                  <forename/>
+                </persName>
+                <occupation>maître paveur</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Tulou</surname>
+                  <forename/>
+                </persName>
+                <occupation>maître vitrier</occupation>
+              </person>
+              <status>builder</status>
+              <expert ref="#xpr0226"/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname>Soissons</surname>
+                <forename/>
+              </persName>
+              <occupation>maître maçon</occupation>
+            </craftman>
+            <craftman>
+              <persName>
+                <surname>Colinet</surname>
+                <forename/>
+              </persName>
+              <occupation>maître charpentier</occupation>
+            </craftman>
+            <craftman>
+              <persName>
+                <surname>Floho</surname>
+                <forename/>
+              </persName>
+              <occupation>maître couvreur</occupation>
+            </craftman>
+            <craftman>
+              <persName>
+                <surname>Periac</surname>
+                <forename/>
+              </persName>
+              <occupation>maître carreleur</occupation>
+            </craftman>
+            <craftman>
+              <persName>
+                <surname>Jamet / Sausset ?</surname>
+                <forename/>
+              </persName>
+              <occupation>maître serrurier</occupation>
+            </craftman>
+            <craftman>
+              <persName>
+                <surname>Auselin</surname>
+                <forename/>
+              </persName>
+              <occupation>maître menuisier</occupation>
+            </craftman>
+            <craftman>
+              <persName>
+                <surname>Auger père </surname>
+                <forename/>
+              </persName>
+              <occupation>peintre en bâtiment</occupation>
+            </craftman>
+            <craftman>
+              <persName>
+                <surname>Montaigne</surname>
+                <forename/>
+              </persName>
+              <occupation>maître paveur</occupation>
+            </craftman>
+            <craftman>
+              <persName>
+                <surname>Tulou</surname>
+                <forename/>
+              </persName>
+              <occupation>maître vitrier</occupation>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0226">Récapitulation généralle
+Maçonnerie : 3177 livres 15s 6d
+Charpenterie : 961 livres 11 deniers
+Couverture : 498 livres 7 s 6d
+Serrurerie : 442 livres 11 s
+Menuiserie : 431 livres 15s 7d
+Peinture : 64 livres 2s 5d
+Vitrerie : 70 livres
+Carrelage : 81 livres 2 s 2d
+Pavé : 260 livres 2 s 6d
+
+« Total desd. ouvrages la somme de … 5 986 l. 17 s. 7 d. 
+Telle est, Monsieur, la visitte par nous faitte desd. ouvrages, leurs vraye valeur, tel est aussy le reglement que nous avons fait des memoires d’iceux le tout par nous constaté suivant et aux termes de votre sentence, vous observant que par les reparations faittes les batiments de ladite maison ont été mis en état et qu’ils n’ont pas besoin de nouvelles pour leurs conservation : nous reférons sur tout ce que dessus, Monsieur, à votre justice et prudence ordinaires. »</opinion>
+          <arrangement/>
+          <agreement type="conclusion">Conclusion</agreement>
+          <estimate l="" s="" d=""/>
+          <fees detail="true">
+            <fee type="papers" l="8" s="8" d=""/>
+            <fee type="expert" ref="#xpr0226" l="52" s="10" d=""/>
+            <fee type="clerk" l="52" s="10" d=""/>
+            <fee type="rolls" l="42" s="" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="155" s="8" d=""/>
+          </fees>
+          <expenses mentioned=""/>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees">
+          <term value="h3">Privilège</term>
+        </keywords>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis/>
+        <noteworthy/>
+      </description>
+    </expertise>

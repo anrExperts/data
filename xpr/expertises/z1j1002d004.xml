@@ -1,0 +1,226 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1002d004">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2017-10-01T12:00:00">2017-10-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1002</idno>
+        <idno type="item">004</idno>
+        <facsimile from="0024" to="0037"/>
+        <physDesc>
+          <extent sketch="false">14</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-05-02" type="suburbs"/>
+          <date when="1776-05-06" type="suburbs"/>
+          <date when="1776-05-11" type="suburbs"/>
+          <date when="1776-05-15" type="suburbs"/>
+          <date when="1776-05-15" type="suburbs"/>
+          <date when="1776-05-23" type="paris"/>
+          <date when="1776-05-31" type="paris"/>
+        </sessions>
+        <places>
+          <place type="paris">
+            <address>
+              <street>grande rue du faubourg Saint-Denis</street>
+              <buildingNumber/>
+            </address>
+            <complement>près l'égoût, aboutissant d'un côté à la rue neuve St Jean</complement>
+            <parish/>
+            <owner/>
+          </place>
+          <place type="office">
+            <address/>
+          </place>
+        </places>
+        <categories>
+          <category type="settlement">Départager</category>
+          <designation rubric="true">Visitte de lieux contentieux en une maison, scize à Paris, Grande rue du faubourg St Denis près l'Egout, appartenante au sieur Cauchois, Me Maçon, à la requête de ladite Veuve Leriverand ; M. Ducret, expert.</designation>
+        </categories>
+        <procedure>
+          <framework type="b2b">L’institution est saisie dans le cadre d’une procédure (l’institution nomme un ou deux experts)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Châtelet, lieutenant civil (ordonnance)</orgName>
+              <date when="1776-04-27"/>
+            </sentence>
+          </sentences>
+          <case>Cauchois a construit deux nouveaux corps de logis sur l'égoût, plainte de la voisine craignant dommages et périls (pas fait suivant les règles de l'art), son locataire s'étant pourvu contre elle</case>
+          <objects>
+            <object type="wall">Mur(s)</object>
+            <object type="house">Maison(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0102" context="primary" appointment="court-appointed">
+              <title>architecte juré expert bourgeois des bâtiments à Paris</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0070">
+              <persName>
+                <surname>Le Page</surname>
+                <forename>Charles Pierre</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="" intervention="">
+              <person>
+                <persName>
+                  <surname>Veuve Le Riveraud</surname>
+                  <forename/>
+                </persName>
+                <occupation>bourgeoise de Paris</occupation>
+              </person>
+              <status>owner</status>
+              <expert ref="#xpr0102"/>
+              <prosecutor>
+                <persName>
+                  <surname>Leger</surname>
+                  <forename>Emmanuel Louis</forename>
+                </persName>
+              </prosecutor>
+            </party>
+            <party role="opponent" presence="" intervention="">
+              <person>
+                <persName>
+                  <surname>Cauchois</surname>
+                  <forename/>
+                </persName>
+                <occupation>maître maçon à Paris propriétaire de la maison voisine bâtie sur l'emplacement e l'égoût et berge</occupation>
+              </person>
+              <status/>
+              <expert ref="#xpr0102"/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0102">« Le premier chef de votre ordonnance ordonne la visitte des lieux, ce que nous avons fait ainsy que la declaration de l’ediffice dudit sieur Cauchois qui est au fond de son terrain et des caves qu’il y construit, lesquels font l’objet des griefs de ladite veuve Le Riveraud.
+Par le second chef qui est de scavoir si ledit sieur Cauchois a satisfait à la coutume, pour satisfaire à ce chef il faudrait connoitre l’époque où les fouilles sous le mur mitoyen avec la veuve Le Riveraud ont été commencées et si ces fouilles ont précédé la sommation faitte à la veuve Le Riveraud, ce que nous n’avons pu sçavoir.
+Par le troisiesme chef de votre ordonnance consistant à savoir si ledit sieur Cauchois a pris les precautions necessaires pour empecher les dommages et perils, il est evident que le sieur Cauchois n’avoit point pris touttes les precautions dont est tenu un proprietaire lorsqu’il fait des fondations et qu’il est obligé de faire des reprises sous des murs déjà batis et chargés d’un ediffice surtout lorsque cet ediffice est de legere construction, et sans aucuns appuis essentiels puisque le mur mitoyen avec ladite dame veuve Le Riveraux a tassé et s’est rompu au droit de la crevasse et autres effets dont nous avons rendu compte, qu’il étoit essentiel que ledit sieur Cauchois pose des étayes qui n’ont été placés depuis, que faute de poser lesdits étayes il y auroit eu perils.
+Pour le quatrieme chef de votre ordonnance consistant à dire par nous si le sieur Cauchois avoit le droit de faire des caves, notre avis est que ledit sieur Cauchois ainsy que tout proprietaires étoient en droit de faire des caves, mais sans causer de prejudice à son voisin et en prenant les precautions convenables, ce qu’il n’avoit pas fait.
+Le cinquieme chef de votre ordonnance qui est qu’en cas de dommages nous en ferons l’estimations, quant aux dommages faits aux murs le long du jardin mitoyen… 53 l. 10 s. …
+Quant aux dommages pretendus par lesdits Le Riveraud et son locataire au sujet de la pose des étayes dans le passage et de l’inquietude que leur portoit le mouvement de l’édiffice dudit sieur Cauchois, notre avis est que le passage n’a pas été interrompu par la pose des étayes, que l’on peut y passer, qu’à la verité ce passage est un peu géné, mais il ne fait aucun prejudice à l’occupation du locataire de ladit veuve Le Riveraud.… »</opinion>
+          <arrangement/>
+          <agreement type="conclusion">Conclusion</agreement>
+          <estimate l="" s="" d=""/>
+          <fees detail="true">
+            <fee type="papers" l="15" s="14" d=""/>
+            <fee type="expert" ref="#xpr0102" l="49" s="10" d=""/>
+            <fee type="clerk" l="49" s="10" d=""/>
+            <fee type="rolls" l="66" s="" d=""/>
+            <fee type="prosecutors" l="20" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="200" s="14" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="" s="" d=""/>
+            <expense type="expert" l="16" s="10" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure">
+          <term value="b4">Urgence</term>
+        </keywords>
+        <keywords group="contract"/>
+        <keywords group="encumbrance">
+          <term value="d11">Mur de séparation</term>
+        </keywords>
+        <keywords group="law">
+          <term value="e1">Coutume (articles le cas échéant)</term>
+        </keywords>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood">
+          <term value="l1">Voisin</term>
+        </keywords>
+        <keywords group="disorder">
+          <term value="m4">Péril imminent</term>
+          <term value="m5">Ruine</term>
+          <term value="m11">Effondrement / Ecroulement / chute</term>
+        </keywords>
+        <keywords group="transformation">
+          <term value="n14">Consolidation /Etaiements</term>
+        </keywords>
+        <analysis>f. 2r° "... audit second corps de logis auquel est le péril éminent et dont on redoute la chute chaque instant, a forcé le locataire de ladite suppliante à se pourvoir contr'elle à l'effet de luy livrer un autre passage et que pour ce il luy a fait une sommation que ladite supliante a fait dénoncer cette sommation au sieur Cochois et l'a interpellé de faire cesser ce trouble, ce qu'il n'a pas fait et que bien loin de s'occuper à réparer le tort que ses fouilles ont causé tant au bâtiment qu'au mur mitoyen de la suppliante il continue à faire fouiller, qu'il anticipe même su le terrein de ladite suppliante en percant au delà du mur mitoyen, que comme il est instant d'empêcher l'écroullement entier de ce mur et de faire statuer sur le torts et dommages que le sieur Cochois cause à la suppliante, elle a recours à votre autorité pour luy être sur ce pourvu..."</analysis>
+        <noteworthy>Cauchois a construit deux nouveaux corps de logis, un sur la rue et un au fond de son terrain. Ce dernier est construit sur le jardin de la veuve Le Riveraud et sur le mur mitoyen qui sépare ce bâtiment d’avec son jardin.
+L’expert est chargé de « constater si ledit sieur Cauchois avoit satisfait à la coutume dans la construction nouvelle qu’il a fait faire au fond de son terrain et s’il avoit pris les precautions necessaires pour empecher tous dommages et perils et s’il avoit droit de faire des caves où il se proposoit d’en faire et qu’en cas de dommages en ferions estimation ». Ces caves sont construites au dessus de l’égout.
+f. 2v° si Cauchois n'ouvre pas les lieux, le LC prévoit de les faire ouvrir par un serrurier "en présence de deux voisins et du commissaire du quartier"
+La requérante demande sur suppercéder à la lectures des autres pièces "attendu qu'il est absolument instant de se transporter sur les lieux"</noteworthy>
+      </description>
+    </expertise>

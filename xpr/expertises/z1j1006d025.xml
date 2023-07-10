@@ -1,0 +1,190 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1006d025">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-09-01T12:00:00">2020-09-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2017-04-01T12:00:00">2017-04-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1006</idno>
+        <idno type="item">025</idno>
+        <facsimile from="0262" to="0275"/>
+        <physDesc>
+          <extent sketch="false">14</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-08-12" type="province"/>
+          <date when="1776-08-13" type="province"/>
+        </sessions>
+        <places>
+          <place xml:id="id93d262" type="province">
+            <address/>
+            <complement>Fief de Chailly à Montfermeil</complement>
+            <city>Montfermeil</city>
+            <district/>
+            <owner>Succession Sorbier</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="estimation">Estimer la valeur des biens</category>
+          <designation rubric="true">Visite et estimation de fief</designation>
+        </categories>
+        <procedure>
+          <framework type="b2a">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>lieutenant civil (sentence du 2 août 1776)</orgName>
+              <date when="1776-08-02"/>
+            </sentence>
+          </sentences>
+          <case>succession partage des biens (Je n’ai pas compris, voir transcription)</case>
+          <objects>
+            <object type="territory">Domaine, terres, fief</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0250" context="primary" appointment="appointed">
+              <title>architecte juré expert des bâtiments à Paris</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0069">
+              <persName>
+                <surname>Beudot</surname>
+                <forename>Simon</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="true" intervention="false">
+              <person>
+                <persName>
+                  <surname>Loubradou de la Perrière</surname>
+                  <forename>Marguerite Elisabeth</forename>
+                </persName>
+                <occupation>euve de Sorbier, Jean Barthélémot, écuyer chevalier de l’ordre du roi et chirurgien major de la gendarmerie, ladite dame tant en son nom à cause de la communauté de biens d’avec son mari que comme tutrice de ses enfants mineurs.</occupation>
+              </person>
+              <status>heir</status>
+              <expert ref="#xpr0250"/>
+            </party>
+            <party role="opponent" presence="true" intervention="false">
+              <person>
+                <persName>
+                  <surname>Maillet</surname>
+                  <forename>François</forename>
+                </persName>
+                <occupation>receveur général de l’hôpital des Incurables, tuteur ad hoc des mineurs Sorbier.</occupation>
+              </person>
+              <status>heir</status>
+              <expert ref="#xpr0250"/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0250">« De touttes nos opérations cy dessus pour parvenir à connoître la valeur dud. fief de Chailly et dépendances tant en fief qu’en roture, il résulte que led. fief de Chailly et dépendances montent en total à la somme de vingt huict mille livres. Ce fut ainsy fit par nous expert susd. et soussigné les jours, mois et an que dessus et après avoir vacquée ce jourd’huy du matin et de relevée nous sommes reparti pour nous en retourner en notre demeure ordinaire et après avoir avec led. Me Beudot greffier seulement signé la présente vaccation où six mots sont rayés comme nuls. »</opinion>
+          <arrangement/>
+          <agreement type="conclusion">Conclusion</agreement>
+          <estimate l="28000" s="" d=""/>
+          <estimates>
+            <place ref="#id93d262">
+              <appraisal l="28000" s="" d="">
+                <desc>fief</desc>
+              </appraisal>
+            </place>
+          </estimates>
+          <fees detail="true">
+            <fee type="papers" l="19" s="6" d="6"/>
+            <fee type="expert" ref="#xpr0250" l="48" s="" d=""/>
+            <fee type="clerk" l="48" s="" d=""/>
+            <fee type="rolls" l="60" s="" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="175" s="6" d="6"/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="41" s="" d=""/>
+            <expense type="expert" l="12" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis>vente du fief le 5 juillet 1768 devant Baron le jeune, notaire à Paris par de Montholon, Mathieu
+                Cause
+                (sentence homologative des avis des parents et amis des mineurs Sorbier)
+                « [f. 3v°] par laquelle entre autres choses vous avez dit monsieur que led. sr Maillet seroit et demeureroit tuteur ad hoc desd. sieurs et demoiselle Sorbier mineurs dans tous les cas où ils auroient des intérêts contraires à ceux de leur mère et en cette qualité authorisé spécialement à procéder avec lad. dame leur père à la liquidation de leurs droits, reprises et créances respectifs sur les biens de la communauté desd. sr et dame Sorbier et au partage des biens de lad. communauté, et préalablement pour connoître la juste valeur de la maison de campagne scituée à Montfermeil dépendant de lad. communauté, faire procéder à son estimation par nous Taboureur, architecte juré expert que vous avez nommé d’office de laquelle estimation nous dresserions procès verbal. Ensuitte de laquelle sentence est l’acte d’acceptation que led. sr Maillet a fait de la charge, led. acte en datte du cinq dud. mois d’aoust et le tout au registre de Me Moriset, greffier de la chambre civille dud. Châtelet. »</analysis>
+        <noteworthy/>
+      </description>
+    </expertise>

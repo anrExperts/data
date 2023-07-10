@@ -1,0 +1,91 @@
+<eac xmlns="https://archivists.org/ns/eac/v2" xml:id="clrk0033">
+  <control maintenanceStatus="">
+    <recordId>clrk0033</recordId>
+    <maintenanceAgency>
+      <agencyName>ANR Experts</agencyName>
+    </maintenanceAgency>
+    <maintenanceHistory>
+      <maintenanceEvent maintenanceEventType="created">
+        <agent agentType="machine">clerk_csv2eac.xqy/BaseX</agent>
+        <eventDateTime standardDateTime="2022-12-31T14:06:48.817+01:00"/>
+        <eventDescription>Création des fiches EAC-CPF à partir du tableau</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+    <sources>
+      <source id="sourceid86494926">
+        <reference href="">Almanach royal 1726</reference>
+      </source>
+      <source id="sourceid86494928">
+        <reference href="">Almanach royal 1727</reference>
+      </source>
+      <source id="sourceid86494930">
+        <reference href="">Almanach royal 1736</reference>
+      </source>
+      <source id="sourceid86494932">
+        <reference href="">Almanach royal 1737</reference>
+      </source>
+      <source id="sourceid86494934">
+        <reference href="">Almanach royal 1746</reference>
+      </source>
+      <source id="sourceid86494936">
+        <reference href="">Almanach royal 1747</reference>
+      </source>
+    </sources>
+  </control>
+  <cpfDescription>
+    <identity>
+      <entityType value="person"/>
+      <nameEntry status="authorized" preferredForm="true" sourceReference="">
+        <part localType="full">Callou, Antoine Charles</part>
+      </nameEntry>
+      <nameEntry status="alternative" preferredForm="false" sourceReference="">
+        <part localType="surname">Callou</part>
+        <part localType="forename">Antoine Charles</part>
+      </nameEntry>
+      <otherEntityTypes>
+        <otherEntityType>
+          <term>clerk</term>
+        </otherEntityType>
+      </otherEntityTypes>
+      <identityId>clrk0033</identityId>
+    </identity>
+    <description>
+      <functions>
+        <function sourceReference="#sourceid86494926 #sourceid86494928 #sourceid86494930 #sourceid86494932 #sourceid86494934 #sourceid86494936">
+          <term>Greffier</term>
+          <dateRange>
+            <fromDate sourceReference="" certainty="certain" standardDate="1726"/>
+            <toDate sourceReference="" certainty="certain" standardDate="1747"/>
+          </dateRange>
+        </function>
+      </functions>
+      <places>
+        <place sourceReference="#sourceid86494926 #sourceid86494928">
+          <placeRole>Adresse</placeRole>
+          <placeName>rue de la Poterie</placeName>
+          <dateRange>
+            <fromDate sourceReference="" certainty="certain" standardDate="1726"/>
+            <toDate sourceReference="" certainty="certain" standardDate="1727"/>
+          </dateRange>
+        </place>
+        <place sourceReference="#sourceid86494930 #sourceid86494932">
+          <placeRole>Adresse</placeRole>
+          <placeName>rue de la Tisseranderie, près la rue du Mouton</placeName>
+          <dateRange>
+            <fromDate sourceReference="" certainty="certain" standardDate="1736"/>
+            <toDate sourceReference="" certainty="certain" standardDate="1737"/>
+          </dateRange>
+        </place>
+        <place sourceReference="#sourceid86494934 #sourceid86494936">
+          <placeRole>Adresse</placeRole>
+          <placeName>rue et près S. Sauveur</placeName>
+          <dateRange>
+            <fromDate sourceReference="" certainty="certain" standardDate="1746"/>
+            <toDate sourceReference="" certainty="certain" standardDate="1747"/>
+          </dateRange>
+        </place>
+      </places>
+    </description>
+  </cpfDescription>
+  <!---->
+</eac>

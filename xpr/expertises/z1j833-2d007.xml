@@ -1,0 +1,213 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j833-2d007">
+      <meta/>
+      <control>
+        <maintenanceStatus/>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term/>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:39:45.99+02:00">2021-05-19T11:39:45.99+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateAgreementType_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur "Dispositif de l’expertise" lorsqu'il n'y a qu’un seul expert ('agreement' devient 'conclusion').</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:45:33.927+02:00">2021-04-21T20:45:33.927+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateKeywordsModule_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour du module keywords.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:45:02.355+02:00">2021-04-21T20:45:02.355+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateExpertsFees_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour du coûts de l'expertise pour les experts.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:44:31.814+02:00">2021-04-21T20:44:31.814+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateExpertisesArrangement_files.xqy/BaseX</agent>
+            <eventDescription>Ajout du champs Accommodement dans l'éventualité d’une résolution par les parties.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2019-09-01T12:00:00">2019-09-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1756</unitdate>
+    <idno type="unitid">Z1J833-2</idno>
+        <idno type="item">7</idno>
+        <facsimile from="0060" to="0068"/>
+        <physDesc>
+          <extent sketch="false">8</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1756-11-08" type="paris"/>
+          <date when="1756-11-08" type="paris"/>
+          <date when="1756-11-09" type="paris"/>
+        </sessions>
+        <places>
+          <place type="office">
+            <address/>
+          </place>
+        </places>
+        <categories>
+          <category type="acceptation">Recevoir et évaluer le travail réalisé</category>
+          <designation rubric="true">Estimation d'honoraires</designation>
+        </categories>
+        <procedure>
+          <framework type="b2b">L’institution est saisie dans le cadre d’une procédure (l’institution nomme un ou deux experts)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Châtelet / lieutenant civil</orgName>
+              <date when="1756-09-03"/>
+            </sentence>
+          </sentences>
+          <case>Désaccord sur les honoraires dus à l'architecte</case>
+          <objects>
+            <object type="house">Maison(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0227" context="third-party" appointment="court-appointed">
+              <title>architecte expert bourgeois</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0042">
+              <persName>
+                <surname>Berville</surname>
+                <forename>Jean Guillaume</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="false" intervention="">
+              <person>
+                <persName>
+                  <surname>Baudru</surname>
+                  <forename/>
+                </persName>
+                <occupation>architecte à Paris</occupation>
+              </person>
+              <status>builder</status>
+              <expert ref="#xpr0227"/>
+              <prosecutor>
+                <persName>
+                  <surname>Le Chauve</surname>
+                  <forename>Anne Gervais</forename>
+                </persName>
+              </prosecutor>
+            </party>
+            <party role="opponent" presence="false" intervention="">
+              <person>
+                <persName>
+                  <surname>Le Normand</surname>
+                  <forename/>
+                </persName>
+                <occupation>marchand épicier</occupation>
+              </person>
+              <status>limited-partner</status>
+              <expert ref="#xpr0227"/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <agreement type="conclusion">Conclusion</agreement>
+          <opinion ref="#xpr0227">"Après avoir fait attention aux dispositions desdittes sentences, aux dires
+                    et requisitions dudit Me Le Chauve procureur audit nom, et à ce qui a esté fait
+                    et dit par le procès verbal des sieurs premiers experts et dans leurs avis,
+                    comme aussy après avoir fait une serieuse attention aux plans causes profils et
+                    élévations à nous remis, paraphés desdits sieurs premiers experts, aux nottes y
+                    insérées et à celles qui sont jointes au mémoire détaillé dudit sieur Baudru,
+                    tant pour lever l'ancien plan, faire les nouveaux, les devis et marché qui y
+                    sont relatés, les voyages de Paris à Vaufirard, tant pour les lever que les
+                    vaccations employés à les faire ensemble pour la conduitte desdits ouvrages
+                    jusqu'au temps que ledit sieur Baudru a cessé de donner des ordres, aprécié
+                    chacun de ses objets separement, nous prisons et estimons les honoraires dubs
+                    audit sieur Baudru la somme de cinq cens livres cy… 500 l. Tel est sur ce que
+                    dessus l'avis de nous architecte expert tiers sur quoy nous vous referons
+                    Monsieur d'ordonner suivant votre justice et prudence ordinaire."</opinion>
+          <arrangement/>
+          <estimate/>
+          <fees detail="true">
+            <fee ref="#xpr0227" type="expert" l="18" s="" d=""/>
+            <fee type="clerk" l="18" s="" d=""/>
+            <fee type="rolls" l="14" s="" d=""/>
+            <fee type="papers" l="3" s="6" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <fee type="prosecutors" l="[non compris les vacations du procureur]" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <total l="53" d="" s="6"/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="17" s="" d=""/>
+            <expense type="expert" l="6" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group=""/>
+        <analysis>premiers experts : Brice Le Chauve et Delépine (nommés par les parties)
+                premier rapport : 8 avril 1756 (gr. Berville) Le procureur de l'architecte précise
+                "que dans l'estimation que nous avons à faire il ne s'agit point d'honoraires
+                simplement pour ouvrages faits à Paris, qu'il s'agit de plans levez à Vaugirard et
+                de conduitte d'ouvrages faits audit lieu qui ont necessité différents transports et
+                voitures qui ont occasionné des depences qui doivent estre considerez dans notre
+                estimation comme des deboursés qui doivent estre rendus et qui sont detaillez avec
+                ses autres demandes dans le memoire qui a esté produit dans l'instance qui doit
+                estre d'autant plus regardé comme constant qu'il n'a point esté contesté par ledit
+                sieur Le Normand."</analysis>
+        <noteworthy/>
+      </description>
+    </expertise>

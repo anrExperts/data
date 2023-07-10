@@ -1,0 +1,202 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1150d029" status="">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:42:59.599+02:00">2021-07-08T21:42:59.599+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>resetYPArrangementValue_db.xqy/BaseX</agent>
+            <eventDescription>réinitialisation du champ "Accommodement (résolution par les parties)".</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-06-15T15:38:27.316+02:00">2021-06-15T15:38:27.316+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2021-05-14T08:01:53Z">2021-05-14T08:01:53Z</eventDateTime>
+            <agentType>human</agentType>
+            <agent>yplouzennec</agent>
+            <eventDescription/>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2021-05-12T14:43:22Z">2021-05-12T14:43:22Z</eventDateTime>
+            <agentType>human</agentType>
+            <agent>yplouzennec</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1786</unitdate>
+    <idno type="unitid">Z1J1150</idno>
+        <idno type="item">029</idno>
+        <facsimile from="0301" to="0305"/>
+        <physDesc>
+          <extent sketch="false">4</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1786-06-10" type="province"/>
+          <date when="1786-07-10" type="paris"/>
+        </sessions>
+        <places>
+          <place type="province">
+            <address/>
+            <complement>avenue de St Cloud, au lieu dit la Butte de Montboron</complement>
+            <city>Versailles</city>
+            <district>Yvelines</district>
+            <owner>Fermier judiciaire</owner>
+          </place>
+          <place type="office">
+            <address/>
+          </place>
+        </places>
+        <categories>
+          <category type="assessment">Décrire et évaluer les travaux à venir</category>
+          <designation rubric="true">Visitte de maison à Versailles avenue de St Cloud saisie sur le Sr Galley</designation>
+        </categories>
+        <procedure>
+          <framework type="b2b">L’institution est saisie dans le cadre d’une procédure (l’institution nomme un ou deux experts)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Lieutenant civil</orgName>
+              <date when="1786-03-08"/>
+              <date when="1786-05-26"/>
+            </sentence>
+          </sentences>
+          <case>Réparations à faire</case>
+          <objects>
+            <object type="house">Maison(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0250" context="primary" appointment="court-appointed">
+              <title>architecte expert des bâtiments à Paris</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0072">
+              <persName>
+                <surname>Laurent</surname>
+                <forename>Jean Baptiste François</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Desprez</surname>
+                  <forename>Florentin Firmin</forename>
+                </persName>
+                <occupation>bourgeois de Paris</occupation>
+              </person>
+              <status>contractor</status>
+              <expert ref="#xpr0250"/>
+              <prosecutor>
+                <persName>
+                  <surname>Bourgeois de Quincy</surname>
+                  <forename/>
+                </persName>
+              </prosecutor>
+            </party>
+            <party role="opponent" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Gazun</surname>
+                  <forename>Geneviève</forename>
+                </persName>
+                <occupation>se disant épouse séparée quant aux biens du Sr Gérard Gallet, architecte</occupation>
+              </person>
+              <status>mortgagor</status>
+              <expert ref="#xpr0250"/>
+            </party>
+            <party role="opponent" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Gallet</surname>
+                  <forename/>
+                </persName>
+                <occupation>fils de Gérard Gallet, architecte</occupation>
+              </person>
+              <status>creditor</status>
+              <expert ref="#xpr0250"/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <agreement type="conclusion">Conclusion</agreement>
+          <opinion ref="#xpr0250">"Revenant lesd[ites] s[omm]es à celle totale de deux mille six centsseize livres dix sols cy 2616 ₶ 10s.
+Telle est la visitte et état des lieux dont il s'agit et l'estimation des réparations nécessaires à y faire, vous déférant M. d'ordonner sur le tout ce qu'il appartiendra."</opinion>
+          <arrangement/>
+          <estimate l="2616" s="10" d=""/>
+          <fees detail="true">
+            <fee type="expert" ref="#xpr0250" l="60" s="" d=""/>
+            <fee type="clerk" l="60" s="" d=""/>
+            <fee type="rolls" l="36" s="" d=""/>
+            <fee type="papers" l="11" s="12" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <fee type="prosecutors" l="40" s="" d=""/>
+            <fee type="help" l="30" s="" d=""/>
+            <fee type="other" l="38" s="8" d="">8 sols pour livres</fee>
+            <total l="276" s="" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="44" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value">
+          <term value="k11">Saisie (endettement)</term>
+        </keywords>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation">
+          <term value="n2">Conservation (nécessaires et urgents : rendre habitable / logeable et éviter une plus grande dégradation)</term>
+        </keywords>
+        <analysis/>
+        <noteworthy/>
+      </description>
+      <comment>Par la sentence du 8 mars 1786, le requérant nommait Nicolas Normand (architecte juré expert) pour mener la visite en son nom, tandis que le lieutenant civil nommait d'office Pierre Taboureur pour l'ensemble des autres parties. 
+
+Par la sentence du 26 mai 1786, Pierre Taboureur représente finalement toutes les parties.</comment>
+    </expertise>

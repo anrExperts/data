@@ -1,0 +1,421 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1003d004">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-07-01T12:00:00">2020-07-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2017-10-01T12:00:00">2017-10-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1003</idno>
+        <idno type="item">004</idno>
+        <facsimile from="0101" to="0111"/>
+        <physDesc>
+          <extent sketch="false">9</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-05-17" type="paris"/>
+          <date when="1776-05-22" type="paris"/>
+          <date when="1776-05-23" type="paris"/>
+          <date when="1776-05-23" type="paris"/>
+          <date when="1776-05-24" type="paris"/>
+          <date when="1776-05-24" type="paris"/>
+        </sessions>
+        <places>
+          <place xml:id="id388d407" type="paris">
+            <address>
+              <street>rue aux Ours</street>
+              <buildingNumber/>
+            </address>
+            <complement>à l’encoignure de la rue Quincampoix, occupée par Simoneau, marchand de vin, principal locataire</complement>
+            <parish/>
+            <owner>communauté d’entre Peverié père et sa défunte épouse</owner>
+          </place>
+          <place xml:id="id388d426" type="paris">
+            <address>
+              <street>rue du Petit Lion</street>
+              <buildingNumber/>
+            </address>
+            <complement>faubourg Saint-Germain</complement>
+            <parish/>
+            <owner>communauté d’entre Peverié père et sa défunte épouse</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="estimation">Estimer la valeur des biens</category>
+          <designation rubric="true">Estimation d'une maison, rue aux ours et encoignure de la rue Quincampoix et de moitié d'une autre, rue du petit lion, faubourg St Antoine, dépendant de la communauté d'entre le sieur Pererier père et la feue dame son épouse ; Taboureur, expert.</designation>
+        </categories>
+        <procedure>
+          <framework type="b2b">L’institution est saisie dans le cadre d’une procédure (l’institution nomme un ou deux experts)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Châtelet, lieutenant civil (sentences)</orgName>
+              <date when="1776-04-23"/>
+              <date when="1776-03-12"/>
+            </sentence>
+          </sentences>
+          <case>Liquidation, partage et division des biens de la communauté entre Louis Peverié et sa défunte épouse Marie Mercié ; licitation des biens immeubles dépendant de la communauté</case>
+          <objects>
+            <object type="house">Maison(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0250" context="primary" appointment="court-appointed">
+              <title>architecte expert juré</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0072">
+              <persName>
+                <surname>Laurent</surname>
+                <forename>Jean Baptiste François (substituant Picquenon)</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="" intervention="">
+              <person>
+                <persName>
+                  <surname>Peverié</surname>
+                  <forename>Louis</forename>
+                </persName>
+                <occupation>père, bourgeois de Paris, veuf de Marie Mercié</occupation>
+              </person>
+              <status>heir</status>
+              <expert ref="#xpr0250"/>
+              <prosecutor>
+                <persName>
+                  <surname>Garet</surname>
+                  <forename>Charles</forename>
+                </persName>
+              </prosecutor>
+            </party>
+            <party role="opponent" presence="" intervention="">
+              <person>
+                <persName>
+                  <surname>Peverié</surname>
+                  <forename>Rémy</forename>
+                </persName>
+                <occupation>maître tourneur à paris</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Peverié</surname>
+                  <forename>François</forename>
+                </persName>
+                <occupation>maître cottonier à Paris</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>et consorts</surname>
+                  <forename/>
+                </persName>
+                <occupation/>
+              </person>
+              <status>heir</status>
+              <expert ref="#xpr0250"/>
+            </party>
+            <party role="" presence="" intervention="">
+              <person>
+                <persName>
+                  <surname>Peverié</surname>
+                  <forename>Remy</forename>
+                </persName>
+                <occupation/>
+              </person>
+              <person>
+                <persName>
+                  <surname>Peverié</surname>
+                  <forename>François</forename>
+                </persName>
+                <occupation/>
+              </person>
+              <person>
+                <persName>
+                  <surname>Peverié</surname>
+                  <forename>Pierre Philippe</forename>
+                </persName>
+                <occupation/>
+              </person>
+              <person>
+                <persName>
+                  <surname>Peverié</surname>
+                  <forename>Jean</forename>
+                </persName>
+                <occupation/>
+              </person>
+              <person>
+                <persName>
+                  <surname>Gosfestre</surname>
+                  <forename>Louis</forename>
+                </persName>
+                <occupation/>
+              </person>
+              <person>
+                <persName>
+                  <surname>Peverié</surname>
+                  <forename>Marie Luce</forename>
+                </persName>
+                <occupation/>
+              </person>
+              <person>
+                <persName>
+                  <surname>Mallet</surname>
+                  <forename/>
+                </persName>
+                <occupation/>
+              </person>
+              <person>
+                <persName>
+                  <surname>Mercié</surname>
+                  <forename>Marie</forename>
+                </persName>
+                <occupation/>
+              </person>
+              <status/>
+              <expert ref=""/>
+            </party>
+            <party role="" presence="" intervention="">
+              <person>
+                <persName>
+                  <surname>Peverié</surname>
+                  <forename>Remy</forename>
+                </persName>
+                <occupation/>
+              </person>
+              <person>
+                <persName>
+                  <surname>Deruy</surname>
+                  <forename>Louis</forename>
+                </persName>
+                <occupation/>
+              </person>
+              <person>
+                <persName>
+                  <surname>Deruy</surname>
+                  <forename>Louise Adelaïde</forename>
+                </persName>
+                <occupation/>
+              </person>
+              <person>
+                <persName>
+                  <surname>Deruy</surname>
+                  <forename>Jean François</forename>
+                </persName>
+                <occupation/>
+              </person>
+              <person>
+                <persName>
+                  <surname>Peverié</surname>
+                  <forename>Marie Marthe</forename>
+                </persName>
+                <occupation/>
+              </person>
+              <status/>
+              <expert ref=""/>
+            </party>
+            <party role="" presence="" intervention="">
+              <person>
+                <persName>
+                  <surname>Bignon</surname>
+                  <forename>Esprit</forename>
+                </persName>
+                <occupation/>
+              </person>
+              <person>
+                <persName>
+                  <surname>Dubois</surname>
+                  <forename>Marie Louise</forename>
+                </persName>
+                <occupation/>
+              </person>
+              <person>
+                <persName>
+                  <surname>Peverié</surname>
+                  <forename>Marie Jeanne</forename>
+                </persName>
+                <occupation/>
+              </person>
+              <person>
+                <persName>
+                  <surname>Dubois</surname>
+                  <forename>Pierre</forename>
+                </persName>
+                <occupation/>
+              </person>
+              <person>
+                <persName>
+                  <surname>Mercié</surname>
+                  <forename>Marie</forename>
+                </persName>
+                <occupation/>
+              </person>
+              <person>
+                <persName>
+                  <surname>Camuzet</surname>
+                  <forename/>
+                </persName>
+                <occupation/>
+              </person>
+              <status/>
+              <expert ref=""/>
+            </party>
+            <party role="" presence="" intervention="">
+              <person>
+                <persName>
+                  <surname>Dubois</surname>
+                  <forename>Sebastien Pierre</forename>
+                </persName>
+                <occupation/>
+              </person>
+              <person>
+                <persName>
+                  <surname>Dubois</surname>
+                  <forename>Marie Hyacinte</forename>
+                </persName>
+                <occupation/>
+              </person>
+              <person>
+                <persName>
+                  <surname>Dubois</surname>
+                  <forename>Marie Caterine</forename>
+                </persName>
+                <occupation/>
+              </person>
+              <person>
+                <persName>
+                  <surname>Dubois</surname>
+                  <forename>Pierre</forename>
+                </persName>
+                <occupation/>
+              </person>
+              <person>
+                <persName>
+                  <surname>Peverié</surname>
+                  <forename>Marie Jeanne</forename>
+                </persName>
+                <occupation/>
+              </person>
+              <status/>
+              <expert ref=""/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0250">Maison rue aux Ours
+« Toutes considerations faittes nous prisons et estimons laditte maison à la charge du cens et des droits seigneuriaux et au cours du tems present… 18 000 l. »
+Maison rue du Petit Lion
+« Touttes considerations faittes nos prisons et estimons ladite maison à la charge du cens et des droits seigneuriaux et au cours du tems present la somme de dix mille cinq cent livres
+et audit prix la moitié de ladite maison appartenant au sieur Peverier et consors, la somme de cinq mille deux cent cinquante livres… 5 250 l. »
+« Quant au chef de votre sentence monsieur suivant lequel nous devons donner notre avis si lesdites maisons peuvent ou non commodement se partager en autant de portions qu’il y a de proprietaires, notre avis est que le partage en est impossible. »</opinion>
+          <arrangement/>
+          <agreement type="conclusion">Conclusion</agreement>
+          <estimate l="" s="" d=""/>
+          <estimates>
+            <place ref="#id388d407">
+              <appraisal l="18000" s="" d="">
+                <desc>une maison</desc>
+              </appraisal>
+            </place>
+            <place ref="#id388d426">
+              <appraisal l="5250" s="" d="">
+                <desc>une maison</desc>
+              </appraisal>
+            </place>
+          </estimates>
+          <fees detail="true">
+            <fee type="papers" l="9" s="18" d=""/>
+            <fee type="expert" ref="#xpr0250" l="42" s="" d=""/>
+            <fee type="clerk" l="42" s="" d=""/>
+            <fee type="rolls" l="24" s="10" d=""/>
+            <fee type="prosecutors" l="65" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="183" s="8" d=""/>
+          </fees>
+          <expenses mentioned=""/>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis/>
+        <noteworthy/>
+      </description>
+    </expertise>

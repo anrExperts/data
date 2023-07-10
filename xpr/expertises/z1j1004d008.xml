@@ -1,0 +1,212 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1004d008">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-07-01T12:00:00">2020-07-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2017-10-01T12:00:00">2017-10-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1004</idno>
+        <idno type="item">008</idno>
+        <facsimile from="0053" to="0061"/>
+        <physDesc>
+          <extent sketch="false">8</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-06-01" type="paris"/>
+          <date when="1776-06-10" type="paris"/>
+          <date when="1776-06-17" type="paris"/>
+          <date when="1776-06-17" type="paris"/>
+        </sessions>
+        <places>
+          <place type="paris">
+            <address>
+              <street>Rue de la Madeleine</street>
+              <buildingNumber>6</buildingNumber>
+            </address>
+            <complement>à gauche en entrant par le faubourg Saint-Honoré</complement>
+            <parish/>
+            <owner/>
+          </place>
+        </places>
+        <categories>
+          <category type="assessment">Décrire et évaluer les travaux à venir</category>
+          <designation rubric="true">Visite et estimation de réparation locatives en une maison, rue de la Madeleine, faubourg St Honoré, à la requête de Madame la marquise de Grave ; M. Perrard et Bouchet, experts.</designation>
+        </categories>
+        <procedure>
+          <framework type="b2a">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Châtelet, lieutenant civil (sentences)</orgName>
+              <date when="1775-12-02"/>
+              <date when="1775-05-27"/>
+              <date when="1775-11-03"/>
+            </sentence>
+            <sentence>
+              <orgName>Parlement (arrêt)</orgName>
+              <date when="1776-03-26"/>
+            </sentence>
+          </sentences>
+          <case>Fin de bail, détermination de la responsabilité des réparations entre locataire et propriétaire</case>
+          <objects>
+            <object type="house">Maison(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0210" context="primary" appointment="appointed">
+              <title>architecte expert</title>
+            </expert>
+            <expert ref="#xpr0031" context="primary" appointment="appointed">
+              <title>architecte expert</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0064">
+              <persName>
+                <surname>Gobert</surname>
+                <forename>Jean Charles Simon</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>marquise de Grave</surname>
+                  <forename/>
+                </persName>
+                <occupation/>
+              </person>
+              <status>owner</status>
+              <expert ref="#xpr0210"/>
+              <prosecutor>
+                <persName>
+                  <surname>Chevalier</surname>
+                  <forename>Marin</forename>
+                </persName>
+              </prosecutor>
+            </party>
+            <party role="opponent" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Bouret de Valroche</surname>
+                  <forename>Antoine François</forename>
+                </persName>
+                <occupation>écuyer, l’un des fermiers généraux, locataire de la maison dont il est question</occupation>
+              </person>
+              <status>tenant</status>
+              <expert ref="#xpr0031"/>
+              <prosecutor>
+                <persName>
+                  <surname>Mulot Dauges</surname>
+                  <forename>Claude</forename>
+                </persName>
+              </prosecutor>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="">« Revenant ensemble lesdites reparations locatives à faire en ladite maison suivant notre estimation à la somme de 231 l. 2 s. 6 d. 
+Nous observons que dans lesdites reparations locatives l’article concernant le tuyeau de plomb de la pierre d'eaude la cuisine qui manque, ainsy que la serrure à pêne dormant du [sic] porte de l’écurie du coté du cabinet d’aisance lesquels ont été enlevés nous ne pouvons assurer si ces articles peuvent etre à la charge du sieur Bouret … cy devant locataire de ladite maison ou à la charge de notre dame marquise de Grave proprietaire, n’étant point certain qui peut les avoir enlever [sic] à l’égard des autres reparations locatives elles nous ont paru … autant qu’il est possible d’en juger, depuis que ledit sieur Bouret… n’est plus en jouissance des lieux, cy… observation 
+Fait par nous architectes experts susdits jours mois et an que dessus vous referant M. sur le tout d’ordonner »</opinion>
+          <arrangement/>
+          <agreement type="agreement">Accord</agreement>
+          <estimate l="" s="" d=""/>
+          <fees detail="true">
+            <fee type="papers" l="10" s="" d=""/>
+            <fee type="expert" ref="#xpr0210" l="34" s="" d=""/>
+            <fee type="expert" ref="#xpr0031" l="34" s="" d=""/>
+            <fee type="clerk" l="34" s="" d=""/>
+            <fee type="rolls" l="36" s="" d=""/>
+            <fee type="prosecutors" l="40" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="188" s="" d=""/>
+          </fees>
+          <expenses mentioned=""/>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis>réparations locatives</analysis>
+        <noteworthy>réparation faites par le sieur Armand, architecte pour le compte de sur Devalroche</noteworthy>
+      </description>
+    </expertise>

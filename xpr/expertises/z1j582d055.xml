@@ -1,0 +1,184 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j582d055">
+  <meta/>
+  <control>
+    <maintenanceStatus>revised</maintenanceStatus>
+    <publicationStatus/>
+    <localControl localType="detailLevel">
+      <term>completed</term>
+    </localControl>
+    <maintenanceHistory>
+      <maintenanceEvent>
+                <eventType>revised</eventType>
+                <eventDateTime standardDateTime="2022-03-31T16:17:06Z">2022-03-31T16:17:06Z</eventDateTime>
+                <agentType>human</agentType>
+                <agent>llosserand</agent>
+                <eventDescription>rvpcd</eventDescription>
+            </maintenanceEvent>
+          <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateObjectsValues_db.xqy/BaseX</agent>
+        <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateOpinionRef_files.xqy/BaseX</agent>
+        <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateRefValues_files.xqy/BaseX</agent>
+        <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+        <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>revised</eventType>
+        <eventDateTime standardDateTime="2020-11-01T12:00:00">2020-11-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>JH</agent>
+        <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>retroconverted</eventType>
+        <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>ead2xpr.xsl/Saxon9</agent>
+        <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>created</eventType>
+        <eventDateTime standardDateTime="2017-04-01T12:00:00">2017-04-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>llosserand</agent>
+        <eventDescription>Création de la fiche.</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+  </control>
+  <sourceDesc>
+    <unitdate>1726</unitdate>
+    <idno type="unitid">Z1J582</idno>
+    <idno type="item">055</idno>
+    <facsimile from="0572" to="0574"/>
+    <physDesc>
+      <extent sketch="false">2</extent>
+    </physDesc>
+  </sourceDesc>
+  <description>
+    <sessions>
+      <date when="1726-08-17" type="paris"/>
+    </sessions>
+    <places>
+      <place type="paris">
+        <address>
+          <street>Faubourg Saint-Marcel, rue de la clef [Cette dénomination correspond à 2 voies : Voie actuelle et actuelle partie de la rue Saint-André-des-Arts]</street>
+          <buildingNumber/>
+        </address>
+        <complement>une maison rue de la clef, faubourg Saint-Marcel, où demeure le sieur Bellier, bourgeois de Paris</complement>
+        <parish/>
+        <owner/>
+      </place>
+    </places>
+    <categories>
+      <category type="settlement">Départager</category>
+      <designation rubric="true">Visitte et estimation de mur mitoyen, rue de la Clef, fauxbourg St Marceau, par la demoiselle Moreau; M. Loir, expert.</designation>
+    </categories>
+    <procedure>
+      <framework type="b1">Requête auprès d’une institution pour qu’elle demande une expertise</framework>
+      <origination type="parties">Les parties</origination>
+      <sentences>
+        <sentence>
+          <orgName>lieutenant civil</orgName>
+          <date when=""/>
+        </sentence>
+      </sentences>
+      <case>le mur mitoyen s'est effondré rendant inhabitable la maison pour son locataire, obligeant à plus de 800 livres de frais que ne peut engager la partie requérante</case>
+      <objects>
+        <object type="wall">Mur(s)</object>
+      </objects>
+    </procedure>
+    <participants>
+      <experts>
+        <expert ref="#xpr0183" context="primary" appointment="court-appointed">
+          <title>expert</title>
+        </expert>
+      </experts>
+      <clerks>
+        <clerk ref="#clrk0033">
+          <persName>
+            <surname>Callou</surname>
+            <forename>Antoine Charles</forename>
+          </persName>
+        </clerk>
+      </clerks>
+      <parties>
+        <party role="petitioner" presence="true" intervention="false">
+          <person>
+            <persName>
+              <surname>Moreau</surname>
+              <forename>Catherine</forename>
+            </persName>
+            <occupation>fille majeure, héritière de défunt Moreau, Louis, ancien capitaine au régiment de Forest, laquelle est de sa succession de feu de la Pujade, Jean Antoine, aussy capitaine au régiment de Forest</occupation>
+          </person>
+          <status>owner</status>
+          <expert ref="#xpr0183"/>
+        </party>
+      </parties>
+      <craftmen>
+        <craftman>
+          <persName>
+            <surname/>
+            <forename/>
+          </persName>
+          <occupation/>
+        </craftman>
+      </craftmen>
+    </participants>
+    <conclusions>
+      <opinion ref="#xpr0183">Les réparations sont estimées 144 livres 8 sols 10 deniers et le treillage qui a été détruit par l'effondrement du mur à 103 livres 17 sols 9 deniers.</opinion>
+      <arrangement/>
+      <agreement type="conclusion">Conclusion</agreement>
+      <estimate l="144" s="8" d="10"/>
+      <fees detail="true">
+        <fee type="papers" l="1" s="10" d=""/>
+        <fee type="expert" ref="#xpr0183" l="6" s="" d=""/>
+        <fee type="clerk" l="6" s="" d=""/>
+        <fee type="rolls" l="2" s="10" d=""/>
+        <fee type="prosecutors" l="" s="" d=""/>
+        <fee type="help" l="" s="" d=""/>
+        <fee type="plans" l="" s="" d=""/>
+        <total l="16" s="" d=""/>
+      </fees>
+      <expenses mentioned="false"/>
+    </conclusions>
+    <keywords group="estates"/>
+    <keywords group="procedure"/>
+    <keywords group="contract"/>
+    <keywords group="encumbrance"/>
+    <keywords group="law"/>
+    <keywords group="measurement"/>
+    <keywords group="repairs"/>
+    <keywords group="guarantees"/>
+    <keywords group="responsability"/>
+    <keywords group="ownership"/>
+    <keywords group="value"/>
+    <keywords group="neighbourhood"/>
+    <keywords group="disorder"/>
+    <keywords group="transformation"/>
+    <analysis>« A monsieur le lieutenant civil.
+                Suplie humblement Catherine Moreau, fille majeure, héritière de deffunt sr Louis Moreau, ancien capitaine au régiment de Forest, disant qu'elle a droit de jouir entre autres biens d'une maison rue de la clef, fauxbourg St Marcel où demeure le sr Bellier, bourgeois de Paris, laquelle est de sa succession de feu Jean Antoine de la Pujade, aussy capitaine au régiment de Forest, suivante aux termes de vostre sentence contradictoire du douze may 1722, rendu contre Charles Roger, curateur créé par justice à la succession vacante dus sr Jean Antoine de la Pujade et Louis Ventillac, tuteur des enfans nés et à naistre du sr chevallier depuis [?] que et dont Marthe de la Pujade son épouze et de leurs né à naistre de Pierre de Claverie et dont Margueritte de la Pujade son épouse appelle à la substitution faitte par le sr Jean Antoine de la Pujade par ses testaments et codicille pour la payement de la somme de cinq mil huit cent trente cinq livres huit sols neuf denier de principal intérest et frais adjuger par vostre ditte sentence pour les causes y contenues, il est arrivé qu'un mur de cloture de jardin dépendant de lad. maison, mitoyen avec les voisins [f. 1v°] qui sont la dame Lhomme et consors, est tombé dans la plus grande partie et ce qui reste à tomber ne vaut rien du tout et ne peut soutenir, en sorte que lad. maison n'est plus fermée et que le locataire ne veut plus l'habiter, n'étant clos ny couvert, join que les voisins veullent aussy se faire clore, mais comme s'est une grosse réparation qui peut aller à plus de 800 livres, la supliante ne peut avancer une somme aussy considérable qu'il ne soit coustant que led. mur est abbatu pour la plus grande partie et que ce qui en reste ne vaut rien, à l'effet que la dépence que la supliante sera obligée d'avancer luy soit allouée sans difficulté, pourquoy ella [sic] recours à vous.
+                Ce considéré, monsieur, il vous plise ordonner que le mur dont il s'agist sera veu et visitté par tel expert qu'il vous plaira commettre, lequel raportera l'estat et la situation dud. mur et les réparations qu'il convient faire pour la reconstruction et rétablissement d'icelluy, mesme [f. 2r°] estimera ce qu'il en pourra coûter et de combien la maison dont il s'agist doit esrte tenue de la réparation, laquelle la supliante avancera pour la [rapporter?] comme ses austres créances et vous [ferez?] bien. [signature:] De la rivière
+                Permis de faire visiter &amp; priser par Loir juré expert. Fait le 14 aoust 1726. [signature] D'Argouges [...] ».</analysis>
+    <noteworthy/>
+  </description>
+</expertise>

@@ -1,0 +1,195 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j664d017" status="">
+  <meta/>
+  <control>
+    <maintenanceStatus>revised</maintenanceStatus>
+    <publicationStatus/>
+    <localControl localType="detailLevel">
+      <term>completed</term>
+    </localControl>
+    <maintenanceHistory>
+      <maintenanceEvent>
+                <eventType>revised</eventType>
+                <eventDateTime standardDateTime="2022-05-02T13:56:30Z">2022-05-02T13:56:30Z</eventDateTime>
+                <agentType>human</agentType>
+                <agent>llosserand</agent>
+                <eventDescription>rvpcd</eventDescription>
+            </maintenanceEvent>
+          <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateObjectsValues_db.xqy/BaseX</agent>
+        <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-06-16T16:56:32.893+02:00">2021-06-16T16:56:32.893+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateOpinionRef_files.xqy/BaseX</agent>
+        <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-06-16T16:29:02.548+02:00">2021-06-16T16:29:02.548+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateRefValues_files.xqy/BaseX</agent>
+        <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>created</eventType>
+        <eventDateTime standardDateTime="2021-04-19T17:56:05Z">2021-04-19T17:56:05Z</eventDateTime>
+        <agentType>human</agentType>
+        <agent>llosserand</agent>
+        <eventDescription>Création de la fiche.</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+  </control>
+  <sourceDesc>
+    <unitdate>1736</unitdate>
+    <idno type="unitid">Z1J664</idno>
+    <idno type="item">017</idno>
+    <facsimile from="0239" to="0242"/>
+    <physDesc>
+      <extent sketch="false">4</extent>
+    </physDesc>
+  </sourceDesc>
+  <description>
+    <sessions>
+      <date when="1736-07-31" type="paris"/>
+      <date when="1736-08-03" type="paris"/>
+    </sessions>
+    <places>
+      <place xml:id="id387d78" type="paris">
+        <address>
+          <street>grande rue du faubourg Saint-Antoine</street>
+          <buildingNumber/>
+        </address>
+        <complement/>
+        <parish/>
+        <owner/>
+      </place>
+    </places>
+    <categories>
+      <category type="estimation">Estimer la valeur des biens</category>
+      <designation rubric="true">Estimation d'une maison, Grande rue du Fg St Antoine, entre les héritiers Mion ; M. Brice Le Chauve, expert ; M. Jacques Quirot, greffier.</designation>
+    </categories>
+    <procedure>
+      <framework type="b2">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+      <origination type="institution">Une institution</origination>
+      <sentences>
+        <sentence>
+          <orgName>LC</orgName>
+          <date when="1736-07-17"/>
+          <date when="1736-07-18"/>
+        </sentence>
+      </sentences>
+      <case>succession, projet de vente sur licitation</case>
+      <objects>
+        <object type="house">Maison(s)</object>
+      </objects>
+    </procedure>
+    <participants>
+      <experts>
+        <expert ref="#xpr0160" context="primary" appointment="appointed">
+          <title>architecte expert bourgeois de Paris</title>
+        </expert>
+      </experts>
+      <clerks>
+        <clerk ref="#clrk0029">
+          <persName>
+            <surname>Quirot</surname>
+            <forename>Jacques</forename>
+          </persName>
+        </clerk>
+      </clerks>
+      <parties>
+        <party role="petitioner" presence="true" intervention="false">
+          <person>
+            <persName>
+              <surname>Martin</surname>
+              <forename>Denis</forename>
+            </persName>
+            <occupation>maître patissier</occupation>
+          </person>
+          <person>
+            <persName>
+              <surname>Mion</surname>
+              <forename>Anne</forename>
+            </persName>
+            <occupation>sa femme, héritière pour 1/5e de Nicolas Mion, maître paulmier son père</occupation>
+          </person>
+          <status>heir</status>
+          <expert ref="#xpr0160"/>
+        </party>
+        <party role="opponent" presence="false" intervention="false">
+          <person>
+            <persName>
+              <surname>Mion</surname>
+              <forename>Georges</forename>
+            </persName>
+            <occupation>maître paulmier</occupation>
+          </person>
+          <person>
+            <persName>
+              <surname>Mion</surname>
+              <forename>Marie</forename>
+            </persName>
+            <occupation>sa femme, héritière pour 1/5 dudit défunt son père</occupation>
+          </person>
+          <person>
+            <persName>
+              <surname>et consorts Mion</surname>
+              <forename/>
+            </persName>
+            <occupation/>
+          </person>
+          <status>heir</status>
+          <expert ref="#xpr0160"/>
+        </party>
+      </parties>
+      <craftmen>
+        <craftman>
+          <persName>
+            <surname/>
+            <forename/>
+          </persName>
+          <occupation/>
+        </craftman>
+      </craftmen>
+    </participants>
+    <conclusions>
+      <agreement type="conclusion">Conclusion</agreement>
+      <opinion ref="#xpr0160">"Ensuite de quoy nous avons visitté ladite maison pour connoistre des réparations qui sont à faire en icelle tant à présent que par la suitte y en ayant des parties dont on peut se dispenser de les faire de quelques années consistant tant en ravallements de maçonnerie vers la cour, testes de cheminée, maçonnerie de planchers qui se trouveront causez par la foiblesse des bois de quelques parties de planchers dont une des poutres est en partie et lattre (sic) vers son milieu et quelques solives de différends planchers ayant considérablement ployez et autres réparations par nous examinées, laquelle visitte nous avons ainsy faitte pour parvenir à une plus juste estimation de la superficie des bastiments de ladite maison par rapport à leur estat actuel, pourquoy toutte considération et attention faitte par nous, calculs et suputations nous prisons et estimons ladite maison ainsy qu’elle se poursuit et comporte et eu esgard au cours du temps présent à la charge du cens et droits seigneuriaux seullement valloir la somme de 8900 livres. 
+Tel est nostre avis et l’estimation d’icelle maison sauf à vous Monsieur sur le tout de juger et ordonner suivant vostre justice et prudence ordinaire."</opinion>
+      <arrangement/>
+      <estimate l="" s="" d=""/>
+      <estimates>
+        <place ref="#id387d78">
+          <appraisal l="8900" s="" d="">
+            <desc>une maison</desc>
+          </appraisal>
+        </place>
+      </estimates>
+      <fees detail="">
+        <total l="" s="" d=""/>
+      </fees>
+      <expenses mentioned="false"/>
+    </conclusions>
+    <keywords group="estates"/>
+    <keywords group="procedure"/>
+    <keywords group="contract"/>
+    <keywords group="encumbrance"/>
+    <keywords group="law"/>
+    <keywords group="measurement"/>
+    <keywords group="repairs"/>
+    <keywords group="guarantees"/>
+    <keywords group="responsability"/>
+    <keywords group="ownership"/>
+    <keywords group="value"/>
+    <keywords group="neighbourhood"/>
+    <keywords group="disorder"/>
+    <keywords group="transformation"/>
+    <analysis/>
+    <noteworthy/>
+  </description>
+</expertise>

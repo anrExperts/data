@@ -1,0 +1,203 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1007d032">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-08-01T12:00:00">2020-08-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2017-10-01T12:00:00">2017-10-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1007</idno>
+        <idno type="item">032</idno>
+        <facsimile from="0498" to="0525"/>
+        <physDesc>
+          <extent sketch="false">26</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-09-13" type="province"/>
+          <date when="1776-09-13" type="province"/>
+          <date when="1776-09-14" type="province"/>
+          <date when="1776-09-14" type="province"/>
+          <date when="1776-09-16" type="province"/>
+          <date when="1776-09-16" type="province"/>
+          <date when="1776-09-17" type="province"/>
+          <date when="1776-09-17" type="province"/>
+          <date when="1776-09-18" type="province"/>
+          <date when="1776-09-18" type="province"/>
+          <date when="1776-09-19" type="province"/>
+          <date when="1776-09-19" type="province"/>
+        </sessions>
+        <places>
+          <place xml:id="id135d277" type="province">
+            <address/>
+            <complement>Terre et seigneurie de la Barre en Normandie</complement>
+            <city>La Barre</city>
+            <district>Normandie</district>
+            <owner/>
+          </place>
+        </places>
+        <categories>
+          <category type="estimation">Estimer la valeur des biens</category>
+          <designation rubric="true">Estimation de la terre et seigneurie de la Barre en Normandie appartenante au sieur Marquis d'Abas, mineur ; M. Duboisterf, expert.</designation>
+        </categories>
+        <procedure>
+          <framework type="b2b">L’institution est saisie dans le cadre d’une procédure (l’institution nomme un ou deux experts)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Châtelet, lieutenant civil (sentence du 27 avril 1776 et ordonnance du 1er août 1776)</orgName>
+              <date when="1776-04-27"/>
+              <date when="1776-08-01"/>
+            </sentence>
+          </sentences>
+          <case>Vente de biens immeubles appartenant à un mineur</case>
+          <objects>
+            <object type="territory">Domaine, terres, fief</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0101" context="primary" appointment="court-appointed">
+              <title>architecte expert bourgeois des bâtiments à Paris</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0062">
+              <persName>
+                <surname>Picquenon</surname>
+                <forename>Denis Joseph François</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="" intervention="">
+              <person>
+                <persName>
+                  <surname>Levavasseur</surname>
+                  <forename>Marie Jeanne</forename>
+                </persName>
+                <occupation>veuve de d’Abos de Binanville, Antoine Maximilien, au nom et comme curatrice honoraire du marquis d’Abos, son fils mineur</occupation>
+              </person>
+              <status>heir</status>
+              <expert ref="#xpr0101"/>
+            </party>
+            <party role="opponent" presence="" intervention="">
+              <person>
+                <persName>
+                  <surname/>
+                  <forename/>
+                </persName>
+                <occupation/>
+              </person>
+              <status/>
+              <expert ref=""/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0101">« Relevé fait de nos estimations particulières de chaque objet et touttes considerations faittes nous prisons et estimons lesdits fiefs de Saint André de la Barre, de Saint Aubin de Gizay, des Trées, et des Bottereaux circonstances et dépendances desdits fiefs en l’état que le tout se poursuit et comporte detaillé au present rapport, à la charge des droits devoirs seigneuriaux et feodaux et au cours du tems present La somme de … 225 000 l. 
+Telle est, Monsieur, la visitte par nous faitte desdits fiefs et seigneurie cy dessus dénommés qui sont ceux qui nous ont été indiqués par ladite dame de Binanville et le sieur Levasseur es noms et qualités qu’ils procedent, comme étant ceux qu’ils se proposent de vendre pour l’interest et avantage dudit sieur marquis Dabas mineur, tel est notre avis sur la valeur desdits immeubles, le tout par nous constaté suivant et aux termes des sentence et ordonnance rendues par vous monsieur 
+Nous avons vacqué à ce que dessus jusques à une heure après midy de suitte et sans interruption et avons remis à ce jourd’huy après notre repas pour retourner à Paris notre demeure ordinaire Fait par nous architecte expert susdit lesdits jours mois et an »</opinion>
+          <arrangement/>
+          <agreement type="conclusion">Conclusion</agreement>
+          <estimate l="" s="" d=""/>
+          <estimates>
+            <place ref="#id135d277">
+              <appraisal l="225000" s="" d="">
+                <desc>fiefs</desc>
+              </appraisal>
+            </place>
+          </estimates>
+          <fees detail="true">
+            <fee type="papers" l="17" s="2" d=""/>
+            <fee type="expert" ref="#xpr0101" l="284" s="" d=""/>
+            <fee type="clerk" l="284" s="" d=""/>
+            <fee type="rolls" l="102" s="" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="125" s="16" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="812" s="18" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="179" s="6" d="8"/>
+            <expense type="expert" l="" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis/>
+        <noteworthy>expert : Duboiscerf, Sebastien Jean, arch. (nommé par le lieutenant civil à la suite de la défection de Payen, nommé par la sentence du 27 avril)
+
+Coût de l’expertise
+expert 6 jours de route et 1 dimanche 168 l. 29 heures camp.116 l. 284 l. greffier idem284 l. 204 rolles102 l. papier et controlle17 l. 2 s. aydes125 l. 16 s. 812 l. 18 s.</noteworthy>
+      </description>
+    </expertise>

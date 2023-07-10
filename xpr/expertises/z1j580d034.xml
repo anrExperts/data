@@ -1,0 +1,190 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j580d034">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-10-01T12:00:00">2020-10-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2016-10-26T12:00:00">2016-10-26T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>RB</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1726</unitdate>
+    <idno type="unitid">Z1J580</idno>
+        <idno type="item">034</idno>
+        <facsimile from="0520" to="0528"/>
+        <physDesc>
+          <extent sketch="false">10</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1726-05-14" type="paris"/>
+          <date when="1726-10-08" type="paris"/>
+          <date when="1726-10-11" type="paris"/>
+          <date when="1726-10-15" type="paris"/>
+        </sessions>
+        <places>
+          <place type="paris">
+            <address>
+              <street>Rue des Vieux-Augustins [Actuellement rue d'Argout et rue Herold]</street>
+              <buildingNumber/>
+            </address>
+            <complement/>
+            <parish/>
+            <owner>de Varenne</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="acceptation">Recevoir et évaluer le travail réalisé</category>
+          <designation rubric="true">Visite d'ouvrages de maçonnerie</designation>
+        </categories>
+        <procedure>
+          <framework type="b2a">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Lieutenant civil</orgName>
+              <date when="1726-02-09"/>
+            </sentence>
+          </sentences>
+          <case>Réception d'ouvrages</case>
+          <objects>
+            <object type="house">Maison(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0158" context="primary" appointment="appointed">
+              <title>architecte juré expert bourgeois de Paris</title>
+            </expert>
+            <expert ref="#xpr0232" context="primary" appointment="appointed">
+              <title>architecte juré expert bourgeois de Paris</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0029">
+              <persName>
+                <surname>Quirot</surname>
+                <forename>Jacques</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="true" intervention="true">
+              <person>
+                <persName>
+                  <surname>Varenne</surname>
+                  <forename>Pierre de</forename>
+                </persName>
+                <occupation>ancien doyen des greffiers des bâtiments à Paris, propriétaire de la maison</occupation>
+              </person>
+              <status>limited-partner</status>
+              <expert ref="#xpr0232"/>
+            </party>
+            <party role="opponent" presence="true" intervention="false">
+              <person>
+                <persName>
+                  <surname>Cudeville</surname>
+                  <forename>Michel Etienne</forename>
+                </persName>
+                <occupation>maître maçon à Paris</occupation>
+              </person>
+              <status>builder</status>
+              <expert ref="#xpr0158"/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0158">Le montant des articles contestés du mémoire s'élève à 51 livres 13 sols 6 deniers. « A l'esgard des neuf pieds à quoy moy Le Brun ay évallué le renforcement et enduits qui a esté faict au mur entre l'escallier et la cuisine, du costé de l'escallier pour connoistre si ledit mur estoit vrayment faict ou s'il n'avoit esté qu'enduit, je l'estime la somme de quarente deux sols six deniers […]."</opinion>
+          <opinion ref="#xpr0232">"Et moy Quirot observeray à la Cour que ce qui a occasionné lesdits renforcements est que ledit sieur Cudeville demandoit une toise quatorze pieds de mur au lieu que nous n'y avons trouvé qu'une demie toise quatorze pieds et demy, et que ledit sieur de Varenne a soutenu qu'il comptait que des renforcements, sur quoy la Cour ordonnera qui doit suporter lesdits quarente deux sols six deniers à quoy ledit sieur Le Brun estime les rétablissements ».</opinion>
+          <arrangement/>
+          <agreement type="disagreement">Désaccord</agreement>
+          <estimate l="" s="" d=""/>
+          <fees detail="true">
+            <fee type="papers" l="2" s="10" d=""/>
+            <fee type="expert" ref="#xpr0158" l="18" s="" d=""/>
+            <fee type="expert" ref="#xpr0232" l="18" s="" d=""/>
+            <fee type="clerk" l="18" s="" d=""/>
+            <fee type="rolls" l="6" s="5" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="62" s="15" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="6" s="2" d="6"/>
+            <expense type="expert" l="" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis>Motivations
+                « Visite à l'effet de voir et visitter les ouvrages de maçonnerie prétendus avoir été faits par le sieur Michel Estienne Cudeville, maître maçon à Paris ». Le commanditaire des travaux, Pierre de Varenne, et l'artisan ne s'entendent pas sur les prix et les objets portés au mémoire des ouvrages de maçonnerie. Chacun a nommé un expert pour estimer la valeur des travaux contestés.</analysis>
+        <noteworthy/>
+      </description>
+    </expertise>

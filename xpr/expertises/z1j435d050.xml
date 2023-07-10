@@ -1,0 +1,180 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j435d050">
+      <meta/>
+      <control>
+        <maintenanceStatus/>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term/>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:45:33.927+02:00">2021-04-21T20:45:33.927+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateKeywordsModule_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour du module keywords.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:44:31.814+02:00">2021-04-21T20:44:31.814+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateExpertisesArrangement_files.xqy/BaseX</agent>
+            <eventDescription>Ajout du champs Accommodement dans l'éventualité d’une résolution par les parties.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2019-05-01T12:00:00">2019-05-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1696</unitdate>
+    <idno type="unitid">Z1J435</idno>
+        <idno type="item">050</idno>
+        <facsimile from="0404" to="0408"/>
+        <physDesc>
+          <extent sketch="false">4</extent>
+          <appendices>
+            <appendice>
+              <type type="sketch">Croquis</type>
+              <extent>1</extent>
+              <desc/>
+              <note>plan de la parcelle avec écritures donnant des précisions topogrpahiques et architecturales</note>
+            </appendice>
+          </appendices>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1696-12-05" type="paris"/>
+        </sessions>
+        <places>
+          <place type="paris">
+            <address>
+              <street>rue Darnetal (Greneta)</street>
+              <buildingNumber/>
+            </address>
+            <complement/>
+            <parish/>
+            <owner>Sevin / Hanel</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="settlement">Départager</category>
+          <designation rubric="false">Visite de passage</designation>
+        </categories>
+        <procedure>
+          <framework type="b2a">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>requêtes de l'hôtel</orgName>
+              <date when="1696-11-19"/>
+            </sentence>
+          </sentences>
+          <case>partage de la maison nécessite de remettre un degré et une allée comme ils était lors du partage</case>
+          <objects>
+            <object type="house">Maison(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0086" context="primary" appointment="appointed">
+              <title>architecte du roi expert bourgeois de Paris doyen des 60 experts créés en titre d'office par sa majesté</title>
+            </expert>
+            <expert ref="#xpr0220" context="primary" appointment="appointed">
+              <title>expert entrepreneur en tire d'office</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0008">
+              <persName>
+                <surname>Villain</surname>
+                <forename>Pierre</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="false" intervention="">
+              <person>
+                <persName>
+                  <surname>Sevin</surname>
+                  <forename>François Marie</forename>
+                </persName>
+                <occupation>chevalier de 'lun des ordres du roi seigneur des Charies, comme tuteur de François Marie Sevin son fils</occupation>
+              </person>
+              <status>owner</status>
+              <expert ref="#xpr0086"/>
+            </party>
+            <party role="opponent" presence="false" intervention="">
+              <person>
+                <persName>
+                  <surname>Hanel</surname>
+                  <forename/>
+                </persName>
+                <occupation>ancien contrôleur des rentes de l'hôtel de ville</occupation>
+              </person>
+              <status>tenant</status>
+              <expert ref="#xpr0220"/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <agreement type="disagreement">Désaccord</agreement>
+          <opinion ref="">tout transcrire ?
+renvoit à</opinion>
+          <arrangement/>
+          <estimate/>
+          <fees detail="false">
+            <total l="" d="" s=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="" s="" d=""/>
+            <expense type="expert" l="6" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group=""/>
+        <analysis>f. 1r° "aux fins de l'exploit du quinze uin 1696 tendnat à ce que entre autre choses que ledit sieur Hamel fut tenu de remttre le degré de sa maison estnt sur le devant de celle dudit sieur Sevin audit nom en la frome et manière qu'il estoit lors du procès verbal partans rapport et visitte de l'estat de la totallité desdites maisons fait en mil cint cent qautre vingt quinze (1595) pour partvenir à ce partage du devant et du derrier de ladite maison ledit rapport et visitte estant annexé au partage qu ifut fait d'icelle le 18e juillet 1595 qui est ès mains dudit Hamel qui sera tenu de rapporter à Me Blanchard notaire à l'effet que ledit sieur Sevin audit nom en puisse faire tirer une coppie colationnée ; ce faisant il seroit tenu de rétablir l'allée comme elle estoit lors dudit partage tant de largeur longueur et haulteur et de faire oster la coquille du degré de sa maison et le poitrail qui soutient ledit degré, otter pareillement les veues dudit degré de sadite maison qui donne lieu aux locattaires dudit Hanel de jetter toutes sortes d'immondices dans la cour dudit sieur Sevin aud nom et que ledit siur Hanel sera responsable des loges de la maison dudit sieur Sevon audit nom et condamner à ses dommages intérest et dépens d'une part,</analysis>
+        <noteworthy>antériorité : pv de partage du 18 juillet 1595 par les sieurs (lacune) et Jean martin jurés experts</noteworthy>
+      </description>
+    </expertise>

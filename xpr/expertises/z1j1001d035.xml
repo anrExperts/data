@@ -1,0 +1,272 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1001d035">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>to revise</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent xmlns="eac">
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-06-15T15:34:54.934+02:00">2021-06-15T15:34:54.934+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateKeywordsAttr_files.xqy/BaseX</agent>
+            <eventDescription>Ajout des @value pour les mots clés (estates).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2017-10-01T12:00:00">2017-10-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1001</idno>
+        <idno type="item">035</idno>
+        <facsimile from="0359" to="0415"/>
+        <physDesc>
+          <extent sketch="false">57</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-04-16" type="province"/>
+          <date when="1776-04-17" type="province"/>
+          <date when="1776-04-17" type="province"/>
+          <date when="1776-04-18" type="province"/>
+          <date when="1776-04-19" type="province"/>
+          <date when="1776-04-26" type="province"/>
+        </sessions>
+        <places>
+          <place type="province">
+            <address/>
+            <complement>Château moulins et dépendances</complement>
+            <city>Dampierre en Artois</city>
+            <district/>
+            <owner/>
+          </place>
+        </places>
+        <categories>
+          <category type="assessment">Décrire et évaluer les travaux à venir</category>
+          <designation rubric="true">Visitte de réparations à faire au Château, moulins, eaux et dépendances de Dompois en Artois, à la requeste des sieurs Champion et Hommanel, fermiers ; M. Derouges, expert et Wallois et Délicourt, arbitres.</designation>
+        </categories>
+        <procedure>
+          <framework type="b2a">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Grande chambre du parlement</orgName>
+              <date when="1775-09-22"/>
+              <date when="1776-01-08"/>
+            </sentence>
+          </sentences>
+          <case>mauvais état dans le cadre d'un fermage accordé à Champion et Hommarel</case>
+          <objects>
+            <object type="territory">Domaine, terres, fief</object>
+            <object type="other">château, moulins</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0082" context="primary" appointment="appointed">
+              <title>architecte expert des bâtiments à Paris</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0061">
+              <persName>
+                <surname>Lecoeur</surname>
+                <forename>Jean Clair (substitué à CE Liébault de Laneuville)</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="opponent" presence="false" intervention="true">
+              <person>
+                <persName>
+                  <surname>Champion</surname>
+                  <forename>Louis François Marie</forename>
+                </persName>
+                <occupation>notaire royale à Abbeville, fermier, réisseurs de la terre de Dampierre d'autre part</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Hommassel</surname>
+                  <forename>Philippe Marcel</forename>
+                </persName>
+                <occupation>maître teinturier à Abbeville, fermier</occupation>
+              </person>
+              <status>tenant</status>
+              <expert ref="#xpr0082"/>
+              <prosecutor>
+                <persName>
+                  <surname>Macqueron</surname>
+                  <forename>Louis Maximilien</forename>
+                </persName>
+              </prosecutor>
+            </party>
+            <party role="opponent" presence="false" intervention="true">
+              <person>
+                <persName>
+                  <surname>D'Argouges</surname>
+                  <forename>Charles Louis</forename>
+                </persName>
+                <occupation>chevalier marquis de Rannes [Rânes] seigneur dudit lieu de Dampierre encore d'autre part</occupation>
+              </person>
+              <status>owner</status>
+              <expert ref="#xpr0082"/>
+              <representative>
+                <persName>
+                  <surname>Barrier</surname>
+                  <forename>Pierre</forename>
+                </persName>
+                <occupation>intendant du marquis</occupation>
+              </representative>
+            </party>
+            <party role="petitioner" presence="true" intervention="true">
+              <person>
+                <persName>
+                  <surname>Bocquet</surname>
+                  <forename>Charles</forename>
+                </persName>
+                <occupation>meunier du moulin de Dampierre</occupation>
+              </person>
+              <status>tenant</status>
+              <expert ref="#xpr0082"/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname>Wallois</surname>
+                <forename>Pierre Alexandre</forename>
+              </persName>
+              <occupation>entrepreneur des fortifications de la ville d'Abbeville, arbitre nommé de la part desdits sieurs Champion et Hommanel, à l'effet de procéder conjointement avec nous expert à la vistte du châtau, moulin et dépendances</occupation>
+            </craftman>
+            <craftman>
+              <persName>
+                <surname>Delicourt</surname>
+                <forename>Louis</forename>
+              </persName>
+              <occupation>meunier à l'huille, arbitre nommé par Charles Bosquet pour procéder conjointement avec l'expert la visite des réparations à faire</occupation>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0082">• Pour De Vonges, les réparations à faire sont estimées à 3470 l.
+• Il doit être tenu compte à Champion de 607 l. 1 s., réglées par lui pour les réparations urgentes.
+• Les dommages et intérêts sont estimés
+pour le défaut de flottage des prés 200 l.
+pour la récolte de cette année 500 l.
+dus au fermier à cause du défaut de
+grange à foin 150 l.
+dus au moulin à blé 200 l.
+dus pour la perte du poisson 200 l.
+pour raison du chomage du moulin à huile
+avis différents
+Delicourt
+moulin à huile 3680 l.
+moulin à papier 1462 l.
+De Vonges et Wallois
+moulin à huile 1900 l.
+moulin à papier 1200 l.</opinion>
+          <arrangement/>
+          <agreement type="conclusion">Conclusion</agreement>
+          <estimate l="" s="" d=""/>
+          <fees detail="true">
+            <fee type="papers" l="54" s="12" d=""/>
+            <fee type="expert" ref="#xpr0082" l="684" s="" d=""/>
+            <fee type="clerk" l="684" s="" d=""/>
+            <fee type="rolls" l="242" s="" d=""/>
+            <fee type="prosecutors" l="225" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="other" l="198" s="" d="">Arbitre Wallois</fee>
+            <fee type="other" l="216" s="" d="">Arbitre Delicourt</fee>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="2303" s="12" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="131" s="" d=""/>
+            <expense type="expert" l="117" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group="estates">
+          <term value="a4">Biens vacants</term>
+        </keywords>
+        <keywords group="procedure">
+          <term value="b6">Titre (de propriété)</term>
+        </keywords>
+        <keywords group="contract">
+          <term value="c10">Fermage</term>
+        </keywords>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis>arbitres
+Lecture faite du procès verbal en l'hôtel "par lequel ils auroient nommé savoir lesdits sieurs Champion et Hommarel la personne de nous Wallois, de la part dudit sieur marquis de Rennes nous de Vouges et de l part dudit Bocquet la personne de moy Delicourt pour experts à l'effet (f. 2v°) de procéder aux opérations ordonnées par lesdits arêts, à las suite duquel procès verbal est l'ordonnance de monsieur de Glatigny. 
+Par laquelle ordonnance il a donné acte aux parties de leurs comparution d'une réquisition réserve et protestations par elles faites audit procès verbal et des nominations par elles faites de nos personnes pour experts, à la charge par nous Wallois et Delicourt de prêter serment par devant monsieur le lieutenant général de la Sénéchaussée de Ponthieu sceant à Abbeville en la manière accoutumée, comme aussi à al charge de payer par le sieur marquis de Rannes les frais et vacations de nous de Vouges."</analysis>
+        <noteworthy>Partis de Paris le vendredi, arrivés le mardi matin
+-Wallois, Pierre Alexandre, entrepreneur des fortifications de la ville d’Abbeville, arbitre nommé par Champion et Hommassel, « pour procéder conjointement avec nous expert à la visitte du château moulin et dependances »
+-Delicourt, Louis, meunier à l’huile, arbitre nommé par Charles Marquet meunier des moulins de Dompierre
+Constater l’état et les réparations à faire au château, au moulin et aux dépendances. L’arrêt du 22 septembre 1776 autorise Marquet, meunier, à faire au moulin les réparations nécessaires, après la visite et le constat de son état.
+M. de Glatigny conseiller en la cour commissaire nommé en cette par parti le 9 février 1766
+
+f. 4r° et suivant empêchement du greffier ordinaire de l'écritoire du siège présidial de Ponthieu, l'expert de PAris ne peut rie faire s'il n'y a pas un greffier des bâtiments de Paris créé par lois du mois de mai 1690, 1691et autres... 
+arrêt du conseil du 1er octobre 1743 édit du mois de septembre 1691 entre Lamoignon de Montrevault et le sieur Pinard et Quirat jurés expert des bâtiments de Paris(f. 5r°) à retranscire,</noteworthy>
+      </description>
+      <comment>M. De Vonges 111 heures de travail à 4 l.
+par heure 444 l.
+9 jours de route et un dimanche à 24 l. 240 l.
+Dattes : toutes les vacations n'ont pas été relevées sur cette fiche (x19)
+
+Nombreuses interventions des parties. Expertise à lire en intégralité
+
+Créer les arbitres</comment>
+    </expertise>

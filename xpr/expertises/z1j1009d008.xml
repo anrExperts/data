@@ -1,0 +1,224 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1009d008">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-08-01T12:00:00">2020-08-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2017-10-01T12:00:00">2017-10-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1009</idno>
+        <idno type="item">008</idno>
+        <facsimile from="0065" to="0073"/>
+        <physDesc>
+          <extent sketch="false">9</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-11-07" type="province"/>
+          <date when="1777-01-18" type="paris"/>
+          <date when="1777-03-13" type="paris"/>
+        </sessions>
+        <places>
+          <place type="province">
+            <address/>
+            <complement>ruelle Le Gueret, conduisant au Mont-Valérien</complement>
+            <city>Suresnes</city>
+            <district/>
+            <owner/>
+          </place>
+          <place type="office">
+            <address/>
+          </place>
+        </places>
+        <categories>
+          <category type="settlement">Départager</category>
+          <designation rubric="true">Visitte et estimation d'une maison et de deux arpents de terre à Clichy la Garenne, de la succession de Jean Jacques Chapelle, me jardinier, à la requeste de ses héritiers ; M. Taboureur, expert.</designation>
+        </categories>
+        <procedure>
+          <framework type="b2a">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Grande chambre du Parlement (arrêt)</orgName>
+              <date when="1776-09-07"/>
+            </sentence>
+          </sentences>
+          <case>réparations nécessaire à l’un des murs de la ruelle : constat par expert pour engager les frais nécessaires</case>
+          <objects>
+            <object type="wall">Mur(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0229" context="primary" appointment="appointed">
+              <title>architecte juré expert</title>
+            </expert>
+            <expert ref="#xpr0210" context="primary" appointment="appointed">
+              <title>architecte juré expert</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0061">
+              <persName>
+                <surname>Lecoeur</surname>
+                <forename>Jean Clair</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="true" intervention="true">
+              <person>
+                <persName>
+                  <surname>religieux bénédictins de l’abbaye royale de Saint-Germain-des-Prés</surname>
+                  <forename/>
+                </persName>
+                <occupation>seigneurs de Suresnes</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Carron</surname>
+                  <forename>Dom Armand Fidel Constant</forename>
+                </persName>
+                <occupation>celerier</occupation>
+              </person>
+              <status>owner</status>
+              <expert ref="#xpr0229"/>
+              <prosecutor>
+                <persName>
+                  <surname>Pepin</surname>
+                  <forename/>
+                </persName>
+              </prosecutor>
+            </party>
+            <party role="opponent" presence="true" intervention="true">
+              <person>
+                <persName>
+                  <surname>Lambert</surname>
+                  <forename>Guillaume </forename>
+                </persName>
+                <occupation>marchands plâtriers à Suresnes</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Chevalier</surname>
+                  <forename>Alexandre </forename>
+                </persName>
+                <occupation>marchands plâtriers à Suresnes</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Chevalier</surname>
+                  <forename>René</forename>
+                </persName>
+                <occupation>marchands plâtriers à Suresnes</occupation>
+              </person>
+              <status>builder</status>
+              <expert ref="#xpr0210"/>
+              <prosecutor>
+                <persName>
+                  <surname>Thiery</surname>
+                  <forename>Nicolas Hubert</forename>
+                </persName>
+              </prosecutor>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0229">« Replique de nous De Montlouis Il est à observer dans l’avis prolixe cy dessus que les vieilles citations et époques qu’il contient ne sont connues sans doute que du sieur Perrard, et auroit dû dire où il les a prises, d’ailleurs elles sont peu importantes à l’objet dont il s’agit elles ne changent rien à l’état de la ruelle contentieuse, et tout en disant que c’est un chemin public, il convient indirectement en raportant les détails de son peu de largeur, qu’il n’est pas fait pour y passer des voitures et en effet il ne peut estre qu’à l’usage des gens de pieds et bestes de somme La foule de mesures presque inintelligibles qu’il vient de raporter ne peut servir icy parce qu’elles n’ont pas été prises le jour de notre transport sur les lieux, il n’y a que celles par nous citées cy dessus qui puissent servir icy, pour ce qu’elles ont été prises contradictoirement et données par lui meme le sieur Perrard qui portoit la toise et les dictoit à nous De Montlouis, mais elles sont encore de peu de consequence, si ce n’est celles de sept pieds de largeur de la ruelle qu’il cite dans certains endroits, qui prouvent par là de son propre aveu que ladite ruelle est impraticable aux voitures Le glacis du mur des benedictins qu’il propose de suprimer pour élargir ledit chemin, n’a été fait qu’à cause de la degradation dudit chemin pour la fondation de ce mur, si il n’eut pas été enfoncé uniquement par le fait des platriers, ainsi que nous l’avons déjà dit, ce glacis deviendroit inutile, mais les voitures ayant enfoncé le chemin, il a fallu ce genre de construction qui devient indispensablement necessaire. La preuve ineluctable qu’il n’y a que les charettes qui sont cause de cet enfoncement, c’est que les clos à droite et à gauche qui recoivent également les eaux du ciel, sont restés dans leur état naturel, dont il n’y a que les voitures énormément chargées qui passent continuellement dans ledit chemin, qui l’ont labouré affouillé et excavé, et en ont fait une espece de canal qui reçoit les eaux des deux noues pour les porter plus loins, en est … que lesdites eaux, ainsi que nous l’avons édjà remarqué, augmentent cette degradation, parce que le terrain qui n’est qu’en sable mou, se trouvant labouré par lesdites voitures, les eaux qui font ravin la charrient et le portent au pied de la …, ainsi nous persistons dans tout ce que nous avons dit par ce que rien n’est plus conforme à la vérité, et avons signé »
+
+« Et nous Perrard ne ferons autre reponse à la replique cy dessus, sinon que nous persistons en notre avis cy susdit comme etant dans l’entière verité et conforme au local et avons signé »</opinion>
+          <opinion ref="#xpr0210">« Avis de nous Perrard La ruelle ou chemin qui fait l’objet des contestations entre Messieurs les religieux benedictins seigneurs de Suresnes et les plastriers du Mont Valerien, est un chemin public qui sert tant auxdits platriers qu’à tous les particuliers qui ont des terres à cultiver aux environs. Ce chemin est proprement un ravin qui reçoit les eaux du Mont Valerien par deux noues principales, nous l’avons mesuré dans la longueur du clos des benedictins en huit stations, reconnu qu’il contient cent quarante duex toises environ, dont la partie dans le bas et dans la longueur de quarante une toises trois pieds environ, il a été fait un glacis de mçaonnerie à commencer du chemin des Gendarmes de deux pieds de talud sur trois à quatre pieds de haut, en remontant jusqu’à l’extremité desdites quarante une toises trois pieds, le glacis à six pieds de haut sur trois pieds de talud, ce qui diminue d’autant la largeur de la ruelle ou chemin, ce glacis à été fait par les benedictins pour soutenir le mur de leur clos dans cette partie, dont les eaux qui descendent du Mont Valerien avec une grande rapidité, avoient affouillé, excavé et emporté les terres de la ruelle de quatre, cinq et six pieds plus bas que la fondation du mur… [description de l’état de la ruelle] Tel est l’état actuel dudit mur et chemin, de ses differentes largeurs et profondeur affouillé et excavé par les eaux qui descendent avec rapidité du Mont Valerien qui font de cet ancien chemin un ravin Ce chemin dans la longueur de vingt cinq à vingt six toises se trouve trop étroit pour que les voitures y puissent passer sans dégrader le glacis en maçonnerie qui est au pied du mur des benedictins, lequel s’avance de près de trois pieds dans ledit chemin. Si on le suprimoit il y auroit de la place pour la voiture et le chantier, ledit chemin seroit très praticable Ce ne sont point les charettes à platre qui ont fouillé et excavé ledit chemin, ce sont les eaux, ainsi que cela arrive dans tous les endroits où il y a des ravins Il y a environ quarante toises de long de murs écroulés ou prêts à s’écrouler, ainsi que notre confrere l’a rapporté, sur leur hauteur, lesquels murs couteront la somme de douze cent livres Il auroit été à propos de faire un plan figuré du local avec les profils des murs et terrein, on auroit vu d’un coup d’oeil la forme du local, et reconnu que le chemin reçoit les eaux des deux noues qui se reunissent à l’entrée du costé du Mont Valerien, c’est la seule cause de l’excavation et affouillement des terres dudit chemin, et pour y remédier il faudroit le ferrer en cailloux aux depens de qui il appartiendra. C’est l’avis de nous Perrard et avons signé »</opinion>
+          <arrangement/>
+          <agreement type="disagreement">Désaccord</agreement>
+          <estimate l="" s="" d=""/>
+          <fees detail="true">
+            <fee type="papers" l="12" s="12" d=""/>
+            <fee type="expert" ref="#xpr0229" l="42" s="" d=""/>
+            <fee type="expert" ref="#xpr0210" l="42" s="" d=""/>
+            <fee type="clerk" l="42" s="" d=""/>
+            <fee type="rolls" l="33" s="" d=""/>
+            <fee type="prosecutors" l="24" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="195" s="12" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="33" s="10" d=""/>
+            <expense type="expert" l="10" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis/>
+        <noteworthy/>
+      </description>
+    </expertise>

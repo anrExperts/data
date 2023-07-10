@@ -1,0 +1,223 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1003d019">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-07-01T12:00:00">2020-07-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2017-10-01T12:00:00">2017-10-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1003</idno>
+        <idno type="item">019</idno>
+        <facsimile from="0311" to="0331"/>
+        <physDesc>
+          <extent sketch="false">18</extent>
+          <appendices>
+            <appendice>
+              <type type="other">billet du greffier</type>
+              <extent>1</extent>
+              <desc/>
+              <note>billet, compte du greffier</note>
+            </appendice>
+          </appendices>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-05-22" type="province"/>
+          <date when="1776-05-23" type="province"/>
+          <date when="1776-05-24" type="paris"/>
+          <date when="1776-05-25" type="paris"/>
+        </sessions>
+        <places>
+          <place xml:id="id325d313" type="province">
+            <address/>
+            <complement>grande rue</complement>
+            <city>Châtenay</city>
+            <district/>
+            <owner>succession Le Carpentier</owner>
+          </place>
+          <place xml:id="id325d330" type="paris">
+            <address>
+              <street>cloître Saint-Merri</street>
+              <buildingNumber/>
+            </address>
+            <complement/>
+            <parish/>
+            <owner>succession Le Carpentier</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="estimation">Estimer la valeur des biens</category>
+          <designation rubric="true">Visitte et estimation de maisons, scises à Chastenay et à Paris, apartenante au sieur et dame Le Carpentier : M. Taboureur, expert.</designation>
+        </categories>
+        <procedure>
+          <framework type="b2b">L’institution est saisie dans le cadre d’une procédure (l’institution nomme un ou deux experts)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Châtelet, lieutenant civil (sentence)</orgName>
+              <date when="1776-04-19"/>
+            </sentence>
+          </sentences>
+          <case>Succession Carpentier / liquidation.</case>
+          <objects>
+            <object type="house">Maison(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0250" context="primary" appointment="court-appointed">
+              <title>architecte expert juré</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0072">
+              <persName>
+                <surname>Laurent</surname>
+                <forename>Jean Baptiste François</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="true" intervention="true">
+              <person>
+                <persName>
+                  <surname>Le Carpentier</surname>
+                  <forename>Philippe Armand</forename>
+                </persName>
+                <occupation>chef de fruiterie de la reine</occupation>
+              </person>
+              <status>heir</status>
+              <expert ref="#xpr0250"/>
+            </party>
+            <party role="opponent" presence="true" intervention="true">
+              <person>
+                <persName>
+                  <surname>Bigot</surname>
+                  <forename>René Antoine</forename>
+                </persName>
+                <occupation>marchand épicier à Paris, au nom et comme tuteur ad hoc deLe Carpentier, Marie Louise Victoire, fille mineure deLe Carpentier, Philippe Armandet deBigot, Victoire Charlotte(tuteur ad hoc dans tous les cas où la mineure aurait des intérêts opposés à ceux de son père)</occupation>
+              </person>
+              <status>heir</status>
+              <expert ref="#xpr0250"/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0250">1/ Maison à Châtenay
+« Nous estimons laditte maison bourgeoise cours et jardins la basse cour qui en est separée avec ses batimens terreins et jardin, la demy lune au devant de la maison bourgeoise et la petite maison particuliere qui y joint ainsy que le tout se poursuit et comporte actuellement eu égard à la situation de ladite maison au village de Fontenay [sic] près Paris et d’une grande route, à la qualité du sol du terrein et jardin et de sa plantation, à la nature et qualité des batimens aux reparations qui sont à y faire, notamment au corps de logis principal de la maison bouregoise, la somme de trente mille livres
+A la charge des cens et droits seigneuriaux seulement qui sont les seules charges dont ladite maison et dependances sont tenues, cy… 30 000 l. »
+2/ Maison à Paris
+« D’après toutteslesdites operations nous estimons laditte maison ainsy qu’elle se poursuit comporte et étend de toutes parts y compris le cabinet d’aisance et chambre qui s’etendent du coté de la petite rue au dessus des batimens de la maison du sieur Petitjean y compris aussy les servitudes de rue sur les maisons desdits sieurs Petitjean et et Laborde, eu égard à l’état actuel de ladite maison, au quartier où elle est située, au genre de distribution peu commode à son ancienneté et aux reparations qui sont à y faire à ce qu’elle peut produire de revenu et au cours du tems present la somme de dix neuf mille livres
+A la charge du droit de proprieté de passage de porte cochere qui apartient au sieur Petitjean sur l’emplacement de la presente maison et sans autres charges que les droits seigneuriaux cy… 19 000 l. »</opinion>
+          <arrangement/>
+          <agreement type="conclusion">Conclusion</agreement>
+          <estimate l="" s="" d=""/>
+          <estimates>
+            <place ref="#id325d313">
+              <appraisal l="30000" s="" d="">
+                <desc>une maison bourgeoise</desc>
+              </appraisal>
+            </place>
+            <place ref="#id325d330">
+              <appraisal l="19000" s="" d="">
+                <desc>une mason</desc>
+              </appraisal>
+            </place>
+          </estimates>
+          <fees detail="true">
+            <fee type="papers" l="15" s="" d=""/>
+            <fee type="expert" ref="#xpr0250" l="132" s="" d=""/>
+            <fee type="clerk" l="132" s="" d=""/>
+            <fee type="rolls" l="60" s="" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="207" s="" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="" s="" d=""/>
+            <expense type="expert" l="18" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis>Contrat d’acquisition de la maison de Châtenay par les époux Carpentier : 28 février 1772 devant Mes Legras et Dupré</analysis>
+        <noteworthy/>
+      </description>
+    </expertise>

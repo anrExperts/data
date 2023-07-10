@@ -1,0 +1,200 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j581d019">
+  <meta/>
+  <control>
+    <maintenanceStatus>revised</maintenanceStatus>
+    <publicationStatus/>
+    <localControl localType="detailLevel">
+      <term>completed</term>
+    </localControl>
+    <maintenanceHistory>
+      <maintenanceEvent>
+                <eventType>revised</eventType>
+                <eventDateTime standardDateTime="2022-03-29T16:07:13Z">2022-03-29T16:07:13Z</eventDateTime>
+                <agentType>human</agentType>
+                <agent>llosserand</agent>
+                <eventDescription>rvpcd</eventDescription>
+            </maintenanceEvent>
+          <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateOpinionRef_files.xqy/BaseX</agent>
+        <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateRefValues_files.xqy/BaseX</agent>
+        <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+        <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>revised</eventType>
+        <eventDateTime standardDateTime="2020-11-01T12:00:00">2020-11-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>JH</agent>
+        <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>retroconverted</eventType>
+        <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>ead2xpr.xsl/Saxon9</agent>
+        <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>created</eventType>
+        <eventDateTime standardDateTime="2017-04-01T12:00:00">2017-04-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>llosserand</agent>
+        <eventDescription>Création de la fiche.</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+  </control>
+  <sourceDesc>
+    <unitdate>1726</unitdate>
+    <idno type="unitid">Z1J581</idno>
+    <idno type="item">019</idno>
+    <facsimile from="0307" to="0317"/>
+    <physDesc>
+      <extent sketch="false">7</extent>
+      <appendices>
+        <appendice>
+          <type type="petition">Requête</type>
+          <extent>2</extent>
+          <desc>Requête présentée à monseigneur d'Angervillers, conseiller d'Etat et intendant de la généralité de Paris, non datée. A la suite, se trouve la réponse, datée du 4 juin 1726.</desc>
+          <note/>
+        </appendice>
+      </appendices>
+    </physDesc>
+  </sourceDesc>
+  <description>
+    <sessions>
+      <date when="1726-06-14" type="province"/>
+    </sessions>
+    <places>
+      <place type="province">
+        <address/>
+        <complement>presbytère</complement>
+        <city>Bonneuil</city>
+        <district/>
+        <owner/>
+      </place>
+    </places>
+    <categories>
+      <category type="assessment">Décrire et évaluer les travaux à venir</category>
+      <designation rubric="true">Visitte de réparations et devis estimatif de celles au presbitaire de Bonneuil ; M. Fournier,expert</designation>
+    </categories>
+    <procedure>
+      <framework type="b2">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+      <origination type="institution">Une institution</origination>
+      <sentences>
+        <sentence>
+          <orgName>lieutenant civil</orgName>
+          <date when="1726-06-04"/>
+        </sentence>
+      </sentences>
+      <case>le presbytère étant en très mauvais état, les paroissiens demandent un expert à l'intendant de la généralité pour faire établir un état du bâtiment et devis estimatif des réparations à y faire.</case>
+      <objects>
+        <object type="other">presbytère</object>
+      </objects>
+    </procedure>
+    <participants>
+      <experts>
+        <expert ref="#xpr0111" context="primary" appointment="court-appointed">
+          <title>architecte juré du roi expert bourgeois et entrepreneur de bâtiments à Paris</title>
+        </expert>
+      </experts>
+      <clerks>
+        <clerk ref="#clrk0033">
+          <persName>
+            <surname>Callou</surname>
+            <forename>Antoine-Charles</forename>
+          </persName>
+        </clerk>
+      </clerks>
+      <parties>
+        <party role="petitioner" presence="false" intervention="false">
+          <person>
+            <persName>
+              <surname>Habitants et paroissiens de Bonneuil</surname>
+              <forename/>
+            </persName>
+            <occupation/>
+          </person>
+          <status/>
+          <expert ref="#xpr0111"/>
+          <representative>
+            <persName>
+              <surname>Foctin</surname>
+              <forename>Louis</forename>
+            </persName>
+            <occupation>syndic</occupation>
+          </representative>
+          <representative>
+            <persName>
+              <surname>Monchi</surname>
+              <forename>Jacques</forename>
+            </persName>
+            <occupation/>
+          </representative>
+          <representative>
+            <persName>
+              <surname>Frenet</surname>
+              <forename>Antoine</forename>
+            </persName>
+            <occupation>marguilliers en charge dud. Bonneuil</occupation>
+          </representative>
+        </party>
+      </parties>
+      <craftmen>
+        <craftman>
+          <persName>
+            <surname/>
+            <forename/>
+          </persName>
+          <occupation/>
+        </craftman>
+      </craftmen>
+    </participants>
+    <conclusions>
+      <opinion ref="#xpr0111">Il est fait un devis estimatif destiné à être envoyé à l'intendant de Paris
+"C'est l'estat des réparations nécessaires à faire audit presbytère et le devis estimatif de chacune nature d'icelles sauf à vous monseigneur d'ordonner sur le tout suivant votre prudence accoustumée. Fait par nous..."</opinion>
+      <arrangement/>
+      <agreement type="conclusion">Conclusion</agreement>
+      <estimate l="" s="" d=""/>
+      <fees detail="false">
+        <total l="" s="" d=""/>
+      </fees>
+      <expenses mentioned="false"/>
+    </conclusions>
+    <keywords group="estates"/>
+    <keywords group="procedure"/>
+    <keywords group="contract">
+          <term value="c2">Devis et marché</term>
+        </keywords>
+    <keywords group="encumbrance"/>
+    <keywords group="law"/>
+    <keywords group="measurement"/>
+    <keywords group="repairs"/>
+    <keywords group="guarantees"/>
+    <keywords group="responsability"/>
+    <keywords group="ownership"/>
+    <keywords group="value"/>
+    <keywords group="neighbourhood"/>
+    <keywords group="disorder"/>
+    <keywords group="transformation"/>
+    <analysis>Cause : [f. 1r°] « les habitans et communauté de la paroisse de Bonneuil-en-France, remontrant que le presbitère de Bonneuil est en si mauvais état que le sr curé ne peut l'habiter et que s'il n'estoit promptement réparé il tomberoit dans une plus grande ruine et jetteroit la communauté qui est chargée des réparations à y faire dans des dépenses beaucoup considérables, pour quoy ils ont requis qu'il vous plus ordonner que la délibération par eux prise le dix neuf mai dernier seroit exécutée en conséquence, que par tel expert qu'il vous plairoit, il seroit, en présence du sindic de la communauté et des marguilliers en charge de l'église de Bonneuil, procédé à la visite du presbytère et Bonneuil et dépendances ; lequel expert dresseroit procès verbal des réparations et ajustements à faire aud. presbitère et dépendances et devis estimatif desd. réparations, pour led. procès-verbal et devis estimatif fait et rapporté estre ordonné ce qu'il apartiendra »
+
+             Réponse à la requête adressée à l'intendant de Paris : « Veu la présente requête et l'acte de délibération y énoncé. Nous ordonnons que par le sr. Edme Fourrier, architecte juré expert, il sera, en la présence du sindic de la paroisse de Bonneuil et des marguilliers en charge de l'église, procédé à la visite du presbitère et dressé un devis estimatif des réparations qui seront jugées nécessaires et à la charge des habitans pour ce fait en led. devis à nous raporté être pourvu. Fait à Paris le 4 juin 1726. »
+                Assistent également à la visite le curé, de la Chapelle, Jean, et Chavigneau, Nicolas, habitant.</analysis>
+    <noteworthy/>
+  </description>
+</expertise>

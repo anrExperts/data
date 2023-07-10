@@ -1,0 +1,231 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1009d052">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-08-01T12:00:00">2020-08-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2017-10-01T12:00:00">2017-10-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1009</idno>
+        <idno type="item">052</idno>
+        <facsimile from="0572" to="0584"/>
+        <physDesc>
+          <extent sketch="false">12</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-11-27" type="province"/>
+          <date when="1776-12-02" type="province"/>
+          <date when="1776-12-02" type="province"/>
+        </sessions>
+        <places>
+          <place xml:id="id204d290" type="province">
+            <address/>
+            <complement/>
+            <city>Choisy-le-Roi</city>
+            <district/>
+            <owner/>
+          </place>
+          <place xml:id="id204d305" type="province">
+            <address/>
+            <complement>pièces de terre</complement>
+            <city>Orly, Thiais et Vitry</city>
+            <district/>
+            <owner/>
+          </place>
+        </places>
+        <categories>
+          <category type="estimation">Estimer la valeur des biens</category>
+          <designation rubric="true">Visitte et estimation des maisons et terres sises à Choisy le Roy, Vitry, Thiais et Orly, de la succession de la femme d'Henry Poupart ; M. Taboureur, expert et Mr Jaubert, arbitre.</designation>
+        </categories>
+        <procedure>
+          <framework type="b2b">L’institution est saisie dans le cadre d’une procédure (l’institution nomme un ou deux experts)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Bailliage de Choisy-le-Roi (sentence)</orgName>
+              <date when="1776-11-14"/>
+            </sentence>
+          </sentences>
+          <case>Succession Poupart / licitation</case>
+          <objects>
+            <object type="plot">Terrain(s)</object>
+            <object type="house">Maison(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0250" context="primary" appointment="court-appointed">
+              <title>architecte juré expet des bâtiments à Paris</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0069">
+              <persName>
+                <surname>Beudot</surname>
+                <forename>Simon</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="true" intervention="true">
+              <person>
+                <persName>
+                  <surname>Berney</surname>
+                  <forename>Joachim</forename>
+                </persName>
+                <occupation>comme tuteur de Lemaire, Henriette, son épouse, héritière des quatre … de Lemaire, Marie Catherine, sa sœur, à son décès femme de Poupart, Henry, secrétaire du premier architecte du roi à Versailles</occupation>
+              </person>
+              <status>heir</status>
+              <expert ref="#xpr0250"/>
+              <prosecutor>
+                <persName>
+                  <surname>Brice</surname>
+                  <forename>Gilles</forename>
+                </persName>
+              </prosecutor>
+            </party>
+            <party role="opponent" presence="true" intervention="true">
+              <person>
+                <persName>
+                  <surname>Poupart</surname>
+                  <forename>Jacques</forename>
+                </persName>
+                <occupation>employé dans les bâtiments du roi, au nom et comme tuteur de Poupart, Jacques Louis et de Poupart, Henry, enfants mineurs de son mariage avec Belache, Marie Geneviève son épouse</occupation>
+              </person>
+              <status>heir</status>
+              <expert ref="#xpr0250"/>
+              <prosecutor>
+                <persName>
+                  <surname>Bertier</surname>
+                  <forename>Jean Joseph</forename>
+                </persName>
+              </prosecutor>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0250">« Nous estimons la maison dont est question ainsy qu’elle sepoursuit comporte et étend de touttes parts, eut égard au lieu où elle est scituée, à l’estendue du terrain et des batiments qui la composent, à l’avantage de ses deux issues sur deux rues differentes ; à l’état actuel des batiments, aux reparations qui sont à y faire, à ce que ladite maison peut produire et au cours du temps present la somme de neuf mille livres à la charge d’acquitter comme par le passé moitié de la rente de quarante livres due solidairement avec la maison voisine à la fabrique de Choisy, d’acquitter les cens et droit seigneuriaux et touttes autres charges, cy… 9 000 l. 
+Pour satisfaire au requisitoire qui nous a été fait par ledit sieur Bernay en notre premiere vacation nous observons que par acte de partage des biens de la succession du sieur … et de dlle Marie Martin son épouse passé devant Me Dutatre qui en a gardé la minutte et son confrere notaires à Paris le onze janvier mil sept cent cinquante cinq, la presente maison a été divisée de celle voisine à gauche à la charge que le mur mitoyen separant les cours desdites maisons resteroit en la hauteur qu’il étoit alors et qu’il est encore actuellement… 
+Notre avis au contraire est que cette servitude ainsy conservée ne peut qu’estre onereuse ausdites deux maisons et en diminuer la valeur 
+Enfin nous avons fait les calculs necessaires pour connoitre la valeur des differentes pieces de terre, et d’après le resultat desdits calculs, nous les estimons ensemble eut égard au grand nombre de pieces qui les composent qui en multiplie les divisions, et à la qualité de la terre des differents lieux où elles sont situées, au genre de culture dont elles sont susceptibles, la plus grande partie en pepiniere, à ce qu’elles peuvent produire au cours du temps present, valoir la somme de trois mille livres à la charge des cens et droits seigneuriaux et de toutes autres qui pourraient estre dues cy… 3 000 l. 
+Telle est Monsieur la visitte par nous faitte de la maison et des terres dont il s’agit en execution de votre sentence 
+Notre avis sur l’impossibilité de partager lesdits biens entre les parties, et sur leur valeur ; vous referant sur le tout Monsieur 
+Fait par nous expert et arbitre susdits les jours mois et an que dessus, et après avoir vacqué à tout ce que dessus par double vacation conformement à la requisition des parties en notre premiere vacation nous nous sommes retiré en notre domicile à Paris et à Choisy »</opinion>
+          <arrangement/>
+          <agreement type="conclusion">Conclusion</agreement>
+          <estimate l="" s="" d=""/>
+          <estimates>
+            <place ref="#id204d290">
+              <appraisal l="9000" s="" d="">
+                <desc>une maison</desc>
+              </appraisal>
+            </place>
+            <place ref="#id204d305">
+              <appraisal l="3000" s="" d="">
+                <desc>piècecs de terre</desc>
+              </appraisal>
+            </place>
+          </estimates>
+          <fees detail="true">
+            <fee type="papers" l="15" s="2" d=""/>
+            <fee type="expert" ref="#xpr0250" l="72" s="" d=""/>
+            <fee type="clerk" l="72" s="" d=""/>
+            <fee type="rolls" l="86" s="" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="other" l="[72]" s="" d="">arbitre</fee>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="245" s="2" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="60" s="10" d=""/>
+            <expense type="expert" l="12" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis># arbitre</analysis>
+        <noteworthy>Jaubret, Paul, inspecteur des bâtiments du roi à Choisy-le-Roi, arbitre nommé par les parties
+détails sur la nominatio des experts : Taboureur est nommé avec l'expert Laurent, , mais le bailliage "restreint" à Taboureur seul.
+plus loin sur la même page est nommé "conjointement avec l'expert Jobert, autre expert nommé par ledit sieur Jacques Poupart ou séparément en la manière accoutumée" (f. 2r°)
+
+L'arbitre est payé 72 livres mais il fait ses vacations gratis</noteworthy>
+      </description>
+    </expertise>

@@ -1,0 +1,234 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j578d042">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-10-01T12:00:00">2020-10-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2016-10-26T12:00:00">2016-10-26T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>RB</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1726</unitdate>
+    <idno type="unitid">Z1J578</idno>
+        <idno type="item">042</idno>
+        <facsimile from="0888" to="0900"/>
+        <physDesc>
+          <extent sketch="false">18</extent>
+          <appendices>
+            <appendice>
+              <type type="proxyNA">Pouvoir/procuration (acte notarié)</type>
+              <extent>2</extent>
+              <desc/>
+              <note/>
+            </appendice>
+          </appendices>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1726-01-31" type="paris"/>
+          <date when="1726-02-05" type="paris"/>
+          <date when="1726-02-05" type="paris"/>
+          <date when="1726-02-09" type="paris"/>
+          <date when="1726-02-12" type="paris"/>
+        </sessions>
+        <places>
+          <place xml:id="id175d261" type="paris">
+            <address>
+              <street>Rue Saint-Antoine [Voie actuelle]</street>
+              <buildingNumber/>
+            </address>
+            <complement>près de la rue de Fourcy</complement>
+            <parish/>
+            <owner>succession Séguier</owner>
+          </place>
+          <place xml:id="id175d280" type="paris">
+            <address>
+              <street>Rue Saint-Antoine [Voie actuelle]</street>
+              <buildingNumber/>
+            </address>
+            <complement>maison attenante à la précédente</complement>
+            <parish/>
+            <owner>succession Séguier</owner>
+          </place>
+          <place xml:id="id175d299" type="paris">
+            <address>
+              <street>rue Percée</street>
+              <buildingNumber/>
+            </address>
+            <complement>maison attenante à la précédente</complement>
+            <parish/>
+            <owner>succession Séguier</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="estimation">Estimer la valeur des biens</category>
+          <designation rubric="true">Visite, prisée et estimation de plusieurs maisons</designation>
+        </categories>
+        <procedure>
+          <framework type="a">Commun accord des parties</framework>
+          <origination type="parties">Les parties</origination>
+          <sentences>
+            <sentence>
+              <orgName/>
+              <date when="1726-01-02"/>
+            </sentence>
+          </sentences>
+          <case>Succession de Claude Alexandre Séguier</case>
+          <objects>
+            <object type="house">Maison(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0232" context="primary" appointment="appointed">
+              <title>architecte juré du roi expert bourgeois de Paris</title>
+            </expert>
+            <expert ref="#xpr0111" context="primary" appointment="appointed">
+              <title>juré du roi expert entrepreneur de bâtiments à Paris</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0029">
+              <persName>
+                <surname>Quirot</surname>
+                <forename>Jacques</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="" intervention="">
+              <person>
+                <persName>
+                  <surname>Séguier</surname>
+                  <forename>Louis Anne</forename>
+                </persName>
+                <occupation>conseiller du roi, donataire de défunt Séguier, Claude Alexandre, son père</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Séguier</surname>
+                  <forename>François</forename>
+                </persName>
+                <occupation>chevalier, seul et unique héritier de son père pour l'autre moitié</occupation>
+              </person>
+              <status>heir</status>
+              <expert ref=""/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="">"Ladite maison ainsy qu'elle se poursuit et comporte tenant d'une part à une maison appartenante aux Célestins de Paris d'autre à la maison cy après déclarée d'un bout par derrière à [blanc] …, laquelle nous avons prisé et estimé à la somme de 35 000 l. eu esgard à la nature et quallité des bastimens qui la composent, que cette maison n'a aucun bastiment sur rue eu esgard aux servitudes qui sont sur icelle et au passage de porte cochere qu'elle a au rez de chaussée du bastimens de devant appartenant à Monsieur de Saint Brisson et à la charge du cens et droits seigneuriaux seullement et au cours du temps présent"
+"La maison ainsy qu'elle se poursuit et comporte … nous avons prisé et estimé à la somme de 52000 l. eu esgard à la nature et qualité des bastimens qui la composent, à l'estendue de la place eu esgard aussy au cours du temps présent et à la charge du cens et droits seigneuriaux seullement cy… 52000 l."
+"Laquelle maison nous avons prisée et estimée à la somme de sept mil livres eu esgard à la nature et quallité des bastimens qui la composent, à son emplacement et à l'entretien des murs qui sont sur la rivière eu esgard aussy au cours du temps présent et à la charge du cens et droits seigneuriaux seullement cy… 7000 l."</opinion>
+          <arrangement/>
+          <agreement type="agreement">Accord</agreement>
+          <estimate l="94000" s="" d=""/>
+          <estimates>
+            <place ref="#id175d261">
+              <appraisal l="35000" s="" d="">
+                <desc>maison</desc>
+              </appraisal>
+            </place>
+            <place ref="#id175d280">
+              <appraisal l="52000" s="" d="">
+                <desc>maison</desc>
+              </appraisal>
+            </place>
+            <place ref="#id175d299">
+              <appraisal l="7000" s="" d="">
+                <desc>maison</desc>
+              </appraisal>
+            </place>
+          </estimates>
+          <fees detail="true">
+            <fee type="papers" l="5" s="7" d="6"/>
+            <fee type="expert" ref="#xpr0232" l="30" s="" d=""/>
+            <fee type="expert" ref="#xpr0111" l="30" s="" d=""/>
+            <fee type="clerk" l="30" s="" d=""/>
+            <fee type="rolls" l="9" s="15" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="105" s="2" d=""/>
+          </fees>
+          <expenses mentioned=""/>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis/>
+        <noteworthy/>
+      </description>
+    </expertise>

@@ -1,0 +1,261 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1004d039">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-07-01T12:00:00">2020-07-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2017-10-01T12:00:00">2017-10-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1004</idno>
+        <idno type="item">039</idno>
+        <facsimile from="0424" to="0432"/>
+        <physDesc>
+          <extent sketch="false">5</extent>
+          <appendices>
+            <appendice>
+              <type type="petition">Requête</type>
+              <extent>1</extent>
+              <desc/>
+              <note/>
+            </appendice>
+          </appendices>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-06-14" type="paris"/>
+          <date when="1776-06-14" type="paris"/>
+        </sessions>
+        <places>
+          <place xml:id="id323d310" type="paris">
+            <address>
+              <street>Rue des Deux-Ponts</street>
+              <buildingNumber/>
+            </address>
+            <complement>île Notre-Dame</complement>
+            <parish/>
+            <owner/>
+          </place>
+        </places>
+        <categories>
+          <category type="estimation">Estimer la valeur des biens</category>
+          <designation rubric="true">Visitte et estimation d'une maison, rue des Deux Ponts, Isle Notre Dame, de la succession Gilbert ; M. Bleve, expert.</designation>
+        </categories>
+        <procedure>
+          <framework type="b2b">L’institution est saisie dans le cadre d’une procédure (l’institution nomme un ou deux experts)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Châtelet, lieutenant civil (ordonnance)</orgName>
+              <date when="1776-04-25"/>
+            </sentence>
+          </sentences>
+          <case>Succession Gilbert, liquidation et partage (héritage grevé de substitution)</case>
+          <objects>
+            <object type="house">Maison(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0026" context="primary" appointment="court-appointed">
+              <title>architecte juré expert bourgeois des bâtiments à Paris</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0070">
+              <persName>
+                <surname>Le Sage</surname>
+                <forename>Charles Pierre</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="" intervention="">
+              <person>
+                <persName>
+                  <surname>Gilbert</surname>
+                  <forename>Louis</forename>
+                </persName>
+                <occupation>marchand mercier à Paris</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Gilbert</surname>
+                  <forename>Pierre Clément</forename>
+                </persName>
+                <occupation>maître farinier à Beaumont sur Oise</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Gilbert</surname>
+                  <forename>Jean Pierre</forename>
+                </persName>
+                <occupation>marchand à Beaumont sur Oise</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Valoire Charlotte </surname>
+                  <forename/>
+                </persName>
+                <occupation>filles majeures toutes deux lingères ; tous frères et sœurs, enfants de feu Gilbert, Jean Pierre, ancien marchand à Paris</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Gilbert</surname>
+                  <forename>Marie Julie</forename>
+                </persName>
+                <occupation>filles majeures toutes deux lingères ; tous frères et sœurs, enfants de feu Gilbert, Jean Pierre, ancien marchand à Paris</occupation>
+              </person>
+              <status>heir</status>
+              <expert ref="#xpr0026"/>
+              <representative>
+                <persName>
+                  <surname>Duhamel</surname>
+                  <forename>Jean Jacques</forename>
+                </persName>
+                <occupation>marchand orfèvre procureur de Gilbert, Jean Pierre</occupation>
+              </representative>
+              <representative>
+                <persName>
+                  <surname>Martaire, Jean</surname>
+                  <forename/>
+                </persName>
+                <occupation>officier du roi, procureur de Gilbert, Pierre Clément</occupation>
+              </representative>
+            </party>
+            <party role="petitioner" presence="" intervention="">
+              <person>
+                <persName>
+                  <surname>Moutier</surname>
+                  <forename>Pierre</forename>
+                </persName>
+                <occupation>prêtre curé, curateur à la substitution dont le défunt Gilbert, Jean Pierre a été grevé envers ses enfants par le testament de feu son père</occupation>
+              </person>
+              <status>heir</status>
+              <expert ref="#xpr0026"/>
+              <prosecutor>
+                <persName>
+                  <surname>Le Gros</surname>
+                  <forename>François</forename>
+                </persName>
+              </prosecutor>
+              <representative>
+                <persName>
+                  <surname>Le Gros</surname>
+                  <forename>François</forename>
+                </persName>
+                <occupation>marchand de vin, procureur deMoutier, Pierre</occupation>
+              </representative>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0026">"... fait attention à son état et consistance et distribution actuelle et aux maisons qui l’avoisinent, à la nature de sa construction, aux réparations qui sont à y faire, aux revenus qu’elle est susceptible de produire annuellement, à l’étendue de son emplacement qui contient environ 23 toises de superficie, à sa ( ?) au quartier où elle est scituée, nous avons d’après ça mis des prix particuliers tant au fond dudit terrain qu’à la superficie desdits bâtiments
+« Touttes considerations faittes nous prisons et estimons ladite maison à la charge du cens et des droits et devoirs seigneuriaux et aux cours du temps present la somme de … 13 650 l. 
+Telle est Monsieur la visitte par nous faitte de ladite maison depandant de la succession dudit sieur Jean Pierre Gilbert, de notre avis sur la valleur d’icelle suivant et aux termes de votre ordonnance et de notre avis aussy que l’impossibilité qu’il y a de la partager entre les proprietaires d’ycelle, vu leur nombre et les differentes parts que chacun d’eaux y aura deues aux termes de ladite requete à vous presentée, Monsieur, vous referant sur le tout d’en juger et ordonner suivant votre justice et prudence ordinaire. »</opinion>
+          <arrangement/>
+          <agreement type="conclusion">Conclusion</agreement>
+          <estimate l="13650" s="" d=""/>
+          <estimates>
+            <place ref="#id323d310">
+              <appraisal l="13650" s="" d="">
+                <desc>une maison</desc>
+              </appraisal>
+            </place>
+          </estimates>
+          <fees detail="true">
+            <fee type="papers" l="10" s="14" d=""/>
+            <fee type="expert" ref="#xpr0026" l="12" s="" d=""/>
+            <fee type="clerk" l="12" s="" d=""/>
+            <fee type="rolls" l="42" s="" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="76" s="14" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="19" s="10" d=""/>
+            <expense type="expert" l="" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis/>
+        <noteworthy/>
+      </description>
+    </expertise>

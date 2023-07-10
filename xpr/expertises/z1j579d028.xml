@@ -1,0 +1,196 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j579d028">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2023-05-12T16:21:14.938+02:00">2023-05-12T16:21:14.938+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateThirdPartyAgreement_db.xqy/BaseX</agent>
+        <eventDescription>Modification des valeurs admises pour le champ "dispositif de l'expertise" dans le cadre de tiers expertises.</eventDescription>
+      </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-10-01T12:00:00">2020-10-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2016-10-26T12:00:00">2016-10-26T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>RB</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1726</unitdate>
+    <idno type="unitid">Z1J579</idno>
+        <idno type="item">028</idno>
+        <facsimile from="0399" to="0403"/>
+        <physDesc>
+          <extent sketch="false">4</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1726-03-23" type="paris"/>
+        </sessions>
+        <places>
+          <place type="paris">
+            <address>
+              <street>Rue Pierre-au-Lard [Voie actuelle]</street>
+              <buildingNumber/>
+            </address>
+            <complement/>
+            <parish/>
+            <owner>de Montisambert</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="settlement">Départager</category>
+          <designation rubric="true">Visites de fosses d'aisance</designation>
+        </categories>
+        <procedure>
+          <framework type="b2a">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Lieutenant civil</orgName>
+              <date when="1726-02-20"/>
+            </sentence>
+          </sentences>
+          <case>expertise contradictoire des fosses d'aisance mitoyennes, à la suite d'une première expertise rendue le 25 septembre 1725, réalisée en raison de leur défectuosité.</case>
+          <objects>
+            <object type="cesspool">Fosse(s) d'aisance</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0112" context="primary" appointment="appointed">
+              <title>juré expert à Paris</title>
+            </expert>
+            <expert ref="#xpr0222" context="primary" appointment="appointed">
+              <title>juré expert à Paris</title>
+            </expert>
+            <expert ref="#xpr0183" context="third-party" appointment="unknown">
+              <title>tiers expert</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0033">
+              <persName>
+                <surname>Callon</surname>
+                <forename>Antoine Charles</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Boudon</surname>
+                  <forename>Perrine Louise Marguerite</forename>
+                </persName>
+                <occupation>veuve de Charles Hatte, chevalier seigneur de Montisambert, président trésorier de la généralité d'Alençon, et propriétaire de la maison.</occupation>
+              </person>
+              <status>owner</status>
+              <expert ref="#xpr0183"/>
+            </party>
+            <party role="opponent" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Gervais</surname>
+                  <forename>Léonard</forename>
+                </persName>
+                <occupation>aubergiste à Paris, propriétaire d'une maison joignant celle de la dame de Montisambert.</occupation>
+              </person>
+              <status>owner</status>
+              <expert ref="#xpr0183"/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0112">Nicolas Frémiot estime que « toutes les vuidanges qui se sont faittes de ladite fosse de madame Montisambert avec la dernière faitte duement doivent estre payez à frais communs desdites parties depuis qu'elles ont esté vuidées ensemble. Et à l'égard des murs que si ledit sieur Gervais veut continuer à vuider à frais communs ladite fosse de madame Montisambert, ils peuvent rester en l'estat qu'elles sont, nous ayant paru assez bon. Sinon et à faute de ce que lesdits mur et contremur seront démolis et reconstruits ensemble à communs frais des parties »</opinion>
+          <opinion ref="#xpr0222">Jean Planié est d'avis « que lesdits murs et contremurs peuvent rester en l'estat qu'ils sont, lesdites matières et urines ne [lui] paraissant point avoir suinté ny coulé »</opinion>
+          <opinion ref="#xpr0183">Le tiers-expert Jean-Baptiste Loir juge que « ledit sieur Gervais doit estre tenu de payer à ladite dame Montisambert la somme de trente livres pour la vuidange des urines et matières qui ont passées de saditte fosse dans celle de ladite dame Montisambert et qu'elle a fait enlever avec les matières et urines de sa fosse ».</opinion>
+          <arrangement/>
+          <agreement type="conclusion">Conclusion</agreement>
+          <estimate l="" s="" d=""/>
+          <fees detail="true">
+            <fee type="papers" l="2" s="15" d=""/>
+            <fee type="expert" ref="#xpr0112" l="6" s="" d=""/>
+            <fee type="expert" ref="#xpr0222" l="6" s="" d=""/>
+            <fee type="expert" ref="#xpr0183" l="6" s="" d=""/>
+            <fee type="clerk" l="6" s="" d=""/>
+            <fee type="rolls" l="5" s="" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="31" s="15" d=""/>
+          </fees>
+          <expenses mentioned=""/>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis>Motivations
+                Les experts Frémiot et Planié et le tiers-expert Loir doivent procéder « à une nouvelle visitte du mur qui sépare les deux fosses [d'aisance] et rapporter les défectuositez qui s'y trouveront, comment et de quels costés il convient les rétablir pour ensuitte estre ordonné ce que de raison dépens dommages, intérests ». Une première expertise rendue par Frémiot et Planié le 25 septembre 1725 a abouti à une divergence d'avis. Le tiers-expert Loir doit permettre d'accorder les opinions.</analysis>
+        <noteworthy/>
+      </description>
+    </expertise>

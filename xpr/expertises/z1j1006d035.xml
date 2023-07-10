@@ -1,0 +1,206 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1006d035">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-09-01T12:00:00">2020-09-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2017-04-01T12:00:00">2017-04-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1006</idno>
+        <idno type="item">035</idno>
+        <facsimile from="0365" to="0381"/>
+        <physDesc>
+          <extent sketch="false">13</extent>
+          <appendices>
+            <appendice>
+              <type type="petition">Requête</type>
+              <extent>1</extent>
+              <desc>requête de Ango, Jean au lieutenant civil, autorisé le 30 juillet 1776.</desc>
+              <note/>
+            </appendice>
+          </appendices>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-08-14" type="paris"/>
+          <date when="1776-11-08" type="paris"/>
+        </sessions>
+        <places>
+          <place type="office">
+            <address/>
+          </place>
+        </places>
+        <categories>
+          <category type="acceptation">Recevoir et évaluer le travail réalisé</category>
+          <designation rubric="true">Réception et estimation d’ouvrages de différentes matières faits en une maison</designation>
+        </categories>
+        <procedure>
+          <framework type="b1">Requête auprès d’une institution pour qu’elle demande une expertise</framework>
+          <origination type="parties">Les parties</origination>
+          <sentences>
+            <sentence>
+              <orgName>lieutenant civil (sentence du 30 juillet 1776)</orgName>
+              <date when="1776-07-30"/>
+            </sentence>
+          </sentences>
+          <case>les ouvrages sont terminés (il s’agissait de réparations qui devaient être estimés, suite à l’ordonnance du 6 mai 1773, mais qui visiblement n’ont pas été préalablement estimés) et les avant-toisé et les mémoires d’ouvrages faits sont réunis.</case>
+          <objects>
+            <object type="house">Maison(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0250" context="primary" appointment="court-appointed">
+              <title>architecte expert</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0064">
+              <persName>
+                <surname>Gobert</surname>
+                <forename>Jean Charles Simon</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Ango</surname>
+                  <forename>Jean</forename>
+                </persName>
+                <occupation>maître charpentier</occupation>
+              </person>
+              <status>owner</status>
+              <expert ref="#xpr0250"/>
+              <representative>
+                <persName>
+                  <surname>Ango</surname>
+                  <forename>Jean Pierre</forename>
+                </persName>
+                <occupation>architecte expert</occupation>
+              </representative>
+            </party>
+            <party role="opponent" presence="" intervention="">
+              <person>
+                <persName>
+                  <surname/>
+                  <forename/>
+                </persName>
+                <occupation/>
+              </person>
+              <status/>
+              <expert ref=""/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname>Ango</surname>
+                <forename>Jean Pierre</forename>
+              </persName>
+              <occupation>entrepreneur de bâtiment</occupation>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0250">"Tous les ouvrages faits en ladite maison dont est question et dont à réception montent ensemble à la somme de 46 141 l. 7 s. 9 d."</opinion>
+          <arrangement/>
+          <agreement type="conclusion">Conclusion</agreement>
+          <estimate l="46141" s="7" d="9"/>
+          <fees detail="true">
+            <fee type="papers" l="15" s="" d=""/>
+            <fee type="expert" ref="#xpr0250" l="174" s="" d=""/>
+            <fee type="clerk" l="174" s="" d=""/>
+            <fee type="rolls" l="75" s="" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="other" l="12" s="" d="">Annexe</fee>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="450" s="" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="149" s="5" d=""/>
+            <expense type="expert" l="58" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis>Le préambule expose très clairement le procédé de réunion des mémoires avec quelques détails sur le contexte (ces mémoires permettent de calculer les bois, fers et autres matériaux qui ne sont plus visibles) et l’arrangement avec l’entrepreneur et l’expert.
+                Les maîtres des métiers entrepris et donnant pouvoir (ils signent tous) sont
+                Lepreux, Laurent Olivier, maître charpentier ; Onfroy, Noël, maître couvreur ; Fradiel, François, maître menuisier ; Sebire, Marie Louise, veuve de Gruure, maitresse carreleuse ; Buirette, Philippe Nicolas et Patin, Pierre Claude, maître peintre et doreur ; Guiron, Louis François, maître vitrier ; Lemoyne, Jacques Guillaume, maître paveur ; Giroux, [?] maître marbrier ; Batter, Jean, maître terrassier ; Vion, Jean Hiacinthe, marchand quincaillerie ; Maubertier, Jean François, maître vidanger
+                D’après les calculs faits, l’expert et le greffier procèdent aux calculs en tableau le 31 octobre 1776 dans leur bureau rue de la Verrerie en l’absence de parties.
+                Cause (pièce annexe)
+                « Disant [Ango, Jean], qu’étant dans l’intention de faire les réparations nécessaires ainsy que les changemens et augmentations dans une maison dont il est propriétaire scize en cette ville rue St Victor et rue Neuve St Etienne, et voulant opérer le privilège et la sureté des entrepreneurs et ouvriers qu’il vouloit emploier, et se conformer à l’arrêt de règlement de la Cour consernant les privilèges il a l’honneur de vous [lieutenant civil] présenter sa requête, au bas de laquelle est intervenue votre ordonnance du six may 1773 par laquelle vous avez permis de faire visiter lad. maison par les sieur Taboureur, architecte expert, lequel, en conséquence a dressé procès-verbal des réparations et reconstructions à faire à lad. maison, que depuis ce temps le supplément à faire faire et mettre afin tous lesd. ouvrages de manière qu’ils sont eschus aujourd’huy [v°] d’être reçus, pour satisfaire aux conditions imposées par led. arrêt de règlement de la Cour.
+                Ce considéré, Monsieur, il vous plaise ordonner que tous les ouvrages faits en lad. maison soient vus, reçu, réglés et estimés par led. sieur Taboureur, que vous avez déjà nommé d’office, à l’effet de les constater ; ce qui en cette qualité après pendant le cours des ouvrages tous les attachemens, nottes et renseignemens de tous les objets qui sont aujourd’huy enfermés dans la maçonnerie et en sont plus visibles, et vous ferez justice. [Signature : Ragoulleau?]
+                Permis de faire procéder à la visitte, prisée et estimation et réception desdits ouvrages par Taboureur [(rayé : Dubois...)] architecte expert, lequel en fera rapport, parties présentes, ou appellées, fait le 30 juillet 1776 [Signature : Angrany] »</analysis>
+        <noteworthy/>
+      </description>
+    </expertise>

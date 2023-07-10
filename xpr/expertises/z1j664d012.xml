@@ -1,0 +1,194 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j664d012" status="">
+      <meta/>
+      <control>
+        <maintenanceStatus>new</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-06-16T16:56:32.893+02:00">2021-06-16T16:56:32.893+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-06-16T16:29:02.548+02:00">2021-06-16T16:29:02.548+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2021-04-19T11:12:43Z">2021-04-19T11:12:43Z</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1736</unitdate>
+    <idno type="unitid">Z1J664</idno>
+        <idno type="item">012</idno>
+        <facsimile from="0127" to="0135"/>
+        <physDesc>
+          <extent sketch="false">8</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1736-07-26" type="paris"/>
+          <date when="1736-07-30" type="paris"/>
+          <date when="1736-08-14" type="paris"/>
+        </sessions>
+        <places>
+          <place type="paris">
+            <address>
+              <street>rue du faubourg Saint-Honoré</street>
+              <buildingNumber/>
+            </address>
+            <complement/>
+            <parish/>
+            <owner/>
+          </place>
+        </places>
+        <categories>
+          <category type="assessment">Décrire et évaluer les travaux à venir</category>
+          <designation rubric="true">Visitte de réparations en une maison et place à bâtir, Grande rue du Fg St Honoré, à la maison saisie sur le sieur Lambotte, escuyer ingénieur entrepreneur des travaux et domaine de l'hôtel de ville de Paris et sa femme, à la requeste du sieur Douzelle, fermier judiciaire ; M. Desboeufs, expert ; M. Berville, greffier.</designation>
+        </categories>
+        <procedure>
+          <framework type="b2b">L’institution est saisie dans le cadre d’une procédure (l’institution nomme un ou deux experts)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Parlement</orgName>
+              <date when="1736-05-29"/>
+            </sentence>
+          </sentences>
+          <case>fermage judiciaire, constestations sur les réparations</case>
+          <objects>
+            <object type="house">Maison(s)</object>
+            <object type="plot">Terrain(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0089" context="primary" appointment="court-appointed">
+              <title>architecte expert bourgeois</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0042">
+              <persName>
+                <surname>Berville</surname>
+                <forename>Jean Guillaume</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Douzelle</surname>
+                  <forename>Joseph</forename>
+                </persName>
+                <occupation>bourgeois de Paris</occupation>
+              </person>
+              <status>contractor</status>
+              <expert ref="#xpr0089"/>
+              <representative>
+                <persName>
+                  <surname>Ferrand</surname>
+                  <forename/>
+                </persName>
+                <occupation>caution de Douzelle</occupation>
+              </representative>
+            </party>
+            <party role="opponent" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Lambotte</surname>
+                  <forename>Pierre</forename>
+                </persName>
+                <occupation>écuyer ingénieur entrepreneur des travaux et domaines de l'hôtel de ville de Paris</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Duhoir</surname>
+                  <forename>Benoiste</forename>
+                </persName>
+                <occupation>sa femme</occupation>
+              </person>
+              <status>mortgagor</status>
+              <expert ref="#xpr0089"/>
+            </party>
+            <party role="opponent" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Mers</surname>
+                  <forename>Claude</forename>
+                </persName>
+                <occupation>conseiller du roi garde général des meubles de la couronne</occupation>
+              </person>
+              <status>creditor</status>
+              <expert ref="#xpr0089"/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <agreement type="conclusion">Conclusion</agreement>
+          <opinion ref="#xpr0089">Après avoir procéddé à ce que dessus et à prendre les mesures faite les calculs et estimations cy dessus nous avons fait la récapitulation desdits ouvrages nécessaires et indispensables à faire à laditte maison que nous avons trouvez revenir ensemble à la somme de 346 lives 19 sols
+Et ceux que nous estimons estre et provenens par les dégradations au sujet de la reconstruction du mur de la maison de monsieur Pernays à 728 livres
+Tel est l'estat de laditte maison, les réparations à y faire et nostre estimation vous refferant néantmoins nos seigneurs de juger et ordonner suivant vostre justice ordinaire</opinion>
+          <arrangement/>
+          <estimate l="" s="" d=""/>
+          <fees detail="true">
+            <fee type="expert" ref="#xpr0089" l="15" s="" d=""/>
+            <fee type="clerk" l="" s="" d=""/>
+            <fee type="rolls" l="4" s="7" d="6"/>
+            <fee type="papers" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <total l="" s="" d=""/>
+          </fees>
+          <expenses mentioned="false"/>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis/>
+        <noteworthy/>
+      </description>
+    </expertise>

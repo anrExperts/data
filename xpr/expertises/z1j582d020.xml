@@ -1,0 +1,251 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j582d020">
+  <meta/>
+  <control>
+    <maintenanceStatus>revised</maintenanceStatus>
+    <publicationStatus/>
+    <localControl localType="detailLevel">
+      <term>completed</term>
+    </localControl>
+    <maintenanceHistory>
+      <maintenanceEvent>
+                <eventType>revised</eventType>
+                <eventDateTime standardDateTime="2022-03-31T14:40:02Z">2022-03-31T14:40:02Z</eventDateTime>
+                <agentType>human</agentType>
+                <agent>llosserand</agent>
+                <eventDescription>rvpcd</eventDescription>
+            </maintenanceEvent>
+          <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateObjectsValues_db.xqy/BaseX</agent>
+        <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateOpinionRef_files.xqy/BaseX</agent>
+        <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateRefValues_files.xqy/BaseX</agent>
+        <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+        <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>revised</eventType>
+        <eventDateTime standardDateTime="2020-11-01T12:00:00">2020-11-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>JH</agent>
+        <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>retroconverted</eventType>
+        <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>ead2xpr.xsl/Saxon9</agent>
+        <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>created</eventType>
+        <eventDateTime standardDateTime="2017-04-01T12:00:00">2017-04-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>llosserand</agent>
+        <eventDescription>Création de la fiche.</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+  </control>
+  <sourceDesc>
+    <unitdate>1726</unitdate>
+    <idno type="unitid">Z1J582</idno>
+    <idno type="item">020</idno>
+    <facsimile from="0258" to="0265"/>
+    <physDesc>
+      <extent sketch="false">8</extent>
+    </physDesc>
+  </sourceDesc>
+  <description>
+    <sessions>
+      <date when="1726-07-24" type="paris"/>
+      <date when="1726-07-26" type="paris"/>
+    </sessions>
+    <places>
+      <place xml:id="id343d236" type="paris">
+        <address>
+          <street>Rue de la Poterie</street>
+          <buildingNumber/>
+        </address>
+        <complement/>
+        <parish/>
+        <owner>succession Gantheran</owner>
+      </place>
+      <place xml:id="id343d254" type="paris">
+        <address>
+          <street>rue de la Tisseranderie</street>
+          <buildingNumber/>
+        </address>
+        <complement/>
+        <parish/>
+        <owner>succession Gantheran</owner>
+      </place>
+      <place xml:id="id343d272" type="paris">
+        <address>
+          <street>rue Basfroy</street>
+          <buildingNumber/>
+        </address>
+        <complement/>
+        <parish/>
+        <owner>succession Gantheran</owner>
+      </place>
+    </places>
+    <categories>
+      <category type="estimation">Estimer la valeur des biens</category>
+      <designation rubric="true">Visitte, prisée et estimation de plusieurs maisons, scizes à Paris, rues de la potterie, de la tissanderie et Beffry, fauxbourg St Antoine, appartenantes à la succession de M. Pierre Gauthero ; M. Loir, expert.</designation>
+    </categories>
+    <procedure>
+      <framework type="b2">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+      <origination type="institution">Une institution</origination>
+      <sentences>
+        <sentence>
+          <orgName>lieutenant civil (prévôt Jérôme d'Argouges)</orgName>
+          <date when="1726-07-17"/>
+        </sentence>
+      </sentences>
+      <case>succession de Gantheran, Pierre, partage des biens entre les héritiers.</case>
+      <objects>
+        <object type="house">Maison(s)</object>
+      </objects>
+    </procedure>
+    <participants>
+      <experts>
+        <expert ref="#xpr0183" context="primary" appointment="court-appointed">
+          <title>juré expert à Paris</title>
+        </expert>
+      </experts>
+      <clerks>
+        <clerk ref="#clrk0035">
+          <persName>
+            <surname>Tancart</surname>
+            <forename>Toussaint</forename>
+          </persName>
+        </clerk>
+      </clerks>
+      <parties>
+        <party role="petitioner" presence="false" intervention="false">
+          <person>
+            <persName>
+              <surname>de la Salle Gantheran</surname>
+              <forename>Pierre François</forename>
+            </persName>
+            <occupation>sieur de Letant, ancien procureur du roi de la ville de Sablay, héritier par moitié de Gantheran, Pierre et Thomassin, Magdeleine ses père et mère</occupation>
+          </person>
+          <person>
+            <persName>
+              <surname>de la Salle</surname>
+              <forename>Charles Pierre</forename>
+            </persName>
+            <occupation/>
+          </person>
+          <status>heir</status>
+          <expert ref="#xpr0183"/>
+        </party>
+        <party role="opponent" presence="false" intervention="false">
+          <person>
+            <persName>
+              <surname>Gaudebert</surname>
+              <forename>Marguerite</forename>
+            </persName>
+            <occupation>veuve de Gantheron, Nicolas, tutrice de Gantheron, Nicolas Urbain leur fils héritier de son père qui hérite pour l'autre moitié de Gantheron, Pierre</occupation>
+          </person>
+          <person>
+            <persName>
+              <surname>Thomassin</surname>
+              <forename>Marguerite </forename>
+            </persName>
+            <occupation/>
+          </person>
+          <person>
+            <persName>
+              <surname>Arry</surname>
+              <forename>Charles Pierre</forename>
+            </persName>
+            <occupation>tuteur de demoiselle Ganteron, Renée Marguerite, mineure et héritière de Gantheron, Nicolas, son père.</occupation>
+          </person>
+          <status>heir</status>
+          <expert ref="#xpr0183"/>
+        </party>
+      </parties>
+      <craftmen>
+        <craftman>
+          <persName>
+            <surname/>
+            <forename/>
+          </persName>
+          <occupation/>
+        </craftman>
+      </craftmen>
+    </participants>
+    <conclusions>
+      <opinion ref="#xpr0183">1/ "Après quoy pour parvenir à une juste estimation nous avons pris les mesures de l'emplacement total de ladite maison et distinctement de ce qui est occupé en bastimens d'avec ce qui est en caves et du tout fait les calculs et suputations et consideration du quartier où est scituée ladite maison, de l'estat present des bastiments qui la composent qui sont en assez bon estat et … eu esgard au cours du tems présent à la charge du cens cy… 8500 l."
+2/ "Après quoy nous avons pris les mesures de l'emplacement de ladite maison et distinctement de ce qui est occupé en bastimens d'avec ce qui est cours fait les calculs necessaires et consideration du quartier où est scituée ladite maison, à l'estat présent des bastiments qui la composent qui sont en assez bons états, nous la prisons et estimons valloir la somme de 9500 l. eu esgard au cours du tems present et à la charge du cens"
+3/ "Nous avons fait les calculs après lesquels considerations faittes du quartier où est scituée ladite maison, à l'estat present des bastiments qui la composent, nous la prisons et estimons la somme de quatre mil cinq cens livres eu esgard au cours du tems present et à la charge du cens"</opinion>
+      <arrangement/>
+      <agreement type="conclusion">Conclusion</agreement>
+      <estimate l="22500" s="" d=""/>
+      <estimates>
+        <place ref="#id343d236">
+          <appraisal l="8500" s="" d="">
+            <desc>maison</desc>
+          </appraisal>
+        </place>
+        <place ref="#id343d254">
+          <appraisal l="9500" s="" d="">
+            <desc>maison</desc>
+          </appraisal>
+        </place>
+        <place ref="#id343d272">
+          <appraisal l="4500" s="" d="">
+            <desc>maison</desc>
+          </appraisal>
+        </place>
+      </estimates>
+      <fees detail="true">
+        <fee type="papers" l="" s="" d=""/>
+        <fee type="expert" ref="#xpr0183" l="12" s="" d=""/>
+        <fee type="clerk" l="" s="" d=""/>
+        <fee type="rolls" l="" s="" d=""/>
+        <fee type="prosecutors" l="" s="" d=""/>
+        <fee type="help" l="" s="" d=""/>
+        <fee type="plans" l="" s="" d=""/>
+        <total l="" s="" d=""/>
+      </fees>
+      <expenses mentioned="false"/>
+    </conclusions>
+    <keywords group="estates"/>
+    <keywords group="procedure"/>
+    <keywords group="contract"/>
+    <keywords group="encumbrance"/>
+    <keywords group="law"/>
+    <keywords group="measurement"/>
+    <keywords group="repairs"/>
+    <keywords group="guarantees"/>
+    <keywords group="responsability"/>
+    <keywords group="ownership"/>
+    <keywords group="value"/>
+    <keywords group="neighbourhood"/>
+    <keywords group="disorder"/>
+    <keywords group="transformation"/>
+    <analysis>« [f. 1r°] […] [la sentence du 17 juillet 1726] entre led. Pierre François de la Salle Gantheron, héritier pour moitié de deffunt Pierre Gantheron et Magdeleine Thomassin ses père et mère opposant suivant se requête verballe du 28 juin dernier à la sentence par deffaut du 15 et demandeur à ce qui soit procédé à sa requeste [f. 1v°] au partage demandé par les cy après nommé, contre damoiselle Marguerite Gaudebert, veuve de Nicolas Gantheron au nom et comme tutrice de Nicolas Urbain Gantheron leur fils, héritier de son père qui [restoit?] pour l'autre moitié desd. Pierre Gantheron et Marguerite Thomasson et Charles Pierre Arry, seigneur de [Rellavau?] au nom et comme tuteur de delle Renée Marguerite Gantheron [son espouse?] mineure et héritiere dud. deffunt Nicolas Gantehron son père, lesdittes veuves Gantheron et sr Rellavau esleu esd. charges par sentence du [lacune], demandeurs et deffendeurs, par laquelle sentence, les partyes ouyes et sans que les qualitez puissent rendre un préjuddice, vous avez, monsieur, receu opposant led. Pierre François de la Salle à l'exécution de votre précédente sentence et faisant droit au principal ?, ordonné qu'à la requeste et diligence dud. sr de la Salle, il seroit incessamment procédé entre les parties pardevant Le Camus comys au partage des biens des successions dud. deffunt Pierre Gantheron et Magdelaine Thomasson, à l'effet de quoy avez ordonné que les maisons scizes en cette ville de Paris appartenantes ausd. succesions seroient veux , visités, prisez et estimé par experts dont les parties conviendront […] ».</analysis>
+    <noteworthy/>
+  </description>
+</expertise>

@@ -1,0 +1,232 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1006d022">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-09-01T12:00:00">2020-09-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2017-04-01T12:00:00">2017-04-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1006</idno>
+        <idno type="item">022</idno>
+        <facsimile from="0226" to="0244"/>
+        <physDesc>
+          <extent sketch="false">18</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-08-09" type="suburbs"/>
+          <date when="1776-08-13" type="suburbs"/>
+          <date when="1776-08-13" type="suburbs"/>
+          <date when="1776-08-17" type="suburbs"/>
+          <date when="1776-08-19" type="suburbs"/>
+          <date when="1776-08-22" type="suburbs"/>
+          <date when="1776-08-22" type="suburbs"/>
+          <date when="1776-08-26" type="suburbs"/>
+          <date when="1776-08-26" type="suburbs"/>
+          <date when="1776-09-04" type="suburbs"/>
+          <date when="1776-09-09" type="suburbs"/>
+          <date when="1776-09-10" type="province"/>
+          <date when="1776-09-10" type="province"/>
+        </sessions>
+        <places>
+          <place xml:id="id116d307" type="suburbs">
+            <address/>
+            <complement>rue de Charonne faubourg Saint-Antoine</complement>
+            <city>Paris</city>
+            <district/>
+            <owner>Succession Baron</owner>
+          </place>
+          <place xml:id="id116d324" type="suburbs">
+            <address/>
+            <complement>vulgairement appelée la maison du père Lachaise et anciennement la Folie Renaud,</complement>
+            <city>Montlouis</city>
+            <district/>
+            <owner>Succession Baron</owner>
+          </place>
+          <place xml:id="id116d341" type="province">
+            <address/>
+            <complement/>
+            <city>Corbeil</city>
+            <district/>
+            <owner>Succession Baron</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="estimation">Estimer la valeur des biens</category>
+          <designation rubric="true">Visite et estimation de biens immeubles</designation>
+        </categories>
+        <procedure>
+          <framework type="b2a">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>lieutenant civil (sentence du 17 juillet 1776)</orgName>
+              <date when="1776-07-17"/>
+            </sentence>
+          </sentences>
+          <case>partage de succession</case>
+          <objects>
+            <object type="buildings">Ensemble de bâtiments (biens immeubles)</object>
+            <object type="house">Maison(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0250" context="primary" appointment="appointed">
+              <title>architecte juré expert bourgeois des bâtiments à Paris</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0070">
+              <persName>
+                <surname>Lepage</surname>
+                <forename>Charles Pierre</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Pia</surname>
+                  <forename>Jeanne</forename>
+                </persName>
+                <occupation>veuve de Baron, Jacques, marchand mercier à Paris maître et entrepreneur d’une manufacture de toile peinte établie à Corbeil, interdite pour cause de faiblesse d’esprit par sentence du conseil du Châtelet de Paris sur l’avis de ses parents et amis le 26 août 1768</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Mineurs Baron</surname>
+                  <forename/>
+                </persName>
+                <occupation>Baron, Jacques, âgé de 19 ans et demi ; Baron, Louis, âgé de 18 ans et demi, ayant tous deux obtenus en la chancellerie du palais des lettres de bénéfice d’âge et émancipation d u11 mai 1776 ; Baron, Claude François Jean, âgé de 15 ans ; Baron, Sophie, âgée de 11 ans, tous deux enfants mineurs de défunt Baron, Jacques et de Pia, Jeanne, héritiers, chacun pour un quart de défunt Baron, Jacques, leur père</occupation>
+              </person>
+              <status>heir</status>
+              <expert ref="#xpr0250"/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0250">"Récapitulation de touttes nos estimations
+La maison de Montlouis et ses appartemens et dependances la somme de 82 500 l.
+celle de la rue de Charonne la somme de 9500 l.
+Et la présente maison où nous sommes scise audit lieut de Corbeil celle de 5500 l.
+Total de touttes nos estimations la somme de 97500 l.
+Telle est, monsieur, la visitte par nous faitte de touttes lesdittes maisons et dépendances de la succession dud. déffunt sr Baron de la communauté de biens d’entre luy et led. dame son épouse actuellement sa veuve de notre avis sur la valleur d’yceux suivant et aux termes de votred. sentence, vous observans que d’après la connaissance, par nous prisé desd. maisons, il n’y a pas lieu à pouvoir les partager en portions égalles sans détériorations entre les propriétaires, vous réferant sur le tout d’en juger et ordonner suivant votre justice et prudence ordinaire.
+                A tout ce que dessus ayant employé la vacation et étant trop tard pour nous en retourner, nous avons remis à demain au matin onze du présent mois de septembre à nous en retourner à Paris lieu ordinaire de notre demeure et nous avons clos notred. présent raport de visite. Fait par nous... »</opinion>
+          <arrangement/>
+          <agreement type="conclusion">Conclusion</agreement>
+          <estimate l="97500" s="" d=""/>
+          <estimates>
+            <place ref="#id116d307">
+              <appraisal l="9500" s="" d="">
+                <desc>maison</desc>
+              </appraisal>
+            </place>
+            <place ref="#id116d324">
+              <appraisal l="5500" s="" d="">
+                <desc>maison de Corbeil</desc>
+              </appraisal>
+            </place>
+            <place ref="#id116d341">
+              <appraisal l="82500" s="" d="">
+                <desc>maison de Montlouis</desc>
+              </appraisal>
+            </place>
+          </estimates>
+          <fees detail="true">
+            <fee type="papers" l="31" s="14" d=""/>
+            <fee type="expert" ref="#xpr0250" l="130" s="10" d=""/>
+            <fee type="clerk" l="130" s="10" d=""/>
+            <fee type="rolls" l="125" s="" d=""/>
+            <fee type="prosecutors" l="45" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="462" s="14" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="112" s="5" d=""/>
+            <expense type="expert" l="45" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis/>
+        <noteworthy/>
+      </description>
+    </expertise>

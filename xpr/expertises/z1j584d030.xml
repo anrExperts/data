@@ -1,0 +1,218 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j584d030">
+  <meta/>
+  <control>
+    <maintenanceStatus>revised</maintenanceStatus>
+    <publicationStatus/>
+    <localControl localType="detailLevel">
+      <term>completed</term>
+    </localControl>
+    <maintenanceHistory>
+      <maintenanceEvent>
+                <eventType>revised</eventType>
+                <eventDateTime standardDateTime="2022-04-01T13:40:04Z">2022-04-01T13:40:04Z</eventDateTime>
+                <agentType>human</agentType>
+                <agent>llosserand</agent>
+                <eventDescription>rvpcd</eventDescription>
+            </maintenanceEvent>
+          <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateObjectsValues_db.xqy/BaseX</agent>
+        <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateRefValues_files.xqy/BaseX</agent>
+        <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+        <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>revised</eventType>
+        <eventDateTime standardDateTime="2020-11-01T12:00:00">2020-11-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>JH</agent>
+        <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>retroconverted</eventType>
+        <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>ead2xpr.xsl/Saxon9</agent>
+        <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>created</eventType>
+        <eventDateTime standardDateTime="2017-04-01T12:00:00">2017-04-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>llosserand</agent>
+        <eventDescription>Création de la fiche.</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+  </control>
+  <sourceDesc>
+    <unitdate>1726</unitdate>
+    <idno type="unitid">Z1J584</idno>
+    <idno type="item">030</idno>
+    <facsimile from="0292" to="0316"/>
+    <physDesc>
+      <extent sketch="false">20</extent>
+      <appendices>
+        <appendice>
+          <type type="other">Déclaration</type>
+          <extent>1</extent>
+          <desc>copie de la réquisition entre les parties, qui précise que si les experts ne sont pas d'accord le lieutenant civil nommera un tiers expert, 13 mars 1727.</desc>
+          <note/>
+        </appendice>
+        <appendice>
+          <type type="other">Déclaration</type>
+          <extent>1</extent>
+          <desc>copie du même acte</desc>
+          <note/>
+        </appendice>
+      </appendices>
+    </physDesc>
+  </sourceDesc>
+  <description>
+    <sessions>
+      <date when="1726-11-18" type="paris"/>
+      <date when="1727-04-07" type="paris"/>
+    </sessions>
+    <places>
+      <place type="paris">
+        <address>
+          <street>Rue des Cannettes, faubourg Saint-Germain</street>
+          <buildingNumber/>
+        </address>
+        <complement>une maison rue des Cannettes, faubourg Saint-Germain, appartenant conjointement par indivis à Le Couvreur et Rigault, contiguë à celle du sieur Millochin (fosses d'aisances des deux maisons)</complement>
+        <parish/>
+        <owner>Le Couvreur et Rigault</owner>
+      </place>
+    </places>
+    <categories>
+      <category type="settlement">Départager</category>
+      <designation rubric="true">Visitte de puits, fosses d'aisances et autres lieux contentieux entre les sieurs Millachin, bourgeois de Paris et les sieurs Couvreur et Rigault, en une maison rue des cannettes, fauxbourg Sauint Germain ; MM. Quirot et Dubois experts.</designation>
+    </categories>
+    <procedure>
+      <framework type="b2">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+      <origination type="institution">Une institution</origination>
+      <sentences>
+        <sentence>
+          <orgName>lieutenant civil</orgName>
+          <date when="1726-10-11"/>
+        </sentence>
+      </sentences>
+      <case>le puits de la maison de Millochin est infesté, celui-ci suspecte que la fosse d'aisance de ses voisins jugée défectueuse soit à l'origine de cette souillure</case>
+      <objects>
+        <object type="well">Puits</object>
+        <object type="cesspool">Fosse(s) d'aisance</object>
+      </objects>
+    </procedure>
+    <participants>
+      <experts>
+        <expert ref="#xpr0232" context="primary" appointment="appointed">
+          <title>architecte juré du roi expert bourgeois de Paris</title>
+        </expert>
+        <expert ref="#xpr0100" context="primary" appointment="appointed">
+          <title>juré du roi expert entrepreneur de bâtiments à Paris</title>
+        </expert>
+      </experts>
+      <clerks>
+        <clerk ref="#clrk0029">
+          <persName>
+            <surname>Quirot</surname>
+            <forename>Jacques</forename>
+          </persName>
+        </clerk>
+      </clerks>
+      <parties>
+        <party role="petitioner" presence="true" intervention="false">
+          <person>
+            <persName>
+              <surname>Millochin</surname>
+              <forename>Pierre</forename>
+            </persName>
+            <occupation>marchand bourgeois de Paris</occupation>
+          </person>
+          <status>owner</status>
+          <expert ref="#xpr0232"/>
+        </party>
+        <party role="opponent" presence="true" intervention="false">
+          <person>
+            <persName>
+              <surname>Couvreur</surname>
+              <forename>Jean Florentin</forename>
+            </persName>
+            <occupation>marchand épicier</occupation>
+          </person>
+          <person>
+            <persName>
+              <surname>Rigault</surname>
+              <forename>Jean Pierre Auguste</forename>
+            </persName>
+            <occupation>son beau frère, trésorier de France (défaillant)</occupation>
+          </person>
+          <status>owner</status>
+          <expert ref="#xpr0100"/>
+        </party>
+      </parties>
+      <craftmen>
+        <craftman>
+          <persName>
+            <surname/>
+            <forename/>
+          </persName>
+          <occupation/>
+        </craftman>
+      </craftmen>
+    </participants>
+    <conclusions>
+      <opinion ref="#xpr0232">Quirot estime que le problème vient bien de la fosse d'aisance de Couvreur et aucunement des fosses de Millochin, ainsi qu'il l'a précisément décrit dans ses vacations et comme le prouve le fait que depuis sept mois que la fosse de Couvreur a été vidée, le progrès de l'écoulement a été stoppé. 
+"Et moy, Quirot, attendu qu'il n'est pas de la règle de rétorquer l'avis de son confrère par un second avis, n'ay rien à répondre et n'ay rien à adjouter quand à présent à l'avis que j'ay cy devant donné, c'est pourquoy je me suis retiré. Quirot ».</opinion>
+      <opinion ref="#xpr0100">« [f. 19r°] Et moy, Dubois, persévérant en l'avis par moy cy devant donné dans lequel j'ay [f. 19v°] suffisament, certainement et avecq connoissance de cause démontré l'impossibilité qu'il y a de pouvoir dire afirmativement d'où procède l'origine des urines et matières qui ont gasté l'eau du puys en question, tout ce que l'on poura me dire et remontrer sur le fait ne me déterminera point à juger laquelle des deux fosses est celle qui est la cause que l'eau de ce puis a esté gastée, jusqu'à ce que l'on m'ait fait voir non seullement l'origine, mais encorre les routes et fillures par où ont passé les urines et matierres depuis l'un de ces fosses jusqu'à l'eau du puis, c'est ce qui n'a point encorre esté fait jusqu'à présent, c'est la véritable et certaine démonstration qui puisse me convaincre du fait dont il s'agit, sans quoy je persévère à dire qu'il est de toute impossibilité de connoistre certainement la cause qui a pu gaster l'eau de ce puis ; car tout ce qui nous avons veu et remarqué jusqu'à présent ne peut passer que pour de faux rayons de lumières ou de fausses apparence qui peuvent nous tromper et sur lesquelles nous ne devons point établir nostre jugement pourrendre la justice à qui elle appartient avecq connoissance de cause ; car si il ne tenoit qu'à juger du fait dont il s'agist par les aparences, j'en vois une qui pourroit me porter à juger que c'est la fosse de la maison du sr Millochin qui a gasté l'eau de son puis et non celle de la maison du sieur Courveur puisque aussy tost que celle du sr Millochin a esté vuidée, l'eau de ce puy s'est trouvé claire et nette et ne sentant aucune odeur, pendant que la fosse du sr Couvreur n'a esté [f. 20r°] vuidée que longtemps après celle du sr Millochin ainsy qu'il nous a esté dit et assuré sur les lieux ; or cette eau demeure claire et nette aussitost que la fosse du sr Millochin a esté vuidée et celle du sr Couvreur ne l'estant pas, que peut-on inférer de la sinon que l'eau du puis n'a esté gastée que par les urines et matières de la fosse du sr Millochin, qui selon les apparence l'a crut luy mesme puisqu'il l'a fait vuider la première n'ayant fait assigner le sr Couvreur pour vuider la sienne que longtemps après ; cependant nonobstant touttes les apparences je ne prétend pas imprudemment dire et assurer que c'est le fosse du sr Millochin qui a gasté l'eau de son puis, non plus que celle du sr Couvreur quoy que les indications soient, à beaucoup près, moins nombreuses, aparantes et sensibles que celles que nous avons observé et conjointement du costé de la fosse dud. sr Millochin.
+                Outre ce que dessus, j'observe qu'en procédant aux opérations et observations par nous faittes pendant le cours de nos cinq vaccations que si nous avions trouvé la cause certaine de la coruption de l'eau de ce puis, nous en serions demeuré là, et aurions jugé aussy tost et sur le lieu d'où procèdoit le mal, c'est ce que nous n'avons pu faire sur des apparances qui nenous ont pas paru suffisantes pour nous déterminet à donner nos avis, or si dans le cours de nos visites nous navons pas trouvé de preuve qui ait pu nous asseurer de la vérité du fait comment pourrons-nous à présent en juger par démonstration ou autrement, cela ne me paroist pas faisable car la véritable démonstration pour en juger en pareil cas est celle de connoistre [f. 20v°] premièrement l'origine de la cause et ensuitte les fillières et sinuositées par où ont passé ou filtré les urines et matières que l'on prétend avoir gasté l'eau du puis en question ; pour en connoistre avecq certitude il les faut découvrir et les conduire de l'oeuil dœuis leur origine jusqu'à l'eau, c'est la véritable démonstration qu'il faut faire, se qui n'a point esté faitte, sans laquelle moy Dubois, je soutiens qu'il n'est pas possible de juger avecq connoissance de quelle fosse l'eau de ce puis a esté gasté et que scavons nous s'il n'y a point une autre cause cachée et à nous inconnue jusqu'à présent qui de temps en temps ait gasté l'eau du puys en question, cela n'est pas impossible puisque dans d'autres cas pareils, il s'est trouvé des fosses fort éloignées qui ont gasté l'eau de certains puis et dont l'on n'a pu trouver l'origine qu'à force de chercher en faisant des opérations longues et pénibles dans les terres que scavoir nous aussy si ce puis n'avoit pas besoin d'estre curé et qu'il n'y voit pas des ordures et immondices au fond qui ayent donné une mauvaise couleur et odeur à cette eau ; cela estant, je ne vois point d'autre moyen de juger de la question, sinon celuy que je propose, sauf aux partyes de nous en requeris si elles le jugent à propos ; tel est mon avis, sauf à vous monsieur, de juger et ordonner suivant vostre justice et prudence ordinaire."</opinion>
+      <arrangement/>
+      <agreement type="disagreement">Désaccord</agreement>
+      <estimate l="" s="" d=""/>
+      <fees detail="true">
+        <fee type="papers" l="10" s="16" d=""/>
+        <fee type="expert" ref="#xpr0232" l="42" s="" d=""/>
+        <fee type="expert" ref="#xpr0100" l="42" s="" d=""/>
+        <fee type="clerk" l="42" s="" d=""/>
+        <fee type="rolls" l="21" s="5" d=""/>
+        <fee type="prosecutors" l="" s="" d=""/>
+        <fee type="help" l="" s="" d=""/>
+        <fee type="plans" l="" s="" d=""/>
+        <total l="158" s="1" d=""/>
+      </fees>
+      <expenses mentioned="true">
+        <expense type="clerk" l="45" s="12" d="6"/>
+        <expense type="expert" l="" s="" d=""/>
+      </expenses>
+    </conclusions>
+    <keywords group="estates"/>
+    <keywords group="procedure"/>
+    <keywords group="contract"/>
+    <keywords group="encumbrance"/>
+    <keywords group="law"/>
+    <keywords group="measurement"/>
+    <keywords group="repairs"/>
+    <keywords group="guarantees"/>
+    <keywords group="responsability"/>
+    <keywords group="ownership"/>
+    <keywords group="value"/>
+    <keywords group="neighbourhood"/>
+    <keywords group="disorder"/>
+    <keywords group="transformation"/>
+    <analysis/>
+    <noteworthy/>
+  </description>
+</expertise>

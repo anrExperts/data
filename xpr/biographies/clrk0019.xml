@@ -1,0 +1,93 @@
+<eac xmlns="https://archivists.org/ns/eac/v2" xml:id="clrk0019">
+  <control maintenanceStatus="">
+    <recordId>clrk0019</recordId>
+    <maintenanceAgency>
+      <agencyName>ANR Experts</agencyName>
+    </maintenanceAgency>
+    <maintenanceHistory>
+      <maintenanceEvent maintenanceEventType="created">
+        <agent agentType="machine">clerk_csv2eac.xqy/BaseX</agent>
+        <eventDateTime standardDateTime="2022-12-31T14:06:48.817+01:00"/>
+        <eventDescription>Création des fiches EAC-CPF à partir du tableau</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+    <sources>
+      <source id="sourceid86494647">
+        <reference href="">Almanach royal 1706</reference>
+      </source>
+      <source id="sourceid86494649">
+        <reference href="">Almanach royal 1716</reference>
+      </source>
+      <source id="sourceid86494651">
+        <reference href="">Almanach royal 1717</reference>
+      </source>
+      <source id="sourceid86494653">
+        <reference href="">Almanach royal 1726</reference>
+      </source>
+      <source id="sourceid86494655">
+        <reference href="">Almanach royal 1727</reference>
+      </source>
+      <source id="sourceid86494657">
+        <reference href="">Almanach royal 1736</reference>
+      </source>
+      <source id="sourceid86494659">
+        <reference href="">Almanach royal 1737</reference>
+      </source>
+    </sources>
+  </control>
+  <cpfDescription>
+    <identity>
+      <entityType value="person"/>
+      <nameEntry status="authorized" preferredForm="true" sourceReference="">
+        <part localType="full">Belot, Jacques</part>
+      </nameEntry>
+      <nameEntry status="alternative" preferredForm="false" sourceReference="">
+        <part localType="surname">Belot</part>
+        <part localType="forename">Jacques</part>
+      </nameEntry>
+      <otherEntityTypes>
+        <otherEntityType>
+          <term>clerk</term>
+        </otherEntityType>
+      </otherEntityTypes>
+      <identityId>clrk0019</identityId>
+    </identity>
+    <description>
+      <functions>
+        <function sourceReference="#sourceid86494647 #sourceid86494649 #sourceid86494651 #sourceid86494653 #sourceid86494655 #sourceid86494657 #sourceid86494659">
+          <term>Greffier</term>
+          <dateRange>
+            <fromDate sourceReference="" certainty="certain" standardDate="1706"/>
+            <toDate sourceReference="" certainty="certain" standardDate="1737"/>
+          </dateRange>
+        </function>
+        <function sourceReference="#sourceid86494657 #sourceid86494659">
+          <term>doyen</term>
+          <dateRange>
+            <fromDate sourceReference="" certainty="certain" standardDate="1736"/>
+            <toDate sourceReference="" certainty="certain" standardDate="1737"/>
+          </dateRange>
+        </function>
+      </functions>
+      <places>
+        <place sourceReference="#sourceid86494649 #sourceid86494651">
+          <placeRole>Adresse</placeRole>
+          <placeName>rue de la Vererie</placeName>
+          <dateRange>
+            <fromDate sourceReference="" certainty="certain" standardDate="1716"/>
+            <toDate sourceReference="" certainty="certain" standardDate="1717"/>
+          </dateRange>
+        </place>
+        <place sourceReference="#sourceid86494653 #sourceid86494655 #sourceid86494657 #sourceid86494659">
+          <placeRole>Adresse</placeRole>
+          <placeName>rue de la Verrerie</placeName>
+          <dateRange>
+            <fromDate sourceReference="" certainty="certain" standardDate="1726"/>
+            <toDate sourceReference="" certainty="certain" standardDate="1737"/>
+          </dateRange>
+        </place>
+      </places>
+    </description>
+  </cpfDescription>
+  <!---->
+</eac>

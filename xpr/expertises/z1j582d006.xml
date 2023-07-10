@@ -1,0 +1,236 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j582d006">
+  <meta/>
+  <control>
+    <maintenanceStatus>revised</maintenanceStatus>
+    <publicationStatus/>
+    <localControl localType="detailLevel">
+      <term>completed</term>
+    </localControl>
+    <maintenanceHistory>
+      <maintenanceEvent>
+                <eventType>revised</eventType>
+                <eventDateTime standardDateTime="2022-03-30T15:16:25Z">2022-03-30T15:16:25Z</eventDateTime>
+                <agentType>human</agentType>
+                <agent>llosserand</agent>
+                <eventDescription>rvpcd</eventDescription>
+            </maintenanceEvent>
+          <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateObjectsValues_db.xqy/BaseX</agent>
+        <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateOpinionRef_files.xqy/BaseX</agent>
+        <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateRefValues_files.xqy/BaseX</agent>
+        <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+        <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>revised</eventType>
+        <eventDateTime standardDateTime="2020-11-01T12:00:00">2020-11-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>JH</agent>
+        <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>retroconverted</eventType>
+        <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>ead2xpr.xsl/Saxon9</agent>
+        <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>created</eventType>
+        <eventDateTime standardDateTime="2017-04-01T12:00:00">2017-04-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>llosserand</agent>
+        <eventDescription>Création de la fiche.</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+  </control>
+  <sourceDesc>
+    <unitdate>1726</unitdate>
+    <idno type="unitid">Z1J582</idno>
+    <idno type="item">006</idno>
+    <facsimile from="0072" to="0076"/>
+    <physDesc>
+      <extent sketch="false">6</extent>
+    </physDesc>
+  </sourceDesc>
+  <description>
+    <sessions>
+      <date when="1726-07-12" type="suburbs"/>
+    </sessions>
+    <places>
+      <place xml:id="id461d260" type="suburbs">
+        <address/>
+        <complement>Gros Caillou, rue de l'université [Voie actuelle. Autre(s) nom(s) : rue de l'Université-au-Gros-Caillou et rue Barbey d'Aurevilly] et au bord de la rivière : deux immeubles au Gros caillou, seuls immeubles de la succession des défuntsGrou, Thomaset sa femme, qui reviennent pour 1/8 à chacun des héritiers, défendeurs.</complement>
+        <city>Paris</city>
+        <district/>
+        <owner>Succession Grou</owner>
+      </place>
+    </places>
+    <categories>
+      <category type="estimation">Estimer la valeur des biens</category>
+      <designation rubric="true">Visitte et estimation de maison au gros Caillou, à la requeste du sieur Piltret et sa femme ; M. Planié, expert</designation>
+    </categories>
+    <procedure>
+      <framework type="b2">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+      <origination type="institution">Une institution</origination>
+      <sentences>
+        <sentence>
+          <orgName>lieutenant civil</orgName>
+          <date when="1726-03-27"/>
+        </sentence>
+      </sentences>
+      <case>Succession, partage</case>
+      <objects>
+        <object type="house">Maison(s)</object>
+      </objects>
+    </procedure>
+    <participants>
+      <experts>
+        <expert ref="#xpr0222" context="primary" appointment="appointed">
+          <title>juré du roi expert entrepreneur de bâtiments à Paris</title>
+        </expert>
+      </experts>
+      <clerks>
+        <clerk ref="#clrk0020">
+          <persName>
+            <surname>Quirot</surname>
+            <forename>Etienne François</forename>
+          </persName>
+        </clerk>
+      </clerks>
+      <parties>
+        <party role="petitioner" presence="false" intervention="false">
+          <person>
+            <persName>
+              <surname>Piltret</surname>
+              <forename>Jean</forename>
+            </persName>
+            <occupation>bourgeois de Paris</occupation>
+          </person>
+          <person>
+            <persName>
+              <surname>Grou</surname>
+              <forename>Catherine</forename>
+            </persName>
+            <occupation>sa femme, héritière pour 1/8 à cause de sad. femme de deffunt Grou, Thomas, granitier à Paris et Lagnite, Barbe, sa femme.</occupation>
+          </person>
+          <status>heir</status>
+          <expert ref="#xpr0222"/>
+        </party>
+        <party role="opponent" presence="false" intervention="false">
+          <person>
+            <persName>
+              <surname>Chevrié</surname>
+              <forename>Pierre</forename>
+            </persName>
+            <occupation>tapissier bourgeois de Paris</occupation>
+          </person>
+          <person>
+            <persName>
+              <surname>Grou</surname>
+              <forename>Barbe Denise</forename>
+            </persName>
+            <occupation>sa femme, tant en leurs noms que comme led. Chevrié, tuteur ad hoc de Grou, Jean ; Grou, Guillaume ; Grou, Pierre ; Grou, Michel</occupation>
+          </person>
+          <person>
+            <persName>
+              <surname>Grou</surname>
+              <forename>Margueritte</forename>
+            </persName>
+            <occupation>ouvrière en couture, tous mineurs</occupation>
+          </person>
+          <person>
+            <persName>
+              <surname>Grou</surname>
+              <forename>Marie Jeanne</forename>
+            </persName>
+            <occupation>fille majeure</occupation>
+          </person>
+          <person>
+            <persName>
+              <surname>Grou</surname>
+              <forename>François</forename>
+            </persName>
+            <occupation>soldat dans le régiment des gardes, tous aussy héritiers chacun pour 1/8 desdits défunts Grou, Thomas et sa femme, défendeurs et demandeurs.</occupation>
+          </person>
+          <status>heir</status>
+          <expert ref="#xpr0222"/>
+        </party>
+      </parties>
+      <craftmen>
+        <craftman>
+          <persName>
+            <surname/>
+            <forename/>
+          </persName>
+          <occupation/>
+        </craftman>
+      </craftmen>
+    </participants>
+    <conclusions>
+      <opinion ref="#xpr0222">« [f. 4r°] Lesquelles maisons et place entre icelles touttes considérations faites sur leur situation et emplacement, quartier où elles sont scituées, qualités des bastimens qui composent lesd. maisons, eu esgard aux réparations qui sont à y faire et au cours du temps présent et à la charge du cens seullement, nous les prisons et estimons la somme de six mil huit cent vingt cinq livres qui est, à raison de vingt livres la toise d'emplacement avec bastiment et dix livres pour le surplus dud. emplacement cy 6825 livres.
+                Et pour satisfaire au chef de lad. sentence en ce qu'elle ordonne que nous raporterons sy lesd. maisons se peuvent commodément partager pour en estre délivré à chacun d'en payer un huitiesme, après avoir examiné lesd. maisons notre avis est qu'elle ne se peuvent partage en huit portions égalles, sauf sur tout ce que dessus à vous, monsieur, de juger et ordonner suivant votre prudence et justice ordinaire et accoustumée. »</opinion>
+      <arrangement/>
+      <agreement type="conclusion">Conclusion</agreement>
+      <estimate l="6825" s="" d=""/>
+      <estimates>
+        <place ref="#id461d260">
+          <appraisal l="6825" s="" d="">
+            <desc>deux maisons</desc>
+          </appraisal>
+        </place>
+      </estimates>
+      <fees detail="true">
+        <fee type="papers" l="" s="" d=""/>
+        <fee type="expert" ref="#xpr0222" l="15" s="" d=""/>
+        <fee type="clerk" l="" s="" d=""/>
+        <fee type="rolls" l="" s="" d=""/>
+        <fee type="prosecutors" l="" s="" d=""/>
+        <fee type="help" l="" s="" d=""/>
+        <fee type="plans" l="" s="" d=""/>
+        <total l="" s="" d=""/>
+      </fees>
+      <expenses mentioned="true">
+        <expense type="clerk" l="11" s="15" d=""/>
+        <expense type="expert" l="" s="" d=""/>
+      </expenses>
+    </conclusions>
+    <keywords group="estates"/>
+    <keywords group="procedure"/>
+    <keywords group="contract"/>
+    <keywords group="encumbrance"/>
+    <keywords group="law"/>
+    <keywords group="measurement"/>
+    <keywords group="repairs"/>
+    <keywords group="guarantees"/>
+    <keywords group="responsability"/>
+    <keywords group="ownership"/>
+    <keywords group="value"/>
+    <keywords group="neighbourhood"/>
+    <keywords group="disorder"/>
+    <keywords group="transformation"/>
+    <analysis/>
+    <noteworthy/>
+  </description>
+</expertise>

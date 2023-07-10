@@ -1,0 +1,188 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1001d062">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2017-10-01T12:00:00">2017-10-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1001</idno>
+        <idno type="item">062</idno>
+        <facsimile from="0704" to="0712"/>
+        <physDesc>
+          <extent sketch="false">8</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-04-24" type="paris"/>
+          <date when="1776-05-06" type="paris"/>
+          <date when="1776-05-13" type="paris"/>
+        </sessions>
+        <places>
+          <place type="office">
+            <address/>
+          </place>
+        </places>
+        <categories>
+          <category type="acceptation">Recevoir et évaluer le travail réalisé</category>
+          <designation rubric="true">Estimation des honoraires d'architecte (Pignard), à la requête du sieur Dhuez ; MM. Desboeufs et Ducret.</designation>
+        </categories>
+        <procedure>
+          <framework type="b2a">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Châtelet, présidial (sentences)</orgName>
+              <date when="1776-04-03"/>
+              <date when="1776-03-26"/>
+            </sentence>
+          </sentences>
+          <case>Huez demande le paiement de 2426 l. 16 s. pour avance et honoraires, que conteste le commanditaire Piquard.</case>
+          <objects>
+            <object type="other">honorairesd'architecte</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0089" context="primary" appointment="appointed">
+              <title>architecte expert</title>
+            </expert>
+            <expert ref="#xpr0102" context="primary" appointment="appointed">
+              <title>architecte expert</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0057">
+              <persName>
+                <surname>Liebault de Neuville</surname>
+                <forename>Christophe Edouard</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="true" intervention="true">
+              <person>
+                <persName>
+                  <surname>Huez</surname>
+                  <forename/>
+                </persName>
+                <occupation>architecte à Paris</occupation>
+              </person>
+              <status>builder</status>
+              <expert ref="#xpr0102"/>
+              <prosecutor>
+                <persName>
+                  <surname>Cornisset</surname>
+                  <forename/>
+                </persName>
+              </prosecutor>
+            </party>
+            <party role="opponent" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Piguard</surname>
+                  <forename/>
+                </persName>
+                <occupation>secrétaire du roi</occupation>
+              </person>
+              <status>limited-partner</status>
+              <expert ref="#xpr0089"/>
+              <prosecutor>
+                <persName>
+                  <surname>Delaplace</surname>
+                  <forename/>
+                </persName>
+              </prosecutor>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="">Que d’après tout ce qui vient d’être dit avec autant de précision que ledit sieur Pignard a affecté d’y mettre (d’étendue ?) à on ne voit que deux objets de contestation actuellement soumis au jugement de la cour celuy concernant la remise des vieux bois que le sieur d’Huez n’a jamais eu en sa possession et celuy contenant le plan dont est fait mention aricle 2 du mémoire, que toutes les autres doivent de toute nécessité etre renvoyées à la décision des experts, que le sieur d’Huez va même jusqu’à soutenir que la contestation sur ce point doit également être renvoyée à la décision des experts puis que le sieur Pignard luy a offert pour ce même plan une somme de vingt quatre livres dont le sieur d’Huez ne voullant point, il ( ?) il faut de toute nécessité passer à cet égard à la décision des experts.
+Après quoy nous avons fait un extrait de tout ce qui a été dit et requis par les parties poury avoir recours lors des estimations que nous devons faire des honoraires dudit sieur d’Huez.
+Ce fait en présence dudit sieurd’Huez et en l’absence dudit sieur Pignard et attendu que la vaccation s’est consommée nous avons remis /(lacune)/ et jusqu’à ce nous sommes retirés.</opinion>
+          <arrangement/>
+          <agreement type="unfinished">Affaire inachevée</agreement>
+          <estimate l="" s="" d=""/>
+          <fees detail="false">
+            <total l="" s="" d=""/>
+          </fees>
+          <expenses mentioned=""/>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value">
+          <term value="k5">Honoraires</term>
+        </keywords>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis>Expertise inachevée, pas de conclusions</analysis>
+        <noteworthy>à l'occasion de la démolition par Huez, architecte, de la maison du commanditaire Pignard. Récupération des matériaux.
+Le Chatelet avait préalablement nommé par expert à l'opposant Dumont. Mais l'oposant a finalement choisi Desboeufs</noteworthy>
+      </description>
+    </expertise>

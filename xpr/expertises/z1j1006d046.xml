@@ -1,0 +1,196 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1006d046">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-09-01T12:00:00">2020-09-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2017-04-01T12:00:00">2017-04-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1006</idno>
+        <idno type="item">046</idno>
+        <facsimile from="0595" to="0617"/>
+        <physDesc>
+          <extent sketch="false">22</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-08-19" type="province"/>
+          <date when="1776-10-05" type="province"/>
+        </sessions>
+        <places>
+          <place type="province">
+            <address/>
+            <complement>Abbaye d’Yvernaux-en-Brie, sur le chemin entre Lesigny et Brie-Comte-Robert</complement>
+            <city>Yvernaux-en-Brie</city>
+            <district/>
+            <owner/>
+          </place>
+        </places>
+        <categories>
+          <category type="assessment">Décrire et évaluer les travaux à venir</category>
+          <designation rubric="true">Visite et estimation des réparations à faire</designation>
+        </categories>
+        <procedure>
+          <framework type="b2b">L’institution est saisie dans le cadre d’une procédure (l’institution nomme un ou deux experts)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Parlement (grande chambre) (arrêt du 31 juillet 1776)</orgName>
+              <date when="1776-07-31"/>
+            </sentence>
+          </sentences>
+          <case>Constater et évaluer les réparations à faire</case>
+          <objects>
+            <object type="other">abbaye</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0210" context="primary" appointment="court-appointed">
+              <title>architecte juré expert des bâtiments à Paris</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0061">
+              <persName>
+                <surname>Lecoeur</surname>
+                <forename>Jean Clair</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="true" intervention="false">
+              <person>
+                <persName>
+                  <surname>Bouteillié</surname>
+                  <forename>Philippe Jean</forename>
+                </persName>
+                <occupation>prêtre abbé commendataire de l’abbaye royale de Notre-Dame d’Yvernaux</occupation>
+              </person>
+              <status>owner</status>
+              <expert ref="#xpr0210"/>
+            </party>
+            <party role="opponent" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Normand</surname>
+                  <forename>Martin</forename>
+                </persName>
+                <occupation>prieur</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Grenier</surname>
+                  <forename>Etienne</forename>
+                </persName>
+                <occupation>célerier</occupation>
+              </person>
+              <status>owner</status>
+              <expert ref="#xpr0210"/>
+              <prosecutor>
+                <persName>
+                  <surname>Ringaud</surname>
+                  <forename/>
+                </persName>
+              </prosecutor>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0210">"Montant et revenant ensemble les réparations à faire en ladite abbaye et dépendances suivant les estimations par nous cy dessus faites à la somme totale de 15719 l. 10 s. 10 d."</opinion>
+          <arrangement/>
+          <agreement type="conclusion">Conclusion</agreement>
+          <estimate l="15719" s="10" d="10"/>
+          <fees detail="true">
+            <fee type="papers" l="17" s="12" d=""/>
+            <fee type="expert" ref="#xpr0210" l="192" s="" d=""/>
+            <fee type="clerk" l="192" s="" d=""/>
+            <fee type="rolls" l="104" s="" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="503" s="12" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="137" s="" d=""/>
+            <expense type="expert" l="36" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis>(f. 2r°) il est prévu d’emblée que l’expert fera ses calculs, détails et estimation dans son bureau à Paris pour éviter les frais et plus long séjour en l’abbaye. (f. 2v°) il est prévu également que l’expert travaillera à l’heure et par notes sur bordereaux particuliers
+                Conclusion
+                « C’est, messeigneurs, l’avis de nous expert sur l’état des réparations à faire à lad. abbaye et dépendances et leur estimation, nous référant de juger et ordonner »
+                Calcul du temps de l’expert en heure : unique?, état des frais, f. 2r°</analysis>
+        <noteworthy/>
+      </description>
+    </expertise>

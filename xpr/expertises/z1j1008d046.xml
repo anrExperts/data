@@ -1,0 +1,203 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1008d046">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-09-01T12:00:00">2020-09-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2018-01-01T12:00:00">2018-01-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>PC</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1008</idno>
+        <idno type="item">046</idno>
+        <facsimile from="0486" to="0500"/>
+        <physDesc>
+          <extent sketch="false">12</extent>
+          <appendices>
+            <appendice>
+              <type type="other">Reçu</type>
+              <extent>1</extent>
+              <desc/>
+              <note/>
+            </appendice>
+            <appendice>
+              <type type="other">Reçu</type>
+              <extent>1</extent>
+              <desc/>
+              <note/>
+            </appendice>
+          </appendices>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-10-21" type="province"/>
+          <date when="1776-11-14" type="paris"/>
+        </sessions>
+        <places>
+          <place type="province">
+            <address/>
+            <complement>église Saint-Pierre</complement>
+            <city>Bregny près de Meaux</city>
+            <district/>
+            <owner>marguilliers de l'église</owner>
+          </place>
+          <place type="office">
+            <address/>
+          </place>
+        </places>
+        <categories>
+          <category type="assessment">Décrire et évaluer les travaux à venir</category>
+          <designation rubric="true">Estimation des réparations à faire en une église</designation>
+        </categories>
+        <procedure>
+          <framework type="b2a">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Grande chambre du Parlement</orgName>
+              <date when="1773-06-25"/>
+            </sentence>
+          </sentences>
+          <case>Constater les réparations qui sont à faire au chœur, chapelle, tour de l’église Saint Pierre de Bregny (église paroissiale rattachée à l’Abbaye Saint-Pierre de Robeil), suite à une sentence de requête de l’hôtel du Roy du 25 juin 1773, et statuer sur la transaction du 10 décembre 1769 entre les Sieurs Marguilliers et l’abbaye de Saint Pierre de Robeil quant aux travaux supplémentaires à réaliser pour la balustrade séparant le chœur et la nef de ladite église et le financement des ouvrages.</case>
+          <objects>
+            <object type="other">église</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0050" context="primary" appointment="appointed">
+              <title>architecte expert à Paris</title>
+            </expert>
+            <expert ref="#xpr0270" context="primary" appointment="appointed">
+              <title>architecte expert à Paris</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0059">
+              <persName>
+                <surname>Forestier</surname>
+                <forename>Césaire François</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="true" intervention="true">
+              <person>
+                <persName>
+                  <surname>Robeche</surname>
+                  <forename>Jean Marie</forename>
+                </persName>
+                <occupation>Curé marguillier de l’église paroissiale de Bregny</occupation>
+              </person>
+              <status>owner</status>
+              <expert ref="#xpr0270"/>
+            </party>
+            <party role="opponent" presence="true" intervention="false">
+              <person>
+                <persName>
+                  <surname>Bréon</surname>
+                  <forename>Jean Baptiste</forename>
+                </persName>
+                <occupation>commis pour la communauté de l’Abbaye Saint Pierre de Robeil</occupation>
+              </person>
+              <status/>
+              <expert ref="#xpr0050"/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="">« Nous Poupée, observons à la Cour que pour ce qui est de la reconstruction de la balustrade dans le choeur qui doit séparer la chapelle de la nef est contraire à la sentence et arrêt sus énoncé, en ce que ledit arrêt et sentence ne concernent que les réparations à faire auxdits choeur, chapelle et tour de clocher de l’église Saint Pierre de Bregny, qui seront faites telles qu’elles se trouvent aujourd’hui […]
+Nous Château observons à la cour, que à ce qui a été dit par ledit Sieur Poupée, nous croyons devoir ajouter que pour la transaction faite entre les religieux de l’Abbaye Royale de Saint Pierre, le curé et marguilliers en date du 10 décembre 1769, par laquelle il est dit que pour éviter toute contestation entre lesdits religieux et le prieur de Robeil, ils s’obligent d’entretenir à leurs frais chacun pour sa portion et droit qu’il a de percevoir les grosses dîmes de la paroisse de Saint Pierre de Bregny, et comme il a été fait par le passé, de toutes les réparations, grosses ou menues, dans le choeur et l’Eglise de Bregny, dans l’état dans lequel elle se trouve aujourd’hui […]
+Tel est Monsieur, l’état de ladite église de St Pierre de Brgny et les réparations à y faire faire, convenant au Sieur prieur de Robeil, pour le choeur, chapelle, collatéraux et tour clocher, nous référons à vous d’ordonner. »</opinion>
+          <arrangement/>
+          <agreement type="agreement">Accord</agreement>
+          <estimate l="" s="" d=""/>
+          <fees detail="true">
+            <fee type="papers" l="30" s="" d=""/>
+            <fee type="expert" ref="#xpr0050" l="60+84+24" s="" d=""/>
+            <fee type="expert" ref="#xpr0270" l="60+84+24" s="" d=""/>
+            <fee type="clerk" l="60+84+24" s="" d=""/>
+            <fee type="rolls" l="100" s="" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="36" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="670" s="" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="103" s="" d=""/>
+            <expense type="expert" l="32" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis/>
+        <noteworthy/>
+      </description>
+    </expertise>

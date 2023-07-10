@@ -1,0 +1,203 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1009d031">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-08-01T12:00:00">2020-08-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2017-10-01T12:00:00">2017-10-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1009</idno>
+        <idno type="item">031</idno>
+        <facsimile from="0279" to="0283"/>
+        <physDesc>
+          <extent sketch="false">5</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-11-15" type="province"/>
+        </sessions>
+        <places>
+          <place xml:id="id43d254" type="province">
+            <address/>
+            <complement/>
+            <city>Villemomble</city>
+            <district/>
+            <owner>époux Crepin</owner>
+          </place>
+          <place xml:id="id43d270" type="province">
+            <address/>
+            <complement/>
+            <city>Villemomble</city>
+            <district/>
+            <owner>époux Crepin</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="estimation">Estimer la valeur des biens</category>
+          <designation rubric="true">Visitte et estimation de deux maisons à Villemonble, de la succession des sieur et dame Crépin ; M. Taboureur, expert.</designation>
+        </categories>
+        <procedure>
+          <framework type="b2b">L’institution est saisie dans le cadre d’une procédure (l’institution nomme un ou deux experts)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Châtelet, lieutenant civil (sentence)</orgName>
+              <date when="1776-05-07"/>
+            </sentence>
+          </sentences>
+          <case>Succession époux Crepin / vente de deux maisons dépendant de la succession : le tuteur de la mineure Crepin est autorisé à vendre les deux maisons, mais à un prix au moins égal à l’estimation qui en sera faite par expert</case>
+          <objects>
+            <object type="house">Maison(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0250" context="primary" appointment="court-appointed">
+              <title>architecte juré expert des bâtiments à Paris</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0069">
+              <persName>
+                <surname>Beudot</surname>
+                <forename>Simon</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Crepin</surname>
+                  <forename>Marie Jeanne</forename>
+                </persName>
+                <occupation>mineure âgée de 20 ans et demi ou environ, épouse de Dupont, Adrien, cuisinier à Paris (tuteur ad hoc), et fille des défunts Crepin, François, bourgeois de la paroisse de Villemomble, et de Loyan, Jeanne son épouse</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Dupont</surname>
+                  <forename>Adrien</forename>
+                </persName>
+                <occupation>cuisinier à Paris, tuteur ad hoc</occupation>
+              </person>
+              <status>heir</status>
+              <expert ref="#xpr0250"/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0250">« Nous estimons le tout ainsy qu’il se poursuit et comporte, et de la manierequ’il est cy devant declaré avec le droit des cervitudes actives cy dessus réglée, à la charge par l’acquereur de la construction du mur que nous avons cy dessus indiqué et sans autres charges que les cens et droits seigneuriaux, ne nous ayant point été remis de titre qui nous en fassent connoitre d’autres, et au cours du temps la somme de trois mille livres eu égard aux depenses à faire par l’acquereur pour regler les cervitudes et etablir la cloture du terrein cy… 3 000 l. » 
+« Nous avons ensuitte fait les calculs necessaires pour connoitre l’étendue du terrein et des batiments qui composent la seconde maison qui est celle située susdite grande rue dudit lieu, que nous estimons d’après lesdites operations en son état actuel ainsy qu’elle se poursuit et comporte avec les batiments jardin cour et passage commun cy dessus designés, lequel passage sera commun entre la presente maison et celle à droitte appartenante au même propriétaire en la largeur actuelle entre les deux pignons et depuis l’allignement sur la rue jusqu’à l’allignement du mur d’appenty dependant du corps de batiment de la presente maison qui est à droitte de la cour, avec le droit de faire tomber par égout sur ledit passage commun formant retour les eaux du comble du susdit appenty, et celles du comble des deux autres parties de batiment ensuitte à droitte de laditte cour aussy par égout sur une portion de terrein voisin appartenant actuellement au même propriétaire la somme de deux milles livres eu égard à l’état actuelle des batiments aux reparations indispensables qui sont à y faire, et au cours du temps present, à la charge de la communauté du susdit passage d’entrée, de l’entretien à frais communs de la porte fermant l’entrée dudit passage sur la rue, plus à la charge de boucher une baye de porte qui communique actuellement du jardin de la presente maison à une autre partie de jardin reservé et à la charge suelement des cens et droits seigneuriaux n’en connaissant point d’autre attendu qu’il ne nous a point été remis de titre de propriété cy… 2 000 l. 
+Tel est Monsieur notre avis sur la maniere de composer et de diviser les deux maisons dans la vente cy ordonnée par votre sentence et notre avis sur leur valeur, vous referant sur le tout Fait par nous architecte expert les jours mois et an que dessus »</opinion>
+          <arrangement/>
+          <agreement type="conclusion">Conclusion</agreement>
+          <estimate l="" s="" d=""/>
+          <estimates>
+            <place ref="#id43d254">
+              <appraisal l="3000" s="" d="">
+                <desc>une maison</desc>
+              </appraisal>
+            </place>
+            <place ref="#id43d270">
+              <appraisal l="2000" s="" d="">
+                <desc>une maison</desc>
+              </appraisal>
+            </place>
+          </estimates>
+          <fees detail="true">
+            <fee type="papers" l="5" s="9" d="6"/>
+            <fee type="expert" ref="#xpr0250" l="24" s="" d=""/>
+            <fee type="clerk" l="24" s="" d=""/>
+            <fee type="rolls" l="30" s="" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="83" s="9" d="6"/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="expert" l="6" s="" d=""/>
+            <expense type="clerk" l="20" s="10" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis/>
+        <noteworthy/>
+      </description>
+    </expertise>

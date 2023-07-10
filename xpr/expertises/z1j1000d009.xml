@@ -1,0 +1,212 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1000d009">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-09-01T12:00:00">2020-09-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2018-01-01T12:00:00">2018-01-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>PC</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1000</idno>
+        <idno type="item">009</idno>
+        <facsimile from="0050" to="0056"/>
+        <physDesc>
+          <extent sketch="false">6</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-03-02" type="suburbs"/>
+          <date when="1776-03-02" type="suburbs"/>
+          <date when="1776-03-07" type="suburbs"/>
+          <date when="1776-03-07" type="suburbs"/>
+          <date when="1776-03-13" type="suburbs"/>
+          <date when="1776-03-13" type="suburbs"/>
+          <date when="1776-03-21" type="suburbs"/>
+          <date when="1776-03-21" type="suburbs"/>
+        </sessions>
+        <places>
+          <place type="suburbs">
+            <address/>
+            <complement>grande rue de Passy, près de la porte du bois de Boulogne</complement>
+            <city>Paris</city>
+            <district/>
+            <owner>De Savigny</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="acceptation">Recevoir et évaluer le travail réalisé</category>
+          <designation rubric="true">Visitte et estimations de maçonnerie</designation>
+        </categories>
+        <procedure>
+          <framework type="b2a">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>LC</orgName>
+              <date when="1776-02-17"/>
+            </sentence>
+          </sentences>
+          <case>Opposition du Sieur Delavigny concernant le paiement du maître maçon Pierre Dupeux pour des travaux à valeur de trois mille deux cent cinquante livres dix sept sols et neuf deniers suivant requête verbale du 15 février 1776. Nouvelle estimation des travaux demandée</case>
+          <objects>
+            <object type="house">Maison(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0092" context="primary" appointment="appointed">
+              <title>juré expert des bâtiments en titre d’office</title>
+            </expert>
+            <expert ref="#xpr0210" context="primary" appointment="appointed">
+              <title>juré expert des bâtiments en titre d’office</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0050">
+              <persName>
+                <surname>Mallerot</surname>
+                <forename>Joseph Louis</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="true" intervention="false">
+              <person>
+                <persName>
+                  <surname>Dupeux</surname>
+                  <forename>Pierre</forename>
+                </persName>
+                <occupation>maître maçon entrepreneur de bâtiments à Passy</occupation>
+              </person>
+              <status>builder</status>
+              <expert ref="#xpr0210"/>
+              <prosecutor>
+                <persName>
+                  <surname>Cottereau</surname>
+                  <forename/>
+                </persName>
+              </prosecutor>
+            </party>
+            <party role="opponent" presence="true" intervention="false">
+              <person>
+                <persName>
+                  <surname>De Savigny</surname>
+                  <forename/>
+                </persName>
+                <occupation>notaire honoraire au Châtelet</occupation>
+              </person>
+              <status>limited-partner</status>
+              <expert ref="#xpr0092"/>
+              <prosecutor>
+                <persName>
+                  <surname>Bordier</surname>
+                  <forename/>
+                </persName>
+              </prosecutor>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="">« Récapitulation de nos susdites estimations :Premier mémoire : 182 l. 16 s. 0 d.Deuxième mémoire : 2026 l. 1s. 9 d.Troisième mémoire : 185 l. 4 s. 7 d.Universalité la somme de deux mille trois cent quatre vingt quatorze livres deux sols deux deniers : 2394 l. 2 s. 2 d. Nous observons que nous avons fait nos estimation dessus, en regard au remploi des vieux matériaux ; au frais de démolition et enlèvement des gravois, que les ouvrages ont été entièrement faits à neuf, le sont suivant les règles de l’art. Et que les autres réparations et rétablissements sont autant bien qu’il est possible de le faire dans d’anciens bâtiments. Observations : Nous n’avons point rapporté le détail desdits ouvrages mais seulement la quantité, qualité distincte et valeur de chacun d’iceux, C’est Monsieur, le montant de la valeur des ouvrages en question. »</opinion>
+          <arrangement/>
+          <agreement type="agreement">Accord</agreement>
+          <estimate l="" s="" d=""/>
+          <fees detail="true">
+            <fee type="papers" l="18" s="" d=""/>
+            <fee type="expert" ref="#xpr0092" l="60" s="" d=""/>
+            <fee type="expert" ref="#xpr0210" l="60" s="" d=""/>
+            <fee type="clerk" l="60" s="" d=""/>
+            <fee type="rolls" l="18" s="" d=""/>
+            <fee type="prosecutors" l="9" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="225" s="" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="expert" l="20" s="" d=""/>
+            <expense type="clerk" l="44" s="10" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation">
+          <term value="n10">Rétablissement</term>
+          <term value="n13">Remploi</term>
+        </keywords>
+        <analysis/>
+        <noteworthy/>
+      </description>
+    </expertise>

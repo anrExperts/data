@@ -1,0 +1,213 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j581d015">
+  <meta/>
+  <control>
+    <maintenanceStatus>revised</maintenanceStatus>
+    <publicationStatus/>
+    <localControl localType="detailLevel">
+      <term>completed</term>
+    </localControl>
+    <maintenanceHistory>
+      <maintenanceEvent>
+                <eventType>revised</eventType>
+                <eventDateTime standardDateTime="2022-03-29T14:05:10Z">2022-03-29T14:05:10Z</eventDateTime>
+                <agentType>human</agentType>
+                <agent>llosserand</agent>
+                <eventDescription>rvpcd</eventDescription>
+            </maintenanceEvent>
+          <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateObjectsValues_db.xqy/BaseX</agent>
+        <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateOpinionRef_files.xqy/BaseX</agent>
+        <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateRefValues_files.xqy/BaseX</agent>
+        <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+        <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>revised</eventType>
+        <eventDateTime standardDateTime="2020-11-01T12:00:00">2020-11-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>JH</agent>
+        <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>retroconverted</eventType>
+        <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>ead2xpr.xsl/Saxon9</agent>
+        <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>created</eventType>
+        <eventDateTime standardDateTime="2017-04-01T12:00:00">2017-04-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>llosserand</agent>
+        <eventDescription>Création de la fiche.</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+  </control>
+  <sourceDesc>
+    <unitdate>1726</unitdate>
+    <idno type="unitid">Z1J581</idno>
+    <idno type="item">015</idno>
+    <facsimile from="0125" to="0142"/>
+    <physDesc>
+      <extent sketch="false">16</extent>
+      <appendices>
+        <appendice>
+          <type type="other">Assignation</type>
+          <extent>1</extent>
+          <desc>copie d'une signification du 6 juin 1726 de Carole, Denis, huissier aux requêtes du Palais, à Quirot, Pierre, architecte de se trouver présent à la visite de la maison à Ivry le 8 juin.</desc>
+          <note/>
+        </appendice>
+      </appendices>
+    </physDesc>
+  </sourceDesc>
+  <description>
+    <sessions>
+      <date when="1726-06-08" type="province"/>
+    </sessions>
+    <places>
+      <place type="province">
+        <address/>
+        <complement/>
+        <city>Ivry-sur-Seine [Val-de-Marne]</city>
+        <district/>
+        <owner>Phébus</owner>
+      </place>
+    </places>
+    <categories>
+      <category type="assessment">Décrire et évaluer les travaux à venir</category>
+      <designation rubric="true">Visitte de maison à Ivry sur Seine, entre Mr Le marquis de Romeval et Madame la comtesse de Baumont ; M. Quirot, expert.</designation>
+    </categories>
+    <procedure>
+      <framework type="b2">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+      <origination type="institution">Une institution</origination>
+      <sentences>
+        <sentence>
+          <orgName>Requêtes du Palais</orgName>
+          <date when="1726-06-06"/>
+        </sentence>
+      </sentences>
+      <case>après le décès du locataire (bail à ferme), le propriétaire fait procéder à l'expertise des « dégradations commises par le feu sieur de Réon [et celles] causées par les injures du temps » pendant le temps de la location et et après le décès du locataire (f. 3r°)</case>
+      <objects>
+        <object type="house">Maison(s)</object>
+      </objects>
+    </procedure>
+    <participants>
+      <experts>
+        <expert ref="#xpr0232" context="primary" appointment="court-appointed">
+          <title>architecte juré du roi expert bourgeois de Paris</title>
+        </expert>
+      </experts>
+      <clerks>
+        <clerk ref="#clrk0020">
+          <persName>
+            <surname>Quirot</surname>
+            <forename>Etienne François</forename>
+          </persName>
+        </clerk>
+      </clerks>
+      <parties>
+        <party role="petitioner" presence="true" intervention="false">
+          <person>
+            <persName>
+              <surname>Phébus</surname>
+              <forename>César</forename>
+            </persName>
+            <occupation>propriétaire</occupation>
+          </person>
+          <status>owner</status>
+          <expert ref="#xpr0232"/>
+          <prosecutor>
+            <persName>
+              <surname>Ciron</surname>
+              <forename>Jean</forename>
+            </persName>
+          </prosecutor>
+        </party>
+        <party role="opponent" presence="true" intervention="false">
+          <person>
+            <persName>
+              <surname>de Réon de Luxembourg</surname>
+              <forename>Antoinette Louise</forename>
+            </persName>
+            <occupation>seule et unique héritière sous bénéfice d'inventaire de de Réon de Luxembourg, Charles, son frère autorisée par justice et encore assistée du comte de Réaumont, Jean Hipolitte, son époux, capitaine [illisible] des gardes du corps du roy</occupation>
+          </person>
+          <status>heir</status>
+          <expert ref=""/>
+          <prosecutor>
+            <persName>
+              <surname>Tronchet</surname>
+              <forename>Charles</forename>
+            </persName>
+          </prosecutor>
+        </party>
+      </parties>
+      <craftmen>
+        <craftman>
+          <persName>
+            <surname/>
+            <forename/>
+          </persName>
+          <occupation/>
+        </craftman>
+      </craftmen>
+    </participants>
+    <conclusions>
+      <opinion ref="#xpr0232">Après les réquisitions du procureur Tronchet, il est procédé à la visite qui se conclue ainsi : (f. 14 v°) « Tel est l'estat auquel nous avons trouvé lad. maison et lieux en dépendans, sauf sur le tout à la cour de juger et ordonner »</opinion>
+      <arrangement/>
+      <agreement type="conclusion">Conclusion</agreement>
+      <estimate l="" s="" d=""/>
+      <fees detail="true">
+        <fee type="papers" l="" s="" d=""/>
+        <fee type="expert" ref="#xpr0232" l="18" s="" d=""/>
+        <fee type="clerk" l="18" s="" d=""/>
+        <fee type="rolls" l="" s="" d=""/>
+        <fee type="prosecutors" l="" s="" d=""/>
+        <fee type="help" l="" s="" d=""/>
+        <fee type="plans" l="" s="" d=""/>
+        <total l="" s="" d=""/>
+      </fees>
+      <expenses mentioned="true">
+        <expense type="clerk" l="15" s="12" d="6"/>
+        <expense type="expert" l="" s="" d=""/>
+      </expenses>
+    </conclusions>
+    <keywords group="estates"/>
+    <keywords group="procedure"/>
+    <keywords group="contract"/>
+    <keywords group="encumbrance"/>
+    <keywords group="law"/>
+    <keywords group="measurement"/>
+    <keywords group="repairs"/>
+    <keywords group="guarantees"/>
+    <keywords group="responsability"/>
+    <keywords group="ownership"/>
+    <keywords group="value"/>
+    <keywords group="neighbourhood"/>
+    <keywords group="disorder"/>
+    <keywords group="transformation"/>
+    <analysis>f. 1v° « […] Nous, Quirot, expert nomé d'office, la maison et lieu en dépendant et dont est question seront veus et visités pour dresser notre procès-verbal des réparations et dégradations sy aucune y a, dont lequel procès-verbal nous distinguerons celle qui pouvoient voir esté faite avant le huit aoust 1725, jour du décès dudit sr Réon de Luxembourg, à celles depuis le décès, mesme les estimer pour led. procès-verbal fait et raport à la connaissance estre ordonné à qui de raison. » f. 3r° « [Il convient procéder] à la visitte de lad. maison, bastimens et jardin en dépendant et de distinguer dans nostre procès verbal les réparations qui sont à faire tant à cause des dégradations commises par led. Feu sieur de Réon que causés par les injures du temps, tant avant le huit aoust 1725, jour du décèds dud. sieur de Réon, que depuis, et notament de la quantité et qualité des bois qui ont esté coupés, du mauvais estat des treillages, réfection de la pompe du puis du grand jardin, restablissement des deux grilles de la salle du cabinet, des biens vitrages et générallement touttes les réparations qui sont à faire pour mettre lad. maison en bon estat comme elle estoit lors du contrat qui en a esté fait aud. feu sieur de Réon ».</analysis>
+    <noteworthy/>
+  </description>
+</expertise>

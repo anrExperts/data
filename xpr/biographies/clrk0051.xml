@@ -1,0 +1,71 @@
+<eac xmlns="https://archivists.org/ns/eac/v2" xml:id="clrk0051">
+  <control maintenanceStatus="">
+    <recordId>clrk0051</recordId>
+    <maintenanceAgency>
+      <agencyName>ANR Experts</agencyName>
+    </maintenanceAgency>
+    <maintenanceHistory>
+      <maintenanceEvent maintenanceEventType="created">
+        <agent agentType="machine">clerk_csv2eac.xqy/BaseX</agent>
+        <eventDateTime standardDateTime="2022-12-31T14:06:48.817+01:00"/>
+        <eventDescription>Création des fiches EAC-CPF à partir du tableau</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+    <sources>
+      <source id="sourceid86497142">
+        <reference href="">Almanach royal 1746</reference>
+      </source>
+      <source id="sourceid86497144">
+        <reference href="">Almanach royal 1747</reference>
+      </source>
+      <source id="sourceid86497146">
+        <reference href="">Almanach royal 1756</reference>
+      </source>
+    </sources>
+  </control>
+  <cpfDescription>
+    <identity>
+      <entityType value="person"/>
+      <nameEntry status="authorized" preferredForm="true" sourceReference="">
+        <part localType="full">Vaucher, Claude Edme</part>
+      </nameEntry>
+      <nameEntry status="alternative" preferredForm="false" sourceReference="">
+        <part localType="surname">Vaucher</part>
+        <part localType="forename">Claude Edme</part>
+      </nameEntry>
+      <otherEntityTypes>
+        <otherEntityType>
+          <term>clerk</term>
+        </otherEntityType>
+      </otherEntityTypes>
+      <identityId>clrk0051</identityId>
+    </identity>
+    <description>
+      <functions>
+        <function sourceReference="#sourceid86497142 #sourceid86497144 #sourceid86497146">
+          <term>Greffier</term>
+          <dateRange>
+            <fromDate sourceReference="" certainty="certain" standardDate="1746"/>
+            <toDate sourceReference="" certainty="certain" standardDate="1756"/>
+          </dateRange>
+        </function>
+      </functions>
+      <places>
+        <place sourceReference="#sourceid86497142 #sourceid86497144">
+          <placeRole>Adresse</placeRole>
+          <placeName>rue du Renard Saint Merry</placeName>
+          <dateRange>
+            <fromDate sourceReference="" certainty="certain" standardDate="1746"/>
+            <toDate sourceReference="" certainty="certain" standardDate="1747"/>
+          </dateRange>
+        </place>
+        <place sourceReference="#sourceid86497146">
+          <placeRole>Adresse</placeRole>
+          <placeName>Place Royale, Hôtel de Richelieu</placeName>
+          <date sourceReference="" certainty="certain" standardDate="1756"/>
+        </place>
+      </places>
+    </description>
+  </cpfDescription>
+  <!---->
+</eac>

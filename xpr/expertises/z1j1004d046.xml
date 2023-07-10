@@ -1,0 +1,235 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1004d046">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-07-01T12:00:00">2020-07-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2017-10-01T12:00:00">2017-10-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1004</idno>
+        <idno type="item">046</idno>
+        <facsimile from="0507" to="0517"/>
+        <physDesc>
+          <extent sketch="false">8</extent>
+          <appendices>
+            <appendice>
+              <type type="petition">Requête</type>
+              <extent>1</extent>
+              <desc/>
+              <note/>
+            </appendice>
+          </appendices>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-06-17" type="paris"/>
+          <date when="1778-03-09" type="paris"/>
+          <date when="1778-03-14" type="paris"/>
+          <date when="1778-03-23" type="paris"/>
+          <date when="1778-03-23" type="paris"/>
+          <date when="1778-04-13" type="paris"/>
+        </sessions>
+        <places>
+          <place type="paris">
+            <address>
+              <street>Rue du Faubourg Saint-Antoine</street>
+              <buildingNumber/>
+            </address>
+            <complement>vis à vis la rue St Nicolas</complement>
+            <parish/>
+            <owner>mineurs Peigné</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="assessment">Décrire et évaluer les travaux à venir</category>
+          <category type="acceptation">Recevoir et évaluer le travail réalisé</category>
+          <designation rubric="true">Visite et estimation de réparations à faire [transformée en cours d’expertise en une réception d’ouvrages]</designation>
+        </categories>
+        <procedure>
+          <framework type="b2b">L’institution est saisie dans le cadre d’une procédure (l’institution nomme un ou deux experts)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Châtelet, lieutenant civil (ordonnance)</orgName>
+              <date when="1776-05-14"/>
+            </sentence>
+          </sentences>
+          <case>[non précisée : estimation des réparations restant à faire à la suite de celles déjà faites, la cause n’est pas détaillée]</case>
+          <objects>
+            <object type="house">Maison(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0250" context="primary" appointment="court-appointed">
+              <title>architecte expert</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0064">
+              <persName>
+                <surname>Gobert</surname>
+                <forename>Jean Charles Simon</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="true" intervention="true">
+              <person>
+                <persName>
+                  <surname>Leroy</surname>
+                  <forename>Philippe</forename>
+                </persName>
+                <occupation>au nom et comme tuteur des mineurs Peigné, propriétaires de la maison dont il est question</occupation>
+              </person>
+              <status>owner</status>
+              <expert ref="#xpr0250"/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname>Moreau</surname>
+                <forename>Silvain le jeune</forename>
+              </persName>
+              <occupation>maître charpentier</occupation>
+            </craftman>
+            <craftman>
+              <persName>
+                <surname>Palet</surname>
+                <forename>Charles</forename>
+              </persName>
+              <occupation>maître couvreur</occupation>
+            </craftman>
+            <craftman>
+              <persName>
+                <surname>Mogegrin</surname>
+                <forename>François</forename>
+              </persName>
+              <occupation>serrurier</occupation>
+            </craftman>
+            <craftman>
+              <persName>
+                <surname>Du Val</surname>
+                <forename>Nicolas</forename>
+              </persName>
+              <occupation>menuisier</occupation>
+            </craftman>
+            <craftman>
+              <persName>
+                <surname>Bravareau</surname>
+                <forename/>
+              </persName>
+              <occupation>carreleur</occupation>
+            </craftman>
+            <craftman>
+              <persName>
+                <surname>Hussi…</surname>
+                <forename/>
+              </persName>
+              <occupation>paveur</occupation>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0250">« Tous lesquels ouvrages cy dessus raportés montent ensemble à la somme de … 5 295 l. 3 s. 1 d. 
+Scavoir 
+Maçonnerie 3 684 l. 13 s. 2 d. 
+Charpente 442 l. 16 s. 
+Couverture 196 l. 18 s. 1 d. 
+Serurerie 181 l. 9 s. 6 d. 
+Menuiserie 429 l. 11 s. 5 d. 
+Carrelage 106 l. 7 s. 
+Pavé 253 l. 8 s. 
+Nous observons que comme les transcriptions des memoires par nous veriffiées auroit été trop longue… nous n’avons raporté dans ces presentes que les sommes des ouvrages dont est question et pour en constater le detail nous avons annexé lesdits memoires à ces presentes paraphé sur chaque rolle et signé enfin den ous et du greffier soussigné. Fait par nous architecte expert susdit les jours mois et an que dessus. »</opinion>
+          <arrangement/>
+          <agreement type="conclusion">Conclusion</agreement>
+          <estimate l="" s="" d=""/>
+          <fees detail="true">
+            <fee type="papers" l="12" s="" d=""/>
+            <fee type="expert" ref="#xpr0250" l="48" s="" d=""/>
+            <fee type="clerk" l="48" s="" d=""/>
+            <fee type="rolls" l="36" s="" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="144" s="" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="45" s="" d=""/>
+            <expense type="expert" l="" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis/>
+        <noteworthy>pv commencé par les experts le 9 juin 1775 où il est question du mur de la maison</noteworthy>
+      </description>
+    </expertise>

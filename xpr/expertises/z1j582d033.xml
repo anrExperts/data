@@ -1,0 +1,201 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j582d033">
+  <meta/>
+  <control>
+    <maintenanceStatus>revised</maintenanceStatus>
+    <publicationStatus/>
+    <localControl localType="detailLevel">
+      <term>completed</term>
+    </localControl>
+    <maintenanceHistory>
+      <maintenanceEvent>
+                <eventType>revised</eventType>
+                <eventDateTime standardDateTime="2022-03-31T15:02:28Z">2022-03-31T15:02:28Z</eventDateTime>
+                <agentType>human</agentType>
+                <agent>llosserand</agent>
+                <eventDescription>rvpcd</eventDescription>
+            </maintenanceEvent>
+          <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateObjectsValues_db.xqy/BaseX</agent>
+        <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateOpinionRef_files.xqy/BaseX</agent>
+        <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateRefValues_files.xqy/BaseX</agent>
+        <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+        <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>revised</eventType>
+        <eventDateTime standardDateTime="2020-11-01T12:00:00">2020-11-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>JH</agent>
+        <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>retroconverted</eventType>
+        <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>ead2xpr.xsl/Saxon9</agent>
+        <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>created</eventType>
+        <eventDateTime standardDateTime="2017-04-01T12:00:00">2017-04-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>llosserand</agent>
+        <eventDescription>Création de la fiche.</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+  </control>
+  <sourceDesc>
+    <unitdate>1726</unitdate>
+    <idno type="unitid">Z1J582</idno>
+    <idno type="item">033</idno>
+    <facsimile from="0365" to="0369"/>
+    <physDesc>
+      <extent sketch="false">4</extent>
+    </physDesc>
+  </sourceDesc>
+  <description>
+    <sessions>
+      <date when="1726-08-03" type="suburbs"/>
+    </sessions>
+    <places>
+      <place type="suburbs">
+        <address/>
+        <complement>deux maisons à Chaillot, faubourg de la Conférence joignantes et contiguës l'une l'autre, appartenant l'une aux sieurs Vassé (avant) et Gilbert (actuellement) et l'autre au sieurConstantin, Jean.</complement>
+        <city>Paris</city>
+        <district/>
+        <owner>Vassé / Gilbert / Constantin</owner>
+      </place>
+    </places>
+    <categories>
+      <category type="settlement">Départager</category>
+      <designation rubric="true">Visitte de mur mitoyen pour deux percements fait en iceluy à Chaillot, fauxbourg de la Conférence, entre les sieurs Vasse et Gilbert et les sieurs Constants ; M. Piretouy, expert.</designation>
+    </categories>
+    <procedure>
+      <framework type="b2">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+      <origination type="institution">Une institution</origination>
+      <sentences>
+        <sentence>
+          <orgName>requêtes du palais</orgName>
+          <date when="1726-07-19"/>
+        </sentence>
+      </sentences>
+      <case>à la suite des travaux réalisés par le maçon Constantin, Jean, pour la construction de son nouveau bâtiment, le mur mitoyen a été endommagé (deux percements) et mal étayé : il met en péril la maison du voisin.</case>
+      <objects>
+        <object type="wall">Mur(s)</object>
+      </objects>
+    </procedure>
+    <participants>
+      <experts>
+        <expert ref="#xpr0221" context="primary" appointment="appointed">
+          <title>architecte juré du roi expert bourgeois de Paris</title>
+        </expert>
+      </experts>
+      <clerks>
+        <clerk ref="#xpr0066">
+          <persName>
+            <surname>Danjean</surname>
+            <forename>Pierre Paul</forename>
+          </persName>
+        </clerk>
+      </clerks>
+      <parties>
+        <party role="petitioner" presence="true" intervention="true">
+          <person>
+            <persName>
+              <surname>Vassé</surname>
+              <forename>Jean-Baptiste</forename>
+            </persName>
+            <occupation>écuyer conseiller secrétaire du roi maison et couronne de France et de ses finances, premier commissaire de feu monsieur le marquis de la Vrillère, ministre secrétaire d'Etat</occupation>
+          </person>
+          <person>
+            <persName>
+              <surname>Gilbert</surname>
+              <forename>François</forename>
+            </persName>
+            <occupation>marchand bourgeois</occupation>
+          </person>
+          <status>owner</status>
+          <expert ref="#xpr0221"/>
+        </party>
+        <party role="opponent" presence="true" intervention="true">
+          <person>
+            <persName>
+              <surname>Constantin</surname>
+              <forename>Jean</forename>
+            </persName>
+            <occupation>maçon à Chaillot</occupation>
+          </person>
+          <status>owner</status>
+          <expert ref="#xpr0221"/>
+        </party>
+      </parties>
+      <craftmen>
+        <craftman>
+          <persName>
+            <surname>Constantin</surname>
+            <forename>Jean</forename>
+          </persName>
+          <occupation>maçon à Chaillot</occupation>
+        </craftman>
+      </craftmen>
+    </participants>
+    <conclusions>
+      <opinion ref="#xpr0221">« [f. 4r°] Lesd deux percements étans aparans comme dit est dud. cité de la maison desd. srs Vassé et Gilbert tant en pierre que libages, desd. deux jambes, moislon et plastre au racordement seulement hourdé et party gobeté desd. coté du sieur Vassé sans estre crépy ny enduit, ny lesd. pierres et libages dressées ny taillées estant restés brut dud. coté. Tel est l'état desd. deux percements en question et notre avis sur iceux. ».</opinion>
+      <arrangement/>
+      <agreement type="conclusion">Conclusion</agreement>
+      <estimate l="" s="" d=""/>
+      <fees detail="true">
+        <fee type="papers" l="" s="" d=""/>
+        <fee type="expert" ref="#xpr0221" l="10" s="" d=""/>
+        <fee type="clerk" l="" s="" d=""/>
+        <fee type="rolls" l="" s="" d=""/>
+        <fee type="prosecutors" l="" s="" d=""/>
+        <fee type="help" l="" s="" d=""/>
+        <fee type="plans" l="" s="" d=""/>
+        <total l="" s="" d=""/>
+      </fees>
+      <expenses mentioned="true">
+        <expense type="clerk" l="7" s="12" d="6"/>
+        <expense type="expert" l="" s="" d=""/>
+      </expenses>
+    </conclusions>
+    <keywords group="estates"/>
+    <keywords group="procedure"/>
+    <keywords group="contract"/>
+    <keywords group="encumbrance"/>
+    <keywords group="law"/>
+    <keywords group="measurement"/>
+    <keywords group="repairs"/>
+    <keywords group="guarantees"/>
+    <keywords group="responsability"/>
+    <keywords group="ownership"/>
+    <keywords group="value"/>
+    <keywords group="neighbourhood"/>
+    <keywords group="disorder"/>
+    <keywords group="transformation"/>
+    <analysis>La partie requérante déclare la liste des points pour lesquels les experts doivent « faire attention » en cinq points cf. f. 1v°-f. 2v°, puis, réponse de Constantin et réplique de Vassé f. 3r°-v.
+                « [f. 1r°] nous avons fait lecture d'une sentence contradictoire rendue de vous, nos seigneurs ausd. requestes du Pallais le dix neuf juillet dernier entre led. sr Vassé demandeur aux fins de l'exploit du vingt neuf may mil sept cent vingt quatre, fait en qualité lors de propriétaire d'une maison scize aud. Chaillot appartenante à présent à François Gilbert, marchand demeurant aud. lieu d'une part, et Jean Constantin, maçon aud. Chaillot deffendeur d'autre, et entre lesd. Constantin demandeur en requête du 29 novembre aud. an 1724 d'une autre part, led. sr Vassé deffendeur, aussy d'autre part led. Constantin deffendeur et entre led. Constantin demandeur en opposition à la sentence du 12 dudit mois d'avril signifiée le 6e may aussy dernier, et led. sr Vassé deffendeur ; et entre led. François Gilbert à présent propriétaire de la maison dud. sr Vassé demandeur en requête du 5e juin aussy dernier affin d'intervention esd. demandes et opposition d'une part ; et encore lesd. partyes demanderesse et deffendresse de part et d'autre ainsy qu'il est énoncé en lad. sentence ; sur laquelle la cour, partyes ouyes en la chambre avant faire droit sur la première demande a ordonné que ledit sr Vassé seroit tenu d'affirmer en personne à l'audiance [f. 1v°] qu'il n'a pas esté averty verballement par led. Constantin avant la démolition de sa maison et aussy avons fait droit sur la seconde demande a ordonné que nous Piretouy, tiers expert nous transporterions sur les lieux pour donner nostre avis sy led. Constantin a percé en deux endroits le mur de la maison desd. srs Vassé et Gilbert depuis le rapport des experts, dont nous ferions nostre rapport pour le tout fit et rapporté estre fait droit aux partyes ainsy que de raison, dépens réservez, et seroit lad. sentence exécuttée nonobstant oppositions ou appellations quelconques et fais y préjudice. »</analysis>
+    <noteworthy/>
+  </description>
+</expertise>

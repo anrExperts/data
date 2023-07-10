@@ -1,0 +1,202 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j435d040">
+      <meta/>
+      <control>
+        <maintenanceStatus/>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term/>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:45:33.927+02:00">2021-04-21T20:45:33.927+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateKeywordsModule_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour du module keywords.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:44:31.814+02:00">2021-04-21T20:44:31.814+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateExpertisesArrangement_files.xqy/BaseX</agent>
+            <eventDescription>Ajout du champs Accommodement dans l'éventualité d’une résolution par les parties.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2019-05-01T12:00:00">2019-05-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1696</unitdate>
+    <idno type="unitid">Z1J435</idno>
+        <idno type="item">040</idno>
+        <facsimile from="0343" to="0347"/>
+        <physDesc>
+          <extent sketch="false">4</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1696-11-23" type="paris"/>
+          <date when="1696-11-27" type="paris"/>
+        </sessions>
+        <places>
+          <place type="paris">
+            <address>
+              <street>rue des Prêcheurs</street>
+              <buildingNumber/>
+            </address>
+            <complement/>
+            <parish/>
+            <owner>Gabriel et Veuve Braconniers (maisons voisines)</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="assessment">Décrire et évaluer les travaux à venir</category>
+          <category type="settlement">Départager</category>
+          <designation rubric="false">Viite de puits et fosse d'aisance rue des Précheurs</designation>
+        </categories>
+        <procedure>
+          <framework type="b2b">L’institution est saisie dans le cadre d’une procédure (l’institution nomme un ou deux experts)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>LC Chatelet</orgName>
+              <date when="1696-10-24"/>
+            </sentence>
+          </sentences>
+          <case>eau du puits mitoyen infectée par la fosse d'aisance de la veuve Braconnier</case>
+          <objects>
+            <object type="well">Puits</object>
+            <object type="cesspool">Fosse(s) d'aisance</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0170" context="primary" appointment="court-appointed">
+              <title>entrepreneur des bâtiments du roi expert juré</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0008">
+              <persName>
+                <surname>Villain</surname>
+                <forename>Pierre</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="true" intervention="true">
+              <person>
+                <persName>
+                  <surname>veuve Braconnier</surname>
+                  <forename>Marie Magdelaine</forename>
+                </persName>
+                <occupation>Anthoine Braconnier marchand bourgeois de Paris</occupation>
+              </person>
+              <status>owner</status>
+              <expert ref="#xpr0170"/>
+              <representative>
+                <persName>
+                  <surname>de Juigny</surname>
+                  <forename/>
+                </persName>
+                <occupation>mari de la veuve Braconnier, mère de Claude Gabriel</occupation>
+              </representative>
+            </party>
+            <party role="opponent" presence="true" intervention="true">
+              <person>
+                <persName>
+                  <surname>Gabriel</surname>
+                  <forename>Jacques</forename>
+                </persName>
+                <occupation>conseiller du roi et contrôleur de ses bâtiments</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Gabriel</surname>
+                  <forename>François</forename>
+                </persName>
+                <occupation>conseiller du roi</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Gabriel</surname>
+                  <forename>Claude</forename>
+                </persName>
+                <occupation/>
+              </person>
+              <person>
+                <persName>
+                  <surname>Gabriel</surname>
+                  <forename>damoiselle</forename>
+                </persName>
+                <occupation>épouse séparée de bien sur sieur Rillard conseiller du roi cy devant deceveur et payeur des ventes de la villes</occupation>
+              </person>
+              <status>owner</status>
+              <expert ref="#xpr0170"/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname>Gabriel</surname>
+                <forename>Jacques</forename>
+              </persName>
+              <occupation>entrepreneur de la dame de Juigny comme ayant entrepris les ouvrages qu'il convient aussi visiter</occupation>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <agreement type="noConclusion">Sans conclusion</agreement>
+          <opinion ref="#xpr0170">la veuvve Braconnier refuse l'accès à a sa maison. 
+cf transcription</opinion>
+          <arrangement/>
+          <estimate/>
+          <fees detail="false">
+            <total l="" d="" s=""/>
+          </fees>
+          <expenses mentioned="false"/>
+        </conclusions>
+        <keywords group=""/>
+        <analysis>1ère sentence : "... Avé dit que Gabrel et damoiselle Rillard seroient tenus de faire faire incessament les ouvrages nécessaires pour faire cesser l'infection de l'eau du puis de la maison de ladite veuve Braconnier suivant le rapport datté au commencement le douze may mil six cent quatre vingt neuf que vous avée enthériné(?) et attendu qu'au préjudice des instances d'entre les partyes lesdits sieurs Gabriel et damoiselle Rillard ont faict faire plusieurs fouilles et ouvrages autour dudit puis avant que d'y mettre ouvriers avée ordonné que led. puis et ouvrages seroient veues et visitez par experts dont les parties conviendroient  dans trois sinon par nous dict Le Roy que vous avé monsieur nommer d'office et condannée aux despens lesdits sieurs Gabriel et damoiselle Rillard ce quy seroit exécuté nonobstant opposition ou appellation quelconque et sans préjudice d'icelle"
+Jacques Gabriel partie opposante (et expert juré) est chargé de faire les travaux : 2e sentence "Avé déboutté lesdits sieurs Gabriel de l'opposition par eux formée à l'exécution de vostre sentence du vingt quatre octobre dernier lequel sera exécuté de point en point selon (f. 2r°) sa forme et teneur et suivant icelle passé outre à la vistte des lieux en question par nous faict le Roy expert juré convenu entre les parties et que je feray mon rapport de tooutes les réparations qui seront à faire pour rendre ledit puis en estat de servir, lesquelles réparations seront faicte par le sieur Jacques Gabriel entrepreneur (barré: "aussy expert juré en tiltre d'office"), sauf dans la suitte à faire droict sur les dommages et intérests prétendues par ladite veuve Braconnier, despens réservez se qui seroit exécutez sans préjudice de l'apel"</analysis>
+        <noteworthy>- Antériorité : déj à un rapport du 12 mai 1689 par de Bourges et et Gabriel et quelques réparations du côté de la fosse d'aisance de Gabriel (voisins) ayant déjà été faites (retirer les sables) à la suite du rapport
+- interférence ? : Gabriel intervient à plusieurs niveaux : comme expert, voisin et entrepreneur des travaux à faire.
+- rature d'une partie du pv f. 2v°
+- f. 4r° : la veuve Braconnier refuse l'accès à sa maison "qui nous avoit empesché d'entrer en sadite maison nous ayant faict lecture de l'original d'un exploit qu'elle nous a dit m'avoir fait signiffier ce jourd'huy dès sept heures du matin dont je n'ay jusques à présent connoissance par lequel exploit elle s'oppose formellement que je continue la visitte du puis de la maison prétendant que je (expert) suis dans les intérest desdits sieurs Gabriel et qu'elle me récuse lequel acte porte assignation a trois jours pour luy rendre le rapport et sentence qu'elle m'a mis ès mains, nous ayant dit que je n'entrerois point dans sa maison ; et ledit sieur Gabriel entrepreneur présent avecq un cureur de puis pour faire les opérations nécessaires il nous auroit déclaré en la présence de ladite veuve Braconnier qu'il s'estoit présenté le jour d'hier avecq ses ouvriers pour satisfaire à ce que nous luy avions ordonné de faire faire une tranchée dans la cave de ladite veuve Braconnier lors de nostre précédente vaccation ladite veuve luy auroit refusé l'entrée de sadite maison ne voullant pas que l'on fasse aucune chose par chez elle ce qu'elle auroit réitéré en nostre présence ne connoissant pas cette manière de procédder ne croyant pas que ladite veuve Braconnier ait aucun sujet ny cause de récusation contre moy car en ses sortes de visittes ainsy que touttes autres je ne cherche qu'à voir claire et de con? la visite pour donner mon advis juste et équitable et qui ne se peut faire que les tranchées par moy ordonnées estre faites par le dedans des caves de ladite maison de ladite veuve Braconnier n'ayant estée faites par le moien desquels on connoistra sy il y a encore des sables infectez au dessous des murs moitoiens il y en peut aussy avoir au dessous du roy qu'on ne peut par conséquent visiter sans faire les opérations nécessaires ce qui ne se peut faire sans entrer en aldite maison de ladite veuve Braconier ; ainsy la prétendue récusation de ladite veuve a esté faite trop tard sy elle avot eu une cause (f. 4v°) légitime, elle l'auroit deub faire auparavant nostre première vacationainsy ledit acte de récusation doit estre regardé comme nul et n'empechera pas l'exécution desdites sentences, c'est pourquoy  à donner sur le tout mon advis jusqu'à ce qu'il soit ordonné que ledite veuve Braconnier fera fermeture de ses portes et souffrira faire la visitte et tout ce qu'il conviendra faire dans sadit e maison etme suis retiré
+Fait et arresté par nous expert susdit et soussigné les jours, mois et an que dessus.</noteworthy>
+      </description>
+    </expertise>

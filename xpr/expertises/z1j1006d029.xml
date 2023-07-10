@@ -1,0 +1,217 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1006d029">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-09-01T12:00:00">2020-09-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2017-04-01T12:00:00">2017-04-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1006</idno>
+        <idno type="item">029</idno>
+        <facsimile from="0311" to="0326"/>
+        <physDesc>
+          <extent sketch="false">13</extent>
+          <appendices>
+            <appendice>
+              <type type="other">Lettre</type>
+              <extent>1</extent>
+              <desc>requête de l’architecte par l’intermédiaire du marquis de Boulainvilliers à l’huissier pour obtenir une expédition ou copie du procès-verbal qu’il n’a pu obtenir du greffier, 18 septembre 1777.</desc>
+              <note/>
+            </appendice>
+          </appendices>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-08-13" type="paris"/>
+          <date when="1777-02-01" type="paris"/>
+        </sessions>
+        <places>
+          <place type="paris">
+            <address>
+              <street>Rue de Bondy</street>
+              <buildingNumber/>
+            </address>
+            <complement>un hôtel rue de Bondy, près le boulevard du nord et par nouvellement construit par Samson Le Noir dit le Romain, Nicolas, pour Bernard, Anne Gabriel henry, chevalier marquis de Boulainvilliers, seigneur de Massy</complement>
+            <parish/>
+            <owner>De Chestret</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="acceptation">Recevoir et évaluer le travail réalisé</category>
+          <designation rubric="true">Suite de réception d’ouvrages en une maison</designation>
+        </categories>
+        <procedure>
+          <framework type="b1">Requête auprès d’une institution pour qu’elle demande une expertise</framework>
+          <origination type="parties">Les parties</origination>
+          <sentences>
+            <sentence>
+              <orgName>lieutenant civil (ordonnance du 8 novembre 1774)</orgName>
+              <date when="1774-11-08"/>
+            </sentence>
+          </sentences>
+          <case>le procès verbal du 8 novembre 1774 (expédition 4 juillet 1774) doit être continué ; après certaines précisions données par le requérant, il ne reste selon lui que les calculs du toisé. (la précédente affaire concerne les honoraires dus à l’architecte, voir pièce annexée)</case>
+          <objects>
+            <object type="house">Maison(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0250" context="primary" appointment="court-appointed">
+              <title>architecte expert bourgeois des bâtiments à Paris</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0062">
+              <persName>
+                <surname>Picquenon</surname>
+                <forename>Denis Joseph François</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="true" intervention="false">
+              <person>
+                <persName>
+                  <surname>De Chestret</surname>
+                  <forename>Rémy François</forename>
+                </persName>
+                <occupation>receveur des tailles de la généralité de Paris</occupation>
+              </person>
+              <status>owner</status>
+              <expert ref="#xpr0250"/>
+            </party>
+            <party role="opponent" presence="" intervention="">
+              <person>
+                <persName>
+                  <surname/>
+                  <forename/>
+                </persName>
+                <occupation/>
+              </person>
+              <status/>
+              <expert ref=""/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname>Samson Le Noir dit le Romain</surname>
+                <forename>Nicolas</forename>
+              </persName>
+              <occupation>architecte à Paris</occupation>
+            </craftman>
+            <craftman>
+              <persName>
+                <surname>Chemin</surname>
+                <forename>Etienne</forename>
+              </persName>
+              <occupation>maître maçon entrepreneur à Paris</occupation>
+            </craftman>
+            <craftman>
+              <persName>
+                <surname>La Giraude</surname>
+                <forename>Pierre</forename>
+              </persName>
+              <occupation>maître charpentier</occupation>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0250">"Total des ouvrages faits pour la construction dudit corps de logis entre cour et jardin et ailes en dépendantes, la somme de 135 219 l. 1 s. 7 d., à laquelle nous les estimons reconnoissant qu'ils sont bien faits suivant l'art et en état de réception"</opinion>
+          <arrangement/>
+          <agreement type="conclusion">Conclusion</agreement>
+          <estimate l="135219" s="1" d="7"/>
+          <fees detail="true">
+            <fee type="papers" l="15" s="6" d=""/>
+            <fee type="expert" ref="#xpr0250" l="240" s="" d=""/>
+            <fee type="clerk" l="240" s="" d=""/>
+            <fee type="rolls" l="47" s="" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="542" s="6" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="expert" l="80" s="" d=""/>
+            <expense type="clerk" l="191" s="15" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis>« [f. 2r°] [l’entrepreneur et le charpentier] nous ont dit qu’il comparent sur l’avis à eux donnés par mond. sieur Dechestret de la mission déferée à nous experts par l’ordonnance susdattée à l’effet des visitte, prisée, estimation et réception des ouvrages de la profession de chacun d’eux à l’effet d’être présents à nosd. opérations aux quelles ils consentent et de nous faire pendant le cours d’icelles les observations, dires et réquisition qui leurs paroissent convenables ; reconoissant que les attachements concernants les ouvrages de chacun d’eux ont été tenus contradictoirement avec eux par une personne préparée par mond. sr Dechestret, et déclarant qu’ils ont fait leur demandes dans leur mémoires en conformité desd. attachements.
+                Enfin, lesd. srs susnommés nous ont dit qu’ils consentement chacun en ce qui le concerne à ce que suivant ce qu’il a été requis par led. sr propriétaire, les opérations de calculs de toisé réductions et évaluations desd. ouvrages même la réduction de notre présent procès verbal de réception [?] par nous faits en notre bureau publié même en leur absence et ont signé sous touttes réserves nécessaires et de droit. Chemin / La Giraude »
+                Conclusion
+                (f. 13r°) « Tel est, monsieur, la visitte par nous faitte desdits ouvrages et notre avis sur la valeur d’iceux suivant et aux termes de votre ordonnance. Fait et arrêté par nous architectes expert susd. lesd. jours mois et an. »
+                pièces jointes
+                « Anne Gabriel Henry Bernard, chevalier marquis de Boulainvilliers seigneur de Massy, au premier huissier du hâtelet de Paris ou autre huissier sergent royal sur ce requis, nous vous mandons, à la requête de Nicolas Samson Le Noir dit le Romain, architecte à Paris de la part duquel nous a été exposé qu’étant avec le sr de Chetrel, receveur des tailles de la généralité de Paris [?] pardevant vous, au parc civil du Châtelet de Paris sur la répétition des honoraires à lui deux en sa qualité d’architecte à cause des plans et conduite d’ouvrages et construction de deux hôtels que led. sr de Chetrel auroit fait faire et élever, à Paris rue Bondy ; dans laquelle instant led. sr de Chetrel auroit soutenu et prétendu que lesd. ouvrages et construction ne montent pas à la somme?] dont argumente l’exposant et porté par sa demande lorsqu’au contraire l’objet de cette demande seroit vérifié reconnu et constaté par le procès verbal qui auroit été dressé par Picquenon, greffier des bâtimens, sur les visites, prisées, estimations, raport et réception faits des dits ouvrages par Taboureur juré expert qui auroit fait la vérification et réception sur les plans et conduites de l’exposant et qu pour justifier de son bon droit en cette instant, l’exposant auroit besoin d’une expédition ou copie du procès verbal que ledit sr Picquenon seroit refusant de lui délivrer, pourquoi il nous auroit supplié de lui acorder nos présentes lettres sur le nécessaire. Ces causes que vous fassiez commandement audit s. Picquenon ou à tous autres dépositaires de la minute dudit procès verbal d’estimation réception et raport desd. constructions, de vous représenter lad. minutte pour encore par vous pris telle copie [?] et collationnée que besoin sera et en cas de refus ou contestation, d’assigner les refusant et contestant par devaultion pour être ordonné et statuer ce qu’il appartiendra d’en faire, vous donnons pouvoir et commession. Fait et délivré au Châtelet de Paris présent scel d’iceluy le jeudi 18 [ou 13?] septembre 1777 dument sugné et ?.
+                Collationné pour compulsoire Jobin avec paraphe signé en etc. »</analysis>
+        <noteworthy/>
+      </description>
+    </expertise>

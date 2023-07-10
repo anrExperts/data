@@ -1,0 +1,185 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j435d019">
+      <meta/>
+      <control>
+        <maintenanceStatus/>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term/>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:39:45.99+02:00">2021-05-19T11:39:45.99+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateAgreementType_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur "Dispositif de l’expertise" lorsqu'il n'y a qu’un seul expert ('agreement' devient 'conclusion').</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:45:33.927+02:00">2021-04-21T20:45:33.927+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateKeywordsModule_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour du module keywords.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:44:31.814+02:00">2021-04-21T20:44:31.814+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateExpertisesArrangement_files.xqy/BaseX</agent>
+            <eventDescription>Ajout du champs Accommodement dans l'éventualité d’une résolution par les parties.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2019-05-01T12:00:00">2019-05-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1696</unitdate>
+    <idno type="unitid">Z1J435</idno>
+        <idno type="item">019</idno>
+        <facsimile from="0135" to="0142"/>
+        <physDesc>
+          <extent sketch="false">8</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1696-10-25" type="paris"/>
+        </sessions>
+        <places>
+          <place type="paris">
+            <address>
+              <street>rue du Bout du monde</street>
+              <buildingNumber/>
+            </address>
+            <complement/>
+            <parish/>
+            <owner>Pierre Chartier</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="acceptation">Recevoir et évaluer le travail réalisé</category>
+          <designation rubric="false">Visite de réparations faites par Pierre Martin</designation>
+        </categories>
+        <procedure>
+          <framework type="b2b">L’institution est saisie dans le cadre d’une procédure (l’institution nomme un ou deux experts)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Chhateler LC</orgName>
+              <date when="1696-10-05"/>
+            </sentence>
+          </sentences>
+          <case>défaut de paiement d'ouvrages faits par Martin</case>
+          <objects>
+            <object type="house">Maison(s)</object>
+            <object type="other">ouvrages de maçonnerie</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0086" context="primary" appointment="unknown">
+              <title>architecte expert juré du roi bourgeois de Paris doyen de 60 experts créés en titre d'office par sa Majesté</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0008">
+              <persName>
+                <surname>[Villain] ?</surname>
+                <forename/>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="" intervention="">
+              <person>
+                <persName>
+                  <surname>Martin</surname>
+                  <forename>Pierre</forename>
+                </persName>
+                <occupation>maître maçon à Paris</occupation>
+              </person>
+              <status>builder</status>
+              <expert ref=""/>
+            </party>
+            <party role="opponent" presence="" intervention="">
+              <person>
+                <persName>
+                  <surname>Chartier</surname>
+                  <forename>Pierre</forename>
+                </persName>
+                <occupation>commissaire des guerres</occupation>
+              </person>
+              <status>limited-partner</status>
+              <expert ref=""/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <agreement type="conclusion">Conclusion</agreement>
+          <opinion ref="#xpr0086">somme totale des ouvrages de maçonnerie et charpenterie non compris aux rapports d'alignement et billet monte et revient à 392 livres 5 sols 1 dernier. 
+Après tout ce que dessus nous vient d'estre mis ès mains un mémoire de faire (fer) fourny par ledit Martin qu'il dict avoir fourny aux ouvrages par luy faicts en lad maison dudit sieur Chartier (...). total 5 livres 15 sols 6 deniers</opinion>
+          <arrangement/>
+          <estimate/>
+          <fees detail="false">
+            <total l="" d="" s=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="" s="" d=""/>
+            <expense type="expert" l="6" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group=""/>
+        <analysis>teneur de la demande : "26 livres 12 sols d'une part et 979 livres 14 sols pour ouvrages de maçonnerie faicte par ledit Martin pour le deffendeur contenue aux mémoires dont a esté donnée coppie suivants les allignements et procès verbal du sieur Delespine expert juré nommée par ledit deffendeur à l'effet de voir et visiter les réparations nécessaires à faire en leur maison en question en datte des 28 et 30 avril dernier et autres allignemens faicts par messieurs les trésoriers de France grands voyers du 17 dudit mois d'avril et encore suivant le pouvoir dudit sieur deffendeur du 23e may dernier sy mieux mesme suivant le prisée et estimation quy en sera faicte par expertz, dont les parties conviendront ou quy seroient nommés d'office ensemble payer et rembourser au demandeur la somme de 9 livres pour sa part de l'alignement desdits sieurs trésoriers de France grands voyers qui [lacune] quart et demys suivant le procès verbal susdattée, celle de 27 livres 15 sols pour sa part et portion des procez verbeaux et rapport des expertz suivant le receu ensemble la somme de 15 livres pour la démolition des cheminées par ledit demandeur faict et jetté à terre les cloisons de l'escalier et gravats envoyez aux champs et outre la somme de [lacune] pour le fer qui a esté fourny (f. 1v°) aux charpentiers et corbeaux suivant le mémoire de serrurier dont en ca  de demy offre de faire preuve avec dépens, d'une part"
+Antériorité 2 : requête de Pierre Chartier le 7 juin dernier "tendante à ce que ledit Martin fut tenu de restablir les choses par luy desmolyes en ladite maison de son authoritée privée sans ordres et comdannée aux dommages et intérestes par luy souffertes deffendeur audit exploit à luy faict susdatté partyes ouyes vous, après qe ledit sieur Chartier a soutenu et mes en faicts que ledit Martin a desmoly et abatu le devant de ladite maison , l'escalier et partye des cloisons sans aucuns ordres de luy et au préjudice de l'allignemeent faict par le sieur Pierre Delespine expert entrepreneur et le marché faict entre les partyes soutenu au contraire par Martin qu'il n'a fiact que les ouvrages mentionnez dans les allignemens de l'ordre du sieur Chartier ; aveé dict que les ouvrages et réparations en question seront veux et visitez par expertz lesquels feront mentions sy ledit Martin a faict d'autres ouvrages que celles mentionnée dans lesdits allignemens, lesquels et le marchez leurs seront mis ès mains et lesdits ouvrages prisée et audiance de ce qu'elle a nommée de sa part pour expert la personne de nous [Nicolas] Delespine architecte  et de ce que leditt sieur chartier a pareillement nommée nous dict Delespine despens réservée."</analysis>
+        <noteworthy>antériorité : 1) pv par Pierre (Nicolas?) Delespine pour visiter les réparations nécessaires en 28 avril 1696 pour l'alignement du mur mitoyen
+2) le demandeur et commanditaire Pierre Chartier des travaux est aussi requérant
+- Pierre Delespine a fait le premier pv ordonnant un certain nb de démolitions
+Autre pièce lue : pouvoir donné à Martin par Chartier lui demandant d'abattre plusieurs éléménets (teneur recopiée dans le pv)
+
+- pas de greffier
+- Nicolas Delespine est nommé pour cette affaire-ci d'office pour le requérant entrepreneur et par la partie opposante (chartier), j'ai donc mis indéterminé pour ne pas "choisir"
+conflit d'intérêt possible ?</noteworthy>
+      </description>
+    </expertise>

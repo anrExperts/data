@@ -1,0 +1,245 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1007d059">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-08-01T12:00:00">2020-08-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2017-10-01T12:00:00">2017-10-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1007</idno>
+        <idno type="item">059</idno>
+        <facsimile from="0919" to="0935"/>
+        <physDesc>
+          <extent sketch="false">14</extent>
+          <appendices>
+            <appendice>
+              <type type="proxyPA">Pouvoir/procuration (acte sous seing privé)</type>
+              <extent>1</extent>
+              <desc/>
+              <note>pouvoir à Duboiscerf</note>
+            </appendice>
+          </appendices>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-09-30" type="province"/>
+          <date when="1776-10-01" type="province"/>
+          <date when="1776-10-02" type="province"/>
+          <date when="1776-10-03" type="province"/>
+          <date when="1776-10-15" type="paris"/>
+        </sessions>
+        <places>
+          <place xml:id="id221d289" type="province">
+            <address/>
+            <complement>maison bourgeoise appelée Bury, paroisse d’Eaubonne</complement>
+            <city>Eaubonne</city>
+            <district/>
+            <owner>dépendant de la communauté de biens des époux Poitevin</owner>
+          </place>
+          <place xml:id="id221d306" type="province">
+            <address/>
+            <complement>domaine de Daumont près Moisselles</complement>
+            <city/>
+            <district/>
+            <owner/>
+          </place>
+          <place xml:id="id221d321" type="paris">
+            <address>
+              <street>rue de Bourbon fauxbourg Saint Germain</street>
+              <buildingNumber/>
+            </address>
+            <complement/>
+            <parish/>
+            <owner/>
+          </place>
+          <place xml:id="id221d338" type="province">
+            <address/>
+            <complement>Domaine de Moulignon et dependances</complement>
+            <city/>
+            <district/>
+            <owner/>
+          </place>
+        </places>
+        <categories>
+          <category type="estimation">Estimer la valeur des biens</category>
+          <designation rubric="true">Estimation des biens immeubles dépendant de la succession du sieur Poidevin privilégié pour les bains établis sur la Seine à l'intérieur de Paris ; . M. Duboisterf, expert.</designation>
+        </categories>
+        <procedure>
+          <framework type="b2b">L’institution est saisie dans le cadre d’une procédure (l’institution nomme un ou deux experts)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Châtelet, lieutenant civil (sentence)</orgName>
+              <date when="1776-09-10"/>
+            </sentence>
+          </sentences>
+          <case>Succession Devienne</case>
+          <objects>
+            <object type="house">Maison(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0101" context="primary" appointment="court-appointed">
+              <title>architecte expert des bâtiments à Paris</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0062">
+              <persName>
+                <surname>Picquenon</surname>
+                <forename>Denis Joseph François</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="true" intervention="false">
+              <person>
+                <persName>
+                  <surname>Viaux</surname>
+                  <forename/>
+                </persName>
+                <occupation>tuteur des enfants mineurs (Poitevin, Thomas Joseph,Poitevin, Angélique Sophie ; Poitevin, Charles ; Poitevin, Antoine Louis) du défunt Poitevin, Jean, privilégié du roi pour les bains de la Seine, et de Devienne, Angélique Pierrette, son épouse, désormais sa veuve</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Devienne</surname>
+                  <forename>Angélique Pierrette</forename>
+                </persName>
+                <occupation>veuve du défunt Poitevin</occupation>
+              </person>
+              <status>heir</status>
+              <expert ref="#xpr0101"/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0101">« Recapitulation généralle de nos estimations 
+La maison bourgeoise de Bury et dependances, paroisse d’Eaubonne, la somme de … 48 000 l. 
+Le domaine de Daumont près Moisselles, maison bourgeoise ferme et pieces de terres en dependant la somme de … 32 000 l. 
+Domaine de Moulignon et dependances la somme de quatre mille quatre cent livres cy… 4 400 l. 
+Terrain en chantier à Paris rue de Bourbon fauxbourg Saint Germain la somme de vingt et un mille huit cent livres cy… 21 800 l. 
+Total de nos estimations desdits immeubles la somme de cent six mille deux cent livres, observant que lesdites estimations ont été par nous faittes en proportion l’une de l’autre cy… 106 200 l. 
+Telle est, Monsieur, la visitte par nous faitte desdits immeubles, tel est notre avis sur la valeur d’iceux suivant et aux termes de votre sentence Nous avons vacqué à ce que dessus jusqu’à plus de deux heures par double vacations pour mettre à fin le présent rapport Fait par nous architecte expert susdit lesdits jours mois et an »</opinion>
+          <arrangement/>
+          <agreement type="conclusion">Conclusion</agreement>
+          <estimate l="106200" s="" d=""/>
+          <estimates>
+            <place ref="#id221d289">
+              <appraisal l="48000" s="" d="">
+                <desc>une maison bourgeoise</desc>
+              </appraisal>
+            </place>
+            <place ref="#id221d306">
+              <appraisal l="32000" s="" d="">
+                <desc>domaine maison bourgeoise ferme et pieces de terres</desc>
+              </appraisal>
+            </place>
+            <place ref="#id221d321">
+              <appraisal l="21800" s="" d="">
+                <desc>terrain en chantier</desc>
+              </appraisal>
+            </place>
+            <place ref="#id221d338">
+              <appraisal l="4400" s="" d="">
+                <desc>domaine et dépendances</desc>
+              </appraisal>
+            </place>
+          </estimates>
+          <fees detail="true">
+            <fee type="papers" l="33" s="2" d=""/>
+            <fee type="expert" ref="#xpr0101" l="111" s="" d=""/>
+            <fee type="clerk" l="111" s="" d=""/>
+            <fee type="rolls" l="52" s="" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="367" s="2" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="75" s="" d=""/>
+            <expense type="expert" l="" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis/>
+        <noteworthy/>
+      </description>
+    </expertise>

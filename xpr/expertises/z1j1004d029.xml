@@ -1,0 +1,253 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1004d029">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-07-01T12:00:00">2020-07-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2017-10-01T12:00:00">2017-10-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1004</idno>
+        <idno type="item">029</idno>
+        <facsimile from="0308" to="0314"/>
+        <physDesc>
+          <extent sketch="false">6</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-06-10" type="province"/>
+        </sessions>
+        <places>
+          <place xml:id="id70d362" type="province">
+            <address/>
+            <complement>à l’entrée de la grande rue (dite la ruelle à Michaux)</complement>
+            <city>Cormeilles</city>
+            <district/>
+            <owner/>
+          </place>
+        </places>
+        <categories>
+          <category type="estimation">Estimer la valeur des biens</category>
+          <designation rubric="true">Estimation d'une maison,  à Cormeil à la requête du Sr Landrin ; M. Taboureur, expert.</designation>
+        </categories>
+        <procedure>
+          <framework type="b2a">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Châtelet, lieutenant civil (sentence)</orgName>
+              <date when="1776-06-05"/>
+            </sentence>
+          </sentences>
+          <case>Succession Suzanne Marchand, vente et adjudication par licitation d’une maison relevant à la fois de la succession Boury et de la succession Marchand</case>
+          <objects>
+            <object type="house">Maison(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0250" context="primary" appointment="court-appointed">
+              <title>architecte expert bourgeois de Paris</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0062">
+              <persName>
+                <surname>Picquenon</surname>
+                <forename>Denis Joseph François</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="true" intervention="true">
+              <person>
+                <persName>
+                  <surname>Landrin</surname>
+                  <forename>Pierre Jean Baptiste</forename>
+                </persName>
+                <occupation>maître maçon entrepreneur de bâtimens à Paris, au nom et comme seul héritier deMarchand, Suzanne, sa mère, à son décès veuve en premières noces de Landrin, Pierre Léon, musicien de la chapelle du roi, décédé, en secondes noces de Boury, Jacques, maître charpentier à Paris, le requérant étant propriétaire en cette qualité</occupation>
+              </person>
+              <status>heir</status>
+              <expert ref="#xpr0250"/>
+              <prosecutor>
+                <persName>
+                  <surname>Perrot</surname>
+                  <forename>Jérôme</forename>
+                </persName>
+              </prosecutor>
+            </party>
+            <party role="opponent" presence="true" intervention="true">
+              <person>
+                <persName>
+                  <surname>Boury</surname>
+                  <forename>Jacques Noël</forename>
+                </persName>
+                <occupation>ancien charpentier à Paris et salpetrier ordinaire du roi, héritier pour un tiers de défunt Boury, Jacques et en cette qualité propriétaire pour un tiers dans la moitié de la maison dont il est question</occupation>
+              </person>
+              <status>heir</status>
+              <expert ref="#xpr0250"/>
+              <prosecutor>
+                <persName>
+                  <surname>Lainé</surname>
+                  <forename>Noël</forename>
+                </persName>
+              </prosecutor>
+            </party>
+            <party role="opponent" presence="true" intervention="true">
+              <person>
+                <persName>
+                  <surname>Bersayen</surname>
+                  <forename>Pierre</forename>
+                </persName>
+                <occupation/>
+              </person>
+              <person>
+                <persName>
+                  <surname>Boury</surname>
+                  <forename>Marie Anne</forename>
+                </persName>
+                <occupation>son épouse, elle héritière pour un tiers de défunt Boury, Jacques et en cette qualité propriétaire pour un tiers dans la moitié de la maison dont il est question</occupation>
+              </person>
+              <status>heir</status>
+              <expert ref="#xpr0250"/>
+              <prosecutor>
+                <persName>
+                  <surname>Bailly</surname>
+                  <forename/>
+                </persName>
+              </prosecutor>
+            </party>
+            <party role="opponent" presence="true" intervention="true">
+              <person>
+                <persName>
+                  <surname>Troussard</surname>
+                  <forename>Noël Blaise</forename>
+                </persName>
+                <occupation>bourgeois de Paris, au nom et comme tuteur ad hoc deLandrin, Jean NoëletLandrin, Gabriel Etienne, tous deux enfants mineurs deLandrinet de défunte Boury, Marie Margueritte son épouse, dont ils sont héritiers</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Landrin</surname>
+                  <forename>Pierre Jacques</forename>
+                </persName>
+                <occupation>leur frère aîné majeur</occupation>
+              </person>
+              <status>heir</status>
+              <expert ref="#xpr0250"/>
+              <prosecutor>
+                <persName>
+                  <surname>de Saincay</surname>
+                  <forename/>
+                </persName>
+              </prosecutor>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0250">"Cr fait pour parvenir à l'estimation de ladite maison et dépendances nous avons procédé à en prendre les mesures et à faire une esquisse du plan figuré d'iceluy, sur lequel nous avons distingué ce qui est en cour, basse cour, jardins et clos d'avec ce qui est en bâtiments, fait les calculs distincts de chaque superficie, fait attention à son état consistance et distribution, à la nature de la construction des corps de logis et édifices qui les composent, à l’état des murs de clôtures, aux réparations qui sont à faut à ladite maison au revenu que ladite maison est susceptible de produire et à sa situation dans e pays, nous avons mirs des prix particuliers tant au fond du terrain qu’à la superficie des bâtiments eu égard à ce que dessus. 
+« Touttes considerations faittes nous prisons et estimons ladite maison à la charge du cens et des droits seigneuriaux et au cours du tems present la somme de neuf mille livres, cy… 9 000 l. 
+Quant au chef de votre sentence Monsieur, suivant lequel nous devons donner notre avis si ladite maison peut ou non commodement se partager en autant de portions qu’il y a de proprietaires, notre avis est que le partage en est impossible, cy… avis. 
+Telle est, Monsieur, la visitte par nous faitte de ladite maison et dependance et notre avis tant sur la valeur d’icelle que sur l’impossibilité de la partager le tout suivant et aux termes de votre sentence nous referons à votre justice et prudence ordinaire. »</opinion>
+          <arrangement/>
+          <agreement type="conclusion">Conclusion</agreement>
+          <estimate l="9000" s="" d=""/>
+          <estimates>
+            <place ref="#id70d362">
+              <appraisal l="9000" s="" d="">
+                <desc>une maison</desc>
+              </appraisal>
+            </place>
+          </estimates>
+          <fees detail="true">
+            <fee type="papers" l="6" s="8" d=""/>
+            <fee type="expert" ref="#xpr0250" l="24" s="" d=""/>
+            <fee type="clerk" l="24" s="" d=""/>
+            <fee type="rolls" l="15" s="" d=""/>
+            <fee type="prosecutors" l="80" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="149" s="8" d=""/>
+          </fees>
+          <expenses mentioned=""/>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis/>
+        <noteworthy>nomination de l'expert : les parties s'en rapportent au LC</noteworthy>
+      </description>
+    </expertise>

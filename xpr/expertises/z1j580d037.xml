@@ -1,0 +1,201 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j580d037">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+                <eventType>revised</eventType>
+                <eventDateTime standardDateTime="2023-01-12T17:23:49Z">2023-01-12T17:23:49Z</eventDateTime>
+                <agentType>human</agentType>
+                <agent>jmorvan</agent>
+                <eventDescription>corr annexe extent</eventDescription>
+            </maintenanceEvent>
+      <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-10-01T12:00:00">2020-10-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2016-10-26T12:00:00">2016-10-26T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>RB</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1726</unitdate>
+    <idno type="unitid">Z1J580</idno>
+        <idno type="item">037</idno>
+        <facsimile from="0543" to="0557"/>
+        <physDesc>
+          <extent sketch="false">12</extent>
+          <appendices>
+            <appendice>
+              <type type="other">Assignation</type>
+              <extent>1</extent>
+              <desc>Convocation délivrée le 15 mai 1726 par le lieutenant civil à l'expert Quirot.</desc>
+              <note/>
+            </appendice>
+          </appendices>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1726-05-16" type="paris"/>
+          <date when="1726-05-20" type="paris"/>
+          <date when="1726-05-20" type="paris"/>
+          <date when="1726-06-06" type="paris"/>
+        </sessions>
+        <places>
+          <place type="paris">
+            <address>
+              <street>Rue de Bourbon, à la Villeneuve [probablement la rue de Bourbon-Villeneuve, actuellement partie de la rue d'Aboukir]</street>
+              <buildingNumber/>
+            </address>
+            <complement/>
+            <parish/>
+            <owner>Fontaine</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="acceptation">Recevoir et évaluer le travail réalisé</category>
+          <designation rubric="true">Visite, prisée et estimation d'ouvrages de serrurerie et de gros fers</designation>
+        </categories>
+        <procedure>
+          <framework type="b2b">L’institution est saisie dans le cadre d’une procédure (l’institution nomme un ou deux experts)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Lieutenant civil</orgName>
+              <date when="1726-04-17"/>
+            </sentence>
+          </sentences>
+          <case>Réception d'ouvrages</case>
+          <objects>
+            <object type="other">ouvrages de serrurerie</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0112" context="third-party" appointment="court-appointed">
+              <title>juré du roi expert entrepreneur de bâtiments à Paris</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0029">
+              <persName>
+                <surname>Quirot</surname>
+                <forename>Jacques</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="true" intervention="false">
+              <person>
+                <persName>
+                  <surname>Vallet</surname>
+                  <forename>Louis</forename>
+                </persName>
+                <occupation>maître serrurier à Paris</occupation>
+              </person>
+              <status>builder</status>
+              <expert ref="#xpr0112"/>
+            </party>
+            <party role="opponent" presence="true" intervention="false">
+              <person>
+                <persName>
+                  <surname>Fontaine</surname>
+                  <forename>Philibert</forename>
+                </persName>
+                <occupation>avocat, commanditaire des travaux</occupation>
+              </person>
+              <status>limited-partner</status>
+              <expert ref="#xpr0112"/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0112">« Revenant tous lesdits ouvrages de serrurerie et gros fers tant ceux dont les estimations sont convenues par lesdits premiers experts conjointement que ceux réglés par nous tiers expert susdit sur leur contrariété d'avis, à la somme de 1449 livres 5 sols 6 deniers, suivant les calculs que nous avons fait.Le tout sans comprendre les articles en contestation entre les partyes par lesdits sieurs premiers experts et nous tiers experts susdits avons referé à la cour de juger.Et sans y comprendre aussy le cent pezant de fer neuf demandé de plus par le registre journal du sieur Vallet que ce qui est porté par le livre de pezée du sieur Fontaine qui a esté par nous estimé à raison de vingt cinq livres le cent au cas qu'il soit par nous Monsieur jugé qu'il doive estre alloué audit sieur Vallet et que nous avons seulement tiré pour mémoire ».</opinion>
+          <arrangement/>
+          <agreement type="conclusion">Conclusion</agreement>
+          <estimate l="1449" s="5" d="6"/>
+          <fees detail="true">
+            <fee type="papers" l="10" s="14" d=""/>
+            <fee type="expert" ref="#xpr0112" l="24" s="" d=""/>
+            <fee type="clerk" l="24" s="" d=""/>
+            <fee type="rolls" l="14" s="10" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="other" l="6" s="" d="">Quirot premier expert</fee>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="79" s="4" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="27" s="5" d=""/>
+            <expense type="expert" l="" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis>Motivations
+                « A l'effet de procéder à la visite, prisée et estimation des ouvrages de serrurerie et fournitures de gros fers fournis par ledit sieur Vallet pour ledit sieur Fontaine en sadite maison, sur les articles sur lesquels les sieurs Quirot et Fournier experts nommés par les parties sont en contrariété d'avis, par leur rapport de visite, prisée et estimation du quatorze novembre dernier et jours suivants ».</analysis>
+        <noteworthy/>
+      </description>
+    </expertise>

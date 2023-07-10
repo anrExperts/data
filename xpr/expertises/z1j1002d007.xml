@@ -1,0 +1,225 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1002d007">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2017-10-01T12:00:00">2017-10-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1002</idno>
+        <idno type="item">007</idno>
+        <facsimile from="0067" to="0073"/>
+        <physDesc>
+          <extent sketch="false">7</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-05-03" type="paris"/>
+          <date when="1776-05-09" type="paris"/>
+          <date when="1776-05-19" type="paris"/>
+          <date when="1776-05-28" type="paris"/>
+          <date when="1776-07-05" type="paris"/>
+          <date when="1776-07-12" type="paris"/>
+          <date when="1776-07-30" type="paris"/>
+          <date when="1776-07-30" type="paris"/>
+          <date when="1776-07-31" type="paris"/>
+          <date when="1776-08-03" type="paris"/>
+          <date when="1776-08-17" type="paris"/>
+          <date when="1776-08-22" type="paris"/>
+          <date when="1776-08-22" type="paris"/>
+        </sessions>
+        <places>
+          <place type="paris">
+            <address>
+              <street>rue des Jeûneurs</street>
+              <buildingNumber/>
+            </address>
+            <complement>à gauche de la rue en y entrant par la rue Montmartre</complement>
+            <parish/>
+            <owner>Fornier, y demeurant</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="acceptation">Recevoir et évaluer le travail réalisé</category>
+          <designation rubric="true">Visitte et estimation d'ouvrages de serrurerie en la maison du sieur Fornier, rue des Jeuneurs, à la requête du sieur Dumas, Me Serrurier ; M. Blère, tiers, entre MM. Vedy et Desboeufs, 1ers experts.</designation>
+        </categories>
+        <procedure>
+          <framework type="c">Cas problématique</framework>
+          <origination type=""/>
+          <sentences>
+            <sentence>
+              <orgName>Châtelet, lieutenant civil (sentence)</orgName>
+              <date when="1776-03-29"/>
+            </sentence>
+          </sentences>
+          <case>Divergence d'avis des premiers experts (Vedy et Desboeufs) sur l’estimation des ouvrages de serrurerie (rapport commencé le 10 juillet 1772).</case>
+          <objects>
+            <object type="other">serrurerie</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0026" context="third-party" appointment="unknown">
+              <title>architecte expert bourgeois</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0061">
+              <persName>
+                <surname>Lecoeur</surname>
+                <forename>Jean Clair</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="true" intervention="false">
+              <person>
+                <persName>
+                  <surname>Dumas</surname>
+                  <forename>Louis</forename>
+                </persName>
+                <occupation>maître serrurier</occupation>
+              </person>
+              <status>builder</status>
+              <expert ref="#xpr0026"/>
+              <prosecutor>
+                <persName>
+                  <surname>Reguard</surname>
+                  <forename/>
+                </persName>
+              </prosecutor>
+              <representative>
+                <persName>
+                  <surname>colombeau</surname>
+                  <forename/>
+                </persName>
+                <occupation>son avocat</occupation>
+              </representative>
+            </party>
+            <party role="opponent" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Fornier</surname>
+                  <forename/>
+                </persName>
+                <occupation>banquier à Paris</occupation>
+              </person>
+              <status>limited-partner</status>
+              <expert ref="#xpr0026"/>
+              <prosecutor>
+                <persName>
+                  <surname>Michaut</surname>
+                  <forename/>
+                </persName>
+              </prosecutor>
+              <representative>
+                <persName>
+                  <surname>de la Martinière</surname>
+                  <forename/>
+                </persName>
+                <occupation>son avocat</occupation>
+              </representative>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0026">« Nous avons trouvé que ce premier mémoire estimé par le sieur Vedy deux cent quatre vingt douze livres quinze sols, et par le sieur Desboeufs deux cens soixante sept livres huit sols six deniers, monte suivant nous tiers expert à la somme de … 278 l. 16 s. »
+« Quant au second memoire desdits ouvrages sur lequel lesdits premiers experts sont d’avis unanime, nous avons neanmoins fait les calculs et estimations des articles y contenus et avons trouvé qu’ils sont conformes à leur estimation unanime … 60 l. 18 s. »
+« Nous avons procedé à la recapitulation generale de tous les articles contenus audit troisieme memoire et fait addition des sommes de nos estimations, nous avons trouvé que ledit memoire estimé par le sieur Vedy à la somme de neuf mille cent quatre vingt livres sept sols quatre deniers, deduction faite des vieux fers donnés en compte, et par le sieur Desboeufs à sept mille cinq cent quatre vingt douze libres six sols six deniers, aussi deduction faite des vieux fers pris en compte, monte suivant nous tiers expert à la somme de … 9 003 l. 4 s. 3 d. »
+« Nous avons trouvé que ledit quatrieme memoire estimé par le sieur Vedy à la somme de cent quarante deux livres six sols, et par le sieur Desboeufs à cent cinquante huit livres sept sols, monte suivant l’avis de nous tiers expert à la somme de … 134 l. 11 s. »
+« Nous avons trouvé que ledit [cinquieme] memoire estimé par le sieur Vedy à la somme de soixante une livres un sol, et par le sieur Desboeufs à celle de cinquante deux livres sept sols, monte suivant nous tiers expert à la somme de xoisante une livres un sol, ce qui est conforme à l’avis du sieur Vedy notre confrere. Cy… 61 l. 1 s. »
+« Montant et revenant ensemble tous les ouvrages de serrurerie faits et fournis pour le sieur Formier par ledit sieur Dumas … la somme de … 9 538 l. 10 s. 3 d. »</opinion>
+          <arrangement/>
+          <agreement type="conclusion">Conclusion</agreement>
+          <estimate l="" s="" d=""/>
+          <fees detail="true">
+            <fee type="papers" l="6" s="10" d=""/>
+            <fee type="expert" ref="#xpr0026" l="78" s="" d=""/>
+            <fee type="clerk" l="78" s="" d=""/>
+            <fee type="rolls" l="17" s="10" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="other" l="6" s="" d="">annexe des mémoires</fee>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="186" s="" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="" s="" d=""/>
+            <expense type="expert" l="26" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis/>
+        <noteworthy>antériorité : pv de visite d'ouvrages du 10 juillet 1772 (Vedy et Desboeufs experts)</noteworthy>
+      </description>
+    </expertise>

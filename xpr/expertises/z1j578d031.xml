@@ -1,0 +1,204 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j578d031">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-10-01T12:00:00">2020-10-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2016-10-26T12:00:00">2016-10-26T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>RB</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1726</unitdate>
+    <idno type="unitid">Z1J578</idno>
+        <idno type="item">031</idno>
+        <facsimile from="0328" to="0344"/>
+        <physDesc>
+          <extent sketch="false">15</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1726-01-23" type="suburbs"/>
+          <date when="1726-01-25" type="suburbs"/>
+          <date when="1726-01-25" type="suburbs"/>
+          <date when="1726-01-28" type="suburbs"/>
+          <date when="1726-01-30" type="suburbs"/>
+        </sessions>
+        <places>
+          <place xml:id="id185d273" type="suburbs">
+            <address/>
+            <complement>rue de Richelieu</complement>
+            <city>Paris</city>
+            <district/>
+            <owner>Le Gallois de St Aurin</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="estimation">Estimer la valeur des biens</category>
+          <designation rubric="true">Visite de maison et ses dépendances et des glaces et tableaux et autres ejustements et embellissements faits en icelle</designation>
+        </categories>
+        <procedure>
+          <framework type="b2a">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Lieutenant civil</orgName>
+              <date when="1726-01-19"/>
+            </sentence>
+          </sentences>
+          <case>Distinction des effets meubles et immeubles dans le cadre d'une saisie</case>
+          <objects>
+            <object type="other">glaces et tableaux</object>
+            <object type="house">Maison(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0018" context="primary" appointment="appointed">
+              <title>architecte juré du roi expert bourgeois de Paris</title>
+            </expert>
+            <expert ref="#xpr0113" context="primary" appointment="appointed">
+              <title>architecte juré du roi expert bourgeois de Paris</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0034">
+              <persName>
+                <surname>Baudouin</surname>
+                <forename>Antoine</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Le Gallois de Saint-Aurin</surname>
+                  <forename>Pierre</forename>
+                </persName>
+                <occupation>bourgeois de Paris, propriétaire de la maison en question</occupation>
+              </person>
+              <status>owner</status>
+              <expert ref="#xpr0113"/>
+            </party>
+            <party role="opponent" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Cabannes</surname>
+                  <forename>Ignace</forename>
+                </persName>
+                <occupation>officier du duc d'Orléans poursuivant les criées et vente des biens</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Boullard</surname>
+                  <forename>Guillaume</forename>
+                </persName>
+                <occupation>curateur des dettes de Le Gallois de Saint-Aurin, Pierre</occupation>
+              </person>
+              <status>creditor</status>
+              <expert ref="#xpr0018"/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0018">Frosne estime que tous les accommodements apportés à la maison par Saint-Aurin sont des biens immeubles dont le retrait gâterait la maison et diminuerait le prix de vente.</opinion>
+          <opinion ref="#xpr0113">Bernard ne parvient pas à déterminer à quelle époque les accommodements ont été apportés et, par prudence, déclare qu'ils doivent demeurer attachés à l'édifice.</opinion>
+          <arrangement/>
+          <agreement type="disagreement">Désaccord</agreement>
+          <estimate l="" s="" d=""/>
+          <estimates>
+            <place ref="#id185d273">
+              <appraisal l="" s="" d="">
+                <desc/>
+              </appraisal>
+            </place>
+          </estimates>
+          <fees detail="true">
+            <fee type="papers" l="7" s="10" d=""/>
+            <fee type="expert" ref="#xpr0018" l="52" s="10" d=""/>
+            <fee type="expert" ref="#xpr0113" l="52" s="10" d=""/>
+            <fee type="clerk" l="52" s="10" d=""/>
+            <fee type="rolls" l="17" s="15" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="183" s="10" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="43" s="17" d="6"/>
+            <expense type="expert" l="" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis>Motivations
+                Pierre Le Gallois de Saint-Aurin a été chassé de sa maison par ses créanciers. Il réclame l'avis d'experts pour « dresser procès verbal du nombre de glaces, tableaux, tables de marbre et autres ajustemens et accommodemens qu'ils trouveront dans la maison dont est question et qui appartiennent audit sieur Saint-Aurin, à l'effet de pouvoir les enlever sy bon luy semble ou les y laisser pour faciliter au proffit des créanciers la vente de la maison, et au proffit du sieur de Saint-Aurin, la vente desdits effets mobiliers. Dans lequel procès verbal sera fait mention sy dans le nombre d'iceux il y en a qui doivent suivre la nature du fond ».</analysis>
+        <noteworthy/>
+      </description>
+    </expertise>

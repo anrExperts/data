@@ -1,0 +1,195 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j582d048">
+  <meta/>
+  <control>
+    <maintenanceStatus>revised</maintenanceStatus>
+    <publicationStatus/>
+    <localControl localType="detailLevel">
+      <term>completed</term>
+    </localControl>
+    <maintenanceHistory>
+      <maintenanceEvent>
+                <eventType>revised</eventType>
+                <eventDateTime standardDateTime="2022-03-31T16:05:57Z">2022-03-31T16:05:57Z</eventDateTime>
+                <agentType>human</agentType>
+                <agent>llosserand</agent>
+                <eventDescription>rvpcd</eventDescription>
+            </maintenanceEvent>
+          <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateOpinionRef_files.xqy/BaseX</agent>
+        <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateRefValues_files.xqy/BaseX</agent>
+        <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+        <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>revised</eventType>
+        <eventDateTime standardDateTime="2020-11-01T12:00:00">2020-11-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>JH</agent>
+        <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>retroconverted</eventType>
+        <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>ead2xpr.xsl/Saxon9</agent>
+        <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>created</eventType>
+        <eventDateTime standardDateTime="2017-04-01T12:00:00">2017-04-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>llosserand</agent>
+        <eventDescription>Création de la fiche.</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+  </control>
+  <sourceDesc>
+    <unitdate>1726</unitdate>
+    <idno type="unitid">Z1J582</idno>
+    <idno type="item">048</idno>
+    <facsimile from="0470" to="0484"/>
+    <physDesc>
+      <extent sketch="false">16</extent>
+    </physDesc>
+  </sourceDesc>
+  <description>
+    <sessions>
+      <date when="1726-08-09" type="paris"/>
+      <date when="1726-08-09" type="paris"/>
+      <date when="1726-08-12" type="paris"/>
+    </sessions>
+    <places>
+      <place type="paris">
+        <address>
+          <street>Rue des Bourdonnais [Voie actuelle]</street>
+          <buildingNumber/>
+        </address>
+        <complement/>
+        <parish/>
+        <owner/>
+      </place>
+    </places>
+    <categories>
+      <category type="settlement">Départager</category>
+      <designation rubric="true"> Visitte de réservoir, rue des Bourdonnais, entre M. Pajot Donsembray et le sieur Charlot ; M. Fourier, tiers expert.</designation>
+    </categories>
+    <procedure>
+      <framework type="c">Cas problématique</framework>
+      <origination type=""/>
+      <sentences>
+        <sentence>
+          <orgName>lieutenant civil</orgName>
+          <date when="1726-07-30"/>
+        </sentence>
+      </sentences>
+      <case>lors du précédent rapport, les experts (Loir et Bernard, procès-verbal du 15 juillet 1726) ne sont pas tombés d'accord et on demandé la nomination d'un tiers expert.</case>
+      <objects>
+        <object type="other">réservoir</object>
+      </objects>
+    </procedure>
+    <participants>
+      <experts>
+        <expert ref="#xpr0111" context="third-party" appointment="unknown">
+          <title>architecte entrepreneur de bâtiments à Paris</title>
+        </expert>
+      </experts>
+      <clerks>
+        <clerk ref="#clrk0020">
+          <persName>
+            <surname>Quirot</surname>
+            <forename>Estienne François</forename>
+          </persName>
+        </clerk>
+      </clerks>
+      <parties>
+        <party role="petitioner" presence="false" intervention="false">
+          <person>
+            <persName>
+              <surname>Pajot</surname>
+              <forename>Louis Léon</forename>
+            </persName>
+            <occupation>intendant général des postes et relais de France</occupation>
+          </person>
+          <status>limited-partner</status>
+          <expert ref="#xpr0111"/>
+        </party>
+        <party role="opponent" presence="false" intervention="false">
+          <person>
+            <persName>
+              <surname>Charlot</surname>
+              <forename/>
+            </persName>
+            <occupation>plombier</occupation>
+          </person>
+          <status>builder</status>
+          <expert ref="#xpr0111"/>
+        </party>
+      </parties>
+      <craftmen>
+        <craftman>
+          <persName>
+            <surname/>
+            <forename/>
+          </persName>
+          <occupation/>
+        </craftman>
+      </craftmen>
+    </participants>
+    <conclusions>
+      <opinion ref="#xpr0111">l'avis du tiers expert est que la charpente au-dessus du réservoir est globalement solide et convenable, le peu de flèche n'est pas un inconvénient, il est préférable d'utiliser le bois de sciage plutôt que le bois de brin, afin que, contrairement à ce qu'a dit Bernard premier expert, le peu d'aubier ne laisse pas les vers pénétrer dans le plomb et enfin, les 14 tables de plomb ne sont pas recevables en raison de leur poids qui ne correspond pas au marché.</opinion>
+      <arrangement/>
+      <agreement type="conclusion">Conclusion</agreement>
+      <estimate l="" s="" d=""/>
+      <fees detail="true">
+        <fee type="papers" l="" s="" d=""/>
+        <fee type="expert" ref="#xpr0111" l="18" s="" d=""/>
+        <fee type="clerk" l="" s="" d=""/>
+        <fee type="rolls" l="" s="" d=""/>
+        <fee type="prosecutors" l="" s="" d=""/>
+        <fee type="help" l="" s="" d=""/>
+        <fee type="plans" l="" s="" d=""/>
+        <total l="" s="" d=""/>
+      </fees>
+      <expenses mentioned="true">
+        <expense type="clerk" l="21" s="2" d="6"/>
+        <expense type="expert" l="" s="" d=""/>
+      </expenses>
+    </conclusions>
+    <keywords group="estates"/>
+    <keywords group="procedure"/>
+    <keywords group="contract"/>
+    <keywords group="encumbrance"/>
+    <keywords group="law"/>
+    <keywords group="measurement"/>
+    <keywords group="repairs"/>
+    <keywords group="guarantees"/>
+    <keywords group="responsability"/>
+    <keywords group="ownership"/>
+    <keywords group="value"/>
+    <keywords group="neighbourhood"/>
+    <keywords group="disorder"/>
+    <keywords group="transformation"/>
+    <analysis>Conclusion : « [f. 13v°] […] Et quant au peu d'aubier qui se trouve à quelques unes desd. sollives, cela est sy peu de chose que cela ne méritte aucune attention quoyque le sieur Bernard, l'un des premiers experts, se soit servy de ce moyen pour faire croire à la Cour que les vers qui en sortireroient perceroient le plomb ainsy qu'il le dit dans son avis et que personne n'avoit imaginé avant luy que sy le plomb estoit susceptible d'estre percé et mangé par les vers, les tuyaux de plomb qui ferment aux conduittes dans les terres seroient souvent percez, les vers de terre estant [f. 14r°] bien plus gros et plus forts, nécessiteroient sy souvent réparations aux plombs que l'on perdroit l'usage de son service pour la conduitte des eaux et les marchands de plomb feroient de grosses pertes sy les vers se metteroient dans leurs magazins ; il ne s'agit donc point du danger des vers qui pouroient sortir de l'aubier desd. sollives et des planchers de batteau qui sont au fonds au pourtour dud. réservoir puisque c'est une fixion.
+                Il s'agit seulement de savoir sy la charpente des pans de bois et plancher est assé sollide et en estat que l'on puisse poser surement le plomb aud. réservoir sur cela j'observeray à la Cour que la charpente du plancher dud. réservoir est suffisament sollide suivant l'avis de moy, tiers expert, quoy qu'il paroisse quelle a esté pénétrée d'eau ainsy que les planchers par le deffault qu'il y avoit aux anciens plombs qui ont esté relevées parce que l'eau fuyoit de tous les costez dud. réservoir, ainsy que l'on raporté les sieur Gabriel et le Brière, marchands plombier dans leur rapport du 10e janvier 1725 ; néantmoins, l'humidité n'a pas altéré la sollidité et l'on peut surement y poser les plombs des qualitées portés par le marché en redressant au préalable les planchers qui se sont tourmentées depuis que les premiers plombs dud. réservoir ont esté levez et remforceant les clouds au endroits où [f. 14v°] ils se sont détachés par le manque d'usage et la sécheresse en différens temps, rabotant les arrestes de quelqu'unes desd. planchers qui se trouveront exceder les autres, tant sur les planchers que sur les costez des pans de bois et cloisons en dedans au moyen de quoy la pente du fond se trouvera de mesme qu'elle estoit avant que lesd. premiers plombs fussent levez et que lesd. plancher se fussent tourmentées ; tel est l'avis de moy Fourier, tiers expert, sur ce qui regarde la charpente et les planchers du réservoir en question.
+                A l'esgard des quatorze tables de plomb dont les poids sont conjointement raportés par lesd. sieurs premiers experts, dans le nombre desquelles tables suivant l'ordre des pesées, lesd. sieurs premiers experts sont conjointement convenus que la 1ère la 2e la 6e la 11e à la 13e sont recevables par leurs poids à raison de quinze à seize livres le pied quarré suivant le marché faite entre les partyes le 19e novembre 1721 que la 9 et la 12e table suivant l'ordre des pesés ne sont pas recevable suivant lavis unanime desd. sieurs premiers experts à cause que lesd. deux tables pèsent moins le pied quarré que ce qu'elles devroient peser suivant led. marché et lesd. sieurs premiers experts sont d'avis contraires [f. 15r°] sur les tables 3-4-5-7-8-10 et 14e, suivant l'ordre des pesés, pèsent ensemble plus qu'elle ne devroient peser aux conditions du marché qui est, à raison de quinze à seize livres le pied quarré, le sieur Bernard estimant qu'elles sont recevables, attendu l'offre dud. sieur Charlot dans ses escritures d'abandonner led. plus fort poids, et le sieur Loir attendu qu'elles pèsent plus qu'elles ne doivent peser suivant le marché au plus fort, Mr Donsembray ne voullant point profiter du bien dud. Charlot.
+                Sur quoy, l'avis de moy Fournier tiers expert, est que la 9e et 12e table qui pèse 64£ 12 onces ou environ moins qu'elles ne devroient peser suivant le marché, ne sont pas recevables, de mesme et ainsy que les 3-4-5-7-8-10 et 14e tables lesquelles pèsent 175£ ou environ de plus qu'elles ne devroient peser suivant le marché, pour quoy nous estimons et nostre avis est qu'elles ne sont pas recevables, n'estant pas du poids conforme au marché et d'ailleurs feroient un mauvais effet par la différantes hauteurs des tables et la volume des soudures qui feroient un [f. 15v°] relief plus fort au droit de la table de moindre espoisseur et pouroit faire fendre au droit de la soudure.
+                Tel est l'avis de nous Fourier tiers expert sauf à vous, monsieur, d'en juger... ».</analysis>
+    <noteworthy/>
+  </description>
+      <comment>impossibilité de déterminer l'expert pour les parties</comment>
+</expertise>

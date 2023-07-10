@@ -1,0 +1,202 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1002d034">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2017-10-01T12:00:00">2017-10-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1002</idno>
+        <idno type="item">034</idno>
+        <facsimile from="0518" to="0522"/>
+        <physDesc>
+          <extent sketch="false">4</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-05-14" type="paris"/>
+          <date when="1776-05-21" type="paris"/>
+          <date when="1776-05-22" type="paris"/>
+        </sessions>
+        <places>
+          <place type="paris">
+            <address>
+              <street>rue de Richelieu</street>
+              <buildingNumber/>
+            </address>
+            <complement>près la rue St Marc</complement>
+            <parish/>
+            <owner/>
+          </place>
+        </places>
+        <categories>
+          <category type="settlement">Départager</category>
+          <designation rubric="true">Visite de mur, rue de Richelieu, mitoien entre le sieur Chaumont de la Milière et le sieur Hordret ; MM Perrard et Ducret, experts</designation>
+        </categories>
+        <procedure>
+          <framework type="b2a">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Requêtes du palais (sentence)</orgName>
+              <date when="1776-05-06"/>
+            </sentence>
+          </sentences>
+          <case>le voisin va construire une maison sur le mur mitoyen</case>
+          <objects>
+            <object type="wall">Mur(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0210" context="primary" appointment="appointed">
+              <title>architecte expert</title>
+            </expert>
+            <expert ref="#xpr0102" context="primary" appointment="appointed">
+              <title>architecte expert</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0064">
+              <persName>
+                <surname>Gobert</surname>
+                <forename>Jean Charles Simon</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Chaumont Delamiliere</surname>
+                  <forename>Antoine Louis</forename>
+                </persName>
+                <occupation/>
+              </person>
+              <status>owner</status>
+              <expert ref="#xpr0210"/>
+              <prosecutor>
+                <persName>
+                  <surname>Boney</surname>
+                  <forename>Louis Nicolas</forename>
+                </persName>
+              </prosecutor>
+            </party>
+            <party role="opponent" presence="true" intervention="true">
+              <person>
+                <persName>
+                  <surname>Hurdret</surname>
+                  <forename>Louis</forename>
+                </persName>
+                <occupation>avocat honoraire</occupation>
+              </person>
+              <status>owner</status>
+              <expert ref="#xpr0102"/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="">1° « Pour satisfaire à la sentence … nous avons aux termes du premier chef visité les maisons des parties dont nous avons cy devant fait la description ainsy que du mur qui leur est commun et mitoyen. »
+2° « Par le second chef de ladite sentence… notre avis est que toutte la partie de mur à prendre depuis la tête de la jambe etriere jusques et compris la longueur de vingt deux pieds et en toutte la hauteur à prendre depuis le bon sol jusqu’à sa plus grande hauteur actuellement existante est insuffisant pour la nouvelle construction que le sieur Delamiliere se propose de faire pourquoy notre avis est que ce mur doit être demoli en toute sa superficie de la longueur desdits vingt deux pieds et de toutte sa hauteur jusqu’à sa plus basse fondation. »
+3° « Quant au surplus au delà des vingt deux pieds… il nous a paru bon et suffisant… ce qui satisfait le troisieme chef de la sentence de la cour. »
+4° « Par le quatrieme chef de ladite sentence il est dit s’il est necessaire de le reconstruire de fond en comble, nous avons satisfait à ce chef en donnant notre avis sur le second et troisieme chef de ladite sentence de la cour… »
+5° « Par le cinquieme et dernier chef dudit jugement il est ordonné que nous donnerons notre avis sur la part et portion que chacune des parties doit supporter dans ladite reconstruction
+Comme notre avis est que ce mur ne peut subsister … tant à cause de la nouvelle construction que se propose de faire ledit sieur Delamiliere qu’à cause de la nature de sa construction et des alterations qu’il a eprouvé tant à cause de la reprise du mur ensuitte desdits vingt deux pieds… qu’à cause la forge établie dans la maison dudit sieur Delamiliere, notre avis est que ledit mur sera demoli à frais communs suivant les trois quarts à la charge de mondit sieur Delamiliere, et l’autre quart à la charge dudit sieur Hurdret… »</opinion>
+          <arrangement/>
+          <agreement type="agreement">Accord</agreement>
+          <estimate l="" s="" d=""/>
+          <fees detail="true">
+            <fee type="papers" l="6" s="" d=""/>
+            <fee type="expert" ref="#xpr0210" l="24" s="" d=""/>
+            <fee type="expert" ref="#xpr0102" l="24" s="" d=""/>
+            <fee type="clerk" l="24" s="" d=""/>
+            <fee type="rolls" l="18" s="" d=""/>
+            <fee type="prosecutors" l="16" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="112" s="" d=""/>
+          </fees>
+          <expenses mentioned=""/>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis/>
+        <noteworthy>Les experts sont chargés de constater si « en demolissant et reconstruisant la maison du sieur Delamiliere il est possible de laisser subsister ledit mur commun et mitoyen, et s’il est en bon et suffisant état pour supporter la reconstruction nouvelle que ledit sieur Delamiliere se propose de faire ou si au contraire il ne faut pas le demolir et le reconstruire à neuf » ; et le cas échéant, de fixer la contribution de chacun des deux propriétaires.</noteworthy>
+      </description>
+    </expertise>

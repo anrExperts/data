@@ -1,0 +1,207 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1006d027">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-09-01T12:00:00">2020-09-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2017-04-01T12:00:00">2017-04-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1006</idno>
+        <idno type="item">027</idno>
+        <facsimile from="0286" to="0305"/>
+        <physDesc>
+          <extent sketch="false">2</extent>
+          <appendices>
+            <appendice>
+              <type type="other">Mémoire d'ouvrages</type>
+              <extent>3</extent>
+              <desc>1/ mémoire des ouvrages de menuiserie faits par Le Roy, dans l’année 1776</desc>
+              <note/>
+            </appendice>
+            <appendice>
+              <type type="other">Mémoire d'ouvrages</type>
+              <extent>5</extent>
+              <desc>2/ dernier mémoire des ouvrages de menuiserie faits par Le Roy, jusqu’au 12 juillet 1776</desc>
+              <note/>
+            </appendice>
+          </appendices>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-08-12" type="province"/>
+          <date when="1776-09-02" type="paris"/>
+          <date when="1776-09-09" type="paris"/>
+          <date when="1776-09-17" type="paris"/>
+          <date when="1776-09-25" type="paris"/>
+        </sessions>
+        <places>
+          <place type="province">
+            <address/>
+            <complement>une maison où sont les fours à chaux de Champigny appartenant à Rasty, Jean-Pierre, située au village de Champigny à gauche de la montagne dudit Champigny en la montant</complement>
+            <city>Champigny-sur-Marne</city>
+            <district/>
+            <owner>Rasty</owner>
+          </place>
+          <place type="office">
+            <address/>
+          </place>
+        </places>
+        <categories>
+          <category type="acceptation">Recevoir et évaluer le travail réalisé</category>
+          <designation rubric="true">Visite et estimation de menuiserie</designation>
+        </categories>
+        <procedure>
+          <framework type="a">Commun accord des parties</framework>
+          <origination type="parties">Les parties</origination>
+          <sentences>
+            <sentence>
+              <orgName/>
+              <date when=""/>
+            </sentence>
+          </sentences>
+          <case>Réception d'ouvrages</case>
+          <objects>
+            <object type="other">ouvrages de menuiserie</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0261" context="primary" appointment="appointed">
+              <title>architecte expert entrepreneur de bâtiments à Paris</title>
+            </expert>
+            <expert ref="#xpr0228" context="primary" appointment="appointed">
+              <title>architecte expert bourgeois</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0055">
+              <persName>
+                <surname>Bouillerot</surname>
+                <forename>Joseph</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="true" intervention="false">
+              <person>
+                <persName>
+                  <surname>Rasty</surname>
+                  <forename>Jean-Pierre</forename>
+                </persName>
+                <occupation>huissier commissaire priseur au Châtelet de Paris</occupation>
+              </person>
+              <status>limited-partner</status>
+              <expert ref="#xpr0228"/>
+            </party>
+            <party role="opponent" presence="true" intervention="false">
+              <person>
+                <persName>
+                  <surname>Le Roy</surname>
+                  <forename>Jean Martin</forename>
+                </persName>
+                <occupation>menuisier à Champigny</occupation>
+              </person>
+              <status>builder</status>
+              <expert ref="#xpr0261"/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="">"Ainsy les ouvrages contenus auxdits deux mémoires de menuiserie et faits par ledit sieur Le Roy pour ledit sieur Rasty en sadite maison de Champigny montent à la somme totalle de 1975 l. 19 s. 5 d.
+Nous avons observé que nous avons estimé lesd. ouvrages eu égard à quelques [f. 2v°] défectuosités peu considérables qui s’y sont trouvés cy, observation.
+                Après quoy nous avons annexé à ces présentes lesd. deux mémoires de menuiserie pour avoir recours en cas de besoin au détail desd. ouvrages et ce après avoir été par nous et par led. Mr Bouillerot greffier des bâtimens signé et paraphé. Fait par nous experts, susd. lesd. jours, mois et an. »</opinion>
+          <arrangement/>
+          <agreement type="agreement">Accord</agreement>
+          <estimate l="1975" s="19" d="5"/>
+          <fees detail="true">
+            <fee type="papers" l="4" s="" d=""/>
+            <fee type="expert" ref="#xpr0261" l="48" s="" d=""/>
+            <fee type="expert" ref="#xpr0228" l="48" s="" d=""/>
+            <fee type="clerk" l="48" s="" d=""/>
+            <fee type="rolls" l="16" s="" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="164" s="" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="35" s="" d=""/>
+            <expense type="expert" l="28" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis>dès la 2e vacation, l’expert et le greffier procède aux calculs non plus sur place mais en comparant leurs mesures avec les mémoires dans leur bureau à Paris, pour éviter des frais de séjour à Champigny.
+                Cause « et nous ont donné pouvoir de voir, visitter, examiner, toiser et vérifier les ouvrages de menuiserie faits dans la maison où nous sommes pour led. Mr Rasty par led. s. Le Roy, en faire l’estimation, rapporter leurs défectuosités s’il s’en trouve et la diminution que doivent supporter lesd. ouvrages en raison desd. défectuosités et pour éviter les frais du séjour sur les lieux après que nous avons fait la visitte, examen et toisé desd. ouvrages et pris toutes les nottes et éclaircissemens convenables en relatifs auxd. ouvrages [?] nos calculs réduction évaluation et estimation, en rédiger et clore notre procès verbal en notre bureau des experts scitué à Paris rue de la Verrerie, nous donnant pouvoir en cas de disparité d’avis entre nous sur les objets communs le présent pouvoir de choisir un de nos confrères pour nous départager, promettant lesd. parties d’en passer par tous ce qui sera décidé par nous et par led. tiers expert, lesquels ouvrages sont contenus en deux mémoires l’un montant en [?] à la somme totalle de deux mille huit cent trente livres quatre sols six deniers et l’autre à celle de deux cent soixante et neuf livres qu’ils nous ont présentement remis et ont signé le présent […] Rasty / Le Roy »</analysis>
+        <noteworthy/>
+      </description>
+    </expertise>

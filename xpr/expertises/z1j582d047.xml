@@ -1,0 +1,241 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j582d047">
+  <meta/>
+  <control>
+    <maintenanceStatus>revised</maintenanceStatus>
+    <publicationStatus/>
+    <localControl localType="detailLevel">
+      <term>completed</term>
+    </localControl>
+    <maintenanceHistory>
+      <maintenanceEvent>
+                <eventType>revised</eventType>
+                <eventDateTime standardDateTime="2022-03-31T16:01:18Z">2022-03-31T16:01:18Z</eventDateTime>
+                <agentType>human</agentType>
+                <agent>llosserand</agent>
+                <eventDescription>rvpcd</eventDescription>
+            </maintenanceEvent>
+          <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateObjectsValues_db.xqy/BaseX</agent>
+        <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateOpinionRef_files.xqy/BaseX</agent>
+        <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateRefValues_files.xqy/BaseX</agent>
+        <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+        <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>revised</eventType>
+        <eventDateTime standardDateTime="2020-11-01T12:00:00">2020-11-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>JH</agent>
+        <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>retroconverted</eventType>
+        <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>ead2xpr.xsl/Saxon9</agent>
+        <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>created</eventType>
+        <eventDateTime standardDateTime="2017-04-01T12:00:00">2017-04-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>llosserand</agent>
+        <eventDescription>Création de la fiche.</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+  </control>
+  <sourceDesc>
+    <unitdate>1726</unitdate>
+    <idno type="unitid">Z1J582</idno>
+    <idno type="item">047</idno>
+    <facsimile from="0466" to="0469"/>
+    <physDesc>
+      <extent sketch="false">4</extent>
+    </physDesc>
+  </sourceDesc>
+  <description>
+    <sessions>
+      <date when="1726-08-09" type="paris"/>
+    </sessions>
+    <places>
+      <place xml:id="id162d236" type="paris">
+        <address>
+          <street>Faubourg Saint-Laurent</street>
+          <buildingNumber/>
+        </address>
+        <complement/>
+        <parish/>
+        <owner>succession Debas</owner>
+      </place>
+      <place xml:id="id162d254" type="province">
+        <address/>
+        <complement/>
+        <city>Aubervilliers</city>
+        <district/>
+        <owner>succession Debas</owner>
+      </place>
+    </places>
+    <categories>
+      <category type="estimation">Estimer la valeur des biens</category>
+      <designation rubric="true">Visite et estimation d'une maison, fauxbourg St Laurent et pièce de terre, terroir d'Aubervilliers, pour les mineurs Debas : M. Loir, expert.</designation>
+    </categories>
+    <procedure>
+      <framework type="b2">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+      <origination type="institution">Une institution</origination>
+      <sentences>
+        <sentence>
+          <orgName>lieutenant civil</orgName>
+          <date when="1726-07-10"/>
+        </sentence>
+      </sentences>
+      <case>désaccord entre les parties au sujet du partage de biens d'une succession.</case>
+      <objects>
+        <object type="plot">Terrain(s)</object>
+        <object type="house">Maison(s)</object>
+      </objects>
+    </procedure>
+    <participants>
+      <experts>
+        <expert ref="#xpr0183" context="primary" appointment="court-appointed">
+          <title>juré expert à Paris</title>
+        </expert>
+      </experts>
+      <clerks>
+        <clerk ref="#clrk0033">
+          <persName>
+            <surname>Callou</surname>
+            <forename>Antoine Charles</forename>
+          </persName>
+        </clerk>
+      </clerks>
+      <parties>
+        <party role="petitioner" presence="false" intervention="false">
+          <person>
+            <persName>
+              <surname>Debas</surname>
+              <forename>Nicolle</forename>
+            </persName>
+            <occupation>veuve de de la Forge, Michel, maître fermier à Paris</occupation>
+          </person>
+          <person>
+            <persName>
+              <surname>Debas</surname>
+              <forename>Marie Anne</forename>
+            </persName>
+            <occupation>fille majeure, filles et héritières chacune pour un cinquième de Lebas, Charles et Langeviens, Nicolle, décédée sa veuve, leurs père et mère.</occupation>
+          </person>
+          <status>heir</status>
+          <expert ref="#xpr0183"/>
+        </party>
+        <party role="opponent" presence="false" intervention="false">
+          <person>
+            <persName>
+              <surname>Grée</surname>
+              <forename>Roger</forename>
+            </persName>
+            <occupation>tuteur ad hoc ausd. mineurs</occupation>
+          </person>
+          <person>
+            <persName>
+              <surname>Bricon</surname>
+              <forename>Louis</forename>
+            </persName>
+            <occupation>marchand de pailles</occupation>
+          </person>
+          <person>
+            <persName>
+              <surname>Debas</surname>
+              <forename>Françoise</forename>
+            </persName>
+            <occupation>sa femme, fille et héritière pour un cinquième desd. Debas et sa femme, leurs père et mère</occupation>
+          </person>
+          <person>
+            <persName>
+              <surname>Roger</surname>
+              <forename>Charles</forename>
+            </persName>
+            <occupation>bourgeois de Paris, tuteur ad hoc de Debas, Thomas, émancipé par mariage et de Debas, Elisabeth, fille mineure, tous deux héritiers chacun pour un cinquième desd. Debas et sa femme.</occupation>
+          </person>
+          <status>heir</status>
+          <expert ref="#xpr0183"/>
+        </party>
+      </parties>
+      <craftmen>
+        <craftman>
+          <persName>
+            <surname/>
+            <forename/>
+          </persName>
+          <occupation/>
+        </craftman>
+      </craftmen>
+    </participants>
+    <conclusions>
+      <opinion ref="#xpr0183">"Et après avoir ainsy veu et visitté ladite maison et differens édifices qui la composent, cours, jardins, notre avis est qu'elle ne peut se partager entre lesdites parties, pourquoy consideration faitte du quartier où elle est scituée, à l'estat present des batimens qui la composent dont la pluspart sont anciens, nous la prisons et estimons la somme de huit mil livres eu égard au cours du tems présent et à ce que ladite maison est chargée du logement des soldats cy… 8000 l."
+"Laquelle pièce de terre nous prisons et estimons la somme de sept cens cinquante livres aussi eu égard au cours du tems présent et à la charge du cens"</opinion>
+      <arrangement/>
+      <agreement type="conclusion">Conclusion</agreement>
+      <estimate l="8750" s="" d=""/>
+      <estimates>
+        <place ref="#id162d236">
+          <appraisal l="8000" s="" d="">
+            <desc>maison</desc>
+          </appraisal>
+        </place>
+        <place ref="#id162d254">
+          <appraisal l="750" s="" d="">
+            <desc>terrain</desc>
+          </appraisal>
+        </place>
+      </estimates>
+      <fees detail="true">
+        <fee type="papers" l="" s="" d=""/>
+        <fee type="expert" ref="#xpr0183" l="7" s="10" d=""/>
+        <fee type="clerk" l="" s="" d=""/>
+        <fee type="rolls" l="" s="" d=""/>
+        <fee type="prosecutors" l="" s="" d=""/>
+        <fee type="help" l="" s="" d=""/>
+        <fee type="plans" l="" s="" d=""/>
+        <total l="" s="" d=""/>
+      </fees>
+      <expenses mentioned="false"/>
+    </conclusions>
+    <keywords group="estates"/>
+    <keywords group="procedure"/>
+    <keywords group="contract"/>
+    <keywords group="encumbrance"/>
+    <keywords group="law"/>
+    <keywords group="measurement"/>
+    <keywords group="repairs"/>
+    <keywords group="guarantees"/>
+    <keywords group="responsability"/>
+    <keywords group="ownership"/>
+    <keywords group="value"/>
+    <keywords group="neighbourhood"/>
+    <keywords group="disorder"/>
+    <keywords group="transformation"/>
+    <analysis>« [f. 1v°] Vous avez, monsieur, leus tant tenus pour reprise avec led. Roger en ses qualitez, et en conséquence avons fait droit sur lad. demande en licitation desd. Nicolle et Marie Anne Debas, dit que la maison et héritages des successions communs seront veues et visittées par nous Loir, juré expert qu'avez nommé d'office pour toutes les parties après qu'elles s'en sont rapportées à vous, ce que nous rapporterons si lesd. biens peuvent commodément se partager sinon en préférons et estimerons la valleur, pour le rapport fait estre fait droit ainsy qu'il apartiendra et dès à présent dit que le recouvrement des debtes actives sera fait à la requête et diligence desd. Nicolle et Marie Anne Debas pour les deniers en provenant estre destribuez entre toutes les parties pour les parts et portions qui leur en apartiennent, dépens réservez. »</analysis>
+    <noteworthy/>
+  </description>
+</expertise>

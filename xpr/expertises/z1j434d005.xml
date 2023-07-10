@@ -1,0 +1,192 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j434d005" status="">
+      <meta/>
+      <control>
+        <maintenanceStatus>new</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-02-17T12:17:28.693+01:00">2021-02-17T12:17:28.693+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>z1jresp.xqy/BaseX</agent>
+            <eventDescription>Ajout de l'historique de la fiche.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-11-01T12:00:00">2020-11-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Saisie de la fiche dans l’app xpr.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2019-04-01T12:00:00">2019-04-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Création de la fiche (formulaire Xforms/Libre office).</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1696</unitdate>
+    <idno type="unitid">Z1J434</idno>
+        <idno type="item">005</idno>
+        <facsimile from="0025" to="0028"/>
+        <physDesc>
+          <extent sketch="false">4</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1696-07-05" type="paris"/>
+          <date when="1696-07-11" type="paris"/>
+          <date when="1696-10-30" type="paris"/>
+        </sessions>
+        <places>
+          <place xml:id="id377d76" type="paris">
+            <address>
+              <street>rue de Taranne    </street>
+              <buildingNumber/>
+            </address>
+            <complement/>
+            <parish/>
+            <owner>succession Jean Baptiste du Hallié, maître chirurgien à Paris, occupée en bas par Duval, maître barbier perruquier à Paris</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="estimation">Estimer la valeur des biens</category>
+          <designation rubric="false">[Estimation de maison]     </designation>
+        </categories>
+        <procedure>
+          <framework type="b3">Saisie mixte (un expert est nommé par les parties, l'autre est nommé d'office)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>LC</orgName>
+              <date when="1696-01-10"/>
+            </sentence>
+          </sentences>
+          <case>succession</case>
+          <objects>
+            <object type="house">Maison(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0008" context="primary" appointment="appointed">
+              <title>expert juré en titre d’office et entrepreneur des bâtiments du roi</title>
+            </expert>
+            <expert ref="#xpr0218" context="primary" appointment="court-appointed">
+              <title>expert juré en titre d’office et entrepreneur des bâtiments du roi</title>
+            </expert>
+            <expert ref="#xpr0139" context="primary" appointment="appointed">
+              <title>expert juré en titre d’office</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0008">
+              <persName>
+                <surname>Villain</surname>
+                <forename>Pierre</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Perrault</surname>
+                  <forename/>
+                </persName>
+                <occupation>marchand bourgeois de Paris, au nom et comme tuteur de Charles Hubert du Halier, fils mineur et héritier de Harmant du Hallier son père et Catherine Peclanet sa mère</occupation>
+              </person>
+              <status>heir</status>
+              <expert ref="#xpr0008"/>
+            </party>
+            <party role="opponent" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Le Beau</surname>
+                  <forename>André</forename>
+                </persName>
+                <occupation>menuisier et Agnès Leroy sa femme, poursuivant la vente par décret de la maison</occupation>
+              </person>
+              <status>creditor</status>
+              <expert ref="#xpr0139"/>
+            </party>
+            <party role="opponent" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>de Ville</surname>
+                  <forename>Catherine Charlotte</forename>
+                </persName>
+                <occupation>, émancipée d’âge, tant en son nom que comme procuratrice de Charles baron de Ville, chevalier de l’ordre de Saint-Louis, tuteur des enfants mineurs de lui et défunte Catherine du Hallié sa femme</occupation>
+              </person>
+              <status>heir</status>
+              <expert ref="#xpr0218"/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <agreement type="disagreement">Désaccord</agreement>
+          <opinion ref="#xpr0008">« Et moy Aubry, expert susdit sommes suivant la parolle pris avec ledit sieur Phillippest aujourd’huy 30e octobre de relevé sommes derechef transporté en la susdite maison où estant arivé sur les trois heures comme ledit sieur Philippest dictoir son advis en presence dudit sieur du Hallier, nous avons derechef veu et visitté ladite maison de fonc en comble, en presence dudit sieur du Hallier à l’effet de conoistre de la qualité du bastiment quy compose ladite maison, levé les mesures pour conoistre l’estendue et superficie de la place sur laquelle est bastye ladite maison, ce que ayant faict et conu nous estimons la totalité de ladite maison ainsy qu’elle se poursuit et comporte de fond en comble … eu egard aux ouvrages de carreau que nous avons trouvé avoir esté faict en plusieurs des chambres du corps de logis de devant et de quelque autre reparations en deffirents endroicts, depuis nostre dernier vacation, la somme de quinze mil deux cent cinquante livres eu esgard aux grosses reparations quy se trouvent et trouveront dans peu de temps à faire nottament au pancher du premier estage du corps de logis de devant au dessus de l’estage du rez de chaussée quy est considerablement ployé et panché [… détail de réparations à faire], et d’autres réparations quy sont à faire en ladite maison, qu’elle est sujette aux logemens des soldas et tenu d’une taxe envers l’esglise St Sulpisse, aussy eu esgard que ladite maison demeurant audit mineur pour la prisée et estimation il sera tenu de payer des cas et ventes … d’estimation faicte aux susdites considerations eu esgard au cours du temps present et à la charge du scens dont peut estre tenue ladite maison cy… 15 250 l. »   </opinion>
+          <opinion ref="#xpr0218">« [Le lendemain] Nous Philippest … sur l’advis quy nous a esté donné par ledit greffier que ledit sieur Havard auroit donné son advis et estimé icelle maison du jour d’hyer sans conferé avec nous, ce quy nous oblige de donner nostre advis separement de l’estimation de ladite maison, en l’absence dudit sieur Aubry et de touttes les partyes, à l’exception du sieur du Halier, et pour parvenir à ladite estimation j’ay derechef visitté de fond en comble tous les bastimens quy compose ladite maison, la grandeur et superficie sur laquelle sont ces bastimans quy compose ladite maison, laquelle j’estime qu’elle vaux la somme de vingt deux mil cinq cent livres eu esgard à quelques reparations, qui pourront estre necessaires à y faire dans quelque temps eu esgard aussy à la situation, au cour du temps present, comme aussy eu esgard qu’elle est sujet aux logemens des soldas et envers la paroisse St Sulpisse à la charge du scens dont elle peut estre chargée envers le seigneur cy… 22 500 l. »</opinion>
+          <opinion ref="#xpr0139">« Laquelle maison moy Habard j’estime valoir la somme de vingt huict mil livres, à la charge des réparations, lesquelles pouront conter deux mil cinq cent livres ou environ, et dont je ne faict aucun estat atandu que par les sentences de l’exécution desquelles il s’agit, il ne l’est point ordonné, comme aussy à la taxe dont ladite maison est chargée envers la paroisse de Saint-Sulpisse et aux logemens des soldas, eu esgard que ladite maison est scitué grand rue de Taranne, à la grande cour et superficie de la place, à la qualité et quantité des bastimens quy sont dessus au cour du temps present et aux scens seigneuriaux c’est l’advis de nous Havard expert susdit et soubsigné cy… 28 000 l. »</opinion>
+          <arrangement/>
+          <estimate l="" s="" d=""/>
+          <estimates>
+            <place ref="#id377d76">
+              <appraisal l="" s="" d="">
+                <desc/>
+              </appraisal>
+            </place>
+          </estimates>
+          <fees detail="false">
+            <total l="" s="" d=""/>
+          </fees>
+          <expenses mentioned="false"/>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis/>
+        <noteworthy/>
+      </description>
+    </expertise>

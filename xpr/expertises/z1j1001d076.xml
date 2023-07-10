@@ -1,0 +1,230 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1001d076">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2017-10-01T12:00:00">2017-10-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1001</idno>
+        <idno type="item">076</idno>
+        <facsimile from="0813" to="0818"/>
+        <physDesc>
+          <extent sketch="false">5</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-04-29" type="paris"/>
+          <date when="1776-05-30" type="paris"/>
+        </sessions>
+        <places>
+          <place type="paris">
+            <address>
+              <street>quai des Miramiones</street>
+              <buildingNumber/>
+            </address>
+            <complement>près la porte St Bernard</complement>
+            <parish/>
+            <owner/>
+          </place>
+        </places>
+        <categories>
+          <category type="settlement">Départager</category>
+          <designation rubric="true">Visitte de mur mitoyen, quai des Miramiones, à la requête du sieur Césard ; MM. Desboeufs et Perrard, experts</designation>
+        </categories>
+        <procedure>
+          <framework type="b2a">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Châtelet, lieutenant civile (sentence)</orgName>
+              <date when="1776-04-02"/>
+            </sentence>
+          </sentences>
+          <case>mur mtoyen en ruine...</case>
+          <objects>
+            <object type="wall">Mur(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0089" context="primary" appointment="appointed">
+              <title>architecte expert</title>
+            </expert>
+            <expert ref="#xpr0210" context="primary" appointment="appointed">
+              <title>architecte expert</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0057">
+              <persName>
+                <surname>Liébault de Laneuville</surname>
+                <forename>Christophe Edouard</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party intervention="true" presence="true" role="petitioner">
+              <person>
+                <persName>
+                  <surname>Celard</surname>
+                  <forename>Jean</forename>
+                </persName>
+                <occupation>marchand de vin</occupation>
+              </person>
+              <status>owner</status>
+              <expert ref="#xpr0089"/>
+              <prosecutor>
+                <persName>
+                  <surname>Maubert</surname>
+                  <forename>Augustin Jean Baptiste</forename>
+                </persName>
+              </prosecutor>
+            </party>
+            <party intervention="false" presence="false" role="petitioner">
+              <person>
+                <persName>
+                  <surname>Tempesté</surname>
+                  <forename>Christophe</forename>
+                </persName>
+                <occupation>procureur en Parlement</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Legast</surname>
+                  <forename>Anne</forename>
+                </persName>
+                <occupation>fille majeure, propriétaire pour autretiers de la maison voisine à gauche de celle en question</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>et consorts</surname>
+                  <forename/>
+                </persName>
+                <occupation/>
+              </person>
+              <person>
+                <persName>
+                  <surname>Soufflot</surname>
+                  <forename>Jean Baptiste</forename>
+                </persName>
+                <occupation/>
+              </person>
+              <status>owner</status>
+              <expert ref="#xpr0210"/>
+              <prosecutor>
+                <persName>
+                  <surname>Bordier le jeune</surname>
+                  <forename>Nicolas Charles</forename>
+                </persName>
+              </prosecutor>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="">« Notre avis est que cette seconde partie de mur doit etre démolie dans toutes sa longueur et hauteur de sa fondation aux frais seuls de demoiselle Legest au moyen de quoy les matereaux en provenans leur appartiendront, que sa reconstruction doit etre faite en moelons durs posés par assises et de niveau en mortier de chaux et sable de la meilleure qualité et ce vingt quatre pouces d’epaisseur pour qu’il y ait trois pouces d’empatement de chaque costé. »
+« Par rapport à cette fondation elle doit etre refait à frais communs des parties pour moitié entre le sieur Cesar et la demoiselle Legest de meme que la chaine de peirre qui doit etre posée au rez de chaussée à l’endroit de l’enclave de sept pouces sept lignes de saillie sur le terrain de delle Legest. »
+« Comme lesd. Demoiselles n’ont point de contremur dans leur fosse au devant de ladite fondation elles doivent accepter en faire construire un de douze pouces d’épaisseur et à leurs frais seuls »
+« Quant à l’alignement du mur sur cette fondation… doivent etre … en supprimant le coude qu’ils ont marqué au point D de ce plan. »
+« Pour ce qui est de la troisieme partie de mur depuis lad. Enclave jusques et compris l’encoignure du corps de logis desd. Dlle Legest donnant sur leur jardin, elle a été démolie par l’entrepreneur desd. Demoiselles Legest jusqu’à vingt quatre pieds près du rez de chaussée, laquelle hauteur lesdits experts ont delcaré devoir subsister sans parler de la fondation qu’ils n’avoient pas pu voir et ont declaré que cette troisième partie de mur dans lesdits vingt quatre pieds de hauteur étoit suffisante pour la maison desdites delles »
+« Comme la fondation de ce mur est insuffisante… il faut de toute necessité démolir non seulement ladite fondation mais encore le mur dans les vingt quatre pieds qui par luy meme est insolide ensemble l’encoignure pour raison de quoy il faudra chevaler ladite encoignure au dessus du rez de chaussée, refaire ladite fondation en bons moelons et mortier de vingt quatre pouces d’épaisseur pour qu’il y ait empatement de chaque costé, la demolition de ladite fondation l’enlevement des decombres doit etre faite aux frais desdites damoiselles, les matereaux en provenans leur appartiendront et la reconstruction sera fait à frais communs chacun par moitié. »</opinion>
+          <arrangement/>
+          <agreement type="agreement">Accord</agreement>
+          <estimate l="" s="" d=""/>
+          <fees detail="true">
+            <fee type="papers" l="4" s="" d=""/>
+            <fee type="expert" ref="#xpr0089" l="18" s="" d=""/>
+            <fee type="expert" ref="#xpr0210" l="18" s="" d=""/>
+            <fee type="clerk" l="18" s="" d=""/>
+            <fee type="rolls" l="20" s="" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="98" s="" d=""/>
+          </fees>
+          <expenses mentioned=""/>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis/>
+        <noteworthy>PV des mêmes experts le 2 septembre 1775 concernant le même mur
+                La visite du 22 mai dernier (par Ducret et Poullain) est divisée en quatre parties dont les deux premières et la quatrième ne sont pas concernées par la présente visite. Concernant la 3e partie, Ducret et Poullain ont dit « qu’elle est à prendre depuis et compris l’épaisseur du mur de cloture separant la petite cour de demoiselle Legest vers le fond et … au precedent jusqu’à l’encoignure de l’édiffice entre cour et jardin de demoiselle Legest et consors, et sont d’avis que cette partie de mur sera démolie depuis son sommet jusqu’à vingt quatre pieds du rez de chaussée attendu la declaration du sieur Cesar qu’il a intention d’occuper la totalité de cette partie de mur laquelle demolition sera faite aux frais seuls desdits demoiselle Legest et consors auxquels les materiaux appartiendront seuls et les gravas enlevés à leurs frais. » La partie au dessous est suffisante pour Legest mais Cesar la trouve insuffisante pour ses constructions : elle sera démolie et reconstruite à ses frais seuls. La partie supérieure au dessus des 24 pieds sera faite par les propriétaires en commun (¾ Cesar, ¼ Legest).
+                Meaubert relève une erreur dans l’alignement donné par Ducret et Poullain : « dans la partie dudit mur cottée sur le plan qu’ils ont dressé depuis la lettre C jusqu’à la lettre E… ils ont constatté que ladite partie de mur au point D par eux ecrite sur le plan fermoit un coude de trois pouces environ du costé du sieur Cesar, que cette erreur étoit inevitable de leur part parce que n’ayant pas vu ny … la fondation de cette partie de mur lors de leurs operations ils avoient été forcés de s’en rapporter à sa forme et figure au droit du rez de chaussée qui les avoit trompés par ses irregularités resultantes des differentes reprises et renformis qui avoient été faits à cette partie de mur du dessus de son empatement, mais qu’actuellement que la fondation au dessous est apparente en toutte sa longueur et hauteur il n’est pas possible de s’y meprendre et de ne pas reconnoitre l’erreur… c’est pourquoy il nous requiert de faire les operations qu’il convient pour nous assurer que ledit mur est au droit allignement et sans plis ny coude depuis ledit point C cotté à leur plan jusqu’au point E et en consequence de rectiffier quant à ce l’écrit d’allignement. »</noteworthy>
+      </description>
+    </expertise>

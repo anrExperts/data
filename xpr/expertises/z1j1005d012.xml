@@ -1,0 +1,300 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1005d012">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-07-01T12:00:00">2020-07-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2017-10-01T12:00:00">2017-10-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1005</idno>
+        <idno type="item">012</idno>
+        <facsimile from="0124" to="0141"/>
+        <physDesc>
+          <extent sketch="false">17</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-07-05" type="paris"/>
+          <date when="1776-11-08" type="paris"/>
+        </sessions>
+        <places>
+          <place xml:id="id20d361" type="paris">
+            <address>
+              <street>Grande rue du Faubourg-Saint-Martin</street>
+              <buildingNumber/>
+            </address>
+            <complement/>
+            <parish/>
+            <owner/>
+          </place>
+        </places>
+        <categories>
+          <category type="acceptation">Recevoir et évaluer le travail réalisé</category>
+          <category type="estimation">Estimer la valeur des biens</category>
+          <designation rubric="true">Estimation d'une maison, Grande rue du Faubourg St Martin, dépendant de la succession du sieur Grandiché, Me Boulanger et réceptions des constructions faites en icelle ; M. Delespine, expert.</designation>
+        </categories>
+        <procedure>
+          <framework type="b2b">L’institution est saisie dans le cadre d’une procédure (l’institution nomme un ou deux experts)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Châtelet, lieutenant civil (sentence)</orgName>
+              <date when="1776-06-07"/>
+            </sentence>
+          </sentences>
+          <case>Succession Gaudiché ; partage des biens et licitation d’une maison</case>
+          <objects>
+            <object type="house">Maison(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0085" context="primary" appointment="court-appointed">
+              <title>architecte expert bourgeois des bâtimens à Paris</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0062">
+              <persName>
+                <surname>Picquenon</surname>
+                <forename>Denis Joseph François</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Raffé</surname>
+                  <forename>Vincent</forename>
+                </persName>
+                <occupation>maître peintre à Paris</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Gaudiché</surname>
+                  <forename>Antoinette</forename>
+                </persName>
+                <occupation>son épouse, elle héritière pour ¼ du défunt Gaudiché, Jean son père, en cette qualité propriétaire pour ¼ moins 1/10 [cession faite à Grandin] de la maison dont il est question</occupation>
+              </person>
+              <status>heir</status>
+              <expert ref="#xpr0085"/>
+              <prosecutor>
+                <persName>
+                  <surname>Boulanger</surname>
+                  <forename>Jacques Alexandre</forename>
+                </persName>
+              </prosecutor>
+            </party>
+            <party role="opponent" presence="" intervention="">
+              <person>
+                <persName>
+                  <surname>Herisson</surname>
+                  <forename>Arnoult</forename>
+                </persName>
+                <occupation>étalier boucher</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Gaudiché</surname>
+                  <forename>Louise Aymée</forename>
+                </persName>
+                <occupation>son épouse, héritière pour ¼ du défunt Gaudiché, Jean son père, en cette qualité propriétaire pour ¼ de la maison dont il est question</occupation>
+              </person>
+              <status>heir</status>
+              <expert ref="#xpr0085"/>
+              <prosecutor>
+                <persName>
+                  <surname>Contant</surname>
+                  <forename/>
+                </persName>
+              </prosecutor>
+            </party>
+            <party role="opponent" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Boujeau</surname>
+                  <forename>Perronnette Antoinette</forename>
+                </persName>
+                <occupation>veuve de Gaudiché, Jean, ayant renoncé à la communauté de biens, au nom et comme tutrice de Gaudiché, Adelaïde Augustine et de Gaudiché, Pierre, ses enfants mineurs et du défunt, héritiers chacun pour 1/4 du défunt Gaudiché, Jean leur père, en cette qualité propriétaire pour ¼ de la maison dont il est question</occupation>
+              </person>
+              <status>heir</status>
+              <expert ref="#xpr0085"/>
+              <prosecutor>
+                <persName>
+                  <surname>Jurien</surname>
+                  <forename/>
+                </persName>
+              </prosecutor>
+            </party>
+            <party role="opponent" presence="true" intervention="true">
+              <person>
+                <persName>
+                  <surname>Lapiche</surname>
+                  <forename>François</forename>
+                </persName>
+                <occupation>maître maçon entrepreneur de bâtiments à Paris</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Grillon</surname>
+                  <forename/>
+                </persName>
+                <occupation>maître charpentier à Paris</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Delormel</surname>
+                  <forename>Jacques Louis</forename>
+                </persName>
+                <occupation>maître menuisierà Pairs</occupation>
+              </person>
+              <status>builder</status>
+              <expert ref="#xpr0085"/>
+              <prosecutor>
+                <persName>
+                  <surname>de Rennefort</surname>
+                  <forename/>
+                </persName>
+              </prosecutor>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname>Lapiche</surname>
+                <forename>François</forename>
+              </persName>
+              <occupation>maître maçon entrepreneur de bâtiments à Paris</occupation>
+            </craftman>
+            <craftman>
+              <persName>
+                <surname>Grillon</surname>
+                <forename/>
+              </persName>
+              <occupation>maître charpentier à Paris</occupation>
+            </craftman>
+            <craftman>
+              <persName>
+                <surname>Delaruelle</surname>
+                <forename>Jacques Louis</forename>
+              </persName>
+              <occupation>maître menuisier</occupation>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0085">1/ Estimation de la maison « Ce fait nous avons de nouveau visitté ladite maison en touttes les partyes qui la composent de fond en comble, fait attention à son état consistance et distribution, à la nature de sa construction ; aux constructions et réparations qui y ont été faittes depuis peu, au revenu qu’elle est susceptible de produire, à l’étendue de son emplacement, à sa figure, à la manière dont il est employé par les batiments, au quartier où elle est située et à ce qu’elle est chargée d’une taxe annuelle pour tenir lieu du logement des gens de guerre, nous avons mis des prix particuliers tant au fond du terrain qu’à la superficie des batiments eu égard à ce que dessus : Touttes considerations faittes nous prisons et estimons ladite maison et dependances en l’état qu’elle se poursuit et comporte detaillé au present rapport à la charge du cens et des droits seigneuriaux du logement des gens de guerre et au cours du tems present la somme de … 32 500 l. 
+Telle est, Monsieur, la visitte par nous faitte de ladite maison, tel est notre avis sur la valeur d’icelle suivant et aux termes de votre sentence et satisfaisant au réquisitoire de Me Boullanger audit nom en la premiere vacation du present rapport nous vous observons que ladite maison ne peut aucunement se partage en autant de portions qu’il y a de proprietaires cy… observation » 
+B/ Réception d’ouvrages 
+Maçonnerie (Lapiche) : 4 212 l. 15 s. 8 d. 
+Charpente (Grillon) : 2379 l. 17 s. 7.
+Couverture (Lacour) : 322 l. 13 s. 5 d.
+Menuiserie (Delormel)  : 553 l. 13 s. 2d.
+Serrurerie (Gillet) : 1456 l. 15s. 4 d.
+Carrelage (Jacob) : 405 l. 6 s. 6 d.
+Peinture (Vincent) : 65 l. 11 s.
+Vitrerie (Buron) : 321 l.
+Ferblanterie (Haudouart): 66 l. 5 s.
+Marbrerie (Juran) : 136 l.
+« Total des ouvrages la somme de neuf mille huit cent quarante livres quatorze sols huit deniers à laquelle nous les estimons reconnoissant qu’ils sont bien faits suivant l’art et qu’ils sont en état de reception cy… 9 840 l. 14 s. 8 d. 
+Telle est, Monsieur, la visitte par nous faitte de ladite maison, tel est notre avis tant sur la valeur d’icelle que sur l’impossibilité de la partager ; telle est aussy la visitte des ouvrages de plusieurs natures faits en ladite maison et notre avis sur la valeur d’iceux le tout suivant et aux termes de votre sentence nous referons sur le tout Monsieur, à votre justice et prudence ordinaires. Fait par nous architecte expert susdit lesdits jours mois et an. »</opinion>
+          <arrangement/>
+          <agreement type="conclusion">Conclusion</agreement>
+          <estimate l="" s="" d=""/>
+          <estimates>
+            <place ref="#id20d361">
+              <appraisal l="32500" s="" d="">
+                <desc>une maison</desc>
+              </appraisal>
+            </place>
+          </estimates>
+          <fees detail="true">
+            <fee type="papers" l="21" s="18" d=""/>
+            <fee type="expert" ref="#xpr0085" l="168" s="" d=""/>
+            <fee type="clerk" l="168" s="" d=""/>
+            <fee type="rolls" l="59" s="" d=""/>
+            <fee type="prosecutors" l="30" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="other" l="6" s="" d="">annexe des mémoires</fee>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="452" s="18" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="140" s="15" d=""/>
+            <expense type="expert" l="" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis/>
+        <noteworthy>Les vacations n'ont pas toutes été notées sur cette fiche (28 vacations)</noteworthy>
+      </description>
+    </expertise>

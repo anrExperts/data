@@ -1,0 +1,209 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1010d005">
+  <meta/>
+  <control>
+    <maintenanceStatus>revised</maintenanceStatus>
+    <publicationStatus/>
+    <localControl localType="detailLevel">
+      <term>completed</term>
+    </localControl>
+    <maintenanceHistory>
+      <maintenanceEvent>
+                <eventType>revised</eventType>
+                <eventDateTime standardDateTime="2022-08-28T13:49:43Z">2022-08-28T13:49:43Z</eventDateTime>
+                <agentType>human</agentType>
+                <agent>llosserand</agent>
+                <eventDescription>rvpcd</eventDescription>
+            </maintenanceEvent>
+          <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateObjectsValues_db.xqy/BaseX</agent>
+        <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateOpinionRef_files.xqy/BaseX</agent>
+        <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateRefValues_files.xqy/BaseX</agent>
+        <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+        <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>revised</eventType>
+        <eventDateTime standardDateTime="2020-09-01T12:00:00">2020-09-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>JH</agent>
+        <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>retroconverted</eventType>
+        <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>ead2xpr.xsl/Saxon9</agent>
+        <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>created</eventType>
+        <eventDateTime standardDateTime="2017-04-01T12:00:00">2017-04-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>llosserand</agent>
+        <eventDescription>Création de la fiche.</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+  </control>
+  <sourceDesc>
+    <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1010</idno>
+    <idno type="item">005</idno>
+    <facsimile from="0047" to="0051"/>
+    <physDesc>
+      <extent sketch="false">5</extent>
+    </physDesc>
+  </sourceDesc>
+  <description>
+    <sessions>
+      <date when="1776-12-02" type="paris"/>
+      <date when="1776-12-18" type="paris"/>
+      <date when="1776-12-24" type="paris"/>
+    </sessions>
+    <places>
+      <place type="paris">
+        <address>
+          <street>Rue Traversine</street>
+          <buildingNumber/>
+        </address>
+        <complement>près la rue de la Montagne-Saint-Geneviève</complement>
+        <parish/>
+        <owner>maison saisie sur Barancourt</owner>
+      </place>
+    </places>
+    <categories>
+      <category type="acceptation">Recevoir et évaluer le travail réalisé</category>
+      <designation rubric="true">Estimation de réparations faites</designation>
+    </categories>
+    <procedure>
+      <framework type="b2">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+      <origination type="institution">Une institution</origination>
+      <sentences>
+        <sentence>
+          <orgName>lieutenant</orgName>
+          <date when="1776-07-04"/>
+        </sentence>
+      </sentences>
+      <case>achèvement des réparations les plus urgentes faites sur une maison saisie réellement sur le sieur Baraucourt (la visite n’est pas nécessaire pour établir les réparations à faire mais est demandée pour leur achèvement), la cour a autorisé le sieur Masson à en avancer les derniers</case>
+      <objects>
+        <object type="house">Maison(s)</object>
+      </objects>
+    </procedure>
+    <participants>
+      <experts>
+        <expert ref="#xpr0163" context="primary" appointment="appointed">
+          <title>architecte expert</title>
+        </expert>
+      </experts>
+      <clerks>
+        <clerk ref="#clrk0057">
+          <persName>
+            <surname>Liébault de La Neuville</surname>
+            <forename>Christophe Edouard</forename>
+          </persName>
+        </clerk>
+      </clerks>
+      <parties>
+        <party role="petitioner" presence="true" intervention="false">
+          <person>
+            <persName>
+              <surname>Masson</surname>
+              <forename>Louis</forename>
+            </persName>
+            <occupation>ermier judiciaire d’une maison située rue Traversine, saisie réellement sur le sieur Barancourt</occupation>
+          </person>
+          <status>contractor</status>
+          <expert ref="#xpr0163"/>
+        </party>
+        <party role="opponent" presence="false" intervention="false">
+          <person>
+            <persName>
+              <surname>Saullet</surname>
+              <forename>François</forename>
+            </persName>
+            <occupation>procureur en la cour en son nom poursuivant la saisie réelle de ladite maison comme étant subrogé au lieu et place de M Réalleau</occupation>
+          </person>
+          <status/>
+          <expert ref="#xpr0163"/>
+        </party>
+        <party role="opponent" presence="false" intervention="false">
+          <person>
+            <persName>
+              <surname>Andry</surname>
+              <forename/>
+            </persName>
+            <occupation>procureur en la cour, et procureur plus ancien des procureurs des créanciers opposants à ladite saisie réelle</occupation>
+          </person>
+          <status>creditor</status>
+          <expert ref="#xpr0163"/>
+        </party>
+      </parties>
+      <craftmen>
+        <craftman>
+          <persName>
+            <surname/>
+            <forename/>
+          </persName>
+          <occupation/>
+        </craftman>
+      </craftmen>
+    </participants>
+    <conclusions>
+      <opinion ref="#xpr0163">Les ouvrages de réparation faits sont estimés à la somme de 321 livres 9 sols 4 deniers.</opinion>
+      <arrangement/>
+      <agreement type="conclusion">Conclusion</agreement>
+      <estimate l="321" s="9" d="4"/>
+      <fees detail="true">
+        <fee type="papers" l="4" s="" d=""/>
+        <fee type="expert" ref="#xpr0163" l="18" s="" d=""/>
+        <fee type="clerk" l="18" s="" d=""/>
+        <fee type="rolls" l="20" s="" d=""/>
+        <fee type="prosecutors" l="" s="" d=""/>
+        <fee type="help" l="" s="" d=""/>
+        <fee type="plans" l="" s="" d=""/>
+        <total l="60" s="" d=""/>
+      </fees>
+      <expenses mentioned="true">
+        <expense type="expert" l="6" s="" d=""/>
+        <expense type="clerk" l="8" s="10" d=""/>
+      </expenses>
+    </conclusions>
+    <keywords group="estates"/>
+    <keywords group="procedure"/>
+    <keywords group="contract"/>
+    <keywords group="encumbrance"/>
+    <keywords group="law"/>
+    <keywords group="measurement"/>
+    <keywords group="repairs"/>
+    <keywords group="guarantees"/>
+    <keywords group="responsability"/>
+    <keywords group="ownership"/>
+    <keywords group="value"/>
+    <keywords group="neighbourhood"/>
+    <keywords group="disorder"/>
+    <keywords group="transformation"/>
+    <analysis>Cause
+                « Par laquelle sentence la cour, parties comparantes ouïes, a [avec ?] led. Louis Masson partie intéressante en instance de saisie réelle des biens du sr Barancourt faisant droit sur icelle, a autorisé led. sr Masson à faire faire les réparations les plus urgentes en la maison dont il s’agit jusqu’à concurrence des sommes portées sur les règlemens sans qu’il soit besoin de visitte préalable, à la charge par led. sieur Le Masson de faire constater le prix qu’elles auront pu couter par nous Lefoullon expert que la cour a commis à cet effet, dont nous dresserions procès verbal article par article en la manière accoutumée ; la cour a pareillement autorisé led. sr Le Masson à en avancer les deniers, a ordonné que le commissaire aux saisies seroit tenu de recevoir pour argent comptant dud. sr Le Masson en déduction du prix de son bail, les quittances qu’il tirerait des ouvriers qui les auroit faittes, passés devant notaires qu’en faisant déchargé &amp; à luy allouée au requeste de sa commission la cour a déclaré lad. sentence commune avec les parties saisies [réellement ?] procureur plus ancien des opposans pour être exécutée avec eux suivant leur forme et teneur. »</analysis>
+    <noteworthy/>
+  </description>
+</expertise>

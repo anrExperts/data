@@ -1,0 +1,195 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j578d070">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-10-01T12:00:00">2020-10-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2016-10-26T12:00:00">2016-10-26T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>RB</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1726</unitdate>
+    <idno type="unitid">Z1J578</idno>
+        <idno type="item">070</idno>
+        <facsimile from="0805" to="0809"/>
+        <physDesc>
+          <extent sketch="false">5</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1726-02-25" type="province"/>
+        </sessions>
+        <places>
+          <place type="province">
+            <address/>
+            <complement/>
+            <city>Ezanville</city>
+            <district/>
+            <owner>Courart / héritiers Robert d'Yvau</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="settlement">Départager</category>
+          <designation rubric="true">Visite de vue et lieux contentieux</designation>
+        </categories>
+        <procedure>
+          <framework type="b3">Saisie mixte (un expert est nommé par les parties, l'autre est nommé d'office)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Siège présidial au châtelet de Paris</orgName>
+              <date when="1725-09-11"/>
+            </sentence>
+          </sentences>
+          <case>Litige concernant des vues</case>
+          <objects>
+            <object type="plot">Terrain(s)</object>
+            <object type="house">Maison(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0232" context="primary" appointment="court-appointed">
+              <title>architecte juré du roi expert bourgeois de Paris</title>
+            </expert>
+            <expert ref="#xpr0078" context="primary" appointment="appointed">
+              <title>architecte juré du roi expert bourgeois de Paris</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#xpr0232">
+              <persName>
+                <surname>Quirot</surname>
+                <forename>Pierre</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Deloy</surname>
+                  <forename>François Mathieu de</forename>
+                </persName>
+                <occupation>bourgeois de Paris</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Yvau</surname>
+                  <forename>Maurisset d'</forename>
+                </persName>
+                <occupation>fille majeure, héritière pour moitié de Robert d'Yvau</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Yvau</surname>
+                  <forename>Jeanne Marguerite d'</forename>
+                </persName>
+                <occupation>fille majeure, héritière pour moitié de Robert d'Yvau</occupation>
+              </person>
+              <status>joint-owner</status>
+              <expert ref="#xpr0078"/>
+            </party>
+            <party role="opponent" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Courart</surname>
+                  <forename>Jacques</forename>
+                </persName>
+                <occupation>écuyer, sieur de Sermillon, voisin de la maison des d'Yvau.</occupation>
+              </person>
+              <status>owner</status>
+              <expert ref="#xpr0232"/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <arrangement/>
+          <agreement type="noConclusion">Sans conclusion</agreement>
+          <estimate l="" s="" d=""/>
+          <fees detail="true">
+            <fee type="papers" l="3" s="5" d=""/>
+            <fee type="expert" ref="#xpr0232" l="25" s="" d=""/>
+            <fee type="expert" ref="#xpr0078" l="25" s="" d=""/>
+            <fee type="clerk" l="25" s="" d=""/>
+            <fee type="rolls" l="5" s="5" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="83" s="10" d=""/>
+          </fees>
+          <expenses mentioned=""/>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis>Motivations
+                « Ladite sentence […] ordonne que ledit sieur Courart sera tenu de rapporter dans huitaine titres valables pour etablir qu'il ait des veues droites sur le passage du jardin dudit Divot (sic), sinon permis audit Divot de les faire boucher aux frais dudit sieur Courart, […] que par experts dont les parties conviendront […] il sera fait rapport de la scituation desdites veues droites, sur lequel lieu elles doivent donner, et à quelle distance elles sont de l'héritage dudit Divot, afin de payement de moitié de la valeur des ormes que ledit Divot a fait abbattre et desdits ouvrages et interest résultant,après que ledit sieur Courart a soutenu que lesdits ormes estoient plantez dans la haye qui sépare les jardins des parties, soutenu au contraire par ledit Divot qu'ils estoient non dans ladite haye mais plus avant dans son jardin, avez monsieur ordonné que les mesmes experts visiteront ladite haye et les troncs desdits arbres et rapporteront si lesdits arbres estoient dans ladite haye ou dans ledit jardin dudit Divot ».</analysis>
+        <noteworthy/>
+      </description>
+    </expertise>

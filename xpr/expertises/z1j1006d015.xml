@@ -1,0 +1,213 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1006d015">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-09-01T12:00:00">2020-09-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2017-04-01T12:00:00">2017-04-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1006</idno>
+        <idno type="item">015</idno>
+        <facsimile from="0084" to="0095"/>
+        <physDesc>
+          <extent sketch="false">12</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-08-07" type="paris"/>
+          <date when="1776-08-30" type="paris"/>
+          <date when="1776-08-30" type="paris"/>
+          <date when="1776-09-20" type="paris"/>
+          <date when="1776-10-18" type="paris"/>
+          <date when="1776-11-29" type="paris"/>
+          <date when="1777-01-31" type="paris"/>
+        </sessions>
+        <places>
+          <place type="paris">
+            <address>
+              <street>Rue de Bourbon</street>
+              <buildingNumber/>
+            </address>
+            <complement>près la porte Saint-Denis</complement>
+            <parish/>
+            <owner>Langlois</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="acceptation">Recevoir et évaluer le travail réalisé</category>
+          <designation rubric="true">Estimation impenses et améliorations en une maison</designation>
+        </categories>
+        <procedure>
+          <framework type="b2b">L’institution est saisie dans le cadre d’une procédure (l’institution nomme un ou deux experts)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>lieutenant civil (sentence du 25 avril 1776)</orgName>
+              <date when="1776-04-25"/>
+            </sentence>
+          </sentences>
+          <case>la précédente expertise aboutit à une contradiction d'avis d’experts (sentence du 7 décembre1773 et procès-verbal du 6 février 1773)</case>
+          <objects>
+            <object type="house">Maison(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0026" context="third-party" appointment="court-appointed">
+              <title>architecte expert</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0057">
+              <persName>
+                <surname>Liébault de la Neuville</surname>
+                <forename>Christophe Edouard</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Derbois</surname>
+                  <forename>Marguerite Julie</forename>
+                </persName>
+                <occupation>épouse séparée quant aux biens de Langlois, André François, conseiller d’état, ancien intendant des finances</occupation>
+              </person>
+              <status>limited-partner</status>
+              <expert ref="#xpr0026"/>
+              <prosecutor>
+                <persName>
+                  <surname>Barbery</surname>
+                  <forename/>
+                </persName>
+              </prosecutor>
+            </party>
+            <party role="opponent" presence="true" intervention="true">
+              <person>
+                <persName>
+                  <surname>Brouin</surname>
+                  <forename>Jean François</forename>
+                </persName>
+                <occupation>maître peintre doreur à Paris</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Minomes</surname>
+                  <forename>Marie</forename>
+                </persName>
+                <occupation>épouse de Brouin</occupation>
+              </person>
+              <status>builder</status>
+              <expert ref="#xpr0026"/>
+              <prosecutor>
+                <persName>
+                  <surname>Haret</surname>
+                  <forename/>
+                </persName>
+              </prosecutor>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0026">« Il résulte de tout ce que dessus et notre avis est que les impenses et augmentations faites par le sieur Brouin en lad. maison &amp; et qui en ont peu augmenter la valeur montent suivant led. Demouttons à al somme de huit cent six livres quinze sols réduction faite de trois cent neuf livres quinze sols pour la perte que lad. maison a soufferte, par les objets que le sieur Brouin a supprimés &amp; enlevé à son proffit &amp; suivant le sr Ducret à quatre mille quatre cent livres neufs sols déduction faite de quatre cent trente livres onze sols pour les objets supprimés par le sr Brouin &amp; dont il doit tenir compte à madame Langlois ; &amp; suivant nous tiers expert, ces mêmes objets impense &amp; augmentation faites par led. sieur Brouin en lad. maison &amp; qui en ont augmenté la valeur montent suivant nos estimations &amp; détails à la somme totale de deux mille neuf cent soixante quatre livres huit sols, sur laquelle il convient déduire celle de trois cent neuf livres quinze sols pour les objets que la sr Brouin a supprimés et enlevés à son [f. 12r°] proffit &amp; que dépendoient de lad. maison suivant l’état qui en a été dressé par le commissaire ; reste la somme de deux mille six cent cinquante quatre livres treize sols qui sont dus au sr Brouin pour les impenses utiles &amp; augmentations qu’il a faites en lad. maison &amp; qui en ont pu augmenter la valeur, cy 2654£ 13 sols. Fait par nous architecte tiers expert susd. le jour &amp; an que dessus nous refferrant monsieur d’en ordonner. »</opinion>
+          <arrangement/>
+          <agreement type="conclusion">Conclusion</agreement>
+          <estimate l="2654" s="13" d=""/>
+          <fees detail="true">
+            <fee type="papers" l="11" s="" d=""/>
+            <fee type="expert" ref="#xpr0026" l="42" s="" d=""/>
+            <fee type="clerk" l="42" s="" d=""/>
+            <fee type="rolls" l="55" s="" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="150" s="" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="45" s="5" d=""/>
+            <expense type="expert" l="14" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis/>
+        <noteworthy/>
+      </description>
+    </expertise>

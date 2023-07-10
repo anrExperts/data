@@ -1,0 +1,251 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j999d041">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2017-10-01T12:00:00">2017-10-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2016-07-29T12:00:00">2016-07-29T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>LRT</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J999</idno>
+        <idno type="item">041</idno>
+        <facsimile from="0372" to="0393"/>
+        <physDesc>
+          <extent sketch="false">19</extent>
+          <appendices>
+            <appendice>
+              <type type="other">note au greffier en chef du domaine</type>
+              <extent/>
+              <desc/>
+              <note>lettre</note>
+            </appendice>
+            <appendice>
+              <type type="other">compte d’expédition</type>
+              <extent/>
+              <desc/>
+              <note>106 rolles à 5 liards : 6 livres 12 sols 6 deniers
+etc</note>
+            </appendice>
+          </appendices>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-02-05" type="paris"/>
+          <date when="1776-02-09" type="paris"/>
+          <date when="1776-02-10" type="paris"/>
+          <date when="1776-02-15" type="paris"/>
+          <date when="1776-02-19" type="paris"/>
+          <date when="1776-02-23" type="paris"/>
+        </sessions>
+        <places>
+          <place type="paris">
+            <address>
+              <street>rue des Blancs Manteaux</street>
+              <buildingNumber/>
+            </address>
+            <complement/>
+            <parish/>
+            <owner/>
+          </place>
+        </places>
+        <categories>
+          <category type="assessment">Décrire et évaluer les travaux à venir</category>
+          <designation rubric="true">visite de réparations locatives  en une maison rue des blancs manteaux à la requête de M. le marquis de Savines.</designation>
+        </categories>
+        <procedure>
+          <framework type="b2a">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Châtelet, lieutenant civil (sentence)</orgName>
+              <date when="1775-12-20"/>
+              <date when="1776-01-17"/>
+            </sentence>
+          </sentences>
+          <case>réparations locatives à constater</case>
+          <objects>
+            <object type="house">Maison(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0042" context="primary" appointment="appointed">
+              <title>architecte expert</title>
+            </expert>
+            <expert ref="#xpr0031" context="primary" appointment="appointed">
+              <title>architecte expert</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0057">
+              <persName>
+                <surname>Liebaut de la Neuville</surname>
+                <forename>Christophe Edouard</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="opponent" presence="true" intervention="">
+              <person>
+                <persName>
+                  <surname>Delafond</surname>
+                  <forename>Antoine Victor Amédée</forename>
+                </persName>
+                <occupation>marquis de Savines, chevalier de l’ordre royal de Saint-Louis</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Cadeau</surname>
+                  <forename/>
+                </persName>
+                <occupation>ancien payeur des rentes de l’hôtel de ville de Paris</occupation>
+              </person>
+              <status>tenant</status>
+              <expert ref="#xpr0031"/>
+              <prosecutor>
+                <persName>
+                  <surname>Roard</surname>
+                  <forename>Jean Louis</forename>
+                </persName>
+              </prosecutor>
+            </party>
+            <party role="petitioner" presence="true" intervention="">
+              <person>
+                <persName>
+                  <surname>Joly de Fleury</surname>
+                  <forename/>
+                </persName>
+                <occupation>conseiller du roi en ses conseils d’Etat, comme maître des droits et actions de Lelievre de Lagrange, Marie son épouse</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Marquis de Lagrange</surname>
+                  <forename/>
+                </persName>
+                <occupation/>
+              </person>
+              <person>
+                <persName>
+                  <surname>Lelievre de Lagrange</surname>
+                  <forename>Marie</forename>
+                </persName>
+                <occupation>son épouse</occupation>
+              </person>
+              <status>owner</status>
+              <expert ref="#xpr0042"/>
+              <prosecutor>
+                <persName>
+                  <surname>Chollet</surname>
+                  <forename>Antoine Fabien</forename>
+                </persName>
+              </prosecutor>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="">"En général nous observons que les réparations constattées à faire par ledit Mille huissier et la commissaire a constattées avoir été faites, lesquelles ne consistent que dans des remplacements de carreaux de verre et netoyage de vitre pour la majeure partie, sont bien faites.
+Fait pas nous architectes experts susdits les jours et an que dessus vous refferant Monsieur d'en ordonner et lesdits comparants ayant signé avec nous sous toutes leurs réserves et protestations de droit, ladite femme Henry ayant repris les clefs de ladite maison nous nous sommes retirés."</opinion>
+          <arrangement/>
+          <agreement type="agreement">Accord</agreement>
+          <estimate l="" s="" d=""/>
+          <fees detail="true">
+            <fee type="papers" l="8" s="9" d=""/>
+            <fee type="expert" ref="#xpr0042" l="60" s="" d=""/>
+            <fee type="expert" ref="#xpr0031" l="60" s="" d=""/>
+            <fee type="clerk" l="60" s="" d=""/>
+            <fee type="rolls" l="53" s="" d=""/>
+            <fee type="prosecutors" l="50" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="297" s="" d=""/>
+          </fees>
+          <expenses mentioned=""/>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis>f. 2r° "Et par ledit maitre Chollet udit nomm a été dit que le sieur marquisde la Grange étant sorti avant même que l'interpellation luy fut faite il est impossible qu'il y réponde, qu'au surplus il ne doit pas être question en notre (f. 2v°) procès verbal d'interpellation ny réponse autres que celles relatives à la scituation des lieux et à leur état qu'il s'agit de constater aux termes des sentences sus dattées..." -&gt; à propos d'un problème concernant les clés, conservées par des locataires</analysis>
+        <noteworthy>nettoyage</noteworthy>
+      </description>
+    </expertise>

@@ -1,0 +1,209 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1000d034">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-09-01T12:00:00">2020-09-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2018-01-01T12:00:00">2018-01-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>PC</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1000</idno>
+        <idno type="item">034</idno>
+        <facsimile from="0340" to="0343"/>
+        <physDesc>
+          <extent sketch="false">4</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-03-12" type="suburbs"/>
+          <date when="1776-03-15" type="suburbs"/>
+        </sessions>
+        <places>
+          <place xml:id="id277d289" type="suburbs">
+            <address/>
+            <complement>Grande rue Pavée</complement>
+            <city>Boulogne</city>
+            <district>face à la ruelle qui va au cimetière</district>
+            <owner>succession Mauvoisin</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="estimation">Estimer la valeur des biens</category>
+          <designation rubric="true">Visitte et estimation de bâtiments en augmentation et d'héritages</designation>
+        </categories>
+        <procedure>
+          <framework type="b2a">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Chambre des requêtes, sentence du 9 mars 1776.</orgName>
+              <date when="1776-03-09"/>
+            </sentence>
+          </sentences>
+          <case>A l’occasion de la succession Monvoisin, on demande aux experts de procéder à l’estimation de l’augmentation d’une maison par la famille Jacquet occupant les lieux, et des terrains en dépendant.</case>
+          <objects>
+            <object type="plot">Terrain(s)</object>
+            <object type="house">Maison(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0210" context="primary" appointment="appointed">
+              <title>architecte expert en titre d'office</title>
+            </expert>
+            <expert ref="#xpr0047" context="primary" appointment="appointed">
+              <title>architecte expert en titre d'office</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0058">
+              <persName>
+                <surname>Foucart</surname>
+                <forename>Paul Joseph</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="true" intervention="true">
+              <person>
+                <persName>
+                  <surname>Mauvoisin</surname>
+                  <forename>Louis Roch</forename>
+                </persName>
+                <occupation>vigneron</occupation>
+              </person>
+              <status>heir</status>
+              <expert ref="#xpr0210"/>
+            </party>
+            <party role="opponent" presence="true" intervention="true">
+              <person>
+                <persName>
+                  <surname>Jacquet</surname>
+                  <forename>Claude François</forename>
+                </persName>
+                <occupation/>
+              </person>
+              <person>
+                <persName>
+                  <surname>Jacquet</surname>
+                  <forename>Charles François</forename>
+                </persName>
+                <occupation/>
+              </person>
+              <status>tenant</status>
+              <expert ref="#xpr0047"/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname>Sans objet.</surname>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="">« La maison : Après laquelle visite sommaire par nous faite des bâtiments en augmentation, et d’une cour, nous avons procédé au toisé de la construction, à l’étude dudit bâtiment concernant tant les menuiseries, charpentes, maçonneries et autres partyes de différentes natures dont nous avons particulièrement pris notes et détails sur papier à part pour parvenir à l’estimation. Nous avons fait attention à la construction dudit édifice, compensation faite de vielles parties de mur conservés d’une ancienne bâtisse réemployée, nous estimons ladite augmentation la somme de mille huit cent quatre vingt sept livres, 1 887 l.Détail des terres en 26 articles : estimées au total, la somme de 3 040 livres 27 sols. »</opinion>
+          <arrangement/>
+          <agreement type="agreement">Accord</agreement>
+          <estimate l="4927" s="27" d=""/>
+          <estimates>
+            <place ref="#id277d289">
+              <appraisal l="1887" s="" d="">
+                <desc>Augmentation de maison</desc>
+              </appraisal>
+            </place>
+          </estimates>
+          <fees detail="true">
+            <fee type="papers" l="9" s="" d=""/>
+            <fee type="expert" ref="#xpr0210" l="36" s="" d=""/>
+            <fee type="expert" ref="#xpr0047" l="36" s="" d=""/>
+            <fee type="clerk" l="36" s="" d=""/>
+            <fee type="rolls" l="16" s="" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="other" l="12" s="" d="">Indicateur</fee>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="145" s="" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="28" s="" d=""/>
+            <expense type="expert" l="20" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract">
+          <term value="c1">Bail</term>
+        </keywords>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis>Les experts « déclarent que c’est mal à propos qu’il a précédemment été signifié que la visitte et estimation des biens dont il s’agit seroient effectuées par des vignerons et habitants des biens, ayant ignoré que nous seuls avions le droit de procéder auxdites estimations ».</analysis>
+        <noteworthy/>
+      </description>
+    </expertise>

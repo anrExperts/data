@@ -1,0 +1,181 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j663d057" status="">
+  <meta/>
+  <control>
+    <maintenanceStatus>revised</maintenanceStatus>
+    <publicationStatus/>
+    <localControl localType="detailLevel">
+      <term>completed</term>
+    </localControl>
+    <maintenanceHistory>
+      <maintenanceEvent>
+                <eventType>revised</eventType>
+                <eventDateTime standardDateTime="2022-04-29T14:27:57Z">2022-04-29T14:27:57Z</eventDateTime>
+                <agentType>human</agentType>
+                <agent>llosserand</agent>
+                <eventDescription>rvpcd</eventDescription>
+            </maintenanceEvent>
+          <maintenanceEvent>
+                <eventType>revised</eventType>
+                <eventDateTime standardDateTime="2021-10-15T19:34:05Z">2021-10-15T19:34:05Z</eventDateTime>
+                <agentType>human</agentType>
+                <agent>llosserand</agent>
+                <eventDescription>exb3</eventDescription>
+            </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateObjectsValues_db.xqy/BaseX</agent>
+        <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-06-16T16:56:32.893+02:00">2021-06-16T16:56:32.893+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateOpinionRef_files.xqy/BaseX</agent>
+        <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-06-16T16:29:02.548+02:00">2021-06-16T16:29:02.548+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateRefValues_files.xqy/BaseX</agent>
+        <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>created</eventType>
+        <eventDateTime standardDateTime="2021-04-12T18:41:55Z">2021-04-12T18:41:55Z</eventDateTime>
+        <agentType>human</agentType>
+        <agent>llosserand</agent>
+        <eventDescription>Création de la fiche.</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+  </control>
+  <sourceDesc>
+    <unitdate>1736</unitdate>
+    <idno type="unitid">Z1J663</idno>
+    <idno type="item">057</idno>
+    <facsimile from="0530" to="0533"/>
+    <physDesc>
+      <extent sketch="false">4</extent>
+    </physDesc>
+  </sourceDesc>
+  <description>
+    <sessions>
+      <date when="1736-07-11" type="paris"/>
+      <date when="1736-07-11" type="paris"/>
+    </sessions>
+    <places>
+      <place type="paris">
+        <address>
+          <street>Grande rue du faubourg Saint-Laurent</street>
+          <buildingNumber/>
+        </address>
+        <complement/>
+        <parish/>
+        <owner/>
+      </place>
+    </places>
+    <categories>
+      <category type="settlement">Départager</category>
+      <designation rubric="true">Visite et allignement de mur mitoyen entre deux maisons joignantes, Grande rue du Fg St Laurent, entre le sieur Frémy et la veuve Laforêt ; MM. Desboeufs et Bernard Jean-Baptiste Loir le jeune, experts ; M. Pothenot, greffier.</designation>
+    </categories>
+    <procedure>
+      <framework type="b2">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+      <origination type="institution">Une institution</origination>
+      <sentences>
+        <sentence>
+          <orgName>LC</orgName>
+          <date when="1736-06-20"/>
+        </sentence>
+      </sentences>
+      <case>le sieur Frémy fait construire sa maison, mur mitoyen insuffisant</case>
+      <objects>
+        <object type="wall">Mur(s)</object>
+      </objects>
+    </procedure>
+    <participants>
+      <experts>
+        <expert ref="#xpr0089" context="primary" appointment="appointed">
+          <title>architecte expert bourgeois</title>
+        </expert>
+        <expert ref="#xpr0185" context="primary" appointment="court-appointed">
+          <title>juré expert</title>
+        </expert>
+      </experts>
+      <clerks>
+        <clerk ref="#xpr0227">
+          <persName>
+            <surname>Pothenot</surname>
+            <forename>Gabriel</forename>
+          </persName>
+        </clerk>
+      </clerks>
+      <parties>
+        <party role="petitioner" presence="true" intervention="false">
+          <person>
+            <persName>
+              <surname>Frémy</surname>
+              <forename>Claude</forename>
+            </persName>
+            <occupation>maître menuisier</occupation>
+          </person>
+          <status>owner</status>
+          <expert ref="#xpr0089"/>
+        </party>
+        <party role="opponent" presence="true" intervention="false">
+          <person>
+            <persName>
+              <surname>veuve Delaforet</surname>
+              <forename/>
+            </persName>
+            <occupation/>
+          </person>
+          <status>owner</status>
+          <expert ref="#xpr0185"/>
+        </party>
+      </parties>
+      <craftmen>
+        <craftman>
+          <persName>
+            <surname/>
+            <forename/>
+          </persName>
+          <occupation/>
+        </craftman>
+      </craftmen>
+    </participants>
+    <conclusions>
+      <agreement type="agreement">Accord</agreement>
+      <opinion ref="#xpr0089 #xpr0185">Partie du mur suffisamment solide bien que d'ancienne construction. Pour une autre, trous et tranchées réalisées. À démolir et reconstruire à frais commun, toutefois celui qui construira en surélévation payera davantage aux termes de la coutume. 
+
+La jambe étrière pur soutenir le mur pendant la construction de la maison du sieur Frémy « sera payée en entier par ledit sieur Frémy et ladite veuve Delaforet n’y contribuera que comme mur de moilon, et si par la suitte elle, ses houaires ou ayant cause venoient se servir de ladite jambe ils seront tenus d’en rembourser la moitié audit sieur Frémy suivant l’estimation comme aussy des chaisnes et jambes sous poutres qui pourront se trouver dans ledit mur et devenir à l’usage de leur maison, et attendu que ledit sieur Frémy nous a déclaré que le batiment qu’il fait construire aura plus d’épaisseur que celuy de ladite veuve La foret et s’entendra au droit de partie de la cour de sa maison où il sera nécessaire d’élever et construire un mur aussy haut que la maison dudit sieur Frémy et qui ne servira que de cloture pour la maison de ladite Laforet, il sera construit de pareille qualité que celuy cy dessus aux frais seuls dudit sieur Frémy au moyen de quoy il ne paiera point de charge en cette dite partie ; à l’égard des étayements chevalements et rétablissements, racordements de planchers et de tuyeaux de cheminée ils seront fait chacun endroit soy aux frais particuliers de chacune desdites parties à l’exception des chevalements qui seront payés par moitié devenant comme pour l’une et l’autre maison.
+En ce qui concerne le mur de cloture qui sépare les jardins desdites deux maisons et qui est d’allignement à celuy cy dessus et sera aussy démoli et reconstruit à neuf à hauteur de cloture ordinaire avec moilons de plâtre, chesne de plâtre chaperonné des deux côtés et crépi au plâtre.
+[…] Tel est Monsieur, l’état dudit mur mitoyen desdites maisons et l’allignement qui nous en avons donné sauf à vous d’en ordonner suivant votre justice ordinaire.</opinion>
+      <arrangement/>
+      <estimate l="" s="" d=""/>
+      <fees detail="">
+        <total l="" s="" d=""/>
+      </fees>
+      <expenses mentioned="false"/>
+    </conclusions>
+    <keywords group="estates"/>
+    <keywords group="procedure"/>
+    <keywords group="contract"/>
+    <keywords group="encumbrance"/>
+    <keywords group="law">
+      <term value="e1">Coutume (articles le cas échéant)</term>
+    </keywords>
+    <keywords group="measurement"/>
+    <keywords group="repairs"/>
+    <keywords group="guarantees"/>
+    <keywords group="responsability"/>
+    <keywords group="ownership"/>
+    <keywords group="value"/>
+    <keywords group="neighbourhood"/>
+    <keywords group="disorder"/>
+    <keywords group="transformation"/>
+    <analysis/>
+    <noteworthy/>
+  </description>
+</expertise>

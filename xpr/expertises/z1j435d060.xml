@@ -1,0 +1,192 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j435d060">
+      <meta/>
+      <control>
+        <maintenanceStatus/>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term/>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:39:45.99+02:00">2021-05-19T11:39:45.99+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateAgreementType_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur "Dispositif de l’expertise" lorsqu'il n'y a qu’un seul expert ('agreement' devient 'conclusion').</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:45:33.927+02:00">2021-04-21T20:45:33.927+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateKeywordsModule_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour du module keywords.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:44:31.814+02:00">2021-04-21T20:44:31.814+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateExpertisesArrangement_files.xqy/BaseX</agent>
+            <eventDescription>Ajout du champs Accommodement dans l'éventualité d’une résolution par les parties.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2019-05-01T12:00:00">2019-05-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1696</unitdate>
+    <idno type="unitid">Z1J435</idno>
+        <idno type="item">060</idno>
+        <facsimile from="0456" to="0458"/>
+        <physDesc>
+          <extent sketch="false">2</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1696-12-14" type="paris"/>
+        </sessions>
+        <places>
+          <place type="paris">
+            <address>
+              <street>rue Sainte--Croix-de-la-Bretonnerie</street>
+              <buildingNumber/>
+            </address>
+            <complement/>
+            <parish/>
+            <owner/>
+          </place>
+        </places>
+        <categories>
+          <category type="assessment">Décrire et évaluer les travaux à venir</category>
+          <designation rubric="false">Visite et estimation de réparations locatives à faire</designation>
+        </categories>
+        <procedure>
+          <framework type="b2b">L’institution est saisie dans le cadre d’une procédure (l’institution nomme un ou deux experts)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>requêtes du Palais</orgName>
+              <date when="1696-10-12"/>
+            </sentence>
+          </sentences>
+          <case>loyé impayé (bail judicier) et estimations de réparations</case>
+          <objects>
+            <object type="house">Maison(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0077" context="primary" appointment="court-appointed">
+              <title>architecte expert bourgeois de Paris</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0008">
+              <persName>
+                <surname>Villain</surname>
+                <forename>Pierre</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="false" intervention="true">
+              <person>
+                <persName>
+                  <surname>Desbonnes</surname>
+                  <forename>Jean</forename>
+                </persName>
+                <occupation>bourgeois de Paris</occupation>
+              </person>
+              <status>contractor</status>
+              <expert ref="#xpr0077"/>
+              <prosecutor>
+                <persName>
+                  <surname>Roger</surname>
+                  <forename>Anthoine</forename>
+                </persName>
+              </prosecutor>
+            </party>
+            <party role="opponent" presence="false" intervention="true">
+              <person>
+                <persName>
+                  <surname>de Mareville / de Mareuil</surname>
+                  <forename/>
+                </persName>
+                <occupation>dame</occupation>
+              </person>
+              <status>tenant</status>
+              <expert ref=""/>
+              <representative>
+                <persName>
+                  <surname>Pillard</surname>
+                  <forename>sieur</forename>
+                </persName>
+                <occupation/>
+              </representative>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <agreement type="conclusion">Conclusion</agreement>
+          <opinion ref="#xpr0077">C'est le déclaration des lieux en question et des réparations locatives qui sont à y (f. 2v°) faire pour le remettre et rendre en bon et du estat ainsy que les locataires sont tenus que j'ay rapporté et sepésifié pour satisfaire à ladite sentence dont il s'agit, référant touttefois à vous nosseigneur dans (sic) dordonner ce qu'il vous plaira selon vostre justice et prudence ordinaire. 
+A l'instant ledit sieur Pillard pour ladite dame marquise de Mareville a esté déclaré que ladite dame a faict faire et poser dans le cabinet de l'appartement du rez de chaussée un chambranle de menuiserie (etc.)... Ledit sieur Pillard nous a requis de faire mention par le présent rapport qu'il remet touttes les clefs des portes desdits lieux à la réserve de celle que nous avons cy dessus déclaré estre de marque et scelle de la serrure basse de l'une des caves aux protestations que faicts ledit Pillard que le tout ne poura nuire ny préjudicier à ladite dame en façon quelquonque et à ce pour avis ainsy qu'elle advisera bon est et à signé sous quelques protestation que de droict. Milard.
+A ce faire ledit Mr Roger présent aux protestations de faire payer à ladite dame de Mareville  le terme courant aussy bien que celuy eschu à la St Rémy dernier et délay faire restablir les lieux mesme sous préjudice audit Desbonne de ses autres actions droicts et prétentions ayant actuellement trouvé des ouvriers quiy travaillent à restablir les vitres quy sont depuis un jour posez ledit Roger audit nom sans préjudice comme dessus et autres ccy devant faict a accepté lesdites clefs consistant au surplus pour ledit sieur Desbonnes que ladite dame de Mareville fasse emporte le chambranle et la gorge en question en restablissent les lieux et jusitifiant par elle comme elle l'a faict faire et a signé. Roger. 
+Sur quoy nous renvoyons les  partyes à ce pourvoir pardevant vous nosseigneur pour estre par vous sur le tout ordonné ce qu'il vous plaira faict lesdits jour mois et an que dessus. Demeseretz Villain</opinion>
+          <arrangement/>
+          <estimate/>
+          <fees detail="false">
+            <total l="" d="" s=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="" s="" d=""/>
+            <expense type="expert" l="3" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group=""/>
+        <analysis/>
+        <noteworthy>le préambule du pv continue au verso du folio 1 sur le côté dans la marge de la page puis de la page suivant pour revenir ensuite au haut à l'horizontal du verso de la 1e page. 
+Il est question de vendre les meubles si il y a des réparations locatives à y faire. Si la locataire n'ouvre pas...</noteworthy>
+      </description>
+    </expertise>

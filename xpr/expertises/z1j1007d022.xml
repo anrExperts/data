@@ -1,0 +1,197 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1007d022">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-08-01T12:00:00">2020-08-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2017-10-01T12:00:00">2017-10-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1007</idno>
+        <idno type="item">022</idno>
+        <facsimile from="0423" to="0425"/>
+        <physDesc>
+          <extent sketch="false">3</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-09-09" type="paris"/>
+          <date when="1776-09-09" type="paris"/>
+        </sessions>
+        <places>
+          <place type="paris">
+            <address>
+              <street>Grande rue des Fossés du Temple</street>
+              <buildingNumber/>
+            </address>
+            <complement>près la première barrière, au bureau du laisser-passer</complement>
+            <parish/>
+            <owner>Trianon</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="registration">Enregistrer</category>
+          <designation rubric="true">Visitte d'une maison, Grande rue des fossés du Temple, à la requeste du sieur Trianon ; MM. Desboeufs et Delespine, experts</designation>
+        </categories>
+        <procedure>
+          <framework type="b2a">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Présidents trésoriers de France et grands voyers en la généralité de Paris (ordonnance)</orgName>
+              <date when="1776-06-07"/>
+            </sentence>
+          </sentences>
+          <case>Maison menaçant péril selon le commissaire à la voirie ; les trésoriers de France ont pris le 7 juin 1776 une ordonnance tendant à faire cesser dans les 24h le péril imminent ; le propriétaire conteste le péril ; l’expert doit se prononcer</case>
+          <objects>
+            <object type="house">Maison(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0089" context="primary" appointment="appointed">
+              <title>architecte expert</title>
+            </expert>
+            <expert ref="#xpr0085" context="primary" appointment="appointed">
+              <title>architecte expert</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0057">
+              <persName>
+                <surname>Liebault de la Neuville</surname>
+                <forename>Christophe Edouard</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="true" intervention="false">
+              <person>
+                <persName>
+                  <surname>Trianon</surname>
+                  <forename>Jacques Thomas</forename>
+                </persName>
+                <occupation>maître rôtisseur traiteur à Paris</occupation>
+              </person>
+              <status>owner</status>
+              <expert ref="#xpr0085"/>
+            </party>
+            <party role="opponent" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>procureur du roi</surname>
+                  <forename/>
+                </persName>
+                <occupation/>
+              </person>
+              <status/>
+              <expert ref="#xpr0089"/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="">« Nous avons observé qu’il a deux souches de cheminée à ce pavillon … qu’il faut necessairement demolir et reconstruire ensemble les murs de dossiers… Après avoir fait plomber le mur de face nous avons reconnu qu’il n’a que deux pouces de surplomb sur ladite hauteur de treize pieds, qu’il y en a une petite portion dans le bout vers le pont aux choux au dessous de l’égout de la couverture qui porte … environ deux pouces, ce qui procede de ce que le mur de cloture sur ladite rue du jardin voisin a été refait et remis dans son aplomb, neanmoins à cet égard il n’y a aucun péril et ne peut en avoir, le mur de face des ediffices est garanti par six fortes bornes de pierre Nous avons observé qu’il y a une souche de cheminée du premier édiffice qui s’etire au dessus de la couverture du coté de ladite rue et adapté à ce mur de dossier qui porte sur le mur de face laquelle souche à esté exhaussée en differents … par des antres … les unes sur les autres, que cette souche est dans le plus grand péril et qu’il faut au plutôt la demolir ainsy que son mur de dossier pour la refaire si elle est necessaire où que le proprietaire le juge à propos Ce sont les seuls objets de peril que nous ayions reconnu à ladite maison C’est nosseigneurs l’état où nous avons trouvé la maison dudit sieur Trianon sur quoy nous vous refferrons d’ordonner Fait par nous architectes experts susdits les jour mois et an que dessus après avoir vacqué jusqu’à près de trois heures de relevée »</opinion>
+          <arrangement/>
+          <agreement type="agreement">Accord</agreement>
+          <estimate l="" s="" d=""/>
+          <fees detail="true">
+            <fee type="papers" l="5" s="" d=""/>
+            <fee type="expert" ref="#xpr0089" l="12" s="" d=""/>
+            <fee type="expert" ref="#xpr0085" l="12" s="" d=""/>
+            <fee type="clerk" l="12" s="" d=""/>
+            <fee type="rolls" l="10" s="" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="51" s="" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="expert" l="8" s="" d=""/>
+            <expense type="clerk" l="11" s="10" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure">
+          <term value="b4">Urgence</term>
+        </keywords>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder">
+          <term value="m4">Péril imminent</term>
+        </keywords>
+        <keywords group="transformation"/>
+        <analysis>procès verbal dressé par Verniquet, commissaire à la voirie, le 5 mai 1776 précisant les périls dont menace la maison en question</analysis>
+        <noteworthy>salpètre ("construction salpétré, désuni en surplomb", souche de cheminée)</noteworthy>
+      </description>
+    </expertise>

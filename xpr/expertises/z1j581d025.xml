@@ -1,0 +1,190 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j581d025">
+  <meta/>
+  <control>
+    <maintenanceStatus>revised</maintenanceStatus>
+    <publicationStatus/>
+    <localControl localType="detailLevel">
+      <term>completed</term>
+    </localControl>
+    <maintenanceHistory>
+      <maintenanceEvent>
+                <eventType>revised</eventType>
+                <eventDateTime standardDateTime="2022-03-29T16:34:14Z">2022-03-29T16:34:14Z</eventDateTime>
+                <agentType>human</agentType>
+                <agent>llosserand</agent>
+                <eventDescription>rvpcd</eventDescription>
+            </maintenanceEvent>
+          <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateRefValues_files.xqy/BaseX</agent>
+        <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+        <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>revised</eventType>
+        <eventDateTime standardDateTime="2020-11-01T12:00:00">2020-11-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>JH</agent>
+        <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>retroconverted</eventType>
+        <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>ead2xpr.xsl/Saxon9</agent>
+        <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>created</eventType>
+        <eventDateTime standardDateTime="2017-04-01T12:00:00">2017-04-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>llosserand</agent>
+        <eventDescription>Création de la fiche.</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+  </control>
+  <sourceDesc>
+    <unitdate>1726</unitdate>
+    <idno type="unitid">Z1J581</idno>
+    <idno type="item">025</idno>
+    <facsimile from="0362" to="0367"/>
+    <physDesc>
+      <extent sketch="false">4</extent>
+      <appendices>
+        <appendice>
+          <type type="other">Quittance</type>
+          <extent>1</extent>
+          <desc/>
+          <note/>
+        </appendice>
+      </appendices>
+    </physDesc>
+  </sourceDesc>
+  <description>
+    <sessions>
+      <date when="1726-06-21" type="paris"/>
+    </sessions>
+    <places>
+      <place type="paris">
+        <address>
+          <street>Rue Saint-Martin [Cette dénomination correspond à 2 voies : Voie actuelle. Également dénommée rue Planche-Mibray, rue des Arcis et rue Saint-Martin. Actuellement rue de Savies] vis-à-vis Saint-Merry</street>
+          <buildingNumber/>
+        </address>
+        <complement/>
+        <parish/>
+        <owner>Amautry, veuve Mamesse</owner>
+      </place>
+    </places>
+    <categories>
+      <category type="acceptation">Recevoir et évaluer le travail réalisé</category>
+      <designation rubric="true">acte de comparution pour parvenir à l'estimation d'ouvrages de charpenterie faits par le défunt Sarrasin, sous la direction du défunt Jollivet, maître maçon</designation>
+    </categories>
+    <procedure>
+      <framework type="b2">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+      <origination type="institution">Une institution</origination>
+      <sentences>
+        <sentence>
+          <orgName>lieutenant civil</orgName>
+          <date when="1725-04-11"/>
+        </sentence>
+      </sentences>
+      <case>une première estimation des ouvrages et fournitures de charpenterie réalisés par Sarasin, sous la direction de Jollivet avait été réalisée, mais des fournitures de fer n'avaient pas été soustraites. La veuve de l'entrepreneur ayant trop payé, il est requis une nouvelle estimation des ouvrages de charpenterie.</case>
+      <objects>
+        <object type="other">ouvrages de charpenterie</object>
+      </objects>
+    </procedure>
+    <participants>
+      <experts>
+        <expert ref="#xpr0145" context="primary" appointment="appointed">
+          <title>architecte juré du roi expert bourgeois de Paris</title>
+        </expert>
+      </experts>
+      <clerks>
+        <clerk ref="#clrk0034">
+          <persName>
+            <surname>Baudouin</surname>
+            <forename>Antoine</forename>
+          </persName>
+        </clerk>
+      </clerks>
+      <parties>
+        <party role="petitioner" presence="false" intervention="false">
+          <person>
+            <persName>
+              <surname>Amautry</surname>
+              <forename>Anne Suzanne</forename>
+            </persName>
+            <occupation>veuve de Mamesse, Robert Nicolas, marchand mercier (séparée quant aux biens)</occupation>
+          </person>
+          <status>limited-partner</status>
+          <expert ref="#xpr0145"/>
+        </party>
+        <party role="opponent" presence="false" intervention="false">
+          <person>
+            <persName>
+              <surname>Lepas</surname>
+              <forename>Marie</forename>
+            </persName>
+            <occupation>veuve de Jollivet, Philipe, maître maçon (décédé), à présent en son nom à cause de la communauté de biens d'entre ledit défunt et elle.</occupation>
+          </person>
+          <status>builder</status>
+          <expert ref="#xpr0145"/>
+        </party>
+      </parties>
+      <craftmen>
+        <craftman>
+          <persName>
+            <surname>Sarrasin</surname>
+            <forename/>
+          </persName>
+          <occupation>(décédé), sous la direction de Jollivet, Philippe, maître maçon (décédé)</occupation>
+        </craftman>
+      </craftmen>
+    </participants>
+    <conclusions>
+      <opinion ref="#xpr0145">                f. 3v°« Nous avons cru ne pouvoir procéder à prisée et estimation des ouvrages de charpente suivant et au désir de vos sentences en l'absence de lad. damoiselle veuve Jollivet et cohéritiers n'estant comparu ny personne de leur part et qu'elle nous remettre les mémoire des ouvrages de charpenterie fait et fourny par led. sr Sarasin sous la conduite et par l'ordre de deffunt sr Jollivet, maître maçon, pour connoitre les quantité des pièces qui ont pu estre emploié dans la reconstruction de lad. maison où lad. dame Mamesse est demeurante, même de découvrir les bois qui peuvent estre recouvert de maçonnerie pour en connoistre la qualité, et après avoir attendu jusqu'à près de midy sans que lad. dame veuve Jolivet et ses héritiers ny personne de leur part pour nous indiquer comme dit est lesd. ouvrages de charpenterie, nous nous somes retirez jusqu'à ce que nous soyons advertis verballement ou par sommations par lesd. parties et qu'il nous soit remis le mémoire desd. ouvrages ou qu'il en soit par vous, monsieur, autrement ordonné. »</opinion>
+          <arrangement/>
+      <agreement type="unfinished">Affaire inachevée</agreement>
+      <estimate l="" s="" d=""/>
+      <fees detail="true">
+        <fee type="papers" l="" s="" d=""/>
+        <fee type="expert" ref="#xpr0145" l="6" s="" d=""/>
+        <fee type="clerk" l="" s="" d=""/>
+        <fee type="rolls" l="" s="" d=""/>
+        <fee type="prosecutors" l="" s="" d=""/>
+        <fee type="help" l="" s="" d=""/>
+        <fee type="plans" l="" s="" d=""/>
+        <total l="" s="" d=""/>
+      </fees>
+      <expenses mentioned="false"/>
+    </conclusions>
+    <keywords group="estates"/>
+    <keywords group="procedure"/>
+    <keywords group="contract"/>
+    <keywords group="encumbrance"/>
+    <keywords group="law"/>
+    <keywords group="measurement"/>
+    <keywords group="repairs"/>
+    <keywords group="guarantees"/>
+    <keywords group="responsability"/>
+    <keywords group="ownership"/>
+    <keywords group="value"/>
+    <keywords group="neighbourhood"/>
+    <keywords group="disorder"/>
+    <keywords group="transformation"/>
+    <analysis>en haut du f. 1r° « minutte non finyes accomodé et non délivré. 1 vacation. Examiné. Mangin »
+                f. 1v° : « Parties ouyes après qu'il en a esté pour vous monsieur délibéré sur les pièces et dossier des parties, en exécution de notre sentence du douze dud. mois de septembre, sans que les qualité puissent nuire ny préjudicer aux parties, avez, monsieur, enthérimé le raport [?] aoust de lad. année 1725, et, avez, Monsieur, en conséquence condamné lad. veuve Jollivet et cohéritiers à rendre et payer ausd. sr et delle Mameste, trois cent quarante sept livres quatre sols neuf deniers dont les payements fait à deffunt sr Jollivet s'estoit trouvé excéder la prisée faite par led. raport et quinze livres dix-huit sols payé par lesd. sr et de Mamesse au marchand de fer et avez déchargé lad. dame Jollivet et ses héritiers de la demande de cinquante livres pour marchandise de mercerie en affirmant par eux qu'il n'ont point de connoissance que lesd. sr et dlle Mamesse aye fourny aud. deffunt Jollivet lesd. marchandises ny qu'ils en fussent débiteur, et avant faire droit sur la décision demandé par la demoiselle Jollivet et héritiers des 200 livres payé à Sarasin, charpentier, avez ordonné que suivant [f. 2r°] votre sentence du 11 avril de lad. année 1725 les ouvrages de charpente seront visité, prisée et estimé par experts dont les parties conviendroit dans trois jours, sinon par nous Devilleneuve que vous avez cy dénommez pour tiers, et lesd. srs et dame Mamesse accorderoit ou contesteroit le mandement raporté par lad. veuve Jollivet et cohéritiers, avez en outre ordonné lad. delle Jolivet et héritiers en la totalité des frais de raports et frais pro[chain] et autres dépens de l'instance de refaire ce qui sera exécuté, nonobstans et sans préjudice de l'appellé ; lad. sentence scellé le 3 octobre 1725 par Doyard et [certifié?] le 3 dud. mois d'octobre 1725 par Baranque. »
+                f. 3v°« Nous avons cru ne pouvoir procéder à prisée et estimation des ouvrages de charpente suivant et au désir de vos sentences en l'absence de lad. damoiselle veuve Jollivet et cohéritiers n'estant comparu ny personne de leur part et qu'elle nous remettre les mémoire des ouvrages de charpenterie fait et fourny par led. sr Sarasin sous la conduite et par l'ordre de deffunt sr Jollivet, maître maçon, pour connoitre les quantité des pièces qui ont pu estre emploié dans la reconstruction de lad. maison où lad. dame Mamesse est demeurante, même de découvrir les bois qui peuvent estre recouvert de maçonnerie pour en connoistre la qualité, et après avoir attendu jusqu'à près de midy sans que lad. dame veuve Jolivet et ses héritiers ny personne de leur part pour nous indiquer comme dit est lesd. ouvrages de charpenterie, nous nous somes retirez jusqu'à ce que nous soyons advertis verballement ou par sommations par lesd. parties et qu'il nous soit remis le mémoire desd. ouvrages ou qu'il en soit par vous, monsieur, autrement ordonné. »
+                Pièce n°1
+                « Je reconnois avoir receue six livres pour une vacation pour l'affaire de Madame Mamase et Jolivet, rue St Martin. Devilleuneuve ».</analysis>
+    <noteworthy/>
+  </description>
+</expertise>

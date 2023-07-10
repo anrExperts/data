@@ -1,0 +1,199 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j578d002">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-10-01T12:00:00">2020-10-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2016-10-26T12:00:00">2016-10-26T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>RB</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1726</unitdate>
+    <idno type="unitid">Z1J578</idno>
+        <idno type="item">002</idno>
+        <facsimile from="0015" to="0025"/>
+        <physDesc>
+          <extent sketch="false">9</extent>
+          <appendices>
+            <appendice>
+              <type type="proxyPA">Pouvoir/procuration (acte sous seing privé)</type>
+              <extent>1</extent>
+              <desc>Pouvoir donné aux experts par la partie requérante le 28 décembre 1725.</desc>
+              <note/>
+            </appendice>
+          </appendices>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1726-01-05" type="suburbs"/>
+          <date when="1726-02-16" type="suburbs"/>
+        </sessions>
+        <places>
+          <place type="suburbs">
+            <address/>
+            <complement>Clignancourt</complement>
+            <city>Paris</city>
+            <district/>
+            <owner>Gillain / Bertrand / Desmaisons</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="settlement">Départager</category>
+          <designation rubric="true">Visite de murs de clôture de jardin</designation>
+        </categories>
+        <procedure>
+          <framework type="a">Commun accord des parties</framework>
+          <origination type="parties">Les parties</origination>
+          <sentences>
+            <sentence>
+              <orgName/>
+              <date when=""/>
+            </sentence>
+          </sentences>
+          <case>Effondrement d'un mur de clôture séparant deux jardins.</case>
+          <objects>
+            <object type="wall">Mur(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0232" context="primary" appointment="appointed">
+              <title>architecte juré du roi expert bourgeois de Paris</title>
+            </expert>
+            <expert ref="#xpr0017" context="primary" appointment="appointed">
+              <title>architecte juré du roi expert bourgeois de Paris</title>
+            </expert>
+            <expert ref="#xpr0073" context="primary" appointment="appointed">
+              <title>architecte juré du roi expert bourgeois de Paris</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#xpr0232">
+              <persName>
+                <surname>Quirot</surname>
+                <forename>Pierre</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Gillain</surname>
+                  <forename>Jean</forename>
+                </persName>
+                <occupation>marchand boucher à Paris, propriétaire d'une maison à Clignancourt,</occupation>
+              </person>
+              <status>owner</status>
+              <expert ref="#xpr0232"/>
+            </party>
+            <party role="petitioner" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Loiseau</surname>
+                  <forename>Jean</forename>
+                </persName>
+                <occupation>laboureur, fermier d'une pièce de terre appartenant à Mlle Bertrand, joignant la maison de Gillain, Jean,</occupation>
+              </person>
+              <status>tenant</status>
+              <expert ref="#xpr0073"/>
+            </party>
+            <party role="petitioner" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Desmaisons</surname>
+                  <forename>André</forename>
+                </persName>
+                <occupation>entrepreneur des bâtiments à Paris</occupation>
+              </person>
+              <status>owner</status>
+              <expert ref="#xpr0017"/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname>Desmaisons</surname>
+                <forename>André</forename>
+              </persName>
+              <occupation>entrepreneur des bâtiments à Paris</occupation>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0232">Les trois experts ne sont pas parvenus à accorder leurs vues. « Attendu que par le pouvoir à nous donné il est dit qu'en cas de contrariété d'avis nous choisirons entre nous un tiers expert, nous avons fait écrire sur quatre billets différents les noms de quatre de nos confrères de la première colonne, architectes, jurés, experts bourgeois au terme de l'ordonnance, attendu qu'il s'agit d'une contestation entre un bourgeois et un artisan et ayant fait plier égallement les billets, nous en avons fait tirer un sur lequel s'est trouvé écrit le nom du sieur de L'Espine nostre doyen. Lequel demeurera pour tiers et auquel M. Quirot greffier donnera avis de sa nomination pour se transporter sur les lieux sans qu'il soit besoin de nos présences pour évitter à frais ».</opinion>
+          <opinion ref="#xpr0017">"Pourquoy j'estime et mon avis est qu'au titre de la coutume article 192, par lequel il est dit que celuy qui a place jardin ou autre lieu vuide qui joint immediatement au mur d'autruy ou à mur mitoyen, s'il veut labourer ou fumer est tenu de faire contremur du demy pied d'espaisseur, et s'il a des terres jetisses eil est tenu de faire contremur d'espaisseur suffisante pour soutenir ses terres, que ledit sieur Desmaisons entrepreneur desdits murs de closture dont est question n'est tenu des evenemens par nous declarez, la plus considerable partie provenant de la fautte de ladite damoiselle Bertrand par ses terres jetisses de quatre à cinq pieds de hauteur"</opinion>
+          <opinion ref="#xpr0073"/>
+          <arrangement/>
+          <agreement type="disagreement">Désaccord</agreement>
+          <estimate l="" s="" d=""/>
+          <fees detail="false">
+            <total l="" s="" d=""/>
+          </fees>
+          <expenses mentioned=""/>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis>Motivations
+                Les trois experts sont nommés d'un commun accord entre les acteurs du litige, « pour terminer et empescher le procès qui est près de se mouvoir entre nous au sujet d'un mur de closture que moy Desmaisons ay basty pour ledit sieur Gillain séparant son jardin et la terre de ladite damoiselle Bertrand ».
+                « Nous [les experts] sommes transportés en la susdite maison dudit sieur Gillain pour et au desir dudit pouvoir voir et vistiter un mur de closture que ledit sieur Desmaisons a basty pour ledit sieur Gillain, séparant son jardin et la terre de ladit damoiselle Bertrand, dont une partie est tombée d'environ treize à quatorze pouces de long, rapporter la cause de lad chutte dudit mur et sa quallité mesme, visitter le surplus dudit mur de closture pour connoistre si il est en estat de subsister et sur tout donner nos avis ».</analysis>
+        <noteworthy/>
+      </description>
+    </expertise>

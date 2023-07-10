@@ -1,0 +1,167 @@
+<eac xmlns="https://archivists.org/ns/eac/v2" xml:id="xpr0147">
+   <control maintenanceStatus="new" publicationStatus="inProcess">
+      <recordId>xpr0147</recordId>
+      <maintenanceAgency>
+         <agencyName>projet Experts</agencyName>
+      </maintenanceAgency>
+      <maintenanceHistory>
+         <maintenanceEvent maintenanceEventType="updated" languageOfElement="eng">
+            <agent agentType="machine">EAC-CPF 1.x to EAC 2.0 Migration Style Sheet (eac1-to-eac2.xsl)</agent>
+            <eventDateTime standardDateTime="2022-09-19T16:52:56.680757+02:00"/>
+            <eventDescription>EAC-CPF 1.x (urn:isbn:1-931666-33-4) instance migrated to EAC 2.0 (https://archivists.org/ns/eac/v2)</eventDescription>
+         </maintenanceEvent>
+         <maintenanceEvent maintenanceEventType="updated">
+            <agent agentType="machine">updateRefValues_files.xqy/BaseX</agent>
+            <eventDateTime standardDateTime="2021-04-27T16:18:39.882+02:00">2021-04-27T16:18:39.882+02:00</eventDateTime>
+            <eventDescription>Mise à jour de la valeur des champs @xlink:ref (ajout d'un '#' pour les participants et les relations).</eventDescription>
+         </maintenanceEvent>
+         <maintenanceEvent maintenanceEventType="updated">
+            <agent agentType="machine">cleanNamePart_files.xqy/BaseX</agent>
+            <eventDateTime standardDateTime="2021-02-18T15:39:02.354+01:00">2021-02-18T15:39:02.354+01:00</eventDateTime>
+            <eventDescription>Suppression des composantes du nom vides.</eventDescription>
+         </maintenanceEvent>
+         <maintenanceEvent maintenanceEventType="updated">
+            <agent agentType="machine">updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDateTime standardDateTime="2021-02-17T11:59:50.182+01:00">2021-02-17T11:59:50.182+01:00</eventDateTime>
+            <eventDescription>Conversion des dates de révision des fiches prosopographiques au format xsd:dateTime.</eventDescription>
+         </maintenanceEvent>
+         <maintenanceEvent maintenanceEventType="updated">
+            <agent agentType="machine">xml2eac.xsl/Saxon9</agent>
+            <eventDateTime standardDateTime="2019-11-07T12:00:00+01:00">2019-11-07T12:00:00+01:00</eventDateTime>
+            <eventDescription>Notice rétroconvertie en EAC-CPF à partir de données Google Drive.</eventDescription>
+         </maintenanceEvent>
+         <maintenanceEvent maintenanceEventType="created">
+            <agent agentType="human">JH</agent>
+            <eventDateTime standardDateTime="2018-05-29T12:00:00+01:00">2018-05-29T12:00:00+01:00</eventDateTime>
+            <eventDescription>Fiches créée sur Google Drive.</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      
+      
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType value="person"/>
+         <nameEntry sourceReference="" preferredForm="true" status="authorized">
+            <part localType="full">Joubert, Louis</part>
+            
+         </nameEntry>
+         <nameEntry sourceReference="" preferredForm="false" status="alternative">
+            <part localType="surname">Joubert</part>
+            <part localType="forename">Louis</part>
+            
+            
+         </nameEntry>
+          <otherEntityTypes>
+            <otherEntityType>
+              <term>expert</term>
+            </otherEntityType>
+          </otherEntityTypes>
+         <identityId>xpr0147</identityId>
+      </identity>
+      <description>
+         <functions>
+            <function sourceReference="">
+               <term>Expert entrepreneur</term>
+               <dateRange>
+                  <fromDate sourceReference="" certainty="" standardDate="1724"/>
+                  <toDate sourceReference="" certainty="" standardDate="1756"/>
+               </dateRange>
+               
+            </function>
+         </functions>
+         <localDescriptions>
+            <localDescription localType="sex">
+               <term/>
+            </localDescription>
+         </localDescriptions>
+         <occupations>
+            <occupation sourceReference="">
+               <term>"Ecuyer conseiller secrétaire du roi et architecte expert" (Z1J 832-2, 12, estimation de ses immeubles)</term>
+               
+            </occupation>
+         </occupations>
+         
+         <existDates>
+            <dateRange>
+               <fromDate sourceReference="" certainty="" standardDate="1676-01"/>
+               <toDate sourceReference="" certainty="" standardDate="1756-07-17"/>
+            </dateRange>
+         </existDates>
+         <biogHist>
+            <chronList>
+               <chronItem id="eventid96284d203" localType="birth">
+                  <date sourceReference="" certainty="" standardDate="1676-01"/>
+                  <event>Naissance</event>
+                  
+                  
+                  
+                  
+               </chronItem>
+               <chronItem id="eventid96284d214" localType="marriage">
+            <date certainty="" sourceReference=""/>
+                  
+                  <event>Mariage</event>
+                  
+                  
+                  
+                  
+               </chronItem>
+               <chronItem id="eventid96284d221" localType="master">
+                  <date sourceReference="" certainty="" standardDate="1722-02-18"/>
+                  <event>Maîtrise maç.</event>
+                  
+                  
+                  
+                  
+               </chronItem>
+               <chronItem id="eventid96284d232" localType="officePurchase">
+            <date certainty="" sourceReference=""/>
+                  
+                  <event>Acquisition d'un office</event>
+                  
+                  
+                  
+                  
+                  
+               </chronItem>
+               <chronItem id="eventid96284d242" localType="provision">
+                  <date sourceReference="" certainty="" standardDate="1723-01-08"/>
+                  <event>Lettre de provision</event>
+                  
+                  
+                  
+                  
+               </chronItem>
+               
+               <chronItem id="eventid96284d260" localType="death">
+                  <date sourceReference="" certainty="" standardDate="1756-07-17"/>
+                  <event>Décès</event>
+                  
+                  
+                  
+                  
+               </chronItem>
+            </chronList>
+         </biogHist>
+      </description>
+      
+   <relations>
+          <relation target="#eventid96284d232" sourceReference="">
+            <targetEntity target="#xprOffice0020" targetType="corporateBody">
+              <part localType="full">Office 20</part>
+            <part localType="status"/>
+          <part localType="occupationType"/>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+          <relationType id="relationType_id128298d2595468" valueURI="" vocabularySource="" vocabularySourceURI="" sourceReference=""/>
+            <targetRole target="#relationType_id128298d2595468"/>
+          </relation>
+        </relations>
+      </cpfDescription>
+   
+   
+</eac>

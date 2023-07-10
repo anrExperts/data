@@ -1,0 +1,115 @@
+<eac xmlns="https://archivists.org/ns/eac/v2" xml:id="clrk0050">
+  <control maintenanceStatus="">
+    <recordId>clrk0050</recordId>
+    <maintenanceAgency>
+      <agencyName>ANR Experts</agencyName>
+    </maintenanceAgency>
+    <maintenanceHistory>
+      <maintenanceEvent maintenanceEventType="created">
+        <agent agentType="machine">clerk_csv2eac.xqy/BaseX</agent>
+        <eventDateTime standardDateTime="2022-12-31T14:06:48.817+01:00"/>
+        <eventDescription>Création des fiches EAC-CPF à partir du tableau</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+    <sources>
+      <source id="sourceid86496413">
+        <reference href="">Almanach royal 1746</reference>
+      </source>
+      <source id="sourceid86496415">
+        <reference href="">Almanach royal 1747</reference>
+      </source>
+      <source id="sourceid86496417">
+        <reference href="">Almanach royal 1756</reference>
+      </source>
+      <source id="sourceid86496419">
+        <reference href="">Almanach royal 1757</reference>
+      </source>
+      <source id="sourceid86496421">
+        <reference href="">Almanach royal 1766</reference>
+      </source>
+      <source id="sourceid86496423">
+        <reference href="">Almanach royal 1767</reference>
+      </source>
+      <source id="sourceid86496425">
+        <reference href="">Almanach royal 1776</reference>
+      </source>
+      <source id="sourceid86496427">
+        <reference href="">Almanach royal 1777</reference>
+      </source>
+    </sources>
+  </control>
+  <cpfDescription>
+    <identity>
+      <entityType value="person"/>
+      <nameEntry status="authorized" preferredForm="true" sourceReference="">
+        <part localType="full">Mallerot, Louis</part>
+      </nameEntry>
+      <nameEntry status="alternative" preferredForm="false" sourceReference="">
+        <part localType="surname">Mallerot</part>
+        <part localType="forename">Louis</part>
+      </nameEntry>
+      <nameEntry status="alternative" preferredForm="false" sourceReference="">
+        <part localType="surname">MALLEROT</part>
+        <part localType="forname">Joseph Louis</part>
+      </nameEntry>
+      <otherEntityTypes>
+        <otherEntityType>
+          <term>clerk</term>
+        </otherEntityType>
+      </otherEntityTypes>
+      <identityId>clrk0050</identityId>
+    </identity>
+    <description>
+      <functions>
+        <function sourceReference="#sourceid86496413 #sourceid86496415 #sourceid86496417 #sourceid86496419 #sourceid86496421 #sourceid86496423 #sourceid86496425 #sourceid86496427">
+          <term>Greffier</term>
+          <dateRange>
+            <fromDate sourceReference="" certainty="certain" standardDate="1746"/>
+            <toDate sourceReference="" certainty="certain" standardDate="1777"/>
+          </dateRange>
+        </function>
+        <function sourceReference="#sourceid86496417 #sourceid86496419">
+          <term>adjoint</term>
+          <dateRange>
+            <fromDate sourceReference="" certainty="certain" standardDate="1756"/>
+            <toDate sourceReference="" certainty="certain" standardDate="1757"/>
+          </dateRange>
+        </function>
+        <function sourceReference="#sourceid86496421 #sourceid86496423 #sourceid86496425 #sourceid86496427">
+          <term>syndic</term>
+          <dateRange>
+            <fromDate sourceReference="" certainty="certain" standardDate="1766"/>
+            <toDate sourceReference="" certainty="certain" standardDate="1777"/>
+          </dateRange>
+        </function>
+      </functions>
+      <places>
+        <place sourceReference="#sourceid86496413 #sourceid86496415">
+          <placeRole>Adresse</placeRole>
+          <placeName>rue du Renard Saint Merry</placeName>
+          <dateRange>
+            <fromDate sourceReference="" certainty="certain" standardDate="1746"/>
+            <toDate sourceReference="" certainty="certain" standardDate="1747"/>
+          </dateRange>
+        </place>
+        <place sourceReference="#sourceid86496417 #sourceid86496419 #sourceid86496421 #sourceid86496423">
+          <placeRole>Adresse</placeRole>
+          <placeName>rue du Renard, près les Consuls</placeName>
+          <dateRange>
+            <fromDate sourceReference="" certainty="certain" standardDate="1756"/>
+            <toDate sourceReference="" certainty="certain" standardDate="1767"/>
+          </dateRange>
+        </place>
+        <place sourceReference="#sourceid86496425 #sourceid86496427">
+          <placeRole>Adresse</placeRole>
+          <placeName>rue de la Verrerie, chez le Notaire</placeName>
+          <dateRange>
+            <fromDate sourceReference="" certainty="certain" standardDate="1776"/>
+            <toDate sourceReference="" certainty="certain" standardDate="1777"/>
+          </dateRange>
+        </place>
+      </places>
+    </description>
+  </cpfDescription>
+  <!---->
+</eac>

@@ -1,0 +1,154 @@
+<eac xmlns="https://archivists.org/ns/eac/v2" xml:id="xpr0075">
+      <!--Probl. faillite en 1754 (D4 B6 13)-->
+      <!--Probl. faillite en 1754 (D4 B6 13)-->
+   <control maintenanceStatus="new" publicationStatus="inProcess">
+      <recordId>xpr0075</recordId>
+      <maintenanceAgency>
+         <agencyName>projet Experts</agencyName>
+      </maintenanceAgency>
+      <maintenanceHistory>
+         <maintenanceEvent maintenanceEventType="updated" languageOfElement="eng">
+            <agent agentType="machine">EAC-CPF 1.x to EAC 2.0 Migration Style Sheet (eac1-to-eac2.xsl)</agent>
+            <eventDateTime standardDateTime="2022-09-19T16:52:56.027328+02:00"/>
+            <eventDescription>EAC-CPF 1.x (urn:isbn:1-931666-33-4) instance migrated to EAC 2.0 (https://archivists.org/ns/eac/v2)</eventDescription>
+         </maintenanceEvent>
+         <maintenanceEvent maintenanceEventType="updated">
+            <agent agentType="machine">updateRefValues_files.xqy/BaseX</agent>
+            <eventDateTime standardDateTime="2021-04-27T16:18:39.882+02:00">2021-04-27T16:18:39.882+02:00</eventDateTime>
+            <eventDescription>Mise à jour de la valeur des champs @xlink:ref (ajout d'un '#' pour les participants et les relations).</eventDescription>
+         </maintenanceEvent>
+         <maintenanceEvent maintenanceEventType="updated">
+            <agent agentType="machine">cleanNamePart_files.xqy/BaseX</agent>
+            <eventDateTime standardDateTime="2021-02-18T15:39:02.354+01:00">2021-02-18T15:39:02.354+01:00</eventDateTime>
+            <eventDescription>Suppression des composantes du nom vides.</eventDescription>
+         </maintenanceEvent>
+         <maintenanceEvent maintenanceEventType="updated">
+            <agent agentType="machine">updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDateTime standardDateTime="2021-02-17T11:59:50.182+01:00">2021-02-17T11:59:50.182+01:00</eventDateTime>
+            <eventDescription>Conversion des dates de révision des fiches prosopographiques au format xsd:dateTime.</eventDescription>
+         </maintenanceEvent>
+         <maintenanceEvent maintenanceEventType="updated">
+            <agent agentType="machine">xml2eac.xsl/Saxon9</agent>
+            <eventDateTime standardDateTime="2019-11-07T12:00:00+01:00">2019-11-07T12:00:00+01:00</eventDateTime>
+            <eventDescription>Notice rétroconvertie en EAC-CPF à partir de données Google Drive.</eventDescription>
+         </maintenanceEvent>
+         <maintenanceEvent maintenanceEventType="created">
+            <agent agentType="human">JH</agent>
+            <eventDateTime standardDateTime="2018-05-29T12:00:00+01:00">2018-05-29T12:00:00+01:00</eventDateTime>
+            <eventDescription>Fiches créée sur Google Drive.</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      
+      
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType value="person"/>
+         <nameEntry sourceReference="" preferredForm="true" status="authorized">
+            <part localType="full">De La Guepiere, Jacques Benjamin</part>
+            
+         </nameEntry>
+         <nameEntry sourceReference="" preferredForm="false" status="alternative">
+            <part localType="surname">De La Guepiere</part>
+            <part localType="forename">Jacques Benjamin</part>
+            
+            
+         </nameEntry>
+         <nameEntry sourceReference="" preferredForm="false" status="alternative">
+            <part localType="surname">Delapierre</part>
+            <part localType="forename">Jacques Benjamin</part>
+            
+            
+         </nameEntry>
+          <otherEntityTypes>
+            <otherEntityType>
+              <term>expert</term>
+            </otherEntityType>
+          </otherEntityTypes>
+         <identityId>xpr0075</identityId>
+      </identity>
+      <description>
+         
+         <localDescriptions>
+            <localDescription localType="sex">
+               <term/>
+            </localDescription>
+         </localDescriptions>
+         
+         
+         <existDates>
+            <dateRange>
+               <fromDate sourceReference="" certainty="" standardDate="1706-07"/>
+               <toDate sourceReference="" certainty="" standardDate=""/>
+            </dateRange>
+         </existDates>
+         <biogHist>
+            <chronList>
+               <chronItem id="eventid96140d189" localType="birth">
+                  <date sourceReference="" certainty="" standardDate="1706-07"/>
+                  <event>Naissance</event>
+                  
+                  
+                  
+                  
+               </chronItem>
+               <chronItem id="eventid96140d200" localType="marriage">
+            <date certainty="" sourceReference=""/>
+                  
+                  <event>Mariage</event>
+                  
+                  
+                  
+                  
+               </chronItem>
+               <chronItem id="eventid96140d207" localType="officePurchase">
+                  <date sourceReference="" certainty="" standardDate="1744-04-20"/>
+                  <event>Acquisition d'un office</event>
+                  
+                  
+                  
+                  
+                  
+               </chronItem>
+               <chronItem id="eventid96140d221" localType="provision">
+                  <date sourceReference="" certainty="" standardDate="1744-06-26"/>
+                  <event>Lettre de provision</event>
+                  
+                  
+                  
+                  
+               </chronItem>
+               
+               <chronItem id="eventid96140d239" localType="relinquishment">
+            <date certainty="" sourceReference=""/>
+                  
+                  <event>résignation le 9/08/1764</event>
+                  
+                  
+                  
+                  
+               </chronItem>
+            </chronList>
+         </biogHist>
+      </description>
+      
+   <relations>
+          <relation target="#eventid96140d207 #eventid96140d239" sourceReference=" ">
+            <targetEntity target="#xprOffice0022" targetType="corporateBody">
+              <part localType="full">Office 22</part>
+            <part localType="status"/>
+          <part localType="occupationType"/>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+          <relationType id="relationType_id128298d2573990" valueURI="" vocabularySource="" vocabularySourceURI="" sourceReference=""/>
+            <targetRole target="#relationType_id128298d2573990"/>
+          </relation>
+        </relations>
+      </cpfDescription>
+   
+   
+   
+</eac>

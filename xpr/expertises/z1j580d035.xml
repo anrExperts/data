@@ -1,0 +1,208 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j580d035">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-10-01T12:00:00">2020-10-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2016-10-26T12:00:00">2016-10-26T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>RB</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1726</unitdate>
+    <idno type="unitid">Z1J580</idno>
+        <idno type="item">035</idno>
+        <facsimile from="0529" to="0534"/>
+        <physDesc>
+          <extent sketch="false">2</extent>
+          <appendices>
+            <appendice>
+              <type type="proxyPA">Pouvoir/procuration (acte sous seing privé)</type>
+              <extent>2</extent>
+              <desc>pouvoir donné par les parties à Loir, Jean-Baptiste, les 13 et 15 mai 1726, pour conduire l'expertise.</desc>
+              <note/>
+            </appendice>
+          </appendices>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1726-05-15" type="paris"/>
+        </sessions>
+        <places>
+          <place type="paris">
+            <address>
+              <street>Rue Saint-André-des-Arts [Voie actuelle. Autre(s) nom(s) : rue de Laas, rue Saint-Germain, rue Saint-Germain-des-Prés, rue Saint-André, rue Saint-Andrieu, rue Saint-André de Laas, rue Saint-André des Arcs]</street>
+              <buildingNumber/>
+            </address>
+            <complement/>
+            <parish/>
+            <owner>Samuel / Masson</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="settlement">Départager</category>
+          <designation rubric="true">Visite et alignement de mur mitoyen</designation>
+        </categories>
+        <procedure>
+          <framework type="a">Commun accord des parties</framework>
+          <origination type="parties">Les parties</origination>
+          <sentences>
+            <sentence>
+              <orgName/>
+              <date when=""/>
+            </sentence>
+          </sentences>
+          <case>Dévers d'un mur mitoyen à deux maisons</case>
+          <objects>
+            <object type="wall">Mur(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0183" context="primary" appointment="appointed">
+              <title>juré expert à Paris</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0029">
+              <persName>
+                <surname>Quirot</surname>
+                <forename>Jacques</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Masson</surname>
+                  <forename>Anne</forename>
+                </persName>
+                <occupation>veuve Nodion, habitante d'une des deux maisons mitoyennes</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Masson</surname>
+                  <forename>Marie Claude</forename>
+                </persName>
+                <occupation>veuve Noël, habitante d'une des deux maisons mitoyennes</occupation>
+              </person>
+              <status>owner</status>
+              <expert ref="#xpr0183"/>
+            </party>
+            <party role="opponent" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Samuel fils</surname>
+                  <forename/>
+                </persName>
+                <occupation>sieur, propriétaire de la maison voisine</occupation>
+              </person>
+              <status>owner</status>
+              <expert ref="#xpr0183"/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname>Fauvel</surname>
+                <forename/>
+              </persName>
+              <occupation>expert entrepreneur</occupation>
+            </craftman>
+            <craftman>
+              <persName>
+                <surname>Philippe</surname>
+                <forename/>
+              </persName>
+              <occupation>maître maçon des dames Nodion et Noel</occupation>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0183">« Et après avoir ainsy visitté ledit mur mitoyen en toute sa hauteur et longueur, mon avis est qu'il y a nécessité de le refaire à neuf en dix pieds de hauteur à prendre du dessus du pavé de la rue en toute sa longueur aux frais communs desdites parties, chacune pour moitié, de mesme que la jambe étrière à la teste dudit mur, que la fondation au dessous doit aussi estre refaite en vingt cinq pieds de longueur aussi aux frais communs desdites parties, chacune pour moitié. Et que le surplus de ladite fondation en dix pieds de longueur où estoit la fosse d'aysance dudit sieur doit estre fait à ses dépens seul, ledit mur ayant esté endommagé en cette partie faute dudit contremur, tout le surplus dudit mur mitoyen en amont au dessus desdits dix pieds de hauteur du dessus du pavé de la rue estant en estat de subsister pour lesdites dame Nodion et Noël. Et que si néanmoins ledit sieur Rue est conseillé d'y faire quelques reprises où il y a quelques éboulemens de son costé, il les pourra faire refaire à ses dépens seuls de mesme que la jambe boutisse de pierre de taille à la teste dudit mur en toute sa hauteur, sans que les dames Nodion et Noël soient tenues d'y contribuer en quoy que ce soit, sinon des étayements de racordement de leurs costez, et de la pierre de taille de leur jambe sous poutre en dix pieds de hauteur où ledit mur doit estre refait au rez de chaussée.Après quoy nous avons donné l'alignement dudit mur que nous avons trouvé estre de droitte ligne en toute sa longueur [...] »</opinion>
+          <arrangement/>
+          <agreement type="conclusion">Conclusion</agreement>
+          <estimate l="" s="" d=""/>
+          <fees detail="true">
+            <fee type="papers" l="4" s="9" d=""/>
+            <fee type="expert" ref="#xpr0183" l="6" s="" d=""/>
+            <fee type="clerk" l="6" s="" d=""/>
+            <fee type="rolls" l="6" s="" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="22" s="9" d=""/>
+          </fees>
+          <expenses mentioned=""/>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis>Motivations
+                La requête est déposée par les deux voisines « à l'effet de voir et visitter un mur mitoyen qui sépare le leur sur la rue Saint andré des arts et une maison voisine que le sieur Sauvel fils a fait abattre. Voir et visiter si ledit mur doit estre abattu et reconstruit à neuf ou s'il est bon pour leur servir de clôture en total ou en partie et de régler de quelle portion elles en pourront estre tenues, donner tel allignement qu'il sera nécessaire, nous donnant au surplus tout pouvoir de régler avec le propriétaire voisin ou tel juré qui seroit mis de sa part, les contestations qui pourroient arriver, et de nommer un tiers expert en cas de contraire avis</analysis>
+        <noteworthy/>
+      </description>
+    </expertise>

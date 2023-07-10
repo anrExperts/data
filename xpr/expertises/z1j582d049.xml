@@ -1,0 +1,195 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j582d049">
+  <meta/>
+  <control>
+    <maintenanceStatus>revised</maintenanceStatus>
+    <publicationStatus/>
+    <localControl localType="detailLevel">
+      <term>completed</term>
+    </localControl>
+    <maintenanceHistory>
+      <maintenanceEvent>
+                <eventType>revised</eventType>
+                <eventDateTime standardDateTime="2022-03-31T16:06:56Z">2022-03-31T16:06:56Z</eventDateTime>
+                <agentType>human</agentType>
+                <agent>llosserand</agent>
+                <eventDescription>rvpcd</eventDescription>
+            </maintenanceEvent>
+          <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateObjectsValues_db.xqy/BaseX</agent>
+        <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateOpinionRef_files.xqy/BaseX</agent>
+        <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateRefValues_files.xqy/BaseX</agent>
+        <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+        <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>revised</eventType>
+        <eventDateTime standardDateTime="2020-11-01T12:00:00">2020-11-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>JH</agent>
+        <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>retroconverted</eventType>
+        <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>ead2xpr.xsl/Saxon9</agent>
+        <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>created</eventType>
+        <eventDateTime standardDateTime="2017-04-01T12:00:00">2017-04-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>llosserand</agent>
+        <eventDescription>Création de la fiche.</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+  </control>
+  <sourceDesc>
+    <unitdate>1726</unitdate>
+    <idno type="unitid">Z1J582</idno>
+    <idno type="item">049</idno>
+    <facsimile from="0485" to="0493"/>
+    <physDesc>
+      <extent sketch="false">8</extent>
+    </physDesc>
+  </sourceDesc>
+  <description>
+    <sessions>
+      <date when="1726-08-09" type="paris"/>
+      <date when="1726-08-17" type="paris"/>
+      <date when="1726-08-21" type="paris"/>
+    </sessions>
+    <places>
+      <place type="paris">
+        <address>
+          <street>Rue du Temple [Voie actuelle. Autre(s) nom(s) : rue des Coquilles, rue Barre-du-Bec, rue Sainte-Avoie et rue du Temple]</street>
+          <buildingNumber/>
+        </address>
+        <complement>une maison sise à Paris rue du Temple, vis-à-vis les murs du Temple,vendue àDelaunay, Jean-Françoispar feue Cuvilliers, Elisabeth, fille majeure dont Maréchal, Claude est légataire universel, et où le maître maçon Fortin est locataire dans un des corps de logis qui composent ladite maison</complement>
+        <parish/>
+        <owner>Delaunay / Cuvillier</owner>
+      </place>
+    </places>
+    <categories>
+      <category type="assessment">Décrire et évaluer les travaux à venir</category>
+      <designation rubric="true">Prisée et estimation de maison et réparations à y faire, scize à Paris devant les murs du temple, à la requeste du sieur Mareschal ; M. De Villeneuve, expert.</designation>
+    </categories>
+    <procedure>
+      <framework type="b2">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+      <origination type="institution">Une institution</origination>
+      <sentences>
+        <sentence>
+          <orgName>lieutenant civil</orgName>
+          <date when="1726-08-06"/>
+        </sentence>
+      </sentences>
+      <case>visite dans le cadre d'une vente d'une maison qui nécessite d'importantes réparations en raison du non respect des clauses du contrat de vente par l'acquéreur (voir extrait)</case>
+      <objects>
+        <object type="house">Maison(s)</object>
+      </objects>
+    </procedure>
+    <participants>
+      <experts>
+        <expert ref="#xpr0145" context="primary" appointment="court-appointed">
+          <title>architecte expert bourgeois</title>
+        </expert>
+      </experts>
+      <clerks>
+        <clerk ref="#clrk0023">
+          <persName>
+            <surname>Meley</surname>
+            <forename>François</forename>
+          </persName>
+        </clerk>
+      </clerks>
+      <parties>
+        <party role="petitioner" presence="false" intervention="false">
+          <person>
+            <persName>
+              <surname>Marechal</surname>
+              <forename>Claude</forename>
+            </persName>
+            <occupation>secrétaire de Monsieur le prince de Vendôme et légataire universel de feu Elisabeth, Cuvilliers, fille majeure</occupation>
+          </person>
+          <status>heir</status>
+          <expert ref="#xpr0145"/>
+        </party>
+        <party role="opponent" presence="false" intervention="false">
+          <person>
+            <persName>
+              <surname>Delaunay</surname>
+              <forename>Jean François</forename>
+            </persName>
+            <occupation>appareilleur</occupation>
+          </person>
+          <status>owner</status>
+          <expert ref="#xpr0145"/>
+        </party>
+      </parties>
+      <craftmen>
+        <craftman>
+          <persName>
+            <surname/>
+            <forename/>
+          </persName>
+          <occupation/>
+        </craftman>
+      </craftmen>
+    </participants>
+    <conclusions>
+      <opinion ref="#xpr0145">les réparations pour rendre la maison logeable sont estimées à 1131 livres 1 sol 8 deniers. Le terrain fait 167 toises et demie 2 pieds et demy, dont 37 toises 15 pieds occupées en bâtiment dont le tout est estimé 10 000 livres eu égard aux réparations à y faire pour la rendre logeable.</opinion>
+      <arrangement/>
+      <agreement type="conclusion">Conclusion</agreement>
+      <estimate l="1131" s="1" d="8"/>
+      <fees detail="true">
+        <fee type="papers" l="" s="" d=""/>
+        <fee type="expert" ref="#xpr0145" l="18" s="" d=""/>
+        <fee type="clerk" l="" s="" d=""/>
+        <fee type="rolls" l="" s="" d=""/>
+        <fee type="prosecutors" l="" s="" d=""/>
+        <fee type="help" l="" s="" d=""/>
+        <fee type="plans" l="" s="" d=""/>
+        <total l="" s="" d=""/>
+      </fees>
+      <expenses mentioned="false"/>
+    </conclusions>
+    <keywords group="estates"/>
+    <keywords group="procedure"/>
+    <keywords group="contract"/>
+    <keywords group="encumbrance"/>
+    <keywords group="law"/>
+    <keywords group="measurement"/>
+    <keywords group="repairs"/>
+    <keywords group="guarantees"/>
+    <keywords group="responsability"/>
+    <keywords group="ownership"/>
+    <keywords group="value"/>
+    <keywords group="neighbourhood"/>
+    <keywords group="disorder"/>
+    <keywords group="transformation"/>
+    <analysis>Cause
+                « [f. 1r°] … sur la requête à vous présentée en jugement à l'audience du parc civil par led. sr Maréchal, légataire universel de damoiselle Elisabeth Cuvilliers décedée, fille majeure suivant son testament receu par Lemoine et son confrère notaires au Chastelet de Paris le vingt six février 1725, insinué le quatorze avril suivant l'exécution duquel testament et la délivrance dud. legs universel ont esté consentis au profit dud. sr Maréchal par le sr [f. 1v°] Goslin de Cuvilliers, bourgeois de Paris, seul et unique héritier présomptif de lad. damoiselle Cuvilliers qui estoit sa tante, par acte passé devant Lemoigne et son confrère notaires au Chastelet led. jour 14e avril 1725, demandeur suivant son exploit du 30 juillet lors dernier, contrôllé le premier du présent mois d'aoust 1726 par Brodard, tendant à ce que, faute par le cy après nommé d'avoir acquité les clauses, charges et conditions du contrat d'aquisition par luy faite d'une maison apartenante à lad. deffunte damoiselle Cuvillier passé devant led. Lemagnen notaire le 14e juillet 1724 et suivant icelluy d'avoir payé les deux mil livres exigibles suivant led. contrat plus les intérests des vingt mil livres faisant le surplus du prix de son acquisition aux termes desd. contrats, comme aussi d'avoir payé à Nicolle Le Clerc la somme de quatorze cens livres pour les causes portées aud. contrat, ycelluy seroit et demeurera résolu et en conséquence qu'il fera parvenir aud. sr Maréchal, au nom qu'il procède de rentes en la propriété, possession et jouissance de lad. maison pour la prisée et estimation qui en sera faite par experts dont les partyes conviendroient sinon qu'ils seroient nommez d'office, lesquels raporteroient l'estat actuel de lad. maison, les réparations qu'il y convient faire et ce qu'il en poura coûter à cet effet avecq dépends contre le sr Robert Delaunay, chevalier comte de Saint-Jean de Lantran, secrétaire des commandements de son altesse sérénissime monsieur le prince de Vendosme. »</analysis>
+    <noteworthy/>
+  </description>
+</expertise>

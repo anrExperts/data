@@ -1,0 +1,203 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j584d012">
+  <meta/>
+  <control>
+    <maintenanceStatus>revised</maintenanceStatus>
+    <publicationStatus/>
+    <localControl localType="detailLevel">
+      <term>completed</term>
+    </localControl>
+    <maintenanceHistory>
+      <maintenanceEvent>
+                <eventType>revised</eventType>
+                <eventDateTime standardDateTime="2022-03-31T19:53:22Z">2022-03-31T19:53:22Z</eventDateTime>
+                <agentType>human</agentType>
+                <agent>llosserand</agent>
+                <eventDescription>rvpcd</eventDescription>
+            </maintenanceEvent>
+          <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateObjectsValues_db.xqy/BaseX</agent>
+        <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateOpinionRef_files.xqy/BaseX</agent>
+        <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateRefValues_files.xqy/BaseX</agent>
+        <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+        <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>revised</eventType>
+        <eventDateTime standardDateTime="2020-11-01T12:00:00">2020-11-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>JH</agent>
+        <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>retroconverted</eventType>
+        <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>ead2xpr.xsl/Saxon9</agent>
+        <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>created</eventType>
+        <eventDateTime standardDateTime="2017-04-01T12:00:00">2017-04-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>llosserand</agent>
+        <eventDescription>Création de la fiche.</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+  </control>
+  <sourceDesc>
+    <unitdate>1726</unitdate>
+    <idno type="unitid">Z1J584</idno>
+    <idno type="item">012</idno>
+    <facsimile from="0108" to="0114"/>
+    <physDesc>
+      <extent sketch="false">6</extent>
+    </physDesc>
+  </sourceDesc>
+  <description>
+    <sessions>
+      <date when="1726-11-04" type="paris"/>
+    </sessions>
+    <places>
+      <place type="paris">
+        <address>
+          <street>Rue de Bièvre [Cette dénomination correspond à 3 voies : Voie actuelle. Actuelle rue des Gobelins. Voie ancienne : voir impasse de Venise]</street>
+          <buildingNumber/>
+        </address>
+        <complement>une maison rue de Bièvre dont Guilbert, Antoineest principal locataire et appartenant à Guilbert, Antoine (louée à bail pour 9 ans)</complement>
+        <parish/>
+        <owner>Bigot</owner>
+      </place>
+    </places>
+    <categories>
+      <category type="settlement">Départager</category>
+      <designation rubric="true">Visitte de réparations en une maison, rue de Bièvre, pour le sieur Gillebert contre le sieur Bigot ; MM. Loir et Fournier, experts.</designation>
+    </categories>
+    <procedure>
+      <framework type="b2">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+      <origination type="institution">Une institution</origination>
+      <sentences>
+        <sentence>
+          <orgName>Parlement</orgName>
+          <date when="1726-10-03"/>
+        </sentence>
+      </sentences>
+      <case>le propriétaire de la maison n'a fait faire aucun des travaux, notamment dans le puits où se dégorgent les immondices des autres maisons répandant l'infection, le défendeur a été condamné mais la cour ne s'estimant pas assez instruite pour adjuger les conclusions du demandeur, requiert la visite des lieux, réparations faites et à y faire.</case>
+      <objects>
+        <object type="cesspool">Fosse(s) d'aisance</object>
+        <object type="house">Maison(s)</object>
+      </objects>
+    </procedure>
+    <participants>
+      <experts>
+        <expert ref="#xpr0183" context="primary" appointment="appointed">
+          <title>juré expert à Paris</title>
+        </expert>
+        <expert ref="#xpr0111" context="primary" appointment="appointed">
+          <title>juré expert à Paris</title>
+        </expert>
+      </experts>
+      <clerks>
+        <clerk ref="#clrk0033">
+          <persName>
+            <surname>Callou</surname>
+            <forename>Antoine Charles</forename>
+          </persName>
+        </clerk>
+      </clerks>
+      <parties>
+        <party role="petitioner" presence="false" intervention="false">
+          <person>
+            <persName>
+              <surname>Guillbert</surname>
+              <forename>Antoine</forename>
+            </persName>
+            <occupation>maître perruquier, barbier à Paris</occupation>
+          </person>
+          <status>main-tenant</status>
+          <expert ref="#xpr0111"/>
+          <prosecutor>
+            <persName>
+              <surname>Nouette</surname>
+              <forename>Jacques</forename>
+            </persName>
+          </prosecutor>
+        </party>
+        <party role="opponent" presence="false" intervention="false">
+          <person>
+            <persName>
+              <surname>Bigot</surname>
+              <forename>Antoine</forename>
+            </persName>
+            <occupation>marchand épicier et cirier à Paris</occupation>
+          </person>
+          <status>owner</status>
+          <expert ref="#xpr0183"/>
+        </party>
+      </parties>
+      <craftmen>
+        <craftman>
+          <persName>
+            <surname/>
+            <forename/>
+          </persName>
+          <occupation/>
+        </craftman>
+      </craftmen>
+    </participants>
+    <conclusions>
+      <opinion ref="#xpr0111 #xpr0183">Les réparations prévues dans le bail sont prisées et les dommages causés à Guilbert sont estimés au moins au tiers de la location, les appartement loués n'ayant pu être occupés.</opinion>
+      <arrangement/>
+      <agreement type="agreement">Accord</agreement>
+      <estimate l="" s="" d=""/>
+      <fees detail="true">
+        <fee type="papers" l="" s="" d=""/>
+        <fee type="expert" ref="#xpr0183" l="6" s="" d=""/>
+        <fee type="expert" ref="#xpr0111" l="" s="" d=""/>
+        <fee type="clerk" l="" s="" d=""/>
+        <fee type="rolls" l="" s="" d=""/>
+        <fee type="prosecutors" l="" s="" d=""/>
+        <fee type="help" l="" s="" d=""/>
+        <fee type="plans" l="" s="" d=""/>
+        <total l="" s="" d=""/>
+      </fees>
+      <expenses mentioned="false"/>
+    </conclusions>
+    <keywords group="estates"/>
+    <keywords group="procedure"/>
+    <keywords group="contract"/>
+    <keywords group="encumbrance"/>
+    <keywords group="law"/>
+    <keywords group="measurement"/>
+    <keywords group="repairs"/>
+    <keywords group="guarantees"/>
+    <keywords group="responsability"/>
+    <keywords group="ownership"/>
+    <keywords group="value"/>
+    <keywords group="neighbourhood"/>
+    <keywords group="disorder"/>
+    <keywords group="transformation"/>
+    <analysis>Cause « [f. 1r°] nous avons fait lecture d'un arrest de vous rendu nos seigneurs le trois octobre dernier entre Antoine Guilbert […] demandeur aux fins des exploits et requestes des vingt trois juillet 1725, dix sept juillet, vingt trois, dix neuf, et vingt huit septembre 1726 tendantes entre autres choses à ce que faute par le deffendeur d'avoir fait faire dans lad. maison les réparations nécessaires pour la rendre habitable et notamment à l'occasion du puits dans lequel ses [f. 1v°] dégorgent les immondices [??] des autres maisons, ce qui rend une infection capable d'occasionner la contagion, le bail fait au demandeur de lad. maison fut déclaré nul pour le tems de St Rémy lors prochain que le deffendeur fut condamné aux dommages et intérests du demandeur à dire d'experts et en tous les dépens [?] la cour ne trouverait pas sa religion suffisament instruitte pour adjuger les conclusions du demandeur, en ce cas et avant faire droit il luy plust ordonner que la maison dont est question seroit veue et visittée par experts qui seroient convenus ou nommez ou nommez d'office lesquels dans leur procès verbal feraient mention du tems auquel partie desd. réparations ont esté faittes de celles qui restent à faire et notamment de l'estat de puis et des lieux d'aysance de lad. maison et de dommages soufferts et à soufrir par led. demandeur pour raison de ce, pour lad. visitte et rapport fait et rapporté estre ensuitte fait droit sur les conclusions du demandeur ainsy qu'il apartiendroit et que le deffendeur fai [sic] condamné aux dépense et deffendeur d'une part, et Antoine Bigot, marchand épicier et cirier à Paris deffendeur et demandeur en requeste du vingt quatre septembre dernier, tendant entre autres choses affin d'opposition à l'exécution de l'arrest par deffaut du vingt huit aoust précédent d'autre, par lequel sans que les qualitez puissent nuire ny préjudicier, vous avez receu nos seigneurs, le sr Bigot opposant, [f. 2r°] à l'arrest par deffaut au principal et sur la demande en résolution du bail dont est question ordonné que les parties en viendroient au lendemain de St Martin et cependant sans préjudice des choses des parties ordonnée que les lieux dont il s'agist seroient veus et visitttez par experts dont les parties conviendroient pardevant Mr Lemoyne, conseiller [en la cour], sinon par luy pris et nommez d'office, lesquels experts lors de la visitte, feroient mention du tems auquel partie des réparations ont esté faittes, de celle qui restent à faite de l'estat actuel du puis et des lieux d'aysances de la maison en question et des dommages soufferts et à souffrir pour raison de la [sic] pour ce fait et rapporté estre ordonné ce que de raison. ».</analysis>
+    <noteworthy/>
+  </description>
+</expertise>

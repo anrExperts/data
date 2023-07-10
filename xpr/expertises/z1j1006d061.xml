@@ -1,0 +1,272 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1006d061">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-09-01T12:00:00">2020-09-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2017-04-01T12:00:00">2017-04-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1006</idno>
+        <idno type="item">061</idno>
+        <facsimile from="0776" to="0783"/>
+        <physDesc>
+          <extent sketch="false">7</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-08-26" type="paris"/>
+          <date when="1776-08-26" type="paris"/>
+          <date when="1776-08-28" type="paris"/>
+          <date when="1776-08-31" type="paris"/>
+        </sessions>
+        <places>
+          <place xml:id="id116d305" type="paris">
+            <address>
+              <street>Rue Vieille-du-Temple</street>
+              <buildingNumber/>
+            </address>
+            <complement>près les Filles du Calvaire</complement>
+            <parish/>
+            <owner>Succession Duranet</owner>
+          </place>
+          <place xml:id="id116d324" type="paris">
+            <address>
+              <street>rue de l'Etoile</street>
+              <buildingNumber/>
+            </address>
+            <complement>près l’Ave Maria</complement>
+            <parish/>
+            <owner>Succession Duranet</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="estimation">Estimer la valeur des biens</category>
+          <designation rubric="true">Estimation de deux maisons</designation>
+        </categories>
+        <procedure>
+          <framework type="b2a">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>lieutenant civil (sentence du 6 août 1776)</orgName>
+              <date when="1776-08-06"/>
+            </sentence>
+          </sentences>
+          <case>Succession</case>
+          <objects>
+            <object type="house">Maison(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0250" context="primary" appointment="appointed">
+              <title>architecte expert bourgeois des bâtiments à Paris</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0062">
+              <persName>
+                <surname>Picquenon</surname>
+                <forename>Denis Joseph François</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>de Ranty</surname>
+                  <forename>Auguste Jacques</forename>
+                </persName>
+                <occupation>receveur principal des droits du roi réunis à Saint-Omer, héritier pour 1/3 de sa mère défunte Duranet, Marie Barbe, décédée veuve de de Ranty, Jacques, dit Baron, officier sur les ports, et propriétaire pour 1/3 pour la moitié (1/6) de deux maisons dont est question</occupation>
+              </person>
+              <status>heir</status>
+              <expert ref="#xpr0250"/>
+              <prosecutor>
+                <persName>
+                  <surname>Boullanger</surname>
+                  <forename/>
+                </persName>
+              </prosecutor>
+            </party>
+            <party role="opponent" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Lefevre</surname>
+                  <forename>Denis</forename>
+                </persName>
+                <occupation>brigadier de maréchaussée et gendarmerie de France, compagnie de robe courte et de de Ranty, Marie Louise, son épouse, elle aussi héritière pour ½ de la défunte veuve de Ranty</occupation>
+              </person>
+              <status>heir</status>
+              <expert ref="#xpr0250"/>
+            </party>
+            <party role="opponent" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>de May</surname>
+                  <forename>François</forename>
+                </persName>
+                <occupation>de May, François, ci-devant marchand de vin et de de Ranty, Marie Françoise, son épouse, elle aussi héritière pour ½ de la défunte veuve de Ranty, à la charge de la substitution porté au testament de la défunte (reçu le 12 décembre 1776 devant Giard, notaire) en faveur des enfants nés et à naître de ladite dame de May lesd. sieurs et dames Lefevre et de May également propriétaire pour 1/3 de la moitié desdits deux maisons</occupation>
+              </person>
+              <status>heir</status>
+              <expert ref="#xpr0250"/>
+              <prosecutor>
+                <persName>
+                  <surname>Dupy</surname>
+                  <forename/>
+                </persName>
+              </prosecutor>
+            </party>
+            <party role="opponent" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Sauveur</surname>
+                  <forename>Jacques Joseph</forename>
+                </persName>
+                <occupation>fils, marchand mercier, tuteur à la substitution portée au testament de ladite veuve de Ranty, etc.</occupation>
+              </person>
+              <status>heir</status>
+              <expert ref="#xpr0250"/>
+              <prosecutor>
+                <persName>
+                  <surname>de la Motte</surname>
+                  <forename/>
+                </persName>
+              </prosecutor>
+            </party>
+            <party role="opponent" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Bosse</surname>
+                  <forename/>
+                </persName>
+                <occupation>peintre à Paris, propriétaire pour moitié de la maison située rue vieille-du-temple</occupation>
+              </person>
+              <status>heir</status>
+              <expert ref="#xpr0250"/>
+              <prosecutor>
+                <persName>
+                  <surname>de Cormées</surname>
+                  <forename>l’ainé</forename>
+                </persName>
+              </prosecutor>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0250">"Touttes considerations faittes nous prisons et estimons ladite maison à la charge du cens et des droits seigneuriaux et au cours du tems présent la somme de 4800 l."
+"Touttes considerations faittes nous prisons et estimons ladite maison à la charge du cens et des droits seigneuriaux et au cours du tems présent la somme de 9000 l."
+« Telle est, monsieur, la visitte par nous faitte desd. deux maison, tel est nôtre avis sur la valeur d’icelles suivant et aux termes de votre sentence, nous référans à votre justice et prudence ordinaire. Et satisfaisant au réquisitoire de M. Boullanger aud. nom en la présente vacation, notre avis est que la partage desd. deux maisons en autant de portions qu’il y a de propriétaires est impossible.
+                Fait par nous architecte expert susd. led. jour, mois et an après avoir vaqué à ce que dessus jusque à deux heures après-midy par double vacation pour mettre à fin le présente rapport. »</opinion>
+          <arrangement/>
+          <agreement type="conclusion">Conclusion</agreement>
+          <estimate l="13800" s="" d=""/>
+          <estimates>
+            <place ref="#id116d305">
+              <appraisal l="4800" s="" d="">
+                <desc>maison</desc>
+              </appraisal>
+            </place>
+            <place ref="#id116d324">
+              <appraisal l="9000" s="" d="">
+                <desc>maison</desc>
+              </appraisal>
+            </place>
+          </estimates>
+          <fees detail="true">
+            <fee type="papers" l="7" s="8" d=""/>
+            <fee type="expert" ref="#xpr0250" l="36" s="" d=""/>
+            <fee type="clerk" l="36" s="" d=""/>
+            <fee type="rolls" l="19" s="" d=""/>
+            <fee type="prosecutors" l="65" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="163" s="8" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="31" s="15" d=""/>
+            <expense type="expert" l="12" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis/>
+        <noteworthy/>
+      </description>
+    </expertise>

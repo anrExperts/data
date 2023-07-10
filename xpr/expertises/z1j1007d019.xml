@@ -1,0 +1,227 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1007d019">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-08-01T12:00:00">2020-08-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2017-10-01T12:00:00">2017-10-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1007</idno>
+        <idno type="item">019</idno>
+        <facsimile from="0292" to="0406"/>
+        <physDesc>
+          <extent sketch="false">112</extent>
+          <appendices>
+            <appendice>
+              <type type="proxyNA">Pouvoir/procuration (acte notarié)</type>
+              <extent>1</extent>
+              <desc/>
+              <note>procuration de Louis Marquet</note>
+            </appendice>
+          </appendices>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-09-09" type="province"/>
+          <date when="1777-07-01" type="province"/>
+        </sessions>
+        <places>
+          <place xml:id="id283d300" type="province">
+            <address/>
+            <complement/>
+            <city>terres et seigneurie de Mont Saint-Père</city>
+            <district/>
+            <owner/>
+          </place>
+        </places>
+        <categories>
+          <category type="estimation">Estimer la valeur des biens</category>
+          <designation rubric="true">Visitte et estimation des terres et seigneuries de Mont Saint Père et autres près Chateauthiery de la Communauté Marquet ; M. Taboureur, expert.</designation>
+        </categories>
+        <procedure>
+          <framework type="b2b">L’institution est saisie dans le cadre d’une procédure (l’institution nomme un ou deux experts)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Châtelet, lieutenant civil (sentence)</orgName>
+              <date when="1776-07-10"/>
+            </sentence>
+          </sentences>
+          <case>succession, liquidation de communauté</case>
+          <objects>
+            <object type="territory">Domaine, terres, fief</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0250" context="primary" appointment="court-appointed">
+              <title>architecte expert</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0058">
+              <persName>
+                <surname>Foucart</surname>
+                <forename>Paul Joseph</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Marquet</surname>
+                  <forename>Louis</forename>
+                </persName>
+                <occupation>écuyer, seigneur de Mont Saint-Père, conseiller du roi, ancien receveur général des finances de Bordeaux, veuf de Paris Duverney, Louise Michelle, avec qui il était commun en biens</occupation>
+              </person>
+              <status>heir</status>
+              <expert ref="#xpr0250"/>
+              <representative>
+                <persName>
+                  <surname>Meulk</surname>
+                  <forename>Jean</forename>
+                </persName>
+                <occupation>écuyer</occupation>
+              </representative>
+            </party>
+            <party role="opponent" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Marquet des Greves</surname>
+                  <forename>Maurice Alexandre</forename>
+                </persName>
+                <occupation>écuyer conseiller du roi receveur général des finances de Bordeaux, héritier pour ¼ deParis Duvernay, Louise Michelle, sa mère</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Marquet</surname>
+                  <forename>Marie Joseph</forename>
+                </persName>
+                <occupation>chevalier conseiller du roi en sa cour de parlement, héritier pour ¼ de la même, sa mère</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>De la Guillaumie</surname>
+                  <forename>Nicolas</forename>
+                </persName>
+                <occupation>chevalier seigneur d’Auverbilliers, au nom et comme tuteur deMarquet, Jacqueline Henrietteson épouse mineure émancipée par son mariage, aussi héritière pour ¼ de la même, sa mère</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>De Calonne</surname>
+                  <forename>Charles Alexandre</forename>
+                </persName>
+                <occupation>chevalier conseiller du roi en ses conseils, maître des requêtes ordinaire de son hôtel, au nom et comme tuteur de De Calonne, Charles Louis Henry, son fils mineur, également fils de Marquet, Joséphine Anne son épouse, seul héritier de sa mère, elle-même héritière pour ¼ de la défunte</occupation>
+              </person>
+              <status>heir</status>
+              <expert ref="#xpr0250"/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0250">« Après avoir ainsi achevé la visitte et estimation de tous lesdits terres seigneuries et biens attendu qu’il nous a été declaré qu’il n’y en avoit pas d’autres en ladite province nous allons pour donner à connoitre le resumé de nos opérations faire cy après une recapitulation ou tableau general de nos estimations cy dessus. [voir tableau au f. 111v-112r] 
+"Tableau général des estimations des terres et seigneuries et biens mentionnés au présent procès verbal... 1049910 livres
+... Autres estimations sans distinctions à cause des biens appartenants à monsieur Marquet seul 
+... Indemnité dues à monsieur Marquet : 49908 livres"
+Tel est Monsieur notre avis sur la valeur desdits biens immeubles que nous vous observons ne pouvoir se partager avantageusement ny meme commodement entre les sieurs et dames copropriétaires et sur les indemnités dues à Monsieur Marquet notre avis sur la valeur des immeubles acquis pendant la continuation de communauté le tout aux termes de votre sentence et du requisitoire … à nous fait vous referant de juger et ordonner sur le tout Fait par nous architecte expert susdit lesdits jours mois et an remettant à demain pour retourner à Paris et allons neantmoins raporter le tableau desdites estimations de suitte après la cloture de notre present procès verbal »</opinion>
+          <arrangement/>
+          <agreement type="conclusion">Conclusion</agreement>
+          <estimate l="" s="" d=""/>
+          <estimates>
+            <place ref="#id283d300">
+              <appraisal l="1049910" s="" d="">
+                <desc>seigneurie</desc>
+              </appraisal>
+            </place>
+          </estimates>
+          <fees detail="true">
+            <fee type="papers" l="118" s="" d=""/>
+            <fee type="expert" ref="#xpr0250" l="1968" s="" d=""/>
+            <fee type="clerk" l="1968" s="" d=""/>
+            <fee type="rolls" l="550" s="" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="4604" s="" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="expert" l="492" s="" d=""/>
+            <expense type="clerk" l="1203" s="2" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis/>
+        <noteworthy>82 jours de campagne</noteworthy>
+      </description>
+    </expertise>

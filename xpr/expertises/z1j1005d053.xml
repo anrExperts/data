@@ -1,0 +1,257 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1005d053">
+  <meta/>
+  <control>
+    <maintenanceStatus>revised</maintenanceStatus>
+    <publicationStatus/>
+    <localControl localType="detailLevel">
+      <term>completed</term>
+    </localControl>
+    <maintenanceHistory>
+      <maintenanceEvent>
+                <eventType>revised</eventType>
+                <eventDateTime standardDateTime="2021-10-15T14:03:27Z">2021-10-15T14:03:27Z</eventDateTime>
+                <agentType>human</agentType>
+                <agent>llosserand</agent>
+                <eventDescription>exb3</eventDescription>
+            </maintenanceEvent>
+          <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateOpinionRef_files.xqy/BaseX</agent>
+        <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateRefValues_files.xqy/BaseX</agent>
+        <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+        <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>revised</eventType>
+        <eventDateTime standardDateTime="2020-07-01T12:00:00">2020-07-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>llosserand</agent>
+        <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>retroconverted</eventType>
+        <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>ead2xpr.xsl/Saxon9</agent>
+        <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>created</eventType>
+        <eventDateTime standardDateTime="2017-10-01T12:00:00">2017-10-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>JH</agent>
+        <eventDescription>Création de la fiche.</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+  </control>
+  <sourceDesc>
+    <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1005</idno>
+    <idno type="item">053</idno>
+    <facsimile from="0536" to="0541"/>
+    <physDesc>
+      <extent sketch="false">6</extent>
+    </physDesc>
+  </sourceDesc>
+  <description>
+    <sessions>
+      <date when="1776-07-26" type="suburbs"/>
+    </sessions>
+    <places>
+      <place xml:id="id365d367" type="suburbs">
+        <address/>
+        <complement>Rue Saint-Dominique</complement>
+        <city/>
+        <district/>
+        <owner/>
+      </place>
+    </places>
+    <categories>
+      <category type="estimation">Estimer la valeur des biens</category>
+      <designation rubric="true">Estimation d'une maison au Gros Caillou, à la requeste du seur Rimet ; M. Desboeufs, expert</designation>
+    </categories>
+    <procedure>
+      <framework type="b2">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+      <origination type="institution">Une institution</origination>
+      <sentences>
+        <sentence>
+          <orgName>Châtelet, lieutenant civil (sentences)</orgName>
+          <date when="1776-03-20"/>
+          <date when="1776-06-25"/>
+        </sentence>
+      </sentences>
+      <case>Succession, demande de vente par licitation</case>
+      <objects>
+            <object type="house">Maison(s)</object>
+          </objects>
+    </procedure>
+    <participants>
+      <experts>
+        <expert ref="#xpr0089" context="primary" appointment="mixed">
+          <title>architecte expert</title>
+        </expert>
+      </experts>
+      <clerks>
+        <clerk ref="#clrk0057">
+          <persName>
+            <surname>Liebault de la Neuville</surname>
+            <forename>Christophe Edouard</forename>
+          </persName>
+        </clerk>
+      </clerks>
+      <parties>
+        <party role="petitioner" presence="false" intervention="false">
+          <person>
+            <persName>
+              <surname>Rimet</surname>
+              <forename>Hubert</forename>
+            </persName>
+            <occupation>marchand, héritier pour 1/7 deGibert, Marie Louisesa mère, veuve en première noces de Monotet décédée femme de Rimet, Jean Baptiste en secondes noces</occupation>
+          </person>
+          <status>heir</status>
+          <expert ref="#xpr0089"/>
+          <prosecutor>
+            <persName>
+              <surname>Duperrier</surname>
+              <forename>François</forename>
+            </persName>
+          </prosecutor>
+        </party>
+        <party role="opponent" presence="false" intervention="false">
+          <person>
+            <persName>
+              <surname>Pierguinet</surname>
+              <forename>Pierre</forename>
+            </persName>
+            <occupation>officier aux Invalides</occupation>
+          </person>
+          <person>
+            <persName>
+              <surname>[?]</surname>
+              <forename>Louise Genevieve</forename>
+            </persName>
+            <occupation>son épouse héritière pour 1/7 de sa mèreGibert, Marie Louise</occupation>
+          </person>
+          <person>
+            <persName>
+              <surname>Rimet</surname>
+              <forename>Jean Baptiste</forename>
+            </persName>
+            <occupation>voiturier par terre, héritier pour 1/7 de sa mère Gibert, Marie Louise</occupation>
+          </person>
+          <person>
+            <persName>
+              <surname>Bouvet</surname>
+              <forename/>
+            </persName>
+            <occupation>fruitier</occupation>
+          </person>
+          <person>
+            <persName>
+              <surname>Monnot</surname>
+              <forename>Marie Louise</forename>
+            </persName>
+            <occupation>son épouse héritière pour 1/7 de sa mèreGibert, Marie Louise</occupation>
+          </person>
+          <person>
+            <persName>
+              <surname>Monnot</surname>
+              <forename/>
+            </persName>
+            <occupation>marchand d’avoine à Paris, héritièr pour 1/7 de sa mère Gibert, Marie Louise</occupation>
+          </person>
+          <status>heir</status>
+          <expert ref="#xpr0089"/>
+          <prosecutor>
+            <persName>
+              <surname>Descaries</surname>
+              <forename/>
+            </persName>
+          </prosecutor>
+          <prosecutor>
+            <persName>
+              <surname>Lemassun</surname>
+              <forename/>
+            </persName>
+          </prosecutor>
+          <prosecutor>
+            <persName>
+              <surname>Pupôt l'aîné</surname>
+              <forename/>
+            </persName>
+          </prosecutor>
+          <prosecutor>
+            <persName>
+              <surname>Phélypeaux</surname>
+              <forename/>
+            </persName>
+          </prosecutor>
+        </party>
+      </parties>
+      <craftmen>
+        <craftman>
+          <persName>
+            <surname/>
+            <forename/>
+          </persName>
+          <occupation/>
+        </craftman>
+      </craftmen>
+    </participants>
+    <conclusions>
+      <opinion ref="#xpr0089">« Après avoir visitté ladite maison, fait attention à la legere construction des batimens qui la composent aux reparations dont elle est susceptible, à ce que toute la superficie suivant l’acte dudit jour trente un janvier mil sept cent soixante deux n’est que de quarante une toise et demy dix sept pieds et à l’endroit où elle est scituée ; tout consideré nous estimons ladite portion de maison faisant … de l’acte de partage dudit jour trente un janvier mil sept cent soixante deux comme elle se poursuit et comporte avec les trois pieds de … etant au derriere de ladite portion de maison sans avoir égard aux vues et porte de sortie qu’elle a sur lesdits trois pieds de terrain dont il ne nous a pas apparu du droit valoir au cours du temps present à la charge primo des cens et droits seigneuriaux, secundo des dix livres dont elle est chargée annuellement pour tenir lieu de logement des gens de guerre, tertio à la charge des servitudes actives et passives et des … reciproques avec le premier lot établies par l’acte de partage dudit jour trente un janvier mil sept cent soixante deux la somme de … 2 400 l. 
+Nous vous observons M. que vue la modicité de ladite portion de maison et le nombre des copropriétaires d’icelle qui sont sept il n’y a point de possibilité de la partager commodément entre eux, cy… observation Fait par nous architecte expert susdit les jours mois et an que dessus vous referant M. d’en ordonner »</opinion>
+      <arrangement/>
+      <agreement type="conclusion">Conclusion</agreement>
+      <estimate l="" s="" d=""/>
+      <estimates>
+        <place ref="#id365d367">
+          <appraisal l="2400" s="" d="">
+            <desc>une maison</desc>
+          </appraisal>
+        </place>
+      </estimates>
+      <fees detail="true">
+        <fee type="papers" l="10" s="" d=""/>
+        <fee type="expert" ref="#xpr0089" l="18" s="" d=""/>
+        <fee type="clerk" l="18" s="" d=""/>
+        <fee type="rolls" l="24" s="" d=""/>
+        <fee type="prosecutors" l="20" s="" d=""/>
+        <fee type="help" l="" s="" d=""/>
+        <fee type="plans" l="" s="" d=""/>
+        <total l="90" s="" d=""/>
+      </fees>
+      <expenses mentioned="false"/>
+    </conclusions>
+    <keywords group="estates"/>
+    <keywords group="procedure"/>
+    <keywords group="contract"/>
+    <keywords group="encumbrance"/>
+    <keywords group="law"/>
+    <keywords group="measurement"/>
+    <keywords group="repairs"/>
+    <keywords group="guarantees"/>
+    <keywords group="responsability"/>
+    <keywords group="ownership"/>
+    <keywords group="value"/>
+    <keywords group="neighbourhood"/>
+    <keywords group="disorder"/>
+    <keywords group="transformation"/>
+    <analysis/>
+    <noteworthy/>
+  </description>
+</expertise>

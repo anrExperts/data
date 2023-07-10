@@ -1,0 +1,181 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j583d010">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-11-01T12:00:00">2020-11-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2016-10-26T12:00:00">2016-10-26T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>RB</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1726</unitdate>
+    <idno type="unitid">Z1J583</idno>
+        <idno type="item">010</idno>
+        <facsimile from="0092" to="0096"/>
+        <physDesc>
+          <extent sketch="false">4</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1726-09-06" type="paris"/>
+        </sessions>
+        <places>
+          <place type="paris">
+            <address>
+              <street>Rue Neuve-Saint-Merri [Ou Neuve-Saint-Médéric. Actuellement rue Saint-Merri]</street>
+              <buildingNumber/>
+            </address>
+            <complement/>
+            <parish/>
+            <owner>Martel</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="acceptation">Recevoir et évaluer le travail réalisé</category>
+          <designation rubric="true">Visite et estimation d'ouvrages de menuiserie</designation>
+        </categories>
+        <procedure>
+          <framework type="b2a">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Lieutenant civil du Châtelet</orgName>
+              <date when="1726-09-04"/>
+            </sentence>
+          </sentences>
+          <case>contentieux sur le coût de travaux de menuiserie et de fourniture de bois</case>
+          <objects>
+            <object type="other">ouvrages de menuiserie</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0232" context="primary" appointment="appointed">
+              <title>architecte juré du roi expert bourgeois de Paris</title>
+            </expert>
+            <expert ref="#xpr0017" context="primary" appointment="appointed">
+              <title>architecte juré du roi expert bourgeois de Paris</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0029">
+              <persName>
+                <surname>Quirot</surname>
+                <forename>Jacques</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="true" intervention="false">
+              <person>
+                <persName>
+                  <surname>Moreau</surname>
+                  <forename>Gilles</forename>
+                </persName>
+                <occupation>menuisier</occupation>
+              </person>
+              <status>builder</status>
+              <expert ref="#xpr0232"/>
+            </party>
+            <party role="opponent" presence="true" intervention="false">
+              <person>
+                <persName>
+                  <surname>Martel</surname>
+                  <forename/>
+                </persName>
+                <occupation>sieur, commanditaire des travaux</occupation>
+              </person>
+              <status>limited-partner</status>
+              <expert ref="#xpr0017"/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname>Moreau</surname>
+                <forename>Gilles</forename>
+              </persName>
+              <occupation>menuisier à Paris</occupation>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0232">"Et suivant les estimations faittes par moy Quirot tous lesd. ouvrages montent et reviennement ensemble à la somme de quatre cent soixante trois livres trois sols huit deniers."</opinion>
+          <opinion ref="#xpr0017">« Revenant tous lesd. ouvrages de menuiserie et suivant les estimations faittes par moy Benoist à la somme totalle de trois cent huit livres dix deniers."
+Benoît constate en outre des malfaçons dans le montage du plancher de la boutique ainsi que l'emploi de mauvaises planches pour l'auvent fermant l'arcade marchande. Quirot dresse un constat identique mais précise que ces malfaçons peuvent se réparer aisément par de menus travaux.</opinion>
+          <arrangement/>
+          <agreement type="disagreement">Désaccord</agreement>
+          <estimate l="" s="" d=""/>
+          <fees detail="true">
+            <fee type="papers" l="2" s="10" d=""/>
+            <fee type="expert" ref="#xpr0232" l="6" s="" d=""/>
+            <fee type="expert" ref="#xpr0017" l="6" s="" d=""/>
+            <fee type="clerk" l="6" s="" d=""/>
+            <fee type="rolls" l="4" s="10" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="25" s="" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="7" s="5" d=""/>
+            <expense type="expert" l="" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis>Motivations
+                « Nous avons fait lecture d'une sentence contradictoirement rendue le trois aoust de la présente année mil sept cent vingt six, entre led. sr Moreau demandeur contre le cy apres nommé en condamnation de la somme de cinq cent cinquante quatre livres qu'il luy doit restant de celle de cinq cent cinquante neuf livres pour ouvrages de menuiserie et marchandises de bis qu'il luy a fait et fourny et deffendeur à la demande précédente portée les deffences signiffiées le trente juillet dernier d'une part ; contre le sieur Martel marchand épicier en gros, deffendeur, et incidammet demandeur. Par laquelle sentence partyes ouyes, apres que led. sieur Moreau a declaré vouloir se contenter de la somme de trois cent trente six livres cinq sols offerte par led. sieur Martel, vous avez Monsieur dit que les ouvrages et fournitures demandez seront prisez et estimez par experts qui seront convenus ou nommez d'office » . Une sentence du 21 août 1726 nomme Quirot comme expert de Gilles Moreau et Benoit comme expert du sieur Martel.</analysis>
+        <noteworthy/>
+      </description>
+    </expertise>

@@ -1,0 +1,200 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j433d082">
+      <meta/>
+      <control>
+        <maintenanceStatus/>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term/>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:39:45.99+02:00">2021-05-19T11:39:45.99+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateAgreementType_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur "Dispositif de l’expertise" lorsqu'il n'y a qu’un seul expert ('agreement' devient 'conclusion').</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:45:33.927+02:00">2021-04-21T20:45:33.927+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateKeywordsModule_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour du module keywords.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:44:31.814+02:00">2021-04-21T20:44:31.814+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateExpertisesArrangement_files.xqy/BaseX</agent>
+            <eventDescription>Ajout du champs Accommodement dans l'éventualité d’une résolution par les parties.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:43:53.154+02:00">2021-04-21T20:43:53.154+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateExpertisesPlacesEstimates_files.xqy/BaseX</agent>
+            <eventDescription>Ajout des champs pour l'estimation des lieux.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2019-03-01T12:00:00">2019-03-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1696</unitdate>
+    <idno type="unitid">Z1J433</idno>
+        <idno type="item">082</idno>
+        <facsimile from="0553" to="0554"/>
+        <physDesc>
+          <extent sketch="false">2</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1696-05-24" type="paris"/>
+        </sessions>
+        <places>
+          <place xml:id="id61289d1" type="paris">
+            <address>
+              <street>rue du Temple</street>
+              <buildingNumber/>
+            </address>
+            <complement>au coin de la rue neuve Saint-Martin</complement>
+            <parish/>
+            <owner>Marie Huar fille mineure (propriétaire pour 1/3) de Pierre Huar et de Jeanne Millon ses parents, indivis</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="estimation">Estimer la valeur des biens</category>
+          <designation rubric="false">estimation de maison indivise</designation>
+        </categories>
+        <procedure>
+          <framework type="b2b">L’institution est saisie dans le cadre d’une procédure (l’institution nomme un ou deux experts)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Châtelet</orgName>
+              <date when="1696-05-22"/>
+            </sentence>
+          </sentences>
+          <case>maison en indivision qu'un particulier projette d'acheter et dont un des héritiers (partie requérante) est encore mineur</case>
+          <objects>
+            <object type="house">Maison(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0218" context="primary" appointment="court-appointed">
+              <title>entrepreneur des bâtiments du roi expert juré ès oeuvres de maçonnerie</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0008">
+              <persName>
+                <surname>[Villain] ?</surname>
+                <forename/>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Huar</surname>
+                  <forename>Marie</forename>
+                </persName>
+                <occupation>fille mineure de défunt Pierre Huar peintre à Paris et de Marie Millon sa femme à présent sa veuve qui est la mère de Marie Huar</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Marette</surname>
+                  <forename>Pierre Paul</forename>
+                </persName>
+                <occupation>Maître teinturier</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Marette</surname>
+                  <forename>Antoine</forename>
+                </persName>
+                <occupation>compagnon gaisnier, cousins germains maternels et consorts</occupation>
+              </person>
+              <status>owner</status>
+              <expert ref="#xpr0218"/>
+              <prosecutor>
+                <persName>
+                  <surname>Tancier</surname>
+                  <forename>Nicolas</forename>
+                </persName>
+              </prosecutor>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <agreement type="conclusion">Conclusion</agreement>
+          <opinion ref="#xpr0218">... que nous estimons valloir la somme de 2500 livres d'argent comptant une fois payé à la charge du cens sceullement eu esgard que les bastimens sont for vieil et caducque menassant ruine prochaine au lieu où elle est scituée et au cour du temps présente cy 2500 livres
+Faict par nous expert susdit soubsigné les jour , mois et an que dessus [pas de signature]</opinion>
+          <arrangement/>
+          <estimate>2500</estimate>
+          <estimates>
+            <place ref="#id61289d1">
+              <appraisal l="" s="" d="">
+                <desc/>
+              </appraisal>
+            </place>
+          </estimates>
+          <fees detail="false">
+            <total l="" d="" s=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="" s="" d=""/>
+            <expense type="expert" l="3" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group=""/>
+        <analysis>la maison étant vieille et caduque, les réparations qu'il y convient faire journellement consomment la meilleur partye des loyers d'icelle ce qui est préjudiciable à ladite mineure Marie Huar (héritière) et attendu qu'il se présente un particulier quy veut acheter ladite maison et en offre trois mils livres pour la totalité quy est un prix raisonable par rapport à la scituation, vieillesse et au loyer qu'on en retire joint d'ailleurs que les autres propriétaires de ladite maison sont sur le point vendre les portions d'icelle maison sur le mesme pied, ils sont d'avis que ledit quart de maison appartenant à ladite mineure soit vendu sur le pied de trois mil livres la totalité qui (?) (?) dudit prix reste ès mains de l'acquéreur pour sa surté jusque à sa majorité et cependant la payera l'interet au denier vingt dont sera passé contrat par ladite Millon mère de ladite mineure quy demeurera à cet effet sa tutrice, laquelle stipulera audit contract toutes les clauses et conditions qu'elle jugera à propos pour la sureté de l'acquéreur et de ladite mineure; sur quoy vous avez dit que ladite Millon (f. v°) demeurera tutrice de ladite mineur sa fille en laquelle qualité luy avé promis de vendre ledit quart appartenant à ladite mineure en ladite maison scize rue du Temple sur le pied de trois mils livres la totalité dont la portion de ladite mineure restera ès mains de l'acquéreur pour sa sureté jusqu'à sa majorité...."" estimation faite préalablement ar nous Philippes que vous avé nommée d'office suivant l'avis desdits parens et amis que vous avé omologué...</analysis>
+        <noteworthy>pas de signature
+pas de greffier</noteworthy>
+      </description>
+    </expertise>

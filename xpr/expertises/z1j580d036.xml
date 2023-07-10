@@ -1,0 +1,241 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j580d036">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-10-01T12:00:00">2020-10-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2016-10-26T12:00:00">2016-10-26T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>RB</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1726</unitdate>
+    <idno type="unitid">Z1J580</idno>
+        <idno type="item">036</idno>
+        <facsimile from="0535" to="0542"/>
+        <physDesc>
+          <extent sketch="false">6</extent>
+          <appendices>
+            <appendice>
+              <type type="other">Assignation</type>
+              <extent>1</extent>
+              <desc>Acte de nomination de l'expert par le lieutenant civil, le 11 mai 1726. Convocation à l'expertise, datée du 14 mai 1726.</desc>
+              <note/>
+            </appendice>
+          </appendices>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1726-05-15" type="paris"/>
+          <date when="1726-05-16" type="paris"/>
+        </sessions>
+        <places>
+          <place xml:id="id909d261" type="paris">
+            <address>
+              <street>Rue Saint-Sauveur [cette dénomination correspond à 2 voies : Voie actuelle. Voie ancienne : voir rue Hillerin-Bertin]</street>
+              <buildingNumber/>
+            </address>
+            <complement/>
+            <parish/>
+            <owner>succession Pigis</owner>
+          </place>
+          <place xml:id="id909d279" type="paris">
+            <address>
+              <street>rue des-Lombards [voie actuelle], Cul-de-sac de la [rue de la] Tascherie</street>
+              <buildingNumber/>
+            </address>
+            <complement/>
+            <parish/>
+            <owner>succession Pigis</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="estimation">Estimer la valeur des biens</category>
+          <designation rubric="true">Visite et estimation de maisons</designation>
+        </categories>
+        <procedure>
+          <framework type="b1">Requête auprès d’une institution pour qu’elle demande une expertise</framework>
+          <origination type="parties">Les parties</origination>
+          <sentences>
+            <sentence>
+              <orgName>Lieutenant civil</orgName>
+              <date when=""/>
+            </sentence>
+          </sentences>
+          <case>liquidation et partage d'héritage</case>
+          <objects>
+            <object type="house">Maison(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0183" context="primary" appointment="appointed">
+              <title>juré expert</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0033">
+              <persName>
+                <surname>Callou</surname>
+                <forename>Antoine Charles</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Pommeray</surname>
+                  <forename>Anne Pétronille de</forename>
+                </persName>
+                <occupation>veuve de Pigis, Antoine de, conseiller du roi, trésorier, receveur général et payeur des rentes de l'hôtel de ville de Paris</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Pigis</surname>
+                  <forename>Antoine Henri de</forename>
+                </persName>
+                <occupation>commissaire général des Suisses et Grisons</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Pigis de Saint-Genié</surname>
+                  <forename>Louis Antoine de</forename>
+                </persName>
+                <occupation>payeur des rentes</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Pigis</surname>
+                  <forename>René</forename>
+                </persName>
+                <occupation>abbé de Quinçay</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Pigis</surname>
+                  <forename>Claude</forename>
+                </persName>
+                <occupation>capitaine de régiment de Guyenne</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Bouteruelles</surname>
+                  <forename>Gabriel de</forename>
+                </persName>
+                <occupation>prieur de Notre-Dame de Puisieux, aumonier de la princesse de Conti, tuteur de Pigis, Claude de</occupation>
+              </person>
+              <status>heir</status>
+              <expert ref="#xpr0183"/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0183">"Après laquelle visitte et déclaration, nous avons pour parvenir à une juste estimation pris les mesures de l'emplacement de ladite maison et de l'emplacement de ce qui est en batimens d'avec ce qui est cour et du tout fait les calculs après lesquels considerations faites de l'estat present des batimens qui composent ladite maison, du quartier où elle est scituée, nous la prisons et estimons au total eu égard au cours du tems présent la somme de 16000 l."
+"Nous la prisons et estimons la somme de 4000 l. eu égard au cours du tems présent"</opinion>
+          <arrangement/>
+          <agreement type="conclusion">Conclusion</agreement>
+          <estimate l="20000" s="" d=""/>
+          <estimates>
+            <place ref="#id909d261">
+              <appraisal l="16000" s="" d="">
+                <desc>maison</desc>
+              </appraisal>
+            </place>
+            <place ref="#id909d279">
+              <appraisal l="4000" s="" d="">
+                <desc>maison</desc>
+              </appraisal>
+            </place>
+          </estimates>
+          <fees detail="true">
+            <fee type="papers" l="5" s="10" d=""/>
+            <fee type="expert" ref="#xpr0183" l="12" s="" d=""/>
+            <fee type="clerk" l="12" s="" d=""/>
+            <fee type="rolls" l="6" s="5" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="35" s="15" d=""/>
+          </fees>
+          <expenses mentioned=""/>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis>Motivations
+                « Procéder à la visitte, prisée et estimation des biens, fonds immeubles dépendans de la communauté en succession du feu sieur de Pigis mary et père commun des parties pour parvenir aux liquidations, partages et subdivisions entre eux ».</analysis>
+        <noteworthy/>
+      </description>
+    </expertise>

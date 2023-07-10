@@ -1,0 +1,212 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j906d048">
+  <meta/>
+  <control>
+    <maintenanceStatus>revised</maintenanceStatus>
+    <publicationStatus/>
+    <localControl localType="detailLevel">
+      <term>completed</term>
+    </localControl>
+    <maintenanceHistory>
+      <maintenanceEvent>
+                <eventType>revised</eventType>
+                <eventDateTime standardDateTime="2022-08-19T12:59:06Z">2022-08-19T12:59:06Z</eventDateTime>
+                <agentType>human</agentType>
+                <agent>llosserand</agent>
+                <eventDescription>rvpcd</eventDescription>
+            </maintenanceEvent>
+          <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateObjectsValues_db.xqy/BaseX</agent>
+        <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateOpinionRef_files.xqy/BaseX</agent>
+        <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateRefValues_files.xqy/BaseX</agent>
+        <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-04-21T20:45:33.927+02:00">2021-04-21T20:45:33.927+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateKeywordsModule_files.xqy/BaseX</agent>
+        <eventDescription>Mise à jour du module keywords.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-04-21T20:45:02.355+02:00">2021-04-21T20:45:02.355+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateExpertsFees_files.xqy/BaseX</agent>
+        <eventDescription>Mise à jour du coûts de l'expertise pour les experts.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-04-21T20:44:31.814+02:00">2021-04-21T20:44:31.814+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateExpertisesArrangement_files.xqy/BaseX</agent>
+        <eventDescription>Ajout du champs Accommodement dans l'éventualité d’une résolution par les parties.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+        <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>created</eventType>
+        <eventDateTime standardDateTime="2020-01-01T12:00:00">2020-01-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>llosserand</agent>
+        <eventDescription>Création de la fiche.</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+  </control>
+  <sourceDesc>
+    <unitdate>1766</unitdate>
+    <idno type="unitid">Z1J906</idno>
+    <idno type="item">48</idno>
+    <facsimile from="0466" to="0467"/>
+    <physDesc>
+      <extent sketch="false">2</extent>
+    </physDesc>
+  </sourceDesc>
+  <description>
+    <sessions>
+      <date when="1766-12-12" type="paris"/>
+    </sessions>
+    <places>
+      <place type="paris">
+        <address>
+          <street>rue pavée Saint-André des Arcs</street>
+          <buildingNumber/>
+        </address>
+        <complement>maison appellée l'hôtel St François</complement>
+        <parish/>
+        <owner/>
+      </place>
+    </places>
+    <categories>
+      <category type="assessment">Décrire et évaluer les travaux à venir</category>
+      <designation rubric="true">Visitte de réparations nécessaires  à faire en une fosse d'aisance, rue pavée St André des arts, à la requeste de la dame Daubonne ; MM. Desmaison et Taboureur, experts ; M. Gobert, greffier.</designation>
+    </categories>
+    <procedure>
+      <framework type="b2">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+      <origination type="institution">Une institution</origination>
+      <sentences>
+        <sentence>
+          <orgName>LC</orgName>
+          <date when="1766-11-15"/>
+        </sentence>
+      </sentences>
+      <case>réparations faites à la fosse d'aisance en copropriété</case>
+      <objects>
+        <object type="cesspool">Fosse(s) d'aisance</object>
+      </objects>
+    </procedure>
+    <participants>
+      <experts>
+        <expert ref="#xpr0092" context="primary" appointment="appointed">
+          <title>architecte expert</title>
+        </expert>
+        <expert ref="#xpr0250" context="primary" appointment="court-appointed">
+          <title>architecte expert</title>
+        </expert>
+      </experts>
+      <clerks>
+        <clerk ref="#clrk0064">
+          <persName>
+            <surname>Gobert</surname>
+            <forename>Jean Charles Simon</forename>
+          </persName>
+        </clerk>
+      </clerks>
+      <parties>
+        <party role="petitioner" presence="false" intervention="false">
+          <person>
+            <persName>
+              <surname>Lemaitre</surname>
+              <forename>Marie Magdelaine</forename>
+            </persName>
+            <occupation>épouse non commune en biens et autorisée par justice d'André Lefèvre comte Daubonne, légataire en usufruit de tous les biens de Marie Françoise Lemaitre de Guerville, Bellejame et autres lieux, sa soeur germaine, ledit dame propriétaire pour 1/2 en toute propriété et pour l'autre moitié en usufruit</occupation>
+          </person>
+          <status>owner</status>
+          <expert ref="#xpr0092"/>
+          <prosecutor>
+            <persName>
+              <surname>Dumaige</surname>
+              <forename>Pierre Jean François</forename>
+            </persName>
+          </prosecutor>
+        </party>
+        <party role="opponent" presence="false" intervention="false">
+          <person>
+            <persName>
+              <surname>Marquis de Bullion</surname>
+              <forename/>
+            </persName>
+            <occupation>officier aux gardes françoises, légataire pourlapropriété de ladite demoiselle Lemaire suivant ledit testament dotn l'exécution a été consentie par ledit dame Daubonne</occupation>
+          </person>
+          <status>joint-owner</status>
+          <expert ref="#xpr0250"/>
+        </party>
+      </parties>
+      <craftmen>
+        <craftman>
+          <persName>
+            <surname/>
+            <forename/>
+          </persName>
+          <occupation/>
+        </craftman>
+      </craftmen>
+    </participants>
+    <conclusions>
+      <agreement type="noConclusion">Sans conclusion</agreement>
+      <opinion ref="#xpr0092 #xpr0250">"Nous observons que nous n'avons pu procéder à la visite des  réparations à faire à ladite fosse ny leur estimation, attendu que l'ouverture n'en est pas faitte et qu'il y a encore des matières dedans, en conséquence nous avons remis à procéder à ladite visite prisée et estimation lorsque ladite fosse sera ouverte et totalement vuidée dont il nous sera donné avis par le locataire et le vuidangeur chargé de ladite vuidange et nous nous sommes retirés."
+sur le folio 1r° dans la marge : "Reçu trois livres comme affaire accommodée, pour une vacation le 9 may 1767. Mallerot"</opinion>
+      <arrangement/>
+      <estimate/>
+      <fees detail="true">
+        <fee ref="#xpr0092" type="expert" l="" s="" d=""/>
+        <fee ref="#xpr0250" type="expert" d="" l="" s=""/>
+        <fee type="clerk" l="3" s="" d=""/>
+        <fee type="rolls" l="" s="" d=""/>
+        <fee type="papers" l="" s="" d=""/>
+        <fee type="plans" l="" s="" d=""/>
+        <fee type="prosecutors" l="" s="" d=""/>
+        <fee type="help" l="" s="" d=""/>
+        <total l="" d="" s=""/>
+      </fees>
+      <expenses mentioned="false"/>
+    </conclusions>
+    <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+    <analysis>sur le folio 1r° dans la marge : "Reçu trois livres comme affaire accommodée, pour une vacation le 9 may 1767. Mallerot"</analysis>
+    <noteworthy>(par exploit de Nicolas Violet le duc, huissier)
+
+Testament de Marie Françoise Lemaitre de Guerville, Bellejame et autres lieux, 6 février 1763, déposé devant Lhéritier notaire par acte dudia du même mois</noteworthy>
+  </description>
+</expertise>

@@ -1,0 +1,217 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1010d025">
+  <meta/>
+  <control>
+    <maintenanceStatus>revised</maintenanceStatus>
+    <publicationStatus/>
+    <localControl localType="detailLevel">
+      <term>completed</term>
+    </localControl>
+    <maintenanceHistory>
+      <maintenanceEvent>
+                <eventType>revised</eventType>
+                <eventDateTime standardDateTime="2022-08-28T14:14:19Z">2022-08-28T14:14:19Z</eventDateTime>
+                <agentType>human</agentType>
+                <agent>llosserand</agent>
+                <eventDescription>rvpcd</eventDescription>
+            </maintenanceEvent>
+          <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateOpinionRef_files.xqy/BaseX</agent>
+        <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateRefValues_files.xqy/BaseX</agent>
+        <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+        <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>revised</eventType>
+        <eventDateTime standardDateTime="2020-09-01T12:00:00">2020-09-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>JH</agent>
+        <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>retroconverted</eventType>
+        <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>ead2xpr.xsl/Saxon9</agent>
+        <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>created</eventType>
+        <eventDateTime standardDateTime="2017-04-01T12:00:00">2017-04-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>llosserand</agent>
+        <eventDescription>Création de la fiche.</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+  </control>
+  <sourceDesc>
+    <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1010</idno>
+    <idno type="item">025</idno>
+    <facsimile from="0187" to="0190"/>
+    <physDesc>
+      <extent sketch="false">3</extent>
+    </physDesc>
+  </sourceDesc>
+  <description>
+    <sessions>
+      <date when="1776-12-14" type="suburbs"/>
+      <date when="1776-12-24" type="suburbs"/>
+    </sessions>
+    <places>
+      <place type="suburbs">
+        <address/>
+        <complement>rue Royale hors la barrière de la chaussée d’Antin</complement>
+        <city>Paris</city>
+        <district/>
+        <owner>Meunier</owner>
+      </place>
+    </places>
+    <categories>
+      <category type="acceptation">Recevoir et évaluer le travail réalisé</category>
+      <designation rubric="true">Estimation d’ouvrages de peinture et vitrerie</designation>
+    </categories>
+    <procedure>
+      <framework type="b2">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+      <origination type="institution">Une institution</origination>
+      <sentences>
+        <sentence>
+          <orgName>lieutenant civil</orgName>
+          <date when="1776-11-20"/>
+          <date when="1776-10-18"/>
+        </sentence>
+      </sentences>
+      <case>ouvrages terminés, la deuxième sentence a condamné l’opposant à payer au requérant la somme de 177 livres 11 sols pour les ouvrages de vitrerie en raison de l’opposition entre eux au sujet de qui a eu l’initiative des ouvrages (cf transcription). mais l’opposant requiert une estimation plutôt que de s’en tenir à cette somme donnée par l’ordonnance.</case>
+      <objects>
+        <object type="other">Ouvrages de peinture et vitrerie</object>
+      </objects>
+    </procedure>
+    <participants>
+      <experts>
+        <expert ref="#xpr0258" context="primary" appointment="appointed">
+          <title>architecte expert des bâtiments à Paris</title>
+        </expert>
+        <expert ref="#xpr0163" context="primary" appointment="appointed">
+          <title>architecte expert des bâtiments à Paris</title>
+        </expert>
+      </experts>
+      <clerks>
+        <clerk ref="#clrk0062">
+          <persName>
+            <surname>Picquenon</surname>
+            <forename>Denis Joseph François</forename>
+          </persName>
+        </clerk>
+      </clerks>
+      <parties>
+        <party role="petitioner" presence="true" intervention="true">
+          <person>
+            <persName>
+              <surname>Rioult</surname>
+              <forename/>
+            </persName>
+            <occupation>vitrier et peintre en bâtiment</occupation>
+          </person>
+          <status>builder</status>
+          <expert ref=""/>
+          <representative>
+            <persName>
+              <surname>Porcher</surname>
+              <forename/>
+            </persName>
+            <occupation>avocat</occupation>
+          </representative>
+        </party>
+        <party role="opponent" presence="true" intervention="true">
+          <person>
+            <persName>
+              <surname>Meunier</surname>
+              <forename/>
+            </persName>
+            <occupation>bourgeois de Paris</occupation>
+          </person>
+          <status>limited-partner</status>
+          <expert ref=""/>
+          <prosecutor>
+            <persName>
+              <surname>de Saint-Julien</surname>
+              <forename/>
+            </persName>
+          </prosecutor>
+          <representative>
+            <persName>
+              <surname>Hemery</surname>
+              <forename/>
+            </persName>
+            <occupation>avocat</occupation>
+          </representative>
+        </party>
+      </parties>
+      <craftmen>
+        <craftman>
+          <persName>
+            <surname>Prelot</surname>
+            <forename>Claude</forename>
+          </persName>
+          <occupation>entrepreneur de bâtiment à Paris</occupation>
+        </craftman>
+      </craftmen>
+    </participants>
+    <conclusions>
+      <opinion ref="#xpr0163 #xpr0258">L’ensemble des ouvrages de vitrerie et de peinture réalisés sont estimés à 160 livres 11 sols « observant qu’aux termes de la sentence nous avons rejetté desd. mémoires tous ceux que nous avons jugé non recevables »</opinion>
+      <arrangement/>
+      <agreement type="agreement">Accord</agreement>
+      <estimate l="160" s="11" d=""/>
+      <fees detail="true">
+        <fee type="papers" l="3" s="18" d=""/>
+        <fee type="expert" ref="#xpr0258" l="15" s="" d=""/>
+        <fee type="expert" ref="#xpr0163" l="15" s="" d=""/>
+        <fee type="clerk" l="15" s="" d=""/>
+        <fee type="rolls" l="9" s="" d=""/>
+        <fee type="prosecutors" l="5" s="" d=""/>
+        <fee type="help" l="" s="" d=""/>
+        <fee type="plans" l="" s="" d=""/>
+        <total l="62" s="18" d=""/>
+      </fees>
+      <expenses mentioned="true">
+        <expense type="clerk" l="12" s="5" d=""/>
+        <expense type="expert" l="10" s="" d=""/>
+      </expenses>
+    </conclusions>
+    <keywords group="estates"/>
+    <keywords group="procedure"/>
+    <keywords group="contract"/>
+    <keywords group="encumbrance"/>
+    <keywords group="law"/>
+    <keywords group="measurement"/>
+    <keywords group="repairs"/>
+    <keywords group="guarantees"/>
+    <keywords group="responsability"/>
+    <keywords group="ownership"/>
+    <keywords group="value"/>
+    <keywords group="neighbourhood"/>
+    <keywords group="disorder"/>
+    <keywords group="transformation"/>
+    <analysis>« en ce qui concerne les ouvrages de vitrerie, vous avez, monsieur, condamné led. sr Meunier à payer aud. Rioult la somme de 177 livres 11 sols montant desd. ouvrages avec les intérêts de lad. somme suivant l’ordonnance, si mieux n’aimoit led. sr Meunier payer suivant l’estimation, laquelle au dit cas seroit faite par nous Lefoulon et Vavasseur architectes experts nommés par les partyes, [lacune] que nous estimerions tant les ouvrages de peinture que ceux de vitrerie.
+                Vous avez donné lettres aud. sr Meunier de ses sommations et dénonciations au nommé Claude Prelot, et vous avez condamné led. Prelot à acquitter garantir et indemniser led. sr Meunier des condamnations entre luy prononcées quant à la vitrerie tant en principal que intérêts et frais. »
+                Le mémoire de vitrerie demande la somme de 180 lires et celui des ouvrages de peinture monte à la somme de 353 livres 11 sols
+                « [f. 2r°] [Claude Prelot] a dit que c’est luy qui a mis en œuvre led. sr Rioult tant pour les vitrages que pour la peinture extérieure des croisées et qu’il luy a offert en présence de témoins le payement desd. ouvrages dont il luy avoit présenté le mémoire suivant le toisé qui en a été fait par le sr Froissard, toiseur, en offrant aud. Rioult de le venir vérifier et que led. sr Rioult a toujours refusé ce dont led. sr Prelot demande acte pour servir en valoir ce que de raison.
+                Est aussy comparu le sr Meunier, bourgeois de Paris […] lequel nous a dit qu’il n’a jamais rien demandé aucun ouvrage de vitrerie aud. sr Rioult que ne luy a même présenté aucun mémoire à ce sujet et que s’étant offert de faire les peintures intérieures se disant peintre, led. sr Meunier l’avoit accepté à cet effet pour les peintures intérieures seulement qui seront constatées par le présent procès, et sur lequel rapport led. sr Meunier [f. 2v°] sa [?] de se pourvoir suivant les teneurs de droits et de la manière qu’il avisera […]
+                Et par led. sr Rioult, assisté comme dessus a été dit que tout a été jugé par les sentences intervenues entre les partyes qu’il en demande l’exécution pure et simple et fait touttes réserves et protestations contraires à celles desd. sr Meunier et Prelot. »</analysis>
+    <noteworthy/>
+  </description>
+</expertise>

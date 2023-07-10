@@ -1,0 +1,173 @@
+<eac xmlns="https://archivists.org/ns/eac/v2" xml:id="xpr0105">
+   <control maintenanceStatus="updated" publicationStatus="inProcess">
+      <recordId>xpr0105</recordId>
+      <maintenanceAgency>
+         <agencyName>projet Experts</agencyName>
+      </maintenanceAgency>
+      <maintenanceHistory>
+         <maintenanceEvent maintenanceEventType="revised">
+        <agent agentType="human">vnegre</agent>
+        <eventDateTime standardDateTime="2023-04-22T15:02:22Z"/>
+        <eventDescription/>
+      </maintenanceEvent>
+      <maintenanceEvent maintenanceEventType="updated" languageOfElement="eng">
+            <agent agentType="machine">EAC-CPF 1.x to EAC 2.0 Migration Style Sheet (eac1-to-eac2.xsl)</agent>
+            <eventDateTime standardDateTime="2022-09-19T16:52:56.301291+02:00"/>
+            <eventDescription>EAC-CPF 1.x (urn:isbn:1-931666-33-4) instance migrated to EAC 2.0 (https://archivists.org/ns/eac/v2)</eventDescription>
+         </maintenanceEvent>
+         <maintenanceEvent maintenanceEventType="updated">
+            <agent agentType="machine">updateRefValues_files.xqy/BaseX</agent>
+            <eventDateTime standardDateTime="2021-04-27T16:18:39.882+02:00">2021-04-27T16:18:39.882+02:00</eventDateTime>
+            <eventDescription>Mise à jour de la valeur des champs @xlink:ref (ajout d'un '#' pour les participants et les relations).</eventDescription>
+         </maintenanceEvent>
+         <maintenanceEvent maintenanceEventType="updated">
+            <agent agentType="machine">cleanNamePart_files.xqy/BaseX</agent>
+            <eventDateTime standardDateTime="2021-02-18T15:39:02.354+01:00">2021-02-18T15:39:02.354+01:00</eventDateTime>
+            <eventDescription>Suppression des composantes du nom vides.</eventDescription>
+         </maintenanceEvent>
+         <maintenanceEvent maintenanceEventType="updated">
+            <agent agentType="machine">updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDateTime standardDateTime="2021-02-17T11:59:50.182+01:00">2021-02-17T11:59:50.182+01:00</eventDateTime>
+            <eventDescription>Conversion des dates de révision des fiches prosopographiques au format xsd:dateTime.</eventDescription>
+         </maintenanceEvent>
+         <maintenanceEvent maintenanceEventType="updated">
+            <agent agentType="machine">xml2eac.xsl/Saxon9</agent>
+            <eventDateTime standardDateTime="2019-11-07T12:00:00+01:00">2019-11-07T12:00:00+01:00</eventDateTime>
+            <eventDescription>Notice rétroconvertie en EAC-CPF à partir de données Google Drive.</eventDescription>
+         </maintenanceEvent>
+         <maintenanceEvent maintenanceEventType="created">
+            <agent agentType="human">JH</agent>
+            <eventDateTime standardDateTime="2018-05-29T12:00:00+01:00">2018-05-29T12:00:00+01:00</eventDateTime>
+            <eventDescription>Fiches créée sur Google Drive.</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+    <sources>
+      <source id="source_b7w0gp0fi2s537n">
+        <reference href="">MC/ET/LIV/780 (IAD)</reference>
+      </source>
+    </sources>
+      
+      
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType value="person"/>
+         <nameEntry sourceReference="" preferredForm="true" status="authorized">
+            <part localType="full">Duval, Charles</part>
+            
+         </nameEntry>
+         <nameEntry sourceReference="" preferredForm="false" status="alternative">
+            <part localType="surname">Duval</part>
+            <part localType="forename">Charles</part>
+            
+            
+         </nameEntry>
+          <otherEntityTypes>
+            <otherEntityType>
+              <term>expert</term>
+            </otherEntityType>
+          </otherEntityTypes>
+         <identityId>xpr0105</identityId>
+      </identity>
+      <description>
+         <functions>
+            <function sourceReference="">
+               <term>Arpenteur</term>
+               <dateRange>
+                  <fromDate sourceReference="" certainty="" standardDate="1693"/>
+                  <toDate sourceReference="" certainty="" standardDate="1728"/>
+               </dateRange>
+               
+            </function>
+         </functions>
+         <localDescriptions>
+            <localDescription localType="sex">
+               <term/>
+            </localDescription>
+         </localDescriptions>
+         
+         
+         <existDates>
+            <dateRange>
+               <fromDate sourceReference="" certainty=""/>
+               <toDate sourceReference="#source_b7w0gp0fi2s537n" certainty="" standardDate="1730-05-04"/>
+            </dateRange>
+         </existDates>
+         <biogHist>
+            <chronList>
+               <chronItem id="eventid96200d194" localType="marriage">
+            <date certainty="" sourceReference=""/>
+                  
+                  <event>Mariage</event>
+                  
+                  
+                  
+                  
+               </chronItem>
+               <chronItem id="eventid96200d201" localType="master">
+                  <date sourceReference="" certainty="" standardDate="1680-12-31"/>
+                  <event>Maîtrise maç.</event>
+                  
+                  
+                  
+                  
+               </chronItem>
+               <chronItem id="eventid96200d212" localType="officePurchase">
+            <date certainty="" sourceReference=""/>
+                  
+                  <event>Acquisition d'un office</event>
+                  
+                  
+                  
+                  
+                  
+               </chronItem>
+               <chronItem id="eventid96200d222" localType="provision">
+                  <date sourceReference="" certainty="" standardDate="1693-04-09"/>
+                  <event>Lettre de provision</event>
+                  
+                  
+                  
+                  
+               </chronItem>
+               
+               <chronItem id="eventid96200d240" localType="relinquishment">
+            <date certainty="" sourceReference=""/>
+                  
+                  <event>résigne le 31/12/1680</event>
+                  
+                  
+                  
+                  
+               </chronItem>
+          <chronItem id="chronItem_2o6i0507811uyouj" sourceReference="#source_b7w0gp0fi2s537n" localType="death">
+            <date certainty="certain" standardDate="1730-05-04" sourceReference=""/>
+            <event>Décès de Charles Duval</event>
+            <place>
+              <placeName>Rue des Rosiers</placeName>
+            </place>
+          </chronItem>
+               
+            </chronList>
+         </biogHist>
+      </description>
+      
+   <relations>
+          <relation target="#eventid96200d212 #eventid96200d240" sourceReference=" ">
+            <targetEntity target="#xprOffice0055" targetType="corporateBody">
+              <part localType="full">Office 55</part>
+            <part localType="status"/>
+          <part localType="occupationType"/>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+          <relationType id="relationType_id128298d2583092" valueURI="" vocabularySource="" vocabularySourceURI="" sourceReference=""/>
+            <targetRole target="#relationType_id128298d2583092"/>
+          </relation>
+        </relations>
+      </cpfDescription>
+   
+   
+</eac>

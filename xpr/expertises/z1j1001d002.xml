@@ -1,0 +1,226 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1001d002">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2017-10-01T12:00:00">2017-10-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1001</idno>
+        <idno type="item">002</idno>
+        <facsimile from="1511" to="1518"/>
+        <physDesc>
+          <extent sketch="false">5</extent>
+          <appendices>
+            <appendice>
+              <type type="drawing">Dessin</type>
+              <extent>1</extent>
+              <desc>dessin en coupe de la maison</desc>
+              <note/>
+            </appendice>
+          </appendices>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-04-01" type="paris"/>
+          <date when="1776-04-13" type="paris"/>
+          <date when="1776-05-03" type="paris"/>
+          <date when="1776-05-03" type="paris"/>
+          <date when="1776-06-04" type="paris"/>
+          <date when="1776-06-04" type="paris"/>
+          <date when="1776-06-07" type="paris"/>
+        </sessions>
+        <places>
+          <place type="paris">
+            <address>
+              <street>ruelle de l’Egout, chaussée d’Antin</street>
+              <buildingNumber/>
+            </address>
+            <complement/>
+            <parish/>
+            <owner>mur mitoyen séparant une maison de construction nouvelle ruelle de l’Egout d’Antin, appartenant à Paras, maître charpentier à Paris, et celle joignant à gauche, appartenant à Huë, aubergiste.</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="settlement">Départager</category>
+          <designation rubric="true">Visite et estimation de constructions de murs mitoyens</designation>
+        </categories>
+        <procedure>
+          <framework type="b2a">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Châtelet (lieutenant civil - sentences du 5 décembre 1775 et du 24 février 1776, sommation du 29 mars 1776)</orgName>
+              <date when="1775-12-05"/>
+              <date when="1776-02-24"/>
+              <date when="1776-03-29"/>
+            </sentence>
+          </sentences>
+          <case>La sentence du lieutenant civil ordonne la prisée et estimation des ouvrages de maçonnerie réalisés pour les murs mitoyens [désaccord sur les contributions respectives de Paras, propriétaire, et Barnouille, entrepreneur, à la construction]. L’expert doit également établir les contributions respectives de Paras et de Huë, propriétaire de la maison voisine, dans la construction du mur mitoyen</case>
+          <objects>
+            <object type="wall">Mur(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0250" context="primary" appointment="appointed">
+              <title>architecte expert</title>
+            </expert>
+            <expert ref="#xpr0163" context="primary" appointment="appointed">
+              <title>architecte expert</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0058">
+              <persName>
+                <surname>Foucart</surname>
+                <forename>Paul Joseph</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="true" intervention="true">
+              <person>
+                <persName>
+                  <surname>Chabrol</surname>
+                  <forename>Martial</forename>
+                </persName>
+                <occupation>dit Barnouille, maître maçon entrepreneur de bâtiments à Paris</occupation>
+              </person>
+              <status>builder</status>
+              <expert ref="#xpr0250"/>
+            </party>
+            <party role="opponent" presence="true" intervention="true">
+              <person>
+                <persName>
+                  <surname>Paras</surname>
+                  <forename/>
+                </persName>
+                <occupation/>
+              </person>
+              <status>owner</status>
+              <expert ref="#xpr0163"/>
+            </party>
+            <party role="opponent" presence="true" intervention="true">
+              <person>
+                <persName>
+                  <surname>Hue</surname>
+                  <forename/>
+                </persName>
+                <occupation>aubergiste</occupation>
+              </person>
+              <status>owner</status>
+              <expert ref="#xpr0163"/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname>Chabrol</surname>
+                <forename>Martial</forename>
+              </persName>
+              <occupation>dit Barnouille, maître maçon entrepreneur de bâtiments à Paris</occupation>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="">1°
+« Tous les ouvrages faits pour la construction dudit mur mitoyen par le sieur Chabrol dit Barnouille pour le compte dudit sieur Paras reviennent ensemble… 1067 l. 14 s. 7 d. »
+« Sur laquelle somme il faut deduire la valeur de deux toises et demy cube de moilon donnée à l’entrepreneur suivant les dires et consentemens desdits sieurs Chabrol et Paras à raison de quarante huit livres la toise… 120 l. »
+Reste pour Chabrol… 947 l. 14 s. 7 d.
+2°
+« Totalité de ce que ledit sieur Hue doit rembourser audit sieur Paras pour raison de la mitoyenneté dudit mur monte et revient à… 559 l. 16 s. 9 d. »</opinion>
+          <arrangement/>
+          <agreement type="agreement">Accord</agreement>
+          <estimate l="" s="" d=""/>
+          <fees detail="true">
+            <fee type="papers" l="6" s="" d=""/>
+            <fee type="expert" ref="#xpr0250" l="42" s="" d=""/>
+            <fee type="expert" ref="#xpr0163" l="42" s="" d=""/>
+            <fee type="clerk" l="42" s="" d=""/>
+            <fee type="rolls" l="20" s="" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="18" s="" d=""/>
+            <total l="170" s="" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="36" s="10" d=""/>
+            <expense type="expert" l="28" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis>Paras conteste devoir à Barnouille l’ensemble des ouvrages du mur mitoyen, dont partie a été construite par lui-même.
+                Barnouille déclare avoir fait faire le mur mitoyen en toute son étendue, tant en fondation qu’en élévation, avec jambe étrière sur la ruelle de l’Egout.
+                Paras empêche la visite, faisant observer que la tête du mur mitoyen à la jonction de celui de face sur la cour a été construite par lui, et « que le mur mitoyen ne doit être compté audit Barnoulle que dans œuvre du mur de face sur la cour ».</analysis>
+        <noteworthy/>
+      </description>
+    </expertise>

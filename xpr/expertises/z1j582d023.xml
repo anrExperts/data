@@ -1,0 +1,212 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j582d023">
+  <meta/>
+  <control>
+    <maintenanceStatus>revised</maintenanceStatus>
+    <publicationStatus/>
+    <localControl localType="detailLevel">
+      <term>completed</term>
+    </localControl>
+    <maintenanceHistory>
+      <maintenanceEvent>
+                <eventType>revised</eventType>
+                <eventDateTime standardDateTime="2022-03-31T14:43:50Z">2022-03-31T14:43:50Z</eventDateTime>
+                <agentType>human</agentType>
+                <agent>llosserand</agent>
+                <eventDescription>rvpcd</eventDescription>
+            </maintenanceEvent>
+          <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateObjectsValues_db.xqy/BaseX</agent>
+        <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateRefValues_files.xqy/BaseX</agent>
+        <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+        <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>revised</eventType>
+        <eventDateTime standardDateTime="2020-11-01T12:00:00">2020-11-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>JH</agent>
+        <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>retroconverted</eventType>
+        <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>ead2xpr.xsl/Saxon9</agent>
+        <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>created</eventType>
+        <eventDateTime standardDateTime="2017-04-01T12:00:00">2017-04-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>llosserand</agent>
+        <eventDescription>Création de la fiche.</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+  </control>
+  <sourceDesc>
+    <unitdate>1726</unitdate>
+    <idno type="unitid">Z1J582</idno>
+    <idno type="item">023</idno>
+    <facsimile from="0275" to="0283"/>
+    <physDesc>
+      <extent sketch="false">8</extent>
+    </physDesc>
+  </sourceDesc>
+  <description>
+    <sessions>
+      <date when="1726-07-27" type="paris"/>
+      <date when="1726-08-17" type="paris"/>
+      <date when="1726-08-27" type="paris"/>
+    </sessions>
+    <places>
+      <place type="paris">
+        <address>
+          <street>Rue Copeau [Cette dénomination correspond à 2 voies : Actuelle rue Lacépède. Voie ancienne : voir rue Coipeaux], faubourg Saint-Marcel</street>
+          <buildingNumber/>
+        </address>
+        <complement>une maison rue Copeau, appartenant à damoiselle Bornat, Anne, veuve du sieur de Veugny, Claude, professeur en l'université de Paris et à Mr de Veugny, Jean, avocat en Parlement, leur fils.</complement>
+        <parish/>
+        <owner>Bornat</owner>
+      </place>
+    </places>
+    <categories>
+      <category type="acceptation">Recevoir et évaluer le travail réalisé</category>
+      <designation rubric="true">Acte de comparution du sieur Jacques Charles Le Brun, à la requeste du Sieur Jean Richard, maître maçon à Paris, en une maison, scize rue Copeau ; M. Le brun, expert.</designation>
+    </categories>
+    <procedure>
+      <framework type="b2">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+      <origination type="institution">Une institution</origination>
+      <sentences>
+        <sentence>
+          <orgName>lieutenant civil</orgName>
+          <date when="1726-07-17"/>
+        </sentence>
+      </sentences>
+      <case>toiser les ouvrages faits par Richard en la maison « pour parvenir à en faire la prisée conformément à lad. sentence » (f. 2v°)</case>
+      <objects>
+        <object type="house">Maison(s)</object>
+      </objects>
+    </procedure>
+    <participants>
+      <experts>
+        <expert ref="#xpr0158" context="primary" appointment="appointed">
+          <title>architecte juré expert bourgeois de Paris</title>
+        </expert>
+        <expert ref="#xpr0183" context="primary" appointment="appointed">
+          <title>juré expert à Paris</title>
+        </expert>
+      </experts>
+      <clerks>
+        <clerk ref="#clrk0029">
+          <persName>
+            <surname>Quirot</surname>
+            <forename>Jacques</forename>
+          </persName>
+        </clerk>
+      </clerks>
+      <parties>
+        <party role="petitioner" presence="true" intervention="true">
+          <person>
+            <persName>
+              <surname>Richard</surname>
+              <forename>Jean</forename>
+            </persName>
+            <occupation>entrepreneur de bâtiment et maître maçon à Paris.</occupation>
+          </person>
+          <status>builder</status>
+          <expert ref="#xpr0158"/>
+        </party>
+        <party role="opponent" presence="true" intervention="true">
+          <person>
+            <persName>
+              <surname>Bornat</surname>
+              <forename>Anne</forename>
+            </persName>
+            <occupation>veuve du sieur de Veugny, Claude, professeur en l'université de Paris, tutrice de Mr de Veugny, Jean, avocat en Parlement, leur fils.</occupation>
+          </person>
+          <status>limited-partner</status>
+          <expert ref="#xpr0183"/>
+        </party>
+      </parties>
+      <craftmen>
+        <craftman>
+          <persName>
+            <surname/>
+            <forename/>
+          </persName>
+          <occupation/>
+        </craftman>
+      </craftmen>
+    </participants>
+    <conclusions>
+      <opinion ref="#xpr0158">scavoir, moy Lebrun, j'estime les 4 toises 11 pieds ¾ de mur mitoyen en fondation et de mur aussy en fondation sous la jambe estière ou boutisse du fort au faible à raison de 36 livres la thoise y en ayant de l'espèce première déclarés 3 livres 16 pieds ¼ de 23 pouces ½ d'espaisseur. [etc.]
+[f. 6v°] Sur les fractions que nous avons observé au mur de face de lad. maison [f. 7r°], lors du thoisé desd. ouvrages, l'advis de moy Lebrun est qu'elles sont étrangères aux ouvrages faits dont est question, le mur mitoyen et celluy de face en lesquels ont esté refaites estans de très bonne construction suivant l'art de maçonnerie et sans aucunes [illisible] les fractions aud. mur de face estant d'ailleurs survenues [illisible] après que les estayes chevallement et [illisible] ont esté retirés par le charpentier et ce qui y a donné lieu, ne procédant point du fait de l'entrepreneur de maçonnerie mais bien des propriétaires de lad. maison et de celle voisine qui n'ont voulu consentir comme dit [comme dit ?] sur l'expliquast, led. entrepreneur sur les lieux qu'il ayt monté la nouvelle construction en six pieds ou environ plus haute qu'il n'a fait ou led. mur est ancien et construit de mauvaise pierrailles maçonné en terre [commedit ?] ce qui a esté reconstruit pour atteindre comme il a esté fait le hault dud. mur au dessus reconstruit il n'y a pas longtemps avec bon moislon et bien maçonnez que sy le tout eust esté fait ainsy que lad. [illisible] led. entrepreneur, lesd. six pied, et haulteur de mauvais mur reste néanmoins pas laché soubs le poids de ce qui est au dessus et ce qui est resté du nouveau ayant roidy le tout à cause cesd. fractions aud. mur de face, lesquelles doivent estre restablyes selon moy [ illisible] aux despens de lad. dame veuve Veuguy esd. noms lesd. sr son fils l'advocat sy ils advisent que bien soit.
+Tout ce que dessus est l'advis de moy Lebrun faict à vous monsieur d'en juger et en donner selon vostre justice et prudence accoutumée. Lebrun</opinion>
+      <opinion ref="#xpr0183">Et moy Loir ay trouvé du mur mitoyen en fondation de vingt trois pouces et demy d'espaisseur de moislons picquer trois toizes seize pieds un quart que je prise et estime à raison de vingt six livres la toize, vallent ensemble la somme de quatre vingt dix livres un sol dix deniers cy 90 livres 1 sol 10 deniers. [f. 7v°][etc.] [f. 8r°]
+Somme totalle à quoy montent et reviennent lesd. ouvrages de maçonnerie faits par led. sr Richard pour lad. dame veuve Veugny esd. noms et lesd. sr son fils l'avocat en lad. maison et contenus au présent rapport suivant l'avis de moy, Loir, quatre cent trente neuf livres quatorze sols six deniers cy 439 livres 14 sols 6 deniers.
+A l'esgard des rapports et allignemens de messieurs les trésoriers de France et autres ne scachant à quoy ils montent moy, Loir, nay point compris la moitié de la somme à [f. 8v°] quoy les montent et dont lad. dame de Veugny esd. noms et Mr son fils l'avocat son tenus et qu'ils doivent payer en leur représentant les quittances.
+A l'égard des fractions que nous avons observé au mur de face de lad. maison, mon avis est aussy que led. sr Richard les doit faire réparer à ses frais et dépens, attendu qu'elles sont provenues de son fait et pour avoir fait construire le mur en fondation sous la jambe estrière avecq plastre qui est sujet à tasser au lieu qu'il le devoit faire faire avecq mortier de chaux et sable qui ne cause point ordinairement de tassement.
+Tel est l'avis de moy Loir sauf à vous, monsieur, de juger et ordonner sur le tout suivant vostre justice et prudence ordinaire. JB Loir. ».</opinion>
+      <arrangement/>
+      <agreement type="disagreement">Désaccord</agreement>
+      <estimate l="" s="" d=""/>
+      <fees detail="true">
+        <fee type="papers" l="" s="" d=""/>
+        <fee type="expert" ref="#xpr0158" l="12" s="" d=""/>
+        <fee type="expert" ref="#xpr0183" l="12" s="" d=""/>
+        <fee type="clerk" l="12" s="" d=""/>
+        <fee type="rolls" l="" s="" d=""/>
+        <fee type="prosecutors" l="" s="" d=""/>
+        <fee type="help" l="" s="" d=""/>
+        <fee type="plans" l="" s="" d=""/>
+        <total l="" s="" d=""/>
+      </fees>
+      <expenses mentioned="true">
+        <expense type="clerk" l="5" s="12" d="6"/>
+        <expense type="expert" l="" s="" d=""/>
+      </expenses>
+    </conclusions>
+    <keywords group="estates"/>
+    <keywords group="procedure"/>
+    <keywords group="contract"/>
+    <keywords group="encumbrance"/>
+    <keywords group="law"/>
+    <keywords group="measurement"/>
+    <keywords group="repairs"/>
+    <keywords group="guarantees"/>
+    <keywords group="responsability"/>
+    <keywords group="ownership"/>
+    <keywords group="value"/>
+    <keywords group="neighbourhood"/>
+    <keywords group="disorder"/>
+    <keywords group="transformation"/>
+    <analysis>L'expertise a été reportée lors de la première vacation en raison de l'absence de Jean-Baptiste Loir, expert de la partie opposante, celui-ci « faute d'avoir été averti comme il est d'usage de la faire avant que de donner les assignations, estant engagé dans une autre affaire », n'a pas pu s'y rendre. Le déplacement de l'autre expert, Lebrun, n'est pas payé.
+                Au f° 4v°, les experts doivent aussi toiser la charpenterie (selon la sentence), mais l'entrepreneur Richard dit que cela ne le concerne pas.
+                Conclusion
+                Les experts, pour éviter de revenir sur les lieux, procèdent aux calculs dans leur bureau, contrairement à l'usage : « [f. 5r°] Après quoy lad. dame veuve Veugny et led. sieur son fils advocat, de mesme queled. Sieur Richard, nous ont requis pour évitter à nouveau transport sur els lieux de faire les calculs, prisées et estimations desd. ouvrages de maçonnerie en notre bureau, dérogeant à cet égard à l'ordonnance et ont signez : Anne Bornat, Veugny, Richard. Et d'autant qu'il est une heure, sonnées, nous avons remis à mardy vingt sept du présent moi, deux heures de rellevée pour faire lesd. calculs et estimations et nous sommes retirez. [….] Et led. jour mardy vingt septiesme dud. mois d'aoust mil sept cent vingt six sur les deux heures de rellevées, nous experts susd., au lieu de nous transporter en lad. maison pour y continuer nostre rapport conformément à l'ordonnance, les partyes y ayant bien voulu déroger par le consentement mutuel cy dessus, sommes assemblez avec led. greffier en nostre bureau scis rue des Arcis, et y avons fait les calculs et supputations des articles du thoisé par nous fait desd. ouvrages de maçonnerie que nous avons tirez, homologué comme il seroit cy dessus [f. 5v°]. Et ayant achevé lesd. calculs nous avons conféré sur le prix et la valleur desd. ouvrages ensemble, sur les prix de [boustz ?] qui ont esté faits par led. entre procureur pour lad. dame veuve Desgouges, esd. noms et led. sr son fils l'advocat et nous estans trouvez de sentiment unanime non plus que sur les 6 somations par nous faittes au mur de face de lad. maison sur [mots illisibles] pour satisfaire à la sentence rendue entre les partyes de l'exécution de laquelle il s'agist, nous avons donné nos advis chacun séparément,
+                scavoir, moy Lebrun, j'estime les 4 toises 11 pieds ¾ de mur mitoyen en fondation et de mur aussy en fondation sous la jambe estière ou boutisse du fort au faible à raison de 36 livres la thoise y en ayant de l'espèce première déclarés 3 livres 16 pieds ¼ de 23 pouces ½ d'espaisseur. [etc.]
+                [f. 6v°] Sur les fractions que nous avons observé au mur de face de lad. maison [f. 7r°], lors du thoisé desd. ouvrages, l'advis de moy Lebrun est qu'elles sont étrangères aux ouvrages faits dont est question, le mur mitoyen et celluy de face en lesquels ont esté refaites estans de très bonne construction suivant l'art de maçonnerie et sans aucunes [illisible] les fractions aud. mur de face estant d'ailleurs survenues [illisible] après que les estayes chevallement et [illisible] ont esté retirés par le charpentier et ce qui y a donné lieu, ne procédant point du fait de l'entrepreneur de maçonnerie mais bien des propriétaires de lad. maison et de celle voisine qui n'ont voulu consentir comme dit [comme dit ?] sur l'expliquast, led. entrepreneur sur les lieux qu'il ayt monté la nouvelle construction en six pieds ou environ plus haute qu'il n'a fait ou led. mur est ancien et construit de mauvaise pierrailles maçonné en terre [commedit ?] ce qui a esté reconstruit pour atteindre comme il a esté fait le hault dud. mur au dessus reconstruit il n'y a pas longtemps avec bon moislon et bien maçonnez que sy le tout eust esté fait ainsy que lad. [illisible] led. entrepreneur, lesd. six pied, et haulteur de mauvais mur reste néanmoins pas laché soubs le poids de ce qui est au dessus et ce qui est resté du nouveau ayant roidy le tout à cause cesd. fractions aud. mur de face, lesquelles doivent estre restablyes selon moy [ illisible] aux despens de lad. dame veuve Veuguy esd. noms lesd. sr son fils l'advocat sy ils advisent que bien soit.
+                Tout ce que dessus est l'advis de moy Lebrun faict à vous monsieur d'en juger et en donner selon vostre justice et prudence accoutumée. Lebrun
+                Et moy Loir ay trouvé du mur mitoyen en fondation de vingt trois pouces et demy d'espaisseur de moislons picquer trois toizes seize pieds un quart que je prise et estime à raison de vingt six livres la toize, vallent ensemble la somme de quatre vingt dix livres un sol dix deniers cy 90 livres 1 sol 10 deniers. [f. 7v°][etc.] [f. 8r°]
+                Somme totalle à quoy montent et reviennent lesd. ouvrages de maçonnerie faits par led. sr Richard pour lad. dame veuve Veugny esd. noms et lesd. sr son fils l'avocat en lad. maison et contenus au présent rapport suivant l'avis de moy, Loir, quatre cent trente neuf livres quatorze sols six deniers cy 439 livres 14 sols 6 deniers.
+                A l'esgard des rapports et allignemens de messieurs les trésoriers de France et autres ne scachant à quoy ils montent moy, Loir, nay point compris la moitié de la somme à [f. 8v°] quoy les montent et dont lad. dame de Veugny esd. noms et Mr son fils l'avocat son tenus et qu'ils doivent payer en leur représentant les quittances.
+                A l'égard des fractions que nous avons observé au mur de face de lad. maison, mon avis est aussy que led. sr Richard les doit faire réparer à ses frais et dépens, attendu qu'elles sont provenues de son fait et pour avoir fait construire le mur en fondation sous la jambe estrière avecq plastre qui est sujet à tasser au lieu qu'il le devoit faire faire avecq mortier de chaux et sable qui ne cause point ordinairement de tassement.
+                Tel est l'avis de moy Loir sauf à vous, monsieur, de juger et ordonner sur le tout suivant vostre justice et prudence ordinaire. JB Loir. ».</analysis>
+    <noteworthy/>
+  </description>
+</expertise>

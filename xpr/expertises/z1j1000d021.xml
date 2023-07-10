@@ -1,0 +1,234 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1000d021">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-09-01T12:00:00">2020-09-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2018-01-01T12:00:00">2018-01-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>PC</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1000</idno>
+        <idno type="item">021</idno>
+        <facsimile from="0169" to="0175"/>
+        <physDesc>
+          <extent sketch="false">4</extent>
+          <appendices>
+            <appendice>
+              <type type="drawing">Dessin</type>
+              <extent>1</extent>
+              <desc>Profil du pignon de la maison du Sieur Le Lièvre contre lequel le Sieur Huet a adossé son bâtiment rue de Rochechouart.</desc>
+              <note/>
+            </appendice>
+          </appendices>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-03-08" type="suburbs"/>
+          <date when="1776-03-16" type="suburbs"/>
+        </sessions>
+        <places>
+          <place type="suburbs">
+            <address/>
+            <complement>Rue de Rochechouart à la Nouvelle France sur l’ancienne Voyerie</complement>
+            <city>Paris</city>
+            <district/>
+            <owner>Huet / Le Lièvre</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="settlement">Départager</category>
+          <designation rubric="true">Estimation de mur mitoyen</designation>
+        </categories>
+        <procedure>
+          <framework type="b2a">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Lieutenant civi</orgName>
+              <date when="1776-02-27"/>
+            </sentence>
+          </sentences>
+          <case>Visite, prisée et estimation d’un mur mitoyen et pignon sur lesquels Huet, propriétaire d’un terrain voisin de celui de Le Lièvre, a fait adosser un bâtiment qui excède de 12 pieds la hauteur de la maison de Le Lièvre. Ce dernier demande réparation.</case>
+          <objects>
+            <object type="wall">Mur(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0210" context="primary" appointment="appointed">
+              <title>architecte juré expert des bâtiments de Paris</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0062">
+              <persName>
+                <surname>Picquenon</surname>
+                <forename>Denis François Joseph</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="true" intervention="false">
+              <person>
+                <persName>
+                  <surname>Hasseu Flatry</surname>
+                  <forename>Jean</forename>
+                </persName>
+                <occupation>dit Le Lièvre, marchand de vin à la Nouvelle France</occupation>
+              </person>
+              <status>owner</status>
+              <expert ref="#xpr0210"/>
+              <representative>
+                <persName>
+                  <surname>De la Pommeraye</surname>
+                  <forename>Louis Henri</forename>
+                </persName>
+                <occupation/>
+              </representative>
+            </party>
+            <party role="opponent" presence="true" intervention="false">
+              <person>
+                <persName>
+                  <surname>Huet</surname>
+                  <forename/>
+                </persName>
+                <occupation>maître menuisier</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Maprisse</surname>
+                  <forename/>
+                </persName>
+                <occupation>épouse d'Huet</occupation>
+              </person>
+              <status>owner</status>
+              <expert ref="#xpr0210"/>
+              <prosecutor>
+                <persName>
+                  <surname>Oudin</surname>
+                  <forename/>
+                </persName>
+              </prosecutor>
+            </party>
+            <party role="opponent" presence="" intervention="">
+              <person>
+                <persName>
+                  <surname>Dame Maprisse</surname>
+                  <forename/>
+                </persName>
+                <occupation/>
+              </person>
+              <status/>
+              <expert ref="#xpr0210"/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0210">« Du mur mitoyen le Sieur Huet doit rembourser la moitié au Sieur Le Lièvre, ladite moitié de la partie sous comble que nous estimons à raison de 14 livres la toise soit 85 l. 3 s. 4 d. La partye quarrée au dessous marquée B sur le profil contient 53 pieds de long, d’une épaisseur et construction que dessus produit en superficie 51 toise dont le Sieur Huet doit rembourser moitié au dit Sieur Le Lièvre, ladite moitié de 25 toises et ½ pied que nous estimons au prix de 14 livres la toises soit la somme de 357 l. 11 s. 8 d.
+Le mur en fondation en dessous qui contient 53 pieds de long sur 15 pieds de haut, réduits suivant l’accord des partyes, produit la superficie de 22 toises et ½ pied dont le Sieur Huet doit rembourser la moitié de 11 toises, 14 pieds que nous estimons au prix de deux cent vingt huit livres trois sols dix deniers, soit 228 l. 3 s. 10 d., total de six cent soixante et dix livres dix huit sols dix deniers, 670 l. 18 s. 10 d. ce que doit ledit Sieur Huet au Sieur Le Lièvre suivant nos estimations sur ledit mur.Sur cette somme il convient de déduire les charges dues par le Sieur Le Lièvre pour la surélévation du mur pignon de sa maison au dessus de l’héberge du Sieur Huet, lesdites surélévations de 30 toises et 12 pieds produisant 5 toises 2 pieds que nous estimons au prix de 14 livres la toise, la somme de 70 livres. Laquelle somme étant déduite des six cent soixante et dix livres dix huit sols dix deniers, 670 l. 18 s. 10 d. Total dû par le Sieur Huet au Sieur Le Lièvre la somme de six cent livres, dix huit sols, dix deniers. 600 l. 18 s. 10 d. Telle est la visite par nous faite et notre avis sur ce que doit rembourser déduction faite des charges le Sieur Huet au Sieur Le Lièvre. »</opinion>
+          <arrangement/>
+          <agreement type="conclusion">Conclusion</agreement>
+          <estimate l="" s="" d=""/>
+          <fees detail="true">
+            <fee type="papers" l="4" s="4" d=""/>
+            <fee type="expert" ref="#xpr0210" l="15" s="" d=""/>
+            <fee type="clerk" l="15" s="" d=""/>
+            <fee type="rolls" l="10" s="" d=""/>
+            <fee type="prosecutors" l="6" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="12" s="4" d=""/>
+            <total l="67" s="4" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="expert" l="5" s="" d=""/>
+            <expense type="clerk" l="12" s="10" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis/>
+        <noteworthy/>
+      </description>
+    </expertise>

@@ -1,0 +1,177 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j433d028">
+      <meta/>
+      <control>
+        <maintenanceStatus/>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term/>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:45:33.927+02:00">2021-04-21T20:45:33.927+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateKeywordsModule_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour du module keywords.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:44:31.814+02:00">2021-04-21T20:44:31.814+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateExpertisesArrangement_files.xqy/BaseX</agent>
+            <eventDescription>Ajout du champs Accommodement dans l'éventualité d’une résolution par les parties.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2019-03-01T12:00:00">2019-03-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1696</unitdate>
+    <idno type="unitid">Z1J433</idno>
+        <idno type="item">028</idno>
+        <facsimile from="0166" to="0168"/>
+        <physDesc>
+          <extent sketch="false">3</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1696-04-21" type="paris"/>
+        </sessions>
+        <places>
+          <place type="paris">
+            <address>
+              <street>rue Neuve-Saint-Martin</street>
+              <buildingNumber/>
+            </address>
+            <complement/>
+            <parish/>
+            <owner>veuve Cousin</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="settlement">Départager</category>
+          <designation rubric="">Visite de mur mitoyen, rue St Martin, entre la dame Cousin et le sieur Blaiseau, propriétaire de la maison voisine ; François Pageois et Charles Joubert, experts.</designation>
+        </categories>
+        <procedure>
+          <framework type="b2a">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Châtelet</orgName>
+              <date when="1696-04-18"/>
+            </sentence>
+          </sentences>
+          <case>La propriétaire veuve Cousin a été condamnée à rétablir à neuf le mur mitoyen par requête verbal signifiée le 17 avril dernier par Le Doyen. Il y a déjà eu une première expertise le 23 octobre 1686.</case>
+          <objects>
+            <object type="wall">Mur(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0146" context="primary" appointment="appointed">
+              <title>aussi expert juré en titre d'office</title>
+            </expert>
+            <expert ref="#xpr0204" context="primary" appointment="unknown">
+              <title>architecte expert juré bourgeois à Paris</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#xpr0158">
+              <persName>
+                <surname>Le Brun</surname>
+                <forename>Jacques Charles</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="opponent" presence="true" intervention="">
+              <person>
+                <persName>
+                  <surname>Duhamel</surname>
+                  <forename>Jeanne</forename>
+                </persName>
+                <occupation>veuve de Nicolas Cousin, maître brasseur de bierre</occupation>
+              </person>
+              <status>owner</status>
+              <expert ref="#xpr0146"/>
+            </party>
+            <party role="petitioner" presence="true" intervention="">
+              <person>
+                <persName>
+                  <surname>Polet</surname>
+                  <forename>Jacqueline</forename>
+                </persName>
+                <occupation>veuve de François Blaiseau</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Fortin</surname>
+                  <forename>Philippe</forename>
+                </persName>
+                <occupation>maître salpétrier et principal locataire</occupation>
+              </person>
+              <status>owner</status>
+              <expert ref="#xpr0204"/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <agreement type="noConclusion">Sans conclusion</agreement>
+          <opinion ref="">"A l'esgard du payet qui est dans ladite cour nous l'avons trouvé sans aucun poteaux pour retenir la poulye et nous estre dit par ledit Fortin que lesdits poteaux ont esté emportés en présence de ladite veuve Cousin par le sieur son fils et la poulye nous a esté représenté à l'instant par ledit Fortin qui a esté ferré et enfermé dans la salle dont ladite dame Cousin a la clef et à l'instant au nexxx de Payet ledit Fortin a promis le faire incessamment quoy qu'il aue xxx ne luy avoir esté donné xx lors qu'il est entré en ladite maison.
+[espace vide]
+Je n'ay rien reçu à mon esgard ce fut chacun des partyes qui payèrent les experts sur le chxxx emxprovenant de me payer xxx xxx quand je leur en ay demandé le payement ils m'ont donné un rapport que xxxx pu leur donner allxxx qu'il n'a jamais esté achevé xxx xxx de la chose.</opinion>
+          <arrangement/>
+          <estimate/>
+          <fees detail="false">
+            <total l="" d="" s=""/>
+          </fees>
+          <expenses mentioned="false"/>
+        </conclusions>
+        <keywords group=""/>
+        <analysis>l'expertise est demandée après un premier rapport de 1686 et l'exécutions des réparations faites, d'après le bail signé le 31 décembre 1686 (9 ans).</analysis>
+        <noteworthy>l'expertise est inachevée.</noteworthy>
+      </description>
+    </expertise>

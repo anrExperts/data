@@ -1,0 +1,190 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j433d018">
+      <meta/>
+      <control>
+        <maintenanceStatus/>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term/>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:39:45.99+02:00">2021-05-19T11:39:45.99+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateAgreementType_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur "Dispositif de l’expertise" lorsqu'il n'y a qu’un seul expert ('agreement' devient 'conclusion').</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:45:33.927+02:00">2021-04-21T20:45:33.927+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateKeywordsModule_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour du module keywords.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:44:31.814+02:00">2021-04-21T20:44:31.814+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateExpertisesArrangement_files.xqy/BaseX</agent>
+            <eventDescription>Ajout du champs Accommodement dans l'éventualité d’une résolution par les parties.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2019-03-01T12:00:00">2019-03-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1696</unitdate>
+    <idno type="unitid">Z1J433</idno>
+        <idno type="item">18</idno>
+        <facsimile from="0115" to="0123"/>
+        <physDesc>
+          <extent sketch="">10</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1696-04-12" type="paris"/>
+          <date when="1696-04-12" type="paris"/>
+          <date when="1696-04-14" type="paris"/>
+          <date when="1696-04-14" type="paris"/>
+        </sessions>
+        <places>
+          <place type="paris">
+            <address>
+              <street>rue Montagne Sainte-Geneviève / rue des Amandiers</street>
+              <buildingNumber/>
+            </address>
+            <complement/>
+            <parish/>
+            <owner>de Courtenay, Marie Louise, veuve de de le Coignet, Charles  et le collège des Ecossais</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="assessment">Décrire et évaluer les travaux à venir</category>
+          <category type="settlement">Départager</category>
+          <designation rubric="">Visite de mur mitoyen à réparer et aligner entre des maisons, rue des amandiers, de réparations à faire en une maison, rue Montagne Ste Geneviève, à la requeste de dame Marie Louise de Courtenay, veuve de Messire Charles Le Coigneux, chevalier seigneur de Bezonville et autres lieux, conseiller du roi au Châtelet ; Michel de Mezeretz et Jean Dubois, experts.</designation>
+        </categories>
+        <procedure>
+          <framework type="b2b">L’institution est saisie dans le cadre d’une procédure (l’institution nomme un ou deux experts)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>LC</orgName>
+              <date when="1696-04-11"/>
+            </sentence>
+          </sentences>
+          <case>mur mitoyen en ruine</case>
+          <objects>
+            <object type="wall">Mur(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0077" context="primary" appointment="court-appointed">
+              <title>architecte juré expert bourgeois</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0008">
+              <persName>
+                <surname>Villain</surname>
+                <forename>Pierre</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="true" intervention="">
+              <person>
+                <persName>
+                  <surname>de Courtenay</surname>
+                  <forename>Marie Louise</forename>
+                </persName>
+                <occupation>veuve de de le Coignet, Charles, chevalier seigneur de Bezonaille, tutrice de ses enfants mineurs dudit défunt propriétaire audit nom</occupation>
+              </person>
+              <status>owner</status>
+              <expert ref="#xpr0077"/>
+              <prosecutor>
+                <persName>
+                  <surname>deu Bois</surname>
+                  <forename>Claude</forename>
+                </persName>
+              </prosecutor>
+            </party>
+            <party role="opponent" presence="true" intervention="true">
+              <person>
+                <persName>
+                  <surname>Whytford</surname>
+                  <forename>Charles</forename>
+                </persName>
+                <occupation>principal procureur du colle[ge] des Ecossais (fossé St Victor et St Marcel</occupation>
+              </person>
+              <status>owner</status>
+              <expert ref="#xpr0077"/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <agreement type="conclusion">Conclusion</agreement>
+          <opinion ref="#xpr0077">répartition des frais à égalité entre les parties (qui ont demandé d'un commun accord). Le procureur du collège signale des améliorations possibles qui sont prises en compte par l'expert. Voir transcription. Puis l'expert évalue les réparations à faire à la maison de la veuve (demandé dans la foulée de la première demande pour éviter les frais) (sans prix)</opinion>
+          <arrangement/>
+          <estimate/>
+          <fees detail="">
+            <total l="" d="" s=""/>
+          </fees>
+          <expenses mentioned=""/>
+        </conclusions>
+        <keywords group=""/>
+        <analysis>ils ont fait percer le mur mitoyen de rdc vers la cave pour vérifier l'aplomb des pièces (quinze à seize poulces plus bas que rez de chaussée de la salle dudit corps de logis de derrière de la maison de ladite dame Le Coigneur. )
+En raison de la difficulté à connaître la nature du déversement du mur à cause des meubles des locataires quy occupe les lieux côté collège Ecossais, ils sont allés voir depuis l'autre maison (Le Coigneur) qui vides et inhabitables. Les mur est particulièrement bouclé par endroicts et corrompu
+vérification par plomb (aplomb)
+reconnaissent la mauvaise qualité [de la ] construction et les différens bouclemens et surplomb quy sont en iceluy. Note advis est qu'iceluy mu moitoyen doit estre abatu et démoly pour estre refaict de neuf depuis où la fondation se trouvera bonne jusque à la haulteur du second plancher du corps de logis de derrière de la maison de ladite dame veuve Le Coigneur au dessus de la same à laquelle hauteur nous avons trouvé qu'i re receuillera sufisemment, laquelle refection sera faict par reprise et par espolté sous œuvre afin de pouvoir conserver le surplus au dessus, le out avec moilon dur picqué en leur parmens et esbousiné en leur lis et essemilié en leur point posé par assisse et bonne liaison suivant l'art avec plastre au panier ? et ravallé de plastre au tas ? Des deux costez, le tout aux frais et despens communs desdites partyes chacun par moitié, attendu la haulteur de leur esberges quoy que le corps de logis desdits sieurs du collège ne soit eslevé que de quatre estages et celuy de ladite dame veuve Le Coigneur de cinq, ce quy procèdde de l'inégalité de rez de chaussée à cause du rampart de la montagne [enceinte de Philippe Auguste] sur le hault de laquelle est [f. 3r°] scitué la maison desdits sieurs du collège et à l'esgard des dosserets de la maison de la cave desdits sieurs du collège quy sont joignant ledit mur moitoyen, la pierre et taille d'iceux en ce quy en sera nécessaire au surplus d'icelles des eexecens dosserets quy ne pourront reservir et faire xxx, sera faict et fournit à leurs despans sceulles et sera observée qu'ils soient de neuf poulces hors le corps d'iceluy mur et que les assises d'iceux face le parpin dudit mur moitoyen au moins entre deux une et parment du costé de ladite dame Le Coigneur pour plus de solidité entretenir la poussée de leurs voultes, lesquelles sieurs du collgèe seront aussy tenus de fournir à leurs despans sceuls la pierre et taille quy s'y trouvera nécessaire sous les poultres de leur dit corps de logis, sans que ladite dame veuve Le Coigneur soit tenue de contribuer à la rettalandre que pour la pose sceullement et en quas qu'il soit nécessaire de continuer la réfection dudit mur jusque aux caves sous ledit corps de logis de derrier de ladite dame veuve LeCoigneur sera observé à son esgard et à ses despans pareille xxx aux dosserets quy porte ladite voulte à ce qu sy trouvera nécessaire et observe aussy que la saillie d'iceux soient de neuf poulces hors le corps dudit mur et à l'esgard des estayemens, chevallemens et restablissemens qu'il conviendra faire dans lesdits deux corps de logis pour au sujet de la reprise dudit mur moitoyen seront faicts par lesdites partyes et à leurs despens chacun en direct soy et de son costé le tout suivant l'usage et la coutume de Paris »
+2e vacation (f. 4v°) connaître l'empatement du mur ils percent la voute de la cave+ « font faire une tranchée le long du mesme mur dans la salle au dessus de la cave dudit corps de logis de deriere de la maison de ladite dame veuve  après que nous avons fait tendre plusieurs lignes aplomb et parallèles les unes aux autres et à cause des différentes haulteurs de rez-de chaussée par le moyen desquelles et des autres opérations que nous avons fait nous avons trouvé que ledit mur moitoyen en question se arc d'une ligne droitte en toutte sa longueur et que pour le reconstruire sur son droit pied suivant ses anciens repaires et vestiges sans faire aucune anticipation de part ny d'autre il doit assis et planté scavoir à son abboutissant joignant le mur qui sépare ladite maison d'avecq le collège des crassins en retour d'icelluy pour servir de repaire et estallement audit bout fait en gravé auparavant par le costé de ladite salle de la deuxième assise au rez de chaussée d'icelle de la jambe sous poultre qui est dans ledit mur en retour servant audit corps de logis de dedxxx de ladite dame Le Coigneur ; ladite mesure prise suivant le biais aullignement dudit mur d'aboutissant en retour et par entrebout vers la cour ladit mur sera ssus et [f. 5r°] planté d'après le parement d'une jambe de pierre qui est dans le mur neuf et non crespis ny enduit endroit des cabinets en aisle du sudit corps de logis dedvruilexx  de ladite dame Le Coigneur au delà dudit mur moitoyen en question et prendre au doit (sic) d'une des vieilles assises de ladite jambe qui se trouve à la haulteur du rez de chaussée de la dite salle au pavement de laquelle a esté fait une forme de croix pour servire aussy de repaire et estallonement audit bout du prés lequel et les 9 pouces de distance du premier repaire cy dessus ladit mur moitoyen en question se construire un droit alllignement et sans aucun ply ny coulde en toutte ses longueurs et pourchasse à son espoisseur desdits treize poulces six lignes ainsy qu'il est de présent du costé et vers la maison dudit collège des escossois  pour avoir esté allignement pris et donné et lesdits repaires marquez et distances prises paar le costé du corps de logis de derrière de la maison de ladite dame veufve Le Coigneur.
+Et sur ce que ledit sieur Whytford a déclaré que pour esvitter à la dépence du dosseret du milieu cy dessus mentionné et empêcher à l'advenir l'effet de la poussée de la travée de voulte en lunette de la maison dudit collège joignant ledit mur moitoyen en question n'estant point contrebutté ny soustenu du costé de ladite dame veufve Le Coigneur se trouvant à la moityé de la haulteur de la salle de sondit corps de logis dedevxxx qu'il est dans le dessin de faire chemyd la retombée de ladite travée desdites voulte et de faire un mur de refend dans le milieu d'icelle à l'endroit dudit dosseret pour porter lesdites deux retombées qu'il fera faire à ladite travée de voulte, laquelle sera par ce moien partye en lunette et  partye en berceau et n'aura plus de portée du costé dudit mur que sur les dosseretz d'angle ce qiu  sera à nostre advis beaucoup plus solide et à la conservation dudit mur moitoien pourquoy et en faisant ce que dessus lesdits seurs du collège ils seront deschargez (f4v°) du dosserez du milieu ordonné par nous à la vacation de ce matin et à l'esgard des dosseretz d'angles ils resteront en y faisant les restablissemens nécessaires au subjet de la reconstruction dudit mur et ne seront aussy tenus lesdits sieurs du collège devservis que trois poulces d'empattement audit mur jusques au couronnement de leurs voultes, le surplus deuement inutil du moins dudit changement de retombée d'icelle."
+
+nomination de l'expert « ordonné que les lieux en question seront veues et visittés aux fins des partyes par nous de Meseretz nommée à cette fin d'office après que les partyes auroient déclarée de n'en vouloir nommer et que suivant le réquisitoire de ladite dame le Coigneur audit nom sera aussy par nous faict rapport de l'estat de la maison d'icelle dame veuve et de ce qu'il convient faire en icelle dont nous ferons dictinction parledit rapport. »mur mitoyen
+auquel exploit ledit sr Evycford a déclaré employé pour fin de pour satisfaire à ladite sentence et à l'esgard dudit sieur du Bois pour ladite dame veuve Le coigneur audit nom il a déclaré que les fins de la dite dame Le Coigneur sont que nous ayons sont qu'après que nous auront procéddé à la visitte du mur moitoyen d'entre lesites deux maisons en question déclarer ce qu'il en convient refaire et quel despens et que nous en aurons pris et donné l'allignement quy nous requier de donner pour esvuiter aux frais d'une seconde sentence, nous ayons conformément à celle cy desus datté à raporter quelles réparations sont à faire en la maison de ladite dame Le Coigneur audit nom pour la remettre en l'estat d'abitation et pouvoir estre louée y en ayant la plus grand partye quy ne peuvent estre louée ny h'abitée par le mauvais estat et ruines des lieux survenue dès auparavant l'aquisition faicte de ladite maison par ledit deffunt sieur le Coigneur et faute par luy de l'avoir faict réparer de son vivant, l'alignement duquel mur moitoyen d'entre lesdites deux maisons ledit sieur Whytford a pareillement consenty et requis est par nous donné. »</analysis>
+        <noteworthy>f. 7r° : le changment de vacation est noté en marge par rajout postérieur après oubli</noteworthy>
+      </description>
+    </expertise>

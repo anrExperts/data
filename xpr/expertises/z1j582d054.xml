@@ -1,0 +1,194 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j582d054">
+  <meta/>
+  <control>
+    <maintenanceStatus>revised</maintenanceStatus>
+    <publicationStatus/>
+    <localControl localType="detailLevel">
+      <term>completed</term>
+    </localControl>
+    <maintenanceHistory>
+      <maintenanceEvent>
+                <eventType>revised</eventType>
+                <eventDateTime standardDateTime="2022-03-31T16:14:07Z">2022-03-31T16:14:07Z</eventDateTime>
+                <agentType>human</agentType>
+                <agent>llosserand</agent>
+                <eventDescription>rvpcd</eventDescription>
+            </maintenanceEvent>
+          <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateObjectsValues_db.xqy/BaseX</agent>
+        <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateOpinionRef_files.xqy/BaseX</agent>
+        <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateRefValues_files.xqy/BaseX</agent>
+        <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+        <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>revised</eventType>
+        <eventDateTime standardDateTime="2020-11-01T12:00:00">2020-11-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>JH</agent>
+        <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>retroconverted</eventType>
+        <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>ead2xpr.xsl/Saxon9</agent>
+        <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>created</eventType>
+        <eventDateTime standardDateTime="2017-04-01T12:00:00">2017-04-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>llosserand</agent>
+        <eventDescription>Création de la fiche.</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+  </control>
+  <sourceDesc>
+    <unitdate>1726</unitdate>
+    <idno type="unitid">Z1J582</idno>
+    <idno type="item">054</idno>
+    <facsimile from="0565" to="0571"/>
+    <physDesc>
+      <extent sketch="false">6</extent>
+    </physDesc>
+  </sourceDesc>
+  <description>
+    <sessions>
+      <date when="1726-08-17" type="province"/>
+    </sessions>
+    <places>
+      <place type="province">
+        <address/>
+        <complement>le prieuré de Saint-Christophe de Chateaufort appartenant àChassepous, Eusèbe de Verneuil</complement>
+        <city>Chateaufort [Yvelines]</city>
+        <district/>
+        <owner>Chassepous</owner>
+      </place>
+    </places>
+    <categories>
+      <category type="acceptation">Recevoir et évaluer le travail réalisé</category>
+      <designation rubric="true">Visitte et réception des réparations au prieuré de Chateaufort, à la requeste de M. de Verneuil ; M. Quirot, expert.</designation>
+    </categories>
+    <procedure>
+      <framework type="b2">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+      <origination type="institution">Une institution</origination>
+      <sentences>
+        <sentence>
+          <orgName>lieutenant civil</orgName>
+          <date when="1726-08-06"/>
+        </sentence>
+      </sentences>
+      <case>il s'agit d'une deuxième expertise (la première était du 11 août 1723) pour vérifier si les réparations demandées lors de la première expertise ont bien été réalisées.</case>
+      <objects>
+        <object type="house">Maison(s)</object>
+      </objects>
+    </procedure>
+    <participants>
+      <experts>
+        <expert ref="#xpr0232" context="primary" appointment="appointed">
+          <title>architecte juré expert bourgeois de Paris</title>
+        </expert>
+      </experts>
+      <clerks>
+        <clerk ref="#xpr0056">
+          <persName>
+            <surname>Cochois</surname>
+            <forename>Jacques Richard</forename>
+          </persName>
+        </clerk>
+      </clerks>
+      <parties>
+        <party role="petitioner" presence="false" intervention="false">
+          <person>
+            <persName>
+              <surname>Chassepous</surname>
+              <forename>Eusèbe Jacques</forename>
+            </persName>
+            <occupation>secrétaire du cabinet du roi, en son nom et comme ayant droit du sieur et dame Thuillier, héritier de défunt Renodot, Lublin, leur oncle, vicaire titulaire du prieuré de Saint-Christophe de Chateaufort.</occupation>
+          </person>
+          <status>heir</status>
+          <expert ref="#xpr0232"/>
+        </party>
+        <party role="opponent" presence="false" intervention="false">
+          <person>
+            <persName>
+              <surname>Audibert</surname>
+              <forename>André Ange</forename>
+            </persName>
+            <occupation>à présent prieur du prieuré de Saint-Christophe de Chateaufort (précédemment le feu chevalier de Caumartin)</occupation>
+          </person>
+          <status/>
+          <expert ref="#xpr0232"/>
+        </party>
+      </parties>
+      <craftmen>
+        <craftman>
+          <persName>
+            <surname/>
+            <forename/>
+          </persName>
+          <occupation/>
+        </craftman>
+      </craftmen>
+    </participants>
+    <conclusions>
+      <opinion ref="#xpr0232">Il y a effectivement des réparations à faire, mais elles ne concernent pas la partie requérante.
+« [f. 5v°] Après quoy nous avons remarqué que depuis led. procès verbal de réception du 11 aoust 1723, il est surement quelques réparations à faire aux murs de clôtures et au endroits dud. prieuré, mais comme ces réparations ne concernent point led. sr de Verneuil, et qu'il n'est point porté par la sentence que nous ferons la visitte et estimation, nous n'en faisons que la présente mention sommaire. Ce que dessus a esté fait par nous expert susd. lesd. jour, mois et an que dessus [signatures] ».</opinion>
+      <arrangement/>
+      <agreement type="conclusion">Conclusion</agreement>
+      <estimate l="" s="" d=""/>
+      <fees detail="true">
+        <fee type="papers" l="1" s="12" d=""/>
+        <fee type="expert" ref="#xpr0232" l="25" s="" d=""/>
+        <fee type="clerk" l="25" s="" d=""/>
+        <fee type="rolls" l="9" s="" d=""/>
+        <fee type="prosecutors" l="" s="" d=""/>
+        <fee type="help" l="" s="" d=""/>
+        <fee type="plans" l="" s="" d=""/>
+        <total l="40" s="12" d=""/>
+      </fees>
+      <expenses mentioned="false"/>
+    </conclusions>
+    <keywords group="estates"/>
+    <keywords group="procedure"/>
+    <keywords group="contract"/>
+    <keywords group="encumbrance"/>
+    <keywords group="law"/>
+    <keywords group="measurement"/>
+    <keywords group="repairs"/>
+    <keywords group="guarantees"/>
+    <keywords group="responsability"/>
+    <keywords group="ownership"/>
+    <keywords group="value"/>
+    <keywords group="neighbourhood"/>
+    <keywords group="disorder"/>
+    <keywords group="transformation"/>
+    <analysis>sentence du 22 novembre 1726 : « [f. 1v°] a esté l'instance d'entre Mr de Verneuil et mr le chevalier de Caumartin tenue pour reprise avec led. sr Audibert, ce faisant, a esté dit qu'il seroit procédé à la reception des ouvrages en question avec led. sr Audibert en la manière accoutumée, de laquelle réception sera dressé procès verbal [?] nous Quirot qui a fait la visitte des lieux pour touttes les parties après qu'elles en sont conjointement convenus et qu'elles avoient nommé seul pour expert à cet effet que nous raporterons sy touttes les réparations sont faittes suivant l'art et au terme du procès verbal de visitte, et sy tous les lieux sont en estat d'estre receu pour lad. réception faitte et le procès verbal raporté estre fait droit ce qu'il appartiendra sans préjudice aux réparations de la nesptes touchant lesquelles il y a instance au Parlement dépens réservez. »
+                « [f. 2r°] En présence de monsieur de Verneuil et de l'abbé Audibert, led. sr Verneuil nous a mis ez mains une expédition d'un procès verbal fait par feu sr Jean François Gobin nommé par led. sr de Verneuil et par nous Quirot nommé par Mr le Chevalier de Caumartin, dernier titutlaire, daté au commencement du 11 août 1723 receu par M. de Varenne, greffier des bastimens, lequel procès-verbal contient la réception des réparations que led. sr de Verneuil a fait faire aud. prieuré, à l'exception de celles de l'église, icelle reception faitte en présence dud. feu sieur Caumartin et mr de Verneuil, sur l'expédition qui nous fust mise par Mr de Caumartin, dup procès verbal de visitte desd. réparations fait par led. deffunt sr Gobin et par nous Quirot expert receu par led. Mr de Varenne datté au commencement du trois septembre 1723, par lequel procès verbal de reception, il paroist que led. deffunt sr Gobin et nous Quirot, avons fait lecture dud. premier procès verbal et qu'estant avons reconnu que les 1er - 2 - 3 jusques et compris le vingt septiesme article d'iceluy 1er procès verbal concerne l'église dud. Chateaufort, le chœur et le clocher et les réparations qui estoient à faite. Desquelles nous n'en avons, lors de notred. procès-verbal de réception fait aucune visite par les raisons raportées dans les [droits?] desd. sr de Verneuil et de Caumartin, contenu aud. procès-verbal de réception, contenant l'un et l'autre qu'il nous requeroient de procéder à la visitte et réception des réparations qui estoient à faire aud. prieuré et deppendances à l'exception de l'église dud. Chateaufort, pour raison de quoy il y a instance avec les habitans dud. lieu.
+                Ensuite de quoy, led. sr Gobin et nous Quirot, par led. [f. 2v°] procès verbal de réception du 11 aoust 1723, avons procédé à la visite et reception des ouvrages uqui estoient à faire aux bastimens, cours, jardins, cloture, vignes et aux deppendances dud. prieuré. Scavoir... »
+                « [f. 5v°] Après quoy nous avons remarqué que depuis led. procès verbal de réception du 11 aoust 1723, il est surement quelques réparations à faire aux murs de clôtures et au endroits dud. prieuré, mais comme ces réparations ne concernent point led. sr de Verneuil, et qu'il n'est point porté par la sentence que nous ferons la visitte et estimation, nous n'en faisons que la présente mention sommaire. Ce que dessus a esté fait par nous expert susd. lesd. jour, mois et an que dessus [signatures] ».</analysis>
+    <noteworthy/>
+  </description>
+</expertise>

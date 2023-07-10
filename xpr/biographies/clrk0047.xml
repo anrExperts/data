@@ -1,0 +1,119 @@
+<eac xmlns="https://archivists.org/ns/eac/v2" xml:id="clrk0047">
+  <control maintenanceStatus="">
+    <recordId>clrk0047</recordId>
+    <maintenanceAgency>
+      <agencyName>ANR Experts</agencyName>
+    </maintenanceAgency>
+    <maintenanceHistory>
+      <maintenanceEvent maintenanceEventType="created">
+        <agent agentType="machine">clerk_csv2eac.xqy/BaseX</agent>
+        <eventDateTime standardDateTime="2022-12-31T14:06:48.817+01:00"/>
+        <eventDescription>Création des fiches EAC-CPF à partir du tableau</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+    <sources>
+      <source id="sourceid86496452">
+        <reference href="">Almanach royal 1746</reference>
+      </source>
+      <source id="sourceid86496454">
+        <reference href="">Almanach royal 1747</reference>
+      </source>
+      <source id="sourceid86496456">
+        <reference href="">Almanach royal 1756</reference>
+      </source>
+      <source id="sourceid86496458">
+        <reference href="">Almanach royal 1757</reference>
+      </source>
+      <source id="sourceid86496460">
+        <reference href="">Almanach royal 1766</reference>
+      </source>
+      <source id="sourceid86496462">
+        <reference href="">Almanach royal 1767</reference>
+      </source>
+      <source id="sourceid86496464">
+        <reference href="">Almanach royal 1776</reference>
+      </source>
+      <source id="sourceid86496466">
+        <reference href="">Almanach royal 1777</reference>
+      </source>
+      <source id="sourceid86496468">
+        <reference href="">Almanach royal 1786</reference>
+      </source>
+    </sources>
+  </control>
+  <cpfDescription>
+    <identity>
+      <entityType value="person"/>
+      <nameEntry status="authorized" preferredForm="true" sourceReference="">
+        <part localType="full">Mangin, Philibert</part>
+      </nameEntry>
+      <nameEntry status="alternative" preferredForm="false" sourceReference="">
+        <part localType="surname">Mangin</part>
+        <part localType="forename">Philibert</part>
+      </nameEntry>
+      <otherEntityTypes>
+        <otherEntityType>
+          <term>clerk</term>
+        </otherEntityType>
+      </otherEntityTypes>
+      <identityId>clrk0047</identityId>
+    </identity>
+    <description>
+      <functions>
+        <function sourceReference="#sourceid86496452 #sourceid86496454 #sourceid86496456 #sourceid86496458 #sourceid86496460 #sourceid86496462 #sourceid86496464 #sourceid86496466 #sourceid86496468">
+          <term>Greffier</term>
+          <dateRange>
+            <fromDate sourceReference="" certainty="certain" standardDate="1746"/>
+            <toDate sourceReference="" certainty="certain" standardDate="1786"/>
+          </dateRange>
+        </function>
+        <function sourceReference="#sourceid86496460 #sourceid86496462">
+          <term>adjoint</term>
+          <dateRange>
+            <fromDate sourceReference="" certainty="certain" standardDate="1766"/>
+            <toDate sourceReference="" certainty="certain" standardDate="1767"/>
+          </dateRange>
+        </function>
+        <function sourceReference="#sourceid86496464 #sourceid86496466 #sourceid86496468">
+          <term>doyen</term>
+          <dateRange>
+            <fromDate sourceReference="" certainty="certain" standardDate="1776"/>
+            <toDate sourceReference="" certainty="certain" standardDate="1786"/>
+          </dateRange>
+        </function>
+      </functions>
+      <places>
+        <place sourceReference="#sourceid86496452 #sourceid86496454">
+          <placeRole>Adresse</placeRole>
+          <placeName>rue Bourtibourg</placeName>
+          <dateRange>
+            <fromDate sourceReference="" certainty="certain" standardDate="1746"/>
+            <toDate sourceReference="" certainty="certain" standardDate="1747"/>
+          </dateRange>
+        </place>
+        <place sourceReference="#sourceid86496456 #sourceid86496458 #sourceid86496460 #sourceid86496462">
+          <placeRole>Adresse</placeRole>
+          <placeName>Cimetière S. Jean</placeName>
+          <dateRange>
+            <fromDate sourceReference="" certainty="certain" standardDate="1756"/>
+            <toDate sourceReference="" certainty="certain" standardDate="1767"/>
+          </dateRange>
+        </place>
+        <place sourceReference="#sourceid86496464 #sourceid86496466">
+          <placeRole>Adresse</placeRole>
+          <placeName>Cimetiere Saint Jean</placeName>
+          <dateRange>
+            <fromDate sourceReference="" certainty="certain" standardDate="1776"/>
+            <toDate sourceReference="" certainty="certain" standardDate="1777"/>
+          </dateRange>
+        </place>
+        <place sourceReference="#sourceid86496468">
+          <placeRole>Adresse</placeRole>
+          <placeName>rue du Temple, près le cul-de-sac d'Argenson</placeName>
+          <date sourceReference="" certainty="certain" standardDate="1786"/>
+        </place>
+      </places>
+    </description>
+  </cpfDescription>
+  <!---->
+</eac>

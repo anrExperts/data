@@ -1,0 +1,201 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j999d072">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2017-10-01T12:00:00">2017-10-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2016-07-29T12:00:00">2016-07-29T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>LRT</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J999</idno>
+        <idno type="item">072</idno>
+        <facsimile from="0692" to="0700"/>
+        <physDesc>
+          <extent sketch="false">9</extent>
+          <appendices>
+            <appendice>
+              <type type=""/>
+              <extent/>
+              <desc/>
+              <note/>
+            </appendice>
+          </appendices>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-02-27" type="suburbs"/>
+          <date when="1776-03-09" type="suburbs"/>
+          <date when="1776-03-09" type=""/>
+          <date when="1776-03-18" type="suburbs"/>
+        </sessions>
+        <places>
+          <place xml:id="id47d281" type="suburbs">
+            <address/>
+            <complement>grande rue</complement>
+            <city>Bagnolet</city>
+            <district/>
+            <owner/>
+          </place>
+        </places>
+        <categories>
+          <category type="estimation">Estimer la valeur des biens</category>
+          <designation rubric="true">Visite et estimation de maison de Bagnollet près Paris pour le sieur Lellier de Chatillon à Bagnollet.</designation>
+        </categories>
+        <procedure>
+          <framework type="b2b">L’institution est saisie dans le cadre d’une procédure (l’institution nomme un ou deux experts)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Châtelet, lieutenant civil, sentence du 18 octobre 1775</orgName>
+              <date when="1775-10-18"/>
+            </sentence>
+          </sentences>
+          <case>Vente de la maison issue du legs universel de l’architecte Guillot-Aubry à Delacour, Marie Marguerite, désormais décédée, et partant pour moitié à son fils [sous curatelle] Lalliat de Châtillon, Louis Alexandre</case>
+          <objects>
+            <object type="house">Maison(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0085" context="primary" appointment="court-appointed">
+              <title>architecte expert bourgeois à Paris</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0055">
+              <persName>
+                <surname>Bouillerot</surname>
+                <forename>Joseph</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Lalliat de Châtillon</surname>
+                  <forename>Louis Alexandre</forename>
+                </persName>
+                <occupation>fils majeur de Louis Charles Lalliat de Châtillon ancien trésorier du comte de Charolais et de défunte Marie Margueritte Delacour décédée son épouse, Châtillon fils étant « interdit de la gestion et administration de ses personne et biens » par sentence du 7 juillet 1773 et héritier pour moitié de sa mère qui était, conjointement avec son mari, légataire universelle de Claude Guillot-Aubry architecte du roi. Lalliat père est curateur des personne et biens de Lalliat fils.</occupation>
+              </person>
+              <status>heir</status>
+              <expert ref="#xpr0085"/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0085">« Attention faite à la scituation et contenance du tout, à la nature qualité et état des bâtimens, édifices et murs de closture, aux reparations qui sont à y faire à la distribution des appartemens et à leurs apartenances, à la nature, qualité et état des terrains, cours, plantations … et reflexion faite nous prisons et estimons ladite grande maison et dependances scituées au village de Bagnollet près Paris, ainsy que nous avons le tout cy dessus déclaré et qu’il se poursuit et comporte, à la charge de la rente foncière de quarante livres mentionnée audit contrat de vente et deüe à la cour de Bagnollet et des cens et droits seigneuriaux la somme de … 45 000 l. 
+Fait par nous architecte expert susdit lesdits jours, mois et an, à quoy nous avons vacqué ce jourd’huy toute la journée. »</opinion>
+          <arrangement/>
+          <agreement type="conclusion">Conclusion</agreement>
+          <estimate l="45000" s="" d=""/>
+          <estimates>
+            <place ref="#id47d281">
+              <appraisal l="45000" s="" d="">
+                <desc>une maison en banlieue</desc>
+              </appraisal>
+            </place>
+          </estimates>
+          <fees detail="true">
+            <fee type="papers" l="21" s="" d=""/>
+            <fee type="expert" ref="#xpr0085" l="45" s="" d=""/>
+            <fee type="clerk" l="45" s="" d=""/>
+            <fee type="rolls" l="60" s="" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="171" s="" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="45" s="" d=""/>
+            <expense type="expert" l="15" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis/>
+        <noteworthy/>
+      </description>
+    </expertise>

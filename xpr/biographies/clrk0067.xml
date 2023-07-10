@@ -1,0 +1,69 @@
+<eac xmlns="https://archivists.org/ns/eac/v2" xml:id="clrk0067">
+  <control maintenanceStatus="">
+    <recordId>clrk0067</recordId>
+    <maintenanceAgency>
+      <agencyName>ANR Experts</agencyName>
+    </maintenanceAgency>
+    <maintenanceHistory>
+      <maintenanceEvent maintenanceEventType="created">
+        <agent agentType="machine">clerk_csv2eac.xqy/BaseX</agent>
+        <eventDateTime standardDateTime="2022-12-31T14:06:48.817+01:00"/>
+        <eventDescription>Création des fiches EAC-CPF à partir du tableau</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+    <sources>
+      <source id="sourceid86495807">
+        <reference href="">Almanach royal 1776</reference>
+      </source>
+      <source id="sourceid86495809">
+        <reference href="">Almanach royal 1777</reference>
+      </source>
+      <source id="sourceid86495811">
+        <reference href="">Almanach royal 1786</reference>
+      </source>
+      <source id="sourceid86495813">
+        <reference href="">Almanach royal 1787</reference>
+      </source>
+    </sources>
+  </control>
+  <cpfDescription>
+    <identity>
+      <entityType value="person"/>
+      <nameEntry status="authorized" preferredForm="true" sourceReference="">
+        <part localType="full">Gouel, Gilles louis</part>
+      </nameEntry>
+      <nameEntry status="alternative" preferredForm="false" sourceReference="">
+        <part localType="surname">Gouel</part>
+        <part localType="forename">Gilles louis</part>
+      </nameEntry>
+      <otherEntityTypes>
+        <otherEntityType>
+          <term>clerk</term>
+        </otherEntityType>
+      </otherEntityTypes>
+      <identityId>clrk0067</identityId>
+    </identity>
+    <description>
+      <functions>
+        <function sourceReference="#sourceid86495807 #sourceid86495809 #sourceid86495811 #sourceid86495813">
+          <term>Greffier</term>
+          <dateRange>
+            <fromDate sourceReference="" certainty="certain" standardDate="1776"/>
+            <toDate sourceReference="" certainty="certain" standardDate="1787"/>
+          </dateRange>
+        </function>
+      </functions>
+      <places>
+        <place sourceReference="#sourceid86495807 #sourceid86495809 #sourceid86495811 #sourceid86495813">
+          <placeRole>Adresse</placeRole>
+          <placeName>rue Saint Louis du Palais, près la Trésorerie</placeName>
+          <dateRange>
+            <fromDate sourceReference="" certainty="certain" standardDate="1776"/>
+            <toDate sourceReference="" certainty="certain" standardDate="1787"/>
+          </dateRange>
+        </place>
+      </places>
+    </description>
+  </cpfDescription>
+  <!---->
+</eac>

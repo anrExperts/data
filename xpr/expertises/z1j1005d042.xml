@@ -1,0 +1,227 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1005d042">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-07-01T12:00:00">2020-07-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2017-10-01T12:00:00">2017-10-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1005</idno>
+        <idno type="item">042</idno>
+        <facsimile from="0387" to="0446"/>
+        <physDesc>
+          <extent sketch="false">60</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-07-19" type="province"/>
+          <date when="1777-10-11" type="paris"/>
+        </sessions>
+        <places>
+          <place type="province">
+            <address/>
+            <complement>au bord de la rivière, à droite en sortant du pont, appelée « La manufacture de porcelaine »</complement>
+            <city>Saint-Cloud</city>
+            <district/>
+            <owner>Saporito</owner>
+          </place>
+          <place type="office">
+            <address/>
+          </place>
+          <place type="province">
+            <address/>
+            <complement>un terrain à Saint-Cloud rue de la Marchandise, une maison et bâtiment construits sur ce terrain, adossés au mur les séparant de la manufacture de porcelaine</complement>
+            <city>Saint-Cloud</city>
+            <district/>
+            <owner>Trou</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="settlement">Départager</category>
+          <designation rubric="true">Visitte de mur contentieux à St Cloud entre le sieur Trou et le sieur Gaëtan Saporito ; M. Taboureur, expert.</designation>
+        </categories>
+        <procedure>
+          <framework type="b2b">L’institution est saisie dans le cadre d’une procédure (l’institution nomme un ou deux experts)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Châtelet, lieutenant civil (ordonnance)</orgName>
+              <date when="1776-07-16"/>
+            </sentence>
+          </sentences>
+          <case>Saporito a fait abattre le haut du mur séparant sa propriété de celle de Trou, sans autorisation, et fait faire une ouverture au rez-de-chaussée à l’endroit de la cuisine de la maison de Trou</case>
+          <objects>
+            <object type="plot">Terrain(s)</object>
+            <object type="wall">Mur(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0250" context="primary" appointment="court-appointed">
+              <title>architecte expert bourgeois</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0061">
+              <persName>
+                <surname>Lecoeur</surname>
+                <forename>Jean Clair</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="true" intervention="true">
+              <person>
+                <persName>
+                  <surname>Trou</surname>
+                  <forename>Henry François</forename>
+                </persName>
+                <occupation>entrepreneur de la manufacture royale de porcelaine de Saint-Cloud, bourgeois de Saint-Cloud, y demeurant, propriétaire à titre de bail emphytéotique d’un terrain à Saint-Cloud rue de la Marchandise, et d’une maison et bâtiment construits sur ce terrain</occupation>
+              </person>
+              <status>owner</status>
+              <expert ref="#xpr0250"/>
+              <prosecutor>
+                <persName>
+                  <surname>Girardin</surname>
+                  <forename>Jean François</forename>
+                </persName>
+              </prosecutor>
+              <prosecutor>
+                <persName>
+                  <surname>Constantin</surname>
+                  <forename>Pierre Joseph</forename>
+                </persName>
+              </prosecutor>
+            </party>
+            <party role="opponent" presence="true" intervention="true">
+              <person>
+                <persName>
+                  <surname>Saporito</surname>
+                  <forename>Gaëtan</forename>
+                </persName>
+                <occupation>commis au garde meuble du roi, ayant acquis la manufacture de porcelaine des créanciers de Trou</occupation>
+              </person>
+              <status>owner</status>
+              <expert ref="#xpr0250"/>
+              <prosecutor>
+                <persName>
+                  <surname>Pantonnier</surname>
+                  <forename/>
+                </persName>
+              </prosecutor>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0250">[f. 31] « Pour satisfaire au premier chef qui divise les parties et donner notre avis en consequence de votre ordonnance qui prescrit de voir si le mur qui separe ledit sieur Trou à cause de son terrain et batiment tenus à bail emphiteotique, d’avec le batiment du sieur Saporite est commencé à reconstruire sur l’ancien allignement, nous avons examiné ledit mur, et commencé à prendre les differens aplombs et allignemens de la plantation dudit mur, et à faire faire differentes fouilles au … d’icelui, de toutes lesquelles operations nous avons pris des notes sur bordereaux particuliers, la vacation s’étant consommée jusqu’au midy… » 
+[f. 43v : suspension] « Après lesquelles lectures nous expert susdit attendu l’opposition formelle dudit sieur Saporite à nous signiffiée comme dessus, et la demande formée par Monsieur l’archevesque de Paris contre ledit sieur Trou en nullité du bail emphiteotique de l’emplacement formant l’objet de la constestation qu idivise les parties, nous avons supercedé à la continuation de notre present procès verbal et raport, et à donner notre avis sur les differens chefs dont est question, jusqu’à ce qu’il ait été par vous Monsieur statué sur ladite opposition » [Reprise le 23 juin 1777, sur la sentence du 13 mars 1777, f. 43v] 
+« Pour repondre au premier et deuxieme chefs de ladite ordonnance [du 16 juillet 1776], nous observons que par tout ce que nous avons fait et raporté dans notre vacation du vendredy seize aoust 1776 du matin et dans celle du lundy dix neuf aoust 1776 du matin, nous avons visitté le mur dont est question separant les proprietés des aprties, et dressé proces verbal de l’état dudit mur et des demolitions et reconstructions qui y ont été faites jusqu’à lors… 
+Nous avons trouvé que le sieur Saportie ayant continué la construction de son batiment et du mur qui le separe du terrein et batiment tenu à bail emphiteotique par le sieur Trou, ce mur se trouve actuellement construit à neuf depuis sa teste sur le quay jusqu’à l’exterieur de la face du batiment du sieur Trou vers sa cour, et ce depuis la fondation jusqu’au sommet du dossier des cheminées du sieur Saporite… 
+Pour repondre au troisieme chef de ladite ordonnance nous observons que par tout ce que nous avons raporté en notre vacation du vendredy seize aoust 1776 de relevée nous avons constaté que les parties de mur que le sieur Saporite avoit reconstruit jusqu’alors ne suivaient pas exactement l’ancien allignement, et n’étoient pas plantés sur les anciens vestiges, puisque suivant ces anciens vestiges ledit mur devoit former un coude de quatre pouces de saillie à son sommet du costé du sieur Saporite … 
+Et par l’examen que nous avons fait de nouveau en notre vacation du lundy vingt trois juin 1777 du matin, nous avons reconnu que ledit sieur Saporite s’est conformé à l’avis que nous avons donné à la fin de la vacation du vendredy seize aoust de relevée, qui étoit de demolir et de reconstruire les nouvelles parties de mur qu’il avoir alors fait mal alignés, et qu’il les a demoli et reconstruite, ainsi que nous l’avons indiqué… 
+Le quatrieme chef nous prescrit de donner notre avis sur les autres objets compris en la requeste et demande du sieur Trou, et sur ce qui sera dit au contraire par le sieur Saporite Nous repondre I° à chacun des six chefs des objets compris en la requete du sieur Trou ; et ensuite nous repondrons à chacun des sept chefs des demandes dudit sieur Trou… [voir le détail] 
+C’est l’avis de nous expert sur les differents objets dont est question, referant à la cour de juger et ordonner Fait par nous architecte expert susdit les jours mois et ans que dessus »</opinion>
+          <arrangement/>
+          <agreement type="conclusion">Conclusion</agreement>
+          <estimate l="" s="" d=""/>
+          <fees detail="true">
+            <fee type="papers" l="56" s="10" d=""/>
+            <fee type="expert" ref="#xpr0250" l="276" s="" d=""/>
+            <fee type="clerk" l="276" s="" d=""/>
+            <fee type="rolls" l="256" s="10" d=""/>
+            <fee type="prosecutors" l="240" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="other" l="48" s="" d="">une journée à 2 procureurs au Parlement à 24 livres</fee>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="1153" s="" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="236" s="2" d="6"/>
+            <expense type="expert" l="78" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis/>
+        <noteworthy>nombre de vacations : 7 jours de campagne et 18 vacations de Paris
+les vacations n'ont pas toutes été notées
+
+Saporito a fait abattre le haut du mur séparant sa propriété de celle de Trou, sans autorisation, et fait faire une ouverture au rez-de-chaussée à l’endroit de la cuisine de la maison de Trou, « par où les ouvriers maçons se sont introduits dans ladite piece, ont demoli le mur jusques dans ses fondemens en l’etendue de quinze pieds et demy de largeur… ainsi qu’il est constaté par le procès verbal du commissaire Bel du six du present mois ». L’expert doit déterminer la nature du mur (s’il est mitoyen ou non, en tout ou partie), et en donner l’alignement</noteworthy>
+      </description>
+    </expertise>

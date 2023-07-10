@@ -1,0 +1,230 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j579d007">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-10-01T12:00:00">2020-10-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2016-10-26T12:00:00">2016-10-26T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>RB</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1726</unitdate>
+    <idno type="unitid">Z1J579</idno>
+        <idno type="item">007</idno>
+        <facsimile from="0097" to="0107"/>
+        <physDesc>
+          <extent sketch="false">8</extent>
+          <appendices>
+            <appendice>
+              <type type="petition">Requête</type>
+              <extent>2</extent>
+              <desc>sentence du lieutenant civil du Châtelet.</desc>
+              <note/>
+            </appendice>
+          </appendices>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1726-03-04" type="paris"/>
+          <date when="1726-03-04" type="paris"/>
+          <date when="1726-03-05" type="paris"/>
+        </sessions>
+        <places>
+          <place xml:id="id208d277" type="paris">
+            <address>
+              <street>Rue Théveneau [Probablement rue Thévenot, voie supprimée. Également dénommée cul-de-sac des Cordiers, de la Cordière et de la Corderie]</street>
+              <buildingNumber/>
+            </address>
+            <complement/>
+            <parish/>
+            <owner>héritiers Thoré</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="estimation">Estimer la valeur des biens</category>
+          <designation rubric="true">Visite et estimation de maisons</designation>
+        </categories>
+        <procedure>
+          <framework type="b1">Requête auprès d’une institution pour qu’elle demande une expertise</framework>
+          <origination type="parties">Les parties</origination>
+          <sentences>
+            <sentence>
+              <orgName>lieutenant civil</orgName>
+              <date when="1726-02-22"/>
+            </sentence>
+          </sentences>
+          <case>Partage des biens de la défunte Marie Fresneau et des biens acquis par elle et son mari, Philippe Thoré.</case>
+          <objects>
+            <object type="house">Maison(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0183" context="primary" appointment="appointed">
+              <title>juré expert à Paris</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0033">
+              <persName>
+                <surname>Collou</surname>
+                <forename>Antoine Charles</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Fresneau</surname>
+                  <forename>Pierre</forename>
+                </persName>
+                <occupation>bourgeois de Paris, tuteur ad hoc de Marie Claude et Marie Anne Thoré, filles mineures de Philippe Thoré, avocat au parlement, et de défunte Marie Fresneau, sa femme</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Thoré</surname>
+                  <forename>Philippe</forename>
+                </persName>
+                <occupation>fils majeur du même couple</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Thoré</surname>
+                  <forename>Jean-Philippe</forename>
+                </persName>
+                <occupation>fils majeur du même couple</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Thoré</surname>
+                  <forename>Marie Catherine</forename>
+                </persName>
+                <occupation>fille majeure du même couple</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Thoré</surname>
+                  <forename>Louise Geneviève</forename>
+                </persName>
+                <occupation>fille majeure du même couple</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Thoré</surname>
+                  <forename>Marie Elisabeth</forename>
+                </persName>
+                <occupation>fille majeure du même couple.</occupation>
+              </person>
+              <status>heir</status>
+              <expert ref="#xpr0183"/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0183">« Et après avoir fait lesdits calculs pour la première desdites maisons cy dessus déclarées et distinctement de ce qui est en batimens vieux de ce qui est baty à neuf, et de ce qui en cours, considération faite au quartier où est scituée ladite maison, au retranchement que doit souffrir le corps de logis vieux à droitte de la cour et aux réparations considérables que causera ledit retranchement, nous la prisons et estimons la somme de trente six mil livres en l'estat qu'elle est présentement […].Et nous prisons et estimons la seconde desdites maisons suivant lesdits calculs présentement faits, considération aussi faitte de ce qui est en batimens d'avec ce qui estcour et jardin, la somme de soixante mil livres eu égard à l'estat présent des batimens qui la composent […]. »</opinion>
+          <arrangement/>
+          <agreement type="conclusion">Conclusion</agreement>
+          <estimate l="" s="" d=""/>
+          <estimates>
+            <place ref="#id208d277">
+              <appraisal l="36000" s="" d="">
+                <desc>maison</desc>
+              </appraisal>
+              <appraisal l="60000" s="" d="">
+                <desc>maison</desc>
+              </appraisal>
+            </place>
+          </estimates>
+          <fees detail="true">
+            <fee type="papers" l="5" s="10" d=""/>
+            <fee type="expert" ref="#xpr0183" l="18" s="" d=""/>
+            <fee type="clerk" l="18" s="" d=""/>
+            <fee type="rolls" l="9" s="10" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="51" s="" d=""/>
+          </fees>
+          <expenses mentioned=""/>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis>Motivations
+                Deux filles et héritières de Marie Fresneau étant mineures, son mari et ses enfants majeurs doivent faire expertiser les deux maisons possédées par la défunte et son mari afin de procéder au partage de la succession.</analysis>
+        <noteworthy/>
+      </description>
+    </expertise>

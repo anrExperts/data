@@ -1,0 +1,210 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1001d070">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2017-10-01T12:00:00">2017-10-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1001</idno>
+        <idno type="item">070</idno>
+        <facsimile from="0766" to="0771"/>
+        <physDesc>
+          <extent sketch="false">4</extent>
+          <appendices>
+            <appendice>
+              <type type="drawing">Dessin</type>
+              <extent>1</extent>
+              <desc>lavis rose, noir, brun. Echelle, cotes</desc>
+              <note>plan, coupe et élévation du mur mitoyen</note>
+            </appendice>
+          </appendices>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-04-27" type="paris"/>
+          <date when="1776-05-02" type="paris"/>
+        </sessions>
+        <places>
+          <place type="paris">
+            <address>
+              <street>rue des Canettes</street>
+              <buildingNumber/>
+            </address>
+            <complement/>
+            <parish/>
+            <owner/>
+          </place>
+        </places>
+        <categories>
+          <category type="settlement">Départager</category>
+          <designation rubric="true">Visitte de mur mitoyen séparant les maisons des sieurs Chavagnac et Caffiéri, rue des Canettes, faubourg St Germain ; MM. Martin et De Besse, experts.</designation>
+        </categories>
+        <procedure>
+          <framework type="a">Commun accord des parties</framework>
+          <origination type="parties">Les parties</origination>
+          <sentences>
+            <sentence>
+              <orgName/>
+              <date when=""/>
+            </sentence>
+          </sentences>
+          <case>projet de Chavagnac de faire construire un bâtiment qui sadosserait à celui de son voisin, Caffiery</case>
+          <objects>
+            <object type="wall">Mur(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0191" context="primary" appointment="appointed">
+              <title>architecte juré expert bourgeois en titre d'office</title>
+            </expert>
+            <expert ref="#xpr0070" context="primary" appointment="appointed">
+              <title>architecte juré expert bourgeois en titre d'office</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0067">
+              <persName>
+                <surname>Goüel</surname>
+                <forename>Gilles Louis</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="true" intervention="false">
+              <person>
+                <persName>
+                  <surname>Chavagnac</surname>
+                  <forename>Michel</forename>
+                </persName>
+                <occupation>entrepreneur de bâtiments à Paris</occupation>
+              </person>
+              <status>owner</status>
+              <expert ref=""/>
+            </party>
+            <party role="petitioner" presence="true" intervention="false">
+              <person>
+                <persName>
+                  <surname>Caffiery</surname>
+                  <forename>Jean Jacques</forename>
+                </persName>
+                <occupation>sculpteur du roi et de l’Académie royale de sculpture et de peinture</occupation>
+              </person>
+              <status>owner</status>
+              <expert ref=""/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="">1° Le mur de pignon doit être « démoli et reconstruit en son entier ainsi que la partie de cloture entre les deux petites cours, de son sommet jusques sur l’empatement de sa fondation » 
+2° à l’égard de la jambe étrière à la tête dudit mur sur la rue comme nous n’y avons remarqué aucune deffectuosité et qu’elle n’est ni déversée ni corrompue, mais bonne, saine et utile nous estimons qu’elle doit être conservée, et que si le sieur Chavagnac croit nécessaire à sa construction de la refaire il le doit faire à ses frais seul ainsi que tous les étayemens et racordemens qui seront necessaires et que la reconstruction de ladite jambe etrière poura occasionner. » 
+3° « Nous sommes d’avis que le sieur Chavagnac provoquant la reconstruction dudit mur et se proposant de faire une bâtisse beaucoup plus élevée que l’ancien corps de logis qu’il démolit, a besoin d’un mur beaucoup plus solide que celui existant qu’il seroit possible de conserver, au moyen de quelques reprises pour le faire servir encore longues années au bâtiment du sieur Caffiery : mais comme il ne seroit pas juste que le sieur Chavagnac construisit un bon mur à la place de celui actuel qui est ancien et déjà mediocre sans que ledit sieur Caffiery y contribuat, nous estimons que ladite reconstruction (la jambe étriere exceptée) sera faitte aux frais communs des parties scavoir un quart pour le sieur Caffiery et les trois autres quarts pour le sieur Chavagnac, laquelle proportion sera suivie pour la fondation si sa reconstruction est jugée nécessaire bien entendu que le sieur Caffiery n’ayant point de caves ne contribuera que jusques sur le bon et solide fond suffisant pour asseoir le mur considéré sans caves de son côté […] et comme le sieur Chavagnac contribue pour la plus forte portion il ne sera tenu d’aucunes charges pour ce qu’il se trouvera surélever au dessus et entre les héberges nouvelles des cheminées du sieur Caffiery, cette compensation nous ayant parue juste. »
+L’alignement est donné sur le plan annexé.
+"Tel est la visitte par nous faitte du mur dont est question la nécessité de sa reconstruction et notre avis unanime sur la contribution de chacun des propriétaires dans ladite reconstruction."</opinion>
+          <arrangement/>
+          <agreement type="agreement">Accord</agreement>
+          <estimate l="" s="" d=""/>
+          <fees detail="true">
+            <fee type="papers" l="5" s="" d=""/>
+            <fee type="expert" ref="#xpr0191" l="18" s="" d=""/>
+            <fee type="expert" ref="#xpr0070" l="18" s="" d=""/>
+            <fee type="clerk" l="36" s="" d=""/>
+            <fee type="rolls" l="12" s="" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="18" s="" d=""/>
+            <total l="89" s="" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="expert" l="12" s="" d=""/>
+            <expense type="clerk" l="16" s="10" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation">
+          <term value="n4">Surélévation</term>
+          <term value="n7">Démolition</term>
+        </keywords>
+        <analysis/>
+        <noteworthy>La répartition des experts pour les parties n'est pas précisée.
+
+L’examen des fondations du mur est jugé impossible en l’état et reporté au moment où la démolition engagée par Chavagnac permettra leur examen.</noteworthy>
+      </description>
+    </expertise>

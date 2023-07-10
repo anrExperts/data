@@ -1,0 +1,187 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1005d047">
+  <meta/>
+  <control>
+    <maintenanceStatus>revised</maintenanceStatus>
+    <publicationStatus/>
+    <localControl localType="detailLevel">
+      <term>completed</term>
+    </localControl>
+    <maintenanceHistory>
+      <maintenanceEvent>
+                <eventType>revised</eventType>
+                <eventDateTime standardDateTime="2021-10-15T13:59:29Z">2021-10-15T13:59:29Z</eventDateTime>
+                <agentType>human</agentType>
+                <agent>llosserand</agent>
+                <eventDescription>exb3</eventDescription>
+            </maintenanceEvent>
+          <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateOpinionRef_files.xqy/BaseX</agent>
+        <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateRefValues_files.xqy/BaseX</agent>
+        <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+        <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>revised</eventType>
+        <eventDateTime standardDateTime="2020-07-01T12:00:00">2020-07-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>llosserand</agent>
+        <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>retroconverted</eventType>
+        <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>ead2xpr.xsl/Saxon9</agent>
+        <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>created</eventType>
+        <eventDateTime standardDateTime="2017-10-01T12:00:00">2017-10-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>JH</agent>
+        <eventDescription>Création de la fiche.</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+  </control>
+  <sourceDesc>
+    <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1005</idno>
+    <idno type="item">047</idno>
+    <facsimile from="0486" to="0488"/>
+    <physDesc>
+      <extent sketch="false">3</extent>
+    </physDesc>
+  </sourceDesc>
+  <description>
+    <sessions>
+      <date when="1776-07-20" type="suburbs"/>
+      <date when="1776-08-06" type="suburbs"/>
+    </sessions>
+    <places>
+      <place type="suburbs">
+        <address/>
+        <complement>Grande rue du Faubourg Saint-Honoré</complement>
+        <city/>
+        <district/>
+        <owner>Calipe</owner>
+      </place>
+    </places>
+    <categories>
+      <category type="acceptation">Recevoir et évaluer le travail réalisé</category>
+      <designation rubric="true">Visitte et estimation d'ouvrages de taille de pierre faits pour le compte du sieur Guireaud, m. maçon en une maison, grande rue du faubourg St Honoré, à la requeste du sieur Aubenase dit Lapalme ; MM. De Besse et Jacob, experts.</designation>
+    </categories>
+    <procedure>
+      <framework type="b2">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+      <origination type="institution">Une institution</origination>
+      <sentences>
+        <sentence>
+          <orgName>Chambre royale des bâtiments (sentences)</orgName>
+          <date when="1776-03-29"/>
+          <date when="1774-07-01"/>
+        </sentence>
+      </sentences>
+      <case>Réception des ouvrages de taille de pierre faits par Aubenase pour le compte de Guireaud dans la maison de Calipe</case>
+      <objects>
+        <object type="other">taille de pierre</object>
+      </objects>
+    </procedure>
+    <participants>
+      <experts>
+        <expert ref="#xpr0070" context="primary" appointment="appointed">
+          <title>architecte juré expert en titre d'office</title>
+        </expert>
+        <expert ref="#xpr0143" context="primary" appointment="court-appointed">
+          <title>architecte juré expert en titre d'office</title>
+        </expert>
+      </experts>
+      <clerks>
+        <clerk ref="#clrk0067">
+          <persName>
+            <surname>Goüel</surname>
+            <forename>Gilles Louis</forename>
+          </persName>
+        </clerk>
+      </clerks>
+      <parties>
+        <party role="petitioner" presence="false" intervention="false">
+          <person>
+            <persName>
+              <surname>Aubenase</surname>
+              <forename>Louis dit La Palme</forename>
+            </persName>
+            <occupation>compagnon tailleur de pierre</occupation>
+          </person>
+          <status>builder</status>
+          <expert ref="#xpr0070"/>
+          <prosecutor>
+            <persName>
+              <surname>de Soissy</surname>
+              <forename/>
+            </persName>
+          </prosecutor>
+        </party>
+        <party role="opponent" presence="true" intervention="true">
+          <person>
+            <persName>
+              <surname>Guireaud</surname>
+              <forename>François</forename>
+            </persName>
+            <occupation>maître maçon entrepreneur</occupation>
+          </person>
+          <status>limited-partner</status>
+          <expert ref="#xpr0143"/>
+        </party>
+      </parties>
+      <craftmen>
+        <craftman>
+          <persName>
+            <surname>Guireaud</surname>
+            <forename/>
+          </persName>
+          <occupation>maître maçon</occupation>
+        </craftman>
+      </craftmen>
+    </participants>
+    <conclusions>
+      <opinion ref="">expertise inachevée (20 juillet : absence de Guireau, renvoi ; 6 août : Guireaud s’oppose à une partie du toisé, absence d’Aubenase, l’expertise est renvoyée à plus tard, sans suite sur ce pv)</opinion>
+      <arrangement/>
+      <agreement type="unfinished">Affaire inachevée</agreement>
+      <estimate l="" s="" d=""/>
+      <fees detail="false">
+        <total l="" s="" d=""/>
+      </fees>
+      <expenses mentioned="false"/>
+    </conclusions>
+    <keywords group="estates"/>
+    <keywords group="procedure"/>
+    <keywords group="contract"/>
+    <keywords group="encumbrance"/>
+    <keywords group="law"/>
+    <keywords group="measurement"/>
+    <keywords group="repairs"/>
+    <keywords group="guarantees"/>
+    <keywords group="responsability"/>
+    <keywords group="ownership"/>
+    <keywords group="value"/>
+    <keywords group="neighbourhood"/>
+    <keywords group="disorder"/>
+    <keywords group="transformation"/>
+    <analysis/>
+    <noteworthy>marché : ravalement "payé à 10 sols la toise en quarré ravalée en dehors et en dedant suivant les usage et coutume de Paris"</noteworthy>
+  </description>
+</expertise>

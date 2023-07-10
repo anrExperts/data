@@ -1,0 +1,202 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j664d036" status="">
+  <meta/>
+  <control>
+    <maintenanceStatus>revised</maintenanceStatus>
+    <publicationStatus/>
+    <localControl localType="detailLevel">
+      <term>completed</term>
+    </localControl>
+    <maintenanceHistory>
+      <maintenanceEvent>
+                <eventType>revised</eventType>
+                <eventDateTime standardDateTime="2022-05-24T08:39:43Z">2022-05-24T08:39:43Z</eventDateTime>
+                <agentType>human</agentType>
+                <agent>llosserand</agent>
+                <eventDescription>rvpcd</eventDescription>
+            </maintenanceEvent>
+          <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateObjectsValues_db.xqy/BaseX</agent>
+        <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-06-16T16:56:32.893+02:00">2021-06-16T16:56:32.893+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateOpinionRef_files.xqy/BaseX</agent>
+        <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-06-16T16:29:02.548+02:00">2021-06-16T16:29:02.548+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateRefValues_files.xqy/BaseX</agent>
+        <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>created</eventType>
+        <eventDateTime standardDateTime="2021-04-24T19:59:04Z">2021-04-24T19:59:04Z</eventDateTime>
+        <agentType>human</agentType>
+        <agent>llosserand</agent>
+        <eventDescription>Création de la fiche.</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+  </control>
+  <sourceDesc>
+    <unitdate>1736</unitdate>
+    <idno type="unitid">Z1J664</idno>
+    <idno type="item">036</idno>
+    <facsimile from="0437" to="0442"/>
+    <physDesc>
+      <extent sketch="true">6</extent>
+    </physDesc>
+  </sourceDesc>
+  <description>
+    <sessions>
+      <date when="1736-08-09" type="paris"/>
+      <date when="1736-08-09" type="paris"/>
+      <date when="1736-08-11" type="paris"/>
+    </sessions>
+    <places>
+      <place xml:id="id335d81" type="paris">
+        <address>
+          <street>rue de l'estrapade</street>
+          <buildingNumber/>
+        </address>
+        <complement/>
+        <parish/>
+        <owner/>
+      </place>
+      <place xml:id="id335d98" type="paris">
+        <address>
+          <street>rue Saint Nicolas</street>
+          <buildingNumber/>
+        </address>
+        <complement>faubourg Saint Antoine</complement>
+        <parish/>
+        <owner/>
+      </place>
+    </places>
+    <categories>
+          <category type="acceptation">Recevoir et évaluer le travail réalisé</category>
+      <category type="estimation">Estimer la valeur des biens</category>
+      <designation rubric="true">Estimation de maisons, rues de l'Estrapade et St Nicolas, Fg St Antoine, à la requeste de Dlle Augard, veuve Pipault ; M. Cochois, expert ; M. Pothenot, greffier.</designation>
+    </categories>
+    <procedure>
+      <framework type="b2">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+      <origination type="institution">Une institution</origination>
+      <sentences>
+        <sentence>
+          <orgName>LC</orgName>
+          <date when="1736-07-14"/>
+        </sentence>
+      </sentences>
+      <case>succession, rendu des offres de la tutelle et administration de la communauté</case>
+      <objects>
+        <object type="house">Maison(s)</object>
+      </objects>
+    </procedure>
+    <participants>
+      <experts>
+        <expert ref="#xpr0056" context="primary" appointment="court-appointed">
+          <title>architecte expert bourgeois</title>
+        </expert>
+      </experts>
+      <clerks>
+        <clerk ref="#xpr0227">
+          <persName>
+            <surname>Pothenot</surname>
+            <forename>Gabriel</forename>
+          </persName>
+        </clerk>
+      </clerks>
+      <parties>
+        <party role="petitioner" presence="" intervention="">
+          <person>
+            <persName>
+              <surname>Augard</surname>
+              <forename>Françoise</forename>
+            </persName>
+            <occupation>veuve Sulpice Pipault, entrepreneur de bâtiments</occupation>
+          </person>
+          <status>heir</status>
+          <expert ref="#xpr0056"/>
+        </party>
+        <party role="opponent" presence="" intervention="">
+          <person>
+            <persName>
+              <surname>Pipault</surname>
+              <forename>Anne</forename>
+            </persName>
+            <occupation>veuve François Jolivet, maçon, fille dudit feu sieur Pipault et de Marie Selle sa première femme</occupation>
+          </person>
+          <person>
+            <persName>
+              <surname>Pipault</surname>
+              <forename>Paul</forename>
+            </persName>
+            <occupation>inspecteur des Ponts et chaussées, et héritier aussi pour 1/7e de feu Pipault son père</occupation>
+          </person>
+          <person>
+            <persName>
+              <surname>consorts Pipault (dont mineurs)</surname>
+              <forename/>
+            </persName>
+            <occupation/>
+          </person>
+          <status>heir</status>
+          <expert ref="#xpr0056"/>
+        </party>
+      </parties>
+      <craftmen>
+        <craftman>
+          <persName>
+            <surname/>
+            <forename/>
+          </persName>
+          <occupation/>
+        </craftman>
+      </craftmen>
+    </participants>
+    <conclusions>
+      <agreement type="conclusion">Conclusion</agreement>
+      <opinion ref="#xpr0056">Rue de l’estrapade
+Laquelle maison ainsy qu’elle se poursuit comporte et étend, tenant… ayant ainsy vue et visitée, fait considération sur son état et consistance aux réparations qui y sont à faire, consistantes en la descente de caves au mur d’échiffre d’icelle et en une partie de celuy de refend au bas de ladite descente eu égard aussy à ce que les tuyeaux et manteaux de cheminée sont adossés les unes devant les autres et d’ancienne construction nous la prisons et estimons la somme de cinq mille livres eu égard ainsy à la scituation d’icelle maison et à ce qu’elle est chargée de quatre livres de redevances envers l’hôtel des mousquetaires et à la charge du cens seulement, cy 5000 livres
+Rue St Nicolas
+De tous lesquels ouvrages cy dessus faits en ladite maison tant en maçonnerie, charpente, couverture, carreaux et autres pendant ladite communauté, nous avons pour connoitre de leur valleur d’iceux pris les mesures faits les calculs réduction et additions et au moyen du prix que nous y avons mis eu égard à leur différentes qualitez nous les avons trouvé monter et revenir ensemble à la somme de onze cent cinquante livres à laquelle nous les estimons cy 1150 livres
+Ce que dessus est monsieur la visite et estimation par nous faitte desdites deux maisons dépendances de ladite communauté et succession et les mentions des améliorations, impenses et constructions faittes en la maison rue St Nicolas faubourg St Antoine durant le seconde communauté dudit feu sieur Pipault et ladite demoiselle sa veuve, vous référans, monsieur d’ordonner sur le tout selon votre prudence ordinaire.</opinion>
+      <arrangement/>
+      <estimate l="" s="" d=""/>
+      <estimates>
+        <place ref="#id335d81">
+          <appraisal l="5000" s="" d="">
+            <desc>une maison</desc>
+          </appraisal>
+        </place>
+        <place ref="#id335d98"/>
+      </estimates>
+      <fees detail="">
+        <total l="" s="" d=""/>
+      </fees>
+      <expenses mentioned="false"/>
+    </conclusions>
+    <keywords group="estates"/>
+    <keywords group="procedure"/>
+    <keywords group="contract"/>
+    <keywords group="encumbrance"/>
+    <keywords group="law"/>
+    <keywords group="measurement"/>
+    <keywords group="repairs"/>
+    <keywords group="guarantees"/>
+    <keywords group="responsability"/>
+    <keywords group="ownership"/>
+    <keywords group="value"/>
+    <keywords group="neighbourhood"/>
+    <keywords group="disorder"/>
+    <keywords group="transformation"/>
+    <analysis>#impenses</analysis>
+    <noteworthy>il y a  bien deux catégories : estimer la valeur de la première maison et estimer les réparations faites dans la 2e maison à l'occasion des compte de communauté de biens ("améliorations, impenses et constructions faites")</noteworthy>
+  </description>
+</expertise>

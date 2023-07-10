@@ -1,0 +1,217 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1010d043">
+  <meta/>
+  <control>
+    <maintenanceStatus>revised</maintenanceStatus>
+    <publicationStatus/>
+    <localControl localType="detailLevel">
+      <term>completed</term>
+    </localControl>
+    <maintenanceHistory>
+      <maintenanceEvent>
+                <eventType>revised</eventType>
+                <eventDateTime standardDateTime="2022-08-28T14:35:20Z">2022-08-28T14:35:20Z</eventDateTime>
+                <agentType>human</agentType>
+                <agent>llosserand</agent>
+                <eventDescription>rvpcd</eventDescription>
+            </maintenanceEvent>
+          <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateOpinionRef_files.xqy/BaseX</agent>
+        <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateRefValues_files.xqy/BaseX</agent>
+        <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+        <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>revised</eventType>
+        <eventDateTime standardDateTime="2020-09-01T12:00:00">2020-09-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>JH</agent>
+        <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>retroconverted</eventType>
+        <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>ead2xpr.xsl/Saxon9</agent>
+        <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>created</eventType>
+        <eventDateTime standardDateTime="2017-04-01T12:00:00">2017-04-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>llosserand</agent>
+        <eventDescription>Création de la fiche.</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+  </control>
+  <sourceDesc>
+    <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1010</idno>
+    <idno type="item">043</idno>
+    <facsimile from="0369" to="0373"/>
+    <physDesc>
+      <extent sketch="false">4</extent>
+    </physDesc>
+  </sourceDesc>
+  <description>
+    <sessions>
+      <date when="1776-12-24" type="paris"/>
+    </sessions>
+    <places>
+      <place type="office">
+        <address/>
+      </place>
+    </places>
+    <categories>
+          <category type="acceptation">Recevoir et évaluer le travail réalisé</category>
+      <category type="settlement">Départager</category>
+      <designation rubric="true">Estimation d’ouvrages de façon de menuiserie</designation>
+    </categories>
+    <procedure>
+      <framework type="b2">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+      <origination type="institution">Une institution</origination>
+      <sentences>
+        <sentence>
+          <orgName>lieutenant civil</orgName>
+          <date when="1776-12-04"/>
+          <date when="1776-11-13"/>
+        </sentence>
+      </sentences>
+      <case>Désaccord sur les journées et ouvrages dus au compagnon</case>
+      <objects>
+        <object type="other">ouvrages de menuiserie</object>
+      </objects>
+    </procedure>
+    <participants>
+      <experts>
+        <expert ref="#xpr0104" context="primary" appointment="appointed">
+          <title>architecte expert des bâtiments à Paris</title>
+        </expert>
+        <expert ref="#xpr0250" context="primary" appointment="appointed">
+          <title>architecte expert des bâtiments à Paris</title>
+        </expert>
+      </experts>
+      <clerks>
+        <clerk ref="#clrk0062">
+          <persName>
+            <surname>Picquenon</surname>
+            <forename>Denis Joseph François</forename>
+          </persName>
+        </clerk>
+      </clerks>
+      <parties>
+        <party role="petitioner" presence="true" intervention="true">
+          <person>
+            <persName>
+              <surname>Sandemoy</surname>
+              <forename/>
+            </persName>
+            <occupation>maître menuisier</occupation>
+          </person>
+          <status>builder</status>
+          <expert ref="#xpr0104"/>
+          <prosecutor>
+            <persName>
+              <surname>Phelippon</surname>
+              <forename/>
+            </persName>
+          </prosecutor>
+          <representative>
+            <persName>
+              <surname>Poucher</surname>
+              <forename/>
+            </persName>
+            <occupation>avocat</occupation>
+          </representative>
+        </party>
+        <party role="opponent" presence="true" intervention="true">
+          <person>
+            <persName>
+              <surname>Duclin</surname>
+              <forename>Claude François</forename>
+            </persName>
+            <occupation>compagnon menuisier</occupation>
+          </person>
+          <status/>
+          <expert ref="#xpr0250"/>
+          <representative>
+            <persName>
+              <surname>Ribert</surname>
+              <forename/>
+            </persName>
+            <occupation>avocat</occupation>
+          </representative>
+          <prosecutor>
+            <persName>
+              <surname>Noël le jeune</surname>
+              <forename/>
+            </persName>
+          </prosecutor>
+        </party>
+      </parties>
+      <craftmen>
+        <craftman>
+          <persName>
+            <surname/>
+            <forename/>
+          </persName>
+          <occupation/>
+        </craftman>
+      </craftmen>
+    </participants>
+    <conclusions>
+      <opinion ref="#xpr0104 #xpr0250">"Total desdits ouvrages à la tache et desdites journées la somme de 616 l. 6 s. 9 d."
+« Nous observons que par l’article 4 du mémoire des ouvrages à la tâche est fait demande pour avoir fait et posé la frize en bois de chêne [creusée ?] de cannellures : que le sr Sandemoy sur cet article a soutenu que la [face ?] des canaux a été comprise aux journées dont luy a été donné acte par la sentence qu’il a été soutenu au contraire par le sr Duclin : c’est pourquoy si la cour se détermine à trouver juste la prétention dud. sr Sandemoy, la somme de douze livres pour laquelle led. art. 4 est entré dans nôtre estimation totalle cy dessus sera retranché du total de lad. estimation et dans ce cas notred. estimation seroit réduitte à celle de six cent quatre livres six sols neuf deniers.
+                Nous avons annexé led. mémoire à ces présentes [f. 3v°] après avoir été de nous et du greffier signé et paraphé pour y avoir recours dans tous les tems par qui il appartiendra.
+                Telle est notre avis sur la mission à nous déférée par vos sentence monsieur, nous réservons à votre justice et prudence ordinaire. »</opinion>
+      <arrangement/>
+      <agreement type="agreement">Accord</agreement>
+      <estimate l="616" s="6" d="9"/>
+      <fees detail="true">
+        <fee type="papers" l="3" s="6" d=""/>
+        <fee type="expert" ref="#xpr0104" l="6" s="" d=""/>
+        <fee type="expert" ref="#xpr0250" l="6" s="" d=""/>
+        <fee type="clerk" l="6" s="" d=""/>
+        <fee type="rolls" l="7" s="10" d=""/>
+        <fee type="prosecutors" l="5" s="" d=""/>
+        <fee type="help" l="" s="" d=""/>
+        <fee type="plans" l="" s="" d=""/>
+        <total l="33" s="16" d=""/>
+      </fees>
+      <expenses mentioned="true">
+        <expense type="expert" l="4" s="" d=""/>
+        <expense type="clerk" l="6" s="7" d="6"/>
+      </expenses>
+    </conclusions>
+    <keywords group="estates"/>
+    <keywords group="procedure"/>
+    <keywords group="contract"/>
+    <keywords group="encumbrance"/>
+    <keywords group="law"/>
+    <keywords group="measurement"/>
+    <keywords group="repairs"/>
+    <keywords group="guarantees"/>
+    <keywords group="responsability"/>
+    <keywords group="ownership"/>
+    <keywords group="value"/>
+    <keywords group="neighbourhood"/>
+    <keywords group="disorder"/>
+    <keywords group="transformation"/>
+    <analysis>Les parties sont d’accord entre elles sur le nature de l’exécution des ouvrages, elles demandent donc qu’il ne soit pas procédé à la visite mais à un simple règlement d’après les énonciations des mémoires. Le total des ouvrages à la tâche était calculé dans les mémoires à 735 livres 7 sols 11 deniers.</analysis>
+    <noteworthy/>
+  </description>
+</expertise>

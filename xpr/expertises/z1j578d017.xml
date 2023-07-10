@@ -1,0 +1,197 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j578d017">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-10-01T12:00:00">2020-10-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2016-10-26T12:00:00">2016-10-26T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>RB</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1726</unitdate>
+    <idno type="unitid">Z1J578</idno>
+        <idno type="item">017</idno>
+        <facsimile from="0152" to="0185"/>
+        <physDesc>
+          <extent sketch="false">34</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1726-01-17" type="paris"/>
+          <date when="1726-04-06" type="paris"/>
+        </sessions>
+        <places>
+          <place type="paris">
+            <address>
+              <street>rue de la Bucherie</street>
+              <buildingNumber/>
+            </address>
+            <complement>près la place Maubert</complement>
+            <parish/>
+            <owner>Gayet</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="acceptation">Recevoir et évaluer le travail réalisé</category>
+          <designation rubric="true">Visite, toisé et estimation d'ouvrages de maçonnerie et de serrurerie</designation>
+        </categories>
+        <procedure>
+          <framework type="b2a">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Lieutenant civil</orgName>
+              <date when="1725-10-12"/>
+            </sentence>
+          </sentences>
+          <case>Réception d'ouvrages</case>
+          <objects>
+            <object type="other">ouvrages de maçonnerie et serrurerie</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0018" context="primary" appointment="appointed">
+              <title>architecte juré du roi expert bourgeois de Paris</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#xpr0066">
+              <persName>
+                <surname>Danjan</surname>
+                <forename>Pierre Paul</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="true" intervention="false">
+              <person>
+                <persName>
+                  <surname>Ravinet</surname>
+                  <forename>Jacob Louis</forename>
+                </persName>
+                <occupation>maître maçon, entrepreneur de bâtiments à Paris</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Bouillot</surname>
+                  <forename>Nicolas</forename>
+                </persName>
+                <occupation>maître serrurier à Paris</occupation>
+              </person>
+              <status>builder</status>
+              <expert ref="#xpr0018"/>
+            </party>
+            <party role="opponent" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Gayet</surname>
+                  <forename>Marie</forename>
+                </persName>
+                <occupation>veuve de Joseph Leclerc de Lesseuille.</occupation>
+              </person>
+              <status>limited-partner</status>
+              <expert ref="#xpr0018"/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname>Ravinet</surname>
+                <forename>Jacob Louis</forename>
+              </persName>
+              <occupation>maître maçon, entrepreneur de bâtiments à Paris</occupation>
+            </craftman>
+            <craftman>
+              <persName>
+                <surname>Bouillot</surname>
+                <forename>Nicolas</forename>
+              </persName>
+              <occupation>maître serrurier à Paris</occupation>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0018">« Ayant finy lesdits visitte et examen, vérification, prisée et estimation de tous lesdits ouvrages de serrurerie et gros fers faits et fournis par ledit sieur Bouillot maître serrurier ausdites deux maisons rue de Thorigny et de la Bûcherie, et contenus au présent procès verbal et rapport, nous avons fait addition desdites sommes ainsi que nous les avons prisées et estimées, et trouvé qu'elles montent ensemble à celle de 1 302 livres 2 sols 3 deniers, sur laquelle nous estimons qu'il convient déduire la somme de 68 livres 17 sols pour 459 livres pesant de vieil fer provenant des démolitions que ledit Bouillot a reçu et pris en compte. Partant reste pour tous lesdits ouvrages la somme de 1233 livres 5 sols 3 deniers.Faisant avec celle de 5 610 livres 11 sols 8 deniers ç quoy nous avons prisé et estimé tous les ouvrages de maçonnerie pareillement en questio faits par ledit sieur Ravinet aux deux maisons et cy devant déclaré, ensemble la somme de 6 843 livres 16 sols 11 deniers.»</opinion>
+          <arrangement/>
+          <agreement type="conclusion">Conclusion</agreement>
+          <estimate l="6843" s="16" d="11"/>
+          <fees detail="true">
+            <fee type="papers" l="" s="" d=""/>
+            <fee type="expert" ref="#xpr0018" l="36" s="10" d=""/>
+            <fee type="clerk" l="36" s="10" d=""/>
+            <fee type="rolls" l="28" s="10" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="97" s="10" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="97" s="10" d=""/>
+            <expense type="expert" l="" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis>Motivations
+                Le lieutenant civil du Châtelet a rendu le 12 octobre 1725 deux sentences ordonnant que soient prisés les travaux de maçonnerie et de serrurerie réalisés par Ravinet et Bouillot pour Marie Gayet. Ravinet lui réclame le paiement de ses ouvrages et Bouillot, 934 livres 9 sols qui lui sont encore dus pour ses travaux de serrurerie. Marie Gayet s'y opposant, un expert doit toiser et estimer le coût de ces travaux.</analysis>
+        <noteworthy/>
+      </description>
+    </expertise>

@@ -1,0 +1,251 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1009d035">
+  <meta/>
+  <control>
+    <maintenanceStatus>revised</maintenanceStatus>
+    <publicationStatus/>
+    <localControl localType="detailLevel">
+      <term>completed</term>
+    </localControl>
+    <maintenanceHistory>
+      <maintenanceEvent>
+                <eventType>revised</eventType>
+                <eventDateTime standardDateTime="2021-10-15T14:24:00Z">2021-10-15T14:24:00Z</eventDateTime>
+                <agentType>human</agentType>
+                <agent>llosserand</agent>
+                <eventDescription>exb3</eventDescription>
+            </maintenanceEvent>
+          <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateObjectsValues_db.xqy/BaseX</agent>
+        <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateOpinionRef_files.xqy/BaseX</agent>
+        <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateRefValues_files.xqy/BaseX</agent>
+        <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+        <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>revised</eventType>
+        <eventDateTime standardDateTime="2020-08-01T12:00:00">2020-08-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>llosserand</agent>
+        <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>retroconverted</eventType>
+        <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>ead2xpr.xsl/Saxon9</agent>
+        <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>created</eventType>
+        <eventDateTime standardDateTime="2017-10-01T12:00:00">2017-10-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>JH</agent>
+        <eventDescription>Création de la fiche.</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+  </control>
+  <sourceDesc>
+    <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1009</idno>
+    <idno type="item">035</idno>
+    <facsimile from="0308" to="0313"/>
+    <physDesc>
+      <extent sketch="false">5</extent>
+    </physDesc>
+  </sourceDesc>
+  <description>
+    <sessions>
+      <date when="1776-11-19" type="paris"/>
+    </sessions>
+    <places>
+      <place xml:id="id135d330" type="paris">
+        <address>
+          <street>Rue des Martyrs</street>
+          <buildingNumber/>
+        </address>
+        <complement>ayant pour enseigne Louis XV</complement>
+        <parish/>
+        <owner>Ravier</owner>
+      </place>
+    </places>
+    <categories>
+      <category type="estimation">Estimer la valeur des biens</category>
+      <designation rubric="true">Estimation d'une maison, rue des martirs aux porcherons, ayant pour enseigne Louis XV,, à la requeste du sieur Ravier ; MM. Derouges et Thévenin, experts.</designation>
+    </categories>
+    <procedure>
+      <framework type="b2">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+      <origination type="institution">Une institution</origination>
+      <sentences>
+        <sentence>
+          <orgName>Châtelet, lieutenant civil (sentence)</orgName>
+          <date when="1776-10-02"/>
+        </sentence>
+      </sentences>
+      <case>Succession Cayenne</case>
+      <objects>
+        <object type="house">Maison(s)</object>
+      </objects>
+    </procedure>
+    <participants>
+      <experts>
+        <expert ref="#xpr0082" context="primary" appointment="court-appointed">
+          <title>architecte expert des bâtiments à Paris</title>
+        </expert>
+        <expert ref="#xpr0254" context="primary" appointment="appointed">
+          <title>architecte expert des bâtiments à Paris</title>
+        </expert>
+      </experts>
+      <clerks>
+        <clerk ref="#clrk0062">
+          <persName>
+            <surname>Picquenon</surname>
+            <forename>Denis Joseph François</forename>
+          </persName>
+        </clerk>
+      </clerks>
+      <parties>
+        <party role="petitioner" presence="true" intervention="false">
+          <person>
+            <persName>
+              <surname>Ravier</surname>
+              <forename>Pierre</forename>
+            </persName>
+            <occupation>marchand de vin rue de Clichy, au nom et comme mary et maître des droits et actions de Forme, Marie Louise, sa femme héritière pour 1/5 de Cayenne, Marie Geneviève sa mère, à son décès veuve deForme, Pierre, marchand de vin et à ce titre propriétaire d’1/15 [sic] de la maison dont il est question</occupation>
+          </person>
+          <status>owner</status>
+          <expert ref="#xpr0254"/>
+          <prosecutor>
+            <persName>
+              <surname>Hennequin</surname>
+              <forename>François Xavier</forename>
+            </persName>
+          </prosecutor>
+        </party>
+        <party role="opponent" presence="true" intervention="false">
+          <person>
+            <persName>
+              <surname>Chassaigne</surname>
+              <forename>Gabriel André</forename>
+            </persName>
+            <occupation>marchand grainier à Paris, propriétaire pour 1/3 de la maison dont il est question</occupation>
+          </person>
+          <status>heir</status>
+          <expert ref="#xpr0082"/>
+          <prosecutor>
+            <persName>
+              <surname>Sagand</surname>
+              <forename/>
+            </persName>
+          </prosecutor>
+        </party>
+        <party role="opponent" presence="false" intervention="false">
+          <person>
+            <persName>
+              <surname>Dainé</surname>
+              <forename>Nicolas</forename>
+            </persName>
+            <occupation>marchand à Paris, au nom et comme tuteur de Carenne, Jean Antoine, garçon mineur émancipé, propriétaire pour 1/3 de la maison dont il est question</occupation>
+          </person>
+          <status>heir</status>
+          <expert ref="#xpr0082"/>
+          <prosecutor>
+            <persName>
+              <surname>Lecomte</surname>
+              <forename>Gilles Michel</forename>
+            </persName>
+          </prosecutor>
+        </party>
+        <party role="opponent" presence="true" intervention="false">
+          <person>
+            <persName>
+              <surname>Briançon</surname>
+              <forename>Nicolas</forename>
+            </persName>
+            <occupation>marchand de vin à Paris</occupation>
+          </person>
+          <status>heir</status>
+          <expert ref="#xpr0082"/>
+          <prosecutor>
+            <persName>
+              <surname>Brunet</surname>
+              <forename>Pierre Georges</forename>
+            </persName>
+          </prosecutor>
+        </party>
+      </parties>
+      <craftmen>
+        <craftman>
+          <persName>
+            <surname/>
+            <forename/>
+          </persName>
+          <occupation/>
+        </craftman>
+      </craftmen>
+    </participants>
+    <conclusions>
+      <opinion ref="">« Attention faitte à l’étendu dudit emplacement, à l’état et consistance de ladite maison et sa distribution, à la nature de sa construction, aux réparations qui sont à y faire au revenu qu’elle est susceptible de produire, au quartier où elle est située, et à ce qu’elle est chargée de 25 l. par an tant à titre de logement des gens de guerre qu’à cause d’une rente de la nature qu’elle est due envers la chapelle de Lorette nous avons mis des prix particuliers tant au fond du terrain qu’à la superficie des batiments eu égard à ce que dessus Touttes considerations faittes nous prisons et estimons ladite maison et dependances en l’état que le tout se poursuit et comporte, detaillé au present rapport à la charge du cens et des droits seigneuriaux du logement des gens de guerre de ladite rente de la nature qu’elle est due et au cours du tems present la somme de … 8 200 l. 
+Quant au chef de la sentence suivant lequel nous devons donner notre avis si ladite maison peut ou non commodement se partager en autant de portions qu’il y a de proprietaires, notre avis est que le partage en est impossible, cy… avis 
+Telle est, Monsieur, la visitte par nous faitte de ladite maison et notre avis tant sur la valeur d’icelle que sur l’impossibilité de la partager, le tout suivant et aux termes de votre sentence, nous referant sur le tout à votre justice et prudence ordinaires Fait par nous architectes experts susdits lesdits jours mois et an »</opinion>
+      <arrangement/>
+      <agreement type="agreement">Accord</agreement>
+      <estimate l="" s="" d=""/>
+      <estimates>
+        <place ref="#id135d330">
+          <appraisal l="8200" s="" d="">
+            <desc>une maison</desc>
+          </appraisal>
+        </place>
+      </estimates>
+      <fees detail="true">
+        <fee type="papers" l="5" s="18" d=""/>
+        <fee type="expert" ref="#xpr0082" l="15" s="" d=""/>
+        <fee type="expert" ref="#xpr0254" l="15" s="" d=""/>
+        <fee type="clerk" l="15" s="" d=""/>
+        <fee type="rolls" l="13" s="" d=""/>
+        <fee type="prosecutors" l="" s="" d=""/>
+        <fee type="help" l="" s="" d=""/>
+        <fee type="plans" l="" s="" d=""/>
+        <total l="63" s="18" d=""/>
+      </fees>
+      <expenses mentioned="false"/>
+    </conclusions>
+    <keywords group="estates"/>
+    <keywords group="procedure"/>
+    <keywords group="contract"/>
+    <keywords group="encumbrance"/>
+    <keywords group="law"/>
+    <keywords group="measurement"/>
+    <keywords group="repairs"/>
+    <keywords group="guarantees"/>
+    <keywords group="responsability"/>
+    <keywords group="ownership"/>
+    <keywords group="value"/>
+    <keywords group="neighbourhood"/>
+    <keywords group="disorder"/>
+    <keywords group="transformation"/>
+    <analysis/>
+    <noteworthy/>
+  </description>
+</expertise>

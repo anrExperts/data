@@ -1,0 +1,63 @@
+<eac xmlns="https://archivists.org/ns/eac/v2" xml:id="clrk0068">
+  <control maintenanceStatus="">
+    <recordId>clrk0068</recordId>
+    <maintenanceAgency>
+      <agencyName>ANR Experts</agencyName>
+    </maintenanceAgency>
+    <maintenanceHistory>
+      <maintenanceEvent maintenanceEventType="created">
+        <agent agentType="machine">clerk_csv2eac.xqy/BaseX</agent>
+        <eventDateTime standardDateTime="2022-12-31T14:06:48.817+01:00"/>
+        <eventDescription>Création des fiches EAC-CPF à partir du tableau</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+    <sources>
+      <source id="sourceid86496892">
+        <reference href="">Almanach royal 1767</reference>
+      </source>
+      <source id="sourceid86496894">
+        <reference href="">Almanach royal 1776</reference>
+      </source>
+    </sources>
+  </control>
+  <cpfDescription>
+    <identity>
+      <entityType value="person"/>
+      <nameEntry status="authorized" preferredForm="true" sourceReference="">
+        <part localType="full">Quirot, Estienne Jacques</part>
+      </nameEntry>
+      <nameEntry status="alternative" preferredForm="false" sourceReference="">
+        <part localType="surname">Quirot</part>
+        <part localType="forename">Estienne Jacques</part>
+      </nameEntry>
+      <otherEntityTypes>
+        <otherEntityType>
+          <term>clerk</term>
+        </otherEntityType>
+      </otherEntityTypes>
+      <identityId>clrk0068</identityId>
+    </identity>
+    <description>
+      <functions>
+        <function sourceReference="#sourceid86496892 #sourceid86496894">
+          <term>Greffier</term>
+          <dateRange>
+            <fromDate sourceReference="" certainty="certain" standardDate="1767"/>
+            <toDate sourceReference="" certainty="certain" standardDate="1776"/>
+          </dateRange>
+        </function>
+      </functions>
+      <places>
+        <place sourceReference="#sourceid86496892 #sourceid86496894">
+          <placeRole>Adresse</placeRole>
+          <placeName>rue de la Verrerie</placeName>
+          <dateRange>
+            <fromDate sourceReference="" certainty="certain" standardDate="1767"/>
+            <toDate sourceReference="" certainty="certain" standardDate="1776"/>
+          </dateRange>
+        </place>
+      </places>
+    </description>
+  </cpfDescription>
+  <!---->
+</eac>

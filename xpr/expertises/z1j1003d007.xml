@@ -1,0 +1,237 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1003d007">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-07-01T12:00:00">2020-07-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2017-10-01T12:00:00">2017-10-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1003</idno>
+        <idno type="item">007</idno>
+        <facsimile from="0144" to="0183"/>
+        <physDesc>
+          <extent sketch="false">40</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-05-18" type="province"/>
+          <date when="1776-05-18" type="province"/>
+          <date when="1776-06-08" type="paris"/>
+        </sessions>
+        <places>
+          <place type="province">
+            <address/>
+            <complement>abbaye Saint-Jean, rue de la rôtisserie, proche la cathédrale</complement>
+            <city>Chartres</city>
+            <district/>
+            <owner/>
+          </place>
+          <place type="office">
+            <address/>
+          </place>
+        </places>
+        <categories>
+          <category type="assessment">Décrire et évaluer les travaux à venir</category>
+          <designation rubric="true">Visitte, état et estimation des réparations à faire à l'abbaye de St Jean de Chartres et fermes dépendantes, pour MM. Les abbés, prieur et chanoines réguliers des laditte abbaye ; MM. Danjan et Delespine, experts.</designation>
+        </categories>
+        <procedure>
+          <framework type="b2b">L’institution est saisie dans le cadre d’une procédure (l’institution nomme un ou deux experts)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Grand conseil (arrêt)</orgName>
+              <date when="1776-03-29"/>
+              <date when="1775-12-22"/>
+            </sentence>
+          </sentences>
+          <case>Réparations nécessaires, à estimer.</case>
+          <objects>
+            <object type="buildings">Ensemble de bâtiments (biens immeubles)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0065" context="primary" appointment="court-appointed">
+              <title>architecte juré expert bourgeois en titre d'office</title>
+            </expert>
+            <expert ref="#xpr0085" context="primary" appointment="court-appointed">
+              <title>architecte juré expert bourgeois en titre d'office</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0067">
+              <persName>
+                <surname>Goüel</surname>
+                <forename>Gilles Louis</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="" intervention="">
+              <person>
+                <persName>
+                  <surname>L’abbé prieur et les chanoines réguliers de St Augustin, congrégation de FRance de l’abbaye st Jean</surname>
+                  <forename/>
+                </persName>
+                <occupation/>
+              </person>
+              <status>tenant</status>
+              <expert ref="#xpr0065"/>
+              <representative>
+                <persName>
+                  <surname>Mellier</surname>
+                  <forename>Louis</forename>
+                </persName>
+                <occupation>prieur de l'abbaye</occupation>
+              </representative>
+            </party>
+            <party role="opponent" presence="" intervention="">
+              <person>
+                <persName>
+                  <surname>Dromgols</surname>
+                  <forename>Patrice Thomas Nicolas</forename>
+                </persName>
+                <occupation>abbé commandataire de l'abbaye St JEan de Cahrtres</occupation>
+              </person>
+              <status>owner</status>
+              <expert ref="#xpr0085"/>
+              <representative>
+                <persName>
+                  <surname>Malheux Delapalisse</surname>
+                  <forename>Louis Gabriel</forename>
+                </persName>
+                <occupation>receveur des décimes du diocèse de Chartres</occupation>
+              </representative>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="">Réparations à faire à chacune des cinq fermes
+ferme d’Emerville 1 321 l. 2 s.
+ferme d’Aubret 988 l. 10 s.
+ferme d’Edville 1 235 l. 10 s.
+ferme d’Ozainville 3 074 l.
+ferme de la Chanoinie 1 210 l. 10 s.
+7 829 l. 12 s. »
+« Ayant achevé de rapporter en notre présent procès-verbal l’état et consistance de l’église et des lieux reguliers dépendant de ladite abbaye de Saint-Jean de Chartres et ne nous restant plus qu’à constater les réparations qui sont à faire tant à ladite église qu’auxdits lieux réguliers, nous avons remis pour y procéder au premier jour dont nous conviendrons avec les parties. » [Le procès-verbal s’achève pourtant sur cette vacation]</opinion>
+          <arrangement/>
+          <agreement type="agreement">Accord</agreement>
+          <estimate l="" s="" d=""/>
+          <fees detail="true">
+            <fee type="papers" l="30" s="" d=""/>
+            <fee type="expert" ref="#xpr0065" l="422" s="" d=""/>
+            <fee type="expert" ref="#xpr0085" l="422" s="" d=""/>
+            <fee type="clerk" l="422" s="" d=""/>
+            <fee type="rolls" l="110" s="" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="1406" s="" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="271" s="1" d="8"/>
+            <expense type="expert" l="180" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis>f. 2r° "attendu l'impossibilité de nous loger et prendre nos repas ailleurs que dans les fermes que nous avons à visitte, il [abbé commendataire] conscent que nous logions et prenions nos repas non seulement dans lesdites fermes mais encore à ladite abbaye, renonçant à pouvoir à jamais tirer aucun avantage des ordonnances qui prescrivent le contraire et auxquelles monsieur l'abbé Drongols déclarer renoncer expresssément</analysis>
+        <noteworthy>arrêt du 3 septembre 1774 fixant les termes de "l'entretien en réparations et même reconstructions quand il y aura lieu" de l'abbaye St Jean de Chartres 
+- arrêt contradictoire du mois de mars 1774 concernant le partage des biens d'Emerville, d'Edville, d'Aubret, d'Ozainville et de la Chanoinie. Mais cet ensemble, demandé à expertisé par l'arrêt du Grand conseil, ce que les deux parties réfutent tour à tour.
+
+f. 1v° : frais de 4 francs par heure ce qui est conforme à l'arrêt du règlement de monsieur le procureur général
+
+nomination de l'expert : f. 2r° selon l'arrêt :
+à l'origine l'abbé Drongols avait nommé Goupy comme expert (la 2e sentence indiquele changement, sans explication)
+un "expert ecclésiastique" devait être nommé par les parties devant le lieutenant général du bailliagede Charttres pour l'expertise des ornements, livres et autres objets du culte
+toutes les dates des vacations ne sont pas notées sur cette fiche
+
+1er expert
+47 h de trav. à 4 l. 188 l.
+21 h de route à 2 42 l.
+5 journées de M. à 120 l.
+12 vacations de P. 72 l.
+422 l.
+2e expert idem 422 l.
+greffier idem 422 l.
+expedition 220 ro. 110 l.
+pap. Et controlle 30 l.
+1 406 l.</noteworthy>
+      </description>
+    </expertise>

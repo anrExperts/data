@@ -1,0 +1,208 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1004d065">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-07-01T12:00:00">2020-07-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2017-10-01T12:00:00">2017-10-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1004</idno>
+        <idno type="item">065</idno>
+        <facsimile from="0724" to="0732"/>
+        <physDesc>
+          <extent sketch="false">6</extent>
+          <appendices>
+            <appendice>
+              <type type="other">lettre</type>
+              <extent>2</extent>
+              <desc/>
+              <note>billet de Delespine au greffier Mangin</note>
+            </appendice>
+          </appendices>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-06-28" type="suburbs"/>
+        </sessions>
+        <places>
+          <place xml:id="id170d270" type="suburbs">
+            <address/>
+            <complement>rue Freleuze</complement>
+            <city>Gentilly</city>
+            <district/>
+            <owner>mineurs La Tour</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="estimation">Estimer la valeur des biens</category>
+          <designation rubric="true">Visite et estimation d'une maison et jardin, size à Gentilly les  Paris, rue Freleuze, appartenant aux mineurs Latour ; M. Delespine, exepert.</designation>
+        </categories>
+        <procedure>
+          <framework type="b2b">L’institution est saisie dans le cadre d’une procédure (l’institution nomme un ou deux experts)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Châtelet, lieutenant civil (sentence)</orgName>
+              <date when="1776-06-18"/>
+            </sentence>
+          </sentences>
+          <case>Succession Pierre La tour, héritiers mineurs</case>
+          <objects>
+            <object type="house">Maison(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0085" context="primary" appointment="court-appointed">
+              <title>architecte expert bourgeois de Paris</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0047">
+              <persName>
+                <surname>Mangin</surname>
+                <forename>Philbert</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="true" intervention="false">
+              <person>
+                <persName>
+                  <surname>La Tour</surname>
+                  <forename>Adelaïde Françoise</forename>
+                </persName>
+                <occupation>enfant mineur de défunt La Tour Pierre, maître cordonnier et de Vacard, Françoise son épouse désormais veuve</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>La Tour</surname>
+                  <forename>Marie Anne Victoire</forename>
+                </persName>
+                <occupation>mineure épouse deGuillot, Jean Baptiste, maréchal en charge de monseigneur lecomte d’Artois, enfant mineur de défunt La Tour Pierre, maître cordonnier et de Vacard, Françoise son épouse désormais veuve</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>La Tour</surname>
+                  <forename>Pierre Joseph</forename>
+                </persName>
+                <occupation>enfant mineur de défunt La Tour Pierre, maître cordonnier et de Vacard, Françoise son épouse désormais veuve</occupation>
+              </person>
+              <status>heir</status>
+              <expert ref="#xpr0085"/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0085">« A l’effet de l’estimation que nous avons à faire de ladite maison nous avons figuré le plan tant des masses des batimens cour basse cour et jardin pris les mesures de ces differents objets qui la composent et fait les operations de calculs pour connoitre l’estendue et superficie dudit emplacement dont les resultats nous a fait connoitre que cet emplacement contient trente six perches de dix huit pieds 
+Ce consideré nous prisons et estimons ladite maison avec ses dependances ainsy qu’elle se poursuit et comporte de fond en comble la somme de six mille livres eu égard à l’estendue de son emplacement, à la nature et qualité des constructions desdits deux corps de logis et édiffices qui composent cette maison à la distribution des logemens qui sont pratiqués dans iceux et l’usage auxquels ils sont destinés aux réparations qui sont à y faire, et aussy eu égard au cours du temps present, au lieu où est située ladite maison et à la charge des cens seullement dus aux seigneurs dans la censive dans laquelle lesdits immeubles sont assis, que nous n’avons pu connoitre ne nous ayant été remis aucun titres de ladite maison qui auroient pu nous donner des renseignements à cet égard, cy… 6 000 l. 
+Telles sont les visitte, prisée et estimation de ladite maison cour, basse cour et jardin et dependances vous referant Monsieur d’ordonner sur le tout. »</opinion>
+          <arrangement/>
+          <agreement type="conclusion">Conclusion</agreement>
+          <estimate l="6000" s="" d=""/>
+          <estimates>
+            <place ref="#id170d270">
+              <appraisal l="6000" s="" d="">
+                <desc>une maison</desc>
+              </appraisal>
+            </place>
+          </estimates>
+          <fees detail="true">
+            <fee type="papers" l="5" s="" d=""/>
+            <fee type="expert" ref="#xpr0085" l="15" s="" d=""/>
+            <fee type="clerk" l="15" s="" d=""/>
+            <fee type="rolls" l="14" s="10" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="49" s="10" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="12" s="12" d=""/>
+            <expense type="expert" l="5" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure">
+          <term value="b6">Titre (de propriété)</term>
+        </keywords>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis/>
+        <noteworthy/>
+      </description>
+    </expertise>

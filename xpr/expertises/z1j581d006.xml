@@ -1,0 +1,191 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j581d006">
+  <meta/>
+  <control>
+    <maintenanceStatus>revised</maintenanceStatus>
+    <publicationStatus/>
+    <localControl localType="detailLevel">
+      <term>completed</term>
+    </localControl>
+    <maintenanceHistory>
+      <maintenanceEvent>
+                <eventType>revised</eventType>
+                <eventDateTime standardDateTime="2022-03-25T16:16:54Z">2022-03-25T16:16:54Z</eventDateTime>
+                <agentType>human</agentType>
+                <agent>llosserand</agent>
+                <eventDescription>rvpcd</eventDescription>
+            </maintenanceEvent>
+          <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateObjectsValues_db.xqy/BaseX</agent>
+        <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateRefValues_files.xqy/BaseX</agent>
+        <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+        <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>revised</eventType>
+        <eventDateTime standardDateTime="2020-11-01T12:00:00">2020-11-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>JH</agent>
+        <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>retroconverted</eventType>
+        <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>ead2xpr.xsl/Saxon9</agent>
+        <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>created</eventType>
+        <eventDateTime standardDateTime="2017-04-01T12:00:00">2017-04-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>llosserand</agent>
+        <eventDescription>Création de la fiche.</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+  </control>
+  <sourceDesc>
+    <unitdate>1726</unitdate>
+    <idno type="unitid">Z1J581</idno>
+    <idno type="item">006</idno>
+    <facsimile from="0035" to="0051"/>
+    <physDesc>
+      <extent sketch="false">16</extent>
+    </physDesc>
+  </sourceDesc>
+  <description>
+    <sessions>
+      <date when="1726-06-04" type="paris"/>
+      <date when="1726-06-04" type="paris"/>
+    </sessions>
+    <places>
+      <place type="paris">
+        <address>
+          <street>Rue d'Argenteuil [Cette dénomination correspond à 2 voies : Voie actuelle. Actuelle rue Saint-Lazare] et rue l'Evêque [Cette dénomination correspond à 3 voies:Voie supprimée. Également dénommée rue Culloir. Voie ancienne : voir rue de l'Evêché, Actuelles partie de la rue Boissy-d'Anglas et partie de la rue Pasquier], butte Saint-Roch</street>
+          <buildingNumber/>
+        </address>
+        <complement/>
+        <parish/>
+        <owner>Le Pot</owner>
+      </place>
+    </places>
+    <categories>
+      <category type="settlement">Départager</category>
+      <designation rubric="true">visite de mur mitoyen</designation>
+    </categories>
+    <procedure>
+      <framework type="b2">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+      <origination type="institution">Une institution</origination>
+      <sentences>
+        <sentence>
+          <orgName>lieutenant civil</orgName>
+          <date when="1726-05-22"/>
+        </sentence>
+      </sentences>
+      <case>nécessité de déterminer qui des propriétaires doit payer la réparation d'un mur mitoyen en ruine ainsi que les latrines et leurs fosses qui sont communes aux deux maisons.</case>
+      <objects>
+        <object type="wall">Mur(s)</object>
+      </objects>
+    </procedure>
+    <participants>
+      <experts>
+        <expert ref="#xpr0232" context="primary" appointment="appointed">
+          <title>architecte juré du roi expert bourgeois de Paris</title>
+        </expert>
+        <expert ref="#xpr0236" context="primary" appointment="appointed">
+          <title>juré du roi expert entrepreneur de bâtiment à Paris</title>
+        </expert>
+      </experts>
+      <clerks>
+        <clerk ref="#clrk0029">
+          <persName>
+            <surname>Quirot</surname>
+            <forename>Jacques</forename>
+          </persName>
+        </clerk>
+      </clerks>
+      <parties>
+        <party role="petitioner" presence="true" intervention="false">
+          <person>
+            <persName>
+              <surname>Le Pot</surname>
+              <forename>Pierre</forename>
+            </persName>
+            <occupation>officier du roi et propriétaire d'une maison rue d'Argenteuil</occupation>
+          </person>
+          <status>owner</status>
+          <expert ref="#xpr0236"/>
+        </party>
+        <party role="opponent" presence="true" intervention="false">
+          <person>
+            <persName>
+              <surname>Peaget</surname>
+              <forename>Claude-François</forename>
+            </persName>
+            <occupation>marchand bourgeois de Paris, ancien juge consul (tant pour luy que pour les copropriétaires dont il se porte fort)</occupation>
+          </person>
+          <status>owner</status>
+          <expert ref="#xpr0232"/>
+        </party>
+      </parties>
+      <craftmen>
+        <craftman>
+          <persName>
+            <surname/>
+            <forename/>
+          </persName>
+          <occupation/>
+        </craftman>
+      </craftmen>
+    </participants>
+    <conclusions>
+      <opinion ref="#xpr0232">[f. 10v°] « Par touttes lesquelles raisons fondées en titres et en principe, moy Quirot estime et mon avis est que led. sieur Le Pot ne peut ny ne doit faire aucune eslévations de bastimens ny autres esdiffices sur le siège d'aisance de la maison de la rue l'Evesque appartenant à présent aud. sr Peaget et consors. Quant à ce qui concerne la fosse d'aisance, moy Quirot suis du même avis dud. sr. Richard, que n'ayant pu voir ny visitter lad. fosse pour donner nostre avis sur les réparations qui peuvent estre à y faire ou dire s'il n'y en a point, attendu qu'il y a actuellement quatre pieds de hauteur ou environ de matières féccalles dans lad. fosse, ne pouvant constatter l'estat de lad. fosse d'aisance qu'après qu'elle sera vuidée. ».</opinion>
+      <opinion ref="#xpr0236">[1er chef] : « [f. 8v°] mon avis est que le mur ne peut subsister en l'estat qu'il est […] ce qui a esté causé par l'humidité des terres de la cour dud. sr. Peaget et consorts n'y ayant pas de contremur pour soutenir les terres, ainsy il est nécessaire de reconstruire à neuf ledit mur de closture depuis le bas ou sa fondation se trouvera estre bonne pour closture jusqu'à la hauteur de la cour dud. sr. Peaget ensemble boucher la porte qui est dans l'endroit dudit mur […] dont le sieur Peaget et consorts payerons les deux tiers de la dépence, jusqu'à lad. hauteur du rez de chaussée de leur cour, l'eslévation des terres de leurd. cour ayant occasionné la ruine dud. mur, et l'autre tiers payé par le sieur Le Pot, et ce qui sera refait dud. mur au dessus du rez de chaussée de la cour dud. sr. Peaget sera payé à frais communs chacun par moitié, à la réserve des crespis et enduis que chacun fera de son costé et à ses frai seuls pour raison de laquelle reconstruction il sera nécessaire de prendre et marquer l'allignement et dud. mur de closture mitoyen pour qu'il soit reconstruit sur ses anciens vestiges [etc.] »</opinion>
+      <arrangement/>
+      <agreement type="disagreement">Désaccord</agreement>
+      <estimate l="" s="" d=""/>
+      <fees detail="true">
+        <fee type="papers" l="8" s="5" d=""/>
+        <fee type="expert" ref="#xpr0232" l="18" s="" d=""/>
+        <fee type="expert" ref="#xpr0236" l="18" s="" d=""/>
+        <fee type="clerk" l="18" s="" d=""/>
+        <fee type="rolls" l="15" s="15" d=""/>
+        <fee type="prosecutors" l="" s="" d=""/>
+        <fee type="help" l="" s="" d=""/>
+        <fee type="plans" l="" s="" d=""/>
+        <total l="78" s="" d=""/>
+      </fees>
+      <expenses mentioned="false"/>
+    </conclusions>
+    <keywords group="estates"/>
+    <keywords group="procedure"/>
+    <keywords group="contract"/>
+    <keywords group="encumbrance"/>
+    <keywords group="law"/>
+    <keywords group="measurement"/>
+    <keywords group="repairs"/>
+    <keywords group="guarantees"/>
+    <keywords group="responsability"/>
+    <keywords group="ownership"/>
+    <keywords group="value"/>
+    <keywords group="neighbourhood"/>
+    <keywords group="disorder"/>
+    <keywords group="transformation"/>
+    <analysis/>
+    <noteworthy/>
+  </description>
+</expertise>

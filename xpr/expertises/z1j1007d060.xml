@@ -1,0 +1,187 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1007d060">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-08-01T12:00:00">2020-08-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2017-10-01T12:00:00">2017-10-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1007</idno>
+        <idno type="item">060</idno>
+        <facsimile from="0936" to="0944"/>
+        <physDesc>
+          <extent sketch="false">8</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-09-30" type="paris"/>
+          <date when="1776-09-30" type="paris"/>
+          <date when="1776-10-01" type="paris"/>
+        </sessions>
+        <places>
+          <place xml:id="id244d247" type="paris">
+            <address>
+              <street>Rue Sainte-Anne</street>
+              <buildingNumber/>
+            </address>
+            <complement>près les nouvelles catholiques</complement>
+            <parish/>
+            <owner>succession Clouet</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="estimation">Estimer la valeur des biens</category>
+          <designation rubric="true">Visitte et estimation d'une maison, rue Ste Anne, de la succession Cloüet ; M. Taboureur,  expert.</designation>
+        </categories>
+        <procedure>
+          <framework type="b2b">L’institution est saisie dans le cadre d’une procédure (l’institution nomme un ou deux experts)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Châtelet, lieutenant civil (sentence)</orgName>
+              <date when="1776-08-21"/>
+            </sentence>
+          </sentences>
+          <case>Succession Clouet</case>
+          <objects>
+            <object type="house">Maison(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0250" context="primary" appointment="court-appointed">
+              <title>architecte juré expert des bâtiments à Paris</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0069">
+              <persName>
+                <surname>Beudot</surname>
+                <forename>Simon</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Clouet</surname>
+                  <forename>Agathe Thérèse</forename>
+                </persName>
+                <occupation>épouse encore mineure deHocquart, Antoine Louis Hiacinthe, conseiller du roi en ses conseils, elle fille de défunt Clouet Jean Baptiste, écuyer conseiller secrétaire du roi</occupation>
+              </person>
+              <status>heir</status>
+              <expert ref="#xpr0250"/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0250">« Nous avons encore fait attention au genre de construction desdits batiments qui nous ont paru se bien comporter notamment dans leurs fondations, à la distribution des appartements de l’un et l’autre corps de logis, à leur commodité et incommodité, aux avantages et desavantages qui resultent de la position de ladite maison, aux charges dont elle est tenue tant seigneurialles qu’envers Mr le curé de la Madelaine de la ville l’Eveque, logemeent de soldats, que touttes autres de ville et de police ; et generalement après avoir bien tout vu considéré et examiné ; nous avons estimé et estimons par notre present rapport, lesdits cour batiements et jardin qui composent ladite maison ainsy que le tout se poursuit et s’étent, et comporte de touttes [sic], y compris glaces, dessus de portes, et autres ornements et embellissements, susdetaillés et designés, et avce les cens, rentes et autres charges dont le tout est ou peut estre tenu et eu égard à la valeur du sol, relativement à sa position et à son étendue, à la valeur desdits batiments relativement à leur genre de batisse et à leur distribution ; à l’objet que peut faire les reparations dont lesdits batiments seroient susceptibles ; et encore eu égard au cours du temps present relativement à la valeur actuelle des terreins et maisons scitués dans l’étendue de Paris ; valoir ladite maison la somme de … 70 000 l. 
+Ce fut ainsy fait par nous architecte expert soussigné les jours mois et an que dessus, vous referant sur le tout Mr d’en ordonner selon votre justice et prudence ordinaire et nous nous sommes retirés après avoir vaqué depuis ladite heure de huit du matin jusqu’à celle de près de deux de relevée par double vaccation pour terminer touttes nos operations et les mettre à fin »</opinion>
+          <arrangement/>
+          <agreement type="conclusion">Conclusion</agreement>
+          <estimate l="" s="" d=""/>
+          <estimates>
+            <place ref="#id244d247">
+              <appraisal l="70000" s="" d="">
+                <desc>une maison</desc>
+              </appraisal>
+            </place>
+          </estimates>
+          <fees detail="true">
+            <fee type="papers" l="9" s="5" d=""/>
+            <fee type="expert" ref="#xpr0250" l="30" s="" d=""/>
+            <fee type="clerk" l="30" s="" d=""/>
+            <fee type="rolls" l="56" s="" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="125" s="5" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="expert" l="10" s="" d=""/>
+            <expense type="clerk" l="36" s="10" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis/>
+        <noteworthy>maison acquise  s^par sentence homologative des parents au chatelet le 2 décembre 1754</noteworthy>
+      </description>
+    </expertise>

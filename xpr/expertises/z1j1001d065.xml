@@ -1,0 +1,236 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1001d065">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent xmlns="eac">
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-06-15T15:34:54.934+02:00">2021-06-15T15:34:54.934+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateKeywordsAttr_files.xqy/BaseX</agent>
+            <eventDescription>Ajout des @value pour les mots clés (estates).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2017-10-01T12:00:00">2017-10-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1001</idno>
+        <idno type="item">065</idno>
+        <facsimile from="0734" to="0736"/>
+        <physDesc>
+          <extent sketch="false">2</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-04-27" type="suburbs"/>
+        </sessions>
+        <places>
+          <place xml:id="id87d129" type="suburbs">
+            <address/>
+            <complement>lieu dit La Botte de Beauregard</complement>
+            <city>Belleville</city>
+            <district/>
+            <owner/>
+          </place>
+        </places>
+        <categories>
+          <category type="estimation">Estimer la valeur des biens</category>
+          <designation rubric="false">Visitte et estimation d'objets contentieux, à la requeste du sieur Feret, maître de danse et de musique, propriétaire de terrains et bâtiments sises à Belleville, pour en connaître l'état, lieudit la Batte de Beauregard ; Perrard et Blanchard, expert.</designation>
+        </categories>
+        <procedure>
+          <framework type="b2a">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Châtelet, présidial (sentence)</orgName>
+              <date when="1776-04-07"/>
+            </sentence>
+          </sentences>
+          <case>loyers impayés ? (33 livres à payer par Feret pour 6 mois de loyer) les locatiares sont fait construire un bâtiment, que le propriétire veut estimer ?</case>
+          <objects>
+            <object type="house">Maison(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0210" context="primary" appointment="appointed">
+              <title>architecte expert à Paris</title>
+            </expert>
+            <expert ref="#xpr0024" context="primary" appointment="appointed">
+              <title>architecte expert à Paris</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0059">
+              <persName>
+                <surname>Forestier</surname>
+                <forename>Cézaire François</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party intervention="false" presence="true" role="petitioner">
+              <person>
+                <persName>
+                  <surname>Feret</surname>
+                  <forename>Jean Baptiste</forename>
+                </persName>
+                <occupation>maître de danse et de musique, demeurant rue de la huchette, commun propriétaire dudit terrain acquis de Suart</occupation>
+              </person>
+              <status>owner</status>
+              <expert ref="#xpr0210"/>
+              <prosecutor>
+                <persName>
+                  <surname>Desauniere</surname>
+                  <forename>Louis</forename>
+                </persName>
+              </prosecutor>
+            </party>
+            <party intervention="false" presence="false" role="opponent">
+              <person>
+                <persName>
+                  <surname>Battu</surname>
+                  <forename>J... Toussaint</forename>
+                </persName>
+                <occupation>maître de danse à Paris</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Soret</surname>
+                  <forename>Marie Elisabeth</forename>
+                </persName>
+                <occupation>sa femme</occupation>
+              </person>
+              <status>tenant</status>
+              <expert ref="#xpr0024"/>
+              <prosecutor>
+                <persName>
+                  <surname>Ferier</surname>
+                  <forename/>
+                </persName>
+              </prosecutor>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="">« Tous lesquels ediffices et bastiments et objets cy dessus mentionnés que nous estimons comme n'étant propres qu'en démolition ne pouvant se réparer qu'après une dépense considérable, après calculs détails estimations et appréciation faits sur papier particuliers montent et reviennent ensemble suivant nosdites estimations à la somme de 1250 l.
+"... vous référant d'ordonner suivant votre justice et prudence ordinaire"</opinion>
+          <arrangement/>
+          <agreement type="agreement">Accord</agreement>
+          <estimate l="1250 " s="" d=""/>
+          <estimates>
+            <place ref="#id87d129">
+              <appraisal l="1250 " s="" d="">
+                <desc>une maison</desc>
+              </appraisal>
+            </place>
+          </estimates>
+          <fees detail="true">
+            <fee type="papers" l="5" s="" d=""/>
+            <fee type="expert" ref="#xpr0210" l="15" s="" d=""/>
+            <fee type="expert" ref="#xpr0024" l="15" s="" d=""/>
+            <fee type="clerk" l="15" s="" d=""/>
+            <fee type="rolls" l="12" s="" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="62" s="" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="13" s="" d=""/>
+            <expense type="expert" l="10" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group="estates">
+          <term value="a9">Maison nouvellement acquise</term>
+        </keywords>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value">
+          <term value="k1">Loyer</term>
+        </keywords>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder">
+          <term value="m6">Dégradation</term>
+        </keywords>
+        <keywords group="transformation"/>
+        <analysis>Sentence contradictoire du 7 avril 1776 entre 1° Louis Desaumieres, procureur de Feret et 2° Me F… procureur de Julien Truffaut Battu maître de danse à Paris et Marie Elizabeth Floru sa femme, locataires des lieux. bail devant Renveau /raveneau ? notaire au Châtelet résident à Belleville le 3 novembre 1772 ?
+Bail déclaré nul et résilié.</analysis>
+        <noteworthy>Achat par Feret dudit terrain à Suart, maître sculpteur par contrat passé devant Me Bontemps notaire le 23 mars 1776.
+acte extrajudiciaire du 23 du même mois audit an
+
+". 1v°) lettre de la partie de Desaumier "conformément à la faculté que luy a été accordée par ledit bail elle entend retenir les constructions et l'édiffice fait et ? sur la pièce de terre mentionnée audit bail pour le montant de l'estimation en conséquence dis que les édiffices et batiments dont il s'agit seroient vus et visittés, prisés et estimés par experts.... et que ledit éddifice et construction appartiendront à la partie de Deauminier pour le montant de ladite prisée..."
+
+La maison est utilisée par le maître de danse comme lieu de représentation de ballet  : il y a des gradins pour les spectateurs</noteworthy>
+      </description>
+    </expertise>

@@ -1,0 +1,213 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1004d063">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-07-01T12:00:00">2020-07-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2017-10-01T12:00:00">2017-10-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1004</idno>
+        <idno type="item">063</idno>
+        <facsimile from="0716" to="0720"/>
+        <physDesc>
+          <extent sketch="false">5</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-06-28" type="suburbs"/>
+          <date when="1776-07-15" type="suburbs"/>
+          <date when="1776-07-18" type="paris"/>
+        </sessions>
+        <places>
+          <place type="suburbs">
+            <address/>
+            <complement>Rue de Picpus</complement>
+            <city/>
+            <district/>
+            <owner/>
+          </place>
+          <place type="office">
+            <address/>
+          </place>
+        </places>
+        <categories>
+          <category type="acceptation">Recevoir et évaluer le travail réalisé</category>
+          <designation rubric="true">Visitte et estimation d'une pompe en la maison du Sr Collin, Mtre de Pension à Picpus, à la requête du Sr Houzelle ; MM. Dumont et Antoine, experts.</designation>
+        </categories>
+        <procedure>
+          <framework type="b2a">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Châtelet, lieutenant particulier (sentence)</orgName>
+              <date when="1776-05-17"/>
+            </sentence>
+          </sentences>
+          <case>fin des travaux</case>
+          <objects>
+            <object type="other">pompe (cuivre et serrurerie)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0104" context="primary" appointment="appointed">
+              <title>architecte expert bourgeois de Paris</title>
+            </expert>
+            <expert ref="#xpr0004" context="primary" appointment="appointed">
+              <title>architecte expert des bâtiments à Paris</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0069">
+              <persName>
+                <surname>Beudot</surname>
+                <forename>Simon</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="true" intervention="true">
+              <person>
+                <persName>
+                  <surname>Houzelle</surname>
+                  <forename>Marcel Antoine</forename>
+                </persName>
+                <occupation>maître chaudronnier et pompier à Paris</occupation>
+              </person>
+              <status>builder</status>
+              <expert ref="#xpr0004"/>
+              <representative>
+                <persName>
+                  <surname>Porcher</surname>
+                  <forename/>
+                </persName>
+                <occupation>avocat</occupation>
+              </representative>
+              <prosecutor>
+                <persName>
+                  <surname>Gallois</surname>
+                  <forename/>
+                </persName>
+              </prosecutor>
+            </party>
+            <party role="opponent" presence="true" intervention="true">
+              <person>
+                <persName>
+                  <surname>Collin</surname>
+                  <forename>Marc Dieudonné</forename>
+                </persName>
+                <occupation>avocat en parlement et de pension</occupation>
+              </person>
+              <status>limited-partner</status>
+              <expert ref="#xpr0104"/>
+              <representative>
+                <persName>
+                  <surname>Picard</surname>
+                  <forename/>
+                </persName>
+                <occupation>avocat</occupation>
+              </representative>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="">« Les changements faits à quelques parties de ladite pompe et l’addition après coup d’un poids de quatre vingt livres à la queue du balancier n’ont point encore procuré à ladite pompe sa perfection de l’aveu même de l’entrepreneur qui dans ses observations verbales est convenu que le nouveau levié ne remplissoit pas son intention, qu’il faisoit moins d’effet que celui auquel il a été substituté ; plus que le tiran du balancier manque par le defaut d’aplomb offrant de remedier à ces inconveniens ; de rendre cette pompe d’art et travail aisé et par consequent de faire disparoitre le […] le plus apparent, qu’on a à luy faire, Nous ne croyons pas effectivement que cette pompe ne soit susceptible d’estre perfectionnée, mais pour nous renfermer dans les termes de notre mission nous declarons qu’au moment present elle n’est pas recevable ny faitte suivant ’lart, et que les defectuosités proviennent de celui qui l’a faitte. »</opinion>
+          <arrangement/>
+          <agreement type="agreement">Accord</agreement>
+          <estimate l="" s="" d=""/>
+          <fees detail="true">
+            <fee type="papers" l="12" s="15" d="6"/>
+            <fee type="expert" ref="#xpr0104" l="21" s="" d=""/>
+            <fee type="expert" ref="#xpr0004" l="21" s="" d=""/>
+            <fee type="clerk" l="21" s="" d=""/>
+            <fee type="rolls" l="10" s="" d=""/>
+            <fee type="prosecutors" l="6" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="85" s="15" d="6"/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="17" s="" d=""/>
+            <expense type="expert" l="24" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value">
+          <term value="k8">Conduite (du chantier par l'architecte)</term>
+        </keywords>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder">
+          <term value="m1">Malfaçon / Défectuosité / défaut</term>
+        </keywords>
+        <keywords group="transformation"/>
+        <analysis/>
+        <noteworthy>Construction de la pompe réalisée sous les ordres et conduite du sieur Morelle, ferrurier
+Houzelle propose de faire fonctionner la pompe pour les experts mais ses tentatives échouent : constat de défectuosité en cours de visite, l'ouvrage ne sera pas réceptionné</noteworthy>
+      </description>
+    </expertise>

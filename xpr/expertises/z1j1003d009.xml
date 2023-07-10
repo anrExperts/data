@@ -1,0 +1,202 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1003d009">
+  <meta/>
+  <control>
+    <maintenanceStatus>revised</maintenanceStatus>
+    <publicationStatus/>
+    <localControl localType="detailLevel">
+      <term>completed</term>
+    </localControl>
+    <maintenanceHistory>
+      <maintenanceEvent>
+                <eventType>revised</eventType>
+                <eventDateTime standardDateTime="2021-10-15T12:55:10Z">2021-10-15T12:55:10Z</eventDateTime>
+                <agentType>human</agentType>
+                <agent>llosserand</agent>
+                <eventDescription>procédure</eventDescription>
+            </maintenanceEvent>
+          <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateOpinionRef_files.xqy/BaseX</agent>
+        <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateRefValues_files.xqy/BaseX</agent>
+        <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+        <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>revised</eventType>
+        <eventDateTime standardDateTime="2020-07-01T12:00:00">2020-07-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>llosserand</agent>
+        <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>retroconverted</eventType>
+        <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>ead2xpr.xsl/Saxon9</agent>
+        <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>created</eventType>
+        <eventDateTime standardDateTime="2017-10-01T12:00:00">2017-10-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>JH</agent>
+        <eventDescription>Création de la fiche.</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+  </control>
+  <sourceDesc>
+    <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1003</idno>
+    <idno type="item">009</idno>
+    <facsimile from="0197" to="0203"/>
+    <physDesc>
+      <extent sketch="false">7</extent>
+    </physDesc>
+  </sourceDesc>
+  <description>
+    <sessions>
+      <date when="1776-05-20" type="paris"/>
+      <date when="1776-07-08" type="paris"/>
+      <date when="1776-08-15" type="paris"/>
+      <date when="1776-08-18" type="paris"/>
+    </sessions>
+    <places>
+      <place type="paris">
+        <address>
+          <street>rue des Marais</street>
+          <buildingNumber/>
+        </address>
+        <complement>faubourg Saint-Martin</complement>
+        <parish/>
+        <owner>Michaux</owner>
+      </place>
+    </places>
+    <categories>
+      <category type="acceptation">Recevoir et évaluer le travail réalisé</category>
+      <designation rubric="true">Visitte et estimation d'ouvrages de maçonnerie faits en la maison du sieur et De Besse, experts</designation>
+    </categories>
+    <procedure>
+      <framework type="b2">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+      <origination type="institution">Une institution</origination>
+      <sentences>
+        <sentence>
+          <orgName>Châtelet, chambre civile (sentence) lieutenant particulier</orgName>
+          <date when="1776-04-17"/>
+        </sentence>
+      </sentences>
+      <case>fin des travaux</case>
+      <objects>
+        <object type="other">maçonnerie</object>
+      </objects>
+    </procedure>
+    <participants>
+      <experts>
+        <expert ref="#xpr0200" context="primary" appointment="court-appointed">
+          <title>architecte expert entrepreneur en bâtiments à Paris</title>
+        </expert>
+        <expert ref="#xpr0070" context="primary" appointment="appointed">
+          <title>architecte expert bougeois de Paris</title>
+        </expert>
+      </experts>
+      <clerks>
+        <clerk ref="#clrk0047">
+          <persName>
+            <surname>Mangin</surname>
+            <forename>Philbert</forename>
+          </persName>
+        </clerk>
+      </clerks>
+      <parties>
+        <party role="petitioner" presence="true" intervention="true">
+          <person>
+            <persName>
+              <surname>Michaux</surname>
+              <forename>Jean Louis</forename>
+            </persName>
+            <occupation>maître menuisier à Paris</occupation>
+          </person>
+          <status>builder</status>
+          <expert ref="#xpr0070"/>
+          <prosecutor>
+            <persName>
+              <surname>Oudin</surname>
+              <forename/>
+            </persName>
+          </prosecutor>
+        </party>
+        <party role="opponent" presence="true" intervention="true">
+          <person>
+            <persName>
+              <surname>Bourbault</surname>
+              <forename/>
+            </persName>
+            <occupation>maître maçon (défaillant)</occupation>
+          </person>
+          <status>limited-partner</status>
+          <expert ref="#xpr0200"/>
+        </party>
+      </parties>
+      <craftmen>
+        <craftman>
+          <persName>
+            <surname>Bourbault</surname>
+            <forename/>
+          </persName>
+          <occupation>maître maçon</occupation>
+        </craftman>
+      </craftmen>
+    </participants>
+    <conclusions>
+      <opinion ref="">« Tous lesquels ouvrages de maçonnerie faits pour et en ladite maison du sieur Michaux par le sieur Bourbault montent ensemble à la somme de sept cent quatre vingt dix livres deux sols onze deniers suivant les estimations par nous faites cy dessus desdits ouvrages eu égard aux malfaçons de plusieurs d’iceux, cy… 790 l. 2 s. 11 d. »
+[le mémoire de douze articles montait à 1 528 l. 16 s. 2 d.]</opinion>
+      <arrangement/>
+      <agreement type="agreement">Accord</agreement>
+      <estimate l="" s="" d=""/>
+      <fees detail="true">
+        <fee type="papers" l="5" s="10" d=""/>
+        <fee type="expert" ref="#xpr0200" l="24" s="" d=""/>
+        <fee type="expert" ref="#xpr0070" l="24" s="" d=""/>
+        <fee type="clerk" l="24" s="" d=""/>
+        <fee type="rolls" l="13" s="10" d=""/>
+        <fee type="prosecutors" l="" s="" d=""/>
+        <fee type="help" l="" s="" d=""/>
+        <fee type="plans" l="" s="" d=""/>
+        <total l="91" s="" d=""/>
+      </fees>
+      <expenses mentioned="true">
+        <expense type="clerk" l="" s="" d=""/>
+        <expense type="expert" l="16" s="" d=""/>
+      </expenses>
+    </conclusions>
+    <keywords group="estates"/>
+    <keywords group="procedure"/>
+    <keywords group="contract"/>
+    <keywords group="encumbrance"/>
+    <keywords group="law"/>
+    <keywords group="measurement"/>
+    <keywords group="repairs"/>
+    <keywords group="guarantees"/>
+    <keywords group="responsability"/>
+    <keywords group="ownership"/>
+    <keywords group="value"/>
+    <keywords group="neighbourhood"/>
+    <keywords group="disorder"/>
+    <keywords group="transformation"/>
+    <analysis/>
+    <noteworthy/>
+  </description>
+</expertise>

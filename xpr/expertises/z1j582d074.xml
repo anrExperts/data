@@ -1,0 +1,208 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j582d074">
+  <meta/>
+  <control>
+    <maintenanceStatus>revised</maintenanceStatus>
+    <publicationStatus/>
+    <localControl localType="detailLevel">
+      <term>completed</term>
+    </localControl>
+    <maintenanceHistory>
+      <maintenanceEvent>
+                <eventType>revised</eventType>
+                <eventDateTime standardDateTime="2022-03-31T19:26:53Z">2022-03-31T19:26:53Z</eventDateTime>
+                <agentType>human</agentType>
+                <agent>llosserand</agent>
+                <eventDescription>rvpcd</eventDescription>
+            </maintenanceEvent>
+          <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateObjectsValues_db.xqy/BaseX</agent>
+        <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateOpinionRef_files.xqy/BaseX</agent>
+        <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateRefValues_files.xqy/BaseX</agent>
+        <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+        <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>revised</eventType>
+        <eventDateTime standardDateTime="2020-11-01T12:00:00">2020-11-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>JH</agent>
+        <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>retroconverted</eventType>
+        <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>ead2xpr.xsl/Saxon9</agent>
+        <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>created</eventType>
+        <eventDateTime standardDateTime="2017-04-01T12:00:00">2017-04-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>llosserand</agent>
+        <eventDescription>Création de la fiche.</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+  </control>
+  <sourceDesc>
+    <unitdate>1726</unitdate>
+    <idno type="unitid">Z1J582</idno>
+    <idno type="item">074</idno>
+    <facsimile from="0769" to="0775"/>
+    <physDesc>
+      <extent sketch="false">4</extent>
+      <appendices>
+        <appendice>
+          <type type="other">Assignation</type>
+          <extent>1</extent>
+          <desc>assignation par l'huissier à l'expert Quirot à comparaître le 29 août 1726 dans la maison du sieur de Marpré (26 août 1726)</desc>
+          <note/>
+        </appendice>
+      </appendices>
+    </physDesc>
+  </sourceDesc>
+  <description>
+    <sessions>
+      <date when="1726-08-29" type="paris"/>
+      <date when="1726-12-14" type="paris"/>
+    </sessions>
+    <places>
+      <place type="paris">
+        <address>
+          <street>Roule</street>
+          <buildingNumber/>
+        </address>
+        <complement>une maison sise au Roule appartenant à de Marpré, François Joseph David où Bosery, Charles a construit un mur de clôture</complement>
+        <parish/>
+        <owner>de Marpré, François</owner>
+      </place>
+    </places>
+    <categories>
+      <category type="acceptation">Recevoir et évaluer le travail réalisé</category>
+      <designation rubric="true">Visitte de mur de clôture au Roulle, en la maison de M. de Parpré, ente luy et le sieur Bosery, Me Maçon ; M. Quirot, expert.</designation>
+    </categories>
+    <procedure>
+      <framework type="b2">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+      <origination type="institution">Une institution</origination>
+      <sentences>
+        <sentence>
+          <orgName>lieutenant civil</orgName>
+          <date when="1724-07-08"/>
+        </sentence>
+      </sentences>
+      <case>les travaux sont achevés et doivent être estimés pour permettre le payement (d'après le marché du 27 juin 1721 devant Touvenot notaire), à quoi s'ajoute le fait que des défectuosités ont été remarquées, qu'il convient aussi d'estimer</case>
+      <objects>
+        <object type="wall">Mur(s)</object>
+      </objects>
+    </procedure>
+    <participants>
+      <experts>
+        <expert ref="#xpr0232" context="primary" appointment="appointed">
+          <title>architecte juré du roi expert bourgeois de Paris</title>
+        </expert>
+      </experts>
+      <clerks>
+        <clerk ref="#clrk0029">
+          <persName>
+            <surname>Quirot</surname>
+            <forename>Jacques</forename>
+          </persName>
+        </clerk>
+      </clerks>
+      <parties>
+        <party role="petitioner" presence="true" intervention="false">
+          <person>
+            <persName>
+              <surname>de Marpré</surname>
+              <forename>François Joseph David</forename>
+            </persName>
+            <occupation>introducteur de feu SAR monseigneur le duc d'Orléans</occupation>
+          </person>
+          <status>owner</status>
+          <expert ref="#xpr0232"/>
+        </party>
+        <party role="opponent" presence="false" intervention="false">
+          <person>
+            <persName>
+              <surname>Bosery</surname>
+              <forename>Charles</forename>
+            </persName>
+            <occupation>maître maçon à Paris</occupation>
+          </person>
+          <status>builder</status>
+          <expert ref="#xpr0232"/>
+        </party>
+      </parties>
+      <craftmen>
+        <craftman>
+          <persName>
+            <surname>Bosery</surname>
+            <forename>Charles</forename>
+          </persName>
+          <occupation>maître maçon à Paris</occupation>
+        </craftman>
+      </craftmen>
+    </participants>
+    <conclusions>
+      <opinion ref="#xpr0232">Le mur réalisé déverse sur une partie retenue par des étresillons ou arcs boutans du côté du jardin, où il n'y a pas d'empatement dans les fondations ; pour le surplus des murs de clôture ils ont été trouvés assez droits et d'aplomb.</opinion>
+      <arrangement/>
+      <agreement type="conclusion">Conclusion</agreement>
+      <estimate l="" s="" d=""/>
+      <fees detail="true">
+        <fee type="papers" l="3" s="15" d=""/>
+        <fee type="expert" ref="#xpr0232" l="12" s="" d=""/>
+        <fee type="clerk" l="12" s="" d=""/>
+        <fee type="rolls" l="4" s="" d=""/>
+        <fee type="prosecutors" l="" s="" d=""/>
+        <fee type="help" l="" s="" d=""/>
+        <fee type="plans" l="" s="" d=""/>
+        <total l="37" s="15" d=""/>
+      </fees>
+      <expenses mentioned="true">
+        <expense type="clerk" l="12" s="" d=""/>
+        <expense type="expert" l="" s="" d=""/>
+      </expenses>
+    </conclusions>
+    <keywords group="estates"/>
+    <keywords group="procedure"/>
+    <keywords group="contract"/>
+    <keywords group="encumbrance"/>
+    <keywords group="law"/>
+    <keywords group="measurement"/>
+    <keywords group="repairs"/>
+    <keywords group="guarantees"/>
+    <keywords group="responsability"/>
+    <keywords group="ownership"/>
+    <keywords group="value"/>
+    <keywords group="neighbourhood"/>
+    <keywords group="disorder"/>
+    <keywords group="transformation"/>
+    <analysis>cause « [f. 1v°] Après lesquelle lectures faittes en présence dud. sieur de Marpré et en l'absence dud. sr Bosery nous avons fait lecture de deux pièces qui sont dans un dossier qui nous a esté envoyé par led. sr Bosery [f. 2r°], scavoir d'une copie d'un acte signiffié de la part dud. sr de Marpré le vingt cinq janvier mil sept cent vingt quatre à Me de l'Astre, procureur dud. sr Bosery, par lequel entre autres choses led. sr de Marpré dit qu'il ne redoit aud. sr Bosery que cinq cent quatre vingt dix huit livres dix sols qu'il ne peut luy payer qu'après qu'il aura esté fait une visitte de tous les ouvrages que led. sieur Bosery a fait pour led. sieur de Marpré, ainsy qu'il est porté dans le marché fait entre les partyes, laquelle visitte est d'autant plus nécessaire qu'il y a des deffectuosités dans tous lesd. ouvrages et entre autres le mur construit par led. sr Bosery déverse, pourquoy soutient qu'avant faire droit il y a lieu d'ordonner lad. visitte par experts dont les partyes conviendront.
+                Plus, nous avons fait lecture des responces dud. sr Bosery signiffiées le vingt sept juin mil sept cent vingt quatre par lesquelles entre autres choses led. sr Bosery a répondu que ce n'est pas le cas d'une visitte et qu'il n'est plus dans le temps que ce n'est pas le cas de visitter led. mur parce qu'il n'en est pas en aucune façon garand, led. mur n'estant fabriqué que de terre crespis d'un costé de plastre et gobeté de l'autre, que les fondations sont sur le tuf qui se rencontre inégallement à un pied quinze à dix huit pouces de profondeur, ce qui fait qu'il n'y a point de garantie à exercer contre luy.
+                [f. 2v°] Plus par la mesme responce est encore dit que quand bien mesme led. sr Bosery seront garand dud. mur, ce qu'il n'estime pas, il ne seroit plus temps de le visitter et qu'il y est non recevable et mal fondé et ce parce que led. sr de Marpré depuis la construction dud. mur a fait fouiller et enfoncer la terre au pied dud. mur de deux à trois pieds de profondeur, laquelle terre il a fait labourer et fumer pour y faire planter arbres en espalliers, et autres choses plus au long énoncées dans lesd. responces.
+                Et attendu que par la susd. sentence du premier septembre mil sept cent vingt cinq, il est dit que la visitte ordonnée par la sentence du huit juillet mil sept cent vingt quatre seroit faitte par nous susd. experts, laquelle sentence aura statuée sur les demandes et responces respectives des partyes dont nous avons cy dessus fait lecture et que nous sommes assignez pour procéder à lad. visitte en vertu des susd. deux sentences et que la sentence du huit juillet mil sept cent vingt quatre ne nous a pas été mise ès mains, nous avons surcis à procéder à lad. visitte jusqu'à ce que nous aye esté mise ès mains à l'effet de connoistre ce qu'il est ordonné par le dispositif d'icelle sur la contestation des partyes et nous sommes retirez.
+                Et le samedy quatorziesme jour de décembre aud. an mil sept cent vingt six nous experts susd. du matin, nous experts susd. [sic] suivant la sommation à nous faitte à la requeste dud. sr de Marpré […] nous nous sommes transportéez avec le susd. greffier des bastimens soussigné en la susd. maison […] où estant nous avons fait lecture d'une seconde grosse d'une sentence de vous rendue le huit juillet mil sept cent vingt six entre led. sr Bosery demandeur et deffendeur d'une part et led. sr de Marpré deffendeur et demandeur d'autre part, laquelle sentence est celle qui nous manquoit dans le temps de nostre première vaccation, et icelle seconde grosse à nous mise ès mains par led. sieur de Marpré, par laquelle, partyes ouyes pour faire droit aux partyes, vous avez, monsieur, renvoyé la cause et les partyes au présidial et cependant ordonné que le mur en question seroit veu et visitté par experts dont les partyes conviendroient, sinon nommez d'office dépens réservez.</analysis>
+    <noteworthy/>
+  </description>
+</expertise>

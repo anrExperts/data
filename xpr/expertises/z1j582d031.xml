@@ -1,0 +1,257 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j582d031">
+  <meta/>
+  <control>
+    <maintenanceStatus>revised</maintenanceStatus>
+    <publicationStatus/>
+    <localControl localType="detailLevel">
+      <term>completed</term>
+    </localControl>
+    <maintenanceHistory>
+      <maintenanceEvent>
+                <eventType>revised</eventType>
+                <eventDateTime standardDateTime="2022-03-31T15:00:42Z">2022-03-31T15:00:42Z</eventDateTime>
+                <agentType>human</agentType>
+                <agent>llosserand</agent>
+                <eventDescription>rvpcd</eventDescription>
+            </maintenanceEvent>
+          <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateObjectsValues_db.xqy/BaseX</agent>
+        <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateOpinionRef_files.xqy/BaseX</agent>
+        <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateRefValues_files.xqy/BaseX</agent>
+        <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+        <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>revised</eventType>
+        <eventDateTime standardDateTime="2020-11-01T12:00:00">2020-11-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>JH</agent>
+        <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>retroconverted</eventType>
+        <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>ead2xpr.xsl/Saxon9</agent>
+        <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>created</eventType>
+        <eventDateTime standardDateTime="2017-04-01T12:00:00">2017-04-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>llosserand</agent>
+        <eventDescription>Création de la fiche.</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+  </control>
+  <sourceDesc>
+    <unitdate>1726</unitdate>
+    <idno type="unitid">Z1J582</idno>
+    <idno type="item">031</idno>
+    <facsimile from="0347" to="0351"/>
+    <physDesc>
+      <extent sketch="false">6</extent>
+    </physDesc>
+  </sourceDesc>
+  <description>
+    <sessions>
+      <date when="1726-08-02" type="paris"/>
+      <date when="1726-08-02" type="paris"/>
+    </sessions>
+    <places>
+      <place xml:id="id162d248" type="paris">
+        <address>
+          <street>Rue aux Ours [Voie actuelle. Autre(s) nom(s) : rue As Oues, aux Oues ou aux Oës]</street>
+          <buildingNumber/>
+        </address>
+        <complement/>
+        <parish/>
+        <owner>succession Huet</owner>
+      </place>
+      <place xml:id="id162d266" type="paris">
+        <address>
+          <street>rue du Monceau-Saint-Gervais</street>
+          <buildingNumber/>
+        </address>
+        <complement/>
+        <parish/>
+        <owner>succession Huet</owner>
+      </place>
+    </places>
+    <categories>
+      <category type="estimation">Estimer la valeur des biens</category>
+      <designation rubric="true">Estimation de deux maisons, rue aux Ours et rue Meursault, à la requeste de Jacques Geoffroy ; M. Loir, expert.</designation>
+    </categories>
+    <procedure>
+      <framework type="b2">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+      <origination type="institution">Une institution</origination>
+      <sentences>
+        <sentence>
+          <orgName>lieutenant civil</orgName>
+          <date when="1726-06-05"/>
+        </sentence>
+      </sentences>
+      <case>partage des biens de la succession de Huet, Anne, et vente par licitation des ¾ d'une maison.</case>
+      <objects>
+        <object type="house">Maison(s)</object>
+      </objects>
+    </procedure>
+    <participants>
+      <experts>
+        <expert ref="#xpr0183" context="primary" appointment="appointed">
+          <title>juré expert à Paris</title>
+        </expert>
+      </experts>
+      <clerks>
+        <clerk ref="#clrk0035">
+          <persName>
+            <surname>Tancart</surname>
+            <forename>Toussaint</forename>
+          </persName>
+        </clerk>
+      </clerks>
+      <parties>
+        <party role="petitioner" presence="false" intervention="false">
+          <person>
+            <persName>
+              <surname>Geoffroy</surname>
+              <forename>Jacques</forename>
+            </persName>
+            <occupation>marchand boucher</occupation>
+          </person>
+          <person>
+            <persName>
+              <surname>Sion</surname>
+              <forename>Geneviève Catherine</forename>
+            </persName>
+            <occupation>sa femme, héritière pour 1/5 de Huet, Anne, veuve de Sion, Nicolas, sa mère.</occupation>
+          </person>
+          <status>heir</status>
+          <expert ref="#xpr0183"/>
+        </party>
+        <party role="opponent" presence="false" intervention="false">
+          <person>
+            <persName>
+              <surname>Sion</surname>
+              <forename>Michel</forename>
+            </persName>
+            <occupation>héritier substitué pour 1/5 de défunte Huet, Anne, sa mère</occupation>
+          </person>
+          <person>
+            <persName>
+              <surname>Haudin</surname>
+              <forename>Huquet</forename>
+            </persName>
+            <occupation>et Sion, Marie-Thérèse, sa femme, héritière pour 1/5 de Huet, Anne, sa mère</occupation>
+          </person>
+          <person>
+            <persName>
+              <surname>Sion</surname>
+              <forename>Marie Jacqueline</forename>
+            </persName>
+            <occupation>veuve de Julienne, Estienne Mathurin, héritière pour 1/5 de Huet, Anne</occupation>
+          </person>
+          <person>
+            <persName>
+              <surname>Morin</surname>
+              <forename>Jean Barnabé</forename>
+            </persName>
+            <occupation>et Morin, Anne Elisabeth émancipés d'âge sous l'autorité de Morin Morin, Sébastien (sic), leur curateur, héritiers pour 1/5 conjointement Russeau, Anne Marie, femme Chaussin [?]</occupation>
+          </person>
+          <person>
+            <persName>
+              <surname>Russeau</surname>
+              <forename>Jacques</forename>
+            </persName>
+            <occupation>leur frère et sans [?] par réputation d'avec Huet, Anne, leur ayeulle maternelle</occupation>
+          </person>
+          <person>
+            <persName>
+              <surname>Drumont</surname>
+              <forename>Jean</forename>
+            </persName>
+            <occupation>tuteur ad hoc de lad. Morin, Anne Elisabeth, mineure, tous défendeurs.</occupation>
+          </person>
+          <status>heir</status>
+          <expert ref="#xpr0183"/>
+        </party>
+      </parties>
+      <craftmen>
+        <craftman>
+          <persName>
+            <surname/>
+            <forename/>
+          </persName>
+          <occupation/>
+        </craftman>
+      </craftmen>
+    </participants>
+    <conclusions>
+      <opinion ref="#xpr0183">"Pour parvenir à une juste estimation desquelles mesures nous avons fait les calculs et suputations et fait consideration au quartier où est scituée ladite maison à l'estat present des bastiments qui la composent et nous la prisons et estimons la somme de vingt mil livres eu esgard au cours du temps present et à la charge de cens seullement"
+"Nous avons pour parvenir à une juste estimation pris les mesures de l'emplacement total de ladite maison en distinguant de ce qui est en bastiment d'avec ce qui est en cours dont nous avons fait les calculs et suputations aussy fait consideration au quartier où est scituée ladite maison, à l'estat present des bastiments qui la compose nous la prisons et estimons la somme de dix mil livres eu esgard au cours du tems present et à la charge du cens seullement"</opinion>
+      <arrangement/>
+      <agreement type="conclusion">Conclusion</agreement>
+      <estimate l="30000" s="" d=""/>
+      <estimates>
+        <place ref="#id162d248">
+          <appraisal l="20000" s="" d="">
+            <desc>maison</desc>
+          </appraisal>
+        </place>
+        <place ref="#id162d266">
+          <appraisal l="10000" s="" d="">
+            <desc>maison</desc>
+          </appraisal>
+        </place>
+      </estimates>
+      <fees detail="true">
+        <fee type="papers" l="" s="" d=""/>
+        <fee type="expert" ref="#xpr0183" l="12" s="" d=""/>
+        <fee type="clerk" l="" s="" d=""/>
+        <fee type="rolls" l="" s="" d=""/>
+        <fee type="prosecutors" l="" s="" d=""/>
+        <fee type="help" l="" s="" d=""/>
+        <fee type="plans" l="" s="" d=""/>
+        <total l="" s="" d=""/>
+      </fees>
+      <expenses mentioned="false"/>
+    </conclusions>
+    <keywords group="estates"/>
+    <keywords group="procedure"/>
+    <keywords group="contract"/>
+    <keywords group="encumbrance"/>
+    <keywords group="law"/>
+    <keywords group="measurement"/>
+    <keywords group="repairs"/>
+    <keywords group="guarantees"/>
+    <keywords group="responsability"/>
+    <keywords group="ownership"/>
+    <keywords group="value"/>
+    <keywords group="neighbourhood"/>
+    <keywords group="disorder"/>
+    <keywords group="transformation"/>
+    <analysis/>
+    <noteworthy/>
+  </description>
+</expertise>

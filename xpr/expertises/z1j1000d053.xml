@@ -1,0 +1,260 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1000d053">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-09-01T12:00:00">2020-09-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2018-01-01T12:00:00">2018-01-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>PC</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1000</idno>
+        <idno type="item">053</idno>
+        <facsimile from="0578" to="0630"/>
+        <physDesc>
+          <extent sketch="false">48</extent>
+          <appendices>
+            <appendice>
+              <type type="proxyPA">Pouvoir/procuration (acte sous seing privé)</type>
+              <extent>1</extent>
+              <desc/>
+              <note/>
+            </appendice>
+          </appendices>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-03-22" type="paris"/>
+          <date when="1776-08-03" type="paris"/>
+        </sessions>
+        <places>
+          <place type="paris">
+            <address>
+              <street>Rue de la Verrerie</street>
+              <buildingNumber/>
+            </address>
+            <complement/>
+            <parish/>
+            <owner>Pignard</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="acceptation">Recevoir et évaluer le travail réalisé</category>
+          <designation rubric="true">Réception d’ouvrages dans une maison</designation>
+        </categories>
+        <procedure>
+          <framework type="a">Commun accord des parties</framework>
+          <origination type="parties">Les parties</origination>
+          <sentences>
+            <sentence>
+              <orgName/>
+              <date when=""/>
+            </sentence>
+          </sentences>
+          <case>Le Sieur Pignard, propriétaire d’une maison rue de la Verrerie, demande l’estimation des travaux de reconstruction de l’édifice effectués sous la direction de l’architecte Gillet, lequel représente le Sieur Pignard auprès de l’expert.</case>
+          <objects>
+            <object type="house">Maison(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0250" context="primary" appointment="appointed">
+              <title>architecte expert</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0057">
+              <persName>
+                <surname>Liébault de la Neuville</surname>
+                <forename>Christophe Edouard</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Pignard</surname>
+                  <forename>Edme Dominique</forename>
+                </persName>
+                <occupation>conseiller secrétaire du Roy</occupation>
+              </person>
+              <status>owner</status>
+              <expert ref="#xpr0250"/>
+              <representative>
+                <persName>
+                  <surname>Gillet</surname>
+                  <forename>Nicolas</forename>
+                </persName>
+                <occupation>Architecte</occupation>
+              </representative>
+            </party>
+            <party role="opponent" presence="true" intervention="false">
+              <person>
+                <persName>
+                  <surname>Fournier</surname>
+                  <forename>Simon</forename>
+                </persName>
+                <occupation>maître maçon entrepreneur</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Gillet</surname>
+                  <forename>Jean François</forename>
+                </persName>
+                <occupation>maître charpentier</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Flocq</surname>
+                  <forename>Sébastien</forename>
+                </persName>
+                <occupation>maître couvreur</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Audelle</surname>
+                  <forename>Nicolas</forename>
+                </persName>
+                <occupation>maître serrurier</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Tassard</surname>
+                  <forename>Jacques</forename>
+                </persName>
+                <occupation>maître menuisier</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Wibert</surname>
+                  <forename>René Rémy</forename>
+                </persName>
+                <occupation>maître careleur</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Deslandes</surname>
+                  <forename/>
+                </persName>
+                <occupation>maître marbrier</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Lenoble</surname>
+                  <forename>Adrien</forename>
+                </persName>
+                <occupation>maître plombier</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Lanosse</surname>
+                  <forename>Guillaume</forename>
+                </persName>
+                <occupation>maître vitrier</occupation>
+              </person>
+              <status>builder</status>
+              <expert ref="#xpr0250"/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname>Sieur Gesse</surname>
+                <forename>architecte.</forename>
+              </persName>
+              <occupation>Sieur Fournier Simon, maître entrepreneur, Sieur Gille Jean-François, maître charpentier, Sieur Flocq, maître couvreur, Sieur Andelle Nicolas, maître serrurier, Sieur Jacques Tassard, maître menuisier, Sieur Wibert René, maître carreleur, Sieur Deslandes Jacques, maître marbrier, Sieur Lenoble Adrien, maître plombier, Sieur Larosse, maître vitrier.</occupation>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0250">« Récapitulation : Maçonnerie : 33 275 l. 13 s. 5 d.Charpente : 15 927 l. 12 s. 1 d.Couverture : 1 284 l. 3 s. 9 d.Serrurerie : 12 670 l. 12 s. 5 d.Menuiserie : 5 419 l. 16 s. 8 d.Carrelage : 1009 l. 7 s. 2 d.Vitrerie : 1 475 l. 9 s. 2 d.Peinture : 871 l. 18 s. 8 d.marbrerie : 990 l. 7 s.Plomberie : 691 l. 15 s. 6 d.Pavé : 147 l. 8 s. 3 d.Vidange : 84 l.Stuc : 267 l. 9 s. 6 d.Ginglerie : 55 l. 6 s. 5 d.Quincaillerie : 435 l. 6 s. 9 d.Fonderie : 373 l. 10 s.Pavé de rue : 110 l. 18 s.Revenant ensemble tous les ouvrages faits pour la reconstruction de ladite maison à la somme totale de soixante quinze mille quatre vingt dix livres, quatorze sols, neuf deniers, cy 75 090 l. 14 s. 9 d. »</opinion>
+          <arrangement/>
+          <agreement type="conclusion">Conclusion</agreement>
+          <estimate l="75090" s="14" d="9"/>
+          <fees detail="true">
+            <fee type="papers" l="42" s="" d=""/>
+            <fee type="expert" ref="#xpr0250" l="528" s="" d=""/>
+            <fee type="clerk" l="528" s="" d=""/>
+            <fee type="rolls" l="240" s="" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="1338" s="" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="" s="" d=""/>
+            <expense type="expert" l="" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis/>
+        <noteworthy/>
+      </description>
+    </expertise>

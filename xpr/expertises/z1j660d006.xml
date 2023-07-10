@@ -1,0 +1,208 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j660d006" status="">
+  <meta/>
+  <control>
+    <maintenanceStatus>revised</maintenanceStatus>
+    <publicationStatus/>
+    <localControl localType="detailLevel">
+      <term>completed</term>
+    </localControl>
+    <maintenanceHistory>
+      <maintenanceEvent>
+                <eventType>revised</eventType>
+                <eventDateTime standardDateTime="2022-03-19T11:44:37Z">2022-03-19T11:44:37Z</eventDateTime>
+                <agentType>human</agentType>
+                <agent>llosserand</agent>
+                <eventDescription>rvpcd</eventDescription>
+            </maintenanceEvent>
+          <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateObjectsValues_db.xqy/BaseX</agent>
+        <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-06-16T16:56:32.893+02:00">2021-06-16T16:56:32.893+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateOpinionRef_files.xqy/BaseX</agent>
+        <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-06-16T16:29:02.548+02:00">2021-06-16T16:29:02.548+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateRefValues_files.xqy/BaseX</agent>
+        <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>created</eventType>
+        <eventDateTime standardDateTime="2021-02-06T09:43:19Z">2021-02-06T09:43:19Z</eventDateTime>
+        <agentType>human</agentType>
+        <agent>llosserand</agent>
+        <eventDescription>Création de la fiche.</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+  </control>
+  <sourceDesc>
+    <unitdate>1736</unitdate>
+    <idno type="unitid">Z1J660</idno>
+    <idno type="item">006</idno>
+    <facsimile from="0068" to="0072"/>
+    <physDesc>
+      <extent sketch="false">4</extent>
+    </physDesc>
+  </sourceDesc>
+  <description>
+    <sessions>
+      <date when="1736-01-10" type="province"/>
+    </sessions>
+    <places>
+      <place type="province">
+        <address/>
+        <complement>hors la porte du costé de Poissy</complement>
+        <city>Saint-Germain-en-Laye</city>
+        <district/>
+        <owner/>
+      </place>
+    </places>
+    <categories>
+      <category type="acceptation">Recevoir et évaluer le travail réalisé</category>
+      <designation rubric="true">Réception d'ouvrages (prisée et estimation des réparations faites) à St Germain en Laye, hors la porte du costé de Poissy, pour le sieur Houy ; M. Joubert, expert ; M. Callon, greffier.</designation>
+    </categories>
+    <procedure>
+      <framework type="b2">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+      <origination type="institution">Une institution</origination>
+      <sentences>
+        <sentence>
+          <orgName>Parlement (requêtes du Palais) (sentence)</orgName>
+          <date when="1735-12-12"/>
+        </sentence>
+      </sentences>
+      <case>réparations faites dans le cadre d'un bail judiciaire</case>
+      <objects>
+        <object type="house">Maison(s)</object>
+      </objects>
+    </procedure>
+    <participants>
+      <experts>
+        <expert ref="#xpr0147" context="primary" appointment="court-appointed">
+          <title>juré expert à Paris</title>
+        </expert>
+      </experts>
+      <clerks>
+        <clerk ref="#clrk0033">
+          <persName>
+            <surname>Callou</surname>
+            <forename>Antoine Charles</forename>
+          </persName>
+        </clerk>
+      </clerks>
+      <parties>
+        <party role="petitioner" presence="true" intervention="true">
+          <person>
+            <persName>
+              <surname>Houy</surname>
+              <forename>dit la Ravine</forename>
+            </persName>
+            <occupation>marchand à St Germain en Laye</occupation>
+          </person>
+          <status>contractor</status>
+          <expert ref="#xpr0147"/>
+          <prosecutor>
+            <persName>
+              <surname>De Recicourt</surname>
+              <forename>François</forename>
+            </persName>
+          </prosecutor>
+        </party>
+        <party role="opponent" presence="false" intervention="false">
+          <person>
+            <persName>
+              <surname>Massord</surname>
+              <forename>Charles</forename>
+            </persName>
+            <occupation>partie saisie</occupation>
+          </person>
+          <status>mortgagor</status>
+          <expert ref="#xpr0147"/>
+        </party>
+        <party role="opponent" presence="false" intervention="false">
+          <person>
+            <persName>
+              <surname>Dabsac</surname>
+              <forename>Antoine</forename>
+            </persName>
+            <occupation>poursuivant les saisies</occupation>
+          </person>
+          <status>owner</status>
+          <expert ref="#xpr0147"/>
+          <prosecutor>
+            <persName>
+              <surname>Poisson</surname>
+              <forename/>
+            </persName>
+          </prosecutor>
+        </party>
+        <party role="opponent" presence="false" intervention="false">
+          <person>
+            <persName>
+              <surname>Dalbast</surname>
+              <forename/>
+            </persName>
+            <occupation>plus anciens des créanciers</occupation>
+          </person>
+          <status>creditor</status>
+          <expert ref="#xpr0147"/>
+        </party>
+      </parties>
+      <craftmen>
+        <craftman>
+          <persName>
+            <surname/>
+            <forename/>
+          </persName>
+          <occupation/>
+        </craftman>
+      </craftmen>
+    </participants>
+    <conclusions>
+      <agreement type="conclusion">Conclusion</agreement>
+      <opinion ref="#xpr0147">"Montant et revenant les réparations faittes en ladite maison en exécution et conformément avec le rapport dudit jour vingt huit juin dernier ensemble à la somme de 426 livres 10 sols
+Fait par nous expert susdit et soussigné ledit jour mois et an que dessus"</opinion>
+      <arrangement/>
+      <estimate l="" s="" d=""/>
+      <fees detail="true">
+        <fee type="expert" ref="#xpr0147" l="24" s="" d=""/>
+        <fee type="clerk" l="24" s="" d=""/>
+        <fee type="rolls" l="4" s="" d=""/>
+        <fee type="papers" l="" s="" d=""/>
+        <fee type="plans" l="" s="" d=""/>
+        <fee type="prosecutors" l="24" s="" d=""/>
+        <fee type="help" l="" s="" d=""/>
+        <total l="" s="" d=""/>
+      </fees>
+      <expenses mentioned="false"/>
+    </conclusions>
+    <keywords group="estates"/>
+    <keywords group="procedure"/>
+    <keywords group="contract"/>
+    <keywords group="encumbrance"/>
+    <keywords group="law"/>
+    <keywords group="measurement"/>
+    <keywords group="repairs"/>
+    <keywords group="guarantees"/>
+    <keywords group="responsability"/>
+    <keywords group="ownership"/>
+    <keywords group="value"/>
+    <keywords group="neighbourhood"/>
+    <keywords group="disorder"/>
+    <keywords group="transformation">
+      <term value="n2">Conservation (nécessaires et urgents : rendre habitable / logeable et éviter une plus grande dégradation)</term>
+    </keywords>
+    <analysis/>
+    <noteworthy>antériorité : pv et apport du 28 juin 1735 signalant les réparations à faire sur le prix du bail judiciaire, visite faite déjà par Joubert expert
+Il est précisé que les réparations doivent commencer par la couverture (estimée 348 livres,mais à cause des souches de cheminées cela lui a coûté plus.
+Le fermier veut rendre "pour soutenir ladite maison et la rendre logeable et habitable pour son commerce" (f. 2r°)</noteworthy>
+  </description>
+</expertise>

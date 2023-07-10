@@ -1,0 +1,273 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1004d055">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-07-01T12:00:00">2020-07-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2017-10-01T12:00:00">2017-10-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1004</idno>
+        <idno type="item">055</idno>
+        <facsimile from="0609" to="0621"/>
+        <physDesc>
+          <extent sketch="false">12</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-06-25" type="paris"/>
+          <date when="1776-06-25" type="paris"/>
+          <date when="1776-06-26" type="paris"/>
+          <date when="1776-06-26" type="paris"/>
+          <date when="1776-06-27" type="paris"/>
+          <date when="1776-06-27" type="paris"/>
+          <date when="1776-06-28" type="paris"/>
+          <date when="1776-06-28" type="paris"/>
+        </sessions>
+        <places>
+          <place xml:id="id254d309" type="paris">
+            <address>
+              <street>Rue Saint-Victor</street>
+              <buildingNumber/>
+            </address>
+            <complement>proche la porte St Victor</complement>
+            <parish/>
+            <owner>Régnier</owner>
+          </place>
+          <place xml:id="id254d328" type="paris">
+            <address>
+              <street>rue Mouffetard</street>
+              <buildingNumber/>
+            </address>
+            <complement/>
+            <parish/>
+            <owner>Régnier</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="estimation">Estimer la valeur des biens</category>
+          <designation rubric="true">Estimation d'une maison, rue St Victor et d'une autre rue Mouffetard, dépendant de la communauté d'entre le Sr Pierre Regnie, Mtre Chaircattier et la Dme sa Veuve ; M. Vavasseur Des perrière, expert</designation>
+        </categories>
+        <procedure>
+          <framework type="b2b">L’institution est saisie dans le cadre d’une procédure (l’institution nomme un ou deux experts)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Châtelet, lieutenant civil (sentence)</orgName>
+              <date when="1776-06-18"/>
+            </sentence>
+          </sentences>
+          <case>Succession Pierre Regnier ; partage et liquidation de la communauté</case>
+          <objects>
+            <object type="house">Maison(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0258" context="primary" appointment="court-appointed">
+              <title>architecte expert des bâtiments à Paris</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0062">
+              <persName>
+                <surname>Picquenon</surname>
+                <forename>Denis Joseph François</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Surville</surname>
+                  <forename>Louis Nicolas</forename>
+                </persName>
+                <occupation>marchand charcutier à Paris</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Regnier</surname>
+                  <forename>Marie Catherine</forename>
+                </persName>
+                <occupation>son épouse légataire universelle pour ¼ de Regnier, Pierre, son père</occupation>
+              </person>
+              <status>heir</status>
+              <expert ref="#xpr0258"/>
+              <prosecutor>
+                <persName>
+                  <surname>Deperey le jeune</surname>
+                  <forename/>
+                </persName>
+              </prosecutor>
+            </party>
+            <party role="opponent" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Berthier</surname>
+                  <forename>Marie Antoinette</forename>
+                </persName>
+                <occupation>veuve et donnataire de son défunt époux Regnier, Pierre</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Cazalis</surname>
+                  <forename>Jean François</forename>
+                </persName>
+                <occupation>rotisseur à Paris</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Regnier</surname>
+                  <forename>Anne Valentine</forename>
+                </persName>
+                <occupation>son épouse, légataire universelle pour ¼ de Regnier, Pierre, son père</occupation>
+              </person>
+              <status>heir</status>
+              <expert ref="#xpr0258"/>
+              <prosecutor>
+                <persName>
+                  <surname>Berthereau</surname>
+                  <forename/>
+                </persName>
+              </prosecutor>
+            </party>
+            <party role="opponent" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Duchemin</surname>
+                  <forename>Guillaume</forename>
+                </persName>
+                <occupation>maître couvreur à Paris, tuteur ad hoc de Marie Antoinette et Pierre Nicolas Regnier, enfants mineurs de Nicolas Pierre Regnier</occupation>
+              </person>
+              <status>heir</status>
+              <expert ref="#xpr0258"/>
+              <prosecutor>
+                <persName>
+                  <surname>de Sainte-Marthe</surname>
+                  <forename/>
+                </persName>
+              </prosecutor>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0258">rue St Vicor : "...fait attention à son état, consistance et distribution, à la nature de sa construction, aux réparations qui sont à y faire, à l'étendue de son emplacement, au revenu que ladite maison est susceptible de produire,au quartier où elle est située et à ce qu'elle est chargée d'une taxe annuelle de 40 livres pour tenir lieu du logement des gens de guerre, nous avons mis des prix particuliers tant au fond du terrain qu'à la superficie des bâtiments eu égard à ce que dessus"
+rue Mouffetard
+"fait attention à son état, consistance et distribution, à la nature de sa construction, aux réparations qui sont à y faire,au revenu qu'elle est susceptible de produire,  à l'étendue de son emplacement, au quartier où elle est située et à ce qu'elle est chargée d'une taxe annuelle pour tenir lieu du logement des gens de guerre, nous avons mis des prix particuliers tant au fond du terrain qu'à la superficie des bâtiments eu égard à ce que dessus"
+« Recapitulation de nos estimations La maison rue du fauxbourg et porte Saint Victor la somme de … 16 000 l. La maison rue Mouffetard la somme de … 8 000 l. 
+Total de nos estimations desdites deux maisons la somme de … 24 000 l. 
+Quant au chef de votre sentence Monsieur, suivant lequel nous devons donner notre avis si lesdittes maisons peuvent ou non commodement se partager en autant de portions qu’il y a de proprietaires notre avis est que le partage en est impossible, cy… avis Telle est, Monsieur, la visitte par nous faitte desdites deux maisons, tel est notre avis, tant sur la valeur d’icelles que sur l’impossibilité de les partager le tout par nous constaté suivant et aux termes de votre sentence, vous referans sur le tout, Monsieur, à votre justice et prudence ordinaire. »</opinion>
+          <arrangement/>
+          <agreement type="conclusion">Conclusion</agreement>
+          <estimate l="24000" s="" d=""/>
+          <estimates>
+            <place ref="#id254d309">
+              <appraisal l="16000" s="" d="">
+                <desc>une maison</desc>
+              </appraisal>
+            </place>
+            <place ref="#id254d328">
+              <appraisal l="8000" s="" d="">
+                <desc>une maison</desc>
+              </appraisal>
+            </place>
+          </estimates>
+          <fees detail="true">
+            <fee type="papers" l="11" s="18" d=""/>
+            <fee type="expert" ref="#xpr0258" l="42" s="" d=""/>
+            <fee type="clerk" l="42" s="" d=""/>
+            <fee type="rolls" l="33" s="" d=""/>
+            <fee type="prosecutors" l="105" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="233" s="18" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="39" s="15" d=""/>
+            <expense type="expert" l="" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure">
+          <term value="b6">Titre (de propriété)</term>
+        </keywords>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis/>
+        <noteworthy>testament reçu par Leboeuf Delebret le 17 septembre 1763</noteworthy>
+      </description>
+    </expertise>

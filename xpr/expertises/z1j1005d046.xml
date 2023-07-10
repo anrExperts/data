@@ -1,0 +1,267 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1005d046">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-07-01T12:00:00">2020-07-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2017-10-01T12:00:00">2017-10-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1005</idno>
+        <idno type="item">046</idno>
+        <facsimile from="0480" to="0485"/>
+        <physDesc>
+          <extent sketch="false">6</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-07-20" type="province"/>
+        </sessions>
+        <places>
+          <place type="province">
+            <address/>
+            <complement>rue du Calvaire</complement>
+            <city>Saint-Cloud</city>
+            <district/>
+            <owner/>
+          </place>
+        </places>
+        <categories>
+          <category type="settlement">Départager</category>
+          <designation rubric="true">Visitte de maison à St Cloud, rue du Calvaire et pièces de terres en dépendants pour la succession et héritiers du sieur de Fer ; M. Taboureur, expert.</designation>
+        </categories>
+        <procedure>
+          <framework type="b2a">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Châtelet, parc civil, lieutenant civil (sentence)</orgName>
+              <date when="1776-06-11"/>
+            </sentence>
+          </sentences>
+          <case>Succession Defer / Vente par licitation</case>
+          <objects>
+            <object type="house">Maison(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0250" context="primary" appointment="appointed">
+              <title>architecte expert bourgeois</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0061">
+              <persName>
+                <surname>Lecoeur</surname>
+                <forename>Jean Clair</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="" intervention="">
+              <person>
+                <persName>
+                  <surname>Defer</surname>
+                  <forename>Elisabeth Esther</forename>
+                </persName>
+                <occupation>fille majeure, héritière pour un sixième de Defer, Jacques Henry, son père, de son vivant jardinier de l’orangerie du château de Saint-Cloud, appelée à recueillir pour 1/7 de la substitution dont avait été grevé son oncle Defer, Claude par son père Defer, Jacques, et aussi héritière pour 1/7 de Defer, Claude son oncle</occupation>
+              </person>
+              <status>heir</status>
+              <expert ref="#xpr0250"/>
+              <prosecutor>
+                <persName>
+                  <surname>Le Villain</surname>
+                  <forename/>
+                </persName>
+              </prosecutor>
+            </party>
+            <party role="opponent" presence="" intervention="">
+              <person>
+                <persName>
+                  <surname>Pierret</surname>
+                  <forename>Marie Françoise</forename>
+                </persName>
+                <occupation>veuve de Defer, Jacques Henry, tutrice de ses enfants mineurs héritiers ; Barbier, Jacques, jardinier de l’orangerie de Saint-Cloud, tuteur de ses deux filles mineures et de défunte Defer, Marie, leur mère</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Berthaud</surname>
+                  <forename>Georges</forename>
+                </persName>
+                <occupation>marchand tapissier à Paris</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Defer</surname>
+                  <forename>Marie Jeanne Victoire</forename>
+                </persName>
+                <occupation>son épouse</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Baco</surname>
+                  <forename>Claude Noël</forename>
+                </persName>
+                <occupation>marchand de tableaux</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Defer</surname>
+                  <forename>Marie Geneviève</forename>
+                </persName>
+                <occupation>son épouse</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Defer</surname>
+                  <forename>Adelaïde</forename>
+                </persName>
+                <occupation>fille majeure</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Quenescourt</surname>
+                  <forename>Florent</forename>
+                </persName>
+                <occupation>marchand à Saint-Germain-en-Laye</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Defer</surname>
+                  <forename>Colombe</forename>
+                </persName>
+                <occupation>son épouse</occupation>
+              </person>
+              <status>heir</status>
+              <expert ref="#xpr0250"/>
+              <prosecutor>
+                <persName>
+                  <surname>Le Go</surname>
+                  <forename/>
+                </persName>
+              </prosecutor>
+            </party>
+            <party role="opponent" presence="" intervention="">
+              <person>
+                <persName>
+                  <surname>Defer</surname>
+                  <forename>Jeanne</forename>
+                </persName>
+                <occupation>fille majeure</occupation>
+              </person>
+              <status>heir</status>
+              <expert ref="#xpr0250"/>
+              <prosecutor>
+                <persName>
+                  <surname>Boulanger</surname>
+                  <forename>Jacques Alexandre</forename>
+                </persName>
+              </prosecutor>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0250">terrains de 3 arpents 23 perches 1/2
+« Ainsi attention et consideration faite à la situation de ladite maison rue du Calvaire à sa distribution par nous cy dessus raportée, notre avis est qu’elle ne peut commodement se partage entre les parties et singulierement eu égard aux differentes portions de chacun des propriétaires 
+Et à l’égard des terres apartenantes à ladite succession, quoique de leur nature elles soient partageables, néanmoins attendu les differentes portions de propriété des parties, ne composant en total que trois arpens vingt trois perches et demie, comme nous l’avons raporté cy dessus, déjà morcelés en six pieces, se trouveroient divisés à l’infini, pourquoy notre avis est que ledites pièce de terre ne peuvent se partager entre les differens coproprietaires d’icelles sans déterioration. 
+C’est Monsieur l’avis de nous expert sur l’impossibilité de partager lesdits biens entre les parties, vous referant de juger et ordonner sur le tout Fait par nous architecte expert susdit les jour mois et an que dessus à quoy avons vaqué tant du matin que de relevé »</opinion>
+          <arrangement/>
+          <agreement type="conclusion">Conclusion</agreement>
+          <estimate l="" s="" d=""/>
+          <fees detail="true">
+            <fee type="papers" l="5" s="4" d=""/>
+            <fee type="expert" ref="#xpr0250" l="24" s="" d=""/>
+            <fee type="clerk" l="24" s="" d=""/>
+            <fee type="rolls" l="21" s="" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="74" s="4" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="18" s="5" d=""/>
+            <expense type="expert" l="6" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis/>
+        <noteworthy>antériorité : pv de visite du 23 novembre 1772</noteworthy>
+      </description>
+    </expertise>

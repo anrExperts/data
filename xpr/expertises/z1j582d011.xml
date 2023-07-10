@@ -1,0 +1,191 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j582d011">
+  <meta/>
+  <control>
+    <maintenanceStatus>revised</maintenanceStatus>
+    <publicationStatus/>
+    <localControl localType="detailLevel">
+      <term>completed</term>
+    </localControl>
+    <maintenanceHistory>
+      <maintenanceEvent>
+                <eventType>revised</eventType>
+                <eventDateTime standardDateTime="2022-03-30T15:46:34Z">2022-03-30T15:46:34Z</eventDateTime>
+                <agentType>human</agentType>
+                <agent>llosserand</agent>
+                <eventDescription>rvpcd</eventDescription>
+            </maintenanceEvent>
+          <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateRefValues_files.xqy/BaseX</agent>
+        <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+        <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>revised</eventType>
+        <eventDateTime standardDateTime="2020-11-01T12:00:00">2020-11-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>JH</agent>
+        <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>retroconverted</eventType>
+        <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>ead2xpr.xsl/Saxon9</agent>
+        <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>created</eventType>
+        <eventDateTime standardDateTime="2017-04-01T12:00:00">2017-04-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>llosserand</agent>
+        <eventDescription>Création de la fiche.</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+  </control>
+  <sourceDesc>
+    <unitdate>1726</unitdate>
+    <idno type="unitid">Z1J582</idno>
+    <idno type="item">011</idno>
+    <facsimile from="0098" to="0110"/>
+    <physDesc>
+      <extent sketch="false">12</extent>
+    </physDesc>
+  </sourceDesc>
+  <description>
+    <sessions>
+      <date when="1726-07-15" type="paris"/>
+      <date when="1726-07-22" type="paris"/>
+    </sessions>
+    <places>
+      <place type="paris">
+        <address>
+          <street>Rue des Bourdonnois [ou Bourdonnais. Voie actuelle]</street>
+          <buildingNumber/>
+        </address>
+        <complement>un réservoir, rue des Bourdonnois, appartenant à Pajot, Louis Léon, comte Donsembray</complement>
+        <parish/>
+        <owner>Pajot</owner>
+      </place>
+    </places>
+    <categories>
+      <category type="settlement">Départager</category>
+      <designation rubric="true">Visitte de réservoir, rue des Bourdonnais, à la requeste de Mr. Pajot Domsembres contre Charlot, maître plombier ; Mrs Bernard et Loir, experts </designation>
+    </categories>
+    <procedure>
+      <framework type="b2">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+      <origination type="institution">Une institution</origination>
+      <sentences>
+        <sentence>
+          <orgName>lieutenant civil</orgName>
+          <date when="1726-07-03"/>
+        </sentence>
+      </sentences>
+      <case>La charpente protégeant le réservoir doit être refaite pour une raison indéterminée. C'est pourquoi l'état de ce qui a été fait et des matériaux (plaques de plomb) doit être réalisé avant ces travaux. (nb : suivant le marché sous seing privé entre les parties du 19 novembre 1721, il a été spécifié que le comte Donsembray devait fournir tout le plomb recouvrant la charpente).</case>
+      <objects>
+        <object type="other">réservoir (état de la charpente recouverte de plomb)</object>
+      </objects>
+    </procedure>
+    <participants>
+      <experts>
+        <expert ref="#xpr0018" context="primary" appointment="appointed">
+          <title>architecte juré du roi expert bourgeois de Paris</title>
+        </expert>
+        <expert ref="#xpr0183" context="primary" appointment="appointed">
+          <title>juré du roi expert entrepreneur de bâtiments à Paris</title>
+        </expert>
+      </experts>
+      <clerks>
+        <clerk ref="#clrk0020">
+          <persName>
+            <surname>Quirot</surname>
+            <forename>Estienne François</forename>
+          </persName>
+        </clerk>
+      </clerks>
+      <parties>
+        <party role="petitioner" presence="false" intervention="false">
+          <person>
+            <persName>
+              <surname>Pajot</surname>
+              <forename>Louis Léon</forename>
+            </persName>
+            <occupation>intendant général des postes et relais de France.</occupation>
+          </person>
+          <status>owner</status>
+          <expert ref="#xpr0183"/>
+        </party>
+        <party role="opponent" presence="false" intervention="false">
+          <person>
+            <persName>
+              <surname>Charlot</surname>
+              <forename>Adam</forename>
+            </persName>
+            <occupation>maître plombier</occupation>
+          </person>
+          <status>builder</status>
+          <expert ref="#xpr0018"/>
+        </party>
+      </parties>
+      <craftmen>
+        <craftman>
+          <persName>
+            <surname/>
+            <forename/>
+          </persName>
+          <occupation/>
+        </craftman>
+      </craftmen>
+    </participants>
+    <conclusions>
+      <opinion ref="#xpr0018 #xpr0183">Les deux experts donnent leurs avis divergents au fur et à mesure des articles (tables de plomb), recevant ou ne recevant pas chaque table une par une.
+Sur tout ce que dessus nous référons de juger et ordonner suivant votre prudence et justice ordinaire fait et arresté par nous experts susdit....</opinion>
+          <arrangement/>
+      <agreement type="disagreement">Désaccord</agreement>
+      <estimate l="" s="" d=""/>
+      <fees detail="true">
+        <fee type="papers" l="" s="" d=""/>
+        <fee type="expert" ref="#xpr0018" l="24" s="" d=""/>
+        <fee type="expert" ref="#xpr0183" l="24" s="" d=""/>
+        <fee type="clerk" l="24" s="" d=""/>
+        <fee type="rolls" l="" s="" d=""/>
+        <fee type="prosecutors" l="" s="" d=""/>
+        <fee type="help" l="" s="" d=""/>
+        <fee type="plans" l="" s="" d=""/>
+        <total l="" s="" d=""/>
+      </fees>
+      <expenses mentioned="true">
+        <expense type="clerk" l="24" s="17" d="6"/>
+        <expense type="expert" l="" s="" d=""/>
+      </expenses>
+    </conclusions>
+    <keywords group="estates"/>
+    <keywords group="procedure"/>
+    <keywords group="contract"/>
+    <keywords group="encumbrance"/>
+    <keywords group="law"/>
+    <keywords group="measurement"/>
+    <keywords group="repairs"/>
+    <keywords group="guarantees"/>
+    <keywords group="responsability"/>
+    <keywords group="ownership"/>
+    <keywords group="value"/>
+    <keywords group="neighbourhood"/>
+    <keywords group="disorder"/>
+    <keywords group="transformation"/>
+    <analysis>à la demande du comte Donsembray, le lieutenant civil a nommé d'office un expert pour lui.
+                Définition de la mission et nomination des experts
+                « [f. 1r°] … Nous avons fait lecture d'une sentence par vous, monsieur rendue au Parc civil du châtelet de Paris le trois du présent mois entre mondit sieur Donsembray, deffendeur, au requeste exploit du vingt huit moy dernier, tendant de la part [f. 1v°] du cy après nommé à ce qu'il luy fut donné lettres de ses offres de refaire tout à neuf le réservoir en question en conformité des sentences et arrest de la cour rendue entre les partyes en faisant mettre par lesd. sr Donsembray de sa part en estat la charpente dud. résevoir suivant l'ar et façon que les ouvrages ne puissent souffrir aucun danger et en luy donnant des recepissés au fur et à mesure qu'il aporte des plombs neufs pour la construction dud. réservoir ; que pour constater l'estat de lad. charpente elle seroit vue et visitée par expert &amp;amp; d'une part, et entre Adam Charlot, plombier, demandeur d'autre part. Par laquelle sentence, partyes ouyes, vous avoit, monsieur, ordonné qu'avant fair droit et au fins des partyes les lieux et ouvrages en question seroient veus et visités par expert dont les partyes conviendroient, sinon nommer d'office ès mains desquels experts le marché seroient remis et après que mondit sieur Donsembray a déclaré se raporter à vous sur la nomination d'expert vous auroit, monsieur, ordonné que dans trois jours, lors ledit sieur Charlot seroit tenu d'en nommer un de sa part, sinon lad. visitte seroit faite par nous Loir expert susd. que vous auriez, monsieur, nommé [f. 2r°] d'office pour touttes les partyes en lad. sentence scellée par Boyard le six dud. mois. »
+                Suite de la nomination de l'expert
+                « [f. 2r°] Plus fait lecture d'une autre sentence rendue aud. parc civil par vous, monsieur, le neuf dud. présent mois entre mondit sieur comte Donsembray et le Sr Charlot, par laquelle sentence, partyes, ouyes, vous aurié, monsieur, ordonné que la visitte en question seroit faite par nous Bernard expert susd. nommé par led. Charlot et par nous Loir, aussy expert susd. par vous, monsieur, nommé d'office pour mondit sieur Donsembray ; susd. sentence scellée le vingt du présent mois par Royard. »</analysis>
+    <noteworthy/>
+  </description>
+</expertise>

@@ -1,0 +1,227 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1009d043">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-08-01T12:00:00">2020-08-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2017-10-01T12:00:00">2017-10-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1009</idno>
+        <idno type="item">043</idno>
+        <facsimile from="0366" to="0392"/>
+        <physDesc>
+          <extent sketch="false">26</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-11-22" type="province"/>
+          <date when="1776-12-04" type="paris"/>
+          <date when="1776-12-14" type="paris"/>
+        </sessions>
+        <places>
+          <place type="province">
+            <address/>
+            <complement/>
+            <city>Château et seigneurie de Guermantes, près de Lagny</city>
+            <district/>
+            <owner>seigneur de Guermantes</owner>
+          </place>
+          <place type="office">
+            <address/>
+          </place>
+        </places>
+        <categories>
+          <category type="assessment">Décrire et évaluer les travaux à venir</category>
+          <category type="settlement">Départager</category>
+          <designation rubric="true">Visitte du château de Guermante et dépendances près Lagny, à la requeste du tuteur à la substitution portée au testament de feu M. de Guermande (barré), de Frendre, ancien président en la Chambre des Comptes ; M. Payen, expert.</designation>
+        </categories>
+        <procedure>
+          <framework type="b2b">L’institution est saisie dans le cadre d’une procédure (l’institution nomme un ou deux experts)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Châtelet, lieutenant civil (sentence)</orgName>
+              <date when="1776-09-18"/>
+            </sentence>
+          </sentences>
+          <case>Succession seigneur de Guermantes / substitution</case>
+          <objects>
+            <object type="territory">Domaine, terres, fief</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0209" context="primary" appointment="court-appointed">
+              <title>architecte expert bourgeois des bâtiments à Paris</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0062">
+              <persName>
+                <surname>Picquenon</surname>
+                <forename>Denis Joseph François</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="true" intervention="true">
+              <person>
+                <persName>
+                  <surname>Bastien</surname>
+                  <forename>Jean René</forename>
+                </persName>
+                <occupation>bourgeois de Paris, au nom et comme tuteur à la substitution portée au testament du défunt Prondre, Paulin Gabriel, seigneur de Guermantes, ancien président en la chambre des comptes de Paris</occupation>
+              </person>
+              <status>heir</status>
+              <expert ref="#xpr0209"/>
+              <prosecutor>
+                <persName>
+                  <surname>Chappe</surname>
+                  <forename>Jacques Guillaume Gabriel</forename>
+                </persName>
+              </prosecutor>
+            </party>
+            <party role="opponent" presence="true" intervention="true">
+              <person>
+                <persName>
+                  <surname>Destouches</surname>
+                  <forename>Adelaide Marie</forename>
+                </persName>
+                <occupation>veuve de Prondre, Paulin Gabriel, en son nom et à cause de la communauté de biens qui a été entre elle et son défunt mari, au nom et comme tutrice de son fils Prondre, Louis Ernest, l’un des deux héritiers du défunt</occupation>
+              </person>
+              <status>heir</status>
+              <expert ref="#xpr0209"/>
+              <prosecutor>
+                <persName>
+                  <surname>De Rennefort</surname>
+                  <forename/>
+                </persName>
+              </prosecutor>
+            </party>
+            <party role="opponent" presence="true" intervention="true">
+              <person>
+                <persName>
+                  <surname>Prondre</surname>
+                  <forename>Emmanuel Maurice</forename>
+                </persName>
+                <occupation>de Guermantes, comte de Fleuranges, officier au régiment des gardes françaises, l’autre héritier du défunt</occupation>
+              </person>
+              <status>heir</status>
+              <expert ref="#xpr0209"/>
+              <prosecutor>
+                <persName>
+                  <surname>Ragoulleau</surname>
+                  <forename/>
+                </persName>
+              </prosecutor>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0209">« Par le resultat des calculs et details d’appreciation par nous faits dans les precedentes vacations de tout ce qui concerne la reconstruction desdits batiments et ediffices, eu égard à leurs état consistance et distribution et à ce que des anciens édifices incendiés il est resté la cuisine et l’office auxquels il n’a été fait que des reparations de raccordement lors de l’incendie, nous estimons ladite reconstruction la somme de … 36 875 l. … 
+Tableau résumé de nos operations 
+Indemnités deues par la succession du feu seigneur de Guermantes à la substitution à cause des coupes de bois en reserves par luy faittes dans le cours de sa jouissance Notre avis est que la demolition faitte par ladit defunt seigneur de Guermantes en l’année 1737 des batiments qui comprenoient la ferme appellée de la laye, ne donne lieu à aucune indemnité… [détail des indemnités] 
+Total des indemnités dues à la substitution par la succession dudit feu seigneur de Guermantes la somme de … 29 900 l. Améliorations, plantations et reconstructions faittes par le feu seigneur de Guermantes du montant desquelles il est dû recompenses à sa succession par la substitution … 
+Total desdites ameliorations et reconstructions la somme de … 66 875 l. Par la balance des recompenses et dues à la succession… 36 975 l. 
+Reparations necessaires et indispensables à faire au château et dependances et aux fermes, le tout à la charge de la substitution … Total desdites reconstructions et retablissements à la charge de la substitution la somme de … 59 300 l. … 
+Telle est, Monsieur, la visitte par nous faitte des château, bois, fermes, batiments et dependances desdites terres et seigneurie de Guermantes Bussy Saint Martin et Bussy St Georges Telles sont les reparations necessaires à faire auxdits château ferme et batiments ; tel est le prix d’icelles,
+Telles sont les coupes de bois de futayes qui y ont été faittes Telles sont les constructions plantations et ameliorations faittes par le seigneur de Guermantes dernier decedé dans ladite terre et seigneurie, tel est le prix d’icelles Telles sont aussy les declarations que vous nous avez authorisé de prendre des anciens ayant connaissance des faits énoncés en votre sentence 
+Telle est la balance qui resulte de nos operations 
+Telles sont les bois sur le retour et deperissant qu’il est necessaire de couper 
+Enfin tel est notre avis sur tous les chefs de la mission que vous nous avez deferée par votre sentence 
+Nous referons sur le tout, Monsieur, à votre justice et prudence ordinaire Fait par nous architecte expert susdit lesdits jours mois et an, après avoir vaqué à ce que dessus jusqu’à deux heures après midy par double vacation pour mettre à fin le present rapport »</opinion>
+          <arrangement/>
+          <agreement type="conclusion">Conclusion</agreement>
+          <estimate l="" s="" d=""/>
+          <fees detail="true">
+            <fee type="papers" l="24" s="8" d=""/>
+            <fee type="expert" ref="#xpr0209" l="324" s="" d=""/>
+            <fee type="clerk" l="324" s="" d=""/>
+            <fee type="rolls" l="111" s="" d=""/>
+            <fee type="prosecutors" l="63" s="6" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="846" s="14" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="220" s="15" d=""/>
+            <expense type="expert" l="" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder">
+          <term value="m12">Incendie</term>
+        </keywords>
+        <keywords group="transformation"/>
+        <analysis>#indemnités</analysis>
+        <noteworthy>les vacations n'ont pas toutes été notées ici : 10 jours de campagne et 14 vacations de Pais</noteworthy>
+      </description>
+    </expertise>

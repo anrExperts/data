@@ -1,0 +1,223 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j581d013">
+  <meta/>
+  <control>
+    <maintenanceStatus>revised</maintenanceStatus>
+    <publicationStatus/>
+    <localControl localType="detailLevel">
+      <term>completed</term>
+    </localControl>
+    <maintenanceHistory>
+      <maintenanceEvent>
+                <eventType>revised</eventType>
+                <eventDateTime standardDateTime="2022-03-25T16:39:50Z">2022-03-25T16:39:50Z</eventDateTime>
+                <agentType>human</agentType>
+                <agent>llosserand</agent>
+                <eventDescription>rvpcd</eventDescription>
+            </maintenanceEvent>
+          <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateObjectsValues_db.xqy/BaseX</agent>
+        <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateOpinionRef_files.xqy/BaseX</agent>
+        <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateRefValues_files.xqy/BaseX</agent>
+        <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+        <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>revised</eventType>
+        <eventDateTime standardDateTime="2020-11-01T12:00:00">2020-11-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>JH</agent>
+        <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>retroconverted</eventType>
+        <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>ead2xpr.xsl/Saxon9</agent>
+        <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>created</eventType>
+        <eventDateTime standardDateTime="2017-04-01T12:00:00">2017-04-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>llosserand</agent>
+        <eventDescription>Création de la fiche.</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+  </control>
+  <sourceDesc>
+    <unitdate>1726</unitdate>
+    <idno type="unitid">Z1J581</idno>
+    <idno type="item">013</idno>
+    <facsimile from="0115" to="0117"/>
+    <physDesc>
+      <extent sketch="false">2</extent>
+    </physDesc>
+  </sourceDesc>
+  <description>
+    <sessions>
+      <date when="1726-06-08" type="paris"/>
+    </sessions>
+    <places>
+      <place xml:id="id93d242" type="paris">
+        <address>
+          <street>Rue de la Cordonnerie [Cette dénomination correspond à 2 voies : Voie supprimée. Également dénommée rue e la Coudouanerie. Voie ancienne : voir rue des Fourreurs]</street>
+          <buildingNumber/>
+        </address>
+        <complement/>
+        <parish/>
+        <owner/>
+      </place>
+    </places>
+    <categories>
+      <category type="estimation">Estimer la valeur des biens</category>
+      <designation rubric="true">Visite et estimation d'une maison</designation>
+    </categories>
+    <procedure>
+      <framework type="b2">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+      <origination type="institution">Une institution</origination>
+      <sentences>
+        <sentence>
+          <orgName>lieutenant civil (sentence)</orgName>
+          <date when="1726-05-14"/>
+        </sentence>
+      </sentences>
+      <case>estimation d'une maison dans le cadre d'une vente consécutive à une succession.</case>
+      <objects>
+        <object type="house">Maison(s)</object>
+      </objects>
+    </procedure>
+    <participants>
+      <experts>
+        <expert ref="#xpr0183" context="primary" appointment="appointed">
+          <title>juré expert</title>
+        </expert>
+      </experts>
+      <clerks>
+        <clerk ref="#clrk0033">
+          <persName>
+            <surname>Callou</surname>
+            <forename>Antoine-Charles</forename>
+          </persName>
+        </clerk>
+      </clerks>
+      <parties>
+        <party role="petitioner" presence="false" intervention="false">
+          <person>
+            <persName>
+              <surname>Hardouin de Beauvais</surname>
+              <forename>Charles</forename>
+            </persName>
+            <occupation/>
+          </person>
+          <person>
+            <persName>
+              <surname>Hardouin de Beauvais</surname>
+              <forename>Pierre </forename>
+            </persName>
+            <occupation/>
+          </person>
+          <person>
+            <persName>
+              <surname>Hardouin de Beauvais</surname>
+              <forename>Antoine</forename>
+            </persName>
+            <occupation>tous trois émancipés d'âge</occupation>
+          </person>
+          <person>
+            <persName>
+              <surname>Hardouin de Beauvais</surname>
+              <forename>Marie Anne Edmée </forename>
+            </persName>
+            <occupation/>
+          </person>
+          <person>
+            <persName>
+              <surname>Hardouin de Beauvais</surname>
+              <forename>Simon</forename>
+            </persName>
+            <occupation>enfans mineurs de Hardouin de Beauvais, Pierre, ancien trésorier de l'extraordinaire des guerres au département de Briague et de deffuncte dame Pelet, Catherine, son épouse</occupation>
+          </person>
+          <person>
+            <persName>
+              <surname>Hardouin de Beauvais</surname>
+              <forename>Claude Jeanne</forename>
+            </persName>
+            <occupation>fille majeure leur sœur, légataires universels chacun pour un sixième de deffunte damoiselle Labbé, Jeanne leur aïeule maternelle, à son décès veuve du sr. Pelet, Jean, marchand bourgeois de Paris par son testament reçu par Baily qui en a la minute et son confrère notaire à Paris le vingt trois avril mil sept cent vingt trois.</occupation>
+          </person>
+          <status>heir</status>
+          <expert ref="#xpr0183"/>
+        </party>
+      </parties>
+      <craftmen>
+        <craftman>
+          <persName>
+            <surname/>
+            <forename/>
+          </persName>
+          <occupation/>
+        </craftman>
+      </craftmen>
+    </participants>
+    <conclusions>
+      <opinion ref="#xpr0183">« l'emplacement total de lad. maison et distinctement de ce qui est occupé en bâtimens dans ce qui est cour, et de tout fait les calculs et considération faite du quartier où est scituée lad. maison, de l'estat présent des bâtimens qui la composent, nous la prisons et estimons ne valoir au plus que lad. somme de quinze mil livres, porté audit [illisible], eu égard au cours du tems présent et à leur charge du cens, cy : 15 000 livres ».</opinion>
+      <arrangement/>
+      <agreement type="conclusion">Conclusion</agreement>
+      <estimate l="15000" s="" d=""/>
+      <estimates>
+        <place ref="#id93d242">
+          <appraisal l="15000" s="" d="">
+            <desc>maison</desc>
+          </appraisal>
+        </place>
+      </estimates>
+      <fees detail="true">
+        <fee type="papers" l="2" s="5" d=""/>
+        <fee type="expert" ref="#xpr0183" l="6" s="" d=""/>
+        <fee type="clerk" l="6" s="" d=""/>
+        <fee type="rolls" l="3" s="5" d=""/>
+        <fee type="prosecutors" l="" s="" d=""/>
+        <fee type="help" l="" s="" d=""/>
+        <fee type="plans" l="" s="" d=""/>
+        <total l="" s="" d=""/>
+      </fees>
+      <expenses mentioned="false"/>
+    </conclusions>
+    <keywords group="estates"/>
+    <keywords group="procedure"/>
+    <keywords group="contract"/>
+    <keywords group="encumbrance"/>
+    <keywords group="law"/>
+    <keywords group="measurement"/>
+    <keywords group="repairs"/>
+    <keywords group="guarantees"/>
+    <keywords group="responsability"/>
+    <keywords group="ownership"/>
+    <keywords group="value"/>
+    <keywords group="neighbourhood"/>
+    <keywords group="disorder"/>
+    <keywords group="transformation"/>
+    <analysis>[f. 1r°] : « par lequel le sr. Delavau, tuteur desd. mineurs, lad. damoiselle de Beauvais, lesd. émancipez et autres personnes bien intentionnez pour eux, auroient esté d'avis que le seul moyen de libérer lad. succession estoit de vendre une des maisons de lad. succession, ny ayant d'autre resoule, qu'à cet effet led. sr Delavau auroit fait afficher lad. maison, laquelle est louée au sr. Cohende marchand de vin et qui est par ailleurs sujette à des réparations et [illisible] qu'il s'est présenté plusieurs personnes pour l'acquérir et entre autres le sr Grignoa, marchand chapelier qui a fait la meilleur composition et offre de payer comptant par le prix de lad. maison après [illisible] scellé et délivré sans opposition la somme de quinze mil livres avec [illisible] au denier vingt, ce qui est très avantageux pour lesd. mineurs [illisible] ce que lad. maison peut valoir dont la visite et rapport seroient faits par tel expert qu'il plaisoit au sr le lieutenant civil de nommer mais qu'ils ne pouvoient faire lad. vente et ce qu'il convenoit faire à ce sujet, ny lesd. sr Delavau payer valablement, qu'auparavant il ne fut authorisé à estre tuteur... »</analysis>
+    <noteworthy/>
+  </description>
+</expertise>

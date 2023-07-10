@@ -1,0 +1,221 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1000d014">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-09-01T12:00:00">2020-09-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2018-01-01T12:00:00">2018-01-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>PC</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1000</idno>
+        <idno type="item">014</idno>
+        <facsimile from="0088" to="0095"/>
+        <physDesc>
+          <extent sketch="false">6</extent>
+          <appendices>
+            <appendice>
+              <type type="other">Mémoires d'ouvrages d'augmentation</type>
+              <extent>1</extent>
+              <desc/>
+              <note/>
+            </appendice>
+          </appendices>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-03-05" type="paris"/>
+          <date when="1776-03-12" type="paris"/>
+          <date when="1776-03-19" type="paris"/>
+          <date when="1776-03-26" type="paris"/>
+          <date when="1776-04-01" type="paris"/>
+          <date when="1776-04-01" type="paris"/>
+        </sessions>
+        <places>
+          <place type="paris">
+            <address>
+              <street>Rue des Filles Dieu</street>
+              <buildingNumber/>
+            </address>
+            <complement/>
+            <parish/>
+            <owner>Bougeonnier</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="acceptation">Recevoir et évaluer le travail réalisé</category>
+          <designation rubric="true">Visitte et estimation de constructions faites</designation>
+        </categories>
+        <procedure>
+          <framework type="b2a">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Chambre des requêtes, sentence du 16 janvier 1776</orgName>
+              <date when="1776-01-16"/>
+            </sentence>
+          </sentences>
+          <case>Constater et vérifier les travaux réalisés dans la maison du Sieur Bougeonnier par le maître maçon Croisé</case>
+          <objects>
+            <object type="house">Maison(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0043" context="primary" appointment="appointed">
+              <title>architecte juré expert</title>
+            </expert>
+            <expert ref="#xpr0210" context="primary" appointment="appointed">
+              <title>architecte juré expert</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0071">
+              <persName>
+                <surname>Reboul</surname>
+                <forename>Claude Anne</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="true" intervention="false">
+              <person>
+                <persName>
+                  <surname>Bougeonnier</surname>
+                  <forename>Pierre</forename>
+                </persName>
+                <occupation>maître teinturier à Paris</occupation>
+              </person>
+              <status>limited-partner</status>
+              <expert ref="#xpr0210"/>
+              <prosecutor>
+                <persName>
+                  <surname>Bertheau</surname>
+                  <forename>Thomas</forename>
+                </persName>
+              </prosecutor>
+            </party>
+            <party role="opponent" presence="true" intervention="false">
+              <person>
+                <persName>
+                  <surname>Croisé</surname>
+                  <forename/>
+                </persName>
+                <occupation>maître maçon entrepreneur de bâtiments à Paris</occupation>
+              </person>
+              <status>builder</status>
+              <expert ref="#xpr0043"/>
+              <prosecutor>
+                <persName>
+                  <surname>Fouquier de Tinville</surname>
+                  <forename/>
+                </persName>
+              </prosecutor>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="">« Nous architectes experts susdits en conséquence de la remise ci dessus nous sommes avec ledit greffier de nouveaux transportés en notre bureau de la rue de Verrerie ; et y étant en l’absence de toutes les parties, nous avons procédé à l’estimation d’iceux des articles, contenus au mémoire à nous remis par le Sieur Croisé, que nous avons reconnu avoir été par lui faits et fournis en augmentation dudit devis et après avoir fait tous les détails et calculs nécessaires en marge dudit mémoire, nous avons estimé lesdits articles concernant les ouvrages faits par le Sieur Croisé en augmentation du devis, tous ensemble la somme de quatre vingt huit livres, 88 l.De sorte que le Sieur Croisé ne fait point rétablir à ses frais et dépens les ouvrages qui sont à réparer sur le total desdits ouvrages à réparer et des indemnités à payer par lui au Sieur Bougeonnier, montant comme il a été dit cy-dessus à la somme de deux cents dix sept livres, 217 l.Il sera déduit ladite somme des 88 l. au moyen de quoi ledit Sieur Croisé se trouvera redevable envers le Sieur Bougeonnier de la somme de cent vingt neuf livres, 129 l. Mais si ledit Sieur Croisé fait rétablir à ses dépends les ouvrages qui méritent d’être réparés, autres néanmoins que les deux objets pour lesquels nous pensons qu’il est plus à propos qu’il paye des indemnités, alors sur ladite somme de quatre vingt quatre livres, montant des deux indemnités dues au Sieur Bougeonnier par ledit Sieur Croisé ; au moyen de quoi ledit Sieur Bougeonnier n’aura à payer audit Sieur Croisée que la somme de quatre livres.Quant au dit mémoire à nous remis par le Sieur Croisé nous n’en faisons plus ample description pour éviter à frais, mais après avoir été vu de nous et dudit Sieur greffier, signé et paraphé, nous l’avons annexé à la minute de notre présent procès verbal pour y avoir recours, si besoin est. »</opinion>
+          <arrangement/>
+          <agreement type="agreement">Accord</agreement>
+          <estimate l="" s="" d=""/>
+          <fees detail="true">
+            <fee type="papers" l="5" s="" d=""/>
+            <fee type="expert" ref="#xpr0043" l="48" s="" d=""/>
+            <fee type="expert" ref="#xpr0210" l="48" s="" d=""/>
+            <fee type="clerk" l="48" s="" d=""/>
+            <fee type="rolls" l="27" s="10" d=""/>
+            <fee type="prosecutors" l="72" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="248" s="10" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="42" s="17" d="6"/>
+            <expense type="expert" l="32" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract">
+          <term value="c2">Devis et marché</term>
+        </keywords>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis>« Lesquels vérifiroient et constateroient si toutes les différentes parties de construction de toutes natures sont faites suivant les règles de l’art et conformément aux devis et conventions arrêtées par l’acte du 10 août 1768 devant maître Verrard »
+Le Sieur Croisé a quant à lui confié des travaux de teinturerie au Sieur Bougeonnier le 7 août 1775, à déduire du coût des travaux. 
+Le montant du devis du Sieur Croisé est de cent soixante neuf livres et seize sols, 169 l. 16 s.</analysis>
+        <noteworthy/>
+      </description>
+    </expertise>

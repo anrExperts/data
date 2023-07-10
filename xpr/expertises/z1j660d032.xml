@@ -1,0 +1,213 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j660d032" status="">
+  <meta/>
+  <control>
+    <maintenanceStatus>revised</maintenanceStatus>
+    <publicationStatus/>
+    <localControl localType="detailLevel">
+      <term>completed</term>
+    </localControl>
+    <maintenanceHistory>
+      <maintenanceEvent>
+                <eventType>revised</eventType>
+                <eventDateTime standardDateTime="2022-03-19T14:47:07Z">2022-03-19T14:47:07Z</eventDateTime>
+                <agentType>human</agentType>
+                <agent>llosserand</agent>
+                <eventDescription>rvpcd</eventDescription>
+            </maintenanceEvent>
+          <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateObjectsValues_db.xqy/BaseX</agent>
+        <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-06-16T16:56:32.893+02:00">2021-06-16T16:56:32.893+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateOpinionRef_files.xqy/BaseX</agent>
+        <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-06-16T16:29:02.548+02:00">2021-06-16T16:29:02.548+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateRefValues_files.xqy/BaseX</agent>
+        <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>created</eventType>
+        <eventDateTime standardDateTime="2021-02-12T18:18:03Z">2021-02-12T18:18:03Z</eventDateTime>
+        <agentType>human</agentType>
+        <agent>llosserand</agent>
+        <eventDescription>Création de la fiche.</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+  </control>
+  <sourceDesc>
+    <unitdate>1736</unitdate>
+    <idno type="unitid">Z1J660</idno>
+    <idno type="item">032</idno>
+    <facsimile from="0385" to="0393"/>
+    <physDesc>
+      <extent sketch="false">8</extent>
+    </physDesc>
+  </sourceDesc>
+  <description>
+    <sessions>
+      <date when="1736-01-30" type="paris"/>
+      <date when="1736-03-15" type="paris"/>
+      <date when="1736-03-19" type="paris"/>
+      <date when="1736-03-19" type="paris"/>
+      <date when="1736-03-23" type="paris"/>
+    </sessions>
+    <places>
+      <place type="paris">
+        <address>
+          <street>rue des Fourcy</street>
+          <buildingNumber/>
+        </address>
+        <complement>sur les Fossés de l'estrapade</complement>
+        <parish/>
+        <owner>saisie sur el sieur Desjardins</owner>
+      </place>
+    </places>
+    <categories>
+      <category type="acceptation">Recevoir et évaluer le travail réalisé</category>
+      <designation rubric="true">Estimation de réparations à faire en une maison, rue de Fourcy, fossez de l'Estrapade, saisie réellement sur le sieur Desjardins et sa femme, pour le sieur Quartier, marchand de vin, fermier judiciaire ; MM. Denis Quirot et Fauvel de Villiers, experts ; M. Estienne François Quirot, greffier.</designation>
+    </categories>
+    <procedure>
+      <framework type="b2">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+      <origination type="institution">Une institution</origination>
+      <sentences>
+        <sentence>
+          <orgName>Parlement (arrêt)</orgName>
+          <date when="1735-08-02"/>
+        </sentence>
+      </sentences>
+      <case>maison saisie, réparations effectuées</case>
+      <objects>
+        <object type="house">Maison(s)</object>
+      </objects>
+    </procedure>
+    <participants>
+      <experts>
+        <expert ref="#xpr0231" context="primary" appointment="court-appointed">
+          <title>architecte juré du roi expert bourgeois de Paris</title>
+        </expert>
+        <expert ref="#xpr0108" context="primary" appointment="court-appointed">
+          <title>juré du roi expert en bâtiment</title>
+        </expert>
+      </experts>
+      <clerks>
+        <clerk ref="#clrk0020">
+          <persName>
+            <surname>Quirot</surname>
+            <forename>Estienne François</forename>
+          </persName>
+        </clerk>
+      </clerks>
+      <parties>
+        <party role="petitioner" presence="true" intervention="true">
+          <person>
+            <persName>
+              <surname>Quartier</surname>
+              <forename>Edme</forename>
+            </persName>
+            <occupation/>
+          </person>
+          <status>contractor</status>
+          <expert ref="#xpr0231"/>
+        </party>
+        <party role="opponent" presence="true" intervention="true">
+          <person>
+            <persName>
+              <surname>Bailleul</surname>
+              <forename>Elisabeth</forename>
+            </persName>
+            <occupation/>
+          </person>
+          <person>
+            <persName>
+              <surname>Desjardins</surname>
+              <forename>Jean Baptiste</forename>
+            </persName>
+            <occupation>marchand de bois, parties saisies</occupation>
+          </person>
+          <status>mortgagor</status>
+          <expert ref="#xpr0108"/>
+        </party>
+        <party role="opponent" presence="false" intervention="false">
+          <person>
+            <persName>
+              <surname>Sabot</surname>
+              <forename>Guillaume</forename>
+            </persName>
+            <occupation>banquier à Paris, poursuivant la saisie réelle</occupation>
+          </person>
+          <status>owner</status>
+          <expert ref="#xpr0108"/>
+        </party>
+        <party role="opponent" presence="false" intervention="false">
+          <person>
+            <persName>
+              <surname>Darras</surname>
+              <forename>Martin</forename>
+            </persName>
+            <occupation>procureur plus ancien et les sieurs commissaires aux saisies réelles</occupation>
+          </person>
+          <status>creditor</status>
+          <expert ref="#xpr0108"/>
+        </party>
+      </parties>
+      <craftmen>
+        <craftman>
+          <persName>
+            <surname/>
+            <forename/>
+          </persName>
+          <occupation/>
+        </craftman>
+      </craftmen>
+    </participants>
+    <conclusions>
+      <agreement type="agreement">Accord</agreement>
+      <opinion ref="#xpr0108 #xpr0231">description de la fosse d'aisance vidée : 110 livres 15 sols
+"Plus, il est nécessaire de faire le bouchement de ladite fosse et une partie de la chausse au dessus d'icelle fosse que nous estimons ensemble à la somme de 10 livres"
+/Autre réparation au mur/ 40 livres
+Somme totalle de touttes les réparations mentionnées et contenues au présent procès verbal 514 livres 7 sols.</opinion>
+      <arrangement/>
+      <estimate l="" s="" d=""/>
+      <fees detail="true">
+        <fee type="expert" ref="#xpr0231" l="30" s="" d=""/>
+        <fee type="expert" ref="#xpr0108" l="30" s="" d=""/>
+        <fee type="clerk" l="" s="" d=""/>
+        <fee type="rolls" l="" s="" d=""/>
+        <fee type="papers" l="" s="" d=""/>
+        <fee type="plans" l="" s="" d=""/>
+        <fee type="prosecutors" l="" s="" d=""/>
+        <fee type="help" l="" s="" d=""/>
+        <total l="" s="" d=""/>
+      </fees>
+      <expenses mentioned="true">
+        <expense type="clerk" l="28" s="5" d=""/>
+      </expenses>
+    </conclusions>
+    <keywords group="estates"/>
+    <keywords group="procedure"/>
+    <keywords group="contract"/>
+    <keywords group="encumbrance"/>
+    <keywords group="law"/>
+    <keywords group="measurement"/>
+    <keywords group="repairs"/>
+    <keywords group="guarantees"/>
+    <keywords group="responsability"/>
+    <keywords group="ownership"/>
+    <keywords group="value"/>
+    <keywords group="neighbourhood"/>
+    <keywords group="disorder"/>
+    <keywords group="transformation"/>
+    <analysis/>
+    <noteworthy>Nomination des expert "nous avons fait lecture d'un porcès verbal fait en l'hostel de mondit sieur [Louis] de Vienne [conseiller] du 31 décembre dernier à la fin duquel est l'ordonnance de monsieur de Vienne par laquelle est nommé la personne de nous Denis quirot expert pour ledit Cartier et est nommé d'office la personne de nous Fauvel pour expert des deffaillans."</noteworthy>
+  </description>
+</expertise>

@@ -1,0 +1,243 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1002d002">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2017-10-01T12:00:00">2017-10-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1002</idno>
+        <idno type="item">002</idno>
+        <facsimile from="0009" to="0019"/>
+        <physDesc>
+          <extent sketch="false">10</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-05-02" type="suburbs"/>
+          <date when="1776-05-03" type="suburbs"/>
+          <date when="1776-05-04" type="paris"/>
+          <date when="1776-05-06" type="paris"/>
+          <date when="1776-05-08" type="paris"/>
+          <date when="1776-05-09" type="paris"/>
+        </sessions>
+        <places>
+          <place xml:id="id47d201" type="suburbs">
+            <address/>
+            <complement>rue des Hauts fossés Saint-Marcel</complement>
+            <city/>
+            <district/>
+            <owner>comunauté des biens de Menourieu de Fresne et son épouse, de la succession de cette dernière</owner>
+          </place>
+          <place xml:id="id47d217" type="paris">
+            <address>
+              <street>carrefour de la petite Sonnerie</street>
+              <buildingNumber/>
+            </address>
+            <complement/>
+            <parish/>
+            <owner>comunauté des biens de Menourieu de Fresne et son épouse, de la succession de cette dernière</owner>
+          </place>
+          <place xml:id="id47d235" type="paris">
+            <address>
+              <street>rue de la Culture-Sainte-Catherine</street>
+              <buildingNumber/>
+            </address>
+            <complement/>
+            <parish/>
+            <owner>comunauté des biens de Menourieu de Fresne et son épouse, de la succession de cette dernière</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="estimation">Estimer la valeur des biens</category>
+          <designation rubric="true">Estimation de trois maison dépendantes de la communauté d'entre le sieur Menouvrier de Fresne et feue dame son épouse ; M. Taboureur, expert.</designation>
+        </categories>
+        <procedure>
+          <framework type="b2b">L’institution est saisie dans le cadre d’une procédure (l’institution nomme un ou deux experts)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Châtelet, lieutenant civil</orgName>
+              <date when=""/>
+            </sentence>
+          </sentences>
+          <case>liquidation et partage des biens de la comunauté des biens entre Menourieu de Fresne et son épouse</case>
+          <objects>
+            <object type="house">Maison(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0250" context="" appointment="">
+              <title>architecte expert bourgeois des bâtiments à Paris</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0062">
+              <persName>
+                <surname>Picquenon</surname>
+                <forename>Denis Joseph François</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party intervention="" presence="" role="petitioner">
+              <person>
+                <persName>
+                  <surname>parents et amis des mineurs Menourier</surname>
+                  <forename/>
+                </persName>
+                <occupation/>
+              </person>
+              <person>
+                <persName>
+                  <surname>de Villeneuve</surname>
+                  <forename>Antoine</forename>
+                </persName>
+                <occupation>tuteur ad hoc desdits mineurs</occupation>
+              </person>
+              <status>heir</status>
+              <expert ref=""/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0250">1° rue des Hauts Fossés Saint-Marcel
+"Pour parvenir à l'estimation de ladite maison et connoître l'étendue de son emplacement nous avons procédé à en prendre les mesures et fait une esquisse du plan figuré d'iceluy sur lequel nous avons distingué ce qui est en jardin d'avec ce qui est en bâtiments, fait attention à son état, consistance et distribution, à la nature de la construction, aux réparations qui y sont à y faire, au revenu qu'elle est susceptible de produire et au quartier où elle est scituée, et à ce qu'elle est sujette à une taxe annuelle pour tenir lieu du logement des gens de guerre, nous avons mis des prix particuliers tant au fond du terrain qu'à la superficie des bâtiments, eu égard  à ce que dessus"
+« Touttes considerations faittes nous prisons et estimons ladite maison [rue des Hauts Fossés Saint-Marcel] à la charge du cens seulement s’agissant de partage qui ne donne point lieu aux droits seigneuriaux, ceux du logement des gens de guerre et au cours du tems present la somme de … 4 500 l.
+« Pour satisfaire à la disposition de votre sentence…, nous vous observons qu[e les améliorations] consistent seulement dans la refection à neuf du mur de clôture separant ladite maison d’avec celle joignante à droitte en la longueur du jardin de la petite maison : sans mitoyenneté avec le voisin ce que nous estimons être un objet de la somme de … 500 l. »
+
+2° rue de la Culture Ste Catherine
+"fait attention à son état, consistance et distribution, à la nature de la construction, aux réparations qui y sont à y faire, au revenu qu'elle est susceptible de produire et au quartier où elle est scituée, à l'étendue de son emplacement, nous avons mis des prix particuliers tant au fond du terrain qu'à la superficie des bâtiments, eu égard  à ce que dessus"
+1° « Touttes considerations faittes nous prisons et estimons ladite maison [rue de la Culture-Sainte-Catherine] à la charge du cens seulement s’agissant de partage qui ne donne point lieu aux droits seigneuriaux et au cours du tems present la somme de … 18 000 l.
+« Pour satisfaire à la disposition de votre sentence…, nous vous observons qu[e les améliorations] consistent dans le carrelage à neuf de la superficie d’une chambre, dans la reconstruction d’un manteau et âtre de cheminée dans une autre chambre, et réparations à la couverture et aux têtes de cheminée, te tout depuis le décès de ladite dame de Fresne : nous avons mis des prix particuliers à chacun des objets d’amelioration cy dessus designés lesquels reunis se sont trouvés revenir ensemble à … 200 l. »
+
+3°  carrefour de la petite Sonnerie
+"fait attention à son état, consistance et distribution, à la nature de la construction, aux réparations qui y ont été recement faites, à l'étendue de son emplacement, au revenu qu'elle est susceptible de produire et au quartier où elle est scituée, nous avons mis des prix particuliers tant au fond du terrain qu'à la superficie des bâtiments, eu égard  à ce que dessus"
+« Touttes considerations faittes nous prisons et estimons ladite maison [carrefour de la petite Sonnerie] à la charge du cens seulement s’agissant de partage qui ne donne point lieu aux droits seigneuriaux et au cours du tems present la somme de … 16 000 l.
+« Pour satisfaire à la disposition de votre sentence…, nous vous observons qu[e les améliorations] faittes à la demeure depuis le deces de ladite dame de Fresne, nous avons cy dessus rapporté leurs consistances : nous avons fait sur borderaux particuliers les calculs et détails d’appreciation de chaque objet d’après lesquels nous les estimons ensemble la somme de… 1 200 l. »
+« Total de nos estimations… 38 500 l. »
+« Total des améliorations… 1 900 l. »</opinion>
+          <arrangement/>
+          <agreement type="conclusion">Conclusion</agreement>
+          <estimate l="38500" s="" d=""/>
+          <estimates>
+            <place ref="#id47d201">
+              <appraisal l="4500" s="" d="">
+                <desc>une maison</desc>
+              </appraisal>
+            </place>
+            <place ref="#id47d217">
+              <appraisal l="16000" s="" d="">
+                <desc>une maison</desc>
+              </appraisal>
+            </place>
+            <place ref="#id47d235">
+              <appraisal l="18000" s="" d="">
+                <desc>une maison</desc>
+              </appraisal>
+            </place>
+          </estimates>
+          <fees detail="true">
+            <fee type="papers" l="6" s="6" d=""/>
+            <fee type="expert" ref="#xpr0250" l="39" s="" d=""/>
+            <fee type="clerk" l="39" s="" d=""/>
+            <fee type="rolls" l="34" s="" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="118" s="6" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="36" s="10" d=""/>
+            <expense type="expert" l="13" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs">
+          <term value="g1">Réparations</term>
+        </keywords>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation">
+          <term value="n1">Amélioration (travaux qui sans être utiles à sa conservation lui sont utiles et lui procure une plus-value) ǂ</term>
+        </keywords>
+        <analysis>1° description de la maison rue Hauts fossés Saint-Marcel
+                2° description de la maison rue de la Culture-Sainte-Catherine
+                3° description de la maison carrefour de la petite Sonnerie</analysis>
+        <noteworthy/>
+      </description>
+    </expertise>

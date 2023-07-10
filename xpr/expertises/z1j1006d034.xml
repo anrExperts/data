@@ -1,0 +1,217 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1006d034">
+  <meta/>
+  <control>
+    <maintenanceStatus>revised</maintenanceStatus>
+    <publicationStatus/>
+    <localControl localType="detailLevel">
+      <term>completed</term>
+    </localControl>
+    <maintenanceHistory>
+      <maintenanceEvent>
+                <eventType>revised</eventType>
+                <eventDateTime standardDateTime="2021-10-15T14:05:08Z">2021-10-15T14:05:08Z</eventDateTime>
+                <agentType>human</agentType>
+                <agent>llosserand</agent>
+                <eventDescription>exb3</eventDescription>
+            </maintenanceEvent>
+          <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateObjectsValues_db.xqy/BaseX</agent>
+        <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateOpinionRef_files.xqy/BaseX</agent>
+        <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateRefValues_files.xqy/BaseX</agent>
+        <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+        <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>revised</eventType>
+        <eventDateTime standardDateTime="2020-09-01T12:00:00">2020-09-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>JH</agent>
+        <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>retroconverted</eventType>
+        <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>ead2xpr.xsl/Saxon9</agent>
+        <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>created</eventType>
+        <eventDateTime standardDateTime="2017-04-01T12:00:00">2017-04-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>llosserand</agent>
+        <eventDescription>Création de la fiche.</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+  </control>
+  <sourceDesc>
+    <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1006</idno>
+    <idno type="item">034</idno>
+    <facsimile from="0360" to="0364"/>
+    <physDesc>
+      <extent sketch="false">4</extent>
+    </physDesc>
+  </sourceDesc>
+  <description>
+    <sessions>
+      <date when="1776-08-14" type="paris"/>
+      <date when="1776-08-23" type="paris"/>
+      <date when="1776-08-27" type="paris"/>
+    </sessions>
+    <places>
+      <place xml:id="id277d287" type="paris">
+        <address>
+          <street/>
+          <buildingNumber/>
+        </address>
+        <complement/>
+        <parish/>
+        <owner>Nuchelle(?), Françoise Elisabeth, veuve de de la Noë, Jean, dont est principal locataire le sieur de la Rochelle</owner>
+      </place>
+    </places>
+    <categories>
+      <category type="estimation">Estimer la valeur des biens</category>
+      <designation rubric="true">Estimation de maison pour évaluer le loyer</designation>
+    </categories>
+    <procedure>
+      <framework type="b2">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+      <origination type="institution">Une institution</origination>
+      <sentences>
+        <sentence>
+          <orgName>Châtelet, lieutenant civil (sentence)</orgName>
+          <date when="1776-07-02"/>
+        </sentence>
+      </sentences>
+      <case>Estimation de loyer et d'améliorations locatives</case>
+      <objects>
+        <object type="house">Maison(s)</object>
+      </objects>
+    </procedure>
+    <participants>
+      <experts>
+        <expert ref="#xpr0089" context="primary" appointment="appointed">
+          <title>architecte expert des bâtiments à Paris</title>
+        </expert>
+        <expert ref="#xpr0106" context="primary" appointment="court-appointed">
+          <title>architecte expert des bâtiments à Paris</title>
+        </expert>
+      </experts>
+      <clerks>
+        <clerk ref="#clrk0072">
+          <persName>
+            <surname>Laurent</surname>
+            <forename>Jean-Baptiste François</forename>
+          </persName>
+        </clerk>
+      </clerks>
+      <parties>
+        <party role="petitioner" presence="true" intervention="false">
+          <person>
+            <persName>
+              <surname>Nuchelle</surname>
+              <forename>Françoise Elisabeth</forename>
+            </persName>
+            <occupation>veuve de de la Noë, Jean</occupation>
+          </person>
+          <status>owner</status>
+          <expert ref="#xpr0089"/>
+          <prosecutor>
+            <persName>
+              <surname>Lefebvre</surname>
+              <forename>Jacques Joseph</forename>
+            </persName>
+          </prosecutor>
+        </party>
+        <party role="opponent" presence="true" intervention="false">
+          <person>
+            <persName>
+              <surname>de la Rochelle</surname>
+              <forename/>
+            </persName>
+            <occupation/>
+          </person>
+          <status>main-tenant</status>
+          <expert ref="#xpr0106"/>
+        </party>
+      </parties>
+      <craftmen>
+        <craftman>
+          <persName>
+            <surname/>
+            <forename/>
+          </persName>
+          <occupation/>
+        </craftman>
+      </craftmen>
+    </participants>
+    <conclusions>
+      <opinion ref="#xpr0089 #xpr0106">« Nous architectes experts jurés, sommes, avec le greffier soussigné, transportés en la maison cy devant désignée et y étant en l’absence des parties. Nous avons, sur le plan par nous prix en notre dernière vaccation raporté et mis au net dans le tems intermédiaire de lad. vacation et celle de ce jour sur lequel avons à vous figuré et colorié en rouge les constructions, le hangard et autres bâtimens appartenans à ce dit sieur de la Rochelle [f. 4r°]. 
+En conséquence avons fait les calculs d’abord de la superficie totale du terrein qui contient cent soixante quinze toises et demie de superficie dont le corps de logis sur rue en occupe trente neuf toises et demie neuf pieds de superficie en sorte que le terrein de la cour et des hangards appartenants audit la Rochelle, se trouve de cent trente cinq toises et demy dix pieds de superficie. Ayant considéré l’étendue du corps de logis sur rue, sa distribution, le quartier où il est situé tout le surplus du terrein qu’occupe ledit sr de la Rochelle, sa disposition, nous estimons le loyer de laditte maison valoir par année quatorze cet livres, non compris lesdits hangard et atteliers apartenans audit sr de la Rochelle, cy 1400 livres.
+                Nous avons signé et paraphé ledit plan avec ledit greffier pour être joint à l’expédition du présent raport. Fait par nous architectes experts susdits lesd. jour, et an que dessus. »</opinion>
+      <arrangement/>
+      <agreement type="agreement">Accord</agreement>
+      <estimate l="1400" s="" d=""/>
+      <estimates>
+        <place ref="#id277d287"/>
+      </estimates>
+      <fees detail="true">
+        <fee type="papers" l="" s="" d=""/>
+        <fee type="expert" ref="#xpr0089" l="18" s="" d=""/>
+        <fee type="expert" ref="#xpr0106" l="18" s="" d=""/>
+        <fee type="clerk" l="18" s="" d=""/>
+        <fee type="rolls" l="17" s="" d=""/>
+        <fee type="prosecutors" l="10" s="" d=""/>
+        <fee type="help" l="" s="" d=""/>
+        <fee type="other" l="18" s="" d="">Plan et annexe</fee>
+        <fee type="plans" l="" s="" d=""/>
+        <total l="" s="" d=""/>
+      </fees>
+      <expenses mentioned="true">
+        <expense type="expert" l="12" s="" d=""/>
+        <expense type="clerk" l="16" s="15" d=""/>
+      </expenses>
+    </conclusions>
+    <keywords group="estates"/>
+    <keywords group="procedure"/>
+    <keywords group="contract">
+          <term value="c1">Bail</term>
+        </keywords>
+    <keywords group="encumbrance"/>
+    <keywords group="law"/>
+    <keywords group="measurement"/>
+    <keywords group="repairs"/>
+    <keywords group="guarantees"/>
+    <keywords group="responsability"/>
+    <keywords group="ownership"/>
+    <keywords group="value">
+          <term value="k1">Loyer</term>
+        </keywords>
+    <keywords group="neighbourhood"/>
+    <keywords group="disorder"/>
+    <keywords group="transformation"/>
+    <analysis>« [f. 1v°] à la requête de la partie la plus diligente, la maison dont il s’agit seroit vue, visitée et estimée, eu égard au cours du tems et à l’assiete des lieux par experts dont elles conviendroient sinon nommé d’office, et ce pour parvenir à la fixation du prix de la location d’icelle que lesd, experts aprécieroient et détermineroient, dans laquelle estimation en seroient néanmoins compris les bâtimens que led. sr de la Rochelle peut y avoir fait les ajoutés depuis son entrée en jouissance et autres objets qu’il justifiera luy appartenir lors desquelles visite et estimation, lesd. parties assistées de leurs procureurs pouront respectivement faire tels dire et observations qu’elles jugeroient convenables et nécessaires et dont lesd. experts donneroient leur raport pour ce fait et raporté être par lesd. parties pris telles conclusions aviseroient et par vous, monsieur, ordonné ce que de raison, dépens réservés au surplus avés donné lettres à la veuve de la Noë dit que... »</analysis>
+    <noteworthy/>
+  </description>
+</expertise>

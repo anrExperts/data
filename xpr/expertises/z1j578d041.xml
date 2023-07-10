@@ -1,0 +1,183 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j578d041">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-10-01T12:00:00">2020-10-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2016-10-26T12:00:00">2016-10-26T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>RB</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1726</unitdate>
+    <idno type="unitid">Z1J578</idno>
+        <idno type="item">041</idno>
+        <facsimile from="0438" to="0450"/>
+        <physDesc>
+          <extent sketch="false">13</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1726-01-31" type="paris"/>
+          <date when="1726-02-06" type="paris"/>
+          <date when="1726-02-07" type="paris"/>
+          <date when="1726-04-05" type="paris"/>
+          <date when="1726-04-30" type="paris"/>
+        </sessions>
+        <places>
+          <place type="paris">
+            <address>
+              <street>Rue de Thorigny [Cette dénomination correspond à 2 voies : Voie actuelle. Également dénommée rue Neuve-Saint-Gervais, rue Saint-Gervais, rue des Morins. Actuelle rue de la Perle]</street>
+              <buildingNumber/>
+            </address>
+            <complement>hôtel Salé</complement>
+            <parish/>
+            <owner>hôte saisi sur Pierre Chaton sieur de Brisantriolle de la Gravelle</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="acceptation">Recevoir et évaluer le travail réalisé</category>
+          <designation rubric="true">Visite toisé et estimation de plomb</designation>
+        </categories>
+        <procedure>
+          <framework type="b2a">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Parlement</orgName>
+              <date when="1724-08-29"/>
+            </sentence>
+          </sentences>
+          <case>Réception d'ouvrages dans le cadre d'un bail judiciaire</case>
+          <objects>
+            <object type="other">ouvrages de plomb</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0183" context="primary" appointment="appointed">
+              <title>juré expert à Paris</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0033">
+              <persName>
+                <surname>Callou</surname>
+                <forename>Antoine Charles</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="true" intervention="true">
+              <person>
+                <persName>
+                  <surname>Lopinot</surname>
+                  <forename>Gabriel</forename>
+                </persName>
+                <occupation>huissier à la cour, fermier judiciaire de l'hôtel Salé</occupation>
+              </person>
+              <status>contractor</status>
+              <expert ref="#xpr0183"/>
+            </party>
+            <party role="opponent" presence="true" intervention="true">
+              <person>
+                <persName>
+                  <surname>Maurice</surname>
+                  <forename>sieur</forename>
+                </persName>
+                <occupation>marchand de plomb.</occupation>
+              </person>
+              <status>builder</status>
+              <expert ref="#xpr0183"/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname>Maurice</surname>
+                <forename>sieur</forename>
+              </persName>
+              <occupation>marchand de plomb.</occupation>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0183">« Faisant la susdite somme avec celle totalle des ouvrages faits en l'année 1719, celle de 1 692 livres 15 sols 9 deniers, surquoy convient déduire elle de 690 livres 12 sols 9 deniers pour les 2 631 livres de vieux plombs qui sont restés audit sieur Mousset [directeur des créances] desdits 3 930 livres par luy receux audit an 1722 que nous estimons à raison de 5 sols 3 deniers la livre. Parquoy il ne resteroit plus deub audit sieur Maurice que la somme de 1 002 livres 3 sols pour tous lesdits ouvrages. »</opinion>
+          <arrangement/>
+          <agreement type="conclusion">Conclusion</agreement>
+          <estimate l="1992" s="3" d=""/>
+          <fees detail="true">
+            <fee type="papers" l="" s="" d=""/>
+            <fee type="expert" ref="#xpr0183" l="30" s="" d=""/>
+            <fee type="clerk" l="" s="" d=""/>
+            <fee type="rolls" l="" s="" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="" s="" d=""/>
+          </fees>
+          <expenses mentioned=""/>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis>Motivations
+                Gabriel Lopinot a été désigné comme fermier judiciaire de l'hôtel Salé, saisi sur Pierre Chanton à la demande de ses créanciers. Un expert est requis pour poursuivre l'expertise commencée le 22 février 1725, afin de « constater la quantité et le poids de plomb neuf livré par ledit Maurice et employé en mil sept cent dix neuf ». Maurice est sommé de se présenter le jour de l'expertise « pour y indiquer les articles contenus dans son mémoire, pour connoistre les endroits où il a employé le plomb ». Dans le cas contraire, il devra payer 1 100 livres à Lopinot pour le prix du vieux plomb</analysis>
+        <noteworthy/>
+      </description>
+    </expertise>

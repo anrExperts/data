@@ -1,0 +1,193 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j664d008" status="">
+  <meta/>
+  <control>
+    <maintenanceStatus>revised</maintenanceStatus>
+    <publicationStatus/>
+    <localControl localType="detailLevel">
+      <term>completed</term>
+    </localControl>
+    <maintenanceHistory>
+      <maintenanceEvent>
+                <eventType>revised</eventType>
+                <eventDateTime standardDateTime="2022-05-02T13:40:05Z">2022-05-02T13:40:05Z</eventDateTime>
+                <agentType>human</agentType>
+                <agent>llosserand</agent>
+                <eventDescription>rvpcd</eventDescription>
+            </maintenanceEvent>
+          <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateObjectsValues_db.xqy/BaseX</agent>
+        <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-06-16T17:02:53.776+02:00">2021-06-16T17:02:53.776+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateAppendicesPlanValue_files.xqy/BaseX</agent>
+        <eventDescription>Mise à jour de la valeur "plan" pour les champs "type" des annexes "Plan, coupe, élévation".</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-06-16T16:56:32.893+02:00">2021-06-16T16:56:32.893+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateOpinionRef_files.xqy/BaseX</agent>
+        <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-06-16T16:29:02.548+02:00">2021-06-16T16:29:02.548+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateRefValues_files.xqy/BaseX</agent>
+        <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>created</eventType>
+        <eventDateTime standardDateTime="2021-04-18T17:52:12Z">2021-04-18T17:52:12Z</eventDateTime>
+        <agentType>human</agentType>
+        <agent>llosserand</agent>
+        <eventDescription>Création de la fiche.</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+  </control>
+  <sourceDesc>
+    <unitdate>1736</unitdate>
+    <idno type="unitid">Z1J664</idno>
+    <idno type="item">008</idno>
+    <facsimile from="0081" to="0089"/>
+    <physDesc>
+      <extent sketch="false">4</extent>
+      <appendices>
+        <appendice>
+          <type type="proxyPA">Pouvoir/procuration (acte sous seing privé)</type>
+          <extent>1</extent>
+          <desc/>
+          <note>Nomination SSP de l'expert + au verso croquis au crayon.</note>
+        </appendice>
+        <appendice>
+          <type type="plan">Plan, coupe, élévation</type>
+          <extent>1</extent>
+          <desc/>
+          <note>Plan "du mur à construire" rehaussé de couleur de la mitoyennté.</note>
+        </appendice>
+      </appendices>
+    </physDesc>
+  </sourceDesc>
+  <description>
+    <sessions>
+      <date when="1736-07-21" type="paris"/>
+    </sessions>
+    <places>
+      <place type="paris">
+        <address>
+          <street>rue Zacarie</street>
+          <buildingNumber/>
+        </address>
+        <complement/>
+        <parish/>
+        <owner/>
+      </place>
+    </places>
+    <categories>
+      <category type="settlement">Départager</category>
+      <designation rubric="true">Visitte de mur mitoyen, rue Zacarie pour le sieur Belval et la dame Valoncé ; M. Joubert, expert ; M. Callon, greffier.</designation>
+    </categories>
+    <procedure>
+      <framework type="a">Commun accord des parties</framework>
+      <origination type="parties">Les parties</origination>
+      <sentences>
+        <sentence>
+          <orgName/>
+          <date when=""/>
+        </sentence>
+      </sentences>
+      <case>mur mitoyen en mauvais état à reconstruire (les maisons sont adossées dessus)</case>
+      <objects>
+        <object type="wall">Mur(s)</object>
+      </objects>
+    </procedure>
+    <participants>
+      <experts>
+        <expert ref="#xpr0147" context="primary" appointment="appointed">
+          <title>juré expert à Paris</title>
+        </expert>
+      </experts>
+      <clerks>
+        <clerk ref="#clrk0033">
+          <persName>
+            <surname>Callou</surname>
+            <forename>Antoine Charles</forename>
+          </persName>
+        </clerk>
+      </clerks>
+      <parties>
+        <party role="petitioner" presence="true" intervention="false">
+          <person>
+            <persName>
+              <surname>Belval</surname>
+              <forename>Antoine</forename>
+            </persName>
+            <occupation/>
+          </person>
+          <status>owner</status>
+          <expert ref="#xpr0147"/>
+        </party>
+        <party role="petitioner" presence="false" intervention="false">
+          <person>
+            <persName>
+              <surname>veuve Valancé</surname>
+              <forename/>
+            </persName>
+            <occupation/>
+          </person>
+          <status>owner</status>
+          <expert ref="#xpr0147"/>
+        </party>
+      </parties>
+      <craftmen>
+        <craftman>
+          <persName>
+            <surname>Dumas</surname>
+            <forename/>
+          </persName>
+          <occupation>entrepreneur de Belval</occupation>
+        </craftman>
+        <craftman>
+          <persName>
+            <surname>Fauvel</surname>
+            <forename/>
+          </persName>
+          <occupation>entrepreneur de la veuve Valencé</occupation>
+        </craftman>
+      </craftmen>
+    </participants>
+    <conclusions>
+      <agreement type="conclusion">Conclusion</agreement>
+      <opinion ref="#xpr0147">plan du mur à reconstruire alignement donné
+f. 2v° "En observant de fournir par ledit sieur Belval une jambe sous poutre de pierre de taille dure à sa place de l’ancienne partie les poutres dont il payera seul la pierre et la taille, les assises de la quelle jambe auront trois pieds par les longues et deux pieds pour les courtes, et observant aussi de fournir à frais communs une jambe boutisse de pierre de taille dus à l’entremet dudit mur joignant le mur d’aboutissant de la place de ladite dame veuve Valancé dont les assises feront bonne liaison alternativement les vieux sur les autres tant dans ledit mur que dans le mur en retour, et les etayements racordemens et rétablissemens seront fait chacun au droit sou et de son costé."</opinion>
+      <arrangement/>
+      <estimate l="" s="" d=""/>
+      <fees detail="">
+        <total l="" s="" d=""/>
+      </fees>
+      <expenses mentioned="false"/>
+    </conclusions>
+    <keywords group="estates"/>
+    <keywords group="procedure"/>
+    <keywords group="contract"/>
+    <keywords group="encumbrance"/>
+    <keywords group="law"/>
+    <keywords group="measurement"/>
+    <keywords group="repairs"/>
+    <keywords group="guarantees"/>
+    <keywords group="responsability"/>
+    <keywords group="ownership"/>
+    <keywords group="value"/>
+    <keywords group="neighbourhood"/>
+    <keywords group="disorder"/>
+    <keywords group="transformation"/>
+    <analysis/>
+    <noteworthy/>
+  </description>
+</expertise>

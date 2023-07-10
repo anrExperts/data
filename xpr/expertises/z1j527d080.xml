@@ -1,0 +1,202 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j527d080" status="">
+      <meta/>
+      <control>
+        <maintenanceStatus>new</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-02-17T12:17:28.693+01:00">2021-02-17T12:17:28.693+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>z1jresp.xqy/BaseX</agent>
+            <eventDescription>Ajout de l'historique de la fiche.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2020-12-01T12:00:00">2020-12-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1716</unitdate>
+    <idno type="unitid">Z1J527</idno>
+        <idno type="item">080</idno>
+        <facsimile from="0752" to="0760"/>
+        <physDesc>
+          <extent sketch="false">6</extent>
+          <appendices>
+            <appendice>
+              <type type="other">Compte</type>
+              <extent>1</extent>
+              <desc/>
+              <note/>
+            </appendice>
+          </appendices>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1716-08-22" type="paris"/>
+          <date when="1716-09-15" type="paris"/>
+        </sessions>
+        <places>
+          <place xml:id="id240d89" type="paris">
+            <address>
+              <street>porte Saint-Jacques</street>
+              <buildingNumber/>
+            </address>
+            <complement/>
+            <parish/>
+            <owner>biens saisis sur la veuve Mouqueron</owner>
+          </place>
+          <place xml:id="id240d107" type="province">
+            <address/>
+            <complement/>
+            <city>Verrières</city>
+            <district/>
+            <owner>biens saisis sur la veuve Mouqueron</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="estimation">Estimer la valeur des biens</category>
+          <designation rubric="true">Estimation d'une maison</designation>
+        </categories>
+        <procedure>
+          <framework type="b2a">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Requêtes du palais</orgName>
+              <date when="1714-07-13"/>
+            </sentence>
+          </sentences>
+          <case>Vente par décret de biens saisis pour remboursement des créanciers</case>
+          <objects>
+            <object type="house">Maison(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0221" context="primary" appointment="appointed">
+              <title>architecte juré du roi expert bourgeois de Paris</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#xpr0158">
+              <persName>
+                <surname>Le Brun</surname>
+                <forename>Jacques Charles</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Amelot</surname>
+                  <forename>Charles</forename>
+                </persName>
+                <occupation>conseiller du roi en ses conseils, exécuteur testamentaire de Marie Amelot, poursuivant les criées, vente et adjudication par décret de maisons saisies sur Marie Hautems</occupation>
+              </person>
+              <status/>
+              <expert ref="#xpr0221"/>
+            </party>
+            <party role="opponent" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>veuve Macqueron</surname>
+                  <forename/>
+                </persName>
+                <occupation>partie saisie</occupation>
+              </person>
+              <status>mortgagor</status>
+              <expert ref="#xpr0221"/>
+              <representative>
+                <persName>
+                  <surname>Macefil</surname>
+                  <forename>Claude</forename>
+                </persName>
+                <occupation>bourgeois de Paris</occupation>
+              </representative>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <agreement type="conclusion">Conclusion</agreement>
+          <opinion ref="#xpr0221">"Laquelle maison après avoir ainsy vue et visitée consideration faitte de sa situation et emplacement, de la quallité des bastimens et édifices qui la composent lesquels sont tous très vieils et caduqs et auxquels il convient faire nombre de grosses réparations mesme des reconstructions à neuf, nous avons prisée et estimée valloir la somme de vingt mille livres, eu esgard aussy au cours du temps présent que ladite maison est sujette par sa situation au logement de gens de guerre et à la charge du cens seullement cy… 20 000 l."</opinion>
+          <arrangement/>
+          <estimate l="20000" s="" d=""/>
+          <estimates>
+            <place ref="#id240d89">
+              <appraisal l="20000" s="" d="">
+                <desc>maison</desc>
+              </appraisal>
+            </place>
+            <place ref="#id240d107"/>
+          </estimates>
+          <fees detail="true">
+            <fee type="expert" ref="#xpr0221" l="32" s="" d=""/>
+            <fee type="clerk" l="32" s="" d=""/>
+            <fee type="rolls" l="11" s="10" d=""/>
+            <fee type="papers" l="5" s="15" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <total l="98" s="17" d="6"/>
+          </fees>
+          <expenses mentioned="false"/>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis/>
+        <noteworthy/>
+      </description>
+    </expertise>

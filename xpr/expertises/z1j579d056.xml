@@ -1,0 +1,209 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j579d056">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-10-01T12:00:00">2020-10-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2016-10-26T12:00:00">2016-10-26T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>RB</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1726</unitdate>
+    <idno type="unitid">Z1J579</idno>
+        <idno type="item">056</idno>
+        <facsimile from="0706" to="0761"/>
+        <physDesc>
+          <extent sketch="false">36</extent>
+          <appendices>
+            <appendice>
+              <type type="proxyPA">Pouvoir/procuration (acte sous seing privé)</type>
+              <extent>1</extent>
+              <desc>Pouvoir donné le 28 octobre 1724 par Delabos Dupré, Jean-François à Bret, Sylvain pour changer le pan de bois du mur mitoyen de son jardin en maçonnerie</desc>
+              <note/>
+            </appendice>
+            <appendice>
+              <type type="other">Engagement</type>
+              <extent>2</extent>
+              <desc>Engagement passé le 28 mai 1725 par Bret, Sylvain envers Delabos Dupré, Jean-François pour changer la fosse d'aisance de sa maison</desc>
+              <note/>
+            </appendice>
+            <appendice>
+              <type type="proxyPA">Pouvoir/procuration (acte sous seing privé)</type>
+              <extent>1</extent>
+              <desc>Pouvoir donné le 12 avril 1726 par Bret, Sylvain à Poupard, Joseph pour assister en son nom à l'expertise des travaux de maçonnerie</desc>
+              <note/>
+            </appendice>
+            <appendice>
+              <type type="other">Devis</type>
+              <extent/>
+              <desc>Devis et marché de maçonnerie passé le 27 avril 1724 entre Delabos Dupré, Jean-François et Bret, Sylvain</desc>
+              <note/>
+            </appendice>
+          </appendices>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1726-04-12" type="paris"/>
+          <date when="1727-04-25" type="paris"/>
+        </sessions>
+        <places>
+          <place type="paris">
+            <address>
+              <street>Rue Montmartre [Voie actuelle]</street>
+              <buildingNumber/>
+            </address>
+            <complement>près du cul de sac Saint-Pierre</complement>
+            <parish/>
+            <owner>Delabos Dupré</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="acceptation">Recevoir et évaluer le travail réalisé</category>
+          <designation rubric="true">visite de toisé et réception d'ouvrages de maçonnerie</designation>
+        </categories>
+        <procedure>
+          <framework type="b2a">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Lieutenant civil</orgName>
+              <date when="1726-03-09"/>
+            </sentence>
+          </sentences>
+          <case>Réception d'ouvrages de maçonnerie</case>
+          <objects>
+            <object type="other">ouvrages de maçonnerie</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0177" context="primary" appointment="appointed">
+              <title>architecte juré du roi expert bourgeois de Paris</title>
+            </expert>
+            <expert ref="#xpr0111" context="primary" appointment="appointed">
+              <title>juré du roi expert et entrepreneur de bâtiments à Paris</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#xpr0066">
+              <persName>
+                <surname>Danjan</surname>
+                <forename>Pierre Paul</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Delabos Dupré</surname>
+                  <forename>Jean-François</forename>
+                </persName>
+                <occupation>greffier des bâtiments, propriétaire de la maison rue Montmartre</occupation>
+              </person>
+              <status>owner</status>
+              <expert ref="#xpr0177"/>
+            </party>
+            <party role="opponent" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Bret</surname>
+                  <forename>Sylvain</forename>
+                </persName>
+                <occupation>maître maçon à Paris</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Poupard</surname>
+                  <forename>Joseph</forename>
+                </persName>
+                <occupation>bourgeois de Paris, ayant droit par transport de Bret, Sylvain</occupation>
+              </person>
+              <status>builder</status>
+              <expert ref="#xpr0177"/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname>Bret</surname>
+                <forename>Sylvain</forename>
+              </persName>
+              <occupation>maître maçon à Paris</occupation>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="">Voir détail des malfaçons.</opinion>
+          <arrangement/>
+          <agreement type="agreement">Accord</agreement>
+          <estimate l="" s="" d=""/>
+          <fees detail="false">
+            <total l="" s="" d=""/>
+          </fees>
+          <expenses mentioned=""/>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis>Motivations
+                Jean-François Delabos Dupré a constaté « plusieurs malfaçons considérables » dans les travaux de maçonnerie exécutés pour la construction de sa maison par Sylvain Bret. Les experts des deux parties devront procéder à la visite et au toisé de ces ouvrages pour estimer ce qui n'a pas été fait conformément aux devis et marché conclus entre Delabos Dupré et Bret. »</analysis>
+        <noteworthy/>
+      </description>
+    </expertise>

@@ -1,0 +1,239 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1006d041">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-09-01T12:00:00">2020-09-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2017-04-01T12:00:00">2017-04-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1006</idno>
+        <idno type="item">041</idno>
+        <facsimile from="0440" to="0516"/>
+        <physDesc>
+          <extent sketch="false">72</extent>
+          <appendices>
+            <appendice>
+              <type type="other">Compte manuscrit</type>
+              <extent>1</extent>
+              <desc>un billet note « 76 rolles : 38 livres ; 106 feuilles : 18 livres 11 sols ; contrôlle : 14 livres ; Total : 57 livres 5 sols »</desc>
+              <note/>
+            </appendice>
+          </appendices>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-08-16" type="province"/>
+          <date when="1776-11-25" type="province"/>
+        </sessions>
+        <places>
+          <place type="province">
+            <address/>
+            <complement/>
+            <city>Clichy la Garenne</city>
+            <district/>
+            <owner>Succession de Levis</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="assessment">Décrire et évaluer les travaux à venir</category>
+          <designation rubric="true">Visite de réparations à faire</designation>
+        </categories>
+        <procedure>
+          <framework type="b2a">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Châtelet de Paris (sentence du 13 août 1776)</orgName>
+              <date when="1776-08-13"/>
+            </sentence>
+          </sentences>
+          <case>partage de succession (il faut déterminer si les réparations sont antérieures au 20 mai 1774 jour où la comtesse de Levis a été mise en possession de ladite terre, si elles ont été faites pendant sa jouissance ou encore après son décès survenu le 11 janvier 1776)</case>
+          <objects>
+            <object type="buildings">Ensemble de bâtiments (biens immeubles)</object>
+            <object type="house">Maison(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0089" context="primary" appointment="appointed">
+              <title>architecte expert</title>
+            </expert>
+            <expert ref="#xpr0209" context="primary" appointment="appointed">
+              <title>architecte expert</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0057">
+              <persName>
+                <surname>Liébault de La Neuville</surname>
+                <forename>Christophe Edouard</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>comte de Levis</surname>
+                  <forename>Marc Antoine</forename>
+                </persName>
+                <occupation>chevalier baron de Lugny, colonel au régiment de Picardie, pour la communauté des biens entre lui et Grimod de la Régnière</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Grimod de la Régnière</surname>
+                  <forename>Madeleine</forename>
+                </persName>
+                <occupation>comtesse de Levis son épouse et aussi comme tuteur de de Levis, Antoine Louis, son fils mineur et de al dame comtesse de Levis sa mère, ledit de Levis Antoine Louis, héritier pour moitié de sa mère etc.</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>de Levis</surname>
+                  <forename>Antoine Louis</forename>
+                </persName>
+                <occupation/>
+              </person>
+              <person>
+                <persName>
+                  <surname>Mazade</surname>
+                  <forename>Marie Madeleine</forename>
+                </persName>
+                <occupation/>
+              </person>
+              <person>
+                <persName>
+                  <surname>Lambert</surname>
+                  <forename>Jean</forename>
+                </persName>
+                <occupation/>
+              </person>
+              <status>heir</status>
+              <expert ref="#xpr0089"/>
+              <prosecutor>
+                <persName>
+                  <surname>Oudinot</surname>
+                  <forename>Charles</forename>
+                </persName>
+              </prosecutor>
+            </party>
+            <party role="opponent" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Grimod de la Régnière</surname>
+                  <forename>Laurent</forename>
+                </persName>
+                <occupation>écuyer des fermiers généraux du roi, comme tuteur ad hoc de demoiselle de Levis, Antoinette Madeleine, sa nièce maternelle, mineure fille du comte de Levis et de défunte comtesse de Levis, héritière pour moitié de sa mère</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>de Levis</surname>
+                  <forename>Antoinette Madeleine</forename>
+                </persName>
+                <occupation/>
+              </person>
+              <status>heir</status>
+              <expert ref=""/>
+              <prosecutor>
+                <persName>
+                  <surname>Lambert</surname>
+                  <forename>François Isidore</forename>
+                </persName>
+              </prosecutor>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <arrangement/>
+          <agreement type="noConclusion">Sans conclusion</agreement>
+          <estimate l="" s="" d=""/>
+          <fees detail="true">
+            <fee type="papers" l="144" s="" d=""/>
+            <fee type="expert" ref="#xpr0089" l="408" s="" d=""/>
+            <fee type="expert" ref="#xpr0209" l="408" s="" d=""/>
+            <fee type="clerk" l="408" s="" d=""/>
+            <fee type="rolls" l="380" s="" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="1748" s="" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="expert" l="102" s="" d=""/>
+            <expense type="clerk" l="316" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis/>
+        <noteworthy/>
+      </description>
+    </expertise>

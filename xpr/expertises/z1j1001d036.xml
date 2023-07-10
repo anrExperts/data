@@ -1,0 +1,191 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1001d036">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2017-10-01T12:00:00">2017-10-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1001</idno>
+        <idno type="item">036</idno>
+        <facsimile from="0416" to="0417"/>
+        <physDesc>
+          <extent sketch="false">2</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-04-16" type="province"/>
+        </sessions>
+        <places>
+          <place xml:id="id24d249" type="province">
+            <address/>
+            <complement>au lieu-dit la Croix du Rouelle</complement>
+            <city>Villiers-la-Garenne</city>
+            <district/>
+            <owner>l’œuvre et à la fabrique de l’église paroissiale de Saint-Martin de Villiers-la-Garenne</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="estimation">Estimer la valeur des biens</category>
+          <designation rubric="true">Visitte et estimation de pièces de terres sur le terroir de Clichy (Villiers) la Garenne et autres, pour le sieur Emery ; M. Perrard, expert.</designation>
+        </categories>
+        <procedure>
+          <framework type="b2b">L’institution est saisie dans le cadre d’une procédure (l’institution nomme un ou deux experts)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Grande chambre du parlement (arrêt)</orgName>
+              <date when="1776-03-13"/>
+            </sentence>
+          </sentences>
+          <case>Emery ("locataie") veut faire des améliorations aux terrains aliénés par bail à rente (bien de main-morte, paroisse)</case>
+          <objects>
+            <object type="plot">Terrain(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0210" context="primary" appointment="court-appointed">
+              <title>architecte expert entrepreneur des bâtiments à Paris</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0055">
+              <persName>
+                <surname>Bouillerot</surname>
+                <forename>Joseph</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="true" intervention="false">
+              <person>
+                <persName>
+                  <surname>Emery</surname>
+                  <forename>Brice</forename>
+                </persName>
+                <occupation>bourgeois de Paris</occupation>
+              </person>
+              <status>owner</status>
+              <expert ref="#xpr0210"/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0210">Les sept pièces de terre représentent 2 arpents 75. 
+"Après quoy attention faite à la scituation desdites pièces de terres à la nature et qualité du terrain et toute réflexions faites nous prisons et estimons lesdites sept pièces de terres ainsy qu'elle se poursuivent et comportent et eu égard au cours du temps présent à la charge des cens et droits seigneuriaux, la somme de 1800 l.
+Telles sont nosseigneurs nos visitte avis et estimations vous référant d'ordonner sur la tout.</opinion>
+          <arrangement/>
+          <agreement type="conclusion">Conclusion</agreement>
+          <estimate l="" s="" d=""/>
+          <estimates>
+            <place ref="#id24d249">
+              <appraisal l="1800" s="" d="">
+                <desc>sept pièces de terre de 2 arpents 75.</desc>
+              </appraisal>
+            </place>
+          </estimates>
+          <fees detail="true">
+            <fee type="papers" l="3" s="10" d=""/>
+            <fee type="expert" ref="#xpr0210" l="24" s="" d=""/>
+            <fee type="clerk" l="24" s="" d=""/>
+            <fee type="rolls" l="16" s="" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="67" s="10" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="17" s="" d=""/>
+            <expense type="expert" l="6" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract">
+          <term value="c1">Bail</term>
+        </keywords>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation">
+          <term value="n1">Amélioration (travaux qui sans être utiles à sa conservation lui sont utiles et lui procure une plus-value) ǂ</term>
+        </keywords>
+        <analysis>bien de main morte
+aliénation</analysis>
+        <noteworthy>lettres patentes du roi du mois de février 1776 portant confirmation du bail à rente perpétuelle passé avec Emery et les marguilliers de l'église paroissiale de St Martin la Garenne devant notaire le 12 novembre 1775, reçu par Lamare notaire de la prévôté du Roulle, moyennnant 90 livres
+"il seroit informé de la commodité et incommodité que pourroit apporter l'aliénation à titre de bail à rente perpétuelle de sept pièces de terres  appartenant à l'oeuvre et fabrique de l'église paroissiale de Villiers la Garenne moyennant le prix et aux charges, clauses et conditions portés audit contrat, comme aussi a ordonné que par nous Perrard... visite et estimation en seroit faite..."
+"(f. 1v°) néantmoins ledit sieur Emery qui se proposoit de faire des améliorations aux sept pièces de terre par luy acquises et d'y établir des bâtiments craindroit d'être troublé dans leur possession si l'aliénation faitte par les marguilliers n'estoit pas revêtue de l'autorité de SM le Roy a approuvé confirmé et homologué ledit bail à rente et a voulu qu'il sorte son plein et entier effet et fut exécuté selon sa forme et teneur."</noteworthy>
+      </description>
+    </expertise>

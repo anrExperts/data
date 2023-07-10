@@ -1,0 +1,251 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1007d007">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-08-01T12:00:00">2020-08-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2017-10-01T12:00:00">2017-10-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1007</idno>
+        <idno type="item">007</idno>
+        <facsimile from="0065" to="0071"/>
+        <physDesc>
+          <extent sketch="false">4</extent>
+          <appendices>
+            <appendice>
+              <type type="other">assignation d’huissier</type>
+              <extent>1</extent>
+              <desc/>
+              <note/>
+            </appendice>
+          </appendices>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-09-05" type="paris"/>
+          <date when="1776-09-07" type="paris"/>
+        </sessions>
+        <places>
+          <place type="paris">
+            <address>
+              <street>Rue des Vieux Augustins</street>
+              <buildingNumber/>
+            </address>
+            <complement/>
+            <parish/>
+            <owner/>
+          </place>
+        </places>
+        <categories>
+          <category type="acceptation">Recevoir et évaluer le travail réalisé</category>
+          <designation rubric="true">Réception d’ouvrages pour la reconstruction d’une fosse d’aisance</designation>
+        </categories>
+        <procedure>
+          <framework type="b2a">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Chambre des requêtes du Palais (sentence)</orgName>
+              <date when="1776-04-25"/>
+            </sentence>
+          </sentences>
+          <case>réception d’ouvrages de reconstruction d’une fosse d’aisance (avancés par le locataire, à payer par le propriétaire), maison saisie</case>
+          <objects>
+            <object type="cesspool">Fosse(s) d'aisance</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0210" context="primary" appointment="unknown">
+              <title>architecte expert</title>
+            </expert>
+            <expert ref="#xpr0228" context="primary" appointment="unknown">
+              <title>architecte expert</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0064">
+              <persName>
+                <surname>Gobert</surname>
+                <forename>Jean Charles Simon</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="true" intervention="false">
+              <person>
+                <persName>
+                  <surname>Delaunay</surname>
+                  <forename>Nicolas Denis</forename>
+                </persName>
+                <occupation>architecte entrepreneur de bâtiments à Paris, héritier pour un quart par bénéfice d’inventaire de Delaunay, François Denis, son père</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Delaunay</surname>
+                  <forename>François</forename>
+                </persName>
+                <occupation>ancien marchand de fer à Paris</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>?</surname>
+                  <forename>Dominique</forename>
+                </persName>
+                <occupation/>
+              </person>
+              <person>
+                <persName>
+                  <surname>Lon ? Ducheme</surname>
+                  <forename>Nicolas</forename>
+                </persName>
+                <occupation>marchand mercier</occupation>
+              </person>
+              <person>
+                <persName>
+                  <surname>Delaunay</surname>
+                  <forename>Françoise</forename>
+                </persName>
+                <occupation>sa femme</occupation>
+              </person>
+              <status>joint-owner</status>
+              <expert ref=""/>
+              <prosecutor>
+                <persName>
+                  <surname>Balthazar</surname>
+                  <forename/>
+                </persName>
+              </prosecutor>
+            </party>
+            <party role="opponent" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Dardenne</surname>
+                  <forename>Maurice</forename>
+                </persName>
+                <occupation>maréchal à Paris, locataire de la maison dont il est question</occupation>
+              </person>
+              <status>tenant</status>
+              <expert ref=""/>
+              <prosecutor>
+                <persName>
+                  <surname>Dorigne</surname>
+                  <forename>Jean</forename>
+                </persName>
+              </prosecutor>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="">« Tous lesquels ouvrages faits pour la reconstruction de la fosse de la maison où nous sommes et dont est question montent et reviennent ensemble à la somme de quatorze cent soixante neuf l. douze sols deux deniers scavoir 
+Maçonnerie 1 254 l. 1 d. 
+Pavé 44 l. 14 s. 2 d. 
+Vuidange 170 l. 17 s. 11 d. 
+[total] 1 469 l. 12 s. 2 d. 
+Et pour constater le détail desdits ouvrages dont la transcription des memoires dans ces presentes auroit été trop longue et dispendieuse, nous avons annexé lesdits memoires à ces presentes paraphé sur chaque recto et signé en fin de nous et du greffier soussigné 
+Par l’examen que nous avons fait des ouvrages dont est question nous les avons trouvé faits suivant l’art de batir et en état de reception, pourquoy nous les recevons cy… reception 
+Fait par nous architectes experts susdits les jours mois et an que dessus »</opinion>
+          <arrangement/>
+          <agreement type="agreement">Accord</agreement>
+          <estimate l="" s="" d=""/>
+          <fees detail="true">
+            <fee type="papers" l="5" s="12" d=""/>
+            <fee type="expert" ref="#xpr0210" l="16" s="" d=""/>
+            <fee type="expert" ref="#xpr0228" l="16" s="" d=""/>
+            <fee type="clerk" l="16" s="" d=""/>
+            <fee type="rolls" l="17" s="" d=""/>
+            <fee type="prosecutors" l="8" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="other" l="1" s="4" d="">annexe</fee>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="85" s="16" d=""/>
+          </fees>
+          <expenses mentioned=""/>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract">
+          <term value="c1">Bail</term>
+        </keywords>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value">
+          <term value="k1">Loyer</term>
+        </keywords>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis/>
+        <noteworthy>bail conventionel converti en bail judiciaire, devant Fournier notaire 18 novembre 1766
+antériorité : visite de la fosse d'aisance 28 juillet et 10 octobre 1775 par les mêmes experts = ce doit petre dans cette visite que les experts ont été nommés (détail pour leur nomination)</noteworthy>
+      </description>
+    </expertise>

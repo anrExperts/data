@@ -1,0 +1,214 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j663d046" status="">
+  <meta/>
+  <control>
+    <maintenanceStatus>revised</maintenanceStatus>
+    <publicationStatus/>
+    <localControl localType="detailLevel">
+      <term>completed</term>
+    </localControl>
+    <maintenanceHistory>
+      <maintenanceEvent>
+                <eventType>revised</eventType>
+                <eventDateTime standardDateTime="2022-04-29T13:56:42Z">2022-04-29T13:56:42Z</eventDateTime>
+                <agentType>human</agentType>
+                <agent>llosserand</agent>
+                <eventDescription>rvpcd</eventDescription>
+            </maintenanceEvent>
+          <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateObjectsValues_db.xqy/BaseX</agent>
+        <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-06-16T16:56:32.893+02:00">2021-06-16T16:56:32.893+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateOpinionRef_files.xqy/BaseX</agent>
+        <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-06-16T16:29:02.548+02:00">2021-06-16T16:29:02.548+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateRefValues_files.xqy/BaseX</agent>
+        <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>created</eventType>
+        <eventDateTime standardDateTime="2021-04-07T20:15:20Z">2021-04-07T20:15:20Z</eventDateTime>
+        <agentType>human</agentType>
+        <agent>llosserand</agent>
+        <eventDescription>Création de la fiche.</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+  </control>
+  <sourceDesc>
+    <unitdate>1736</unitdate>
+    <idno type="unitid">Z1J663</idno>
+    <idno type="item">046</idno>
+    <facsimile from="0415" to="0431"/>
+    <physDesc>
+      <extent sketch="false">10</extent>
+      <appendices>
+        <appendice>
+          <type type="proxyPA">Pouvoir/procuration (acte sous seing privé)</type>
+          <extent>2</extent>
+          <desc/>
+          <note/>
+        </appendice>
+        <appendice>
+          <type type="other">calculs du prix de l'expertise</type>
+          <extent>1</extent>
+          <desc/>
+          <note/>
+        </appendice>
+      </appendices>
+    </physDesc>
+  </sourceDesc>
+  <description>
+    <sessions>
+      <date when="1736-07-06" type="paris"/>
+      <date when="1736-07-10" type="paris"/>
+      <date when="1736-07-11" type="paris"/>
+      <date when="1736-07-19" type="paris"/>
+    </sessions>
+    <places>
+      <place type="paris">
+        <address>
+          <street>rue de la Planche</street>
+          <buildingNumber/>
+        </address>
+        <complement/>
+        <parish/>
+        <owner/>
+      </place>
+    </places>
+    <categories>
+      <category type="assessment">Décrire et évaluer les travaux à venir</category>
+      <designation rubric="true">Estimation de réparations urgentes et indispensables à faire en deux maisons, scizes rue de la Planche, Fg St Germain, à la requeste du sieur Joseph Liennard, contre le sieur Lemoyne partye saisie ; M. Le Besgue, expert ; M. Baudouin, greffier.</designation>
+    </categories>
+    <procedure>
+      <framework type="b2">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+      <origination type="institution">Une institution</origination>
+      <sentences>
+        <sentence>
+          <orgName>LC</orgName>
+          <date when="1736-05-14"/>
+          <date when="1736-06-11"/>
+        </sentence>
+      </sentences>
+      <case>maison saisie, et démolition du mur mitoyen de la maison voisine (de Montigny)</case>
+      <objects>
+        <object type="wall">Mur(s)</object>
+        <object type="cesspool">Fosse(s) d'aisance</object>
+      </objects>
+    </procedure>
+    <participants>
+      <experts>
+        <expert ref="#xpr0156" context="primary" appointment="appointed">
+          <title>juré expert des bâtiments à Paris</title>
+        </expert>
+      </experts>
+      <clerks>
+        <clerk ref="#clrk0034">
+          <persName>
+            <surname>Baudouin</surname>
+            <forename>Antoine</forename>
+          </persName>
+        </clerk>
+      </clerks>
+      <parties>
+        <party role="petitioner" presence="false" intervention="false">
+          <person>
+            <persName>
+              <surname>Liennard</surname>
+              <forename>Joseph</forename>
+            </persName>
+            <occupation>bourgeois de Paris</occupation>
+          </person>
+          <status>contractor</status>
+          <expert ref="#xpr0156"/>
+        </party>
+        <party role="opponent" presence="false" intervention="false">
+          <person>
+            <persName>
+              <surname>Lemoine</surname>
+              <forename>Pierre</forename>
+            </persName>
+            <occupation>partie saisie, chef fourier du roi</occupation>
+          </person>
+          <person>
+            <persName>
+              <surname>de la Planche</surname>
+              <forename>Angélique</forename>
+            </persName>
+            <occupation>sa femme</occupation>
+          </person>
+          <status>mortgagor</status>
+          <expert ref="#xpr0156"/>
+        </party>
+        <party role="opponent" presence="false" intervention="false">
+          <person>
+            <persName>
+              <surname>de Montigny</surname>
+              <forename/>
+            </persName>
+            <occupation>maître vitrier</occupation>
+          </person>
+          <status>neighbour</status>
+          <expert ref="#xpr0156"/>
+        </party>
+        <party role="petitioner" presence="false" intervention="false">
+          <person>
+            <persName>
+              <surname>Bustilet</surname>
+              <forename/>
+            </persName>
+            <occupation>poursuivant les saisies</occupation>
+          </person>
+          <status>creditor</status>
+          <expert ref="#xpr0156"/>
+        </party>
+      </parties>
+      <craftmen>
+        <craftman>
+          <persName>
+            <surname/>
+            <forename/>
+          </persName>
+          <occupation/>
+        </craftman>
+      </craftmen>
+    </participants>
+    <conclusions>
+      <agreement type="conclusion">Conclusion</agreement>
+      <opinion ref="#xpr0156">"Pour la vuidange des quatre fosses et débouchement de deux énoncées au pris de 249 livres 3 sols 8 deniers
+Ce qui en tout fait comme dit est quatorze cent vingt une livres trois sols huit deniers, cy 1422 livres 3 sols 8 deniers
+Qui sont les sommes auxquelles nous experts susdits  estimons tels ouvrages à faire en conformité de vos sentences nos seigneurs et tel est notre avis sauf à vous nosseigneurs d’en juger et ordonner suivant votre prudence et justice ordinaire."</opinion>
+      <arrangement/>
+      <estimate l="" s="" d=""/>
+      <fees detail="">
+        <total l="" s="" d=""/>
+      </fees>
+      <expenses mentioned="false"/>
+    </conclusions>
+    <keywords group="estates"/>
+    <keywords group="procedure"/>
+    <keywords group="contract"/>
+    <keywords group="encumbrance"/>
+    <keywords group="law"/>
+    <keywords group="measurement"/>
+    <keywords group="repairs"/>
+    <keywords group="guarantees"/>
+    <keywords group="responsability"/>
+    <keywords group="ownership"/>
+    <keywords group="value"/>
+    <keywords group="neighbourhood"/>
+    <keywords group="disorder"/>
+    <keywords group="transformation"/>
+    <analysis/>
+    <noteworthy/>
+  </description>
+</expertise>

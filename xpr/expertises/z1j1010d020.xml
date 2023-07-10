@@ -1,0 +1,213 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1010d020">
+  <meta/>
+  <control>
+    <maintenanceStatus>revised</maintenanceStatus>
+    <publicationStatus/>
+    <localControl localType="detailLevel">
+      <term>completed</term>
+    </localControl>
+    <maintenanceHistory>
+      <maintenanceEvent>
+                <eventType>revised</eventType>
+                <eventDateTime standardDateTime="2022-08-28T14:08:01Z">2022-08-28T14:08:01Z</eventDateTime>
+                <agentType>human</agentType>
+                <agent>llosserand</agent>
+                <eventDescription>rvpcd</eventDescription>
+            </maintenanceEvent>
+          <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateOpinionRef_files.xqy/BaseX</agent>
+        <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateRefValues_files.xqy/BaseX</agent>
+        <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+        <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>revised</eventType>
+        <eventDateTime standardDateTime="2020-09-01T12:00:00">2020-09-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>JH</agent>
+        <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>retroconverted</eventType>
+        <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>ead2xpr.xsl/Saxon9</agent>
+        <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>created</eventType>
+        <eventDateTime standardDateTime="2017-04-01T12:00:00">2017-04-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>llosserand</agent>
+        <eventDescription>Création de la fiche.</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+  </control>
+  <sourceDesc>
+    <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1010</idno>
+    <idno type="item">020</idno>
+    <facsimile from="0146" to="0149"/>
+    <physDesc>
+      <extent sketch="false">4</extent>
+    </physDesc>
+  </sourceDesc>
+  <description>
+    <sessions>
+      <date when="1776-12-12" type="paris"/>
+      <date when="1777-01-24" type="paris"/>
+    </sessions>
+    <places>
+      <place type="paris">
+        <address>
+          <street>Rue Jean-Saint-Denis</street>
+          <buildingNumber/>
+        </address>
+        <complement/>
+        <parish/>
+        <owner>Ferret</owner>
+      </place>
+    </places>
+    <categories>
+      <category type="acceptation">Recevoir et évaluer le travail réalisé</category>
+      <designation rubric="true">Estimation d’ouvrages de vidange</designation>
+    </categories>
+    <procedure>
+      <framework type="b2">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+      <origination type="institution">Une institution</origination>
+      <sentences>
+        <sentence>
+          <orgName>lieutenant civil</orgName>
+          <date when="1776-11-20"/>
+          <date when="1777-01-16"/>
+        </sentence>
+      </sentences>
+      <case>Les ouvrages sont achevés et il y a désaccord entre les parties sur la manière d’estimer les ouvrages faits</case>
+      <objects>
+        <object type="other">ouvrages de vidange</object>
+      </objects>
+    </procedure>
+    <participants>
+      <experts>
+        <expert ref="#xpr0250" context="primary" appointment="appointed">
+          <title>architecte expert</title>
+        </expert>
+      </experts>
+      <clerks>
+        <clerk ref="#clrk0058">
+          <persName>
+            <surname>Foucart</surname>
+            <forename>Paul Joseph</forename>
+          </persName>
+        </clerk>
+      </clerks>
+      <parties>
+        <party role="petitioner" presence="true" intervention="true">
+          <person>
+            <persName>
+              <surname>Ferret</surname>
+              <forename>Geneviève</forename>
+            </persName>
+            <occupation>fille majeure</occupation>
+          </person>
+          <person>
+            <persName>
+              <surname>Ferret</surname>
+              <forename>Marie Marguerite</forename>
+            </persName>
+            <occupation>fille majeure</occupation>
+          </person>
+          <status>owner</status>
+          <expert ref="#xpr0250"/>
+          <prosecutor>
+            <persName>
+              <surname>Damerou</surname>
+              <forename/>
+            </persName>
+          </prosecutor>
+        </party>
+        <party role="opponent" presence="false" intervention="false">
+          <person>
+            <persName>
+              <surname>Renuy</surname>
+              <forename/>
+            </persName>
+            <occupation>maître vidangeur</occupation>
+          </person>
+          <status>builder</status>
+          <expert ref="#xpr0250"/>
+          <prosecutor>
+            <persName>
+              <surname>Le Sueur</surname>
+              <forename/>
+            </persName>
+          </prosecutor>
+        </party>
+      </parties>
+      <craftmen>
+        <craftman>
+          <persName>
+            <surname/>
+            <forename/>
+          </persName>
+          <occupation/>
+        </craftman>
+      </craftmen>
+    </participants>
+    <conclusions>
+      <opinion ref="#xpr0250">le première vacation se termine sur le report devant le lieutenant civil en raison des réquisitions contradictoires, pour qu’il détermine si l’expert doit ou non se rendre sur les lieux. Lors de la dernière vacation, les ouvrages sont estimés, sur place à 138 livres.</opinion>
+      <arrangement/>
+      <agreement type="conclusion">Conclusion</agreement>
+      <estimate l="138" s="" d=""/>
+      <fees detail="true">
+        <fee type="papers" l="6" s="" d=""/>
+        <fee type="expert" ref="#xpr0250" l="18" s="" d=""/>
+        <fee type="clerk" l="12" s="" d=""/>
+        <fee type="rolls" l="17" s="" d=""/>
+        <fee type="prosecutors" l="15" s="" d=""/>
+        <fee type="help" l="" s="" d=""/>
+        <fee type="plans" l="" s="" d=""/>
+        <total l="68" s="" d=""/>
+      </fees>
+      <expenses mentioned="true">
+        <expense type="clerk" l="13" s="5" d=""/>
+        <expense type="expert" l="4" s="" d=""/>
+      </expenses>
+    </conclusions>
+    <keywords group="estates"/>
+    <keywords group="procedure"/>
+    <keywords group="contract"/>
+    <keywords group="encumbrance"/>
+    <keywords group="law"/>
+    <keywords group="measurement"/>
+    <keywords group="repairs"/>
+    <keywords group="guarantees"/>
+    <keywords group="responsability"/>
+    <keywords group="ownership"/>
+    <keywords group="value"/>
+    <keywords group="neighbourhood"/>
+    <keywords group="disorder"/>
+    <keywords group="transformation"/>
+    <analysis/>
+    <noteworthy>Ce procès-verbal d’expertise contentieuse donne beaucoup de détails indirects sur la manière de procéder aux estimations grâce aux réquisitions contradictoires des parties opposées. Le mémoire des ouvrages est contesté par la requérante et le certificat donné par l’inspecteur de police ne fixe pas la quantité des tonneaux tirés de la fosse d’aisance
+                « [f. 1r°] Et par led. Me Lesueur, aud. nom, a dit que l’estimation dont il s’agit ne doit être fait que sur le mémoire des ouvrages dud. S. Renuy qu’il nous représente et qu’il n’est question de notre part que d’estimer si le prix de trois livres pour [f. 1v°] chaque tonneau énoncé aud. mémoire doit être alloué aud. S. Renuy notament d’après la convention qui a été faitte entre led. S. Renuy et les delles Ferret, convention constatée par le certificat du S. Delahaye, inspecteur de police du vingt septembre dernier étant au pied dud. mémoire, que la seule contestation qui pouvoit diviser les parties seroient la question de savoir si les cent treize tonneaux énoncés aud. mémoire ont été effectivement tirés de la fosse d’aisance dont est question, que dans le cas où les demoiselles Ferret en concevoient quelques doutes, le S. Renuy nous requiert de [f?] seulement le prix qui doit luy être payé par chacun desd. tonneaux, se réservant d’après notre raport de prouver qu’il a effectivement tiré de la fosse d’aisance dont est question les cent treize tonneaux énoncés aud. mémoire, pourquoi il s’oppose à ce qu’il soit procédé à l’estimation dont est question sur le [?] et notamment sur le toisé à nous remis par la delle Feret et a signé. Lesueur.
+                Et par lad. delle Feret, assistée comme dessus a été répliqué que le certificat du S. Delahaye, inspecteur de police n’est ny légal ny juridique, que d’ailleurs il ne certiffie pas la quantité de tonneaux et que dans le cas où nous nous déciderions à estimer lesd. ouvrages par tonneaux, quoiqu’il n’y ait jamais eu de convention à cet égard elle nous observe que la fosse dont est question est éloignée au plus de vingt quatre pieds de la rue et que lad. fosse estant dessous du rez de chaussé et nous requiert de faire lad. estimation, eu égard au toisé qui a été fait de la fosse qu’elle nous a cy devant remis sans savoir su nous le jugerons à propos à vériffier l’exactitude dud. toisé, [??] ce n’est que par là que nous pouvons connoitre le nombre de tonneaux qui a pu sortir de lad. fosse, nous observant encore que led. S. Renuy ne peut pas argumenter d’avoir tiré des moilons de lad. fosse, attendu que c’est par son fait que lesd. moilons y sont tombés, et que d’ailleurs il luy a été offert pour cet ouvrage la somme de douze livres qu’il avoit demandé et a, lad. delle, signé, ainsy que led. Me Damrou. [etc.] […]
+                Nous expert, attendu les réquisitions contradictoires des parties sur la manière de procéder aux estimations par votre sentence, l’opposition dud. Me Lesueur au [?] à ce que nous nous transporterions sur le lieu pour procéder au toisé de la matière vuidée qui est un moyen de connoitre le nombre des tonneaux enlevés, le nombre de ces tonneaux étant contestés pour parvenir aussi à en fixer le valeur relativement aux difficulttés locale, ainsi que l’expose lad. delle Ferret dasns ses dires cy dessus, attendu aussi la réquisition de lad. demoiselle à ce que nous nous transportions sur les lieux pour faire l’examen cy dessus annoncé, nous avons renvoyé les parties par devant vous, monsieur, à l’effet d’ordonner ou non notre transport sur le lieu, nous observant que le nombre [f. 2v°] de cent treize tonneaux que le S. Renuy demande par son mémoire est contesté par lad. delle Ferret, que le certificat donné par le S. Delahaye, inspecteur de police au pied de ce mémoire ne fixe point la quantité de tonneaux enlevés et que sur moyen est de comparer le contenu avec le contenant par l’opération du toisé en aportant le plus valeur ordinaire aux matières excavées sur le vuide de l’excavation que l’inspection des lieux, et la conoissance du local donnant des moyens plus sûrs de fixer le prix de chacun de ces tonneaux... Référé. »</noteworthy>
+  </description>
+  <comment>Photo DSC_0348 à refaire</comment>
+</expertise>

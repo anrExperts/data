@@ -1,0 +1,183 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j582d043">
+  <meta/>
+  <control>
+    <maintenanceStatus>revised</maintenanceStatus>
+    <publicationStatus/>
+    <localControl localType="detailLevel">
+      <term>completed</term>
+    </localControl>
+    <maintenanceHistory>
+      <maintenanceEvent>
+                <eventType>revised</eventType>
+                <eventDateTime standardDateTime="2022-03-31T15:53:23Z">2022-03-31T15:53:23Z</eventDateTime>
+                <agentType>human</agentType>
+                <agent>llosserand</agent>
+                <eventDescription>rvpcd</eventDescription>
+            </maintenanceEvent>
+          <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateObjectsValues_db.xqy/BaseX</agent>
+        <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateOpinionRef_files.xqy/BaseX</agent>
+        <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateRefValues_files.xqy/BaseX</agent>
+        <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+        <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>revised</eventType>
+        <eventDateTime standardDateTime="2020-11-01T12:00:00">2020-11-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>JH</agent>
+        <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>retroconverted</eventType>
+        <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>ead2xpr.xsl/Saxon9</agent>
+        <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>created</eventType>
+        <eventDateTime standardDateTime="2017-04-01T12:00:00">2017-04-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>llosserand</agent>
+        <eventDescription>Création de la fiche.</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+  </control>
+  <sourceDesc>
+    <unitdate>1726</unitdate>
+    <idno type="unitid">Z1J582</idno>
+    <idno type="item">043</idno>
+    <facsimile from="0440" to="0450"/>
+    <physDesc>
+      <extent sketch="false">10</extent>
+    </physDesc>
+  </sourceDesc>
+  <description>
+    <sessions>
+      <date when="1726-08-08" type="paris"/>
+      <date when="1726-08-12" type="paris"/>
+    </sessions>
+    <places>
+      <place type="paris">
+        <address>
+          <street>Rue Charlot [Cette dénomination correspond à 3 voies : Voie actuelle. Également dénommée rue d'Angoumois. Actuelles rue Troyon, Actuelles rue Poinsot et rue du Maine]</street>
+          <buildingNumber/>
+        </address>
+        <complement/>
+        <parish/>
+        <owner>Lambert</owner>
+      </place>
+    </places>
+    <categories>
+      <category type="assessment">Décrire et évaluer les travaux à venir</category>
+      <designation rubric="true">Visitte et estimations d'ouvrage de maçonnerie et autres, rue Charlot au Marias, à la requeste du sieur Pigray, sergent de la haute maison, pour dllle Lambert ; M. Loir, experts. </designation>
+    </categories>
+    <procedure>
+      <framework type="b2">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+      <origination type="institution">Une institution</origination>
+      <sentences>
+        <sentence>
+          <orgName>lieutenant civil</orgName>
+          <date when="1726-08-05"/>
+        </sentence>
+      </sentences>
+      <case>la location de la maison ne rapporte pas assez pour sa propriétaire, mise sous curatelle, qui ne peut payer les réparations qui deviennent urgentes et qu'il faut évaluer.</case>
+      <objects>
+        <object type="house">Maison(s)</object>
+      </objects>
+    </procedure>
+    <participants>
+      <experts>
+        <expert ref="#xpr0183" context="primary" appointment="court-appointed">
+          <title>juré expert à Paris</title>
+        </expert>
+      </experts>
+      <clerks>
+        <clerk ref="#clrk0033">
+          <persName>
+            <surname>Callou</surname>
+            <forename>Antoine Charles</forename>
+          </persName>
+        </clerk>
+      </clerks>
+      <parties>
+        <party role="petitioner" presence="false" intervention="false">
+          <person>
+            <persName>
+              <surname>Pigray</surname>
+              <forename>Augustin</forename>
+            </persName>
+            <occupation>chevalier seigneur de la Haute maison, curateur à la personne et biens de Lambert, Catherine, fille majeure interdite</occupation>
+          </person>
+          <status/>
+          <expert ref="#xpr0183"/>
+        </party>
+      </parties>
+      <craftmen>
+        <craftman>
+          <persName>
+            <surname/>
+            <forename/>
+          </persName>
+          <occupation/>
+        </craftman>
+      </craftmen>
+    </participants>
+    <conclusions>
+      <opinion ref="#xpr0183">" Nous expert et greffier susd. suivant la remise cy dessus, sommes transportez en lad. maison susd. rue Charlot au marais où estant, en l'absence des parties, nous avons procédé au thoisé, calculs et estimations desd. ouvrages contenus en notre présent procès verbal et distinctement des différentes notares?] d'iceluy et tirez les sommes hors lignes enfin de chacuns desd. articles que nous avons trouvez monter et revenir ensemble à la somme de seize cent douze livres quatre sols deux deniers
+                Et comme il n'est pas possible de prévoir précisément tout ce que les susd. réparations pouront occasionner et notament dans une maison de foible construction comme celle dont est question, lesd. réparations pouoient comme il il arrive tous les jours dans d'autres maisons monter à la somme de deux cent livres au dessus desd. estimations et qui fera avec lad. somme de 1612 livres 4 sols 11 deniers, celle de dix huit cent douze livres 4 sols 2 deniers, cy 1812 livres 4 sols 2 deniers. ».</opinion>
+      <arrangement/>
+      <agreement type="conclusion">Conclusion</agreement>
+      <estimate l="1812" s="4" d="2"/>
+      <fees detail="true">
+        <fee type="papers" l="5" s="" d=""/>
+        <fee type="expert" ref="#xpr0183" l="18" s="" d=""/>
+        <fee type="clerk" l="18" s="" d=""/>
+        <fee type="rolls" l="14" s="" d=""/>
+        <fee type="prosecutors" l="" s="" d=""/>
+        <fee type="help" l="" s="" d=""/>
+        <fee type="plans" l="" s="" d=""/>
+        <total l="55" s="" d=""/>
+      </fees>
+      <expenses mentioned="false"/>
+    </conclusions>
+    <keywords group="estates"/>
+    <keywords group="procedure"/>
+    <keywords group="contract"/>
+    <keywords group="encumbrance"/>
+    <keywords group="law"/>
+    <keywords group="measurement"/>
+    <keywords group="repairs"/>
+    <keywords group="guarantees"/>
+    <keywords group="responsability"/>
+    <keywords group="ownership"/>
+    <keywords group="value"/>
+    <keywords group="neighbourhood"/>
+    <keywords group="disorder"/>
+    <keywords group="transformation"/>
+    <analysis>Cause : « [f. 1r°]... mad. delle Lambert n'a aucuns biens à elle appartenans que onze douzièmes en la totalité d'une maison scize à Paris rue Charlot, la totalité de laquelle maison ne rapporte annuellement que la somme de trois cent cinquante livres de loyer, laquelle somme n'estant pas suffisante pour subvenir aux pensions et entretient de lad. delle Lambert et aux réparations annuelles de lad. maison, led. sr de la Haute Maison se trouve obligé d'y supléer de ses deniers et d'autant qu'il y a actuellement de grosses réparations considérables, urgentes et nécessaires à faire en lad. maison nottament le rétablissement de l'escallier qui est en péril imminent, de même que la plus grande partie des murs, couvertures et cheminées de lad. maison ; laquelle par cette raison pour en éviter la ruine entière a esté étayée depuis un an ou environ, pour quoy lesd. sr parens et amis ayant [f. 2v°] conféré entre eux sur la nécessité absolue de faire travailler promptement aux réparations et rétablissemens de lad. maison, laquelle autrement tomberoit en ruine ainsy qu'il est de leur [??] pour l'avoir veu et visitté, se sont trouvez d'avis que par le sr Bevrest, juré expert ou par tel autre expert qu'il plairoit au sr lieutenant civil de nommer et commettre, il fait dressé procès verbal de l'estat où est actuellement lad. maison et de réparations et rétablissement nécessaires qu'il convient faire en icelle et du prix desd. réparations et rétablissements »</analysis>
+    <noteworthy/>
+  </description>
+</expertise>

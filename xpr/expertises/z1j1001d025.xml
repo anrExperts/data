@@ -1,0 +1,209 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1001d025">
+  <meta/>
+  <control>
+    <maintenanceStatus>revised</maintenanceStatus>
+    <publicationStatus/>
+    <localControl localType="detailLevel">
+      <term>completed</term>
+    </localControl>
+    <maintenanceHistory>
+      <maintenanceEvent>
+                <eventType>revised</eventType>
+                <eventDateTime standardDateTime="2022-04-27T16:41:33Z">2022-04-27T16:41:33Z</eventDateTime>
+                <agentType>human</agentType>
+                <agent>llosserand</agent>
+                <eventDescription>categ</eventDescription>
+            </maintenanceEvent>
+          <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateObjectsValues_db.xqy/BaseX</agent>
+        <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateOpinionRef_files.xqy/BaseX</agent>
+        <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateRefValues_files.xqy/BaseX</agent>
+        <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+        <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>revised</eventType>
+        <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>llosserand</agent>
+        <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>retroconverted</eventType>
+        <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>ead2xpr.xsl/Saxon9</agent>
+        <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>created</eventType>
+        <eventDateTime standardDateTime="2017-10-01T12:00:00">2017-10-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>JH</agent>
+        <eventDescription>Création de la fiche.</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+  </control>
+  <sourceDesc>
+    <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1001</idno>
+    <idno type="item">025</idno>
+    <facsimile from="0243" to="0245"/>
+    <physDesc>
+      <extent sketch="false">2</extent>
+    </physDesc>
+  </sourceDesc>
+  <description>
+    <sessions>
+      <date when="1776-04-11" type="paris"/>
+    </sessions>
+    <places>
+      <place type="paris">
+        <address>
+          <street>rue de Bondy</street>
+          <buildingNumber/>
+        </address>
+        <complement>derrière le magasin de la ville</complement>
+        <parish/>
+        <owner/>
+      </place>
+    </places>
+    <categories>
+      
+      <category type="settlement">Départager</category>
+      <designation rubric="false">Visite d'objets contentieux en une maison jardin et dépendance, rue de Bondy, derrière le magasin de la ville, à la requeste du sieur Honoré Dujat, bourgeois de Paris, voir l'état du bâtiment, s'il peut subsister ainsi ou s'il faut le démolir et le reconstruire ; MM. Perrard et Jacob, experts</designation>
+    </categories>
+    <procedure>
+      <framework type="b2">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+      <origination type="institution">Une institution</origination>
+      <sentences>
+        <sentence>
+          <orgName>Châtelet, lieutenant civil (sentence)</orgName>
+          <date when="1776-03-20"/>
+        </sentence>
+      </sentences>
+      <case>dégradation et détérioration sur des objets de mitoyenneté</case>
+      <objects>
+        <object type="plot">Terrain(s)</object>
+        <object type="wall">Mur(s)</object>
+      </objects>
+    </procedure>
+    <participants>
+      <experts>
+        <expert ref="#xpr0210" context="primary" appointment="appointed">
+          <title>architecte expert</title>
+        </expert>
+        <expert ref="#xpr0143" context="primary" appointment="appointed">
+          <title>architecte expert</title>
+        </expert>
+      </experts>
+      <clerks>
+        <clerk ref="#clrk0059">
+          <persName>
+            <surname>Forestier</surname>
+            <forename>Césaire François</forename>
+          </persName>
+        </clerk>
+      </clerks>
+      <parties>
+        <party role="petitioner" presence="true" intervention="true">
+          <person>
+            <persName>
+              <surname>Dujas</surname>
+              <forename>Honoré</forename>
+            </persName>
+            <occupation>bourgeois de Paris</occupation>
+          </person>
+          <status>owner</status>
+          <expert ref="#xpr0210"/>
+          <prosecutor>
+            <persName>
+              <surname>Loyauté</surname>
+              <forename>Jacques Félix</forename>
+            </persName>
+          </prosecutor>
+        </party>
+        <party role="opponent" presence="true" intervention="true">
+          <person>
+            <persName>
+              <surname>Chenin</surname>
+              <forename>Estienne</forename>
+            </persName>
+            <occupation>maître maçon entrepreneur de bâtiments à Paris, demeurant grande rue du faubourg Saint-Antoine vis à vis celle Ste Marguerite</occupation>
+          </person>
+          <status>owner</status>
+          <expert ref="#xpr0143"/>
+        </party>
+      </parties>
+      <craftmen>
+        <craftman>
+          <persName>
+            <surname/>
+            <forename/>
+          </persName>
+          <occupation/>
+        </craftman>
+      </craftmen>
+    </participants>
+    <conclusions>
+      <opinion ref="">Après lesquelles lectures, comparutions, dires et réquisitions, nous avons en présence desdites parties procédé à la visite des mur et objets dont est question, à laquelle visite à prendre différentes mesures, nottes et renseignements et à entendre lesdites parties en leur autre observations verballes, la vacation s'étant consommée jusqu'à plus de six heures, nous avons remis la vacation pour la continuation du présent raport à 
+et jusqu'à ce que, nous nous sommes retirés.
+Perrard
+Jacob
+Forestier</opinion>
+      <arrangement/>
+      <agreement type="unfinished">Affaire inachevée</agreement>
+      <estimate l="" s="" d=""/>
+      <fees detail="false">
+        <total l="" s="" d=""/>
+      </fees>
+      <expenses mentioned="false"/>
+    </conclusions>
+    <keywords group="estates"/>
+    <keywords group="procedure"/>
+    <keywords group="contract"/>
+    <keywords group="encumbrance"/>
+    <keywords group="law"/>
+    <keywords group="measurement"/>
+    <keywords group="repairs"/>
+    <keywords group="guarantees"/>
+    <keywords group="responsability"/>
+    <keywords group="ownership"/>
+    <keywords group="value">
+      <term value="k1">Loyer</term>
+    </keywords>
+    <keywords group="neighbourhood"/>
+    <keywords group="disorder">
+      <term value="m6">Dégradation</term>
+    </keywords>
+    <keywords group="transformation"/>
+    <analysis>étais, salpêtre, plata bande de tein (?), 
+Dujat a loué le jardin avec le bosquet moyennant 400 livres par an "mais que les dégradations commises par ledit sieur Chenon dans ledit jardin et bosquet luy font perdre pour cette année et plusieurs autres suivantes, le bénéfice de cette location, n'étant pas possible que les arbres et chamilles parviennent de sitôt au  point d'agrément et d'ombrage qu'il donnoient auparavant lesdites dégradations"</analysis>
+    <noteworthy>but de l'expertise : 1/ constater l’état actuel du mur 
+2/ dire s’il peut subsister tel qu’il est à présent ou s’il faut le démolir et le reconstruire 
+3/ donner l’épaisseur et la hauteur nécessaires 
+4/ si les étais (placés par Chenin "de son autorité privée") du verger ont endommagé les treuillages du sieur Dujat etc.
+4/ fixer le montant des dommages, aux frais de qui les démolitions et la reconstruction seront faites s’il convient de les faire.</noteworthy>
+  </description>
+</expertise>

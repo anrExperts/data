@@ -1,0 +1,213 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1001d005">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2017-10-01T12:00:00">2017-10-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1001</idno>
+        <idno type="item">005</idno>
+        <facsimile from="1547" to="1552"/>
+        <physDesc>
+          <extent sketch="false">6</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-04-01" type="paris"/>
+          <date when="1776-04-13" type="paris"/>
+          <date when="1776-04-17" type="paris"/>
+          <date when="1776-04-17" type="paris"/>
+          <date when="1776-04-18" type="paris"/>
+          <date when="1776-04-29" type="paris"/>
+        </sessions>
+        <places>
+          <place type="paris">
+            <address>
+              <street>rue Sainte-Apolline</street>
+              <buildingNumber/>
+            </address>
+            <complement>entre les portes St-Denis et St-Martin, aboutissant sur le boulevard</complement>
+            <parish/>
+            <owner>Lepaige</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="acceptation">Recevoir et évaluer le travail réalisé</category>
+          <designation rubric="true">Visite et estimation d’ouvrages de peinture</designation>
+        </categories>
+        <procedure>
+          <framework type="b2a">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>LC</orgName>
+              <date when="1775-12-22"/>
+            </sentence>
+          </sentences>
+          <case>Règlement des ouvrages de peinture réalisés par Blondel. Les experts sont chargés de distinguer parmi les ouvrages réalisés ceux qui doivent être à la charge de Lepaige (propr.) et ceux qui sont à la charge de la dame de Morsan (locataire).</case>
+          <objects>
+            <object type="other">ouvrages de peinture</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0026" context="primary" appointment="appointed">
+              <title>architecte expert</title>
+            </expert>
+            <expert ref="#xpr0024" context="primary" appointment="appointed">
+              <title>architecte expert</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0058">
+              <persName>
+                <surname>Foucart</surname>
+                <forename>Paul Joseph</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="true" intervention="true">
+              <person>
+                <persName>
+                  <surname>Blondel</surname>
+                  <forename>Joseph Armand</forename>
+                </persName>
+                <occupation>peintre doreur de l'Académie de Saint-Luc</occupation>
+              </person>
+              <status>builder</status>
+              <expert ref=""/>
+              <prosecutor>
+                <persName>
+                  <surname>de Blainval</surname>
+                  <forename>Louis</forename>
+                </persName>
+              </prosecutor>
+            </party>
+            <party role="opponent" presence="true" intervention="true">
+              <person>
+                <persName>
+                  <surname>Lepaige</surname>
+                  <forename>Michel Pierre Alexandre</forename>
+                </persName>
+                <occupation/>
+              </person>
+              <status>owner</status>
+              <expert ref="#xpr0026"/>
+              <prosecutor>
+                <persName>
+                  <surname>de Sincay</surname>
+                  <forename/>
+                </persName>
+              </prosecutor>
+            </party>
+            <party role="opponent" presence="true" intervention="true">
+              <person>
+                <persName>
+                  <surname>dame de Morson</surname>
+                  <forename/>
+                </persName>
+                <occupation/>
+              </person>
+              <status>tenant</status>
+              <expert ref="#xpr0024"/>
+              <prosecutor>
+                <persName>
+                  <surname>De Milly</surname>
+                  <forename>Pierre Antoine</forename>
+                </persName>
+              </prosecutor>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0026">2° Coût des ouvrages de peinture d’impression selon Bleve : 415 l. 9 s. 2 d. dont pour le compte de madame de Morsan la somme de 275 l. 4 s. et pour le compte de Lepaige la somme de 140 l. 5 s. 2 d.</opinion>
+          <opinion ref="#xpr0024">1° Coût des ouvrages de peinture d’impression selon Blanchard : 383 l. 7 d. dont pour le compte de madame de Morsan la somme de 215 l. 14 s. 9 d. et pour le compte de Lepaige la somme de 165 l. 5 s. 8 d.</opinion>
+          <arrangement/>
+          <agreement type="disagreement">Désaccord</agreement>
+          <estimate l="" s="" d=""/>
+          <fees detail="true">
+            <fee type="papers" l="6" s="" d=""/>
+            <fee type="expert" ref="#xpr0026" l="36" s="" d=""/>
+            <fee type="expert" ref="#xpr0024" l="36" s="" d=""/>
+            <fee type="clerk" l="36" s="" d=""/>
+            <fee type="rolls" l="27" s="" d=""/>
+            <fee type="prosecutors" l="60" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="201" s="" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="clerk" l="33" s="15" d=""/>
+            <expense type="expert" l="24" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis>« Est comparu M. De Milly procureur de ladite dame de Morsan lequel nous a dit en repondant aux allégations dudit sieur Blondel dans les deux précédentes vacations, que l’acharnement du sieur Blondel à vouloir mettre tels ou tels ouvrages à la charges de la dame de Morsan le rend suspect à juste titre, tandis qu’il déclare qu’il ignoroit les conventions faittes entre elle et le sieur Lepaige proprietaire il paroit deplacé qu’il decide sur les distinctions sur lesquelles la cour a sursis de juger jusqu’après le raport qui luy en seroit fait. La conduitte qu’il doit tenir dans la cause est celle d’un ouvrier qui a fait des ouvrages auquel il faut les payer suivant l’estimation, il luy importe peu par qui ils seront payés pourvu qu’il le soit, il doit laisser le locataire et le proprietaire s’expliquer librement et se faire rendre justice surtout s’il nie d’avoir eu connoissance des conventions faittes ».</analysis>
+        <noteworthy/>
+      </description>
+    </expertise>

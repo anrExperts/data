@@ -1,0 +1,211 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j662d010" status="">
+  <meta/>
+  <control>
+    <maintenanceStatus>revised</maintenanceStatus>
+    <publicationStatus/>
+    <localControl localType="detailLevel">
+      <term>completed</term>
+    </localControl>
+    <maintenanceHistory>
+      <maintenanceEvent>
+                <eventType>revised</eventType>
+                <eventDateTime standardDateTime="2022-04-27T14:56:50Z">2022-04-27T14:56:50Z</eventDateTime>
+                <agentType>human</agentType>
+                <agent>llosserand</agent>
+                <eventDescription>rvpcd</eventDescription>
+            </maintenanceEvent>
+          <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateObjectsValues_db.xqy/BaseX</agent>
+        <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-06-16T17:02:53.776+02:00">2021-06-16T17:02:53.776+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateAppendicesPlanValue_files.xqy/BaseX</agent>
+        <eventDescription>Mise à jour de la valeur "plan" pour les champs "type" des annexes "Plan, coupe, élévation".</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-06-16T16:56:32.893+02:00">2021-06-16T16:56:32.893+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateOpinionRef_files.xqy/BaseX</agent>
+        <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-06-16T16:29:02.548+02:00">2021-06-16T16:29:02.548+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateRefValues_files.xqy/BaseX</agent>
+        <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>created</eventType>
+        <eventDateTime standardDateTime="2021-02-23T18:14:19Z">2021-02-23T18:14:19Z</eventDateTime>
+        <agentType>human</agentType>
+        <agent>llosserand</agent>
+        <eventDescription>Création de la fiche.</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+  </control>
+  <sourceDesc>
+    <unitdate>1736</unitdate>
+    <idno type="unitid">Z1J662</idno>
+    <idno type="item">010</idno>
+    <facsimile from="0042" to="0056"/>
+    <physDesc>
+      <extent sketch="false">10</extent>
+      <appendices>
+        <appendice>
+          <type type="other">Lettre</type>
+          <extent>1</extent>
+          <desc/>
+          <note>Correspondance de l'expert au greffier pour une demande de plan faite il y a 4 ans pour l'affaire de Mareuil et qui a été perdu.</note>
+        </appendice>
+        <appendice>
+          <type type="plan">Plan, coupe, élévation</type>
+          <extent>1</extent>
+          <desc>Echelle</desc>
+          <note>Plan à l'encre de situation (mention de la surface du jardin de Madame Hébert.</note>
+        </appendice>
+      </appendices>
+    </physDesc>
+  </sourceDesc>
+  <description>
+    <sessions>
+      <date when="1736-04-19" type="province"/>
+      <date when="1736-04-20" type="province"/>
+    </sessions>
+    <places>
+      <place type="province">
+        <address/>
+        <complement>Château de Mareil</complement>
+        <city>Mareil</city>
+        <district/>
+        <owner/>
+      </place>
+    </places>
+    <categories>
+      <category type="settlement">Départager</category>
+      <designation rubric="true">Visitte de servitudes au Château de Mareuil entre la veuve Hébert et le sieur Dalleret ; M Gérard de Montbrouard, tiers expert, premiers experts : Pillieux et Dumont ; M. Berville, greffier.</designation>
+    </categories>
+    <procedure>
+      <framework type="b2">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+      <origination type="institution">Une institution</origination>
+      <sentences>
+        <sentence>
+          <orgName>Baillage de Fontenay en France</orgName>
+          <date when="1736-04-14">(ordonnance)</date>
+          <date when="1735-10-20">(sentence)</date>
+        </sentence>
+      </sentences>
+      <case>tiers expertise</case>
+      <objects>
+        <object type="plot">Terrain(s)</object>
+        <object type="buildings">Ensemble de bâtiments (biens immeubles)</object>
+      </objects>
+    </procedure>
+    <participants>
+      <experts>
+        <expert ref="#xpr0118" context="third-party" appointment="court-appointed">
+          <title>architecte du roi expert des bâtiments</title>
+        </expert>
+      </experts>
+      <clerks>
+        <clerk ref="#clrk0042">
+          <persName>
+            <surname>Berville</surname>
+            <forename>Jean Guillaume</forename>
+          </persName>
+        </clerk>
+      </clerks>
+      <parties>
+        <party role="petitioner" presence="false" intervention="false">
+          <person>
+            <persName>
+              <surname>Mabille</surname>
+              <forename>Marie Anne</forename>
+            </persName>
+            <occupation>veuve de Pierre Thomas Hébert, vivant message du roi de l'université de Paris</occupation>
+          </person>
+          <status>owner</status>
+          <expert ref="#xpr0118"/>
+          <prosecutor>
+            <persName>
+              <surname>Couet</surname>
+              <forename>Claude</forename>
+            </persName>
+          </prosecutor>
+        </party>
+        <party role="opponent" presence="false" intervention="false">
+          <person>
+            <persName>
+              <surname>Dalleret</surname>
+              <forename>François</forename>
+            </persName>
+            <occupation/>
+          </person>
+          <status>owner</status>
+          <expert ref="#xpr0118"/>
+        </party>
+      </parties>
+      <craftmen>
+        <craftman>
+          <persName>
+            <surname>Meunier</surname>
+            <forename>Louis</forename>
+          </persName>
+          <occupation>maçon</occupation>
+        </craftman>
+        <craftman>
+          <persName>
+            <surname>Moret</surname>
+            <forename>Philippe</forename>
+          </persName>
+          <occupation>maçon et manoeuvre</occupation>
+        </craftman>
+      </craftmen>
+    </participants>
+    <conclusions>
+      <agreement type="conclusion">Conclusion</agreement>
+      <opinion ref="#xpr0118">Finallement pour satisfaire à votre ordonnance monsieur en exécution de laquelle nous avons en votre présence mesuré ledit jardin de la dite veuve Hébert y compris les murs de closture qui le ferment nous avons trouvé par les calculs que nous avons faits qu’il contient cinq perches et demye quarante cinq pieds et demi mesuré sur le pied de vingt un pied pour perche qui est la mesure du pays ainsy qu’il nous l’a esté déclaré tant par le sieur Antheaume greffier du baillage et marquisat de Fontenay que par les deux premiers experts
+Tout ce que dessus fait et marqué sur le plan annexé à la présente minutte ainsy qu’il est cy dessus dit estant nostre avis par raport à l’estat actuel des choses et le deffaut de représentation de titre des partyes sauf à vous monsieur de juger et ordonner sur le tout suivant notre justice et prudence ordinaire et sommes partis pour retourner en ladite ville de Paris.</opinion>
+      <arrangement/>
+      <estimate l="" s="" d=""/>
+      <fees detail="false">
+        <total l="" s="" d=""/>
+      </fees>
+      <expenses mentioned="false"/>
+    </conclusions>
+    <keywords group="estates"/>
+    <keywords group="procedure">
+      <term value="b6">Titre (de propriété)</term>
+    </keywords>
+    <keywords group="contract"/>
+    <keywords group="encumbrance">
+      <term value="d8">Vue</term>
+      <term value="d10">Mur de clôture</term>
+    </keywords>
+    <keywords group="law">
+      <term value="e1">Coutume (articles le cas échéant)</term>
+    </keywords>
+    <keywords group="measurement">
+      <term value="f5">Relevé (mesurage pour faire un dessin)</term>
+    </keywords>
+    <keywords group="repairs"/>
+    <keywords group="guarantees"/>
+    <keywords group="responsability"/>
+    <keywords group="ownership"/>
+    <keywords group="value"/>
+    <keywords group="neighbourhood"/>
+    <keywords group="disorder"/>
+    <keywords group="transformation"/>
+    <analysis>f. 7 r° "constater su le terrain où tombe les égoûts des bâtiments de Dalleret est et fait partye du jardin de ladite veuve Hébert" objet du litige</analysis>
+    <noteworthy>Il y avait eu une première expertise en date du 18 février 1734 avec Jean Pillieux (expert de Hébert) et Michel Dumont (expert de Dalleret. (ces experts ne sont pas à Paris)
+ (attendu le décès de Benoist, tiers expert nommé par les parties) 
+Les experts avaient été contraires. 1/- est ce que le terrain de Hébert reçoit les égouts des maisons de Dalleret ? Examen des murs de clôture. Louis Meunier et Philippe Moret, maçons sont recrutés pour faire de nouvelles tranchées. Vacations non achevées. Se retirent à Ecouen. Il est constaté que le mur nouvellement construit par Dalleret n'a pas observé un empattement du côté du jardin, ce qui est contre l'art (7 v°) et doit etre considéré comme une usurpation  et entreprise sur le terrain de Hébert. De plus bâti sans alignement, ce qui est contraire à l'art. 203  de la coutume. bâtiments couverts de chaume. De plus, mur de goutte construit contre un ancien mur (anciens enduits existants) formant enclave. Vestiges d'anciens murs apparents au mur en retour de lad. enclave.  De plus, constat de linteaux de portes très anciens, prouvent qu'il y avait une baie qui donnait dans la maison de Dalleret. Charpentes des deux maisons liées, ce qui fait penser qu'il y avait à l'origine une seul propriétaire pour les deux maisons. Art. 186 de la coutume (acquisition de servitude : longue jouissance) aucun titre présentés, donc égouts de Dalleret doivent être supprimés. Quant à l'enclave, le remplissage est contre l'art car aucun arrachements n'a été observé dans le vieux mur. Selon art. 187 coutume, l'enclave appartient et fait partie du jardin de Hébert.</noteworthy>
+  </description>
+</expertise>

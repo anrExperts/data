@@ -1,0 +1,214 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j999d073">
+      <meta/>
+      <control>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+            <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>llosserand</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>retroconverted</eventType>
+            <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>ead2xpr.xsl/Saxon9</agent>
+            <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2017-10-01T12:00:00">2017-10-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2016-07-29T12:00:00">2016-07-29T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>LRT</agent>
+            <eventDescription>Création de la fiche.</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J999</idno>
+        <idno type="item">073</idno>
+        <facsimile from="0701" to="0713"/>
+        <physDesc>
+          <extent sketch="false">12</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1776-02-27" type="province"/>
+          <date when="1776-02-28" type="province"/>
+          <date when="1776-02-29" type="province"/>
+        </sessions>
+        <places>
+          <place type="province">
+            <address/>
+            <complement/>
+            <city>Abbaye de Chaumes</city>
+            <district/>
+            <owner/>
+          </place>
+          <place type="province">
+            <address/>
+            <complement>église du village</complement>
+            <city>Coubert</city>
+            <district/>
+            <owner/>
+          </place>
+        </places>
+        <categories>
+          <category type="assessment">Décrire et évaluer les travaux à venir</category>
+          <designation rubric="true">Visite et réception des réparations de l'abbaye de Chaumes à la requête du sieur Dutour</designation>
+        </categories>
+        <procedure>
+          <framework type="b2b">L’institution est saisie dans le cadre d’une procédure (l’institution nomme un ou deux experts)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Grand conseil (arrêt du 13 janvier 1776)</orgName>
+              <date when="1776-01-13"/>
+            </sentence>
+          </sentences>
+          <case>Réception des ouvrages réalisés à l’abbaye de Chaumes</case>
+          <objects>
+            <object type="buildings">Ensemble de bâtiments (biens immeubles)</object>
+            <object type="other">église, maison abbatiale, jardin</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0089" context="primary" appointment="court-appointed">
+              <title>architecte expert</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0057">
+              <persName>
+                <surname>Liebaut de la Neuville</surname>
+                <forename>Christophe Edouard</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="true" intervention="true">
+              <person>
+                <persName>
+                  <surname>Detour</surname>
+                  <forename>Antoine</forename>
+                </persName>
+                <occupation>licencié es lois, héritier par bénéfice d’inventaire de feu l’abbé Collet, conseiller au parlement de Paris et abbé commandataire de l’abbaye de Chaumes</occupation>
+              </person>
+              <status>heir</status>
+              <expert ref="#xpr0089"/>
+            </party>
+            <party role="opponent" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Rigaud</surname>
+                  <forename/>
+                </persName>
+                <occupation>abbé commandataire de l’abbaye de Chaumes</occupation>
+              </person>
+              <status>owner</status>
+              <expert ref="#xpr0089"/>
+              <representative>
+                <persName>
+                  <surname>Maury</surname>
+                  <forename>Jean Louis</forename>
+                </persName>
+                <occupation>avocat au Parlement</occupation>
+              </representative>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <opinion ref="#xpr0089">Description article par article 
+En distinguant ceux qui ont déjà été "satisfait" ce qui permet d'en faire "décharge"
+« Revenans ensemble les reparations restantes à faire à ladite abbaye de Chaumes et dépendances à la somme totale de … 2 830 l. Nous vous observons, nosseigneurs, qu’à l’égard des reparations qui ont été faites elles ont été bien et deuement executées et suivant l’art pourquoy nous les recevons… réception »</opinion>
+          <arrangement/>
+          <agreement type="conclusion">Conclusion</agreement>
+          <estimate l="" s="" d=""/>
+          <fees detail="true">
+            <fee type="papers" l="8" s="" d=""/>
+            <fee type="expert" ref="#xpr0089" l="150" s="" d=""/>
+            <fee type="clerk" l="150" s="" d=""/>
+            <fee type="rolls" l="55" s="" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <total l="363" s="" d=""/>
+          </fees>
+          <expenses mentioned=""/>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership">
+          <term value="j1">Bénéfice d'inventaire</term>
+        </keywords>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis>expert autre (Jacob) :
+f. 1v° "nous observons que par notre dit procès verbal susdaté nous avons constatté les réparations qui étoient à faire au chevet de l’église de Grisy ; que ces réparations ont été faites conjointement avec les autres codécimateurs de ladite paroisse et qu’en exécution d’un arrêt de grand conseil elles ont été reçues par procès verbal du sieur Jacob expert nommé à cet effet par ledit arrêt, pourquoy nous n’avons plus de visitte à faire de cette église &amp; nous a remis de prendre communication des pièces qu’il vient de nous remettre &amp; ensuitte de procéder au visittes et (?) ordonnées par ledit arrest susdatté et a signé sous toutes réserves de droit. Detour"</analysis>
+        <noteworthy>un pv du 26 mai 1775 fair par Desboeufs détaille les réparations qui restaient alors à faire à l’abbaye
+
+nomination de l'expert "Vous avés nosseigneurs ordonné que par nous Desboeufs architecte expert nommé par votre arrest du huit mars dernier au en cas d'abscence et maladie ou autre empechement légitime par autres experts dont les parties conviendroient pardevant L. le doyen des conseillers que le conseil a commis à cet effet sinon qui seroient par luy pris &amp; nommés d'office, il seroit en présence dudit sieur abbé Rigaud ou luy duement appellé procédé à la visite et réception de toutes les réparations &amp; fournitures des menues livres, linges &amp; vases sacrés (?) nécessaires à faire par notre procès verbal de visite du 26 may dernier et jours suivant en exécution de l'arrêt du 8 mars précédent etc."</noteworthy>
+      </description>
+    </expertise>

@@ -1,0 +1,203 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j434d066" status="">
+      <meta/>
+      <control>
+        <maintenanceStatus>new</maintenanceStatus>
+        <publicationStatus/>
+        <localControl localType="detailLevel">
+          <term>completed</term>
+        </localControl>
+        <maintenanceHistory>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateObjectsValues_db.xqy/BaseX</agent>
+            <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateOpinionRef_files.xqy/BaseX</agent>
+            <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>updateRefValues_files.xqy/BaseX</agent>
+            <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime standardDateTime="2021-02-17T12:17:28.693+01:00">2021-02-17T12:17:28.693+01:00</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>z1jresp.xqy/BaseX</agent>
+            <eventDescription>Ajout de l'historique de la fiche.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime standardDateTime="2020-11-01T12:00:00">2020-11-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Saisie de la fiche dans l’app xpr.</eventDescription>
+          </maintenanceEvent>
+          <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2019-04-01T12:00:00">2019-04-01T12:00:00</eventDateTime>
+            <agentType>human</agentType>
+            <agent>JH</agent>
+            <eventDescription>Création de la fiche (formulaire Xforms/Libre office).</eventDescription>
+          </maintenanceEvent>
+        </maintenanceHistory>
+      </control>
+      <sourceDesc>
+        <unitdate>1696</unitdate>
+    <idno type="unitid">Z1J434</idno>
+        <idno type="item">66</idno>
+        <facsimile from="0476" to="0480"/>
+        <physDesc>
+          <extent sketch="false">4</extent>
+        </physDesc>
+      </sourceDesc>
+      <description>
+        <sessions>
+          <date when="1696-08-22" type="suburbs"/>
+        </sessions>
+        <places>
+          <place xml:id="id77d70" type="suburbs">
+            <address/>
+            <complement>rue de Pontoise, une maison</complement>
+            <city>Argenteuil</city>
+            <district/>
+            <owner>succession Renaud</owner>
+          </place>
+          <place xml:id="id77d87" type="suburbs">
+            <address/>
+            <complement>grande rue</complement>
+            <city>Argenteuil</city>
+            <district/>
+            <owner>succession Renaud</owner>
+          </place>
+        </places>
+        <categories>
+          <category type="estimation">Estimer la valeur des biens</category>
+          <designation rubric="true">Visite et estimation de maisons et héritages</designation>
+        </categories>
+        <procedure>
+          <framework type="b2a">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+          <origination type="institution">Une institution</origination>
+          <sentences>
+            <sentence>
+              <orgName>Chambre des requêtes</orgName>
+              <date when="1696-07-10"/>
+            </sentence>
+          </sentences>
+          <case>partage, succession</case>
+          <objects>
+            <object type="house">Maison(s)</object>
+          </objects>
+        </procedure>
+        <participants>
+          <experts>
+            <expert ref="#xpr0239" context="primary" appointment="appointed">
+              <title>expert juré entrepreneur</title>
+            </expert>
+            <expert ref="#xpr0077" context="primary" appointment="appointed">
+              <title>architecte expert juré bourgeois de Paris</title>
+            </expert>
+          </experts>
+          <clerks>
+            <clerk ref="#clrk0002">
+              <persName>
+                <surname>Le Comte</surname>
+                <forename>Michel</forename>
+              </persName>
+            </clerk>
+          </clerks>
+          <parties>
+            <party role="petitioner" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>Gripier</surname>
+                  <forename>François</forename>
+                </persName>
+                <occupation>sieur de la Frenaye, chef de gobelet du roi et demoiselle Nicole de L… sa femme</occupation>
+              </person>
+              <status>heir</status>
+              <expert ref="#xpr0239"/>
+            </party>
+            <party role="opponent" presence="false" intervention="false">
+              <person>
+                <persName>
+                  <surname>T…</surname>
+                  <forename/>
+                </persName>
+                <occupation>procureur,  poursuivant les vente et criée des biens de la succession d’Etienne Renaud et dame Rafflons sa veuve</occupation>
+              </person>
+              <status>creditor</status>
+              <expert ref="#xpr0077"/>
+            </party>
+          </parties>
+          <craftmen>
+            <craftman>
+              <persName>
+                <surname/>
+                <forename/>
+              </persName>
+              <occupation/>
+            </craftman>
+          </craftmen>
+        </participants>
+        <conclusions>
+          <agreement type="agreement">Accord</agreement>
+          <opinion ref="">« Ladite maison … avons prisé et estimé la totallité desdits lieux à la somme de dix sept cens cinquante livres, eu esgard au […] et à l’estendue et superficie de la place, … et au cours du temps present, étant à la charge du cens et eu esgard au logement des Suisses, cy… 1750 l. »
+« Lesquels bastimens et lieux cy dessus declarez … avns prisés et estimé valloir ensemble la somme de huict cens cinquante livres eu esgard au logement des Suisses et à la disposition … desdits bastimens, au cours du temps présent et à la charge du cens seulement, cy… 850 l.
+Revenant les deux sommes ensemble à celle de deux mil six cens livres cy… 2 600 l. »</opinion>
+          <arrangement/>
+          <estimate l="2600" s="" d=""/>
+          <estimates>
+            <place ref="#id77d70">
+              <appraisal l="1750" s="" d="">
+                <desc>maison</desc>
+              </appraisal>
+            </place>
+            <place ref="#id77d87">
+              <appraisal l="850" s="" d="">
+                <desc>maison</desc>
+              </appraisal>
+            </place>
+          </estimates>
+          <fees detail="true">
+            <fee type="expert" ref="#xpr0239" l="12" s="" d=""/>
+            <fee type="expert" ref="#xpr0077" l="12" s="" d=""/>
+            <fee type="clerk" l="" s="" d=""/>
+            <fee type="rolls" l="3" s="15" d=""/>
+            <fee type="papers" l="1" s="" d=""/>
+            <fee type="plans" l="" s="" d=""/>
+            <fee type="prosecutors" l="" s="" d=""/>
+            <fee type="help" l="" s="" d=""/>
+            <total l="58" s="15" d=""/>
+          </fees>
+          <expenses mentioned="true">
+            <expense type="expert" l="12" s="" d=""/>
+          </expenses>
+        </conclusions>
+        <keywords group="estates"/>
+        <keywords group="procedure"/>
+        <keywords group="contract"/>
+        <keywords group="encumbrance"/>
+        <keywords group="law"/>
+        <keywords group="measurement"/>
+        <keywords group="repairs"/>
+        <keywords group="guarantees"/>
+        <keywords group="responsability"/>
+        <keywords group="ownership"/>
+        <keywords group="value"/>
+        <keywords group="neighbourhood"/>
+        <keywords group="disorder"/>
+        <keywords group="transformation"/>
+        <analysis/>
+        <noteworthy/>
+      </description>
+    </expertise>

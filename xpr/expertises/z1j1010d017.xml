@@ -1,0 +1,222 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j1010d017">
+  <meta/>
+  <control>
+    <maintenanceStatus>revised</maintenanceStatus>
+    <publicationStatus/>
+    <localControl localType="detailLevel">
+      <term>completed</term>
+    </localControl>
+    <maintenanceHistory>
+      <maintenanceEvent>
+                <eventType>revised</eventType>
+                <eventDateTime standardDateTime="2022-08-28T14:04:39Z">2022-08-28T14:04:39Z</eventDateTime>
+                <agentType>human</agentType>
+                <agent>llosserand</agent>
+                <eventDescription>rvpcd</eventDescription>
+            </maintenanceEvent>
+          <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateObjectsValues_db.xqy/BaseX</agent>
+        <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateOpinionRef_files.xqy/BaseX</agent>
+        <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateRefValues_files.xqy/BaseX</agent>
+        <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+        <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>revised</eventType>
+        <eventDateTime standardDateTime="2020-09-01T12:00:00">2020-09-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>JH</agent>
+        <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>retroconverted</eventType>
+        <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>ead2xpr.xsl/Saxon9</agent>
+        <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>created</eventType>
+        <eventDateTime standardDateTime="2017-04-01T12:00:00">2017-04-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>llosserand</agent>
+        <eventDescription>Création de la fiche.</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+  </control>
+  <sourceDesc>
+    <unitdate>1776</unitdate>
+    <idno type="unitid">Z1J1010</idno>
+    <idno type="item">017</idno>
+    <facsimile from="0130" to="0135"/>
+    <physDesc>
+      <extent sketch="false">6</extent>
+    </physDesc>
+  </sourceDesc>
+  <description>
+    <sessions>
+      <date when="1776-12-11" type="province"/>
+    </sessions>
+    <places>
+      <place xml:id="id541d252" type="province">
+        <address/>
+        <complement>butte de Picardie, à gauche en venant de l'avenue de Saint-Cloud</complement>
+        <city>Versailles</city>
+        <district/>
+        <owner>Duras</owner>
+      </place>
+    </places>
+    <categories>
+      <category type="estimation">Estimer la valeur des biens</category>
+      <designation rubric="true">Visite et estimation d’une maison, jardin et dépendances</designation>
+    </categories>
+    <procedure>
+      <framework type="b2">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+      <origination type="institution">Une institution</origination>
+      <sentences>
+        <sentence>
+          <orgName>lieutenant civil</orgName>
+          <date when="1775-07-18"/>
+        </sentence>
+      </sentences>
+      <case>récupération d’un terrain (et des arrérages de rente foncière dus au comte d’Eu depuis le 23 février 1764 jusqu’au 23 février 1776), l’acquéreur n’ayant pas satisfait aux clauses de la vente, le lieutenant civil a annulé la vente, rendant possible au requérant de reprendre possession de son bien</case>
+      <objects>
+        <object type="house">Maison(s)</object>
+      </objects>
+    </procedure>
+    <participants>
+      <experts>
+        <expert ref="#xpr0235" context="primary" appointment="court-appointed">
+          <title>architecte expert des bâtiments à Paris</title>
+        </expert>
+      </experts>
+      <clerks>
+        <clerk ref="#clrk0061">
+          <persName>
+            <surname>Le Coeur</surname>
+            <forename>Jean Clair</forename>
+          </persName>
+        </clerk>
+      </clerks>
+      <parties>
+        <party role="petitioner" presence="true" intervention="false">
+          <person>
+            <persName>
+              <surname>Blot</surname>
+              <forename>Bathélémy</forename>
+            </persName>
+            <occupation>écuyer cravatier honoraire et ordinaire du roi, propriétaire originel du bien</occupation>
+          </person>
+          <status>owner</status>
+          <expert ref="#xpr0235"/>
+          <prosecutor>
+            <persName>
+              <surname>Petit du Frenoy</surname>
+              <forename/>
+            </persName>
+          </prosecutor>
+        </party>
+        <party role="opponent" presence="false" intervention="false">
+          <person>
+            <persName>
+              <surname>Du Basset</surname>
+              <forename>Nicolas Germain</forename>
+            </persName>
+            <occupation>chevalier seigneur de Saint-Martin, premier acquéreur du pavillon</occupation>
+          </person>
+          <person>
+            <persName>
+              <surname>Fouquet</surname>
+              <forename>Philippe Adrien </forename>
+            </persName>
+            <occupation>second acquéreur du pavillon</occupation>
+          </person>
+          <person>
+            <persName>
+              <surname>de Duras</surname>
+              <forename/>
+            </persName>
+            <occupation>duc de Duras, 3e acquéreur</occupation>
+          </person>
+          <status>owner</status>
+          <expert ref="#xpr0235"/>
+        </party>
+      </parties>
+      <craftmen>
+        <craftman>
+          <persName>
+            <surname/>
+            <forename/>
+          </persName>
+          <occupation/>
+        </craftman>
+      </craftmen>
+    </participants>
+    <conclusions>
+      <opinion ref="#xpr0235">L'expert dresse l’état des lieux, très dégradés, et estime l’ensemble à 1000 livres.
+ « Ainsi attention et considération faite de l’état actuel de lad. maison et dépendance, à sa situation, forme et étendue d’emplacement au peu de valeur des bâtimens par nous cy dessus raporté, aux réparations considérables, mesme reconstruction qu’il conviendroit faire pour les mettre en état d’habitation, nous prisons et estimons lad. pavillon, cours, jardin et dépendances ensemble le peu de meubles qui y existent et qui ne consistent actuellement qu’en la petite glace sur la cheminée de la salle, la figure en terre cuite du jardin, qui ainsi que nous l’avons raporté cy dessus est très mutilée et trois bancs de pierre, lesd. objets de peu de valeur, ainsi que le tout se poursuit et comporte, eu [f. 6r°] égard au cour du temps présent, à la charge de lad. ente foncière de la somme de trente livres, cens droits seigneuriaux et autres, la somme de mille livres, savoir neuf cent cinquante livres pour les bâtimens, jardin et dépendances et cinquante livres pour les meubles, 1000 livres.
+                C’est, monsieur, l’avis de nous expert de lad. maison et dépendances et la valeur d’icelle, vous référant de juger et ordonner. Fait par nous architecte expert le jours et an que dessus »</opinion>
+      <arrangement/>
+      <agreement type="conclusion">Conclusion</agreement>
+      <estimate l="1000" s="" d=""/>
+      <estimates>
+        <place ref="#id541d252">
+          <appraisal l="1000" s="" d="">
+            <desc>maison</desc>
+          </appraisal>
+        </place>
+      </estimates>
+      <fees detail="true">
+        <fee type="papers" l="12" s="16" d=""/>
+        <fee type="expert" ref="#xpr0235" l="24" s="" d=""/>
+        <fee type="clerk" l="24" s="" d=""/>
+        <fee type="rolls" l="22" s="10" d=""/>
+        <fee type="prosecutors" l="20" s="" d=""/>
+        <fee type="help" l="" s="" d=""/>
+        <fee type="plans" l="" s="" d=""/>
+        <total l="103" s="6" d=""/>
+      </fees>
+      <expenses mentioned="true">
+        <expense type="clerk" l="18" s="12" d="6"/>
+        <expense type="expert" l="6" s="" d=""/>
+      </expenses>
+    </conclusions>
+    <keywords group="estates"/>
+    <keywords group="procedure"/>
+    <keywords group="contract"/>
+    <keywords group="encumbrance"/>
+    <keywords group="law"/>
+    <keywords group="measurement"/>
+    <keywords group="repairs"/>
+    <keywords group="guarantees"/>
+    <keywords group="responsability"/>
+    <keywords group="ownership"/>
+    <keywords group="value"/>
+    <keywords group="neighbourhood"/>
+    <keywords group="disorder"/>
+    <keywords group="transformation"/>
+    <analysis/>
+    <noteworthy/>
+  </description>
+</expertise>

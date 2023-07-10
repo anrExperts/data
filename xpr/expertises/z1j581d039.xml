@@ -1,0 +1,200 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j581d039">
+  <meta/>
+  <control>
+    <maintenanceStatus>revised</maintenanceStatus>
+    <publicationStatus/>
+    <localControl localType="detailLevel">
+      <term>completed</term>
+    </localControl>
+    <maintenanceHistory>
+      <maintenanceEvent>
+                <eventType>revised</eventType>
+                <eventDateTime standardDateTime="2022-03-30T12:14:17Z">2022-03-30T12:14:17Z</eventDateTime>
+                <agentType>human</agentType>
+                <agent>llosserand</agent>
+                <eventDescription>rvpcd</eventDescription>
+            </maintenanceEvent>
+          <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateOpinionRef_files.xqy/BaseX</agent>
+        <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateRefValues_files.xqy/BaseX</agent>
+        <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+        <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>revised</eventType>
+        <eventDateTime standardDateTime="2020-11-01T12:00:00">2020-11-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>JH</agent>
+        <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>retroconverted</eventType>
+        <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>ead2xpr.xsl/Saxon9</agent>
+        <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>created</eventType>
+        <eventDateTime standardDateTime="2017-04-01T12:00:00">2017-04-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>llosserand</agent>
+        <eventDescription>Création de la fiche.</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+  </control>
+  <sourceDesc>
+    <unitdate>1726</unitdate>
+    <idno type="unitid">Z1J581</idno>
+    <idno type="item">039</idno>
+    <facsimile from="0742" to="0747"/>
+    <physDesc>
+      <extent sketch="false">6</extent>
+    </physDesc>
+  </sourceDesc>
+  <description>
+    <sessions>
+      <date when="1726-07-02" type="paris"/>
+    </sessions>
+    <places>
+      <place type="paris">
+        <address>
+          <street>Pont-Neuf</street>
+          <buildingNumber/>
+        </address>
+        <complement>un moulin à eau en rivière de Seine, sous le Pont-neuf, proche la Samaritaine</complement>
+        <parish/>
+        <owner>Leferron et Odot</owner>
+      </place>
+    </places>
+    <categories>
+      <category type="acceptation">Recevoir et évaluer le travail réalisé</category>
+      <designation rubric="true">Estimation d'ouvrages de couverture de bard en un moulin sous le pont neuf à la requeste du sieur Lefrain contre les sieurs Le Ferren et Odot ; Mrs Dubois et Joubert, premiers experts ; M. Loir, tiers.</designation>
+    </categories>
+    <procedure>
+      <framework type="b2">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+      <origination type="institution">Une institution</origination>
+      <sentences>
+        <sentence>
+          <orgName>lieutenant civil</orgName>
+          <date when="1726-06-15"/>
+        </sentence>
+      </sentences>
+      <case>une première expertise avait été demandée mais les experts Dubois et Joubert n'étant pas tombés d'accord (1er juin 1726), une deuxième expertise est demandée. La présence des deux experts est souhaitée ; seul Dubois est présent.</case>
+      <objects>
+        <object type="other">ouvrages de couverture</object>
+      </objects>
+    </procedure>
+    <participants>
+      <experts>
+        <expert ref="#xpr0183" context="third-party" appointment="court-appointed">
+          <title>architecte juré du roi</title>
+        </expert>
+      </experts>
+      <clerks>
+        <clerk ref="#clrk0034">
+          <persName>
+            <surname>Baudoin</surname>
+            <forename>Antoine</forename>
+          </persName>
+        </clerk>
+      </clerks>
+      <parties>
+        <party role="petitioner" presence="false" intervention="false">
+          <person>
+            <persName>
+              <surname>Lefranc</surname>
+              <forename>Thibault</forename>
+            </persName>
+            <occupation>maître couvreur</occupation>
+          </person>
+          <status>builder</status>
+          <expert ref="#xpr0183"/>
+        </party>
+        <party role="opponent" presence="true" intervention="true">
+          <person>
+            <persName>
+              <surname>Leferron</surname>
+              <forename>Jean Georges</forename>
+            </persName>
+            <occupation>écuyer, propriétaire pour moitié du moulin (défaillant)</occupation>
+          </person>
+          <person>
+            <persName>
+              <surname>Odot</surname>
+              <forename/>
+            </persName>
+            <occupation>propriétaire pour l'autre moitié.</occupation>
+          </person>
+          <status>owner</status>
+          <expert ref="#xpr0183"/>
+        </party>
+      </parties>
+      <craftmen>
+        <craftman>
+          <persName>
+            <surname/>
+            <forename/>
+          </persName>
+          <occupation/>
+        </craftman>
+      </craftmen>
+    </participants>
+    <conclusions>
+      <opinion ref="#xpr0183">Conclusion
+                « Et ledit sieur Dubois a dit qu'il auroit [f. 5r°] bien d'autre observation à faire mais qu'il remettoit au tiers qui sera par vous monsieur nommer à vous faire un raport fidèle de l'état auquel est à présent lad. couverture et ce celle où elle pouvoit estre lorsquelle a esté fait et finy et que pas une des parties ne s'en est plain dans le cour de toute la procédure qui dure depuis deux années, dont elle n'auroit pas manqué de se pleindre puisque la cause a esté porté pard. vous à l'esgard du bardô, il est aisé de juger s'il étoit rare ou non en ce tems là, puisque vendange venoit pour ainsy dire d'estre faite au mois d'octobre et novembre de l'année 1724 où les futailles étoit très rares.
+                A l'esgard de l'ouvrages de bardô manié à bout ledit sieur Dubois l'a estimé valoir la somme de six livres la toise eu égard qui a esté retaillé de tous costé, vallent les quatorze toises la somme de quatre vingt quatre livres. Et nous tiers expert, estimons les dittes quatorze toises de maniée à bout de bardot à raison de quatre livres le toise eu égard à ce qu'il a falue les retailler, revant audit prix à la somme de cinquante six livres, cy 56 livres.
+                Toutes les dittes ouvrages de couvertures revenante ensembles suivant l'avis et les estimations faites par nous tiers expert la somme de cinq cent quarante et une livres unze sols deux deniers, cy 541 livres 11 sols 10 deniers.[...] ».
+
+Renvoi au juge</opinion>
+      <arrangement/>
+      <agreement type="conclusion">Conclusion</agreement>
+      <estimate l="541" s="11" d="10"/>
+      <fees detail="true">
+        <fee type="papers" l="" s="" d=""/>
+        <fee type="expert" ref="#xpr0183" l="6" s="" d=""/>
+        <fee type="clerk" l="" s="" d=""/>
+        <fee type="rolls" l="" s="" d=""/>
+        <fee type="prosecutors" l="" s="" d=""/>
+        <fee type="help" l="" s="" d=""/>
+        <fee type="plans" l="" s="" d=""/>
+        <total l="" s="" d=""/>
+      </fees>
+      <expenses mentioned="true">
+        <expense type="clerk" l="8" s="12" d="6"/>
+        <expense type="expert" l="" s="" d=""/>
+      </expenses>
+    </conclusions>
+    <keywords group="estates"/>
+    <keywords group="procedure"/>
+    <keywords group="contract"/>
+    <keywords group="encumbrance"/>
+    <keywords group="law"/>
+    <keywords group="measurement"/>
+    <keywords group="repairs"/>
+    <keywords group="guarantees"/>
+    <keywords group="responsability"/>
+    <keywords group="ownership"/>
+    <keywords group="value"/>
+    <keywords group="neighbourhood"/>
+    <keywords group="disorder"/>
+    <keywords group="transformation"/>
+    <analysis/>
+    <noteworthy/>
+  </description>
+</expertise>

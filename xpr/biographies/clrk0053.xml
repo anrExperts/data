@@ -1,0 +1,63 @@
+<eac xmlns="https://archivists.org/ns/eac/v2" xml:id="clrk0053">
+  <control maintenanceStatus="">
+    <recordId>clrk0053</recordId>
+    <maintenanceAgency>
+      <agencyName>ANR Experts</agencyName>
+    </maintenanceAgency>
+    <maintenanceHistory>
+      <maintenanceEvent maintenanceEventType="created">
+        <agent agentType="machine">clerk_csv2eac.xqy/BaseX</agent>
+        <eventDateTime standardDateTime="2022-12-31T14:06:48.817+01:00"/>
+        <eventDescription>Création des fiches EAC-CPF à partir du tableau</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+    <sources>
+      <source id="sourceid86495935">
+        <reference href="">Almanach royal 1756</reference>
+      </source>
+      <source id="sourceid86495937">
+        <reference href="">Almanach royal 1757</reference>
+      </source>
+    </sources>
+  </control>
+  <cpfDescription>
+    <identity>
+      <entityType value="person"/>
+      <nameEntry status="authorized" preferredForm="true" sourceReference="">
+        <part localType="full">Ingret de monthulin, Jean-Claude</part>
+      </nameEntry>
+      <nameEntry status="alternative" preferredForm="false" sourceReference="">
+        <part localType="surname">Ingret de monthulin</part>
+        <part localType="forename">Jean-Claude</part>
+      </nameEntry>
+      <otherEntityTypes>
+        <otherEntityType>
+          <term>clerk</term>
+        </otherEntityType>
+      </otherEntityTypes>
+      <identityId>clrk0053</identityId>
+    </identity>
+    <description>
+      <functions>
+        <function sourceReference="#sourceid86495935 #sourceid86495937">
+          <term>Greffier</term>
+          <dateRange>
+            <fromDate sourceReference="" certainty="certain" standardDate="1756"/>
+            <toDate sourceReference="" certainty="certain" standardDate="1757"/>
+          </dateRange>
+        </function>
+      </functions>
+      <places>
+        <place sourceReference="#sourceid86495935 #sourceid86495937">
+          <placeRole>Adresse</placeRole>
+          <placeName>rue de la Verrerie</placeName>
+          <dateRange>
+            <fromDate sourceReference="" certainty="certain" standardDate="1756"/>
+            <toDate sourceReference="" certainty="certain" standardDate="1757"/>
+          </dateRange>
+        </place>
+      </places>
+    </description>
+  </cpfDescription>
+  <!--exerce de 1779-1784 ; V/1/491/pièce 26 (12/08/1778) - succ. à Jean-François FORGET ; 26/08/1778 Y 5046 B (436-442) ; Il est avocat au Parlement-->
+</eac>

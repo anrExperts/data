@@ -1,0 +1,225 @@
+<expertise xmlns="xpr" xmlns:rico="rico" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="z1j584d011">
+  <meta/>
+  <control>
+    <maintenanceStatus>revised</maintenanceStatus>
+    <publicationStatus/>
+    <localControl localType="detailLevel">
+      <term>completed</term>
+    </localControl>
+    <maintenanceHistory>
+      <maintenanceEvent>
+                <eventType>revised</eventType>
+                <eventDateTime standardDateTime="2022-03-31T19:52:04Z">2022-03-31T19:52:04Z</eventDateTime>
+                <agentType>human</agentType>
+                <agent>llosserand</agent>
+                <eventDescription>rvpcd</eventDescription>
+            </maintenanceEvent>
+          <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-07-08T21:07:17.327+02:00">2021-07-08T21:07:17.327+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateObjectsValues_db.xqy/BaseX</agent>
+        <eventDescription>Modification des valeurs admises pour le champ "objets de l’expertise" (passage au pluriel).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-05-19T11:51:14.941+02:00">2021-05-19T11:51:14.941+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateOpinionRef_files.xqy/BaseX</agent>
+        <eventDescription>Ajout d'un attribut @ref sur les éléments opinion qui en sont dépourvus.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-04-21T20:46:05.413+02:00">2021-04-21T20:46:05.413+02:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateRefValues_files.xqy/BaseX</agent>
+        <eventDescription>Mise à jour de la valeur des champs @ref (ajout d'un '#' pour les éléments expert, fee et opinion).</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime standardDateTime="2021-01-19T11:16:22.322+01:00">2021-01-19T11:16:22.322+01:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>updateMaintenanceDateTime.xqy/BaseX</agent>
+        <eventDescription>Conversion des dates de révision des fiches au format xsd:dateTime.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>revised</eventType>
+        <eventDateTime standardDateTime="2020-11-01T12:00:00">2020-11-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>JH</agent>
+        <eventDescription>Révision de la fiches suite à la rétroconversion.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>retroconverted</eventType>
+        <eventDateTime standardDateTime="2020-06-01T12:00:00">2020-06-01T12:00:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>ead2xpr.xsl/Saxon9</agent>
+        <eventDescription>Notice rétroconvertie au format xpr à partir des sources XML-EAD du GIP.</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>created</eventType>
+        <eventDateTime standardDateTime="2017-04-01T12:00:00">2017-04-01T12:00:00</eventDateTime>
+        <agentType>human</agentType>
+        <agent>llosserand</agent>
+        <eventDescription>Création de la fiche.</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+  </control>
+  <sourceDesc>
+    <unitdate>1726</unitdate>
+    <idno type="unitid">Z1J584</idno>
+    <idno type="item">011</idno>
+    <facsimile from="0101" to="0107"/>
+    <physDesc>
+      <extent sketch="false">6</extent>
+    </physDesc>
+  </sourceDesc>
+  <description>
+    <sessions>
+      <date when="1726-10-31" type="paris"/>
+    </sessions>
+    <places>
+      <place xml:id="id359d290" type="paris">
+        <address>
+          <street>Rue des Vieilles-Tuileries [Actuellement rue Saint-Jean-Baptiste-de-La-Salle]</street>
+          <buildingNumber/>
+        </address>
+        <complement/>
+        <parish/>
+        <owner>une maison appartenant àBarbier, Michel, compagnon maçon et Bertheault, Madeleine, sa femme, sise au moulin de la pointe rue des Vieilles Tuileries qui conduit de Paris à Vaugirard</owner>
+      </place>
+    </places>
+    <categories>
+      <category type="estimation">Estimer la valeur des biens</category>
+      <designation rubric="true">Visitte et  estimation d'une maison, scize au moulin de la pointe, rue des vieilles Thuilleries et réparations à y faire pour le sieur Limosin ; MM. Le Brun et Loir, experts</designation>
+    </categories>
+    <procedure>
+      <framework type="b2">L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</framework>
+      <origination type="institution">Une institution</origination>
+      <sentences>
+        <sentence>
+          <orgName>lieutenant civil</orgName>
+          <date when="1726-09-03"/>
+        </sentence>
+      </sentences>
+      <case>les créanciers de Barbier, Michel exigeant le paiement de leurs créances ont obtenu la vente de la maison de Barbier, mais ne parvenant pas à la vendre plus de 2000 livres, ils en demandent l'estimation.</case>
+      <objects>
+        <object type="house">Maison(s)</object>
+      </objects>
+    </procedure>
+    <participants>
+      <experts>
+        <expert ref="#xpr0158" context="primary" appointment="appointed">
+          <title>architecte juré expert bourgeois de Paris</title>
+        </expert>
+        <expert ref="#xpr0183" context="primary" appointment="court-appointed">
+          <title>expert</title>
+        </expert>
+      </experts>
+      <clerks>
+        <clerk ref="#clrk0033">
+          <persName>
+            <surname>Callou</surname>
+            <forename>Antoine Charles</forename>
+          </persName>
+        </clerk>
+      </clerks>
+      <parties>
+        <party role="petitioner" presence="false" intervention="false">
+          <person>
+            <persName>
+              <surname>Simolin</surname>
+              <forename>Claude</forename>
+            </persName>
+            <occupation>écuyer du roi et de [?] le prince Charles, grand écuyer de France</occupation>
+          </person>
+          <person>
+            <persName>
+              <surname>Jouillard</surname>
+              <forename>Anne Marguerite</forename>
+            </persName>
+            <occupation>son épouse, auparavant veuve de feu Guillard, Michel, marchand de chevaux</occupation>
+          </person>
+          <person>
+            <persName>
+              <surname>Guilloré</surname>
+              <forename>Nicolas</forename>
+            </persName>
+            <occupation>marchand de chevaux, bourgeois de Paris, légataire de feu Guilloré, Michel, son frère, créanciers des opposants de la somme de 11 000 livres en principal arrérages de rentes, sur ladite maison</occupation>
+          </person>
+          <status>creditor</status>
+          <expert ref="#xpr0158"/>
+        </party>
+        <party role="opponent" presence="false" intervention="false">
+          <person>
+            <persName>
+              <surname>Barbier</surname>
+              <forename>Michel</forename>
+            </persName>
+            <occupation>compagnon maçon</occupation>
+          </person>
+          <person>
+            <persName>
+              <surname>Bertault</surname>
+              <forename>Madeleine</forename>
+            </persName>
+            <occupation>sa femme (défaillants)</occupation>
+          </person>
+          <status>owner</status>
+          <expert ref="#xpr0183"/>
+        </party>
+      </parties>
+      <craftmen>
+        <craftman>
+          <persName>
+            <surname/>
+            <forename/>
+          </persName>
+          <occupation/>
+        </craftman>
+      </craftmen>
+    </participants>
+    <conclusions>
+      <opinion ref="#xpr0158 #xpr0183">"Et après avoir ainsy veu et visitté ladite maison, cours et emplacement du jardin, pris les mesures de tout le terrain et distinction de ce qui est en basti pour connoistre l'estendue et l'estat de l'autre, consideration faitte de leur situation, de l'estendue dudit terrain de ce qui en est baty distinctement et de la quallité dudit bastiment qui est de peu de consistance et valleur, veu l'estat où le tout est la depence qu'il y convient faire, nous prisons et estimons le tout eu esgard à tout ce que dessus valloir ensemble la somme de 2250 l. eu esgard aussy au cours du temps présent et à la charge du cens seullement"</opinion>
+      <arrangement/>
+      <agreement type="agreement">Accord</agreement>
+      <estimate l="2250" s="" d=""/>
+      <estimates>
+        <place ref="#id359d290">
+          <appraisal l="2500" s="" d="">
+            <desc>maison</desc>
+          </appraisal>
+        </place>
+      </estimates>
+      <fees detail="true">
+        <fee type="papers" l="4" s="15" d=""/>
+        <fee type="expert" ref="#xpr0158" l="15" s="" d=""/>
+        <fee type="expert" ref="#xpr0183" l="15" s="" d=""/>
+        <fee type="clerk" l="15" s="" d=""/>
+        <fee type="rolls" l="7" s="15" d=""/>
+        <fee type="prosecutors" l="" s="" d=""/>
+        <fee type="help" l="" s="" d=""/>
+        <fee type="plans" l="" s="" d=""/>
+        <total l="57" s="10" d=""/>
+      </fees>
+      <expenses mentioned="false"/>
+    </conclusions>
+    <keywords group="estates"/>
+    <keywords group="procedure"/>
+    <keywords group="contract"/>
+    <keywords group="encumbrance"/>
+    <keywords group="law"/>
+    <keywords group="measurement"/>
+    <keywords group="repairs"/>
+    <keywords group="guarantees"/>
+    <keywords group="responsability"/>
+    <keywords group="ownership"/>
+    <keywords group="value"/>
+    <keywords group="neighbourhood"/>
+    <keywords group="disorder"/>
+    <keywords group="transformation"/>
+    <analysis>Cause
+                « [f. 1r°] nous avons fait lecture d'une sentence rendue de vous, monsieur, le vingt trois juillet mil sept cent vingt six entre led. sr Simolin, la demoiselle son épouse, les sr Nicolas Guilloré, créanciers des cy après nommez, étant somme de onze mil livres en principal arérages de rentes dedans cent livres [?] sans préjudice de l'année courante intérets, frais et dépens, le tout adjugé par votre sentence du dix neuf février dernier, saisissant réellement sur lesd. cy après nommés lad. maison et demandeurs aux fins de la requête et exploit du [f. 1v°] dix neuf dud. mois de juillet, tendante à ce qu'attendu que lad. maison ne vaut pas plus de trois mil livres, qu'elle ne peut par conséquent supporter les frais d'un décret, que les demandeurs sont créanciers de plus de onze mil livres et privilégiez sur icelle étans autres créanciers, il vous plus ordonner qu'elle leur fut adjugée ainsy que le terrain sur lequel elle est scituée, ses circonstances et dépendances et déduction de cens, créances, suivant le prisée et estimation qui en seroit faitte par experts et [?] dont les parties conviendront sinon par par vous pris et nommez d'office, lesquels experts feroient par leur rapport un estat de la scituation, des lieux, des dégradations qui s'y trouveroient, des réparations qui sont à y faire, leur nature et ce qu'elles peuvent coûter, d'une part, et Michel Barbier, compagnon maçon et Madeleine Berthaut, sa femme, deffendeurs et deffaillants d'autre, par laquelle vous avez, monsieur, donné deffaut et pour le profit, attendu que les demandeurs sont créanciers des deffaillants de onze mil livres en principal et arérages sans préjudice de l'année courante, intérests frais et dépens, que leur créance est privilégiée à toutes autres sur la mesure dont il s'agist, ce qu'icelle maison ne vaut tout au plus que trois mil livres, que conséquament elle en peut supporter les frais d'un décret, avez ordonné qu'elle sera adjugée aux demandeurs ainsy que le terrain sur lequel elle est scituée ses circonstance et dépendances en déduction de leurs créances suivant l'estimation et prisée qui en sera fait par experts et gens à ce conoissants […] lesquels experts feroient par leur rapport un estat de la scituation des lieux, des dégradations qui s'y trouveroient, des réparations qui seroient à y faire, leur nature et ce quelles pourroient coûter et ce, après les formalitez plus au [f. 2r°] long énoncées en lad. sentence, pour par les demandeurs en jouir comme de chose à eux appartenant, et avez condamné les deffaillants aux dépens... ».</analysis>
+    <noteworthy/>
+  </description>
+</expertise>
