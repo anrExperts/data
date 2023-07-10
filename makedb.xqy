@@ -12,7 +12,7 @@ declare default element namespace "xpr" ;
  : @sardinecan : /Users/josselinmorvan/files/dh/xpr/data/xpr
  : @huma-num server : /sites/expertdb/resource/data/
 :)
-declare variable $path := '/Users/josselinmorvan/files/dh/xpr/data/xpr';
+declare variable $path := '/Users/josselinmorvan/files/dh/xpr/data/db';
 
 (:
  : database creation
