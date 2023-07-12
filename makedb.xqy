@@ -10,9 +10,9 @@ declare default element namespace "xpr" ;
  : path to xprdata files
  : @rmq to be modified for online/local use
  : @sardinecan : /Users/josselinmorvan/files/dh/xpr/data/xpr
- : @huma-num server : /sites/expertdb/resource/data/
+ : @huma-num server : /sites/expertdb/resource/data/db
 :)
-declare variable $path := '/Users/josselinmorvan/files/dh/xpr/data/db';
+declare variable $path := '/sites/expertdb/resource/data/db';
 
 (:
  : database creation
