@@ -21,7 +21,7 @@ declare
 %updating
 function local:mkdb() {
     db:create(
-    'xpr',
+    'xprN',
     $path,
     '',
     map{
