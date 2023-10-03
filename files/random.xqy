@@ -10,23 +10,55 @@ return (
     "************GLOBAL************",
     stats($ids)
 ),
+"
+
+",
 for $date in fn:sort(getDates())
-let $ids := $data[*:date = fn:string($date)]//*:id
+let $ids := $data[*:date = $date]//*:id
 return (
     "************"|| $date ||"************",
     stats($ids)
 ),
-"************RANDOM************",
-let $max := 500
-let $random := for $i in 1 to $max let $randomPos := random:integer(fn:count($data//*:id)) return $data[$randomPos]/*:id
-return (
-    stats($random),
-    for $date in fn:sort(getDates())
-    let $corpus := for $id in $random return $data[*:id = $id]
-    return $date || " : " || fn:count($corpus[*:date = fn:string($date)]) || " | " || fn:round(fn:count($corpus[*:date = fn:string($date)]) * 100 div $max) || "%",
-    $random
-)
+"
 
+",
+let $clerks := ('clrk0059', 'clrk0067', 'clrk0034', 'clrk0061', 'xpr0227', 'clrk0029', 'clrk0042', 'clrk0008', 'clrk0062')
+for $clerk in $clerks
+  let $name := db:open('xpr', 'xpr/biographies')/*:eac[@xml:id=$clerk]//*:identity/*:nameEntry[1] => fn:normalize-space()
+  let $expertises := $data[*:clerks[*:clerk = $clerk]]
+  let $dates  := fn:distinct-values($expertises//*:unitdate)
+return (
+  "************"|| $name ||"************",
+  stats($expertises/*:id),
+  for $year in fn:distinct-values($expertises//*:date)
+  order by $year
+  let $subCorpus := $expertises[*:date = $year]
+  return (
+    "************ " || $year || ' : ' || fn:count($subCorpus) || "************",
+    stats($subCorpus/*:id)
+  ),
+  getRandom($expertises, 50)
+)
+};
+
+declare function getRandom($expertises, $max) {
+let $rng := fn:random-number-generator()
+let $permutation := $rng('permute')(1 to fn:count($expertises))
+let $r := for $i in 1 to 50 return $permutation[$i]
+let $random :=
+  for $n in $r return $expertises[$n]/*:id => fn:normalize-space()
+let $randomCorpus := for $id in $random return $data[*:id = $id]
+return (
+  $randomCorpus/fn:normalize-space(*:id),
+  stats($randomCorpus/*:id),
+  for $date in fn:distinct-values($randomCorpus/*:date)
+  order by $date
+  let $subCorpus := $randomCorpus[*:date = $date]
+  return (
+    $date || " : " || fn:count($subCorpus) || " | " || fn:round(fn:count($subCorpus) * 100 div $max) || "%",
+    stats($subCorpus/*:id)
+  )
+)
 };
 
 declare function stats($ids){
@@ -44,34 +76,37 @@ return(
     "Expertises avec 2 experts : " || fn:count($corpus[*:nbExperts="2"]) || " | " || fn:round(fn:count($corpus[*:nbExperts="2"]) * 100 div fn:count($corpus))  || "%",
     "2 Architectes : " || fn:count($corpus[descendant::*:nbExperts="2"][*:columns = "architecte"]) || " | " || fn:round(fn:count($corpus[descendant::*:nbExperts="2"][*:columns = "architecte"]) * 100 div fn:count($corpus))  || "%",
     "2 Entrepreneurs : " || fn:count($corpus[descendant::*:nbExperts="2"][*:columns = "entrepreneur"]) || " | " || fn:round(fn:count($corpus[descendant::*:nbExperts="2"][*:columns = "entrepreneur"]) * 100 div fn:count($corpus))  || "%",
-    "Architecte-Entrepreneur : " || fn:count($corpus[descendant::*:nbExperts="2"][*:columns = "architecte entrepreneur"]) || " | " || fn:round(fn:count($corpus[descendant::*:nbExperts="2"][*:columns = "architecte entrepreneur"]) * 100 div fn:count($corpus))  || "%"
+    "Architecte-Entrepreneur : " || fn:count($corpus[descendant::*:nbExperts="2"][*:columns = "architecte entrepreneur"]) || " | " || fn:round(fn:count($corpus[descendant::*:nbExperts="2"][*:columns = "architecte entrepreneur"]) * 100 div fn:count($corpus))  || "%
+
+    "
     (:for $date in fn:sort(getDates()) return $date || " : " || fn:count($corpus[*:date[fn:normalize-space(.)=fn:string($date)]]):)
 )
 };
 
 declare function getCorpus() {
-   db:open('xpr')/xpr/expertises/expertise
+   db:open('xpr', 'xpr/expertises')/*:expertise
 };
 
 declare function getDates() {
    let $corpus := getCorpus()
-   return fn:distinct-values($corpus//sessions/date[1][@when castable as xs:date][fn:ends-with(fn:string(fn:year-from-date(@when)), '6')]/fn:year-from-date(@when))
+   return fn:distinct-values($corpus//*:unitdate)
 };
 
 declare function getCategories() {
    let $corpus := getCorpus()
-   return fn:distinct-values($corpus//categories/category/@type)
+   return fn:distinct-values($corpus//*:categories/*:category/@type)
 };
 
 declare variable $data :=
-let $expertises := db:open('xpr')/xpr/expertises/expertise
-let $experts := db:open('xpr')/xpr/bio/*:eac
+let $expertises := getCorpus()
+let $experts := db:open('xpr', 'xpr/biographies')/*:eac
 return
     for $expertise in $expertises
     order by $expertise/@xml:id
     let $id := $expertise/@xml:id => fn:normalize-space()
     let $thirdParty := fn:boolean($expertise/descendant::*:experts/*:expert[@context='third-party'])
-    let $date := $expertise//sessions/date[1][@when castable as xs:date][fn:ends-with(fn:string(fn:year-from-date(@when)), '6')]/fn:year-from-date(@when)
+    let $date := $expertise//*:unitdate[1]
+
     (:let $origination := fn:translate($expertise/descendant::*:origination, ' ', ' ') => fn:normalize-space()):)
     let $framework := $expertise/descendant::*:framework/@type => fn:normalize-space()
     let $categories := fn:string-join($expertise/descendant::*:categories/*:category/@type, ', ') => fn:normalize-space()
@@ -88,6 +123,7 @@ return
         case ($experts[@xml:id=$expertId]//*:functions[fn:count(*:function) >= 2][*:function/*:term = 'Expert entrepreneur'][fn:not(*:function/*:term = 'Expert bourgeois')]) return 'entrepreneur'
         case ($experts[@xml:id=$expertId]//*:functions[fn:count(*:function) >= 2][*:function/*:term = 'Expert bourgeois'][fn:not(*:function/*:term = 'Expert entrepreneur')]) return 'architecte'
         default return 'unknown'
+    let $clerks := for $c in $expertise/descendant::*:clerks/*:clerk[@ref !=''] return element clerk {$c/fn:substring-after(@ref, '#')}
     return
     <record>
       <id>{$id}</id>
@@ -99,6 +135,7 @@ return
       <designation>{$designation}</designation>
       <nbExperts>{fn:count($expertsId)}</nbExperts>
       <columns>{for $function in fn:distinct-values($functions) order by $function return $function}</columns>
+      <clerks>{$clerks}</clerks>
     </record>;
 
 getStats()
