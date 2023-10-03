@@ -7,6 +7,11 @@
       </maintenanceAgency>
       <maintenanceHistory>
          <maintenanceEvent maintenanceEventType="revised">
+        <agent agentType="human">rcarvais</agent>
+        <eventDateTime standardDateTime="2023-07-27T12:20:36Z"/>
+        <eventDescription/>
+      </maintenanceEvent>
+      <maintenanceEvent maintenanceEventType="revised">
         <agent agentType="human">vnegre</agent>
         <eventDateTime standardDateTime="2023-05-22T17:33:07Z"/>
         <eventDescription/>
@@ -51,6 +56,10 @@
       <source id="source_4pt0463gm2etfr7">
         <reference href="">MC/ET/XX/614 (IAD)</reference>
       </source>
+      <source id="source_s8n0oknoipe4zz8">
+        <reference href="https://www.geneanet.org/registres/view/13193/186?">AN Y 4560/A</reference>
+        <citedRange unit="page">186-192</citedRange>
+      </source>
     </sources>
       
       
@@ -77,7 +86,7 @@
       </identity>
       <description>
          <functions>
-            <function sourceReference="">
+            <function sourceReference="#source_s8n0oknoipe4zz8">
                <term>Expert entrepreneur</term>
                <dateRange>
                   <fromDate sourceReference="" certainty="" standardDate="1739"/>
@@ -91,6 +100,13 @@
                <term/>
             </localDescription>
          </localDescriptions>
+      <occupations>
+        <occupation localType="" sourceReference="">
+          <term>architecte, entrepreneur de bastiments à Paris</term>
+          <!--optionnal (all below)-->
+          <!--&lt;date/&gt; | &lt;dateRange/&gt; | &lt;dateSet/&gt;-->
+        </occupation>
+      </occupations>
          
          
          <existDates>
@@ -132,6 +148,25 @@
             <event>Décès de Charles Isaac Doussin</event>
             <place>
               <placeName>Rue Saint-Pierre</placeName>
+            </place>
+          </chronItem>
+          <chronItem id="chronItem_57re048qzthc7qv" sourceReference="" localType="receptionColumn2">
+            <dateSet>
+              <date certainty="certain" standardDate="1739-01-23" sourceReference="">Lettres de provision</date>
+              <date certainty="" sourceReference="">Supplique</date>
+              <date certainty="certain" standardDate="1739-01-24" sourceReference="">Ordonnance de soit montré au procureur du roy</date>
+              <date certainty="certain" standardDate="1739-02-01" sourceReference="">Examen</date>
+              <date certainty="certain" standardDate="1739-01-24" sourceReference="">Consentement de la communauté</date>
+              <date certainty="certain" standardDate="1739-02-03" sourceReference="">Information de vie et de mœurs</date>
+              <date certainty="certain" standardDate="1739-02-04" sourceReference="">Serment</date>
+              <date certainty="certain" standardDate="1739-02-04" sourceReference="">Réception</date>
+              <date certainty="certain" standardDate="1739-02-02" sourceReference="">Conclusions préparatoire du procureur du roi</date>
+              <date certainty="certain" standardDate="1739-02-03" sourceReference="">Conclusions définitives du procureur du roi</date>
+              <date certainty="certain" standardDate="1739-01-25" sourceReference="">Délibérations e la compagnie pour le choix des examinateurs</date>
+            </dateSet>
+            <event>Réception en l'office d'expert juré de la 2nde colonne</event>
+            <place>
+              <placeName>Paris et/ou Versailles (Lettres de provisions)</placeName>
             </place>
           </chronItem>
                
@@ -180,6 +215,167 @@
           <relationType id="relationType_id128298d2581035" valueURI="" vocabularySource="" vocabularySourceURI="" sourceReference=""/>
             <targetRole target="#relationType_id128298d2581035"/>
           </relation>
+      <relation target="#chronItem_57re048qzthc7qv" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Estienne Berthelot</part>
+          <part localType="status">Défunt dernier possesseur d'iceluy</part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0020</part>
+        </targetEntity>
+        <relationType id="relationType_fovf0hgm0fo1kpbs" valueURI="https://www.ica.org/standards/RiC/ontology#isSuccessorOf" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:isSuccessorOf</relationType>
+        <targetRole target="#relationType_fovf0hgm0fo1kpbs">prédécesseur</targetRole>
+        <descriptiveNote>
+          <p>"après le décès duquel les héritiers du defunt aurait nommé à SM ledit Doussin par acte notarié du 16 janvier 1739 pardevanrt Me Ledeguine et son confrère, notaires au Châtelet. Il a payé aux revenus casuels le 1/8e denier suivant la quittance du trésorier d'Ycoux".</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_57re048qzthc7qv" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Gilles Houzé</part>
+          <part localType="status">Prestre habitué en la paroisse St Roch</part>
+          <part localType="occupationType">Religion;Religieux</part>
+          <part localType="age">52 environ</part>
+          <part localType="address">rue St Honoré, susdite paroisse St Roch, Paris</part>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_fovx0orxqxm8secg" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:knownBy</relationType>
+        <targetRole target="#relationType_fovx0orxqxm8secg">témoin</targetRole>
+        <descriptiveNote>
+          <p>Dépose connoistre ledit sieur Doussin depuis 6 ans, qu'il est de la R C a et R pour en faire profession et en remplir les devoirs et qu'il est fort affectionné au service du roy et du publique.</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_57re048qzthc7qv" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Pierre Bourgeois</part>
+          <part localType="status">Marchand mercier, bourgeois de Paris</part>
+          <part localType="occupationType">Commerce;Marchand Bourgeois</part>
+          <part localType="age">55 passés</part>
+          <part localType="address">rue d'Argenteuil, paroisse St Roch, Paris</part>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_fow902lm9qc6a17" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:knownBy</relationType>
+        <targetRole target="#relationType_fow902lm9qc6a17">témoin</targetRole>
+        <descriptiveNote>
+          <p>Dépose connoistre ledit sieur Doussin depuis 20 ans ou environ, qu'il est de la R C a et R pour l'avoir veu en faire différents actes de piété, de surplus, qu'il est fort affectionné au service du roy et du public. </p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_57re048qzthc7qv" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Pierre Boucheron</part>
+          <part localType="status">Me charpentier de Paris</part>
+          <part localType="occupationType">Bâtiment;Entrepreneur ou maître de métier</part>
+          <part localType="age">48 passés</part>
+          <part localType="address">rue de Vendome, paroisse St Nicolas des champs, Paris</part>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_fowk0p485euta9dk" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:knownBy</relationType>
+        <targetRole target="#relationType_fowk0p485euta9dk">témoin</targetRole>
+        <descriptiveNote>
+          <p>Dépose connoistre ledit sieur Doussin depuis 6 ans ou environ, qu'il est de la R C a et R pour l'avoir veu assister au service divin et qu'il est fort affectionné au service du roi et du public. </p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_57re048qzthc7qv" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Pierre Quirot</part>
+          <part localType="status">Doyen de la Compagnie</part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0232</part>
+        </targetEntity>
+        <relationType id="relationType_fowu024078mk6c3u" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_fowu024078mk6c3u">observateur</targetRole>
+      </relation>
+      <relation target="#chronItem_57re048qzthc7qv" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Jean Baptiste Michel Poirin</part>
+          <part localType="status">Syndic de la compagnie</part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0223</part>
+        </targetEntity>
+        <relationType id="relationType_fox20354qvdbk9im" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_fox20354qvdbk9im">observateur</targetRole>
+      </relation>
+      <relation target="#chronItem_57re048qzthc7qv" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Pierre Louis Richard</part>
+          <part localType="status">Adjoint de la compagnie</part>
+          <part localType="occupationType">Bâtiment;Expert entrepreneur</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0236</part>
+        </targetEntity>
+        <relationType id="relationType_foxa0abimh291aqd" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_foxa0abimh291aqd">observateur</targetRole>
+      </relation>
+      <relation target="#chronItem_57re048qzthc7qv" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Louis Hercule Thevenin</part>
+          <part localType="status">Examinateur de la 1ère colonne</part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0253</part>
+        </targetEntity>
+        <relationType id="relationType_foxh0m85ojit7hlj" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_foxh0m85ojit7hlj">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_57re048qzthc7qv" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Pierre Paul Danjan</part>
+          <part localType="status">Examinateur de la 1ère colonne</part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0066</part>
+        </targetEntity>
+        <relationType id="relationType_foxn0i62xcd9gd9" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_foxn0i62xcd9gd9">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_57re048qzthc7qv" sourceReference="">
+        <descriptiveNote>
+          <p>Cet expert est d'abord expert bourgeois, puis entrepreneur. Si l'on estime que 2 experts examinateurs de chaque colonne sont nommé, Chauveau serait examinateur de la 2nde colonne.</p>
+        </descriptiveNote>
+        <targetEntity targetType="person">
+          <part localType="full">René Bonaventure Chauveau</part>
+          <part localType="status"/>
+          <part localType="occupationType"/>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0054</part>
+        </targetEntity>
+        <relationType id="relationType_foxs07onpvzt5bny" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_foxs07onpvzt5bny">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_57re048qzthc7qv" sourceReference="">
+        <descriptiveNote>
+          <p>Jacques II Lepas Dubuisson, expert de la 1ère colonne, est également signataire du certificat. A quel titre ? Présence ou autre chose.</p>
+        </descriptiveNote>
+        <targetEntity targetType="person">
+          <part localType="full">Louis Joubert</part>
+          <part localType="status">Examinateur de la 2nde colonne</part>
+          <part localType="occupationType">Bâtiment;Expert entrepreneur</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0147</part>
+        </targetEntity>
+        <relationType id="relationType_foxw0zjl7f5g99zs" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_foxw0zjl7f5g99zs">examinateur</targetRole>
+      </relation>
     </relations>
    
       </cpfDescription>

@@ -6,6 +6,11 @@
       </maintenanceAgency>
       <maintenanceHistory>
          <maintenanceEvent maintenanceEventType="revised">
+        <agent agentType="human">rcarvais</agent>
+        <eventDateTime standardDateTime="2023-08-24T10:59:53Z"/>
+        <eventDescription/>
+      </maintenanceEvent>
+      <maintenanceEvent maintenanceEventType="revised">
         <agent agentType="human">vnegre</agent>
         <eventDateTime standardDateTime="2023-04-23T13:08:14Z"/>
         <eventDescription/>
@@ -58,6 +63,10 @@
       <source id="source_6l70qpge6hs88cf">
         <reference href="">MC/ET/LXVIII/402 (IAD)</reference>
       </source>
+      <source id="source_hvo0bw9j746a5jp">
+        <reference href="https://www.geneanet.org/registres/view/19618/453">AN Y / 4134</reference>
+        <citedRange unit="page">453-459</citedRange>
+      </source>
     </sources>
       
       
@@ -81,6 +90,9 @@
             
             
          </nameEntry>
+      <nameEntry status="alternative" preferredForm="false" sourceReference="">
+        <part localType="name">Loire</part>
+      </nameEntry>
           <otherEntityTypes>
             <otherEntityType>
               <term>expert</term>
@@ -114,9 +126,14 @@
             </localDescription>
          </localDescriptions>
       <occupations>
-        <occupation localType="" sourceReference="#source_73f0amwgviui02d">
+        <occupation localType="" sourceReference="#source_73f0amwgviui02d #source_hvo0bw9j746a5jp">
           <term>Entrepreneur de bâtiments du Roy</term>
           <date certainty="certain" standardDate="1703-03-22" sourceReference=""/>
+          <!--optionnal (all below)-->
+          <!--&lt;date/&gt; | &lt;dateRange/&gt; | &lt;dateSet/&gt;-->
+        </occupation>
+        <occupation localType="" sourceReference="#source_hvo0bw9j746a5jp">
+          <term>Entrepreneur de bastimenst à Paris</term>
           <!--optionnal (all below)-->
           <!--&lt;date/&gt; | &lt;dateRange/&gt; | &lt;dateSet/&gt;-->
         </occupation>
@@ -190,6 +207,24 @@
             <event>Décès de Jean Baptiste Loir</event>
             <place>
               <placeName>Rue Neuve</placeName>
+            </place>
+          </chronItem>
+          <chronItem id="chronItem_4s7k0b6o769tvckn" sourceReference="#source_hvo0bw9j746a5jp" localType="reception">
+            <dateSet>
+              <date certainty="certain" standardDate="1704-04-20" sourceReference="">Lettres de provision</date>
+              <date certainty="" sourceReference="">Supplique</date>
+              <date certainty="certain" standardDate="1704-04-22" sourceReference="">Ordonnance de soit montré au procureur du roy</date>
+              <date certainty="certain" standardDate="1704-05-16" sourceReference="">Examen</date>
+              <date certainty="" sourceReference="">Consentement de la communauté</date>
+              <date certainty="certain" standardDate="1704-04-24" sourceReference="">Information de vie et de mœurs</date>
+              <date certainty="certain" standardDate="1704-05-17" sourceReference="">Serment</date>
+              <date certainty="certain" standardDate="1704-05-17" sourceReference="">Réception</date>
+              <date certainty="certain" standardDate="1704-04-24" sourceReference="">Conclusions prépararoires du procureur du roi</date>
+              <date certainty="certain" standardDate="1704-05-16" sourceReference="">Conclusions définitives du procureur du roi</date>
+            </dateSet>
+            <event>Réception en l'office d'expert juré</event>
+            <place>
+              <placeName>Versailles (lettres de provision)</placeName>
             </place>
           </chronItem>
             </chronList>
@@ -278,6 +313,165 @@
           <relationType id="relationType_id128298d2606095" valueURI="" vocabularySource="" vocabularySourceURI="" sourceReference=""/>
             <targetRole target="#relationType_id128298d2606095"/>
           </relation>
+      <relation target="#chronItem_4s7k0b6o769tvckn" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Jean D'Orbay</part>
+          <part localType="status">défunt dernier paisible possesseur </part>
+          <part localType="occupationType">Bâtiment;Expert entrepreneur</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0094</part>
+        </targetEntity>
+        <relationType id="relationType_8wf7012h1afdgcxoi" valueURI="https://www.ica.org/standards/RiC/ontology#isSuccessorOf" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_hvo0bw9j746a5jp">rico:isSuccessorOf</relationType>
+        <targetRole target="#relationType_8wf7012h1afdgcxoi">prédécesseur</targetRole>
+        <descriptiveNote>
+          <p>" sur la nomination qui en a este faite au roy par Catherine Boullier de Bourges sa veuve et Nicolas D'Orbay, architecte, son fils majeur es noms"</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_4s7k0b6o769tvckn" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Edme Joseph De la Vergne</part>
+          <part localType="status">prestre habitué en l'eglise de St Germain l'Auxerrois</part>
+          <part localType="occupationType">Religion;Religieux</part>
+          <part localType="age">35</part>
+          <part localType="address">au quatre [sous de l'écolle] , paroisse de St Germain de l'Auxerrois, Paris</part>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_8wfr0rnjfvv7uwqo" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_hvo0bw9j746a5jp">rico:knownBy</relationType>
+        <targetRole target="#relationType_8wfr0rnjfvv7uwqo">témoin</targetRole>
+        <descriptiveNote>
+          <p>Dépose connoistre ledit Jean Baptiste Loir, entrepreneur de bastiments à Paris depuis 3 ans et plus pendant lequel temps il l'a fréquenté très souvent et par cette fréquentation l'a toujours recognu pour estre d'une vie très réglée, et de vie et moeurs sans reproche, faisant profession de la R C a et R pour l'avoir veu fréquenter les saints sacrements, assister assiduement au service divin, scait de plus qu'il est fort affectionné au service du roy et du publicq.</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_4s7k0b6o769tvckn" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Isaac Joubert</part>
+          <part localType="status">[Beneficier] de Monsieurs les conseillers du Châtelet</part>
+          <part localType="occupationType">Droit;Autres</part>
+          <part localType="age">60 environ</part>
+          <part localType="address">paroisse St Germain l'Auxerrois, Paris</part>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_8wg80xujbr29c5yo" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_hvo0bw9j746a5jp">rico:knownBy</relationType>
+        <targetRole target="#relationType_8wg80xujbr29c5yo">témoin</targetRole>
+        <descriptiveNote>
+          <p>Dépose connoistre ledit  Loir, il y a plus de 10 à 12 années, pour estre de bonne vie et moeurs, faisant profession de la R C a et R pour l'avoir veu assister au service divin et fréquenter les sacrements, scait qu'il est très affectionné au service du roy et du publicq.</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_4s7k0b6o769tvckn" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Louis Anne Dubuisson, sieur Dubreuil</part>
+          <part localType="status"/>
+          <part localType="occupationType"/>
+          <part localType="age">50 environ</part>
+          <part localType="address">Rue Neuve des Petits Champs, paroisse ST Roch, Paris</part>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_8wgn0ss8r68hqx1m" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_hvo0bw9j746a5jp">rico:knownBy</relationType>
+        <targetRole target="#relationType_8wgn0ss8r68hqx1m">témoin</targetRole>
+        <descriptiveNote>
+          <p>Dépose connoistre ledit Loir, depuis 10 ans pour estre de bonne vie et moeurs, faisant profession de la R C a et R, l'a veu   fréquenter les sacrements, et assister au service divin, scait de plus qu'il est fort affectionné au service du roy et du publicq.</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_4s7k0b6o769tvckn" sourceReference="">
+        <descriptiveNote>
+          <p>Nous ne savons duquel il s'agit n'ayant que sa signature ?
+Il faut retourner voir l'archive car le nom de l'adjoint n'est pas numérisé. </p>
+        </descriptiveNote>
+        <targetEntity targetType="person">
+          <part localType="full">Bailly</part>
+          <part localType="status">Syndic de la compagnie</part>
+          <part localType="occupationType"/>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_8wh20pal4vtb7n5b" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_hvo0bw9j746a5jp">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_8wh20pal4vtb7n5b">observateur</targetRole>
+      </relation>
+      <relation target="#chronItem_4s7k0b6o769tvckn" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full"/>
+          <part localType="status"/>
+          <part localType="occupationType"/>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_8whg046wvfmfvr26" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_hvo0bw9j746a5jp">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_8whg046wvfmfvr26">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_4s7k0b6o769tvckn" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full"/>
+          <part localType="status"/>
+          <part localType="occupationType"/>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_8whs0netc9j4jq9g" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_hvo0bw9j746a5jp">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_8whs0netc9j4jq9g">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_4s7k0b6o769tvckn" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full"/>
+          <part localType="status"/>
+          <part localType="occupationType"/>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_8wi30u0jk6ddvu5" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_hvo0bw9j746a5jp">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_8wi30u0jk6ddvu5">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_4s7k0b6o769tvckn" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full"/>
+          <part localType="status"/>
+          <part localType="occupationType"/>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_8wie0oaiw9ks99z" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_hvo0bw9j746a5jp">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_8wie0oaiw9ks99z">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_4s7k0b6o769tvckn" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full"/>
+          <part localType="status"/>
+          <part localType="occupationType"/>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_8wim0zf0h9zlu8fj" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_hvo0bw9j746a5jp">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_8wim0zf0h9zlu8fj">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_4s7k0b6o769tvckn" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full"/>
+          <part localType="status"/>
+          <part localType="occupationType"/>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_8wit0jsjnqdhf7x" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_hvo0bw9j746a5jp">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_8wit0jsjnqdhf7x">examinateur</targetRole>
+      </relation>
     </relations>
    
       </cpfDescription>

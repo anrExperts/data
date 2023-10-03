@@ -6,6 +6,11 @@
       </maintenanceAgency>
       <maintenanceHistory>
       <maintenanceEvent maintenanceEventType="revised">
+        <agent agentType="human">rcarvais</agent>
+        <eventDateTime standardDateTime="2023-08-16T18:04:55Z"/>
+        <eventDescription/>
+      </maintenanceEvent>
+      <maintenanceEvent maintenanceEventType="revised">
         <agent agentType="human">jmorvan</agent>
         <eventDateTime standardDateTime="2022-12-31T14:02:39Z"/>
         <eventDescription>Ajout Greffier</eventDescription>
@@ -58,6 +63,10 @@
       </source>
       <source id="sourceid86496070">
         <reference href="">Almanach royal 1717</reference>
+      </source>
+      <source id="source_d6z0lkl3qezww4">
+        <reference href="https://www.geneanet.org/registres/view/24336/48?">AN Y 4374</reference>
+        <citedRange unit="page">48-56</citedRange>
       </source>
     </sources>
       
@@ -127,8 +136,11 @@
             </localDescription>
          </localDescriptions>
          <occupations>
-            <occupation sourceReference="">
+            <occupation sourceReference="#source_d6z0lkl3qezww4">
                <term>greffier des bâtiments en 1721</term>
+          <descriptiveNote>
+            <p>Dans son supplique de réception, il est indiqué qu'il est ancien greffier des bastiments.</p>
+          </descriptiveNote>
                
             </occupation>
          </occupations>
@@ -176,6 +188,24 @@
                   
                   
                </chronItem>
+          <chronItem id="chronItem_2lz70ehqb943me14" sourceReference="#source_d6z0lkl3qezww4" localType="reception">
+            <dateSet>
+              <date certainty="certain" standardDate="1723-07-21" sourceReference="">Lettres de provision</date>
+              <date certainty="" sourceReference="">Supplique</date>
+              <date certainty="certain" standardDate="1723-07-23" sourceReference="">Ordonnance de soit montré au procureur du roy</date>
+              <date certainty="certain" standardDate="1723-08-01" sourceReference="">Examen</date>
+              <date certainty="certain" standardDate="1723-07-23" sourceReference="">Consentement de la communauté</date>
+              <date certainty="certain" standardDate="1723-07-24" sourceReference="">Information de vie et de mœurs</date>
+              <date certainty="certain" standardDate="1723-08-02" sourceReference="">Serment</date>
+              <date certainty="certain" standardDate="1723-08-02" sourceReference="">Réception</date>
+              <date certainty="certain" standardDate="1723-07-23" sourceReference="">Conclusions préparatoires du procureur du roi</date>
+              <date certainty="certain" standardDate="1723-08-02" sourceReference="">Conclusions définitives du procureur du roi</date>
+            </dateSet>
+            <event>Réception en l'office d'expert juré</event>
+            <place>
+              <placeName>Paris (lettres de provision)</placeName>
+            </place>
+          </chronItem>
                
             </chronList>
          </biogHist>
@@ -205,6 +235,170 @@
           <relationType id="relationType_id128298d2598725" valueURI="" vocabularySource="" vocabularySourceURI="" sourceReference=""/>
             <targetRole target="#relationType_id128298d2598725"/>
           </relation>
+      <relation target="#chronItem_2lz70ehqb943me14" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Bernard Menessier</part>
+          <part localType="status">défunt dernier possesseur</part>
+          <part localType="occupationType">Bâtiment;Expert entrepreneur</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0195</part>
+        </targetEntity>
+        <relationType id="relationType_7eix0ob52mi4edtq" valueURI="https://www.ica.org/standards/RiC/ontology#isSuccessorOf" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_d6z0lkl3qezww4">rico:isSuccessorOf</relationType>
+        <targetRole target="#relationType_7eix0ob52mi4edtq">prédécesseur</targetRole>
+        <descriptiveNote>
+          <p/>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_2lz70ehqb943me14" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Michel François Babin</part>
+          <part localType="status">Prestre habitué à St Merry</part>
+          <part localType="occupationType">Religion;Religieux</part>
+          <part localType="age">27</part>
+          <part localType="address">Rue des Arcis, même paroisse, Paris</part>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_7ejb0e4c94bqckii" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_d6z0lkl3qezww4">rico:knownBy</relationType>
+        <targetRole target="#relationType_7ejb0e4c94bqckii">témoin</targetRole>
+        <descriptiveNote>
+          <p>Dépose qu'il connoist ledit Jacques Charles Lebrun depuis plusieurs années pour estre de bonne vie et moeurs et qu'il fait profession de la religion C a et R pour luy en avoir veu faire les [profession : barré] fonctions et qu'il est très affectionné au service du roy et du publique.</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_2lz70ehqb943me14" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Pierre Duval</part>
+          <part localType="status">Peintre à Paris</part>
+          <part localType="occupationType">Bâtiment;Autre</part>
+          <part localType="age">42 environ</part>
+          <part localType="address">rue de la Verrerie, Paris</part>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_7ejl0rpo3o16xdh" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_d6z0lkl3qezww4">rico:knownBy</relationType>
+        <targetRole target="#relationType_7ejl0rpo3o16xdh">témoin</targetRole>
+        <descriptiveNote>
+          <p>Dépose qu'il connoist ledit Lebrun depuis 8 ans pour estre de bonne vie et moeurs, très réglé et d'une bonne conversation, qu'il fait profession de la religion C a et R pour luy en avoir veu fréquenter les sacrements et un homme de probité et affectionné au service du roy et du publique.</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_2lz70ehqb943me14" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Martin Obry</part>
+          <part localType="status">Marchand tapissier</part>
+          <part localType="occupationType">Commerce;Marchand</part>
+          <part localType="age">48 environ</part>
+          <part localType="address">rue de la Verrerie, Paroisse St Merry, Paris</part>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_7ejv0ghykdtntvf" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_d6z0lkl3qezww4">rico:knownBy</relationType>
+        <targetRole target="#relationType_7ejv0ghykdtntvf">témoin</targetRole>
+        <descriptiveNote>
+          <p>Dépose que comme locataire de ladite maison rue de la Verrerie, [il connoist ledit Lebrun], il connoist ledit Lebrun [propriétaire de ladite maison où demeure ledit Lebrun] depuis 8 ans ou environs, scait qu'il est de bonne vie et moeurs et qu'il fait profession de la R C a et R et affectionné au service du roy et du publique.</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_2lz70ehqb943me14" sourceReference="">
+        <descriptiveNote>
+          <p>Martin Caulle est un expert qui a changé de colonne. Nous pouvons en conclure qu'en 1723, il était devenur expert bourgeois.</p>
+        </descriptiveNote>
+        <targetEntity targetType="person">
+          <part localType="full">Martin Caulle</part>
+          <part localType="status">Examinateur de la 1ère colonne</part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0048</part>
+        </targetEntity>
+        <relationType id="relationType_7ek50wp4h1iyw15l" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_d6z0lkl3qezww4">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_7ek50wp4h1iyw15l">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_2lz70ehqb943me14" sourceReference="">
+        <descriptiveNote>
+          <p>Dans le tableau il est expert entrepreneur. Où est l'erreur ? dans le tableau ou dans le certificat de réception ?</p>
+        </descriptiveNote>
+        <targetEntity targetType="person">
+          <part localType="full">Jean François Raymond</part>
+          <part localType="status">Examinateur de la 1ère colonne</part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0233</part>
+        </targetEntity>
+        <relationType id="relationType_7eke0l4z8qg7vl3" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_d6z0lkl3qezww4">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_7eke0l4z8qg7vl3">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_2lz70ehqb943me14" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Estienne Masson</part>
+          <part localType="status">Examinateur de la 2nde colonne</part>
+          <part localType="occupationType">Bâtiment;Expert entrepreneur</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0193</part>
+        </targetEntity>
+        <relationType id="relationType_7ekm0njiep76ket" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_d6z0lkl3qezww4">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_7ekm0njiep76ket">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_2lz70ehqb943me14" sourceReference="">
+        <descriptiveNote>
+          <p>Une autre erreur s'est glissée ici. Jacques II Lepas Dubuisson est expert bourgeois. Soit il y a une erreur de personne (confusion avec Claude Nicolas qui sur le même période est expert entrepreneur) ; soit il n'y a pas d'erreur et il n'y aurait pas d'erreur pour Jean François Raymond. Nous aurions bien le respect du partage des examinateurs entre les deux colonnes. Et l'erreur proviendrait de leur citation dans le certificat de l'examen. Je penche pour cette dernière option. Ce qui indiquerait que le respect à l'appartenance aux colonnes existe mais qu'elle n'est pas stricte. On pourrait opérer une vérification à partir des signatures.</p>
+        </descriptiveNote>
+        <targetEntity targetType="person">
+          <part localType="full">Jacques Lepas Dubuisson</part>
+          <part localType="status">Examinateur de la 2nde colonne</part>
+          <part localType="occupationType">Bâtiment;Expert entrepreneur</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0179</part>
+        </targetEntity>
+        <relationType id="relationType_7eku0dm38buiysrs" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_d6z0lkl3qezww4">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_7eku0dm38buiysrs">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_2lz70ehqb943me14" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full"/>
+          <part localType="status"/>
+          <part localType="occupationType"/>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_7ekz05nnfsr3x2gt" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_d6z0lkl3qezww4">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_7ekz05nnfsr3x2gt">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_2lz70ehqb943me14" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full"/>
+          <part localType="status"/>
+          <part localType="occupationType"/>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_7el501jvdv89lctw" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_d6z0lkl3qezww4">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_7el501jvdv89lctw">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_2lz70ehqb943me14" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full"/>
+          <part localType="status"/>
+          <part localType="occupationType"/>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_7ela0aox3xwf7bkv" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_d6z0lkl3qezww4">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_7ela0aox3xwf7bkv">examinateur</targetRole>
+      </relation>
         </relations>
       </cpfDescription>
   <!---->

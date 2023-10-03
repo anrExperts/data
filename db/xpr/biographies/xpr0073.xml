@@ -6,6 +6,21 @@
       </maintenanceAgency>
       <maintenanceHistory>
          <maintenanceEvent maintenanceEventType="revised">
+        <agent agentType="human">jmorvan</agent>
+        <eventDateTime standardDateTime="2023-09-01T14:05:37Z"/>
+        <eventDescription>alignement fonction</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent maintenanceEventType="revised">
+        <agent agentType="human">rcarvais</agent>
+        <eventDateTime standardDateTime="2023-07-16T16:14:11Z"/>
+        <eventDescription/>
+      </maintenanceEvent>
+      <maintenanceEvent maintenanceEventType="revised">
+        <agent agentType="human">rcarvais</agent>
+        <eventDateTime standardDateTime="2023-07-16T15:39:16Z"/>
+        <eventDescription/>
+      </maintenanceEvent>
+      <maintenanceEvent maintenanceEventType="revised">
         <agent agentType="human">vnegre</agent>
         <eventDateTime standardDateTime="2023-04-22T13:59:16Z"/>
         <eventDescription/>
@@ -68,6 +83,10 @@
       <source id="source_kuf0e24y0b67dr">
         <reference href="">MC/ET/XCIV/274 (IAD)</reference>
       </source>
+      <source id="source_igt0ehgy4e80dnj">
+        <reference href="https://www.geneanet.org/registres/view/23335/662?">AN Y 4402</reference>
+        <citedRange unit="page">662-668</citedRange>
+      </source>
     </sources>
       
       
@@ -100,12 +119,16 @@
       </identity>
       <description>
          <functions>
-            <function sourceReference="">
+            <function sourceReference="#source_igt0ehgy4e80dnj">
                <term>Expert bourgeois</term>
                <dateRange>
                   <fromDate sourceReference="" certainty="" standardDate="1726"/>
                   <toDate sourceReference="" certainty="" standardDate="1758"/>
                </dateRange>
+          <descriptiveNote>
+            <p>Expert bourgeois de la 1ère classe
+Lors de sa réception, il est indiqué qu'il a payé le droit du 8e deniers suivant la quittance du sieur Bertin, Trésoriers es Revenus Casuels.</p>
+          </descriptiveNote>
                
             </function>
          </functions>
@@ -127,6 +150,11 @@
         <occupation localType="" sourceReference="#source_4v60k16jfbojw3e">
           <term>Architecte des bâtiments du Roy</term>
           <date certainty="certain" standardDate="1716-10-05" sourceReference=""/>
+          <!--optionnal (all below)-->
+          <!--&lt;date/&gt; | &lt;dateRange/&gt; | &lt;dateSet/&gt;-->
+        </occupation>
+        <occupation localType="" sourceReference="#source_igt0ehgy4e80dnj">
+          <term>architecte</term>
           <!--optionnal (all below)-->
           <!--&lt;date/&gt; | &lt;dateRange/&gt; | &lt;dateSet/&gt;-->
         </occupation>
@@ -173,6 +201,26 @@
             <event>Décès de François De Bias Aubry</event>
             <place>
               <placeName>Rue Saint-Martin</placeName>
+            </place>
+          </chronItem>
+          <chronItem id="chronItem_2h4r07aiqeavxr5t" sourceReference="#source_igt0ehgy4e80dnj" localType="receptionColumn1">
+            <dateSet>
+              <date certainty="certain" standardDate="1725-10-18" sourceReference="">Lettres de provision</date>
+              <date certainty="" sourceReference="">Supplique</date>
+              <date certainty="certain" standardDate="1725-10-27" sourceReference="">Ordonnance de soit montré au procureur du roy</date>
+              <date certainty="certain" standardDate="1725-11-11" sourceReference="">Examen</date>
+              <date certainty="certain" standardDate="1725-10-27" sourceReference="">Consentement de la communauté</date>
+              <date certainty="certain" standardDate="1725-11-23" sourceReference="">Information de vie et de mœurs</date>
+              <date certainty="certain" standardDate="1725-12-05" sourceReference="">Serment</date>
+              <date certainty="certain" standardDate="1725-12-05" sourceReference="">Réception</date>
+              <date certainty="certain" standardDate="1725-10-27" sourceReference="">premières conclusons du procureur du roi</date>
+              <date certainty="certain" standardDate="1725-11-12" sourceReference="">Conclusions préparatoires du procureur du roi</date>
+              <date certainty="certain" standardDate="1725-11-24" sourceReference="">Conclusions définitives du procureur du roi</date>
+              <date certainty="certain" standardDate="1724-01-29" sourceReference="">Acte notarié de transmission de l'office entre la veuve et les héritiers de Bailly et Debias Aubry pardevant Me Dejean et Linossier, notaires à Paris</date>
+            </dateSet>
+            <event>Réception en l'office de juré expert de la 1ère colonne</event>
+            <place>
+              <placeName>Paris (Lettres de provisions)</placeName>
             </place>
           </chronItem>
                
@@ -262,6 +310,165 @@
           <relationType id="relationType_id128298d2573384" valueURI="" vocabularySource="" vocabularySourceURI="" sourceReference=""/>
             <targetRole target="#relationType_id128298d2573384"/>
           </relation>
+      <relation target="#chronItem_2h4r07aiqeavxr5t" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Jean Baptiste Bailly</part>
+          <part localType="status">défunt dernier titulaire d'icelle</part>
+          <part localType="occupationType">Bâtiment;Expert entrepreneur</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0012</part>
+        </targetEntity>
+        <relationType id="relationType_993e0enirq49te79" valueURI="https://www.ica.org/standards/RiC/ontology#isSuccessorOf" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_igt0ehgy4e80dnj">rico:isSuccessorOf</relationType>
+        <targetRole target="#relationType_993e0enirq49te79">prédécesseur</targetRole>
+        <descriptiveNote>
+          <p>"dernier titulaire pouveu dudit office en conséquence de la nomination faite au roi de sa personne par la veuve et héritiers dedu. Bailly par acte notarié pardevant Dejean et Linocier, notaires à Paris le 29 janvier 1724."</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_2h4r07aiqeavxr5t" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Jean Villot</part>
+          <part localType="status">prestre habitué en l'eglise de St Jacques de la Boucherie</part>
+          <part localType="occupationType">Religion;Religieux</part>
+          <part localType="age">45</part>
+          <part localType="address">Cloître de St Jacques de la Boucherie, Paris</part>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_99420ie6pqtpmsgm" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_igt0ehgy4e80dnj">rico:knownBy</relationType>
+        <targetRole target="#relationType_99420ie6pqtpmsgm">témoin</targetRole>
+        <descriptiveNote>
+          <p>Dépose connoistre le sieur François Debias Aubry depuis un an ou environ, qu'il est de bonne vie et moeurs, de la R C a et R pour luy en avoir veu faire les fonctions, que d'ailleurs, il est très affectionné au service du roy et de l'Etat.</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_2h4r07aiqeavxr5t" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Etienne Simon Boursier</part>
+          <part localType="status">notaire au Châtelet de Paris</part>
+          <part localType="occupationType">Droit;Notaire</part>
+          <part localType="age">39</part>
+          <part localType="address">rue Bar du Bec, paroissse St Mery, Paris</part>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_994i0xy10eldphao" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_igt0ehgy4e80dnj">rico:knownBy</relationType>
+        <targetRole target="#relationType_994i0xy10eldphao">témoin</targetRole>
+        <descriptiveNote>
+          <p>Dépose connoistre le sieur François Debias Aubry depuis 12 ans ou environ, qu'il est de bonne vie et moeurs, de la R C a et R pour luy en avoir veu faire les fonctions, que d'ailleurs, il est très affectionné au service du roy et du public.</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_2h4r07aiqeavxr5t" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Etienne François Quirot</part>
+          <part localType="status">Greffier des bastiments</part>
+          <part localType="occupationType">Bâtiment et Droit;Greffier des bâtiments</part>
+          <part localType="age">45 passés</part>
+          <part localType="address">rue Jean Pain Molet, Paroisse St Mery, Paris</part>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#clrk0020</part>
+        </targetEntity>
+        <relationType id="relationType_994w0efq8miwx3ib" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_igt0ehgy4e80dnj">rico:knownBy</relationType>
+        <targetRole target="#relationType_994w0efq8miwx3ib">témoin</targetRole>
+        <descriptiveNote>
+          <p>Ce 3e témoin comparait le lendemain, soit le 24/11/1725.
+Dépose connoistre le sieur François Debias Aubry depuis 5 ans ou 6 ans environ, qu'il est de bonne vie et moeurs, de la R C a et R pour luy en avoir veu faire les fonctions, que d'ailleurs, il est très affectionné au service du roy et du public.</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_2h4r07aiqeavxr5t" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Nicolas Delespine</part>
+          <part localType="status">Architecte du roy et d son académie royale d'architectiure, Doyen des architectes experts bourgeois et entrepreneurs à Paris</part>
+          <part localType="occupationType">Bâtiment;Expert entrepreneur</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0086</part>
+        </targetEntity>
+        <relationType id="relationType_99590v4oxoj5o3n" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_igt0ehgy4e80dnj">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_99590v4oxoj5o3n">observateur</targetRole>
+      </relation>
+      <relation target="#chronItem_2h4r07aiqeavxr5t" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Jacques Charles Lebrun</part>
+          <part localType="status">Examinateur de la 1ère colonne</part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0158</part>
+        </targetEntity>
+        <relationType id="relationType_995l0vg67t6894k" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_igt0ehgy4e80dnj">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_995l0vg67t6894k">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_2h4r07aiqeavxr5t" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Adrien Lesueur</part>
+          <part localType="status">Examinateur de la 1ère colonne</part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0171</part>
+        </targetEntity>
+        <relationType id="relationType_995v03gqrum3xii3" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_igt0ehgy4e80dnj">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_995v03gqrum3xii3">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_2h4r07aiqeavxr5t" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Edme Fourier</part>
+          <part localType="status">Examinateur de la 2nde colonne</part>
+          <part localType="occupationType">Bâtiment;Expert entrepreneur</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0111</part>
+        </targetEntity>
+        <relationType id="relationType_99650mrkac6iib7r" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_igt0ehgy4e80dnj">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_99650mrkac6iib7r">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_2h4r07aiqeavxr5t" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Nicolas Fremiot</part>
+          <part localType="status">Examinateur de la 2nde colonne</part>
+          <part localType="occupationType">Bâtiment;Expert entrepreneur</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0112</part>
+        </targetEntity>
+        <relationType id="relationType_996d00l3sxxqegyp" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_igt0ehgy4e80dnj">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_996d00l3sxxqegyp">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_2h4r07aiqeavxr5t" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Pierre Quirot</part>
+          <part localType="status">Syndic de la compagnie</part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0232</part>
+        </targetEntity>
+        <relationType id="relationType_996k0m6g6xaxfxg" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_igt0ehgy4e80dnj">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_996k0m6g6xaxfxg">observateur</targetRole>
+      </relation>
+      <relation target="#chronItem_2h4r07aiqeavxr5t" sourceReference="">
+        <descriptiveNote>
+          <p>"après avoir examiné ledit sieur François Bias Aubry sur plusieurs et différentes questions concernant expérience en fait de sa charge et qu'il y a répondu pertinemment, l'avons conjointement avec les sieurs Quirot et Simon, syndic et adjoint trouvé capable d'exercer ladite charge et d'y estre receu".</p>
+        </descriptiveNote>
+        <targetEntity targetType="person">
+          <part localType="full">Mathurin Simon</part>
+          <part localType="status">Adjoint de la Compagnie</part>
+          <part localType="occupationType">Bâtiment;Expert entrepreneur</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0246</part>
+        </targetEntity>
+        <relationType id="relationType_996p0xs1e3ox16ia" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_igt0ehgy4e80dnj">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_996p0xs1e3ox16ia">observateur</targetRole>
+      </relation>
     </relations>
    
       </cpfDescription>

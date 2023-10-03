@@ -1,11 +1,21 @@
 <eac xmlns="https://archivists.org/ns/eac/v2" xml:id="xpr0118">
-   <control maintenanceStatus="new" publicationStatus="inProcess">
+   <control maintenanceStatus="updated" publicationStatus="inProcess">
       <recordId>xpr0118</recordId>
       <maintenanceAgency>
          <agencyName>projet Experts</agencyName>
       </maintenanceAgency>
       <maintenanceHistory>
-         <maintenanceEvent maintenanceEventType="updated" languageOfElement="eng">
+         <maintenanceEvent maintenanceEventType="revised">
+        <agent agentType="human">jmorvan</agent>
+        <eventDateTime standardDateTime="2023-08-21T11:51:27Z"/>
+        <eventDescription>modification de la vedette</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent maintenanceEventType="revised">
+        <agent agentType="human">rcarvais</agent>
+        <eventDateTime standardDateTime="2023-08-01T18:44:07Z"/>
+        <eventDescription/>
+      </maintenanceEvent>
+      <maintenanceEvent maintenanceEventType="updated" languageOfElement="eng">
             <agent agentType="machine">EAC-CPF 1.x to EAC 2.0 Migration Style Sheet (eac1-to-eac2.xsl)</agent>
             <eventDateTime standardDateTime="2022-09-19T16:52:56.420085+02:00"/>
             <eventDescription>EAC-CPF 1.x (urn:isbn:1-931666-33-4) instance migrated to EAC 2.0 (https://archivists.org/ns/eac/v2)</eventDescription>
@@ -36,6 +46,12 @@
             <eventDescription>Fiches créée sur Google Drive.</eventDescription>
          </maintenanceEvent>
       </maintenanceHistory>
+    <sources>
+      <source id="source_3ux03xf6dljekpb">
+        <reference href="https://www.geneanet.org/registres/view/4897/292?">AN Y 4403/B</reference>
+        <citedRange unit="page">292-218 + 310-312</citedRange>
+      </source>
+    </sources>
       
       
    </control>
@@ -43,7 +59,7 @@
       <identity>
          <entityType value="person"/>
          <nameEntry sourceReference="" preferredForm="true" status="authorized">
-            <part localType="full">Gerard De Montbrouard, Claude Jacques</part>
+            <part localType="full">Gérard, Claude Jacques</part>
             
          </nameEntry>
          <nameEntry sourceReference="" preferredForm="false" status="alternative">
@@ -52,16 +68,23 @@
             
             
          </nameEntry>
+      <nameEntry status="alternative" preferredForm="false" sourceReference="#source_3ux03xf6dljekpb">
+        <part localType="name">Gérard</part>
+        <part localType="forename">Claude Jacques</part>
+      </nameEntry>
           <otherEntityTypes>
             <otherEntityType>
               <term>expert</term>
             </otherEntityType>
           </otherEntityTypes>
          <identityId>xpr0118</identityId>
+      <descriptiveNote>
+        <p>La forme du nom la plus complète est attestée partout sauf dans le dossier de réception ou la particule "de Montbroüard" n'apparait que dans le certificat. Sinon il est dénommé "Claude Jacques Gérard".</p>
+      </descriptiveNote>
       </identity>
       <description>
          <functions>
-            <function sourceReference="">
+            <function sourceReference="#source_3ux03xf6dljekpb">
                <term>Expert bourgeois</term>
                <dateRange>
                   <fromDate sourceReference="" certainty="" standardDate="1728"/>
@@ -75,12 +98,19 @@
                <term/>
             </localDescription>
          </localDescriptions>
+      <occupations>
+        <occupation localType="" sourceReference="">
+          <term>architecte</term>
+          <!--optionnal (all below)-->
+          <!--&lt;date/&gt; | &lt;dateRange/&gt; | &lt;dateSet/&gt;-->
+        </occupation>
+      </occupations>
          
          
          <existDates>
             <dateRange>
                <fromDate sourceReference="" certainty="" standardDate="1693-09"/>
-               <toDate sourceReference="" certainty="" standardDate=""/>
+               <toDate sourceReference="" certainty=""/>
             </dateRange>
          </existDates>
          <biogHist>
@@ -120,6 +150,30 @@
                   
                   
                </chronItem>
+          <chronItem id="chronItem_7j720mbpy2ifkeo" sourceReference="" localType="baptism">
+            <date certainty="certain" standardDate="1693-09-07" sourceReference=""/>
+            <event>Baptême de Claude Jacques Gérard</event>
+            <place>
+              <placeName>Eglise paroissiale de St Nicolas des Champs</placeName>
+            </place>
+          </chronItem>
+          <chronItem id="chronItem_91cv0q53jk2ytxr" sourceReference="" localType="reception">
+            <dateSet>
+              <date certainty="certain" standardDate="1725-11-08" sourceReference="">Lettres de provision</date>
+              <date certainty="" sourceReference="">Supplique</date>
+              <date certainty="certain" standardDate="1726-01-15" sourceReference="">Ordonnance de soit montré au procureur du roy</date>
+              <date certainty="certain" standardDate="1726-01-24" sourceReference="">Examen</date>
+              <date certainty="certain" standardDate="1726-01-15" sourceReference="">Consentement de la communauté</date>
+              <date certainty="certain" standardDate="1726-01-25" sourceReference="">Information de vie et de mœurs</date>
+              <date certainty="certain" standardDate="1726-01-25" sourceReference="">Serment</date>
+              <date certainty="certain" standardDate="1726-01-25" sourceReference="">Réception</date>
+              <date certainty="certain" standardDate="1726-01-25" sourceReference="">Conclusions du procureur du roi</date>
+            </dateSet>
+            <event>Réception en l'office d'expert juré de la 1ère colonne</event>
+            <place>
+              <placeName/>
+            </place>
+          </chronItem>
                
             </chronList>
          </biogHist>
@@ -139,6 +193,168 @@
           <relationType id="relationType_id128298d2587067" valueURI="" vocabularySource="" vocabularySourceURI="" sourceReference=""/>
             <targetRole target="#relationType_id128298d2587067"/>
           </relation>
+      <relation target="#chronItem_91cv0q53jk2ytxr" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Pierre Hecquan</part>
+          <part localType="status">dernier paisible possesseur</part>
+          <part localType="occupationType">Bâtiment;Expert entrepreneur</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0140</part>
+        </targetEntity>
+        <relationType id="relationType_ewfs0c6d99d2idy9" valueURI="https://www.ica.org/standards/RiC/ontology#isSuccessorOf" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:isSuccessorOf</relationType>
+        <targetRole target="#relationType_ewfs0c6d99d2idy9">prédécesseur</targetRole>
+        <descriptiveNote>
+          <p/>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_91cv0q53jk2ytxr" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Antoine Boucher</part>
+          <part localType="status">Prestre habitué en l'église de St Christophe</part>
+          <part localType="occupationType">Religion;Religieux</part>
+          <part localType="age">31</part>
+          <part localType="address">rue du port levesque, paroisse St Christophe, Paris</part>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_ewg90a57z4hlqhmq" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:knownBy</relationType>
+        <targetRole target="#relationType_ewg90a57z4hlqhmq">témoin</targetRole>
+        <descriptiveNote>
+          <p>Dépose connoistre ledit Claude Jacques Gérard depuis 1 an pour estre un des paroissiens de la paroisse St Christophe, estre de bonne vie et moeurs, faisant profession de la R C a et R et estre très fidèle au service de Sa Majesté. </p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_91cv0q53jk2ytxr" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Nicolas Duval</part>
+          <part localType="status">Peintre du roi</part>
+          <part localType="occupationType">Métiers (hors bâtiment);Maître de métier au service du roi (hors bâtiment)</part>
+          <part localType="age">41</part>
+          <part localType="address">rue Neuve N-D, susdite paroisse, Paris</part>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_ewgl0igsk9qx7czb" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:knownBy</relationType>
+        <targetRole target="#relationType_ewgl0igsk9qx7czb">témoin</targetRole>
+        <descriptiveNote>
+          <p>Dépose connoistre ledit Claude Jacques Gérard depuis 1 an pour estre un des paroissiens de la paroisse St Christophe, estre de bonne vie et moeurs, faisant profession de la R C a et R et estre très fidèle au service de Sa Majesté. </p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_91cv0q53jk2ytxr" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Louis Benoist</part>
+          <part localType="status">Architecte du roi</part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age">39</part>
+          <part localType="address">Rue St Denis, Paroisse St Nicolas des champs, Paris</part>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0017</part>
+        </targetEntity>
+        <relationType id="relationType_ewgv0vx11jq56jih" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:knownBy</relationType>
+        <targetRole target="#relationType_ewgv0vx11jq56jih">témoin</targetRole>
+        <descriptiveNote>
+          <p>Il est indiqué comme architecte du roi alors qu'il est expert juré de la 1ère colonne depuis 10 ans, mais il entre à l'Académie d'architecture en 1728.
+Dépose connoistre ledit Claude Jacques Gérard depuis 14 ou 15 ans environ, estre de bonne vie et moeurs, faisant profession de la R C a et R et estre fidèle au service de Sa Majesté. </p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_91cv0q53jk2ytxr" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Nicolas Delespine</part>
+          <part localType="status">Architecte du roi et de son académie royalle, doyen des architectes jurés experts bourgeois et entrepreneurs des bastiments à Paris</part>
+          <part localType="occupationType">Bâtiment;Expert entrepreneur</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0086</part>
+        </targetEntity>
+        <relationType id="relationType_ewh301yxix8vohp0i" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_ewh301yxix8vohp0i">observateur</targetRole>
+      </relation>
+      <relation target="#chronItem_91cv0q53jk2ytxr" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Jacques Piretouy</part>
+          <part localType="status">Examinateur de la 1ère colonne</part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0221</part>
+        </targetEntity>
+        <relationType id="relationType_ewhb0am0w4cml3zl" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_ewhb0am0w4cml3zl">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_91cv0q53jk2ytxr" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">François De Bias Aubry</part>
+          <part localType="status">Examinateur de la 1ère colonne</part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0073</part>
+        </targetEntity>
+        <relationType id="relationType_ewhi0kqfdktqbckn" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_ewhi0kqfdktqbckn">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_91cv0q53jk2ytxr" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Edme Fourier</part>
+          <part localType="status">Examinateur de la 2nde colonne</part>
+          <part localType="occupationType">Bâtiment;Expert entrepreneur</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0111</part>
+        </targetEntity>
+        <relationType id="relationType_ewho0sxjwq2xhoqk" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_ewho0sxjwq2xhoqk">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_91cv0q53jk2ytxr" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Jean Planier</part>
+          <part localType="status">Examinateur de la 2nde colonne</part>
+          <part localType="occupationType">Bâtiment;Expert entrepreneur</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0222</part>
+        </targetEntity>
+        <relationType id="relationType_ewhu0qe0u35f41ml" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_ewhu0qe0u35f41ml">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_91cv0q53jk2ytxr" sourceReference="">
+        <descriptiveNote>
+          <p>Le nom de Quirot n'apparait qu'en signature.</p>
+        </descriptiveNote>
+        <targetEntity targetType="person">
+          <part localType="full">Pierre  ou Denis Quirot</part>
+          <part localType="status">Adjoint de la compagnie</part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_ewhy02yyxdn0pa8l" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_ewhy02yyxdn0pa8l">observateur</targetRole>
+      </relation>
+      <relation target="#chronItem_91cv0q53jk2ytxr" sourceReference="">
+        <descriptiveNote>
+          <p>Dans le certificat d'examen il est indiqué que le Doyen et les 4 experts nommés à cet effet, conjointement avec les Syndic et adjoint de la compagnie, estiment l'impétrant capable. Cette répartition est significative. </p>
+        </descriptiveNote>
+        <targetEntity targetType="person">
+          <part localType="full">Mathurin Simon</part>
+          <part localType="status">Adjoint de la compagnie</part>
+          <part localType="occupationType">Bâtiment;Expert entrepreneur</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0246</part>
+        </targetEntity>
+        <relationType id="relationType_ewi10jcysc9amwwe" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_ewi10jcysc9amwwe">observateur</targetRole>
+      </relation>
         </relations>
       </cpfDescription>
    

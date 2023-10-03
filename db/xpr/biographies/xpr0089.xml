@@ -1,12 +1,17 @@
 <eac xmlns="https://archivists.org/ns/eac/v2" xml:id="xpr0089">
       <!--L'une de ses filles, Angélique Catherine Desboeufs, épouse Christophe Edouard Liébault de la Neuville, greffier des bâtiments-->
-   <control maintenanceStatus="new" publicationStatus="inProcess">
+   <control maintenanceStatus="updated" publicationStatus="inProcess">
       <recordId>xpr0089</recordId>
       <maintenanceAgency>
          <agencyName>projet Experts</agencyName>
       </maintenanceAgency>
       <maintenanceHistory>
-         <maintenanceEvent maintenanceEventType="updated" languageOfElement="eng">
+         <maintenanceEvent maintenanceEventType="revised">
+        <agent agentType="human">rcarvais</agent>
+        <eventDateTime standardDateTime="2023-07-23T07:55:55Z"/>
+        <eventDescription/>
+      </maintenanceEvent>
+      <maintenanceEvent maintenanceEventType="updated" languageOfElement="eng">
             <agent agentType="machine">EAC-CPF 1.x to EAC 2.0 Migration Style Sheet (eac1-to-eac2.xsl)</agent>
             <eventDateTime standardDateTime="2022-09-19T16:52:56.15348+02:00"/>
             <eventDescription>EAC-CPF 1.x (urn:isbn:1-931666-33-4) instance migrated to EAC 2.0 (https://archivists.org/ns/eac/v2)</eventDescription>
@@ -32,6 +37,12 @@
             <eventDescription>Fiches créée sur Google Drive.</eventDescription>
          </maintenanceEvent>
       </maintenanceHistory>
+    <sources>
+      <source id="source_evn0nkdz6jm78c">
+        <reference href="https://www.geneanet.org/registres/view/32989/560?">AN Y 4483</reference>
+        <citedRange unit="page">560-566</citedRange>
+      </source>
+    </sources>
       
       
    </control>
@@ -48,7 +59,7 @@
             
             
          </nameEntry>
-         <nameEntry sourceReference="" preferredForm="false" status="alternative">
+         <nameEntry sourceReference="#source_evn0nkdz6jm78c" preferredForm="false" status="alternative">
             <part localType="surname">Des Boeufs Henri Cantien Desboeufs Henry</part>
             <part localType="forename">Henri Quentin</part>
             
@@ -77,6 +88,13 @@
                <term/>
             </localDescription>
          </localDescriptions>
+      <occupations>
+        <occupation localType="" sourceReference="#source_evn0nkdz6jm78c">
+          <term>architecte à Paris</term>
+          <!--optionnal (all below)-->
+          <!--&lt;date/&gt; | &lt;dateRange/&gt; | &lt;dateSet/&gt;-->
+        </occupation>
+      </occupations>
          
          
          <existDates>
@@ -131,10 +149,187 @@
                   
                   
                </chronItem>
+          <chronItem id="chronItem_2lf105ntyfzxo8my" sourceReference="#source_evn0nkdz6jm78c" localType="reception">
+            <dateSet>
+              <date certainty="certain" standardDate="1732-08-09" sourceReference="">Lettres de provision</date>
+              <date certainty="" sourceReference="">Supplique</date>
+              <date certainty="certain" standardDate="1732-08-19" sourceReference="">Ordonnance de soit montré au procureur du roy</date>
+              <date certainty="certain" standardDate="1732-09-07" sourceReference="">Examen</date>
+              <date certainty="certain" standardDate="1732-08-20" sourceReference="">Consentement de la communauté</date>
+              <date certainty="certain" standardDate="1732-09-11" sourceReference="">Information de vie et de mœurs</date>
+              <date certainty="certain" standardDate="1732-09-12" sourceReference="">Serment</date>
+              <date certainty="certain" standardDate="1732-09-12" sourceReference="">Réception</date>
+              <date certainty="certain" standardDate="1732-09-09" sourceReference="">Conclusions préparatoire du procureur du roi</date>
+              <date certainty="certain" standardDate="1732-09-11" sourceReference="">Conclusions définitives du procureur du roi</date>
+            </dateSet>
+            <event>Réception en l'office de juré expert bourgeois</event>
+            <place>
+              <placeName>Paris (lttres de provisions)</placeName>
+            </place>
+          </chronItem>
             </chronList>
          </biogHist>
       </description>
       <relations>
+      <relation target="#chronItem_2lf105ntyfzxo8my" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Nicolas Le Pas Dubuisson</part>
+          <part localType="status">office vacat en ses revenus casuls par la mort dudit Lepas Dubuisson</part>
+          <part localType="occupationType">Bâtiment;Expert entrepreneur</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0177</part>
+        </targetEntity>
+        <relationType id="relationType_8w9e0q2uvgpyxgx" valueURI="https://www.ica.org/standards/RiC/ontology#isSuccessorOf" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_evn0nkdz6jm78c">rico:isSuccessorOf</relationType>
+        <targetRole target="#relationType_8w9e0q2uvgpyxgx">prédécesseur</targetRole>
+        <descriptiveNote>
+          <p/>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_2lf105ntyfzxo8my" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Jacques Nicolai</part>
+          <part localType="status">Prestre habitué à la paroisse St André des arts</part>
+          <part localType="occupationType">Religion;Religieux</part>
+          <part localType="age">47</part>
+          <part localType="address">dans la Communauté des prestres de ladite paroisse, Paris</part>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_8w9u0rtu3jnfzho" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_evn0nkdz6jm78c">rico:knownBy</relationType>
+        <targetRole target="#relationType_8w9u0rtu3jnfzho">témoin</targetRole>
+        <descriptiveNote>
+          <p>42 ans est corrigé en 47 ans. Signature Nicolay.
+Dépose connaître le sieur Henry Cantien des Boeufs depuis 5 ans ou environ, qu'il est de bonne vie et moeurs, de la R C a et R pour luy en avoir veu faire les fonctions et l'avoir veu assister au service divin, que d'ailleurs, il est très affcetionné au service du roy et du publicq.</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_2lf105ntyfzxo8my" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Julien Etienne Divot</part>
+          <part localType="status">Conseiller du roy, commissaire en cette cour</part>
+          <part localType="occupationType">Droit;Autres</part>
+          <part localType="age">38</part>
+          <part localType="address">ru edu Mouton, paroisse St Jean en grève</part>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_8wa50lc42wd10r7" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_evn0nkdz6jm78c">rico:knownBy</relationType>
+        <targetRole target="#relationType_8wa50lc42wd10r7">témoin</targetRole>
+        <descriptiveNote>
+          <p>Dépose connaître ledit sieur Des Boeufs depuis 20 ans, qu'il est de bonne vie et moeurs, de la R C a et R pour luy en avoir veu faire les fonctions et l'avoir veu assister au service divin, que d'ailleurs, il est très affcetionné au service du roy et du publicq.</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_2lf105ntyfzxo8my" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Louis Martin Frichot</part>
+          <part localType="status">Procureur en cette cour</part>
+          <part localType="occupationType">Droit;Procureur</part>
+          <part localType="age">39</part>
+          <part localType="address">rue du Monceau St Gervais, Paroisse St Gervais, Paris</part>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_8waf07sdtuj3jgau" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_evn0nkdz6jm78c">rico:knownBy</relationType>
+        <targetRole target="#relationType_8waf07sdtuj3jgau">témoin</targetRole>
+        <descriptiveNote>
+          <p>Dépose connaître ledit sieur Des Boeufs depuis 2 ans ou environ, qu'il est de bonne vie et moeurs, de la R C a et R pour luy en avoir veu faire les fonctions et l'avoir veu assister au service divin, que d'ailleurs, il est très affcetionné au service du roy et du publicq.</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_2lf105ntyfzxo8my" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Jacques Pirretoüy</part>
+          <part localType="status">Doyen de la compagnie des architectes jurez experts</part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0221</part>
+        </targetEntity>
+        <relationType id="relationType_8wan0rc2w8qrkh1n" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_evn0nkdz6jm78c">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_8wan0rc2w8qrkh1n">observateur</targetRole>
+      </relation>
+      <relation target="#chronItem_2lf105ntyfzxo8my" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Pierre Quirot</part>
+          <part localType="status">Examinateur de la 1ère colonne</part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0232</part>
+        </targetEntity>
+        <relationType id="relationType_8wav00yq6nvyk8uf" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_evn0nkdz6jm78c">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_8wav00yq6nvyk8uf">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_2lf105ntyfzxo8my" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">François de Bias Aubry</part>
+          <part localType="status">Examinateur de la 1ère colonne</part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0073</part>
+        </targetEntity>
+        <relationType id="relationType_8wb10bqdkma2v9u" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_evn0nkdz6jm78c">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_8wb10bqdkma2v9u">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_2lf105ntyfzxo8my" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Louis Joubert</part>
+          <part localType="status">Examinateur de la 2nde colonne</part>
+          <part localType="occupationType">Bâtiment;Expert entrepreneur</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0147</part>
+        </targetEntity>
+        <relationType id="relationType_8wb70tnewg4qrqmb" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_evn0nkdz6jm78c">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_8wb70tnewg4qrqmb">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_2lf105ntyfzxo8my" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Pierre Louis Richard</part>
+          <part localType="status">Examinateur de la 2nde colonne</part>
+          <part localType="occupationType">Bâtiment;Expert entrepreneur</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0236</part>
+        </targetEntity>
+        <relationType id="relationType_8wbb0whn5qv1ym2o" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_evn0nkdz6jm78c">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_8wbb0whn5qv1ym2o">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_2lf105ntyfzxo8my" sourceReference="">
+        <descriptiveNote>
+          <p>L'expert est d'abord bourgeois puis entrepreneur.</p>
+        </descriptiveNote>
+        <targetEntity targetType="person">
+          <part localType="full">René Bonaventure Chauveau</part>
+          <part localType="status">Syndic de la compagnie</part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0054</part>
+        </targetEntity>
+        <relationType id="relationType_8wbg04cx6z5w58t4" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_evn0nkdz6jm78c">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_8wbg04cx6z5w58t4">observateur</targetRole>
+      </relation>
+      <relation target="#chronItem_2lf105ntyfzxo8my" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Jean Baptiste Michel Poirin</part>
+          <part localType="status">Adjoint de la compagnie</part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0223</part>
+        </targetEntity>
+        <relationType id="relationType_8wbk0zueloaxy1w" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_evn0nkdz6jm78c">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_8wbk0zueloaxy1w">observateur</targetRole>
+      </relation>
          
       </relations>
    </cpfDescription>

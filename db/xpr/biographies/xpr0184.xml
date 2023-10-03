@@ -7,6 +7,11 @@
       </maintenanceAgency>
       <maintenanceHistory>
          <maintenanceEvent maintenanceEventType="revised">
+        <agent agentType="human">rcarvais</agent>
+        <eventDateTime standardDateTime="2023-08-25T11:06:45Z"/>
+        <eventDescription/>
+      </maintenanceEvent>
+      <maintenanceEvent maintenanceEventType="revised">
         <agent agentType="human">vnegre</agent>
         <eventDateTime standardDateTime="2023-04-23T13:20:24Z"/>
         <eventDescription/>
@@ -59,6 +64,10 @@
       <source id="source_5re0rnlvvxq5yy">
         <reference href="">MC/ET/LI/1070 (IAD)</reference>
       </source>
+      <source id="source_5bx0kukib5jgdtn">
+        <reference href="https://www.geneanet.org/registres/view/18754/712">AN Y 4621 / A</reference>
+        <citedRange unit="page">712-718</citedRange>
+      </source>
     </sources>
       
       
@@ -99,6 +108,12 @@
                </dateRange>
                
             </function>
+        <function localType="" sourceReference="#source_5bx0kukib5jgdtn">
+          <term>expert juré de la 2nde colonne</term>
+          <!--optionnal (all below)-->
+          <!--&lt;date/&gt; | &lt;dateRange/&gt; | &lt;dateSet/&gt;-->
+          <!--&lt;placeName sourceReference=&quot;&quot;/&gt;-->
+        </function>
          </functions>
       <places>
         <place sourceReference="#source_4tk0pse73yseo5">
@@ -185,6 +200,37 @@
               <placeName>Rue de la Verrerie</placeName>
             </place>
           </chronItem>
+          <chronItem id="chronItem_md230ihl2y7t0fiq" sourceReference="#source_5bx0kukib5jgdtn" localType="exemption">
+            <date certainty="certain" standardDate="1739-07-29" sourceReference=""/>
+            <event>Dispence d'âge de Denis Loir</event>
+            <place>
+              <placeName>Compiègne, enregistrées 1744-02-22</placeName>
+            </place>
+          </chronItem>
+          <chronItem id="chronItem_p1s902xoq3ntbx6l" sourceReference="#source_5bx0kukib5jgdtn" localType="receptionColumn2">
+            <dateSet>
+              <date certainty="certain" standardDate="1739-08-07" sourceReference="">Lettres de provision</date>
+              <date certainty="" sourceReference="">Supplique</date>
+              <date certainty="certain" standardDate="1744-02-22" sourceReference="">Ordonnance de soit montré au procureur du roy</date>
+              <date certainty="certain" standardDate="1744-03-08" sourceReference="">Examen</date>
+              <date certainty="certain" standardDate="1744-02-24" sourceReference="">Consentement de la communauté</date>
+              <date certainty="certain" standardDate="1744-03-09" sourceReference="">Information de vie et de mœurs</date>
+              <date certainty="certain" standardDate="1744-03-12" sourceReference="">Serment</date>
+              <date certainty="certain" standardDate="1744-03-12" sourceReference="">Réception</date>
+              <date certainty="certain" standardDate="1744-03-09" sourceReference="">Conclusions préparatoires du procureur du roi</date>
+              <date certainty="certain" standardDate="1744-03-11" sourceReference="">Conclusions définitives du procureur du roi</date>
+              <date certainty="certain" standardDate="1744-03-01" sourceReference="">Première délibération de la compagnie pour le choix des examinateur</date>
+              <date certainty="certain" standardDate="1744-03-08" sourceReference="">Deuxième délibération d ela compagnie pour le choix des examinateurs</date>
+              <date certainty="certain" standardDate="1739-07-29" sourceReference="">Lettres de dispense d'âge</date>
+              <date certainty="certain" standardDate="1744-02-22" sourceReference="">Enregistrement des lettres de dispense d'âge</date>
+              <date certainty="certain" standardDate="1744-02-15" sourceReference="">Lettres de surannation des lettres de dispenses d'âge</date>
+            </dateSet>
+            <event>Réception en l'office d'expert juré de la 2nde colonne</event>
+            <place>
+              <placeName>Paris (lettres de provision)</placeName>
+              <placeName>Compiègne (lettre de dispense d'âge)</placeName>
+            </place>
+          </chronItem>
             </chronList>
          </biogHist>
       </description>
@@ -261,6 +307,165 @@
           <relationType id="relationType_id128298d2606721" valueURI="" vocabularySource="" vocabularySourceURI="" sourceReference=""/>
             <targetRole target="#relationType_id128298d2606721"/>
           </relation>
+      <relation target="#chronItem_p1s902xoq3ntbx6l" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Jean Baptiste Loir</part>
+          <part localType="status">Deffunt dernier possesseur son père</part>
+          <part localType="occupationType">Bâtiment;Expert entrepreneur</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0183</part>
+        </targetEntity>
+        <relationType id="relationType_ze9i0cs4k2gj5aaa" valueURI="https://www.ica.org/standards/RiC/ontology#isSuccessorOf" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_5bx0kukib5jgdtn">rico:isSuccessorOf</relationType>
+        <targetRole target="#relationType_ze9i0cs4k2gj5aaa">prédécesseur</targetRole>
+        <descriptiveNote>
+          <p/>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_p1s902xoq3ntbx6l" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Claude Daudier</part>
+          <part localType="status">Prestre habitué en l'église et paroisse St Paul</part>
+          <part localType="occupationType">Religion;Religieux</part>
+          <part localType="age">47</part>
+          <part localType="address">Sur le quay des Ormes, susdite paroisse, Paris</part>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_zea50dxvlbk45n19" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_5bx0kukib5jgdtn">rico:knownBy</relationType>
+        <targetRole target="#relationType_zea50dxvlbk45n19">témoin</targetRole>
+        <descriptiveNote>
+          <p>Dépose connoistre ledit sieur Denis Loir depuis 7 ans ou environ pour estre de bonne vie et moeurs, de la R C a et R, pour luy ne avoir veu faire les fonctions et qu'il est très attaché au service du roy et du public.</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_p1s902xoq3ntbx6l" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Pierre Noël Dousset</part>
+          <part localType="status">Architecte</part>
+          <part localType="occupationType">Bâtiment;Architecte</part>
+          <part localType="age">31</part>
+          <part localType="address">Rue Regnault Lefèvre, paroisse St Gervais, Paris</part>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_zeam0claplu5nb96" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_5bx0kukib5jgdtn">rico:knownBy</relationType>
+        <targetRole target="#relationType_zeam0claplu5nb96">témoin</targetRole>
+        <descriptiveNote>
+          <p>Dépose connoistre ledit sieur Denis Loir depuis 10 ans ou environ pour estre de bonne vie et moeurs, sacit en outre qu'il est de la R C a et R, et très attaché au service du roy et du public.
+A-t-il un rapport avec Jacques Doucet expert entrepreneur entre 1723 et 1745 (absent à partir de 1736)?</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_p1s902xoq3ntbx6l" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Pierre Bevière</part>
+          <part localType="status">Avocat au Parlement</part>
+          <part localType="occupationType">Droit;Avocat</part>
+          <part localType="age">44</part>
+          <part localType="address">Rue de la Verreire, paroisse St Merry, Paris</part>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_zeb20eg0phd89ga5" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_5bx0kukib5jgdtn">rico:knownBy</relationType>
+        <targetRole target="#relationType_zeb20eg0phd89ga5">témoin</targetRole>
+        <descriptiveNote>
+          <p>Dépose connoistre ledit sieur Denis Loir depuis 15 ans ou environ pour estre de bonne vie et moeurs, scait en outre qu'il est de la R C a et R, et très attaché au service du roy et du public.</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_p1s902xoq3ntbx6l" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Charles Bernard </part>
+          <part localType="status">Doyen de la compagnie</part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0018</part>
+        </targetEntity>
+        <relationType id="relationType_zebf051no19cczis" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_5bx0kukib5jgdtn">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_zebf051no19cczis">observateur</targetRole>
+      </relation>
+      <relation target="#chronItem_p1s902xoq3ntbx6l" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Brice Le Chauve</part>
+          <part localType="status">Syndic de la compagnie</part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0160</part>
+        </targetEntity>
+        <relationType id="relationType_zebr0gncxdttnrdp" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_5bx0kukib5jgdtn">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_zebr0gncxdttnrdp">observateur</targetRole>
+      </relation>
+      <relation target="#chronItem_p1s902xoq3ntbx6l" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Pierre Caqué</part>
+          <part localType="status">Adjoint de la compagnie</part>
+          <part localType="occupationType">Bâtiment;Expert entrepreneur</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0045</part>
+        </targetEntity>
+        <relationType id="relationType_zec20tvzre1gf0w8" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_5bx0kukib5jgdtn">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_zec20tvzre1gf0w8">observateur</targetRole>
+      </relation>
+      <relation target="#chronItem_p1s902xoq3ntbx6l" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Estienne Legrand</part>
+          <part localType="status">Examinateur de la 1ère colonne</part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0164</part>
+        </targetEntity>
+        <relationType id="relationType_zecb0ln63m02ftl" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_5bx0kukib5jgdtn">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_zecb0ln63m02ftl">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_p1s902xoq3ntbx6l" sourceReference="">
+        <descriptiveNote>
+          <p>Il est dénommé Jacques et non Joseph.</p>
+        </descriptiveNote>
+        <targetEntity targetType="person">
+          <part localType="full">Jacques Gillet de la Fontaine</part>
+          <part localType="status">Examinateur de la 1ère colonne</part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0120</part>
+        </targetEntity>
+        <relationType id="relationType_zecl0wxtj5vqjrng" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_5bx0kukib5jgdtn">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_zecl0wxtj5vqjrng">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_p1s902xoq3ntbx6l" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Pierre Louis Richard</part>
+          <part localType="status">Examinareur de la 2nde colonne</part>
+          <part localType="occupationType">Bâtiment;Expert entrepreneur</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0236</part>
+        </targetEntity>
+        <relationType id="relationType_zecs06ly6o3zol8k" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_5bx0kukib5jgdtn">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_zecs06ly6o3zol8k">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_p1s902xoq3ntbx6l" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Louis Denis Bourgeois</part>
+          <part localType="status">Examinateur de la 2nde colonne</part>
+          <part localType="occupationType">Bâtiment;Expert entrepreneur</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0037</part>
+        </targetEntity>
+        <relationType id="relationType_zecy06jtstt3e8de" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_5bx0kukib5jgdtn">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_zecy06jtstt3e8de">examinateur</targetRole>
+      </relation>
     </relations>
    
       </cpfDescription>

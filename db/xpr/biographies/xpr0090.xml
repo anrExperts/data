@@ -6,6 +6,11 @@
       </maintenanceAgency>
       <maintenanceHistory>
          <maintenanceEvent maintenanceEventType="revised">
+        <agent agentType="human">rcarvais</agent>
+        <eventDateTime standardDateTime="2023-07-23T12:03:27Z"/>
+        <eventDescription/>
+      </maintenanceEvent>
+      <maintenanceEvent maintenanceEventType="revised">
         <agent agentType="human">vnegre</agent>
         <eventDateTime standardDateTime="2023-04-22T14:20:25Z"/>
         <eventDescription/>
@@ -45,6 +50,10 @@
       <source id="source_56101ralznasakk">
         <reference href=""> MC/ET/XXXIII/949 (IAD)</reference>
       </source>
+      <source id="source_uig0nlzdigf5hwr">
+        <reference href="https://www.geneanet.org/registres/view/22068/399?">AN Y 5100/A</reference>
+        <citedRange unit="page">399-405</citedRange>
+      </source>
     </sources>
       
       
@@ -62,7 +71,7 @@
             
             
          </nameEntry>
-         <nameEntry sourceReference="" preferredForm="false" status="alternative">
+         <nameEntry sourceReference="#source_uig0nlzdigf5hwr" preferredForm="false" status="alternative">
             <part localType="surname">Huant Desjardins</part>
             <part localType="forename">Jean Baptiste Guillaume Alexandre Georges Balthazard Auguste</part>
             
@@ -91,6 +100,13 @@
                <term/>
             </localDescription>
          </localDescriptions>
+      <occupations>
+        <occupation localType="" sourceReference="#source_uig0nlzdigf5hwr">
+          <term>architecte</term>
+          <!--optionnal (all below)-->
+          <!--&lt;date/&gt; | &lt;dateRange/&gt; | &lt;dateSet/&gt;-->
+        </occupation>
+      </occupations>
          
          
          <existDates>
@@ -143,6 +159,31 @@
               <placeName>Rue Meslée n° 7 </placeName>
             </place>
           </chronItem>
+          <chronItem id="chronItem_4yzo0djoq2koqw1" sourceReference="#source_uig0nlzdigf5hwr" localType="baptism">
+            <date certainty="certain" standardDate="1754-08-12" sourceReference=""/>
+            <event>Baptème dudit Hualt Desjardins</event>
+            <place>
+              <placeName>Eglise St Sulpice</placeName>
+            </place>
+          </chronItem>
+          <chronItem id="chronItem_64id0g5geztpo4za" sourceReference="" localType="receptionColumn1">
+            <dateSet>
+              <date certainty="certain" standardDate="1782-10-16" sourceReference="">Lettres de provision</date>
+              <date certainty="" sourceReference="">Supplique</date>
+              <date certainty="certain" standardDate="1782-11-19" sourceReference="">Ordonnance de soit montré au procureur du roy</date>
+              <date certainty="certain" standardDate="1782-12-08" sourceReference="">Examen</date>
+              <date certainty="certain" standardDate="1782-11-20" sourceReference="">Consentement de la communauté</date>
+              <date certainty="certain" standardDate="1782-12-10" sourceReference="">Information de vie et de mœurs</date>
+              <date certainty="certain" standardDate="1782-12-11" sourceReference="">Serment</date>
+              <date certainty="certain" standardDate="1782-12-11" sourceReference="">Réception</date>
+              <date certainty="certain" standardDate="1782-12-12" sourceReference="">Conclusions du procureur du roi</date>
+              <date certainty="certain" standardDate="1782-11-24" sourceReference="">Délibération de la compagnie pour le choix des examinateurs</date>
+            </dateSet>
+            <event>Réception en l'office de juré expert de la 1ère colonne</event>
+            <place>
+              <placeName>Versailles (lettres de provisions)</placeName>
+            </place>
+          </chronItem>
                
             </chronList>
          </biogHist>
@@ -162,6 +203,161 @@
           <relationType id="relationType_id128298d2578510" valueURI="" vocabularySource="" vocabularySourceURI="" sourceReference=""/>
             <targetRole target="#relationType_id128298d2578510"/>
           </relation>
+      <relation target="#chronItem_64id0g5geztpo4za" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Pierre Coupard de la Touche</part>
+          <part localType="status">dernier possesseur démissionnaire en faveur dudit Desjardins, décédé</part>
+          <part localType="occupationType">Bâtiment;Expert entrepreneur</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0060</part>
+        </targetEntity>
+        <relationType id="relationType_af5f03frk582ahvv" valueURI="https://www.ica.org/standards/RiC/ontology#isSuccessorOf" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:isSuccessorOf</relationType>
+        <targetRole target="#relationType_af5f03frk582ahvv">prédécesseur</targetRole>
+        <descriptiveNote>
+          <p/>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_64id0g5geztpo4za" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Jérôme Destresveaux</part>
+          <part localType="status">Prestre, licencié en loix, vicaire de  la paroisse St Gervais</part>
+          <part localType="occupationType">Religion;Religieux</part>
+          <part localType="age">48</part>
+          <part localType="address">rue des Barres à la communauté des prestres de la paroisse St Gervais, Paris</part>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_af5x0xyx0com7rf9" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_uig0nlzdigf5hwr">rico:knownBy</relationType>
+        <targetRole target="#relationType_af5x0xyx0com7rf9">témoin</targetRole>
+        <descriptiveNote>
+          <p>Dépose que depuis environ 7 ans qu'il connaist ledit sieur Huant Desjardins, il a toujours remarqué et reconnu qu'il est de bonne vie et moeurs, d'une conduite sage et régulière, qu'il scait aussi que ledit sieur Desjardins fait profession de la R C a et R, enfin qu'il le connoist pour bon et fidel sujet du roi, zélé et affectionné à son service et celuy du public.</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_64id0g5geztpo4za" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Nicolas Normand</part>
+          <part localType="status">Architecte expert juré du roy</part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age">38</part>
+          <part localType="address">Parvis N-D, paroisse de la Madeleine en la Cité, Paris</part>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0203</part>
+        </targetEntity>
+        <relationType id="relationType_af690jtvdr7kzmg" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_uig0nlzdigf5hwr">rico:knownBy</relationType>
+        <targetRole target="#relationType_af690jtvdr7kzmg">témoin</targetRole>
+        <descriptiveNote>
+          <p>Dépose qu'il connaist depuis plus de 10 ans ledit sieur Huant Desjardins, pour estre de bonne vie et moeurs, d'une conduite sage et régulière, qu'il l'a toujours veu s'occuper de l'architecture avec beaucoup d'application, qu'il scait aussi que ledit sieur Desjardins fait profession de la R C a et R, enfin qu'il le connoist pour bon et fidel sujet du roi, zélé et affectionné à son service et celuy du public.</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_64id0g5geztpo4za" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Pierre François Wattibled</part>
+          <part localType="status">Entrepreneur de bastiments</part>
+          <part localType="occupationType">Bâtiment;Entrepreneur ou maître de métier</part>
+          <part localType="age">35</part>
+          <part localType="address">Rue de la Bucherie, paroisse St Etienne Dumont, Paris</part>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_af6k0ki8qb0t41f" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:knownBy</relationType>
+        <targetRole target="#relationType_af6k0ki8qb0t41f">témoin</targetRole>
+        <descriptiveNote>
+          <p>Dépose que depuis plus de 12 ans qu'il connaist ledit sieur Huant Desjardins, il a remarqué qu'il est de très bonne vie et moeurs, d'une conduite sage et très régulière, qu'il a veu travailler avec beaucoup de goût public, application et assiduité en art de l'architecture, qu'il scait en outre que le sieur Desjardins fait profession de la R C a et R, enfin qu'il le connoist pour bon et fidel sujet du roi, zélé et affectionné à son service et celuy du public.</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_64id0g5geztpo4za" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Henry Quantien Desboeufs</part>
+          <part localType="status">Doyen de la compagnie</part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0089</part>
+        </targetEntity>
+        <relationType id="relationType_af6u0dk2k5w6dxrc" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_af6u0dk2k5w6dxrc">observateur</targetRole>
+      </relation>
+      <relation target="#chronItem_64id0g5geztpo4za" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Jean Charles Dumont</part>
+          <part localType="status">Syndic de la compagnie</part>
+          <part localType="occupationType">Bâtiment;Expert entrepreneur</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0104</part>
+        </targetEntity>
+        <relationType id="relationType_af720u3b25xgs5u" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_af720u3b25xgs5u">observateur</targetRole>
+      </relation>
+      <relation target="#chronItem_64id0g5geztpo4za" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Louis Jules Delespine</part>
+          <part localType="status">Adjoint de la compagnie</part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0085</part>
+        </targetEntity>
+        <relationType id="relationType_af7904op8v4p7i5y" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_uig0nlzdigf5hwr">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_af7904op8v4p7i5y">observateur</targetRole>
+      </relation>
+      <relation target="#chronItem_64id0g5geztpo4za" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Pierre Alexandre Danjan</part>
+          <part localType="status">Examinateur de la 1ère colonne</part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0065</part>
+        </targetEntity>
+        <relationType id="relationType_af7g0qrpxmmozium" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_af7g0qrpxmmozium">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_64id0g5geztpo4za" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Nicolas Le Camue de Mézières</part>
+          <part localType="status">Examinateur de la 1ère colonne</part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0043</part>
+        </targetEntity>
+        <relationType id="relationType_af7l09ptubtrthp" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_af7l09ptubtrthp">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_64id0g5geztpo4za" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Guillaume Elie Le Foulon</part>
+          <part localType="status">Examinateur de la 2nde colonne</part>
+          <part localType="occupationType">Bâtiment;Expert entrepreneur</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0163</part>
+        </targetEntity>
+        <relationType id="relationType_af7q0az3g5yj41ak" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_uig0nlzdigf5hwr">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_af7q0az3g5yj41ak">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_64id0g5geztpo4za" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Médéric Joseph Chabouillé</part>
+          <part localType="status">Examinateur de la 2nde colonne</part>
+          <part localType="occupationType">Bâtiment;Expert entrepreneur</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0049</part>
+        </targetEntity>
+        <relationType id="relationType_af7v0wo9mktdlhy" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_af7v0wo9mktdlhy">examinateur</targetRole>
+      </relation>
         </relations>
       </cpfDescription>
    

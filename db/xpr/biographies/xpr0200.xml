@@ -7,6 +7,16 @@
       <maintenanceHistory>
          <maintenanceEvent maintenanceEventType="revised">
         <agent agentType="human">vnegre</agent>
+        <eventDateTime standardDateTime="2023-09-25T12:52:38Z"/>
+        <eventDescription/>
+      </maintenanceEvent>
+      <maintenanceEvent maintenanceEventType="revised">
+        <agent agentType="human">rcarvais</agent>
+        <eventDateTime standardDateTime="2023-08-27T19:42:35Z"/>
+        <eventDescription/>
+      </maintenanceEvent>
+      <maintenanceEvent maintenanceEventType="revised">
+        <agent agentType="human">vnegre</agent>
         <eventDateTime standardDateTime="2023-04-19T18:23:51Z"/>
         <eventDescription/>
       </maintenanceEvent>
@@ -39,6 +49,10 @@
     <sources>
       <source id="source_5cx0wf5a78htk8o">
         <reference href="">MC/ET/CXVII/734 (Cont. de mariage)</reference>
+      </source>
+      <source id="source_u5e0bsyl7f2r1xt">
+        <reference href="https://www.geneanet.org/registres/view/13069/294?">AN Y 4559/ A</reference>
+        <citedRange unit="page">294-300</citedRange>
       </source>
     </sources>
       
@@ -74,6 +88,12 @@
                </dateRange>
                
             </function>
+        <function localType="" sourceReference="">
+          <term>juré expert des bastiments à Paris et partout le royaume, de la 2nde colonne</term>
+          <!--optionnal (all below)-->
+          <!--&lt;date/&gt; | &lt;dateRange/&gt; | &lt;dateSet/&gt;-->
+          <!--&lt;placeName sourceReference=&quot;&quot;/&gt;-->
+        </function>
          </functions>
       <places>
         <place sourceReference="#source_5cx0wf5a78htk8o">
@@ -90,7 +110,7 @@
             </localDescription>
          </localDescriptions>
       <occupations>
-        <occupation localType="" sourceReference="#source_5cx0wf5a78htk8o">
+        <occupation localType="" sourceReference="#source_5cx0wf5a78htk8o #source_u5e0bsyl7f2r1xt">
           <term>Maître maçon entrepreneur de bâtiments à Paris</term>
           <date certainty="certain" standardDate="1732-01-06" sourceReference=""/>
           <!--optionnal (all below)-->
@@ -150,6 +170,24 @@
             <event>Mariage avec Marie Françoise Sureau </event>
             <place>
               <placeName/>
+            </place>
+          </chronItem>
+          <chronItem id="chronItem_3vk4084dxykao0pl" sourceReference="#source_u5e0bsyl7f2r1xt" localType="receptionColumn2">
+            <dateSet>
+              <date certainty="certain" standardDate="1738-12-19" sourceReference="">Lettres de provision</date>
+              <date certainty="" sourceReference="">Supplique</date>
+              <date certainty="certain" standardDate="1738-12-23" sourceReference="">Ordonnance de soit montré au procureur du roy</date>
+              <date certainty="certain" standardDate="1739-01-11" sourceReference="">Examen</date>
+              <date certainty="certain" standardDate="1738-12-23" sourceReference="">Consentement de la communauté</date>
+              <date certainty="certain" standardDate="1739-01-12" sourceReference="">Information de vie et de mœurs</date>
+              <date certainty="certain" standardDate="1739-01-13" sourceReference="">Serment</date>
+              <date certainty="certain" standardDate="1739-01-13" sourceReference="">Réception</date>
+              <date certainty="certain" standardDate="1739-01-12" sourceReference="">Conclusions du procureur du roi</date>
+              <date certainty="certain" standardDate="1738-12-28" sourceReference="">Délibération de la compagnie pour le choix des examinateurs</date>
+            </dateSet>
+            <event>Réception en l'office 'expert juré de la 2nde colonne</event>
+            <place>
+              <placeName>Versailles (lettres de provision)</placeName>
             </place>
           </chronItem>
             </chronList>
@@ -220,6 +258,177 @@
         </targetEntity>
         <relationType id="relationType_5k77092tpc8yu1wi" valueURI="" vocabularySource="" vocabularySourceURI="" sourceReference="#source_5cx0wf5a78htk8o">rico:hasFamilyAssociationWith</relationType>
         <targetRole target="#relationType_5k77092tpc8yu1wi">belle-mère</targetRole>
+      </relation>
+      <relation target="#chronItem_3vk4084dxykao0pl" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Jean Enguehard</part>
+          <part localType="status">dernier possesseur d'iceluy </part>
+          <part localType="occupationType"/>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0107</part>
+        </targetEntity>
+        <relationType id="relationType_8k4y0r4wftr6j15" valueURI="https://www.ica.org/standards/RiC/ontology#isSuccessorOf" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_u5e0bsyl7f2r1xt">rico:isSuccessorOf</relationType>
+        <targetRole target="#relationType_8k4y0r4wftr6j15">prédécesseur</targetRole>
+        <descriptiveNote>
+          <p>" que tenait [et exerçait : barré] Jean Enguehard [ce qui indique bien que ce dernier n'a jamais été reçu ni n'a exerçait] dernier possesseur d'iceluy qui s'en est volontairement démis au profit dudit Mouchet par acte passé devant Bontemps et Gervais, notaires au Châtelet de Paris le 12/08/1738 suivant la quittance du trésorier d'iceux est avec d'autres pièces attachés sous le contrescel desdites lettres de provision".</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_3vk4084dxykao0pl" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Martin Arnaud</part>
+          <part localType="status">Docteur de Sorbonne, prestre habitué en l'église et paroisse St Germain l'Auxerrois</part>
+          <part localType="occupationType">Religion;Religieux</part>
+          <part localType="age">41 environ</part>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_8k5i072popuyukzi" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_u5e0bsyl7f2r1xt">rico:knownBy</relationType>
+        <targetRole target="#relationType_8k5i072popuyukzi">témoin</targetRole>
+        <descriptiveNote>
+          <p>Dépose connoistre ledit André Mouchet depuis 5 ans ou environ, qu'il est de la R C a et R pour luy en avoir veu faire souvent les fonctions ou assister au service divin et au surplus qu'il est fort affectionné au service du roy et du public.</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_3vk4084dxykao0pl" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Jean Baptiste Macé</part>
+          <part localType="status">Bourgeois de Paris</part>
+          <part localType="occupationType">Autres;Bourgeois de Paris</part>
+          <part localType="age">50 environ</part>
+          <part localType="address">Rue de Grenelle St Honoré, paroisse St Eustache, Paris</part>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_8k5y0r6ozmadcnks" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_u5e0bsyl7f2r1xt">rico:knownBy</relationType>
+        <targetRole target="#relationType_8k5y0r6ozmadcnks">témoin</targetRole>
+        <descriptiveNote>
+          <p>Dépose connoistre ledit André Mouchet depuis 10 ans ou environ, qu'il est de la R C a et R pour luy en avoir veu remplir les devoirs et assister à l'office divin et au surplus qu'il est fort affectionné au service du roy et du public.</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_3vk4084dxykao0pl" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Michel Bourquenoud</part>
+          <part localType="status">Bourgeois de Paris</part>
+          <part localType="occupationType">Autres;Bourgeois de Paris</part>
+          <part localType="age">60 environ</part>
+          <part localType="address">Rue des poulies, paroisse St Germain l'Auxerrois, Paris</part>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_8k6c0khxga49cu2" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_u5e0bsyl7f2r1xt">rico:knownBy</relationType>
+        <targetRole target="#relationType_8k6c0khxga49cu2">témoin</targetRole>
+        <descriptiveNote>
+          <p>Dépose connoistre ledit André Mouchet depuis 4 ans ou environ, qu'il est de la R C a et R pour luy en avoir veu remplir les fonctions et au surplus qu'il est fort affectionné au service du roy et du public.</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_3vk4084dxykao0pl" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Charles Bernard</part>
+          <part localType="status">Sous doyen de la compagnie pour et au lieu de M. Quirot L. [L'aîné]  doyen</part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0018</part>
+        </targetEntity>
+        <relationType id="relationType_8k6n0hpnqd2kjee" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_u5e0bsyl7f2r1xt">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_8k6n0hpnqd2kjee">observateur</targetRole>
+      </relation>
+      <relation target="#chronItem_3vk4084dxykao0pl" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Jean Baptiste Michel Poirin</part>
+          <part localType="status">Syndic de la Compagnie</part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0223</part>
+        </targetEntity>
+        <relationType id="relationType_8k6x0s4ch24x5dks" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_u5e0bsyl7f2r1xt">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_8k6x0s4ch24x5dks">observateur</targetRole>
+      </relation>
+      <relation target="#chronItem_3vk4084dxykao0pl" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Pierre Louis Richard</part>
+          <part localType="status">Adjoint de la Compagnie</part>
+          <part localType="occupationType">Bâtiment;Expert entrepreneur</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0236</part>
+        </targetEntity>
+        <relationType id="relationType_8k76056touy132p" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_u5e0bsyl7f2r1xt">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_8k76056touy132p">observateur</targetRole>
+      </relation>
+      <relation target="#chronItem_3vk4084dxykao0pl" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Claude Guillot Aubry</part>
+          <part localType="status">Examinateur de la 1ère colonne</part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0134</part>
+        </targetEntity>
+        <relationType id="relationType_8k7f0s2pg82efhfm" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_u5e0bsyl7f2r1xt">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_8k7f0s2pg82efhfm">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_3vk4084dxykao0pl" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Charles François Le Brun</part>
+          <part localType="status">Examinateur de la 1ère colonne</part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0159</part>
+        </targetEntity>
+        <relationType id="relationType_8k7m0i60mwt2gyz" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_u5e0bsyl7f2r1xt">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_8k7m0i60mwt2gyz">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_3vk4084dxykao0pl" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Louis Denis Bourgeois L. [L'aîné]</part>
+          <part localType="status">Examinateur de la 2nde colonne</part>
+          <part localType="occupationType">Bâtiment;Expert entrepreneur</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0037</part>
+        </targetEntity>
+        <relationType id="relationType_8k7t0gr9l15stw5q" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_u5e0bsyl7f2r1xt">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_8k7t0gr9l15stw5q">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_3vk4084dxykao0pl" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Thomas Arnould</part>
+          <part localType="status">Examinateur de la 2nde colonne</part>
+          <part localType="occupationType">Bâtiment;Expert entrepreneur</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0006</part>
+        </targetEntity>
+        <relationType id="relationType_8k7y0ke1ryj2x05j" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_u5e0bsyl7f2r1xt">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_8k7y0ke1ryj2x05j">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_mbk0t7u3zoskpnc" sourceReference="">
+        <descriptiveNote>
+          <p>"Pierre Caqué, juré expert entrepreneur de bâtiments et Dame Marie Esther Charpentier son épouse" est cousin de Marie Françoise Sureau épouse de l'expert (CM)</p>
+        </descriptiveNote>
+        <targetEntity targetType="person">
+          <part localType="full">Caqué, Pierre</part>
+          <part localType="status">Juré expert entrepreneur de bâtiments </part>
+          <part localType="occupationType">Bâtiment;Expert entrepreneur</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_197e067qo43oclgj" valueURI="" vocabularySource="" vocabularySourceURI="" sourceReference="#source_5cx0wf5a78htk8o">rico:hasFamilyAssociationWith</relationType>
+        <targetRole target="#relationType_197e067qo43oclgj">cousin</targetRole>
       </relation>
          
       </relations>

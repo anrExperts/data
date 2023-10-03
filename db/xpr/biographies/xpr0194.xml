@@ -6,6 +6,11 @@
       </maintenanceAgency>
       <maintenanceHistory>
          <maintenanceEvent maintenanceEventType="revised">
+        <agent agentType="human">rcarvais</agent>
+        <eventDateTime standardDateTime="2023-08-27T13:11:02Z"/>
+        <eventDescription/>
+      </maintenanceEvent>
+      <maintenanceEvent maintenanceEventType="revised">
         <agent agentType="human">vnegre</agent>
         <eventDateTime standardDateTime="2023-04-23T15:30:22Z"/>
         <eventDescription/>
@@ -44,6 +49,10 @@
     <sources>
       <source id="source_7ip0vwqsuzkvkok">
         <reference href="">MC/ET/CXVI/185 (IAD)</reference>
+      </source>
+      <source id="source_10nd0ohn6aq8xqz8">
+        <reference href="https://sharedocs.huma-num.fr/#/2139/8770/Sources%20Experts/Sources%20Archives%20nationales/Y%20Robert/108Y1862">AN Y 1862</reference>
+        <citedRange unit="page">14-19</citedRange>
       </source>
     </sources>
       
@@ -85,6 +94,13 @@
                <term/>
             </localDescription>
          </localDescriptions>
+      <occupations>
+        <occupation localType="" sourceReference="#source_10nd0ohn6aq8xqz8">
+          <term>Architecte, bourgeois de Paris</term>
+          <!--optionnal (all below)-->
+          <!--&lt;date/&gt; | &lt;dateRange/&gt; | &lt;dateSet/&gt;-->
+        </occupation>
+      </occupations>
          
          
          <existDates>
@@ -128,6 +144,24 @@
             <event>Décès de Jacques Mazière</event>
             <place>
               <placeName>Rue Neuve des Petits Champs</placeName>
+            </place>
+          </chronItem>
+          <chronItem id="chronItem_3dcd0joxqyhcbf5g" sourceReference="#source_10nd0ohn6aq8xqz8" localType="receptionColumn1">
+            <dateSet>
+              <date certainty="certain" standardDate="1690-07-22" sourceReference="">Lettres de provision</date>
+              <date certainty="" sourceReference="">Supplique</date>
+              <date certainty="certain" standardDate="1690-08-08" sourceReference="">Ordonnance de soit montré au procureur du roy</date>
+              <date certainty="" sourceReference="">Examen</date>
+              <date certainty="" sourceReference="">Consentement de la communauté</date>
+              <date certainty="certain" standardDate="1690-08-08" sourceReference="">Information de vie et de mœurs</date>
+              <date certainty="certain" standardDate="1690-08-18" sourceReference="">Serment</date>
+              <date certainty="certain" standardDate="1690-08-18" sourceReference="">Réception</date>
+              <date certainty="certain" standardDate="1690-08-08" sourceReference="">Conclusions préparatoires du procureur du roi</date>
+              <date certainty="certain" standardDate="1690-08-17" sourceReference="">Conclusions définitives du procureur du roi</date>
+            </dateSet>
+            <event>Réception en l'office d'expert juré de la 1ère colonne</event>
+            <place>
+              <placeName>Paris (lettre de provision)</placeName>
             </place>
           </chronItem>
                
@@ -175,6 +209,162 @@
           <relationType id="relationType_id128298d2609440" valueURI="" vocabularySource="" vocabularySourceURI="" sourceReference=""/>
             <targetRole target="#relationType_id128298d2609440"/>
           </relation>
+      <relation target="#chronItem_3dcd0joxqyhcbf5g" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full"/>
+          <part localType="status"/>
+          <part localType="occupationType"/>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_6tfz0nshvr62zg6" valueURI="https://www.ica.org/standards/RiC/ontology#isSuccessorOf" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_10nd0ohn6aq8xqz8">rico:isSuccessorOf</relationType>
+        <targetRole target="#relationType_6tfz0nshvr62zg6">prédécesseur</targetRole>
+        <descriptiveNote>
+          <p>Il n'a pas de prédécesseur puisqu'il achète un office qui vient d'être créé.
+D'ailleurs en renonçant à toute entreprise de bastiments, de maçonnerie, de charpenterie, de couverture ni de menuiserie, il fait le choix d'opter pour un office d'expert juré de la 1ère colonne, un expert bourgeois.</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_3dcd0joxqyhcbf5g" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Guillaumes Dehannes</part>
+          <part localType="status">Prestre, maître ès arts de l'université de Paris, sacristain clerc de [l'armor] de l'église de St Roch</part>
+          <part localType="occupationType">Religion;Religieux</part>
+          <part localType="age">50</part>
+          <part localType="address">Rue St Honoré, susdite paroisse Ste Roch</part>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_6tgf09ce636fy3vs" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_10nd0ohn6aq8xqz8">rico:knownBy</relationType>
+        <targetRole target="#relationType_6tgf09ce636fy3vs">témoin</targetRole>
+        <descriptiveNote>
+          <p>A dit connoistre ledit Mazières plus de 20 années pour estre de bonne vie et moeurs, R C a et R, l'ayant plusieurs fois entendu en confession, scait qu'il est très affectionné au service du roy et du public et capable d'exercer la charge dont il plu au roi de le pourvoir qui est très capable et du savoir.</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_3dcd0joxqyhcbf5g" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Jean H'Oudiart</part>
+          <part localType="status">Conseiller du roi, contrôleur général des rentes de l'Hostel de cette ville</part>
+          <part localType="occupationType">Droit;Autres</part>
+          <part localType="age">53</part>
+          <part localType="address">Rue Perpignan, paroisse de la Madeleine en la cité, Paris</part>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_6tgs05qpsa07om57" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_10nd0ohn6aq8xqz8">rico:knownBy</relationType>
+        <targetRole target="#relationType_6tgs05qpsa07om57">témoin</targetRole>
+        <descriptiveNote>
+          <p>A dit connoistre ledit Mazières plus environ 15 ans, scait qu'il est de bonne vie et moeurs Conversation, R C a et R, pour l'avoie veu fréquenter les sacrements et scait de plus qu'il est  très affectionné au service du roi et du public.</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_3dcd0joxqyhcbf5g" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Charles Hebert</part>
+          <part localType="status">Architecte et entrepreneur de bastiments à Paris</part>
+          <part localType="occupationType">Bâtiment;Architecte et entrepreneur</part>
+          <part localType="age">42 environ</part>
+          <part localType="address">Rue de Montmorency, paroisse St Nicolas des Champs, Paris</part>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_6th20rf58n98ejc" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_10nd0ohn6aq8xqz8">rico:knownBy</relationType>
+        <targetRole target="#relationType_6th20rf58n98ejc">témoin</targetRole>
+        <descriptiveNote>
+          <p>A dit connoistre ledit Mazières plus de 25 ans, scait qu'il est de bonne vie et moeurs, conversation, R C a et R, pour l'avoir veu fréquenter les églises et sacrements, scait de plus qu'il est très affectionné au service du roi et du public. </p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_3dcd0joxqyhcbf5g" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full"/>
+          <part localType="status"/>
+          <part localType="occupationType"/>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_6thc01ygec737k01i" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_10nd0ohn6aq8xqz8">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_6thc01ygec737k01i">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_3dcd0joxqyhcbf5g" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full"/>
+          <part localType="status"/>
+          <part localType="occupationType"/>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_6thk0tqj6ea91zxk" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_10nd0ohn6aq8xqz8">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_6thk0tqj6ea91zxk">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_3dcd0joxqyhcbf5g" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full"/>
+          <part localType="status"/>
+          <part localType="occupationType"/>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_6ths0j8rx7jtxi77" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_10nd0ohn6aq8xqz8">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_6ths0j8rx7jtxi77">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_3dcd0joxqyhcbf5g" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full"/>
+          <part localType="status"/>
+          <part localType="occupationType"/>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_6thy0t0o4ai3zp39" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_10nd0ohn6aq8xqz8">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_6thy0t0o4ai3zp39">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_3dcd0joxqyhcbf5g" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full"/>
+          <part localType="status"/>
+          <part localType="occupationType"/>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_6ti40lmmabczttfb" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_10nd0ohn6aq8xqz8">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_6ti40lmmabczttfb">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_3dcd0joxqyhcbf5g" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full"/>
+          <part localType="status"/>
+          <part localType="occupationType"/>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_6ti900ctdxiy7ne3n" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_10nd0ohn6aq8xqz8">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_6ti900ctdxiy7ne3n">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_3dcd0joxqyhcbf5g" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full"/>
+          <part localType="status"/>
+          <part localType="occupationType"/>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_6tid0gp47heuhrw9" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_10nd0ohn6aq8xqz8">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_6tid0gp47heuhrw9">examinateur</targetRole>
+      </relation>
     </relations>
    
       </cpfDescription>

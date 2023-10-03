@@ -6,6 +6,26 @@
       </maintenanceAgency>
       <maintenanceHistory>
          <maintenanceEvent maintenanceEventType="revised">
+        <agent agentType="human">rcarvais</agent>
+        <eventDateTime standardDateTime="2023-08-10T15:16:56Z"/>
+        <eventDescription/>
+      </maintenanceEvent>
+      <maintenanceEvent maintenanceEventType="revised">
+        <agent agentType="human">rcarvais</agent>
+        <eventDateTime standardDateTime="2023-08-10T15:14:07Z"/>
+        <eventDescription/>
+      </maintenanceEvent>
+      <maintenanceEvent maintenanceEventType="revised">
+        <agent agentType="human">rcarvais</agent>
+        <eventDateTime standardDateTime="2023-08-10T14:06:31Z"/>
+        <eventDescription/>
+      </maintenanceEvent>
+      <maintenanceEvent maintenanceEventType="revised">
+        <agent agentType="human">rcarvais</agent>
+        <eventDateTime standardDateTime="2023-08-10T10:06:20Z"/>
+        <eventDescription/>
+      </maintenanceEvent>
+      <maintenanceEvent maintenanceEventType="revised">
         <agent agentType="human">vnegre</agent>
         <eventDateTime standardDateTime="2023-04-23T08:05:23Z"/>
         <eventDescription/>
@@ -53,6 +73,13 @@
       <source id="source_9j20hx3ay21ed79">
         <reference href="">MC/ET/LXXV/837 (IAD)</reference>
       </source>
+      <source id="source_9c80dyc2thwx0f">
+        <reference href="https://www.geneanet.org/registres/view/14021/139?">AN Y 4915/B </reference>
+        <descriptiveNote>
+          <p>Dans le dossier de réception, se trouve en plus des documents habituels, l'enregistrement des lettres de provisions du 20/04/1768 qui donne la procédure suivie entre le prédécesseur, ses héritiers et l'impétrant et la vérification de l'âge de l'impétrant comme supérieur ou égale à 25 ans (extrait baptistaire).</p>
+        </descriptiveNote>
+        <citedRange unit="page">139-149</citedRange>
+      </source>
     </sources>
       
       
@@ -93,6 +120,18 @@
                <term/>
             </localDescription>
          </localDescriptions>
+      <occupations>
+        <occupation localType="" sourceReference="#source_9c80dyc2thwx0f">
+          <term>entrepreneur des bâtiments du roi</term>
+          <!--optionnal (all below)-->
+          <!--&lt;date/&gt; | &lt;dateRange/&gt; | &lt;dateSet/&gt;-->
+        </occupation>
+        <occupation localType="" sourceReference="">
+          <term>maître maçon, entrepreneur de bastiments à Paris</term>
+          <!--optionnal (all below)-->
+          <!--&lt;date/&gt; | &lt;dateRange/&gt; | &lt;dateSet/&gt;-->
+        </occupation>
+      </occupations>
          
          
          <existDates>
@@ -144,6 +183,31 @@
               <placeName>Rue de la Mortellerie</placeName>
             </place>
           </chronItem>
+          <chronItem id="chronItem_3g7g007v8zd9voi36" sourceReference="#source_9c80dyc2thwx0f" localType="baptism">
+            <date certainty="certain" standardDate="1735-07-03" sourceReference=""/>
+            <event>Baptême de Jean-François Jacob</event>
+            <place>
+              <placeName>Eglise paroissiale de St Gervais</placeName>
+            </place>
+          </chronItem>
+          <chronItem id="chronItem_4zbf0xfe4z8urpul" sourceReference="#source_9c80dyc2thwx0f" localType="receptionColumn2">
+            <dateSet>
+              <date certainty="certain" standardDate="1768-04-26" sourceReference="">Lettres de provision</date>
+              <date certainty="" sourceReference="">Supplique</date>
+              <date certainty="certain" standardDate="1768-05-03" sourceReference="">Ordonnance de soit montré au procureur du roy</date>
+              <date certainty="certain" standardDate="1768-05-19" sourceReference="">Examen</date>
+              <date certainty="certain" standardDate="1768-05-03" sourceReference="">Consentement de la communauté</date>
+              <date certainty="certain" standardDate="1768-05-20" sourceReference="">Information de vie et de mœurs</date>
+              <date certainty="certain" standardDate="1768-05-21" sourceReference="">Serment</date>
+              <date certainty="certain" standardDate="1768-05-21" sourceReference="">Réception</date>
+              <date certainty="certain" standardDate="1768-05-19" sourceReference="">Conclusion du procureur du roi</date>
+              <date certainty="certain" standardDate="1768-05-08" sourceReference="">Délibération de la compagnie pour le choix des examinateurs</date>
+            </dateSet>
+            <event>Réception de l'office de juré expert entrepreneur</event>
+            <place>
+              <placeName>Versailles (lettres de provision)</placeName>
+            </place>
+          </chronItem>
                
                
             </chronList>
@@ -193,6 +257,167 @@
           <relationType id="relationType_id128298d2594528" valueURI="" vocabularySource="" vocabularySourceURI="" sourceReference=""/>
             <targetRole target="#relationType_id128298d2594528"/>
           </relation>
+      <relation target="#chronItem_4zbf0xfe4z8urpul" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Louis Joubert</part>
+          <part localType="status">décédé dernier titulaire de l'office</part>
+          <part localType="occupationType">Bâtiment;Expert entrepreneur</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0147</part>
+        </targetEntity>
+        <relationType id="relationType_a9ua0j1p8mfys5jh" valueURI="https://www.ica.org/standards/RiC/ontology#isSuccessorOf" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_9c80dyc2thwx0f">rico:isSuccessorOf</relationType>
+        <targetRole target="#relationType_a9ua0j1p8mfys5jh">prédécesseur</targetRole>
+        <descriptiveNote>
+          <p>"dont est décédé Louis Joubert dernier titulaire d'iceluy décédé le 08/07/1756 ayant payé le droit annuel au moyen de quoi il demeure dispensé de la rigueur des 40 jours après le décès duquel sa veuve et enfants es nom et qualité qu'il procède nous ont nommé audit office Jean François Joubert l'un d'eux lequel a payé en nos revenus casuels les droits de 8e deniers suivant la quittance du 15/01/1757 contrôlé le 23/12 suivant et qui ne désirant se faire pourvoir dudit office  s'en est démis au profit dudit sieur Jacob, lequel nous a présenté requeste à l'effet de le relever de la surannation de contrôle de ladite quittance, et sur sa requeste nous avons ordonné par arrest de notre conseil du 12/04 de la présente année il serait passé outre leur sceau des provisions dudit office, nonobstant privilèges, etc."</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_4zbf0xfe4z8urpul" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Antoine Jacques Le Cordonnois</part>
+          <part localType="status">Prestre du diocèse de scez, habitué en la paroisse de St Gervais, Paris</part>
+          <part localType="occupationType">Religion;Religieux</part>
+          <part localType="age">37</part>
+          <part localType="address">rue des Barres, Paris</part>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_a9us0u81n2m0nurb" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_9c80dyc2thwx0f">rico:knownBy</relationType>
+        <targetRole target="#relationType_a9us0u81n2m0nurb">témoin</targetRole>
+        <descriptiveNote>
+          <p>Dépose connoistre le sieur Jean François Jacob depuis 20 ans pour faire profession de la R C a et R, scait qu'il est de bonne vie et moeurs et même fort affectionné au service du roi et du public.</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_4zbf0xfe4z8urpul" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Jean Charles Dumont</part>
+          <part localType="status">Architecte juré expert</part>
+          <part localType="occupationType">Bâtiment;Expert entrepreneur</part>
+          <part localType="age">40 passés</part>
+          <part localType="address">rue de la Mortellerie, paroisse St Gervais, Paris</part>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0104</part>
+        </targetEntity>
+        <relationType id="relationType_a9v60vyx9yl0vwq" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_9c80dyc2thwx0f">rico:knownBy</relationType>
+        <targetRole target="#relationType_a9v60vyx9yl0vwq">témoin</targetRole>
+        <descriptiveNote>
+          <p>Dépose connoistre le sieur Jean François Jacob depuis environ 25 ans pour être de la R C a et R, scait qu'il est de bonne vie et moeurs et dépose qu'il est fort affectionné au service du roi et du public.</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_4zbf0xfe4z8urpul" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">François Fortin</part>
+          <part localType="status">Marchand orfèvre à Paris</part>
+          <part localType="occupationType">Commerce;Marchand</part>
+          <part localType="age">38</part>
+          <part localType="address">rue des trois maures, paroisse St Jacques de la Borucherie, Paris</part>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_a9vi0a8or2wc16dn" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_9c80dyc2thwx0f">rico:knownBy</relationType>
+        <targetRole target="#relationType_a9vi0a8or2wc16dn">témoin</targetRole>
+        <descriptiveNote>
+          <p>Dépose connoistre le sieur Jean François Jacob depuis 18 ans ou environs pour faire estre de la R C a et R, scait qu'il est de bonne vie et moeurs et dépose qu'il est fort affectionné au service du roi et du public.</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_4zbf0xfe4z8urpul" sourceReference="">
+        <descriptiveNote>
+          <p>Chauveau est d'abord expert bourgeois puis expert entrepreneur.</p>
+        </descriptiveNote>
+        <targetEntity targetType="person">
+          <part localType="full">René Bonaventure Chauveau</part>
+          <part localType="status">Doyen de la Compagnie</part>
+          <part localType="occupationType"/>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0054</part>
+        </targetEntity>
+        <relationType id="relationType_a9vt0r7ihmzzmzps" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_9c80dyc2thwx0f">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_a9vt0r7ihmzzmzps">observateur</targetRole>
+      </relation>
+      <relation target="#chronItem_4zbf0xfe4z8urpul" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Jean Michel Poirin</part>
+          <part localType="status">Syndic de la compagnie</part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0223</part>
+        </targetEntity>
+        <relationType id="relationType_a9w20mnq9jg3azz8" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_9c80dyc2thwx0f">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_a9w20mnq9jg3azz8">observateur</targetRole>
+      </relation>
+      <relation target="#chronItem_4zbf0xfe4z8urpul" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">André Mouchet</part>
+          <part localType="status">Adjoint de la compagnie</part>
+          <part localType="occupationType">Bâtiment;Expert entrepreneur</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0200</part>
+        </targetEntity>
+        <relationType id="relationType_a9wa0nkls6kkoiy" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_9c80dyc2thwx0f">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_a9wa0nkls6kkoiy">observateur</targetRole>
+      </relation>
+      <relation target="#chronItem_4zbf0xfe4z8urpul" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Antoine Nicolas Dauphin</part>
+          <part localType="status">Examinateur de la 1ère colonne</part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0067</part>
+        </targetEntity>
+        <relationType id="relationType_a9wh06wwxkos3b2x" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_9c80dyc2thwx0f">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_a9wh06wwxkos3b2x">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_4zbf0xfe4z8urpul" sourceReference="">
+        <descriptiveNote>
+          <p>Martin est au début expert entrepreneur pui expert bourgeois.</p>
+        </descriptiveNote>
+        <targetEntity targetType="person">
+          <part localType="full">Pierre Henry Martin</part>
+          <part localType="status">Examinateur de la 1ère colonne</part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0191</part>
+        </targetEntity>
+        <relationType id="relationType_a9wo09b00selndu4" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_9c80dyc2thwx0f">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_a9wo09b00selndu4">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_4zbf0xfe4z8urpul" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Raoul Bouillette de Chambly</part>
+          <part localType="status">Examinateur de la 2nde colonne</part>
+          <part localType="occupationType">Bâtiment;Expert entrepreneur</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0032</part>
+        </targetEntity>
+        <relationType id="relationType_a9wt0psce4ttv5dc" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_9c80dyc2thwx0f">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_a9wt0psce4ttv5dc">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_4zbf0xfe4z8urpul" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Jaques Jean Thevenin</part>
+          <part localType="status">Examinateur de la 2nde colonne</part>
+          <part localType="occupationType">Bâtiment;Expert entrepreneur</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0254</part>
+        </targetEntity>
+        <relationType id="relationType_a9wy0uazirj4szyh" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_9c80dyc2thwx0f">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_a9wy0uazirj4szyh">examinateur</targetRole>
+      </relation>
     </relations>
    
       </cpfDescription>

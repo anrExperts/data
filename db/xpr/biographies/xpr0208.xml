@@ -6,6 +6,11 @@
       </maintenanceAgency>
       <maintenanceHistory>
          <maintenanceEvent maintenanceEventType="revised">
+        <agent agentType="human">rcarvais</agent>
+        <eventDateTime standardDateTime="2023-08-28T17:33:35Z"/>
+        <eventDescription/>
+      </maintenanceEvent>
+      <maintenanceEvent maintenanceEventType="revised">
         <agent agentType="human">vnegre</agent>
         <eventDateTime standardDateTime="2023-05-05T15:49:11Z"/>
         <eventDescription/>
@@ -53,6 +58,10 @@
       <source id="source_5t403732hwcr5t">
         <reference href="">MC/ET/LXXXVII/965 (IAD)</reference>
       </source>
+      <source id="source_1g4b0pnxfwqt33gl">
+        <reference href="https://www.geneanet.org/registres/view/171961/419?">AN Y 4567/A</reference>
+        <citedRange unit="page">419-424</citedRange>
+      </source>
     </sources>
       
       
@@ -93,6 +102,12 @@
                </dateRange>
                
             </function>
+        <function localType="" sourceReference="#source_1g4b0pnxfwqt33gl">
+          <term>expert juré de la 2nde colonne</term>
+          <!--optionnal (all below)-->
+          <!--&lt;date/&gt; | &lt;dateRange/&gt; | &lt;dateSet/&gt;-->
+          <!--&lt;placeName sourceReference=&quot;&quot;/&gt;-->
+        </function>
          </functions>
       <places>
         <place sourceReference="#source_80k0a4xk3q4jha4">
@@ -109,7 +124,7 @@
             </localDescription>
          </localDescriptions>
       <occupations>
-        <occupation localType="" sourceReference="#source_80k0a4xk3q4jha4">
+        <occupation localType="" sourceReference="#source_80k0a4xk3q4jha4 #source_1g4b0pnxfwqt33gl">
           <term>Maître maçon, entrepreneur de bâtiments à Paris</term>
           <date certainty="certain" standardDate="1737-07-28" sourceReference=""/>
           <!--optionnal (all below)-->
@@ -168,6 +183,24 @@
             <event>Décès de Michel Paumier</event>
             <place>
               <placeName>Rue Saint-Antoine</placeName>
+            </place>
+          </chronItem>
+          <chronItem id="chronItem_34f50v0bqh06cy7p" sourceReference="#source_1g4b0pnxfwqt33gl" localType="receptionColumn2">
+            <dateSet>
+              <date certainty="certain" standardDate="1739-07-24" sourceReference="">Lettres de provision</date>
+              <date certainty="" sourceReference="">Supplique</date>
+              <date certainty="certain" standardDate="1739-08-19" sourceReference="">Ordonnance de soit montré au procureur du roy</date>
+              <date certainty="certain" standardDate="1739-09-08" sourceReference="">Examen</date>
+              <date certainty="certain" standardDate="1739-08-19" sourceReference="">Consentement de la communauté</date>
+              <date certainty="certain" standardDate="1739-09-09" sourceReference="">Information de vie et de mœurs</date>
+              <date certainty="certain" standardDate="1739-09-10" sourceReference="">Serment</date>
+              <date certainty="certain" standardDate="1739-09-10" sourceReference="">Réception</date>
+              <date certainty="certain" standardDate="1739-09-09" sourceReference="">Conclusions du procureur du roi </date>
+              <date certainty="certain" standardDate="1739-08-30" sourceReference="">Délibération de la Compagnie pour le choix des examinateurs</date>
+            </dateSet>
+            <event>Réception en l'office d'expert juré de la 2nde colonne</event>
+            <place>
+              <placeName>Paris (lettres de provision)</placeName>
             </place>
           </chronItem>
             </chronList>
@@ -241,6 +274,161 @@
         </targetEntity>
         <relationType id="relationType_dhk30uwk25bgs6f" valueURI="" vocabularySource="" vocabularySourceURI="" sourceReference="#source_80k0a4xk3q4jha4">rico:hasFamilyAssociationWith</relationType>
         <targetRole target="#relationType_dhk30uwk25bgs6f">belle-mère</targetRole>
+      </relation>
+      <relation target="#chronItem_34f50v0bqh06cy7p" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Nicolas Paumier</part>
+          <part localType="status">deffunt dernier posseseur, son oncle</part>
+          <part localType="occupationType">Bâtiment;Expert entrepreneur</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0207</part>
+        </targetEntity>
+        <relationType id="relationType_8k0b01cu0wcsqdyj" valueURI="https://www.ica.org/standards/RiC/ontology#isSuccessorOf" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_1g4b0pnxfwqt33gl">rico:isSuccessorOf</relationType>
+        <targetRole target="#relationType_8k0b01cu0wcsqdyj">prédécesseur</targetRole>
+        <descriptiveNote>
+          <p>"suivant la résignation faite en sa faveur par deffunt Nicolas Paumier son oncle dernier possesseur, lequel en conséquence aurait payé aux Revenus casuels le 1/4 denier suivant laquittance du Trésorier d'iceux du 31/05/1738."</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_34f50v0bqh06cy7p" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">René Pernelle</part>
+          <part localType="status">Prestre habitué et apprové dans l'église des Saints Innocents</part>
+          <part localType="occupationType">Religion;Religieux</part>
+          <part localType="age">58 environ</part>
+          <part localType="address">Dans l'enceinte du Sépulchre, rue St Denis, paroisse St Méderic, Paris</part>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_8k1f0h19t9xircjs" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_1g4b0pnxfwqt33gl">rico:knownBy</relationType>
+        <targetRole target="#relationType_8k1f0h19t9xircjs">témoin</targetRole>
+        <descriptiveNote>
+          <p>Dépose connoistre le sieur Michel Paumier depuis un an, qu'il est de la R C a et R pour luy avoir administré le sacrement de pénitence. </p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_34f50v0bqh06cy7p" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Thomas Arnoult</part>
+          <part localType="status">Juré expert des bastiments à Paris</part>
+          <part localType="occupationType">Bâtiment;Expert entrepreneur</part>
+          <part localType="age">33 environ</part>
+          <part localType="address">Rue des Tournelles, paroisse St Paul, Paris</part>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0006</part>
+        </targetEntity>
+        <relationType id="relationType_8k220s3jtf1nncaf" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_1g4b0pnxfwqt33gl">rico:knownBy</relationType>
+        <targetRole target="#relationType_8k220s3jtf1nncaf">témoin</targetRole>
+        <descriptiveNote>
+          <p>Dépose connoistre le sieur Michel Paumier depuis 20 ans ou environ, qu'il est de la R C a et R pour l'avoir veu en remplir les devoirs en bon chrestien, le croit capable de remplir la charge dont il poursuit la réception, au surplus qu'il est fort affectionné au service du roy et du publiq.</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_34f50v0bqh06cy7p" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Jean Pinard</part>
+          <part localType="status">Juré expert des bastimens à Paris</part>
+          <part localType="occupationType">Bâtiment;Expert entrepreneur</part>
+          <part localType="age">35  environ</part>
+          <part localType="address">Rue des Gravilliers, paroisse St Nicolas des Champs, Paris</part>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0219</part>
+        </targetEntity>
+        <relationType id="relationType_8k2r0hv11kmysmpd" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_1g4b0pnxfwqt33gl">rico:knownBy</relationType>
+        <targetRole target="#relationType_8k2r0hv11kmysmpd">témoin</targetRole>
+        <descriptiveNote>
+          <p>Dépose connoistre ledit Paumier depuis 10 ans ou environ, qu'il est de la R C a et R pour l'avoir veu assister au service divin et remplir les devoirs de bon chrestien, le croit capable de remplir la charge dont il poursuit la réception, au surplus qu'il est fort affectionné au service du roy.</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_34f50v0bqh06cy7p" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Pierre Quirot </part>
+          <part localType="status">Doyen de la Compagnie</part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0232</part>
+        </targetEntity>
+        <relationType id="relationType_8k3g0pxslf6kzg6p" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_1g4b0pnxfwqt33gl">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_8k3g0pxslf6kzg6p">observateur</targetRole>
+      </relation>
+      <relation target="#chronItem_34f50v0bqh06cy7p" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Jean Baptiste Michel Poirin</part>
+          <part localType="status">Syndic de la Compagnie</part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0223</part>
+        </targetEntity>
+        <relationType id="relationType_8k400fa36f4eyuab" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_1g4b0pnxfwqt33gl">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_8k400fa36f4eyuab">observateur</targetRole>
+      </relation>
+      <relation target="#chronItem_34f50v0bqh06cy7p" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Pierre Louis Richard</part>
+          <part localType="status">Adjoint de la Compagnie</part>
+          <part localType="occupationType">Bâtiment;Expert entrepreneur</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0236</part>
+        </targetEntity>
+        <relationType id="relationType_8k4n066fpc5f7l4x" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_1g4b0pnxfwqt33gl">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_8k4n066fpc5f7l4x">observateur</targetRole>
+      </relation>
+      <relation target="#chronItem_34f50v0bqh06cy7p" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Pierre François Le Hain</part>
+          <part localType="status">Examinateur de la 1ère colonne</part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0165</part>
+        </targetEntity>
+        <relationType id="relationType_8k520keh2doocvoe" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_1g4b0pnxfwqt33gl">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_8k520keh2doocvoe">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_34f50v0bqh06cy7p" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Charles Bernard</part>
+          <part localType="status">Examinateur de la 1ère colonne</part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0018</part>
+        </targetEntity>
+        <relationType id="relationType_8k590fv02e7dsuue" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_1g4b0pnxfwqt33gl">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_8k590fv02e7dsuue">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_34f50v0bqh06cy7p" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Bernard Jean Baptiset Loir</part>
+          <part localType="status">Examinateur de la 2nde colonne</part>
+          <part localType="occupationType">Bâtiment;Expert entrepreneur</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0185</part>
+        </targetEntity>
+        <relationType id="relationType_8k5h0ulq63878u" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_1g4b0pnxfwqt33gl">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_8k5h0ulq63878u">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_34f50v0bqh06cy7p" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Jean Pinard</part>
+          <part localType="status">Examinateur de la 2nde colonne</part>
+          <part localType="occupationType">Bâtiment;Expert entrepreneur</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0219</part>
+        </targetEntity>
+        <relationType id="relationType_8k5l062k5bzaa8tv" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_1g4b0pnxfwqt33gl">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_8k5l062k5bzaa8tv">examinateur</targetRole>
       </relation>
          
       </relations>

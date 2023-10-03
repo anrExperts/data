@@ -6,6 +6,11 @@
       </maintenanceAgency>
       <maintenanceHistory>
       <maintenanceEvent maintenanceEventType="revised">
+        <agent agentType="human">rcarvais</agent>
+        <eventDateTime standardDateTime="2023-08-30T08:51:44Z"/>
+        <eventDescription/>
+      </maintenanceEvent>
+      <maintenanceEvent maintenanceEventType="revised">
         <agent agentType="human">vnegre</agent>
         <eventDateTime standardDateTime="2023-05-05T15:55:55Z"/>
         <eventDescription/>
@@ -79,6 +84,10 @@
       <source id="source_45si08voj40sfx9">
         <reference href="">MC/ET/XXXIII/388 (IAD de sa 1e femme Margerite Thérèse Guerard)</reference>
       </source>
+      <source id="source_11w90ppl4e0erqas">
+        <reference href="https://www.geneanet.org/registres/view/22011/366?">AN Y 4153</reference>
+        <citedRange unit="page">366-371</citedRange>
+      </source>
     </sources>
     
       
@@ -131,6 +140,15 @@
           <!--&lt;date/&gt; | &lt;dateRange/&gt; | &lt;dateSet/&gt;-->
           <!--&lt;placeName sourceReference=&quot;&quot;/&gt;-->
         </function>
+        <function localType="" sourceReference="#source_11w90ppl4e0erqas">
+          <term>Juré expert architecte bourgeois de Paris</term>
+          <descriptiveNote>
+            <p>Ledit Quirot "renonce à toutes entreprises de bastiments, maçonnerie, charpente, couverture et menuiserie" dans sa reception devant le procureur du roi. </p>
+          </descriptiveNote>
+          <!--optionnal (all below)-->
+          <!--&lt;date/&gt; | &lt;dateRange/&gt; | &lt;dateSet/&gt;-->
+          <!--&lt;placeName sourceReference=&quot;&quot;/&gt;-->
+        </function>
          </functions>
          <localDescriptions>
             <localDescription localType="sex">
@@ -145,6 +163,14 @@
             <toDate certainty="certain" standardDate="1700-07-31" status="" sourceReference=""/>
           </dateRange>
           <placeName sourceReference=""/>
+          <descriptiveNote>
+            <p>Greffier n'est pas une profession mais une fonction</p>
+          </descriptiveNote>
+          <!--optionnal (all below)-->
+          <!--&lt;date/&gt; | &lt;dateRange/&gt; | &lt;dateSet/&gt;-->
+        </occupation>
+        <occupation localType="" sourceReference="#source_11w90ppl4e0erqas">
+          <term>Architecte à Paris</term>
           <!--optionnal (all below)-->
           <!--&lt;date/&gt; | &lt;dateRange/&gt; | &lt;dateSet/&gt;-->
         </occupation>
@@ -207,6 +233,23 @@
             <event>Mariage (1) avec Marguerite Thérèse Guerard</event>
             <place>
               <placeName/>
+            </place>
+          </chronItem>
+          <chronItem id="chronItem_4vsu0vx4397t8hm" sourceReference="#source_11w90ppl4e0erqas" localType="receptionColumn1">
+            <dateSet>
+              <date certainty="certain" standardDate="1706-03-06" sourceReference="">Lettres de provision</date>
+              <date certainty="" sourceReference="">Supplique</date>
+              <date certainty="certain" standardDate="1706-03-30" sourceReference="">Ordonnance de soit montré au procureur du roy</date>
+              <date certainty="certain" standardDate="1706-04-12" sourceReference="">Examen</date>
+              <date certainty="certain" standardDate="1706-03-30" sourceReference="">Consentement de la communauté</date>
+              <date certainty="certain" standardDate="1706-04-13" sourceReference="">Information de vie et de mœurs</date>
+              <date certainty="certain" standardDate="1706-04-14" sourceReference="">Serment</date>
+              <date certainty="certain" standardDate="1706-04-14" sourceReference="">Réception</date>
+              <date certainty="certain" standardDate="1706-04-13" sourceReference="">Conclusions du procureur du roi</date>
+            </dateSet>
+            <event>Réception en l'office de juré expert de la 1ère colonne</event>
+            <place>
+              <placeName>Versailles (lettres de provision)</placeName>
             </place>
           </chronItem>
             </chronList>
@@ -296,6 +339,168 @@
         </targetEntity>
         <relationType id="relationType_7xmc023te87aqxrj" valueURI="" vocabularySource="" vocabularySourceURI="" sourceReference="#source_8jm0jwl7cwfkb8h">rico:isChildOf</relationType>
         <targetRole target="#relationType_7xmc023te87aqxrj">mère</targetRole>
+      </relation>
+      <relation target="#chronItem_4vsu0vx4397t8hm" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">François Pageois</part>
+          <part localType="status">dernier paisible possesseur d'iceluy, défunt</part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0204</part>
+        </targetEntity>
+        <relationType id="relationType_8ndb0z36dtee7uck" valueURI="https://www.ica.org/standards/RiC/ontology#isSuccessorOf" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_11w90ppl4e0erqas">rico:isSuccessorOf</relationType>
+        <targetRole target="#relationType_8ndb0z36dtee7uck">prédécesseur</targetRole>
+        <descriptiveNote>
+          <p>"qu'il aurait résigné en faveur dudit Quirot"</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_4vsu0vx4397t8hm" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Jean Cornillier</part>
+          <part localType="status">Prestre bachelier en théologie de la Fcaulté de Paris</part>
+          <part localType="occupationType">Religion;Religieux</part>
+          <part localType="age">40 environ</part>
+          <part localType="address">Rue St Martin, paroisse St Merri, Paris</part>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_8ndy0bl8bf6oyvb" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_11w90ppl4e0erqas">rico:knownBy</relationType>
+        <targetRole target="#relationType_8ndy0bl8bf6oyvb">témoin</targetRole>
+        <descriptiveNote>
+          <p>Dépose qu'il connoist ledit Me Pierre Quirot depuis plusieurs années, scait qu'il est de bonne vie et moeurs, qu'il fait profession de la R C a et R, qu'il fréquente les sacrements et est assidu au service divin et qu'il est affectionné au service du roy et du public.</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_4vsu0vx4397t8hm" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Jacques Thierry</part>
+          <part localType="status">Conseiller et procureur du roi de Kebec en la Nouvelle-France, pais de Canada</part>
+          <part localType="occupationType">Droit;Procureur</part>
+          <part localType="age">40 environ</part>
+          <part localType="address">Rue de la Verrerie, paroisse St Jean en Grève, Paris</part>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_8nei0d5osf6apbgk" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_11w90ppl4e0erqas">rico:knownBy</relationType>
+        <targetRole target="#relationType_8nei0d5osf6apbgk">témoin</targetRole>
+        <descriptiveNote>
+          <p>Dépose qu'il connoist depuis longtemps ledit Quirot, scait qu'il est de bonne vie et moeurs et conversation, qu'il fait profession de la R C a et R, et affectionné au service du roy et du public.</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_4vsu0vx4397t8hm" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">René Thierry</part>
+          <part localType="status">Greffier au Châtelet de Paris</part>
+          <part localType="occupationType">Droit;Greffier</part>
+          <part localType="age">58 environ</part>
+          <part localType="address">Rue e la Verrerie, Paris</part>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_8nex0ri9jvyfoknf" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_11w90ppl4e0erqas">rico:knownBy</relationType>
+        <targetRole target="#relationType_8nex0ri9jvyfoknf">témoin</targetRole>
+        <descriptiveNote>
+          <p>Dépose qu'il connoist ledit Quirot depuis plusieurs années, scait qu'il est homme de probité et de bonne vie et moeurs, qu'il fait profession de la R C a et R, et qu'il est affectionné au service du roy et du public.</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_4vsu0vx4397t8hm" sourceReference="">
+        <descriptiveNote>
+          <p>Il est désigné de manière erronée comme appartenant aux experts bourgeois de la 1ère colonne. Etonnant ! Pourquoi ?</p>
+        </descriptiveNote>
+        <targetEntity targetType="person">
+          <part localType="full">Jean François Gobin</part>
+          <part localType="status">Examinateur de la 2nde colonne</part>
+          <part localType="occupationType">Bâtiment;Expert entrepreneur</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0124</part>
+        </targetEntity>
+        <relationType id="relationType_8nfb0cn5g79c51kn" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_11w90ppl4e0erqas">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_8nfb0cn5g79c51kn">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_4vsu0vx4397t8hm" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">André Perrault</part>
+          <part localType="status">Examinateur de la 1ère colonne</part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0211</part>
+        </targetEntity>
+        <relationType id="relationType_8nfp0n6iwxe3l71" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_11w90ppl4e0erqas">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_8nfp0n6iwxe3l71">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_4vsu0vx4397t8hm" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Toussaint Rohais</part>
+          <part localType="status">Examinateur de la 2nde colonne</part>
+          <part localType="occupationType">Bâtiment;Expert entrepreneur</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0239</part>
+        </targetEntity>
+        <relationType id="relationType_8ng00rh4pznuglc" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_11w90ppl4e0erqas">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_8ng00rh4pznuglc">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_4vsu0vx4397t8hm" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Charles Duval</part>
+          <part localType="status">Examinateur de la 2nd colonne</part>
+          <part localType="occupationType">Bâtiment;Expert entrepreneur</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0105</part>
+        </targetEntity>
+        <relationType id="relationType_8ngb09b249ei6yh" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_11w90ppl4e0erqas">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_8ngb09b249ei6yh">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_4vsu0vx4397t8hm" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Charles Joubert</part>
+          <part localType="status">Syndic de la Compagnie</part>
+          <part localType="occupationType">Bâtiment;Expert entrepreneur</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0146</part>
+        </targetEntity>
+        <relationType id="relationType_8ngk08nd5ojrx66k" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_11w90ppl4e0erqas">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_8ngk08nd5ojrx66k">observateur</targetRole>
+      </relation>
+      <relation target="#chronItem_4vsu0vx4397t8hm" sourceReference="">
+        <descriptiveNote>
+          <p>Le syndic et l'adjoint ne signent pas le certificat. Il est indiqué simplement qu'ils "consentent pour le bon plaisir". Seules les examinateurs s'impliquent dans la réception ou plutôt dans l'examen de l'impétrant.
+L'examen "sur le fait d'expérience arts te sciences qui en dépendent".</p>
+        </descriptiveNote>
+        <targetEntity targetType="person">
+          <part localType="full">Jacques Pirethouy</part>
+          <part localType="status">Adjoint de la Compagnie</part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0221</part>
+        </targetEntity>
+        <relationType id="relationType_8ngs0gqeyngd2l8v" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_11w90ppl4e0erqas">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_8ngs0gqeyngd2l8v">observateur</targetRole>
+      </relation>
+      <relation target="#chronItem_4vsu0vx4397t8hm" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full"/>
+          <part localType="status"/>
+          <part localType="occupationType"/>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_8ngy0hgp6lbqotew" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_11w90ppl4e0erqas">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_8ngy0hgp6lbqotew">examinateur</targetRole>
       </relation>
         </relations>
       </cpfDescription>

@@ -1,11 +1,16 @@
 <eac xmlns="https://archivists.org/ns/eac/v2" xml:id="xpr0256">
-   <control maintenanceStatus="new" publicationStatus="inProcess">
+   <control maintenanceStatus="updated" publicationStatus="inProcess">
       <recordId>xpr0256</recordId>
       <maintenanceAgency>
          <agencyName>projet Experts</agencyName>
       </maintenanceAgency>
       <maintenanceHistory>
-         <maintenanceEvent maintenanceEventType="updated" languageOfElement="eng">
+         <maintenanceEvent maintenanceEventType="revised">
+        <agent agentType="human">rcarvais</agent>
+        <eventDateTime standardDateTime="2023-09-01T10:49:06Z"/>
+        <eventDescription/>
+      </maintenanceEvent>
+      <maintenanceEvent maintenanceEventType="updated" languageOfElement="eng">
             <agent agentType="machine">EAC-CPF 1.x to EAC 2.0 Migration Style Sheet (eac1-to-eac2.xsl)</agent>
             <eventDateTime standardDateTime="2022-09-19T16:52:57.659824+02:00"/>
             <eventDescription>EAC-CPF 1.x (urn:isbn:1-931666-33-4) instance migrated to EAC 2.0 (https://archivists.org/ns/eac/v2)</eventDescription>
@@ -36,6 +41,12 @@
             <eventDescription>Fiches créée sur Google Drive.</eventDescription>
          </maintenanceEvent>
       </maintenanceHistory>
+    <sources>
+      <source id="source_b1f0p9xgjns4uej">
+        <reference href="https://www.geneanet.org/registres/view/19482/789">AN Y 5148/A</reference>
+        <citedRange unit="page">789-790 + 851-854</citedRange>
+      </source>
+    </sources>
       
       
    </control>
@@ -80,7 +91,7 @@
          <existDates>
             <dateRange>
                <fromDate sourceReference="" certainty="" standardDate="1758-07"/>
-               <toDate sourceReference="" certainty="" standardDate=""/>
+               <toDate sourceReference="" certainty=""/>
             </dateRange>
          </existDates>
          <biogHist>
@@ -131,6 +142,24 @@
                   
                   
                </chronItem>
+          <chronItem id="chronItem_1ujl0bvdaai7hvdl" sourceReference="#source_b1f0p9xgjns4uej" localType="reception">
+            <dateSet>
+              <date certainty="certain" standardDate="1786-11-22" sourceReference="">Lettres de provision</date>
+              <date certainty="" sourceReference="">Supplique</date>
+              <date certainty="certain" standardDate="1786-11-25" sourceReference="">Ordonnance de soit montré au procureur du roy</date>
+              <date certainty="uncertain" standardDate="1786-12-12" sourceReference="">Examen</date>
+              <date certainty="certain" standardDate="1786-11-28" sourceReference="">Consentement de la communauté</date>
+              <date certainty="certain" standardDate="1786-12-13" sourceReference="">Information de vie et de mœurs</date>
+              <date certainty="certain" standardDate="1786-12-14" sourceReference="">Serment</date>
+              <date certainty="certain" standardDate="1786-12-14" sourceReference="">Réception</date>
+              <date certainty="certain" standardDate="1786-12-11" sourceReference="">Conclusion préparatoires du procureur du roi</date>
+              <date certainty="certain" standardDate="1786-12-13" sourceReference="">Conclusions définitives du procureur du roi</date>
+            </dateSet>
+            <event>Réception en l'office de juré expert</event>
+            <place>
+              <placeName>Paris (lettres de provision)</placeName>
+            </place>
+          </chronItem>
             </chronList>
          </biogHist>
       </description>
@@ -149,6 +178,162 @@
           <relationType id="relationType_id128298d2627886" valueURI="" vocabularySource="" vocabularySourceURI="" sourceReference=""/>
             <targetRole target="#relationType_id128298d2627886"/>
           </relation>
+      <relation target="#chronItem_1ujl0bvdaai7hvdl" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Martin Marie Terrier</part>
+          <part localType="status">feu dernier possesseur d'iceluy</part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0252</part>
+        </targetEntity>
+        <relationType id="relationType_6u0901b46htg073g" valueURI="https://www.ica.org/standards/RiC/ontology#isSuccessorOf" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_b1f0p9xgjns4uej">rico:isSuccessorOf</relationType>
+        <targetRole target="#relationType_6u0901b46htg073g">prédécesseur</targetRole>
+        <descriptiveNote>
+          <p/>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_1ujl0bvdaai7hvdl" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Jean Baptiste Bruno</part>
+          <part localType="status">prestre habitué à St Germain l'Auxerrois</part>
+          <part localType="occupationType">Religion;Religieux</part>
+          <part localType="age">51</part>
+          <part localType="address">au presbytère de ladiet église, Paris</part>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_6u0q0o7h081t12zb" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_b1f0p9xgjns4uej">rico:knownBy</relationType>
+        <targetRole target="#relationType_6u0q0o7h081t12zb">témoin</targetRole>
+        <descriptiveNote>
+          <p>Dépose connoistre ledit sieur Varin depuis plusieurs années, scait qu'il est de Religion C a et R, de bonnes vie et moeurs, en état d'exercer l'état et office de juré expert à Paris.</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_1ujl0bvdaai7hvdl" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Denis François Ducret</part>
+          <part localType="status">Juré expert des bastiments</part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age">48 environ</part>
+          <part localType="address">rue du Coq et paroisse St Jean, Paris</part>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0102</part>
+        </targetEntity>
+        <relationType id="relationType_6u130g1elt6e44oc" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_b1f0p9xgjns4uej">rico:knownBy</relationType>
+        <targetRole target="#relationType_6u130g1elt6e44oc">témoin</targetRole>
+        <descriptiveNote>
+          <p>Il y a une erreur dans le prénom du témoin. Il s'agit de NIcolas.
+Dépose connoistre ledit sieur Varin depuis longtemps, scait qu'il est de Religion C a et R, de bonnes vie et moeurs, en état d'exercer l'état et office de juré expert à Paris.</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_1ujl0bvdaai7hvdl" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Pierre Etienne Pecou[t/s]</part>
+          <part localType="status">Entrepreneur des Bastimensts</part>
+          <part localType="occupationType">Bâtiment;Entrepreneur ou maître de métier</part>
+          <part localType="age">37 environ</part>
+          <part localType="address">Rue du Coq, paroisse St Jean, Paris</part>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_6u1d0tcalefv2by" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_b1f0p9xgjns4uej">rico:knownBy</relationType>
+        <targetRole target="#relationType_6u1d0tcalefv2by">témoin</targetRole>
+        <descriptiveNote>
+          <p>Dépose connoistre ledit sieur Warin depuis longtemps, scait qu'il est de Religion C a et R, fort affectionné au service du roy et du public, et très en état d'exercer l'état et office de juré expert à Paris.</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_1ujl0bvdaai7hvdl" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full"/>
+          <part localType="status"/>
+          <part localType="occupationType"/>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_6u1m0dejjn1llbqc" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_b1f0p9xgjns4uej">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_6u1m0dejjn1llbqc">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_1ujl0bvdaai7hvdl" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full"/>
+          <part localType="status"/>
+          <part localType="occupationType"/>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_6u1t0dnzti0jw0m" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_b1f0p9xgjns4uej">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_6u1t0dnzti0jw0m">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_1ujl0bvdaai7hvdl" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full"/>
+          <part localType="status"/>
+          <part localType="occupationType"/>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_6u200j84mnsuo24h" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_b1f0p9xgjns4uej">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_6u200j84mnsuo24h">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_1ujl0bvdaai7hvdl" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full"/>
+          <part localType="status"/>
+          <part localType="occupationType"/>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_6u260h1th3kubgsv" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_b1f0p9xgjns4uej">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_6u260h1th3kubgsv">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_1ujl0bvdaai7hvdl" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full"/>
+          <part localType="status"/>
+          <part localType="occupationType"/>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_6u2b0q65hrk4371t" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_b1f0p9xgjns4uej">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_6u2b0q65hrk4371t">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_1ujl0bvdaai7hvdl" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full"/>
+          <part localType="status"/>
+          <part localType="occupationType"/>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_6u2f02cjhart0kv5" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_b1f0p9xgjns4uej">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_6u2f02cjhart0kv5">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_1ujl0bvdaai7hvdl" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full"/>
+          <part localType="status"/>
+          <part localType="occupationType"/>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_6u2j0di6bsf09f67" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_b1f0p9xgjns4uej">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_6u2j0di6bsf09f67">examinateur</targetRole>
+      </relation>
         </relations>
       </cpfDescription>
    

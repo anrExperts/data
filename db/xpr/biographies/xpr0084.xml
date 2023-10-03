@@ -1,12 +1,17 @@
 <eac xmlns="https://archivists.org/ns/eac/v2" xml:id="xpr0084">
       <!--père de Louis Jules-->
-   <control maintenanceStatus="new" publicationStatus="inProcess">
+   <control maintenanceStatus="updated" publicationStatus="inProcess">
       <recordId>xpr0084</recordId>
       <maintenanceAgency>
          <agencyName>projet Experts</agencyName>
       </maintenanceAgency>
       <maintenanceHistory>
-         <maintenanceEvent maintenanceEventType="updated" languageOfElement="eng">
+         <maintenanceEvent maintenanceEventType="revised">
+        <agent agentType="human">rcarvais</agent>
+        <eventDateTime standardDateTime="2023-07-20T19:57:12Z"/>
+        <eventDescription/>
+      </maintenanceEvent>
+      <maintenanceEvent maintenanceEventType="updated" languageOfElement="eng">
             <agent agentType="machine">EAC-CPF 1.x to EAC 2.0 Migration Style Sheet (eac1-to-eac2.xsl)</agent>
             <eventDateTime standardDateTime="2022-09-19T16:52:56.110338+02:00"/>
             <eventDescription>EAC-CPF 1.x (urn:isbn:1-931666-33-4) instance migrated to EAC 2.0 (https://archivists.org/ns/eac/v2)</eventDescription>
@@ -37,6 +42,12 @@
             <eventDescription>Fiches créée sur Google Drive.</eventDescription>
          </maintenanceEvent>
       </maintenanceHistory>
+    <sources>
+      <source id="source_c25098w899nmwzm">
+        <reference href="https://www.geneanet.org/registres/view/34619/853?">An Y 4513/A </reference>
+        <citedRange unit="page">853-856</citedRange>
+      </source>
+    </sources>
       
       
    </control>
@@ -104,6 +115,23 @@
                   
                   
                </chronItem>
+          <chronItem id="chronItem_1yha0ka7iadd8rd9" sourceReference="#source_c25098w899nmwzm" localType="reception">
+            <dateSet>
+              <date certainty="certain" standardDate="1735-03-03" sourceReference="">Lettres de provision</date>
+              <date certainty="" sourceReference="">Supplique</date>
+              <date certainty="certain" standardDate="1735-03-14" sourceReference="">Ordonnance de soit montré au procureur du roy</date>
+              <date certainty="uncertain" standardDate="1735-03-14" sourceReference="">Examen</date>
+              <date certainty="uncertain" standardDate="1735-03-13" sourceReference="">Consentement de la communauté</date>
+              <date certainty="certain" standardDate="1735-03-14" sourceReference="">Information de vie et de mœurs</date>
+              <date certainty="certain" standardDate="1735-03-14" sourceReference="">Serment</date>
+              <date certainty="certain" standardDate="1735-03-14" sourceReference="">Réception</date>
+              <date certainty="uncertain" standardDate="1735-03-14" sourceReference="">Conclusions du procureur du roi</date>
+            </dateSet>
+            <event>Réception en l'office d'expert juré de la 1ère colonne</event>
+            <place>
+              <placeName>Versailles (lettres de provisions)</placeName>
+            </place>
+          </chronItem>
                
             </chronList>
          </biogHist>
@@ -123,6 +151,165 @@
           <relationType id="relationType_id128298d2576695" valueURI="" vocabularySource="" vocabularySourceURI="" sourceReference=""/>
             <targetRole target="#relationType_id128298d2576695"/>
           </relation>
+      <relation target="#chronItem_1yha0ka7iadd8rd9" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Louis Benoist</part>
+          <part localType="status">dernier titulaire de l'office vacant par son décès aux revenus casuels de SM, dont Delespine apayé la finnace</part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0017</part>
+        </targetEntity>
+        <relationType id="relationType_n24u064ga5ly6pap" valueURI="https://www.ica.org/standards/RiC/ontology#isSuccessorOf" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_c25098w899nmwzm">rico:isSuccessorOf</relationType>
+        <targetRole target="#relationType_n24u064ga5ly6pap">prédécesseur</targetRole>
+        <descriptiveNote>
+          <p/>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_1yha0ka7iadd8rd9" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">François Balin</part>
+          <part localType="status">prestre licencié es droit de la faculté de Paris, administrateur des sacremens de l'égflise paroissiale de St Roch</part>
+          <part localType="occupationType"/>
+          <part localType="age">33</part>
+          <part localType="address">à la communauté, rue St Honoré, Paris</part>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_n25a07uy65tiwof4" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_c25098w899nmwzm">rico:knownBy</relationType>
+        <targetRole target="#relationType_n25a07uy65tiwof4">témoin</targetRole>
+        <descriptiveNote>
+          <p>Dépose connoistre le sieur Pierre Charles Delespine depuis 6 ans ou environ, qu'il est de bonne vie et moeurs, de la religion C a et R pour luy en avoir veu faire les fonctions, et l'avoir veu assister au service divin, que d'ailleurs, il est très affectionné au service du roy et du public.
+Signature : Ballin</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_1yha0ka7iadd8rd9" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Jean Marc Nattier</part>
+          <part localType="status">Peintre de l'Académie royale</part>
+          <part localType="occupationType">Métiers (hors bâtiment);Maître de métier au service du roi (hors bâtiment)</part>
+          <part localType="age">43</part>
+          <part localType="address">riue Neuve des Petits Champs, paroisse St Roch, Paris</part>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_n25m0ne9yqm77wsk" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_c25098w899nmwzm">rico:knownBy</relationType>
+        <targetRole target="#relationType_n25m0ne9yqm77wsk">témoin</targetRole>
+        <descriptiveNote>
+          <p>Dépose connoistre ledit Pierre Charles Delespine depuis 3 ans ou environ, qu'il est de bonne vie et moeurs, de la religion C a et R pour luy en avoir veu faire les fonctions, et l'avoir veu assister au service divin, que d'ailleurs, il est très affectionné au service du roy et du publicq.</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_1yha0ka7iadd8rd9" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">François Bertault</part>
+          <part localType="status">entrepreneur de bâtriments </part>
+          <part localType="occupationType">Bâtiment;Entrepreneur architecte</part>
+          <part localType="age">46 environ</part>
+          <part localType="address">rue et barrière Monmartre, Paroisse St Eustache, Paris</part>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_n25v0nndh2uajdth" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_c25098w899nmwzm">rico:knownBy</relationType>
+        <targetRole target="#relationType_n25v0nndh2uajdth">témoin</targetRole>
+        <descriptiveNote>
+          <p>Dépose connoistre le sieur Pierre Charles Delespine depuis 25 ans ou environ, qu'il est de bonne vie et moeurs, de la religion C a et R pour luy en avoir veu faire les fonctions, et l'avoir veu assister au service divin, que d'ailleurs, il est très affectionné au service du roy et du publicq.</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_1yha0ka7iadd8rd9" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full"/>
+          <part localType="status"/>
+          <part localType="occupationType"/>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_n26309udqqo1mg9o" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_c25098w899nmwzm">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_n26309udqqo1mg9o">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_1yha0ka7iadd8rd9" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full"/>
+          <part localType="status"/>
+          <part localType="occupationType"/>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_n26a0m69h1stovhi" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_c25098w899nmwzm">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_n26a0m69h1stovhi">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_1yha0ka7iadd8rd9" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full"/>
+          <part localType="status"/>
+          <part localType="occupationType"/>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_n26h0y5ofar8xc7" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_c25098w899nmwzm">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_n26h0y5ofar8xc7">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_1yha0ka7iadd8rd9" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full"/>
+          <part localType="status"/>
+          <part localType="occupationType"/>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_n26n0fbiy22yd96" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_c25098w899nmwzm">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_n26n0fbiy22yd96">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_1yha0ka7iadd8rd9" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full"/>
+          <part localType="status"/>
+          <part localType="occupationType"/>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_n26r0pf43i4lnmz" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_c25098w899nmwzm">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_n26r0pf43i4lnmz">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_1yha0ka7iadd8rd9" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full"/>
+          <part localType="status"/>
+          <part localType="occupationType"/>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_n26v06en79iw3bgt" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_c25098w899nmwzm">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_n26v06en79iw3bgt">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_1yha0ka7iadd8rd9" sourceReference="">
+        <descriptiveNote>
+          <p>Le dossier de réception est lacunaire. Il y manque la supplique, les pièces de procédure et le certificat d'examen.</p>
+        </descriptiveNote>
+        <targetEntity targetType="person">
+          <part localType="full"/>
+          <part localType="status"/>
+          <part localType="occupationType"/>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_n26y08rfkwizxj7g" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_c25098w899nmwzm">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_n26y08rfkwizxj7g">examinateur</targetRole>
+      </relation>
         </relations>
       </cpfDescription>
    

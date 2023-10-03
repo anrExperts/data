@@ -6,6 +6,11 @@
       </maintenanceAgency>
       <maintenanceHistory>
          <maintenanceEvent maintenanceEventType="revised">
+        <agent agentType="human">rcarvais</agent>
+        <eventDateTime standardDateTime="2023-07-29T16:18:39Z"/>
+        <eventDescription/>
+      </maintenanceEvent>
+      <maintenanceEvent maintenanceEventType="revised">
         <agent agentType="human">vnegre</agent>
         <eventDateTime standardDateTime="2023-04-07T20:57:20Z"/>
         <eventDescription/>
@@ -51,6 +56,10 @@
         <reference href="">MC/ET/II/560 (Cont. de mariage)</reference>
         <citedRange unit="page"/>
       </source>
+      <source id="source_p9e0u354bx61rq">
+        <reference href="https://www.geneanet.org/registres/view/14541/838?">AN Y 4887/B </reference>
+        <citedRange unit="page">838-843</citedRange>
+      </source>
     </sources>
       
       
@@ -77,7 +86,7 @@
       </identity>
       <description>
          <functions>
-            <function sourceReference="">
+            <function sourceReference="#source_p9e0u354bx61rq">
                <term>Expert entrepreneur</term>
                <dateRange>
                   <fromDate sourceReference="" certainty="" standardDate="1766"/>
@@ -159,6 +168,32 @@
             <event>Mariage avec Victoire Le Comte</event>
             <place>
               <placeName/>
+            </place>
+          </chronItem>
+          <chronItem id="chronItem_1wym0c198ij99oro" sourceReference="" localType="baptism">
+            <date certainty="certain" standardDate="1729-09-30" sourceReference=""/>
+            <event>Baptême de Pierre Jacques Fortin</event>
+            <place>
+              <placeName>Eglise St Roch, Paris</placeName>
+            </place>
+          </chronItem>
+          <chronItem id="chronItem_5jl70t32cqz1xjbh" sourceReference="" localType="receptionColumn2">
+            <dateSet>
+              <date certainty="certain" standardDate="1766-02-26" sourceReference="">Lettres de provision</date>
+              <date certainty="" sourceReference="">Supplique</date>
+              <date certainty="certain" standardDate="1766-02-27" sourceReference="">Ordonnance de soit montré au procureur du roy</date>
+              <date certainty="certain" standardDate="1766-03-20" sourceReference="">Examen</date>
+              <date certainty="certain" standardDate="1766-02-27" sourceReference="">Consentement de la communauté</date>
+              <date certainty="certain" standardDate="1766-03-21" sourceReference="">Information de vie et de mœurs</date>
+              <date certainty="certain" standardDate="1766-03-22" sourceReference="">Serment</date>
+              <date certainty="certain" standardDate="1766-03-22" sourceReference="">Réception</date>
+              <date certainty="certain" standardDate="1766-03-20" sourceReference="">Conclusion préparatoires du procureur du roi</date>
+              <date certainty="certain" standardDate="1766-03-21" sourceReference="">Conclusions définitives du procureur du roi</date>
+              <date certainty="certain" standardDate="1766-03-09" sourceReference="">Délibération de la compagnie pour le choix des examinateurs</date>
+            </dateSet>
+            <event>Rcépetion en l'office de juré expert de la 2nde colonne</event>
+            <place>
+              <placeName>Paris (lettres de provisioin)</placeName>
             </place>
           </chronItem>
             </chronList>
@@ -253,6 +288,167 @@
           <relationType id="relationType_id128298d2584581" valueURI="" vocabularySource="" vocabularySourceURI="" sourceReference=""/>
             <targetRole target="#relationType_id128298d2584581"/>
           </relation>
+      <relation target="#chronItem_5jl70t32cqz1xjbh" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Thomas Arnould</part>
+          <part localType="status">Dernier titulaire</part>
+          <part localType="occupationType">Bâtiment;Expert entrepreneur</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0006</part>
+        </targetEntity>
+        <relationType id="relationType_aa2z0jgamf5ahvl" valueURI="https://www.ica.org/standards/RiC/ontology#isSuccessorOf" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:isSuccessorOf</relationType>
+        <targetRole target="#relationType_aa2z0jgamf5ahvl">prédécesseur</targetRole>
+        <descriptiveNote>
+          <p/>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_5jl70t32cqz1xjbh" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Paul Louis de Cumont</part>
+          <part localType="status">Prestre, bachelier en droit de la faculté de Paris, bénéficier de [Personna et Cully...] à St Germain l'Auxerrois</part>
+          <part localType="occupationType">Religion;Religieux</part>
+          <part localType="age">52 environ</part>
+          <part localType="address">Rue [d'Orléans ...], Paris</part>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_aa3l0lr3wqabi83t" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:knownBy</relationType>
+        <targetRole target="#relationType_aa3l0lr3wqabi83t">témoin</targetRole>
+        <descriptiveNote>
+          <p>Dépose qu'il ne peut que rendre un témoignage avantageux dudit Fortin, soit pour les moeurs, la probité ou pour son attachement à la religion C a et R et alors les devoirs d'un bon citoyen et d'un fidel sujet du roy, l'ayant toujours connu pour tel.</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_5jl70t32cqz1xjbh" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">François Buron</part>
+          <part localType="status">Architecte</part>
+          <part localType="occupationType">Bâtiment;Architecte</part>
+          <part localType="age">35 environ</part>
+          <part localType="address">rue St coix de la Bretonnerie, Paroisse St Paul, Paris</part>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0042</part>
+        </targetEntity>
+        <relationType id="relationType_aa410worvdej1sog" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:knownBy</relationType>
+        <targetRole target="#relationType_aa410worvdej1sog">témoin</targetRole>
+        <descriptiveNote>
+          <p>Sa réception comme expert est la suivante dans le carton Y. Il sera expert entrepreneur.
+Dépose qu'il connoist et connoist de tout temps ledit Pierre Jacques Fortin ne peut que rendre un témoignage avantageux dudit Fortin, pour estre de bonne vie et moeurs d'une probité à l'épreuve et surtout pour faire ouvertement profession de la R C a et R et pour estre bon citoyen et fidel sujet du roy. 
+</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_5jl70t32cqz1xjbh" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Louis Sulpice Dumontier</part>
+          <part localType="status">Avocat au Conseil du roi</part>
+          <part localType="occupationType">Droit;Avocat</part>
+          <part localType="age">31</part>
+          <part localType="address">Rue des deux impasses St Eustache, Paris</part>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_aa4f08ru2ujbq9pv" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:knownBy</relationType>
+        <targetRole target="#relationType_aa4f08ru2ujbq9pv">témoin</targetRole>
+        <descriptiveNote>
+          <p>Dépose qu'il connoist ledit Pierre Jacques Fortin pour estre d'une conduite et de moeurs regulières pour estre né de parents C a et R faisant lui même religion de nostre sainte religion ayant toujours seu présenter les sentences d'un bon et fidel sujet du roy et d'attachement au service de sa majesté.
+</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_5jl70t32cqz1xjbh" sourceReference="">
+        <descriptiveNote>
+          <p>Chauveau a d'abord été expert bourgeois, puis expert entrepreneur.</p>
+        </descriptiveNote>
+        <targetEntity targetType="person">
+          <part localType="full">René Bonaventure Chauveau</part>
+          <part localType="status">Doyen de la compagnie</part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0054</part>
+        </targetEntity>
+        <relationType id="relationType_aa4s0lm3aeqnz36q" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_aa4s0lm3aeqnz36q">observateur</targetRole>
+      </relation>
+      <relation target="#chronItem_5jl70t32cqz1xjbh" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Jean Michel Poirin</part>
+          <part localType="status">Syndic de la compagnie</part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0223</part>
+        </targetEntity>
+        <relationType id="relationType_aa53092qq0g78zb" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_aa53092qq0g78zb">observateur</targetRole>
+      </relation>
+      <relation target="#chronItem_5jl70t32cqz1xjbh" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Pierre Bourgeois</part>
+          <part localType="status">Adjoint de la compagnie</part>
+          <part localType="occupationType">Bâtiment;Expert entrepreneur</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0039</part>
+        </targetEntity>
+        <relationType id="relationType_aa5d0wij9ou7j3cm" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_aa5d0wij9ou7j3cm">observateur</targetRole>
+      </relation>
+      <relation target="#chronItem_5jl70t32cqz1xjbh" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Guillaume Egresset</part>
+          <part localType="status">Examinateur de la 2nde colonne</part>
+          <part localType="occupationType">Bâtiment;Expert entrepreneur</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0106</part>
+        </targetEntity>
+        <relationType id="relationType_aa5m0n3afbgd03p" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_aa5m0n3afbgd03p">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_5jl70t32cqz1xjbh" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Jacques Desmaisons</part>
+          <part localType="status">Examinateur de la 2nde colonne</part>
+          <part localType="occupationType">Bâtiment;Expert entrepreneur</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0092</part>
+        </targetEntity>
+        <relationType id="relationType_aa5v05toqsok2r5" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_aa5v05toqsok2r5">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_5jl70t32cqz1xjbh" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">jean Grissot</part>
+          <part localType="status">Examinateur de la 1ère colonne</part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0131</part>
+        </targetEntity>
+        <relationType id="relationType_aa610ir7y8zyoi8" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_aa610ir7y8zyoi8">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_5jl70t32cqz1xjbh" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Louis Jules Delespine</part>
+          <part localType="status">Examinateur de la 1ère colonne</part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0085</part>
+        </targetEntity>
+        <relationType id="relationType_aa670vh0f3n6k0d" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_aa670vh0f3n6k0d">examinateur</targetRole>
+      </relation>
     </relations>
    
       </cpfDescription>

@@ -6,6 +6,16 @@
       </maintenanceAgency>
       <maintenanceHistory>
          <maintenanceEvent maintenanceEventType="revised">
+        <agent agentType="human">rcarvais</agent>
+        <eventDateTime standardDateTime="2023-09-29T07:42:10Z"/>
+        <eventDescription>Enregistrement forcé</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent maintenanceEventType="revised">
+        <agent agentType="human">vnegre</agent>
+        <eventDateTime standardDateTime="2023-09-25T10:36:22Z"/>
+        <eventDescription>Enregistrement forcé</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent maintenanceEventType="revised">
         <agent agentType="human">vnegre</agent>
         <eventDateTime standardDateTime="2023-05-28T17:28:52Z"/>
         <eventDescription/>
@@ -131,7 +141,11 @@
         <reference href="">MC/ET/XCV/393 (Cont. (2) mariage)</reference>
       </source>
       <source id="source_dw30o8xx3hck4r">
-        <reference href="https://www.geneanet.org/registres/view/1098351/516?">Y/4969/A (516-522)</reference>
+        <reference href="https://www.geneanet.org/registres/view/1098351/516?">Y/4969/A</reference>
+        <citedRange unit="page">516-522</citedRange>
+      </source>
+      <source id="source_5uvl0kx6btj2lw2">
+        <reference href="">MC/ET/XVIII/846 (IAD du père)</reference>
       </source>
         </sources>
       
@@ -280,6 +294,13 @@
             <event>Réception comme expert</event>
             <place>
               <placeName>Extrait baptistaire tiré des registres de l'église paroissiale et abbaye royale de St Victor à Paris délivré par le sieur Delaulne curé le 30/07/1772</placeName>
+            </place>
+          </chronItem>
+          <chronItem id="chronItem_7k7o03ahtxjqgyur" sourceReference="#source_5uvl0kx6btj2lw2" localType="death">
+            <date certainty="certain" standardDate="1785/03/17" sourceReference=""/>
+            <event>Décès du père</event>
+            <place>
+              <placeName/>
             </place>
           </chronItem>
             </chronList>
@@ -523,6 +544,19 @@ MC/ET/XCI/1103 en 1772</p>
         </targetEntity>
         <relationType id="relationType_ldw80xvmkbpfow4s" valueURI="" vocabularySource="" vocabularySourceURI="" sourceReference="">rico:hasFamilyAssociationWith</relationType>
         <targetRole target="#relationType_ldw80xvmkbpfow4s">beau-père</targetRole>
+      </relation>
+      <relation target="#chronItem_7k7o03ahtxjqgyur" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Angot, Jacques</part>
+          <part localType="status">Maître charpentier</part>
+          <part localType="occupationType">Bâtiment;Entrepreneur ou maître de métier</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_72am09yi77olf575" valueURI="" vocabularySource="" vocabularySourceURI="" sourceReference="#source_5uvl0kx6btj2lw2">rico:isChildOf</relationType>
+        <targetRole target="#relationType_72am09yi77olf575">père</targetRole>
       </relation>
         </relations>
       </cpfDescription>

@@ -7,6 +7,21 @@
       </maintenanceAgency>
       <maintenanceHistory>
          <maintenanceEvent maintenanceEventType="revised">
+        <agent agentType="human">rcarvais</agent>
+        <eventDateTime standardDateTime="2023-08-13T07:35:27Z"/>
+        <eventDescription/>
+      </maintenanceEvent>
+      <maintenanceEvent maintenanceEventType="revised">
+        <agent agentType="human">rcarvais</agent>
+        <eventDateTime standardDateTime="2023-08-12T21:03:29Z"/>
+        <eventDescription/>
+      </maintenanceEvent>
+      <maintenanceEvent maintenanceEventType="revised">
+        <agent agentType="human">rcarvais</agent>
+        <eventDateTime standardDateTime="2023-08-12T19:09:42Z"/>
+        <eventDescription/>
+      </maintenanceEvent>
+      <maintenanceEvent maintenanceEventType="revised">
         <agent agentType="human">jmorvan</agent>
         <eventDateTime standardDateTime="2023-05-15T20:06:48Z"/>
         <eventDescription>ajout date exercice à partir du tableau de JH</eventDescription>
@@ -64,6 +79,10 @@
       <source id="source_9du0dxl0cw2ktqe">
         <reference href="">MC/ET/XXX/157 (IAD)</reference>
       </source>
+      <source id="source_1i3nn0l6pc3z3der9">
+        <reference href="https://sharedocs.huma-num.fr/#/2139/8770/Sources%20Experts/Sources%20Archives%20nationales/Y%20Robert/108Y1862">AN Y 1862</reference>
+        <citedRange unit="page">49-54</citedRange>
+      </source>
     </sources>
       
       
@@ -96,6 +115,9 @@
             <fromDate certainty="certain" standardDate="1691" status="" sourceReference=""/>
             <toDate certainty="uncertain" notAfter="1701" status="" sourceReference=""/>
           </dateRange>
+          <descriptiveNote>
+            <p>A lire la clause spéciale dans le certificat de réception.</p>
+          </descriptiveNote>
                
                
             </function>
@@ -109,6 +131,16 @@
         <occupation localType="" sourceReference="#source_6qi0fg1hdg7wyx">
           <term>Maçon à Paris</term>
           <date certainty="certain" standardDate="1673-01-29" sourceReference=""/>
+          <!--optionnal (all below)-->
+          <!--&lt;date/&gt; | &lt;dateRange/&gt; | &lt;dateSet/&gt;-->
+        </occupation>
+        <occupation localType="" sourceReference="#source_1i3nn0l6pc3z3der9">
+          <term>Maître maçon à Paris</term>
+          <!--optionnal (all below)-->
+          <!--&lt;date/&gt; | &lt;dateRange/&gt; | &lt;dateSet/&gt;-->
+        </occupation>
+        <occupation localType="" sourceReference="#source_1i3nn0l6pc3z3der9">
+          <term>Bourgeois de Paris</term>
           <!--optionnal (all below)-->
           <!--&lt;date/&gt; | &lt;dateRange/&gt; | &lt;dateSet/&gt;-->
         </occupation>
@@ -165,6 +197,23 @@
             <event>Décès de Gilles Laisney</event>
             <place>
               <placeName>Rue Beaubourg </placeName>
+            </place>
+          </chronItem>
+          <chronItem id="chronItem_2pd360dz4676ge4j" sourceReference="#source_1i3nn0l6pc3z3der9" localType="reception">
+            <dateSet>
+              <date certainty="certain" standardDate="1691-03-19" sourceReference="">Lettres de provision</date>
+              <date certainty="" sourceReference="">Supplique</date>
+              <date certainty="certain" standardDate="1691-03-20" sourceReference="">Ordonnance de soit montré au procureur du roy</date>
+              <date certainty="certain" standardDate="1691-03-27" sourceReference="">Examen</date>
+              <date certainty="certain" standardDate="1691-03-20" sourceReference="">Consentement de la communauté</date>
+              <date certainty="certain" standardDate="1691-03-21" sourceReference="">Information de vie et de mœurs</date>
+              <date certainty="certain" standardDate="1691-04-06" sourceReference="">Serment</date>
+              <date certainty="certain" standardDate="1691-04-06" sourceReference="">Réception</date>
+              <date certainty="certain" standardDate="1691-03-21" sourceReference="">Conclusions du procureur du roi</date>
+            </dateSet>
+            <event>Réception en l'office de juré expert</event>
+            <place>
+              <placeName>Paris (lettres de provision)</placeName>
             </place>
           </chronItem>
             </chronList>
@@ -250,6 +299,168 @@
           <relationType id="relationType_id128298d2596945" valueURI="" vocabularySource="" vocabularySourceURI="" sourceReference=""/>
             <targetRole target="#relationType_id128298d2596945"/>
           </relation>
+      <relation target="#chronItem_2pd360dz4676ge4j" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Jean Beausire</part>
+          <part localType="status">dernier possesseur d'iceluy</part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0014</part>
+        </targetEntity>
+        <relationType id="relationType_2tyc90j4gf1mfoq0m" valueURI="https://www.ica.org/standards/RiC/ontology#isSuccessorOf" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_1i3nn0l6pc3z3der9">rico:isSuccessorOf</relationType>
+        <targetRole target="#relationType_2tyc90j4gf1mfoq0m">prédécesseur</targetRole>
+        <descriptiveNote>
+          <p>"que tenait et exerçait Me Jean Beausire dernier possesseur d'iceluy qu'il a volontairement résigné es mains de SM en faveur du sieur Laisney ainsi qu'il appert par sa procuration attachée aux pièces sous le contrescel desdites lettres."</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_2pd360dz4676ge4j" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Jean François Armand Baignard</part>
+          <part localType="status">prestre habitué en l'église et paroisse de St Pierre des Arcis</part>
+          <part localType="occupationType">Religion;Religieux</part>
+          <part localType="age">31</part>
+          <part localType="address">au presbytère de ladite église, Paris</part>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_2tycv01qtnly6azlg" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_1i3nn0l6pc3z3der9">rico:knownBy</relationType>
+        <targetRole target="#relationType_2tycv01qtnly6azlg">témoin</targetRole>
+        <descriptiveNote>
+          <p>Dépose qu'il connoist ledit Laisney depuis 8 ou 9 ans, scait qu'il est un bon homme d'honneur, faisant profession de la R C a et R, l'ayant veu plusieurs fois fréquenter les églises et y faire les devoirs d'une bon chrestien, d'ailleurs le croit fort affectionné au service du roy et du publicque.</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_2pd360dz4676ge4j" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Séraphin Gillet</part>
+          <part localType="status">Marchand Bourgeois de Paris</part>
+          <part localType="occupationType">Commerce;Marchand Bourgeois</part>
+          <part localType="age">70</part>
+          <part localType="address">rue de la couture, paroisse St Shiphonin, Paris</part>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_2tydb023xpp3ltrg9" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_1i3nn0l6pc3z3der9">rico:knownBy</relationType>
+        <targetRole target="#relationType_2tydb023xpp3ltrg9">témoin</targetRole>
+        <descriptiveNote>
+          <p>Dépose qu'il connoist ledit Laisney depuis 20 ans, scait qu'il est d'honneste conversation et fort homme d'honneur, faisant profession de la R C a et R, l'ayant veu assister au service divin et y faire des actes d'un bon chrestien, comme aussi il est fort affectionné au service du roy et du publicque.</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_2pd360dz4676ge4j" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Jacques Delajoue</part>
+          <part localType="status">Juré expert des bastiments du roy et en toitre d'office à Paris</part>
+          <part localType="occupationType">Bâtiment;Expert entrepreneur</part>
+          <part localType="age">32</part>
+          <part localType="address">Rue St Bon, Paroisse St Médéric, Paris</part>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0153</part>
+        </targetEntity>
+        <relationType id="relationType_2tydq0d8i4306eunw" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_1i3nn0l6pc3z3der9">rico:knownBy</relationType>
+        <targetRole target="#relationType_2tydq0d8i4306eunw">témoin</targetRole>
+        <descriptiveNote>
+          <p>Dépose qu'il connoist ledit Laisney depuis 8 ou 9 ans, estre de bonne vie et moeurs, de la religion C a et R pour l'avoir evu assister plusieurs fois au service divin  et faire des actes d'une véritable chrestien comme aussy il est fort affectionné au service du roy et du publicque.</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_2pd360dz4676ge4j" sourceReference="">
+        <descriptiveNote>
+          <p>Dépose qu'il connoist ledit Laisney depuis 15 à 16 années, scait qu'il est de bonne vie et moeurs, de la R C a et R, pour avoir assister avec lui au service divin plusieurs fois, comme aussy il est fort affectionné au service du roy et du publicque.</p>
+        </descriptiveNote>
+        <targetEntity targetType="person">
+          <part localType="full">Estienne Doussot</part>
+          <part localType="status">Greffier des bastiments du roy</part>
+          <part localType="occupationType">Bâtiment et Droit;Greffier des bâtiments</part>
+          <part localType="age">46 environ</part>
+          <part localType="address">sudite rue St Bon, Paroisse St Médéric, Paris</part>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#clrk0017</part>
+        </targetEntity>
+        <relationType id="relationType_2tye30tl0rotehlbd" valueURI="" vocabularySource="" vocabularySourceURI="" sourceReference="#source_1i3nn0l6pc3z3der9">rico:knownBy</relationType>
+        <targetRole target="#relationType_2tye30tl0rotehlbd">témoin</targetRole>
+      </relation>
+      <relation target="#chronItem_2pd360dz4676ge4j" sourceReference="">
+        <descriptiveNote>
+          <p>"je syndic de la communauté des 50 experts jurez du roy déclare au nom e ladite communauté que je n’empêche ains consens qu'il soit procédé à la réception dudit sieur Laisney en l'office de l'un des 50 experts jurez du roy en conséquence des lettres de provisions qu'il en a obtenu sur la démission du sieur Beausire qui es estoit cydevant pourveu, à condition toutesfois que ledit sieur Laisney sera mis dans la première colonne au nombre des 25 jurez bourgeois et qu'à cet effet, il renoncer à toutes entreprises au désire de l'Edit de création desdits offices du mois de may dernier attendu que le nombre des 25 bourgeois ordonné par ledit Edit n'est pas remply et que celuy des jurez entrepreneurs de la seconde colonne est plus grand qu'il ne doit estre suivant le même Edit, comme aussy à condition de subir l'examen en la manière accoustumé. Fait à Paris le 27/03/1691." Signé de Mezeretz.
+A ce stade pas de noms pour les examinateurs. Il ne semble pas que cette condition de la compagnie ait été respecté puisque le sieur Laisney a exercé comme expert entrepreneur.</p>
+        </descriptiveNote>
+        <targetEntity targetType="person">
+          <part localType="full">Michel de Mezeretz</part>
+          <part localType="status">Syndic de la compagnie</part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0077</part>
+        </targetEntity>
+        <relationType id="relationType_2tyef0lhylcvt613" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_1i3nn0l6pc3z3der9">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_2tyef0lhylcvt613">observateur</targetRole>
+      </relation>
+      <relation target="#chronItem_2pd360dz4676ge4j" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full"/>
+          <part localType="status"/>
+          <part localType="occupationType"/>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_2tyeo03vmhdhfw5pj" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_1i3nn0l6pc3z3der9">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_2tyeo03vmhdhfw5pj">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_2pd360dz4676ge4j" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full"/>
+          <part localType="status"/>
+          <part localType="occupationType"/>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_2tyey0bslbtpelz9" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_1i3nn0l6pc3z3der9">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_2tyey0bslbtpelz9">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_2pd360dz4676ge4j" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full"/>
+          <part localType="status"/>
+          <part localType="occupationType"/>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_2tyf60mwhcslob7x" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_1i3nn0l6pc3z3der9">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_2tyf60mwhcslob7x">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_2pd360dz4676ge4j" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full"/>
+          <part localType="status"/>
+          <part localType="occupationType"/>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_2tyfd0m2sinzg373q" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_1i3nn0l6pc3z3der9">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_2tyfd0m2sinzg373q">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_2pd360dz4676ge4j" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full"/>
+          <part localType="status"/>
+          <part localType="occupationType"/>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_2tyfj04kx6krbca6u" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_1i3nn0l6pc3z3der9">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_2tyfj04kx6krbca6u">examinateur</targetRole>
+      </relation>
     </relations>
    
       </cpfDescription>

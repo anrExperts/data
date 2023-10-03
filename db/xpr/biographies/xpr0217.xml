@@ -1,11 +1,16 @@
 <eac xmlns="https://archivists.org/ns/eac/v2" xml:id="xpr0217">
-   <control maintenanceStatus="new" publicationStatus="inProcess">
+   <control maintenanceStatus="updated" publicationStatus="inProcess">
       <recordId>xpr0217</recordId>
       <maintenanceAgency>
          <agencyName>projet Experts</agencyName>
       </maintenanceAgency>
       <maintenanceHistory>
-         <maintenanceEvent maintenanceEventType="updated" languageOfElement="eng">
+         <maintenanceEvent maintenanceEventType="revised">
+        <agent agentType="human">rcarvais</agent>
+        <eventDateTime standardDateTime="2023-08-29T11:04:50Z"/>
+        <eventDescription/>
+      </maintenanceEvent>
+      <maintenanceEvent maintenanceEventType="updated" languageOfElement="eng">
             <agent agentType="machine">EAC-CPF 1.x to EAC 2.0 Migration Style Sheet (eac1-to-eac2.xsl)</agent>
             <eventDateTime standardDateTime="2022-09-19T16:52:57.31038+02:00"/>
             <eventDescription>EAC-CPF 1.x (urn:isbn:1-931666-33-4) instance migrated to EAC 2.0 (https://archivists.org/ns/eac/v2)</eventDescription>
@@ -36,6 +41,12 @@
             <eventDescription>Fiches créée sur Google Drive.</eventDescription>
          </maintenanceEvent>
       </maintenanceHistory>
+    <sources>
+      <source id="source_2ynv0wrv85n7q1y">
+        <reference href="https://www.geneanet.org/registres/view/6885/192?">AN Y 5176/A</reference>
+        <citedRange unit="page">192-199</citedRange>
+      </source>
+    </sources>
       
       
    </control>
@@ -69,6 +80,12 @@
                </dateRange>
                
             </function>
+        <function localType="" sourceReference="#source_2ynv0wrv85n7q1y">
+          <term>Expert juré de la 2nde colonne</term>
+          <!--optionnal (all below)-->
+          <!--&lt;date/&gt; | &lt;dateRange/&gt; | &lt;dateSet/&gt;-->
+          <!--&lt;placeName sourceReference=&quot;&quot;/&gt;-->
+        </function>
          </functions>
          <localDescriptions>
             <localDescription localType="sex">
@@ -80,7 +97,7 @@
          <existDates>
             <dateRange>
                <fromDate sourceReference="" certainty="" standardDate="1759-11"/>
-               <toDate sourceReference="" certainty="" standardDate=""/>
+               <toDate sourceReference="" certainty=""/>
             </dateRange>
          </existDates>
          <biogHist>
@@ -120,6 +137,32 @@
                   
                   
                </chronItem>
+          <chronItem id="chronItem_4ags0zkrua6ld61" sourceReference="" localType="baptism">
+            <date certainty="certain" standardDate="1759-11-28" sourceReference=""/>
+            <event>Baptême de Estienne Pierre Pharoux</event>
+            <place>
+              <placeName>Paroisse ND de Grâce de Passy</placeName>
+            </place>
+          </chronItem>
+          <chronItem id="chronItem_5hbu0n1y25er7kh" sourceReference="#source_2ynv0wrv85n7q1y" localType="receptionColumn1">
+            <dateSet>
+              <date certainty="certain" standardDate="1789-01-14" sourceReference="">Lettres de provision</date>
+              <date certainty="" sourceReference="">Supplique</date>
+              <date certainty="certain" standardDate="1789-01-16" sourceReference="">Ordonnance de soit montré au procureur du roy</date>
+              <date certainty="certain" standardDate="1789-02-22" sourceReference="">Examen</date>
+              <date certainty="certain" standardDate="1789-01-16" sourceReference="">Consentement de la communauté</date>
+              <date certainty="certain" standardDate="1789-02-28" sourceReference="">Information de vie et de mœurs</date>
+              <date certainty="certain" standardDate="1789-03-04" sourceReference="">Serment</date>
+              <date certainty="certain" standardDate="1789-03-04" sourceReference="">Réception</date>
+              <date certainty="certain" standardDate="1789-02-27" sourceReference="">Conclusions préparatoires du procureur du roi</date>
+              <date certainty="certain" standardDate="1789-02-28" sourceReference="">Conclusions définitives du procureur du roi</date>
+              <date certainty="certain" standardDate="1789-02-08" sourceReference="">Délibération de la Compagnie pour le choix des examinateurs</date>
+            </dateSet>
+            <event>Réception en l'office de juré expert de la 1ère colonne</event>
+            <place>
+              <placeName>Paris (lettres de provision)</placeName>
+            </place>
+          </chronItem>
             </chronList>
          </biogHist>
       </description>
@@ -138,6 +181,164 @@
           <relationType id="relationType_id128298d2616266" valueURI="" vocabularySource="" vocabularySourceURI="" sourceReference=""/>
             <targetRole target="#relationType_id128298d2616266"/>
           </relation>
+      <relation target="#chronItem_5hbu0n1y25er7kh" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Pierre Taboureur</part>
+          <part localType="status">Défunt dernier titulaire d'iceluy</part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0250</part>
+        </targetEntity>
+        <relationType id="relationType_lr1v08kj416eidkq" valueURI="https://www.ica.org/standards/RiC/ontology#isSuccessorOf" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_2ynv0wrv85n7q1y">rico:isSuccessorOf</relationType>
+        <targetRole target="#relationType_lr1v08kj416eidkq">prédécesseur</targetRole>
+        <descriptiveNote>
+          <p/>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_5hbu0n1y25er7kh" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Claude Hutinel</part>
+          <part localType="status">Prestre du diocèse de Paris, liencié en droit et trèsorier de la paroisse et église de St Laurent</part>
+          <part localType="occupationType">Religion;Religieux</part>
+          <part localType="age">72</part>
+          <part localType="address">Grande rue du faugbourg et de la paroisse st Martin, Paris</part>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_lr2c06ks5pmudez" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_2ynv0wrv85n7q1y">rico:knownBy</relationType>
+        <targetRole target="#relationType_lr2c06ks5pmudez">témoin</targetRole>
+        <descriptiveNote>
+          <p>Dépose qu'il connoist ledit sieur Estienne Pierre Pharoux depuis environ 4 ans pour estre de bonne vie et moeurs, d'une conduitte sage et très régulière, qu'il scait aussi que ledit sieur Pharoux fait profession de la R C a et R, enfin qu'il le connoist pour bon et fidel sujet du roy, zélé et affectionné au service du roy et du public.</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_5hbu0n1y25er7kh" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">François Henry Avallon</part>
+          <part localType="status">Huissier commissaire priseur au Châtelet de Paris</part>
+          <part localType="occupationType">Droit;Huissier</part>
+          <part localType="age">51</part>
+          <part localType="address">Rue de Clery, paroisse ND de Bonnes nouvelles, Paris</part>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_lr2o0uz4a0163oe8" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_2ynv0wrv85n7q1y">rico:knownBy</relationType>
+        <targetRole target="#relationType_lr2o0uz4a0163oe8">témoin</targetRole>
+        <descriptiveNote>
+          <p>Dépose qu'il connoist ledit sieur Pharoux depuis plus de 2 ans pour estre de bonne vie et moeurs, d'une conduitte sage et très régulière, qu'il scait aussi que ledit sieur Pharoux fait profession de la R C a et R, enfin qu'il le connoist pour bon et fidel sujet du roy, zélé et affectionné au service du roy et du public.</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_5hbu0n1y25er7kh" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Claude Estienne dee Beaumont</part>
+          <part localType="status">Architecte à Paris</part>
+          <part localType="occupationType">Bâtiment;Architecte</part>
+          <part localType="age">32</part>
+          <part localType="address">Rue St Martin, paroisse St Laurent, Paris</part>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_lr2z0olvdt14ybal" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_2ynv0wrv85n7q1y">rico:knownBy</relationType>
+        <targetRole target="#relationType_lr2z0olvdt14ybal">témoin</targetRole>
+        <descriptiveNote>
+          <p>Dépose qu'il connoist depuis environ 2 à 3 ans ledit sieur Pharoux pour estre de bonne vie et moeurs, d'une conduitte sage et très régulière, qu'il scait aussi que ledit sieur Pharoux fait profession de la R C a et R, enfin qu'il le connoist pour bon et fidel sujet du roy, zélé et affectionné à son service et à celuy du public.</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_5hbu0n1y25er7kh" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">René Auguste Simon</part>
+          <part localType="status">Doyen de la Compagnie</part>
+          <part localType="occupationType">Bâtiment;Expert entrepreneur</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0247</part>
+        </targetEntity>
+        <relationType id="relationType_lr390tjny81oj88" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_2ynv0wrv85n7q1y">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_lr390tjny81oj88">observateur</targetRole>
+      </relation>
+      <relation target="#chronItem_5hbu0n1y25er7kh" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Jean Louis Blève</part>
+          <part localType="status">Syndic de la Compagnie</part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0026</part>
+        </targetEntity>
+        <relationType id="relationType_lr3g0mqzwf7bsk6h" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_2ynv0wrv85n7q1y">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_lr3g0mqzwf7bsk6h">observateur</targetRole>
+      </relation>
+      <relation target="#chronItem_5hbu0n1y25er7kh" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">François Buron</part>
+          <part localType="status">Adjoint de la Compagnie</part>
+          <part localType="occupationType">Bâtiment;Expert entrepreneur</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0042</part>
+        </targetEntity>
+        <relationType id="relationType_lr3n0n897ipdko0j" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_2ynv0wrv85n7q1y">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_lr3n0n897ipdko0j">observateur</targetRole>
+      </relation>
+      <relation target="#chronItem_5hbu0n1y25er7kh" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Jean Estienne Villetard fils</part>
+          <part localType="status">Examinateur de la 2nde colonne</part>
+          <part localType="occupationType">Bâtiment;Expert entrepreneur</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0260</part>
+        </targetEntity>
+        <relationType id="relationType_lr3t0vnkphcd4yii" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_2ynv0wrv85n7q1y">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_lr3t0vnkphcd4yii">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_5hbu0n1y25er7kh" sourceReference="">
+        <descriptiveNote>
+          <p>Les deux premiers examinateurs sont indiquées comme étant bourgeois Or ils sont entrepreneurs. Les deux suivants ci-dessous sont bien entrepreneurs et indiqués comme entrepreneurs. Où est l'erreur ?</p>
+        </descriptiveNote>
+        <targetEntity targetType="person">
+          <part localType="full">Benigne Joseph Varin</part>
+          <part localType="status">Emxainateur de la 2nde colonne</part>
+          <part localType="occupationType">Bâtiment;Expert entrepreneur</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0256</part>
+        </targetEntity>
+        <relationType id="relationType_lr3y0s0d1fm2sgib" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_2ynv0wrv85n7q1y">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_lr3y0s0d1fm2sgib">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_5hbu0n1y25er7kh" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Charles Capron</part>
+          <part localType="status">Examinateur de la 2nde colonne</part>
+          <part localType="occupationType">Bâtiment;Expert entrepreneur</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0044</part>
+        </targetEntity>
+        <relationType id="relationType_lr420jumsp5jfnpm" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_2ynv0wrv85n7q1y">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_lr420jumsp5jfnpm">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_5hbu0n1y25er7kh" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Pierre Petit</part>
+          <part localType="status">Examinateur de la 2nde colonne</part>
+          <part localType="occupationType">Bâtiment;Expert entrepreneur</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0215</part>
+        </targetEntity>
+        <relationType id="relationType_lr460m9w8kod851" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_2ynv0wrv85n7q1y">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_lr460m9w8kod851">examinateur</targetRole>
+      </relation>
         </relations>
       </cpfDescription>
    

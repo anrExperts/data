@@ -6,6 +6,16 @@
       </maintenanceAgency>
       <maintenanceHistory>
          <maintenanceEvent maintenanceEventType="revised">
+        <agent agentType="human">rcarvais</agent>
+        <eventDateTime standardDateTime="2023-08-26T09:39:47Z"/>
+        <eventDescription/>
+      </maintenanceEvent>
+      <maintenanceEvent maintenanceEventType="revised">
+        <agent agentType="human">rcarvais</agent>
+        <eventDateTime standardDateTime="2023-08-26T09:37:55Z"/>
+        <eventDescription/>
+      </maintenanceEvent>
+      <maintenanceEvent maintenanceEventType="revised">
         <agent agentType="human">vnegre</agent>
         <eventDateTime standardDateTime="2023-05-05T15:45:45Z"/>
         <eventDescription/>
@@ -66,6 +76,10 @@
       <source id="source_1snc0r9oij0hgpl">
         <reference href="">MC/ET/LXXXVIII/583 (IAD)</reference>
       </source>
+      <source id="source_9rt0ot8chbkibh">
+        <reference href="https://sharedocs.huma-num.fr/#/2139/8770/Sources%20Experts/Sources%20Archives%20nationales/Y%20Robert/108Y1862">AN Y 1862</reference>
+        <citedRange unit="page">26-30</citedRange>
+      </source>
     </sources>
       
       
@@ -100,6 +114,15 @@
                </dateRange>
                
             </function>
+        <function localType="" sourceReference="#source_9rt0ot8chbkibh">
+          <term>Juré expert de la 1ère colonne</term>
+          <descriptiveNote>
+            <p>Nous avons choisi de considérer que la réception est bien de la 1ère colonne uniquement parce que l'impétrant renonce à l'entreprise. Il n'est indiqué nul part qu'il est reçu comme expert de la 1ère colonne. "renonce à toute entreprise de bastiment de maçonnerie,  charpenterie, couverture et menuiserie du consentement du procureur du roi..."</p>
+          </descriptiveNote>
+          <!--optionnal (all below)-->
+          <!--&lt;date/&gt; | &lt;dateRange/&gt; | &lt;dateSet/&gt;-->
+          <!--&lt;placeName sourceReference=&quot;&quot;/&gt;-->
+        </function>
          </functions>
       <places>
         <place sourceReference="#source_5q209gwdcxiisso">
@@ -208,6 +231,24 @@
             <event>Décès de Baudouin Paul Lourdet</event>
             <place>
               <placeName>Rue de la Tixéranderie</placeName>
+            </place>
+          </chronItem>
+          <chronItem id="chronItem_1u6r0lan1cu5j9v" sourceReference="#source_9rt0ot8chbkibh" localType="receptionColumn1">
+            <dateSet>
+              <date certainty="certain" standardDate="1690-07-22" sourceReference="">Lettres de provision</date>
+              <date certainty="" sourceReference="">Supplique</date>
+              <date certainty="certain" standardDate="1690-08-11" sourceReference="">Ordonnance de soit montré au procureur du roy</date>
+              <date certainty="" sourceReference="">Examen</date>
+              <date certainty="" sourceReference="">Consentement de la communauté</date>
+              <date certainty="certain" standardDate="1690-08-12" sourceReference="">Information de vie et de mœurs</date>
+              <date certainty="certain" standardDate="1690-08-18" sourceReference="">Serment</date>
+              <date certainty="certain" standardDate="1690-08-18" sourceReference="">Réception</date>
+              <date certainty="certain" standardDate="1690-08-11" sourceReference="">Conclusions préparatoires du procureur du roi</date>
+              <date certainty="certain" standardDate="1690-08-17" sourceReference="">Conclusions définitives du procureur du roi</date>
+            </dateSet>
+            <event>Réception en l'office de juré expert de la 1ère colonne</event>
+            <place>
+              <placeName>Paris (lettres de provision)</placeName>
             </place>
           </chronItem>
             </chronList>
@@ -332,6 +373,164 @@
           <relationType id="relationType_id128298d2607045" valueURI="" vocabularySource="" vocabularySourceURI="" sourceReference=""/>
             <targetRole target="#relationType_id128298d2607045"/>
           </relation>
+      <relation target="#chronItem_1u6r0lan1cu5j9v" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full"/>
+          <part localType="status"/>
+          <part localType="occupationType"/>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_6ueu0zuro7umbagb" valueURI="https://www.ica.org/standards/RiC/ontology#isSuccessorOf" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_9rt0ot8chbkibh">rico:isSuccessorOf</relationType>
+        <targetRole target="#relationType_6ueu0zuro7umbagb">prédécesseur</targetRole>
+        <descriptiveNote>
+          <p>Il n'a pas de prédécesseur puisqu'il acquiert l'office à sa création.</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_1u6r0lan1cu5j9v" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Claude Marion</part>
+          <part localType="status">prestre cahnoine de l'église royale collégiale et paroissiale de St Thomas de la mer de Paris</part>
+          <part localType="occupationType">Religion;Religieux</part>
+          <part localType="age">60 environ</part>
+          <part localType="address">rue St Nicaize, Paris</part>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_6ufl0pvje6c5ro3" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_9rt0ot8chbkibh">rico:knownBy</relationType>
+        <targetRole target="#relationType_6ufl0pvje6c5ro3">témoin</targetRole>
+        <descriptiveNote>
+          <p>Dépose connoistre ledit Lourdet depuis 4 ans ou environ pour estre de bonne vie et moeurs, qu'il fait profession de la R C a et R, l'ayant veu plusieurs fois assister au service divin, le connoist aussy pour estre très affectionné au service du roy et du publique.</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_1u6r0lan1cu5j9v" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Paul Faverée</part>
+          <part localType="status">Procureur du Châtelet de Paris</part>
+          <part localType="occupationType">Droit;Procureur</part>
+          <part localType="age">52 et demi</part>
+          <part localType="address">reu de la Tabletterie, paroisse St Germain l'auxerrois, Paris</part>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_6ug50y68tjwdm2t" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_9rt0ot8chbkibh">rico:knownBy</relationType>
+        <targetRole target="#relationType_6ug50y68tjwdm2t">témoin</targetRole>
+        <descriptiveNote>
+          <p>Dépose connoistre ledit Lourdet depuis 6 ans ou environ pour estre de bonne vie et moeurs, R C a et R, luy en ayant veu faire les fonctions et assister au service divin, le connoist aussy pour estre très affectionné au service du roy et du public.</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_1u6r0lan1cu5j9v" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Nicolas Gallois</part>
+          <part localType="status">Marchand drappier</part>
+          <part localType="occupationType">Commerce;Marchand</part>
+          <part localType="age">50 et plus</part>
+          <part localType="address">Rue des Bourdonnois, patroisse St germain l'Auxerrois, Paris</part>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_6ugo0riuw2dezips" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_9rt0ot8chbkibh">rico:knownBy</relationType>
+        <targetRole target="#relationType_6ugo0riuw2dezips">témoin</targetRole>
+        <descriptiveNote>
+          <p>Dépose connoistre ledit Lourdet depuis 10 ans ou environ pour estre de bonne vie et moeurs, R C a et R, luy en ayant veu faire plusieurs fois les fonctions et assister au service divin, le connoist aussy très affectionné au service du roy et du public.</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_1u6r0lan1cu5j9v" sourceReference="">
+        <descriptiveNote>
+          <p>Pas d'examen puisqu'au début de la série, la compagnie des experts n'est pas encore constituée.</p>
+        </descriptiveNote>
+        <targetEntity targetType="person">
+          <part localType="full"/>
+          <part localType="status"/>
+          <part localType="occupationType"/>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_6uh40yx2my1ek6iq" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_9rt0ot8chbkibh">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_6uh40yx2my1ek6iq">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_1u6r0lan1cu5j9v" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full"/>
+          <part localType="status"/>
+          <part localType="occupationType"/>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_6uhk0r0lkgicpkh" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_9rt0ot8chbkibh">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_6uhk0r0lkgicpkh">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_1u6r0lan1cu5j9v" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full"/>
+          <part localType="status"/>
+          <part localType="occupationType"/>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_6uhy01q7lgwvhggd" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_9rt0ot8chbkibh">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_6uhy01q7lgwvhggd">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_1u6r0lan1cu5j9v" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full"/>
+          <part localType="status"/>
+          <part localType="occupationType"/>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_6ui90br2017ykh9t" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_9rt0ot8chbkibh">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_6ui90br2017ykh9t">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_1u6r0lan1cu5j9v" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full"/>
+          <part localType="status"/>
+          <part localType="occupationType"/>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_6uik00a26blejtvf7" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_9rt0ot8chbkibh">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_6uik00a26blejtvf7">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_1u6r0lan1cu5j9v" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full"/>
+          <part localType="status"/>
+          <part localType="occupationType"/>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_6uit0hc13996jbt7" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_9rt0ot8chbkibh">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_6uit0hc13996jbt7">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_1u6r0lan1cu5j9v" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full"/>
+          <part localType="status"/>
+          <part localType="occupationType"/>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_6uj10kz8un9vfn7" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_9rt0ot8chbkibh">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_6uj10kz8un9vfn7">examinateur</targetRole>
+      </relation>
     </relations>
    
       </cpfDescription>

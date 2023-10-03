@@ -6,6 +6,11 @@
       </maintenanceAgency>
       <maintenanceHistory>
          <maintenanceEvent maintenanceEventType="revised">
+        <agent agentType="human">rcarvais</agent>
+        <eventDateTime standardDateTime="2023-09-02T07:31:51Z"/>
+        <eventDescription/>
+      </maintenanceEvent>
+      <maintenanceEvent maintenanceEventType="revised">
         <agent agentType="human">vnegre</agent>
         <eventDateTime standardDateTime="2023-05-05T16:11:58Z"/>
         <eventDescription/>
@@ -58,6 +63,10 @@
       <source id="source_ab60gi60bx3ih6a">
         <reference href="">MC/ET/XIX/685 (IAD)</reference>
       </source>
+      <source id="source_b5h0hh5a5niysid">
+        <reference href="https://www.geneanet.org/registres/view/27044/751?">AN Y 4418</reference>
+        <citedRange unit="page">751-759</citedRange>
+      </source>
     </sources>
       
       
@@ -92,6 +101,12 @@
                </dateRange>
                
             </function>
+        <function localType="" sourceReference="#source_b5h0hh5a5niysid">
+          <term>Juré expert de la 1ère colonne</term>
+          <!--optionnal (all below)-->
+          <!--&lt;date/&gt; | &lt;dateRange/&gt; | &lt;dateSet/&gt;-->
+          <!--&lt;placeName sourceReference=&quot;&quot;/&gt;-->
+        </function>
          </functions>
       <places>
         <place sourceReference="#source_i0d0wtvzca1fh7">
@@ -110,6 +125,9 @@
          <occupations>
             <occupation sourceReference="">
                <term>"architecte du roy, juré expert bourgeois de Paris et gouverneur de l'hopital royal des Quinze Vingt" (Y 4459, témoin de mariage)</term>
+          <descriptiveNote>
+            <p>Juré expert du roy n'est pas une profession mais une fonction.</p>
+          </descriptiveNote>
                
             </occupation>
             <occupation sourceReference="">
@@ -119,8 +137,8 @@
                   <p>Oui</p>
                </descriptiveNote>
             </occupation>
-        <occupation localType="" sourceReference="#source_i0d0wtvzca1fh7">
-          <term>Architecte</term>
+        <occupation localType="" sourceReference="#source_i0d0wtvzca1fh7 #source_b5h0hh5a5niysid">
+          <term>Architecte à Paris</term>
           <date certainty="certain" standardDate="1724-11-14" sourceReference=""/>
           <!--optionnal (all below)-->
           <!--&lt;date/&gt; | &lt;dateRange/&gt; | &lt;dateSet/&gt;-->
@@ -128,6 +146,9 @@
         <occupation localType="" sourceReference="#source_ab60gi60bx3ih6a">
           <term>Conseiller architecte du Roy, Maître général des bâtiments ponts et chaussées de France et administrateur de l’hôpital royal des quinze vingt</term>
           <date certainty="certain" standardDate="1735-09-09" sourceReference=""/>
+          <descriptiveNote>
+            <p>Ce n'est pas une profession, mais une fonction</p>
+          </descriptiveNote>
           <!--optionnal (all below)-->
           <!--&lt;date/&gt; | &lt;dateRange/&gt; | &lt;dateSet/&gt;-->
         </occupation>
@@ -174,6 +195,23 @@
             <event>Décès de Jacques Vinage</event>
             <place>
               <placeName>Rue Beaubourg</placeName>
+            </place>
+          </chronItem>
+          <chronItem id="chronItem_4dkz07b3ovwc5gl" sourceReference="" localType="receptionColumn1">
+            <dateSet>
+              <date certainty="certain" standardDate="1727-02-20" sourceReference="">Lettres de provision</date>
+              <date certainty="" sourceReference="">Supplique</date>
+              <date certainty="certain" standardDate="1727-04-07" sourceReference="">Ordonnance de soit montré au procureur du roy</date>
+              <date certainty="certain" standardDate="1727-04-15" sourceReference="">Examen</date>
+              <date certainty="certain" standardDate="1727-04-07" sourceReference="">Consentement de la communauté</date>
+              <date certainty="certain" standardDate="1727-04-17" sourceReference="">Information de vie et de mœurs</date>
+              <date certainty="certain" standardDate="1727-08-21" sourceReference="">Serment</date>
+              <date certainty="certain" standardDate="1727-08-21" sourceReference="">Réception</date>
+              <date certainty="certain" standardDate="1727-04-17" sourceReference="">Conclusions du procureur du roi</date>
+            </dateSet>
+            <event>Réception en l'office de juré expert de la 1ère colonne</event>
+            <place>
+              <placeName>Paris (lettres de provision)</placeName>
             </place>
           </chronItem>
             </chronList>
@@ -265,6 +303,161 @@
           <relationType id="relationType_id128298d2629855" valueURI="" vocabularySource="" vocabularySourceURI="" sourceReference=""/>
             <targetRole target="#relationType_id128298d2629855"/>
           </relation>
+      <relation target="#chronItem_4dkz07b3ovwc5gl" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Michel Herbet</part>
+          <part localType="status">défunt dernier possesseur</part>
+          <part localType="occupationType">Bâtiment;Expert entrepreneur</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0141</part>
+        </targetEntity>
+        <relationType id="relationType_9di1068ox3wgvfbq" valueURI="https://www.ica.org/standards/RiC/ontology#isSuccessorOf" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:isSuccessorOf</relationType>
+        <targetRole target="#relationType_9di1068ox3wgvfbq">prédécesseur</targetRole>
+        <descriptiveNote>
+          <p/>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_4dkz07b3ovwc5gl" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Louis Decaux</part>
+          <part localType="status">Prestre habitué en l'église de St Paul</part>
+          <part localType="occupationType">Religion;Religieux</part>
+          <part localType="age">52</part>
+          <part localType="address">Rue et paroisse St Paul, Paris</part>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_9dio0gqqptixlmth" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:knownBy</relationType>
+        <targetRole target="#relationType_9dio0gqqptixlmth">témoin</targetRole>
+        <descriptiveNote>
+          <p>Dépose connoistre ledit sieur Jacques Vinage depuis 10 ans, qu'il est de bonnes vie et moeurs, de la R C a et R pour luy en avoir veu faire les fonctions et l'avoir veu assister au service divin, que d'ailleurs, il est très affectionné au service du roy et du publicq.</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_4dkz07b3ovwc5gl" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Pierre Hubert</part>
+          <part localType="status">Commis au Greffe de l'Hôtel de Ville</part>
+          <part localType="occupationType">Droit;Greffier</part>
+          <part localType="age">55</part>
+          <part localType="address">Rue des Mauvais Graçons, paroisse St Jean, Paris</part>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_9dj20vy915qgd6zl" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:knownBy</relationType>
+        <targetRole target="#relationType_9dj20vy915qgd6zl">témoin</targetRole>
+        <descriptiveNote>
+          <p>Dépose connoistre ledit sieur Jacques Vinage depuis 12 ans ou environ, qu'il est de bonnes vie et moeurs, de la R C a et R pour luy en avoir veu faire les fonctions et l'avoir veu assister au service divin, que d'ailleurs, il est très affectionné au service du roy et du publicq.</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_4dkz07b3ovwc5gl" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Jean Petit</part>
+          <part localType="status">Bailly de Vitry</part>
+          <part localType="occupationType">Droit;Autres</part>
+          <part localType="age">64 environ</part>
+          <part localType="address">Rue St Avoye, Paris</part>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_9djh0amri1ccwwqt" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:knownBy</relationType>
+        <targetRole target="#relationType_9djh0amri1ccwwqt">témoin</targetRole>
+        <descriptiveNote>
+          <p>Dépose connoistre ledit sieur Jacques Vinage depuis 25 ans ou environ, qu'il est de bonnes vie et moeurs, de la R C a et R pour luy en avoir veu faire les fonctions et l'avoir veu assister au service divin, que d'ailleurs, il est très affectionné au service du roy et du publicq.</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_4dkz07b3ovwc5gl" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Jacques Pirethouy</part>
+          <part localType="status">Sous doyen de la Compagnie pour l'absence de Nicolas Delespine indisposé</part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0221</part>
+        </targetEntity>
+        <relationType id="relationType_9djt0g0uzxwu4der" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_9djt0g0uzxwu4der">observateur</targetRole>
+      </relation>
+      <relation target="#chronItem_4dkz07b3ovwc5gl" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Charles Bernard</part>
+          <part localType="status">Examinateur de la 1ère colonne</part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0018</part>
+        </targetEntity>
+        <relationType id="relationType_9dk40tdrebnmx4ah" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_9dk40tdrebnmx4ah">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_4dkz07b3ovwc5gl" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Charles Philippes de Mezeretz</part>
+          <part localType="status">Examinateur de la 1ère colonne</part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0078</part>
+        </targetEntity>
+        <relationType id="relationType_9dkf0q5tdxs7vgtt" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_9dkf0q5tdxs7vgtt">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_4dkz07b3ovwc5gl" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Nicolas Isidore Chastelain</part>
+          <part localType="status">Examinateur de la 2nde colonne</part>
+          <part localType="occupationType">Bâtiment;Expert entrepreneur</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0051</part>
+        </targetEntity>
+        <relationType id="relationType_9dkn0mk7fjqhx9ho" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_9dkn0mk7fjqhx9ho">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_4dkz07b3ovwc5gl" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Maurice Belhomme</part>
+          <part localType="status">Examinateur de la 2nde colonne</part>
+          <part localType="occupationType">Bâtiment;Expert entrepreneur</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0015</part>
+        </targetEntity>
+        <relationType id="relationType_9dkv0ceq5ubt3nt4" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_9dkv0ceq5ubt3nt4">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_4dkz07b3ovwc5gl" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Pierre Quirot</part>
+          <part localType="status">Syndic de la Compagnie</part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0232</part>
+        </targetEntity>
+        <relationType id="relationType_9dl303dwsvmu26lb" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_9dl303dwsvmu26lb">observateur</targetRole>
+      </relation>
+      <relation target="#chronItem_4dkz07b3ovwc5gl" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Mathurin Simon</part>
+          <part localType="status">Adjoint de la Compagnie</part>
+          <part localType="occupationType">Bâtiment;Expert entrepreneur</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0246</part>
+        </targetEntity>
+        <relationType id="relationType_9dl80i10yih5nm5" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_9dl80i10yih5nm5">observateur</targetRole>
+      </relation>
     </relations>
    
       </cpfDescription>

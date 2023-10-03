@@ -6,6 +6,11 @@
       </maintenanceAgency>
       <maintenanceHistory>
          <maintenanceEvent maintenanceEventType="revised">
+        <agent agentType="human">rcarvais</agent>
+        <eventDateTime standardDateTime="2023-09-01T20:21:03Z"/>
+        <eventDescription/>
+      </maintenanceEvent>
+      <maintenanceEvent maintenanceEventType="revised">
         <agent agentType="human">vnegre</agent>
         <eventDateTime standardDateTime="2023-04-25T08:31:35Z"/>
         <eventDescription/>
@@ -53,6 +58,10 @@
       <source id="source_82q04bsdllixe1y">
         <reference href="">MC/ET/CX/726 (IAD)</reference>
       </source>
+      <source id="source_e8k0a7o1lr0wq1d">
+        <reference href="https://www.geneanet.org/registres/view/32077/158?">AN Y 5126/A</reference>
+        <citedRange unit="page">158-164</citedRange>
+      </source>
     </sources>
       
       
@@ -93,6 +102,12 @@
                </dateRange>
                
             </function>
+        <function localType="" sourceReference="#source_e8k0a7o1lr0wq1d">
+          <term>juré expert dela 1ère colonne</term>
+          <!--optionnal (all below)-->
+          <!--&lt;date/&gt; | &lt;dateRange/&gt; | &lt;dateSet/&gt;-->
+          <!--&lt;placeName sourceReference=&quot;&quot;/&gt;-->
+        </function>
          </functions>
       <places>
         <place sourceReference="#source_5750bqgnbp1zlkd">
@@ -108,6 +123,13 @@
                <term/>
             </localDescription>
          </localDescriptions>
+      <occupations>
+        <occupation localType="" sourceReference="#source_e8k0a7o1lr0wq1d">
+          <term>Architecte à Paris</term>
+          <!--optionnal (all below)-->
+          <!--&lt;date/&gt; | &lt;dateRange/&gt; | &lt;dateSet/&gt;-->
+        </occupation>
+      </occupations>
          
          
          <existDates>
@@ -168,6 +190,25 @@
             <event>Décès de Jean Etienne Villetard</event>
             <place>
               <placeName>Rue Coquillière, n° 42</placeName>
+            </place>
+          </chronItem>
+          <chronItem id="chronItem_24q70jsn58jnm5l" sourceReference="#source_e8k0a7o1lr0wq1d" localType="receptionColumn1">
+            <dateSet>
+              <date certainty="certain" standardDate="1765-01-12" sourceReference="">Lettres de provision</date>
+              <date certainty="" sourceReference="">Supplique</date>
+              <date certainty="certain" standardDate="1765-01-14" sourceReference="">Ordonnance de soit montré au procureur du roy</date>
+              <date certainty="certain" standardDate="1765-02-02" sourceReference="">Examen</date>
+              <date certainty="certain" standardDate="1765-01-17" sourceReference="">Consentement de la communauté</date>
+              <date certainty="certain" standardDate="1765-02-04" sourceReference="">Information de vie et de mœurs</date>
+              <date certainty="certain" standardDate="1765-02-05" sourceReference="">Serment</date>
+              <date certainty="certain" standardDate="1765-02-05" sourceReference="">Réception</date>
+              <date certainty="certain" standardDate="1765-02-03" sourceReference="">Conclusions préparatoires du procureur du roi</date>
+              <date certainty="certain" standardDate="1765-02-04" sourceReference="">Conclusions définitives du procureur du roi</date>
+              <date certainty="certain" standardDate="1765-01-29" sourceReference="">Délibératoin de la Compagnie pour le choix des examinateurs</date>
+            </dateSet>
+            <event>Réception en l'officee d'expert de la 1ère colonne</event>
+            <place>
+              <placeName>Paris (lettres de provision)</placeName>
             </place>
           </chronItem>
             </chronList>
@@ -253,6 +294,161 @@
           <relationType id="relationType_id128298d2629213" valueURI="" vocabularySource="" vocabularySourceURI="" sourceReference=""/>
             <targetRole target="#relationType_id128298d2629213"/>
           </relation>
+      <relation target="#chronItem_24q70jsn58jnm5l" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Piere Paul Danjan</part>
+          <part localType="status">Défunt dernier possesseur d'iceluy</part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0066</part>
+        </targetEntity>
+        <relationType id="relationType_6cy00dtlokzoa9x" valueURI="https://www.ica.org/standards/RiC/ontology#isSuccessorOf" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_e8k0a7o1lr0wq1d">rico:isSuccessorOf</relationType>
+        <targetRole target="#relationType_6cy00dtlokzoa9x">prédécesseur</targetRole>
+        <descriptiveNote>
+          <p/>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_24q70jsn58jnm5l" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Jean François Vavasseur</part>
+          <part localType="status">Prestre du diocèse de Sée et chapelain de la Sainte Chapelle de Paris</part>
+          <part localType="occupationType">Religion;Religieux</part>
+          <part localType="age">43</part>
+          <part localType="address">Rue de la Calendre, près le palais, Paris</part>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_6cym0lkruw3rp96" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_e8k0a7o1lr0wq1d">rico:knownBy</relationType>
+        <targetRole target="#relationType_6cym0lkruw3rp96">témoin</targetRole>
+        <descriptiveNote>
+          <p>Dépose connoistre ledit sieur Jean Estienne Villetard depuis temps, scait qu'il est de la R C a et R, fort affectionné au service du roy et du public, de bonnes vie et moeurs.</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_24q70jsn58jnm5l" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Jean Baptiste Lemembre</part>
+          <part localType="status">Avocat eu Parlement et au Conseil du roy</part>
+          <part localType="occupationType">Droit;Avocat</part>
+          <part localType="age">49</part>
+          <part localType="address">Rue du Monceau St Gervais, paroisse St Gervais, Paris</part>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_6cz30cc7am2j0be" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_e8k0a7o1lr0wq1d">rico:knownBy</relationType>
+        <targetRole target="#relationType_6cz30cc7am2j0be">témoin</targetRole>
+        <descriptiveNote>
+          <p>Dépose connoistre ledit sieur Jean Estienne Villetard depuis temps, scait qu'il est de la R C a et R, fort affectionné au service du roy et du public, de bonnes vie et moeurs et très en état d'exercer l'état et office de juré expert des bastiments à Paris.</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_24q70jsn58jnm5l" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Frédéric Balthazard Colmet</part>
+          <part localType="status">Porcureur au Parlement de Paris</part>
+          <part localType="occupationType">Droit;Procureur</part>
+          <part localType="age">44 passés</part>
+          <part localType="address">Rue de Nozières, près celle des Egéristes près St Gervais, Paris</part>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_6czg04vmir5xxjvn" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_e8k0a7o1lr0wq1d">rico:knownBy</relationType>
+        <targetRole target="#relationType_6czg04vmir5xxjvn">témoin</targetRole>
+        <descriptiveNote>
+          <p>Dépose connoistre ledit sieur Jean Estienne Villetard depuis temps, scait qu'il est de la R C a et R, fort affectionné au service du roy et du public, et très en état d'exercer l'état et office de juré expert des bastiments</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_24q70jsn58jnm5l" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Henry Quentin Desboeufs</part>
+          <part localType="status">Doyen de la Compagnie</part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0089</part>
+        </targetEntity>
+        <relationType id="relationType_6czt0cjo26ww0fhr" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_e8k0a7o1lr0wq1d">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_6czt0cjo26ww0fhr">observateur</targetRole>
+      </relation>
+      <relation target="#chronItem_24q70jsn58jnm5l" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Estienne Villetard</part>
+          <part localType="status">Syndic de la Compagnie</part>
+          <part localType="occupationType">Bâtiment;Expert entrepreneur</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0261</part>
+        </targetEntity>
+        <relationType id="relationType_6d050ijnq0qyhzlr" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_e8k0a7o1lr0wq1d">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_6d050ijnq0qyhzlr">observateur</targetRole>
+      </relation>
+      <relation target="#chronItem_24q70jsn58jnm5l" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Jean Luc Blanchard</part>
+          <part localType="status">Examinateur de la 1ère colonne</part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0024</part>
+        </targetEntity>
+        <relationType id="relationType_6d0f0a96grijtor" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_e8k0a7o1lr0wq1d">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_6d0f0a96grijtor">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_24q70jsn58jnm5l" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Jean Pierre Clavareau</part>
+          <part localType="status">Examinateur de la 1ère colonne</part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0055</part>
+        </targetEntity>
+        <relationType id="relationType_6d0o0ben8f4fdk0i" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_e8k0a7o1lr0wq1d">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_6d0o0ben8f4fdk0i">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_24q70jsn58jnm5l" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Sébastien Jean Duboisterf</part>
+          <part localType="status">Examinateur de la 2nde colonne</part>
+          <part localType="occupationType">Bâtiment;Entrepreneur architecte</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0101</part>
+        </targetEntity>
+        <relationType id="relationType_6d0x0oztv5ze9gw" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_e8k0a7o1lr0wq1d">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_6d0x0oztv5ze9gw">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_24q70jsn58jnm5l" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Louis Siguy</part>
+          <part localType="status">Examinateur de la 2nde colonne</part>
+          <part localType="occupationType">Bâtiment;Expert entrepreneur</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0245</part>
+        </targetEntity>
+        <relationType id="relationType_6d140g1w9oahrarh" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_e8k0a7o1lr0wq1d">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_6d140g1w9oahrarh">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_24q70jsn58jnm5l" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full"/>
+          <part localType="status"/>
+          <part localType="occupationType"/>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_6d190hktfcou5xat" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_e8k0a7o1lr0wq1d">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_6d190hktfcou5xat">examinateur</targetRole>
+      </relation>
     </relations>
    
       </cpfDescription>

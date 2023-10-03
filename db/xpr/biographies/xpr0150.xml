@@ -1,11 +1,16 @@
 <eac xmlns="https://archivists.org/ns/eac/v2" xml:id="xpr0150">
-   <control maintenanceStatus="new" publicationStatus="inProcess">
+   <control maintenanceStatus="updated" publicationStatus="inProcess">
       <recordId>xpr0150</recordId>
       <maintenanceAgency>
          <agencyName>projet Experts</agencyName>
       </maintenanceAgency>
       <maintenanceHistory>
-         <maintenanceEvent maintenanceEventType="updated" languageOfElement="eng">
+         <maintenanceEvent maintenanceEventType="revised">
+        <agent agentType="human">vnegre</agent>
+        <eventDateTime standardDateTime="2023-07-25T15:16:46Z"/>
+        <eventDescription/>
+      </maintenanceEvent>
+      <maintenanceEvent maintenanceEventType="updated" languageOfElement="eng">
             <agent agentType="machine">EAC-CPF 1.x to EAC 2.0 Migration Style Sheet (eac1-to-eac2.xsl)</agent>
             <eventDateTime standardDateTime="2022-09-19T16:52:56.706114+02:00"/>
             <eventDescription>EAC-CPF 1.x (urn:isbn:1-931666-33-4) instance migrated to EAC 2.0 (https://archivists.org/ns/eac/v2)</eventDescription>
@@ -31,6 +36,11 @@
             <eventDescription>Fiches créée sur Google Drive.</eventDescription>
          </maintenanceEvent>
       </maintenanceHistory>
+    <sources>
+      <source id="source_cj10wda9ko0217">
+        <reference href="">MC/ET/LXV/252 (IAD de sa femme)</reference>
+      </source>
+    </sources>
       
       
    </control>
@@ -60,7 +70,7 @@
                <term>Arpenteur</term>
                <dateRange>
                   <fromDate sourceReference="" certainty="" standardDate="1737"/>
-                  <toDate sourceReference="" certainty="" standardDate=""/>
+                  <toDate sourceReference="" certainty=""/>
                </dateRange>
                
             </function>
@@ -86,15 +96,7 @@
          </existDates>
          <biogHist>
             <chronList>
-               <chronItem id="eventid96290d177" localType="marriage">
-            <date certainty="" sourceReference=""/>
-                  
-                  <event>Mariage</event>
-                  
-                  
-                  
-                  
-               </chronItem>
+               
                <chronItem id="eventid96290d184" localType="officePurchase">
             <date certainty="" sourceReference=""/>
                   
@@ -114,11 +116,44 @@
                   
                   
                </chronItem>
+          <chronItem id="chronItem_18pd000tzt2jvtr2y" sourceReference="#source_cj10wda9ko0217" localType="marriage">
+            <date certainty="certain" standardDate="1714-06-20" sourceReference=""/>
+            <event>Mariage avec Marie Descordes</event>
+            <place>
+              <placeName/>
+            </place>
+          </chronItem>
                
             </chronList>
          </biogHist>
       </description>
       <relations>
+      <relation target="#chronItem_18pd000tzt2jvtr2y" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Descordes, Marie</part>
+          <part localType="status"/>
+          <part localType="occupationType"/>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_2iff0vn5yprf1aol" valueURI="" vocabularySource="" vocabularySourceURI="" sourceReference="#source_cj10wda9ko0217">rico:hasOrHadSpouse</relationType>
+        <targetRole target="#relationType_2iff0vn5yprf1aol">épouse</targetRole>
+      </relation>
+      <relation target="#chronItem_18pd000tzt2jvtr2y" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Descordes, Jacques</part>
+          <part localType="status"/>
+          <part localType="occupationType"/>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_435r0x78an1tupk" valueURI="" vocabularySource="" vocabularySourceURI="" sourceReference="#source_cj10wda9ko0217">rico:hasFamilyAssociationWith</relationType>
+        <targetRole target="#relationType_435r0x78an1tupk">beau-père</targetRole>
+      </relation>
          
       </relations>
    </cpfDescription>

@@ -1,11 +1,21 @@
 <eac xmlns="https://archivists.org/ns/eac/v2" xml:id="xpr0165">
-   <control maintenanceStatus="new" publicationStatus="inProcess">
+   <control maintenanceStatus="updated" publicationStatus="inProcess">
       <recordId>xpr0165</recordId>
       <maintenanceAgency>
          <agencyName>projet Experts</agencyName>
       </maintenanceAgency>
       <maintenanceHistory>
-         <maintenanceEvent maintenanceEventType="updated" languageOfElement="eng">
+         <maintenanceEvent maintenanceEventType="revised">
+        <agent agentType="human">rcarvais</agent>
+        <eventDateTime standardDateTime="2023-09-03T11:19:11Z"/>
+        <eventDescription/>
+      </maintenanceEvent>
+      <maintenanceEvent maintenanceEventType="revised">
+        <agent agentType="human">rcarvais</agent>
+        <eventDateTime standardDateTime="2023-08-19T14:21:40Z"/>
+        <eventDescription/>
+      </maintenanceEvent>
+      <maintenanceEvent maintenanceEventType="updated" languageOfElement="eng">
             <agent agentType="machine">EAC-CPF 1.x to EAC 2.0 Migration Style Sheet (eac1-to-eac2.xsl)</agent>
             <eventDateTime standardDateTime="2022-09-19T16:52:56.847183+02:00"/>
             <eventDescription>EAC-CPF 1.x (urn:isbn:1-931666-33-4) instance migrated to EAC 2.0 (https://archivists.org/ns/eac/v2)</eventDescription>
@@ -36,6 +46,12 @@
             <eventDescription>Fiches créée sur Google Drive.</eventDescription>
          </maintenanceEvent>
       </maintenanceHistory>
+    <sources>
+      <source id="source_44m0xqwo9byyh6">
+        <reference href="https://www.geneanet.org/registres/view/154759/644?">AN Y 4562/A</reference>
+        <citedRange unit="page">644-649</citedRange>
+      </source>
+    </sources>
       
       
    </control>
@@ -61,7 +77,7 @@
       </identity>
       <description>
          <functions>
-            <function sourceReference="">
+            <function sourceReference="#source_44m0xqwo9byyh6">
                <term>Expert bourgeois</term>
                <dateRange>
                   <fromDate sourceReference="" certainty="" standardDate="1739"/>
@@ -80,7 +96,7 @@
          <existDates>
             <dateRange>
                <fromDate sourceReference="" certainty="" standardDate="1709-09"/>
-               <toDate sourceReference="" certainty="" standardDate=""/>
+               <toDate sourceReference="" certainty=""/>
             </dateRange>
          </existDates>
          <biogHist>
@@ -111,6 +127,31 @@
                   
                   
                </chronItem>
+          <chronItem id="chronItem_1dtv08k6jhs1cuwo" sourceReference="#source_44m0xqwo9byyh6" localType="baptism">
+            <date certainty="certain" standardDate="1709-09-02" sourceReference=""/>
+            <event>Baptême de Pierre François Le Hain</event>
+            <place>
+              <placeName>Eglise paroissile de St Gervais</placeName>
+            </place>
+          </chronItem>
+          <chronItem id="chronItem_2oxm0bwajkn1jaeo" sourceReference="#source_44m0xqwo9byyh6" localType="receptionColumn1">
+            <dateSet>
+              <date certainty="certain" standardDate="1739-02-20" sourceReference="">Lettres de provision</date>
+              <date certainty="" sourceReference="">Supplique</date>
+              <date certainty="certain" standardDate="1739-03-03" sourceReference="">Ordonnance de soit montré au procureur du roy</date>
+              <date certainty="certain" standardDate="1739-04-12" sourceReference="">Examen</date>
+              <date certainty="certain" standardDate="1739-03-04" sourceReference="">Consentement de la communauté</date>
+              <date certainty="certain" standardDate="1739-04-13" sourceReference="">Information de vie et de mœurs</date>
+              <date certainty="certain" standardDate="1739-04-14" sourceReference="">Serment</date>
+              <date certainty="certain" standardDate="1739-04-14" sourceReference="">Réception</date>
+              <date certainty="certain" standardDate="1739-04-13" sourceReference="">Conclusions du procureur du roi</date>
+              <date certainty="certain" standardDate="1739-04-06" sourceReference="">Délibération de la compagnie pour le choix des examinateurs</date>
+            </dateSet>
+            <event>Réception en l'office d'expert de la 1ère colonne</event>
+            <place>
+              <placeName>Versailles (lettres de provision)</placeName>
+            </place>
+          </chronItem>
                
             </chronList>
          </biogHist>
@@ -130,6 +171,161 @@
           <relationType id="relationType_id128298d2600699" valueURI="" vocabularySource="" vocabularySourceURI="" sourceReference=""/>
             <targetRole target="#relationType_id128298d2600699"/>
           </relation>
+      <relation target="#chronItem_2oxm0bwajkn1jaeo" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Jean Girard Wiet</part>
+          <part localType="status">défunt dernier possesseur</part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0264</part>
+        </targetEntity>
+        <relationType id="relationType_6qh3040b9y0cnsha" valueURI="https://www.ica.org/standards/RiC/ontology#isSuccessorOf" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_44m0xqwo9byyh6">rico:isSuccessorOf</relationType>
+        <targetRole target="#relationType_6qh3040b9y0cnsha">prédécesseur</targetRole>
+        <descriptiveNote>
+          <p/>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_2oxm0bwajkn1jaeo" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Pierre Sattin</part>
+          <part localType="status">Prestre habitué en l'église paroissiale de St Merry</part>
+          <part localType="occupationType">Religion;Religieux</part>
+          <part localType="age">68</part>
+          <part localType="address">rue des Arcis susdite paroisse, Paris</part>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_6qhi0f3c3qj1rar6" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_44m0xqwo9byyh6">rico:knownBy</relationType>
+        <targetRole target="#relationType_6qhi0f3c3qj1rar6">témoin</targetRole>
+        <descriptiveNote>
+          <p>Dépose connoistre ledit sieur Pierre François Le Hain depuis 2 ans ou environ, qu'il est de bonne vie et moeurs, de la R C a et R pour luy en avoir veu faire les fonctions et l'avoir veu assister au service divin, que d'ailleurs, il est très affectionné au service du roy et du publicq.</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_2oxm0bwajkn1jaeo" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Louis Alexandre Vaillaut</part>
+          <part localType="status">Procureur au Châtelet de Paris</part>
+          <part localType="occupationType">Droit;Procureur</part>
+          <part localType="age">51</part>
+          <part localType="address">rue des Petits Champs, paroisse St Merry, Paris</part>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_6qht0bmguaxx966" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_44m0xqwo9byyh6">rico:knownBy</relationType>
+        <targetRole target="#relationType_6qht0bmguaxx966">témoin</targetRole>
+        <descriptiveNote>
+          <p>Dépose connoistre ledit sieur Pierre François Le Hain depuis 10 ans ou environ, qu'il est de bonne vie et moeurs, de la R C a et R pour luy en avoir veu faire les fonctions et l'avoir veu assister au service divin, que d'ailleurs, il est très affectionné au service du roy et du publicq.</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_2oxm0bwajkn1jaeo" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Heny Cantien Desboeufs</part>
+          <part localType="status">Architecte juré expert</part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age">33</part>
+          <part localType="address">Rue Ste Croix de la Bretonnerie, Paroisse St Paul, Paris</part>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0089</part>
+        </targetEntity>
+        <relationType id="relationType_6qi30rhuwf3cyc3" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_44m0xqwo9byyh6">rico:knownBy</relationType>
+        <targetRole target="#relationType_6qi30rhuwf3cyc3">témoin</targetRole>
+        <descriptiveNote>
+          <p>Dépose connoistre ledit sieur Pierre François Le Hain depuis 16 ans ou environ, qu'il est de bonne vie et moeurs, de la R C a et R pour luy en avoir veu faire les fonctions et l'avoir veu assister au service divin, que d'ailleurs, il est très affectionné au service du roy et du publicq.</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_2oxm0bwajkn1jaeo" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Pierre Quirot</part>
+          <part localType="status">Doyen de la Compagnie</part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0232</part>
+        </targetEntity>
+        <relationType id="relationType_6qib0usjfz6fmfr" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_44m0xqwo9byyh6">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_6qib0usjfz6fmfr">observateur</targetRole>
+      </relation>
+      <relation target="#chronItem_2oxm0bwajkn1jaeo" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Jean Baptiste Michel Poirin</part>
+          <part localType="status">Syndic de la compagnie</part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0223</part>
+        </targetEntity>
+        <relationType id="relationType_6qij0rwt5wz4riu" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_44m0xqwo9byyh6">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_6qij0rwt5wz4riu">observateur</targetRole>
+      </relation>
+      <relation target="#chronItem_2oxm0bwajkn1jaeo" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Pierre Louis Richard</part>
+          <part localType="status">Adjoint de la compagnie</part>
+          <part localType="occupationType">Bâtiment;Expert entrepreneur</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0236</part>
+        </targetEntity>
+        <relationType id="relationType_6qip0wh0cbk418sc" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_44m0xqwo9byyh6">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_6qip0wh0cbk418sc">observateur</targetRole>
+      </relation>
+      <relation target="#chronItem_2oxm0bwajkn1jaeo" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Jacques Antoine Payen</part>
+          <part localType="status">Examinateur de la 1ère colonne</part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0209</part>
+        </targetEntity>
+        <relationType id="relationType_6qiv0fidudbli9ze" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_44m0xqwo9byyh6">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_6qiv0fidudbli9ze">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_2oxm0bwajkn1jaeo" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">André François Delvincourt</part>
+          <part localType="status">Examinateur</part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0088</part>
+        </targetEntity>
+        <relationType id="relationType_6qj00ruiukgmv8ye" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_44m0xqwo9byyh6">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_6qj00ruiukgmv8ye">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_2oxm0bwajkn1jaeo" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Jean Fauvel</part>
+          <part localType="status">Examinateur de la 2nde colonne</part>
+          <part localType="occupationType">Bâtiment;Expert entrepreneur</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0108</part>
+        </targetEntity>
+        <relationType id="relationType_6qj401i1v8ebab81" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_44m0xqwo9byyh6">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_6qj401i1v8ebab81">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_2oxm0bwajkn1jaeo" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Maurice Belhomme</part>
+          <part localType="status">Examinateur de la 2nde colonne</part>
+          <part localType="occupationType">Bâtiment;Expert entrepreneur</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0015</part>
+        </targetEntity>
+        <relationType id="relationType_6qj80ig254o29yh" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_44m0xqwo9byyh6">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_6qj80ig254o29yh">examinateur</targetRole>
+      </relation>
         </relations>
       </cpfDescription>
    

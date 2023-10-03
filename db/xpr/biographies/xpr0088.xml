@@ -6,6 +6,16 @@
       </maintenanceAgency>
       <maintenanceHistory>
          <maintenanceEvent maintenanceEventType="revised">
+        <agent agentType="human">rcarvais</agent>
+        <eventDateTime standardDateTime="2023-07-22T11:36:05Z"/>
+        <eventDescription/>
+      </maintenanceEvent>
+      <maintenanceEvent maintenanceEventType="revised">
+        <agent agentType="human">rcarvais</agent>
+        <eventDateTime standardDateTime="2023-07-22T08:58:20Z"/>
+        <eventDescription/>
+      </maintenanceEvent>
+      <maintenanceEvent maintenanceEventType="revised">
         <agent agentType="human">vnegre</agent>
         <eventDateTime standardDateTime="2023-04-22T14:17:36Z"/>
         <eventDescription/>
@@ -38,7 +48,11 @@
       </maintenanceHistory>
     <sources>
       <source id="source_59t0ed3taogpael">
-        <reference href="">MC/ET/XXI/518 (IAD)</reference>
+        <reference href="https://www.geneanet.org/registres/view/13193/159?">MC/ET/XXI/518 (IAD)</reference>
+        <citedRange unit="page">159-166</citedRange>
+      </source>
+      <source id="source_cu307iuvfevkoh2">
+        <reference href="">AN Y 4560/A</reference>
       </source>
     </sources>
       
@@ -86,6 +100,13 @@
                <term/>
             </localDescription>
          </localDescriptions>
+      <occupations>
+        <occupation localType="" sourceReference="#source_cu307iuvfevkoh2">
+          <term>Architecte à Paris</term>
+          <!--optionnal (all below)-->
+          <!--&lt;date/&gt; | &lt;dateRange/&gt; | &lt;dateSet/&gt;-->
+        </occupation>
+      </occupations>
          
          
          <existDates>
@@ -141,11 +162,194 @@
               <placeName>Rue Saint-Denis</placeName>
             </place>
           </chronItem>
+          <chronItem id="chronItem_1z0m0hn18j1510sf" sourceReference="#source_cu307iuvfevkoh2" localType="baptism">
+            <date certainty="certain" standardDate="1707-12-30" sourceReference=""/>
+            <event>Baptême de André François Delvincourt</event>
+            <place>
+              <placeName>Eglise paroissiale de St Eustache</placeName>
+            </place>
+          </chronItem>
+          <chronItem id="chronItem_38zw0tqi16v4dmn" sourceReference="" localType="receptionColumn1">
+            <dateSet>
+              <date certainty="certain" standardDate="1738-03-28" sourceReference="">Lettres de provision</date>
+              <date certainty="" sourceReference="">Supplique</date>
+              <date certainty="certain" standardDate="1738-05-07" sourceReference="">Ordonnance de soit montré au procureur du roy</date>
+              <date certainty="certain" standardDate="1739-02-01" sourceReference="">Examen</date>
+              <date certainty="certain" standardDate="1739-05-01" sourceReference="">Consentement de la communauté</date>
+              <date certainty="certain" standardDate="1739-02-03" sourceReference="">Information de vie et de mœurs</date>
+              <date certainty="certain" standardDate="1739-02-04" sourceReference="">Serment</date>
+              <date certainty="certain" standardDate="1739-02-04" sourceReference="">Réception</date>
+              <date certainty="certain" standardDate="1739-02-03" sourceReference="">Conclusion du procureur du roi</date>
+              <date certainty="certain" standardDate="1739-01-25" sourceReference="">Délibération de la compagnie pour le choix des examinateurs</date>
+            </dateSet>
+            <event>Réception en l'office de juré expert de la 1ère colonne</event>
+            <place>
+              <placeName>Paris (Lettres de provisions)</placeName>
+            </place>
+          </chronItem>
                
             </chronList>
          </biogHist>
       </description>
       <relations>
+      <relation target="#chronItem_38zw0tqi16v4dmn" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Charles Ju</part>
+          <part localType="status">dernier possesseur, volontairement démis de ses fonctions en faveur de André François Delvincourt</part>
+          <part localType="occupationType">Bâtiment;Expert entrepreneur</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0149</part>
+        </targetEntity>
+        <relationType id="relationType_8o820ogyi52eagkb" valueURI="https://www.ica.org/standards/RiC/ontology#isSuccessorOf" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:isSuccessorOf</relationType>
+        <targetRole target="#relationType_8o820ogyi52eagkb">prédécesseur</targetRole>
+        <descriptiveNote>
+          <p>Charles Ju est expert entrepreneur puis bourgeois</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_38zw0tqi16v4dmn" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Antine Gabriel Le Corsonnier</part>
+          <part localType="status">Prestre habitué en l'église paroissiale de St Gervais et de St Prothois à Paris</part>
+          <part localType="occupationType">Religion;Religieux</part>
+          <part localType="age">50 environ</part>
+          <part localType="address">rue des barres en la communauté de ladite église, Paris</part>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_8o8i06lyw51up3z5" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:knownBy</relationType>
+        <targetRole target="#relationType_8o8i06lyw51up3z5">témoin</targetRole>
+        <descriptiveNote>
+          <p>Dépose connoistre ledit André François Delvincourt pour estre de bonne vie et moeurs, scait qu'il fait profession de la R C a et R pour luy avoir veu faire les fonctions d'un bon chrestien, fréquenter l'église et entendre le service divin, scait de plus qu'il est fort affectionné au service du roy et du public.</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_38zw0tqi16v4dmn" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Nicolas Fournier</part>
+          <part localType="status">Bourgeois de Paris</part>
+          <part localType="occupationType">Autres;Autres</part>
+          <part localType="age">64 environ</part>
+          <part localType="address">rue des Vieilles Audriettes, paroisse St Nicolas des Champs, Paris</part>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_8o8u0wssj5gj5b9" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:knownBy</relationType>
+        <targetRole target="#relationType_8o8u0wssj5gj5b9">témoin</targetRole>
+        <descriptiveNote>
+          <p>Dépose connoistre ledit André François Delvincourt depuis sa tendre enfance qui est depuis environ 30 ans, scait qu'il est d'une bonne conduitte fort régulière et de bonne vie et moeurs, qu'il fait profession de la R C a et R pour avoir plusieur sfois entendu et assister ensemble audit sacrifice de la messe, fréquenter les églises et entendu le service de l'église, scait de plus qu'il est fort affectionné au service du roy et du public.</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_38zw0tqi16v4dmn" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Denis Gaut</part>
+          <part localType="status">Md épicier, bourgeois de Paris</part>
+          <part localType="occupationType">Commerce;Marchand Bourgeois</part>
+          <part localType="age">40 environ</part>
+          <part localType="address">rue de Cléry, paroisse St Laurent,  Paris</part>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_8o95073w3og7465m" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:knownBy</relationType>
+        <targetRole target="#relationType_8o95073w3og7465m">témoin</targetRole>
+        <descriptiveNote>
+          <p>Dépose connoistre ledit André François Delvincourt depuis environ 8 années pour un très honneste homme, scait qu'il fait profession de la R C a et R pour luy avoir veu faire les fonctions d'un bon chrestien, fréquenter l'église et pour avoir assister ensemble plusieurs fois au service divin et de l'église, scait aussi qu'il est fort affectionné au service du roy et du public.</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_38zw0tqi16v4dmn" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Pierre Quirot </part>
+          <part localType="status">Doyen de la compagnie</part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0232</part>
+        </targetEntity>
+        <relationType id="relationType_8o9d0moirkspko6i" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_8o9d0moirkspko6i">observateur</targetRole>
+      </relation>
+      <relation target="#chronItem_38zw0tqi16v4dmn" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Jean Baptiste Michel Poirin</part>
+          <part localType="status">Syndic de la compagnie</part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0223</part>
+        </targetEntity>
+        <relationType id="relationType_8o9l098xqub8orlc" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_8o9l098xqub8orlc">observateur</targetRole>
+      </relation>
+      <relation target="#chronItem_38zw0tqi16v4dmn" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Pierre Louis Richard</part>
+          <part localType="status">Adjoint de la compagnie</part>
+          <part localType="occupationType">Bâtiment;Expert entrepreneur</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0236</part>
+        </targetEntity>
+        <relationType id="relationType_8o9s0w6e4tmgcjg" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_8o9s0w6e4tmgcjg">observateur</targetRole>
+      </relation>
+      <relation target="#chronItem_38zw0tqi16v4dmn" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Pierre Charles Delespine</part>
+          <part localType="status">Examiateur de la 1ère colonne</part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0084</part>
+        </targetEntity>
+        <relationType id="relationType_8o9y0ywdnf27q22b" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_cu307iuvfevkoh2">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_8o9y0ywdnf27q22b">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_38zw0tqi16v4dmn" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Jean Baptiste Vautrain</part>
+          <part localType="status">Examinateur de la 1ère colonne</part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0257</part>
+        </targetEntity>
+        <relationType id="relationType_8oa30625k3p9yynf" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_cu307iuvfevkoh2">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_8oa30625k3p9yynf">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_38zw0tqi16v4dmn" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Pierre Bourgeois</part>
+          <part localType="status">Examinateur de la 2nde colonne</part>
+          <part localType="occupationType">Bâtiment;Expert entrepreneur</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0039</part>
+        </targetEntity>
+        <relationType id="relationType_8oa70xnw471za9n" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_8oa70xnw471za9n">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_38zw0tqi16v4dmn" sourceReference="">
+        <descriptiveNote>
+          <p>Jacques II le Pas Dubuisson, expert bourgeois, est également signataire du certificat. A quel titre ? </p>
+        </descriptiveNote>
+        <targetEntity targetType="person">
+          <part localType="full">André Mouchet</part>
+          <part localType="status">Examinateur de la 2nde colonne</part>
+          <part localType="occupationType">Bâtiment;Expert entrepreneur</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0200</part>
+        </targetEntity>
+        <relationType id="relationType_8oab0o7i89ov1bao" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_8oab0o7i89ov1bao">examinateur</targetRole>
+      </relation>
          
       </relations>
    </cpfDescription>

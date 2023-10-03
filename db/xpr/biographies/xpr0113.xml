@@ -1,11 +1,16 @@
 <eac xmlns="https://archivists.org/ns/eac/v2" xml:id="xpr0113">
-   <control maintenanceStatus="new" publicationStatus="inProcess">
+   <control maintenanceStatus="updated" publicationStatus="inProcess">
       <recordId>xpr0113</recordId>
       <maintenanceAgency>
          <agencyName>projet Experts</agencyName>
       </maintenanceAgency>
       <maintenanceHistory>
-         <maintenanceEvent maintenanceEventType="updated" languageOfElement="eng">
+         <maintenanceEvent maintenanceEventType="revised">
+        <agent agentType="human">rcarvais</agent>
+        <eventDateTime standardDateTime="2023-07-30T09:53:30Z"/>
+        <eventDescription/>
+      </maintenanceEvent>
+      <maintenanceEvent maintenanceEventType="updated" languageOfElement="eng">
             <agent agentType="machine">EAC-CPF 1.x to EAC 2.0 Migration Style Sheet (eac1-to-eac2.xsl)</agent>
             <eventDateTime standardDateTime="2022-09-19T16:52:56.369481+02:00"/>
             <eventDescription>EAC-CPF 1.x (urn:isbn:1-931666-33-4) instance migrated to EAC 2.0 (https://archivists.org/ns/eac/v2)</eventDescription>
@@ -36,6 +41,12 @@
             <eventDescription>Fiches créée sur Google Drive.</eventDescription>
          </maintenanceEvent>
       </maintenanceHistory>
+    <sources>
+      <source id="source_n2808946r3l72wl">
+        <reference href="https://www.geneanet.org/registres/view/20892/152">AN Y 4093</reference>
+        <citedRange unit="page">152-156</citedRange>
+      </source>
+    </sources>
       
       
    </control>
@@ -120,6 +131,23 @@
                   
                   
                </chronItem>
+          <chronItem id="chronItem_1y5902lih03sbq7f" sourceReference="#source_n2808946r3l72wl" localType="reception">
+            <dateSet>
+              <date certainty="certain" standardDate="1700-10-10" sourceReference="">Lettres de provision</date>
+              <date certainty="" sourceReference="">Supplique</date>
+              <date certainty="certain" standardDate="1700-10-14" sourceReference="">Ordonnance de soit montré au procureur du roy</date>
+              <date certainty="certain" standardDate="1700-11-02" sourceReference="">Examen</date>
+              <date certainty="certain" standardDate="1700-10-15" sourceReference="">Consentement de la communauté</date>
+              <date certainty="" sourceReference="">Information de vie et de mœurs</date>
+              <date certainty="certain" standardDate="1700-11-06" sourceReference="">Serment</date>
+              <date certainty="certain" standardDate="1700-11-06" sourceReference="">Réception</date>
+              <date certainty="certain" standardDate="1700-11-04" sourceReference="">Conclusions du rpocureur du roi</date>
+            </dateSet>
+            <event>Réception en l'office de juré expert</event>
+            <place>
+              <placeName>Fontainebleau (lettres de provision)</placeName>
+            </place>
+          </chronItem>
             </chronList>
          </biogHist>
       </description>
@@ -138,6 +166,161 @@
           <relationType id="relationType_id128298d2585558" valueURI="" vocabularySource="" vocabularySourceURI="" sourceReference=""/>
             <targetRole target="#relationType_id128298d2585558"/>
           </relation>
+      <relation target="#chronItem_1y5902lih03sbq7f" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Michel Lebouteux</part>
+          <part localType="status"/>
+          <part localType="occupationType"/>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0157</part>
+        </targetEntity>
+        <relationType id="relationType_5m2g0l8dny2pe7y" valueURI="https://www.ica.org/standards/RiC/ontology#isSuccessorOf" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_n2808946r3l72wl">rico:isSuccessorOf</relationType>
+        <targetRole target="#relationType_5m2g0l8dny2pe7y">prédécesseur</targetRole>
+        <descriptiveNote>
+          <p>Ce prédécesseur est très peu connu. Il serait jardinier du Duc de Vendôme, et dessinateur du roi. inventaire après décès MC/ET/XLV/259 Inventaire après décès de Marguerite Bouchart, morte un mois auparavant, à la requête de Michel Le Bouteux/Le Boutteux, son mari, bourgeois de Paris, y demeurant à l'Orangerie du Jardin des Tuileries, paroisse Saint-Roch, tant en son nom, à cause de leur communauté, que comme tuteur de leur fils mineur Jean Michel Le Bouteux, âgé de 22 mois, et en la présence d'André Le Nôtre, dessinateur des jardins du roi, [grand-]oncle et subrogé tuteur dudit mineur, habiles à se dire, porter et nommer héritier seul et pour le tout de ladite défunte. 19/01/1650.</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_1y5902lih03sbq7f" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">François Fleuret</part>
+          <part localType="status">Prestre habitué à St Roch</part>
+          <part localType="occupationType">Religion;Religieux</part>
+          <part localType="age">56</part>
+          <part localType="address">rue St Honoré, susdite paroisse, Paris</part>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_5m2w0yci1rkgyz1n" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_n2808946r3l72wl">rico:knownBy</relationType>
+        <targetRole target="#relationType_5m2w0yci1rkgyz1n">témoin</targetRole>
+        <descriptiveNote>
+          <p>Dépose connoistre ledit Frosne depuis 15 ans ou environ, scait qu'il est de bonne vie et moeurs, conversation, R C a et R pour l'avoir veu plusieurs fois fréquenter les églises et entendre le service divin et estre très affectionné au service de Sa Majesté et du publiq.</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_1y5902lih03sbq7f" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Vincent Du Parc</part>
+          <part localType="status">Me de musique</part>
+          <part localType="occupationType">Métiers (hors bâtiment);Maitre de métier (hors bâtiment)</part>
+          <part localType="age">47</part>
+          <part localType="address">Sur le quai Pelletier, Paroisse St Germain</part>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_5m3705dqu5fcedep" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_n2808946r3l72wl">rico:knownBy</relationType>
+        <targetRole target="#relationType_5m3705dqu5fcedep">témoin</targetRole>
+        <descriptiveNote>
+          <p>Dépose connoistre ledit Frosne depuis 25 ans ou environ, scait qu'il est de bonne vie et moeurs, conversation, R C a et R pour l'avoir veu plusieurs fois fréquenter les églises et entendre le service divin et estre très affectionné au service de Sa Majesté et du publiq.</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_1y5902lih03sbq7f" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Pierre Delissainde</part>
+          <part localType="status">Bourgeois de Paris</part>
+          <part localType="occupationType">Autres;Bourgeois de Paris</part>
+          <part localType="age">50</part>
+          <part localType="address">Rue Vieilles Monnaies, paroisse St Jacques de la Boucherie, Paris</part>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_5m3h04ue5pcpsi69" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_n2808946r3l72wl">rico:knownBy</relationType>
+        <targetRole target="#relationType_5m3h04ue5pcpsi69">témoin</targetRole>
+        <descriptiveNote>
+          <p>Dépose connoistre ledit Frosne depuis 35 ans ou environ, scait qu'il est de bonne vie et moeurs, conversation, R C a et R pour l'avoir veu plusieurs fois fréquenter les églises et entendre le service divin et estre très affectionné au service de Sa Majesté et du publiq.</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_1y5902lih03sbq7f" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Jacques Mazières</part>
+          <part localType="status">Syndic de la compagnie</part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0194</part>
+        </targetEntity>
+        <relationType id="relationType_5m3q08d9vhujxk2v" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_n2808946r3l72wl">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_5m3q08d9vhujxk2v">observateur</targetRole>
+      </relation>
+      <relation target="#chronItem_1y5902lih03sbq7f" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Claude Aubry</part>
+          <part localType="status">Adjoint de la compagnie</part>
+          <part localType="occupationType">Bâtiment;Expert entrepreneur</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0008</part>
+        </targetEntity>
+        <relationType id="relationType_5m3y01wttfhlow8x" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_n2808946r3l72wl">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_5m3y01wttfhlow8x">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_1y5902lih03sbq7f" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full"/>
+          <part localType="status"/>
+          <part localType="occupationType"/>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_5m4408x7lsyh681o" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_n2808946r3l72wl">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_5m4408x7lsyh681o">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_1y5902lih03sbq7f" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full"/>
+          <part localType="status"/>
+          <part localType="occupationType"/>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_5m4a0kpscgw29oq" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_n2808946r3l72wl">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_5m4a0kpscgw29oq">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_1y5902lih03sbq7f" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full"/>
+          <part localType="status"/>
+          <part localType="occupationType"/>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_5m4f0o7ztyc62crk" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_n2808946r3l72wl">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_5m4f0o7ztyc62crk">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_1y5902lih03sbq7f" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full"/>
+          <part localType="status"/>
+          <part localType="occupationType"/>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_5m4j00b6q6hpj0f4v" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_n2808946r3l72wl">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_5m4j00b6q6hpj0f4v">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_1y5902lih03sbq7f" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full"/>
+          <part localType="status"/>
+          <part localType="occupationType"/>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_5m4n0nj89nkhkqq" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_n2808946r3l72wl">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_5m4n0nj89nkhkqq">examinateur</targetRole>
+      </relation>
         </relations>
       </cpfDescription>
    

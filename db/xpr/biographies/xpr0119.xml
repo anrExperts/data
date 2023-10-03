@@ -1,11 +1,16 @@
 <eac xmlns="https://archivists.org/ns/eac/v2" xml:id="xpr0119">
-   <control maintenanceStatus="new" publicationStatus="inProcess">
+   <control maintenanceStatus="updated" publicationStatus="inProcess">
       <recordId>xpr0119</recordId>
       <maintenanceAgency>
          <agencyName>projet Experts</agencyName>
       </maintenanceAgency>
       <maintenanceHistory>
-         <maintenanceEvent maintenanceEventType="updated" languageOfElement="eng">
+         <maintenanceEvent maintenanceEventType="revised">
+        <agent agentType="human">rcarvais</agent>
+        <eventDateTime standardDateTime="2023-08-02T08:46:48Z"/>
+        <eventDescription/>
+      </maintenanceEvent>
+      <maintenanceEvent maintenanceEventType="updated" languageOfElement="eng">
             <agent agentType="machine">EAC-CPF 1.x to EAC 2.0 Migration Style Sheet (eac1-to-eac2.xsl)</agent>
             <eventDateTime standardDateTime="2022-09-19T16:52:56.428908+02:00"/>
             <eventDescription>EAC-CPF 1.x (urn:isbn:1-931666-33-4) instance migrated to EAC 2.0 (https://archivists.org/ns/eac/v2)</eventDescription>
@@ -36,6 +41,12 @@
             <eventDescription>Fiches créée sur Google Drive.</eventDescription>
          </maintenanceEvent>
       </maintenanceHistory>
+    <sources>
+      <source id="source_6vs059thx286mim">
+        <reference href="https://www.geneanet.org/registres/view/19712/58?">AN Y 4635/A</reference>
+        <citedRange unit="page">58-68</citedRange>
+      </source>
+    </sources>
       
       
    </control>
@@ -67,7 +78,7 @@
       </identity>
       <description>
          <functions>
-            <function sourceReference="">
+            <function sourceReference="#source_6vs059thx286mim">
                <term>Expert bourgeois</term>
                <dateRange>
                   <fromDate sourceReference="" certainty="" standardDate="1745"/>
@@ -81,12 +92,19 @@
                <term/>
             </localDescription>
          </localDescriptions>
+      <occupations>
+        <occupation localType="" sourceReference="#source_6vs059thx286mim">
+          <term>Architecte à Paris</term>
+          <!--optionnal (all below)-->
+          <!--&lt;date/&gt; | &lt;dateRange/&gt; | &lt;dateSet/&gt;-->
+        </occupation>
+      </occupations>
          
          
          <existDates>
             <dateRange>
                <fromDate sourceReference="" certainty="" standardDate="1712-09"/>
-               <toDate sourceReference="" certainty="" standardDate=""/>
+               <toDate sourceReference="" certainty=""/>
             </dateRange>
          </existDates>
          <biogHist>
@@ -135,6 +153,28 @@
                   
                   
                </chronItem>
+          <chronItem id="chronItem_24dg0bu8l479ltc" sourceReference="#source_6vs059thx286mim" localType="receptionColumn1">
+            <dateSet>
+              <date certainty="certain" standardDate="1743-03-29" sourceReference="">Lettres de provision</date>
+              <date certainty="" sourceReference="">Supplique</date>
+              <date certainty="certain" standardDate="1743-03-30" sourceReference="">1ère Ordonnance de soit montré au procureur du roy</date>
+              <date certainty="certain" standardDate="1745-05-01" sourceReference="">Examen</date>
+              <date certainty="certain" standardDate="1743-03-30" sourceReference="">1er Consentement de la communauté</date>
+              <date certainty="certain" standardDate="1745-05-03" sourceReference="">Information de vie et de mœurs</date>
+              <date certainty="certain" standardDate="1745-05-04" sourceReference="">Serment</date>
+              <date certainty="certain" standardDate="1745-05-04" sourceReference="">Réception</date>
+              <date certainty="certain" standardDate="1745-05-03" sourceReference="">Conclusions préparatoires du procureur du roi</date>
+              <date certainty="certain" standardDate="1745-05-04" sourceReference="">Conclusions définitives du procureur du roi</date>
+              <date certainty="certain" standardDate="1745-04-25" sourceReference="">Délibération de la compagnie pour le choix des examinateurs</date>
+              <date certainty="certain" standardDate="1745-01-29" sourceReference="">Lettres de Surannation</date>
+              <date certainty="certain" standardDate="1745-03-04" sourceReference="">2e ordonnance de soit montré</date>
+              <date certainty="certain" standardDate="1745-03-05" sourceReference="">2e Consentement de la communauté</date>
+            </dateSet>
+            <event>Réception en l'office d'expert juré de la 1ère colonne</event>
+            <place>
+              <placeName>Paris (lettres de provision et de surannation)</placeName>
+            </place>
+          </chronItem>
             </chronList>
          </biogHist>
       </description>
@@ -153,6 +193,164 @@
           <relationType id="relationType_id128298d2587386" valueURI="" vocabularySource="" vocabularySourceURI="" sourceReference=""/>
             <targetRole target="#relationType_id128298d2587386"/>
           </relation>
+      <relation target="#chronItem_24dg0bu8l479ltc" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Pierre Quirot</part>
+          <part localType="status">défunt dernier possesseur </part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0232</part>
+        </targetEntity>
+        <relationType id="relationType_m6e00kre5mpg1ztm" valueURI="https://www.ica.org/standards/RiC/ontology#isSuccessorOf" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_6vs059thx286mim">rico:isSuccessorOf</relationType>
+        <targetRole target="#relationType_m6e00kre5mpg1ztm">prédécesseur</targetRole>
+        <descriptiveNote>
+          <p>l'office est levé aux parties casuelles par ledit Pierre Quirot seul fils et unique héritier.</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_24dg0bu8l479ltc" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Jean Baptiste de Vaucourt</part>
+          <part localType="status">Prestre, viciare de l'église et paroisse St Barthélémy à Paris</part>
+          <part localType="occupationType">Religion;Religieux</part>
+          <part localType="age">50 environ</part>
+          <part localType="address">Cul de sac de St Barthelemy, Paris</part>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_m6ee03viza02uvtc" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_6vs059thx286mim">rico:knownBy</relationType>
+        <targetRole target="#relationType_m6ee03viza02uvtc">témoin</targetRole>
+        <descriptiveNote>
+          <p>Dépose qu'il connoist ledit sieur Gillet pour estre de la R C a et R, qu'il le connoist il y a plus de 6 ans et qu'il luy a administré le sacrement de mariage, qu'il est de bonne vie et moeurs et très attaché au service du roy et du public.</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_24dg0bu8l479ltc" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Pierre Caqué</part>
+          <part localType="status">Juré expert entrepreneur de bastimenst à Paris</part>
+          <part localType="occupationType">Bâtiment;Expert entrepreneur</part>
+          <part localType="age">45 environ</part>
+          <part localType="address">rue Montmartre, paroisse St Eustache, Paris</part>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0045</part>
+        </targetEntity>
+        <relationType id="relationType_m6eu02grvvuc2j62" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_6vs059thx286mim">rico:knownBy</relationType>
+        <targetRole target="#relationType_m6eu02grvvuc2j62">témoin</targetRole>
+        <descriptiveNote>
+          <p>Dépose qu'il connoist ledit sieur Gillet depuis plus de 3 ans pour estre de bonne vie et moeurs, qu'il est de la R C a et R et très attaché au service du roy et du publicq.</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_24dg0bu8l479ltc" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Charles François Le Brun</part>
+          <part localType="status">architecte expert bourgeois</part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age">40</part>
+          <part localType="address">rue des Vieilles étuves, paroisse St Nicolas des champs, Paris</part>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0159</part>
+        </targetEntity>
+        <relationType id="relationType_m6f70kxsdxr4aeq" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_6vs059thx286mim">rico:knownBy</relationType>
+        <targetRole target="#relationType_m6f70kxsdxr4aeq">témoin</targetRole>
+        <descriptiveNote>
+          <p>Dépose connoistre ledit sieur Gillet depuis environ 12 ans pour estre de bonne vie et moeurs, de la R C a et R, et attaché au service du roy et du publicq.</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_24dg0bu8l479ltc" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Charles Bernard</part>
+          <part localType="status">Doyen de la communauté</part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0018</part>
+        </targetEntity>
+        <relationType id="relationType_m6fj05zn61qisyd" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_6vs059thx286mim">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_m6fj05zn61qisyd">observateur</targetRole>
+      </relation>
+      <relation target="#chronItem_24dg0bu8l479ltc" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Pierre Caqué</part>
+          <part localType="status">Syndic de la compagnie</part>
+          <part localType="occupationType">Bâtiment;Expert entrepreneur</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0045</part>
+        </targetEntity>
+        <relationType id="relationType_m6fv03w8mmob1ds3" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_6vs059thx286mim">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_m6fv03w8mmob1ds3">observateur</targetRole>
+      </relation>
+      <relation target="#chronItem_24dg0bu8l479ltc" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Thomas Adhenet</part>
+          <part localType="status">Adjoint de la compagnie</part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0001</part>
+        </targetEntity>
+        <relationType id="relationType_m6g40mirgt0keho" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_6vs059thx286mim">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_m6g40mirgt0keho">observateur</targetRole>
+      </relation>
+      <relation target="#chronItem_24dg0bu8l479ltc" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Jacques Richard Cochois</part>
+          <part localType="status">Examinateur de la 1ère colonne</part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0056</part>
+        </targetEntity>
+        <relationType id="relationType_m6gb0tzrvkoeeuvg" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_6vs059thx286mim">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_m6gb0tzrvkoeeuvg">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_24dg0bu8l479ltc" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Louis Claude Boullée</part>
+          <part localType="status">Examinateur de la 1ère colonne</part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0034</part>
+        </targetEntity>
+        <relationType id="relationType_m6gk0smfuf46ylb" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_6vs059thx286mim">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_m6gk0smfuf46ylb">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_24dg0bu8l479ltc" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Pierre Louis Richard</part>
+          <part localType="status">Examinateur de la 2nde colonne</part>
+          <part localType="occupationType">Bâtiment;Expert entrepreneur</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0236</part>
+        </targetEntity>
+        <relationType id="relationType_m6gq052a5gm8c9rh" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_6vs059thx286mim">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_m6gq052a5gm8c9rh">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_24dg0bu8l479ltc" sourceReference="">
+        <descriptiveNote>
+          <p>Il y a 3 experts bourgeois versus 1 expert entrepreneur ! Y-a-t-il eu confusion avec Jean François Raymond qui lui était expert entrepreneur une 15aine d'années auparavant ?</p>
+        </descriptiveNote>
+        <targetEntity targetType="person">
+          <part localType="full">Etienne Hubert Raymond</part>
+          <part localType="status">Examinateur de la 1ère colonne</part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_m6gx0dzzc8jf7sy" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_6vs059thx286mim">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_m6gx0dzzc8jf7sy">examinateur</targetRole>
+      </relation>
         </relations>
       </cpfDescription>
    

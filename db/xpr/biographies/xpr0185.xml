@@ -7,6 +7,16 @@
       </maintenanceAgency>
       <maintenanceHistory>
          <maintenanceEvent maintenanceEventType="revised">
+        <agent agentType="human">rcarvais</agent>
+        <eventDateTime standardDateTime="2023-08-25T10:12:48Z"/>
+        <eventDescription/>
+      </maintenanceEvent>
+      <maintenanceEvent maintenanceEventType="revised">
+        <agent agentType="human">rcarvais</agent>
+        <eventDateTime standardDateTime="2023-08-25T08:25:21Z"/>
+        <eventDescription/>
+      </maintenanceEvent>
+      <maintenanceEvent maintenanceEventType="revised">
         <agent agentType="human">vnegre</agent>
         <eventDateTime standardDateTime="2023-04-23T13:12:32Z"/>
         <eventDescription/>
@@ -53,6 +63,17 @@
       </source>
       <source id="source_5jf0l95xikgqng">
         <reference href="">MC/ET/XLI/530 (IAD)</reference>
+      </source>
+      <source id="source_6id07k863hgn0wt">
+        <reference href="https://www.geneanet.org/registres/view/33266/50?">AN Y 4426/A</reference>
+        <citedRange unit="page">50-57</citedRange>
+      </source>
+      <source id="source_nq60fjpvv1iq0k8">
+        <reference href="https://www.geneanet.org/registres/view/33266/174">AN Y 4426/A</reference>
+        <descriptiveNote>
+          <p>Lettre de dispense d'âge du 11/11/1727 : 14 mois et quelques jours qu'il manque à l'impétrant pour avoir les 25 ans accomplis requis par les ordonnances de SM. Ordonnance de soit montré au procureur le 28/12. Conclusions du procureur du roi 29/11/1727; lettres enregistrées le 02/12/1727.</p>
+        </descriptiveNote>
+        <citedRange unit="page">174-176</citedRange>
       </source>
     </sources>
       
@@ -163,6 +184,34 @@
               <placeName>Rue Simon-le-Franc</placeName>
             </place>
           </chronItem>
+          <chronItem id="chronItem_1jjt083zza90wzy5" sourceReference="#source_6id07k863hgn0wt" localType="baptism">
+            <date certainty="certain" standardDate="1704-01-30" sourceReference=""/>
+            <event>Baptême de Bernard Jean Baptiste Loir</event>
+            <place>
+              <placeName>Paroisse S germain de l'Auxerrois, Paris</placeName>
+            </place>
+          </chronItem>
+          <chronItem id="chronItem_326z0myzr3r2ioo" sourceReference="#source_6id07k863hgn0wt" localType="reception">
+            <dateSet>
+              <date certainty="certain" standardDate="1727-11-26" sourceReference="">Lettres de provision</date>
+              <date certainty="" sourceReference="">Supplique</date>
+              <date certainty="certain" standardDate="1727-11-29" sourceReference="">Ordonnance de soit montré au procureur du roy</date>
+              <date certainty="certain" standardDate="1727-12-07" sourceReference="">Examen</date>
+              <date certainty="certain" standardDate="1727-11-29" sourceReference="">Consentement de la communauté</date>
+              <date certainty="certain" standardDate="1727-12-09" sourceReference="">Information de vie et de mœurs</date>
+              <date certainty="certain" standardDate="1727-12-10" sourceReference="">Serment</date>
+              <date certainty="certain" standardDate="1727-12-10" sourceReference="">Réception</date>
+              <date certainty="certain" standardDate="1727-12-08" sourceReference="">Conclusions préparatoires du procureur du roi</date>
+              <date certainty="certain" standardDate="1727-12-10" sourceReference="">Conclusions définitives du procureur du roi</date>
+              <date certainty="certain" standardDate="1727-11-11" sourceReference="">Lettres de dispense d'âge</date>
+              <date certainty="certain" standardDate="1727-12-02" sourceReference="">Sentence d'enregistrement des lettres de dispense d'âge</date>
+            </dateSet>
+            <event>Réception en l'office d'expert juré</event>
+            <place>
+              <placeName>Paris (lettres de provision)</placeName>
+              <placeName>Fontainebleau (lettres de dispense d'âge)</placeName>
+            </place>
+          </chronItem>
             </chronList>
          </biogHist>
       </description>
@@ -231,6 +280,162 @@
         </targetEntity>
         <relationType id="relationType_cgab016ue3jygtajh" valueURI="" vocabularySource="" vocabularySourceURI="" sourceReference="#source_8es0chvi5blcs8e">rico:hasFamilyAssociationWith</relationType>
         <targetRole target="#relationType_cgab016ue3jygtajh">belle-mère</targetRole>
+      </relation>
+      <relation target="#chronItem_326z0myzr3r2ioo" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Jacques Guesmier</part>
+          <part localType="status">défunt dernier posseseur d'iceluy</part>
+          <part localType="occupationType">Bâtiment;Expert entrepreneur</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0132</part>
+        </targetEntity>
+        <relationType id="relationType_b4yr0ph75sbdaide" valueURI="https://www.ica.org/standards/RiC/ontology#isSuccessorOf" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_6id07k863hgn0wt">rico:isSuccessorOf</relationType>
+        <targetRole target="#relationType_b4yr0ph75sbdaide">prédécesseur</targetRole>
+        <descriptiveNote>
+          <p>"à titre déhérédité"
+Guemier est prénommé par erreur dans la réception "Nicolas" alors que dans la requête il est bien prénommé "Jacques".</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_326z0myzr3r2ioo" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Jacques Labbé</part>
+          <part localType="status">Prestre habitué en l'église St Merry, Paris</part>
+          <part localType="occupationType">Religion;Religieux</part>
+          <part localType="age">35 environ</part>
+          <part localType="address">Rue Neuve et paroisse St Merry, Paris</part>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_b4zc097m3spazp15" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_6id07k863hgn0wt">rico:knownBy</relationType>
+        <targetRole target="#relationType_b4zc097m3spazp15">témoin</targetRole>
+        <descriptiveNote>
+          <p>Dépose connoistre ledit Bernard Jean Baptiste Loir depuis 3 ans ou environ pour paroissien de ladite église St Merry, scait qu'il fait profession de la R C a et R pour luy avoir veu faire les fonctions d'une bon chrestien et luy avoir administré le sacrement de pénitence, scait de plus qu'il est de bonne vie et moeurs et fort affectionné au service du roy et du public.</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_326z0myzr3r2ioo" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Louis Fleury</part>
+          <part localType="status">Marchand bourgeois de Paris</part>
+          <part localType="occupationType">Commerce;Marchand Bourgeois</part>
+          <part localType="age">49 environ</part>
+          <part localType="address">Rue St Denis, paroisse St Jacques de la boucherie, Paris</part>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_b4zt03huarcrhof7" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_6id07k863hgn0wt">rico:knownBy</relationType>
+        <targetRole target="#relationType_b4zt03huarcrhof7">témoin</targetRole>
+        <descriptiveNote>
+          <p>Dépose connoistre ledit Bernard Jean Baptiste Loir depuis 9 ans pour estre de bonne conversation et de bonne vie et moeurs, ayant demeuré chez luy déposant pendant 3 ans comme garçon marchand où il s'est toujours bien comporté, scait qu'il fait profession de la R C a et R et qu'il est fort affectionné au service du roy et du public.</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_326z0myzr3r2ioo" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Antoine Charles Callou</part>
+          <part localType="status">Greffier des bastiments à Paris</part>
+          <part localType="occupationType">Bâtiment et Droit;Greffier des bâtiments</part>
+          <part localType="age">33 environ</part>
+          <part localType="address">rue de la Tissanderie, Paroisse St gervais, Paris</part>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#clrk0033</part>
+        </targetEntity>
+        <relationType id="relationType_b5070frqq6w7ddkl" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_6id07k863hgn0wt">rico:knownBy</relationType>
+        <targetRole target="#relationType_b5070frqq6w7ddkl">témoin</targetRole>
+        <descriptiveNote>
+          <p>Dépose connoistre ledit Bernard Jean Baptiste Loir depuis 5 ans ou environ pour estre de bonne vie et moeurs, scait qu'il fait profession de la R C a et R pour luy avoir veu faire les fonctions d'une bon chrestien, fréquenter les églises et entendre le service divin, scait aussy qu'il est d'une conduite très régulière et qu'il est fort affectionné au service du roy et du public.</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_326z0myzr3r2ioo" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Jacques Piretouy</part>
+          <part localType="status">Sous-doyen de la Compagnie pour l'absence du sieur Delespine doyen</part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0221</part>
+        </targetEntity>
+        <relationType id="relationType_b50j0ep9o9dgsd7o" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_6id07k863hgn0wt">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_b50j0ep9o9dgsd7o">observateur</targetRole>
+      </relation>
+      <relation target="#chronItem_326z0myzr3r2ioo" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Pierre Jacquot de Villeneuve</part>
+          <part localType="status">Examinateur de la 1ère colonne</part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0145</part>
+        </targetEntity>
+        <relationType id="relationType_b50t0i37f41ic0j8" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_6id07k863hgn0wt">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_b50t0i37f41ic0j8">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_326z0myzr3r2ioo" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Louis Benoist</part>
+          <part localType="status">Examinateur de la 1ère colonne</part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0017</part>
+        </targetEntity>
+        <relationType id="relationType_b51400g1vzerzrcrd" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_6id07k863hgn0wt">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_b51400g1vzerzrcrd">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_326z0myzr3r2ioo" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Jean Fauvel</part>
+          <part localType="status">Examinateur de la 2nde colonne</part>
+          <part localType="occupationType">Bâtiment;Expert entrepreneur</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0108</part>
+        </targetEntity>
+        <relationType id="relationType_b51d0c9492bdl2hg" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_6id07k863hgn0wt">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_b51d0c9492bdl2hg">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_326z0myzr3r2ioo" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Pierre Philemon de la Croix</part>
+          <part localType="status">Examinateur de 2nde colonne</part>
+          <part localType="occupationType">Bâtiment;Expert entrepreneur</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0074</part>
+        </targetEntity>
+        <relationType id="relationType_b51l0soyuhkgwqc" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_6id07k863hgn0wt">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_b51l0soyuhkgwqc">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_326z0myzr3r2ioo" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Pierre Quirot</part>
+          <part localType="status">Syndic de la compagnie</part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0232</part>
+        </targetEntity>
+        <relationType id="relationType_b51r0q87cl8s46" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_6id07k863hgn0wt">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_b51r0q87cl8s46">observateur</targetRole>
+      </relation>
+      <relation target="#chronItem_326z0myzr3r2ioo" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full"/>
+          <part localType="status"/>
+          <part localType="occupationType"/>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_b51x0l65cx79xuv" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_6id07k863hgn0wt">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_b51x0l65cx79xuv">examinateur</targetRole>
       </relation>
          
       </relations>

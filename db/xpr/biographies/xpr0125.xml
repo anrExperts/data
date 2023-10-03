@@ -6,6 +6,21 @@
       </maintenanceAgency>
       <maintenanceHistory>
          <maintenanceEvent maintenanceEventType="revised">
+        <agent agentType="human">rcarvais</agent>
+        <eventDateTime standardDateTime="2023-08-03T18:36:02Z"/>
+        <eventDescription/>
+      </maintenanceEvent>
+      <maintenanceEvent maintenanceEventType="revised">
+        <agent agentType="human">rcarvais</agent>
+        <eventDateTime standardDateTime="2023-08-03T18:33:06Z"/>
+        <eventDescription/>
+      </maintenanceEvent>
+      <maintenanceEvent maintenanceEventType="revised">
+        <agent agentType="human">rcarvais</agent>
+        <eventDateTime standardDateTime="2023-08-03T12:27:36Z"/>
+        <eventDescription/>
+      </maintenanceEvent>
+      <maintenanceEvent maintenanceEventType="revised">
         <agent agentType="human">vnegre</agent>
         <eventDateTime standardDateTime="2023-04-25T11:18:21Z"/>
         <eventDescription/>
@@ -50,6 +65,10 @@
       <source id="source_9m20hf96cq0rd1e">
         <reference href="">MC/ET/LXXVI/202 (IAD)</reference>
       </source>
+      <source id="source_bx00r0ubozuh4a">
+        <reference href="https://www.geneanet.org/registres/view/11773/1029?">AN Y 4174</reference>
+        <citedRange unit="page">1029-1033</citedRange>
+      </source>
     </sources>
       
       
@@ -90,6 +109,13 @@
                <term/>
             </localDescription>
          </localDescriptions>
+      <occupations>
+        <occupation localType="" sourceReference="">
+          <term>Maître maçon, entrepreneur de bâtiments à Paris</term>
+          <!--optionnal (all below)-->
+          <!--&lt;date/&gt; | &lt;dateRange/&gt; | &lt;dateSet/&gt;-->
+        </occupation>
+      </occupations>
          
          
          <existDates>
@@ -149,6 +175,23 @@
               <placeName/>
             </place>
           </chronItem>
+          <chronItem id="chronItem_25l00rvmuv4hma8" sourceReference="" localType="reception">
+            <dateSet>
+              <date certainty="certain" standardDate="1707-11-20" sourceReference="">Lettres de provision</date>
+              <date certainty="" sourceReference="">Supplique</date>
+              <date certainty="certain" standardDate="1708-02-16" sourceReference="">Ordonnance de soit montré au procureur du roy</date>
+              <date certainty="certain" standardDate="1708-02-26" sourceReference="">Examen</date>
+              <date certainty="certain" standardDate="1708-02-16" sourceReference="">Consentement de la communauté</date>
+              <date certainty="certain" standardDate="1708-02-24" sourceReference="">Information de vie et de mœurs</date>
+              <date certainty="certain" standardDate="1708-02-27" sourceReference="">Serment</date>
+              <date certainty="certain" standardDate="1708-02-27" sourceReference="">Réception</date>
+              <date certainty="certain" standardDate="1708-02-26" sourceReference="">Conclusions du procureur du roi</date>
+            </dateSet>
+            <event>Réception en l'office de juré expert de la 2nde colonne</event>
+            <place>
+              <placeName>Versailles (lettres de provision)</placeName>
+            </place>
+          </chronItem>
                
                
             </chronList>
@@ -198,6 +241,165 @@
           <relationType id="relationType_id128298d2589195" valueURI="" vocabularySource="" vocabularySourceURI="" sourceReference=""/>
             <targetRole target="#relationType_id128298d2589195"/>
           </relation>
+      <relation target="#chronItem_25l00rvmuv4hma8" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">François Doussot</part>
+          <part localType="status">defun dernier possesseur</part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0099</part>
+        </targetEntity>
+        <relationType id="relationType_19z00kk09eoeuwh" valueURI="https://www.ica.org/standards/RiC/ontology#isSuccessorOf" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:isSuccessorOf</relationType>
+        <targetRole target="#relationType_19z00kk09eoeuwh">prédécesseur</targetRole>
+        <descriptiveNote>
+          <p>"que tenait et exerçait défunt François Doussot la veuve duquel es nom et qualités qu'elle procède aurait nommé à son [...] led. Gobin par sa procuration attachée audit acte Piedfort et contrescel desdites lettres..."</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_25l00rvmuv4hma8" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Antoine Vallentin Pin [Pain]</part>
+          <part localType="status">Prestre docteur en théologie de la faculté, de la Maiosn royalle de Navarre</part>
+          <part localType="occupationType">Religion;Religieux</part>
+          <part localType="age">40 environ</part>
+          <part localType="address">Rue de la Harpe, paroisse St Séverin, Paris</part>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_19zk0xyx3ierrmaj" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:knownBy</relationType>
+        <targetRole target="#relationType_19zk0xyx3ierrmaj">témoin</targetRole>
+        <descriptiveNote>
+          <p>Dépose qu'il connoist ledit Denis Gobin depuis plus de 20 années, scait qu'il est de bonne vie et moeurs, qu'il fait profesion de la R C a et R, luy a plusieurs fois administré la communion en ladite église St Séverin, sa paroisse et notamment aux Pacques dernières et qu'au surplus il est affectionné au service du roi et du public.</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_25l00rvmuv4hma8" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">François Courtois</part>
+          <part localType="status">Conseiller du roi, notaire au Châtelet de Paris</part>
+          <part localType="occupationType">Droit;Notaire</part>
+          <part localType="age">50</part>
+          <part localType="address">Rue St Avoye</part>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_19zy0nzkwxlxita" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:knownBy</relationType>
+        <targetRole target="#relationType_19zy0nzkwxlxita">témoin</targetRole>
+        <descriptiveNote>
+          <p>Dépose qu'il connoist ledit Denis Gobin pour homme de bonne vie et moeurs, scait qu'il fait P de la R C a et R et est affectionné au service du roi et du public.</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_25l00rvmuv4hma8" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Nicolas Forestier</part>
+          <part localType="status">Conseiller du roi, contrôleur des rentes de l'Hôtel de ville</part>
+          <part localType="occupationType">Droit;Autres</part>
+          <part localType="age">45</part>
+          <part localType="address">Rue St Avoye</part>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_1a0b0l69ewopqrb" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:knownBy</relationType>
+        <targetRole target="#relationType_1a0b0l69ewopqrb">témoin</targetRole>
+        <descriptiveNote>
+          <p>Dépose qu'il connoist ledit Denis Gobin pour homme de probité et de bonne vie et moeurs, scait qu'il fait P de la R C a et R et est affectionné au service du roi et du public.</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_25l00rvmuv4hma8" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Nicolas Berthier</part>
+          <part localType="status"/>
+          <part localType="occupationType">Bâtiment;Expert entrepreneur</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0021</part>
+        </targetEntity>
+        <relationType id="relationType_1a0l0v1ufrxtigna" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_1a0l0v1ufrxtigna">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_25l00rvmuv4hma8" sourceReference="">
+        <descriptiveNote>
+          <p>Nous ne savons pas s'il s'agit de Isidore I ou de Isidore II, probablement le II.
+De plus nous sommes dans la période qui suit les premiers achats d'office, par conséquent l'examen n'existe pas comme dans sa forme que l'on connaîtra abouti avec doyen, syndic et adjoint, comme observateurs et 4 examinateurs choisis par délibération de la compagnie. Nous avons ici deux noms qui ont signés/. Nous ne savons leur rôles et fonctions exactes : examinateur ou observateur ? Par comparaison avec le cas de Isidore Chastelain II, les deux signatures étaient celles du syndic et de l'adjoint. A vérifier dans d'autres cas.</p>
+        </descriptiveNote>
+        <targetEntity targetType="person">
+          <part localType="full">Isidore Chastelain</part>
+          <part localType="status"/>
+          <part localType="occupationType">Bâtiment;Expert entrepreneur</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_1a0w0l4ikubnuze" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_1a0w0l4ikubnuze">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_25l00rvmuv4hma8" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full"/>
+          <part localType="status"/>
+          <part localType="occupationType"/>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_1a1405wlxub5w7o" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_1a1405wlxub5w7o">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_25l00rvmuv4hma8" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full"/>
+          <part localType="status"/>
+          <part localType="occupationType"/>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_1a1c0ywmnwx2vjno" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_1a1c0ywmnwx2vjno">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_25l00rvmuv4hma8" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full"/>
+          <part localType="status"/>
+          <part localType="occupationType"/>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_1a1j04a6u4dtjr54" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_1a1j04a6u4dtjr54">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_25l00rvmuv4hma8" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full"/>
+          <part localType="status"/>
+          <part localType="occupationType"/>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_1a1p03a2mamw45wv" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_1a1p03a2mamw45wv">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_25l00rvmuv4hma8" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full"/>
+          <part localType="status"/>
+          <part localType="occupationType"/>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_1a1v0ae4b9rl8gu" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_1a1v0ae4b9rl8gu">examinateur</targetRole>
+      </relation>
     </relations>
    
       </cpfDescription>

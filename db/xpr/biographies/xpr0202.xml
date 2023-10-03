@@ -6,6 +6,11 @@
       </maintenanceAgency>
       <maintenanceHistory>
          <maintenanceEvent maintenanceEventType="revised">
+        <agent agentType="human">rcarvais</agent>
+        <eventDateTime standardDateTime="2023-08-27T21:54:21Z"/>
+        <eventDescription/>
+      </maintenanceEvent>
+      <maintenanceEvent maintenanceEventType="revised">
         <agent agentType="human">vnegre</agent>
         <eventDateTime standardDateTime="2023-04-23T15:48:35Z"/>
         <eventDescription/>
@@ -48,6 +53,17 @@
       <source id="source_9ei0hmwy7woekce">
         <reference href="">MC/ET/XLIV/889 (IAD)</reference>
       </source>
+      <source id="source_bx408zjvm6ntvyk">
+        <reference href="https://www.geneanet.org/registres/view/17945/36?">AN Y 5172 / A</reference>
+        <descriptiveNote>
+          <p>Lettre de dispense d'âge.</p>
+        </descriptiveNote>
+        <citedRange unit="page">36-39</citedRange>
+      </source>
+      <source id="source_1ghf06ek7qj1mu45">
+        <reference href="https://www.geneanet.org/registres/view/18021/872?">AN Y/ 5172/B</reference>
+        <citedRange unit="page">872-879</citedRange>
+      </source>
     </sources>
       
       
@@ -88,6 +104,12 @@
                </dateRange>
                
             </function>
+        <function localType="" sourceReference="#source_1ghf06ek7qj1mu45">
+          <term>expert juré de la 2nde colonne</term>
+          <!--optionnal (all below)-->
+          <!--&lt;date/&gt; | &lt;dateRange/&gt; | &lt;dateSet/&gt;-->
+          <!--&lt;placeName sourceReference=&quot;&quot;/&gt;-->
+        </function>
          </functions>
       <places>
         <place sourceReference="#source_6jm0gu6f0uhns1">
@@ -104,8 +126,8 @@
             </localDescription>
          </localDescriptions>
       <occupations>
-        <occupation localType="" sourceReference="#source_6jm0gu6f0uhns1">
-          <term>Architecte</term>
+        <occupation localType="" sourceReference="#source_6jm0gu6f0uhns1 #source_bx408zjvm6ntvyk">
+          <term>Architecte mineur</term>
           <date certainty="certain" standardDate="1797-07-12" sourceReference=""/>
           <!--optionnal (all below)-->
           <!--&lt;date/&gt; | &lt;dateRange/&gt; | &lt;dateSet/&gt;-->
@@ -163,6 +185,32 @@
             <event>Décès de Jean Charles Neveu</event>
             <place>
               <placeName>Boulevard Montparnasse, n° 34 </placeName>
+            </place>
+          </chronItem>
+          <chronItem id="chronItem_4i6b0a8glpc7y9yo" sourceReference="#source_1ghf06ek7qj1mu45" localType="baptism">
+            <date certainty="certain" standardDate="1767-08-18" sourceReference=""/>
+            <event>Baptême de jean Charles Nepveu</event>
+            <place>
+              <placeName>Paroise St Sulpice, Paris</placeName>
+            </place>
+          </chronItem>
+          <chronItem id="chronItem_5r0e0g7ktmqz99ud" sourceReference="#source_1ghf06ek7qj1mu45" localType="receptionColumn2">
+            <dateSet>
+              <date certainty="certain" standardDate="1788-10-28" sourceReference="">Lettres de provision</date>
+              <date certainty="" sourceReference="">Supplique</date>
+              <date certainty="certain" standardDate="1788-11-04" sourceReference="">Ordonnance de soit montré au procureur du roy</date>
+              <date certainty="certain" standardDate="1788-11-23" sourceReference="">Examen</date>
+              <date certainty="certain" standardDate="1788-11-04" sourceReference="">Consentement de la communauté</date>
+              <date certainty="certain" standardDate="1788-11-25" sourceReference="">Information de vie et de mœurs</date>
+              <date certainty="certain" standardDate="1788-11-27" sourceReference="">Serment</date>
+              <date certainty="certain" standardDate="1788-11-27" sourceReference="">Réception</date>
+              <date certainty="certain" standardDate="1788-11-24" sourceReference="">Conclusions préparatoires du procureur du roi</date>
+              <date certainty="certain" standardDate="1788-11-26" sourceReference="">Conclusions définitives du procureur du roi</date>
+              <date certainty="certain" standardDate="1788-11-09" sourceReference="">Délibération de la Compagnie pour le choix des examinateurs</date>
+            </dateSet>
+            <event>Réception en l'office de juré expert de la 2nde colonne</event>
+            <place>
+              <placeName>Versailles (lettres de provision)</placeName>
             </place>
           </chronItem>
             </chronList>
@@ -255,6 +303,162 @@
         </targetEntity>
         <relationType id="relationType_bfg301pymsakkk7a" valueURI="" vocabularySource="" vocabularySourceURI="" sourceReference="#source_6jm0gu6f0uhns1">rico:hasOrHadSpouse</relationType>
         <targetRole target="#relationType_bfg301pymsakkk7a">épouse</targetRole>
+      </relation>
+      <relation target="#chronItem_5r0e0g7ktmqz99ud" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Michel Nepveu</part>
+          <part localType="status">défunt dernier possesseur, son père</part>
+          <part localType="occupationType">Bâtiment;Expert entrepreneur</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0201</part>
+        </targetEntity>
+        <relationType id="relationType_b65g0m36s4rhfr0f" valueURI="https://www.ica.org/standards/RiC/ontology#isSuccessorOf" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_1ghf06ek7qj1mu45">rico:isSuccessorOf</relationType>
+        <targetRole target="#relationType_b65g0m36s4rhfr0f">prédécesseur</targetRole>
+        <descriptiveNote>
+          <p/>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_5r0e0g7ktmqz99ud" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Jacques Claude Couturier</part>
+          <part localType="status">Prestre docteur en théologie, vicaire de la paroisse St Merry</part>
+          <part localType="occupationType">Religion;Religieux</part>
+          <part localType="age">28</part>
+          <part localType="address">Rue de la Verrerie, susdite paroisse St Merry, Paris</part>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_b66205rmi127qcs8" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_1ghf06ek7qj1mu45">rico:knownBy</relationType>
+        <targetRole target="#relationType_b66205rmi127qcs8">témoin</targetRole>
+        <descriptiveNote>
+          <p>Dépose qu'il connoist ledit Jean Charles Nepveu poursuivant sa réception dans l'état et office de juré expert pour estre de bonne vie et moeurs, d'une conduite sage et très régulière, qu'il scait que ledit Nepveu fait profession de la R C a et R, enfin qu'il le connoist pour bon et fidèle sujet du roi, zélé et affectionné à son service et à celuy du public. </p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_5r0e0g7ktmqz99ud" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Charles Louis Blanchet</part>
+          <part localType="status">Ancien procureur au Parlement</part>
+          <part localType="occupationType">Droit;Procureur</part>
+          <part localType="age">63</part>
+          <part localType="address">rue de Touraine, paroisse  St Sulpice, n° 47, </part>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_b66h0bev2o8q8mg" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_1ghf06ek7qj1mu45">rico:knownBy</relationType>
+        <targetRole target="#relationType_b66h0bev2o8q8mg">témoin</targetRole>
+        <descriptiveNote>
+          <p>Dépose qu'il connoist ledit Jean Charles Nepveu depuis environ 5 à 6 ans pour estre de bonne vie et moeurs, d'une conduite sage et très régulière, assidu au travail et ayant pris de bons principes sous le feu de son père qui le destinait à luy succéder qu'il scait que ledit Nepveu fait profession de la R C a et R, et qu'il le connoist en outre pour bon et fidèle sujet du roi, zélé et affectionné à son service et à celuy du public. </p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_5r0e0g7ktmqz99ud" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">François Jean Baptiste Maximilien Le Rasle</part>
+          <part localType="status">Conseiller du roi, ancien professeur de droit en l'université de Bourges</part>
+          <part localType="occupationType">Droit;Autres</part>
+          <part localType="age">54</part>
+          <part localType="address">rue de Chabannois, paroisse St Roch, Paris</part>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_b66v0chzgxyemum" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_1ghf06ek7qj1mu45">rico:knownBy</relationType>
+        <targetRole target="#relationType_b66v0chzgxyemum">témoin</targetRole>
+        <descriptiveNote>
+          <p>Dépose que depuis 4 à 5 ans qu'il connoist ledit  Nepveu il a remarqué et reconnait qu'il est  de bonne vie et moeurs, d'une conduite sage et très régulière, qu'il scait aussy que ledit Nepveu fait profession de la R C a et R, enfin qu'il le connoist pour bon et fidèle sujet du roi, zélé et affectionné à son service et à celuy du public. </p>
+          <p>Dépose que depuis 4 à 5 ans qu'il connoist ledit  Nepveu il a remarqué et reconnait qu'il est  de bonne vie et moeurs, d'une conduite sage et très régulière, qu'il scait aussy que ledit Nepveu fait profession de la R C a et R, enfin qu'il le connoist pour bon et fidèle sujet du roi, zélé et affectionné à son service et à celuy du public. </p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_5r0e0g7ktmqz99ud" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">René Auguste Simon </part>
+          <part localType="status">Doyen de la compagnie</part>
+          <part localType="occupationType">Bâtiment;Expert entrepreneur</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0247</part>
+        </targetEntity>
+        <relationType id="relationType_b6770kzwlnv4acon" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_1ghf06ek7qj1mu45">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_b6770kzwlnv4acon">observateur</targetRole>
+      </relation>
+      <relation target="#chronItem_5r0e0g7ktmqz99ud" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Estienne Villetard</part>
+          <part localType="status">Syndic de la Compagnie</part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0261</part>
+        </targetEntity>
+        <relationType id="relationType_b67j06exugriwmfu" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_1ghf06ek7qj1mu45">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_b67j06exugriwmfu">observateur</targetRole>
+      </relation>
+      <relation target="#chronItem_5r0e0g7ktmqz99ud" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Jan Louis Blève</part>
+          <part localType="status">Adjoint de la Compagnie</part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0026</part>
+        </targetEntity>
+        <relationType id="relationType_b67t0vzq449mtnc" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_1ghf06ek7qj1mu45">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_b67t0vzq449mtnc">observateur</targetRole>
+      </relation>
+      <relation target="#chronItem_5r0e0g7ktmqz99ud" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Nicolas Parvis de la Regnadière</part>
+          <part localType="status">Examinateur de la 2nde colonne</part>
+          <part localType="occupationType">Bâtiment;Expert entrepreneur</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0205</part>
+        </targetEntity>
+        <relationType id="relationType_b68208tpj9y9ykfa" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_1ghf06ek7qj1mu45">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_b68208tpj9y9ykfa">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_5r0e0g7ktmqz99ud" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Louis Athanase Vavasseur Desperreirs</part>
+          <part localType="status">Examinateur de la 2nde colonne</part>
+          <part localType="occupationType">Bâtiment;Expert entrepreneur</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0258</part>
+        </targetEntity>
+        <relationType id="relationType_b68b0b6tvs7vwldw" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_1ghf06ek7qj1mu45">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_b68b0b6tvs7vwldw">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_5r0e0g7ktmqz99ud" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Georges Louis Mouchelet</part>
+          <part localType="status">Examinateur de la 1ère colonne</part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0199</part>
+        </targetEntity>
+        <relationType id="relationType_b68h0yfq3og39ft" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_1ghf06ek7qj1mu45">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_b68h0yfq3og39ft">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_5r0e0g7ktmqz99ud" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Louis Lemit</part>
+          <part localType="status">Examinateur de la 1ère colonne</part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0176</part>
+        </targetEntity>
+        <relationType id="relationType_b68n0qnalyr05dsf" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_1ghf06ek7qj1mu45">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_b68n0qnalyr05dsf">examinateur</targetRole>
       </relation>
          
       </relations>

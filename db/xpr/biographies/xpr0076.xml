@@ -1,11 +1,36 @@
 <eac xmlns="https://archivists.org/ns/eac/v2" xml:id="xpr0076">
-   <control maintenanceStatus="new" publicationStatus="inProcess">
+   <control maintenanceStatus="updated" publicationStatus="inProcess">
       <recordId>xpr0076</recordId>
       <maintenanceAgency>
          <agencyName>projet Experts</agencyName>
       </maintenanceAgency>
       <maintenanceHistory>
-         <maintenanceEvent maintenanceEventType="updated" languageOfElement="eng">
+         <maintenanceEvent maintenanceEventType="revised">
+        <agent agentType="human">jmorvan</agent>
+        <eventDateTime standardDateTime="2023-09-01T14:04:27Z"/>
+        <eventDescription>alignement fonction</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent maintenanceEventType="revised">
+        <agent agentType="human">rcarvais</agent>
+        <eventDateTime standardDateTime="2023-08-10T15:30:13Z"/>
+        <eventDescription/>
+      </maintenanceEvent>
+      <maintenanceEvent maintenanceEventType="revised">
+        <agent agentType="human">rcarvais</agent>
+        <eventDateTime standardDateTime="2023-07-18T11:37:40Z"/>
+        <eventDescription/>
+      </maintenanceEvent>
+      <maintenanceEvent maintenanceEventType="revised">
+        <agent agentType="human">rcarvais</agent>
+        <eventDateTime standardDateTime="2023-07-18T09:02:32Z"/>
+        <eventDescription/>
+      </maintenanceEvent>
+      <maintenanceEvent maintenanceEventType="revised">
+        <agent agentType="human">rcarvais</agent>
+        <eventDateTime standardDateTime="2023-07-17T20:02:23Z"/>
+        <eventDescription/>
+      </maintenanceEvent>
+      <maintenanceEvent maintenanceEventType="updated" languageOfElement="eng">
             <agent agentType="machine">EAC-CPF 1.x to EAC 2.0 Migration Style Sheet (eac1-to-eac2.xsl)</agent>
             <eventDateTime standardDateTime="2022-09-19T16:52:56.035873+02:00"/>
             <eventDescription>EAC-CPF 1.x (urn:isbn:1-931666-33-4) instance migrated to EAC 2.0 (https://archivists.org/ns/eac/v2)</eventDescription>
@@ -36,6 +61,21 @@
             <eventDescription>Fiches créée sur Google Drive.</eventDescription>
          </maintenanceEvent>
       </maintenanceHistory>
+    <sources>
+      <source id="source_k270zivbsokee3p">
+        <reference href="https://www.geneanet.org/registres/view/14021/150?">AN Y 4915/B</reference>
+        <descriptiveNote>
+          <p>Dans le dossier de réception, se trouve en plus des documents habituels, l'enregistrement des lettres de provisions du 04/05/1768.</p>
+        </descriptiveNote>
+        <citedRange unit="page">150-160</citedRange>
+      </source>
+      <source id="source_2k8f0uqj5q1ggzng">
+        <reference href="">AN AD/XXc/102</reference>
+        <descriptiveNote>
+          <p>Faire-part de décès. Nous ne comprenons pas pourquoi le nom est associé à une autre patronyme BONNOMET ?</p>
+        </descriptiveNote>
+      </source>
+    </sources>
       
       
    </control>
@@ -73,6 +113,9 @@
                   <fromDate sourceReference="" certainty="" standardDate="1768"/>
                   <toDate sourceReference="" certainty="" standardDate="1775"/>
                </dateRange>
+          <descriptiveNote>
+            <p>de la 2nde colonne, juré expert tant pour la ville de Paris que pour toutes les autres villes du Royaume</p>
+          </descriptiveNote>
                
             </function>
          </functions>
@@ -81,12 +124,20 @@
                <term/>
             </localDescription>
          </localDescriptions>
+      <occupations>
+        <occupation localType="" sourceReference="#source_k270zivbsokee3p">
+          <term>Architecte, entrepreneur des bâtiments du roy</term>
+          <placeName sourceReference="">demeurant à Paris, Pont N-D</placeName>
+          <!--optionnal (all below)-->
+          <!--&lt;date/&gt; | &lt;dateRange/&gt; | &lt;dateSet/&gt;-->
+        </occupation>
+      </occupations>
          
          
          <existDates>
             <dateRange>
                <fromDate sourceReference="" certainty="" standardDate="1724-11"/>
-               <toDate sourceReference="" certainty="" standardDate="1771-06-10"/>
+               <toDate sourceReference="" certainty="certain" standardDate="1771-06-10"/>
             </dateRange>
          </existDates>
          <biogHist>
@@ -134,6 +185,32 @@
                   
                   
                </chronItem>
+          <chronItem id="chronItem_g5p80keflfhk111" sourceReference="" localType="baptism">
+            <date certainty="certain" standardDate="1724-11-17" sourceReference=""/>
+            <event>Baptême de François René De Laperière</event>
+            <place>
+              <placeName/>
+            </place>
+          </chronItem>
+          <chronItem id="chronItem_ibir0exj3sz0rs7f" sourceReference="#source_k270zivbsokee3p" localType="receptionColumn2">
+            <dateSet>
+              <date certainty="certain" notBefore="1768-05-04" sourceReference="">Lettres de provision</date>
+              <date certainty="" sourceReference="">Supplique</date>
+              <date certainty="certain" standardDate="1768-05-05" sourceReference="">Ordonnance de soit montré au procureur du roy</date>
+              <date certainty="certain" standardDate="1768-05-19" sourceReference="">Examen</date>
+              <date certainty="certain" standardDate="1768-05-05" sourceReference="">Consentement de la communauté</date>
+              <date certainty="certain" standardDate="1768-05-20" sourceReference="">Information de vie et de mœurs</date>
+              <date certainty="certain" standardDate="1768-05-21" sourceReference="">Serment</date>
+              <date certainty="certain" standardDate="1768-05-21" sourceReference="">Réception</date>
+              <date certainty="certain" standardDate="1768-05-19" sourceReference="">Conclusions préparatoires du procureur du roi</date>
+              <date certainty="certain" standardDate="1768-05-20" sourceReference="">Conclusions définitioves du procureur du roi</date>
+              <date certainty="certain" standardDate="1768-05-08" sourceReference="">Délibération de lka compagnie pour le choix des examinateurs</date>
+            </dateSet>
+            <event>Réception en l'office de juré expert d la 2nde colonne</event>
+            <place>
+              <placeName>Versailles (Lettres de provisions)</placeName>
+            </place>
+          </chronItem>
             </chronList>
          </biogHist>
       </description>
@@ -152,6 +229,165 @@
           <relationType id="relationType_id128298d2574309" valueURI="" vocabularySource="" vocabularySourceURI="" sourceReference=""/>
             <targetRole target="#relationType_id128298d2574309"/>
           </relation>
+      <relation target="#chronItem_ibir0exj3sz0rs7f" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">François Antoine Babuty</part>
+          <part localType="status">dernier titulaire décédé</part>
+          <part localType="occupationType">Bâtiment;Expert entrepreneur</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0010</part>
+        </targetEntity>
+        <relationType id="relationType_s5x0aqkgeuj7zs" valueURI="https://www.ica.org/standards/RiC/ontology#isSuccessorOf" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_k270zivbsokee3p">rico:isSuccessorOf</relationType>
+        <targetRole target="#relationType_s5x0aqkgeuj7zs">prédécesseur</targetRole>
+        <descriptiveNote>
+          <p>Nous apprenons dans l'enregistrement des lettres de provisions que François Antoine Babuty est décédé le 15/09/1766. Son 2e prénom est-il réel ou adopté en hommage à son oncle ? </p>
+          <p>"dont est décédé François Antoine Babuty dernier titulaire d'iceluy décédé le 15/09/1766 ayant payé le droit annuel au moyen de quoi il demeure dispensé de la rigueur des 40 jours après le décès duquel son père et héritiers nous ont nommé audit office, et ledit sieur Delaperière a payé en nos revenus casuels les droits de 8e deniers suivant la quittance dont ampliation est cy-attaché, etc."</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_ibir0exj3sz0rs7f" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Jacques Cavillier</part>
+          <part localType="status">prestre habitué en la paroisse St Jacques de la Boucherie</part>
+          <part localType="occupationType">Religion;Religieux</part>
+          <part localType="age">41 ans 5 mois</part>
+          <part localType="address">Cloître de la dite paroisse, Paris</part>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_s6e0e058g14atpt" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_k270zivbsokee3p">rico:knownBy</relationType>
+        <targetRole target="#relationType_s6e0e058g14atpt">témoin</targetRole>
+        <descriptiveNote>
+          <p>Dépose connoistre le sieur François René Laperière depuis 35 ans pour faire profession de la R C a et R, scait qu'il est de bonne vie et moeurs, même fort affectionné au service du roy et du public.</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_ibir0exj3sz0rs7f" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Hubert Louis Cheval</part>
+          <part localType="status">garde en charge du corps de l'orfèvrerie, Conseiller du roi, quartenier de la ville de Paris, contrôleur général des rentes de l'Hôtel de ville</part>
+          <part localType="occupationType">Autres;Autres</part>
+          <part localType="age">48</part>
+          <part localType="address">rue des grands augustins, paroisse St André des Arts, Paris</part>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_s6r0cs6jkkmsquv" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_k270zivbsokee3p">rico:knownBy</relationType>
+        <targetRole target="#relationType_s6r0cs6jkkmsquv">témoin</targetRole>
+        <descriptiveNote>
+          <p>Dépose connoistre le sieur François René Laperière depuis 25 ans pour faire profession de la R C a et R, scait qu'il est de bonne vie et moeurs, même dépose qu'il est fort affectionné au service du roy et du public.</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_ibir0exj3sz0rs7f" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Antoine de Machy</part>
+          <part localType="status">Marchand, Bourgeois de Paris</part>
+          <part localType="occupationType">Commerce;Marchand Bourgeois</part>
+          <part localType="age">65 et demy</part>
+          <part localType="address">Pont N-D, paroisse St Jacques de la Boucherie, Paris</part>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_s710kwpden28lv" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_k270zivbsokee3p">rico:knownBy</relationType>
+        <targetRole target="#relationType_s710kwpden28lv">témoin</targetRole>
+        <descriptiveNote>
+          <p>Dépose connoistre le sieur François René Laperière depuis 43 ans pour faire profession de la R C a et R, scait qu'il est de bonne vie et moeurs, même fort affectionné au service du roy et du public.</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_ibir0exj3sz0rs7f" sourceReference="">
+        <descriptiveNote>
+          <p>Chauveau est d'abord expert bourgeois puis expert entrepreneur</p>
+        </descriptiveNote>
+        <targetEntity targetType="person">
+          <part localType="full">René Bonaventure Chauveau</part>
+          <part localType="status">Doyen de la Compagnie des experts</part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0054</part>
+        </targetEntity>
+        <relationType id="relationType_s7b0jbuq59tv9mi" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_k270zivbsokee3p">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_s7b0jbuq59tv9mi">observateur</targetRole>
+      </relation>
+      <relation target="#chronItem_ibir0exj3sz0rs7f" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Jean Michel Poirin</part>
+          <part localType="status">Syndic de la compagnie</part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0223</part>
+        </targetEntity>
+        <relationType id="relationType_s7j080ieojczz2" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_k270zivbsokee3p">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_s7j080ieojczz2">observateur</targetRole>
+      </relation>
+      <relation target="#chronItem_ibir0exj3sz0rs7f" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">André Mouchet</part>
+          <part localType="status">Adjoint de la compagnie</part>
+          <part localType="occupationType">Bâtiment;Expert entrepreneur</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0200</part>
+        </targetEntity>
+        <relationType id="relationType_s7q0or1s34v8fvk" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_k270zivbsokee3p">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_s7q0or1s34v8fvk">observateur</targetRole>
+      </relation>
+      <relation target="#chronItem_ibir0exj3sz0rs7f" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Pierre Louis Richard</part>
+          <part localType="status">Examinateur de la 2nde colonne</part>
+          <part localType="occupationType">Bâtiment;Expert entrepreneur</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0236</part>
+        </targetEntity>
+        <relationType id="relationType_s7x01yutwqlo8fp" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_k270zivbsokee3p">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_s7x01yutwqlo8fp">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_ibir0exj3sz0rs7f" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Pierre Alexandre Danjan</part>
+          <part localType="status">Examinateur de la 1ère colonne</part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0065</part>
+        </targetEntity>
+        <relationType id="relationType_s820fpdiodfsnz" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_k270zivbsokee3p">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_s820fpdiodfsnz">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_ibir0exj3sz0rs7f" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Eustache Robert de Villers</part>
+          <part localType="status">Examinateur de la 1ère colonne</part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0081</part>
+        </targetEntity>
+        <relationType id="relationType_s870l2zmf1tl6p" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_k270zivbsokee3p">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_s870l2zmf1tl6p">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_ibir0exj3sz0rs7f" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Bernard Jean Baptiste Regnard</part>
+          <part localType="status">Examinateur de la 2nde colonne</part>
+          <part localType="occupationType">Bâtiment;Expert entrepreneur</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0235</part>
+        </targetEntity>
+        <relationType id="relationType_s8b0wbe01jiwqe" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_k270zivbsokee3p">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_s8b0wbe01jiwqe">examinateur</targetRole>
+      </relation>
         </relations>
       </cpfDescription>
    

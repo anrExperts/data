@@ -8,6 +8,36 @@
       <maintenanceHistory>
          <maintenanceEvent maintenanceEventType="revised">
         <agent agentType="human">rcarvais</agent>
+        <eventDateTime standardDateTime="2023-09-29T07:34:38Z"/>
+        <eventDescription/>
+      </maintenanceEvent>
+      <maintenanceEvent maintenanceEventType="revised">
+        <agent agentType="human">vnegre</agent>
+        <eventDateTime standardDateTime="2023-09-05T11:50:29Z"/>
+        <eventDescription/>
+      </maintenanceEvent>
+      <maintenanceEvent maintenanceEventType="revised">
+        <agent agentType="human">vnegre</agent>
+        <eventDateTime standardDateTime="2023-07-25T13:48:14Z"/>
+        <eventDescription/>
+      </maintenanceEvent>
+      <maintenanceEvent maintenanceEventType="revised">
+        <agent agentType="human">vnegre</agent>
+        <eventDateTime standardDateTime="2023-07-25T13:42:24Z"/>
+        <eventDescription/>
+      </maintenanceEvent>
+      <maintenanceEvent maintenanceEventType="revised">
+        <agent agentType="human">vnegre</agent>
+        <eventDateTime standardDateTime="2023-07-25T13:34:55Z"/>
+        <eventDescription/>
+      </maintenanceEvent>
+      <maintenanceEvent maintenanceEventType="revised">
+        <agent agentType="human">vnegre</agent>
+        <eventDateTime standardDateTime="2023-07-25T13:30:32Z"/>
+        <eventDescription/>
+      </maintenanceEvent>
+      <maintenanceEvent maintenanceEventType="revised">
+        <agent agentType="human">rcarvais</agent>
         <eventDateTime standardDateTime="2023-04-10T07:30:03Z"/>
         <eventDescription/>
       </maintenanceEvent>
@@ -112,7 +142,14 @@
           </source>
           <source id="source_883c08k4ivw6lvxb">
             <reference href="https://www.geneanet.org/registres/view/25683/467?">Y/4411A</reference>
+        <citedRange unit="page">467-474</citedRange>
           </source>
+      <source id="source_er508evi461aamc">
+        <reference href="">MC/ET/XXXIII/458 (Cont. de mariage)</reference>
+      </source>
+      <source id="source_ioj0fkauemsg8h">
+        <reference href="">MC/ET/LXXXV/519 (IAD de sa femme)</reference>
+      </source>
         </sources>
       
       
@@ -175,6 +212,16 @@
               <!--&lt;placeName sourceReference=&quot;&quot;/&gt;-->
             </function>
          </functions>
+      <places>
+        <place sourceReference="#source_er508evi461aamc">
+          <date certainty="certain" sourceReference=""/>
+          <placeRole>Adresse</placeRole>
+          <placeName>Rue du Bacq</placeName>
+          <address>
+            <addressLine>Paroisse Saint-Sulpice</addressLine>
+          </address>
+        </place>
+      </places>
          <localDescriptions>
             <localDescription localType="sex">
                <term>male</term>
@@ -201,7 +248,7 @@
                   
                   
                </chronItem>
-               <chronItem id="eventid95992d337" sourceReference="#sourceid29053557" localType="marriage">
+               <chronItem id="eventid95992d337" sourceReference="#sourceid29053557 #source_er508evi461aamc" localType="marriage">
                   <date sourceReference="" certainty="" notBefore="1727-02-09"/>
                   <event>Mariage</event>
                   
@@ -273,7 +320,7 @@
           <part localType="origPlace"/>
           <part localType="xprRef">#xprPerson0001</part>
         </targetEntity>
-          <relationType id="relationType_id128298d2551144" valueURI="" vocabularySource="" vocabularySourceURI="" sourceReference="#sourceid29053557">rico:hasOrHadSpouse</relationType>
+          <relationType id="relationType_id128298d2551144" valueURI="" vocabularySource="" vocabularySourceURI="" sourceReference="#sourceid29053557 #source_er508evi461aamc">rico:hasOrHadSpouse</relationType>
         <targetRole target="#relationType_id128298d2551144">épouse</targetRole>
       </relation>
           <relation target="#eventid95992d352 #eventid95992d367" sourceReference="#sourceid29053382 #sourceid29053207">
@@ -429,6 +476,58 @@
         </targetEntity>
         <relationType id="relationType_iuw10ct9ypui0rzp" valueURI="" vocabularySource="" vocabularySourceURI="" sourceReference="#source_883c08k4ivw6lvxb">rico:hasOrHadTeacher</relationType>
         <targetRole target="#relationType_iuw10ct9ypui0rzp">observateur</targetRole>
+      </relation>
+      <relation target="#eventid95992d337" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Adhenet, Jean</part>
+          <part localType="status">Bouregois de Versailles</part>
+          <part localType="occupationType">Autres;Autres</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_1i8w0om41sbigxoi" valueURI="" vocabularySource="" vocabularySourceURI="" sourceReference="#source_er508evi461aamc">rico:isChildOf</relationType>
+        <targetRole target="#relationType_1i8w0om41sbigxoi">père</targetRole>
+      </relation>
+      <relation target="#eventid95992d337" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Pillebout, Catherine</part>
+          <part localType="status"/>
+          <part localType="occupationType"/>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_2boo0trtblsfzo28" valueURI="" vocabularySource="" vocabularySourceURI="" sourceReference="#source_er508evi461aamc">rico:isChildOf</relationType>
+        <targetRole target="#relationType_2boo0trtblsfzo28">mère</targetRole>
+      </relation>
+      <relation target="#eventid95992d337" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Lardin, Jean Baptiste</part>
+          <part localType="status">Maître charpentier</part>
+          <part localType="occupationType">Bâtiment;Entrepreneur ou maître de métier</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_348u0lxv3svflynq" valueURI="" vocabularySource="" vocabularySourceURI="" sourceReference="#source_er508evi461aamc">rico:hasFamilyAssociationWith</relationType>
+        <targetRole target="#relationType_348u0lxv3svflynq">beau-père</targetRole>
+      </relation>
+      <relation target="#eventid95992d337" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Longpré, Nicole</part>
+          <part localType="status"/>
+          <part localType="occupationType"/>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_43or0amj3n0l8sv9" valueURI="" vocabularySource="" vocabularySourceURI="" sourceReference="#source_er508evi461aamc">rico:hasFamilyAssociationWith</relationType>
+        <targetRole target="#relationType_43or0amj3n0l8sv9">belle-mère</targetRole>
       </relation>
         </relations>
       </cpfDescription>

@@ -6,6 +6,26 @@
       </maintenanceAgency>
       <maintenanceHistory>
          <maintenanceEvent maintenanceEventType="revised">
+        <agent agentType="human">jmorvan</agent>
+        <eventDateTime standardDateTime="2023-09-01T14:01:47Z"/>
+        <eventDescription>alignement fonction</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent maintenanceEventType="revised">
+        <agent agentType="human">rcarvais</agent>
+        <eventDateTime standardDateTime="2023-07-15T21:10:18Z"/>
+        <eventDescription/>
+      </maintenanceEvent>
+      <maintenanceEvent maintenanceEventType="revised">
+        <agent agentType="human">rcarvais</agent>
+        <eventDateTime standardDateTime="2023-07-15T20:22:41Z"/>
+        <eventDescription/>
+      </maintenanceEvent>
+      <maintenanceEvent maintenanceEventType="revised">
+        <agent agentType="human">rcarvais</agent>
+        <eventDateTime standardDateTime="2023-07-15T20:13:00Z"/>
+        <eventDescription/>
+      </maintenanceEvent>
+      <maintenanceEvent maintenanceEventType="revised">
         <agent agentType="human">rcarvais</agent>
         <eventDateTime standardDateTime="2023-04-30T13:06:09Z"/>
         <eventDescription/>
@@ -45,6 +65,12 @@
       <source id="source_aqo0j1geinbxdy">
         <reference href="https://www.geneanet.org/registres/view/319234/519">AN/Y/4712/A</reference>
         <citedRange unit="page">519-525</citedRange>
+      </source>
+      <source id="source_107uw03vjppmdxabo">
+        <reference href="https://www.geneanet.org/registres/view/174636/134">AN Y/14</reference>
+        <descriptiveNote>
+          <p>Index des scellées.</p>
+        </descriptiveNote>
       </source>
     </sources>
       
@@ -89,13 +115,23 @@
                <term/>
             </localDescription>
          </localDescriptions>
+      <occupations>
+        <occupation localType="" sourceReference="#source_aqo0j1geinbxdy">
+          <term>Architecte, entrepteneur des bâtiments à Paris</term>
+          <!--optionnal (all below)-->
+          <!--&lt;date/&gt; | &lt;dateRange/&gt; | &lt;dateSet/&gt;-->
+        </occupation>
+      </occupations>
          
          
          <existDates>
             <dateRange>
                <fromDate sourceReference="" certainty="" standardDate="1717-07"/>
-               <toDate sourceReference="" certainty="" standardDate="1757-02-04"/>
+               <toDate sourceReference="#source_107uw03vjppmdxabo" certainty="certain" standardDate="1757-02-04"/>
             </dateRange>
+        <descriptiveNote>
+          <p>Il est décédé rue de la Chaise, paroisse St Sulpice, à son domicile.</p>
+        </descriptiveNote>
          </existDates>
          <biogHist>
             <chronList>
@@ -151,7 +187,7 @@
                   
                   
                </chronItem>
-          <chronItem id="chronItem_1y630srvvgh6r0he" sourceReference="#source_aqo0j1geinbxdy" localType="reception">
+          <chronItem id="chronItem_1y630srvvgh6r0he" sourceReference="#source_aqo0j1geinbxdy" localType="receptionColumn2">
             <dateSet>
               <date certainty="certain" standardDate="1748-02-17" sourceReference="">Lettres de provision</date>
               <date certainty="" sourceReference="">Supplique</date>
@@ -163,10 +199,11 @@
               <date certainty="certain" standardDate="1751-10-08" sourceReference="">Réception</date>
               <date certainty="certain" standardDate="1751-10-06" sourceReference="">Conclusions préparatoires du procureur du roi</date>
               <date certainty="certain" standardDate="1751-10-07" sourceReference="">Conclusions définitives du procureur du roi</date>
+              <date certainty="certain" standardDate="1751-09-26" sourceReference="">Délibération de la compagnie pour le choix des examinateurs</date>
             </dateSet>
             <event>Réception en l'office d'expert entrepreneur</event>
             <place>
-              <placeName/>
+              <placeName>Paris (Lettres de provisions)</placeName>
             </place>
           </chronItem>
             </chronList>
@@ -208,7 +245,7 @@
       <relation target="#chronItem_1y630srvvgh6r0he" sourceReference="">
         <targetEntity targetType="person">
           <part localType="full">Jean Joachim [Catter]</part>
-          <part localType="status">procureur au Châteler de Paris</part>
+          <part localType="status">procureur au Châtelet de Paris</part>
           <part localType="occupationType">Droit;Procureur</part>
           <part localType="age">29 ou environ</part>
           <part localType="address">rue St Denys, paroisse St Leu, St Gilles, Paris</part>
@@ -226,11 +263,11 @@ Dépose connoistre ledit Louis François Debey depuis 9 ans ou environ, qu'il es
         <targetEntity targetType="person">
           <part localType="full">Jean Guillaume de Berville</part>
           <part localType="status">greffier des bastiments</part>
-          <part localType="occupationType"/>
+          <part localType="occupationType">Bâtiment et Droit;Greffier des bâtiments</part>
           <part localType="age">50 ou environ</part>
           <part localType="address">rue des Mauvais Graçons, paroisse St Jean en Grève, Paris</part>
           <part localType="origPlace"/>
-          <part localType="xprRef"/>
+          <part localType="xprRef">#clrk0042</part>
         </targetEntity>
         <relationType id="relationType_7smm0iad8w63e6u" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_aqo0j1geinbxdy">rico:knownBy</relationType>
         <targetRole target="#relationType_7smm0iad8w63e6u">témoin</targetRole>
@@ -308,7 +345,7 @@ Dépose connoistre ledit Louis François Debey depuis 9 ans ou environ, qu'il es
       </relation>
       <relation target="#chronItem_1y630srvvgh6r0he" sourceReference="">
         <descriptiveNote>
-          <p>Il semble qu'il y ait une erreur de date en ce qui concerne l'ordonnance de Soit montré au procureur : Supplique : 08-03-1748 et Réception : 18-03-1751
+          <p>Il semble qu'il y ait une erreur de date en ce qui concerne l'ordonnance de Soit montré au procureur : Supplique : 08-03-1748 et Réception : 18-03-1751. En réalité non car l'office est vacant à la mort de Le Brun. Les LP sont obtenues le 17/02/1748. Ainsi la procédure est commencée en 1748. Interrompue par on ne sait quelle raison, elle reprends en octobre 1751 soit près de 4 ans plus tard ? Comment expliquer ce hiatus ? 
 Examen : "interrogé et examiné en présence de la compagnie sur ses capacités et suffisances et qu'il a bien répondu aux demandes et questions qui luy ont esté faites sur tout ce qui regarde les fonctions d'un expert".
 De plus notons que le consentement de la compagnie est commencé à une date avancée : "Doyen, syndic et adjoints ouy feront ce que de raison" et est définitivement acquis lors de l'examen puisque le certificat est délivré par la communauté assemblée.</p>
         </descriptiveNote>

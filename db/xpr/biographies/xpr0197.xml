@@ -7,6 +7,11 @@
       </maintenanceAgency>
       <maintenanceHistory>
          <maintenanceEvent maintenanceEventType="revised">
+        <agent agentType="human">rcarvais</agent>
+        <eventDateTime standardDateTime="2023-09-29T08:21:10Z"/>
+        <eventDescription/>
+      </maintenanceEvent>
+      <maintenanceEvent maintenanceEventType="revised">
         <agent agentType="human">vnegre</agent>
         <eventDateTime standardDateTime="2023-05-05T15:47:29Z"/>
         <eventDescription/>
@@ -72,6 +77,10 @@
       <source id="source_d0f0spv3qkwx1vr">
         <reference href="">MC/ET/LXX/187 (IAD de sa 1e femme Marie Cherier)</reference>
       </source>
+      <source id="source_enny0mdw5irb6h2">
+        <reference href="https://www.geneanet.org/registres/view/6161/357">AN/Y/4026/A</reference>
+        <citedRange unit="page">357-363</citedRange>
+      </source>
     </sources>
       
       
@@ -129,6 +138,11 @@
         <occupation localType="" sourceReference="#source_6u50o1gim3bdxyh">
           <term>Architecte et entrepreneur de bâtiments, Bourgeois de Paris</term>
           <date certainty="certain" standardDate="1688-01-28" sourceReference=""/>
+          <!--optionnal (all below)-->
+          <!--&lt;date/&gt; | &lt;dateRange/&gt; | &lt;dateSet/&gt;-->
+        </occupation>
+        <occupation localType="" sourceReference="#source_enny0mdw5irb6h2">
+          <term>Architecte et maître maçon à Paris</term>
           <!--optionnal (all below)-->
           <!--&lt;date/&gt; | &lt;dateRange/&gt; | &lt;dateSet/&gt;-->
         </occupation>
@@ -210,6 +224,24 @@
             <event>Mariage (1) avec Marie Cherier</event>
             <place>
               <placeName/>
+            </place>
+          </chronItem>
+          <chronItem id="chronItem_gwek0emfgz9fns3i" sourceReference="#source_enny0mdw5irb6h2" localType="receptionColumn2">
+            <dateSet>
+              <date certainty="certain" standardDate="1691-11-12" sourceReference="">Lettres de provision</date>
+              <date certainty="" sourceReference="">Supplique</date>
+              <date certainty="certain" standardDate="1691-11-15" sourceReference="">Ordonnance de soit montré au procureur du roy</date>
+              <date certainty="certain" standardDate="1691-11-22" sourceReference="">Examen</date>
+              <date certainty="certain" standardDate="1691-11-15" sourceReference="">Consentement de la communauté</date>
+              <date certainty="certain" standardDate="1691-11-22" sourceReference="">Information de vie et de mœurs</date>
+              <date certainty="certain" standardDate="1691-11-24" sourceReference="">Serment</date>
+              <date certainty="certain" standardDate="1691-11-24" sourceReference="">Réception</date>
+              <date certainty="certain" standardDate="1691-11-22" sourceReference="">Conclusions provisoire du procureur du roi</date>
+              <date certainty="certain" standardDate="1691-11-23" sourceReference="">Conclusoins du procureur du roi</date>
+            </dateSet>
+            <event>Réception en l'office de juré expert entrepreneur</event>
+            <place>
+              <placeName>Paris (lettres de provision)</placeName>
             </place>
           </chronItem>
             </chronList>
@@ -314,6 +346,161 @@
           <relationType id="relationType_id128298d2610315" valueURI="" vocabularySource="" vocabularySourceURI="" sourceReference=""/>
             <targetRole target="#relationType_id128298d2610315"/>
           </relation>
+      <relation target="#chronItem_gwek0emfgz9fns3i" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Pierre Levé</part>
+          <part localType="status">dernier possesseur qui l'aurait voloontairement résigné des mains de sa majesté en faveur dudit Miché</part>
+          <part localType="occupationType">Bâtiment;Expert entrepreneur</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0180</part>
+        </targetEntity>
+        <relationType id="relationType_mu110euv2e6yz4z8" valueURI="https://www.ica.org/standards/RiC/ontology#isSuccessorOf" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_enny0mdw5irb6h2">rico:isSuccessorOf</relationType>
+        <targetRole target="#relationType_mu110euv2e6yz4z8">prédécesseur</targetRole>
+        <descriptiveNote>
+          <p/>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_gwek0emfgz9fns3i" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Antoine Royer</part>
+          <part localType="status">prestre habitué en l'église et paroisse St Etienne du Mont</part>
+          <part localType="occupationType">Religion;Religieux</part>
+          <part localType="age">34</part>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_mu1j0emt7utn677a" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_enny0mdw5irb6h2">rico:knownBy</relationType>
+        <targetRole target="#relationType_mu1j0emt7utn677a">témoin</targetRole>
+        <descriptiveNote>
+          <p>Dépose connoistre le sieur Miché depuis 18 ans ou environ sait qu'il est de bonne vie et moeurs, faisant profession de la R C a et R pour l'avoir veu assister au service divin et y faire des actes d'un bon chrestien, comme aussy il est fort affectionné au service du roi.</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_gwek0emfgz9fns3i" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Georges Germain</part>
+          <part localType="status">procureur au Châtelet de Paris</part>
+          <part localType="occupationType">Droit;Procureur</part>
+          <part localType="age">45 environ</part>
+          <part localType="address">rue des Noyers, paroisse St Séverin</part>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_mu200pj0l4rhiz9h" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_enny0mdw5irb6h2">rico:knownBy</relationType>
+        <targetRole target="#relationType_mu200pj0l4rhiz9h">témoin</targetRole>
+        <descriptiveNote>
+          <p>Dépose connoistre le sieur Miché depuis plusieurs années sait qu'il est fort homme d'honneur, faisant profession de la R C a et R pour l'avoir veu fréquenter les églises d'ailleurs qu'il est fort affectionné au service du roi.</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_gwek0emfgz9fns3i" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Adrien Personne</part>
+          <part localType="status">Greffier des bâtiments</part>
+          <part localType="occupationType">Bâtiment et Droit;Greffier des bâtiments</part>
+          <part localType="age">40</part>
+          <part localType="address">rue St Bon, paroissse St Médéric, Paris</part>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_mu2g0au9yzm0hek5" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_enny0mdw5irb6h2">rico:knownBy</relationType>
+        <targetRole target="#relationType_mu2g0au9yzm0hek5">témoin</targetRole>
+        <descriptiveNote>
+          <p>Dépose connoistre le sieur Miché depuis 27 ans, paraître de sait bonne vie et moeurs,  de la R C a et R pour avoir été avec luy plusieurs fois entendre la Sainte Messe et y faire les devoirs d'un bon chrestien, de plus est fort affectionné au service du roi.</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_gwek0emfgz9fns3i" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Michel de Mezeretz</part>
+          <part localType="status">Doyen de la compagnie</part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0077</part>
+        </targetEntity>
+        <relationType id="relationType_mu2v0kq5fn11dt6r" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_enny0mdw5irb6h2">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_mu2v0kq5fn11dt6r">observateur</targetRole>
+      </relation>
+      <relation target="#chronItem_gwek0emfgz9fns3i" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full"/>
+          <part localType="status"/>
+          <part localType="occupationType"/>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_mu390t96wba82eu" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_enny0mdw5irb6h2">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_mu390t96wba82eu">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_gwek0emfgz9fns3i" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full"/>
+          <part localType="status"/>
+          <part localType="occupationType"/>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_mu3m006tvocy87noq" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_enny0mdw5irb6h2">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_mu3m006tvocy87noq">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_gwek0emfgz9fns3i" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full"/>
+          <part localType="status"/>
+          <part localType="occupationType"/>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_mu3w0cixi3q4blcv" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_enny0mdw5irb6h2">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_mu3w0cixi3q4blcv">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_gwek0emfgz9fns3i" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full"/>
+          <part localType="status"/>
+          <part localType="occupationType"/>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_mu450lmdsjl00mkf" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_enny0mdw5irb6h2">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_mu450lmdsjl00mkf">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_gwek0emfgz9fns3i" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full"/>
+          <part localType="status"/>
+          <part localType="occupationType"/>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_mu4f0xitruenxytj" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_enny0mdw5irb6h2">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_mu4f0xitruenxytj">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_gwek0emfgz9fns3i" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full"/>
+          <part localType="status"/>
+          <part localType="occupationType"/>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_mu4m0nw82s63jnu" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_enny0mdw5irb6h2">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_mu4m0nw82s63jnu">examinateur</targetRole>
+      </relation>
     </relations>
    
       </cpfDescription>

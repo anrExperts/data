@@ -1,11 +1,16 @@
 <eac xmlns="https://archivists.org/ns/eac/v2" xml:id="xpr0140">
-   <control maintenanceStatus="new" publicationStatus="inProcess">
+   <control maintenanceStatus="updated" publicationStatus="inProcess">
       <recordId>xpr0140</recordId>
       <maintenanceAgency>
          <agencyName>projet Experts</agencyName>
       </maintenanceAgency>
       <maintenanceHistory>
-         <maintenanceEvent maintenanceEventType="updated" languageOfElement="eng">
+         <maintenanceEvent maintenanceEventType="revised">
+        <agent agentType="human">rcarvais</agent>
+        <eventDateTime standardDateTime="2023-08-09T12:10:55Z"/>
+        <eventDescription/>
+      </maintenanceEvent>
+      <maintenanceEvent maintenanceEventType="updated" languageOfElement="eng">
             <agent agentType="machine">EAC-CPF 1.x to EAC 2.0 Migration Style Sheet (eac1-to-eac2.xsl)</agent>
             <eventDateTime standardDateTime="2022-09-19T16:52:56.617129+02:00"/>
             <eventDescription>EAC-CPF 1.x (urn:isbn:1-931666-33-4) instance migrated to EAC 2.0 (https://archivists.org/ns/eac/v2)</eventDescription>
@@ -36,6 +41,12 @@
             <eventDescription>Fiches créée sur Google Drive.</eventDescription>
          </maintenanceEvent>
       </maintenanceHistory>
+    <sources>
+      <source id="source_9yo06p4bi6f9xm6">
+        <reference href="https://sharedocs.huma-num.fr/#/2139/8770/Sources%20Experts/Sources%20Archives%20nationales/Y%20Robert/108Y1862">Y 1862</reference>
+        <citedRange unit="page">20-25</citedRange>
+      </source>
+    </sources>
       
       
    </control>
@@ -61,8 +72,8 @@
       </identity>
       <description>
          <functions>
-            <function sourceReference="">
-               <term>Expert entrepreneur</term>
+            <function sourceReference="#source_9yo06p4bi6f9xm6">
+               <term>Expert entrepreneur </term>
                <dateRange>
                   <fromDate sourceReference="" certainty="" standardDate="1690"/>
                   <toDate sourceReference="" certainty="" standardDate="1725"/>
@@ -75,12 +86,19 @@
                <term/>
             </localDescription>
          </localDescriptions>
+      <occupations>
+        <occupation localType="" sourceReference="#source_9yo06p4bi6f9xm6">
+          <term>Maître maçon et entrepreneur de Bâtiments</term>
+          <!--optionnal (all below)-->
+          <!--&lt;date/&gt; | &lt;dateRange/&gt; | &lt;dateSet/&gt;-->
+        </occupation>
+      </occupations>
          
          
          <existDates>
             <dateRange>
                <fromDate sourceReference="" certainty="" standardDate="1638-08"/>
-               <toDate sourceReference="" certainty="" standardDate=""/>
+               <toDate sourceReference="" certainty=""/>
             </dateRange>
          </existDates>
          <biogHist>
@@ -111,6 +129,24 @@
                   
                   
                </chronItem>
+          <chronItem id="chronItem_2d5w0vnvtd517rhe" sourceReference="#source_9yo06p4bi6f9xm6" localType="reception">
+            <dateSet>
+              <date certainty="certain" standardDate="1690-07-13" sourceReference="">Lettres de provision</date>
+              <date certainty="" sourceReference="">Supplique</date>
+              <date certainty="certain" standardDate="1690-08-06" sourceReference="">Ordonnance de soit montré au procureur du roy</date>
+              <date certainty="" sourceReference="">Examen</date>
+              <date certainty="" sourceReference="">Consentement de la communauté</date>
+              <date certainty="certain" standardDate="1690-08-08" sourceReference="">Information de vie et de mœurs</date>
+              <date certainty="certain" standardDate="1690-08-18" sourceReference="">Serment</date>
+              <date certainty="certain" standardDate="1690-08-18" sourceReference="">Réception</date>
+              <date certainty="certain" standardDate="1690-08-07" sourceReference="">Conclusions préparatoires du procureur du roi</date>
+              <date certainty="certain" standardDate="1690-08-17" sourceReference="">Conclusions définitives du procureur du roi</date>
+            </dateSet>
+            <event>Réception en l'office de juré expert entrepreneur</event>
+            <place>
+              <placeName>Paris (lettres de provision)</placeName>
+            </place>
+          </chronItem>
                
             </chronList>
          </biogHist>
@@ -130,6 +166,161 @@
           <relationType id="relationType_id128298d2593385" valueURI="" vocabularySource="" vocabularySourceURI="" sourceReference=""/>
             <targetRole target="#relationType_id128298d2593385"/>
           </relation>
+      <relation target="#chronItem_2d5w0vnvtd517rhe" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full"/>
+          <part localType="status"/>
+          <part localType="occupationType"/>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_6bin0x67wvthnhi" valueURI="https://www.ica.org/standards/RiC/ontology#isSuccessorOf" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_9yo06p4bi6f9xm6">rico:isSuccessorOf</relationType>
+        <targetRole target="#relationType_6bin0x67wvthnhi">prédécesseur</targetRole>
+        <descriptiveNote>
+          <p>Il n'y a pas de prédécesseur puisque l'impétrant achète un des 50 offices crées par Edit de mai 1690 enregistré au Parlement le 16 juillet.</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_2d5w0vnvtd517rhe" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Charles Carey de la Motte</part>
+          <part localType="status">Prestre habitué en l'église de St Leu St Gilles</part>
+          <part localType="occupationType">Religion;Religieux</part>
+          <part localType="age">44</part>
+          <part localType="address">rue du Petit Hubert, susdite paroisse, Paris</part>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_6bj30upxhksijuni" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_9yo06p4bi6f9xm6">rico:knownBy</relationType>
+        <targetRole target="#relationType_6bj30upxhksijuni">témoin</targetRole>
+        <descriptiveNote>
+          <p>A dit connoistre ledit Hecquan depuis 15 à 16 ans duquel il n'est pas allié serviteur ny domestique, pour estre de bonne vie et moeurs, R C a et R, luy ayant plusieurs fois [barré : de confession] administré les sacrements de pénitence, scait de plus qu'il est très affectionné au service du roy et du public.</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_2d5w0vnvtd517rhe" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Pierre Delaleu</part>
+          <part localType="status">Marchand traiteur des Bourgeois de Paris</part>
+          <part localType="occupationType">Commerce;Marchand Bourgeois</part>
+          <part localType="age">59</part>
+          <part localType="address">rue St Denis, paroisse St Sauveur, Paris</part>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_6bjf0e50xmsam8s" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_9yo06p4bi6f9xm6">rico:knownBy</relationType>
+        <targetRole target="#relationType_6bjf0e50xmsam8s">témoin</targetRole>
+        <descriptiveNote>
+          <p>Dépose n'estre pas allié serviteur ny domestique dudit Hecquan qu'il connoist depuis 12 ans pour estre  de bonne vie et moeurs, R C a et R, l'ayant plusieurs fois veu assiter au service divin, et qu'il est très affectionné au service du roy et du public.</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_2d5w0vnvtd517rhe" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Robert Leboeuf</part>
+          <part localType="status">Marchand [...] d'or</part>
+          <part localType="occupationType">Commerce;Marchand</part>
+          <part localType="age">32</part>
+          <part localType="address">rue St Denis, paroisse St Sauveur, Paris</part>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_6bjo0p252e0x636" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_9yo06p4bi6f9xm6">rico:knownBy</relationType>
+        <targetRole target="#relationType_6bjo0p252e0x636">témoin</targetRole>
+        <descriptiveNote>
+          <p>A dits connoistre ledit Hecquan depuis 12 années qu'il est son voisin, duquel il n'est pas allié, serviteur ny domestique, scait qu'il est  de bonne vie et moeurs, R C a et R, l'ayant veu plusieurs fois assister au service divin, et qu'il est très affectionné au service du roy et du public, </p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_2d5w0vnvtd517rhe" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full"/>
+          <part localType="status"/>
+          <part localType="occupationType"/>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_6bjx0o15xv5gnoy" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_9yo06p4bi6f9xm6">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_6bjx0o15xv5gnoy">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_2d5w0vnvtd517rhe" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full"/>
+          <part localType="status"/>
+          <part localType="occupationType"/>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_6bk40i2ung8vmlm" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_9yo06p4bi6f9xm6">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_6bk40i2ung8vmlm">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_2d5w0vnvtd517rhe" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full"/>
+          <part localType="status"/>
+          <part localType="occupationType"/>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_6bkb0olhxzb8r529" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_9yo06p4bi6f9xm6">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_6bkb0olhxzb8r529">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_2d5w0vnvtd517rhe" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full"/>
+          <part localType="status"/>
+          <part localType="occupationType"/>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_6bkh0sb1te8qk26e" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_9yo06p4bi6f9xm6">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_6bkh0sb1te8qk26e">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_2d5w0vnvtd517rhe" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full"/>
+          <part localType="status"/>
+          <part localType="occupationType"/>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_6bkm06l3a7ipmjua" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_9yo06p4bi6f9xm6">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_6bkm06l3a7ipmjua">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_2d5w0vnvtd517rhe" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full"/>
+          <part localType="status"/>
+          <part localType="occupationType"/>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_6bkq0oc2345f27i" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_9yo06p4bi6f9xm6">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_6bkq0oc2345f27i">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_2d5w0vnvtd517rhe" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full"/>
+          <part localType="status"/>
+          <part localType="occupationType"/>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_6bkt0n7q3b92bx1n" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_9yo06p4bi6f9xm6">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_6bkt0n7q3b92bx1n">examinateur</targetRole>
+      </relation>
         </relations>
       </cpfDescription>
    

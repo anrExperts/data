@@ -6,6 +6,16 @@
       </maintenanceAgency>
       <maintenanceHistory>
          <maintenanceEvent maintenanceEventType="revised">
+        <agent agentType="human">jmorvan</agent>
+        <eventDateTime standardDateTime="2023-09-20T10:29:45Z"/>
+        <eventDescription>ajout du lien avec Claude Prosper vavasseur Desperriers, son frère</eventDescription>
+      </maintenanceEvent>
+      <maintenanceEvent maintenanceEventType="revised">
+        <agent agentType="human">rcarvais</agent>
+        <eventDateTime standardDateTime="2023-09-01T14:34:11Z"/>
+        <eventDescription/>
+      </maintenanceEvent>
+      <maintenanceEvent maintenanceEventType="revised">
         <agent agentType="human">vnegre</agent>
         <eventDateTime standardDateTime="2023-04-25T08:24:38Z"/>
         <eventDescription/>
@@ -63,6 +73,13 @@
       <source id="source_ivd0y8sz2c21f4">
         <reference href="">MC/ET/XXVII/570 (IAD)</reference>
       </source>
+      <source id="source_ico0335actctzzo">
+        <reference href="https://sharedocs.huma-num.fr/#/2139/8770/Sources%20Experts/Sources%20Archives%20nationales/Y%20Robert/117Y4973%20-%20Dosmond%20-%20Vavasseur">AN Y 4973/B</reference>
+        <citedRange unit="page">33-39</citedRange>
+      </source>
+      <source id="source_4lip0dlqyv55t6l6">
+        <reference href="">Z/1j/1155, dossier n°004</reference>
+      </source>
     </sources>
       
       
@@ -97,6 +114,12 @@
                </dateRange>
                
             </function>
+        <function localType="" sourceReference="#source_ico0335actctzzo">
+          <term>juré expert entrepreneur</term>
+          <!--optionnal (all below)-->
+          <!--&lt;date/&gt; | &lt;dateRange/&gt; | &lt;dateSet/&gt;-->
+          <!--&lt;placeName sourceReference=&quot;&quot;/&gt;-->
+        </function>
          </functions>
       <places>
         <place sourceReference="#source_4hy0ag0gts3xa5q">
@@ -112,6 +135,13 @@
                <term/>
             </localDescription>
          </localDescriptions>
+      <occupations>
+        <occupation localType="" sourceReference="#source_ico0335actctzzo">
+          <term>Architecte</term>
+          <!--optionnal (all below)-->
+          <!--&lt;date/&gt; | &lt;dateRange/&gt; | &lt;dateSet/&gt;-->
+        </occupation>
+      </occupations>
          
          
          <existDates>
@@ -183,6 +213,25 @@
               <placeName>Rue Saint-Paul</placeName>
             </place>
           </chronItem>
+          <chronItem id="chronItem_29xo073e4n0km5zm" sourceReference="#source_ico0335actctzzo" localType="receptionColumn2">
+            <dateSet>
+              <date certainty="certain" standardDate="1773-01-13" sourceReference="">Lettres de provision</date>
+              <date certainty="" sourceReference="">Supplique</date>
+              <date certainty="certain" standardDate="1773-01-28" sourceReference="">Ordonnance de soit montré au procureur du roy</date>
+              <date certainty="certain" standardDate="1773-02-14" sourceReference="">Examen</date>
+              <date certainty="certain" standardDate="1773-01-28" sourceReference="">Consentement de la communauté</date>
+              <date certainty="uncertain" standardDate="1773-02-17" sourceReference="">Information de vie et de mœurs</date>
+              <date certainty="certain" standardDate="1773-02-19" sourceReference="">Serment</date>
+              <date certainty="certain" standardDate="1773-02-19" sourceReference="">Réception</date>
+              <date certainty="certain" standardDate="1773-02-15" sourceReference="">Conclusions préparatoires du procureur du roi</date>
+              <date certainty="certain" standardDate="1773-02-17" sourceReference="">Conclusions définitives du procureur du roi</date>
+              <date certainty="certain" standardDate="1773-02-07" sourceReference="">Délibération de la Compagnie pour le choiux des examinateurs</date>
+            </dateSet>
+            <event>Réception en l'office de juré entrepreneur</event>
+            <place>
+              <placeName>Paris (lettres de provision)</placeName>
+            </place>
+          </chronItem>
             </chronList>
          </biogHist>
       </description>
@@ -214,7 +263,7 @@
           <part localType="xprRef"/>
         </targetEntity>
         <relationType id="relationType_1s7e0tbz5tjpmszt" valueURI="" vocabularySource="" vocabularySourceURI="" sourceReference="#source_4hy0ag0gts3xa5q">rico:isChildOf</relationType>
-        <targetRole target="#relationType_1s7e0tbz5tjpmszt">mère</targetRole>
+        <targetRole target="#relationType_1s7e0tbz5tjpmszt">père</targetRole>
       </relation>
       <relation target="#chronItem_kq90f3vo12r2iw" sourceReference="">
         <targetEntity targetType="person">
@@ -269,6 +318,183 @@
           <relationType id="relationType_id128298d2628572" valueURI="" vocabularySource="" vocabularySourceURI="" sourceReference=""/>
             <targetRole target="#relationType_id128298d2628572"/>
           </relation>
+      <relation target="#chronItem_29xo073e4n0km5zm" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">François René de la Perière</part>
+          <part localType="status">défunt dernier possesseur d'iceluy</part>
+          <part localType="occupationType">Bâtiment;Expert entrepreneur</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0076</part>
+        </targetEntity>
+        <relationType id="relationType_6ww20jn3zmjpeup" valueURI="https://www.ica.org/standards/RiC/ontology#isSuccessorOf" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_ico0335actctzzo">rico:isSuccessorOf</relationType>
+        <targetRole target="#relationType_6ww20jn3zmjpeup">prédécesseur</targetRole>
+        <descriptiveNote>
+          <p/>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_29xo073e4n0km5zm" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Edme Charles Catel</part>
+          <part localType="status">Prestre de Paris, maistre ès arts en l'université de ladite ville, prieur de St Rémy sous Chevreuse, bénéficier de l'église royalle et paroissiale de St Paul, Chapelain de la Cathédrale de Rhodez et Chapelin de Messieurs les architectes entreprenerus des bastiments du roi</part>
+          <part localType="occupationType">Religion;Religieux</part>
+          <part localType="age">57 environ</part>
+          <part localType="address">en la communauté des prestres, Paris</part>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_6wwo0z15jti4kp9" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_ico0335actctzzo">rico:knownBy</relationType>
+        <targetRole target="#relationType_6wwo0z15jti4kp9">témoin</targetRole>
+        <descriptiveNote>
+          <p>Dépose connoistre le sieur Louis Athanaze Wavasseur Desperiers depuis environ 6 ans pour faire profession de la R C a et R, qu'il est de bonnes vie et moeurs, fort affectionné au service du roy et du publicq.</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_29xo073e4n0km5zm" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Alexis René Hayot</part>
+          <part localType="status">Procureur des comptes</part>
+          <part localType="occupationType">Droit;Procureur</part>
+          <part localType="age">40</part>
+          <part localType="address">rue Neuve et paroisse St Méery, Paris</part>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_6wx60dg4zky9tj5c" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_ico0335actctzzo">rico:knownBy</relationType>
+        <targetRole target="#relationType_6wx60dg4zky9tj5c">témoin</targetRole>
+        <descriptiveNote>
+          <p>Dépose connoistre le sieur Louis Athanaze Wavasseur Desperiers depuis plus de 20 ans pour faire profession de la R C a et R, scait qu'il est de bonnes vie et moeurs, dépose qu'il est fort affectionné au service du roy et du publicq.</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_29xo073e4n0km5zm" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Jean Antoine Charpy</part>
+          <part localType="status">Avocat consultant</part>
+          <part localType="occupationType">Droit;Avocat</part>
+          <part localType="age">près de 60</part>
+          <part localType="address">Rue Geoffroy Lasnier, paroisse St Gervais, Paris</part>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_6wxl04t7izh6787w" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_ico0335actctzzo">rico:knownBy</relationType>
+        <targetRole target="#relationType_6wxl04t7izh6787w">témoin</targetRole>
+        <descriptiveNote>
+          <p>Dépose connoistre le sieur Louis Athanaze Wavasseur Desperiers depuis plus de 20 ans pour faire profession de la R C a et R, scait qu'il est fort affectionné au service du roy et du publicq.</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_29xo073e4n0km5zm" sourceReference="">
+        <descriptiveNote>
+          <p>Chauveau est d'abord juré expert bourgeois, puis entrepreneur.</p>
+        </descriptiveNote>
+        <targetEntity targetType="person">
+          <part localType="full">René Bonaventure Chauveau</part>
+          <part localType="status">Doyend de la Compagnie</part>
+          <part localType="occupationType"/>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0054</part>
+        </targetEntity>
+        <relationType id="relationType_6wxz09qu5ot6da28" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_ico0335actctzzo">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_6wxz09qu5ot6da28">observateur</targetRole>
+      </relation>
+      <relation target="#chronItem_29xo073e4n0km5zm" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">André Mouchet</part>
+          <part localType="status">Syndic de la Compagnie</part>
+          <part localType="occupationType">Bâtiment;Expert entrepreneur</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0200</part>
+        </targetEntity>
+        <relationType id="relationType_6wyc04ud0kiyrm1" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_ico0335actctzzo">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_6wyc04ud0kiyrm1">observateur</targetRole>
+      </relation>
+      <relation target="#chronItem_29xo073e4n0km5zm" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Henry Quentin Desboeufs</part>
+          <part localType="status">Adjoint de la Compagnie</part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0089</part>
+        </targetEntity>
+        <relationType id="relationType_6wym09y562511uud" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_ico0335actctzzo">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_6wym09y562511uud">observateur</targetRole>
+      </relation>
+      <relation target="#chronItem_29xo073e4n0km5zm" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Louis Sylvain Bourgeois</part>
+          <part localType="status">Examinateur de la 2nde colonne</part>
+          <part localType="occupationType">Bâtiment;Expert entrepreneur</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0038</part>
+        </targetEntity>
+        <relationType id="relationType_6wyx0omjjubyr61c" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_ico0335actctzzo">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_6wyx0omjjubyr61c">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_29xo073e4n0km5zm" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Etienne Viltard</part>
+          <part localType="status">Examinateur de la 1ère colonne</part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0261</part>
+        </targetEntity>
+        <relationType id="relationType_6wz50nc1yg77gyf" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_ico0335actctzzo">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_6wz50nc1yg77gyf">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_29xo073e4n0km5zm" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Louis François Radel</part>
+          <part localType="status">Examinateur de la 1ère colonne</part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0216</part>
+        </targetEntity>
+        <relationType id="relationType_6wzc0dqwcnjqcrz" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_ico0335actctzzo">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_6wzc0dqwcnjqcrz">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_29xo073e4n0km5zm" sourceReference="">
+        <descriptiveNote>
+          <p>Nous constatons un déséquilibre parmi les qualités des examinateurs 3/1. Les bourgeois sont encore en priorité.</p>
+        </descriptiveNote>
+        <targetEntity targetType="person">
+          <part localType="full">Martin Marie Terrier</part>
+          <part localType="status">Examinateur de la 1ère colonne</part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0252</part>
+        </targetEntity>
+        <relationType id="relationType_6wzi0ebgcuxba4a7" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_ico0335actctzzo">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_6wzi0ebgcuxba4a7">examinateur</targetRole>
+      </relation>
+      <relation target="" sourceReference="">
+        <descriptiveNote>
+          <p>Claude Prosper Vavasseur Desperriers intervient dans une affaire (Z1J1155d004) où son frère est expert. Ce lien de parenté est mentionné dans le PV qui pointe un conflit d'intérêt.</p>
+        </descriptiveNote>
+        <targetEntity targetType="person">
+          <part localType="full">Vavasseur Desperriers, Claude Prosper</part>
+          <part localType="status">Procureur au Châtelet</part>
+          <part localType="occupationType">Droit;Procureur</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xprPerson0016</part>
+        </targetEntity>
+        <relationType id="relationType_17tl0s7yb7b4exgd" valueURI="" vocabularySource="" vocabularySourceURI="" sourceReference="#source_4lip0dlqyv55t6l6">rico:hasSibling</relationType>
+        <targetRole target="#relationType_17tl0s7yb7b4exgd">frère</targetRole>
+      </relation>
     </relations>
    
       </cpfDescription>

@@ -6,6 +6,16 @@
       </maintenanceAgency>
       <maintenanceHistory>
          <maintenanceEvent maintenanceEventType="revised">
+        <agent agentType="human">rcarvais</agent>
+        <eventDateTime standardDateTime="2023-07-15T15:09:03Z"/>
+        <eventDescription/>
+      </maintenanceEvent>
+      <maintenanceEvent maintenanceEventType="revised">
+        <agent agentType="human">rcarvais</agent>
+        <eventDateTime standardDateTime="2023-07-15T14:21:48Z"/>
+        <eventDescription/>
+      </maintenanceEvent>
+      <maintenanceEvent maintenanceEventType="revised">
         <agent agentType="human">vnegre</agent>
         <eventDateTime standardDateTime="2023-04-22T13:37:05Z"/>
         <eventDescription/>
@@ -58,6 +68,10 @@
       <source id="source_aei0mdy2i263hy">
         <reference href="">MC/ET/XXXVI/357 (IAD)</reference>
       </source>
+      <source id="source_indg0qwhbdut5188">
+        <reference href="https://www.geneanet.org/registres/view/7825/109?">AN Y 4199</reference>
+        <citedRange unit="page">109-116</citedRange>
+      </source>
     </sources>
       
       
@@ -84,8 +98,8 @@
       </identity>
       <description>
          <functions>
-            <function sourceReference="">
-               <term>Expert entrepreneur</term>
+            <function sourceReference="#source_indg0qwhbdut5188">
+               <term>Expert entrepreneur (juré expert héréditaire par Edite de mai 1690)</term>
                <dateRange>
                   <fromDate sourceReference="" certainty="" standardDate="1711"/>
                   <toDate sourceReference="" certainty="" standardDate="1715"/>
@@ -107,6 +121,13 @@
                <term/>
             </localDescription>
          </localDescriptions>
+      <occupations>
+        <occupation localType="" sourceReference="#source_indg0qwhbdut5188">
+          <term>Maître maçon, entreprteneur de bastiments du roy</term>
+          <!--optionnal (all below)-->
+          <!--&lt;date/&gt; | &lt;dateRange/&gt; | &lt;dateSet/&gt;-->
+        </occupation>
+      </occupations>
          
          
          <existDates>
@@ -166,6 +187,24 @@
             <event>Mariage avec Madeleine Angélique Lesueur </event>
             <place>
               <placeName/>
+            </place>
+          </chronItem>
+          <chronItem id="chronItem_17jfy0gwdz1wx8z1j" sourceReference="" localType="reception">
+            <dateSet>
+              <date certainty="certain" standardDate="1707-03-12" sourceReference="">Lettres de provision</date>
+              <date certainty="" sourceReference="">Supplique</date>
+              <date certainty="certain" standardDate="1710-02-26" sourceReference="">Ordonnance de soit montré au procureur du roy</date>
+              <date certainty="certain" standardDate="1710-03-03" sourceReference="">Examen</date>
+              <date certainty="certain" standardDate="1710-02-27" sourceReference="">Consentement de la communauté</date>
+              <date certainty="certain" standardDate="1710-03" sourceReference="">Information de vie et de mœurs</date>
+              <date certainty="certain" standardDate="1710-03-04" sourceReference="">Serment</date>
+              <date certainty="certain" standardDate="1710-03-04" sourceReference="">Réception</date>
+              <date certainty="certain" standardDate="1710-03-04" sourceReference="">Conclusions du procureur du roi</date>
+              <date certainty="certain" standardDate="1709-04-21" sourceReference="">Lettres de surannation</date>
+            </dateSet>
+            <event>Réception en l'office de juré expert de la 2nde colonne</event>
+            <place>
+              <placeName>Versailles (Lettres de provisions et de surannation)</placeName>
             </place>
           </chronItem>
             </chronList>
@@ -241,6 +280,167 @@
           <relationType id="relationType_id128298d2572197" valueURI="" vocabularySource="" vocabularySourceURI="" sourceReference=""/>
             <targetRole target="#relationType_id128298d2572197"/>
           </relation>
+      <relation target="#chronItem_17jfy0gwdz1wx8z1j" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Maurice Gabriel</part>
+          <part localType="status">défunt dernier possesseur</part>
+          <part localType="occupationType">Bâtiment;Expert entrepreneur</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0115</part>
+        </targetEntity>
+        <relationType id="relationType_ytu01ygbtjfczoo" valueURI="https://www.ica.org/standards/RiC/ontology#isSuccessorOf" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:isSuccessorOf</relationType>
+        <targetRole target="#relationType_ytu01ygbtjfczoo">prédécesseur</targetRole>
+        <descriptiveNote>
+          <p>Sa veuve es nom et qualité conjointement avec les autres héritiers dudit défunt nomme et présente à sa majesté la personne de René David.</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_17jfy0gwdz1wx8z1j" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Jullien Legoff</part>
+          <part localType="status">prestre, docteur de Sorbonne, vicaire de St Roch</part>
+          <part localType="occupationType"/>
+          <part localType="age">35</part>
+          <part localType="address">à la communauté de ladite paroisse, Paris</part>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_yug0qmzztrkmdxf" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:knownBy</relationType>
+        <targetRole target="#relationType_yug0qmzztrkmdxf">témoin</targetRole>
+        <descriptiveNote>
+          <p>Dépose connoistre ledit David [depuis : barré] pour estre de bonne vie et moeurs, de la R C a et R [mots barrés] pour savoir qui fréquent les églises et entend le service divin et estre très affectionné au service du roy et du publique.</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_17jfy0gwdz1wx8z1j" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Pierre Hecquan</part>
+          <part localType="status">Juré expert entrepreneur des bastiments, bourgeois de Paris</part>
+          <part localType="occupationType">Bâtiment;Expert entrepreneur</part>
+          <part localType="age">72</part>
+          <part localType="address">Rue Neuve St [Liévain] ou [Severin], paroisse St Nicolas des Champs, Paris</part>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0140</part>
+        </targetEntity>
+        <relationType id="relationType_yuu003xqu0qaosic" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:knownBy</relationType>
+        <targetRole target="#relationType_yuu003xqu0qaosic">témoin</targetRole>
+        <descriptiveNote>
+          <p>Dépose connoistre ledit David depuis plusieurs années, scait qu'il est de bonne vie et moeurs, de la R C a et R pour l'avoir veu plusieurs fois fréquenter les églises, entendre le service divin et estre très affectionné au service du roy et du publique.</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_17jfy0gwdz1wx8z1j" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Jacques Caré</part>
+          <part localType="status">Me menuisier à Paris</part>
+          <part localType="occupationType">Bâtiment;Entrepreneur ou maître de métier</part>
+          <part localType="age">55</part>
+          <part localType="address">Grande rue du Fg St Honoré, paroisse de la Mademleine de la Ville Levesque, Paris</part>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_yv703o27ul7kr5c" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:knownBy</relationType>
+        <targetRole target="#relationType_yv703o27ul7kr5c">témoin</targetRole>
+        <descriptiveNote>
+          <p>Dépose connoistre ledit David depuis 5 à 6 ans scait qu'il est de bonne vie et moeurs, de la R C a et R [mots barrés] pour l'avoir evu plusieurs fois fréquenter les églises et entendre le service divin et estre très affectionné du service du roy et du publique.</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_17jfy0gwdz1wx8z1j" sourceReference="">
+        <descriptiveNote>
+          <p>Martin Caulle a été expert d'abord entrepreneur, puis bourgeois</p>
+        </descriptiveNote>
+        <targetEntity targetType="person">
+          <part localType="full">Martin Caulle</part>
+          <part localType="status">Examinateur de la 1ère colonne</part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0048</part>
+        </targetEntity>
+        <relationType id="relationType_yvk0hnt1mo8yn06" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_indg0qwhbdut5188">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_yvk0hnt1mo8yn06">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_17jfy0gwdz1wx8z1j" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Pierre Quirot</part>
+          <part localType="status">Examinateur de la 1ère colonne</part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0232</part>
+        </targetEntity>
+        <relationType id="relationType_yvu0bzrnfj92wbo" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_indg0qwhbdut5188">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_yvu0bzrnfj92wbo">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_17jfy0gwdz1wx8z1j" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Edme Fourier</part>
+          <part localType="status">Examinateur de la 2nde colonne</part>
+          <part localType="occupationType">Bâtiment;Expert entrepreneur</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0111</part>
+        </targetEntity>
+        <relationType id="relationType_yw40modxk6je69" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_yw40modxk6je69">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_17jfy0gwdz1wx8z1j" sourceReference="">
+        <descriptiveNote>
+          <p>Denis est considéré et noté comme expert de la 2nde colonne, expert entrepreneur alors d'après la base il est de la 1ère colonne expert bourgeois, à la différence de Jean-François Gobin qui exerce sur une période commune (1708-1719) est lui expert de la 2nde colonne. Où est l'erreur ? Nous pourrions comparer les signatures des deux Gobin pour savoir lequel est présent à la réception de René David.</p>
+        </descriptiveNote>
+        <targetEntity targetType="person">
+          <part localType="full">Denis Gobin</part>
+          <part localType="status">Examinateur de la 2nde colonne</part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_ywd0rdj8rctipq" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_ywd0rdj8rctipq">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_17jfy0gwdz1wx8z1j" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full"/>
+          <part localType="status"/>
+          <part localType="occupationType"/>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_ywk001bfnxmjc9b7" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_ywk001bfnxmjc9b7">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_17jfy0gwdz1wx8z1j" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full"/>
+          <part localType="status"/>
+          <part localType="occupationType"/>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_ywq0d97u4590yo6" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_ywq0d97u4590yo6">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_17jfy0gwdz1wx8z1j" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full"/>
+          <part localType="status"/>
+          <part localType="occupationType"/>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_ywx0xmd3fihuwrj" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_ywx0xmd3fihuwrj">examinateur</targetRole>
+      </relation>
     </relations>
    
       </cpfDescription>

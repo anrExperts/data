@@ -6,6 +6,11 @@
       </maintenanceAgency>
       <maintenanceHistory>
          <maintenanceEvent maintenanceEventType="revised">
+        <agent agentType="human">rcarvais</agent>
+        <eventDateTime standardDateTime="2023-09-02T11:18:30Z"/>
+        <eventDescription/>
+      </maintenanceEvent>
+      <maintenanceEvent maintenanceEventType="revised">
         <agent agentType="human">vnegre</agent>
         <eventDateTime standardDateTime="2023-05-05T16:13:03Z"/>
         <eventDescription/>
@@ -75,6 +80,9 @@
             
             
          </nameEntry>
+      <nameEntry status="alternative" preferredForm="false" sourceReference="">
+        <part localType="name">Yvers</part>
+      </nameEntry>
           <otherEntityTypes>
             <otherEntityType>
               <term>expert</term>
@@ -92,6 +100,12 @@
                </dateRange>
                
             </function>
+        <function localType="" sourceReference="#source_86y087fdxny2j29">
+          <term>Juré expert de la 2nde colonne</term>
+          <!--optionnal (all below)-->
+          <!--&lt;date/&gt; | &lt;dateRange/&gt; | &lt;dateSet/&gt;-->
+          <!--&lt;placeName sourceReference=&quot;&quot;/&gt;-->
+        </function>
          </functions>
       <places>
         <place sourceReference="#source_4m10fkbn4mrht1v">
@@ -172,6 +186,24 @@
             <event>Décès de Nicolas Yvert</event>
             <place>
               <placeName>Rue Montmartre, n° 123</placeName>
+            </place>
+          </chronItem>
+          <chronItem id="chronItem_2rl400wu2hyypfeu" sourceReference="#source_86y087fdxny2j29" localType="receptionColumn2">
+            <dateSet>
+              <date certainty="certain" standardDate="1789-07-01" sourceReference="">Lettres de provision</date>
+              <date certainty="" sourceReference="">Supplique</date>
+              <date certainty="certain" standardDate="1789-07-02" sourceReference="">Ordonnance de soit montré au procureur du roy</date>
+              <date certainty="certain" standardDate="1789-08-09" sourceReference="">Examen</date>
+              <date certainty="certain" standardDate="1789-07-02" sourceReference="">Consentement de la communauté</date>
+              <date certainty="certain" standardDate="1789-08-11" sourceReference="">Information de vie et de mœurs</date>
+              <date certainty="certain" standardDate="1789-08-12" sourceReference="">Serment</date>
+              <date certainty="certain" standardDate="1789-08-12" sourceReference="">Réception</date>
+              <date certainty="certain" standardDate="1789-08-10" sourceReference="">Conclusions préparatoires du procureur du roi</date>
+              <date certainty="certain" standardDate="1789-08-11" sourceReference="">Conclusions définitives du procureur du roi</date>
+            </dateSet>
+            <event>Réception en l'office de juré expert</event>
+            <place>
+              <placeName>Versailles (lettres de provision)</placeName>
             </place>
           </chronItem>
             </chronList>
@@ -257,6 +289,161 @@
           <relationType id="relationType_id128298d2630759" valueURI="" vocabularySource="" vocabularySourceURI="" sourceReference=""/>
             <targetRole target="#relationType_id128298d2630759"/>
           </relation>
+      <relation target="#chronItem_2rl400wu2hyypfeu" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Jean Louis Pruneau de Montlouis</part>
+          <part localType="status">dernier titulaire d'iceluy</part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0229</part>
+        </targetEntity>
+        <relationType id="relationType_6z1q0c0begtl4c4t" valueURI="https://www.ica.org/standards/RiC/ontology#isSuccessorOf" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_86y087fdxny2j29">rico:isSuccessorOf</relationType>
+        <targetRole target="#relationType_6z1q0c0begtl4c4t">prédécesseur</targetRole>
+        <descriptiveNote>
+          <p/>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_2rl400wu2hyypfeu" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Jacques Augustin Balavoine</part>
+          <part localType="status">prestre du diocèse de Paris et Trésorier de l'église royale de St Paul</part>
+          <part localType="occupationType">Religion;Religieux</part>
+          <part localType="age">77</part>
+          <part localType="address">Rue et paroisse St Paul, Paris</part>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_6z2c0uipcmjz44nr" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_86y087fdxny2j29">rico:knownBy</relationType>
+        <targetRole target="#relationType_6z2c0uipcmjz44nr">témoin</targetRole>
+        <descriptiveNote>
+          <p>Dépose qu'il connoist ledit sieur Joseph Nicolas Yvers depuis sa naissance pour estre de bonnes vie et moeurs, d'une conduitte sage et régulière, qu'il scait que ledit Sieur Yvers fait profession de la R C a et R, enfin qu'il le connoist pour bon et fidel sujet du roy, zélé et affectionné à son service et à celuy du public.</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_2rl400wu2hyypfeu" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Thomas Houdart</part>
+          <part localType="status">Me ou Marchand Tapissier</part>
+          <part localType="occupationType">Commerce;Maître et marchand</part>
+          <part localType="age">38</part>
+          <part localType="address">Rue Montmartre, paroisse St Eustache, Paris</part>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_6z2r0ybdioqjfdsh" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_86y087fdxny2j29">rico:knownBy</relationType>
+        <targetRole target="#relationType_6z2r0ybdioqjfdsh">témoin</targetRole>
+        <descriptiveNote>
+          <p>Dépose qu'il connoist depuis environ 25 ans ledit sieur Joseph Nicolas Yvers pour estre de bonnes vie et moeurs, d'une conduitte sage et régulière, qu'il scait que ledit Sieur Yvers fait profession de la R C a et R, enfin qu'il le connoist pour bon et fidel sujet du roy, zélé et affectionné à son service et à celuy du public.</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_2rl400wu2hyypfeu" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Guillaume Vincent Letillier</part>
+          <part localType="status">Me ou Marchand Mercier</part>
+          <part localType="occupationType">Commerce;Maître et marchand</part>
+          <part localType="age">37</part>
+          <part localType="address">Rue Regnault Lefèvre, paroisse St Jean en Grève, Paris</part>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_6z3408zyjwrh4dvj" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_86y087fdxny2j29">rico:knownBy</relationType>
+        <targetRole target="#relationType_6z3408zyjwrh4dvj">témoin</targetRole>
+        <descriptiveNote>
+          <p>Dépose qu'il connoist ledit sieur Joseph Nicolas Yvers depuis sa naissance qu'il a toujours veu sa conduite avec beaucoup d'exactitude et de régularité, qu'il a remarqué et trouve qu'il est de bonnes vie et moeurs, d'une conduitte sage et régulière, qu'il scait que ledit Sieur Yvers fait profession de la R C a et R, enfin qu'il le connoist pour bon et fidel sujet du roy, zélé et affectionné à son service et à celuy du public.</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_2rl400wu2hyypfeu" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Auguste Simon</part>
+          <part localType="status">Doyen de la Compagnie</part>
+          <part localType="occupationType">Bâtiment;Expert entrepreneur</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0247</part>
+        </targetEntity>
+        <relationType id="relationType_6z3g0rnw9ykb41x" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_86y087fdxny2j29">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_6z3g0rnw9ykb41x">observateur</targetRole>
+      </relation>
+      <relation target="#chronItem_2rl400wu2hyypfeu" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Jean Louis Blève</part>
+          <part localType="status">Syndic de la Compagnie</part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0026</part>
+        </targetEntity>
+        <relationType id="relationType_6z3s04bdmwlw86x7" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_86y087fdxny2j29">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_6z3s04bdmwlw86x7">observateur</targetRole>
+      </relation>
+      <relation target="#chronItem_2rl400wu2hyypfeu" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">François Buron</part>
+          <part localType="status">Adjoint de la Compagnie</part>
+          <part localType="occupationType">Bâtiment;Expert entrepreneur</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0042</part>
+        </targetEntity>
+        <relationType id="relationType_6z410gh09zxp6xnl" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_86y087fdxny2j29">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_6z410gh09zxp6xnl">observateur</targetRole>
+      </relation>
+      <relation target="#chronItem_2rl400wu2hyypfeu" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Honoré Jacques Roché</part>
+          <part localType="status">Examinateur de la 1ère colonne</part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0238</part>
+        </targetEntity>
+        <relationType id="relationType_6z4a0hzqe8njk17h" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_86y087fdxny2j29">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_6z4a0hzqe8njk17h">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_2rl400wu2hyypfeu" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Estienne Pharoux</part>
+          <part localType="status">Examinateur de la 1ère colonne</part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0217</part>
+        </targetEntity>
+        <relationType id="relationType_6z4i04jhnu6spqfv" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_86y087fdxny2j29">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_6z4i04jhnu6spqfv">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_2rl400wu2hyypfeu" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">André Aubert</part>
+          <part localType="status">Examinateur de la 2nde colonne</part>
+          <part localType="occupationType">Bâtiment;Expert entrepreneur</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0007</part>
+        </targetEntity>
+        <relationType id="relationType_6z4p0q53rgibk0x" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_86y087fdxny2j29">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_6z4p0q53rgibk0x">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_2rl400wu2hyypfeu" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Charles Nicolas Soissons</part>
+          <part localType="status">Examinateur de la 2nde colonne</part>
+          <part localType="occupationType">Bâtiment;Expert entrepreneur</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0249</part>
+        </targetEntity>
+        <relationType id="relationType_6z4u0sio2yzbcyz" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_86y087fdxny2j29">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_6z4u0sio2yzbcyz">examinateur</targetRole>
+      </relation>
     </relations>
    
       </cpfDescription>

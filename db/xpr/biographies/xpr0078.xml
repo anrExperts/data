@@ -1,11 +1,21 @@
 <eac xmlns="https://archivists.org/ns/eac/v2" xml:id="xpr0078">
-   <control maintenanceStatus="new" publicationStatus="inProcess">
+   <control maintenanceStatus="updated" publicationStatus="inProcess">
       <recordId>xpr0078</recordId>
       <maintenanceAgency>
          <agencyName>projet Experts</agencyName>
       </maintenanceAgency>
       <maintenanceHistory>
-         <maintenanceEvent maintenanceEventType="updated" languageOfElement="eng">
+         <maintenanceEvent maintenanceEventType="revised">
+        <agent agentType="human">rcarvais</agent>
+        <eventDateTime standardDateTime="2023-07-19T12:03:34Z"/>
+        <eventDescription/>
+      </maintenanceEvent>
+      <maintenanceEvent maintenanceEventType="revised">
+        <agent agentType="human">rcarvais</agent>
+        <eventDateTime standardDateTime="2023-07-19T10:37:14Z"/>
+        <eventDescription/>
+      </maintenanceEvent>
+      <maintenanceEvent maintenanceEventType="updated" languageOfElement="eng">
             <agent agentType="machine">EAC-CPF 1.x to EAC 2.0 Migration Style Sheet (eac1-to-eac2.xsl)</agent>
             <eventDateTime standardDateTime="2022-09-19T16:52:56.056371+02:00"/>
             <eventDescription>EAC-CPF 1.x (urn:isbn:1-931666-33-4) instance migrated to EAC 2.0 (https://archivists.org/ns/eac/v2)</eventDescription>
@@ -36,6 +46,19 @@
             <eventDescription>Fiches créée sur Google Drive.</eventDescription>
          </maintenanceEvent>
       </maintenanceHistory>
+    <sources>
+      <source id="source_img0hhlk6epgp2">
+        <reference href="https://www.geneanet.org/registres/view/23384/912?">AN Y 4280</reference>
+        <citedRange unit="page">912-921</citedRange>
+      </source>
+      <source id="source_1he00clh3xmiaser">
+        <reference href="https://www.geneanet.org/registres/view/174946/140">AN Y 21</reference>
+        <descriptiveNote>
+          <p>Philippes de Mezeretz est décédé le 6/05/1749, rue Neuve des Petits Champs.</p>
+        </descriptiveNote>
+        <citedRange unit="page">140</citedRange>
+      </source>
+    </sources>
       
       
    </control>
@@ -62,7 +85,7 @@
       <description>
          <functions>
             <function sourceReference="">
-               <term>Expert bourgeois</term>
+               <term>Expert bourgeois </term>
                <dateRange>
                   <fromDate sourceReference="" certainty="" standardDate="1718"/>
                   <toDate sourceReference="" certainty="" standardDate="1749"/>
@@ -80,7 +103,7 @@
          <existDates>
             <dateRange>
                <fromDate sourceReference="" certainty="" standardDate="1665-05"/>
-               <toDate sourceReference="" certainty="" standardDate=""/>
+               <toDate sourceReference="" certainty="certain" standardDate="1749-05-06"/>
             </dateRange>
          </existDates>
          <biogHist>
@@ -111,6 +134,38 @@
                   
                   
                </chronItem>
+          <chronItem id="chronItem_2cvk0o8hkednkai" sourceReference="" localType="baptism">
+            <date certainty="certain" standardDate="1665-05-21" sourceReference=""/>
+            <event>Baptême de Charles Philippe de Mezeretz</event>
+            <place>
+              <placeName>Paroisse St Germain le vieil</placeName>
+            </place>
+          </chronItem>
+          <chronItem id="chronItem_49a90tan9u44y3jc" sourceReference="" localType="">
+            <date certainty="" sourceReference=""/>
+            <event/>
+            <place>
+              <placeName/>
+            </place>
+          </chronItem>
+          <chronItem id="chronItem_4dxc0gteffoszii" sourceReference="#source_img0hhlk6epgp2" localType="reception">
+            <dateSet>
+              <date certainty="certain" standardDate="1716-12-09" sourceReference="">Lettres de provision</date>
+              <date certainty="" sourceReference="">Supplique</date>
+              <date certainty="certain" standardDate="1716-12-19" sourceReference="">Ordonnance de soit montré au procureur du roy</date>
+              <date certainty="certain" standardDate="1716-12-28" sourceReference="">Examen</date>
+              <date certainty="certain" standardDate="1716-12-19" sourceReference="">Consentement de la communauté</date>
+              <date certainty="certain" standardDate="1716-12-30" sourceReference="">Information de vie et de mœurs</date>
+              <date certainty="certain" standardDate="1716-12-30" sourceReference="">Serment</date>
+              <date certainty="certain" standardDate="1716-12-30" sourceReference="">Réception</date>
+              <date certainty="certain" standardDate="1716-12-30" sourceReference="">Conclusions du procureur du roi</date>
+              <date certainty="certain" standardDate="1716-12-30" sourceReference="">renonciation de l'impétrant à l'entreprise</date>
+            </dateSet>
+            <event>Réception en un des 50 offices de juré experts pour la ville de Paris</event>
+            <place>
+              <placeName>Paris (Lettres de provisions)</placeName>
+            </place>
+          </chronItem>
                
             </chronList>
          </biogHist>
@@ -130,6 +185,165 @@
           <relationType id="relationType_id128298d2574898" valueURI="" vocabularySource="" vocabularySourceURI="" sourceReference=""/>
             <targetRole target="#relationType_id128298d2574898"/>
           </relation>
+      <relation target="#chronItem_4dxc0gteffoszii" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Michel de Mezeretz</part>
+          <part localType="status">dernier possesseur d'icelui décédé (son père)</part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0077</part>
+        </targetEntity>
+        <relationType id="relationType_a7j60bafxyr657ll" valueURI="https://www.ica.org/standards/RiC/ontology#isSuccessorOf" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_img0hhlk6epgp2">rico:isSuccessorOf</relationType>
+        <targetRole target="#relationType_a7j60bafxyr657ll">prédécesseur</targetRole>
+        <descriptiveNote>
+          <p>"Déclaration faite par ledit Charles Philippes de Mezeretz pour et présent en personne qu'il a renoncé  à toute entreprise de bastiments, de maçonnerie, charpenterie, couverture et menuiserie".</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_4dxc0gteffoszii" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Richard Forstal</part>
+          <part localType="status">prestre licencié de la Faculté de Paris</part>
+          <part localType="occupationType">Religion;Religieux</part>
+          <part localType="age">54</part>
+          <part localType="address">Rue St Honoré, paroisse St Roch, Paris</part>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_a7jn0fnq7librwa8" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_img0hhlk6epgp2">rico:knownBy</relationType>
+        <targetRole target="#relationType_a7jn0fnq7librwa8">témoin</targetRole>
+        <descriptiveNote>
+          <p>Dépose connoistre ledit Charles Philippes de Mezeretz depuis 15 ans ou environ pour être de bonne conversation, scait qu'il fait profession de la R C a et R pour luy avoir veu faire les fonctions d'un bon chrestien, fréquenter les églises et entendre le service divin et pour luy avoir administré le sacrement de pénitence.</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_4dxc0gteffoszii" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Georges Genest</part>
+          <part localType="status">Doyen des procureurs de la Chambre des comptes</part>
+          <part localType="occupationType">Droit;Procureur</part>
+          <part localType="age">69 environ</part>
+          <part localType="address">Rue de Richelieur, paroisse St Eustache, Paris</part>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_a7jz0pthlw2wfqv" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_img0hhlk6epgp2">rico:knownBy</relationType>
+        <targetRole target="#relationType_a7jz0pthlw2wfqv">témoin</targetRole>
+        <descriptiveNote>
+          <p>Dépose connoistre ledit de Mezeretz depuis plus de 25 ans ou environ pour être de bonne vie et moeurs, scait qu'il fait profession de la R C a et R pour luy avoir veu faire les fonctions d'un bon chrestien, fréquenter les églises et entendre le service divin, scait de plus qu'il est très affectionné au service du roi et du public.</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_4dxc0gteffoszii" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Robert de Tournière</part>
+          <part localType="status">Peintre ordinaire du roy et de son Académie royale</part>
+          <part localType="occupationType">Métiers (hors bâtiment);Maître de métier au service du roi (hors bâtiment)</part>
+          <part localType="age">43 environ</part>
+          <part localType="address">Rue de Richelieur, paroisse St Eustache, Paris</part>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_a7k80w3x2u94r8ki" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_img0hhlk6epgp2">rico:knownBy</relationType>
+        <targetRole target="#relationType_a7k80w3x2u94r8ki">témoin</targetRole>
+        <descriptiveNote>
+          <p>Dépose connoistre ledit de Mezeretz depuis 12 ans ou environ, scait qu'il fait profession de la R C a et R pour luy avoir veu faire les fonctions d'un bon chrestien, fréquenter les églises et entendre le service divin, scait aussi qu'il est d'une conduite très régulière et très affectionné au service du roy et du public.</p>
+          <p>Dans une note du dossier de réception qu'il était envisagé comme témoin de moralité en dehors de ces 3 personnes sus-visées, M. Fortier, notaire, M. Périer, trésorier de la Prévosté de l'Hôtel.</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_4dxc0gteffoszii" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Jacques Piretouy</part>
+          <part localType="status">Examinateur de la 1ère colonne</part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0221</part>
+        </targetEntity>
+        <relationType id="relationType_a7kh0b5iogm0g1ag" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_img0hhlk6epgp2">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_a7kh0b5iogm0g1ag">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_4dxc0gteffoszii" sourceReference="">
+        <descriptiveNote>
+          <p>Cet examinateur est désigné comme de la 1ère colonne alors qu'il est de la 2nde. Où se trouve l'erreur? Y a t-il eu confusion avec Denis qui est effectivement expert de la 1ère colonne et qui exerce en même temps ? Ou il est bel et bien expert bourgeois ? A vérifier.</p>
+        </descriptiveNote>
+        <targetEntity targetType="person">
+          <part localType="full">Jean François Gobin</part>
+          <part localType="status">Examinateur de la 2nde colonne</part>
+          <part localType="occupationType">Bâtiment;Expert entrepreneur</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0124</part>
+        </targetEntity>
+        <relationType id="relationType_a7ko0fcpmpctjg0r" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_img0hhlk6epgp2">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_a7ko0fcpmpctjg0r">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_4dxc0gteffoszii" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Etienne Le Roy</part>
+          <part localType="status">Examinateur de la 2nde colonne</part>
+          <part localType="occupationType">Bâtiment;Expert entrepreneur</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0170</part>
+        </targetEntity>
+        <relationType id="relationType_a7kv0v0t0mpcnoj" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_img0hhlk6epgp2">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_a7kv0v0t0mpcnoj">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_4dxc0gteffoszii" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Pierre Hecquan</part>
+          <part localType="status">Examinateur de la 2nde colonne</part>
+          <part localType="occupationType">Bâtiment;Expert entrepreneur</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0140</part>
+        </targetEntity>
+        <relationType id="relationType_a7l10ianfwxlp4vj" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_img0hhlk6epgp2">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_a7l10ianfwxlp4vj">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_4dxc0gteffoszii" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full"/>
+          <part localType="status"/>
+          <part localType="occupationType"/>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_a7l60uttl8r9re4" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_img0hhlk6epgp2">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_a7l60uttl8r9re4">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_4dxc0gteffoszii" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full"/>
+          <part localType="status"/>
+          <part localType="occupationType"/>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_a7l90362vqdd7ooc" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_img0hhlk6epgp2">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_a7l90362vqdd7ooc">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_4dxc0gteffoszii" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full"/>
+          <part localType="status"/>
+          <part localType="occupationType"/>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_a7ld0gd6n94bdu6d" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_img0hhlk6epgp2">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_a7ld0gd6n94bdu6d">examinateur</targetRole>
+      </relation>
         </relations>
       </cpfDescription>
    

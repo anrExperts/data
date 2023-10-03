@@ -1,11 +1,16 @@
 <eac xmlns="https://archivists.org/ns/eac/v2" xml:id="xpr0222">
-   <control maintenanceStatus="new" publicationStatus="inProcess">
+   <control maintenanceStatus="updated" publicationStatus="inProcess">
       <recordId>xpr0222</recordId>
       <maintenanceAgency>
          <agencyName>projet Experts</agencyName>
       </maintenanceAgency>
       <maintenanceHistory>
-         <maintenanceEvent maintenanceEventType="updated" languageOfElement="eng">
+         <maintenanceEvent maintenanceEventType="revised">
+        <agent agentType="human">rcarvais</agent>
+        <eventDateTime standardDateTime="2023-08-29T16:57:48Z"/>
+        <eventDescription/>
+      </maintenanceEvent>
+      <maintenanceEvent maintenanceEventType="updated" languageOfElement="eng">
             <agent agentType="machine">EAC-CPF 1.x to EAC 2.0 Migration Style Sheet (eac1-to-eac2.xsl)</agent>
             <eventDateTime standardDateTime="2022-09-19T16:52:57.354193+02:00"/>
             <eventDescription>EAC-CPF 1.x (urn:isbn:1-931666-33-4) instance migrated to EAC 2.0 (https://archivists.org/ns/eac/v2)</eventDescription>
@@ -36,6 +41,12 @@
             <eventDescription>Fiches créée sur Google Drive.</eventDescription>
          </maintenanceEvent>
       </maintenanceHistory>
+    <sources>
+      <source id="source_9v2039xgnvf0or4">
+        <reference href="https://www.geneanet.org/registres/view/12010/38?">AN Y 4357</reference>
+        <citedRange unit="page">38-47</citedRange>
+      </source>
+    </sources>
       
       
    </control>
@@ -67,7 +78,7 @@
       </identity>
       <description>
          <functions>
-            <function sourceReference="">
+            <function sourceReference="#source_9v2039xgnvf0or4">
                <term>Expert entrepreneur</term>
                <dateRange>
                   <fromDate sourceReference="" certainty="" standardDate="1723"/>
@@ -81,6 +92,13 @@
                <term/>
             </localDescription>
          </localDescriptions>
+      <occupations>
+        <occupation localType="" sourceReference="#source_9v2039xgnvf0or4">
+          <term>Me maçon, entrepreneur des bastiments à Paris</term>
+          <!--optionnal (all below)-->
+          <!--&lt;date/&gt; | &lt;dateRange/&gt; | &lt;dateSet/&gt;-->
+        </occupation>
+      </occupations>
          
          
          <existDates>
@@ -142,6 +160,24 @@
                   
                   
                </chronItem>
+          <chronItem id="chronItem_1v5a0kgyh5itgywi" sourceReference="" localType="receptionColumn2">
+            <dateSet>
+              <date certainty="certain" standardDate="1722-02-12" sourceReference="">Lettres de provision</date>
+              <date certainty="" sourceReference="">Supplique</date>
+              <date certainty="certain" standardDate="1722-02-18" sourceReference="">Ordonnance de soit montré au procureur du roy</date>
+              <date certainty="certain" standardDate="1722-02-28" sourceReference="">Examen</date>
+              <date certainty="certain" standardDate="1722-02-19" sourceReference="">Consentement de la communauté</date>
+              <date certainty="certain" standardDate="1722-02-28" sourceReference="">Information de vie et de mœurs</date>
+              <date certainty="certain" standardDate="1722-03-03" sourceReference="">Serment</date>
+              <date certainty="certain" standardDate="1722-03-03" sourceReference="">Réception</date>
+              <date certainty="certain" standardDate="1722-02-28" sourceReference="">Conclusions préparatoires du procureur du roi</date>
+              <date certainty="certain" standardDate="1722-03-03" sourceReference="">Conclusion définitives du procureur du roi</date>
+            </dateSet>
+            <event>Réception en l'office d'expert juré de la 2nde colonne</event>
+            <place>
+              <placeName>Paris (lettres de provision)</placeName>
+            </place>
+          </chronItem>
             </chronList>
          </biogHist>
       </description>
@@ -160,6 +196,161 @@
           <relationType id="relationType_id128298d2617811" valueURI="" vocabularySource="" vocabularySourceURI="" sourceReference=""/>
             <targetRole target="#relationType_id128298d2617811"/>
           </relation>
+      <relation target="#chronItem_1v5a0kgyh5itgywi" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Denis Gobin</part>
+          <part localType="status">Deffunt dernier possesseur d'iceluy</part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0125</part>
+        </targetEntity>
+        <relationType id="relationType_ai6404zei03aet5j" valueURI="https://www.ica.org/standards/RiC/ontology#isSuccessorOf" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:isSuccessorOf</relationType>
+        <targetRole target="#relationType_ai6404zei03aet5j">prédécesseur</targetRole>
+        <descriptiveNote>
+          <p/>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_1v5a0kgyh5itgywi" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Louis Ledoux</part>
+          <part localType="status">Prestre supérieur du séminaire de St Nicolas du Chardonnet</part>
+          <part localType="occupationType">Religion;Religieux</part>
+          <part localType="age">58</part>
+          <part localType="address">audit séminaire, Paris</part>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_ai6j06f3gg6wxpuy" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:knownBy</relationType>
+        <targetRole target="#relationType_ai6j06f3gg6wxpuy">témoin</targetRole>
+        <descriptiveNote>
+          <p>Dépose connoistre ledit Jean Planier depuis 14 ans ou environ, scait qu'il est de bonne vie et moeurs, de la Religion C a et R, et fort affectionné au service du roy et du public.</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_1v5a0kgyh5itgywi" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Claude Morat</part>
+          <part localType="status">Bourgeois de Paris</part>
+          <part localType="occupationType">Autres;Bourgeois de Paris</part>
+          <part localType="age">65 environ</part>
+          <part localType="address">Rue St Victor, paroisse St Nicolas du CHardonnet, Paris</part>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_ai6w0o5a42bxbwph" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:knownBy</relationType>
+        <targetRole target="#relationType_ai6w0o5a42bxbwph">témoin</targetRole>
+        <descriptiveNote>
+          <p>Dépose connoistre ledit Jean Planier depuis 30 ans ou environ, scait qu'il est de bonne vie et moeurs, de la Religion C a et R, et fort affectionné au service du roy et du public.</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_1v5a0kgyh5itgywi" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Jean Baptiste Anneray</part>
+          <part localType="status">Bourgeois de Paris</part>
+          <part localType="occupationType">Autres;Bourgeois de Paris</part>
+          <part localType="age">52</part>
+          <part localType="address">Quay de la Tournelle, paroisse St Nicolas du Chardonnet, Paris</part>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_ai770qml627q0wyk" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:knownBy</relationType>
+        <targetRole target="#relationType_ai770qml627q0wyk">témoin</targetRole>
+        <descriptiveNote>
+          <p>Dépose connoistre ledit Jean Planier depuis 30 ans ou environ, scait qu'il est de bonne vie et moeurs, de la Religion C a et R, et fort affectionné au service du roy et du public.</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_1v5a0kgyh5itgywi" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Pierre Jacquot de Villeneuve</part>
+          <part localType="status">Examinateur de la 1ère colonne</part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0145</part>
+        </targetEntity>
+        <relationType id="relationType_ai7g009gti8kg1sj2" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_ai7g009gti8kg1sj2">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_1v5a0kgyh5itgywi" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Louis Benoist</part>
+          <part localType="status">Examinateur de la 1ère colonne</part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0017</part>
+        </targetEntity>
+        <relationType id="relationType_ai7o0wmvqjr0v56" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_ai7o0wmvqjr0v56">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_1v5a0kgyh5itgywi" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Mathurin Simon</part>
+          <part localType="status">Examinateur de la 2nde colonne</part>
+          <part localType="occupationType">Bâtiment;Expert entrepreneur</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0246</part>
+        </targetEntity>
+        <relationType id="relationType_ai7w0qgt8ccsfff" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_ai7w0qgt8ccsfff">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_1v5a0kgyh5itgywi" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Nicolas Fremiot</part>
+          <part localType="status">Examinateur de la 2nde colonne</part>
+          <part localType="occupationType">Bâtiment;Expert entrepreneur</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0112</part>
+        </targetEntity>
+        <relationType id="relationType_ai820uwe2jlh6yc" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_ai820uwe2jlh6yc">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_1v5a0kgyh5itgywi" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Nicolas Delespine</part>
+          <part localType="status">Doyen de la Compagnie</part>
+          <part localType="occupationType">Bâtiment;Expert entrepreneur</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0086</part>
+        </targetEntity>
+        <relationType id="relationType_ai8805jww3gxr8ai" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_ai8805jww3gxr8ai">observateur</targetRole>
+      </relation>
+      <relation target="#chronItem_1v5a0kgyh5itgywi" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full"/>
+          <part localType="status"/>
+          <part localType="occupationType"/>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_ai8c0to4izszndlk" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_ai8c0to4izszndlk">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_1v5a0kgyh5itgywi" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full"/>
+          <part localType="status"/>
+          <part localType="occupationType"/>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_ai8g01snmkazyz1cj" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_ai8g01snmkazyz1cj">examinateur</targetRole>
+      </relation>
         </relations>
       </cpfDescription>
    

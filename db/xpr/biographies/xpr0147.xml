@@ -1,11 +1,16 @@
 <eac xmlns="https://archivists.org/ns/eac/v2" xml:id="xpr0147">
-   <control maintenanceStatus="new" publicationStatus="inProcess">
+   <control maintenanceStatus="updated" publicationStatus="inProcess">
       <recordId>xpr0147</recordId>
       <maintenanceAgency>
          <agencyName>projet Experts</agencyName>
       </maintenanceAgency>
       <maintenanceHistory>
-         <maintenanceEvent maintenanceEventType="updated" languageOfElement="eng">
+         <maintenanceEvent maintenanceEventType="revised">
+        <agent agentType="human">rcarvais</agent>
+        <eventDateTime standardDateTime="2023-08-11T12:32:56Z"/>
+        <eventDescription/>
+      </maintenanceEvent>
+      <maintenanceEvent maintenanceEventType="updated" languageOfElement="eng">
             <agent agentType="machine">EAC-CPF 1.x to EAC 2.0 Migration Style Sheet (eac1-to-eac2.xsl)</agent>
             <eventDateTime standardDateTime="2022-09-19T16:52:56.680757+02:00"/>
             <eventDescription>EAC-CPF 1.x (urn:isbn:1-931666-33-4) instance migrated to EAC 2.0 (https://archivists.org/ns/eac/v2)</eventDescription>
@@ -36,6 +41,12 @@
             <eventDescription>Fiches créée sur Google Drive.</eventDescription>
          </maintenanceEvent>
       </maintenanceHistory>
+    <sources>
+      <source id="source_3120c15kp7r9zy4">
+        <reference href="https://www.geneanet.org/registres/view/23771/641?">AN Y 4367</reference>
+        <citedRange unit="page">641-646</citedRange>
+      </source>
+    </sources>
       
       
    </control>
@@ -80,6 +91,11 @@
                <term>"Ecuyer conseiller secrétaire du roi et architecte expert" (Z1J 832-2, 12, estimation de ses immeubles)</term>
                
             </occupation>
+        <occupation localType="" sourceReference="">
+          <term>architecte et entrepreneur de bâtiments à Paris</term>
+          <!--optionnal (all below)-->
+          <!--&lt;date/&gt; | &lt;dateRange/&gt; | &lt;dateSet/&gt;-->
+        </occupation>
          </occupations>
          
          <existDates>
@@ -142,6 +158,23 @@
                   
                   
                </chronItem>
+          <chronItem id="chronItem_2p2q0xxj8zddrxxk" sourceReference="" localType="receptionColumn2">
+            <dateSet>
+              <date certainty="certain" standardDate="1723-01-08" sourceReference="">Lettres de provision</date>
+              <date certainty="" sourceReference="">Supplique</date>
+              <date certainty="certain" standardDate="1723-01-15" sourceReference="">Ordonnance de soit montré au procureur du roy</date>
+              <date certainty="certain" standardDate="1723-01-27" sourceReference="">Examen</date>
+              <date certainty="certain" standardDate="1723-01-17" sourceReference="">Consentement de la communauté</date>
+              <date certainty="certain" standardDate="1723-01-25" sourceReference="">Information de vie et de mœurs</date>
+              <date certainty="certain" standardDate="1723-01-26" sourceReference="">Serment</date>
+              <date certainty="certain" standardDate="1723-01-26" sourceReference="">Réception</date>
+              <date certainty="certain" standardDate="1723-01-25" sourceReference="">Conclusions du procureur du roi</date>
+            </dateSet>
+            <event>Réception en l'office de juré expert d ela 2nde colonne</event>
+            <place>
+              <placeName>Versailes, (lettres de provision)</placeName>
+            </place>
+          </chronItem>
             </chronList>
          </biogHist>
       </description>
@@ -160,6 +193,161 @@
           <relationType id="relationType_id128298d2595468" valueURI="" vocabularySource="" vocabularySourceURI="" sourceReference=""/>
             <targetRole target="#relationType_id128298d2595468"/>
           </relation>
+      <relation target="#chronItem_2p2q0xxj8zddrxxk" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Charles Joubert</part>
+          <part localType="status">son péère décédé premier possesseur de l'office</part>
+          <part localType="occupationType">Bâtiment;Expert entrepreneur</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0146</part>
+        </targetEntity>
+        <relationType id="relationType_620r0rb91qwvagc9" valueURI="https://www.ica.org/standards/RiC/ontology#isSuccessorOf" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:isSuccessorOf</relationType>
+        <targetRole target="#relationType_620r0rb91qwvagc9">prédécesseur</targetRole>
+        <descriptiveNote>
+          <p/>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_2p2q0xxj8zddrxxk" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Antoine Joseph Poncet</part>
+          <part localType="status">Prestre chanoine de l'église de St Benoist</part>
+          <part localType="occupationType">Religion;Religieux</part>
+          <part localType="age">60</part>
+          <part localType="address">Cloitre de ladite église, Paris</part>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_62160nwnpglmm0p" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:knownBy</relationType>
+        <targetRole target="#relationType_62160nwnpglmm0p">témoin</targetRole>
+        <descriptiveNote>
+          <p>Dépose qu'il connoist ledit Louis Joubert depuis 12 à 13 ans pour estre de ladite paroisse, scait qu'il fréquente l'église et les sacrements, qu'il est de la R C a et R et très affectionné au service du roy et du public.</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_2p2q0xxj8zddrxxk" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">René Marc Geslin de la Vrillère</part>
+          <part localType="status">Avocat au parlement</part>
+          <part localType="occupationType">Droit;Avocat</part>
+          <part localType="age">45</part>
+          <part localType="address">rue des Mathurins, susdite paroisse St Benoist, Paris</part>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_621j0em39137qg56" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:knownBy</relationType>
+        <targetRole target="#relationType_621j0em39137qg56">témoin</targetRole>
+        <descriptiveNote>
+          <p>Dépose qu'il connoist ledit Joubert depuis environ 3 ans pour estre un très honneste homme , de bonne vie et moeurs, de la R C a et R et très affectionné au service du roy et du public.</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_2p2q0xxj8zddrxxk" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Jean Bonnefoy</part>
+          <part localType="status">Procureur au Châtelet de Paris</part>
+          <part localType="occupationType">Droit;Procureur</part>
+          <part localType="age">35</part>
+          <part localType="address">Rue Cloche-perche, paroisse St Paul, Paris</part>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_621t0kf4cyw103ps" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:knownBy</relationType>
+        <targetRole target="#relationType_621t0kf4cyw103ps">témoin</targetRole>
+        <descriptiveNote>
+          <p>Dépose qu'il connoist ledit Louis Joubert depuis 8 ou 10 ans pour estre un très honneste homme, de bonne vie et moeurs, et de la R C a et R et très affectionné au service du roy et du public.</p>
+        </descriptiveNote>
+      </relation>
+      <relation target="#chronItem_2p2q0xxj8zddrxxk" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">André Perrault</part>
+          <part localType="status">architecte juré expert de la 1ère colonne</part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0211</part>
+        </targetEntity>
+        <relationType id="relationType_62230r1esgkld5jc" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_62230r1esgkld5jc">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_2p2q0xxj8zddrxxk" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Jean Girard Vuiet</part>
+          <part localType="status">architecte juré expert de la 1ère colonne</part>
+          <part localType="occupationType">Bâtiment;Architecte expert bourgeois</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0264</part>
+        </targetEntity>
+        <relationType id="relationType_622a02d54zhdvayq" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_622a02d54zhdvayq">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_2p2q0xxj8zddrxxk" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Jacques Cudeville</part>
+          <part localType="status">Expert juré de la 2nde colonne</part>
+          <part localType="occupationType">Bâtiment;Expert entrepreneur</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0063</part>
+        </targetEntity>
+        <relationType id="relationType_622h06kzqesib9x8" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_622h06kzqesib9x8">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_2p2q0xxj8zddrxxk" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full">Charles Duval</part>
+          <part localType="status">Expert juré de la 2nde colonne</part>
+          <part localType="occupationType">Bâtiment;Expert entrepreneur</part>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef">#xpr0105</part>
+        </targetEntity>
+        <relationType id="relationType_622o0h6y8wblzjeo" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_622o0h6y8wblzjeo">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_2p2q0xxj8zddrxxk" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full"/>
+          <part localType="status"/>
+          <part localType="occupationType"/>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_622t07n9i0hiubya" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_622t07n9i0hiubya">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_2p2q0xxj8zddrxxk" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full"/>
+          <part localType="status"/>
+          <part localType="occupationType"/>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_622y0j36xp71wge" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_622y0j36xp71wge">examinateur</targetRole>
+      </relation>
+      <relation target="#chronItem_2p2q0xxj8zddrxxk" sourceReference="">
+        <targetEntity targetType="person">
+          <part localType="full"/>
+          <part localType="status"/>
+          <part localType="occupationType"/>
+          <part localType="age"/>
+          <part localType="address"/>
+          <part localType="origPlace"/>
+          <part localType="xprRef"/>
+        </targetEntity>
+        <relationType id="relationType_623101znv9hxezia" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:hasOrHadController</relationType>
+        <targetRole target="#relationType_623101znv9hxezia">examinateur</targetRole>
+      </relation>
         </relations>
       </cpfDescription>
    
