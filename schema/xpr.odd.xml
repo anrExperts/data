@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+  xmlns:xi="http://www.w3.org/2001/XInclude"
+  xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+  xmlns:svg="http://www.w3.org/2000/svg"
+  xmlns:math="http://www.w3.org/1998/Math/MathML" 
+  xmlns:rng="http://relaxng.org/ns/structure/1.0"
+  xmlns:eg="http://www.tei-c.org/ns/Examples">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Title</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>Publication Information</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Information about the source</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <schemaSpec ident="xprOdd" start="expertise" ns="xpr">
+        
+        <elementSpec ident="address">
+          <gloss>Address</gloss>
+          <desc></desc>
+          <content>
+            <rng:ref name="street"/>
+            <rng:ref name="buildingNumber"/>
+          </content>
+        </elementSpec>
+        
+        <elementSpec ident="agent">
+          <!-- from EAC -->
+          <gloss>Agent</gloss>
+          <desc>The agent (human or machine) responsible for an event in the maintenance of the expertise instance.</desc>
+          <content>
+            <rng:text/>
+          </content>
+        </elementSpec>
+        
+        <elementSpec ident="agentType">
+          <!-- from EAC -->
+          <gloss>Agent Type</gloss>
+          <desc>Type of agent responsible for a maintenance event of the expertise instance</desc>
+          <content>
+            <rng:choice>
+              <rng:value>human</rng:value>
+              <rng:value>machine</rng:value>
+            </rng:choice>
+          </content>
+        </elementSpec>
+        
+        <elementSpec ident="appendice">
+          <gloss>Appendice</gloss>
+          <desc></desc>
+          <content>
+            <rng:group>
+              <rng:oneOrMore>
+                <rng:ref name="type"/>
+              </rng:oneOrMore>
+              <rng:ref name="extent"/>
+              <rng:ref name="desc"/>
+              <rng:ref name="note"/>
+            </rng:group>
+          </content>
+        </elementSpec>
+        
+        <elementSpec ident="appendices">
+          <gloss>Appendices</gloss>
+          <desc></desc>
+          <content>
+            <rng:oneOrMore>
+              <rng:ref name="appendice"/>
+            </rng:oneOrMore>
+          </content>
+        </elementSpec>
+        
+        <elementSpec ident="buildingNumber">
+          <gloss>Building Number</gloss>
+          <desc></desc>
+          <content>
+            <rng:text />
+          </content>
+        </elementSpec>
+        
+        <elementSpec ident="category">
+          <!-- @todo schematron correspondance valeur de l'élément et de l'attribut -->
+          <gloss>Category</gloss>
+          <desc></desc>
+          <content>
+            <valList>
+              <valItem ident="Décrire et évaluer les travaux à venir"/>
+              <valItem ident="Départager"/>
+              <valItem ident="Enregistrer"/>
+              <valItem ident="Estimer la valeur des biens"/>
+              <valItem ident="Recevoir et évaluer le travail réalisé"/>
+            </valList>
+          </content>
+          <attList>
+            <attDef ident="type" usage="req">
+              <valList type="closed">
+                <valItem ident="assessment"/>
+                <valItem ident="settlement"/>
+                <valItem ident="registration"/>
+                <valItem ident="estimation"/>
+                <valItem ident="acceptation"/>
+              </valList>
+            </attDef>
+          </attList>
+        </elementSpec>
+        
+        <elementSpec ident="categories">
+          <gloss>Categories</gloss>
+          <desc></desc>
+          <content>
+            <rng:group>
+              <!-- @rmq un ou plus (category) -->
+              <rng:ref name="category" />
+              <rng:ref name="designation" />
+            </rng:group>
+          </content>
+        </elementSpec>
+        
+        <elementSpec ident="city">
+          <gloss>City</gloss>
+          <desc></desc>
+          <content>
+            <rng:text />
+          </content>
+        </elementSpec>
+        
+        <elementSpec ident="complement">
+          <gloss>Complement</gloss>
+          <desc></desc>
+          <content>
+            <rng:text />
+          </content>
+        </elementSpec>
+        
+        <elementSpec ident="control">
+          <!-- from EAC -->
+          <gloss>Control</gloss>
+          <desc>The element of the instance that contains control information about its identity, creation, maintenance, status, and the rules and authorities used in the composition of the description.</desc>
+          <content>
+            <rng:group>
+              <rng:ref name="maintenanceStatus"/>
+              <rng:ref name="publicationStatus"/>
+              <rng:ref name="localControl"/>
+              <rng:ref name="maintenanceHistory"/>
+            </rng:group>
+          </content>
+        </elementSpec>
+        
+        <elementSpec ident="date">
+          <gloss>Date</gloss>
+          <desc></desc>
+          <content>
+            <rng:empty/>
+          </content>
+          <attList>
+            <attDef ident="when" usage="req">
+              <datatype>
+                <rng:data type="date"/>
+              </datatype>
+            </attDef>
+            <attDef ident="type" usage="req">
+              <valList type="closed">
+                <valItem ident="paris"/>
+                <valItem ident="suburbs"/>
+                <valItem ident="province"/>
+              </valList>
+            </attDef>
+          </attList>
+        </elementSpec>
+        
+        <elementSpec ident="description">
+          <gloss>Description</gloss>
+          <desc>Description related to the described expertise.</desc>
+          <desc></desc>
+          <content>
+            <rng:group>
+              <rng:ref name="sessions"/>
+              <rng:ref name="places"/>
+              <rng:ref name="categories"/>
+            </rng:group>
+          </content>
+        </elementSpec>
+        
+        <elementSpec ident="desc">
+          <gloss>Description</gloss>
+          <desc>Description related to an appendice.</desc>
+          <desc></desc>
+          <content>
+            <rng:text/>
+          </content>
+        </elementSpec>
+        
+        <elementSpec ident="designation">
+          <gloss>Designation</gloss>
+          <desc></desc>
+          <content>
+            <rng:text />
+          </content>
+          <attList>
+            <attDef ident="rubric" usage="req">
+              <valList type="closed">
+                <valItem ident="true"/>
+                <valItem ident="false"/>
+              </valList>
+            </attDef>  
+          </attList>
+        </elementSpec>
+        
+        <elementSpec ident="district">
+          <gloss>District</gloss>
+          <desc></desc>
+          <content>
+            <rng:text />
+          </content>
+        </elementSpec>
+        
+        <elementSpec ident="expertise" module="xpr">
+          <gloss>Expertise</gloss>
+          <desc>Contains the entire description of an expertise.</desc>
+          <content>
+            <rng:group>
+              <rng:ref name="meta"/>
+              <rng:ref name="control"/>
+              <rng:ref name="sourceDesc"/>
+              <rng:ref name="description"/>
+            </rng:group>
+          </content>
+          <attList>
+            <attDef ident="status">
+              <datatype>
+                <rng:text/>
+              </datatype>
+            </attDef>
+          </attList>
+        </elementSpec>
+        
+        <elementSpec ident="eventDateTime">
+          <!-- from EAC -->
+          <gloss>Maintenance Event Date and Time</gloss>
+          <desc>The date and time of a maintenance event for the expertise instance.</desc>
+          <content>
+            <rng:text/>
+          </content>
+          <attList>
+            <attDef ident="standardDateTime">
+              <datatype>
+                <rng:choice>
+                  <rng:data type="date">
+                    <rng:param name="maxInclusive">2099-12-31</rng:param>
+                  </rng:data>
+                  <rng:data type="gYear">
+                    <rng:param name="maxInclusive">2099</rng:param>
+                  </rng:data>
+                  <rng:data type="gYearMonth">
+                    <rng:param name="maxInclusive">2099-12</rng:param>
+                  </rng:data>
+                  <rng:data type="dateTime">
+                    <rng:param name="maxInclusive">2099-12-31T23:59:59</rng:param>
+                  </rng:data>
+                </rng:choice>
+              </datatype>
+            </attDef>
+          </attList>
+        </elementSpec>
+        
+        <elementSpec ident="eventType">
+          <gloss>Maintenance Event Type</gloss>
+          <desc>The type of maintenance event for the EAC-CPF instance.</desc>
+          <content>
+            <rng:choice>
+              <rng:value>cancelled</rng:value>
+              <rng:value>created</rng:value>
+              <rng:value>deleted</rng:value>
+              <rng:value>derived</rng:value>
+              <rng:value>revised</rng:value>
+              <rng:value>updated</rng:value>
+            </rng:choice>
+          </content>
+        </elementSpec>
+        
+        <elementSpec ident="eventDescription">
+          <!-- from EAC -->
+          <gloss>Maintenance Event Description</gloss>
+          <desc>The description of a maintenance event in the life of the expertise instance.</desc>
+          <content>
+            <rng:text/>
+          </content>
+        </elementSpec>
+        
+        <elementSpec ident="extent">
+          <!-- @todo schematron pour @sketch si physDesc/extent -->
+          <gloss>Extent</gloss>
+          <desc></desc>
+          <content>
+            <rng:data type="integer"/>
+          </content>
+          <attList>
+            <attDef ident="sketch" usage="opt">
+              <valList type="closed">
+                <valItem ident="true"/>
+                <valItem ident="false"/>
+              </valList>
+            </attDef>
+          </attList>
+        </elementSpec>
+        
+        <elementSpec ident="facsimile">
+          <gloss>Facsimile</gloss>
+          <desc></desc>
+          <content>
+            <rng:empty/>
+          </content>
+          <attList>
+            <attDef ident="from" usage="req">
+              <gloss>From</gloss>
+              <desc></desc>
+              <datatype>
+                <rng:data type="integer"/>
+              </datatype>
+            </attDef>
+            <attDef ident="to" usage="req">
+              <gloss>To</gloss>
+              <desc></desc>
+              <datatype>
+                <rng:data type="integer"/>
+              </datatype>
+            </attDef>
+          </attList>
+        </elementSpec>
+        
+        <elementSpec ident="idno">
+          <gloss>Identifier</gloss>
+          <desc></desc>
+          <attList>
+            <attDef ident="type" usage="req">
+              <valList type="closed">
+                <valItem ident="unitid"/>
+                <valItem ident="item"/>
+                <valItem ident="supplement"/>
+              </valList>
+            </attDef>
+          </attList>
+        </elementSpec>
+        
+        <elementSpec ident="localControl">
+          <!-- from EAC -->
+          <gloss>Local Control</gloss>
+          <desc>Any additional control entry necessary to accommodate local practice.</desc>
+          <content>
+            <rng:ref name="term"/>
+          </content>
+          <attList>
+            <attDef ident="localType">
+              <datatype>
+                <rng:choice>
+                  <rng:value>detailLevel</rng:value>
+                </rng:choice>
+              </datatype>
+            </attDef>
+          </attList>
+        </elementSpec>
+        
+        <elementSpec ident="maintenanceEvent">
+          <!-- from EAC -->
+          <gloss>Maintenance Event</gloss>
+          <desc>A maintenance event in the life of the expertise instance.</desc>
+          <content>
+            <rng:ref name="eventType"/>
+            <rng:ref name="eventDateTime"/>
+            <rng:ref name="agentType"/>
+            <rng:ref name="agent"/>
+            <rng:ref name="eventDescription"/>
+          </content>
+        </elementSpec>
+        
+        <elementSpec ident="maintenanceHistory">
+          <!-- from EAC -->
+          <gloss>Maintenance History</gloss>
+          <desc>The history of the creation and maintenance of the expertise instance.</desc>
+          <content>
+            <rng:oneOrMore>
+              <rng:ref name="maintenanceEvent"/>
+            </rng:oneOrMore>
+          </content>
+        </elementSpec>
+        
+        <elementSpec ident="maintenanceStatus">
+          <!-- from EAC -->
+          <gloss>Maintenance Status</gloss>
+          <desc>The current drafting status of the expertise instance.</desc>
+          <content>
+            <rng:choice>
+              <!-- @todo value -->
+              <rng:value>inProcess</rng:value>
+            </rng:choice>
+          </content>
+        </elementSpec>
+        
+        <elementSpec ident="meta">
+          <content>
+            <rng:text/>
+          </content>
+        </elementSpec>
+        
+        <elementSpec ident="note">
+          <gloss>Note</gloss>
+          <desc>Note related to an appendice.</desc>
+          <desc></desc>
+          <content>
+            <rng:text/>
+          </content>
+        </elementSpec>
+        
+        <elementSpec ident="owner">
+          <gloss>Owner</gloss>
+          <desc></desc>
+          <content>
+            <rng:text />
+          </content>
+        </elementSpec>
+        
+        <elementSpec ident="parish">
+          <gloss>Parish</gloss>
+          <desc></desc>
+          <content>
+            <rng:text />
+          </content>
+        </elementSpec>
+        
+        <elementSpec ident="physDesc">
+          <gloss>Physical Description</gloss>
+          <desc>Physical description of the expertise</desc>
+          <content>
+            <rng:group>
+              <rng:ref name="extent"/>
+              <rng:ref name="appendices"/>
+            </rng:group>
+          </content>
+        </elementSpec>
+        
+        <elementSpec ident="place">
+          <gloss>Place</gloss>
+          <desc></desc>
+          <content>
+            <rng:group>
+              <rng:ref name="address"/>
+              <rng:ref name="complement"/>
+              <rng:ref name="parish"/>
+              <rng:ref name="city"/>
+              <rng:ref name="district"/>
+              <rng:oneOrMore>
+                <rng:ref name="owner"/>
+              </rng:oneOrMore>
+            </rng:group>
+          </content>
+          <attList>
+            <attDef ident="type">
+              <valList type="closed">
+                <valItem ident="paris"/>
+                <valItem ident="suburbs"/>
+                <valItem ident="province"/>
+                <valItem ident="office"/>
+                <valItem ident="clerkOffice"/>
+                <valItem ident="indeterminate"/>
+              </valList>
+            </attDef>
+          </attList>
+        </elementSpec>
+        
+        <elementSpec ident="places">
+          <gloss>Places</gloss>
+          <desc></desc>
+          <content>
+            <rng:group>
+              <rng:oneOrMore>
+                <rng:ref name="place"/>
+              </rng:oneOrMore>
+            </rng:group>
+          </content>
+        </elementSpec>
+        
+        <elementSpec ident="publicationStatus">
+          <!-- from EAC -->
+          <gloss>Publication Status</gloss>
+          <desc>The current publication status of the expertise instance.</desc>
+          <content>
+            <rng:choice>
+              <rng:value>inProcess</rng:value>
+              <rng:value>approved</rng:value>
+            </rng:choice>
+          </content>
+        </elementSpec>
+        
+        <elementSpec ident="sessions">
+          <gloss>Sessions</gloss>
+          <desc></desc>
+          <content>
+            <rng:oneOrMore>
+              <rng:ref name="date"/>
+            </rng:oneOrMore>
+          </content>
+        </elementSpec>
+        
+        <elementSpec ident="sourceDesc">
+          <gloss>Source Description</gloss>
+          <desc>Contains bibliographic and physical description of an expertise.</desc>
+          <content>
+            <rng:group>
+              <rng:oneOrMore>
+                <!-- @todo 2 ou 3max => règle schematron pour l'ordre ?-->
+                <rng:ref name="idno" atLeast="2" atMost="3"/>
+              </rng:oneOrMore>
+              <rng:ref name="facsimile" />
+              <rng:ref name="physDesc" />
+            </rng:group>
+          </content>
+        </elementSpec>
+        
+        <elementSpec ident="street">
+          <gloss>Street</gloss>
+          <desc></desc>
+          <content>
+            <rng:text />
+          </content>
+        </elementSpec>
+        
+        <elementSpec ident="term">
+          <!-- from EAC -->
+          <gloss>Term</gloss>
+          <desc>A generic element used to encode a descriptive term in accordance with local descriptive rules.</desc>
+          <content>
+            <rng:text/>
+          </content>
+        </elementSpec>
+        
+        <elementSpec ident="type">
+          <gloss>Type</gloss>
+          <desc></desc>
+          <content>
+            <rng:text/>
+          </content>
+          <attList>
+            <attDef ident="type" usage="req">
+              <valList type="closed">
+                <valItem ident="drawing"/>
+                <valItem ident="plan"/>
+                <valItem ident="sketch"/>
+                <valItem ident="rough"/>
+                <valItem ident="proxyPA"/>
+                <valItem ident="proxyNa"/>
+                <valItem ident="petition"/>
+                <valItem ident="other"/>
+              </valList>
+            </attDef>
+          </attList>
+        </elementSpec>
+        
+      </schemaSpec>
+    </body>
+  </text>
+</TEI>
