@@ -9,7 +9,7 @@ declare default element namespace "xpr" ;
 (:
  : path to xprdata files
  : @rmq to be modified for online/local use
- : @sardinecan : /Users/josselinmorvan/files/dh/xpr/data/xpr
+ : @sardinecan : /Users/josselinmorvan/files/dh/xpr/data/db
  : @huma-num server : /sites/expertdb/resource/data/db
 :)
 declare variable $path := '/sites/expertdb/resource/data/db';
@@ -21,7 +21,7 @@ declare
 %updating
 function local:mkdb() {
     db:create(
-    'xprN',
+    'xpr',
     $path,
     '',
     map{
