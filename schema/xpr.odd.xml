@@ -5,6 +5,8 @@
   xmlns:svg="http://www.w3.org/2000/svg"
   xmlns:math="http://www.w3.org/1998/Math/MathML" 
   xmlns:rng="http://relaxng.org/ns/structure/1.0"
+  xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+  xmlns:xpr="xpr"
   xmlns:eg="http://www.tei-c.org/ns/Examples">
   <teiHeader>
     <fileDesc>
@@ -336,15 +338,29 @@
           </attList>
         </elementSpec>
         
-        <elementSpec ident="idno">
+        <elementSpec ident="idno" ns="xpr">
           <gloss>Identifier</gloss>
           <desc></desc>
+          <constraintSpec ident="idnoType" scheme="schematron">
+            <constraint>
+              <sch:ns prefix="xpr" uri="xpr"/>
+              <sch:rule context="xpr:sourceDesc[count(xpr:idno) = 2]">
+                <sch:assert test="xpr:idno[1][@type='unitid']">Le premier idno doit être de type 'unitid'</sch:assert>
+                <sch:assert test="xpr:idno[2][@type='item']">Le second idno doit être de type 'item'</sch:assert>
+              </sch:rule>
+              <sch:rule context="xpr:sourceDesc[count(xpr:idno) = 3]">
+                <sch:assert test="xpr:idno[1][@type='unitid']">Le premier idno doit être de type 'unitid'</sch:assert>
+                <sch:assert test="xpr:idno[2][@type='item']">Le second idno doit être de type 'item'</sch:assert>
+                <sch:assert test="xpr:idno[3][@type='supplement']">Le troisième idno doit être de type 'supplement'</sch:assert>
+              </sch:rule>
+            </constraint>
+          </constraintSpec>
           <attList>
             <attDef ident="type" usage="req">
               <valList type="closed">
                 <valItem ident="unitid"/>
                 <valItem ident="item"/>
-                <valItem ident="supplement"/>
+                <valItem ident="supplement"></valItem>
               </valList>
             </attDef>
           </attList>
@@ -513,14 +529,11 @@
           <gloss>Source Description</gloss>
           <desc>Contains bibliographic and physical description of an expertise.</desc>
           <content>
-            <rng:group>
-              <rng:oneOrMore>
-                <!-- @todo 2 ou 3max => règle schematron pour l'ordre ?-->
-                <rng:ref name="idno" atLeast="2" atMost="3"/>
-              </rng:oneOrMore>
-              <rng:ref name="facsimile" />
-              <rng:ref name="physDesc" />
-            </rng:group>
+            <sequence>
+              <elementRef key="idno" minOccurs="2" maxOccurs="3"/>
+              <elementRef key="facsimile"/>
+              <elementRef key="physDesc"/>
+            </sequence>
           </content>
         </elementSpec>
         
