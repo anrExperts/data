@@ -6,6 +6,7 @@
   xmlns:math="http://www.w3.org/1998/Math/MathML" 
   xmlns:rng="http://relaxng.org/ns/structure/1.0"
   xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+  xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns:xpr="xpr"
   xmlns:eg="http://www.tei-c.org/ns/Examples">
   <teiHeader>
@@ -29,8 +30,10 @@
           <gloss>Address</gloss>
           <desc></desc>
           <content>
-            <rng:ref name="street"/>
-            <rng:ref name="buildingNumber"/>
+            <sequence>
+              <elementRef key="street"/>
+              <elementRef key="buildingNumber"/>
+            </sequence>
           </content>
         </elementSpec>
         
@@ -39,7 +42,7 @@
           <gloss>Agent</gloss>
           <desc>The agent (human or machine) responsible for an event in the maintenance of the expertise instance.</desc>
           <content>
-            <rng:text/>
+            <textNode/>
           </content>
         </elementSpec>
         
@@ -48,25 +51,30 @@
           <gloss>Agent Type</gloss>
           <desc>Type of agent responsible for a maintenance event of the expertise instance</desc>
           <content>
-            <rng:choice>
-              <rng:value>human</rng:value>
-              <rng:value>machine</rng:value>
-            </rng:choice>
+            <alternate>
+              <textNode/>
+            </alternate>
           </content>
+          <constraintSpec scheme="schematron" ident="agentTypeValues">
+            <constraint>
+              <sch:ns prefix="xpr" uri="xpr"/>
+              <sch:rule context="xpr:agentType">
+                <sch:assert test="normalize-space(.) = 'human' or normalize-space(.) = 'machine'">La valeur de l'élément agentType doit correspondre à "human" ou "machine".</sch:assert>
+              </sch:rule>
+            </constraint>  
+          </constraintSpec>
         </elementSpec>
         
         <elementSpec ident="appendice">
           <gloss>Appendice</gloss>
           <desc></desc>
           <content>
-            <rng:group>
-              <rng:oneOrMore>
-                <rng:ref name="type"/>
-              </rng:oneOrMore>
-              <rng:ref name="extent"/>
-              <rng:ref name="desc"/>
-              <rng:ref name="note"/>
-            </rng:group>
+            <sequence>
+              <elementRef key="type" minOccurs="1" maxOccurs="unbounded"/>
+              <elementRef key="extent"/>
+              <elementRef key="desc"/>
+              <elementRef key="note"/>
+            </sequence>
           </content>
         </elementSpec>
         
@@ -74,9 +82,7 @@
           <gloss>Appendices</gloss>
           <desc></desc>
           <content>
-            <rng:oneOrMore>
-              <rng:ref name="appendice"/>
-            </rng:oneOrMore>
+            <elementRef key="appendice" minOccurs="1" maxOccurs="unbounded"/>
           </content>
         </elementSpec>
         
@@ -84,7 +90,7 @@
           <gloss>Building Number</gloss>
           <desc></desc>
           <content>
-            <rng:text />
+            <textNode/>
           </content>
         </elementSpec>
         
@@ -93,14 +99,35 @@
           <gloss>Category</gloss>
           <desc></desc>
           <content>
-            <valList>
+            <textNode/>
+            <!--<valList>
               <valItem ident="Décrire et évaluer les travaux à venir"/>
               <valItem ident="Départager"/>
               <valItem ident="Enregistrer"/>
               <valItem ident="Estimer la valeur des biens"/>
               <valItem ident="Recevoir et évaluer le travail réalisé"/>
-            </valList>
+            </valList>-->
           </content>
+          <constraintSpec scheme="schematron" ident="categoryValues">
+            <constraint>
+              <sch:ns prefix="xpr" uri="xpr"/>
+              <sch:rule context="xpr:category">
+                <sch:let name="content" value="normalize-space(.)"/>
+                <sch:let name="type" value="@type"/>
+                <sch:let name="value">
+                  <xsl:choose>
+                    <xsl:when test="$type = 'assessment'"><xsl:text>Décrire et évaluer les travaux à venir</xsl:text></xsl:when>
+                    <xsl:when test="$type = 'settlement'"><xsl:text>Départager</xsl:text></xsl:when>
+                    <xsl:when test="$type = 'registration'"><xsl:text>Enregistrer</xsl:text></xsl:when>
+                    <xsl:when test="$type = 'estimation'"><xsl:text>Estimer la valeur des biens</xsl:text></xsl:when>
+                    <xsl:when test="$type = 'acceptation'"><xsl:text>Recevoir et évaluer le travail réalisé</xsl:text></xsl:when>
+                    <xsl:otherwise/>
+                  </xsl:choose>
+                </sch:let>
+                <sch:assert test="$content = $value">La valeur de l'élément category doit correspondre à "<sch:value-of select="$value"/>".</sch:assert>
+              </sch:rule>
+            </constraint>
+          </constraintSpec>
           <attList>
             <attDef ident="type" usage="req">
               <valList type="closed">
@@ -118,11 +145,11 @@
           <gloss>Categories</gloss>
           <desc></desc>
           <content>
-            <rng:group>
+            <sequence>
               <!-- @rmq un ou plus (category) -->
-              <rng:ref name="category" />
-              <rng:ref name="designation" />
-            </rng:group>
+              <elementRef key="category"/>
+              <elementRef key="designation"/>
+            </sequence>
           </content>
         </elementSpec>
         
@@ -130,7 +157,7 @@
           <gloss>City</gloss>
           <desc></desc>
           <content>
-            <rng:text />
+            <textNode/>
           </content>
         </elementSpec>
         
@@ -138,7 +165,7 @@
           <gloss>Complement</gloss>
           <desc></desc>
           <content>
-            <rng:text />
+            <textNode/>
           </content>
         </elementSpec>
         
@@ -147,12 +174,12 @@
           <gloss>Control</gloss>
           <desc>The element of the instance that contains control information about its identity, creation, maintenance, status, and the rules and authorities used in the composition of the description.</desc>
           <content>
-            <rng:group>
-              <rng:ref name="maintenanceStatus"/>
-              <rng:ref name="publicationStatus"/>
-              <rng:ref name="localControl"/>
-              <rng:ref name="maintenanceHistory"/>
-            </rng:group>
+            <sequence>
+              <elementRef key="maintenanceStatus"/>
+              <elementRef key="publicationStatus"/>
+              <elementRef key="localControl"/>
+              <elementRef key="maintenanceHistory"/>
+            </sequence>
           </content>
         </elementSpec>
         
@@ -160,12 +187,12 @@
           <gloss>Date</gloss>
           <desc></desc>
           <content>
-            <rng:empty/>
+            <empty/>
           </content>
           <attList>
             <attDef ident="when" usage="req">
               <datatype>
-                <rng:data type="date"/>
+                <dataRef name="date"/>
               </datatype>
             </attDef>
             <attDef ident="type" usage="req">
@@ -183,11 +210,11 @@
           <desc>Description related to the described expertise.</desc>
           <desc></desc>
           <content>
-            <rng:group>
-              <rng:ref name="sessions"/>
-              <rng:ref name="places"/>
-              <rng:ref name="categories"/>
-            </rng:group>
+            <sequence>
+              <elementRef key="sessions"/>
+              <elementRef key="places"/>
+              <elementRef key="categories"/>
+            </sequence>
           </content>
         </elementSpec>
         
@@ -196,7 +223,7 @@
           <desc>Description related to an appendice.</desc>
           <desc></desc>
           <content>
-            <rng:text/>
+            <textNode/>
           </content>
         </elementSpec>
         
@@ -204,7 +231,7 @@
           <gloss>Designation</gloss>
           <desc></desc>
           <content>
-            <rng:text />
+            <textNode/>
           </content>
           <attList>
             <attDef ident="rubric" usage="req">
@@ -220,7 +247,7 @@
           <gloss>District</gloss>
           <desc></desc>
           <content>
-            <rng:text />
+            <textNode/>
           </content>
         </elementSpec>
         
@@ -228,17 +255,18 @@
           <gloss>Expertise</gloss>
           <desc>Contains the entire description of an expertise.</desc>
           <content>
-            <rng:group>
-              <rng:ref name="meta"/>
-              <rng:ref name="control"/>
-              <rng:ref name="sourceDesc"/>
-              <rng:ref name="description"/>
-            </rng:group>
+            <sequence>
+              <elementRef key="meta"/>
+              <elementRef key="control"/>
+              <elementRef key="sourceDesc"/>
+              <elementRef key="description"/>
+            </sequence>
           </content>
           <attList>
             <attDef ident="status">
+              <!-- @quest à maintenir ? je ne crois pas que nous avions défini de valeur -->
               <datatype>
-                <rng:text/>
+                <dataRef key="teidata.text"/>
               </datatype>
             </attDef>
           </attList>
@@ -249,25 +277,14 @@
           <gloss>Maintenance Event Date and Time</gloss>
           <desc>The date and time of a maintenance event for the expertise instance.</desc>
           <content>
-            <rng:text/>
+            <textNode/>
           </content>
           <attList>
             <attDef ident="standardDateTime">
               <datatype>
-                <rng:choice>
-                  <rng:data type="date">
-                    <rng:param name="maxInclusive">2099-12-31</rng:param>
-                  </rng:data>
-                  <rng:data type="gYear">
-                    <rng:param name="maxInclusive">2099</rng:param>
-                  </rng:data>
-                  <rng:data type="gYearMonth">
-                    <rng:param name="maxInclusive">2099-12</rng:param>
-                  </rng:data>
-                  <rng:data type="dateTime">
-                    <rng:param name="maxInclusive">2099-12-31T23:59:59</rng:param>
-                  </rng:data>
-                </rng:choice>
+                <!-- @rmq ne fonctionne pas !? -->
+                <dataRef key="teidata.temporal.w3c"/>
+                <!--<dataRef name="dateTime"/>-->
               </datatype>
             </attDef>
           </attList>
@@ -277,15 +294,19 @@
           <gloss>Maintenance Event Type</gloss>
           <desc>The type of maintenance event for the EAC-CPF instance.</desc>
           <content>
-            <rng:choice>
-              <rng:value>cancelled</rng:value>
-              <rng:value>created</rng:value>
-              <rng:value>deleted</rng:value>
-              <rng:value>derived</rng:value>
-              <rng:value>revised</rng:value>
-              <rng:value>updated</rng:value>
-            </rng:choice>
+            <textNode/>
           </content>
+          <constraintSpec ident="eventType" scheme="schematron">
+            <constraint>
+              <sch:ns prefix="xpr" uri="xpr"/>
+              <sch:rule context="xpr:eventType">
+                <sch:let name="node" value="local-name()"/>
+                <sch:let name="content" value="normalize-space(.)"/>
+                <sch:let name="value" value="('cancelled', 'created', 'deleted', 'derived', 'revised', 'updated')"/>
+                <sch:assert test="$content = $value">La valeur de l'élément &lt;<sch:value-of select="$node"/>&gt; doit correspondre à : <sch:value-of select="string-join($value, ', ')"/></sch:assert>
+              </sch:rule>
+            </constraint>
+          </constraintSpec>
         </elementSpec>
         
         <elementSpec ident="eventDescription">
@@ -293,7 +314,7 @@
           <gloss>Maintenance Event Description</gloss>
           <desc>The description of a maintenance event in the life of the expertise instance.</desc>
           <content>
-            <rng:text/>
+            <textNode/>
           </content>
         </elementSpec>
         
@@ -302,8 +323,16 @@
           <gloss>Extent</gloss>
           <desc></desc>
           <content>
-            <rng:data type="integer"/>
+            <textNode/>
           </content>
+          <constraintSpec ident="extentContent" scheme="schematron">
+            <constraint>
+              <sch:ns prefix="xpr" uri="xpr"/>
+              <sch:rule context="xpr:extent">
+                <sch:assert test="number(.) castable as xs:integer">Le contenu de l'élément &lt;extent&gt; doit être un nombre.</sch:assert>
+              </sch:rule>
+            </constraint>
+          </constraintSpec>
           <attList>
             <attDef ident="sketch" usage="opt">
               <valList type="closed">
@@ -318,21 +347,21 @@
           <gloss>Facsimile</gloss>
           <desc></desc>
           <content>
-            <rng:empty/>
+            <empty/>
           </content>
           <attList>
             <attDef ident="from" usage="req">
               <gloss>From</gloss>
               <desc></desc>
               <datatype>
-                <rng:data type="integer"/>
+                <dataRef name="integer"/>
               </datatype>
             </attDef>
             <attDef ident="to" usage="req">
               <gloss>To</gloss>
               <desc></desc>
               <datatype>
-                <rng:data type="integer"/>
+                <dataRef name="integer"/>
               </datatype>
             </attDef>
           </attList>
@@ -371,15 +400,13 @@
           <gloss>Local Control</gloss>
           <desc>Any additional control entry necessary to accommodate local practice.</desc>
           <content>
-            <rng:ref name="term"/>
+            <elementRef key="term"/>
           </content>
           <attList>
             <attDef ident="localType">
-              <datatype>
-                <rng:choice>
-                  <rng:value>detailLevel</rng:value>
-                </rng:choice>
-              </datatype>
+              <valList type="closed">
+                <valItem ident="detailLevel"/>
+              </valList>
             </attDef>
           </attList>
         </elementSpec>
@@ -389,11 +416,13 @@
           <gloss>Maintenance Event</gloss>
           <desc>A maintenance event in the life of the expertise instance.</desc>
           <content>
-            <rng:ref name="eventType"/>
-            <rng:ref name="eventDateTime"/>
-            <rng:ref name="agentType"/>
-            <rng:ref name="agent"/>
-            <rng:ref name="eventDescription"/>
+            <sequence>
+              <elementRef key="eventType"/>
+              <elementRef key="eventDateTime"/>
+              <elementRef key="agentType"/>
+              <elementRef key="agent"/>
+              <elementRef key="eventDescription"/>
+            </sequence>
           </content>
         </elementSpec>
         
@@ -402,9 +431,9 @@
           <gloss>Maintenance History</gloss>
           <desc>The history of the creation and maintenance of the expertise instance.</desc>
           <content>
-            <rng:oneOrMore>
-              <rng:ref name="maintenanceEvent"/>
-            </rng:oneOrMore>
+            <sequence>
+              <elementRef key="maintenanceEvent" minOccurs="1" maxOccurs="unbounded"/>
+            </sequence>
           </content>
         </elementSpec>
         
@@ -413,16 +442,24 @@
           <gloss>Maintenance Status</gloss>
           <desc>The current drafting status of the expertise instance.</desc>
           <content>
-            <rng:choice>
-              <!-- @todo value -->
-              <rng:value>inProcess</rng:value>
-            </rng:choice>
+            <textNode/>
           </content>
+          <constraintSpec ident="maintenanceStatusValues" scheme="schematron">
+            <constraint>
+              <sch:ns prefix="xpr" uri="xpr"/>
+              <sch:rule context="xpr:maintenanceStatus">
+                <sch:let name="node" value="local-name()"/>
+                <sch:let name="content" value="normalize-space(.)"/>
+                <sch:let name="value" value="('inProcess', 'approved')"/>
+                  <sch:assert test="$content = $value">La valeur de l'élément &lt;<sch:value-of select="$node"/>&gt; doit correspondre à : <sch:value-of select="string-join($value, ', ')"/></sch:assert>
+              </sch:rule>
+            </constraint>
+          </constraintSpec>
         </elementSpec>
         
         <elementSpec ident="meta">
           <content>
-            <rng:text/>
+            <textNode/>
           </content>
         </elementSpec>
         
@@ -431,7 +468,7 @@
           <desc>Note related to an appendice.</desc>
           <desc></desc>
           <content>
-            <rng:text/>
+            <textNode/>
           </content>
         </elementSpec>
         
@@ -439,7 +476,7 @@
           <gloss>Owner</gloss>
           <desc></desc>
           <content>
-            <rng:text />
+            <textNode/>
           </content>
         </elementSpec>
         
@@ -447,7 +484,7 @@
           <gloss>Parish</gloss>
           <desc></desc>
           <content>
-            <rng:text />
+            <textNode/>
           </content>
         </elementSpec>
         
@@ -455,10 +492,10 @@
           <gloss>Physical Description</gloss>
           <desc>Physical description of the expertise</desc>
           <content>
-            <rng:group>
-              <rng:ref name="extent"/>
-              <rng:ref name="appendices"/>
-            </rng:group>
+            <sequence>
+              <elementRef key="extent"/>
+              <elementRef key="appendices"/>
+            </sequence>
           </content>
         </elementSpec>
         
@@ -466,16 +503,14 @@
           <gloss>Place</gloss>
           <desc></desc>
           <content>
-            <rng:group>
-              <rng:ref name="address"/>
-              <rng:ref name="complement"/>
-              <rng:ref name="parish"/>
-              <rng:ref name="city"/>
-              <rng:ref name="district"/>
-              <rng:oneOrMore>
-                <rng:ref name="owner"/>
-              </rng:oneOrMore>
-            </rng:group>
+            <sequence>
+              <elementRef key="address"/>
+              <elementRef key="complement"/>
+              <elementRef key="parish"/>
+              <elementRef key="city"/>
+              <elementRef key="district"/>
+              <elementRef key="owner" minOccurs="1" maxOccurs="unbounded"/>
+            </sequence>
           </content>
           <attList>
             <attDef ident="type">
@@ -495,11 +530,9 @@
           <gloss>Places</gloss>
           <desc></desc>
           <content>
-            <rng:group>
-              <rng:oneOrMore>
-                <rng:ref name="place"/>
-              </rng:oneOrMore>
-            </rng:group>
+            <sequence>
+              <elementRef key="place" minOccurs="1" maxOccurs="unbounded"/>
+            </sequence>
           </content>
         </elementSpec>
         
@@ -508,20 +541,28 @@
           <gloss>Publication Status</gloss>
           <desc>The current publication status of the expertise instance.</desc>
           <content>
-            <rng:choice>
-              <rng:value>inProcess</rng:value>
-              <rng:value>approved</rng:value>
-            </rng:choice>
+            <textNode/>
           </content>
+          <constraintSpec ident="publicationStatusValues" scheme="schematron">
+            <constraint>
+              <sch:ns prefix="xpr" uri="xpr"/>
+              <sch:rule context="xpr:publicationStatus">
+                <sch:let name="node" value="local-name()"/>
+                <sch:let name="content" value="normalize-space(.)"/>
+                <sch:let name="value" value="('inProcess', 'approved')"/>
+                <sch:assert test="$content = $value">La valeur de l'élément &lt;<sch:value-of select="$node"/>&gt; doit correspondre à : <sch:value-of select="string-join($value, ', ')"/></sch:assert>
+              </sch:rule>
+            </constraint>
+          </constraintSpec>
         </elementSpec>
         
         <elementSpec ident="sessions">
           <gloss>Sessions</gloss>
           <desc></desc>
           <content>
-            <rng:oneOrMore>
-              <rng:ref name="date"/>
-            </rng:oneOrMore>
+            <sequence>
+              <elementRef key="date"/>
+            </sequence>
           </content>
         </elementSpec>
         
@@ -541,7 +582,7 @@
           <gloss>Street</gloss>
           <desc></desc>
           <content>
-            <rng:text />
+            <textNode/>
           </content>
         </elementSpec>
         
@@ -550,7 +591,7 @@
           <gloss>Term</gloss>
           <desc>A generic element used to encode a descriptive term in accordance with local descriptive rules.</desc>
           <content>
-            <rng:text/>
+            <textNode/>
           </content>
         </elementSpec>
         
@@ -558,7 +599,7 @@
           <gloss>Type</gloss>
           <desc></desc>
           <content>
-            <rng:text/>
+            <textNode/>
           </content>
           <attList>
             <attDef ident="type" usage="req">
