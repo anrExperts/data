@@ -94,24 +94,25 @@
           </content>
         </elementSpec>
         
+        <elementSpec ident="case">
+          <gloss>Case</gloss>
+          <desc></desc>
+          <content>
+            <textNode/>
+          </content>
+        </elementSpec>
+        
         <elementSpec ident="category">
-          <!-- @todo schematron correspondance valeur de l'élément et de l'attribut -->
           <gloss>Category</gloss>
           <desc></desc>
           <content>
             <textNode/>
-            <!--<valList>
-              <valItem ident="Décrire et évaluer les travaux à venir"/>
-              <valItem ident="Départager"/>
-              <valItem ident="Enregistrer"/>
-              <valItem ident="Estimer la valeur des biens"/>
-              <valItem ident="Recevoir et évaluer le travail réalisé"/>
-            </valList>-->
           </content>
           <constraintSpec scheme="schematron" ident="categoryValues">
             <constraint>
               <sch:ns prefix="xpr" uri="xpr"/>
               <sch:rule context="xpr:category">
+                <sch:let name="node" value="local-name()"/>
                 <sch:let name="content" value="normalize-space(.)"/>
                 <sch:let name="type" value="@type"/>
                 <sch:let name="value">
@@ -124,7 +125,7 @@
                     <xsl:otherwise/>
                   </xsl:choose>
                 </sch:let>
-                <sch:assert test="$content = $value">La valeur de l'élément category doit correspondre à "<sch:value-of select="$value"/>".</sch:assert>
+                <sch:assert test="$content = $value">Compte tenu du type sélectionné (<sch:value-of select="$type"/>), la valeur de l'élément &lt;<sch:value-of select="$node"/>&gt; doit correspondre à "<sch:value-of select="$value"/>".</sch:assert>
               </sch:rule>
             </constraint>
           </constraintSpec>
@@ -161,6 +162,29 @@
           </content>
         </elementSpec>
         
+        <elementSpec ident="clerk">
+          <gloss>Clerk</gloss>
+          <desc></desc>
+          <classes>
+            <memberOf key="att.canonical"/>
+          </classes>
+          <content>
+            <sequence>
+              <elementRef key="persName"/>
+            </sequence>
+          </content>
+        </elementSpec>
+        
+        <elementSpec ident="clerks">
+          <gloss>Clerks</gloss>
+          <desc></desc>
+          <content>
+            <sequence>
+              <elementRef key="clerk" minOccurs="1" maxOccurs="unbounded"/>
+            </sequence>
+          </content>
+        </elementSpec>
+        
         <elementSpec ident="complement">
           <gloss>Complement</gloss>
           <desc></desc>
@@ -187,15 +211,28 @@
           <gloss>Date</gloss>
           <desc></desc>
           <content>
-            <empty/>
+            <textNode/>
           </content>
+          <constraintSpec scheme="schematron" ident="dateValues">
+            <constraint>
+              <sch:ns prefix="xpr" uri="xpr"/>
+              <sch:rule context="xpr:date[parent::xpr:sessions]">
+                <sch:let name="node" value="local-name()"/>
+                <sch:assert test="@type and .=''">Aucun contenu autorisé au sein de l'élément &lt;<sch:value-of select="$node"/>&gt;.</sch:assert>
+              </sch:rule>
+              <sch:rule context="xpr:date[parent::xpr:sentence]">
+                <sch:let name="node" value="local-name()"/>
+                <sch:assert test="not(@type)">l'attribut @type n'est pas autorisé dans ce contexte .</sch:assert>
+              </sch:rule>
+            </constraint>
+          </constraintSpec>
           <attList>
             <attDef ident="when" usage="req">
               <datatype>
                 <dataRef name="date"/>
               </datatype>
             </attDef>
-            <attDef ident="type" usage="req">
+            <attDef ident="type" usage="opt">
               <valList type="closed">
                 <valItem ident="paris"/>
                 <valItem ident="suburbs"/>
@@ -214,6 +251,8 @@
               <elementRef key="sessions"/>
               <elementRef key="places"/>
               <elementRef key="categories"/>
+              <elementRef key="procedure"/>
+              <elementRef key="participants"/>
             </sequence>
           </content>
         </elementSpec>
@@ -318,6 +357,79 @@
           </content>
         </elementSpec>
         
+        <elementSpec ident="expert">
+          <gloss>Expert</gloss>
+          <desc></desc>
+          <content>
+            <elementRef key="title"/>
+          </content>
+          
+          <attList>
+            <attDef ident="ref" usage="req">
+              <gloss>Ref</gloss>
+              <desc></desc>
+              <datatype>
+                <!-- @rmq ne semble pas fonctionner -->
+                <dataRef key="teidata.pointer"/>
+              </datatype>
+            </attDef>
+            <attDef ident="context" usage="req">
+              <gloss>Context</gloss>
+              <desc>Qualité de l’expert</desc>
+              <valList type="closed">
+                <valItem ident="primary">
+                  <gloss>primary</gloss>
+                  <desc>premier lieu</desc>
+                </valItem>
+                <valItem ident="third-party">
+                  <gloss>third-party</gloss>
+                  <desc>tiers expert</desc>
+                </valItem>
+                <valItem ident="unknown">
+                  <gloss>unknown</gloss>
+                  <desc>indéterminé</desc>
+                </valItem>
+              </valList>
+            </attDef>
+            <attDef ident="appointment" usage="req">
+              <gloss>Appointment</gloss>
+              <desc>Origine de la nomination</desc>
+              <valList type="closed">
+                <valItem ident="court-appointed">
+                  <gloss>court-appointed</gloss>
+                  <desc>d’office (par une institution)</desc>
+                </valItem>
+                <valItem ident="appointed">
+                  <gloss>appointed</gloss>
+                  <desc>par les parties</desc>
+                </valItem>
+                <valItem ident="experts">
+                  <gloss>experts</gloss>
+                  <desc>par les experts</desc>
+                </valItem>
+                <valItem ident="mixed">
+                  <gloss>mixed</gloss>
+                  <desc>mixte</desc>
+                </valItem>
+                <valItem ident="unknown">
+                  <gloss>unknown</gloss>
+                  <desc>indéterminé</desc>
+                </valItem>
+              </valList>
+            </attDef>
+          </attList>
+        </elementSpec>
+        
+        <elementSpec ident="experts">
+          <gloss>Experts</gloss>
+          <desc></desc>
+          <content>
+            <sequence>
+              <elementRef key="expert" minOccurs="1" maxOccurs="unbounded"/>
+            </sequence>
+          </content>
+        </elementSpec>
+        
         <elementSpec ident="extent">
           <!-- @todo schematron pour @sketch si physDesc/extent -->
           <gloss>Extent</gloss>
@@ -367,9 +479,50 @@
           </attList>
         </elementSpec>
         
+        <elementSpec ident="framework">
+          <gloss>Cadre de l'expertise</gloss>
+          <desc></desc>
+          <content>
+            <textNode/>
+          </content>
+          <constraintSpec scheme="schematron" ident="frameworkValues">
+            <constraint>
+              <sch:ns prefix="xpr" uri="xpr"/>
+              <sch:rule context="xpr:framework">
+                <sch:let name="node" value="local-name()"/>
+                <sch:let name="content" value="normalize-space(.)"/>
+                <sch:let name="type" value="@type"/>
+                <sch:let name="value">
+                  <xsl:choose>
+                    <xsl:when test="$type = 'a'"><xsl:text>Commun accord des parties</xsl:text></xsl:when>
+                    <xsl:when test="$type = 'b1'"><xsl:text>Requête auprès d’une institution pour qu’elle demande une expertise</xsl:text></xsl:when>
+                    <xsl:when test="$type = 'b2'"><xsl:text>L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</xsl:text></xsl:when>
+                    <xsl:when test="$type = 'c'"><xsl:text>Cas problématique</xsl:text></xsl:when>
+                    <xsl:otherwise/>
+                  </xsl:choose>
+                </sch:let>
+                <sch:assert test="$content = $value">Compte tenu du type sélectionné (<sch:value-of select="$type"/>), la valeur de l'élément &lt;<sch:value-of select="$node"/>&gt; doit correspondre à "<sch:value-of select="$value"/>".</sch:assert>
+              </sch:rule>
+            </constraint>
+          </constraintSpec>
+          <attList>
+            <attDef ident="type">
+              <valList type="closed">
+                <valItem ident="a"/>
+                <valItem ident="b1"/>
+                <valItem ident="b2"/>
+                <valItem ident="c"/>
+              </valList>
+            </attDef>
+          </attList>
+        </elementSpec>
+        
         <elementSpec ident="idno" ns="xpr">
           <gloss>Identifier</gloss>
           <desc></desc>
+          <content>
+            <textNode/>
+          </content>
           <constraintSpec ident="idnoType" scheme="schematron">
             <constraint>
               <sch:ns prefix="xpr" uri="xpr"/>
@@ -389,7 +542,7 @@
               <valList type="closed">
                 <valItem ident="unitid"/>
                 <valItem ident="item"/>
-                <valItem ident="supplement"></valItem>
+                <valItem ident="supplement"/>
               </valList>
             </attDef>
           </attList>
@@ -450,7 +603,7 @@
               <sch:rule context="xpr:maintenanceStatus">
                 <sch:let name="node" value="local-name()"/>
                 <sch:let name="content" value="normalize-space(.)"/>
-                <sch:let name="value" value="('inProcess', 'approved')"/>
+                <sch:let name="value" value="('new', 'revised')"/>
                   <sch:assert test="$content = $value">La valeur de l'élément &lt;<sch:value-of select="$node"/>&gt; doit correspondre à : <sch:value-of select="string-join($value, ', ')"/></sch:assert>
               </sch:rule>
             </constraint>
@@ -472,6 +625,103 @@
           </content>
         </elementSpec>
         
+        <elementSpec ident="object">
+          <gloss>Object</gloss>
+          <desc></desc>
+          <content>
+            <textNode/>
+          </content>
+          <constraintSpec scheme="schematron" ident="objectValues">
+            <constraint>
+              <sch:ns prefix="xpr" uri="xpr"/>
+              <sch:rule context="xpr:object[@type!='other']">
+                <sch:let name="node" value="local-name()"/>
+                <sch:let name="content" value="normalize-space(.)"/>
+                <sch:let name="type" value="@type"/>
+                <sch:let name="value">
+                  <xsl:choose>
+                    <xsl:when test="$type = 'house'"><xsl:text>Maison(s)</xsl:text></xsl:when>
+                    <xsl:when test="$type = 'plot'"><xsl:text>Terrain(s)</xsl:text></xsl:when>
+                    <xsl:when test="$type = 'buildings'"><xsl:text>Ensemble de bâtiments (biens immeubles)</xsl:text></xsl:when>
+                    <xsl:when test="$type = 'territory'"><xsl:text>Domaine, terres, fief</xsl:text></xsl:when>
+                    <xsl:when test="$type = 'wall'"><xsl:text>Mur(s)</xsl:text></xsl:when>
+                    <xsl:when test="$type = 'cesspool'"><xsl:text>Fosse(s) d'aisance</xsl:text></xsl:when>
+                    <xsl:when test="$type = 'well'"><xsl:text>Puits</xsl:text></xsl:when>
+                    <xsl:otherwise/>
+                  </xsl:choose>
+                </sch:let>
+                <sch:assert test="$content = $value">Compte tenu du type sélectionné (<sch:value-of select="$type"/>), la valeur de l'élément &lt;<sch:value-of select="$node"/>&gt; doit correspondre à "<sch:value-of select="$value"/>".</sch:assert>
+              </sch:rule>
+            </constraint>
+          </constraintSpec>
+          <attList>
+            <attDef ident="type">
+              <valList type="closed">
+                <valItem ident="house"/>
+                <valItem ident="plot"/>
+                <valItem ident="buildings"/>
+                <valItem ident="territory"/>
+                <valItem ident="wall"/>
+                <valItem ident="cesspool"/>
+                <valItem ident="well"/>
+                <valItem ident="other"/>
+              </valList>
+            </attDef>
+          </attList>
+        </elementSpec>
+        
+        <elementSpec ident="objects">
+          <gloss>Objects</gloss>
+          <desc></desc>
+          <content>
+            <sequence>
+              <elementRef key="object" minOccurs="1" maxOccurs="unbounded"/>
+            </sequence>
+          </content>
+        </elementSpec>
+        
+        <elementSpec ident="orgName">
+          <gloss>orgName</gloss>
+          <desc></desc>
+          <content>
+            <textNode/>
+          </content>
+        </elementSpec>
+        
+        <elementSpec ident="origination">
+          <gloss>Origine de l'expertise</gloss>
+          <desc></desc>
+          <content>
+            <textNode/>
+          </content>
+          <constraintSpec scheme="schematron" ident="originationValues">
+            <constraint>
+              <sch:ns prefix="xpr" uri="xpr"/>
+              <sch:rule context="xpr:origination">
+                <sch:let name="node" value="local-name()"/>
+                <sch:let name="content" value="normalize-space(.)"/>
+                <sch:let name="type" value="@type"/>
+                <sch:let name="value">
+                  <xsl:choose>
+                    <xsl:when test="$type = 'parties'"><xsl:text>Les parties</xsl:text></xsl:when>
+                    <xsl:when test="$type = 'institution'"><xsl:text>Une institution</xsl:text></xsl:when>
+                    <xsl:otherwise/>
+                  </xsl:choose>
+                </sch:let>
+                <sch:assert test="$content = $value">Compte tenu du type sélectionné (<sch:value-of select="$type"/>), la valeur de l'élément &lt;<sch:value-of select="$node"/>&gt; doit correspondre à "<sch:value-of select="$value"/>".</sch:assert>
+              </sch:rule>
+            </constraint>
+          </constraintSpec>
+          <attList>
+            <attDef ident="type">
+              <valList type="closed">
+                <valItem ident="parties"/>
+                <valItem ident="institution"/>
+              </valList>
+            </attDef>
+          </attList>
+        </elementSpec>
+        
         <elementSpec ident="owner">
           <gloss>Owner</gloss>
           <desc></desc>
@@ -488,6 +738,19 @@
           </content>
         </elementSpec>
         
+        <elementSpec ident="participants">
+          <gloss>Participants</gloss>
+          <desc></desc>
+          <content>
+            <sequence>
+              <elementRef key="experts"/>
+              <elementRef key="clerks"/>
+              <elementRef key="parties"/>
+              <elementRef key="craftmen"/>
+            </sequence>
+          </content>
+        </elementSpec>
+        
         <elementSpec ident="physDesc">
           <gloss>Physical Description</gloss>
           <desc>Physical description of the expertise</desc>
@@ -500,6 +763,7 @@
         </elementSpec>
         
         <elementSpec ident="place">
+          <!-- @todo faire schematron en fonction des types ? -->
           <gloss>Place</gloss>
           <desc></desc>
           <content>
@@ -507,8 +771,8 @@
               <elementRef key="address"/>
               <elementRef key="complement"/>
               <elementRef key="parish"/>
-              <elementRef key="city"/>
-              <elementRef key="district"/>
+              <elementRef key="city" minOccurs="0" maxOccurs="1"/>
+              <elementRef key="district" minOccurs="0" maxOccurs="1"/>
               <elementRef key="owner" minOccurs="1" maxOccurs="unbounded"/>
             </sequence>
           </content>
@@ -536,6 +800,20 @@
           </content>
         </elementSpec>
         
+        <elementSpec ident="procedure">
+          <gloss>Procédure</gloss>
+          <desc></desc>
+          <content>
+            <sequence>
+              <elementRef key="framework"/>
+              <elementRef key="origination"/>
+              <elementRef key="sentences"/>
+              <elementRef key="case"/>
+              <elementRef key="objects"/>
+            </sequence>
+          </content>
+        </elementSpec>
+        
         <elementSpec ident="publicationStatus">
           <!-- from EAC -->
           <gloss>Publication Status</gloss>
@@ -556,12 +834,33 @@
           </constraintSpec>
         </elementSpec>
         
+        <elementSpec ident="sentence">
+          <gloss>Sentence</gloss>
+          <desc></desc>
+          <content>
+            <sequence>
+              <elementRef key="orgName"/>
+              <elementRef key="date" minOccurs="1" maxOccurs="unbounded"/>
+            </sequence>
+          </content>
+        </elementSpec>
+        
+        <elementSpec ident="sentences">
+          <gloss>Sentences</gloss>
+          <desc></desc>
+          <content>
+            <sequence>
+              <elementRef key="sentence" minOccurs="1" maxOccurs="unbounded"/>
+            </sequence>
+          </content>
+        </elementSpec>
+        
         <elementSpec ident="sessions">
           <gloss>Sessions</gloss>
           <desc></desc>
           <content>
             <sequence>
-              <elementRef key="date"/>
+              <elementRef key="date" minOccurs="1" maxOccurs="unbounded"/>
             </sequence>
           </content>
         </elementSpec>
@@ -571,6 +870,7 @@
           <desc>Contains bibliographic and physical description of an expertise.</desc>
           <content>
             <sequence>
+              <elementRef key="unitdate"/>
               <elementRef key="idno" minOccurs="2" maxOccurs="3"/>
               <elementRef key="facsimile"/>
               <elementRef key="physDesc"/>
@@ -590,6 +890,14 @@
           <!-- from EAC -->
           <gloss>Term</gloss>
           <desc>A generic element used to encode a descriptive term in accordance with local descriptive rules.</desc>
+          <content>
+            <textNode/>
+          </content>
+        </elementSpec>
+        
+        <elementSpec ident="title">
+          <gloss>Title</gloss>
+          <desc></desc>
           <content>
             <textNode/>
           </content>
@@ -617,6 +925,22 @@
           </attList>
         </elementSpec>
         
+        <elementSpec ident="unitdate">
+          <gloss>Unitdate</gloss>
+          <desc></desc>
+          <content>
+            <textNode/>
+          </content>
+          <constraintSpec scheme="schematron" ident="unitdateControl">
+            <constraint>
+              <sch:ns prefix="xpr" uri="xpr"/>
+              <sch:rule context="xpr:unitdate">
+                <sch:let name="node" value="local-name()"/>
+                <sch:assert test="normalize-space(.) castable as xs:gYear">Le contenu de l'élément &lt;<sch:value-of select="$node"/>&gt; doit être de type xs:gYear.</sch:assert>
+              </sch:rule>
+            </constraint>
+          </constraintSpec>
+        </elementSpec>
       </schemaSpec>
     </body>
   </text>
