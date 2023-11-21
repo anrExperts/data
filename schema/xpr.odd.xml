@@ -166,7 +166,7 @@
           <gloss>Clerk</gloss>
           <desc></desc>
           <classes>
-            <memberOf key="att.canonical"/>
+            <memberOf key="att.pointer"/>
           </classes>
           <content>
             <sequence>
@@ -290,27 +290,6 @@
           </content>
         </elementSpec>
         
-        <elementSpec ident="expertise" module="xpr">
-          <gloss>Expertise</gloss>
-          <desc>Contains the entire description of an expertise.</desc>
-          <content>
-            <sequence>
-              <elementRef key="meta"/>
-              <elementRef key="control"/>
-              <elementRef key="sourceDesc"/>
-              <elementRef key="description"/>
-            </sequence>
-          </content>
-          <attList>
-            <attDef ident="status">
-              <!-- @quest à maintenir ? je ne crois pas que nous avions défini de valeur -->
-              <datatype>
-                <dataRef key="teidata.text"/>
-              </datatype>
-            </attDef>
-          </attList>
-        </elementSpec>
-        
         <elementSpec ident="eventDateTime">
           <!-- from EAC -->
           <gloss>Maintenance Event Date and Time</gloss>
@@ -360,19 +339,13 @@
         <elementSpec ident="expert">
           <gloss>Expert</gloss>
           <desc></desc>
+          <classes>
+            <memberOf key="att.pointer"/>
+          </classes>
           <content>
             <elementRef key="title"/>
           </content>
-          
           <attList>
-            <attDef ident="ref" usage="req">
-              <gloss>Ref</gloss>
-              <desc></desc>
-              <datatype>
-                <!-- @rmq ne semble pas fonctionner -->
-                <dataRef key="teidata.pointer"/>
-              </datatype>
-            </attDef>
             <attDef ident="context" usage="req">
               <gloss>Context</gloss>
               <desc>Qualité de l’expert</desc>
@@ -416,6 +389,30 @@
                   <desc>indéterminé</desc>
                 </valItem>
               </valList>
+            </attDef>
+          </attList>
+        </elementSpec>
+        
+        <elementSpec ident="expertise" module="xpr">
+          <gloss>Expertise</gloss>
+          <desc>Contains the entire description of an expertise.</desc>
+          <classes>
+            <memberOf key="att.global"/>
+          </classes>
+          <content>
+            <sequence>
+              <elementRef key="meta"/>
+              <elementRef key="control"/>
+              <elementRef key="sourceDesc"/>
+              <elementRef key="description"/>
+            </sequence>
+          </content>
+          <attList>
+            <attDef ident="status">
+              <!-- @quest à maintenir ? je ne crois pas que nous avions défini de valeur -->
+              <datatype>
+                <dataRef key="teidata.text"/>
+              </datatype>
             </attDef>
           </attList>
         </elementSpec>
@@ -477,6 +474,14 @@
               </datatype>
             </attDef>
           </attList>
+        </elementSpec>
+        
+        <elementSpec ident="forename">
+          <gloss>Forename</gloss>
+          <desc></desc>
+          <content>
+            <textNode/>
+          </content>
         </elementSpec>
         
         <elementSpec ident="framework">
@@ -751,6 +756,17 @@
           </content>
         </elementSpec>
         
+        <elementSpec ident="persName">
+          <gloss>PersName</gloss>
+          <desc></desc>
+          <content>
+            <sequence>
+              <elementRef key="surname"/>
+              <elementRef key="forename"/>
+            </sequence>
+          </content>
+        </elementSpec>
+        
         <elementSpec ident="physDesc">
           <gloss>Physical Description</gloss>
           <desc>Physical description of the expertise</desc>
@@ -886,6 +902,14 @@
           </content>
         </elementSpec>
         
+        <elementSpec ident="surname">
+          <gloss>Surname</gloss>
+          <desc></desc>
+          <content>
+            <textNode/>
+          </content>
+        </elementSpec>
+        
         <elementSpec ident="term">
           <!-- from EAC -->
           <gloss>Term</gloss>
@@ -941,6 +965,37 @@
             </constraint>
           </constraintSpec>
         </elementSpec>
+        
+        <classSpec type="atts" ident="att.global" module="EAC">
+          <desc>provides attributes common to all elements in the EAC encoding
+            scheme.</desc>
+          <attList>
+            <attDef ident="xml:id" usage="opt">
+              <gloss>XML identifier</gloss>
+              <datatype >
+                <dataRef name="ID"></dataRef>
+              </datatype>
+            </attDef>
+            <attDef ident="xml:lang" usage="opt">
+              <gloss>XML Language</gloss>
+              <datatype>
+                <dataRef name="string"/>
+              </datatype>
+            </attDef>
+          </attList>
+        </classSpec>
+        
+        <classSpec type="atts" ident="att.pointer">
+          <attList>
+            <attDef ident="ref" usage="req">
+              <desc/>
+              <datatype>
+                <dataRef name="anyURI"/>
+              </datatype>
+            </attDef>
+          </attList>
+        </classSpec>
+        
       </schemaSpec>
     </body>
   </text>
