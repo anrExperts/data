@@ -193,6 +193,21 @@
           </content>
         </elementSpec>
         
+        <elementSpec ident="conclusions">
+          <gloss>Conclusions</gloss>
+          <desc></desc>
+          <content>
+            <sequence>
+              <elementRef key="agreement"/>
+              <elementRef key="opinion" minOccurs="0" maxOccurs="unbounded"/>
+              <elementRef key="arrangement"/>
+              <elementRef key="estimate"/>
+              <elementRef key="fees"/>
+              <elementRef key="expenses"/>
+            </sequence>
+          </content>
+        </elementSpec>
+        
         <elementSpec ident="control">
           <!-- from EAC -->
           <gloss>Control</gloss>
@@ -203,6 +218,27 @@
               <elementRef key="publicationStatus"/>
               <elementRef key="localControl"/>
               <elementRef key="maintenanceHistory"/>
+            </sequence>
+          </content>
+        </elementSpec>
+
+        <elementSpec ident="craftman">
+          <gloss>Craftman</gloss>
+          <desc></desc>
+          <content>
+            <sequence>
+              <elementRef key="persName"/>
+              <elementRef key="occupation"/>
+            </sequence>
+          </content>
+        </elementSpec>
+
+        <elementSpec ident="craftmen">
+          <gloss>Craftmen</gloss>
+          <desc></desc>
+          <content>
+            <sequence>
+              <elementRef key="craftman" minOccurs="1" maxOccurs="unbounded"/>
             </sequence>
           </content>
         </elementSpec>
@@ -253,6 +289,7 @@
               <elementRef key="categories"/>
               <elementRef key="procedure"/>
               <elementRef key="participants"/>
+              <elementRef key="conclusions"/>
             </sequence>
           </content>
         </elementSpec>
@@ -343,10 +380,30 @@
             <memberOf key="att.pointer"/>
           </classes>
           <content>
-            <elementRef key="title"/>
+            <alternate minOccurs="0" maxOccurs="1">
+              <empty/>
+              <elementRef key="title"/>  
+            </alternate>
           </content>
+          <constraintSpec scheme="schematron" ident="expertAttr">
+            <constraint>
+              <sch:ns prefix="xpr" uri="xpr"/>
+              <sch:rule context="xpr:expert[parent::xpr:experts]">
+                <sch:let name="node" value="local-name()"/>
+                <sch:assert test="@context">Attribut @context manquant.</sch:assert>
+                <sch:assert test="@appointment">Attribut @appointment manquant.</sch:assert>
+                <sch:assert test="xpr:title">Élément &lt;title&gt; manquant.</sch:assert>
+              </sch:rule>
+              <sch:rule context="xpr:expert[parent::xpr:party]">
+                <sch:let name="node" value="local-name()"/>
+                <sch:assert test="not(@context)">Attribut @context non autorisé dans ce contexte.</sch:assert>
+                <sch:assert test="not(@appointment)">Attribut @appointment non autorisé dans ce contexte.</sch:assert>
+                <sch:assert test="not(xpr:title)">Élément &lt;title&gt; non autorisé dans ce contexte.</sch:assert>
+              </sch:rule>
+            </constraint>
+          </constraintSpec>
           <attList>
-            <attDef ident="context" usage="req">
+            <attDef ident="context" usage="opt">
               <gloss>Context</gloss>
               <desc>Qualité de l’expert</desc>
               <valList type="closed">
@@ -364,7 +421,7 @@
                 </valItem>
               </valList>
             </attDef>
-            <attDef ident="appointment" usage="req">
+            <attDef ident="appointment" usage="opt">
               <gloss>Appointment</gloss>
               <desc>Origine de la nomination</desc>
               <valList type="closed">
@@ -693,6 +750,14 @@
           </content>
         </elementSpec>
         
+        <elementSpec ident="occupation">
+          <gloss>Occupation</gloss>
+          <desc></desc>
+          <content>
+            <textNode/>
+          </content>
+        </elementSpec>
+        
         <elementSpec ident="origination">
           <gloss>Origine de l'expertise</gloss>
           <desc></desc>
@@ -756,6 +821,48 @@
           </content>
         </elementSpec>
         
+        <elementSpec ident="parties">
+          <gloss>Parties</gloss>
+          <desc></desc>
+          <content>
+            <sequence>
+              <elementRef key="party" minOccurs="1" maxOccurs="unbounded"/>  
+            </sequence>
+          </content>
+        </elementSpec>
+        
+        <elementSpec ident="party">
+          <gloss>Party</gloss>
+          <desc></desc>
+          <content>
+            <sequence>
+              <elementRef key="person" minOccurs="1" maxOccurs="unbounded"/>
+              <elementRef key="status"/>
+              <elementRef key="expert"/>
+            </sequence>
+          </content>
+          <attList>
+            <attDef ident="role" usage="req">
+              <valList type="closed">
+                <valItem ident="petitioner"/>
+                <valItem ident="opponent"/>
+              </valList>
+            </attDef>
+            <attDef ident="presence" usage="req">
+              <valList type="closed">
+                <valItem ident="true"/>
+                <valItem ident="false"/>
+              </valList>
+            </attDef>
+            <attDef ident="intervention">
+              <valList type="closed">
+                <valItem ident="true"/>
+                <valItem ident="false"/>
+              </valList>
+            </attDef>
+          </attList>
+        </elementSpec>
+        
         <elementSpec ident="persName">
           <gloss>PersName</gloss>
           <desc></desc>
@@ -763,6 +870,17 @@
             <sequence>
               <elementRef key="surname"/>
               <elementRef key="forename"/>
+            </sequence>
+          </content>
+        </elementSpec>
+        
+        <elementSpec ident="person">
+          <gloss>Person</gloss>
+          <desc></desc>
+          <content>
+            <sequence>
+              <elementRef key="persName"/>
+              <elementRef key="occupation"/>
             </sequence>
           </content>
         </elementSpec>
@@ -892,6 +1010,26 @@
               <elementRef key="physDesc"/>
             </sequence>
           </content>
+        </elementSpec>
+        
+        <elementSpec ident="status">
+          <gloss>Status</gloss>
+          <desc></desc>
+          <content>
+            <textNode/>
+          </content>
+          <constraintSpec scheme="schematron" ident="statusValues">
+            <constraint>
+              <sch:ns prefix="xpr" uri="xpr"/>
+              <sch:rule context="xpr:status">
+                <sch:let name="node" value="local-name()"/>
+                <sch:let name="content" value="normalize-space(.)"/>
+                <sch:let name="value" value="('builder', 'owner', 'joint-owner', 'limited-partner', 'heir', 'neighbour', 'tenant', 'main-tenant', 'creditor', 'mortgagor', 'contractor', 'police')">  
+                </sch:let>
+                <sch:assert test="$content = $value">La valeur de l'élément &lt;<sch:value-of select="$node"/>&gt; doit correspondre à "<sch:value-of select="$value"/>".</sch:assert>
+              </sch:rule>
+            </constraint>
+          </constraintSpec>
         </elementSpec>
         
         <elementSpec ident="street">
