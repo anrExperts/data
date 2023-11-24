@@ -1,0 +1,1891 @@
+<?xml version="1.0" encoding="utf-8"?>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0"
+         xmlns:tei="http://www.tei-c.org/ns/1.0"
+         xmlns:teix="http://www.tei-c.org/ns/Examples"
+         xmlns:xlink="http://www.w3.org/1999/xlink"
+         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
+         ns="xpr"><!--
+Schema generated from ODD source 2023-11-23T14:32:52Z. .
+TEI Edition: Version 4.6.0. Last updated on
+        4th April 2023, revision f18deffba
+TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.6.0/
+  
+--><!---->
+   <sch:ns xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+           prefix="tei"
+           uri="http://www.tei-c.org/ns/1.0"/>
+   <define name="address">
+      <element name="address">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Adresse) Contient une adresse.</a:documentation>
+         <group>
+            <ref name="street"/>
+            <ref name="buildingNumber"/>
+         </group>
+      </element>
+   </define>
+   <define name="agent">
+      <element name="agent">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Agent) The agent (human or machine) responsible for an event in the maintenance of the expertise instance.</a:documentation>
+         <text/>
+      </element>
+   </define>
+   <define name="agreement">
+      <element name="agreement">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Agreement) </a:documentation>
+         <text/>
+         <sch:ns xmlns="http://www.tei-c.org/ns/1.0"
+                 xmlns:eg="http://www.tei-c.org/ns/Examples"
+                 xmlns:math="http://www.w3.org/1998/Math/MathML"
+                 xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                 xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                 xmlns:svg="http://www.w3.org/2000/svg"
+                 xmlns:xi="http://www.w3.org/2001/XInclude"
+                 xmlns:xpr="xpr"
+                 xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                 prefix="xpr"
+                 uri="xpr"/>
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  id="xprOdd-agreement-agreementType-constraint-rule-1">
+            <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                      xmlns:eg="http://www.tei-c.org/ns/Examples"
+                      xmlns:math="http://www.w3.org/1998/Math/MathML"
+                      xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                      xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      xmlns:svg="http://www.w3.org/2000/svg"
+                      xmlns:xi="http://www.w3.org/2001/XInclude"
+                      xmlns:xpr="xpr"
+                      xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                      xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                      context="xpr:agreement[ancestor::xpr:description/xpr:participants/xpr:experts[count(xpr:expert)&gt;1]]/@type">
+               <sch:let name="type" value="normalize-space(.)"/>
+               <sch:let name="typeValues"
+                        value="('agreement', 'disagreement', 'noConclusion', 'unfinished')"/>
+               <sch:assert test="$type = $typeValues">La valeur de l'attrtibut @type n'est pas autorisée. Elle doit correspondre à "<sch:value-of select="string-join($typeValues, ', ')"/>".</sch:assert>
+            </sch:rule>
+            <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                      xmlns:eg="http://www.tei-c.org/ns/Examples"
+                      xmlns:math="http://www.w3.org/1998/Math/MathML"
+                      xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                      xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      xmlns:svg="http://www.w3.org/2000/svg"
+                      xmlns:xi="http://www.w3.org/2001/XInclude"
+                      xmlns:xpr="xpr"
+                      xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                      xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                      context="xpr:agreement[ancestor::xpr:description/xpr:participants/xpr:experts[count(xpr:expert)=1]]/@type">
+               <sch:let name="type" value="normalize-space(.)"/>
+               <sch:let name="typeValues" value="('conclusion', 'noConclusion', 'unfinished')"/>
+               <sch:assert test="$type = $typeValues">La valeur de l'attrtibut @type n'est pas autorisée. Elle doit correspondre à "<sch:value-of select="string-join($typeValues, ', ')"/>".</sch:assert>
+            </sch:rule>
+         </pattern>
+         <attribute name="type">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+            <choice>
+               <value>conclusion</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>noConclusion</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>agreement</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>disagreement</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>unfinished</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+            </choice>
+         </attribute>
+         <empty/>
+      </element>
+   </define>
+   <define name="agentType">
+      <element name="agentType">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Agent Type) Type of agent responsible for a maintenance event of the expertise instance</a:documentation>
+         <choice>
+            <text/>
+         </choice>
+         <sch:ns xmlns="http://www.tei-c.org/ns/1.0"
+                 xmlns:eg="http://www.tei-c.org/ns/Examples"
+                 xmlns:math="http://www.w3.org/1998/Math/MathML"
+                 xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                 xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                 xmlns:svg="http://www.w3.org/2000/svg"
+                 xmlns:xi="http://www.w3.org/2001/XInclude"
+                 xmlns:xpr="xpr"
+                 xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                 prefix="xpr"
+                 uri="xpr"/>
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  id="xprOdd-agentType-agentTypeValues-constraint-rule-3">
+            <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                      xmlns:eg="http://www.tei-c.org/ns/Examples"
+                      xmlns:math="http://www.w3.org/1998/Math/MathML"
+                      xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                      xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      xmlns:svg="http://www.w3.org/2000/svg"
+                      xmlns:xi="http://www.w3.org/2001/XInclude"
+                      xmlns:xpr="xpr"
+                      xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                      xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                      context="xpr:agentType">
+               <sch:assert test="normalize-space(.) = 'human' or normalize-space(.) = 'machine'">La valeur de l'élément agentType doit correspondre à "human" ou "machine".</sch:assert>
+            </sch:rule>
+         </pattern>
+      </element>
+   </define>
+   <define name="analysis">
+      <element name="analysis">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Analysis) Commentaire et première analyse</a:documentation>
+         <text/>
+      </element>
+   </define>
+   <define name="appendice">
+      <element name="appendice">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Annexe) Description physique d'une pièce annexe.</a:documentation>
+         <group>
+            <oneOrMore>
+               <ref name="type"/>
+            </oneOrMore>
+            <ref name="extent"/>
+            <ref name="desc"/>
+            <ref name="note"/>
+         </group>
+      </element>
+   </define>
+   <define name="appendices">
+      <element name="appendices">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Annexes) Contient les descriptions physiques de chaque pièce annexe.</a:documentation>
+         <oneOrMore>
+            <ref name="appendice"/>
+         </oneOrMore>
+      </element>
+   </define>
+   <define name="appraisal">
+      <element name="appraisal">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Appraisal) </a:documentation>
+         <ref name="desc"/>
+         <ref name="att.monetary.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="arrangement">
+      <element name="arrangement">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+         <choice>
+            <text/>
+         </choice>
+         <sch:ns xmlns="http://www.tei-c.org/ns/1.0"
+                 xmlns:eg="http://www.tei-c.org/ns/Examples"
+                 xmlns:math="http://www.w3.org/1998/Math/MathML"
+                 xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                 xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                 xmlns:svg="http://www.w3.org/2000/svg"
+                 xmlns:xi="http://www.w3.org/2001/XInclude"
+                 xmlns:xpr="xpr"
+                 xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                 prefix="xpr"
+                 uri="xpr"/>
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  id="xprOdd-arrangement-arrangement-constraint-rule-4">
+            <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                      xmlns:eg="http://www.tei-c.org/ns/Examples"
+                      xmlns:math="http://www.w3.org/1998/Math/MathML"
+                      xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                      xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      xmlns:svg="http://www.w3.org/2000/svg"
+                      xmlns:xi="http://www.w3.org/2001/XInclude"
+                      xmlns:xpr="xpr"
+                      xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                      xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                      context="xpr:arrangement[.!='']">
+               <sch:let name="node" value="local-name()"/>
+               <sch:let name="content" value="normalize-space(.)"/>
+               <sch:let name="value" value="('Résolution par les parties')"/>
+               <sch:assert test="$content = $value">La valeur de l'élément &lt;<sch:value-of select="$node"/>&gt; doit correspondre à : <sch:value-of select="$value"/>.</sch:assert>
+            </sch:rule>
+         </pattern>
+      </element>
+   </define>
+   <define name="buildingNumber">
+      <element name="buildingNumber">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Numéro de voie) Contient le numéro du bien expertisé, si la voie en est pourvue.</a:documentation>
+         <text/>
+      </element>
+   </define>
+   <define name="case">
+      <element name="case">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Case) </a:documentation>
+         <text/>
+      </element>
+   </define>
+   <define name="category">
+      <element name="category">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Category) </a:documentation>
+         <text/>
+         <sch:ns xmlns="http://www.tei-c.org/ns/1.0"
+                 xmlns:eg="http://www.tei-c.org/ns/Examples"
+                 xmlns:math="http://www.w3.org/1998/Math/MathML"
+                 xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                 xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                 xmlns:svg="http://www.w3.org/2000/svg"
+                 xmlns:xi="http://www.w3.org/2001/XInclude"
+                 xmlns:xpr="xpr"
+                 xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                 prefix="xpr"
+                 uri="xpr"/>
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  id="xprOdd-category-categoryValues-constraint-rule-5">
+            <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                      xmlns:eg="http://www.tei-c.org/ns/Examples"
+                      xmlns:math="http://www.w3.org/1998/Math/MathML"
+                      xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                      xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      xmlns:svg="http://www.w3.org/2000/svg"
+                      xmlns:xi="http://www.w3.org/2001/XInclude"
+                      xmlns:xpr="xpr"
+                      xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                      xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                      context="xpr:category">
+               <sch:let name="node" value="local-name()"/>
+               <sch:let name="content" value="normalize-space(.)"/>
+               <sch:let name="type" value="@type"/>
+               <sch:let name="value">
+                  <xsl:choose>
+                     <xsl:when test="$type = 'assessment'">
+                        <xsl:text>Décrire et évaluer les travaux à venir</xsl:text>
+                     </xsl:when>
+                     <xsl:when test="$type = 'settlement'">
+                        <xsl:text>Départager</xsl:text>
+                     </xsl:when>
+                     <xsl:when test="$type = 'registration'">
+                        <xsl:text>Enregistrer</xsl:text>
+                     </xsl:when>
+                     <xsl:when test="$type = 'estimation'">
+                        <xsl:text>Estimer la valeur des biens</xsl:text>
+                     </xsl:when>
+                     <xsl:when test="$type = 'acceptation'">
+                        <xsl:text>Recevoir et évaluer le travail réalisé</xsl:text>
+                     </xsl:when>
+                     <xsl:otherwise/>
+                  </xsl:choose>
+               </sch:let>
+               <sch:assert test="$content = $value">Compte tenu du type sélectionné (<sch:value-of select="$type"/>), la valeur de l'élément &lt;<sch:value-of select="$node"/>&gt; doit correspondre à "<sch:value-of select="$value"/>".</sch:assert>
+            </sch:rule>
+         </pattern>
+         <attribute name="type">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+            <choice>
+               <value>assessment</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>settlement</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>registration</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>estimation</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>acceptation</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+            </choice>
+         </attribute>
+         <empty/>
+      </element>
+   </define>
+   <define name="categories">
+      <element name="categories">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Categories) </a:documentation>
+         <group>
+            <ref name="category"/>
+            <ref name="designation"/>
+         </group>
+      </element>
+   </define>
+   <define name="city">
+      <element name="city">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Ville) Nom de la ville d'un bien expertisé dans le procès-verbal, si l’expertise ne se déroule pas à Paris.</a:documentation>
+         <text/>
+      </element>
+   </define>
+   <define name="clerk">
+      <element name="clerk">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Greffier) Description d'un greffier mentionné dans l'affaire.</a:documentation>
+         <ref name="persName"/>
+         <ref name="att.pointer.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="clerks">
+      <element name="clerks">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Greffiers) Déclaration des greffiers mentionnés dans l’expertise. Plusieurs greffiers peuvent être décrits.</a:documentation>
+         <oneOrMore>
+            <ref name="clerk"/>
+         </oneOrMore>
+      </element>
+   </define>
+   <define name="comment">
+      <element name="comment">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Comment) Commentaire sur le formulaire</a:documentation>
+         <text/>
+      </element>
+   </define>
+   <define name="complement">
+      <element name="complement">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Précisions géographiques) Contient toutes autres indications permettant de localiser un bien. Cette information n'est pas toujours présente dans le résumé de la première page (qui peut être fautif) et peut être trouvée dans le corps de l'expertise, voire dans les pièces annexes. Par exemple, nous relevons ici les mentions « près du croisement de la rue xxx et de la rue xxx », « à l’enseigne xxx », « en face de XXX », « en rentrant à droite dans la rue XXX », « quartier XXXX », « à 20 lieues de XXX », etc.</a:documentation>
+         <text/>
+      </element>
+   </define>
+   <define name="conclusions">
+      <element name="conclusions">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Conclusions) </a:documentation>
+         <group>
+            <ref name="agreement"/>
+            <zeroOrMore>
+               <ref name="opinion"/>
+            </zeroOrMore>
+            <ref name="arrangement"/>
+            <ref name="estimate"/>
+            <optional>
+               <ref name="estimates"/>
+            </optional>
+            <ref name="fees"/>
+            <ref name="expenses"/>
+         </group>
+      </element>
+   </define>
+   <define name="control">
+      <element name="control">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Control) The element of the instance that contains control information about its identity, creation, maintenance, status, and the rules and authorities used in the composition of the description.</a:documentation>
+         <group>
+            <ref name="maintenanceStatus"/>
+            <ref name="publicationStatus"/>
+            <ref name="localControl"/>
+            <ref name="maintenanceHistory"/>
+         </group>
+      </element>
+   </define>
+   <define name="craftman">
+      <element name="craftman">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Craftman) </a:documentation>
+         <group>
+            <ref name="persName"/>
+            <ref name="occupation"/>
+         </group>
+      </element>
+   </define>
+   <define name="craftmen">
+      <element name="craftmen">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Craftmen) </a:documentation>
+         <oneOrMore>
+            <ref name="craftman"/>
+         </oneOrMore>
+      </element>
+   </define>
+   <define name="date">
+      <element name="date">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Date) Date d'une vacation</a:documentation>
+         <text/>
+         <sch:ns xmlns="http://www.tei-c.org/ns/1.0"
+                 xmlns:eg="http://www.tei-c.org/ns/Examples"
+                 xmlns:math="http://www.w3.org/1998/Math/MathML"
+                 xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                 xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                 xmlns:svg="http://www.w3.org/2000/svg"
+                 xmlns:xi="http://www.w3.org/2001/XInclude"
+                 xmlns:xpr="xpr"
+                 xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                 prefix="xpr"
+                 uri="xpr"/>
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  id="xprOdd-date-dateValues-constraint-rule-6">
+            <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                      xmlns:eg="http://www.tei-c.org/ns/Examples"
+                      xmlns:math="http://www.w3.org/1998/Math/MathML"
+                      xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                      xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      xmlns:svg="http://www.w3.org/2000/svg"
+                      xmlns:xi="http://www.w3.org/2001/XInclude"
+                      xmlns:xpr="xpr"
+                      xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                      xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                      context="xpr:date[parent::xpr:sessions]">
+               <sch:let name="node" value="local-name()"/>
+               <sch:assert test="@type and .=''">Aucun contenu autorisé au sein de l'élément &lt;<sch:value-of select="$node"/>&gt;.</sch:assert>
+            </sch:rule>
+            <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                      xmlns:eg="http://www.tei-c.org/ns/Examples"
+                      xmlns:math="http://www.w3.org/1998/Math/MathML"
+                      xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                      xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      xmlns:svg="http://www.w3.org/2000/svg"
+                      xmlns:xi="http://www.w3.org/2001/XInclude"
+                      xmlns:xpr="xpr"
+                      xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                      xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                      context="xpr:date[parent::xpr:sentence]">
+               <sch:let name="node" value="local-name()"/>
+               <sch:assert test="not(@type)">l'attribut @type n'est pas autorisé dans ce contexte .</sch:assert>
+            </sch:rule>
+         </pattern>
+         <attribute name="when">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+            <data type="date"/>
+         </attribute>
+         <optional>
+            <attribute name="type">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <choice>
+                  <value>paris</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Paris) Vacation se déroulant à Paris et ses faubourgs.</a:documentation>
+                  <value>suburbs</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Banlieue) Vacation se déroulant dans en banlieue.</a:documentation>
+                  <value>province</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Campagne) Vacation se déroulant hors de Paris et de sa banlieue.</a:documentation>
+               </choice>
+            </attribute>
+         </optional>
+         <empty/>
+      </element>
+   </define>
+   <define name="description">
+      <element name="description">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Description) Description related to the described expertise.</a:documentation>
+         <choice>
+            <group>
+               <ref name="sessions"/>
+               <ref name="places"/>
+               <ref name="categories"/>
+               <ref name="procedure"/>
+               <ref name="participants"/>
+               <ref name="conclusions"/>
+               <zeroOrMore>
+                  <ref name="keywords"/>
+               </zeroOrMore>
+               <ref name="analysis"/>
+               <ref name="noteworthy"/>
+            </group>
+         </choice>
+      </element>
+   </define>
+   <define name="desc">
+      <element name="desc">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Description) Description des caractéristiques physiques du document (cahier, plan plié, etc.). Par exemple, s’il s’agit d’un dessin ou d’un plan, nous indiquons ici la technique employée (au trait, lavé, etc.).</a:documentation>
+         <text/>
+      </element>
+   </define>
+   <define name="designation">
+      <element name="designation">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Designation) </a:documentation>
+         <text/>
+         <attribute name="rubric">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+            <choice>
+               <value>true</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>false</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+            </choice>
+         </attribute>
+         <empty/>
+      </element>
+   </define>
+   <define name="district">
+      <element name="district">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Département) Contient le département d'un bien expertisé, si l’expertise ne se déroule pas à Paris. On parle du département actuel.</a:documentation>
+         <text/>
+      </element>
+   </define>
+   <define name="estimate">
+      <element name="estimate">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Estimate) </a:documentation>
+         <empty/>
+         <ref name="att.monetary.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="estimates">
+      <element name="estimates">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Estimates) </a:documentation>
+         <oneOrMore>
+            <ref name="place"/>
+         </oneOrMore>
+      </element>
+   </define>
+   <define name="eventDateTime">
+      <element name="eventDateTime">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Maintenance Event Date and Time) The date and time of a maintenance event for the expertise instance.</a:documentation>
+         <text/>
+         <optional>
+            <attribute name="standardDateTime">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+            </attribute>
+         </optional>
+         <empty/>
+      </element>
+   </define>
+   <define name="eventType">
+      <element name="eventType">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Maintenance Event Type) The type of maintenance event for the EAC-CPF instance.</a:documentation>
+         <text/>
+         <sch:ns xmlns="http://www.tei-c.org/ns/1.0"
+                 xmlns:eg="http://www.tei-c.org/ns/Examples"
+                 xmlns:math="http://www.w3.org/1998/Math/MathML"
+                 xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                 xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                 xmlns:svg="http://www.w3.org/2000/svg"
+                 xmlns:xi="http://www.w3.org/2001/XInclude"
+                 xmlns:xpr="xpr"
+                 xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                 prefix="xpr"
+                 uri="xpr"/>
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  id="xprOdd-eventType-eventType-constraint-rule-8">
+            <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                      xmlns:eg="http://www.tei-c.org/ns/Examples"
+                      xmlns:math="http://www.w3.org/1998/Math/MathML"
+                      xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                      xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      xmlns:svg="http://www.w3.org/2000/svg"
+                      xmlns:xi="http://www.w3.org/2001/XInclude"
+                      xmlns:xpr="xpr"
+                      xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                      xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                      context="xpr:eventType">
+               <sch:let name="node" value="local-name()"/>
+               <sch:let name="content" value="normalize-space(.)"/>
+               <sch:let name="value"
+                        value="('cancelled', 'created', 'deleted', 'derived', 'revised', 'updated')"/>
+               <sch:assert test="$content = $value">La valeur de l'élément &lt;<sch:value-of select="$node"/>&gt; doit correspondre à : <sch:value-of select="string-join($value, ', ')"/>
+               </sch:assert>
+            </sch:rule>
+         </pattern>
+      </element>
+   </define>
+   <define name="eventDescription">
+      <element name="eventDescription">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Maintenance Event Description) The description of a maintenance event in the life of the expertise instance.</a:documentation>
+         <text/>
+      </element>
+   </define>
+   <define name="expense">
+      <element name="expense">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Expense) </a:documentation>
+         <empty/>
+         <sch:ns xmlns="http://www.tei-c.org/ns/1.0"
+                 xmlns:eg="http://www.tei-c.org/ns/Examples"
+                 xmlns:math="http://www.w3.org/1998/Math/MathML"
+                 xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                 xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                 xmlns:svg="http://www.w3.org/2000/svg"
+                 xmlns:xi="http://www.w3.org/2001/XInclude"
+                 xmlns:xpr="xpr"
+                 xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                 prefix="xpr"
+                 uri="xpr"/>
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  id="xprOdd-expense-expensesContent-constraint-rule-9">
+            <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                      xmlns:eg="http://www.tei-c.org/ns/Examples"
+                      xmlns:math="http://www.w3.org/1998/Math/MathML"
+                      xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                      xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      xmlns:svg="http://www.w3.org/2000/svg"
+                      xmlns:xi="http://www.w3.org/2001/XInclude"
+                      xmlns:xpr="xpr"
+                      xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                      xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                      context="xpr:expense[parent::xpr:expenses[@mentioned='true']]">
+               <sch:let name="node" value="local-name()"/>
+               <sch:let name="value"/>
+               <sch:assert test="self::xpr:expense">Élément(s) &lt;<sch:value-of select="$node"/>&gt; manquant.</sch:assert>
+            </sch:rule>
+            <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                      xmlns:eg="http://www.tei-c.org/ns/Examples"
+                      xmlns:math="http://www.w3.org/1998/Math/MathML"
+                      xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                      xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      xmlns:svg="http://www.w3.org/2000/svg"
+                      xmlns:xi="http://www.w3.org/2001/XInclude"
+                      xmlns:xpr="xpr"
+                      xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                      xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                      context="xpr:expense[parent::xpr:expenses[@mentioned='false']]">
+               <sch:let name="node" value="local-name()"/>
+               <sch:let name="value"/>
+               <sch:assert test="//xpr:expenses[not(xpr:expense)]">Élément(s) &lt;<sch:value-of select="$node"/>&gt; non autorisé(s).</sch:assert>
+            </sch:rule>
+         </pattern>
+         <ref name="att.monetary.attributes"/>
+         <attribute name="type">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+            <choice>
+               <value>expert</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>clerk</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+            </choice>
+         </attribute>
+         <empty/>
+      </element>
+   </define>
+   <define name="expenses">
+      <element name="expenses">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Expenses) </a:documentation>
+         <choice>
+            <group>
+               <ref name="expense"/>
+               <ref name="expense"/>
+            </group>
+         </choice>
+         <attribute name="mentioned">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+            <choice>
+               <value>true</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>false</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+            </choice>
+         </attribute>
+         <empty/>
+      </element>
+   </define>
+   <define name="expert">
+      <element name="expert">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Expert) Contient la description d'un expert impliqué dans l'affaire.</a:documentation>
+         <optional>
+            <choice>
+               <ref name="title"/>
+            </choice>
+         </optional>
+         <sch:ns xmlns="http://www.tei-c.org/ns/1.0"
+                 xmlns:eg="http://www.tei-c.org/ns/Examples"
+                 xmlns:math="http://www.w3.org/1998/Math/MathML"
+                 xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                 xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                 xmlns:svg="http://www.w3.org/2000/svg"
+                 xmlns:xi="http://www.w3.org/2001/XInclude"
+                 xmlns:xpr="xpr"
+                 xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                 prefix="xpr"
+                 uri="xpr"/>
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  id="xprOdd-expert-expertAttr-constraint-rule-11">
+            <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                      xmlns:eg="http://www.tei-c.org/ns/Examples"
+                      xmlns:math="http://www.w3.org/1998/Math/MathML"
+                      xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                      xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      xmlns:svg="http://www.w3.org/2000/svg"
+                      xmlns:xi="http://www.w3.org/2001/XInclude"
+                      xmlns:xpr="xpr"
+                      xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                      xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                      context="xpr:expert[parent::xpr:experts]">
+               <sch:let name="node" value="local-name()"/>
+               <sch:assert test="@context">Attribut @context manquant.</sch:assert>
+               <sch:assert test="@appointment">Attribut @appointment manquant.</sch:assert>
+               <sch:assert test="xpr:title">Élément &lt;title&gt; manquant.</sch:assert>
+            </sch:rule>
+            <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                      xmlns:eg="http://www.tei-c.org/ns/Examples"
+                      xmlns:math="http://www.w3.org/1998/Math/MathML"
+                      xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                      xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      xmlns:svg="http://www.w3.org/2000/svg"
+                      xmlns:xi="http://www.w3.org/2001/XInclude"
+                      xmlns:xpr="xpr"
+                      xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                      xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                      context="xpr:expert[parent::xpr:party]">
+               <sch:let name="node" value="local-name()"/>
+               <sch:assert test="not(@context)">Attribut @context non autorisé dans ce contexte.</sch:assert>
+               <sch:assert test="not(@appointment)">Attribut @appointment non autorisé dans ce contexte.</sch:assert>
+               <sch:assert test="not(xpr:title)">Élément &lt;title&gt; non autorisé dans ce contexte.</sch:assert>
+            </sch:rule>
+         </pattern>
+         <ref name="att.pointer.attributes"/>
+         <optional>
+            <attribute name="context">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Qualité de l’expert) Indique le cadre de nomination de l’expert.</a:documentation>
+               <choice>
+                  <value>primary</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(premier lieu) Expert nommé en premier lieu</a:documentation>
+                  <value>third-party</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Tiers-expert.) Tiers-expert.</a:documentation>
+                  <value>unknown</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Indéterminé) Indéterminé.</a:documentation>
+               </choice>
+            </attribute>
+         </optional>
+         <optional>
+            <attribute name="appointment">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Origine de la nomination) Indique qui a nommé l’expert pour l’expertise.</a:documentation>
+               <choice>
+                  <value>court-appointed</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(court-appointed) Nommination d’office (par une institution).</a:documentation>
+                  <value>appointed</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(appointed) Nommination par les parties.</a:documentation>
+                  <value>experts</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(experts) Nommination par les experts.</a:documentation>
+                  <value>mixed</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(mixed) Nommination mixte.</a:documentation>
+                  <value>unknown</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(unknown) Nomination indéterminée.</a:documentation>
+               </choice>
+            </attribute>
+         </optional>
+         <empty/>
+      </element>
+   </define>
+   <define name="expertise">
+      <element name="expertise">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Expertise) Contains the entire description of an expertise.</a:documentation>
+         <group>
+            <ref name="meta"/>
+            <ref name="control"/>
+            <ref name="sourceDesc"/>
+            <ref name="description"/>
+            <optional>
+               <ref name="comment"/>
+            </optional>
+         </group>
+         <ref name="att.global.attributes"/>
+         <optional>
+            <attribute name="status">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+            </attribute>
+         </optional>
+         <empty/>
+      </element>
+   </define>
+   <define name="experts">
+      <element name="experts">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Experts) Déclaration des experts qui sont en rapport avec la même affaire (même objet, etc.). Plusieurs experts peuvent être décrits.</a:documentation>
+         <oneOrMore>
+            <ref name="expert"/>
+         </oneOrMore>
+      </element>
+   </define>
+   <define name="extent">
+      <element name="extent">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Étendue) Décrit la taille d'une pièce, procès-verbal ou annexe, exprimée en nombre de feuillets.</a:documentation>
+         <text/>
+         <sch:ns xmlns="http://www.tei-c.org/ns/1.0"
+                 xmlns:eg="http://www.tei-c.org/ns/Examples"
+                 xmlns:math="http://www.w3.org/1998/Math/MathML"
+                 xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                 xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                 xmlns:svg="http://www.w3.org/2000/svg"
+                 xmlns:xi="http://www.w3.org/2001/XInclude"
+                 xmlns:xpr="xpr"
+                 xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                 prefix="xpr"
+                 uri="xpr"/>
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  id="xprOdd-extent-extentContent-constraint-rule-13">
+            <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                      xmlns:eg="http://www.tei-c.org/ns/Examples"
+                      xmlns:math="http://www.w3.org/1998/Math/MathML"
+                      xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                      xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      xmlns:svg="http://www.w3.org/2000/svg"
+                      xmlns:xi="http://www.w3.org/2001/XInclude"
+                      xmlns:xpr="xpr"
+                      xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                      xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                      context="xpr:extent">
+               <sch:assert test="number(.) castable as xs:integer">Le contenu de l'élément &lt;extent&gt; doit être un nombre.</sch:assert>
+            </sch:rule>
+         </pattern>
+         <optional>
+            <attribute name="sketch">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Croquis) Indique la présence d'un croquis sur le procès-verbal</a:documentation>
+               <choice>
+                  <value>true</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(oui) présence d'un croquis sur le procès-verbal.</a:documentation>
+                  <value>false</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(non) absence de croquis sur le procès-verbal.</a:documentation>
+               </choice>
+            </attribute>
+         </optional>
+         <empty/>
+      </element>
+   </define>
+   <define name="facsimile">
+      <element name="facsimile">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Facsimile) </a:documentation>
+         <empty/>
+         <attribute name="from">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(From) </a:documentation>
+            <data type="integer"/>
+         </attribute>
+         <attribute name="to">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(To) </a:documentation>
+            <data type="integer"/>
+         </attribute>
+         <empty/>
+      </element>
+   </define>
+   <define name="fee">
+      <element name="fee">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Fee) </a:documentation>
+         <choice>
+            <text/>
+         </choice>
+         <sch:ns xmlns="http://www.tei-c.org/ns/1.0"
+                 xmlns:eg="http://www.tei-c.org/ns/Examples"
+                 xmlns:math="http://www.w3.org/1998/Math/MathML"
+                 xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                 xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                 xmlns:svg="http://www.w3.org/2000/svg"
+                 xmlns:xi="http://www.w3.org/2001/XInclude"
+                 xmlns:xpr="xpr"
+                 xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                 prefix="xpr"
+                 uri="xpr"/>
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  id="xprOdd-fee-feesContent-constraint-rule-14">
+            <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                      xmlns:eg="http://www.tei-c.org/ns/Examples"
+                      xmlns:math="http://www.w3.org/1998/Math/MathML"
+                      xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                      xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      xmlns:svg="http://www.w3.org/2000/svg"
+                      xmlns:xi="http://www.w3.org/2001/XInclude"
+                      xmlns:xpr="xpr"
+                      xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                      xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                      context="xpr:fee[parent::xpr:fees[@detail='true']]">
+               <sch:let name="node" value="local-name()"/>
+               <sch:let name="value"/>
+               <sch:assert test="self::xpr:fee">Élément(s) &lt;<sch:value-of select="$node"/>&gt; manquant.</sch:assert>
+            </sch:rule>
+            <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                      xmlns:eg="http://www.tei-c.org/ns/Examples"
+                      xmlns:math="http://www.w3.org/1998/Math/MathML"
+                      xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                      xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      xmlns:svg="http://www.w3.org/2000/svg"
+                      xmlns:xi="http://www.w3.org/2001/XInclude"
+                      xmlns:xpr="xpr"
+                      xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                      xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                      context="xpr:fee[parent::xpr:fees[@detail='false']]">
+               <sch:let name="node" value="local-name()"/>
+               <sch:let name="value"/>
+               <sch:assert test="//xpr:fees[not(xpr:fee)]">Élément(s) &lt;<sch:value-of select="$node"/>&gt; non autorisé(s).</sch:assert>
+            </sch:rule>
+         </pattern>
+         <sch:ns xmlns="http://www.tei-c.org/ns/1.0"
+                 xmlns:eg="http://www.tei-c.org/ns/Examples"
+                 xmlns:math="http://www.w3.org/1998/Math/MathML"
+                 xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                 xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                 xmlns:svg="http://www.w3.org/2000/svg"
+                 xmlns:xi="http://www.w3.org/2001/XInclude"
+                 xmlns:xpr="xpr"
+                 xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                 prefix="xpr"
+                 uri="xpr"/>
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  id="xprOdd-fee-feeContent-constraint-rule-16">
+            <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                      xmlns:eg="http://www.tei-c.org/ns/Examples"
+                      xmlns:math="http://www.w3.org/1998/Math/MathML"
+                      xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                      xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      xmlns:svg="http://www.w3.org/2000/svg"
+                      xmlns:xi="http://www.w3.org/2001/XInclude"
+                      xmlns:xpr="xpr"
+                      xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                      xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                      context="xpr:fee[.!='']">
+               <sch:let name="node" value="local-name()"/>
+               <sch:let name="content" value="."/>
+               <sch:let name="value"/>
+               <sch:assert test="@type='other' and .!=''">L'élément &lt;<sch:value-of select="$node"/>&gt; doit être vide.</sch:assert>
+            </sch:rule>
+         </pattern>
+         <ref name="att.monetary.attributes"/>
+         <optional>
+            <attribute name="ref">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <data type="anyURI"/>
+            </attribute>
+         </optional>
+         <attribute name="type">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+            <choice>
+               <value>expert</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>clerk</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>rolls</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>papers</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>plans</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>prosecutors</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>help</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>other</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+            </choice>
+         </attribute>
+         <empty/>
+      </element>
+   </define>
+   <define name="fees">
+      <element name="fees">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Fees) </a:documentation>
+         <zeroOrMore>
+            <ref name="fee"/>
+         </zeroOrMore>
+         <ref name="total"/>
+         <attribute name="detail">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+            <choice>
+               <value>true</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>false</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+            </choice>
+         </attribute>
+         <empty/>
+      </element>
+   </define>
+   <define name="forename">
+      <element name="forename">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Prénom) Contient un prénom.</a:documentation>
+         <text/>
+      </element>
+   </define>
+   <define name="framework">
+      <element name="framework">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Cadre de l'expertise) </a:documentation>
+         <text/>
+         <sch:ns xmlns="http://www.tei-c.org/ns/1.0"
+                 xmlns:eg="http://www.tei-c.org/ns/Examples"
+                 xmlns:math="http://www.w3.org/1998/Math/MathML"
+                 xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                 xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                 xmlns:svg="http://www.w3.org/2000/svg"
+                 xmlns:xi="http://www.w3.org/2001/XInclude"
+                 xmlns:xpr="xpr"
+                 xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                 prefix="xpr"
+                 uri="xpr"/>
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  id="xprOdd-framework-frameworkValues-constraint-rule-17">
+            <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                      xmlns:eg="http://www.tei-c.org/ns/Examples"
+                      xmlns:math="http://www.w3.org/1998/Math/MathML"
+                      xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                      xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      xmlns:svg="http://www.w3.org/2000/svg"
+                      xmlns:xi="http://www.w3.org/2001/XInclude"
+                      xmlns:xpr="xpr"
+                      xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                      xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                      context="xpr:framework">
+               <sch:let name="node" value="local-name()"/>
+               <sch:let name="content" value="normalize-space(.)"/>
+               <sch:let name="type" value="@type"/>
+               <sch:let name="value">
+                  <xsl:choose>
+                     <xsl:when test="$type = 'a'">
+                        <xsl:text>Commun accord des parties</xsl:text>
+                     </xsl:when>
+                     <xsl:when test="$type = 'b1'">
+                        <xsl:text>Requête auprès d’une institution pour qu’elle demande une expertise</xsl:text>
+                     </xsl:when>
+                     <xsl:when test="$type = 'b2'">
+                        <xsl:text>L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun)</xsl:text>
+                     </xsl:when>
+                     <xsl:when test="$type = 'c'">
+                        <xsl:text>Cas problématique</xsl:text>
+                     </xsl:when>
+                     <xsl:otherwise/>
+                  </xsl:choose>
+               </sch:let>
+               <sch:assert test="$content = $value">Compte tenu du type sélectionné (<sch:value-of select="$type"/>), la valeur de l'élément &lt;<sch:value-of select="$node"/>&gt; doit correspondre à "<sch:value-of select="$value"/>".</sch:assert>
+            </sch:rule>
+         </pattern>
+         <optional>
+            <attribute name="type">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <choice>
+                  <value>a</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <value>b1</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <value>b2</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <value>c</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               </choice>
+            </attribute>
+         </optional>
+         <empty/>
+      </element>
+   </define>
+   <define name="idno">
+      <element name="idno" ns="xpr">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Identifiant) Contient la cote, le numéro de dossier, ou tout supplément cote du procès-verbal en cours de description.</a:documentation>
+         <text/>
+         <sch:ns xmlns="http://www.tei-c.org/ns/1.0"
+                 xmlns:eg="http://www.tei-c.org/ns/Examples"
+                 xmlns:math="http://www.w3.org/1998/Math/MathML"
+                 xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                 xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                 xmlns:svg="http://www.w3.org/2000/svg"
+                 xmlns:xi="http://www.w3.org/2001/XInclude"
+                 xmlns:xpr="xpr"
+                 xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                 prefix="xpr"
+                 uri="xpr"/>
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  id="xprOdd-idno-idnoType-constraint-rule-18">
+            <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                      xmlns:eg="http://www.tei-c.org/ns/Examples"
+                      xmlns:math="http://www.w3.org/1998/Math/MathML"
+                      xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                      xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      xmlns:svg="http://www.w3.org/2000/svg"
+                      xmlns:xi="http://www.w3.org/2001/XInclude"
+                      xmlns:xpr="xpr"
+                      xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                      xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                      context="xpr:sourceDesc[count(xpr:idno) = 2]">
+               <sch:assert test="xpr:idno[1][@type='unitid']">Le premier idno doit être de type 'unitid'</sch:assert>
+               <sch:assert test="xpr:idno[2][@type='item']">Le second idno doit être de type 'item'</sch:assert>
+            </sch:rule>
+            <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                      xmlns:eg="http://www.tei-c.org/ns/Examples"
+                      xmlns:math="http://www.w3.org/1998/Math/MathML"
+                      xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                      xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      xmlns:svg="http://www.w3.org/2000/svg"
+                      xmlns:xi="http://www.w3.org/2001/XInclude"
+                      xmlns:xpr="xpr"
+                      xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                      xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                      context="xpr:sourceDesc[count(xpr:idno) = 3]">
+               <sch:assert test="xpr:idno[1][@type='unitid']">Le premier idno doit être de type 'unitid'</sch:assert>
+               <sch:assert test="xpr:idno[2][@type='item']">Le second idno doit être de type 'item'</sch:assert>
+               <sch:assert test="xpr:idno[3][@type='supplement']">Le troisième idno doit être de type 'supplement'</sch:assert>
+            </sch:rule>
+         </pattern>
+         <attribute name="type">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+            <choice>
+               <value>unitid</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>item</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>supplement</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+            </choice>
+         </attribute>
+         <empty/>
+      </element>
+   </define>
+   <define name="keywords">
+      <element name="keywords">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Keyworks) </a:documentation>
+         <choice>
+            <zeroOrMore>
+               <ref name="term"/>
+            </zeroOrMore>
+         </choice>
+         <attribute name="group">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+         </attribute>
+         <empty/>
+      </element>
+   </define>
+   <define name="localControl">
+      <element name="localControl">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Local Control) Any additional control entry necessary to accommodate local practice.</a:documentation>
+         <ref name="term"/>
+         <optional>
+            <attribute name="localType">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <choice>
+                  <value>detailLevel</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               </choice>
+            </attribute>
+         </optional>
+         <empty/>
+      </element>
+   </define>
+   <define name="maintenanceEvent">
+      <element name="maintenanceEvent">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Maintenance Event) A maintenance event in the life of the expertise instance.</a:documentation>
+         <group>
+            <ref name="eventType"/>
+            <ref name="eventDateTime"/>
+            <ref name="agentType"/>
+            <ref name="agent"/>
+            <ref name="eventDescription"/>
+         </group>
+      </element>
+   </define>
+   <define name="maintenanceHistory">
+      <element name="maintenanceHistory">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Maintenance History) The history of the creation and maintenance of the expertise instance.</a:documentation>
+         <oneOrMore>
+            <ref name="maintenanceEvent"/>
+         </oneOrMore>
+      </element>
+   </define>
+   <define name="maintenanceStatus">
+      <element name="maintenanceStatus">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Maintenance Status) The current drafting status of the expertise instance.</a:documentation>
+         <text/>
+         <sch:ns xmlns="http://www.tei-c.org/ns/1.0"
+                 xmlns:eg="http://www.tei-c.org/ns/Examples"
+                 xmlns:math="http://www.w3.org/1998/Math/MathML"
+                 xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                 xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                 xmlns:svg="http://www.w3.org/2000/svg"
+                 xmlns:xi="http://www.w3.org/2001/XInclude"
+                 xmlns:xpr="xpr"
+                 xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                 prefix="xpr"
+                 uri="xpr"/>
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  id="xprOdd-maintenanceStatus-maintenanceStatusValues-constraint-rule-20">
+            <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                      xmlns:eg="http://www.tei-c.org/ns/Examples"
+                      xmlns:math="http://www.w3.org/1998/Math/MathML"
+                      xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                      xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      xmlns:svg="http://www.w3.org/2000/svg"
+                      xmlns:xi="http://www.w3.org/2001/XInclude"
+                      xmlns:xpr="xpr"
+                      xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                      xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                      context="xpr:maintenanceStatus">
+               <sch:let name="node" value="local-name()"/>
+               <sch:let name="content" value="normalize-space(.)"/>
+               <sch:let name="value" value="('new', 'revised')"/>
+               <sch:assert test="$content = $value">La valeur de l'élément &lt;<sch:value-of select="$node"/>&gt; doit correspondre à : <sch:value-of select="string-join($value, ', ')"/>
+               </sch:assert>
+            </sch:rule>
+         </pattern>
+      </element>
+   </define>
+   <define name="meta">
+      <element name="meta">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+         <text/>
+      </element>
+   </define>
+   <define name="note">
+      <element name="note">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Note) Note relative à une pièce annexe. Description ouverte qui permet entre autres choses d’indiquer l’auteur, le destinataire ou encore le contexte. Par exemple s’il s’agit d’un devis nous renseignons ici son titre “devis de maçonnerie d’un tel pour un tel”.</a:documentation>
+         <text/>
+      </element>
+   </define>
+   <define name="noteworthy">
+      <element name="noteworthy">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Noteworthy) Élément remarquable</a:documentation>
+         <text/>
+      </element>
+   </define>
+   <define name="object">
+      <element name="object">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Object) </a:documentation>
+         <text/>
+         <sch:ns xmlns="http://www.tei-c.org/ns/1.0"
+                 xmlns:eg="http://www.tei-c.org/ns/Examples"
+                 xmlns:math="http://www.w3.org/1998/Math/MathML"
+                 xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                 xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                 xmlns:svg="http://www.w3.org/2000/svg"
+                 xmlns:xi="http://www.w3.org/2001/XInclude"
+                 xmlns:xpr="xpr"
+                 xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                 prefix="xpr"
+                 uri="xpr"/>
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  id="xprOdd-object-objectValues-constraint-rule-21">
+            <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                      xmlns:eg="http://www.tei-c.org/ns/Examples"
+                      xmlns:math="http://www.w3.org/1998/Math/MathML"
+                      xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                      xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      xmlns:svg="http://www.w3.org/2000/svg"
+                      xmlns:xi="http://www.w3.org/2001/XInclude"
+                      xmlns:xpr="xpr"
+                      xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                      xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                      context="xpr:object[@type!='other']">
+               <sch:let name="node" value="local-name()"/>
+               <sch:let name="content" value="normalize-space(.)"/>
+               <sch:let name="type" value="@type"/>
+               <sch:let name="value">
+                  <xsl:choose>
+                     <xsl:when test="$type = 'house'">
+                        <xsl:text>Maison(s)</xsl:text>
+                     </xsl:when>
+                     <xsl:when test="$type = 'plot'">
+                        <xsl:text>Terrain(s)</xsl:text>
+                     </xsl:when>
+                     <xsl:when test="$type = 'buildings'">
+                        <xsl:text>Ensemble de bâtiments (biens immeubles)</xsl:text>
+                     </xsl:when>
+                     <xsl:when test="$type = 'territory'">
+                        <xsl:text>Domaine, terres, fief</xsl:text>
+                     </xsl:when>
+                     <xsl:when test="$type = 'wall'">
+                        <xsl:text>Mur(s)</xsl:text>
+                     </xsl:when>
+                     <xsl:when test="$type = 'cesspool'">
+                        <xsl:text>Fosse(s) d'aisance</xsl:text>
+                     </xsl:when>
+                     <xsl:when test="$type = 'well'">
+                        <xsl:text>Puits</xsl:text>
+                     </xsl:when>
+                     <xsl:otherwise/>
+                  </xsl:choose>
+               </sch:let>
+               <sch:assert test="$content = $value">Compte tenu du type sélectionné (<sch:value-of select="$type"/>), la valeur de l'élément &lt;<sch:value-of select="$node"/>&gt; doit correspondre à "<sch:value-of select="$value"/>".</sch:assert>
+            </sch:rule>
+         </pattern>
+         <optional>
+            <attribute name="type">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <choice>
+                  <value>house</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <value>plot</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <value>buildings</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <value>territory</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <value>wall</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <value>cesspool</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <value>well</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <value>other</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               </choice>
+            </attribute>
+         </optional>
+         <empty/>
+      </element>
+   </define>
+   <define name="objects">
+      <element name="objects">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Objects) </a:documentation>
+         <oneOrMore>
+            <ref name="object"/>
+         </oneOrMore>
+      </element>
+   </define>
+   <define name="opinion">
+      <element name="opinion">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Opinion) </a:documentation>
+         <text/>
+         <sch:ns xmlns="http://www.tei-c.org/ns/1.0"
+                 xmlns:eg="http://www.tei-c.org/ns/Examples"
+                 xmlns:math="http://www.w3.org/1998/Math/MathML"
+                 xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                 xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                 xmlns:svg="http://www.w3.org/2000/svg"
+                 xmlns:xi="http://www.w3.org/2001/XInclude"
+                 xmlns:xpr="xpr"
+                 xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                 prefix="xpr"
+                 uri="xpr"/>
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  id="xprOdd-opinion-opinionWithNoConclusion-constraint-rule-22">
+            <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                      xmlns:eg="http://www.tei-c.org/ns/Examples"
+                      xmlns:math="http://www.w3.org/1998/Math/MathML"
+                      xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                      xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      xmlns:svg="http://www.w3.org/2000/svg"
+                      xmlns:xi="http://www.w3.org/2001/XInclude"
+                      xmlns:xpr="xpr"
+                      xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                      xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                      context="xpr:opinion[parent::xpr:conclusions/xpr:agreement[@type='noConclusion']]">
+               <sch:assert test="self::xpr:conclusion">Aucune conclusions autorisée dans ce contexte (dispositif de l'expertise sans conclusion).</sch:assert>
+            </sch:rule>
+         </pattern>
+         <ref name="att.pointer.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="orgName">
+      <element name="orgName">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(orgName) </a:documentation>
+         <text/>
+      </element>
+   </define>
+   <define name="occupation">
+      <element name="occupation">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Occupation) </a:documentation>
+         <text/>
+      </element>
+   </define>
+   <define name="origination">
+      <element name="origination">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Origine de l'expertise) </a:documentation>
+         <text/>
+         <sch:ns xmlns="http://www.tei-c.org/ns/1.0"
+                 xmlns:eg="http://www.tei-c.org/ns/Examples"
+                 xmlns:math="http://www.w3.org/1998/Math/MathML"
+                 xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                 xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                 xmlns:svg="http://www.w3.org/2000/svg"
+                 xmlns:xi="http://www.w3.org/2001/XInclude"
+                 xmlns:xpr="xpr"
+                 xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                 prefix="xpr"
+                 uri="xpr"/>
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  id="xprOdd-origination-originationValues-constraint-rule-23">
+            <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                      xmlns:eg="http://www.tei-c.org/ns/Examples"
+                      xmlns:math="http://www.w3.org/1998/Math/MathML"
+                      xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                      xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      xmlns:svg="http://www.w3.org/2000/svg"
+                      xmlns:xi="http://www.w3.org/2001/XInclude"
+                      xmlns:xpr="xpr"
+                      xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                      xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                      context="xpr:origination">
+               <sch:let name="node" value="local-name()"/>
+               <sch:let name="content" value="normalize-space(.)"/>
+               <sch:let name="type" value="@type"/>
+               <sch:let name="value">
+                  <xsl:choose>
+                     <xsl:when test="$type = 'parties'">
+                        <xsl:text>Les parties</xsl:text>
+                     </xsl:when>
+                     <xsl:when test="$type = 'institution'">
+                        <xsl:text>Une institution</xsl:text>
+                     </xsl:when>
+                     <xsl:otherwise/>
+                  </xsl:choose>
+               </sch:let>
+               <sch:assert test="$content = $value">Compte tenu du type sélectionné (<sch:value-of select="$type"/>), la valeur de l'élément &lt;<sch:value-of select="$node"/>&gt; doit correspondre à "<sch:value-of select="$value"/>".</sch:assert>
+            </sch:rule>
+         </pattern>
+         <optional>
+            <attribute name="type">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <choice>
+                  <value>parties</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <value>institution</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               </choice>
+            </attribute>
+         </optional>
+         <empty/>
+      </element>
+   </define>
+   <define name="owner">
+      <element name="owner">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Propriétaire) Propriétaire d'un bien expertisé. Plusieurs propriétaires peuvent être déclarés pour un même bien.</a:documentation>
+         <text/>
+      </element>
+   </define>
+   <define name="parish">
+      <element name="parish">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Paroisse) Paroisse où se situe le bien expertisé.</a:documentation>
+         <text/>
+      </element>
+   </define>
+   <define name="participants">
+      <element name="participants">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Acteurs) Description des différents acteurs mentionnés dans le procès-verbal. Plus particulièrement, il s’agit du ou des experts, du ou des greffiers, des parties, de leur(s) représentant(s) et procureur(s), ou encore des entrepreneurs, architectes ou maîtres d’œuvres n’intervenant pas comme parties mais présents à l’expertise.</a:documentation>
+         <group>
+            <ref name="experts"/>
+            <ref name="clerks"/>
+            <ref name="parties"/>
+            <ref name="craftmen"/>
+         </group>
+      </element>
+   </define>
+   <define name="parties">
+      <element name="parties">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Parties) Contient la description de chaque partie impliquée dans l’affaire par l’intermédiaire du ou des individus ou personne(s) morale(s) qui la composent, et de leur(s) représentant(s) et procureur(s), le cas échéant.</a:documentation>
+         <oneOrMore>
+            <ref name="party"/>
+         </oneOrMore>
+      </element>
+   </define>
+   <define name="party">
+      <element name="party">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Partie) Contient la description d'une partie, individu(s) et/ou personne(s) morale(s), impliquée dans l’affaire.</a:documentation>
+         <group>
+            <oneOrMore>
+               <ref name="person"/>
+            </oneOrMore>
+            <ref name="status"/>
+            <ref name="expert"/>
+            <zeroOrMore>
+               <ref name="representative"/>
+            </zeroOrMore>
+            <zeroOrMore>
+               <ref name="prosecutor"/>
+            </zeroOrMore>
+         </group>
+         <attribute name="role">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+            <choice>
+               <value>petitioner</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>opponent</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+            </choice>
+         </attribute>
+         <attribute name="presence">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+            <choice>
+               <value>true</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>false</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+            </choice>
+         </attribute>
+         <optional>
+            <attribute name="intervention">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <choice>
+                  <value>true</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <value>false</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               </choice>
+            </attribute>
+         </optional>
+         <empty/>
+      </element>
+   </define>
+   <define name="persName">
+      <element name="persName">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Nom de personne) Contient un nom propre ou une expression nominale se référant à une personne, pouvant inclure tout ou partie de ses prénoms, noms de famille, titres honorifiques, noms ajoutés, etc.</a:documentation>
+         <group>
+            <ref name="surname"/>
+            <ref name="forename"/>
+         </group>
+      </element>
+   </define>
+   <define name="person">
+      <element name="person">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Person) </a:documentation>
+         <group>
+            <ref name="persName"/>
+            <ref name="occupation"/>
+         </group>
+      </element>
+   </define>
+   <define name="physDesc">
+      <element name="physDesc">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Description physique) Contient la description physique des pièces, procès-verbaux et annexes.</a:documentation>
+         <choice>
+            <ref name="extent"/>
+            <group>
+               <ref name="extent"/>
+               <ref name="appendices"/>
+            </group>
+         </choice>
+      </element>
+   </define>
+   <define name="place">
+      <element name="place">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Lieu) Decrit les lieux où le ou les experts ont effectivement procédé à l’expertise, et non les biens. Par exemple : dans le cas d’une grande seigneurie, il peut y avoir beaucoup de biens décrits (terres, bâtiments, châteaux, droits seigneuriaux, etc.), mais ses biens peuvent se trouver sur un même lieu, il n’est donc pas nécessaire de déclarer ce lieu plusieurs fois. Peut également contenir la description de biens rattachés à un lieu dans la partie conclusions, et uniquement pour les cas d’estimation. </a:documentation>
+         <choice>
+            <group>
+               <ref name="address"/>
+               <ref name="complement"/>
+               <ref name="parish"/>
+               <optional>
+                  <ref name="city"/>
+               </optional>
+               <optional>
+                  <ref name="district"/>
+               </optional>
+               <oneOrMore>
+                  <ref name="owner"/>
+               </oneOrMore>
+            </group>
+            <oneOrMore>
+               <ref name="appraisal"/>
+            </oneOrMore>
+         </choice>
+         <ref name="att.global.attributes"/>
+         <optional>
+            <attribute name="ref">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <data type="anyURI"/>
+            </attribute>
+         </optional>
+         <optional>
+            <attribute name="type">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <choice>
+                  <value>paris</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Paris) Paris et faubourgs.</a:documentation>
+                  <value>suburbs</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Banlieue) Banlieue.</a:documentation>
+                  <value>province</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Campagne) Campagne (hors de Paris, de ses faubourg et de sa banlieue).</a:documentation>
+                  <value>office</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Bureau des experts) Bureau des experts.</a:documentation>
+                  <value>clerkOffice</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Bureau des greffiers) Bureau des greffiers.</a:documentation>
+                  <value>indeterminate</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Indéterminé) Indéterminé.</a:documentation>
+               </choice>
+            </attribute>
+         </optional>
+         <empty/>
+      </element>
+   </define>
+   <define name="places">
+      <element name="places">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Lieux) Contient la description des différents lieux de l’expertise. On décrit ici tous les lieux où l’expertise s’est déroulée. Il s’agit des lieux au moment de l’expertise. Plusieurs lieux peuvent être déclarés pour une même expertise. Il peut s’agir par exemple de l’adresse à laquelle le ou les experts se sont déplacés pour procéder à l’expertise.</a:documentation>
+         <oneOrMore>
+            <ref name="place"/>
+         </oneOrMore>
+      </element>
+   </define>
+   <define name="prosecutor">
+      <element name="prosecutor">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Prosecutor) </a:documentation>
+         <ref name="persName"/>
+      </element>
+   </define>
+   <define name="procedure">
+      <element name="procedure">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Procédure) </a:documentation>
+         <group>
+            <ref name="framework"/>
+            <ref name="origination"/>
+            <ref name="sentences"/>
+            <ref name="case"/>
+            <ref name="objects"/>
+         </group>
+      </element>
+   </define>
+   <define name="publicationStatus">
+      <element name="publicationStatus">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Publication Status) The current publication status of the expertise instance.</a:documentation>
+         <text/>
+         <sch:ns xmlns="http://www.tei-c.org/ns/1.0"
+                 xmlns:eg="http://www.tei-c.org/ns/Examples"
+                 xmlns:math="http://www.w3.org/1998/Math/MathML"
+                 xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                 xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                 xmlns:svg="http://www.w3.org/2000/svg"
+                 xmlns:xi="http://www.w3.org/2001/XInclude"
+                 xmlns:xpr="xpr"
+                 xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                 prefix="xpr"
+                 uri="xpr"/>
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  id="xprOdd-publicationStatus-publicationStatusValues-constraint-rule-24">
+            <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                      xmlns:eg="http://www.tei-c.org/ns/Examples"
+                      xmlns:math="http://www.w3.org/1998/Math/MathML"
+                      xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                      xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      xmlns:svg="http://www.w3.org/2000/svg"
+                      xmlns:xi="http://www.w3.org/2001/XInclude"
+                      xmlns:xpr="xpr"
+                      xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                      xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                      context="xpr:publicationStatus">
+               <sch:let name="node" value="local-name()"/>
+               <sch:let name="content" value="normalize-space(.)"/>
+               <sch:let name="value" value="('inProcess', 'approved')"/>
+               <sch:assert test="$content = $value">La valeur de l'élément &lt;<sch:value-of select="$node"/>&gt; doit correspondre à : <sch:value-of select="string-join($value, ', ')"/>
+               </sch:assert>
+            </sch:rule>
+         </pattern>
+      </element>
+   </define>
+   <define name="representative">
+      <element name="representative">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Representative) </a:documentation>
+         <group>
+            <ref name="persName"/>
+            <ref name="occupation"/>
+         </group>
+      </element>
+   </define>
+   <define name="sentence">
+      <element name="sentence">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Sentence) </a:documentation>
+         <group>
+            <ref name="orgName"/>
+            <oneOrMore>
+               <ref name="date"/>
+            </oneOrMore>
+         </group>
+      </element>
+   </define>
+   <define name="sentences">
+      <element name="sentences">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Sentences) </a:documentation>
+         <oneOrMore>
+            <ref name="sentence"/>
+         </oneOrMore>
+      </element>
+   </define>
+   <define name="sessions">
+      <element name="sessions">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Vacations) Contient la description des vacations mentionnées dans le procès-verbal. Pour chaque vacation effectuée, on précise sa date et son lieu. Toutes les vacations doivent être saisies, sauf très grosses affaires (+ de 25 vacations) : on note alors la première et la dernière, on indiquera en commentaire à la fin du formulaire le nombre de vacations. Deux vacations maximum peuvent être effectuées le même jour à Paris et en Banlieue, en campagne l’unité est la journée.</a:documentation>
+         <oneOrMore>
+            <ref name="date"/>
+         </oneOrMore>
+      </element>
+   </define>
+   <define name="sourceDesc">
+      <element name="sourceDesc">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Description de la source) Description bibliographique et physique de la source.</a:documentation>
+         <group>
+            <ref name="unitdate"/>
+            <group>
+               <ref name="idno"/>
+               <ref name="idno"/>
+               <optional>
+                  <ref name="idno"/>
+               </optional>
+            </group>
+            <ref name="facsimile"/>
+            <ref name="physDesc"/>
+         </group>
+      </element>
+   </define>
+   <define name="status">
+      <element name="status">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Status) </a:documentation>
+         <text/>
+         <sch:ns xmlns="http://www.tei-c.org/ns/1.0"
+                 xmlns:eg="http://www.tei-c.org/ns/Examples"
+                 xmlns:math="http://www.w3.org/1998/Math/MathML"
+                 xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                 xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                 xmlns:svg="http://www.w3.org/2000/svg"
+                 xmlns:xi="http://www.w3.org/2001/XInclude"
+                 xmlns:xpr="xpr"
+                 xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                 prefix="xpr"
+                 uri="xpr"/>
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  id="xprOdd-status-statusValues-constraint-rule-25">
+            <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                      xmlns:eg="http://www.tei-c.org/ns/Examples"
+                      xmlns:math="http://www.w3.org/1998/Math/MathML"
+                      xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                      xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      xmlns:svg="http://www.w3.org/2000/svg"
+                      xmlns:xi="http://www.w3.org/2001/XInclude"
+                      xmlns:xpr="xpr"
+                      xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                      xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                      context="xpr:status">
+               <sch:let name="node" value="local-name()"/>
+               <sch:let name="content" value="normalize-space(.)"/>
+               <sch:let name="value"
+                        value="('builder', 'owner', 'joint-owner', 'limited-partner', 'heir', 'neighbour', 'tenant', 'main-tenant', 'creditor', 'mortgagor', 'contractor', 'police')">  
+                </sch:let>
+               <sch:assert test="$content = $value">La valeur de l'élément &lt;<sch:value-of select="$node"/>&gt; doit correspondre à "<sch:value-of select="$value"/>".</sch:assert>
+            </sch:rule>
+         </pattern>
+      </element>
+   </define>
+   <define name="street">
+      <element name="street">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Rue / voie) Contient nom de la voie du bien expertisé.</a:documentation>
+         <text/>
+      </element>
+   </define>
+   <define name="surname">
+      <element name="surname">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Nom de famille) Contient un nom de famille.</a:documentation>
+         <text/>
+      </element>
+   </define>
+   <define name="term">
+      <element name="term">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Term) A generic element used to encode a descriptive term in accordance with local descriptive rules.</a:documentation>
+         <text/>
+         <optional>
+            <attribute name="value">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+            </attribute>
+         </optional>
+         <empty/>
+      </element>
+   </define>
+   <define name="title">
+      <element name="title">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Title) </a:documentation>
+         <text/>
+      </element>
+   </define>
+   <define name="total">
+      <element name="total">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Total) </a:documentation>
+         <empty/>
+         <ref name="att.monetary.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="type">
+      <element name="type">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Type de pièce annexe) Précise le type de pièce annexe. Une même pièce peut avoir plusieurs types. Par exemple, une annexe comporte un croquis et un plan. En plus des types déjà définis, il est possible de les compléter avec la valeur autre | other.</a:documentation>
+         <text/>
+         <attribute name="type">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+            <choice>
+               <value>drawing</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Dessin) </a:documentation>
+               <value>plan</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Plan, coupe, élévation) </a:documentation>
+               <value>sketch</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Croquis) </a:documentation>
+               <value>rough</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Brouillon) </a:documentation>
+               <value>proxyPA</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Pouvoir/procuration (acte sous seing privé)) </a:documentation>
+               <value>proxyNa</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Pouvoir/procuration (acte notarié)) </a:documentation>
+               <value>petition</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Requête) </a:documentation>
+               <value>other</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(autre) </a:documentation>
+            </choice>
+         </attribute>
+         <empty/>
+      </element>
+   </define>
+   <define name="unitdate">
+      <element name="unitdate">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Date du procès-verbal) La date de création du procès-verbal décrit.</a:documentation>
+         <text/>
+         <sch:ns xmlns="http://www.tei-c.org/ns/1.0"
+                 xmlns:eg="http://www.tei-c.org/ns/Examples"
+                 xmlns:math="http://www.w3.org/1998/Math/MathML"
+                 xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                 xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                 xmlns:svg="http://www.w3.org/2000/svg"
+                 xmlns:xi="http://www.w3.org/2001/XInclude"
+                 xmlns:xpr="xpr"
+                 xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                 prefix="xpr"
+                 uri="xpr"/>
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  id="xprOdd-unitdate-unitdateControl-constraint-rule-26">
+            <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                      xmlns:eg="http://www.tei-c.org/ns/Examples"
+                      xmlns:math="http://www.w3.org/1998/Math/MathML"
+                      xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                      xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      xmlns:svg="http://www.w3.org/2000/svg"
+                      xmlns:xi="http://www.w3.org/2001/XInclude"
+                      xmlns:xpr="xpr"
+                      xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                      xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                      context="xpr:unitdate">
+               <sch:let name="node" value="local-name()"/>
+               <sch:assert test="normalize-space(.) castable as xs:gYear">Le contenu de l'élément &lt;<sch:value-of select="$node"/>&gt; doit être de type xs:gYear.</sch:assert>
+            </sch:rule>
+         </pattern>
+      </element>
+   </define>
+   <define name="att.global.attributes">
+      <ref name="att.global.attribute.xmlid"/>
+      <ref name="att.global.attribute.xmllang"/>
+   </define>
+   <define name="att.global.attribute.xmlid">
+      <optional>
+         <attribute name="xml:id">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(XML identifier) </a:documentation>
+            <data type="ID"/>
+         </attribute>
+      </optional>
+   </define>
+   <define name="att.global.attribute.xmllang">
+      <optional>
+         <attribute name="xml:lang">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(XML Language) </a:documentation>
+            <data type="string"/>
+         </attribute>
+      </optional>
+   </define>
+   <define name="att.monetary.attributes">
+      <ref name="att.monetary.attribute.l"/>
+      <ref name="att.monetary.attribute.s"/>
+      <ref name="att.monetary.attribute.d"/>
+   </define>
+   <define name="att.monetary.attribute.l">
+      <attribute name="l">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Livres) </a:documentation>
+         <data type="integer"/>
+      </attribute>
+   </define>
+   <define name="att.monetary.attribute.s">
+      <optional>
+         <attribute name="s">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(sols) </a:documentation>
+            <data type="integer"/>
+         </attribute>
+      </optional>
+   </define>
+   <define name="att.monetary.attribute.d">
+      <optional>
+         <attribute name="d">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(deniers) </a:documentation>
+            <data type="integer"/>
+         </attribute>
+      </optional>
+   </define>
+   <define name="att.pointer.attributes">
+      <ref name="att.pointer.attribute.ref"/>
+   </define>
+   <define name="att.pointer.attribute.ref">
+      <attribute name="ref">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+         <data type="anyURI"/>
+      </attribute>
+   </define>
+   <start>
+      <choice>
+         <ref name="expertise"/>
+      </choice>
+   </start>
+</grammar>

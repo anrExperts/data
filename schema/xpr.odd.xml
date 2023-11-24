@@ -27,8 +27,8 @@
       <schemaSpec ident="xprOdd" start="expertise" ns="xpr">
         
         <elementSpec ident="address">
-          <gloss>Address</gloss>
-          <desc></desc>
+          <gloss>Adresse</gloss>
+          <desc>Contient une adresse.</desc>
           <content>
             <sequence>
               <elementRef key="street"/>
@@ -44,6 +44,61 @@
           <content>
             <textNode/>
           </content>
+        </elementSpec>
+        
+        <elementSpec ident="agreement">
+          <gloss>Dispositif de l’expertise</gloss>
+          <desc>Décrit comment se termine l’expertise, si une conclusion est rendue et s’il y a accord, ou non, entre les experts.</desc>
+          <content>
+            <textNode/>
+          </content>
+          <constraintSpec scheme="schematron" ident="agreementType">
+            <constraint>
+              <sch:ns prefix="xpr" uri="xpr"/>
+              <sch:rule context="xpr:agreement[ancestor::xpr:description/xpr:participants/xpr:experts[count(xpr:expert)>1]]/@type">
+                <sch:let name="type" value="normalize-space(.)"/>
+                <sch:let name="typeValues" value="('agreement', 'disagreement', 'noConclusion', 'unfinished')"/>
+                <sch:assert test="$type = $typeValues">La valeur de l'attrtibut @type n'est pas autorisée. Elle doit correspondre à "<sch:value-of select="string-join($typeValues, ', ')"/>".</sch:assert>
+              </sch:rule>
+              <sch:rule context="xpr:agreement[ancestor::xpr:description/xpr:participants/xpr:experts[count(xpr:expert)=1]]/@type">
+                <sch:let name="type" value="normalize-space(.)"/>
+                <sch:let name="typeValues" value="('conclusion', 'noConclusion', 'unfinished')"/>
+                <sch:assert test="$type = $typeValues">La valeur de l'attrtibut @type n'est pas autorisée. Elle doit correspondre à "<sch:value-of select="string-join($typeValues, ', ')"/>".</sch:assert>
+              </sch:rule>
+            </constraint>
+          </constraintSpec>
+          <!-- @todo si cette règle est activée est obtient la priorité sur les deux autres, qui ne sont plus opérantes -->
+          <!--<constraintSpec scheme="schematron" ident="agreementValues">
+            <constraint>
+              <sch:ns prefix="xpr" uri="xpr"/>
+              <sch:rule context="xpr:agreement">
+                <sch:let name="node" value="local-name()"/>
+                <sch:let name="content" value="normalize-space(.)"/>
+                <sch:let name="type" value="@type"/>
+                <sch:let name="value">
+                  <xsl:choose>
+                    <xsl:when test="$type = 'agreement'"><xsl:text>Accord</xsl:text></xsl:when>
+                    <xsl:when test="$type = 'disagreement'"><xsl:text>Désaccord</xsl:text></xsl:when>
+                    <xsl:when test="$type = 'conclusion'"><xsl:text>Conclusion</xsl:text></xsl:when>
+                    <xsl:when test="$type = 'noConclusion'"><xsl:text>Sans conclusion</xsl:text></xsl:when>
+                    <xsl:when test="$type = 'unfinished'"><xsl:text>Affaire inachevée</xsl:text></xsl:when>
+                  </xsl:choose>
+                </sch:let>
+                <sch:assert test="$content = $value">Compte tenu du type sélectionné (<sch:value-of select="$type"/>), la valeur de l'élément &lt;<sch:value-of select="$node"/>&gt; doit correspondre à "<sch:value-of select="$value"/>".</sch:assert>
+              </sch:rule>
+            </constraint>
+          </constraintSpec>-->
+          <attList>
+            <attDef ident="type" usage="req">
+              <valList type="closed">
+                <valItem ident="conclusion"><desc></desc></valItem>
+                <valItem ident="noConclusion"><desc></desc></valItem>
+                <valItem ident="agreement"><desc></desc></valItem>
+                <valItem ident="disagreement"><desc></desc></valItem>
+                <valItem ident="unfinished"><desc></desc></valItem>
+              </valList>
+            </attDef>
+          </attList>
         </elementSpec>
         
         <elementSpec ident="agentType">
@@ -65,9 +120,17 @@
           </constraintSpec>
         </elementSpec>
         
+        <elementSpec ident="analysis">
+          <gloss>Passages intéressants</gloss>
+          <desc>Contient les transcriptions de passages intéressants de l’expertise, autres que les avis et conclusions des experts.</desc>
+          <content>
+            <textNode/>
+          </content>
+        </elementSpec>
+        
         <elementSpec ident="appendice">
-          <gloss>Appendice</gloss>
-          <desc></desc>
+          <gloss>Annexe</gloss>
+          <desc>Description physique d'une pièce annexe.</desc>
           <content>
             <sequence>
               <elementRef key="type" minOccurs="1" maxOccurs="unbounded"/>
@@ -79,32 +142,65 @@
         </elementSpec>
         
         <elementSpec ident="appendices">
-          <gloss>Appendices</gloss>
-          <desc></desc>
+          <gloss>Annexes</gloss>
+          <desc>Contient les descriptions physiques de chaque pièce annexe.</desc>
           <content>
             <elementRef key="appendice" minOccurs="1" maxOccurs="unbounded"/>
           </content>
         </elementSpec>
         
+        <elementSpec ident="appraisal">
+          <gloss>Nature d'un bien</gloss>
+          <desc>Description permettant l’identification d’un bien.</desc>
+          <classes>
+            <memberOf key="att.monetary"/>
+          </classes>
+          <content>
+            <elementRef key="desc"/>
+          </content>
+        </elementSpec>
+        
+        <elementSpec ident="arrangement">
+          <gloss>Accommodement</gloss>
+          <desc>Indique si l’affaire s’est terminée par un accord amiable entre les parties ou par une remise sans suite, sans que l’expertise n’aille jusqu’à son terme.</desc>
+          <content>
+            <alternate>
+              <empty/>
+              <textNode/>  
+            </alternate>
+          </content>
+          <constraintSpec scheme="schematron" ident="arrangement">
+            <constraint>
+              <sch:ns prefix="xpr" uri="xpr"/>
+              <sch:rule context="xpr:arrangement[.!='']">
+                <sch:let name="node" value="local-name()"/>
+                <sch:let name="content" value="normalize-space(.)"/>
+                <sch:let name="value" value="('Résolution par les parties')"/>
+                <sch:assert test="$content = $value">La valeur de l'élément &lt;<sch:value-of select="$node"/>&gt; doit correspondre à : <sch:value-of select="$value"/>.</sch:assert>
+              </sch:rule>
+            </constraint>
+          </constraintSpec>
+        </elementSpec>
+        
         <elementSpec ident="buildingNumber">
-          <gloss>Building Number</gloss>
-          <desc></desc>
+          <gloss>Numéro de voie</gloss>
+          <desc>Contient le numéro du bien expertisé, si la voie en est pourvue.</desc>
           <content>
             <textNode/>
           </content>
         </elementSpec>
         
         <elementSpec ident="case">
-          <gloss>Case</gloss>
-          <desc></desc>
+          <gloss>Cause de l’expertise</gloss>
+          <desc>Cause de l’expertise, ce qui donne lieu à l’expertise, à distinguer de l’objet de l’expertise, même si ces deux champs peuvent se rejoindre. Exemples : entretien, fin de location, nouvelle construction, partage, privilège, réception de travaux, reconstruction de mur mitoyen, prêt, mesure de protection à l’égard d’un incapable, vente d’un bien, etc.</desc>
           <content>
             <textNode/>
           </content>
         </elementSpec>
         
         <elementSpec ident="category">
-          <gloss>Category</gloss>
-          <desc></desc>
+          <gloss>Catégorie d’expertise</gloss>
+          <desc>Décrit la nature de l’affaire qui est soumise aux experts.</desc>
           <content>
             <textNode/>
           </content>
@@ -132,22 +228,22 @@
           <attList>
             <attDef ident="type" usage="req">
               <valList type="closed">
-                <valItem ident="assessment"/>
-                <valItem ident="settlement"/>
-                <valItem ident="registration"/>
-                <valItem ident="estimation"/>
-                <valItem ident="acceptation"/>
+                <valItem ident="assessment"><gloss>description et évaluation de travaux à venir</gloss><desc>Décrire et évaluer les travaux à venir | ex : Réparations à faire</desc></valItem>
+                <valItem ident="settlement"><gloss>départage</gloss><desc>Départager | ex : Conflit de voisinage et conflit entre locataire et propriétaire, répartition des frais d’entretien ou de construction d’un mur mitoyen, conflits de fosses d’aisance, prise en charge des réparations locatives etc.</desc></valItem>
+                <valItem ident="registration"><gloss>enregistrement</gloss><desc>Enregistrer | ex : Projet de construction (arrêt du Parlement du 18 août 1766), alignement non conflictuel et non estimatif, état des lieux, etc.</desc></valItem>
+                <valItem ident="estimation"><gloss>estimation</gloss><desc>Estimer la valeur des biens | ex : Partage et succession, évaluation en vue d’une vente de biens meubles ou immeubles, etc.</desc></valItem>
+                <valItem ident="acceptation"><gloss>réception et évaluation de travaux à réaliser</gloss><desc>Recevoir et évaluer le travail réalisé | ex : Réception d’ouvrages, estimation d’honoraires, défaut de paiement, etc.</desc></valItem>
               </valList>
             </attDef>
           </attList>
         </elementSpec>
         
         <elementSpec ident="categories">
-          <gloss>Categories</gloss>
-          <desc></desc>
+          <gloss>Catégories d’expertise</gloss>
+          <desc>Décrit la nature de l’affaire qui est soumise aux experts. Plusieurs catégories peuvent être cochées pour une même expertise. L’information est répétable mais il est préférable de choisir parmi ces catégories.</desc>
           <content>
             <sequence>
-              <!-- @rmq un ou plus (category) -->
+              <!-- @rmq un ou plus (category) ? -->
               <elementRef key="category"/>
               <elementRef key="designation"/>
             </sequence>
@@ -155,16 +251,16 @@
         </elementSpec>
         
         <elementSpec ident="city">
-          <gloss>City</gloss>
-          <desc></desc>
+          <gloss>Ville</gloss>
+          <desc>Nom de la ville d'un bien expertisé dans le procès-verbal, si l’expertise ne se déroule pas à Paris.</desc>
           <content>
             <textNode/>
           </content>
         </elementSpec>
         
         <elementSpec ident="clerk">
-          <gloss>Clerk</gloss>
-          <desc></desc>
+          <gloss>Greffier</gloss>
+          <desc>Description d'un greffier mentionné dans l'affaire.</desc>
           <classes>
             <memberOf key="att.pointer"/>
           </classes>
@@ -176,8 +272,8 @@
         </elementSpec>
         
         <elementSpec ident="clerks">
-          <gloss>Clerks</gloss>
-          <desc></desc>
+          <gloss>Greffiers</gloss>
+          <desc>Déclaration des greffiers mentionnés dans l’expertise. Plusieurs greffiers peuvent être décrits.</desc>
           <content>
             <sequence>
               <elementRef key="clerk" minOccurs="1" maxOccurs="unbounded"/>
@@ -185,9 +281,17 @@
           </content>
         </elementSpec>
         
+        <elementSpec ident="comment">
+          <gloss>Commentaire</gloss>
+          <desc>Commentaire sur le fonctionnement du formulaire (problème technique, difficulté pour rendre compte de la source, etc.)</desc>
+          <content>
+            <textNode/>
+          </content>
+        </elementSpec>
+        
         <elementSpec ident="complement">
-          <gloss>Complement</gloss>
-          <desc></desc>
+          <gloss>Précisions géographiques</gloss>
+          <desc>Contient toutes autres indications permettant de localiser un bien. Cette information n'est pas toujours présente dans le résumé de la première page (qui peut être fautif) et peut être trouvée dans le corps de l'expertise, voire dans les pièces annexes. Par exemple, nous relevons ici les mentions « près du croisement de la rue xxx et de la rue xxx », « à l’enseigne xxx », « en face de XXX », « en rentrant à droite dans la rue XXX », « quartier XXXX », « à 20 lieues de XXX », etc.</desc>
           <content>
             <textNode/>
           </content>
@@ -195,13 +299,14 @@
         
         <elementSpec ident="conclusions">
           <gloss>Conclusions</gloss>
-          <desc></desc>
+          <desc>Décrit les conclusions et dispositifs de l’expertise.</desc>
           <content>
             <sequence>
               <elementRef key="agreement"/>
               <elementRef key="opinion" minOccurs="0" maxOccurs="unbounded"/>
               <elementRef key="arrangement"/>
               <elementRef key="estimate"/>
+              <elementRef key="estimates" minOccurs="0" maxOccurs="1"/>
               <elementRef key="fees"/>
               <elementRef key="expenses"/>
             </sequence>
@@ -223,8 +328,8 @@
         </elementSpec>
 
         <elementSpec ident="craftman">
-          <gloss>Craftman</gloss>
-          <desc></desc>
+          <gloss>Entrepreneur, architecte ou maître d’œuvre</gloss>
+          <desc>Description d'un entrepreneur, architecte ou maître d’œuvre n’intervenant pas comme partie, mais présent à l’expertise ou mentionné.</desc>
           <content>
             <sequence>
               <elementRef key="persName"/>
@@ -234,8 +339,8 @@
         </elementSpec>
 
         <elementSpec ident="craftmen">
-          <gloss>Craftmen</gloss>
-          <desc></desc>
+          <gloss>Entrepreneurs, architectes ou maîtres d’œuvre</gloss>
+          <desc>Description de tous les entrepreneurs, architectes ou maîtres d’œuvre n’intervenant pas comme parties, mais présents à l’expertise ou mentionnés.</desc>
           <content>
             <sequence>
               <elementRef key="craftman" minOccurs="1" maxOccurs="unbounded"/>
@@ -245,7 +350,7 @@
         
         <elementSpec ident="date">
           <gloss>Date</gloss>
-          <desc></desc>
+          <desc>Date d'une vacation, d'une sentence, etc.</desc>
           <content>
             <textNode/>
           </content>
@@ -270,9 +375,9 @@
             </attDef>
             <attDef ident="type" usage="opt">
               <valList type="closed">
-                <valItem ident="paris"/>
-                <valItem ident="suburbs"/>
-                <valItem ident="province"/>
+                <valItem ident="paris"><gloss>Paris</gloss><desc>Vacation se déroulant à Paris et ses faubourgs.</desc></valItem>
+                <valItem ident="suburbs"><gloss>Banlieue</gloss><desc>Vacation se déroulant dans en banlieue.</desc></valItem>
+                <valItem ident="province"><gloss>Campagne</gloss><desc>Vacation se déroulant hors de Paris et de sa banlieue.</desc></valItem>
               </valList>
             </attDef>
           </attList>
@@ -283,20 +388,25 @@
           <desc>Description related to the described expertise.</desc>
           <desc></desc>
           <content>
-            <sequence>
-              <elementRef key="sessions"/>
-              <elementRef key="places"/>
-              <elementRef key="categories"/>
-              <elementRef key="procedure"/>
-              <elementRef key="participants"/>
-              <elementRef key="conclusions"/>
-            </sequence>
+            <alternate>
+              <sequence>
+                <elementRef key="sessions"/>
+                <elementRef key="places"/>
+                <elementRef key="categories"/>
+                <elementRef key="procedure"/>
+                <elementRef key="participants"/>
+                <elementRef key="conclusions"/>
+                <elementRef key="keywords" minOccurs="0" maxOccurs="unbounded"/>
+                <elementRef key="analysis"/>
+                <elementRef key="noteworthy"/>
+              </sequence>
+            </alternate>
           </content>
         </elementSpec>
         
         <elementSpec ident="desc">
           <gloss>Description</gloss>
-          <desc>Description related to an appendice.</desc>
+          <desc>Description des caractéristiques physiques du document (cahier, plan plié, etc.). Par exemple, s’il s’agit d’un dessin ou d’un plan, nous indiquons ici la technique employée (au trait, lavé, etc.).</desc>
           <desc></desc>
           <content>
             <textNode/>
@@ -304,26 +414,49 @@
         </elementSpec>
         
         <elementSpec ident="designation">
-          <gloss>Designation</gloss>
-          <desc></desc>
+          <gloss>Désignation</gloss>
+          <desc>Titre donné à l’expertise dans l’acte lorsqu’il est présent ou désignation sommaire donnée lors du récolement pour décrire l’affaire lorsque ce n’est pas indiqué dans l’acte. Une description complémentaire à celle de l’acte peut être ajoutée entre crochets si cette dernière est incomplète.</desc>
           <content>
             <textNode/>
           </content>
           <attList>
             <attDef ident="rubric" usage="req">
+              <gloss>En rubrique</gloss>
+              <desc>Indique si la désignation (champ précédent) apparaît en rubrique sur l’acte. (analyse marginale ou fournie comme un titre).</desc>
               <valList type="closed">
-                <valItem ident="true"/>
-                <valItem ident="false"/>
+                <valItem ident="true"><gloss>oui</gloss></valItem>
+                <valItem ident="false"><gloss>non</gloss></valItem>
               </valList>
             </attDef>  
           </attList>
         </elementSpec>
         
         <elementSpec ident="district">
-          <gloss>District</gloss>
-          <desc></desc>
+          <gloss>Département</gloss>
+          <desc>Contient le département d'un bien expertisé, si l’expertise ne se déroule pas à Paris. On parle du département actuel.</desc>
           <content>
             <textNode/>
+          </content>
+        </elementSpec>
+        
+        <elementSpec ident="estimate">
+          <gloss>Montant global</gloss>
+          <desc>Montant total cumulé de toutes les estimations de biens réalisées durant l’expertise.</desc>
+          <classes>
+            <memberOf key="att.monetary"/>
+          </classes>
+          <content>
+            <empty/>
+          </content>
+        </elementSpec>
+        
+        <elementSpec ident="estimates">
+          <gloss>Estimations</gloss>
+          <desc>Dans le cadre d’une expertise pour « estimer la valeur des biens », l’estimation des biens (incluant les droits seigneuriaux) est donnée pour chaque lieu déclaré. Pour les grosses affaires, ce travail sera effectué à posteriori.</desc>
+          <content>
+            <sequence>
+              <elementRef key="place" minOccurs="1" maxOccurs="unbounded"/>
+            </sequence>
           </content>
         </elementSpec>
         
@@ -373,9 +506,62 @@
           </content>
         </elementSpec>
         
+        <elementSpec ident="expense">
+          <gloss>Bourse commune</gloss>
+          <desc>Mention de la bourse commune des experts ou des greffiers et détail du coût.</desc>
+          <classes>
+            <memberOf key="att.monetary"/>
+          </classes>
+          <content>
+            <empty/>
+          </content>
+          <constraintSpec scheme="schematron" ident="expensesContent">
+            <constraint>
+              <sch:ns prefix="xpr" uri="xpr"/>
+              <sch:rule context="xpr:expense[parent::xpr:expenses[@mentioned='true']]">
+                <sch:let name="node" value="local-name()"/>
+                <sch:let name="value"/>
+                <sch:assert test="self::xpr:expense">Élément(s) &lt;<sch:value-of select="$node"/>&gt; manquant.</sch:assert>
+              </sch:rule>
+              <sch:rule context="xpr:expense[parent::xpr:expenses[@mentioned='false']]">
+                <sch:let name="node" value="local-name()"/>
+                <sch:let name="value"/>
+                <sch:assert test="//xpr:expenses[not(xpr:expense)]">Élément(s) &lt;<sch:value-of select="$node"/>&gt; non autorisé(s).</sch:assert>
+              </sch:rule>
+            </constraint>
+          </constraintSpec>
+          <attList>
+            <attDef ident="type" usage="req">
+              <valList type="closed">
+                <valItem ident="expert"/>
+                <valItem ident="clerk"/>
+              </valList>
+            </attDef>
+          </attList>
+        </elementSpec>
+        
+        <elementSpec ident="expenses">
+          <gloss>Bourses communes</gloss>
+          <desc>Contient les bourses communes des experts et des greffiers.</desc>
+          <content>
+            <alternate>
+              <empty/>
+              <elementRef key="expense" minOccurs="2" maxOccurs="2"/>
+            </alternate>
+          </content>
+          <attList>
+            <attDef ident="mentioned" usage="req">
+              <valList type="closed">
+                <valItem ident="true"/>
+                <valItem ident="false"/>
+              </valList>
+            </attDef>
+          </attList>
+        </elementSpec>
+        
         <elementSpec ident="expert">
           <gloss>Expert</gloss>
-          <desc></desc>
+          <desc>Contient la description d'un expert impliqué dans l'affaire.</desc>
           <classes>
             <memberOf key="att.pointer"/>
           </classes>
@@ -404,46 +590,46 @@
           </constraintSpec>
           <attList>
             <attDef ident="context" usage="opt">
-              <gloss>Context</gloss>
-              <desc>Qualité de l’expert</desc>
+              <gloss>Qualité de l’expert</gloss>
+              <desc>Indique le cadre de nomination de l’expert.</desc>
               <valList type="closed">
                 <valItem ident="primary">
-                  <gloss>primary</gloss>
-                  <desc>premier lieu</desc>
+                  <gloss>premier lieu</gloss>
+                  <desc>Expert nommé en premier lieu</desc>
                 </valItem>
                 <valItem ident="third-party">
-                  <gloss>third-party</gloss>
-                  <desc>tiers expert</desc>
+                  <gloss>Tiers-expert.</gloss>
+                  <desc>Tiers-expert.</desc>
                 </valItem>
                 <valItem ident="unknown">
-                  <gloss>unknown</gloss>
-                  <desc>indéterminé</desc>
+                  <gloss>Indéterminé</gloss>
+                  <desc>Indéterminé.</desc>
                 </valItem>
               </valList>
             </attDef>
             <attDef ident="appointment" usage="opt">
-              <gloss>Appointment</gloss>
-              <desc>Origine de la nomination</desc>
+              <gloss>Origine de la nomination</gloss>
+              <desc>Indique qui a nommé l’expert pour l’expertise.</desc>
               <valList type="closed">
                 <valItem ident="court-appointed">
                   <gloss>court-appointed</gloss>
-                  <desc>d’office (par une institution)</desc>
+                  <desc>Nommination d’office (par une institution).</desc>
                 </valItem>
                 <valItem ident="appointed">
                   <gloss>appointed</gloss>
-                  <desc>par les parties</desc>
+                  <desc>Nommination par les parties.</desc>
                 </valItem>
                 <valItem ident="experts">
                   <gloss>experts</gloss>
-                  <desc>par les experts</desc>
+                  <desc>Nommination par les experts.</desc>
                 </valItem>
                 <valItem ident="mixed">
                   <gloss>mixed</gloss>
-                  <desc>mixte</desc>
+                  <desc>Nommination mixte.</desc>
                 </valItem>
                 <valItem ident="unknown">
                   <gloss>unknown</gloss>
-                  <desc>indéterminé</desc>
+                  <desc>Nomination indéterminée.</desc>
                 </valItem>
               </valList>
             </attDef>
@@ -462,6 +648,7 @@
               <elementRef key="control"/>
               <elementRef key="sourceDesc"/>
               <elementRef key="description"/>
+              <elementRef key="comment" minOccurs="0" maxOccurs="1"/>
             </sequence>
           </content>
           <attList>
@@ -476,7 +663,7 @@
         
         <elementSpec ident="experts">
           <gloss>Experts</gloss>
-          <desc></desc>
+          <desc>Déclaration des experts qui sont en rapport avec la même affaire (même objet, etc.). Plusieurs experts peuvent être décrits.</desc>
           <content>
             <sequence>
               <elementRef key="expert" minOccurs="1" maxOccurs="unbounded"/>
@@ -486,8 +673,8 @@
         
         <elementSpec ident="extent">
           <!-- @todo schematron pour @sketch si physDesc/extent -->
-          <gloss>Extent</gloss>
-          <desc></desc>
+          <gloss>Étendue</gloss>
+          <desc>Décrit la taille d'une pièce, procès-verbal ou annexe, exprimée en nombre de feuillets.</desc>
           <content>
             <textNode/>
           </content>
@@ -501,9 +688,11 @@
           </constraintSpec>
           <attList>
             <attDef ident="sketch" usage="opt">
+              <gloss>Croquis</gloss>
+              <desc>Indique la présence d'un croquis sur le procès-verbal</desc>
               <valList type="closed">
-                <valItem ident="true"/>
-                <valItem ident="false"/>
+                <valItem ident="true"><gloss>oui</gloss><desc>présence d'un croquis sur le procès-verbal.</desc></valItem>
+                <valItem ident="false"><gloss>non</gloss><desc>absence de croquis sur le procès-verbal.</desc></valItem>
               </valList>
             </attDef>
           </attList>
@@ -533,9 +722,82 @@
           </attList>
         </elementSpec>
         
+        <elementSpec ident="fee">
+          <gloss>Frais</gloss>
+          <desc>Contient la description d'un coût de l'expertise.</desc>
+          <classes>
+            <memberOf key="att.pointer"/>
+            <memberOf key="att.monetary"/>
+          </classes>
+          <content>
+            <alternate>
+              <empty/>
+              <textNode/>
+            </alternate>
+          </content>
+          <constraintSpec scheme="schematron" ident="feesContent">
+            <constraint>
+              <sch:ns prefix="xpr" uri="xpr"/>
+              <sch:rule context="xpr:fee[parent::xpr:fees[@detail='true']]">
+                <sch:let name="node" value="local-name()"/>
+                <sch:let name="value"/>
+                <sch:assert test="self::xpr:fee">Élément(s) &lt;<sch:value-of select="$node"/>&gt; manquant.</sch:assert>
+              </sch:rule>
+              <sch:rule context="xpr:fee[parent::xpr:fees[@detail='false']]">
+                <sch:let name="node" value="local-name()"/>
+                <sch:let name="value"/>
+                <sch:assert test="//xpr:fees[not(xpr:fee)]">Élément(s) &lt;<sch:value-of select="$node"/>&gt; non autorisé(s).</sch:assert>
+              </sch:rule>
+            </constraint>
+          </constraintSpec>
+            <constraintSpec scheme="schematron" ident="feeContent">
+            <constraint>
+              <sch:ns prefix="xpr" uri="xpr"/>
+              <sch:rule context="xpr:fee[.!='']">
+                <sch:let name="node" value="local-name()"/>
+                <sch:let name="content" value="."/>
+                <sch:let name="value"/>
+                <sch:assert test="@type='other' and .!=''">L'élément &lt;<sch:value-of select="$node"/>&gt; doit être vide.</sch:assert>
+              </sch:rule>
+            </constraint>
+          </constraintSpec>
+          <attList>
+            <attDef ident="type" usage="req">
+              <valList type="closed">
+                <valItem ident="expert"><gloss>Expert(s)</gloss></valItem>
+                <valItem ident="clerk"><gloss>Greffier(s)</gloss></valItem>
+                <valItem ident="rolls"><gloss>Rôles</gloss></valItem>
+                <valItem ident="papers"><gloss>Papier et contrôle</gloss></valItem>
+                <valItem ident="plans"><gloss>Plans</gloss></valItem>
+                <valItem ident="prosecutors"><gloss>Procureurs</gloss></valItem>
+                <valItem ident="help"><gloss>Aides</gloss></valItem>
+                <valItem ident="other"><gloss>Autre.</gloss></valItem>
+              </valList>
+            </attDef>
+            <attDef ident="ref" usage="opt" mode="change"/>
+          </attList>
+        </elementSpec>
+        
+        <elementSpec ident="fees">
+          <gloss>Coût de l’expertise</gloss>
+          <desc>Contient le détail des coûts de l'expertise. Il n’est renseigné que lorsqu’il est complet.</desc>
+          <content>
+            <elementRef key="fee" minOccurs="0" maxOccurs="unbounded"/>
+            <elementRef key="total"/>
+          </content>
+          <attList>
+            <attDef ident="detail" usage="req">
+              <valList type="closed">
+                <valItem ident="true"/>
+                <valItem ident="false"/>
+              </valList>
+            </attDef>
+          </attList>
+        </elementSpec>
+        
         <elementSpec ident="forename">
-          <gloss>Forename</gloss>
-          <desc></desc>
+          <gloss>Prénom</gloss>
+          <desc>Contient un prénom.</desc>
           <content>
             <textNode/>
           </content>
@@ -543,7 +805,7 @@
         
         <elementSpec ident="framework">
           <gloss>Cadre de l'expertise</gloss>
-          <desc></desc>
+          <desc>Décrit la procédure dans laquelle s’inscrit l’expertise.</desc>
           <content>
             <textNode/>
           </content>
@@ -570,18 +832,18 @@
           <attList>
             <attDef ident="type">
               <valList type="closed">
-                <valItem ident="a"/>
-                <valItem ident="b1"/>
-                <valItem ident="b2"/>
-                <valItem ident="c"/>
+                <valItem ident="a"><gloss>A/ Commun accord des parties.</gloss><desc>Les partie saisissent elles-mêmes un/des expert(s), sans avoir recours à une institution, en dehors de tout cadre judiciaire : affaire gracieuse.</desc></valItem>
+                <valItem ident="b1"><gloss>B1/ Requête auprès d’une institution pour qu’elle demande une expertise.</gloss><desc>L’institution délivre une ordonnance (/!\ une ordonnance de référé n’indique pas nécessairement une affaire gracieuse) indiquant la mission d’expertise. Arrêt du parlement du 18/08/1766 (nomination d’office d’experts) ; certains cas d’alignement, etc. Pas de procédure judiciaire en tant que telle. L’institution nomme “d’office” un ou deux experts. Affaire gracieuse.</desc></valItem>
+                <valItem ident="b2"><gloss>B2/ L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun).</gloss><desc>Une institution est saisie dans le cadre d’une procédure : elle rend une sentence (voir les différents types) et ordonne l’expertise (Succession (forcément litigieuse ?) ; conflit de mitoyenneté porté devant le juge…). Procédure judiciaire : l’expertise est suivie d’un jugement. Affaire contentieuse Le rapport se termine par la formule “vous référant d’ordonner et de juger”.</desc></valItem>
+                <valItem ident="c"><gloss>C/ Cas problématique.</gloss><desc>Ce choix permet de retourner au document pour analyser la situation.</desc></valItem>
               </valList>
             </attDef>
           </attList>
         </elementSpec>
         
         <elementSpec ident="idno" ns="xpr">
-          <gloss>Identifier</gloss>
-          <desc></desc>
+          <gloss>Identifiant</gloss>
+          <desc>Contient la cote, le numéro de dossier, ou tout supplément cote du procès-verbal en cours de description.</desc>
           <content>
             <textNode/>
           </content>
@@ -606,6 +868,25 @@
                 <valItem ident="item"/>
                 <valItem ident="supplement"/>
               </valList>
+            </attDef>
+          </attList>
+        </elementSpec>
+        
+        <elementSpec ident="keywords">
+          <gloss>Mots-clefs</gloss>
+          <desc>Les mots-clefs servent à indexer les affaires et sont destinés à permettre de facilement retrouver des affaires selon un certain nombre de thématiques. Le terme choisi n’a pas nécessairement besoin de se retrouver dans la source, mais il rend compte des sujets abordés selon plusieurs axes thématiques : bien expertisé, procédure, contrats, servitudes, droit (nature et sources du droit), mesure (arpentage, toisé), réparations, sûreté et garanties, responsabilité, transmission de propriété, valeur et voisinage.
+          </desc>
+          <content>
+            <alternate>
+              <empty/>
+              <elementRef key="term" minOccurs="0" maxOccurs="unbounded"/>
+            </alternate>
+          </content>
+          <attList>
+            <attDef ident="group" usage="req">
+              <datatype>
+                <dataRef key="string"/>
+              </datatype>
             </attDef>
           </attList>
         </elementSpec>
@@ -680,16 +961,24 @@
         
         <elementSpec ident="note">
           <gloss>Note</gloss>
-          <desc>Note related to an appendice.</desc>
+          <desc>Note relative à une pièce annexe. Description ouverte qui permet entre autres choses d’indiquer l’auteur, le destinataire ou encore le contexte. Par exemple s’il s’agit d’un devis nous renseignons ici son titre “devis de maçonnerie d’un tel pour un tel”.</desc>
           <desc></desc>
           <content>
             <textNode/>
           </content>
         </elementSpec>
         
+        <elementSpec ident="noteworthy">
+          <gloss>Éléments remarquables</gloss>
+          <desc>Champs libre, commentaire, information qui ne trouve pas sa place dans le formulaire mais qui mérite d’être relevée ou signalée, par exemple si des expertises passées pour le même bien sont mentionnées.</desc>
+          <content>
+            <textNode/>
+          </content>
+        </elementSpec>
+        
         <elementSpec ident="object">
-          <gloss>Object</gloss>
-          <desc></desc>
+          <gloss>Object de l'expertise</gloss>
+          <desc>Bien, objet sur lequel porte en particulier la procédure. La valeur autre est seulement utilisée lorsque l’objet ne rentre pas dans dans une catégorie générique. Par exemple : en cas de problème de fosse d’aisance, il n’est pas nécessaire de choisir ensemble de bâtiments. Lors d’une évaluation d’une maison, il n’est pas nécessaire de sélectionner le puits s’il n’y a pas de développement remarquable à son sujet. Pour un immeuble, choisir maison et pas autre.</desc>
           <content>
             <textNode/>
           </content>
@@ -719,22 +1008,22 @@
           <attList>
             <attDef ident="type">
               <valList type="closed">
-                <valItem ident="house"/>
-                <valItem ident="plot"/>
-                <valItem ident="buildings"/>
-                <valItem ident="territory"/>
-                <valItem ident="wall"/>
-                <valItem ident="cesspool"/>
-                <valItem ident="well"/>
-                <valItem ident="other"/>
+                <valItem ident="house"><desc>Maison(s)</desc></valItem>
+                <valItem ident="plot"><desc>Terrain(s)</desc></valItem>
+                <valItem ident="buildings"><desc>Ensemble de bâtiments (biens immeubles)</desc></valItem>
+                <valItem ident="territory"><desc>Domaine, terres, fief</desc></valItem>
+                <valItem ident="wall"><desc>Mur(s)</desc></valItem>
+                <valItem ident="cesspool"><desc>Fosse(s) d'aisance</desc></valItem>
+                <valItem ident="well"><desc>Puits</desc></valItem>
+                <valItem ident="other"><desc>Autre</desc></valItem>
               </valList>
             </attDef>
           </attList>
         </elementSpec>
         
         <elementSpec ident="objects">
-          <gloss>Objects</gloss>
-          <desc></desc>
+          <gloss>Objets de l’expertise</gloss>
+          <desc>Décrit les biens, objets sur lesquels porte la procédure.</desc>
           <content>
             <sequence>
               <elementRef key="object" minOccurs="1" maxOccurs="unbounded"/>
@@ -742,25 +1031,44 @@
           </content>
         </elementSpec>
         
+        <elementSpec ident="opinion">
+          <gloss>Conclusion</gloss>
+          <desc>Contient la transcription des conclusions (avis) de chaque expert (en cas de désaccord), qui peuvent se trouver à plein de moment dans l’expertise. Ils peuvent être rendus au fil de l’expertise.</desc>
+          <classes>
+            <memberOf key="att.pointer"/>
+          </classes>
+          <content>
+            <textNode/>
+          </content>
+          <constraintSpec scheme="schematron" ident="opinionWithNoConclusion">
+            <constraint>
+              <sch:ns prefix="xpr" uri="xpr"/>
+              <sch:rule context="xpr:opinion[parent::xpr:conclusions/xpr:agreement[@type='noConclusion']]">
+                <sch:assert test="self::xpr:conclusion">Aucune conclusions autorisée dans ce contexte (dispositif de l'expertise sans conclusion).</sch:assert>
+              </sch:rule>
+            </constraint>
+          </constraintSpec>
+        </elementSpec>
+        
         <elementSpec ident="orgName">
-          <gloss>orgName</gloss>
-          <desc></desc>
+          <gloss>Nom d'organisation</gloss>
+          <desc>Contient le nom complet d'une institution (qui peut comprendre un ressort). Par exemple, le Parlement de Paris est constitué de plusieurs chambres, nous indiquerons donc ici la chambre concernée : « Parlement de Paris, chambre des requêtes ».</desc>
           <content>
             <textNode/>
           </content>
         </elementSpec>
         
         <elementSpec ident="occupation">
-          <gloss>Occupation</gloss>
-          <desc></desc>
+          <gloss>Qualité, profession</gloss>
+          <desc>Profession ou qualité d’une personne (veuve, etc.).</desc>
           <content>
             <textNode/>
           </content>
         </elementSpec>
         
         <elementSpec ident="origination">
-          <gloss>Origine de l'expertise</gloss>
-          <desc></desc>
+          <gloss>Déclenchement de l’expertise</gloss>
+          <desc>Décrit qui est à l’origine de l’expertise.</desc>
           <content>
             <textNode/>
           </content>
@@ -785,32 +1093,32 @@
           <attList>
             <attDef ident="type">
               <valList type="closed">
-                <valItem ident="parties"/>
-                <valItem ident="institution"/>
+                <valItem ident="parties"><gloss>Les parties</gloss></valItem>
+                <valItem ident="institution"><gloss>Une institution</gloss></valItem>
               </valList>
             </attDef>
           </attList>
         </elementSpec>
         
         <elementSpec ident="owner">
-          <gloss>Owner</gloss>
-          <desc></desc>
+          <gloss>Propriétaire</gloss>
+          <desc>Propriétaire d'un bien expertisé. Plusieurs propriétaires peuvent être déclarés pour un même bien.</desc>
           <content>
             <textNode/>
           </content>
         </elementSpec>
         
         <elementSpec ident="parish">
-          <gloss>Parish</gloss>
-          <desc></desc>
+          <gloss>Paroisse</gloss>
+          <desc>Paroisse où se situe le bien expertisé.</desc>
           <content>
             <textNode/>
           </content>
         </elementSpec>
         
         <elementSpec ident="participants">
-          <gloss>Participants</gloss>
-          <desc></desc>
+          <gloss>Acteurs</gloss>
+          <desc>Description des différents acteurs mentionnés dans le procès-verbal. Plus particulièrement, il s’agit du ou des experts, du ou des greffiers, des parties, de leur(s) représentant(s) et procureur(s), ou encore des entrepreneurs, architectes ou maîtres d’œuvres n’intervenant pas comme parties mais présents à l’expertise.</desc>
           <content>
             <sequence>
               <elementRef key="experts"/>
@@ -823,7 +1131,7 @@
         
         <elementSpec ident="parties">
           <gloss>Parties</gloss>
-          <desc></desc>
+          <desc>Contient la description de chaque partie impliquée dans l’affaire par l’intermédiaire du ou des individus ou personne(s) morale(s) qui la composent, et de leur(s) représentant(s) et procureur(s), le cas échéant.</desc>
           <content>
             <sequence>
               <elementRef key="party" minOccurs="1" maxOccurs="unbounded"/>  
@@ -832,40 +1140,47 @@
         </elementSpec>
         
         <elementSpec ident="party">
-          <gloss>Party</gloss>
-          <desc></desc>
+          <gloss>Partie</gloss>
+          <desc>Contient la description d'une partie, individu(s) et/ou personne(s) morale(s), impliquée dans l’affaire.</desc>
           <content>
             <sequence>
               <elementRef key="person" minOccurs="1" maxOccurs="unbounded"/>
               <elementRef key="status"/>
               <elementRef key="expert"/>
+              <elementRef key="representative" minOccurs="0" maxOccurs="unbounded"/>
+              <elementRef key="prosecutor" minOccurs="0" maxOccurs="unbounded"/>
             </sequence>
           </content>
           <attList>
             <attDef ident="role" usage="req">
+              <gloss>Rôle</gloss>
               <valList type="closed">
-                <valItem ident="petitioner"/>
-                <valItem ident="opponent"/>
+                <valItem ident="petitioner"><gloss>Requérante</gloss><desc>Partie requérante.</desc></valItem>
+                <valItem ident="opponent"><gloss>Opposante</gloss><desc>Partie opposante.</desc></valItem>
               </valList>
             </attDef>
             <attDef ident="presence" usage="req">
+              <gloss>Partie présente</gloss>
+              <desc>Présence de la partie lors de l’expertise. Nous faisons référence ici à la partie et non son/ses représentant(s).</desc>
               <valList type="closed">
-                <valItem ident="true"/>
-                <valItem ident="false"/>
+                <valItem ident="true"><gloss>oui</gloss><desc>Partie présente.</desc></valItem>
+                <valItem ident="false"><gloss>non</gloss><desc>Partie absente.</desc></valItem>
               </valList>
             </attDef>
             <attDef ident="intervention">
+              <gloss>Partie intervenante</gloss>
+              <desc>Intervention de la partie lors de l’expertise.</desc>
               <valList type="closed">
-                <valItem ident="true"/>
-                <valItem ident="false"/>
+                <valItem ident="true"><gloss>oui</gloss><desc>Partie intervenante.</desc></valItem>
+                <valItem ident="false"><gloss>non</gloss><desc>Partie non intervenante.</desc></valItem>
               </valList>
             </attDef>
           </attList>
         </elementSpec>
         
         <elementSpec ident="persName">
-          <gloss>PersName</gloss>
-          <desc></desc>
+          <gloss>Nom de personne</gloss>
+          <desc>Contient un nom propre ou une expression nominale se référant à une personne, pouvant inclure tout ou partie de ses prénoms, noms de famille, titres honorifiques, noms ajoutés, etc.</desc>
           <content>
             <sequence>
               <elementRef key="surname"/>
@@ -886,47 +1201,62 @@
         </elementSpec>
         
         <elementSpec ident="physDesc">
-          <gloss>Physical Description</gloss>
-          <desc>Physical description of the expertise</desc>
+          <gloss>Description physique</gloss>
+          <desc>Contient la description physique des pièces, procès-verbaux et annexes.</desc>
           <content>
-            <sequence>
+            <alternate>
               <elementRef key="extent"/>
-              <elementRef key="appendices"/>
-            </sequence>
+              <sequence>
+                <elementRef key="extent"/>
+                <elementRef key="appendices"/>
+              </sequence>  
+            </alternate>
+            
           </content>
         </elementSpec>
         
         <elementSpec ident="place">
           <!-- @todo faire schematron en fonction des types ? -->
-          <gloss>Place</gloss>
-          <desc></desc>
+          <gloss>Lieu</gloss>
+          <desc>
+            Decrit les lieux où le ou les experts ont effectivement procédé à l’expertise, et non les biens. Par exemple : dans le cas d’une grande seigneurie, il peut y avoir beaucoup de biens décrits (terres, bâtiments, châteaux, droits seigneuriaux, etc.), mais ses biens peuvent se trouver sur un même lieu, il n’est donc pas nécessaire de déclarer ce lieu plusieurs fois.
+            Peut également contenir la description de biens rattachés à un lieu dans la partie conclusions, et uniquement pour les cas d’estimation.
+          </desc>
+          <classes>
+            <memberOf key="att.global"/>
+            <memberOf key="att.pointer"/>
+          </classes>
           <content>
-            <sequence>
-              <elementRef key="address"/>
-              <elementRef key="complement"/>
-              <elementRef key="parish"/>
-              <elementRef key="city" minOccurs="0" maxOccurs="1"/>
-              <elementRef key="district" minOccurs="0" maxOccurs="1"/>
-              <elementRef key="owner" minOccurs="1" maxOccurs="unbounded"/>
-            </sequence>
+            <alternate>
+              <sequence>
+                <elementRef key="address"/>
+                <elementRef key="complement"/>
+                <elementRef key="parish"/>
+                <elementRef key="city" minOccurs="0" maxOccurs="1"/>
+                <elementRef key="district" minOccurs="0" maxOccurs="1"/>
+                <elementRef key="owner" minOccurs="1" maxOccurs="unbounded"/>
+              </sequence>
+              <elementRef key="appraisal" minOccurs="1" maxOccurs="unbounded"/>
+            </alternate>
           </content>
           <attList>
             <attDef ident="type">
               <valList type="closed">
-                <valItem ident="paris"/>
-                <valItem ident="suburbs"/>
-                <valItem ident="province"/>
-                <valItem ident="office"/>
-                <valItem ident="clerkOffice"/>
-                <valItem ident="indeterminate"/>
+                <valItem ident="paris"><gloss>Paris</gloss><desc>Paris et faubourgs.</desc></valItem>
+                <valItem ident="suburbs"><gloss>Banlieue</gloss><desc>Banlieue.</desc></valItem>
+                <valItem ident="province"><gloss>Campagne</gloss><desc>Campagne (hors de Paris, de ses faubourg et de sa banlieue).</desc></valItem>
+                <valItem ident="office"><gloss>Bureau des experts</gloss><desc>Bureau des experts.</desc></valItem>
+                <valItem ident="clerkOffice"><gloss>Bureau des greffiers</gloss><desc>Bureau des greffiers.</desc></valItem>
+                <valItem ident="indeterminate"><gloss>Indéterminé</gloss><desc>Indéterminé.</desc></valItem>
               </valList>
             </attDef>
+            <attDef ident="ref" usage="opt" mode="change"/>
           </attList>
         </elementSpec>
         
         <elementSpec ident="places">
-          <gloss>Places</gloss>
-          <desc></desc>
+          <gloss>Lieux</gloss>
+          <desc>Contient la description des différents lieux de l’expertise. On décrit ici tous les lieux où l’expertise s’est déroulée. Il s’agit des lieux au moment de l’expertise. Plusieurs lieux peuvent être déclarés pour une même expertise. Il peut s’agir par exemple de l’adresse à laquelle le ou les experts se sont déplacés pour procéder à l’expertise.</desc>
           <content>
             <sequence>
               <elementRef key="place" minOccurs="1" maxOccurs="unbounded"/>
@@ -934,9 +1264,19 @@
           </content>
         </elementSpec>
         
+        <elementSpec ident="prosecutor">
+          <gloss>Procureur</gloss>
+          <desc>Contient la description d'un procureur. Comme pour les représentants, les procureurs ne sont pas rattachés explicitement à une personne.</desc>
+          <content>
+            <sequence>
+              <elementRef key="persName"/>
+            </sequence>
+          </content>
+        </elementSpec>
+        
         <elementSpec ident="procedure">
           <gloss>Procédure</gloss>
-          <desc></desc>
+          <desc>Décrit la procédure et le cadre dans lequel intervient l’expertise.</desc>
           <content>
             <sequence>
               <elementRef key="framework"/>
@@ -968,9 +1308,20 @@
           </constraintSpec>
         </elementSpec>
         
+        <elementSpec ident="representative">
+          <gloss>Représentant</gloss>
+          <desc>Description d'un représentant. Les représentants ne sont pas rattachés explicitement à une ou plusieurs personnes d’une même partie.</desc>
+          <content>
+            <sequence>
+              <elementRef key="persName"/>
+              <elementRef key="occupation"/>
+            </sequence>
+          </content>
+        </elementSpec>
+        
         <elementSpec ident="sentence">
-          <gloss>Sentence</gloss>
-          <desc></desc>
+          <gloss>Intervention d’une institution</gloss>
+          <desc>Décrit une institution qui est intervenue dans l’affaire (préalablement à l’expertise en cours).</desc>
           <content>
             <sequence>
               <elementRef key="orgName"/>
@@ -980,8 +1331,8 @@
         </elementSpec>
         
         <elementSpec ident="sentences">
-          <gloss>Sentences</gloss>
-          <desc></desc>
+          <gloss>Intervention des institutions</gloss>
+          <desc>Identifie toute institution qui est intervenue dans l’affaire (préalablement à l’expertise en cours).</desc>
           <content>
             <sequence>
               <elementRef key="sentence" minOccurs="1" maxOccurs="unbounded"/>
@@ -990,8 +1341,8 @@
         </elementSpec>
         
         <elementSpec ident="sessions">
-          <gloss>Sessions</gloss>
-          <desc></desc>
+          <gloss>Vacations</gloss>
+          <desc>Contient la description des vacations mentionnées dans le procès-verbal. Pour chaque vacation effectuée, on précise sa date et son lieu. Toutes les vacations doivent être saisies, sauf très grosses affaires (+ de 25 vacations) : on note alors la première et la dernière, on indiquera en commentaire à la fin du formulaire le nombre de vacations. Deux vacations maximum peuvent être effectuées le même jour à Paris et en Banlieue, en campagne l’unité est la journée.</desc>
           <content>
             <sequence>
               <elementRef key="date" minOccurs="1" maxOccurs="unbounded"/>
@@ -1000,8 +1351,8 @@
         </elementSpec>
         
         <elementSpec ident="sourceDesc">
-          <gloss>Source Description</gloss>
-          <desc>Contains bibliographic and physical description of an expertise.</desc>
+          <gloss>Description de la source</gloss>
+          <desc>Description bibliographique et physique de la source.</desc>
           <content>
             <sequence>
               <elementRef key="unitdate"/>
@@ -1013,8 +1364,8 @@
         </elementSpec>
         
         <elementSpec ident="status">
-          <gloss>Status</gloss>
-          <desc></desc>
+          <gloss>Qualification individuelle</gloss>
+          <desc>Qualification de la partie dans le cadre de l’affaire. Dénomination dont on a besoin pour justifier l’expertise et qui nous permet de déterminer son statut de requérant ou d’opposant. Attention c’est parfois ambigu et nécessite une interprétation de la part de la personne qui dépouille, il ne s’agit pas nécessairement de la façon dont la personne est dénommée dans l’expertise : un entrepreneur peut en réalité intervenir en qualité de créancier.</desc>
           <content>
             <textNode/>
           </content>
@@ -1033,16 +1384,16 @@
         </elementSpec>
         
         <elementSpec ident="street">
-          <gloss>Street</gloss>
-          <desc></desc>
+          <gloss>Rue / voie</gloss>
+          <desc>Contient nom de la voie du bien expertisé.</desc>
           <content>
             <textNode/>
           </content>
         </elementSpec>
         
         <elementSpec ident="surname">
-          <gloss>Surname</gloss>
-          <desc></desc>
+          <gloss>Nom de famille</gloss>
+          <desc>Contient un nom de famille.</desc>
           <content>
             <textNode/>
           </content>
@@ -1055,6 +1406,13 @@
           <content>
             <textNode/>
           </content>
+          <attList>
+            <attDef ident="value" usage="opt">
+              <datatype>
+                <dataRef key="string"/>
+              </datatype>
+            </attDef>
+          </attList>
         </elementSpec>
         
         <elementSpec ident="title">
@@ -1065,31 +1423,42 @@
           </content>
         </elementSpec>
         
+        <elementSpec ident="total">
+          <gloss>Total</gloss>
+          <desc>Coût total de l’expertise.</desc>
+          <classes>
+            <memberOf key="att.monetary"/>
+          </classes>
+          <content>
+            <empty/>
+          </content>
+        </elementSpec>
+        
         <elementSpec ident="type">
-          <gloss>Type</gloss>
-          <desc></desc>
+          <gloss>Type de pièce annexe</gloss>
+          <desc>Précise le type de pièce annexe. Une même pièce peut avoir plusieurs types. Par exemple, une annexe comporte un croquis et un plan. En plus des types déjà définis, il est possible de les compléter avec la valeur <val>autre | other</val>.</desc>
           <content>
             <textNode/>
           </content>
           <attList>
             <attDef ident="type" usage="req">
               <valList type="closed">
-                <valItem ident="drawing"/>
-                <valItem ident="plan"/>
-                <valItem ident="sketch"/>
-                <valItem ident="rough"/>
-                <valItem ident="proxyPA"/>
-                <valItem ident="proxyNa"/>
-                <valItem ident="petition"/>
-                <valItem ident="other"/>
+                <valItem ident="drawing"><gloss>Dessin</gloss></valItem>
+                <valItem ident="plan"><gloss>Plan, coupe, élévation</gloss></valItem>
+                <valItem ident="sketch"><gloss>Croquis</gloss></valItem>
+                <valItem ident="rough"><gloss>Brouillon</gloss></valItem>
+                <valItem ident="proxyPA"><gloss>Pouvoir/procuration (acte sous seing privé)</gloss></valItem>
+                <valItem ident="proxyNa"><gloss>Pouvoir/procuration (acte notarié)</gloss></valItem>
+                <valItem ident="petition"><gloss>Requête</gloss></valItem>
+                <valItem ident="other"><gloss>autre</gloss></valItem>
               </valList>
             </attDef>
           </attList>
         </elementSpec>
         
         <elementSpec ident="unitdate">
-          <gloss>Unitdate</gloss>
-          <desc></desc>
+          <gloss>Date du procès-verbal</gloss>
+          <desc>La date de création du procès-verbal décrit.</desc>
           <content>
             <textNode/>
           </content>
@@ -1104,9 +1473,8 @@
           </constraintSpec>
         </elementSpec>
         
-        <classSpec type="atts" ident="att.global" module="EAC">
-          <desc>provides attributes common to all elements in the EAC encoding
-            scheme.</desc>
+        <classSpec type="atts" ident="att.global">
+          <desc>provides common attributes.</desc>
           <attList>
             <attDef ident="xml:id" usage="opt">
               <gloss>XML identifier</gloss>
@@ -1118,6 +1486,30 @@
               <gloss>XML Language</gloss>
               <datatype>
                 <dataRef name="string"/>
+              </datatype>
+            </attDef>
+          </attList>
+        </classSpec>
+        
+        <classSpec type="atts" ident="att.monetary">
+          <desc></desc>
+          <attList>
+            <attDef ident="l" usage="req">
+              <gloss>Livres</gloss>
+              <datatype>
+                <dataRef name="integer"/>
+              </datatype>
+            </attDef>
+            <attDef ident="s" usage="opt">
+              <gloss>sols</gloss>
+              <datatype>
+                <dataRef name="integer"/>
+              </datatype>
+            </attDef>
+            <attDef ident="d" usage="opt">
+              <gloss>deniers</gloss>
+              <datatype>
+                <dataRef name="integer"/>
               </datatype>
             </attDef>
           </attList>

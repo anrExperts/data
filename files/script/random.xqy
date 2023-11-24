@@ -22,23 +22,33 @@ return (
 "
 
 ",
-let $clerks := ('clrk0059', 'clrk0067', 'clrk0034', 'clrk0061', 'xpr0227', 'clrk0029', 'clrk0042', 'clrk0008', 'clrk0062')
-for $clerk in $clerks
+let $clerks := ('clrk0042', 'clrk0062', 'clrk0008', 'clrk0042')
+let $listExpertises := for $clerk in $clerks
   let $name := db:open('xpr', 'xpr/biographies')/*:eac[@xml:id=$clerk]//*:identity/*:nameEntry[1] => fn:normalize-space()
   let $expertises := $data[*:clerks[*:clerk = $clerk]]
   let $dates  := fn:distinct-values($expertises//*:unitdate)
-return (
-  "************"|| $name ||"************",
-  stats($expertises/*:id),
-  for $year in fn:distinct-values($expertises//*:date)
-  order by $year
-  let $subCorpus := $expertises[*:date = $year]
+return (getRandom($expertises, 50))
+let $expertises := db:open('xpr', 'xpr/expertises')/*:expertise[@xml:id=$listExpertises]/*:sourceDesc/*:physDesc/*:extent[fn:normalize-space(.)!='']/fn:normalize-space()
+return distribution($expertises, 5, 20)
+
+};
+
+declare function distribution($seq, $step, $max) {
+  let $seq := for $e in $seq return fn:number($e)
+  for $n in 1 to $max
+  let $multiplier := $step
+  let $step := $n * $multiplier
   return (
-    "************ " || $year || ' : ' || fn:count($subCorpus) || "************",
-    stats($subCorpus/*:id)
-  ),
-  getRandom($expertises, 50)
-)
+    if($n = 20) then map{
+        $step : fn:count($seq[fn:number(.) >= $step])
+    }
+    else if ($n = 1) then map {
+      $step : fn:count($seq[fn:number(.) <= $step and fn:number(.) >= $step - $multiplier])
+    }
+    else map{
+      $step : fn:count($seq[fn:number(.) <= $step and fn:number(.) > $step - $multiplier])
+    }
+  )
 };
 
 declare function getRandom($expertises, $max) {
