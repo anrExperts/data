@@ -5,7 +5,7 @@
          xmlns:xlink="http://www.w3.org/1999/xlink"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="xpr"><!--
-Schema generated from ODD source 2023-11-23T14:32:52Z. .
+Schema generated from ODD source 2023-12-04T13:50:55Z. .
 TEI Edition: Version 4.6.0. Last updated on
         4th April 2023, revision f18deffba
 TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.6.0/
@@ -31,7 +31,7 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.6.0/
    </define>
    <define name="agreement">
       <element name="agreement">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Agreement) </a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Dispositif de l’expertise) Décrit comment se termine l’expertise, si une conclusion est rendue et s’il y a accord, ou non, entre les experts.</a:documentation>
          <text/>
          <sch:ns xmlns="http://www.tei-c.org/ns/1.0"
                  xmlns:eg="http://www.tei-c.org/ns/Examples"
@@ -135,7 +135,7 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.6.0/
    </define>
    <define name="analysis">
       <element name="analysis">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Analysis) Commentaire et première analyse</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Passages intéressants) Contient les transcriptions de passages intéressants de l’expertise, autres que les avis et conclusions des experts.</a:documentation>
          <text/>
       </element>
    </define>
@@ -162,7 +162,7 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.6.0/
    </define>
    <define name="appraisal">
       <element name="appraisal">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Appraisal) </a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Nature d'un bien) Description permettant l’identification d’un bien.</a:documentation>
          <ref name="desc"/>
          <ref name="att.monetary.attributes"/>
          <empty/>
@@ -170,7 +170,7 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.6.0/
    </define>
    <define name="arrangement">
       <element name="arrangement">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Accommodement) Indique si l’affaire s’est terminée par un accord amiable entre les parties ou par une remise sans suite, sans que l’expertise n’aille jusqu’à son terme.</a:documentation>
          <choice>
             <text/>
          </choice>
@@ -215,13 +215,13 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.6.0/
    </define>
    <define name="case">
       <element name="case">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Case) </a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Cause de l’expertise) Cause de l’expertise, ce qui donne lieu à l’expertise, à distinguer de l’objet de l’expertise, même si ces deux champs peuvent se rejoindre. Exemples : entretien, fin de location, nouvelle construction, partage, privilège, réception de travaux, reconstruction de mur mitoyen, prêt, mesure de protection à l’égard d’un incapable, vente d’un bien, etc.</a:documentation>
          <text/>
       </element>
    </define>
    <define name="category">
       <element name="category">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Category) </a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Catégorie d’expertise) Décrit la nature de l’affaire qui est soumise aux experts.</a:documentation>
          <text/>
          <sch:ns xmlns="http://www.tei-c.org/ns/1.0"
                  xmlns:eg="http://www.tei-c.org/ns/Examples"
@@ -278,15 +278,15 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.6.0/
             <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
             <choice>
                <value>assessment</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(description et évaluation de travaux à venir) Décrire et évaluer les travaux à venir | ex : Réparations à faire</a:documentation>
                <value>settlement</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(départage) Départager | ex : Conflit de voisinage et conflit entre locataire et propriétaire, répartition des frais d’entretien ou de construction d’un mur mitoyen, conflits de fosses d’aisance, prise en charge des réparations locatives etc.</a:documentation>
                <value>registration</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(enregistrement) Enregistrer | ex : Projet de construction (arrêt du Parlement du 18 août 1766), alignement non conflictuel et non estimatif, état des lieux, etc.</a:documentation>
                <value>estimation</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(estimation) Estimer la valeur des biens | ex : Partage et succession, évaluation en vue d’une vente de biens meubles ou immeubles, etc.</a:documentation>
                <value>acceptation</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(réception et évaluation de travaux à réaliser) Recevoir et évaluer le travail réalisé | ex : Réception d’ouvrages, estimation d’honoraires, défaut de paiement, etc.</a:documentation>
             </choice>
          </attribute>
          <empty/>
@@ -294,7 +294,7 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.6.0/
    </define>
    <define name="categories">
       <element name="categories">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Categories) </a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Catégories d’expertise) Décrit la nature de l’affaire qui est soumise aux experts. Plusieurs catégories peuvent être cochées pour une même expertise. L’information est répétable mais il est préférable de choisir parmi ces catégories.</a:documentation>
          <group>
             <ref name="category"/>
             <ref name="designation"/>
@@ -325,7 +325,7 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.6.0/
    </define>
    <define name="comment">
       <element name="comment">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Comment) Commentaire sur le formulaire</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Commentaire) Commentaire sur le fonctionnement du formulaire (problème technique, difficulté pour rendre compte de la source, etc.)</a:documentation>
          <text/>
       </element>
    </define>
@@ -337,7 +337,7 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.6.0/
    </define>
    <define name="conclusions">
       <element name="conclusions">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Conclusions) </a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Conclusions) Décrit les conclusions et dispositifs de l’expertise.</a:documentation>
          <group>
             <ref name="agreement"/>
             <zeroOrMore>
@@ -366,7 +366,7 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.6.0/
    </define>
    <define name="craftman">
       <element name="craftman">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Craftman) </a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Entrepreneur, architecte ou maître d’œuvre) Description d'un entrepreneur, architecte ou maître d’œuvre n’intervenant pas comme partie, mais présent à l’expertise ou mentionné.</a:documentation>
          <group>
             <ref name="persName"/>
             <ref name="occupation"/>
@@ -375,7 +375,7 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.6.0/
    </define>
    <define name="craftmen">
       <element name="craftmen">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Craftmen) </a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Entrepreneurs, architectes ou maîtres d’œuvre) Description de tous les entrepreneurs, architectes ou maîtres d’œuvre n’intervenant pas comme parties, mais présents à l’expertise ou mentionnés.</a:documentation>
          <oneOrMore>
             <ref name="craftman"/>
          </oneOrMore>
@@ -383,7 +383,7 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.6.0/
    </define>
    <define name="date">
       <element name="date">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Date) Date d'une vacation</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Date) Date d'une vacation, d'une sentence, etc.</a:documentation>
          <text/>
          <sch:ns xmlns="http://www.tei-c.org/ns/1.0"
                  xmlns:eg="http://www.tei-c.org/ns/Examples"
@@ -476,15 +476,15 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.6.0/
    </define>
    <define name="designation">
       <element name="designation">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Designation) </a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Désignation) Titre donné à l’expertise dans l’acte lorsqu’il est présent ou désignation sommaire donnée lors du récolement pour décrire l’affaire lorsque ce n’est pas indiqué dans l’acte. Une description complémentaire à celle de l’acte peut être ajoutée entre crochets si cette dernière est incomplète.</a:documentation>
          <text/>
          <attribute name="rubric">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(En rubrique) Indique si la désignation (champ précédent) apparaît en rubrique sur l’acte. (analyse marginale ou fournie comme un titre).</a:documentation>
             <choice>
                <value>true</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(oui) </a:documentation>
                <value>false</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(non) </a:documentation>
             </choice>
          </attribute>
          <empty/>
@@ -498,7 +498,7 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.6.0/
    </define>
    <define name="estimate">
       <element name="estimate">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Estimate) </a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Montant global) Montant total cumulé de toutes les estimations de biens réalisées durant l’expertise.</a:documentation>
          <empty/>
          <ref name="att.monetary.attributes"/>
          <empty/>
@@ -506,7 +506,7 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.6.0/
    </define>
    <define name="estimates">
       <element name="estimates">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Estimates) </a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Estimations) Dans le cadre d’une expertise pour « estimer la valeur des biens », l’estimation des biens (incluant les droits seigneuriaux) est donnée pour chaque lieu déclaré. Pour les grosses affaires, ce travail sera effectué à posteriori.</a:documentation>
          <oneOrMore>
             <ref name="place"/>
          </oneOrMore>
@@ -571,7 +571,7 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.6.0/
    </define>
    <define name="expense">
       <element name="expense">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Expense) </a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Bourse commune) Mention de la bourse commune des experts ou des greffiers et détail du coût.</a:documentation>
          <empty/>
          <sch:ns xmlns="http://www.tei-c.org/ns/1.0"
                  xmlns:eg="http://www.tei-c.org/ns/Examples"
@@ -633,7 +633,7 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.6.0/
    </define>
    <define name="expenses">
       <element name="expenses">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Expenses) </a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Bourses communes) Contient les bourses communes des experts et des greffiers.</a:documentation>
          <choice>
             <group>
                <ref name="expense"/>
@@ -833,7 +833,7 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.6.0/
    </define>
    <define name="fee">
       <element name="fee">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Fee) </a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Frais) Contient la description d'un coût de l'expertise.</a:documentation>
          <choice>
             <text/>
          </choice>
@@ -924,21 +924,21 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.6.0/
             <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
             <choice>
                <value>expert</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Expert(s)) </a:documentation>
                <value>clerk</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Greffier(s)) </a:documentation>
                <value>rolls</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Rôles) </a:documentation>
                <value>papers</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Papier et contrôle) </a:documentation>
                <value>plans</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Plans) </a:documentation>
                <value>prosecutors</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Procureurs) </a:documentation>
                <value>help</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Aides) </a:documentation>
                <value>other</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Autre.) </a:documentation>
             </choice>
          </attribute>
          <empty/>
@@ -946,7 +946,7 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.6.0/
    </define>
    <define name="fees">
       <element name="fees">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Fees) </a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Coût de l’expertise) Contient le détail des coûts de l'expertise. Il n’est renseigné que lorsqu’il est complet.</a:documentation>
          <zeroOrMore>
             <ref name="fee"/>
          </zeroOrMore>
@@ -971,7 +971,7 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.6.0/
    </define>
    <define name="framework">
       <element name="framework">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Cadre de l'expertise) </a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Cadre de l'expertise) Décrit la procédure dans laquelle s’inscrit l’expertise.</a:documentation>
          <text/>
          <sch:ns xmlns="http://www.tei-c.org/ns/1.0"
                  xmlns:eg="http://www.tei-c.org/ns/Examples"
@@ -1026,13 +1026,13 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.6.0/
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
                <choice>
                   <value>a</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(A/ Commun accord des parties.) Les partie saisissent elles-mêmes un/des expert(s), sans avoir recours à une institution, en dehors de tout cadre judiciaire : affaire gracieuse.</a:documentation>
                   <value>b1</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(B1/ Requête auprès d’une institution pour qu’elle demande une expertise.) L’institution délivre une ordonnance (/!\ une ordonnance de référé n’indique pas nécessairement une affaire gracieuse) indiquant la mission d’expertise. Arrêt du parlement du 18/08/1766 (nomination d’office d’experts) ; certains cas d’alignement, etc. Pas de procédure judiciaire en tant que telle. L’institution nomme “d’office” un ou deux experts. Affaire gracieuse.</a:documentation>
                   <value>b2</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(B2/ L’institution est saisie dans le cadre d’une procédure (les parties nomment chacune leur expert ou un expert en commun).) Une institution est saisie dans le cadre d’une procédure : elle rend une sentence (voir les différents types) et ordonne l’expertise (Succession (forcément litigieuse ?) ; conflit de mitoyenneté porté devant le juge…). Procédure judiciaire : l’expertise est suivie d’un jugement. Affaire contentieuse Le rapport se termine par la formule “vous référant d’ordonner et de juger”.</a:documentation>
                   <value>c</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(C/ Cas problématique.) Ce choix permet de retourner au document pour analyser la situation.</a:documentation>
                </choice>
             </attribute>
          </optional>
@@ -1103,7 +1103,7 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.6.0/
    </define>
    <define name="keywords">
       <element name="keywords">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Keyworks) </a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Mots-clefs) Les mots-clefs servent à indexer les affaires et sont destinés à permettre de facilement retrouver des affaires selon un certain nombre de thématiques. Le terme choisi n’a pas nécessairement besoin de se retrouver dans la source, mais il rend compte des sujets abordés selon plusieurs axes thématiques : bien expertisé, procédure, contrats, servitudes, droit (nature et sources du droit), mesure (arpentage, toisé), réparations, sûreté et garanties, responsabilité, transmission de propriété, valeur et voisinage. </a:documentation>
          <choice>
             <zeroOrMore>
                <ref name="term"/>
@@ -1203,13 +1203,13 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.6.0/
    </define>
    <define name="noteworthy">
       <element name="noteworthy">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Noteworthy) Élément remarquable</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Éléments remarquables) Champs libre, commentaire, information qui ne trouve pas sa place dans le formulaire mais qui mérite d’être relevée ou signalée, par exemple si des expertises passées pour le même bien sont mentionnées.</a:documentation>
          <text/>
       </element>
    </define>
    <define name="object">
       <element name="object">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Object) </a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Object de l'expertise) Bien, objet sur lequel porte en particulier la procédure. La valeur autre est seulement utilisée lorsque l’objet ne rentre pas dans dans une catégorie générique. Par exemple : en cas de problème de fosse d’aisance, il n’est pas nécessaire de choisir ensemble de bâtiments. Lors d’une évaluation d’une maison, il n’est pas nécessaire de sélectionner le puits s’il n’y a pas de développement remarquable à son sujet. Pour un immeuble, choisir maison et pas autre.</a:documentation>
          <text/>
          <sch:ns xmlns="http://www.tei-c.org/ns/1.0"
                  xmlns:eg="http://www.tei-c.org/ns/Examples"
@@ -1273,21 +1273,21 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.6.0/
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
                <choice>
                   <value>house</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Maison(s)</a:documentation>
                   <value>plot</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Terrain(s)</a:documentation>
                   <value>buildings</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Ensemble de bâtiments (biens immeubles)</a:documentation>
                   <value>territory</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Domaine, terres, fief</a:documentation>
                   <value>wall</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Mur(s)</a:documentation>
                   <value>cesspool</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Fosse(s) d'aisance</a:documentation>
                   <value>well</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Puits</a:documentation>
                   <value>other</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Autre</a:documentation>
                </choice>
             </attribute>
          </optional>
@@ -1296,7 +1296,7 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.6.0/
    </define>
    <define name="objects">
       <element name="objects">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Objects) </a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Objets de l’expertise) Décrit les biens, objets sur lesquels porte la procédure.</a:documentation>
          <oneOrMore>
             <ref name="object"/>
          </oneOrMore>
@@ -1304,7 +1304,7 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.6.0/
    </define>
    <define name="opinion">
       <element name="opinion">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Opinion) </a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Conclusion) Contient la transcription des conclusions (avis) de chaque expert (en cas de désaccord), qui peuvent se trouver à plein de moment dans l’expertise. Ils peuvent être rendus au fil de l’expertise.</a:documentation>
          <text/>
          <sch:ns xmlns="http://www.tei-c.org/ns/1.0"
                  xmlns:eg="http://www.tei-c.org/ns/Examples"
@@ -1340,19 +1340,19 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.6.0/
    </define>
    <define name="orgName">
       <element name="orgName">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(orgName) </a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Nom d'organisation) Contient le nom complet d'une institution (qui peut comprendre un ressort). Par exemple, le Parlement de Paris est constitué de plusieurs chambres, nous indiquerons donc ici la chambre concernée : « Parlement de Paris, chambre des requêtes ».</a:documentation>
          <text/>
       </element>
    </define>
    <define name="occupation">
       <element name="occupation">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Occupation) </a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Qualité, profession) Profession ou qualité d’une personne (veuve, etc.).</a:documentation>
          <text/>
       </element>
    </define>
    <define name="origination">
       <element name="origination">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Origine de l'expertise) </a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Déclenchement de l’expertise) Décrit qui est à l’origine de l’expertise.</a:documentation>
          <text/>
          <sch:ns xmlns="http://www.tei-c.org/ns/1.0"
                  xmlns:eg="http://www.tei-c.org/ns/Examples"
@@ -1401,9 +1401,9 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.6.0/
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
                <choice>
                   <value>parties</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Les parties) </a:documentation>
                   <value>institution</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Une institution) </a:documentation>
                </choice>
             </attribute>
          </optional>
@@ -1458,31 +1458,31 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.6.0/
             </zeroOrMore>
          </group>
          <attribute name="role">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Rôle) </a:documentation>
             <choice>
                <value>petitioner</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Requérante) Partie requérante.</a:documentation>
                <value>opponent</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Opposante) Partie opposante.</a:documentation>
             </choice>
          </attribute>
          <attribute name="presence">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Partie présente) Présence de la partie lors de l’expertise. Nous faisons référence ici à la partie et non son/ses représentant(s).</a:documentation>
             <choice>
                <value>true</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(oui) Partie présente.</a:documentation>
                <value>false</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(non) Partie absente.</a:documentation>
             </choice>
          </attribute>
          <optional>
             <attribute name="intervention">
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Partie intervenante) Intervention de la partie lors de l’expertise.</a:documentation>
                <choice>
                   <value>true</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(oui) Partie intervenante.</a:documentation>
                   <value>false</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(non) Partie non intervenante.</a:documentation>
                </choice>
             </attribute>
          </optional>
@@ -1580,13 +1580,13 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.6.0/
    </define>
    <define name="prosecutor">
       <element name="prosecutor">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Prosecutor) </a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Procureur) Contient la description d'un procureur. Comme pour les représentants, les procureurs ne sont pas rattachés explicitement à une personne.</a:documentation>
          <ref name="persName"/>
       </element>
    </define>
    <define name="procedure">
       <element name="procedure">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Procédure) </a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Procédure) Décrit la procédure et le cadre dans lequel intervient l’expertise.</a:documentation>
          <group>
             <ref name="framework"/>
             <ref name="origination"/>
@@ -1636,7 +1636,7 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.6.0/
    </define>
    <define name="representative">
       <element name="representative">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Representative) </a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Représentant) Description d'un représentant. Les représentants ne sont pas rattachés explicitement à une ou plusieurs personnes d’une même partie.</a:documentation>
          <group>
             <ref name="persName"/>
             <ref name="occupation"/>
@@ -1645,7 +1645,7 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.6.0/
    </define>
    <define name="sentence">
       <element name="sentence">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Sentence) </a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Intervention d’une institution) Décrit une institution qui est intervenue dans l’affaire (préalablement à l’expertise en cours).</a:documentation>
          <group>
             <ref name="orgName"/>
             <oneOrMore>
@@ -1656,7 +1656,7 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.6.0/
    </define>
    <define name="sentences">
       <element name="sentences">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Sentences) </a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Intervention des institutions) Identifie toute institution qui est intervenue dans l’affaire (préalablement à l’expertise en cours).</a:documentation>
          <oneOrMore>
             <ref name="sentence"/>
          </oneOrMore>
@@ -1689,7 +1689,7 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.6.0/
    </define>
    <define name="status">
       <element name="status">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Status) </a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Qualification individuelle) Qualification de la partie dans le cadre de l’affaire. Dénomination dont on a besoin pour justifier l’expertise et qui nous permet de déterminer son statut de requérant ou d’opposant. Attention c’est parfois ambigu et nécessite une interprétation de la part de la personne qui dépouille, il ne s’agit pas nécessairement de la façon dont la personne est dénommée dans l’expertise : un entrepreneur peut en réalité intervenir en qualité de créancier.</a:documentation>
          <text/>
          <sch:ns xmlns="http://www.tei-c.org/ns/1.0"
                  xmlns:eg="http://www.tei-c.org/ns/Examples"
@@ -1758,7 +1758,7 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.6.0/
    </define>
    <define name="total">
       <element name="total">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Total) </a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Total) Coût total de l’expertise.</a:documentation>
          <empty/>
          <ref name="att.monetary.attributes"/>
          <empty/>
