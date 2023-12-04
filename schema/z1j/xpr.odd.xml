@@ -23,9 +23,681 @@
     </fileDesc>
   </teiHeader>
   <text>
+    <front>
+      <div1>
+            <head>Documentation du formulaire de dépouillement des procès-verbaux d’expertise conservés dans la sous-série Z<hi rend="superscript">1J</hi> des Archives nationales de France</head>
+            <p>Version 2.0 (octobre 2023)</p>
+            <p>Ce formulaire est destiné à alimenter un inventaire analytique de près de 5 000 procès-verbaux conservés dans la sous-série Z<hi rend="superscript">1J</hi> des Greffiers des bâtiments conservés aux Archives nationales de France. Il s’agit du dépouillement et du traitement de dix années d’expertises entre 1690 et 1790 : plus exactement chaque année se terminant par 6. Le choix de cet échantillonnage peut être critiqué du point de vue de sa représentativité, mais faute de l’existence d’un récolement sommaire des affaires contenues dans les cartons, il n’était pas possible de mettre en place une sélection aléatoire des affaires sur l’ensemble de la période. Les fiches ont été renseignées à partir d’une lecture détaillée des procès-verbaux d’expertise. Celles-ci permettent d’identifier les parties et le contexte des affaires et de relever différents aspects relatifs aux axes de la recherche, sur le plan juridique, technique ou économique. Les données ont été autant que possible normalisées mais l’indexation des affaires par mots-clefs n’est pas systématique.</p>
+            <p>
+               <hi rend="bold">/!\ Par convention les champs du formulaire sont identifiés par les éléments de liste en gras. Le type des champ est renseigné avec les conventions suivantes :</hi>
+            </p>
+            <list rend="bulleted">
+               <item>
+                  <hi rend="italic">required</hi> : requis</item>
+               <item>
+                  <hi rend="italic">repeatable</hi> : répétable</item>
+               <item>
+                  <hi rend="italic">xs:string</hi> : valeur textuelle attendue</item>
+               <item>
+                  <hi rend="italic">xs:integer</hi> : chiffres attendus</item>
+               <item>
+                  <hi rend="italic">regex</hi> : la valeur doit répondre à un schéma défini</item>
+               <item>
+                  <hi rend="italic">xs:date</hi> : date attendue</item>
+            </list>
+            <p>Lors du dépouillement des procès-verbaux, <hi rend="bold">tous les champs du formulaire qui peuvent être renseignés doivent être remplis</hi>. Toutefois, pour des raisons de praticité lors de la saisie, notamment pour permettre la sauvegarde d’une fiche non terminée, seuls quelques champs sont nécessaires. Ils sont identifiés par la mention required</p>
+            <div2>
+               <head>Meta</head>
+            </div2>
+            <div2>
+               <head>Control</head>
+            </div2>
+            <div2>
+               <head>Description de la source</head>
+               <div3>
+                  <head>Références</head>
+                  <p>Cette section contient les identifiants/la cote du procès-verbal en cours de dépouillement ainsi que les identifiants des prises de vues.</p>
+                  <list rend="bulleted">
+                     <item>
+                        <hi rend="bold">Unitdate : </hi>date du procès-verbal décrit</item>
+                     <item>
+                        <hi rend="bold">Cote</hi> : carton Z1J<list rend="bulleted">
+                           <item>required</item>
+                           <item>xs:string | regex (z1j\d{1,4})(-\d{1,4})? | z1j0000, z1j0000-0000</item>
+                        </list>
+                     </item>
+                     <item>
+                        <hi rend="bold">Dossier</hi> : numéro du dossier<list rend="bulleted">
+                           <item>required</item>
+                           <item>xs:integer | 000</item>
+                        </list>
+                     </item>
+                     <item>
+                        <hi rend="bold">Supplément cote</hi>, en cas de doublon dans le numéro de la pièce<list rend="bulleted">
+                           <item>optionnal</item>
+                           <item>value, closed : bis | ter</item>
+                        </list>
+                     </item>
+                  </list>
+               </div3>
+               <div3>
+                  <head>Description physique du procès-verbal et des pièces annexes</head>
+                  <p>Contient la description physique des pièces, procès-verbaux et annexes.</p>
+                  <list rend="bulleted">
+                     <item>
+                        <hi rend="bold">Nombre de feuillets</hi> : nombre de feuillets du procès-verbal, à prendre dans le tableau de récolement (colonne G). On n’indique pas le nombre de cahiers.<list rend="bulleted">
+                           <item>xs:string</item>
+                        </list>
+                     </item>
+                     <item>
+                        <hi rend="bold">Croquis sur le procès-verbal</hi> : présence de croquis <hi rend="underline">sur</hi> le procès verbal (sinon pièce annexe)<list rend="bulleted">
+                           <item>boolean : oui | non  </item>
+                        </list>
+                     </item>
+                  </list>
+                  <div4>
+                     <head>Ajouter des pièces annexes</head>
+                     <p>Le cas échéant, permet d’ajouter un bloc de description pour les annexes. Plusieurs pièces annexes peuvent être décrites.</p>
+                     <list rend="bulleted">
+                        <item>
+                           <hi rend="bold">Type de pièce annexe</hi> : précise le type de pièce annexe. Une même pièce  peut avoir plusieurs types. Par exemple, une annexe comporte un croquis et un plan. En plus des types déjà définis, il est possible de les compléter avec la valeur autre | other.<list rend="bulleted">
+                              <item>repeatable</item>
+                              <item>xs:sequence, semi-closed : dessin, drawing | plan, coupe, élévation, plan | croquis, sketch | brouillon, rough | pouvoir/procuration ssp, proxyPA | pouvoir/procuration acte notarié, proxyNA | requête, pétition | autre, other</item>
+                           </list>
+                        </item>
+                        <item>
+                           <hi rend="bold">Nombre de feuillets</hi> : indique le nombre de feuillets, même blancs, pour l’annexe en cours de description (voir tableau de récolement, colonne I).<list rend="bulleted">
+                              <item>xs:integer</item>
+                           </list>
+                        </item>
+                        <item>
+                           <hi rend="bold">Description physique</hi> : permet de préciser les caractéristiques physiques du document (cahier, plan plié, etc.). Par exemple, s’il s’agit d’un dessin ou d’un plan, nous indiquons ici la technique employée (au trait, lavé, etc.). <list rend="bulleted">
+                              <item>xs:string</item>
+                           </list>
+                        </item>
+                        <item>
+                           <hi rend="bold">Commentaires</hi> : description ouverte qui permet entre autres choses d’indiquer l’auteur, le destinataire ou encore le contexte. Par exemple s’il s’agit d’un devis nous renseignons ici son titre “devis de maçonnerie d’un tel pour un tel”.<list rend="bulleted">
+                              <item>xs:string</item>
+                           </list>
+                        </item>
+                     </list>
+                  </div4>
+               </div3>
+            </div2>
+            <div2>
+               <head>Lieux</head>
+               <p>L’onglet lieux permet de déclarer les vacations effectuées lors de l’expertise, ainsi que les différents lieux de l’expertise.</p>
+               <div3>
+                  <head>Vacations</head>
+                  <p>Pour chaque vacation effectuée, on précise sa date et son lieu. <hi rend="underline">Toutes les vacations doivent être saisies, sauf très grosses affaires (+ de 25 vacations) on note alors la première et la dernière, on indiquera en commentaire à la fin du formulaire le nombre de vacations</hi>. Deux vacations maximum peuvent être effectuées le même jour à Paris et en Banlieue, en campagne l’unité c’est la journée.</p>
+                  <list rend="bulleted">
+                     <item>
+                        <hi rend="bold">date</hi> : date d’une vacation<list rend="bulleted">
+                           <item>xs:date : 1776-01-01 | aaaa-mm-jj</item>
+                        </list>
+                     </item>
+                     <item>
+                        <hi rend="bold">lieu</hi> : lieu d’une vacation. Il est parfois difficile d’identifier si la vacation est à Paris ou en banlieue, le coût d’une vacation n’étant pas le même à Paris, en banlieue ou en campagne, ce peut être un indice.<list rend="bulleted">
+                           <item>value, closed : Paris et faubourgs | Banlieue | Campagne</item>
+                        </list>
+                     </item>
+                  </list>
+               </div3>
+               <div3>
+                  <head>Lieux de l’expertise</head>
+                  <p>On renseigne ici tous les lieux où l’expertise s’est déroulée. Il s’agit des lieux <hi rend="underline">au moment de l’expertise</hi>. Plusieurs lieux peuvent être déclarés pour une même expertise. Il peut s’agir par exemple de l’adresse à laquelle le ou les experts se sont déplacés pour procéder à l’expertise.</p>
+                  <list rend="bulleted">
+                     <item>
+                        <hi rend="bold">Lieu de l’expertise</hi> : Il s'agit ici de décrire les lieux où le ou les experts ont effectivement procédé à l’expertise, <hi rend="underline">et non les biens</hi>. Par exemple : dans le cas d’une grande seigneurie, il peut y avoir beaucoup de biens décrits (terres, bâtiments, châteaux, droits seigneuriaux, etc.), mais ses biens peuvent se trouver sur un même lieu, il n’est donc pas nécessaire de déclarer ce lieu plusieurs fois. La description de biens rattachés à un lieu intervient plus loin dans le formulaire, dans la partie conclusions, et uniquement pour les cas d’estimation :<list rend="bulleted">
+                           <item>value, closed : Paris | Banlieue | Campagne | Bureau des experts | Bureau du greffiers | Indéterminé</item>
+                        </list>
+                     </item>
+                  </list>
+                  <p>Les champs ci-dessous peuvent varier suivant le choix effectué pour lieu de l’expertise.</p>
+                  <list rend="bulleted">
+                     <item>
+                        <hi rend="bold">Voie</hi> : nom de la voie du bien expertisé.<list rend="bulleted">
+                           <item>xs:string</item>
+                        </list>
+                     </item>
+                     <item>
+                        <hi rend="bold">Numéro</hi> : numéro du bien expertisé, si la voie en est pourvue.<list rend="bulleted">
+                           <item>xs:string</item>
+                        </list>
+                     </item>
+                     <item>
+                        <hi rend="bold">Précisions géographiques</hi> : toutes autres indications permettant de localiser le bien. Cette information n'est pas toujours présente dans le résumé de la première page (qui peut être fautif) et peut être trouvée dans le corps de l'expertise, voire dans les pièces annexes. Par exemple, nous relevons ici les mentions du type <hi rend="italic">près du croisement de la rue xxx et de la rue xxx</hi>, ou encore  <hi rend="italic">à l’enseigne xxx</hi>, <hi rend="italic">en face de</hi>, <hi rend="italic">en rentrant à droite dans la rue XXX</hi>, <hi rend="italic">quartier XXXX, à 20 lieues de XXX, </hi>etc.<list rend="bulleted">
+                           <item>xs:string</item>
+                        </list>
+                     </item>
+                     <item>
+                        <hi rend="bold">Ville</hi> : ville du bien expertisé dans le procès-verbal, si l’expertise ne se déroule pas à Paris.<list rend="bulleted">
+                           <item>xs:string</item>
+                        </list>
+                     </item>
+                     <item>
+                        <hi rend="bold">Département</hi> : département du bien expertisé, si l’expertise ne se déroule pas à Paris. On parle du département actuel, à rechercher donc.<list rend="bulleted">
+                           <item>xs:string</item>
+                        </list>
+                     </item>
+                     <item>
+                        <hi rend="bold">Paroisse</hi> : Paroisse où se situe le bien expertisé.<list rend="bulleted">
+                           <item>xs:string</item>
+                        </list>
+                     </item>
+                     <item>
+                        <hi rend="bold">Propriétaire</hi> : propriétaire du bien expertisé. Plusieurs propriétaires peuvent être déclarés pour un même bien.<list rend="bulleted">
+                           <item>repeatable</item>
+                           <item>xs:string</item>
+                        </list>
+                     </item>
+                  </list>
+               </div3>
+            </div2>
+            <div2>
+               <head>Acteurs</head>
+               <p>Cette section contient la description des différents acteurs mentionnés dans le procès-verbal. Plus particulièrement, il s’agit du ou des experts, du ou des greffiers, des parties, de leur(s) représentant(s) et procureur(s), ou encore des entrepreneurs, architectes ou maîtres d’œuvres n’intervenant pas comme parties mais présents à l’expertise.</p>
+               <div3>
+                  <head>Experts</head>
+                  <p>Déclaration des experts qui sont en rapport avec la même affaire (même objet, etc.). Plusieurs experts peuvent être décrits.</p>
+                  <list rend="bulleted">
+                     <item>
+                        <hi rend="bold">Patronyme</hi> : nom de l’expert. Si l’expert ne se trouve pas dans la liste, il convient de l’ajouter par l’intermédiaire du formulaire prosopographique. Cependant, on ne crée pas de nouvelle entrée pour les variantes orthographiques.</item>
+                     <item>
+                        <hi rend="bold">Dénomination de l’expert dans l’acte</hi> : précise comment l’expert est dénommé au début du procès-verbal (en première page). On précise également les autres qualités de l’expert, par exemple : <hi rend="italic">architecte bourgeois</hi>, <hi rend="italic">juré entrepreneur</hi>, <hi rend="italic">architecte-entrepreneur</hi>, <hi rend="italic">maître général</hi>, etc.<list rend="bulleted">
+                           <item>xs:string</item>
+                        </list>
+                     </item>
+                     <item>
+                        <hi rend="bold">Qualité de l’expert</hi> : indique le cadre de nomination de l’expert.<list rend="bulleted">
+                           <item>value, closed : premier lieu (primary) | tiers expert (third-party) | indéterminé (unknown)</item>
+                        </list>
+                     </item>
+                     <item>
+                        <hi rend="bold">Origine de la nomination</hi> : indique qui a nommé l’expert pour l’expertise, plusieurs choix sont possibles.<list rend="bulleted">
+                           <item>value, closed : d’office (par le lieutenant civil) (court-appointed) | par les parties (appointed) | par les experts | indéterminé (unknown)</item>
+                        </list>
+                     </item>
+                  </list>
+               </div3>
+               <div3>
+                  <head>Greffier</head>
+                  <p>Déclaration des greffiers mentionnés dans l’expertise. Plusieurs greffiers peuvent être décrits.</p>
+                  <list rend="bulleted">
+                     <item>
+                        <hi rend="bold">Nom</hi> : nom de famille du greffier.<list rend="bulleted">
+                           <item>xs:string</item>
+                        </list>
+                     </item>
+                     <item>
+                        <hi rend="bold">Prénom</hi> : prénom(s) du greffier<list rend="bulleted">
+                           <item>xs:string</item>
+                        </list>
+                     </item>
+                  </list>
+               </div3>
+               <div3>
+                  <head>Parties</head>
+                  <p>Chaque partie impliquée dans l’affaire est décrite ici par l’intermédiaire du ou des individus ou personne(s) morale(s) qui la composent, et de leur(s) représentant(s) et procureur(s), le cas échéant.</p>
+                  <div4>
+                     <head>Patronyme</head>
+                     <p>Description du ou des individus ou personne(s) morale(s) composant une partie. Il ne faut pas ici confondre les parties et leur(s) représentant(s), qui sont renseignés plus bas.</p>
+                     <p>repeatable</p>
+                     <list rend="bulleted">
+                        <item>
+                           <hi rend="bold">Nom</hi> : nom de famille si individus ou dénomination de la personne morale.<list rend="bulleted">
+                              <item>xs:string</item>
+                           </list>
+                        </item>
+                        <item>
+                           <hi rend="bold">Prénom</hi> : prénom(s) d’une personne<list rend="bulleted">
+                              <item>xs:string</item>
+                           </list>
+                        </item>
+                        <item>
+                           <hi rend="bold">Qualité, profession</hi> : profession ou qualité d’une personne (veuve, etc.).<list rend="bulleted">
+                              <item>xs:string</item>
+                           </list>
+                        </item>
+                     </list>
+                  </div4>
+                  <div4>
+                     <head>Précisions sur les parties</head>
+                     <list rend="bulleted">
+                        <item>
+                           <hi rend="bold">Partie</hi> : qualité (ou statut) de la partie<list rend="bulleted">
+                              <item>value, closed : requérante | opposante</item>
+                           </list>
+                        </item>
+                        <item>
+                           <hi rend="bold">Qualification individuelle</hi> : qualification de la partie dans le cadre de l’affaire. Dénomination dont on a besoin pour justifier l’expertise et qui nous permet de déterminer son statut de requérant ou d’opposant. Attention c’est parfois ambigu et nécessite une interprétation de la part de la personne qui dépouille, il ne s’agit pas nécessairement de la façon dont la personne est dénommée dans l’expertise : un entrepreneur peut en réalité intervenir en qualité de créancier.<list rend="bulleted">
+                              <item>value, closed : Entrepreneur, builder | Propriétaire, owner | Copropriétaire, joint-owner | Commanditaire, limited-partner | Héritier, heir | Voisin, neighbour | Locataire, tenant | Principal locataire, main-tenant | Créancier, creditor | Débiteur, mortgagor | Fermier judiciaire, contractor</item>
+                           </list>
+                        </item>
+                        <item>
+                           <hi rend="bold">Expert agissant pour cette partie</hi> : nom de l’expert agissant pour cette partie. On ne renseigne pas ici les tiers-experts. Lorsqu’il n’est pas possible de rattacher un expert à une partie, ce champ est laissé vide.<list rend="bulleted">
+                              <item>xs:sequence : pris dans la la liste des experts participant à l’expertise.</item>
+                           </list>
+                        </item>
+                        <item>
+                           <hi rend="bold">Partie présente</hi> : présence de la partie lors de l’expertise. Nous faisons référence ici à la partie et non son/ses représentant(s).<list rend="bulleted">
+                              <item>xs:boolean : oui | non</item>
+                           </list>
+                        </item>
+                        <item>
+                           <hi rend="bold">Partie intervenante</hi> : intervention de la partie lors de l’expertise<list rend="bulleted">
+                              <item>xs:boolean : oui | non</item>
+                           </list>
+                        </item>
+                     </list>
+                  </div4>
+                  <div4>
+                     <head>Représentants</head>
+                     <p>repeatable</p>
+                     <p>Déclaration de tous les représentants d’une même partie. Les représentants ne sont pas rattachés explicitement à une ou plusieurs personnes d’une même partie.</p>
+                     <list rend="bulleted">
+                        <item>
+                           <hi rend="bold">nom</hi> : nom du représentant<list rend="bulleted">
+                              <item>xs:string</item>
+                           </list>
+                        </item>
+                        <item>
+                           <hi rend="bold">Prénom</hi> : prénom du représentant<list rend="bulleted">
+                              <item>xs:string</item>
+                           </list>
+                        </item>
+                        <item>
+                           <hi rend="bold">Qualité, profession</hi> : Qualité et/ou profession du représentant. Il est possible de préciser ici qui est représenté, par exemple : <hi rend="italic">tuteur des enfants XXXX</hi>. Il peut s’agir également d’un chargé d'affaires, d’un entrepreneur ou d’un architecte, mais qui intervient comme représentant d’une partie.<list rend="bulleted">
+                              <item>xs:string</item>
+                           </list>
+                        </item>
+                     </list>
+                  </div4>
+                  <div4>
+                     <head>Procureurs</head>
+                     <p>repeatable</p>
+                     <p>Déclaration de tous les procureurs rattachés à une même partie. Comme pour les représentants, les procureurs ne sont pas rattachés explicitement à une personne.</p>
+                     <list rend="bulleted">
+                        <item>
+                           <hi rend="bold">Nom</hi> : nom de famille du procureur<list rend="bulleted">
+                              <item>xs:string</item>
+                           </list>
+                        </item>
+                        <item>
+                           <hi rend="bold">Prénom</hi> : prénom du procureur<list rend="bulleted">
+                              <item>xs:string</item>
+                           </list>
+                        </item>
+                     </list>
+                  </div4>
+               </div3>
+               <div3>
+                  <head>Entrepreneur, architecte ou maître d’œuvre</head>
+                  <p>Description de tous les entrepreneurs, architectes ou maîtres d’œuvre n’intervenant pas comme parties, mais présents à l’expertise ou mentionnés.</p>
+                  <div4>
+                     <head>Patronyme</head>
+                     <p>repeatable</p>
+                     <list rend="bulleted">
+                        <item>
+                           <hi rend="bold">Nom</hi> : Nom de famille d’un entrepreneur, architecte ou maître d’œuvre n’intervenant pas comme une partie<list rend="bulleted">
+                              <item>xs:string</item>
+                           </list>
+                        </item>
+                        <item>
+                           <hi rend="bold">Prénom</hi>  : prénom d’un entrepreneur, architecte ou maître d’œuvre n’intervenant pas comme une partie<list rend="bulleted">
+                              <item>xs:string</item>
+                           </list>
+                        </item>
+                        <item>
+                           <hi rend="bold">profession</hi> : profession d’un entrepreneur, architecte ou maître d’œuvre n’intervenant pas comme une partie<list rend="bulleted">
+                              <item>xs:string</item>
+                           </list>
+                        </item>
+                     </list>
+                  </div4>
+               </div3>
+            </div2>
+            <div2>
+               <head>Procédure</head>
+               <p>Cette section décrit la procédure et le cadre dans lequel intervient l’expertise.</p>
+               <div3>
+                  <head>Type d’expertise</head>
+                  <list rend="bulleted">
+                     <item>
+                        <hi rend="bold">Catégories d’expertise</hi> : Correspond à la nature de l’affaire qui est soumise aux experts. Plusieurs catégories peuvent être cochées pour une même expertise. L’information est répétable mais il est préférable de choisir parmi ces catégories.<list rend="bulleted">
+                           <item>repeatable</item>
+                           <item>value, closed<list rend="bulleted">
+                                 <item>Estimer la valeur des biens | ex : <hi rend="italic">Partage et succession, évaluation en vue d’une vente de biens meubles ou immeubles, etc.</hi>
+                                 </item>
+                                 <item>Recevoir et évaluer le travail réalisé | ex : <hi rend="italic">Réception d’ouvrages, estimation d’honoraires, défaut de paiement etc.</hi>
+                                 </item>
+                                 <item>Enregistrer | ex : <hi rend="italic">Projet de construction (arrêt du Parlement du 18 août 1766), alignement non conflictuel et non estimatif</hi>
+                                    <hi rend="italic">, état des lieux [à compléter si on trouve d’autres cas].</hi>
+                                 </item>
+                                 <item>Départager | ex : <hi rend="italic">Conflit de voisinage et conflit entre locataire et propriétaire, répartition des frais d’entretien ou de construction d’un mur mitoyen, conflits de fosses d’aisance, prise en charge des réparations locatives etc.</hi>
+                                 </item>
+                                 <item>Décrire et évaluer les travaux à venir | ex : <hi rend="italic">Réparations à faire</hi>
+                                 </item>
+                              </list>
+                           </item>
+                        </list>
+                     </item>
+                     <item>
+                        <hi rend="bold">Désignation</hi> : Titre donné à l’expertise dans l’acte lorsqu’il est présent ou désignation sommaire donnée lors du récolement pour décrire l’affaire lorsque ce n’est pas indiqué dans l’acte. Une description complémentaire à celle de l’acte peut être ajoutée entre crochets si cette dernière est incomplète. <list rend="bulleted">
+                           <item>xs:string</item>
+                        </list>
+                     </item>
+                     <item>
+                        <hi rend="bold">En rubrique</hi> : Indique si la désignation (champ précédent) apparaît en rubrique sur l’acte. (analyse marginale ou fournie comme un titre).<list rend="bulleted">
+                           <item>xs:boolean : oui | non</item>
+                        </list>
+                     </item>
+                  </list>
+               </div3>
+               <div3>
+                  <head>Procédure et cadre de l’expertise</head>
+                  <list rend="bulleted">
+                     <item>
+                        <hi rend="bold">Procédure</hi>
+                        <note place="foot" xml:id="ftn0" n="1">
+                           <p>
+                              Mise au point postérieure : Dans l’ancien droit, la juridiction non contentieuse, dite aussi « volontaire », est définie comme celle qui « connaît des matières et des affaires qui se présentent, dans lesquelles les parties sont d’accord : ainsi cette juridiction s’exerce sans qu’il y ait contestation de part et d’autre » ou encore « du commun consentement des parties”.<ref target="https://journals.openedition.org/abpo/2005"> </ref>
+                              <ref target="https://journals.openedition.org/abpo/2005">
+                                 <hi rend="underline color(4183c4)" style="font-size:10pt">https://journals.openedition.org/abpo/2005</hi>
+                              </ref>
+                           </p>
+                        </note> : procédure dans laquelle s’inscrit l’expertise.<list rend="bulleted">
+                           <item>value, closed :<list rend="bulleted">
+                                 <item>
+                                    <hi rend="bold">A/ Commun accord des parties</hi>
+                                    <list rend="bulleted">
+                                       <item>Les partie saisissent elles-mêmes un/des expert(s), sans avoir recours à une institution, en dehors de tout cadre judiciaire : <hi rend="bold">Affaire gracieuse</hi>
+                                       </item>
+                                    </list>
+                                 </item>
+                                 <item>B/ Saisie d’une institution (ou autre, à préciser)<list rend="bulleted">
+                                       <item>
+                                          <hi rend="bold">B1/ Requête auprès d’une institution pour qu’elle demande une expertise</hi>
+                                          <list rend="bulleted">
+                                             <item>L’institution délivre une <hi rend="bold">ordonnance</hi>
+                                                (/!\ une ordonnance de référé n’indique pas nécessairement une affaire gracieuse) indiquant la mission d’expertise. Arrêt du parlement du 18/08/1766 (nomination d’office d’experts) ; certains cas d’alignement, etc. Pas de procédure judiciaire en tant que telle. L’institution nomme “d’office” un ou deux experts. <hi rend="bold">Affaire gracieuse</hi>
+                                             </item>
+                                          </list>
+                                       </item>
+                                       <item>
+                                          <hi rend="bold">B2/ Une institution est saisie dans le cadre d’une procédure</hi> : elle rend une <hi rend="bold">sentence</hi> (voir les différents types) et ordonne l’expertise <hi rend="italic">(Succession (forcément litigieuse ?) ; conflit de mitoyenneté porté devant le juge…)</hi>. Procédure judiciaire : l’expertise est suivie d’un jugement. <hi rend="bold">Affaire contentieuse</hi> Le rapport se termine par la formule <hi rend="bold">“vous référant d’ordonner et de juger”</hi>.</item>
+                                    </list>
+                                 </item>
+                                 <item>
+                                    <hi rend="bold">C/ Cas problématique</hi>
+                                    <list rend="bulleted">
+                                       <item>Ce choix permet de retourner au document pour analyser la situation.</item>
+                                    </list>
+                                 </item>
+                              </list>
+                           </item>
+                        </list>
+                     </item>
+                  </list>
+                  <div4>
+                     <head>Origine de l’expertise</head>
+                     <list rend="bulleted">
+                        <item>
+                           <hi rend="bold">Déclenchement de l’expertise</hi> : indique qui est à l’origine de l’expertise. Ce champ est pré-rempli par l’intermédiaire du choix effectué pour la procédure. Mais il reste modifiable manuellement pour traiter les cas particuliers.<list rend="bulleted">
+                              <item>value, closed : Les parties | une institution</item>
+                           </list>
+                        </item>
+                     </list>
+                  </div4>
+                  <div4>
+                     <head>Intervention d’une institution</head>
+                     <p>repeatable</p>
+                     <p>Identifie toute institution qui est intervenue dans l’affaire (préalablement à l’expertise en cours).</p>
+                     <list rend="bulleted">
+                        <item>
+                           <hi rend="bold">Institution</hi> : nom complet de l’institution (qui peut comprendre un ressort). Par exemple, le Parlement de Paris est constitué de plusieurs chambres, nous indiquerons donc ici la chambre concernée : « Parlement de Paris, chambre des requêtes »<list rend="bulleted">
+                              <item>xs:string</item>
+                           </list>
+                        </item>
+                        <item>
+                           <hi rend="bold">Date</hi> : date de chaque sentence/arrêt/ordonnance rendue par l’institution.<lb/>repeatable<list rend="bulleted">
+                              <item>xs:date</item>
+                           </list>
+                        </item>
+                     </list>
+                  </div4>
+                  <div4>
+                     <head>Cause de l’expertise</head>
+                     <list rend="bulleted">
+                        <item>
+                           <hi rend="bold">cause de l’expertise</hi> : cause de l’expertise, ce qui donne lieu à l’expertise, à distinguer de l’objet de l’expertise, même si ces deux champs peuvent se rejoindre. <lb/>Exemples : <hi rend="italic">entretien, fin de location, nouvelle construction, partage, privilège, réception de travaux, reconstruction de mur mitoyen, prêt, mesure de protection à l’égard d’un incapable, vente d’un bien, etc.</hi>
+                           <list rend="bulleted">
+                              <item>xs:string</item>
+                           </list>
+                        </item>
+                     </list>
+                  </div4>
+                  <div4>
+                     <head>Objet de l’expertise</head>
+                     <list rend="bulleted">
+                        <item>
+                           <hi rend="bold">Objet(s) de l’expertise</hi> : Bien, objet sur lequel porte <hi rend="underline">en particulier</hi> la procédure. La valeur <hi rend="italic">autre</hi> est seulement utilisée lorsque l’objet ne rentre pas dans dans une catégorie générique. <lb/>Par exemple : <hi rend="italic">en cas de problème de fosse d’aisance, il n’est pas nécessaire de choisir ensemble de bâtiments. Lors d’une évaluation d’une maison, il n’est pas nécessaire de sélectionner le puits s’il n’y a pas de développement remarquable à son sujet. Pour un immeuble, choisir maison et pas autre.</hi>
+                           <lb/>repeatable<list rend="bulleted">
+                              <item>value, semi-closed : Maison(s) | Terrain(s) | Ensemble de bâtiments (biens immeubles) | Domaine, terres, fief | Mur(s) | Fosse(s) d’aisance | Puits | Autre</item>
+                           </list>
+                        </item>
+                     </list>
+                  </div4>
+               </div3>
+            </div2>
+            <div2>
+               <head>Conclusions</head>
+               <div3>
+                  <head>Conclusions ou dispositifs de l’expertise</head>
+                  <list rend="bulleted">
+                     <item>
+                        <hi rend="bold">Dispositif de l’expertise</hi> : précise comment se termine l’expertise, si une conclusion est rendue et s’il y a accord, ou non, entre les experts.<list rend="bulleted">
+                           <item>si un seul expert ou tiers expert :<list rend="bulleted">
+                                 <item>value, closed : conclusion | sans conclusion | affaire inachevée</item>
+                              </list>
+                           </item>
+                           <item>si plusieurs experts :<list rend="bulleted">
+                                 <item>value, closed : accord | désaccord | sans conclusion | affaire inachevée</item>
+                              </list>
+                           </item>
+                        </list>
+                     </item>
+                     <item>
+                        <hi rend="bold">Conclusions</hi> : transcriptions des conclusions (avis) de chaque expert (en cas de désaccord), qui peuvent se trouver à plein de moment dans l’expertise. Ils peuvent être rendus au fil de l’expertise.<lb/>
+                        repeatable (si plus d’un expert et désaccord dans <hi rend="bold">dispositif de l’expertise</hi>)<list rend="bulleted">
+                           <item>xs:string</item>
+                        </list>
+                     </item>
+                     <item>
+                        <hi rend="bold">Accommodement</hi> : indique si l’affaire s’est terminée par un accord amiable entre les parties ou par une remise sans suite, sans que l’expertise n’aille jusqu’à son terme.<list rend="bulleted">
+                           <item>xs:boolean : oui | non</item>
+                        </list>
+                     </item>
+                  </list>
+                  <div4>
+                     <head>Montant global (pour les estimations)</head>
+                     <p>Montant total cumulé de toutes les estimations <hi rend="underline">de biens</hi> réalisées durant l’expertise</p>
+                     <list rend="bulleted">
+                        <item>
+                           <hi rend="bold">Livres</hi>
+                           <list rend="bulleted">
+                              <item>xs:integer</item>
+                           </list>
+                        </item>
+                        <item>
+                           <hi rend="bold">Sols</hi>
+                           <list rend="bulleted">
+                              <item>xs:integer</item>
+                           </list>
+                        </item>
+                        <item>
+                           <hi rend="bold">Deniers</hi>
+                           <list rend="bulleted">
+                              <item>xs:integer</item>
+                           </list>
+                        </item>
+                     </list>
+                  </div4>
+                  <div4>
+                     <head>Estimations</head>
+                     <p>repeatable</p>
+                     <p>Dans le cadre d’une expertise pour « estimer la valeur des biens », l’estimation des biens (incluant les droits seigneuriaux) est donnée pour chaque lieu déclaré dans « Lieux de l’expertise » (onglet « Lieux »). Pour les grosses affaires, ce travail sera effectué à posteriori.</p>
+                     <list rend="bulleted">
+                        <item>
+                           <hi rend="bold">Nature du bien</hi> : description permettant l’identification d’un bien.<list rend="bulleted">
+                              <item>xs:string</item>
+                           </list>
+                        </item>
+                        <item>
+                           <hi rend="bold">Livres</hi>
+                           <list rend="bulleted">
+                              <item>xs:integer</item>
+                           </list>
+                        </item>
+                        <item>
+                           <hi rend="bold">Sols</hi>
+                           <list rend="bulleted">
+                              <item>xs:integer</item>
+                           </list>
+                        </item>
+                        <item>
+                           <hi rend="bold">Deniers</hi>
+                           <list rend="bulleted">
+                              <item>xs:integer</item>
+                           </list>
+                        </item>
+                     </list>
+                  </div4>
+                  <div4>
+                     <head>Coût de l’expertise</head>
+                     <p>Le détail des coûts n’est renseigné que lorsqu’il est complet.</p>
+                     <list rend="bulleted">
+                        <item>
+                           <hi rend="bold">Détail</hi> : indique si le détail des coûts de l’expertise est donné.<list rend="bulleted">
+                              <item>xs:boolean</item>
+                           </list>
+                        </item>
+                     </list>
+                     <p>Expert(s) repeatable | greffiers | Rôles | Papier et contrôle | Plans | Procureur(s) | Aides | Autres frais repeatable : détail du coût de l’expertise</p>
+                     <list rend="bulleted">
+                        <item>
+                           <hi rend="bold">Intitulé</hi> (si autres frais)<list rend="bulleted">
+                              <item>xs:string</item>
+                           </list>
+                        </item>
+                        <item>
+                           <hi rend="bold">Livres</hi>
+                           <list rend="bulleted">
+                              <item>xs:integer</item>
+                           </list>
+                        </item>
+                        <item>
+                           <hi rend="bold">Sols</hi>
+                           <list rend="bulleted">
+                              <item>xs:integer</item>
+                           </list>
+                        </item>
+                        <item>
+                           <hi rend="bold">Deniers</hi>
+                           <list rend="bulleted">
+                              <item>xs:integer</item>
+                           </list>
+                        </item>
+                     </list>
+                  </div4>
+                  <div4>
+                     <head>total</head>
+                     <p>Coût total de l’expertise.</p>
+                     <list rend="bulleted">
+                        <item>
+                           <hi rend="bold">Livres</hi>
+                           <list rend="bulleted">
+                              <item>xs:integer</item>
+                           </list>
+                        </item>
+                        <item>
+                           <hi rend="bold">Sols</hi>
+                           <list rend="bulleted">
+                              <item>xs:integer</item>
+                           </list>
+                        </item>
+                        <item>
+                           <hi rend="bold">Deniers</hi>
+                           <list rend="bulleted">
+                              <item>xs:integer</item>
+                           </list>
+                        </item>
+                     </list>
+                  </div4>
+                  <div4>
+                     <head>Bourse commune</head>
+                     <p>Mention de la bourse commune des experts ou des greffiers et détail du coût.</p>
+                     <list rend="bulleted">
+                        <item>Bourse commune des greffiers | Bourse commune des experts<list rend="bulleted">
+                              <item>xs:boolean</item>
+                           </list>
+                        </item>
+                        <item>
+                           <hi rend="bold">Livres</hi>
+                           <list rend="bulleted">
+                              <item>xs:integer</item>
+                           </list>
+                        </item>
+                        <item>
+                           <hi rend="bold">Sols</hi>
+                           <list rend="bulleted">
+                              <item>xs:integer</item>
+                           </list>
+                        </item>
+                        <item>
+                           <hi rend="bold">Deniers</hi>
+                           <list rend="bulleted">
+                              <item>xs:integer</item>
+                           </list>
+                        </item>
+                     </list>
+                  </div4>
+               </div3>
+            </div2>
+            <div2>
+               <head>Commentaires</head>
+               <div3>
+                  <head>Commentaires et première analyse</head>
+                  <list rend="bulleted">
+                     <item>
+                        <hi rend="bold">passages intéressants</hi> : contient les transcriptions de passages intéressants de l’expertise, autres que les avis et conclusions des experts.<list rend="bulleted">
+                           <item>xs:string</item>
+                        </list>
+                     </item>
+                     <item>
+                        <hi rend="bold">Éléments remarquables</hi> : champs libre, commentaire, information qui ne trouve pas sa place dans le formulaire mais qui mérite d’être relevée ou signalée, <hi rend="italic">par exemple si des expertises passées pour le même bien sont mentionnées</hi>.<list rend="bulleted">
+                           <item>xs:string</item>
+                        </list>
+                     </item>
+                     <item>
+                        <hi rend="bold">Commentaire sur ce formulaire</hi> : commentaire sur le fonctionnement du formulaire (problème technique, difficulté pour rendre compte de la source, etc.)<list rend="bulleted">
+                           <item>xs:string</item>
+                        </list>
+                     </item>
+                  </list>
+               </div3>
+            </div2>
+            <div2>
+               <head>Mots-clefs</head>
+               <p>Les mots-clefs servent à indexer les affaires et sont destinés à permettre de facilement retrouver des affaires selon un certain nombre de thématiques. Le terme choisi n’a pas nécessairement besoin de se retrouver dans la source, mais il rend compte des sujets abordés selon plusieurs axes thématiques : bien expertisé, procédure, contrats, servitudes, droit (nature et sources du droit), mesure (arpentage, toisé), réparations, sûreté et garanties, responsabilité, transmission de propriété, valeur et voisinage.</p>
+               <list rend="bulleted">
+                  <item>value, closed</item>
+               </list>
+            </div2>
+         </div1>
+    </front>
     <body>
       <schemaSpec ident="xprOdd" start="expertise" ns="xpr">
-        
         <elementSpec ident="address">
           <gloss>Adresse</gloss>
           <desc>Contient une adresse.</desc>
