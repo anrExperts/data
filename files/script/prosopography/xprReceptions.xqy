@@ -15,7 +15,7 @@ declare function getInductions() {
   return $inductions
 };
 
-declare function transformInductions(){
+declare %updating function transformInductions(){
   for $induction in getInductions()
 
   let $expert := $induction/description/candidate/persName/@ref => fn:substring-after('#')
@@ -25,13 +25,21 @@ declare function transformInductions(){
   let $sources :=
     for $s in $induction/sourceDesc/source
     let $sourceId := "source" || fn:generate-id($s)
-    return <source id="{$sourceId}" xmlns="https://archivists.org/ns/eac/v2"><reference href="">{$s/*:unitid => fn:normalize-space()}</reference></source>
+    return 
+      <source id="{$sourceId}" xmlns="https://archivists.org/ns/eac/v2">
+        <reference href="">{$s/*:unitid => fn:normalize-space()}</reference>
+        {if($s/*:item[fn:normalize-space(.)!='']) then <citedRange unit="page">{$s/*:item/fn:normalize-space()}</citedRange>}
+        {if($s/*:facsimile[fn:normalize-space((@from))!='' or fn:normalize-space((@to))!='']) then 
+        <descriptiveNote>
+          <p>facsimile : {fn:string-join($s/*:facsimile/@*[fn:normalize-space(.)!=''], ' - ')}</p>
+        </descriptiveNote>}
+      </source>
 
   let $sourcesRef := for $source in $sources return "#" || $source/@id
 
   let $place :=
     <place xmlns="https://archivists.org/ns/eac/v2" sourceReference="{$sourcesRef}">
-      <date certainty="certain" standardDate="{$date}" sourceReference="" />
+      <date certainty="certain" standardDate="{$date}" />
       <placeRole>Adresse</placeRole>
       <placeName>{$induction/*:description/*:candidate/*:address/*:street => fn:normalize-space()}</placeName>
       {if($induction/*:description/*:candidate/*:address/*[fn:not(self::*:street)][fn:normalize-space(.)!='']) then
@@ -58,6 +66,28 @@ declare function transformInductions(){
         if($induction/*:description/*:masterpiece/*:date[@type='induction'][fn:normalize-space(@when)!='']) then <date certainty="certain" standardDate="{$induction/*:description/*:masterpiece/*:date[@type='induction']/@when}" sourceReference="" >Réception</date>
       }</dateSet>
       <event>Maîtrise de maçon</event>
+      {if($induction/*:description/*:masterpiece/*:drawing[fn:normalize-space(*:placeName)!='']
+          or $induction/*:description/*:masterpiece/*:stoneModel[fn:normalize-space(*:placeName)!='']) then
+          <places>{
+            if($induction/*:description/*:masterpiece/*:drawing[fn:normalize-space(*:placeName)!='']) then 
+            <place>
+              <placeRole>Tracer et dessiner sur des cartons le trait géométrique</placeRole>
+              <placeName>{$induction/*:description/*:masterpiece/*:drawing/fn:normalize-space(*:placeName)}</placeName>
+            </place>,
+            if($induction/*:description/*:masterpiece/*:stoneModel[fn:normalize-space(*:placeName)!='']) then 
+            <place>
+              <placeRole>Modèle en pierre</placeRole>
+              <placeName>{$induction/*:description/*:masterpiece/*:stoneModel/fn:normalize-space(*:placeName)}</placeName>
+            </place>
+          }</places>}
+      {if($induction/*:description/*:petition/*:syndicCommunication/*:response[fn:normalize-space(.)!=''] 
+          or $induction/*:description/*:masterpiece[fn:normalize-space(*:objectName)!=''] 
+          or $induction/*:description/*:masterpiece[fn:normalize-space(*:induction)!='']) then
+      <descriptiveNote>{
+        if($induction/*:description/*:petition/*:syndicCommunication/*:response[fn:normalize-space(.)!='']) then <p>Réponse du syndic : {$induction/*:description/*:petition/*:syndicCommunication/*:response/fn:normalize-space()}</p>,
+        if($induction/*:description/*:masterpiece[fn:normalize-space(*:objectName)!='']) then <p>Chef-dœuvre : {$induction/*:description/*:masterpiece/fn:normalize-space(*:objectName)}</p>,
+        if($induction/*:description/*:masterpiece[fn:normalize-space(*:induction)!='']) then <p>Réception : {$induction/*:description/*:masterpiece/fn:normalize-space(*:induction)}</p>
+    }</descriptiveNote>}
     </chronItem>
 
   let $petitionMagistrate :=
@@ -169,8 +199,20 @@ declare function transformInductions(){
     )
 
   return (
-    $expert, $sources, $event, $place, $patrons
+    updateExpert($expert, $sources, $event, $place, $patrons)
   )
+};
+
+declare %updating function updateExpert($expert, $sources, $event, $place, $patrons) {
+  let $eac := db:open('xpr', 'xpr/biographies/'||$expert||'.xml')[1]
+  return(
+    copy $d := $eac//*:eac
+    modify (
+      if($d/*:eac/*:control/*:sources) then
+      insert node $sources as last into $d/*:eac/*:control/*:sources
+    )
+    return db:replace('xpr', 'xpr/biographies/'||$expert||'.xml', $d)
+  ) 
 };
 
 declare function getAddress($address) {
