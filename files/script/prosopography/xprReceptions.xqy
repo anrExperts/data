@@ -35,9 +35,10 @@ declare %updating function transformInductions(){
         </descriptiveNote>}
       </source>
 
-  let $sourcesRef := for $source in $sources return "#" || $source/@id
+  let $sourcesRef := for $source in $sources return fn:normalize-space($source/@id)
 
   let $place :=
+    if($induction/*:description/*:candidate/*:address[fn:normalize-space(.)!='']) then
     <place xmlns="https://archivists.org/ns/eac/v2" sourceReference="{$sourcesRef}">
       <date certainty="certain" standardDate="{$date}" />
       <placeRole>Adresse</placeRole>
@@ -94,7 +95,7 @@ declare %updating function transformInductions(){
     let $path := $induction/*:description/*:petition/*:magistrate
     let $relationTypeId := fn:generate-id($path)
     return
-    <relation xmlns="https://archivists.org/ns/eac/v2" target="{'#' || $eventId}" sourceReference="{$sourcesRef}">
+    <relation xmlns="https://archivists.org/ns/eac/v2" target="{$eventId}" sourceReference="{$sourcesRef}">
       <targetEntity targetType="person">
         <part localType="full">{$path/*:surname || ', ' || $path/*:forename}</part>
         <part localType="status">{$path/*:note => fn:normalize-space()}</part>
@@ -105,14 +106,14 @@ declare %updating function transformInductions(){
         <part localType="xprRef"/>
       </targetEntity>
       <relationType id="{$relationTypeId}" valueURI="" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="{$sourcesRef}"></relationType>
-      <targetRole target="{'#'||$relationTypeId}"></targetRole>
+      <targetRole target="{$relationTypeId}"></targetRole>
     </relation>
 
   let $petitionSyndic :=
     let $path := $induction/*:description/*:petition/*:syndicCommunication/*:syndic
     let $relationTypeId := fn:generate-id($path)
     return
-    <relation xmlns="https://archivists.org/ns/eac/v2" target="{'#' || $eventId}" sourceReference="{$sourcesRef}">
+    <relation xmlns="https://archivists.org/ns/eac/v2" target="{$eventId}" sourceReference="{$sourcesRef}">
       <targetEntity targetType="person">
         <part localType="full">{$path/*:surname || ', ' || $path/*:forename}</part>
         <part localType="status"/>
@@ -123,17 +124,18 @@ declare %updating function transformInductions(){
         <part localType="xprRef"/>
       </targetEntity>
       <relationType id="{$relationTypeId}" valueURI="" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="{$sourcesRef}"></relationType>
-      <targetRole target="{'#'||$relationTypeId}"></targetRole>
-      <descriptiveNote>
-        <p>{$path/*:note => fn:normalize-space()}</p>
-      </descriptiveNote>
+      <targetRole target="{$relationTypeId}"></targetRole>
+      if($path/*:persName/*:note[fn:normalize-space(.)!='']) then(
+        <descriptiveNote>
+          <p>{$path/*:persName/*:note => fn:normalize-space()}</p>
+        </descriptiveNote>)
     </relation>
 
   let $mannersMagistrate :=
     let $path := $induction/*:description/*:manners/*:magistrate
     let $relationTypeId := fn:generate-id($path)
     return
-    <relation xmlns="https://archivists.org/ns/eac/v2" target="{'#' || $eventId}" sourceReference="{$sourcesRef}">
+    <relation xmlns="https://archivists.org/ns/eac/v2" target="{$eventId}" sourceReference="{$sourcesRef}">
       <targetEntity targetType="person">
         <part localType="full">{$path/*:surname || ', ' || $path/*:forename}</part>
         <part localType="status"/>
@@ -144,10 +146,11 @@ declare %updating function transformInductions(){
         <part localType="xprRef"/>
       </targetEntity>
       <relationType id="{$relationTypeId}" valueURI="" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="{$sourcesRef}"></relationType>
-      <targetRole target="{'#'||$relationTypeId}"></targetRole>
-      <descriptiveNote>
-        <p>{$path/*:note => fn:normalize-space()}</p>
-      </descriptiveNote>
+      <targetRole target="{$relationTypeId}"></targetRole>
+      if($path/*:persName/*:note[fn:normalize-space(.)!='']) then(
+        <descriptiveNote>
+          <p>{$path/*:persName/*:note => fn:normalize-space()}</p>
+        </descriptiveNote>)
     </relation>
 
   let $witnesses :=
@@ -156,7 +159,7 @@ declare %updating function transformInductions(){
       let $path := $witness
       let $relationTypeId := fn:generate-id($path)
       return
-        <relation xmlns="https://archivists.org/ns/eac/v2" target="{'#' || $eventId}" sourceReference="{$sourcesRef}">
+        <relation xmlns="https://archivists.org/ns/eac/v2" target="{$eventId}" sourceReference="{$sourcesRef}">
           <targetEntity targetType="person">
             <part localType="full">{$path/*:persName/*:surname || ', ' || $path/*:persName/*:forename}</part>
             <part localType="status">{$path/*:occupation => fn:normalize-space()}</part>
@@ -167,10 +170,13 @@ declare %updating function transformInductions(){
             <part localType="xprRef"/>
           </targetEntity>
           <relationType id="{$relationTypeId}" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="{$sourcesRef}">rico:knownBy</relationType>
-          <targetRole target="{'#'||$relationTypeId}">témoin</targetRole>
-          <descriptiveNote>
-            <p>{$path/*:persName/*:note => fn:normalize-space()}</p>
-          </descriptiveNote>
+          <targetRole target="{$relationTypeId}">témoin</targetRole>
+          {if($path/*:persName/*:note[fn:normalize-space(.)!=''] 
+          or $path/*:signature[fn:normalize-space(.)='true']) then(
+          <descriptiveNote>{
+            if($path/*:persName/*:note[fn:normalize-space(.)!='']) then <p>{$path/*:persName/*:note => fn:normalize-space()}</p>,
+            if($path/*:signature[fn:normalize-space(.)='true']) then <p>Signature de l’information de vie et mœurs (maîtrise en l’art de maçonnerie) : {getBoolean($path/*:signature => fn:normalize-space())}</p>
+          }</descriptiveNote>)}
         </relation>
     )
 
@@ -180,7 +186,7 @@ declare %updating function transformInductions(){
       let $path := $patron
       let $relationTypeId := fn:generate-id($path)
       return
-        <relation xmlns="https://archivists.org/ns/eac/v2" target="{'#' || $eventId}" sourceReference="{$sourcesRef}">
+        <relation xmlns="https://archivists.org/ns/eac/v2" target="{$eventId}" sourceReference="{$sourcesRef}">
           <targetEntity targetType="person">
             <part localType="full">{$path/*:persName/*:surname || ', ' || $path/*:persName/*:forename}</part>
             <part localType="status">{$path/*:occupation => fn:normalize-space()}</part>
@@ -191,25 +197,39 @@ declare %updating function transformInductions(){
             <part localType="xprRef"/>
           </targetEntity>
           <relationType id="{$relationTypeId}" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadTeacher" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="{$sourcesRef}">rico:hasOrHadTeacher</relationType>
-          <targetRole target="{'#'||$relationTypeId}">examinateur</targetRole>
-          <descriptiveNote>
-            <p>{$path/*:persName/*:note => fn:normalize-space()}</p>
-          </descriptiveNote>
+          <targetRole target="{$relationTypeId}">examinateur</targetRole>
+          {if($path/*:persName/*:note[fn:normalize-space(.)!=''] 
+            or $path[@citedInRuling='true']
+            or $path[@oldest='true']) then(
+          <descriptiveNote>{
+            if($path/*:persName/*:note[fn:normalize-space(.)!='']) then <p>{$path/*:persName/*:note => fn:normalize-space()}</p>,
+            if($path[@citedInRuling='true']) then <p>Mentionné dans l’ordonnance (maîtrise en l’art de maçonnerie).</p>,
+            if($path[@oldest='true']) then <p>Doyen (maîtrise en l’art de maçonnerie).</p>
+          }</descriptiveNote>)}
         </relation>
     )
 
   return (
-    updateExpert($expert, $sources, $event, $place, $patrons)
+    updateExpert($expert, $sources, $event, $place, $petitionMagistrate, $petitionSyndic, $mannersMagistrate, $witnesses, $patrons)
   )
 };
 
-declare %updating function updateExpert($expert, $sources, $event, $place, $patrons) {
-  let $eac := db:open('xpr', 'xpr/biographies/'||$expert||'.xml')[1]
+declare %updating function updateExpert($expert, $sources, $event, $place, $petitionMagistrate, $petitionSyndic, $mannersMagistrate, $witnesses, $patrons) {
+  if($expert!='' and $expert!='xpr0127' and $expert!='xpr0109' and $expert!='xpr0005') then
+  let $eac := db:open('xpr', 'xpr/biographies/'||$expert||'.xml')
   return(
-    copy $d := $eac//*:eac
+    copy $d := $eac
     modify (
-      if($d/*:eac/*:control/*:sources) then
-      insert node $sources as last into $d/*:eac/*:control/*:sources
+      if($d/*:eac/*:control/*:sources) then insert nodes $sources as last into $d/*:eac/*:control/*:sources
+      else insert node <sources xmlns="https://archivists.org/ns/eac/v2">{$sources}</sources> after $d/*:eac/*:control/*:maintenanceHistory,
+      
+      insert node $event as last into $d/*:eac/*:cpfDescription/*:description/*:biogHist/*:chronList,
+      
+      if(fn:normalize-space($place)!='') then (
+        if($d/*:eac/*:cpfDescription/*:description/*:places) then insert node $place as last into $d/*:eac/*:cpfDescription/*:description/*:places
+        else insert node <places xmlns="https://archivists.org/ns/eac/v2">{$place}</places> before $d/*:eac/*:cpfDescription/*:description/*:existDates  
+      ),
+      insert nodes ($petitionMagistrate, $petitionSyndic, $mannersMagistrate, $witnesses, $patrons) as last into $d/*:eac/*:cpfDescription/*:relations
     )
     return db:replace('xpr', 'xpr/biographies/'||$expert||'.xml', $d)
   ) 
@@ -224,9 +244,16 @@ let $addr :=
       case "parish" return "paroisse " || $line => fn:normalize-space()
       default return $line => fn:normalize-space()
   )
-
 return fn:string-join($addr, ', ')
 
+};
+
+declare function getBoolean($value) {
+
+  switch ($value)
+      case "true" return "oui"
+      case "false" return "non"
+      default return ''
 };
 
 transformInductions()
