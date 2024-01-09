@@ -105,8 +105,8 @@ declare %updating function transformInductions(){
         <part localType="origPlace"/>
         <part localType="xprRef">{$path/@ref => fn:normalize-space()}</part>
       </targetEntity>
-      <relationType id="{$relationTypeId}" valueURI="" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="{$sourcesRef}"></relationType>
-      <targetRole target="{$relationTypeId}"></targetRole>
+      <relationType id="{$relationTypeId}" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="{$sourcesRef}">rico:hasOrHadController</relationType>
+      <targetRole target="{$relationTypeId}">magistrat</targetRole>
     </relation>
 
   let $petitionSyndic :=
@@ -123,8 +123,8 @@ declare %updating function transformInductions(){
         <part localType="origPlace"/>
         <part localType="xprRef">{$path/@ref => fn:normalize-space()}</part>
       </targetEntity>
-      <relationType id="{$relationTypeId}" valueURI="" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="{$sourcesRef}"></relationType>
-      <targetRole target="{$relationTypeId}"></targetRole>
+      <relationType id="{$relationTypeId}" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="{$sourcesRef}">rico:hasOrHadController</relationType>
+      <targetRole target="{$relationTypeId}">syndic</targetRole>
       if($path/*:persName/*:note[fn:normalize-space(.)!='']) then(
         <descriptiveNote>
           <p>{$path/*:persName/*:note => fn:normalize-space()}</p>
@@ -145,8 +145,8 @@ declare %updating function transformInductions(){
         <part localType="origPlace"/>
         <part localType="xprRef">{$path/@ref => fn:normalize-space()}</part>
       </targetEntity>
-      <relationType id="{$relationTypeId}" valueURI="" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="{$sourcesRef}"></relationType>
-      <targetRole target="{$relationTypeId}"></targetRole>
+      <relationType id="{$relationTypeId}" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="{$sourcesRef}">rico:hasOrHadController</relationType>
+      <targetRole target="{$relationTypeId}">magistrat</targetRole>
       if($path/*:persName/*:note[fn:normalize-space(.)!='']) then(
         <descriptiveNote>
           <p>{$path/*:persName/*:note => fn:normalize-space()}</p>
@@ -196,7 +196,7 @@ declare %updating function transformInductions(){
             <part localType="origPlace"/>
             <part localType="xprRef">{$path/*:persName/@ref => fn:normalize-space()}</part>
           </targetEntity>
-          <relationType id="{$relationTypeId}" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadTeacher" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="{$sourcesRef}">rico:hasOrHadTeacher</relationType>
+          <relationType id="{$relationTypeId}" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="{$sourcesRef}">rico:hasOrHadController</relationType>
           <targetRole target="{$relationTypeId}">examinateur</targetRole>
           {if($path/*:persName/*:note[fn:normalize-space(.)!=''] 
             or $path[@citedInRuling='true']
