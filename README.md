@@ -10,10 +10,26 @@ Les données sont structurées en XML. Le dépouillement systématique des affai
 
 *Un schéma sera prochainnement produit pour les données de dépouillements ainsi qu’un script d’exportation vers XML-EAD.*
 
-### Bibliographie
+## Bibliographie
 
 - Château-Dutier, Emmanuel, et Josselin Morvan. 2021. « Un outil de dépouillement de sources archivistiques basé sur des technologies XML ». Dans *Colloque Humanistica 2021 - Recueil des résumés*. , 78‑80. Rennes, 10-12 mai 2021 (France). https://doi.org/10.5281/zenodo.4745006.
 - Château-Dutier, Emmanuel, Josselin Morvan, et Robert Carvais. 2021. « La répartition des affaires au sein de la communauté d’experts-jurés parisiens du bâtiment au XVIIIe siècle : approche quantitative et analyse de réseau bi-parti pour 1726 ». Dans *6e rencontre ResHIST*. . 21-22 octobre 2021, Aix-en-Provence (France). https://reshist.hypotheses.org/1663.
+
+## Contenu du repo
+```bash
+├── xpr
+│   └── db // La base de données xpr, constituée de resources xml
+│       ├── biographies // données prosopographiques des experts et greffiers du bâtiments
+│       ├── expertises // Expertises dépouillées dans le cadre du projet
+│       └── inventories // inventaires après-décès des experts dépouillés dans le cadre du projet
+├── files // archives des fichiers et scripts utilisés pour réviser la base de données xpr 
+├── schema
+│   ├── eac-cpf // personnalisation du schema eac-cpf officiel pour le projet xpr (SAA-SDT/eac-cpf-schema)
+│   └── z1j // schema ODD et documentation pour le traitement des expertises z1j
+├── .gitmodules
+├── README.md
+└── makedb.xqy
+```
 
 ## L’ANR Experts
 
