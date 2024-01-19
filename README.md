@@ -28,7 +28,7 @@ Les données sont structurées en XML. Le dépouillement systématique des affai
 │   └── z1j // schema ODD et documentation pour le traitement des expertises z1j
 ├── .gitmodules
 ├── README.md
-└── makedb.xqy
+└── makedb.xqy // script xquery pour la creation de la base de données xpr
 ```
 
 ## L’ANR Experts
