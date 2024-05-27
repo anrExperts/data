@@ -1,5 +1,5 @@
 <eac xmlns="https://archivists.org/ns/eac/v2" xml:id="xpr0111">
-   <control maintenanceStatus="updated" publicationStatus="inProcess">
+   <control maintenanceStatus="revised" publicationStatus="inProcess">
       <recordId>xpr0111</recordId>
       <maintenanceAgency>
          <agencyName>projet Experts</agencyName>
@@ -98,11 +98,25 @@
             <function sourceReference="">
                <term>Expert entrepreneur</term>
                <dateRange>
-                  <fromDate sourceReference="" certainty="" standardDate="1708"/>
-                  <toDate sourceReference="" certainty="" standardDate="1727"/>
+                  <fromDate certainty="" standardDate="1708"/>
+                  <toDate certainty="" standardDate="1727"/>
                </dateRange>
             </function>
          </functions>
+      
+         <localDescriptions>
+            <localDescription localType="sex">
+               <term/>
+            </localDescription>
+         </localDescriptions>
+      <occupations>
+        <occupation localType="" sourceReference="source_aoe05le8dvm100a">
+          <term>Architecte et entrepreneur de bâtiments à Paris </term>
+          <date certainty="certain" standardDate="1702-01-29"/>
+          <!--optionnal (all below)-->
+          <!--&lt;date/&gt; | &lt;dateRange/&gt; | &lt;dateSet/&gt;-->
+        </occupation>
+      </occupations>
       <places>
         <place sourceReference="#sourceid29066048">
           <date certainty="certain" standardDate="1722-01-12" sourceReference=""/>
@@ -119,39 +133,26 @@
           </address>
         </place>
       </places>
-         <localDescriptions>
-            <localDescription localType="sex">
-               <term/>
-            </localDescription>
-         </localDescriptions>
-      <occupations>
-        <occupation localType="" sourceReference="#source_aoe05le8dvm100a">
-          <term>Architecte et entrepreneur de bâtiments à Paris </term>
-          <date certainty="certain" standardDate="1702-01-29" sourceReference=""/>
-          <!--optionnal (all below)-->
-          <!--&lt;date/&gt; | &lt;dateRange/&gt; | &lt;dateSet/&gt;-->
-        </occupation>
-      </occupations>
          
          
          <existDates>
             <dateRange>
                <fromDate sourceReference="" certainty="" standardDate="1668-03"/>
-               <toDate sourceReference="#source_c080gyy127ywcgc" certainty="certain" standardDate="1727-07-15"/>
+               <toDate sourceReference="source_c080gyy127ywcgc" certainty="certain" standardDate="1727-07-15"/>
             </dateRange>
          </existDates>
          <biogHist>
             <chronList>
                <chronItem id="eventid96212d207" localType="birth">
-                  <date sourceReference="" certainty="" standardDate="1668-03"/>
+                  <date certainty="" standardDate="1668-03"/>
                   <event>Naissance</event>
                   
                   
                   
                   
                </chronItem>
-               <chronItem id="eventid96212d218" sourceReference="#sourceid29065874 #source_aoe05le8dvm100a" localType="marriage">
-            <date certainty="certain" standardDate="1702-01-29" sourceReference=""/>
+               <chronItem id="eventid96212d218" sourceReference="sourceid29065874 source_aoe05le8dvm100a" localType="marriage">
+            <date certainty="certain" standardDate="1702-01-29"/>
                   
                   <event>Mariage (1) avec Marie Metay</event>
                   
@@ -159,8 +160,8 @@
                   
                   
                </chronItem>
-               <chronItem id="eventid96212d233" sourceReference="#sourceid29066048" localType="marriage">
-                  <date sourceReference="" certainty="certain" standardDate="1722-01-12"/>
+               <chronItem id="eventid96212d233" sourceReference="sourceid29066048" localType="marriage">
+                  <date certainty="certain" standardDate="1722-01-12"/>
                   <event>Mariage (2) avec Marie Magdelaine Machoud</event>
                   
                   
@@ -170,7 +171,7 @@
                   </place>
                </chronItem>
                <chronItem id="eventid96212d254" localType="officePurchase">
-            <date certainty="" sourceReference=""/>
+            <date certainty=""/>
                   
                   <event>Acquisition d'un office</event>
                   
@@ -180,15 +181,15 @@
                   
                </chronItem>
                <chronItem id="eventid96212d264" localType="provision">
-                  <date sourceReference="" certainty="" standardDate="1707-02-22"/>
+                  <date certainty="" standardDate="1707-02-22"/>
                   <event>Lettre de provision</event>
                   
                   
                   
                   
                </chronItem>
-          <chronItem id="chronItem_x3e0ahw4hc4tdt" sourceReference="#source_c080gyy127ywcgc" localType="death">
-            <date certainty="certain" standardDate="1727-07-15" sourceReference=""/>
+          <chronItem id="chronItem_x3e0ahw4hc4tdt" sourceReference="source_c080gyy127ywcgc" localType="death">
+            <date certainty="certain" standardDate="1727-07-15"/>
             <event>Décès d'Edmé Fourier</event>
             <place>
               <placeName>Rue Culture Sainte-Catherine </placeName>
@@ -200,10 +201,8 @@
          </biogHist>
       </description>
       <relations>
-      <relation target="#eventid96212d233" sourceReference="">
-        <descriptiveNote>
-          <p>Marie Magdelaine Machoud est la deuxième épouse.</p>
-        </descriptiveNote>
+      <relation target="eventid96212d233" sourceReference="">
+        
         <targetEntity targetType="person">
           <part localType="full">Machoud, Marie Magdelaine</part>
           <part localType="status"/>
@@ -213,13 +212,14 @@
           <part localType="origPlace"/>
           <part localType="xprRef"/>
         </targetEntity>
-        <relationType id="relationType_81us0m78l93djep" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadSpouse" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#sourceid29066048">rico:hasOrHadSpouse</relationType>
-        <targetRole target="#relationType_81us0m78l93djep">épouse</targetRole>
-      </relation>
-      <relation target="#eventid96212d233" sourceReference="">
-        <descriptiveNote>
-          <p>Charles Machoud (beau-père de l'expert) est décédé au moment du mariage.</p>
+        <relationType id="relationType_81us0m78l93djep" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadSpouse" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="sourceid29066048">rico:hasOrHadSpouse</relationType>
+        <targetRole target="relationType_81us0m78l93djep">épouse</targetRole>
+      <descriptiveNote>
+          <p>Marie Magdelaine Machoud est la deuxième épouse.</p>
         </descriptiveNote>
+      </relation>
+      <relation target="eventid96212d233" sourceReference="">
+        
         <targetEntity targetType="person">
           <part localType="full">Machoud, Charles</part>
           <part localType="status">Marchand Bourgeois de Paris </part>
@@ -229,10 +229,13 @@
           <part localType="origPlace"/>
           <part localType="xprRef"/>
         </targetEntity>
-        <relationType id="relationType_9ssb0vcoikepue8" valueURI="https://www.ica.org/standards/RiC/ontology#hasFamilyAssociationWith" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#sourceid29066048">rico:hasFamilyAssociationWith</relationType>
-        <targetRole target="#relationType_9ssb0vcoikepue8">beau-père</targetRole>
+        <relationType id="relationType_9ssb0vcoikepue8" valueURI="https://www.ica.org/standards/RiC/ontology#hasFamilyAssociationWith" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="sourceid29066048">rico:hasFamilyAssociationWith</relationType>
+        <targetRole target="relationType_9ssb0vcoikepue8">beau-père</targetRole>
+      <descriptiveNote>
+          <p>Charles Machoud (beau-père de l'expert) est décédé au moment du mariage.</p>
+        </descriptiveNote>
       </relation>
-      <relation target="#eventid96212d233" sourceReference="">
+      <relation target="eventid96212d233" sourceReference="">
         <targetEntity targetType="person">
           <part localType="full">Midy, Elisabeth</part>
           <part localType="status"/>
@@ -242,13 +245,11 @@
           <part localType="origPlace"/>
           <part localType="xprRef"/>
         </targetEntity>
-        <relationType id="relationType_bxp80c1lnyofd6h7" valueURI="https://www.ica.org/standards/RiC/ontology#hasFamilyAssociationWith" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#sourceid29066048">rico:hasFamilyAssociationWith</relationType>
-        <targetRole target="#relationType_bxp80c1lnyofd6h7">belle-mère</targetRole>
+        <relationType id="relationType_bxp80c1lnyofd6h7" valueURI="https://www.ica.org/standards/RiC/ontology#hasFamilyAssociationWith" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="sourceid29066048">rico:hasFamilyAssociationWith</relationType>
+        <targetRole target="relationType_bxp80c1lnyofd6h7">belle-mère</targetRole>
       </relation>
-      <relation target="#eventid96212d218" sourceReference="">
-        <descriptiveNote>
-          <p>Marie Metay est la première épouse. Elle meurt en 1721. Voir l' IAD fait par Germain Angot le 2 juillet 1721,  MC/ET/XII/357. </p>
-        </descriptiveNote>
+      <relation target="eventid96212d218" sourceReference="">
+        
         <targetEntity targetType="person">
           <part localType="full">Metay, Marie</part>
           <part localType="status"/>
@@ -258,10 +259,13 @@
           <part localType="origPlace"/>
           <part localType="xprRef"/>
         </targetEntity>
-        <relationType id="relationType_331k0nphicparenm" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadSpouse" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_aoe05le8dvm100a">rico:hasOrHadSpouse</relationType>
-        <targetRole target="#relationType_331k0nphicparenm">épouse</targetRole>
+        <relationType id="relationType_331k0nphicparenm" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadSpouse" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="source_aoe05le8dvm100a">rico:hasOrHadSpouse</relationType>
+        <targetRole target="relationType_331k0nphicparenm">épouse</targetRole>
+      <descriptiveNote>
+          <p>Marie Metay est la première épouse. Elle meurt en 1721. Voir l' IAD fait par Germain Angot le 2 juillet 1721,  MC/ET/XII/357. </p>
+        </descriptiveNote>
       </relation>
-      <relation target="#eventid96212d218" sourceReference="">
+      <relation target="eventid96212d218" sourceReference="">
         <targetEntity targetType="person">
           <part localType="full">Fourier, Edme</part>
           <part localType="status">Conducteur de bâtiments à Paris</part>
@@ -271,10 +275,10 @@
           <part localType="origPlace"/>
           <part localType="xprRef"/>
         </targetEntity>
-        <relationType id="relationType_5gux0hiud6xa9k36" valueURI="https://www.ica.org/standards/RiC/ontology#isChildOf" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_aoe05le8dvm100a">rico:isChildOf</relationType>
-        <targetRole target="#relationType_5gux0hiud6xa9k36"/>
+        <relationType id="relationType_5gux0hiud6xa9k36" valueURI="https://www.ica.org/standards/RiC/ontology#isChildOf" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="source_aoe05le8dvm100a">rico:isChildOf</relationType>
+        <targetRole target="relationType_5gux0hiud6xa9k36"/>
       </relation>
-      <relation target="#eventid96212d218" sourceReference="">
+      <relation target="eventid96212d218" sourceReference="">
         <targetEntity targetType="person">
           <part localType="full">Vary, Marie</part>
           <part localType="status"/>
@@ -284,10 +288,10 @@
           <part localType="origPlace"/>
           <part localType="xprRef"/>
         </targetEntity>
-        <relationType id="relationType_6h370wq8gimf2t3" valueURI="https://www.ica.org/standards/RiC/ontology#isChildOf" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_aoe05le8dvm100a">rico:isChildOf</relationType>
-        <targetRole target="#relationType_6h370wq8gimf2t3">mère</targetRole>
+        <relationType id="relationType_6h370wq8gimf2t3" valueURI="https://www.ica.org/standards/RiC/ontology#isChildOf" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="source_aoe05le8dvm100a">rico:isChildOf</relationType>
+        <targetRole target="relationType_6h370wq8gimf2t3">mère</targetRole>
       </relation>
-      <relation target="#eventid96212d218" sourceReference="">
+      <relation target="eventid96212d218" sourceReference="">
         <targetEntity targetType="">
           <part localType="full">Metay, Jean</part>
           <part localType="status">Architecte, entrepreneur de bâtiments à Paris</part>
@@ -297,10 +301,10 @@
           <part localType="origPlace"/>
           <part localType="xprRef"/>
         </targetEntity>
-        <relationType id="relationType_7484095tk2n35oh8" valueURI="https://www.ica.org/standards/RiC/ontology#hasFamilyAssociationWith" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_aoe05le8dvm100a">rico:hasFamilyAssociationWith</relationType>
-        <targetRole target="#relationType_7484095tk2n35oh8">beau-père</targetRole>
+        <relationType id="relationType_7484095tk2n35oh8" valueURI="https://www.ica.org/standards/RiC/ontology#hasFamilyAssociationWith" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="source_aoe05le8dvm100a">rico:hasFamilyAssociationWith</relationType>
+        <targetRole target="relationType_7484095tk2n35oh8">beau-père</targetRole>
       </relation>
-      <relation target="#eventid96212d218" sourceReference="">
+      <relation target="eventid96212d218" sourceReference="">
         <targetEntity targetType="person">
           <part localType="full">Folin, Denise</part>
           <part localType="status"/>
@@ -310,12 +314,12 @@
           <part localType="origPlace"/>
           <part localType="xprRef"/>
         </targetEntity>
-        <relationType id="relationType_96yr0kazqd4useph" valueURI="https://www.ica.org/standards/RiC/ontology#hasFamilyAssociationWith" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_aoe05le8dvm100a">rico:hasFamilyAssociationWith</relationType>
-        <targetRole target="#relationType_96yr0kazqd4useph">belle-mère</targetRole>
+        <relationType id="relationType_96yr0kazqd4useph" valueURI="https://www.ica.org/standards/RiC/ontology#hasFamilyAssociationWith" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="source_aoe05le8dvm100a">rico:hasFamilyAssociationWith</relationType>
+        <targetRole target="relationType_96yr0kazqd4useph">belle-mère</targetRole>
       </relation>
          
-      <relation target="#eventid96212d218" sourceReference="#sourceid29065874">
-            <targetEntity target="#xprPerson0011" targetType="person">
+      <relation target="eventid96212d218" sourceReference="sourceid29065874">
+            <targetEntity target="xprPerson0011" targetType="person">
               <part localType="full">Metay, Marie (? - ?)</part>
             <part localType="status"/>
           <part localType="occupationType"/>
@@ -324,11 +328,11 @@
           <part localType="origPlace"/>
           <part localType="xprRef"/>
         </targetEntity>
-          <relationType id="relationType_id128298d2584926" valueURI="" vocabularySource="" vocabularySourceURI="" sourceReference="#sourceid29065874"/>
-            <targetRole target="#relationType_id128298d2584926"/>
+          <relationType id="relationType_id128298d2584926" valueURI="" vocabularySource="" vocabularySourceURI="" sourceReference="sourceid29065874"/>
+            <targetRole target="relationType_id128298d2584926"/>
           </relation>
-      <relation target="#eventid96212d233" sourceReference="#sourceid29066048">
-            <targetEntity target="#xprPerson0012" targetType="person">
+      <relation target="eventid96212d233" sourceReference="sourceid29066048">
+            <targetEntity target="xprPerson0012" targetType="person">
               <part localType="full">Machoud, Marie Madelaine (? - ?)</part>
             <part localType="status"/>
           <part localType="occupationType"/>
@@ -337,11 +341,11 @@
           <part localType="origPlace"/>
           <part localType="xprRef"/>
         </targetEntity>
-          <relationType id="relationType_id128298d2584940" valueURI="" vocabularySource="" vocabularySourceURI="" sourceReference="#sourceid29066048"/>
-            <targetRole target="#relationType_id128298d2584940"/>
+          <relationType id="relationType_id128298d2584940" valueURI="" vocabularySource="" vocabularySourceURI="" sourceReference="sourceid29066048"/>
+            <targetRole target="relationType_id128298d2584940"/>
           </relation>
-      <relation target="#eventid96212d254" sourceReference="">
-            <targetEntity target="#xprOffice0001" targetType="corporateBody">
+      <relation target="eventid96212d254" sourceReference="">
+            <targetEntity target="xprOffice0001" targetType="corporateBody">
               <part localType="full">Office 01</part>
             <part localType="status"/>
           <part localType="occupationType"/>
@@ -351,7 +355,7 @@
           <part localType="xprRef"/>
         </targetEntity>
           <relationType id="relationType_id128298d2584954" valueURI="" vocabularySource="" vocabularySourceURI="" sourceReference=""/>
-            <targetRole target="#relationType_id128298d2584954"/>
+            <targetRole target="relationType_id128298d2584954"/>
           </relation>
     </relations>
    

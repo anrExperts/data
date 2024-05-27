@@ -1,6 +1,6 @@
 <eac xmlns="https://archivists.org/ns/eac/v2" xml:id="xpr0241">
       <!--Probl.-->
-   <control maintenanceStatus="updated" publicationStatus="inProcess">
+   <control maintenanceStatus="revised" publicationStatus="inProcess">
       <recordId>xpr0241</recordId>
       <maintenanceAgency>
          <agencyName>projet Experts</agencyName>
@@ -85,15 +85,7 @@
       </identity>
       <description>
          
-         <places>
-        <place sourceReference="#source_5r50utikeipovs">
-          <date certainty="certain" standardDate="1691-01-04" sourceReference=""/>
-          <address>
-            <addressLine>Rue Neuve de Clery</addressLine>
-            <addressLine>Paroisse de Notre-Dame de Bonne Nouvelle</addressLine>
-          </address>
-        </place>
-      </places>
+         
       <localDescriptions>
             <localDescription localType="sex">
                <term/>
@@ -104,25 +96,34 @@
                <term>Conseiller du roi, syndic des rentes de l'hôtel de ville</term>
                
             </occupation>
-        <occupation localType="" sourceReference="#source_5r50utikeipovs">
+        <occupation localType="" sourceReference="source_5r50utikeipovs">
           <term>Maître maçon, bourgeois de Paris</term>
-          <date certainty="certain" standardDate="1691-01-04" sourceReference=""/>
+          <date certainty="certain" standardDate="1691-01-04"/>
           <!--optionnal (all below)-->
           <!--&lt;date/&gt; | &lt;dateRange/&gt; | &lt;dateSet/&gt;-->
         </occupation>
          </occupations>
+      <places>
+        <place sourceReference="#source_5r50utikeipovs">
+          <date certainty="certain" standardDate="1691-01-04" sourceReference=""/>
+          <address>
+            <addressLine>Rue Neuve de Clery</addressLine>
+            <addressLine>Paroisse de Notre-Dame de Bonne Nouvelle</addressLine>
+          </address>
+        </place>
+      </places>
          
          <existDates>
         <dateRange>
           <fromDate certainty="" sourceReference=""/>
-          <toDate certainty="certain" sourceReference="#source_7ci0rit4woim2zr" standardDate="1737-06-20"/>
+          <toDate certainty="certain" sourceReference="source_7ci0rit4woim2zr" standardDate="1737-06-20"/>
         </dateRange>
             
          </existDates>
          <biogHist>
             <chronList>
                <chronItem id="eventid96472d173" localType="master">
-                  <date sourceReference="" certainty="" standardDate="1696-08-13"/>
+                  <date certainty="" standardDate="1696-08-13"/>
                   <event>Maîtrise maç.</event>
                   
                   
@@ -130,7 +131,7 @@
                   
                </chronItem>
                <chronItem id="eventid96472d184" localType="officePurchase">
-                  <date sourceReference="" certainty="" standardDate="1712-12-23"/>
+                  <date certainty="" standardDate="1712-12-23"/>
                   <event>Acquisition d'un office</event>
                   
                   
@@ -139,7 +140,7 @@
                   
                </chronItem>
                <chronItem id="eventid96472d198" localType="provision">
-            <date certainty="" sourceReference=""/>
+            <date certainty=""/>
                   
                   <event>Lettre de provision</event>
                   
@@ -149,7 +150,7 @@
                </chronItem>
                
                <chronItem id="eventid96472d212" localType="relinquishment">
-            <date certainty="" sourceReference=""/>
+            <date certainty=""/>
                   
                   <event>vend à Roch Briere le 28 sept. 1719</event>
                   
@@ -157,15 +158,15 @@
                   
                   
                </chronItem>
-          <chronItem id="chronItem_ner0fqzk02vru69" sourceReference="#source_5r50utikeipovs" localType="marriage">
-            <date certainty="certain" standardDate="1691-01-04" sourceReference=""/>
+          <chronItem id="chronItem_ner0fqzk02vru69" sourceReference="source_5r50utikeipovs" localType="marriage">
+            <date certainty="certain" standardDate="1691-01-04"/>
             <event>Mariage avec Elisabeth David</event>
             <place>
               <placeName/>
             </place>
           </chronItem>
-          <chronItem id="chronItem_lci0h73vyy9mnl" sourceReference="#source_7ci0rit4woim2zr" localType="death">
-            <date certainty="certain" standardDate="1737-06-20" sourceReference=""/>
+          <chronItem id="chronItem_lci0h73vyy9mnl" sourceReference="source_7ci0rit4woim2zr" localType="death">
+            <date certainty="certain" standardDate="1737-06-20"/>
             <event>Décès de Jérôme Rousseau</event>
             <place>
               <placeName>Rue du Bout du Monde </placeName>
@@ -175,7 +176,7 @@
          </biogHist>
       </description>
       <relations>
-      <relation target="#chronItem_ner0fqzk02vru69" sourceReference="">
+      <relation target="chronItem_ner0fqzk02vru69" sourceReference="">
         <targetEntity targetType="person">
           <part localType="full">David, Elisabeth</part>
           <part localType="status"/>
@@ -185,13 +186,11 @@
           <part localType="origPlace"/>
           <part localType="xprRef"/>
         </targetEntity>
-        <relationType id="relationType_1aub0qdw6wz6h5d" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadSpouse" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_5r50utikeipovs">rico:hasOrHadSpouse</relationType>
-        <targetRole target="#relationType_1aub0qdw6wz6h5d">épouse</targetRole>
+        <relationType id="relationType_1aub0qdw6wz6h5d" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadSpouse" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="source_5r50utikeipovs">rico:hasOrHadSpouse</relationType>
+        <targetRole target="relationType_1aub0qdw6wz6h5d">épouse</targetRole>
       </relation>
-      <relation target="#chronItem_ner0fqzk02vru69" sourceReference="">
-        <descriptiveNote>
-          <p>Le père du futur expert, Benoist Rousseau, est décédé au moment du mariage.</p>
-        </descriptiveNote>
+      <relation target="chronItem_ner0fqzk02vru69" sourceReference="">
+        
         <targetEntity targetType="person">
           <part localType="full">Rousseau, Benoist</part>
           <part localType="status">Marchand a Catania en Sicille </part>
@@ -201,10 +200,13 @@
           <part localType="origPlace">Catania (Sicile)</part>
           <part localType="xprRef"/>
         </targetEntity>
-        <relationType id="relationType_1qsi05osqlcfmx3v" valueURI="https://www.ica.org/standards/RiC/ontology#isChildOf" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_5r50utikeipovs">rico:isChildOf</relationType>
-        <targetRole target="#relationType_1qsi05osqlcfmx3v">père</targetRole>
+        <relationType id="relationType_1qsi05osqlcfmx3v" valueURI="https://www.ica.org/standards/RiC/ontology#isChildOf" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="source_5r50utikeipovs">rico:isChildOf</relationType>
+        <targetRole target="relationType_1qsi05osqlcfmx3v">père</targetRole>
+      <descriptiveNote>
+          <p>Le père du futur expert, Benoist Rousseau, est décédé au moment du mariage.</p>
+        </descriptiveNote>
       </relation>
-      <relation target="#chronItem_ner0fqzk02vru69" sourceReference="">
+      <relation target="chronItem_ner0fqzk02vru69" sourceReference="">
         <targetEntity targetType="person">
           <part localType="full">Archangelo, Agathe</part>
           <part localType="status"/>
@@ -214,10 +216,10 @@
           <part localType="origPlace"/>
           <part localType="xprRef"/>
         </targetEntity>
-        <relationType id="relationType_6ry00lfvgtlbo8np" valueURI="https://www.ica.org/standards/RiC/ontology#isChildOf" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_5r50utikeipovs">rico:isChildOf</relationType>
-        <targetRole target="#relationType_6ry00lfvgtlbo8np">mère</targetRole>
+        <relationType id="relationType_6ry00lfvgtlbo8np" valueURI="https://www.ica.org/standards/RiC/ontology#isChildOf" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="source_5r50utikeipovs">rico:isChildOf</relationType>
+        <targetRole target="relationType_6ry00lfvgtlbo8np">mère</targetRole>
       </relation>
-      <relation target="#chronItem_ner0fqzk02vru69" sourceReference="">
+      <relation target="chronItem_ner0fqzk02vru69" sourceReference="">
         <targetEntity targetType="person">
           <part localType="full">David, Louis</part>
           <part localType="status">Maître maçon, Bourgeois de Paris</part>
@@ -227,10 +229,10 @@
           <part localType="origPlace"/>
           <part localType="xprRef"/>
         </targetEntity>
-        <relationType id="relationType_7t2r0pv437vco5b" valueURI="https://www.ica.org/standards/RiC/ontology#hasFamilyAssociationWith" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_5r50utikeipovs">rico:hasFamilyAssociationWith</relationType>
-        <targetRole target="#relationType_7t2r0pv437vco5b">beau-père</targetRole>
+        <relationType id="relationType_7t2r0pv437vco5b" valueURI="https://www.ica.org/standards/RiC/ontology#hasFamilyAssociationWith" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="source_5r50utikeipovs">rico:hasFamilyAssociationWith</relationType>
+        <targetRole target="relationType_7t2r0pv437vco5b">beau-père</targetRole>
       </relation>
-      <relation target="#chronItem_ner0fqzk02vru69" sourceReference="">
+      <relation target="chronItem_ner0fqzk02vru69" sourceReference="">
         <targetEntity targetType="person">
           <part localType="full">Senecart, Gabrielle</part>
           <part localType="status"/>
@@ -240,12 +242,12 @@
           <part localType="origPlace"/>
           <part localType="xprRef"/>
         </targetEntity>
-        <relationType id="relationType_8vey0vkj39bxnjhc" valueURI="https://www.ica.org/standards/RiC/ontology#hasFamilyAssociationWith" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_5r50utikeipovs">rico:hasFamilyAssociationWith</relationType>
-        <targetRole target="#relationType_8vey0vkj39bxnjhc">belle-mère</targetRole>
+        <relationType id="relationType_8vey0vkj39bxnjhc" valueURI="https://www.ica.org/standards/RiC/ontology#hasFamilyAssociationWith" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="source_5r50utikeipovs">rico:hasFamilyAssociationWith</relationType>
+        <targetRole target="relationType_8vey0vkj39bxnjhc">belle-mère</targetRole>
       </relation>
          
-      <relation target="#eventid96472d184 #eventid96472d212" sourceReference=" ">
-            <targetEntity target="#xprOffice0054" targetType="corporateBody">
+      <relation target="eventid96472d184 eventid96472d212" sourceReference=" ">
+            <targetEntity target="xprOffice0054" targetType="corporateBody">
               <part localType="full">Office 54</part>
             <part localType="status"/>
           <part localType="occupationType"/>
@@ -255,7 +257,7 @@
           <part localType="xprRef"/>
         </targetEntity>
           <relationType id="relationType_id128298d2623297" valueURI="" vocabularySource="" vocabularySourceURI="" sourceReference=""/>
-            <targetRole target="#relationType_id128298d2623297"/>
+            <targetRole target="relationType_id128298d2623297"/>
           </relation>
     </relations>
    

@@ -1,5 +1,5 @@
 <eac xmlns="https://archivists.org/ns/eac/v2" xml:id="xpr0115">
-   <control maintenanceStatus="updated" publicationStatus="inProcess">
+   <control maintenanceStatus="revised" publicationStatus="inProcess">
       <recordId>xpr0115</recordId>
       <maintenanceAgency>
          <agencyName>projet Experts</agencyName>
@@ -79,12 +79,26 @@
             <function sourceReference="">
                <term>Expert entrepreneur</term>
                <dateRange>
-                  <fromDate sourceReference="" certainty="" standardDate="1690"/>
-                  <toDate sourceReference="" certainty="" standardDate="1705"/>
+                  <fromDate certainty="" standardDate="1690"/>
+                  <toDate certainty="" standardDate="1705"/>
                </dateRange>
                
             </function>
          </functions>
+      
+         <localDescriptions>
+            <localDescription localType="sex">
+               <term/>
+            </localDescription>
+         </localDescriptions>
+      <occupations>
+        <occupation localType="" sourceReference="source_11ok0dn69dlrh4s5">
+          <term>Architecte ordinaire des bâtiments du Roy</term>
+          <date certainty="certain" standardDate="1670-04-19"/>
+          <!--optionnal (all below)-->
+          <!--&lt;date/&gt; | &lt;dateRange/&gt; | &lt;dateSet/&gt;-->
+        </occupation>
+      </occupations>
       <places>
         <place sourceReference="#source_11ok0dn69dlrh4s5">
           <date certainty="certain" standardDate="1670-04-19" sourceReference=""/>
@@ -94,19 +108,6 @@
           </address>
         </place>
       </places>
-         <localDescriptions>
-            <localDescription localType="sex">
-               <term/>
-            </localDescription>
-         </localDescriptions>
-      <occupations>
-        <occupation localType="" sourceReference="#source_11ok0dn69dlrh4s5">
-          <term>Architecte ordinaire des bâtiments du Roy</term>
-          <date certainty="certain" standardDate="1670-04-19" sourceReference=""/>
-          <!--optionnal (all below)-->
-          <!--&lt;date/&gt; | &lt;dateRange/&gt; | &lt;dateSet/&gt;-->
-        </occupation>
-      </occupations>
          
          
          <existDates>
@@ -121,7 +122,7 @@
                
                
                <chronItem id="eventid96220d197" localType="officePurchase">
-            <date certainty="" sourceReference=""/>
+            <date certainty=""/>
                   
                   <event>Acquisition d'un office</event>
                   
@@ -131,15 +132,15 @@
                   
                </chronItem>
                <chronItem id="eventid96220d207" localType="provision">
-                  <date sourceReference="" certainty="" standardDate="1690-08-05"/>
+                  <date certainty="" standardDate="1690-08-05"/>
                   <event>Lettre de provision</event>
                   
                   
                   
                   
                </chronItem>
-          <chronItem id="chronItem_1lhu088ohlcvqhd7" sourceReference="#source_11ok0dn69dlrh4s5" localType="marriage">
-            <date certainty="certain" standardDate="1670-04-19" sourceReference=""/>
+          <chronItem id="chronItem_1lhu088ohlcvqhd7" sourceReference="source_11ok0dn69dlrh4s5" localType="marriage">
+            <date certainty="certain" standardDate="1670-04-19"/>
             <event>Mariage (1) avec Denise Levé</event>
             <place>
               <placeName/>
@@ -150,7 +151,7 @@
          </biogHist>
       </description>
       <relations>
-      <relation target="#chronItem_1lhu088ohlcvqhd7" sourceReference="">
+      <relation target="chronItem_1lhu088ohlcvqhd7" sourceReference="">
         <targetEntity targetType="person">
           <part localType="full">Levé, Denise</part>
           <part localType="status"/>
@@ -160,13 +161,11 @@
           <part localType="origPlace"/>
           <part localType="xprRef"/>
         </targetEntity>
-        <relationType id="relationType_2ghe07c9ttf3g326" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadSpouse" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_11ok0dn69dlrh4s5">rico:hasOrHadSpouse</relationType>
-        <targetRole target="#relationType_2ghe07c9ttf3g326">épouse</targetRole>
+        <relationType id="relationType_2ghe07c9ttf3g326" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadSpouse" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="source_11ok0dn69dlrh4s5">rico:hasOrHadSpouse</relationType>
+        <targetRole target="relationType_2ghe07c9ttf3g326">épouse</targetRole>
       </relation>
-      <relation target="#chronItem_1lhu088ohlcvqhd7" sourceReference="">
-        <descriptiveNote>
-          <p>Le père du futur expert, Maurice [II] Gabriel, est décédé au moment du mariage.</p>
-        </descriptiveNote>
+      <relation target="chronItem_1lhu088ohlcvqhd7" sourceReference="">
+        
         <targetEntity targetType="person">
           <part localType="full">Gabriel, Maurice</part>
           <part localType="status">Architecte ordinaire des bâtiments du Roy</part>
@@ -176,10 +175,13 @@
           <part localType="origPlace"/>
           <part localType="xprRef"/>
         </targetEntity>
-        <relationType id="relationType_359u0upi5lzhl0ab" valueURI="https://www.ica.org/standards/RiC/ontology#isChildOf" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_11ok0dn69dlrh4s5">rico:isChildOf</relationType>
-        <targetRole target="#relationType_359u0upi5lzhl0ab">père</targetRole>
+        <relationType id="relationType_359u0upi5lzhl0ab" valueURI="https://www.ica.org/standards/RiC/ontology#isChildOf" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="source_11ok0dn69dlrh4s5">rico:isChildOf</relationType>
+        <targetRole target="relationType_359u0upi5lzhl0ab">père</targetRole>
+      <descriptiveNote>
+          <p>Le père du futur expert, Maurice [II] Gabriel, est décédé au moment du mariage.</p>
+        </descriptiveNote>
       </relation>
-      <relation target="#chronItem_1lhu088ohlcvqhd7" sourceReference="">
+      <relation target="chronItem_1lhu088ohlcvqhd7" sourceReference="">
         <targetEntity targetType="person">
           <part localType="full">Richard, Catherine</part>
           <part localType="status"/>
@@ -189,8 +191,8 @@
           <part localType="origPlace"/>
           <part localType="xprRef"/>
         </targetEntity>
-        <relationType id="relationType_8rcq04zaczqeo8r" valueURI="https://www.ica.org/standards/RiC/ontology#isChildOf" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_11ok0dn69dlrh4s5">rico:isChildOf</relationType>
-        <targetRole target="#relationType_8rcq04zaczqeo8r">mère</targetRole>
+        <relationType id="relationType_8rcq04zaczqeo8r" valueURI="https://www.ica.org/standards/RiC/ontology#isChildOf" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="source_11ok0dn69dlrh4s5">rico:isChildOf</relationType>
+        <targetRole target="relationType_8rcq04zaczqeo8r">mère</targetRole>
       </relation>
       <relation target="" sourceReference="">
         <targetEntity targetType="person">
@@ -202,8 +204,8 @@
           <part localType="origPlace"/>
           <part localType="xprRef">#xprOther0348</part>
         </targetEntity>
-        <relationType id="relationType_9zc20znw04rg5sjq" valueURI="https://www.ica.org/standards/RiC/ontology#hasFamilyAssociationWith" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_11ok0dn69dlrh4s5">rico:hasFamilyAssociationWith</relationType>
-        <targetRole target="#relationType_9zc20znw04rg5sjq">beau-père</targetRole>
+        <relationType id="relationType_9zc20znw04rg5sjq" valueURI="https://www.ica.org/standards/RiC/ontology#hasFamilyAssociationWith" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="source_11ok0dn69dlrh4s5">rico:hasFamilyAssociationWith</relationType>
+        <targetRole target="relationType_9zc20znw04rg5sjq">beau-père</targetRole>
       </relation>
       <relation target="" sourceReference="">
         <targetEntity targetType="person">
@@ -215,13 +217,11 @@
           <part localType="origPlace"/>
           <part localType="xprRef"/>
         </targetEntity>
-        <relationType id="relationType_cgab07i3l8rt18ku" valueURI="https://www.ica.org/standards/RiC/ontology#hasFamilyAssociationWith" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_11ok0dn69dlrh4s5">rico:hasFamilyAssociationWith</relationType>
-        <targetRole target="#relationType_cgab07i3l8rt18ku">belle-mère</targetRole>
+        <relationType id="relationType_cgab07i3l8rt18ku" valueURI="https://www.ica.org/standards/RiC/ontology#hasFamilyAssociationWith" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="source_11ok0dn69dlrh4s5">rico:hasFamilyAssociationWith</relationType>
+        <targetRole target="relationType_cgab07i3l8rt18ku">belle-mère</targetRole>
       </relation>
       <relation target="" sourceReference="">
-        <descriptiveNote>
-          <p>Le lien de parenté entre les deux experts est donné par Gallet et Bottineau, Les Gabriel, 1982, p. 330.</p>
-        </descriptiveNote>
+        
         <targetEntity targetType="person">
           <part localType="full">Gabriel, Jacques [III]</part>
           <part localType="status">Expert entrepreneur</part>
@@ -232,11 +232,14 @@
           <part localType="xprRef">#xpr0116</part>
         </targetEntity>
         <relationType id="relationType_53840gwz4nphdb2i" valueURI="https://www.ica.org/standards/RiC/ontology#hasSibling" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:hasSibling</relationType>
-        <targetRole target="#relationType_53840gwz4nphdb2i">frère</targetRole>
+        <targetRole target="relationType_53840gwz4nphdb2i">frère</targetRole>
+      <descriptiveNote>
+          <p>Le lien de parenté entre les deux experts est donné par Gallet et Bottineau, Les Gabriel, 1982, p. 330.</p>
+        </descriptiveNote>
       </relation>
          
-      <relation target="#eventid96220d197" sourceReference="">
-            <targetEntity target="#xprOffice0014" targetType="corporateBody">
+      <relation target="eventid96220d197" sourceReference="">
+            <targetEntity target="xprOffice0014" targetType="corporateBody">
               <part localType="full">Office 14</part>
             <part localType="status"/>
           <part localType="occupationType"/>
@@ -246,7 +249,7 @@
           <part localType="xprRef"/>
         </targetEntity>
           <relationType id="relationType_id128298d2586135" valueURI="" vocabularySource="" vocabularySourceURI="" sourceReference=""/>
-            <targetRole target="#relationType_id128298d2586135"/>
+            <targetRole target="relationType_id128298d2586135"/>
           </relation>
     </relations>
    

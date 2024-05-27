@@ -1,6 +1,6 @@
 <eac xmlns="https://archivists.org/ns/eac/v2" xml:id="xpr0211">
       <!--Partage le 25/05/1730, MC/18/522 : détail des maisons dont Perrault était propriétaire, plus complet que l'IAD. Testament (photos), 21/03/1723, MC/18/500-->
-   <control maintenanceStatus="updated" publicationStatus="inProcess">
+   <control maintenanceStatus="revised" publicationStatus="inProcess">
       <recordId>xpr0211</recordId>
       <maintenanceAgency>
          <agencyName>projet Experts</agencyName>
@@ -80,8 +80,8 @@
             <function sourceReference="">
                <term>Expert entrepreneur</term>
                <dateRange>
-                  <fromDate sourceReference="" certainty="" standardDate="1690"/>
-                  <toDate sourceReference="" certainty="" standardDate="1723"/>
+                  <fromDate certainty="" standardDate="1690"/>
+                  <toDate certainty="" standardDate="1723"/>
                </dateRange>
                
             </function>
@@ -96,13 +96,13 @@
          <existDates>
             <dateRange>
                <fromDate sourceReference="" certainty="" standardDate="1657-12"/>
-               <toDate sourceReference="#source_7y10me1pa4s9ago" certainty="certain" standardDate="1723-03-20"/>
+               <toDate sourceReference="source_7y10me1pa4s9ago" certainty="certain" standardDate="1723-03-20"/>
             </dateRange>
          </existDates>
          <biogHist>
             <chronList>
                <chronItem id="eventid96412d195" localType="birth">
-                  <date sourceReference="" certainty="" standardDate="1657-12"/>
+                  <date certainty="" standardDate="1657-12"/>
                   <event>Naissance</event>
                   
                   
@@ -113,7 +113,7 @@
                </chronItem>
                
                <chronItem id="eventid96412d219" localType="officePurchase">
-            <date certainty="" sourceReference=""/>
+            <date certainty=""/>
                   
                   <event>Acquisition d'un office</event>
                   
@@ -123,15 +123,15 @@
                   
                </chronItem>
                <chronItem id="eventid96412d229" localType="provision">
-                  <date sourceReference="" certainty="" standardDate="1690-08-05"/>
+                  <date certainty="" standardDate="1690-08-05"/>
                   <event>Lettre de provision</event>
                   
                   
                   
                   
                </chronItem>
-          <chronItem id="chronItem_e4vh0ujsljdprd3r" sourceReference="#source_7y10me1pa4s9ago" localType="death">
-            <date certainty="certain" standardDate="1723-03-20" sourceReference=""/>
+          <chronItem id="chronItem_e4vh0ujsljdprd3r" sourceReference="source_7y10me1pa4s9ago" localType="death">
+            <date certainty="certain" standardDate="1723-03-20"/>
             <event>Décès d'André Perrault</event>
             <place>
               <placeName/>
@@ -143,11 +143,9 @@
          </biogHist>
       </description>
       <relations>
-      <relation target="#chronItem_e4vh0ujsljdprd3r" sourceReference="">
-        <descriptiveNote>
-          <p>L'IAD d'André Perrault mentionne un acte de notoriété daté du 19 avril 1700 justifiant du décès de Jean Perrault (son frère), contrôleur des bâtiments du Roy le 10 février 1700. celui-ci est décédé "sans avoir été marié" et avec "pour seul et unique héritier feu Sr André Perrault son frère, "n’ayant été fait aucun inventaire après le décès du feu Jean Perrault".</p>
-        </descriptiveNote>
-        <date certainty="certain" standardDate="1700-02-10" sourceReference=""/>
+      <relation target="chronItem_e4vh0ujsljdprd3r" sourceReference="">
+        
+        
         <targetEntity targetType="person">
           <part localType="full">Perrault, Jean</part>
           <part localType="status">Contrôleur des bâtiments du Roy </part>
@@ -157,12 +155,16 @@
           <part localType="origPlace"/>
           <part localType="xprRef">#xpr0212</part>
         </targetEntity>
-        <relationType id="relationType_czz0u67pwrmbl5" valueURI="https://www.ica.org/standards/RiC/ontology#hasSibling" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_7y10me1pa4s9ago">rico:hasSibling</relationType>
-        <targetRole target="#relationType_czz0u67pwrmbl5">frère</targetRole>
+        <date certainty="certain" standardDate="1700-02-10" sourceReference=""/>
+        <relationType id="relationType_czz0u67pwrmbl5" valueURI="https://www.ica.org/standards/RiC/ontology#hasSibling" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="source_7y10me1pa4s9ago">rico:hasSibling</relationType>
+        <targetRole target="relationType_czz0u67pwrmbl5">frère</targetRole>
+      <descriptiveNote>
+          <p>L'IAD d'André Perrault mentionne un acte de notoriété daté du 19 avril 1700 justifiant du décès de Jean Perrault (son frère), contrôleur des bâtiments du Roy le 10 février 1700. celui-ci est décédé "sans avoir été marié" et avec "pour seul et unique héritier feu Sr André Perrault son frère, "n’ayant été fait aucun inventaire après le décès du feu Jean Perrault".</p>
+        </descriptiveNote>
       </relation>
          
-      <relation target="#eventid96412d219" sourceReference="">
-            <targetEntity target="#xprOffice0039" targetType="corporateBody">
+      <relation target="eventid96412d219" sourceReference="">
+            <targetEntity target="xprOffice0039" targetType="corporateBody">
               <part localType="full">Office 39</part>
             <part localType="status"/>
           <part localType="occupationType"/>
@@ -172,7 +174,7 @@
           <part localType="xprRef"/>
         </targetEntity>
           <relationType id="relationType_id128298d2614454" valueURI="" vocabularySource="" vocabularySourceURI="" sourceReference=""/>
-            <targetRole target="#relationType_id128298d2614454"/>
+            <targetRole target="relationType_id128298d2614454"/>
           </relation>
     </relations>
    

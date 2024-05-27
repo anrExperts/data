@@ -1,5 +1,5 @@
 <eac xmlns="https://archivists.org/ns/eac/v2" xml:id="xpr0245">
-   <control maintenanceStatus="updated" publicationStatus="inProcess">
+   <control maintenanceStatus="revised" publicationStatus="inProcess">
       <recordId>xpr0245</recordId>
       <maintenanceAgency>
          <agencyName>projet Experts</agencyName>
@@ -87,12 +87,26 @@
             <function sourceReference="">
                <term>Expert entrepreneur</term>
                <dateRange>
-                  <fromDate sourceReference="" certainty="" standardDate="1779"/>
-                  <toDate sourceReference="" certainty="" standardDate="1791"/>
+                  <fromDate certainty="" standardDate="1779"/>
+                  <toDate certainty="" standardDate="1791"/>
                </dateRange>
                
             </function>
          </functions>
+      
+         <localDescriptions>
+            <localDescription localType="sex">
+               <term/>
+            </localDescription>
+         </localDescriptions>
+      <occupations>
+        <occupation localType="" sourceReference="source_4eu0eyaxfyh0o3">
+          <term>Maître maçon entrepreneur de bâtiment</term>
+          <date certainty="certain" standardDate="1773-12-27"/>
+          <!--optionnal (all below)-->
+          <!--&lt;date/&gt; | &lt;dateRange/&gt; | &lt;dateSet/&gt;-->
+        </occupation>
+      </occupations>
       <places>
         <place sourceReference="#source_4eu0eyaxfyh0o3">
           <date certainty="certain" standardDate="1773-12-27" sourceReference=""/>
@@ -102,31 +116,18 @@
           </address>
         </place>
       </places>
-         <localDescriptions>
-            <localDescription localType="sex">
-               <term/>
-            </localDescription>
-         </localDescriptions>
-      <occupations>
-        <occupation localType="" sourceReference="#source_4eu0eyaxfyh0o3">
-          <term>Maître maçon entrepreneur de bâtiment</term>
-          <date certainty="certain" standardDate="1773-12-27" sourceReference=""/>
-          <!--optionnal (all below)-->
-          <!--&lt;date/&gt; | &lt;dateRange/&gt; | &lt;dateSet/&gt;-->
-        </occupation>
-      </occupations>
          
          
          <existDates>
             <dateRange>
                <fromDate sourceReference="" certainty="" standardDate="1738-08"/>
-               <toDate sourceReference="#source_65y0zbybb41l8zi" certainty="certain" standardDate="1810-06-16"/>
+               <toDate sourceReference="source_65y0zbybb41l8zi" certainty="certain" standardDate="1810-06-16"/>
             </dateRange>
          </existDates>
          <biogHist>
             <chronList>
                <chronItem id="eventid96480d194" localType="birth">
-                  <date sourceReference="" certainty="" standardDate="1738-08"/>
+                  <date certainty="" standardDate="1738-08"/>
                   <event>Naissance</event>
                   
                   
@@ -135,7 +136,7 @@
                </chronItem>
                
                <chronItem id="eventid96480d212" localType="master">
-                  <date sourceReference="" certainty="" standardDate="1773"/>
+                  <date certainty="" standardDate="1773"/>
                   <event>Maîtrise maç.</event>
                   
                   
@@ -143,7 +144,7 @@
                   
                </chronItem>
                <chronItem id="eventid96480d223" localType="officePurchase">
-            <date certainty="" sourceReference=""/>
+            <date certainty=""/>
                   
                   <event>Acquisition d'un office</event>
                   
@@ -153,7 +154,7 @@
                   
                </chronItem>
                <chronItem id="eventid96480d233" localType="provision">
-                  <date sourceReference="" certainty="" standardDate="1779-12-01"/>
+                  <date certainty="" standardDate="1779-12-01"/>
                   <event>Lettre de provision</event>
                   
                   
@@ -162,7 +163,7 @@
                </chronItem>
                
                <chronItem id="eventid96480d251" localType="officesEnding">
-                  <date sourceReference="" certainty="" standardDate="1791"/>
+                  <date certainty="" standardDate="1791"/>
                   <event>Suppression des offices</event>
                   
                   
@@ -170,15 +171,15 @@
                   
                </chronItem>
                
-          <chronItem id="chronItem_lll0qnzzq82qea" sourceReference="#source_4eu0eyaxfyh0o3" localType="marriage">
-            <date certainty="certain" standardDate="1773-12-27" sourceReference=""/>
+          <chronItem id="chronItem_lll0qnzzq82qea" sourceReference="source_4eu0eyaxfyh0o3" localType="marriage">
+            <date certainty="certain" standardDate="1773-12-27"/>
             <event>Mariage avec Geneviève Rosalie Mercier</event>
             <place>
               <placeName/>
             </place>
           </chronItem>
-          <chronItem id="chronItem_mun0nbydyk7w4r" sourceReference="#source_65y0zbybb41l8zi" localType="death">
-            <date certainty="certain" standardDate="1810-09-16" sourceReference=""/>
+          <chronItem id="chronItem_mun0nbydyk7w4r" sourceReference="source_65y0zbybb41l8zi" localType="death">
+            <date certainty="certain" standardDate="1810-09-16"/>
             <event>Décès de Louis Siguy</event>
             <place>
               <placeName>Rue Coquillière, n° 38 </placeName>
@@ -198,10 +199,10 @@
           <part localType="origPlace"/>
           <part localType="xprRef"/>
         </targetEntity>
-        <relationType id="relationType_19540dlmj5xsxuqo" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadSpouse" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_4eu0eyaxfyh0o3">rico:hasOrHadSpouse</relationType>
-        <targetRole target="#relationType_19540dlmj5xsxuqo">épouse</targetRole>
+        <relationType id="relationType_19540dlmj5xsxuqo" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadSpouse" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="source_4eu0eyaxfyh0o3">rico:hasOrHadSpouse</relationType>
+        <targetRole target="relationType_19540dlmj5xsxuqo">épouse</targetRole>
       </relation>
-      <relation target="#chronItem_lll0qnzzq82qea" sourceReference="">
+      <relation target="chronItem_lll0qnzzq82qea" sourceReference="">
         <targetEntity targetType="person">
           <part localType="full">Siguy, Joseph</part>
           <part localType="status">Recteur des Ecoles à Sainte-Menehould en Champagne </part>
@@ -211,10 +212,10 @@
           <part localType="origPlace">Sainte-Menehould (Marne)</part>
           <part localType="xprRef"/>
         </targetEntity>
-        <relationType id="relationType_1s3f017a0nhdvhtw" valueURI="https://www.ica.org/standards/RiC/ontology#isChildOf" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_4eu0eyaxfyh0o3">rico:isChildOf</relationType>
-        <targetRole target="#relationType_1s3f017a0nhdvhtw">père</targetRole>
+        <relationType id="relationType_1s3f017a0nhdvhtw" valueURI="https://www.ica.org/standards/RiC/ontology#isChildOf" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="source_4eu0eyaxfyh0o3">rico:isChildOf</relationType>
+        <targetRole target="relationType_1s3f017a0nhdvhtw">père</targetRole>
       </relation>
-      <relation target="#chronItem_lll0qnzzq82qea" sourceReference="">
+      <relation target="chronItem_lll0qnzzq82qea" sourceReference="">
         <targetEntity targetType="person">
           <part localType="full">Herbin, Antoinette</part>
           <part localType="status"/>
@@ -224,10 +225,10 @@
           <part localType="origPlace"/>
           <part localType="xprRef"/>
         </targetEntity>
-        <relationType id="relationType_3zy307x6r4nfo9xt" valueURI="https://www.ica.org/standards/RiC/ontology#isChildOf" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_4eu0eyaxfyh0o3">rico:isChildOf</relationType>
-        <targetRole target="#relationType_3zy307x6r4nfo9xt">mère</targetRole>
+        <relationType id="relationType_3zy307x6r4nfo9xt" valueURI="https://www.ica.org/standards/RiC/ontology#isChildOf" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="source_4eu0eyaxfyh0o3">rico:isChildOf</relationType>
+        <targetRole target="relationType_3zy307x6r4nfo9xt">mère</targetRole>
       </relation>
-      <relation target="#chronItem_lll0qnzzq82qea" sourceReference="">
+      <relation target="chronItem_lll0qnzzq82qea" sourceReference="">
         <targetEntity targetType="person">
           <part localType="full">Mercier, Nicolas Jérôme</part>
           <part localType="status">Marchand bourgeois de Paris</part>
@@ -237,10 +238,10 @@
           <part localType="origPlace"/>
           <part localType="xprRef"/>
         </targetEntity>
-        <relationType id="relationType_4m3v08f1qmk7w66p" valueURI="https://www.ica.org/standards/RiC/ontology#hasFamilyAssociationWith" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_4eu0eyaxfyh0o3">rico:hasFamilyAssociationWith</relationType>
-        <targetRole target="#relationType_4m3v08f1qmk7w66p">beau-père</targetRole>
+        <relationType id="relationType_4m3v08f1qmk7w66p" valueURI="https://www.ica.org/standards/RiC/ontology#hasFamilyAssociationWith" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="source_4eu0eyaxfyh0o3">rico:hasFamilyAssociationWith</relationType>
+        <targetRole target="relationType_4m3v08f1qmk7w66p">beau-père</targetRole>
       </relation>
-      <relation target="#chronItem_lll0qnzzq82qea" sourceReference="">
+      <relation target="chronItem_lll0qnzzq82qea" sourceReference="">
         <targetEntity targetType="person">
           <part localType="full">Paillet, Antoinette Rosalie</part>
           <part localType="status"/>
@@ -250,12 +251,12 @@
           <part localType="origPlace"/>
           <part localType="xprRef"/>
         </targetEntity>
-        <relationType id="relationType_5mm3075y8qfdrun3" valueURI="https://www.ica.org/standards/RiC/ontology#hasFamilyAssociationWith" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_4eu0eyaxfyh0o3">rico:hasFamilyAssociationWith</relationType>
-        <targetRole target="#relationType_5mm3075y8qfdrun3">belle-mère</targetRole>
+        <relationType id="relationType_5mm3075y8qfdrun3" valueURI="https://www.ica.org/standards/RiC/ontology#hasFamilyAssociationWith" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="source_4eu0eyaxfyh0o3">rico:hasFamilyAssociationWith</relationType>
+        <targetRole target="relationType_5mm3075y8qfdrun3">belle-mère</targetRole>
       </relation>
          
-      <relation target="#eventid96480d223 #eventid96480d251" sourceReference=" ">
-            <targetEntity target="#xprOffice0022" targetType="corporateBody">
+      <relation target="eventid96480d223 eventid96480d251" sourceReference=" ">
+            <targetEntity target="xprOffice0022" targetType="corporateBody">
               <part localType="full">Office 22</part>
             <part localType="status"/>
           <part localType="occupationType"/>
@@ -265,7 +266,7 @@
           <part localType="xprRef"/>
         </targetEntity>
           <relationType id="relationType_id128298d2624495" valueURI="" vocabularySource="" vocabularySourceURI="" sourceReference=""/>
-            <targetRole target="#relationType_id128298d2624495"/>
+            <targetRole target="relationType_id128298d2624495"/>
           </relation>
     </relations>
    

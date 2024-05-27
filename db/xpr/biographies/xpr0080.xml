@@ -1,7 +1,7 @@
 <eac xmlns="https://archivists.org/ns/eac/v2" xml:id="xpr0080">
       <!--Probl. Barbier de Blignier est pourvu en rplct de Jean Planié le même jour que de Vigny (26/10/1730)-->
       <!--Probl. Barbier de Blignier est pourvu en rplct de Jean Planié le même jour que de Vigny (26/10/1730)-->
-   <control maintenanceStatus="updated" publicationStatus="inProcess">
+   <control maintenanceStatus="revised" publicationStatus="inProcess">
       <recordId>xpr0080</recordId>
       <maintenanceAgency>
          <agencyName>projet Experts</agencyName>
@@ -79,7 +79,7 @@
             
             
          </nameEntry>
-      <nameEntry status="alternative" preferredForm="false" sourceReference="#source_4qi0nnrscmk8cri">
+      <nameEntry status="alternative" preferredForm="false" sourceReference="source_4qi0nnrscmk8cri">
         <part localType="surname">Vigné</part>
         <part localType="forename">Pierre</part>
       </nameEntry>
@@ -92,15 +92,7 @@
       </identity>
       <description>
          
-         <places>
-        <place sourceReference="#source_4qi0nnrscmk8cri">
-          <date certainty="certain" standardDate="1727-09-29" sourceReference=""/>
-          <address>
-            <addressLine>Rue de Bucy, quartier Saint-Germain-des-Près</addressLine>
-            <addressLine>Paroisse Saint-Sulpice</addressLine>
-          </address>
-        </place>
-      </places>
+         
       <localDescriptions>
             <localDescription localType="sex">
                <term/>
@@ -114,13 +106,22 @@
                   <p>oui</p>
                </descriptiveNote>
             </occupation>
-        <occupation localType="" sourceReference="#source_4qi0nnrscmk8cri">
+        <occupation localType="" sourceReference="source_4qi0nnrscmk8cri">
           <term>Architecte, dessinateur ordinaire des bâtiments du Roy</term>
-          <date certainty="certain" standardDate="1727-09-29" sourceReference=""/>
+          <date certainty="certain" standardDate="1727-09-29"/>
           <!--optionnal (all below)-->
           <!--&lt;date/&gt; | &lt;dateRange/&gt; | &lt;dateSet/&gt;-->
         </occupation>
          </occupations>
+      <places>
+        <place sourceReference="#source_4qi0nnrscmk8cri">
+          <date certainty="certain" standardDate="1727-09-29" sourceReference=""/>
+          <address>
+            <addressLine>Rue de Bucy, quartier Saint-Germain-des-Près</addressLine>
+            <addressLine>Paroisse Saint-Sulpice</addressLine>
+          </address>
+        </place>
+      </places>
          
          <existDates>
             <dateRange>
@@ -131,7 +132,7 @@
          <biogHist>
             <chronList>
                <chronItem id="eventid96150d191" localType="birth">
-                  <date sourceReference="" certainty="" standardDate="1690-05"/>
+                  <date certainty="" standardDate="1690-05"/>
                   <event>Naissance</event>
                   
                   
@@ -140,7 +141,7 @@
                </chronItem>
                
                <chronItem id="eventid96150d209" localType="officePurchase">
-            <date certainty="" sourceReference=""/>
+            <date certainty=""/>
                   
                   <event>Acquisition d'un office</event>
                   
@@ -150,15 +151,15 @@
                   
                </chronItem>
                <chronItem id="eventid96150d219" localType="provision">
-                  <date sourceReference="" certainty="" standardDate="1730-10-26"/>
+                  <date certainty="" standardDate="1730-10-26"/>
                   <event>Lettre de provision</event>
                   
                   
                   
                   
                </chronItem>
-          <chronItem id="chronItem_r5n05wq1gin51xe" sourceReference="#source_4qi0nnrscmk8cri" localType="marriage">
-            <date certainty="certain" standardDate="1727-09-29" sourceReference=""/>
+          <chronItem id="chronItem_r5n05wq1gin51xe" sourceReference="source_4qi0nnrscmk8cri" localType="marriage">
+            <date certainty="certain" standardDate="1727-09-29"/>
             <event>Mariage avec Marie Anne Le Doux</event>
             <place>
               <placeName/>
@@ -169,7 +170,7 @@
          </biogHist>
       </description>
       <relations>
-      <relation target="#chronItem_r5n05wq1gin51xe" sourceReference="">
+      <relation target="chronItem_r5n05wq1gin51xe" sourceReference="">
         <targetEntity targetType="person">
           <part localType="full">Ledoux, Marie Anne</part>
           <part localType="status"/>
@@ -179,14 +180,11 @@
           <part localType="origPlace"/>
           <part localType="xprRef"/>
         </targetEntity>
-        <relationType id="relationType_1s1e0ghquw9ml2hi" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadSpouse" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_4qi0nnrscmk8cri">rico:hasOrHadSpouse</relationType>
-        <targetRole target="#relationType_1s1e0ghquw9ml2hi">épouse</targetRole>
+        <relationType id="relationType_1s1e0ghquw9ml2hi" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadSpouse" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="source_4qi0nnrscmk8cri">rico:hasOrHadSpouse</relationType>
+        <targetRole target="relationType_1s1e0ghquw9ml2hi">épouse</targetRole>
       </relation>
-      <relation target="#chronItem_r5n05wq1gin51xe" sourceReference="">
-        <descriptiveNote>
-          <p>Michel Vigné (père de l'expert) est décédé au moment du mariage.
-</p>
-        </descriptiveNote>
+      <relation target="chronItem_r5n05wq1gin51xe" sourceReference="">
+        
         <targetEntity targetType="person">
           <part localType="full">Vigné, Michel</part>
           <part localType="status">Marchand drapier à Saumur </part>
@@ -196,13 +194,15 @@
           <part localType="origPlace">Saumur (Maine-et-Loire)</part>
           <part localType="xprRef"/>
         </targetEntity>
-        <relationType id="relationType_2n220uijjldce09" valueURI="https://www.ica.org/standards/RiC/ontology#isChildOf" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_4qi0nnrscmk8cri">rico:isChildOf</relationType>
-        <targetRole target="#relationType_2n220uijjldce09">père</targetRole>
-      </relation>
-      <relation target="#chronItem_r5n05wq1gin51xe" sourceReference="">
-        <descriptiveNote>
-          <p>Marie Brizard (mère de l'expert) est décédée au moment du mariage.</p>
+        <relationType id="relationType_2n220uijjldce09" valueURI="https://www.ica.org/standards/RiC/ontology#isChildOf" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="source_4qi0nnrscmk8cri">rico:isChildOf</relationType>
+        <targetRole target="relationType_2n220uijjldce09">père</targetRole>
+      <descriptiveNote>
+          <p>Michel Vigné (père de l'expert) est décédé au moment du mariage.
+</p>
         </descriptiveNote>
+      </relation>
+      <relation target="chronItem_r5n05wq1gin51xe" sourceReference="">
+        
         <targetEntity targetType="person">
           <part localType="full">Brizard, Marie</part>
           <part localType="status"/>
@@ -212,10 +212,13 @@
           <part localType="origPlace"/>
           <part localType="xprRef"/>
         </targetEntity>
-        <relationType id="relationType_52s60dqbkezxs5oa" valueURI="https://www.ica.org/standards/RiC/ontology#isChildOf" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_4qi0nnrscmk8cri">rico:isChildOf</relationType>
-        <targetRole target="#relationType_52s60dqbkezxs5oa">mère</targetRole>
+        <relationType id="relationType_52s60dqbkezxs5oa" valueURI="https://www.ica.org/standards/RiC/ontology#isChildOf" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="source_4qi0nnrscmk8cri">rico:isChildOf</relationType>
+        <targetRole target="relationType_52s60dqbkezxs5oa">mère</targetRole>
+      <descriptiveNote>
+          <p>Marie Brizard (mère de l'expert) est décédée au moment du mariage.</p>
+        </descriptiveNote>
       </relation>
-      <relation target="#chronItem_r5n05wq1gin51xe" sourceReference="">
+      <relation target="chronItem_r5n05wq1gin51xe" sourceReference="">
         <targetEntity targetType="person">
           <part localType="full">Ledoux, Guillaume</part>
           <part localType="status">Marchand orfèvre-joaillier, Bourgeois de Paris</part>
@@ -225,10 +228,10 @@
           <part localType="origPlace"/>
           <part localType="xprRef"/>
         </targetEntity>
-        <relationType id="relationType_6kgw0paq5c6u6o3f" valueURI="https://www.ica.org/standards/RiC/ontology#hasFamilyAssociationWith" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_4qi0nnrscmk8cri">rico:hasFamilyAssociationWith</relationType>
-        <targetRole target="#relationType_6kgw0paq5c6u6o3f">beau-père</targetRole>
+        <relationType id="relationType_6kgw0paq5c6u6o3f" valueURI="https://www.ica.org/standards/RiC/ontology#hasFamilyAssociationWith" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="source_4qi0nnrscmk8cri">rico:hasFamilyAssociationWith</relationType>
+        <targetRole target="relationType_6kgw0paq5c6u6o3f">beau-père</targetRole>
       </relation>
-      <relation target="#chronItem_r5n05wq1gin51xe" sourceReference="">
+      <relation target="chronItem_r5n05wq1gin51xe" sourceReference="">
         <targetEntity targetType="person">
           <part localType="full">Durancelle, Marie Marguerite</part>
           <part localType="status"/>
@@ -238,12 +241,12 @@
           <part localType="origPlace"/>
           <part localType="xprRef"/>
         </targetEntity>
-        <relationType id="relationType_7qmq0ksvqzn58r8" valueURI="https://www.ica.org/standards/RiC/ontology#hasFamilyAssociationWith" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_4qi0nnrscmk8cri">rico:hasFamilyAssociationWith</relationType>
-        <targetRole target="#relationType_7qmq0ksvqzn58r8">belle-mère</targetRole>
+        <relationType id="relationType_7qmq0ksvqzn58r8" valueURI="https://www.ica.org/standards/RiC/ontology#hasFamilyAssociationWith" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="source_4qi0nnrscmk8cri">rico:hasFamilyAssociationWith</relationType>
+        <targetRole target="relationType_7qmq0ksvqzn58r8">belle-mère</targetRole>
       </relation>
          
-      <relation target="#eventid96150d209" sourceReference="">
-            <targetEntity target="#xprOffice0012" targetType="corporateBody">
+      <relation target="eventid96150d209" sourceReference="">
+            <targetEntity target="xprOffice0012" targetType="corporateBody">
               <part localType="full">Office 12</part>
             <part localType="status"/>
           <part localType="occupationType"/>
@@ -253,7 +256,7 @@
           <part localType="xprRef"/>
         </targetEntity>
           <relationType id="relationType_id128298d2575518" valueURI="" vocabularySource="" vocabularySourceURI="" sourceReference=""/>
-            <targetRole target="#relationType_id128298d2575518"/>
+            <targetRole target="relationType_id128298d2575518"/>
           </relation>
     </relations>
    

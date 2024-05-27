@@ -1,5 +1,5 @@
 <eac xmlns="https://archivists.org/ns/eac/v2" xml:id="xpr0059">
-   <control maintenanceStatus="updated" publicationStatus="inProcess">
+   <control maintenanceStatus="revised" publicationStatus="inProcess">
       <recordId>xpr0059</recordId>
       <maintenanceAgency>
          <agencyName>projet Experts</agencyName>
@@ -79,12 +79,26 @@
             <function sourceReference="">
                <term>Expert bourgeois</term>
                <dateRange>
-                  <fromDate sourceReference="" certainty="" standardDate="1690"/>
-                  <toDate sourceReference="" certainty="" standardDate="1711"/>
+                  <fromDate certainty="" standardDate="1690"/>
+                  <toDate certainty="" standardDate="1711"/>
                </dateRange>
                
             </function>
          </functions>
+      
+         <localDescriptions>
+            <localDescription localType="sex">
+               <term/>
+            </localDescription>
+         </localDescriptions>
+      <occupations>
+        <occupation localType="" sourceReference="source_7e20z4fwnnpjvh">
+          <term>Maître maçon, architecte bourgeois de Paris</term>
+          <date certainty="certain" standardDate="1675-01-14"/>
+          <!--optionnal (all below)-->
+          <!--&lt;date/&gt; | &lt;dateRange/&gt; | &lt;dateSet/&gt;-->
+        </occupation>
+      </occupations>
       <places>
         <place sourceReference="#source_7e20z4fwnnpjvh">
           <date certainty="certain" standardDate="1675-01-14" sourceReference=""/>
@@ -94,19 +108,6 @@
           </address>
         </place>
       </places>
-         <localDescriptions>
-            <localDescription localType="sex">
-               <term/>
-            </localDescription>
-         </localDescriptions>
-      <occupations>
-        <occupation localType="" sourceReference="#source_7e20z4fwnnpjvh">
-          <term>Maître maçon, architecte bourgeois de Paris</term>
-          <date certainty="certain" standardDate="1675-01-14" sourceReference=""/>
-          <!--optionnal (all below)-->
-          <!--&lt;date/&gt; | &lt;dateRange/&gt; | &lt;dateSet/&gt;-->
-        </occupation>
-      </occupations>
          
          
          <existDates>
@@ -118,7 +119,7 @@
          <biogHist>
             <chronList>
                <chronItem id="eventid96108d194" localType="birth">
-                  <date sourceReference="" certainty="" standardDate="1646-08"/>
+                  <date certainty="" standardDate="1646-08"/>
                   <event>Naissance</event>
                   
                   
@@ -127,7 +128,7 @@
                </chronItem>
                
                <chronItem id="eventid96108d212" localType="officePurchase">
-            <date certainty="" sourceReference=""/>
+            <date certainty=""/>
                   
                   <event>Acquisition d'un office</event>
                   
@@ -137,15 +138,15 @@
                   
                </chronItem>
                <chronItem id="eventid96108d222" localType="provision">
-                  <date sourceReference="" certainty="" standardDate="1690-07-22"/>
+                  <date certainty="" standardDate="1690-07-22"/>
                   <event>Lettre de provision</event>
                   
                   
                   
                   
                </chronItem>
-          <chronItem id="chronItem_qci05nxw9cde" sourceReference="#source_7e20z4fwnnpjvh" localType="marriage">
-            <date certainty="certain" standardDate="1675-01-14" sourceReference=""/>
+          <chronItem id="chronItem_qci05nxw9cde" sourceReference="source_7e20z4fwnnpjvh" localType="marriage">
+            <date certainty="certain" standardDate="1675-01-14"/>
             <event>Mariage avec Jeanne Marguerite Nocret</event>
             <place>
               <placeName/>
@@ -156,7 +157,7 @@
          </biogHist>
       </description>
       <relations>
-      <relation target="#chronItem_qci05nxw9cde" sourceReference="">
+      <relation target="chronItem_qci05nxw9cde" sourceReference="">
         <targetEntity targetType="person">
           <part localType="full">Nocret, Jeanne Marguerite </part>
           <part localType="status"/>
@@ -166,10 +167,10 @@
           <part localType="origPlace"/>
           <part localType="xprRef"/>
         </targetEntity>
-        <relationType id="relationType_1jwi0d4l5zsm5z79" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadSpouse" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_7e20z4fwnnpjvh">rico:hasOrHadSpouse</relationType>
-        <targetRole target="#relationType_1jwi0d4l5zsm5z79">épouse</targetRole>
+        <relationType id="relationType_1jwi0d4l5zsm5z79" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadSpouse" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="source_7e20z4fwnnpjvh">rico:hasOrHadSpouse</relationType>
+        <targetRole target="relationType_1jwi0d4l5zsm5z79">épouse</targetRole>
       </relation>
-      <relation target="#chronItem_qci05nxw9cde" sourceReference="">
+      <relation target="chronItem_qci05nxw9cde" sourceReference="">
         <targetEntity targetType="person">
           <part localType="full">Convers, Pierre</part>
           <part localType="status">Maître maçon bourgeois à Paris </part>
@@ -179,10 +180,10 @@
           <part localType="origPlace"/>
           <part localType="xprRef"/>
         </targetEntity>
-        <relationType id="relationType_29yy0ya85vkehl4l" valueURI="https://www.ica.org/standards/RiC/ontology#isChildOf" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_7e20z4fwnnpjvh">rico:isChildOf</relationType>
-        <targetRole target="#relationType_29yy0ya85vkehl4l">père</targetRole>
+        <relationType id="relationType_29yy0ya85vkehl4l" valueURI="https://www.ica.org/standards/RiC/ontology#isChildOf" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="source_7e20z4fwnnpjvh">rico:isChildOf</relationType>
+        <targetRole target="relationType_29yy0ya85vkehl4l">père</targetRole>
       </relation>
-      <relation target="#chronItem_qci05nxw9cde" sourceReference="">
+      <relation target="chronItem_qci05nxw9cde" sourceReference="">
         <targetEntity targetType="person">
           <part localType="full">Robelin, Barbe</part>
           <part localType="status"/>
@@ -192,10 +193,10 @@
           <part localType="origPlace"/>
           <part localType="xprRef"/>
         </targetEntity>
-        <relationType id="relationType_3bwf0l59l3sb8knn" valueURI="https://www.ica.org/standards/RiC/ontology#isChildOf" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_7e20z4fwnnpjvh">rico:isChildOf</relationType>
-        <targetRole target="#relationType_3bwf0l59l3sb8knn">mère</targetRole>
+        <relationType id="relationType_3bwf0l59l3sb8knn" valueURI="https://www.ica.org/standards/RiC/ontology#isChildOf" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="source_7e20z4fwnnpjvh">rico:isChildOf</relationType>
+        <targetRole target="relationType_3bwf0l59l3sb8knn">mère</targetRole>
       </relation>
-      <relation target="#chronItem_qci05nxw9cde" sourceReference="">
+      <relation target="chronItem_qci05nxw9cde" sourceReference="">
         <targetEntity targetType="person">
           <part localType="full">Nocret, Jean</part>
           <part localType="status">peintre du Roi et valet de chambre de Monsieur, Duc d’Orléans</part>
@@ -205,10 +206,10 @@
           <part localType="origPlace"/>
           <part localType="xprRef"/>
         </targetEntity>
-        <relationType id="relationType_3wju0qlxuap9pzm8" valueURI="https://www.ica.org/standards/RiC/ontology#hasFamilyAssociationWith" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_7e20z4fwnnpjvh">rico:hasFamilyAssociationWith</relationType>
-        <targetRole target="#relationType_3wju0qlxuap9pzm8">beau-père</targetRole>
+        <relationType id="relationType_3wju0qlxuap9pzm8" valueURI="https://www.ica.org/standards/RiC/ontology#hasFamilyAssociationWith" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="source_7e20z4fwnnpjvh">rico:hasFamilyAssociationWith</relationType>
+        <targetRole target="relationType_3wju0qlxuap9pzm8">beau-père</targetRole>
       </relation>
-      <relation target="#chronItem_qci05nxw9cde" sourceReference="">
+      <relation target="chronItem_qci05nxw9cde" sourceReference="">
         <targetEntity targetType="person">
           <part localType="full">Vuiet, Antoinette </part>
           <part localType="status"/>
@@ -218,12 +219,12 @@
           <part localType="origPlace"/>
           <part localType="xprRef"/>
         </targetEntity>
-        <relationType id="relationType_57c30xakruvqem3l" valueURI="https://www.ica.org/standards/RiC/ontology#hasFamilyAssociationWith" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_7e20z4fwnnpjvh">rico:hasFamilyAssociationWith</relationType>
-        <targetRole target="#relationType_57c30xakruvqem3l">belle-mère</targetRole>
+        <relationType id="relationType_57c30xakruvqem3l" valueURI="https://www.ica.org/standards/RiC/ontology#hasFamilyAssociationWith" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="source_7e20z4fwnnpjvh">rico:hasFamilyAssociationWith</relationType>
+        <targetRole target="relationType_57c30xakruvqem3l">belle-mère</targetRole>
       </relation>
          
-      <relation target="#eventid96108d212" sourceReference="">
-            <targetEntity target="#xprOffice0008" targetType="corporateBody">
+      <relation target="eventid96108d212" sourceReference="">
+            <targetEntity target="xprOffice0008" targetType="corporateBody">
               <part localType="full">Office 08</part>
             <part localType="status"/>
           <part localType="occupationType"/>
@@ -233,7 +234,7 @@
           <part localType="xprRef"/>
         </targetEntity>
           <relationType id="relationType_id128298d2569280" valueURI="" vocabularySource="" vocabularySourceURI="" sourceReference=""/>
-            <targetRole target="#relationType_id128298d2569280"/>
+            <targetRole target="relationType_id128298d2569280"/>
           </relation>
     </relations>
    

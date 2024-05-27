@@ -1,5 +1,5 @@
 <eac xmlns="https://archivists.org/ns/eac/v2" xml:id="xpr0162">
-   <control maintenanceStatus="updated" publicationStatus="inProcess">
+   <control maintenanceStatus="revised" publicationStatus="inProcess">
       <recordId>xpr0162</recordId>
       <maintenanceAgency>
          <agencyName>projet Experts</agencyName>
@@ -97,13 +97,27 @@
       </identity>
       <description>
          <functions>
-            <function sourceReference="#source_2t8i0j9rn7aeqs6g">
+            <function sourceReference="source_2t8i0j9rn7aeqs6g">
                <term>Expert bourgeois</term>
-          <date certainty="certain" standardDate="1696" sourceReference=""/>
+          <date certainty="certain" standardDate="1696"/>
                
                
             </function>
          </functions>
+      
+         <localDescriptions>
+            <localDescription localType="sex">
+               <term/>
+            </localDescription>
+         </localDescriptions>
+      <occupations>
+        <occupation localType="" sourceReference="source_4zm0ogho7z2as6k">
+          <term>Ingénieur et architecte ordinaire des bâtiments du Roy</term>
+          <date certainty="certain" standardDate="1657-01-15"/>
+          <!--optionnal (all below)-->
+          <!--&lt;date/&gt; | &lt;dateRange/&gt; | &lt;dateSet/&gt;-->
+        </occupation>
+      </occupations>
       <places>
         <place sourceReference="#source_4zm0ogho7z2as6k">
           <date certainty="certain" standardDate="1657-01-15" sourceReference=""/>
@@ -113,31 +127,18 @@
           </address>
         </place>
       </places>
-         <localDescriptions>
-            <localDescription localType="sex">
-               <term/>
-            </localDescription>
-         </localDescriptions>
-      <occupations>
-        <occupation localType="" sourceReference="#source_4zm0ogho7z2as6k">
-          <term>Ingénieur et architecte ordinaire des bâtiments du Roy</term>
-          <date certainty="certain" standardDate="1657-01-15" sourceReference=""/>
-          <!--optionnal (all below)-->
-          <!--&lt;date/&gt; | &lt;dateRange/&gt; | &lt;dateSet/&gt;-->
-        </occupation>
-      </occupations>
          
          
          <existDates>
             <dateRange>
                <fromDate sourceReference="" certainty="" standardDate="1623-10"/>
-               <toDate sourceReference="#source_69n09c0i5xhfh3u" certainty="certain" standardDate="1696-05-17"/>
+               <toDate sourceReference="source_69n09c0i5xhfh3u" certainty="certain" standardDate="1696-05-17"/>
             </dateRange>
          </existDates>
          <biogHist>
             <chronList>
                <chronItem id="eventid96314d183" localType="birth">
-                  <date sourceReference="" certainty="" standardDate="1623-10"/>
+                  <date certainty="" standardDate="1623-10"/>
                   <event>Naissance</event>
                   
                   
@@ -146,7 +147,7 @@
                </chronItem>
                
                <chronItem id="eventid96314d201" localType="officePurchase">
-            <date certainty="" sourceReference=""/>
+            <date certainty=""/>
                   
                   <event>Acquisition d'un office</event>
                   
@@ -156,22 +157,22 @@
                   
                </chronItem>
                <chronItem id="eventid96314d211" localType="provision">
-                  <date sourceReference="" certainty="" standardDate="1690-08-05"/>
+                  <date certainty="" standardDate="1690-08-05"/>
                   <event>Lettre de provision</event>
                   
                   
                   
                   
                </chronItem>
-          <chronItem id="chronItem_o8x0t55y5w4awpf" sourceReference="#source_4zm0ogho7z2as6k" localType="marriage">
-            <date certainty="certain" standardDate="1657-01-15" sourceReference=""/>
+          <chronItem id="chronItem_o8x0t55y5w4awpf" sourceReference="source_4zm0ogho7z2as6k" localType="marriage">
+            <date certainty="certain" standardDate="1657-01-15"/>
             <event>Mariage (1) avec Madeleine Desforges </event>
             <place>
               <placeName/>
             </place>
           </chronItem>
-          <chronItem id="chronItem_2d9i0409yjunmnin" sourceReference="#source_69n09c0i5xhfh3u" localType="death">
-            <date certainty="certain" standardDate="1696-05-17" sourceReference=""/>
+          <chronItem id="chronItem_2d9i0409yjunmnin" sourceReference="source_69n09c0i5xhfh3u" localType="death">
+            <date certainty="certain" standardDate="1696-05-17"/>
             <event>Décès de gabriel Le Duc</event>
             <place>
               <placeName>Rue Saint-Denis</placeName>
@@ -182,7 +183,7 @@
          </biogHist>
       </description>
       <relations>
-      <relation target="#chronItem_o8x0t55y5w4awpf" sourceReference="">
+      <relation target="chronItem_o8x0t55y5w4awpf" sourceReference="">
         <targetEntity targetType="person">
           <part localType="full">Desforges, Madeleine </part>
           <part localType="status"/>
@@ -192,13 +193,11 @@
           <part localType="origPlace"/>
           <part localType="xprRef"/>
         </targetEntity>
-        <relationType id="relationType_26g903aqgic0nvl" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadSpouse" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_4zm0ogho7z2as6k">rico:hasOrHadSpouse</relationType>
-        <targetRole target="#relationType_26g903aqgic0nvl">épouse</targetRole>
+        <relationType id="relationType_26g903aqgic0nvl" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadSpouse" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="source_4zm0ogho7z2as6k">rico:hasOrHadSpouse</relationType>
+        <targetRole target="relationType_26g903aqgic0nvl">épouse</targetRole>
       </relation>
       <relation target="" sourceReference="">
-        <descriptiveNote>
-          <p>Le père de l'expert, Gabriel Le Duc est décédé au moment du mariage.</p>
-        </descriptiveNote>
+        
         <targetEntity targetType="">
           <part localType="full">Le Duc, Gabriel </part>
           <part localType="status">Maître maçon à Paris</part>
@@ -208,10 +207,13 @@
           <part localType="origPlace"/>
           <part localType="xprRef"/>
         </targetEntity>
-        <relationType id="relationType_2pg1043deqmktdue" valueURI="https://www.ica.org/standards/RiC/ontology#isChildOf" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_4zm0ogho7z2as6k">rico:isChildOf</relationType>
-        <targetRole target="#relationType_2pg1043deqmktdue">père</targetRole>
+        <relationType id="relationType_2pg1043deqmktdue" valueURI="https://www.ica.org/standards/RiC/ontology#isChildOf" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="source_4zm0ogho7z2as6k">rico:isChildOf</relationType>
+        <targetRole target="relationType_2pg1043deqmktdue">père</targetRole>
+      <descriptiveNote>
+          <p>Le père de l'expert, Gabriel Le Duc est décédé au moment du mariage.</p>
+        </descriptiveNote>
       </relation>
-      <relation target="#chronItem_o8x0t55y5w4awpf" sourceReference="">
+      <relation target="chronItem_o8x0t55y5w4awpf" sourceReference="">
         <targetEntity targetType="person">
           <part localType="full">Le Grand, Catherine</part>
           <part localType="status"/>
@@ -221,13 +223,11 @@
           <part localType="origPlace"/>
           <part localType="xprRef"/>
         </targetEntity>
-        <relationType id="relationType_3j560r4r1qlcu6me" valueURI="https://www.ica.org/standards/RiC/ontology#isChildOf" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_4zm0ogho7z2as6k">rico:isChildOf</relationType>
-        <targetRole target="#relationType_3j560r4r1qlcu6me">mère</targetRole>
+        <relationType id="relationType_3j560r4r1qlcu6me" valueURI="https://www.ica.org/standards/RiC/ontology#isChildOf" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="source_4zm0ogho7z2as6k">rico:isChildOf</relationType>
+        <targetRole target="relationType_3j560r4r1qlcu6me">mère</targetRole>
       </relation>
-      <relation target="#chronItem_o8x0t55y5w4awpf" sourceReference="">
-        <descriptiveNote>
-          <p>Estienne Desforges est décédé au moment du mariage.</p>
-        </descriptiveNote>
+      <relation target="chronItem_o8x0t55y5w4awpf" sourceReference="">
+        
         <targetEntity targetType="person">
           <part localType="full">Desforges, Estienne</part>
           <part localType="status">Maître barbier chirurgien et bourgeois de Paris</part>
@@ -237,8 +237,11 @@
           <part localType="origPlace"/>
           <part localType="xprRef"/>
         </targetEntity>
-        <relationType id="relationType_3yy20zse8g7iqdb" valueURI="https://www.ica.org/standards/RiC/ontology#hasFamilyAssociationWith" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_4zm0ogho7z2as6k">rico:hasFamilyAssociationWith</relationType>
-        <targetRole target="#relationType_3yy20zse8g7iqdb">beau-père</targetRole>
+        <relationType id="relationType_3yy20zse8g7iqdb" valueURI="https://www.ica.org/standards/RiC/ontology#hasFamilyAssociationWith" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="source_4zm0ogho7z2as6k">rico:hasFamilyAssociationWith</relationType>
+        <targetRole target="relationType_3yy20zse8g7iqdb">beau-père</targetRole>
+      <descriptiveNote>
+          <p>Estienne Desforges est décédé au moment du mariage.</p>
+        </descriptiveNote>
       </relation>
       <relation target="" sourceReference="">
         <targetEntity targetType="">
@@ -250,12 +253,12 @@
           <part localType="origPlace"/>
           <part localType="xprRef"/>
         </targetEntity>
-        <relationType id="relationType_5aab09h96f21fzne" valueURI="https://www.ica.org/standards/RiC/ontology#hasFamilyAssociationWith" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_4zm0ogho7z2as6k">rico:hasFamilyAssociationWith</relationType>
-        <targetRole target="#relationType_5aab09h96f21fzne">belle-mère</targetRole>
+        <relationType id="relationType_5aab09h96f21fzne" valueURI="https://www.ica.org/standards/RiC/ontology#hasFamilyAssociationWith" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="source_4zm0ogho7z2as6k">rico:hasFamilyAssociationWith</relationType>
+        <targetRole target="relationType_5aab09h96f21fzne">belle-mère</targetRole>
       </relation>
          
-      <relation target="#eventid96314d201" sourceReference="">
-            <targetEntity target="#xprOffice0025" targetType="corporateBody">
+      <relation target="eventid96314d201" sourceReference="">
+            <targetEntity target="xprOffice0025" targetType="corporateBody">
               <part localType="full">Office 25</part>
             <part localType="status"/>
           <part localType="occupationType"/>
@@ -265,7 +268,7 @@
           <part localType="xprRef"/>
         </targetEntity>
           <relationType id="relationType_id128298d2599847" valueURI="" vocabularySource="" vocabularySourceURI="" sourceReference=""/>
-            <targetRole target="#relationType_id128298d2599847"/>
+            <targetRole target="relationType_id128298d2599847"/>
           </relation>
     </relations>
    

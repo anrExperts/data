@@ -138,11 +138,11 @@
    <cpfDescription>
       <identity>
          <entityType value="person"/>
-         <nameEntry sourceReference="#sourceid29062168 #sourceid29062517 #source_zha0p573t3ldd9q" preferredForm="true" status="authorized">
+         <nameEntry sourceReference="sourceid29062168 sourceid29062517 source_zha0p573t3ldd9q" preferredForm="true" status="authorized">
             <part localType="full">Aumont, Jean</part>
             
          </nameEntry>
-         <nameEntry sourceReference="#sourceid29062168 #sourceid29062517 #source_zha0p573t3ldd9q" preferredForm="false" status="alternative">
+         <nameEntry sourceReference="sourceid29062168 sourceid29062517 source_zha0p573t3ldd9q" preferredForm="false" status="alternative">
             <part localType="surname">Aumont</part>
         <part localType="forename">Jean</part>
             
@@ -161,14 +161,31 @@
             <function sourceReference="">
                <term>Expert entrepreneur</term>
                <dateRange>
-                  <fromDate sourceReference="" certainty="" standardDate="1731"/>
-                  <toDate sourceReference="" certainty="" standardDate="1749"/>
+                  <fromDate certainty="" standardDate="1731"/>
+                  <toDate certainty="" standardDate="1749"/>
                </dateRange>
           <descriptiveNote>
             <p>Dans le dossier de réception l'office est dénommé expert priseur et arpenteur de la ville prévosté et vicomté de Paris, juré entrepreneur de bastiments.</p>
           </descriptiveNote>
             </function>
          </functions>
+      
+         <localDescriptions>
+            <localDescription localType="sex">
+               <term>male</term>
+            </localDescription>
+         </localDescriptions>
+      <occupations>
+        <occupation localType="" sourceReference="source_zha0p573t3ldd9q">
+          <term>Maître maçon</term>
+          <date certainty="certain" standardDate="1721-06-25"/>
+          <descriptiveNote>
+            <p>Jean Aumont est qualifié de maître maçon au moment de son mariage le 25 juin 1721, il veuf de Marie Godolet (ou Gaudelet)</p>
+          </descriptiveNote>
+          <!--optionnal (all below)-->
+          <!--&lt;date/&gt; | &lt;dateRange/&gt; | &lt;dateSet/&gt;-->
+        </occupation>
+      </occupations>
       <places>
         <place sourceReference="#source_zha0p573t3ldd9q">
           <date certainty="" standardDate="1721-06-25" sourceReference=""/>
@@ -178,34 +195,18 @@
           </address>
         </place>
       </places>
-         <localDescriptions>
-            <localDescription localType="sex">
-               <term>male</term>
-            </localDescription>
-         </localDescriptions>
-      <occupations>
-        <occupation localType="" sourceReference="#source_zha0p573t3ldd9q">
-          <term>Maître maçon</term>
-          <date certainty="certain" standardDate="1721-06-25" sourceReference=""/>
-          <descriptiveNote>
-            <p>Jean Aumont est qualifié de maître maçon au moment de son mariage le 25 juin 1721, il veuf de Marie Godolet (ou Gaudelet)</p>
-          </descriptiveNote>
-          <!--optionnal (all below)-->
-          <!--&lt;date/&gt; | &lt;dateRange/&gt; | &lt;dateSet/&gt;-->
-        </occupation>
-      </occupations>
          
          
          <existDates>
             <dateRange>
                <fromDate sourceReference="" certainty="" standardDate="1696-05"/>
-               <toDate sourceReference="#sourceid29063041" certainty="certain" standardDate="1749-05-16"/>
+               <toDate sourceReference="sourceid29063041" certainty="certain" standardDate="1749-05-16"/>
             </dateRange>
          </existDates>
          <biogHist>
             <chronList>
-               <chronItem id="eventid96008d249" sourceReference="#sourceid29062168" localType="birth">
-                  <date sourceReference="" certainty="" notAfter="1696-08-05"/>
+               <chronItem id="eventid96008d249" sourceReference="sourceid29062168" localType="birth">
+                  <date certainty="" notAfter="1696-08-05"/>
                   <event>Naissance</event>
                   
                   
@@ -214,8 +215,8 @@
                      <placeName>Paroisse Saint-Roch</placeName>
                   </place>
                </chronItem>
-               <chronItem id="eventid96008d267" sourceReference="#sourceid29062343" localType="marriage">
-            <date certainty="" sourceReference=""/>
+               <chronItem id="eventid96008d267" sourceReference="sourceid29062343" localType="marriage">
+            <date certainty=""/>
                   
                   <event>Mariage</event>
                   
@@ -223,8 +224,8 @@
                   
                   
                </chronItem>
-               <chronItem id="eventid96008d278" sourceReference="#sourceid29062517" localType="marriage">
-            <date certainty="" sourceReference=""/>
+               <chronItem id="eventid96008d278" sourceReference="sourceid29062517" localType="marriage">
+            <date certainty=""/>
                   
                   <event>Mariage</event>
                   
@@ -232,24 +233,24 @@
                   
                   
                </chronItem>
-               <chronItem id="eventid96008d289" sourceReference="#sourceid29062691" localType="barringFromOffice">
-                  <date sourceReference="" certainty="" standardDate="1749-04-01"/>
+               <chronItem id="eventid96008d289" sourceReference="sourceid29062691" localType="barringFromOffice">
+                  <date certainty="" standardDate="1749-04-01"/>
                   <event>Sentence d'interdiction</event>
                   
                   
                   
                   
                </chronItem>
-               <chronItem id="eventid96008d301" sourceReference="#sourceid29062865" localType="master">
-                  <date sourceReference="" certainty="" standardDate="1719-12-15"/>
+               <chronItem id="eventid96008d301" sourceReference="sourceid29062865" localType="master">
+                  <date certainty="" standardDate="1719-12-15"/>
                   <event>Maîtrise de maçon</event>
                   
                   
                   
                   
                </chronItem>
-               <chronItem id="eventid96008d313" sourceReference="#sourceid29062168" localType="officePurchase">
-            <date certainty="" sourceReference=""/>
+               <chronItem id="eventid96008d313" sourceReference="sourceid29062168" localType="officePurchase">
+            <date certainty=""/>
                   
                   <event>Acquisition d'un office</event>
                   
@@ -258,16 +259,16 @@
                   
                   
                </chronItem>
-               <chronItem id="eventid96008d324" sourceReference="#sourceid29062168" localType="provision">
-                  <date sourceReference="" certainty="" standardDate="1730-03-17"/>
+               <chronItem id="eventid96008d324" sourceReference="sourceid29062168" localType="provision">
+                  <date certainty="" standardDate="1730-03-17"/>
                   <event>Provision d'office</event>
                   
                   
                   
                   
                </chronItem>
-               <chronItem id="eventid96008d339" sourceReference="#sourceid29063041" localType="death">
-            <date certainty="certain" standardDate="1749-05-16" sourceReference=""/>
+               <chronItem id="eventid96008d339" sourceReference="sourceid29063041" localType="death">
+            <date certainty="certain" standardDate="1749-05-16"/>
                   
                   <event>Décès de Jean Aumont</event>
                   
@@ -275,23 +276,23 @@
                   
                   
                </chronItem>
-          <chronItem id="chronItem_18x30sezeqacp17c" sourceReference="#source_zha0p573t3ldd9q" localType="marriage">
-            <date certainty="" standardDate="1721-06-25" sourceReference=""/>
+          <chronItem id="chronItem_18x30sezeqacp17c" sourceReference="source_zha0p573t3ldd9q" localType="marriage">
+            <date certainty="" standardDate="1721-06-25"/>
             <event>Mariage (2) avec Marie Helène Pierre</event>
             <place>
               <placeName/>
             </place>
           </chronItem>
-          <chronItem id="chronItem_36xg00kdg6l5t2br9" sourceReference="#source_i4o0ts2qufy1z7" localType="reception">
+          <chronItem id="chronItem_36xg00kdg6l5t2br9" sourceReference="source_i4o0ts2qufy1z7" localType="reception">
             <dateSet>
-              <date certainty="certain" standardDate="1730-03-17" sourceReference="">Lettres de provision</date>
-              <date certainty="" sourceReference="">Supplique</date>
-              <date certainty="certain" standardDate="1730-04-25" sourceReference="">Ordonnance de soit montré au procureur du roy</date>
-              <date certainty="certain" standardDate="1730-05-04" sourceReference="">Examen [du matin]</date>
-              <date certainty="certain" standardDate="1730-04-25" sourceReference="">Consentement de la communauté</date>
-              <date certainty="certain" standardDate="1730-05-05" sourceReference="">Information de vie et de mœurs</date>
-              <date certainty="certain" standardDate="1730-05-05" sourceReference="">Serment</date>
-              <date certainty="certain" standardDate="1730-05-05" sourceReference="">Réception</date>
+              <date certainty="certain" standardDate="1730-03-17">Lettres de provision</date>
+              <date certainty="">Supplique</date>
+              <date certainty="certain" standardDate="1730-04-25">Ordonnance de soit montré au procureur du roy</date>
+              <date certainty="certain" standardDate="1730-05-04">Examen [du matin]</date>
+              <date certainty="certain" standardDate="1730-04-25">Consentement de la communauté</date>
+              <date certainty="certain" standardDate="1730-05-05">Information de vie et de mœurs</date>
+              <date certainty="certain" standardDate="1730-05-05">Serment</date>
+              <date certainty="certain" standardDate="1730-05-05">Réception</date>
             </dateSet>
             <event>Réception en l'office de juré expert</event>
           </chronItem>
@@ -300,11 +301,9 @@
       </description>
       
    <relations>
-          <relation target="#eventid96008d267 #chronItem_18x30sezeqacp17c" sourceReference="#sourceid29062343">
-        <descriptiveNote>
-          <p>Marie Hélène Pierre est la deuxième épouse. Elle est âgée de 19 ans au moment de son mariage (MC/ET/LIV/154).</p>
-        </descriptiveNote>
-            <targetEntity target="#xprPerson0006" targetType="person">
+          <relation target="eventid96008d267 chronItem_18x30sezeqacp17c" sourceReference="sourceid29062343">
+        
+            <targetEntity target="xprPerson0006" targetType="person">
               <part localType="full">Pierre, Marie Hélène</part>
             <part localType="status">2e épouse</part>
           <part localType="occupationType"/>
@@ -313,14 +312,15 @@
           <part localType="origPlace"/>
           <part localType="xprRef"/>
         </targetEntity>
-          <relationType id="relationType_id128298d2554213" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadSpouse" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#sourceid29062343 #source_zha0p573t3ldd9q">rico:hasOrHadSpouse</relationType>
-            <targetRole target="#relationType_id128298d2554213">épouse</targetRole>
-          </relation>
-          <relation target="#eventid96008d278" sourceReference="#sourceid29062517">
-        <descriptiveNote>
-          <p>Catherine Cormier [ou Cornil ?] est la troisième épouse.</p>
+          <relationType id="relationType_id128298d2554213" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadSpouse" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="sourceid29062343 source_zha0p573t3ldd9q">rico:hasOrHadSpouse</relationType>
+            <targetRole target="relationType_id128298d2554213">épouse</targetRole>
+          <descriptiveNote>
+          <p>Marie Hélène Pierre est la deuxième épouse. Elle est âgée de 19 ans au moment de son mariage (MC/ET/LIV/154).</p>
         </descriptiveNote>
-            <targetEntity target="#xprPerson0007" targetType="person">
+      </relation>
+          <relation target="eventid96008d278" sourceReference="sourceid29062517">
+        
+            <targetEntity target="xprPerson0007" targetType="person">
               <part localType="full">Cornil, Catherine Margueritte</part>
             <part localType="status">3e épouse</part>
           <part localType="occupationType"/>
@@ -329,11 +329,14 @@
           <part localType="origPlace"/>
           <part localType="xprRef"/>
         </targetEntity>
-          <relationType id="relationType_id128298d2554227" valueURI="" vocabularySource="" vocabularySourceURI="" sourceReference="#sourceid29062517"/>
-            <targetRole target="#relationType_id128298d2554227"/>
-          </relation>
-          <relation target="#eventid96008d313 #eventid96008d324" sourceReference="#sourceid29062168 #sourceid29062168">
-            <targetEntity target="#xprOffice0060" targetType="corporateBody">
+          <relationType id="relationType_id128298d2554227" valueURI="" vocabularySource="" vocabularySourceURI="" sourceReference="sourceid29062517"/>
+            <targetRole target="relationType_id128298d2554227"/>
+          <descriptiveNote>
+          <p>Catherine Cormier [ou Cornil ?] est la troisième épouse.</p>
+        </descriptiveNote>
+      </relation>
+          <relation target="eventid96008d313 eventid96008d324" sourceReference="sourceid29062168 sourceid29062168">
+            <targetEntity target="xprOffice0060" targetType="corporateBody">
               <part localType="full">Office 60</part>
             <part localType="status"/>
           <part localType="occupationType"/>
@@ -342,10 +345,10 @@
           <part localType="origPlace"/>
           <part localType="xprRef"/>
         </targetEntity>
-          <relationType id="relationType_id128298d2554241" valueURI="" vocabularySource="" vocabularySourceURI="" sourceReference="#sourceid29062168 #sourceid29062168"/>
-            <targetRole target="#relationType_id128298d2554241"/>
+          <relationType id="relationType_id128298d2554241" valueURI="" vocabularySource="" vocabularySourceURI="" sourceReference="sourceid29062168 sourceid29062168"/>
+            <targetRole target="relationType_id128298d2554241"/>
           </relation>
-      <relation target="#chronItem_18x30sezeqacp17c" sourceReference="">
+      <relation target="chronItem_18x30sezeqacp17c" sourceReference="">
         <targetEntity targetType="person">
           <part localType="full">Pierre, Jean</part>
           <part localType="status">Marchand jouaillier bourgeois de Paris</part>
@@ -355,13 +358,11 @@
           <part localType="origPlace"/>
           <part localType="xprRef"/>
         </targetEntity>
-        <relationType id="relationType_378803i816j0jrd3" valueURI="https://www.ica.org/standards/RiC/ontology#hasFamilyAssociationWith" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_zha0p573t3ldd9q">rico:hasFamilyAssociationWith</relationType>
-        <targetRole target="#relationType_378803i816j0jrd3">beau-père</targetRole>
+        <relationType id="relationType_378803i816j0jrd3" valueURI="https://www.ica.org/standards/RiC/ontology#hasFamilyAssociationWith" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="source_zha0p573t3ldd9q">rico:hasFamilyAssociationWith</relationType>
+        <targetRole target="relationType_378803i816j0jrd3">beau-père</targetRole>
       </relation>
-      <relation target="#chronItem_18x30sezeqacp17c" sourceReference="">
-        <descriptiveNote>
-          <p>Barbe Jameton est décédée au moment du mariage.</p>
-        </descriptiveNote>
+      <relation target="chronItem_18x30sezeqacp17c" sourceReference="">
+        
         <targetEntity targetType="person">
           <part localType="full">Jameton, Barbe dite Jeanne Deprime</part>
           <part localType="status"/>
@@ -371,13 +372,14 @@
           <part localType="origPlace"/>
           <part localType="xprRef"/>
         </targetEntity>
-        <relationType id="relationType_6hyd06xsduxpv7j6" valueURI="https://www.ica.org/standards/RiC/ontology#hasFamilyAssociationWith" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_zha0p573t3ldd9q">rico:hasFamilyAssociationWith</relationType>
-        <targetRole target="#relationType_6hyd06xsduxpv7j6">belle-mère</targetRole>
-      </relation>
-      <relation target="#chronItem_18x30sezeqacp17c" sourceReference="">
-        <descriptiveNote>
-          <p>Claude Gaudelet, maître couvreur décède le 2 juillet 1727. </p>
+        <relationType id="relationType_6hyd06xsduxpv7j6" valueURI="https://www.ica.org/standards/RiC/ontology#hasFamilyAssociationWith" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="source_zha0p573t3ldd9q">rico:hasFamilyAssociationWith</relationType>
+        <targetRole target="relationType_6hyd06xsduxpv7j6">belle-mère</targetRole>
+      <descriptiveNote>
+          <p>Barbe Jameton est décédée au moment du mariage.</p>
         </descriptiveNote>
+      </relation>
+      <relation target="chronItem_18x30sezeqacp17c" sourceReference="">
+        
         <targetEntity targetType="person">
           <part localType="full">Godelet (ou Gaudelet), Claude </part>
           <part localType="status">Maître couvreur</part>
@@ -387,13 +389,14 @@
           <part localType="origPlace"/>
           <part localType="xprRef"/>
         </targetEntity>
-        <relationType id="relationType_cmtg0gcxnrfz4nv" valueURI="https://www.ica.org/standards/RiC/ontology#hasFamilyAssociationWith" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_zha0p573t3ldd9q">rico:hasFamilyAssociationWith</relationType>
-        <targetRole target="#relationType_cmtg0gcxnrfz4nv">beau-père</targetRole>
-      </relation>
-      <relation target="#chronItem_18x30sezeqacp17c" sourceReference="">
-        <descriptiveNote>
-          <p>Nicole Autin décède le 2 mai 1724.</p>
+        <relationType id="relationType_cmtg0gcxnrfz4nv" valueURI="https://www.ica.org/standards/RiC/ontology#hasFamilyAssociationWith" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="source_zha0p573t3ldd9q">rico:hasFamilyAssociationWith</relationType>
+        <targetRole target="relationType_cmtg0gcxnrfz4nv">beau-père</targetRole>
+      <descriptiveNote>
+          <p>Claude Gaudelet, maître couvreur décède le 2 juillet 1727. </p>
         </descriptiveNote>
+      </relation>
+      <relation target="chronItem_18x30sezeqacp17c" sourceReference="">
+        
         <targetEntity targetType="person">
           <part localType="full">Autin, Nicole  </part>
           <part localType="status"/>
@@ -403,13 +406,14 @@
           <part localType="origPlace"/>
           <part localType="xprRef"/>
         </targetEntity>
-        <relationType id="relationType_f1da0kni2s9mfjdd" valueURI="https://www.ica.org/standards/RiC/ontology#hasFamilyAssociationWith" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_zha0p573t3ldd9q">rico:hasFamilyAssociationWith</relationType>
-        <targetRole target="#relationType_f1da0kni2s9mfjdd">belle-mère</targetRole>
-      </relation>
-      <relation target="#chronItem_18x30sezeqacp17c" sourceReference="">
-        <descriptiveNote>
-          <p>Marie Godelet est la première épouse.</p>
+        <relationType id="relationType_f1da0kni2s9mfjdd" valueURI="https://www.ica.org/standards/RiC/ontology#hasFamilyAssociationWith" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="source_zha0p573t3ldd9q">rico:hasFamilyAssociationWith</relationType>
+        <targetRole target="relationType_f1da0kni2s9mfjdd">belle-mère</targetRole>
+      <descriptiveNote>
+          <p>Nicole Autin décède le 2 mai 1724.</p>
         </descriptiveNote>
+      </relation>
+      <relation target="chronItem_18x30sezeqacp17c" sourceReference="">
+        
         <targetEntity targetType="person">
           <part localType="full">Godelet, Marie</part>
           <part localType="status">1ère épouse</part>
@@ -419,10 +423,13 @@
           <part localType="origPlace"/>
           <part localType="xprRef"/>
         </targetEntity>
-        <relationType id="relationType_4xdm0z6nz3hv1of" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadSpouse" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_zha0p573t3ldd9q">rico:hasOrHadSpouse</relationType>
-        <targetRole target="#relationType_4xdm0z6nz3hv1of">épouse</targetRole>
+        <relationType id="relationType_4xdm0z6nz3hv1of" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadSpouse" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="source_zha0p573t3ldd9q">rico:hasOrHadSpouse</relationType>
+        <targetRole target="relationType_4xdm0z6nz3hv1of">épouse</targetRole>
+      <descriptiveNote>
+          <p>Marie Godelet est la première épouse.</p>
+        </descriptiveNote>
       </relation>
-      <relation target="#chronItem_36xg00kdg6l5t2br9" sourceReference="">
+      <relation target="chronItem_36xg00kdg6l5t2br9" sourceReference="">
         <targetEntity targetType="person">
           <part localType="full">Toussainct Rohais</part>
           <part localType="status">dernier titulaire de l'office défunt</part>
@@ -432,13 +439,13 @@
           <part localType="origPlace"/>
           <part localType="xprRef">#xpr0239</part>
         </targetEntity>
-        <relationType id="relationType_igu20fp5c8djjqc" valueURI="https://www.ica.org/standards/RiC/ontology#isSuccessorOf" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_i4o0ts2qufy1z7">rico:isSuccessorOf</relationType>
-        <targetRole target="#relationType_igu20fp5c8djjqc">prédécesseur</targetRole>
+        <relationType id="relationType_igu20fp5c8djjqc" valueURI="https://www.ica.org/standards/RiC/ontology#isSuccessorOf" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="source_i4o0ts2qufy1z7">rico:isSuccessorOf</relationType>
+        <targetRole target="relationType_igu20fp5c8djjqc">prédécesseur</targetRole>
         <descriptiveNote>
           <p>Décès du dernier titulaire</p>
         </descriptiveNote>
       </relation>
-      <relation target="#chronItem_36xg00kdg6l5t2br9" sourceReference="">
+      <relation target="chronItem_36xg00kdg6l5t2br9" sourceReference="">
         <targetEntity targetType="person">
           <part localType="full">Pierre Marie de la Collancelle</part>
           <part localType="status">Prestre docteur en théologie, habitué de la paroisse de St Eustache de Paris</part>
@@ -448,16 +455,16 @@
           <part localType="origPlace"/>
           <part localType="xprRef"/>
         </targetEntity>
-        <relationType id="relationType_iguq0fa6nof53buq" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_i4o0ts2qufy1z7">rico:knownBy</relationType>
-        <targetRole target="#relationType_iguq0fa6nof53buq">témoin</targetRole>
+        <relationType id="relationType_iguq0fa6nof53buq" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="source_i4o0ts2qufy1z7">rico:knownBy</relationType>
+        <targetRole target="relationType_iguq0fa6nof53buq">témoin</targetRole>
         <relationType id="relationType_qvdh0wb5l2dw90z9" valueURI="" vocabularySource="" vocabularySourceURI="" sourceReference=""/>
-        <targetRole target="#relationType_qvdh0wb5l2dw90z9"/>
+        <targetRole target="relationType_qvdh0wb5l2dw90z9"/>
         <descriptiveNote>
           <p>Natif de Nevers.
 Dépose connoistre ledit Aumont depuis [blanc] ans ou environ, qu'il est de la R C a et R et pour luy en avoir veu faire les fonctions et luy avoir administré plusieurs fois les sacrement de pénitence, au surplus le croit fort affectionné au service du roy et du publique et capable de remplir la charge de juré expert dont il poursuit sa réception.</p>
         </descriptiveNote>
       </relation>
-      <relation target="#chronItem_36xg00kdg6l5t2br9" sourceReference="">
+      <relation target="chronItem_36xg00kdg6l5t2br9" sourceReference="">
         <targetEntity targetType="person">
           <part localType="full">Jean Pinard</part>
           <part localType="status">Architecte juré expert à Paris</part>
@@ -467,15 +474,15 @@ Dépose connoistre ledit Aumont depuis [blanc] ans ou environ, qu'il est de la R
           <part localType="origPlace"/>
           <part localType="xprRef">#xpr0219</part>
         </targetEntity>
-        <relationType id="relationType_igvd0p5tvhxacct" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_i4o0ts2qufy1z7">rico:knownBy</relationType>
-        <targetRole target="#relationType_igvd0p5tvhxacct">témoin</targetRole>
+        <relationType id="relationType_igvd0p5tvhxacct" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="source_i4o0ts2qufy1z7">rico:knownBy</relationType>
+        <targetRole target="relationType_igvd0p5tvhxacct">témoin</targetRole>
         <descriptiveNote>
           <p>Natif de Paris.
 Dépose connoistre ledit Jean Aumont depuis dix ans ou environ, le connait pour homme de bien et de probité, faisant profession de la R C a et R et pour luy veu différentes fois assister au service divin, au surplus qu'il est fort affectionné au service du roy et du publique.
 </p>
         </descriptiveNote>
       </relation>
-      <relation target="#chronItem_36xg00kdg6l5t2br9" sourceReference="">
+      <relation target="chronItem_36xg00kdg6l5t2br9" sourceReference="">
         <targetEntity targetType="person">
           <part localType="full">Nicolas Isidore Chastelain</part>
           <part localType="status">Juré expert à Paris</part>
@@ -485,14 +492,14 @@ Dépose connoistre ledit Jean Aumont depuis dix ans ou environ, le connait pour 
           <part localType="origPlace"/>
           <part localType="xprRef">#xpr0051</part>
         </targetEntity>
-        <relationType id="relationType_igvx002ttcxnw04sk" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_i4o0ts2qufy1z7">rico:knownBy</relationType>
-        <targetRole target="#relationType_igvx002ttcxnw04sk">témoin</targetRole>
+        <relationType id="relationType_igvx002ttcxnw04sk" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="source_i4o0ts2qufy1z7">rico:knownBy</relationType>
+        <targetRole target="relationType_igvx002ttcxnw04sk">témoin</targetRole>
         <descriptiveNote>
           <p>Natif de Paris.
 Dépose connoistre ledit Aumont depuis neuf ans ou environ, qu'il est de la R C a et R, capable de remplir la charge dont il poursuit sa réception.</p>
         </descriptiveNote>
       </relation>
-      <relation target="#chronItem_36xg00kdg6l5t2br9" sourceReference="">
+      <relation target="chronItem_36xg00kdg6l5t2br9" sourceReference="">
         <targetEntity targetType="person">
           <part localType="full">de Mezerets</part>
           <part localType="status">de la premère colonne</part>
@@ -502,10 +509,10 @@ Dépose connoistre ledit Aumont depuis neuf ans ou environ, qu'il est de la R C 
           <part localType="origPlace"/>
           <part localType="xprRef">#xpr0078</part>
         </targetEntity>
-        <relationType id="relationType_igwf07e0attynufm" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_i4o0ts2qufy1z7">rico:hasOrHadController</relationType>
-        <targetRole target="#relationType_igwf07e0attynufm">examinateur</targetRole>
+        <relationType id="relationType_igwf07e0attynufm" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="source_i4o0ts2qufy1z7">rico:hasOrHadController</relationType>
+        <targetRole target="relationType_igwf07e0attynufm">examinateur</targetRole>
       </relation>
-      <relation target="#chronItem_36xg00kdg6l5t2br9" sourceReference="">
+      <relation target="chronItem_36xg00kdg6l5t2br9" sourceReference="">
         <targetEntity targetType="person">
           <part localType="full">de Villeneuve</part>
           <part localType="status">de la première colonne</part>
@@ -515,10 +522,10 @@ Dépose connoistre ledit Aumont depuis neuf ans ou environ, qu'il est de la R C 
           <part localType="origPlace"/>
           <part localType="xprRef">#xpr0145</part>
         </targetEntity>
-        <relationType id="relationType_igww0koxdselrt7" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_i4o0ts2qufy1z7">rico:hasOrHadController</relationType>
-        <targetRole target="#relationType_igww0koxdselrt7">examinateur</targetRole>
+        <relationType id="relationType_igww0koxdselrt7" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="source_i4o0ts2qufy1z7">rico:hasOrHadController</relationType>
+        <targetRole target="relationType_igww0koxdselrt7">examinateur</targetRole>
       </relation>
-      <relation target="#chronItem_36xg00kdg6l5t2br9" sourceReference="">
+      <relation target="chronItem_36xg00kdg6l5t2br9" sourceReference="">
         <targetEntity targetType="person">
           <part localType="full">Caqué</part>
           <part localType="status">de la 2nde colonne</part>
@@ -528,10 +535,10 @@ Dépose connoistre ledit Aumont depuis neuf ans ou environ, qu'il est de la R C 
           <part localType="origPlace"/>
           <part localType="xprRef">#xpr0045</part>
         </targetEntity>
-        <relationType id="relationType_igxa0cz6lb6ftooe" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_i4o0ts2qufy1z7">rico:hasOrHadController</relationType>
-        <targetRole target="#relationType_igxa0cz6lb6ftooe">examinateur</targetRole>
+        <relationType id="relationType_igxa0cz6lb6ftooe" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="source_i4o0ts2qufy1z7">rico:hasOrHadController</relationType>
+        <targetRole target="relationType_igxa0cz6lb6ftooe">examinateur</targetRole>
       </relation>
-      <relation target="#chronItem_36xg00kdg6l5t2br9" sourceReference="">
+      <relation target="chronItem_36xg00kdg6l5t2br9" sourceReference="">
         <targetEntity targetType="person">
           <part localType="full">Sedaine</part>
           <part localType="status">de la 2nde colonne</part>
@@ -541,10 +548,10 @@ Dépose connoistre ledit Aumont depuis neuf ans ou environ, qu'il est de la R C 
           <part localType="origPlace"/>
           <part localType="xprRef">#xpr0243</part>
         </targetEntity>
-        <relationType id="relationType_igxo098j3j4ctdje" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_i4o0ts2qufy1z7">rico:hasOrHadController</relationType>
-        <targetRole target="#relationType_igxo098j3j4ctdje">examinateur</targetRole>
+        <relationType id="relationType_igxo098j3j4ctdje" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="source_i4o0ts2qufy1z7">rico:hasOrHadController</relationType>
+        <targetRole target="relationType_igxo098j3j4ctdje">examinateur</targetRole>
       </relation>
-      <relation target="#chronItem_36xg00kdg6l5t2br9" sourceReference="">
+      <relation target="chronItem_36xg00kdg6l5t2br9" sourceReference="">
         <targetEntity targetType="person">
           <part localType="full">Piretouy</part>
           <part localType="status">Doyen de la compagnie des experts</part>
@@ -554,10 +561,10 @@ Dépose connoistre ledit Aumont depuis neuf ans ou environ, qu'il est de la R C 
           <part localType="origPlace"/>
           <part localType="xprRef">#xpr0221</part>
         </targetEntity>
-        <relationType id="relationType_igy00t40hx0jfzkd" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_i4o0ts2qufy1z7">rico:hasOrHadController</relationType>
-        <targetRole target="#relationType_igy00t40hx0jfzkd">examinateur</targetRole>
+        <relationType id="relationType_igy00t40hx0jfzkd" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="source_i4o0ts2qufy1z7">rico:hasOrHadController</relationType>
+        <targetRole target="relationType_igy00t40hx0jfzkd">examinateur</targetRole>
       </relation>
-      <relation target="#chronItem_36xg00kdg6l5t2br9" sourceReference="">
+      <relation target="chronItem_36xg00kdg6l5t2br9" sourceReference="">
         <targetEntity targetType="person">
           <part localType="full">Quirot</part>
           <part localType="status">syndic de la compagnie des experts</part>
@@ -567,10 +574,10 @@ Dépose connoistre ledit Aumont depuis neuf ans ou environ, qu'il est de la R C 
           <part localType="origPlace"/>
           <part localType="xprRef">#xpr0232</part>
         </targetEntity>
-        <relationType id="relationType_igya0d9k7wvqqp15" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_i4o0ts2qufy1z7">rico:hasOrHadController</relationType>
-        <targetRole target="#relationType_igya0d9k7wvqqp15">observateur</targetRole>
+        <relationType id="relationType_igya0d9k7wvqqp15" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="source_i4o0ts2qufy1z7">rico:hasOrHadController</relationType>
+        <targetRole target="relationType_igya0d9k7wvqqp15">observateur</targetRole>
       </relation>
-      <relation target="#chronItem_36xg00kdg6l5t2br9" sourceReference="">
+      <relation target="chronItem_36xg00kdg6l5t2br9" sourceReference="">
         <targetEntity targetType="person">
           <part localType="full">Chauveau</part>
           <part localType="status">Adjoint de la compagnie des experts</part>
@@ -580,8 +587,8 @@ Dépose connoistre ledit Aumont depuis neuf ans ou environ, qu'il est de la R C 
           <part localType="origPlace"/>
           <part localType="xprRef">#xpr0054</part>
         </targetEntity>
-        <relationType id="relationType_igyi0izcecbzt6ca" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_i4o0ts2qufy1z7">rico:hasOrHadController</relationType>
-        <targetRole target="#relationType_igyi0izcecbzt6ca">observateur</targetRole>
+        <relationType id="relationType_igyi0izcecbzt6ca" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="source_i4o0ts2qufy1z7">rico:hasOrHadController</relationType>
+        <targetRole target="relationType_igyi0izcecbzt6ca">observateur</targetRole>
       </relation>
         </relations>
       </cpfDescription>

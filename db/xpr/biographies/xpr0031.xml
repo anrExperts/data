@@ -1,5 +1,5 @@
 <eac xmlns="https://archivists.org/ns/eac/v2" xml:id="xpr0031">
-   <control maintenanceStatus="updated" publicationStatus="inProcess">
+   <control maintenanceStatus="revised" publicationStatus="inProcess">
       <recordId>xpr0031</recordId>
       <maintenanceAgency>
          <agencyName>projet Experts</agencyName>
@@ -92,12 +92,18 @@
             <function sourceReference="">
                <term>Expert bourgeois</term>
                <dateRange>
-                  <fromDate sourceReference="" certainty="" standardDate="1773"/>
-                  <toDate sourceReference="" certainty="" standardDate="1791"/>
+                  <fromDate certainty="" standardDate="1773"/>
+                  <toDate certainty="" standardDate="1791"/>
                </dateRange>
                
             </function>
          </functions>
+      
+         <localDescriptions>
+            <localDescription localType="sex">
+               <term/>
+            </localDescription>
+         </localDescriptions>
       <places>
         <place sourceReference="#source_5g20q53efcmj3lk">
           <date certainty="" standardDate="1779-07-14" sourceReference=""/>
@@ -107,23 +113,18 @@
           </address>
         </place>
       </places>
-         <localDescriptions>
-            <localDescription localType="sex">
-               <term/>
-            </localDescription>
-         </localDescriptions>
          
          
          <existDates>
             <dateRange>
                <fromDate sourceReference="" certainty="" standardDate="1740-06"/>
-               <toDate sourceReference="#source_8s609gfmfiemdkl" certainty="certain" standardDate="1812-11-12"/>
+               <toDate sourceReference="source_8s609gfmfiemdkl" certainty="certain" standardDate="1812-11-12"/>
             </dateRange>
          </existDates>
          <biogHist>
             <chronList>
                <chronItem id="eventid96052d179" localType="birth">
-                  <date sourceReference="" certainty="" standardDate="1740-06"/>
+                  <date certainty="" standardDate="1740-06"/>
                   <event>Naissance</event>
                   
                   
@@ -131,7 +132,7 @@
                   
                </chronItem>
                <chronItem id="eventid96052d190" localType="officePurchase">
-            <date certainty="" sourceReference=""/>
+            <date certainty=""/>
                   
                   <event>Acquisition d'un office</event>
                   
@@ -141,7 +142,7 @@
                   
                </chronItem>
                <chronItem id="eventid96052d197" localType="provision">
-                  <date sourceReference="" certainty="" standardDate="1773-05-12"/>
+                  <date certainty="" standardDate="1773-05-12"/>
                   <event>Lettre de provision</event>
                   
                   
@@ -150,22 +151,22 @@
                </chronItem>
                
                <chronItem id="eventid96052d215" localType="officesEnding">
-                  <date sourceReference="" certainty="" standardDate="1791"/>
+                  <date certainty="" standardDate="1791"/>
                   <event>Suppression des offices</event>
                   
                   
                   
                   
                </chronItem>
-          <chronItem id="chronItem_krm0z69u1h56dld" sourceReference="#source_5g20q53efcmj3lk" localType="marriage">
-            <date certainty="certain" standardDate="1779-07-14" sourceReference=""/>
+          <chronItem id="chronItem_krm0z69u1h56dld" sourceReference="source_5g20q53efcmj3lk" localType="marriage">
+            <date certainty="certain" standardDate="1779-07-14"/>
             <event>Mariage (2) avec Marie Descroix</event>
             <place>
               <placeName/>
             </place>
           </chronItem>
-          <chronItem id="chronItem_vrt0cribysc15lv" sourceReference="#source_8s609gfmfiemdkl" localType="death">
-            <date certainty="certain" standardDate="1812-11-12" sourceReference=""/>
+          <chronItem id="chronItem_vrt0cribysc15lv" sourceReference="source_8s609gfmfiemdkl" localType="death">
+            <date certainty="certain" standardDate="1812-11-12"/>
             <event>Décès de Paul Antoine Bouchu</event>
             <place>
               <placeName>Rue de Paradis, n° 9</placeName>
@@ -175,10 +176,8 @@
          </biogHist>
       </description>
       <relations>
-      <relation target="#chronItem_krm0z69u1h56dld" sourceReference="">
-        <descriptiveNote>
-          <p>Marie Descroix est la veuve d’André Nicolas Martin, avocat en Parlement, conseiller du conseil de Monseigneur le Comte d’Artois et procureur en la chambre des comptes de Paris.</p>
-        </descriptiveNote>
+      <relation target="chronItem_krm0z69u1h56dld" sourceReference="">
+        
         <targetEntity targetType="">
           <part localType="full">Descroix, Marie</part>
           <part localType="status"/>
@@ -188,13 +187,14 @@
           <part localType="origPlace"/>
           <part localType="xprRef"/>
         </targetEntity>
-        <relationType id="relationType_1ria08opuk1olyu9" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadSpouse" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_5g20q53efcmj3lk">rico:hasOrHadSpouse</relationType>
-        <targetRole target="#relationType_1ria08opuk1olyu9">épouse</targetRole>
-      </relation>
-      <relation target="#chronItem_krm0z69u1h56dld" sourceReference="">
-        <descriptiveNote>
-          <p>André Bouchu (père de l'expert) est décédé au moment du mariage.</p>
+        <relationType id="relationType_1ria08opuk1olyu9" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadSpouse" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="source_5g20q53efcmj3lk">rico:hasOrHadSpouse</relationType>
+        <targetRole target="relationType_1ria08opuk1olyu9">épouse</targetRole>
+      <descriptiveNote>
+          <p>Marie Descroix est la veuve d’André Nicolas Martin, avocat en Parlement, conseiller du conseil de Monseigneur le Comte d’Artois et procureur en la chambre des comptes de Paris.</p>
         </descriptiveNote>
+      </relation>
+      <relation target="chronItem_krm0z69u1h56dld" sourceReference="">
+        
         <targetEntity targetType="person">
           <part localType="full">Bouchu, André</part>
           <part localType="status">Trésorier garde d’artillerie à Lyon </part>
@@ -204,13 +204,14 @@
           <part localType="origPlace">Lyon</part>
           <part localType="xprRef"/>
         </targetEntity>
-        <relationType id="relationType_27oq0t2f12sn3tn" valueURI="https://www.ica.org/standards/RiC/ontology#isChildOf" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_5g20q53efcmj3lk">rico:isChildOf</relationType>
-        <targetRole target="#relationType_27oq0t2f12sn3tn">père</targetRole>
-      </relation>
-      <relation target="#chronItem_krm0z69u1h56dld" sourceReference="">
-        <descriptiveNote>
-          <p>Geneviève Rolland (mère de l'expert) est décédée au moment du mariage.</p>
+        <relationType id="relationType_27oq0t2f12sn3tn" valueURI="https://www.ica.org/standards/RiC/ontology#isChildOf" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="source_5g20q53efcmj3lk">rico:isChildOf</relationType>
+        <targetRole target="relationType_27oq0t2f12sn3tn">père</targetRole>
+      <descriptiveNote>
+          <p>André Bouchu (père de l'expert) est décédé au moment du mariage.</p>
         </descriptiveNote>
+      </relation>
+      <relation target="chronItem_krm0z69u1h56dld" sourceReference="">
+        
         <targetEntity targetType="person">
           <part localType="full">Rolland, Geneviève</part>
           <part localType="status"/>
@@ -220,13 +221,14 @@
           <part localType="origPlace"/>
           <part localType="xprRef"/>
         </targetEntity>
-        <relationType id="relationType_568g0txny67vr0ds" valueURI="https://www.ica.org/standards/RiC/ontology#isChildOf" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_5g20q53efcmj3lk">rico:isChildOf</relationType>
-        <targetRole target="#relationType_568g0txny67vr0ds">mère</targetRole>
-      </relation>
-      <relation target="#chronItem_krm0z69u1h56dld" sourceReference="">
-        <descriptiveNote>
-          <p>Jean-Baptiste Descroix est décédé au moment du mariage.</p>
+        <relationType id="relationType_568g0txny67vr0ds" valueURI="https://www.ica.org/standards/RiC/ontology#isChildOf" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="source_5g20q53efcmj3lk">rico:isChildOf</relationType>
+        <targetRole target="relationType_568g0txny67vr0ds">mère</targetRole>
+      <descriptiveNote>
+          <p>Geneviève Rolland (mère de l'expert) est décédée au moment du mariage.</p>
         </descriptiveNote>
+      </relation>
+      <relation target="chronItem_krm0z69u1h56dld" sourceReference="">
+        
         <targetEntity targetType="person">
           <part localType="full">Descroix, Jean-Baptiste</part>
           <part localType="status">Ecuyer</part>
@@ -236,13 +238,14 @@
           <part localType="origPlace"/>
           <part localType="xprRef"/>
         </targetEntity>
-        <relationType id="relationType_6pbv0imiayiekrrh" valueURI="https://www.ica.org/standards/RiC/ontology#hasFamilyAssociationWith" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_5g20q53efcmj3lk">rico:hasFamilyAssociationWith</relationType>
-        <targetRole target="#relationType_6pbv0imiayiekrrh">beau-père</targetRole>
-      </relation>
-      <relation target="#chronItem_krm0z69u1h56dld" sourceReference="">
-        <descriptiveNote>
-          <p>Au moment du mariage, Marguerite Guichard est remariée à André Laurent de la Barre, avocat au Parlement (son premier époux, le père de la mariée Jean-Baptiste Descroix, ecuyer est décédé).</p>
+        <relationType id="relationType_6pbv0imiayiekrrh" valueURI="https://www.ica.org/standards/RiC/ontology#hasFamilyAssociationWith" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="source_5g20q53efcmj3lk">rico:hasFamilyAssociationWith</relationType>
+        <targetRole target="relationType_6pbv0imiayiekrrh">beau-père</targetRole>
+      <descriptiveNote>
+          <p>Jean-Baptiste Descroix est décédé au moment du mariage.</p>
         </descriptiveNote>
+      </relation>
+      <relation target="chronItem_krm0z69u1h56dld" sourceReference="">
+        
         <targetEntity targetType="person">
           <part localType="full">Guichard, Marguerite</part>
           <part localType="status"/>
@@ -252,8 +255,11 @@
           <part localType="origPlace"/>
           <part localType="xprRef"/>
         </targetEntity>
-        <relationType id="relationType_7i8y05huiju48n9y" valueURI="https://www.ica.org/standards/RiC/ontology#hasFamilyAssociationWith" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_5g20q53efcmj3lk">rico:hasFamilyAssociationWith</relationType>
-        <targetRole target="#relationType_7i8y05huiju48n9y">belle-mère</targetRole>
+        <relationType id="relationType_7i8y05huiju48n9y" valueURI="https://www.ica.org/standards/RiC/ontology#hasFamilyAssociationWith" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="source_5g20q53efcmj3lk">rico:hasFamilyAssociationWith</relationType>
+        <targetRole target="relationType_7i8y05huiju48n9y">belle-mère</targetRole>
+      <descriptiveNote>
+          <p>Au moment du mariage, Marguerite Guichard est remariée à André Laurent de la Barre, avocat au Parlement (son premier époux, le père de la mariée Jean-Baptiste Descroix, ecuyer est décédé).</p>
+        </descriptiveNote>
       </relation>
          
       </relations>

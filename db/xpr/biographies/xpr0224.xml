@@ -1,5 +1,5 @@
 <eac xmlns="https://archivists.org/ns/eac/v2" xml:id="xpr0224">
-   <control maintenanceStatus="updated" publicationStatus="inProcess">
+   <control maintenanceStatus="revised" publicationStatus="inProcess">
       <recordId>xpr0224</recordId>
       <maintenanceAgency>
          <agencyName>projet Experts</agencyName>
@@ -77,6 +77,20 @@
                
             </function>
          </functions>
+      
+         <localDescriptions>
+            <localDescription localType="sex">
+               <term/>
+            </localDescription>
+         </localDescriptions>
+      <occupations>
+        <occupation localType="" sourceReference="source_aep04gphflc5g7r">
+          <term>Maître maçon à Paris</term>
+          <date certainty="certain" standardDate="1681-11-30"/>
+          <!--optionnal (all below)-->
+          <!--&lt;date/&gt; | &lt;dateRange/&gt; | &lt;dateSet/&gt;-->
+        </occupation>
+      </occupations>
       <places>
         <place sourceReference="#source_aep04gphflc5g7r">
           <date certainty="certain" standardDate="1681-11-30" sourceReference=""/>
@@ -86,19 +100,6 @@
           </address>
         </place>
       </places>
-         <localDescriptions>
-            <localDescription localType="sex">
-               <term/>
-            </localDescription>
-         </localDescriptions>
-      <occupations>
-        <occupation localType="" sourceReference="#source_aep04gphflc5g7r">
-          <term>Maître maçon à Paris</term>
-          <date certainty="certain" standardDate="1681-11-30" sourceReference=""/>
-          <!--optionnal (all below)-->
-          <!--&lt;date/&gt; | &lt;dateRange/&gt; | &lt;dateSet/&gt;-->
-        </occupation>
-      </occupations>
          
          
          <existDates>
@@ -110,7 +111,7 @@
          <biogHist>
             <chronList>
                <chronItem id="eventid96438d183" localType="birth">
-                  <date sourceReference="" certainty="" standardDate="1654-06"/>
+                  <date certainty="" standardDate="1654-06"/>
                   <event>Naissance</event>
                   
                   
@@ -120,7 +121,7 @@
                   </place>
                </chronItem>
                <chronItem id="eventid96438d200" localType="master">
-                  <date sourceReference="" certainty="" standardDate="1678-12-22"/>
+                  <date certainty="" standardDate="1678-12-22"/>
                   <event>Maîtrise maç.</event>
                   
                   
@@ -128,7 +129,7 @@
                   
                </chronItem>
                <chronItem id="eventid96438d211" localType="officePurchase">
-            <date certainty="" sourceReference=""/>
+            <date certainty=""/>
                   
                   <event>Acquisition d'un office</event>
                   
@@ -138,7 +139,7 @@
                   
                </chronItem>
                <chronItem id="eventid96438d221" localType="provision">
-                  <date sourceReference="" certainty="" standardDate="1690-07-22"/>
+                  <date certainty="" standardDate="1690-07-22"/>
                   <event>Lettre de provision</event>
                   
                   
@@ -147,15 +148,15 @@
                </chronItem>
                
                <chronItem id="eventid96438d239" localType="death">
-                  <date sourceReference="" certainty="" standardDate="1694-01-18"/>
+                  <date certainty="" standardDate="1694-01-18"/>
                   <event>Décès</event>
                   
                   
                   
                   
                </chronItem>
-          <chronItem id="chronItem_t470mgokejrc65" sourceReference="#source_aep04gphflc5g7r" localType="marriage">
-            <date certainty="certain" standardDate="1681-11-30" sourceReference=""/>
+          <chronItem id="chronItem_t470mgokejrc65" sourceReference="source_aep04gphflc5g7r" localType="marriage">
+            <date certainty="certain" standardDate="1681-11-30"/>
             <event>Mariage avec Marie Françoise Luquet</event>
             <place>
               <placeName/>
@@ -175,13 +176,11 @@
           <part localType="origPlace"/>
           <part localType="xprRef"/>
         </targetEntity>
-        <relationType id="relationType_1jin0000001050p1tjdfpzi" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadSpouse" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_aep04gphflc5g7r">rico:hasOrHadSpouse</relationType>
-        <targetRole target="#relationType_1jin0000001050p1tjdfpzi">épouse</targetRole>
+        <relationType id="relationType_1jin0000001050p1tjdfpzi" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadSpouse" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="source_aep04gphflc5g7r">rico:hasOrHadSpouse</relationType>
+        <targetRole target="relationType_1jin0000001050p1tjdfpzi">épouse</targetRole>
       </relation>
-      <relation target="#chronItem_t470mgokejrc65" sourceReference="">
-        <descriptiveNote>
-          <p>Le père du futur expert, Michel Poisson, est décédé au moment du mariage.</p>
-        </descriptiveNote>
+      <relation target="chronItem_t470mgokejrc65" sourceReference="">
+        
         <targetEntity targetType="family">
           <part localType="full">Poisson, Michel</part>
           <part localType="status">Maître charpentier </part>
@@ -191,10 +190,13 @@
           <part localType="origPlace"/>
           <part localType="xprRef"/>
         </targetEntity>
-        <relationType id="relationType_209j0xdshyi8xycf" valueURI="https://www.ica.org/standards/RiC/ontology#isChildOf" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_aep04gphflc5g7r">rico:isChildOf</relationType>
-        <targetRole target="#relationType_209j0xdshyi8xycf">père</targetRole>
+        <relationType id="relationType_209j0xdshyi8xycf" valueURI="https://www.ica.org/standards/RiC/ontology#isChildOf" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="source_aep04gphflc5g7r">rico:isChildOf</relationType>
+        <targetRole target="relationType_209j0xdshyi8xycf">père</targetRole>
+      <descriptiveNote>
+          <p>Le père du futur expert, Michel Poisson, est décédé au moment du mariage.</p>
+        </descriptiveNote>
       </relation>
-      <relation target="#chronItem_t470mgokejrc65" sourceReference="">
+      <relation target="chronItem_t470mgokejrc65" sourceReference="">
         <targetEntity targetType="person">
           <part localType="full">Hanot, Catherine</part>
           <part localType="status"/>
@@ -204,10 +206,10 @@
           <part localType="origPlace"/>
           <part localType="xprRef"/>
         </targetEntity>
-        <relationType id="relationType_3a6y0etzopjdmbhq" valueURI="https://www.ica.org/standards/RiC/ontology#isChildOf" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_aep04gphflc5g7r">rico:isChildOf</relationType>
-        <targetRole target="#relationType_3a6y0etzopjdmbhq">mère</targetRole>
+        <relationType id="relationType_3a6y0etzopjdmbhq" valueURI="https://www.ica.org/standards/RiC/ontology#isChildOf" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="source_aep04gphflc5g7r">rico:isChildOf</relationType>
+        <targetRole target="relationType_3a6y0etzopjdmbhq">mère</targetRole>
       </relation>
-      <relation target="#chronItem_t470mgokejrc65" sourceReference="">
+      <relation target="chronItem_t470mgokejrc65" sourceReference="">
         <targetEntity targetType="person">
           <part localType="full">Luquet, Linéard</part>
           <part localType="status">Maître menuisier </part>
@@ -217,10 +219,10 @@
           <part localType="origPlace"/>
           <part localType="xprRef"/>
         </targetEntity>
-        <relationType id="relationType_3ufs0095wqwlkeu2e" valueURI="https://www.ica.org/standards/RiC/ontology#hasFamilyAssociationWith" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_aep04gphflc5g7r">rico:hasFamilyAssociationWith</relationType>
-        <targetRole target="#relationType_3ufs0095wqwlkeu2e">beau-père</targetRole>
+        <relationType id="relationType_3ufs0095wqwlkeu2e" valueURI="https://www.ica.org/standards/RiC/ontology#hasFamilyAssociationWith" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="source_aep04gphflc5g7r">rico:hasFamilyAssociationWith</relationType>
+        <targetRole target="relationType_3ufs0095wqwlkeu2e">beau-père</targetRole>
       </relation>
-      <relation target="#chronItem_t470mgokejrc65" sourceReference="">
+      <relation target="chronItem_t470mgokejrc65" sourceReference="">
         <targetEntity targetType="person">
           <part localType="full">Begat, Jeanne</part>
           <part localType="status"/>
@@ -230,12 +232,12 @@
           <part localType="origPlace"/>
           <part localType="xprRef"/>
         </targetEntity>
-        <relationType id="relationType_5a7s0mckj6wgzhv" valueURI="https://www.ica.org/standards/RiC/ontology#hasFamilyAssociationWith" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_aep04gphflc5g7r">rico:hasFamilyAssociationWith</relationType>
-        <targetRole target="#relationType_5a7s0mckj6wgzhv">belle-mère</targetRole>
+        <relationType id="relationType_5a7s0mckj6wgzhv" valueURI="https://www.ica.org/standards/RiC/ontology#hasFamilyAssociationWith" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="source_aep04gphflc5g7r">rico:hasFamilyAssociationWith</relationType>
+        <targetRole target="relationType_5a7s0mckj6wgzhv">belle-mère</targetRole>
       </relation>
          
-      <relation target="#eventid96438d211" sourceReference="">
-            <targetEntity target="#xprOffice0046" targetType="corporateBody">
+      <relation target="eventid96438d211" sourceReference="">
+            <targetEntity target="xprOffice0046" targetType="corporateBody">
               <part localType="full">Office 46</part>
             <part localType="status"/>
           <part localType="occupationType"/>
@@ -245,7 +247,7 @@
           <part localType="xprRef"/>
         </targetEntity>
           <relationType id="relationType_id128298d2618406" valueURI="" vocabularySource="" vocabularySourceURI="" sourceReference=""/>
-            <targetRole target="#relationType_id128298d2618406"/>
+            <targetRole target="relationType_id128298d2618406"/>
           </relation>
     </relations>
    

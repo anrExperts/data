@@ -1,6 +1,6 @@
 <eac xmlns="https://archivists.org/ns/eac/v2" xml:id="xpr0240">
       <!--Pas dans les Almanachs-->
-   <control maintenanceStatus="updated" publicationStatus="inProcess">
+   <control maintenanceStatus="revised" publicationStatus="inProcess">
       <recordId>xpr0240</recordId>
       <maintenanceAgency>
          <agencyName>projet Experts</agencyName>
@@ -80,7 +80,21 @@
       </identity>
       <description>
          
-         <places>
+         
+      <localDescriptions>
+            <localDescription localType="sex">
+               <term/>
+            </localDescription>
+         </localDescriptions>
+      <occupations>
+        <occupation localType="" sourceReference="source_52q08ul8ohsdk14">
+          <term>Entrepreneur de bâtiment</term>
+          <date certainty="certain" standardDate="1736-12-09"/>
+          <!--optionnal (all below)-->
+          <!--&lt;date/&gt; | &lt;dateRange/&gt; | &lt;dateSet/&gt;-->
+        </occupation>
+      </occupations>
+      <places>
         <place sourceReference="#source_52q08ul8ohsdk14">
           <date certainty="certain" standardDate="1736-12-09" sourceReference=""/>
           <address>
@@ -89,31 +103,18 @@
           </address>
         </place>
       </places>
-      <localDescriptions>
-            <localDescription localType="sex">
-               <term/>
-            </localDescription>
-         </localDescriptions>
-      <occupations>
-        <occupation localType="" sourceReference="#source_52q08ul8ohsdk14">
-          <term>Entrepreneur de bâtiment</term>
-          <date certainty="certain" standardDate="1736-12-09" sourceReference=""/>
-          <!--optionnal (all below)-->
-          <!--&lt;date/&gt; | &lt;dateRange/&gt; | &lt;dateSet/&gt;-->
-        </occupation>
-      </occupations>
          
          
          <existDates>
             <dateRange>
                <fromDate sourceReference="" certainty="" standardDate="1709-02"/>
-               <toDate sourceReference="#source_6q3036ccp9dsf4" certainty="certain" standardDate="1789-01-17"/>
+               <toDate sourceReference="source_6q3036ccp9dsf4" certainty="certain" standardDate="1789-01-17"/>
             </dateRange>
          </existDates>
          <biogHist>
             <chronList>
                <chronItem id="eventid96470d160" localType="birth">
-                  <date sourceReference="" certainty="" standardDate="1709-02"/>
+                  <date certainty="" standardDate="1709-02"/>
                   <event>Naissance</event>
                   
                   
@@ -122,7 +123,7 @@
                </chronItem>
                
                <chronItem id="eventid96470d178" localType="master">
-                  <date sourceReference="" certainty="" standardDate="1735"/>
+                  <date certainty="" standardDate="1735"/>
                   <event>Maîtrise maç.</event>
                   
                   
@@ -130,7 +131,7 @@
                   
                </chronItem>
                <chronItem id="eventid96470d189" localType="officePurchase">
-            <date certainty="" sourceReference=""/>
+            <date certainty=""/>
                   
                   <event>Acquisition d'un office</event>
                   
@@ -140,7 +141,7 @@
                   
                </chronItem>
                <chronItem id="eventid96470d196" localType="provision">
-                  <date sourceReference="" certainty="" standardDate="1753-02-12"/>
+                  <date certainty="" standardDate="1753-02-12"/>
                   <event>Lettre de provision</event>
                   
                   
@@ -149,7 +150,7 @@
                </chronItem>
                
                <chronItem id="eventid96470d214" localType="relinquishment">
-            <date certainty="" sourceReference=""/>
+            <date certainty=""/>
                   
                   <event>résigne le 19/02/1766</event>
                   
@@ -158,15 +159,15 @@
                   
                </chronItem>
                
-          <chronItem id="chronItem_jup07wea4r6v2gn" sourceReference="#source_52q08ul8ohsdk14" localType="marriage">
-            <date certainty="certain" standardDate="1736-12-09" sourceReference=""/>
+          <chronItem id="chronItem_jup07wea4r6v2gn" sourceReference="source_52q08ul8ohsdk14" localType="marriage">
+            <date certainty="certain" standardDate="1736-12-09"/>
             <event>Mariage avec Marie Destriche</event>
             <place>
               <placeName/>
             </place>
           </chronItem>
-          <chronItem id="chronItem_kwa0mbhicqnbkeo" sourceReference="#source_6q3036ccp9dsf4" localType="death">
-            <date certainty="certain" standardDate="1789-01-17" sourceReference=""/>
+          <chronItem id="chronItem_kwa0mbhicqnbkeo" sourceReference="source_6q3036ccp9dsf4" localType="death">
+            <date certainty="certain" standardDate="1789-01-17"/>
             <event>Décès de Marin Rolland</event>
             <place>
               <placeName>Sceaux (Hauts-de-Seine)</placeName>
@@ -186,13 +187,11 @@
           <part localType="origPlace"/>
           <part localType="xprRef"/>
         </targetEntity>
-        <relationType id="relationType_15ze01ko2dvtx1t7" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadSpouse" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_52q08ul8ohsdk14">rico:hasOrHadSpouse</relationType>
-        <targetRole target="#relationType_15ze01ko2dvtx1t7">épouse</targetRole>
+        <relationType id="relationType_15ze01ko2dvtx1t7" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadSpouse" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="source_52q08ul8ohsdk14">rico:hasOrHadSpouse</relationType>
+        <targetRole target="relationType_15ze01ko2dvtx1t7">épouse</targetRole>
       </relation>
-      <relation target="#chronItem_jup07wea4r6v2gn" sourceReference="">
-        <descriptiveNote>
-          <p>Le père du futur expert, Françoise Rolland, est décédé au moment du mariage.</p>
-        </descriptiveNote>
+      <relation target="chronItem_jup07wea4r6v2gn" sourceReference="">
+        
         <targetEntity targetType="person">
           <part localType="full">Rolland, François</part>
           <part localType="status">Employé dans les Fermes du Roy </part>
@@ -202,10 +201,13 @@
           <part localType="origPlace"/>
           <part localType="xprRef"/>
         </targetEntity>
-        <relationType id="relationType_1k9f0noeoc2uq9q8" valueURI="https://www.ica.org/standards/RiC/ontology#isChildOf" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_52q08ul8ohsdk14">rico:isChildOf</relationType>
-        <targetRole target="#relationType_1k9f0noeoc2uq9q8">mère</targetRole>
+        <relationType id="relationType_1k9f0noeoc2uq9q8" valueURI="https://www.ica.org/standards/RiC/ontology#isChildOf" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="source_52q08ul8ohsdk14">rico:isChildOf</relationType>
+        <targetRole target="relationType_1k9f0noeoc2uq9q8">mère</targetRole>
+      <descriptiveNote>
+          <p>Le père du futur expert, Françoise Rolland, est décédé au moment du mariage.</p>
+        </descriptiveNote>
       </relation>
-      <relation target="#chronItem_jup07wea4r6v2gn" sourceReference="">
+      <relation target="chronItem_jup07wea4r6v2gn" sourceReference="">
         <targetEntity targetType="person">
           <part localType="full">Harelle Vallée, Anne Geneviève</part>
           <part localType="status"/>
@@ -215,10 +217,10 @@
           <part localType="origPlace"/>
           <part localType="xprRef"/>
         </targetEntity>
-        <relationType id="relationType_378h0dfrxcd65cra" valueURI="https://www.ica.org/standards/RiC/ontology#isChildOf" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_52q08ul8ohsdk14">rico:isChildOf</relationType>
-        <targetRole target="#relationType_378h0dfrxcd65cra">mère</targetRole>
+        <relationType id="relationType_378h0dfrxcd65cra" valueURI="https://www.ica.org/standards/RiC/ontology#isChildOf" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="source_52q08ul8ohsdk14">rico:isChildOf</relationType>
+        <targetRole target="relationType_378h0dfrxcd65cra">mère</targetRole>
       </relation>
-      <relation target="#chronItem_jup07wea4r6v2gn" sourceReference="">
+      <relation target="chronItem_jup07wea4r6v2gn" sourceReference="">
         <targetEntity targetType="">
           <part localType="full">Destriche, Pierre</part>
           <part localType="status">Premier fermier? de l’artillerie de France</part>
@@ -228,10 +230,10 @@
           <part localType="origPlace"/>
           <part localType="xprRef"/>
         </targetEntity>
-        <relationType id="relationType_409m0za71d8e73m" valueURI="https://www.ica.org/standards/RiC/ontology#hasFamilyAssociationWith" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_52q08ul8ohsdk14">rico:hasFamilyAssociationWith</relationType>
-        <targetRole target="#relationType_409m0za71d8e73m">beau-père</targetRole>
+        <relationType id="relationType_409m0za71d8e73m" valueURI="https://www.ica.org/standards/RiC/ontology#hasFamilyAssociationWith" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="source_52q08ul8ohsdk14">rico:hasFamilyAssociationWith</relationType>
+        <targetRole target="relationType_409m0za71d8e73m">beau-père</targetRole>
       </relation>
-      <relation target="#chronItem_jup07wea4r6v2gn" sourceReference="">
+      <relation target="chronItem_jup07wea4r6v2gn" sourceReference="">
         <targetEntity targetType="person">
           <part localType="full">Bonomo, Elisabeth Louise</part>
           <part localType="status"/>
@@ -241,8 +243,8 @@
           <part localType="origPlace"/>
           <part localType="xprRef"/>
         </targetEntity>
-        <relationType id="relationType_9btg0mx9db4yv5ys" valueURI="https://www.ica.org/standards/RiC/ontology#hasFamilyAssociationWith" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_52q08ul8ohsdk14">rico:hasFamilyAssociationWith</relationType>
-        <targetRole target="#relationType_9btg0mx9db4yv5ys">belle-mère</targetRole>
+        <relationType id="relationType_9btg0mx9db4yv5ys" valueURI="https://www.ica.org/standards/RiC/ontology#hasFamilyAssociationWith" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="source_52q08ul8ohsdk14">rico:hasFamilyAssociationWith</relationType>
+        <targetRole target="relationType_9btg0mx9db4yv5ys">belle-mère</targetRole>
       </relation>
          
       </relations>

@@ -1,6 +1,6 @@
 <eac xmlns="https://archivists.org/ns/eac/v2" xml:id="xpr0024">
       <!--Emprisonnement en 1749-->
-   <control maintenanceStatus="updated" publicationStatus="inProcess">
+   <control maintenanceStatus="revised" publicationStatus="inProcess">
       <recordId>xpr0024</recordId>
       <maintenanceAgency>
          <agencyName>projet Experts</agencyName>
@@ -93,12 +93,26 @@
             <function sourceReference="">
                <term>Expert bourgeois</term>
                <dateRange>
-                  <fromDate sourceReference="" certainty="" standardDate="1758"/>
-                  <toDate sourceReference="" certainty="" standardDate="1791"/>
+                  <fromDate certainty="" standardDate="1758"/>
+                  <toDate certainty="" standardDate="1791"/>
                </dateRange>
                
             </function>
          </functions>
+      
+         <localDescriptions>
+            <localDescription localType="sex">
+               <term/>
+            </localDescription>
+         </localDescriptions>
+      <occupations>
+        <occupation localType="" sourceReference="source_55e03datcbcgzup">
+          <term>Entrepreneur des bâtiments du Roy</term>
+          <date certainty="" standardDate="1740-01-28"/>
+          <!--optionnal (all below)-->
+          <!--&lt;date/&gt; | &lt;dateRange/&gt; | &lt;dateSet/&gt;-->
+        </occupation>
+      </occupations>
       <places>
         <place sourceReference="#source_55e03datcbcgzup">
           <date certainty="certain" standardDate="1740-01-28" sourceReference=""/>
@@ -107,19 +121,6 @@
           </address>
         </place>
       </places>
-         <localDescriptions>
-            <localDescription localType="sex">
-               <term/>
-            </localDescription>
-         </localDescriptions>
-      <occupations>
-        <occupation localType="" sourceReference="#source_55e03datcbcgzup">
-          <term>Entrepreneur des bâtiments du Roy</term>
-          <date certainty="" standardDate="1740-01-28" sourceReference=""/>
-          <!--optionnal (all below)-->
-          <!--&lt;date/&gt; | &lt;dateRange/&gt; | &lt;dateSet/&gt;-->
-        </occupation>
-      </occupations>
          
          
          <existDates>
@@ -132,7 +133,7 @@
          <biogHist>
             <chronList>
                <chronItem id="eventid96038d169" localType="marriage">
-            <date certainty="" sourceReference=""/>
+            <date certainty=""/>
                   
                   <event>Mariage</event>
                   
@@ -141,7 +142,7 @@
                   
                </chronItem>
                <chronItem id="eventid96038d176" localType="officePurchase">
-            <date certainty="" sourceReference=""/>
+            <date certainty=""/>
                   
                   <event>Acquisition d'un office</event>
                   
@@ -151,7 +152,7 @@
                   
                </chronItem>
                <chronItem id="eventid96038d183" localType="provision">
-            <date certainty="" sourceReference=""/>
+            <date certainty=""/>
                   
                   <event>Lettre de provision</event>
                   
@@ -161,15 +162,15 @@
                </chronItem>
                
                <chronItem id="eventid96038d197" localType="officesEnding">
-                  <date sourceReference="" certainty="" standardDate="1791"/>
+                  <date certainty="" standardDate="1791"/>
                   <event>Suppression des offices</event>
                   
                   
                   
                   
                </chronItem>
-          <chronItem id="chronItem_k2z0fkplz44uxg6" sourceReference="#source_55e03datcbcgzup" localType="marriage">
-            <date certainty="" standardDate="1740-01-28" sourceReference=""/>
+          <chronItem id="chronItem_k2z0fkplz44uxg6" sourceReference="source_55e03datcbcgzup" localType="marriage">
+            <date certainty="" standardDate="1740-01-28"/>
             <event>Mariage avec Marie Elisabeth Delattre</event>
             <place>
               <placeName/>
@@ -179,10 +180,8 @@
          </biogHist>
       </description>
       <relations>
-      <relation target="#chronItem_k2z0fkplz44uxg6" sourceReference="">
-        <descriptiveNote>
-          <p>Marie Elisabeth Delattre est mineure au moment du mariage. Il s'agit probablement de la première femme de l'expert car en 1762 il est marié sous le régime de la séparation des biens avec Agathe Petit qui décède cette année là (IAD d'Agathe Petit, MC/ET/XLII/482).</p>
-        </descriptiveNote>
+      <relation target="chronItem_k2z0fkplz44uxg6" sourceReference="">
+        
         <targetEntity targetType="person">
           <part localType="full">Delattre, Marie Elisabeth</part>
           <part localType="status"/>
@@ -192,13 +191,14 @@
           <part localType="origPlace"/>
           <part localType="xprRef"/>
         </targetEntity>
-        <relationType id="relationType_243p0apeaoufdwj" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadSpouse" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_55e03datcbcgzup">rico:hasOrHadSpouse</relationType>
-        <targetRole target="#relationType_243p0apeaoufdwj">épouse</targetRole>
-      </relation>
-      <relation target="#chronItem_k2z0fkplz44uxg6" sourceReference="">
-        <descriptiveNote>
-          <p>Luc Blanchard (père de l'expert) est décédé au moment du mariage.</p>
+        <relationType id="relationType_243p0apeaoufdwj" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadSpouse" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="source_55e03datcbcgzup">rico:hasOrHadSpouse</relationType>
+        <targetRole target="relationType_243p0apeaoufdwj">épouse</targetRole>
+      <descriptiveNote>
+          <p>Marie Elisabeth Delattre est mineure au moment du mariage. Il s'agit probablement de la première femme de l'expert car en 1762 il est marié sous le régime de la séparation des biens avec Agathe Petit qui décède cette année là (IAD d'Agathe Petit, MC/ET/XLII/482).</p>
         </descriptiveNote>
+      </relation>
+      <relation target="chronItem_k2z0fkplz44uxg6" sourceReference="">
+        
         <targetEntity targetType="person">
           <part localType="full">Blanchard, Luc</part>
           <part localType="status">Entrepreneur des bâtiments du Roy </part>
@@ -208,10 +208,13 @@
           <part localType="origPlace"/>
           <part localType="xprRef"/>
         </targetEntity>
-        <relationType id="relationType_2oei0y5w4k4wnd4i" valueURI="https://www.ica.org/standards/RiC/ontology#isChildOf" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_55e03datcbcgzup">rico:isChildOf</relationType>
-        <targetRole target="#relationType_2oei0y5w4k4wnd4i">père</targetRole>
+        <relationType id="relationType_2oei0y5w4k4wnd4i" valueURI="https://www.ica.org/standards/RiC/ontology#isChildOf" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="source_55e03datcbcgzup">rico:isChildOf</relationType>
+        <targetRole target="relationType_2oei0y5w4k4wnd4i">père</targetRole>
+      <descriptiveNote>
+          <p>Luc Blanchard (père de l'expert) est décédé au moment du mariage.</p>
+        </descriptiveNote>
       </relation>
-      <relation target="#chronItem_k2z0fkplz44uxg6" sourceReference="">
+      <relation target="chronItem_k2z0fkplz44uxg6" sourceReference="">
         <targetEntity targetType="person">
           <part localType="full">Varambault, Marie Denise </part>
           <part localType="status"/>
@@ -221,13 +224,11 @@
           <part localType="origPlace"/>
           <part localType="xprRef"/>
         </targetEntity>
-        <relationType id="relationType_4h2b0fkzqp1933j" valueURI="https://www.ica.org/standards/RiC/ontology#isChildOf" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_55e03datcbcgzup">rico:isChildOf</relationType>
-        <targetRole target="#relationType_4h2b0fkzqp1933j">mère</targetRole>
+        <relationType id="relationType_4h2b0fkzqp1933j" valueURI="https://www.ica.org/standards/RiC/ontology#isChildOf" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="source_55e03datcbcgzup">rico:isChildOf</relationType>
+        <targetRole target="relationType_4h2b0fkzqp1933j">mère</targetRole>
       </relation>
-      <relation target="#chronItem_k2z0fkplz44uxg6" sourceReference="">
-        <descriptiveNote>
-          <p>François Delattre (beau-père de l'expert) est décédé au moment du mariage.</p>
-        </descriptiveNote>
+      <relation target="chronItem_k2z0fkplz44uxg6" sourceReference="">
+        
         <targetEntity targetType="person">
           <part localType="full">Delattre, François</part>
           <part localType="status">Maître de pension en l'université de Paris </part>
@@ -237,10 +238,13 @@
           <part localType="origPlace"/>
           <part localType="xprRef"/>
         </targetEntity>
-        <relationType id="relationType_5bqj0fs22bg7j3qo" valueURI="https://www.ica.org/standards/RiC/ontology#hasFamilyAssociationWith" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_55e03datcbcgzup">rico:hasFamilyAssociationWith</relationType>
-        <targetRole target="#relationType_5bqj0fs22bg7j3qo">beau-père</targetRole>
+        <relationType id="relationType_5bqj0fs22bg7j3qo" valueURI="https://www.ica.org/standards/RiC/ontology#hasFamilyAssociationWith" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="source_55e03datcbcgzup">rico:hasFamilyAssociationWith</relationType>
+        <targetRole target="relationType_5bqj0fs22bg7j3qo">beau-père</targetRole>
+      <descriptiveNote>
+          <p>François Delattre (beau-père de l'expert) est décédé au moment du mariage.</p>
+        </descriptiveNote>
       </relation>
-      <relation target="#chronItem_k2z0fkplz44uxg6" sourceReference="">
+      <relation target="chronItem_k2z0fkplz44uxg6" sourceReference="">
         <targetEntity targetType="person">
           <part localType="full">Cuviller, Marie Françoise</part>
           <part localType="status"/>
@@ -250,13 +254,11 @@
           <part localType="origPlace"/>
           <part localType="xprRef"/>
         </targetEntity>
-        <relationType id="relationType_7hnu0dvvrlee3mhv" valueURI="https://www.ica.org/standards/RiC/ontology#hasFamilyAssociationWith" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_55e03datcbcgzup">rico:hasFamilyAssociationWith</relationType>
-        <targetRole target="#relationType_7hnu0dvvrlee3mhv">belle-mère</targetRole>
+        <relationType id="relationType_7hnu0dvvrlee3mhv" valueURI="https://www.ica.org/standards/RiC/ontology#hasFamilyAssociationWith" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="source_55e03datcbcgzup">rico:hasFamilyAssociationWith</relationType>
+        <targetRole target="relationType_7hnu0dvvrlee3mhv">belle-mère</targetRole>
       </relation>
       <relation target="" sourceReference="">
-        <descriptiveNote>
-          <p>Il s'agit probablement de deuxième femme de l'expert.</p>
-        </descriptiveNote>
+        
         <targetEntity targetType="person">
           <part localType="full">Petit, Agathe</part>
           <part localType="status"/>
@@ -266,8 +268,11 @@
           <part localType="origPlace"/>
           <part localType="xprRef"/>
         </targetEntity>
-        <relationType id="relationType_9cn7039o96gechan" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadSpouse" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_a670y2669e77olp">rico:hasOrHadSpouse</relationType>
-        <targetRole target="#relationType_9cn7039o96gechan">épouse</targetRole>
+        <relationType id="relationType_9cn7039o96gechan" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadSpouse" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="source_a670y2669e77olp">rico:hasOrHadSpouse</relationType>
+        <targetRole target="relationType_9cn7039o96gechan">épouse</targetRole>
+      <descriptiveNote>
+          <p>Il s'agit probablement de deuxième femme de l'expert.</p>
+        </descriptiveNote>
       </relation>
          
       </relations>

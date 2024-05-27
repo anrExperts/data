@@ -1,5 +1,5 @@
 <eac xmlns="https://archivists.org/ns/eac/v2" xml:id="xpr0124">
-   <control maintenanceStatus="updated" publicationStatus="inProcess">
+   <control maintenanceStatus="revised" publicationStatus="inProcess">
       <recordId>xpr0124</recordId>
       <maintenanceAgency>
          <agencyName>projet Experts</agencyName>
@@ -102,12 +102,18 @@
             <function sourceReference="">
                <term>Expert bourgeois</term>
                <dateRange>
-                  <fromDate sourceReference="" certainty="" standardDate="1690"/>
-                  <toDate sourceReference="" certainty="" standardDate="1724"/>
+                  <fromDate certainty="" standardDate="1690"/>
+                  <toDate certainty="" standardDate="1724"/>
                </dateRange>
                
             </function>
          </functions>
+      
+         <localDescriptions>
+            <localDescription localType="sex">
+               <term/>
+            </localDescription>
+         </localDescriptions>
       <places>
         <place sourceReference="#source_94k0px4ob0nfzkd">
           <date certainty="certain" standardDate="1705-01-15" sourceReference=""/>
@@ -117,23 +123,18 @@
           </address>
         </place>
       </places>
-         <localDescriptions>
-            <localDescription localType="sex">
-               <term/>
-            </localDescription>
-         </localDescriptions>
          
          
          <existDates>
             <dateRange>
                <fromDate sourceReference="" certainty="" standardDate="1657-05"/>
-               <toDate sourceReference="#source_as10nzwr12akc8p" certainty="certain" standardDate="1724-10-04"/>
+               <toDate sourceReference="source_as10nzwr12akc8p" certainty="certain" standardDate="1724-10-04"/>
             </dateRange>
          </existDates>
          <biogHist>
             <chronList>
                <chronItem id="eventid96238d194" localType="birth">
-                  <date sourceReference="" certainty="" standardDate="1657-05"/>
+                  <date certainty="" standardDate="1657-05"/>
                   <event>Naissance</event>
                   
                   
@@ -142,7 +143,7 @@
                </chronItem>
                
                <chronItem id="eventid96238d212" localType="officePurchase">
-            <date certainty="" sourceReference=""/>
+            <date certainty=""/>
                   
                   <event>Acquisition d'un office</event>
                   
@@ -152,7 +153,7 @@
                   
                </chronItem>
                <chronItem id="eventid96238d222" localType="provision">
-                  <date sourceReference="" certainty="" standardDate="1690-08-03"/>
+                  <date certainty="" standardDate="1690-08-03"/>
                   <event>Lettre de provision</event>
                   
                   
@@ -161,15 +162,15 @@
                </chronItem>
                
                
-          <chronItem id="chronItem_3mp500qpbrx9ydba" sourceReference="#source_94k0px4ob0nfzkd" localType="marriage">
-            <date certainty="certain" standardDate="1705-01-15" sourceReference=""/>
+          <chronItem id="chronItem_3mp500qpbrx9ydba" sourceReference="source_94k0px4ob0nfzkd" localType="marriage">
+            <date certainty="certain" standardDate="1705-01-15"/>
             <event>Mariage avec Marie Laudouin </event>
             <place>
               <placeName/>
             </place>
           </chronItem>
-          <chronItem id="chronItem_pgq07fu39o6iavj" sourceReference="#source_as10nzwr12akc8p" localType="death">
-            <date certainty="certain" standardDate="1724-10-04" sourceReference=""/>
+          <chronItem id="chronItem_pgq07fu39o6iavj" sourceReference="source_as10nzwr12akc8p" localType="death">
+            <date certainty="certain" standardDate="1724-10-04"/>
             <event>Décès de Jean François Gobin</event>
             <place>
               <placeName/>
@@ -179,7 +180,7 @@
          </biogHist>
       </description>
       <relations>
-      <relation target="#chronItem_3mp500qpbrx9ydba" sourceReference="">
+      <relation target="chronItem_3mp500qpbrx9ydba" sourceReference="">
         <targetEntity targetType="person">
           <part localType="full">Laudouin, Marie</part>
           <part localType="status"/>
@@ -189,10 +190,10 @@
           <part localType="origPlace"/>
           <part localType="xprRef"/>
         </targetEntity>
-        <relationType id="relationType_aat70oj6gmgtiu5o" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadSpouse" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_94k0px4ob0nfzkd">rico:hasOrHadSpouse</relationType>
-        <targetRole target="#relationType_aat70oj6gmgtiu5o">épouse</targetRole>
+        <relationType id="relationType_aat70oj6gmgtiu5o" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadSpouse" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="source_94k0px4ob0nfzkd">rico:hasOrHadSpouse</relationType>
+        <targetRole target="relationType_aat70oj6gmgtiu5o">épouse</targetRole>
       </relation>
-      <relation target="#chronItem_3mp500qpbrx9ydba" sourceReference="">
+      <relation target="chronItem_3mp500qpbrx9ydba" sourceReference="">
         <targetEntity targetType="person">
           <part localType="full">Gobin, Denis</part>
           <part localType="status">Entrepreneur de bâtiments</part>
@@ -202,10 +203,10 @@
           <part localType="origPlace"/>
           <part localType="xprRef"/>
         </targetEntity>
-        <relationType id="relationType_amfv0xmn03a91qp" valueURI="https://www.ica.org/standards/RiC/ontology#isChildOf" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_94k0px4ob0nfzkd">rico:isChildOf</relationType>
-        <targetRole target="#relationType_amfv0xmn03a91qp">père</targetRole>
+        <relationType id="relationType_amfv0xmn03a91qp" valueURI="https://www.ica.org/standards/RiC/ontology#isChildOf" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="source_94k0px4ob0nfzkd">rico:isChildOf</relationType>
+        <targetRole target="relationType_amfv0xmn03a91qp">père</targetRole>
       </relation>
-      <relation target="#chronItem_3mp500qpbrx9ydba" sourceReference="">
+      <relation target="chronItem_3mp500qpbrx9ydba" sourceReference="">
         <targetEntity targetType="person">
           <part localType="full">Buret, Catherine</part>
           <part localType="status"/>
@@ -215,10 +216,10 @@
           <part localType="origPlace"/>
           <part localType="xprRef"/>
         </targetEntity>
-        <relationType id="relationType_bj3e0l9zl1jhdiwc" valueURI="https://www.ica.org/standards/RiC/ontology#isChildOf" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_94k0px4ob0nfzkd">rico:isChildOf</relationType>
-        <targetRole target="#relationType_bj3e0l9zl1jhdiwc">mère</targetRole>
+        <relationType id="relationType_bj3e0l9zl1jhdiwc" valueURI="https://www.ica.org/standards/RiC/ontology#isChildOf" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="source_94k0px4ob0nfzkd">rico:isChildOf</relationType>
+        <targetRole target="relationType_bj3e0l9zl1jhdiwc">mère</targetRole>
       </relation>
-      <relation target="#chronItem_3mp500qpbrx9ydba" sourceReference="">
+      <relation target="chronItem_3mp500qpbrx9ydba" sourceReference="">
         <targetEntity targetType="person">
           <part localType="full">Laudouin, Léonard</part>
           <part localType="status">Entrepreneur de bâtiments</part>
@@ -228,10 +229,10 @@
           <part localType="origPlace"/>
           <part localType="xprRef"/>
         </targetEntity>
-        <relationType id="relationType_c2ca0gagy81g7dcv" valueURI="https://www.ica.org/standards/RiC/ontology#hasFamilyAssociationWith" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_94k0px4ob0nfzkd">rico:hasFamilyAssociationWith</relationType>
-        <targetRole target="#relationType_c2ca0gagy81g7dcv">beau-père</targetRole>
+        <relationType id="relationType_c2ca0gagy81g7dcv" valueURI="https://www.ica.org/standards/RiC/ontology#hasFamilyAssociationWith" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="source_94k0px4ob0nfzkd">rico:hasFamilyAssociationWith</relationType>
+        <targetRole target="relationType_c2ca0gagy81g7dcv">beau-père</targetRole>
       </relation>
-      <relation target="#chronItem_3mp500qpbrx9ydba" sourceReference="">
+      <relation target="chronItem_3mp500qpbrx9ydba" sourceReference="">
         <targetEntity targetType="person">
           <part localType="full">Heurtaut, Marie</part>
           <part localType="status"/>
@@ -241,12 +242,12 @@
           <part localType="origPlace"/>
           <part localType="xprRef"/>
         </targetEntity>
-        <relationType id="relationType_xim108eortq1tf78" valueURI="https://www.ica.org/standards/RiC/ontology#hasFamilyAssociationWith" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="#source_94k0px4ob0nfzkd">rico:hasFamilyAssociationWith</relationType>
-        <targetRole target="#relationType_xim108eortq1tf78">belle-mère</targetRole>
+        <relationType id="relationType_xim108eortq1tf78" valueURI="https://www.ica.org/standards/RiC/ontology#hasFamilyAssociationWith" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="source_94k0px4ob0nfzkd">rico:hasFamilyAssociationWith</relationType>
+        <targetRole target="relationType_xim108eortq1tf78">belle-mère</targetRole>
       </relation>
          
-      <relation target="#eventid96238d212" sourceReference="">
-            <targetEntity target="#xprOffice0015" targetType="corporateBody">
+      <relation target="eventid96238d212" sourceReference="">
+            <targetEntity target="xprOffice0015" targetType="corporateBody">
               <part localType="full">Office 15</part>
             <part localType="status"/>
           <part localType="occupationType"/>
@@ -256,7 +257,7 @@
           <part localType="xprRef"/>
         </targetEntity>
           <relationType id="relationType_id128298d2588881" valueURI="" vocabularySource="" vocabularySourceURI="" sourceReference=""/>
-            <targetRole target="#relationType_id128298d2588881"/>
+            <targetRole target="relationType_id128298d2588881"/>
           </relation>
     </relations>
    

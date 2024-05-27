@@ -1,6 +1,6 @@
 <eac xmlns="https://archivists.org/ns/eac/v2" xml:id="xpr0190">
       <!--Voir interdiction AN Y 4443B Frère de Louis MARTEAU, entrepreneur des bâtiments du roi-->
-   <control maintenanceStatus="updated" publicationStatus="inProcess">
+   <control maintenanceStatus="revised" publicationStatus="inProcess">
       <recordId>xpr0190</recordId>
       <maintenanceAgency>
          <agencyName>projet Experts</agencyName>
@@ -76,8 +76,8 @@
             <function sourceReference="">
                <term>Expert bourgeois</term>
                <dateRange>
-                  <fromDate sourceReference="" certainty="" standardDate="1690"/>
-                  <toDate sourceReference="" certainty="" standardDate="1716"/>
+                  <fromDate certainty="" standardDate="1690"/>
+                  <toDate certainty="" standardDate="1716"/>
                </dateRange>
                
             </function>
@@ -88,7 +88,7 @@
             </localDescription>
          </localDescriptions>
       <occupations>
-        <occupation localType="" sourceReference="#source_2og0wagf89c9nei">
+        <occupation localType="" sourceReference="source_2og0wagf89c9nei">
           <term>Sculpteur à Paris</term>
           <!--optionnal (all below)-->
           <!--&lt;date/&gt; | &lt;dateRange/&gt; | &lt;dateSet/&gt;-->
@@ -105,7 +105,7 @@
          <biogHist>
             <chronList>
                <chronItem id="eventid96370d195" localType="birth">
-                  <date sourceReference="" certainty="" standardDate="1654-11"/>
+                  <date certainty="" standardDate="1654-11"/>
                   <event>Naissance</event>
                   
                   
@@ -113,7 +113,7 @@
                   
                </chronItem>
                <chronItem id="eventid96370d206" localType="marriage">
-            <date certainty="" sourceReference=""/>
+            <date certainty=""/>
                   
                   <event>Mariage</event>
                   
@@ -122,7 +122,7 @@
                   
                </chronItem>
                <chronItem id="eventid96370d213" localType="officePurchase">
-            <date certainty="" sourceReference=""/>
+            <date certainty=""/>
                   
                   <event>Acquisition d'un office</event>
                   
@@ -132,7 +132,7 @@
                   
                </chronItem>
                <chronItem id="eventid96370d223" localType="provision">
-                  <date sourceReference="" certainty="" standardDate="1690-08-05"/>
+                  <date certainty="" standardDate="1690-08-05"/>
                   <event>Lettre de provision</event>
                   
                   
@@ -141,7 +141,7 @@
                </chronItem>
                
                <chronItem id="eventid96370d245" localType="relinquishment">
-            <date certainty="" sourceReference=""/>
+            <date certainty=""/>
                   
                   <event>démissionne pour Raymond</event>
                   
@@ -151,16 +151,16 @@
                </chronItem>
           <chronItem id="chronItem_1m0n0chq69ghnpkb" sourceReference="" localType="reception">
             <dateSet>
-              <date certainty="certain" standardDate="1690-07-22" sourceReference="">Lettres de provision</date>
-              <date certainty="" sourceReference="">Supplique</date>
-              <date certainty="certain" standardDate="1690-08-09" sourceReference="">Ordonnance de soit montré au procureur du roy</date>
-              <date certainty="" sourceReference="">Examen</date>
-              <date certainty="" sourceReference="">Consentement de la communauté</date>
-              <date certainty="certain" standardDate="1690-08-09" sourceReference="">Information de vie et de mœurs</date>
-              <date certainty="certain" standardDate="1690-08-18" sourceReference="">Serment</date>
-              <date certainty="certain" standardDate="1690-08-18" sourceReference="">Réception</date>
-              <date certainty="certain" standardDate="1690-08-09" sourceReference="">Conclusions préparatoires du procureur du roi</date>
-              <date certainty="certain" standardDate="1690-08-17" sourceReference="">Conclusions définitives du procureur du roi</date>
+              <date certainty="certain" standardDate="1690-07-22">Lettres de provision</date>
+              <date certainty="">Supplique</date>
+              <date certainty="certain" standardDate="1690-08-09">Ordonnance de soit montré au procureur du roy</date>
+              <date certainty="">Examen</date>
+              <date certainty="">Consentement de la communauté</date>
+              <date certainty="certain" standardDate="1690-08-09">Information de vie et de mœurs</date>
+              <date certainty="certain" standardDate="1690-08-18">Serment</date>
+              <date certainty="certain" standardDate="1690-08-18">Réception</date>
+              <date certainty="certain" standardDate="1690-08-09">Conclusions préparatoires du procureur du roi</date>
+              <date certainty="certain" standardDate="1690-08-17">Conclusions définitives du procureur du roi</date>
             </dateSet>
             <event>Réception en l'office de juré expert</event>
             <place>
@@ -172,8 +172,8 @@
       </description>
       
    <relations>
-          <relation target="#eventid96370d213 #eventid96370d245" sourceReference=" ">
-            <targetEntity target="#xprOffice0031" targetType="corporateBody">
+          <relation target="eventid96370d213 eventid96370d245" sourceReference=" ">
+            <targetEntity target="xprOffice0031" targetType="corporateBody">
               <part localType="full">Office 31</part>
             <part localType="status"/>
           <part localType="occupationType"/>
@@ -183,9 +183,9 @@
           <part localType="xprRef"/>
         </targetEntity>
           <relationType id="relationType_id128298d2608207" valueURI="" vocabularySource="" vocabularySourceURI="" sourceReference=""/>
-            <targetRole target="#relationType_id128298d2608207"/>
+            <targetRole target="relationType_id128298d2608207"/>
           </relation>
-      <relation target="#chronItem_1m0n0chq69ghnpkb" sourceReference="">
+      <relation target="chronItem_1m0n0chq69ghnpkb" sourceReference="">
         <targetEntity targetType="person">
           <part localType="full"/>
           <part localType="status"/>
@@ -196,12 +196,12 @@
           <part localType="xprRef"/>
         </targetEntity>
         <relationType id="relationType_4xsj0il2yfs4mwsn" valueURI="https://www.ica.org/standards/RiC/ontology#isSuccessorOf" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:isSuccessorOf</relationType>
-        <targetRole target="#relationType_4xsj0il2yfs4mwsn">prédécesseur</targetRole>
+        <targetRole target="relationType_4xsj0il2yfs4mwsn">prédécesseur</targetRole>
         <descriptiveNote>
           <p>Il n'y a pas de pas de prédécesseur puisque l'impétrant acquiert un des 50 offices héréditaires d'expert juré créés par l'Edit de mai 1690.</p>
         </descriptiveNote>
       </relation>
-      <relation target="#chronItem_1m0n0chq69ghnpkb" sourceReference="">
+      <relation target="chronItem_1m0n0chq69ghnpkb" sourceReference="">
         <targetEntity targetType="person">
           <part localType="full">Jean Delapierre</part>
           <part localType="status">Prestre habitué en l'glise de St Eustache</part>
@@ -212,12 +212,12 @@
           <part localType="xprRef"/>
         </targetEntity>
         <relationType id="relationType_4xsy0pu59eir1wvj" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:knownBy</relationType>
-        <targetRole target="#relationType_4xsy0pu59eir1wvj">témoin</targetRole>
+        <targetRole target="relationType_4xsy0pu59eir1wvj">témoin</targetRole>
         <descriptiveNote>
           <p>Dépose qu'il connoist ledit Jean Baptiste Marteau depuis 10 ans ou environs, scait qu'il est de la R C a et R pour luy en avoir veu faire les exercices et assister au service divin, qu'il est de bonne vie et moeurs et affectionné au service du roy et du public.</p>
         </descriptiveNote>
       </relation>
-      <relation target="#chronItem_1m0n0chq69ghnpkb" sourceReference="">
+      <relation target="chronItem_1m0n0chq69ghnpkb" sourceReference="">
         <targetEntity targetType="person">
           <part localType="full">Jean DeCreil</part>
           <part localType="status">Chirurgien de la maison du roy, l'un des 200 barbiers, baigneurs, perruquiers à Paris </part>
@@ -228,12 +228,12 @@
           <part localType="xprRef"/>
         </targetEntity>
         <relationType id="relationType_4xtb03l1usxy6hw6" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:knownBy</relationType>
-        <targetRole target="#relationType_4xtb03l1usxy6hw6">témoin</targetRole>
+        <targetRole target="relationType_4xtb03l1usxy6hw6">témoin</targetRole>
         <descriptiveNote>
           <p>Dépose qu'il connoist ledit Jean Baptiste Marteau depuis sa naissance, scait qu'il est de la R C a et R pour l'avoir veu assister au service divin, qu'il est de bonne vie et moeurs et affectionné au service du roy et du public.</p>
         </descriptiveNote>
       </relation>
-      <relation target="#chronItem_1m0n0chq69ghnpkb" sourceReference="">
+      <relation target="chronItem_1m0n0chq69ghnpkb" sourceReference="">
         <targetEntity targetType="person">
           <part localType="full">Jean Hannard [Annard]</part>
           <part localType="status">Maître sculpteur à Paris et ancien juré de la communauté</part>
@@ -244,12 +244,12 @@
           <part localType="xprRef"/>
         </targetEntity>
         <relationType id="relationType_4xtl0bz8qqqvuwbo" valueURI="https://www.ica.org/standards/RiC/ontology#knownBy" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:knownBy</relationType>
-        <targetRole target="#relationType_4xtl0bz8qqqvuwbo">témoin</targetRole>
+        <targetRole target="relationType_4xtl0bz8qqqvuwbo">témoin</targetRole>
         <descriptiveNote>
           <p>Dépose qu'il connoist ledit  Marteau depuis plusieurs années, scait qu'il fait profession de la R C a et R luy ayant veu recevoir les sacrements d'eucharistie, scait de plus qu'il est de bonne vie et moeurs et affectionné au service du roy et du public.</p>
         </descriptiveNote>
       </relation>
-      <relation target="#chronItem_1m0n0chq69ghnpkb" sourceReference="">
+      <relation target="chronItem_1m0n0chq69ghnpkb" sourceReference="">
         <targetEntity targetType="person">
           <part localType="full"/>
           <part localType="status"/>
@@ -260,9 +260,9 @@
           <part localType="xprRef"/>
         </targetEntity>
         <relationType id="relationType_4xtt04z5q1ikkpsx" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:hasOrHadController</relationType>
-        <targetRole target="#relationType_4xtt04z5q1ikkpsx">examinateur</targetRole>
+        <targetRole target="relationType_4xtt04z5q1ikkpsx">examinateur</targetRole>
       </relation>
-      <relation target="#chronItem_1m0n0chq69ghnpkb" sourceReference="">
+      <relation target="chronItem_1m0n0chq69ghnpkb" sourceReference="">
         <targetEntity targetType="person">
           <part localType="full"/>
           <part localType="status"/>
@@ -273,9 +273,9 @@
           <part localType="xprRef"/>
         </targetEntity>
         <relationType id="relationType_4xu10nwsejv9aou" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:hasOrHadController</relationType>
-        <targetRole target="#relationType_4xu10nwsejv9aou">examinateur</targetRole>
+        <targetRole target="relationType_4xu10nwsejv9aou">examinateur</targetRole>
       </relation>
-      <relation target="#chronItem_1m0n0chq69ghnpkb" sourceReference="">
+      <relation target="chronItem_1m0n0chq69ghnpkb" sourceReference="">
         <targetEntity targetType="person">
           <part localType="full"/>
           <part localType="status"/>
@@ -286,9 +286,9 @@
           <part localType="xprRef"/>
         </targetEntity>
         <relationType id="relationType_4xu8070zm19j51wq" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:hasOrHadController</relationType>
-        <targetRole target="#relationType_4xu8070zm19j51wq">examinateur</targetRole>
+        <targetRole target="relationType_4xu8070zm19j51wq">examinateur</targetRole>
       </relation>
-      <relation target="#chronItem_1m0n0chq69ghnpkb" sourceReference="">
+      <relation target="chronItem_1m0n0chq69ghnpkb" sourceReference="">
         <targetEntity targetType="person">
           <part localType="full"/>
           <part localType="status"/>
@@ -299,9 +299,9 @@
           <part localType="xprRef"/>
         </targetEntity>
         <relationType id="relationType_4xue03c77013v66e" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:hasOrHadController</relationType>
-        <targetRole target="#relationType_4xue03c77013v66e">examinateur</targetRole>
+        <targetRole target="relationType_4xue03c77013v66e">examinateur</targetRole>
       </relation>
-      <relation target="#chronItem_1m0n0chq69ghnpkb" sourceReference="">
+      <relation target="chronItem_1m0n0chq69ghnpkb" sourceReference="">
         <targetEntity targetType="person">
           <part localType="full"/>
           <part localType="status"/>
@@ -312,9 +312,9 @@
           <part localType="xprRef"/>
         </targetEntity>
         <relationType id="relationType_4xui0h19k5jgffw" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:hasOrHadController</relationType>
-        <targetRole target="#relationType_4xui0h19k5jgffw">examinateur</targetRole>
+        <targetRole target="relationType_4xui0h19k5jgffw">examinateur</targetRole>
       </relation>
-      <relation target="#chronItem_1m0n0chq69ghnpkb" sourceReference="">
+      <relation target="chronItem_1m0n0chq69ghnpkb" sourceReference="">
         <targetEntity targetType="person">
           <part localType="full"/>
           <part localType="status"/>
@@ -325,9 +325,9 @@
           <part localType="xprRef"/>
         </targetEntity>
         <relationType id="relationType_4xun0v717q9lp7f8" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:hasOrHadController</relationType>
-        <targetRole target="#relationType_4xun0v717q9lp7f8">examinateur</targetRole>
+        <targetRole target="relationType_4xun0v717q9lp7f8">examinateur</targetRole>
       </relation>
-      <relation target="#chronItem_1m0n0chq69ghnpkb" sourceReference="">
+      <relation target="chronItem_1m0n0chq69ghnpkb" sourceReference="">
         <targetEntity targetType="person">
           <part localType="full"/>
           <part localType="status"/>
@@ -338,7 +338,7 @@
           <part localType="xprRef"/>
         </targetEntity>
         <relationType id="relationType_4xur00xqfoiu0h12a" valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadController" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology" sourceReference="">rico:hasOrHadController</relationType>
-        <targetRole target="#relationType_4xur00xqfoiu0h12a">examinateur</targetRole>
+        <targetRole target="relationType_4xur00xqfoiu0h12a">examinateur</targetRole>
       </relation>
         </relations>
       </cpfDescription>
